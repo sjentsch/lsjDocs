@@ -281,7 +281,7 @@ latex_elements = {
 
     # “babel” package inclusion, default '\\usepackage{babel}'.
     'babel': '\\usepackage{babel}',
-    
+
     # Font package inclusion, default '\\usepackage{times}' (which uses Times and Helvetica).
     # You can set this to '' to use the Computer Modern fonts.
     # Defaults to '' when the language uses the Cyrillic script.
@@ -292,7 +292,7 @@ latex_elements = {
     #         '\\usepackage[Sonny]{fncychap}' for internationalized docs (because the “Bjarne” style uses numbers spelled out in English).
     # Other “fncychap” styles you can try include “Lenny”, “Glenn”, “Conny” and “Rejne”. You can also set this to '' to disable fncychap.
     'fncychap': '\\usepackage[Bjarne]{fncychap}', 
-   
+
     # “inputenc” package inclusion, default '\\usepackage[utf8]{inputenc}'.
     'inputenc' :  '\\usepackage[utf8x]{inputenc}',
 #    'utf8extra': ('\\ifdefined\\DeclareUnicodeCharacter\n'
