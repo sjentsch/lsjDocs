@@ -8,7 +8,7 @@ Welcome to Learning statistics with `jamovi <https://www.jamovi.org>`__, which i
 jamovi is a free and open statistical software to bridge the gap between researcher and statistician.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Learning statistics with jamovi
    :name: sec-lsj
    
