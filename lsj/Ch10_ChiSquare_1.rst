@@ -469,10 +469,10 @@ The expected counts are now:
 | expected frequency | *E*\ :sub:`i` | 40 | 60 | 60 | 40 |
 +--------------------+---------------+----+----+----+----+
 
-and the χ² statistic is 4.74, *df* = 3, *p* = 0.182. Now, the results of our
+and the χ² statistic is 4.74, *df* = 3, *p* = 0.192. Now, the results of our
 updated hypotheses and the expected frequencies are different from what they
 were last time. As a consequence our χ² test statistic is different, and our
-*p*-value is different too. Annoyingly, the *p*-value is 0.182, so we can’t
+*p*-value is different too. Annoyingly, the *p*-value is 0.192, so we can’t
 reject the null hypothesis (look back at Section `The p value of a test
 <Ch09_HypothesisTesting_05.html#the-p-value-of-a-test>`__ to remind yourself
 why). Sadly, despite the fact that the null hypothesis corresponds to a very
