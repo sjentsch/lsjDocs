@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch04_Descriptives_3.rst:4
 msgid "Skew and kurtosis"
@@ -32,6 +32,10 @@ msgid ""
 "central tendency and variability that we’ve been talking about. Skew is "
 "pretty important, so you do see it mentioned a fair bit, but I’ve "
 "actually never seen kurtosis reported in a scientific article to date."
+msgstr ""
+
+#: ../../lsj/Ch04_Descriptives_3.rst:20
+msgid "Illustration of skewness"
 msgstr ""
 
 #: ../../lsj/Ch04_Descriptives_3.rst:20
@@ -92,6 +96,10 @@ msgid ""
 "some statistical analyses. Though there is no clear agreement on this "
 "interpretation. That said, this does indicate that the AFL winning "
 "margins data is somewhat skewed (0.780 / 0.183 = 4.262)."
+msgstr ""
+
+#: ../../lsj/Ch04_Descriptives_3.rst:67
+msgid "Illustration of kurtosis"
 msgstr ""
 
 #: ../../lsj/Ch04_Descriptives_3.rst:67

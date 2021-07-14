@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch09_HypothesisTesting_04.rst:4
 msgid "Making decisions"
@@ -84,6 +84,10 @@ msgid ""
 "therefore, we would have built a test that had an *α* level of 0.2. If we"
 " want *α* = 0.05, the critical region is only *allowed* to cover 5% of "
 "the sampling distribution of our test statistic."
+msgstr ""
+
+#: ../../lsj/Ch09_HypothesisTesting_04.rst:55
+msgid "Critical region associated with a two-sided test"
 msgstr ""
 
 #: ../../lsj/Ch09_HypothesisTesting_04.rst:55
@@ -241,6 +245,10 @@ msgid ""
 "When this happens, we have what’s called a **one-sided test** and the "
 "critical region only covers one tail of the sampling distribution. This "
 "is illustrated in :numref:`fig-rejectionRegion2`."
+msgstr ""
+
+#: ../../lsj/Ch09_HypothesisTesting_04.rst:168
+msgid "Critical region associated with a one-sided test"
 msgstr ""
 
 #: ../../lsj/Ch09_HypothesisTesting_04.rst:168

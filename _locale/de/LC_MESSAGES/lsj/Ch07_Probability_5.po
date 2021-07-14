@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch07_Probability_5.rst:4
 msgid "The normal distribution"
@@ -53,6 +53,10 @@ msgid ""
 " statistics should at least look at it, but since this is an introductory"
 " text I don’t want to focus on it, so I’ve tucked it away in :numref"
 ":`tab-distformulas`."
+msgstr ""
+
+#: ../../lsj/Ch07_Probability_5.rst:32
+msgid "Binomial distribution: θ = 1/2 and N = 20 (left) or N = 1000 (right)"
 msgstr ""
 
 #: ../../lsj/Ch07_Probability_5.rst:32
@@ -94,6 +98,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch07_Probability_5.rst:73
+msgid "Normal distribution: σ = 1 and µ = 4 (solid) or µ = 7 (dashed)"
+msgstr ""
+
+#: ../../lsj/Ch07_Probability_5.rst:73
 msgid ""
 "Illustration of what happens when you change the mean of a normal "
 "distribution. The solid line depicts a normal distribution with a mean of"
@@ -116,6 +124,10 @@ msgid ""
 "increase the standard deviation while keeping the mean constant, the peak"
 " of the distribution stays in the same place but the distribution gets "
 "wider, as you can see in :numref:`fig-scaleShiftNormal`."
+msgstr ""
+
+#: ../../lsj/Ch07_Probability_5.rst:100
+msgid "Normal distribution: µ = 5 and σ = 1 (solid) or σ = 2 (dashed)"
 msgstr ""
 
 #: ../../lsj/Ch07_Probability_5.rst:100
@@ -146,6 +158,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch07_Probability_5.rst:128
+msgid "Normal distribution: area under the curve for 1 and 2 SD"
+msgstr ""
+
+#: ../../lsj/Ch07_Probability_5.rst:128
 #, python-format
 msgid ""
 "The area under the curve tells you the probability that an observation "
@@ -156,6 +172,12 @@ msgid ""
 " fall within one standard deviation of the mean. In panel b, we see that "
 "there is a 95.4% chance that an observation will fall within two standard"
 " deviations of the mean."
+msgstr ""
+
+#: ../../lsj/Ch07_Probability_5.rst:143
+msgid ""
+"Normal distribution: area under the curve for 1 SD bordering the mean\n"
+"and below 1 SD to the tails of the distribution"
 msgstr ""
 
 #: ../../lsj/Ch07_Probability_5.rst:143

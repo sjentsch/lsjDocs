@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch14_ANOVA2_08.rst:4
 msgid "Post-hoc tests"
@@ -113,6 +113,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_08.rst:77
+msgid "Analysis panel to set up post hoc tests"
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_08.rst:77
 msgid ""
 "Analysis panel for setting up post-hoc test within jamovi's factorial "
 "ANOVA procedure (the current settings request a Tukey HSD statistic): "
@@ -174,6 +178,10 @@ msgid ""
 "that it has made a *lot* of pairwise comparisons (19 in total), as shown "
 "in :numref:`fig-factorialanova14`. You can see that it looks pretty "
 "similar to before, but with a lot more comparisons made."
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_08.rst:128
+msgid "Results table for a Tukey HSD post-hoc test"
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_08.rst:128

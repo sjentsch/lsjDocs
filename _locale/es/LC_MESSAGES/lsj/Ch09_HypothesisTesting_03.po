@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch09_HypothesisTesting_03.rst:4
 msgid "Test statistics and sampling distributions"
@@ -66,6 +66,10 @@ msgid ""
 "of *X* our null hypothesis would lead us to expect. And, therefore, we "
 "can use this distribution as a tool for assessing how closely the null "
 "hypothesis agrees with our data."
+msgstr ""
+
+#: ../../lsj/Ch09_HypothesisTesting_03.rst:51
+msgid "Sampling distribution when the null hypothesis is true"
 msgstr ""
 
 #: ../../lsj/Ch09_HypothesisTesting_03.rst:51

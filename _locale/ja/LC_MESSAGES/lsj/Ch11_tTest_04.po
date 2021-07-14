@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch11_tTest_04.rst:4
 msgid "The independent samples *t*-test (Welch test)"
@@ -42,6 +42,10 @@ msgid ""
 "before talking about the diagnosis, but as it happens the Welch test can "
 "be specified as one of the ‘Independent Samples *t*-Test’ options in "
 "jamovi, so this is probably the best place to discuss it."
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_04.rst:30
+msgid "Illustration: Null and alternative hypotheses for the Welch t-test"
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_04.rst:30
@@ -137,6 +141,10 @@ msgstr ""
 msgid ""
 "If you tick the check box for the Welch test in the analysis we did "
 "above, then this is what it gives you :numref:`fig-ttest_welch`:"
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_04.rst:90
+msgid "Results showing the Welch test alongside the default Student’s t-test"
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_04.rst:90

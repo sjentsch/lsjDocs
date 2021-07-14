@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch08_Estimation_3.rst:4
 msgid "Sampling distributions and the central limit theorem"
@@ -332,6 +332,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch08_Estimation_3.rst:102
+msgid "Sampling distribution: Mean for the “five IQ scores experiment”"
+msgstr ""
+
+#: ../../lsj/Ch08_Estimation_3.rst:102
 msgid ""
 "The sampling distribution of the mean for the “five IQ scores "
 "experiment”: If you sample 5 people at random and calculate their average"
@@ -378,6 +382,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch08_Estimation_3.rst:146
+msgid "Sampling distribution: Maximum for the “five IQ scores experiment”"
+msgstr ""
+
+#: ../../lsj/Ch08_Estimation_3.rst:146
 msgid ""
 "The sampling distribution of the maximum for the “five IQ scores "
 "experiment”: If you sample 5 people at random and select the one with the"
@@ -410,6 +418,10 @@ msgid ""
 "error of the sample *mean*, we often use the acronym SEM. As you can see "
 "just by looking at the picture, as the sample size *N* increases, the SEM"
 " decreases."
+msgstr ""
+
+#: ../../lsj/Ch08_Estimation_3.rst:182
+msgid "Shape of the sampling distribution in dependence of the sample size"
 msgstr ""
 
 #: ../../lsj/Ch08_Estimation_3.rst:182
@@ -462,6 +474,10 @@ msgid ""
 "perfectly normal. In other words, as long as your sample size isn’t tiny,"
 " the sampling distribution of the mean will be approximately normal no "
 "matter what your population distribution looks like!"
+msgstr ""
+
+#: ../../lsj/Ch08_Estimation_3.rst:234
+msgid "Demonstration of the central limit theorem"
 msgstr ""
 
 #: ../../lsj/Ch08_Estimation_3.rst:234

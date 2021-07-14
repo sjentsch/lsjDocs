@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch11_tTest_03.rst:4
 msgid "The independent samples *t*-test (Student test)"
@@ -27,7 +27,7 @@ msgstr ""
 #: ../../lsj/Ch11_tTest_03.rst:6
 msgid ""
 "Although the one sample *t*-test has its uses, it’s not the most typical "
-"example of a *t*-test\\ [#]_. A much more common situation arises when "
+"example of a *t*-test.\\ [#]_ A much more common situation arises when "
 "you’ve got two different groups of observations. In psychology, this "
 "tends to correspond to two different groups of participants, where each "
 "group corresponds to a different condition in your study. For each person"
@@ -111,11 +111,19 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_03.rst:60
+msgid "Histogram with grades in Anastasia’s and Bernadette’s classes"
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_03.rst:60
 msgid ""
 "Histograms showing the distribution of grades for students in Anastasia’s"
 " (left panel) and in Bernadette’s (right panel) classes. Visually, these "
 "suggest that students in Anastasia’s class may be getting slightly better"
 " grades on average, though they also seem a bit more variable."
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_03.rst:71
+msgid "Mean grades (with error bars) in Anastasia’s and Bernadette’s classes"
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_03.rst:71
@@ -169,6 +177,10 @@ msgstr ""
 
 #: ../../lsj/Ch11_tTest_03.rst:109
 msgid "H_1: *µ*\\ :sub:`1` ≠ *µ*\\ :sub:`2`"
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_03.rst:117
+msgid "Illustration: Null and alternative hypotheses, indep. samples t-test"
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_03.rst:117
@@ -419,6 +431,10 @@ msgid ""
 "Samples T-Test``) and move the ``grade`` variable across to the "
 "``Dependent Variables`` box, and the ``tutor`` variable across into the "
 "``Grouping Variable`` box, as shown in :numref:`fig-ttest_ind`."
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_03.rst:288
+msgid "Conducting an Independent t-test in jamovi"
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_03.rst:288
@@ -680,4 +696,24 @@ msgid ""
 "means (one-way ANOVA) <Ch13_ANOVA.html#comparing-several-means-one-way-"
 "anova>`__."
 msgstr ""
+
+#~ msgid ""
+#~ "Although the one sample *t*-test has "
+#~ "its uses, it’s not the most "
+#~ "typical example of a *t*-test\\ [#]_."
+#~ " A much more common situation arises"
+#~ " when you’ve got two different groups"
+#~ " of observations. In psychology, this "
+#~ "tends to correspond to two different "
+#~ "groups of participants, where each group"
+#~ " corresponds to a different condition "
+#~ "in your study. For each person in"
+#~ " the study you measure some outcome"
+#~ " variable of interest, and the "
+#~ "research question that you’re asking is"
+#~ " whether or not the two groups "
+#~ "have the same population mean. This "
+#~ "is the situation that the independent"
+#~ " samples *t*-test is designed for."
+#~ msgstr ""
 

@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch14_ANOVA2_06.rst:4
 msgid "ANOVA as a linear model"
@@ -236,6 +236,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_06.rst:123
+msgid "jamovi descriptives for the rtfm dataset"
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_06.rst:123
 msgid "jamovi descriptives for the ``rtfm`` dataset"
 msgstr ""
 
@@ -268,6 +272,10 @@ msgid ""
 "identical for all intents and purposes. Let’s start by running this as an"
 " ANOVA. To do this, we’ll use the ``rtfm`` data set, and :numref:`fig-"
 "factorialanova6` shows what we get when we run the analysis in jamovi."
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_06.rst:159
+msgid "ANOVA with two factors (unsaturated: main effects, no interaction="
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_06.rst:159
@@ -441,6 +449,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_06.rst:262
+msgid "Regression analysis for the rtfm dataset, unsaturated"
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_06.rst:262
 msgid ""
 "Regression analysis for the ``rtfm`` dataset in jamovi: Model with two "
 "factors ``attend`` and ``reading`` but without the interaction term for "
@@ -492,6 +504,10 @@ msgid ""
 " the ``Linear Regression`` - ``Model Coefficients`` - ``Omnibus Test`` - "
 "``ANOVA Test``, and this will give you the table shown in :numref:`fig-"
 "factorialanova8`."
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_06.rst:307
+msgid "Omnibus ANOVA Test"
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_06.rst:307
@@ -606,6 +622,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_06.rst:382
+msgid "ANOVA results for the ``clinicaltrial`` dataset: Unsaturated model"
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_06.rst:382
 msgid ""
 "jamovi ANOVA results for the ``clinicaltrial`` dataset: Unsaturated model"
 " with the two main effects for ``drug`` and ``therapy`` but without an "
@@ -618,6 +638,10 @@ msgid ""
 "we ran earlier. Next, let’s run a regression using ``druganxifree``, "
 "``drugjoyzepam`` and ``CBTtherapy`` as the predictors. The results are "
 "shown in :numref:`fig-factorialanova10`."
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_06.rst:399
+msgid "Regression: clinicaltrial dataset, generated contrast-variables"
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_06.rst:399
@@ -654,6 +678,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_06.rst:433
+msgid "Model comparison: Null model 1 vs. contrasts model 2"
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_06.rst:433
 msgid ""
 "Model comparison in jamovi regression: Null model (Model 1) vs. model "
 "using the generated contrast variables (Model 2)"
@@ -683,6 +711,10 @@ msgid ""
 " as the reference level, via the ``Reference Levels`` option. We’ve "
 "changed this to ``placebo`` and ``no.therapy``, respectively, because "
 "this makes most sense."
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_06.rst:463
+msgid "Regression analysis with factors and contrasts"
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_06.rst:463

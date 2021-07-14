@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch12_Regression_01.rst:4
 msgid "Correlations"
@@ -186,6 +186,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch12_Regression_01.rst:59
+msgid "Histograms for three variables from the parenthood data set"
+msgstr ""
+
+#: ../../lsj/Ch12_Regression_01.rst:59
 msgid ""
 "Histograms for the three interesting variables in the ``parenthood`` data"
 " set"
@@ -214,6 +218,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch12_Regression_01.rst:88
+msgid "Scatterplots between dan.sleep and baby.sleep to dan.grump"
+msgstr ""
+
+#: ../../lsj/Ch12_Regression_01.rst:88
 msgid ""
 "Scatterplots showing the relationship between ``dan.sleep`` and "
 "``dan.grump`` (left panel) and the relationship between ``baby.sleep`` "
@@ -230,6 +238,10 @@ msgid ""
 "get *more* sleep (positive relationship, right hand side), but if he "
 "sleeps more then I get *less* grumpy (negative relationship, left hand "
 "side)."
+msgstr ""
+
+#: ../../lsj/Ch12_Regression_01.rst:109
+msgid "Scatterplots between baby.sleep to dan.grump and dan.sleep"
 msgstr ""
 
 #: ../../lsj/Ch12_Regression_01.rst:109
@@ -255,6 +267,10 @@ msgid ""
 "perfect positive relationship. When *r* = 0, there’s no relationship at "
 "all. If you look at :numref:`fig-corr`, you can see several plots showing"
 " what different correlations look like."
+msgstr ""
+
+#: ../../lsj/Ch12_Regression_01.rst:134
+msgid "Effect of varying the strength and direction of a correlation"
 msgstr ""
 
 #: ../../lsj/Ch12_Regression_01.rst:134
@@ -347,6 +363,10 @@ msgid ""
 "``Regression`` → ``Correlation Matrix`` button. Transfer all four "
 "continuous variables across into the box on the right to get the output "
 "in :numref:`fig-correlations`."
+msgstr ""
+
+#: ../../lsj/Ch12_Regression_01.rst:201
+msgid "jamovi screenshot with correlations in the parenthood dataset"
 msgstr ""
 
 #: ../../lsj/Ch12_Regression_01.rst:201
@@ -471,6 +491,10 @@ msgid "0.9 to  1.0"
 msgstr ""
 
 #: ../../lsj/Ch12_Regression_01.rst:251
+msgid "Anscombe’s quartet"
+msgstr ""
+
+#: ../../lsj/Ch12_Regression_01.rst:251
 msgid ""
 "Anscombe’s quartet: All four of these data sets have a Pearson "
 "correlation of *r* = 0.816, but they are qualitatively different from one"
@@ -555,6 +579,10 @@ msgid ""
 "perfect **ordinal relationship** here. That is, if student 1 works more "
 "hours than student 2, then we can guarantee that student 1 will get the "
 "better grade. That’s not what a correlation of *r* = 0.91 says at all."
+msgstr ""
+
+#: ../../lsj/Ch12_Regression_01.rst:326
+msgid "relationship between hours worked and grade received"
 msgstr ""
 
 #: ../../lsj/Ch12_Regression_01.rst:326

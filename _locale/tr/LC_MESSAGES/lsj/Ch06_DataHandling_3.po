@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch06_DataHandling_3.rst:4
 msgid "Transforming and recoding a variable"
@@ -103,6 +103,10 @@ msgid ""
 "and you will see that the ``Formula`` box is populated with "
 "``ABS(likert.centred)`` and a new variable has been created in the "
 "spreadsheet view, as in :numref:`fig-opinionstrength`:"
+msgstr ""
+
+#: ../../lsj/Ch06_DataHandling_3.rst:83
+msgid "fx button to select functions and variables"
 msgstr ""
 
 #: ../../lsj/Ch06_DataHandling_3.rst:83
@@ -198,6 +202,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch06_DataHandling_3.rst:160
+msgid "Using the ``IF`` function"
+msgstr ""
+
+#: ../../lsj/Ch06_DataHandling_3.rst:160
 msgid ""
 "Collapsing a variable into a smaller number of discrete levels using the "
 "jamovi ``IF`` function"
@@ -241,6 +249,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch06_DataHandling_3.rst:201
+msgid "Using the jamovi ``Transform`` command"
+msgstr ""
+
+#: ../../lsj/Ch06_DataHandling_3.rst:201
 msgid ""
 "Creating a new variable transformation using the jamovi ``Transform`` "
 "command"
@@ -264,6 +276,10 @@ msgid ""
 "to the source variable you are transforming. Your transformation has also"
 " been saved and can be re-used any time you like (providing you save the "
 "dataset as an ``.omv`` file, otherwise you’ll lose it!)."
+msgstr ""
+
+#: ../../lsj/Ch06_DataHandling_3.rst:229
+msgid "Specifying a transformation in jamovi"
 msgstr ""
 
 #: ../../lsj/Ch06_DataHandling_3.rst:229
@@ -297,6 +313,10 @@ msgid ""
 "you decide to recode all the items as 1 to 3. You can easily do this in "
 "jamovi by creating and then re-applying your transformation for each "
 "variable that you want to recode."
+msgstr ""
+
+#: ../../lsj/Ch06_DataHandling_3.rst:262
+msgid "jamovi transformation into categories"
 msgstr ""
 
 #: ../../lsj/Ch06_DataHandling_3.rst:262

@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch08_Estimation_1.rst:4
 msgid "Samples, populations and sampling"
@@ -445,6 +445,10 @@ msgid ""
 "**population parameters** because they are characteristics of the entire "
 "population. That is, we say that the population mean *µ* is 100 and the "
 "population standard deviation *σ* is 15."
+msgstr ""
+
+#: ../../lsj/Ch08_Estimation_1.rst:363
+msgid "Population distribution of IQ and two samples with N=100 and N=10,000"
 msgstr ""
 
 #: ../../lsj/Ch08_Estimation_1.rst:363

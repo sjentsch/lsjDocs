@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch15_FactorAnalysis_4.rst:4
 msgid "Multi-Trait Multi-Method CFA"
@@ -104,6 +104,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_4.rst:66
+msgid "Six ASQ questions, dimensions: Internality, Stability, Globality"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_4.rst:66
 msgid ""
 "Six questions on the ASQ for each of the Internality, Stability and "
 "Globality dimensions"
@@ -150,6 +154,10 @@ msgid ""
 "we also think that Internality, Stability, and Globality might be "
 "correlated with each other, so in our model we should allow these latent "
 "factors to co-vary, as shown in :numref:`fig-MTMM4`."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_4.rst:113
+msgid "Final pre-specification of latent factor structure for the ASQ"
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_4.rst:113
@@ -262,6 +270,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_4.rst:192
+msgid "Settings for conducting a Confirmatory Factor Analysis"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_4.rst:192
 msgid ""
 "Analysis panel with the settings for conducting a Confirmatory Factor "
 "Analysis (CFA) in jamovi"
@@ -313,6 +325,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_4.rst:231
+msgid "Model Fit results for the specified CFA MTMM model in jamovi"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_4.rst:231
 msgid "Table with Model Fit results for the specified CFA MTMM model in jamovi"
 msgstr ""
 
@@ -330,6 +346,10 @@ msgid ""
 "are easier to interpret, and these can be specified under the ‘Estimates’"
 " option. These tables can usefully be incorporated into a written report "
 "or scientific article."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_4.rst:250
+msgid "Factor Loadings and Covariances for the specified CFA MTMM model"
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_4.rst:250
@@ -370,6 +390,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_4.rst:282
+msgid "Factor Modification Indices for the specified CFA MTMM model"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_4.rst:282
 msgid ""
 "Tables with Factor Modification Indices for the specified CFA MTMM model "
 "in jamovi"
@@ -383,6 +407,10 @@ msgid ""
 "particularly high MI, there is no reasonable justification for including "
 "this parameter in the model, and we already have a good fit; so again our"
 " answer is no modification."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_4.rst:300
+msgid "Table with the Residual Covariances Modification Indices: MTMM-CFA"
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_4.rst:300

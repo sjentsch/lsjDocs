@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch15_FactorAnalysis_3.rst:4
 msgid "Confirmatory Factor Analysis"
@@ -45,6 +45,10 @@ msgid ""
 "specified structure. In this sense, we are undertaking a confirmatory "
 "analysis, to see how well a pre-specified **model** is confirmed by the "
 "observed data."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_3.rst:29
+msgid "Initial pre-specification of latent factor structure"
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_3.rst:29
@@ -166,6 +170,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_3.rst:112
+msgid "Settings for conducting a Confirmatory Factor Analysis"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_3.rst:112
 msgid ""
 "Analysis panel with the settings for conducting a Confirmatory Factor "
 "Analysis (CFA) in jamovi"
@@ -179,6 +187,10 @@ msgid ""
 "to the observed data. NB in our model only the pre-specified covariances "
 "are estimated, including the factor correlations by default. Everything "
 "else is set to zero."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_3.rst:130
+msgid "Model Fit results for the specified CFA model in jamovi"
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_3.rst:130
@@ -259,6 +271,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_3.rst:200
+msgid "Table with Factor Loadings Modification Indices"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_3.rst:200
 msgid ""
 "Table with Factor Loadings Modification Indices for the specified CFA "
 "model in jamovi"
@@ -308,6 +324,10 @@ msgid ""
 "suggested parameter can be reasonably justified and, if it can, add it to"
 " the model. And then you can start again looking for the biggest MI in "
 "the re-calculated results."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_3.rst:242
+msgid "Table with Residual Covariances Modification Indices"
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_3.rst:242

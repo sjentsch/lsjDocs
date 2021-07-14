@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch05_Graphics_2.rst:4
 msgid "Box plots"
@@ -35,6 +35,10 @@ msgid ""
 "exploratory stage of data analysis when you’re trying to understand the "
 "data yourself. Let’s have a look at how they work, again using the "
 "``afl.margins`` data as our example."
+msgstr ""
+
+#: ../../lsj/Ch05_Graphics_2.rst:22
+msgid "Box plot of ``afl.margins``"
 msgstr ""
 
 #: ../../lsj/Ch05_Graphics_2.rst:22
@@ -83,6 +87,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch05_Graphics_2.rst:63
+msgid "Violin plot of ``afl.margins``"
+msgstr ""
+
+#: ../../lsj/Ch05_Graphics_2.rst:63
 msgid ""
 "Violin plot of the ``afl.margins`` variable plotted in jamovi, alsow "
 "showing a box plot and data points"
@@ -108,6 +116,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch05_Graphics_2.rst:88
+msgid "``Split by`` box"
+msgstr ""
+
+#: ../../lsj/Ch05_Graphics_2.rst:88
 msgid "jamovi screen shot showing the ``Split by`` box"
 msgstr ""
 
@@ -120,6 +132,10 @@ msgid ""
 "with too much detail. Now imagine what would have happened if I’d tried "
 "to cram 24 histograms into this space: no chance at all that the reader "
 "is going to learn anything useful."
+msgstr ""
+
+#: ../../lsj/Ch05_Graphics_2.rst:105
+msgid "Multiple box plots: ``margin`` split by ``year`` from ``aflsmall2``"
 msgstr ""
 
 #: ../../lsj/Ch05_Graphics_2.rst:105
@@ -143,6 +159,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch05_Graphics_2.rst:126
+msgid "Box plot with outliers"
+msgstr ""
+
+#: ../../lsj/Ch05_Graphics_2.rst:126
 msgid "Box plot showing two very suspicious outliers"
 msgstr ""
 
@@ -163,6 +183,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch05_Graphics_2.rst:149
+msgid "jamovi filter screen"
+msgstr ""
+
+#: ../../lsj/Ch05_Graphics_2.rst:149
 msgid "The jamovi filter screen"
 msgstr ""
 
@@ -178,6 +202,10 @@ msgid ""
 " **14** and **134**. These are suspicious cases, or observations, where "
 "you should go back to the original data source to find out what is going "
 "on."
+msgstr ""
+
+#: ../../lsj/Ch05_Graphics_2.rst:169
+msgid "Frequency table for ID"
 msgstr ""
 
 #: ../../lsj/Ch05_Graphics_2.rst:169

@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch04_Descriptives_1.rst:4
 msgid "Measures of central tendency"
@@ -228,6 +228,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch04_Descriptives_1.rst:109
+msgid "AFL 2010 winning margin data"
+msgstr ""
+
+#: ../../lsj/Ch04_Descriptives_1.rst:109
 msgid ""
 "Default descriptives for the AFL 2010 winning margin data (the "
 "``afl.margins`` variable)."
@@ -329,6 +333,10 @@ msgid ""
 "mean has the advantage that it uses all the information in the data "
 "(which is useful when you don’t have a lot of data). But it’s very "
 "sensitive to extreme, outlying values."
+msgstr ""
+
+#: ../../lsj/Ch04_Descriptives_1.rst:191
+msgid "Comparison of mean and median"
 msgstr ""
 
 #: ../../lsj/Ch04_Descriptives_1.rst:191
@@ -481,6 +489,11 @@ msgid ""
 "aflsmall_finalists`. This variable contains the names of all 400 teams "
 "that played in all 200 finals matches played during the period 1987 to "
 "2010."
+msgstr ""
+
+#: ../../lsj/Ch04_Descriptives_1.rst:310 ../../lsj/Ch04_Descriptives_1.rst:330
+#: ../../lsj/Ch04_Descriptives_1.rst:374
+msgid "Variables in aflsmall_finalists.csv"
 msgstr ""
 
 #: ../../lsj/Ch04_Descriptives_1.rst:310

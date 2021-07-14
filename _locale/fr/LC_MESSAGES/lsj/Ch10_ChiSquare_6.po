@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch10_ChiSquare_6.rst:4
 msgid "The Fisher exact test"
@@ -162,6 +162,10 @@ msgid ""
 "*p*-value, which in this case is small enough (*p* = 0.036) to justify "
 "rejecting the null hypothesis that people on fire are just as happy as "
 "people not on fire (see :numref:`fig-Fisher`)."
+msgstr ""
+
+#: ../../lsj/Ch10_ChiSquare_6.rst:91
+msgid "Fisher exact test output in jamovi"
 msgstr ""
 
 #: ../../lsj/Ch10_ChiSquare_6.rst:91

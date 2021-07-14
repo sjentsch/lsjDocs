@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch11_tTest_01.rst:4
 msgid "The one-sample *z*-test"
@@ -89,6 +89,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_01.rst:62
+msgid "Theoretical and empirical distribution of student grades"
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_01.rst:62
 msgid ""
 "The theoretical distribution (solid line) from which the psychology "
 "student grades (bars) are supposed to have been generated."
@@ -144,6 +148,10 @@ msgid ""
 "make the *assumption* that these things are true. However, since these "
 "assumptions may or may not be warranted, we might need to check them. For"
 " now though, we’ll keep things simple."
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_01.rst:107
+msgid "One-sample z-test: Illustration of the null and alternative hypotheses"
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_01.rst:107
@@ -347,6 +355,10 @@ msgstr ""
 msgid ""
 "This, in turn, meant that researchers could calculate their *z*-statistic"
 " by hand and then look up the critical value in a text book."
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_01.rst:219
+msgid "Rejection regions for the two- and one-sided z-tests"
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_01.rst:219

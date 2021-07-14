@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch14_ANOVA2_10.rst:4
 msgid "Factorial ANOVA 3: unbalanced designs"
@@ -82,6 +82,10 @@ msgid ""
 "sensible measure of the extent to which someone is “babbling”. The "
 "details don’t really matter for our purpose. Take a look at the data in "
 "the jamovi spreadsheet view, as in :numref:`fig-factorialanova15`\\."
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_10.rst:61
+msgid "Descriptive statistics for the different levels of sugar and milk"
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_10.rst:61
@@ -259,6 +263,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_10.rst:188
+msgid "Results table using Type I sum of squares, factor sugar entered first"
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_10.rst:188
 msgid ""
 "ANOVA results table using Type I sum of squares in jamovi (with the "
 "``coffee`` dataset and a saturated model with the factors ``sugar``, "
@@ -277,6 +285,10 @@ msgid ""
 "hard to imagine a principled answer to the question. Yet, look what "
 "happens when we change the ordering, as in :numref:`fig-"
 "factorialanova17`."
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_10.rst:210
+msgid "Results table using Type I sum of squares, factor milk entered first"
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_10.rst:210
@@ -491,6 +503,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_10.rst:353
+msgid "Results table using Type III sum of squares"
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_10.rst:353
 msgid ""
 "ANOVA results table using Type III sum of squares in jamovi (with the "
 "``coffee`` dataset and a saturated model with the factors ``sugar``, "
@@ -656,6 +672,10 @@ msgid ""
 "‘Sum of squares’ selection box in the jamovi ``ANOVA`` → ``Model`` "
 "options, This gives us the ANOVA table shown in :numref:`fig-"
 "factorialanova19`."
+msgstr ""
+
+#: ../../lsj/Ch14_ANOVA2_10.rst:486
+msgid "Results table using Type II sum of squares"
 msgstr ""
 
 #: ../../lsj/Ch14_ANOVA2_10.rst:486

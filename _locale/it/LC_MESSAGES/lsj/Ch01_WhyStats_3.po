@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch01_WhyStats_3.rst:4
 msgid "The cautionary tale of Simpson’s paradox"
@@ -249,6 +249,10 @@ msgid ""
 " the unwary. That’s reason #2 why scientists love statistics, and why we "
 "teach research methods. Because science is hard, and the truth is "
 "sometimes cunningly hidden in the nooks and crannies of complicated data."
+msgstr ""
+
+#: ../../lsj/Ch01_WhyStats_3.rst:97
+msgid "Berkeley 1973 college admissions data"
 msgstr ""
 
 #: ../../lsj/Ch01_WhyStats_3.rst:97

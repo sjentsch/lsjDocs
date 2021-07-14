@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch15_FactorAnalysis_1.rst:4
 msgid "Exploratory Factor Analysis"
@@ -43,6 +43,10 @@ msgid ""
 "associated error term, e1 to e5. Each error term is the variance in the "
 "associated observed variable, *V*\\ :sub:`i`, that is unexplained by the "
 "underlying latent factor."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:28
+msgid "Latent factor underlying the relationship between observed variables"
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_1.rst:28
@@ -203,51 +207,279 @@ msgstr ""
 #: ../../lsj/Ch15_FactorAnalysis_1.rst:149
 msgid ""
 "First, we need some data. Twenty-five personality self-report items (see "
-":numref:`fig-efa2`) taken from the International Personality Item Pool "
+":numref:`tab-bfi`) taken from the International Personality Item Pool "
 "(http://ipip.ori.org) were included as part of the Synthetic Aperture "
 "Personality Assessment (SAPA) web-based personality assessment (SAPA: "
-"http://sapa-project.org) project. The 25 items are organized by five "
+"http://sapa-project.org) project. The 25 items are short phrases that one"
+" should respond to by indicating how accurately the statement describes "
+"one's typical behaviour or attitudes. The items are organized by five "
 "putative factors: Agreeableness, Conscientiousness, Extraversion, "
 "Neuroticism, and Openness."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:163
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:160
 msgid ""
 "Twenty-five observed variable items organised by five putative "
-"personality factors in the dataset ``bfi_sample``"
+"personality factors in the dataset ``bfi_sample``. If there is an R in "
+"the second column, the item is reversed."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:165
+msgid "Name"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:165
+msgid "Question / Item"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:167
+msgid "A1"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:167
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:175
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:176
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:177
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:178
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:188
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:191
+msgid "R"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:167
+msgid "Am indifferent to the feelings of others."
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_1.rst:168
-msgid "The item data were collected using a 6-point response scale:"
+msgid "A2"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:168
+msgid "Inquire about others' well-being."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:169
+msgid "A3"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:169
+msgid "Know how to comfort others."
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_1.rst:170
-msgid "Very Inaccurate"
+msgid "A4"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:170
+msgid "Love children."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:171
+msgid "A5"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:171
+msgid "Make people feel at ease."
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_1.rst:172
-msgid "Moderately Inaccurate"
+msgid "C1"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:172
+msgid "Am exacting in my work."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:173
+msgid "C2"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:173
+msgid "Continue until everything is perfect."
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_1.rst:174
-msgid "Slightly Inaccurate"
+msgid "C3"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:174
+msgid "Do things according to a plan."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:175
+msgid "C4"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:175
+msgid "Do things in a half-way manner."
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_1.rst:176
-msgid "Slightly Accurate"
+msgid "C5"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:176
+msgid "Waste my time."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:177
+msgid "E1"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:177
+msgid "Don't talk a lot."
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_1.rst:178
-msgid "Moderately Accurate"
+msgid "E2"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:178
+msgid "Find it difficult to approach others."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:179
+msgid "E3"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:179
+msgid "Know how to captivate people."
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_1.rst:180
-msgid "Very Accurate."
+msgid "E4"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:180
+msgid "Make friends easily."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:181
+msgid "E5"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:181
+msgid "Take charge."
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_1.rst:182
+msgid "N1"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:182
+msgid "Get angry easily."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:183
+msgid "N2"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:183
+msgid "Get irritated easily."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:184
+msgid "N3"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:184
+msgid "Have frequent mood swings."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:185
+msgid "N4"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:185
+msgid "Often feel blue."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:186
+msgid "N5"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:186
+msgid "Panic easily."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:187
+msgid "O1"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:187
+msgid "Am full of ideas."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:188
+msgid "O2"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:188
+msgid "Avoid difficult reading material."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:189
+msgid "O3"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:189
+msgid "Carry the conversation to a higher level."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:190
+msgid "O4"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:190
+msgid "Spend time reflecting on things."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:191
+msgid "O5"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:191
+msgid "Will not probe deeply into a subject."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:195
+msgid "The item data were collected using a 6-point response scale:"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:197
+msgid "Very Inaccurate"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:199
+msgid "Moderately Inaccurate"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:201
+msgid "Slightly Inaccurate"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:203
+msgid "Slightly Accurate"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:205
+msgid "Moderately Accurate"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:207
+msgid "Very Accurate."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:209
 msgid ""
 "A sample of N=250 responses is contained in the dataset ``bfi_sample``. "
+"In addition to the items, there are three further columns in the data "
+"set: ``ID`` (the respondent ID, a five digit number) as well as the age "
+"(``age``) and the gender (``gender``) of the respondent."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:214
+msgid ""
 "As researchers, we are interested in exploring the data to see whether "
 "there are some underlying latent factors that are measured reasonably "
 "well by the 25 observed variables in the ``bfi_sample`` data file. Open "
@@ -258,20 +490,20 @@ msgid ""
 "in jamovi:"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:191
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:222
 msgid ""
 "Select ``Factor`` → ``Exploratory Factor Analysis`` from the ``Analyses``"
 " ribbon menu to open the analysis panel where you can determine the "
 "settings for the EFA (:numref:`fig-efa3`)."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:195
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:226
 msgid ""
 "Select the 25 personality questions and transfer them into the "
 "``Variables`` box."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:198
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:229
 msgid ""
 "Check appropriate options, including ``Assumption Checks``, but also "
 "``Rotation`` under ``Method``, ``Number of Factors`` to extract, and "
@@ -282,13 +514,17 @@ msgid ""
 "as described below)."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:212
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:243
+msgid "jamovi EFA analysis window"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:243
 msgid ""
 "Analysis panel with the settings for conducting an Exploratory Factor "
 "Analysis (EFA) in jamovi"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:217
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:248
 msgid ""
 "First, check the assumptions (:numref:`fig-efa4`). You can see that (1) "
 "Bartlett’s test of sphericity is significant, so this assumption is "
@@ -296,24 +532,24 @@ msgid ""
 "overall, suggesting good sampling adequacy. No problems here then!"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:228
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:259
 msgid "jamovi EFA assumption checks for the personality questionnaire data"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:232
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:263
 msgid ""
 "The next thing to check is how many factors to use (or “extract” from the"
 " data). Three different approaches are available:"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:235
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:266
 msgid ""
 "One convention is to choose all components with Eigen values greater than"
-" 1\\ [#]_. This would give us four factors with our data (try it and "
+" 1.\\ [#]_ This would give us four factors with our data (try it and "
 "see)."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:238
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:269
 msgid ""
 "Examination of the scree plot, as in :numref:`fig-efa5`, lets you "
 "identify the “point of inflection”. This is the point at which the slope "
@@ -324,7 +560,7 @@ msgid ""
 "cut."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:245
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:276
 msgid ""
 "Using a parallel analysis technique, the obtained Eigen values are "
 "compared to those that would be obtained from random data. The number of "
@@ -332,13 +568,17 @@ msgid ""
 " be found with random data."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:256
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:287
+msgid "Scree plot of the personality data"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:287
 msgid ""
 "Scree plot of the personality data in the EFA in jamovi, showing a "
 "noticeable inflection and levelling off after point 5 (the “elbow”)"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:261
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:292
 msgid ""
 "The third approach is a good one according to `Fabrigar et al. (1999) "
 "<References.html#fabrigar-1999>`__, although in practice researchers tend"
@@ -350,7 +590,7 @@ msgid ""
 "the solution which makes the most sense to them."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:270
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:301
 msgid ""
 "At the same time, we should also consider the best way to rotate the "
 "final solution. There are two main approaches to rotation: orthogonal "
@@ -362,7 +602,7 @@ msgid ""
 "sensible.\\ [#]_"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:278
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:309
 msgid ""
 "Practically, if in an oblique rotation the factors are found to be "
 "substantially correlated (positive or negative, and > 0.3), as in :numref"
@@ -377,13 +617,17 @@ msgid ""
 "rotation)."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:295
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:326
+msgid "Factor summary statistics and correlations"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:326
 msgid ""
 "Factor summary statistics and correlations for a five factor solution in "
 "the EFA conducted in jamovi"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:300
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:331
 #, python-format
 msgid ""
 "On checking the correlation between the extracted factors at least one "
@@ -397,7 +641,7 @@ msgid ""
 "proportion of the variance in our data."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:310
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:341
 msgid ""
 "Be aware that in every EFA you could potentially have the same number of "
 "factors as observed variables, but every additional factor you include "
@@ -410,7 +654,7 @@ msgid ""
 "original 25."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:319
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:350
 msgid ""
 ":numref:`fig-efa7` shows the factor loadings. That is, how the 25 "
 "different personality items load onto each of the five selected factors. "
@@ -418,14 +662,18 @@ msgid ""
 ":numref:`fig-efa3`)."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:329
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:360
+msgid "Factor loadings for a five factor solution"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:360
 msgid "Factor loadings for a five factor solution in the EFA conducted in jamovi"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:333
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:364
 msgid ""
 "For Factors 1, 2, 3 and 4 the pattern of factor loadings closely matches "
-"the putative factors specified in :numref:`fig-efa2`. Phew! And factor 5 "
+"the putative factors specified in :numref:`tab-bfi`. Phew! And factor 5 "
 "is pretty close, with four of the five observed variables that putatively"
 " measure “Openness” loading pretty well onto the factor. Variable ``O4`` "
 "doesn’t quite seem to fit though, as the factor solution in :numref:`fig-"
@@ -433,11 +681,11 @@ msgid ""
 "loading) but not substantively onto factor \\5."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:341
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:372
 msgid ""
 "The other thing to note is that those variables that were denoted as “R: "
-"reverse coding” in :numref:`fig-efa2` are those that have negative factor"
-" loadings. Take a look at the items ``A1`` (“Am indifferent to the "
+"reverse coding” in :numref:`tab-bfi` are those that have negative factor "
+"loadings. Take a look at the items ``A1`` (“Am indifferent to the "
 "feelings of others”) and ``A2`` (“Inquire about others’ well-being”). We "
 "can see that a high score on ``A1`` indicates low Agreeableness, whereas "
 "a high score on ``A2`` (and all the other ``A``-variables for that "
@@ -446,7 +694,7 @@ msgid ""
 "negative factor loading, as shown in :numref:`fig-efa7`."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:351
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:382
 #, python-format
 msgid ""
 "We can also see in :numref:`fig-efa7` the “uniqueness” of each variable. "
@@ -459,7 +707,7 @@ msgid ""
 "model."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:359
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:390
 msgid ""
 "To be honest, it’s unusual to get such a neat solution in EFA. It’s "
 "typically quite a bit more messy than this, and often interpreting the "
@@ -470,7 +718,7 @@ msgid ""
 "which variables are going to go where!"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:367
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:398
 msgid ""
 "So, we seem to have a pretty good five factor solution, albeit accounting"
 " for a relatively low overall proportion of the observed variance. Let’s "
@@ -480,42 +728,46 @@ msgid ""
 "variable that loads substantively onto the factor and then dividing by "
 "the number of variables. For each person in our dataset that would mean, "
 "for example for the Agreeableness factor, adding together ``A1 + A2 + A3 "
-"+ A4 + A5``, and then dividing by ``5``\\ [#]_. In essence, this means "
+"+ A4 + A5``, and then dividing by ``5``.\\ [#]_ In essence, this means "
 "that the factor score we have calculated is based on equally weighted "
 "scores from each of the included variables. We can do this in jamovi in "
 "two steps:"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:379
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:410
 msgid ""
 "Recode ``A1`` into ``A1R`` by reverse scoring the values in the variable "
 "(i.e. 6 = 1; 5 = 2; 4 = 3; 3 = 4; 2 = 5; 1 = 6) using the jamovi "
 "transform variable command (see :numref:`fig-efa8`)."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:383
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:414
 msgid ""
 "Compute a new variable, called ``Agreeableness``, by calculating the mean"
 " of ``A1R``, ``A2``, ``A3``, ``A4`` and ``A5``. Do this using the jamovi "
 "``Compute`` command to create a new variable (see :numref:`fig-efa9`)."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:393
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:424
 msgid "Recode variable using the Transform command in jamovi"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:401
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:432
+msgid "Compute new scale score variable in jamovi"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:432
 msgid "Compute new scale score variable using a Computed variable in jamovi"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:405
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:436
 msgid ""
 "Another option is to create an optimally-weighted factor score index. We "
 "can use the jamovi ``Rj`` editor to do this in ``R``. Again, there are "
 "two steps:"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:408
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:439
 msgid ""
 "Use the ``Rj`` editor to run the EFA in ``R`` to the same specification "
 "as the one in jamovi (i.e., five factors and Oblimin rotation) and "
@@ -523,7 +775,7 @@ msgid ""
 "factor scores, to a file (see :numref:`fig-efa10`)."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:413
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:444
 msgid ""
 "Open up the new file in jamovi (see :numref:`fig-efa11`) and check that "
 "variable types have been set correctly. Label the new factor score "
@@ -532,13 +784,21 @@ msgid ""
 "make sure you check)."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:425
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:456
+msgid "Rj editor commands for creating optimally weighted factor scores"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:456
 msgid ""
 "Rj editor commands for creating optimally weighted factor scores for the "
 "five factor solution"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:434
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:465
+msgid "Newly created data file with new factor score variables"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:465
 msgid ""
 "Newly created data file “bfifactscores.csv” created in the Rj editor and "
 "containing the five factor score variables. Note that each of the new "
@@ -546,7 +806,7 @@ msgid ""
 "factors are listed in the factor loadings table."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:441
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:472
 msgid ""
 "Now you can go ahead and undertake further analyses, using either the "
 "factor- based scores (a mean scale score approach) or using the "
@@ -559,17 +819,21 @@ msgid ""
 "difference (Mann-Whitney *U* = 5760.5, p = 0.073)."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:456
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:487
+msgid "Gender differences in Agreeableness factor-based scores"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:487
 msgid ""
 "Comparing differences in Agreeableness factor-based scores between males "
 "and females"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:462
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:493
 msgid "Writing up an EFA"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:464
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:495
 msgid ""
 "Hopefully, so far we have given you some sense of EFA and how to "
 "undertake EFA in jamovi. So, once you have completed your EFA, how do you"
@@ -578,50 +842,50 @@ msgid ""
 "some fairly standard pieces of information to include in your write-up:"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:470
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:501
 msgid ""
 "What are the theoretical underpinnings for the area you are studying, and"
 " specifically for the constructs that you are interested in uncovering "
 "through EFA."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:474
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:505
 msgid ""
 "A description of the sample (e.g. demographic information, sample size, "
 "sampling method)."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:477
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:508
 msgid ""
 "A description of the type of data used (e.g., nominal, continuous) and "
 "descriptive statistics."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:480
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:511
 msgid ""
 "Describe how you went about testing the assumptions for EFA. Details "
 "regarding sphericity checks and measures of sampling adequacy should be "
 "reported."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:484
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:515
 msgid "Explain what FA extraction method (e.g. maximum likelihood) was used."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:486
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:517
 msgid ""
 "Explain the criteria and process used for deciding how many factors were "
 "extracted in the final solution, and which items were selected. Clearly "
 "explain the rationale for key decisions during the EFA process."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:490
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:521
 msgid ""
 "Explain what rotation methods were attempted, the reasons why, and the "
 "results."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:493
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:524
 msgid ""
 "Final factor loadings should be reported in the results, in a table. This"
 " table should also report the uniqueness (or communality) for each "
@@ -631,27 +895,27 @@ msgid ""
 " separate table."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:499
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:530
 msgid ""
 "Meaningful names for the extracted factors should be provided. You may "
 "like to use previously selected factor names, but on examining the actual"
 " items and factors you may think a different name is more appropriate."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:506
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:537
 msgid ""
 "Quite helpfully, factor loadings can be interpreted like standardized "
 "regression coefficients"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:510
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:541
 msgid ""
 "An Eigen value indicates how much of the variance in the observed "
 "variables a factor accounts for. A factor with an Eigen value > 1 "
 "accounts for more variance than a single observed variable"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:515
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:546
 msgid ""
 "Oblique rotations provide two factor matrices, one called a structure "
 "matrix and one called a pattern matrix. In jamovi just the pattern matrix"
@@ -666,14 +930,128 @@ msgid ""
 "orthogonal rotation, structure and pattern coefficients are the same."
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:529
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:560
 msgid ""
 "Sometimes reported in factor analysis is “communality” which is the "
 "amount of variance in a variable that is accounted for by the factor "
 "solution. Uniqueness is equal to (1 - *communality*)"
 msgstr ""
 
-#: ../../lsj/Ch15_FactorAnalysis_1.rst:534
+#: ../../lsj/Ch15_FactorAnalysis_1.rst:565
 msgid "remembering to first reverse score some variables if necessary"
 msgstr ""
+
+#~ msgid ""
+#~ "First, we need some data. Twenty-"
+#~ "five personality self-report items (see"
+#~ " :numref:`fig-efa2`) taken from the "
+#~ "International Personality Item Pool "
+#~ "(http://ipip.ori.org) were included as part"
+#~ " of the Synthetic Aperture Personality "
+#~ "Assessment (SAPA) web-based personality "
+#~ "assessment (SAPA: http://sapa-project.org) "
+#~ "project. The 25 items are organized "
+#~ "by five putative factors: Agreeableness, "
+#~ "Conscientiousness, Extraversion, Neuroticism, and"
+#~ " Openness."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Twenty-five observed variable items "
+#~ "organised by five putative personality "
+#~ "factors in the dataset ``bfi_sample``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sample of N=250 responses is "
+#~ "contained in the dataset ``bfi_sample``. "
+#~ "As researchers, we are interested in "
+#~ "exploring the data to see whether "
+#~ "there are some underlying latent factors"
+#~ " that are measured reasonably well by"
+#~ " the 25 observed variables in the "
+#~ "``bfi_sample`` data file. Open up the"
+#~ " dataset and check that the 25 "
+#~ "variables are coded as continuous "
+#~ "variables (technically they are ordinal "
+#~ "though for EFA in jamovi it mostly"
+#~ " doesn’t matter, except if you decide"
+#~ " to calculate weighted factor scores "
+#~ "in which case continuous variables are"
+#~ " needed). To perform an EFA in "
+#~ "jamovi:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "One convention is to choose all "
+#~ "components with Eigen values greater "
+#~ "than 1\\ [#]_. This would give us"
+#~ " four factors with our data (try "
+#~ "it and see)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For Factors 1, 2, 3 and 4 "
+#~ "the pattern of factor loadings closely"
+#~ " matches the putative factors specified "
+#~ "in :numref:`fig-efa2`. Phew! And factor"
+#~ " 5 is pretty close, with four "
+#~ "of the five observed variables that "
+#~ "putatively measure “Openness” loading pretty"
+#~ " well onto the factor. Variable "
+#~ "``O4`` doesn’t quite seem to fit "
+#~ "though, as the factor solution in "
+#~ ":numref:`fig-efa7` suggests that it "
+#~ "loads onto factor 3 (albeit with a"
+#~ " relatively low loading) but not "
+#~ "substantively onto factor \\5."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The other thing to note is that"
+#~ " those variables that were denoted as"
+#~ " “R: reverse coding” in :numref:`fig-"
+#~ "efa2` are those that have negative "
+#~ "factor loadings. Take a look at "
+#~ "the items ``A1`` (“Am indifferent to "
+#~ "the feelings of others”) and ``A2`` "
+#~ "(“Inquire about others’ well-being”). We"
+#~ " can see that a high score on"
+#~ " ``A1`` indicates low Agreeableness, "
+#~ "whereas a high score on ``A2`` "
+#~ "(and all the other ``A``-variables for"
+#~ " that matter) indicates high Agreeableness."
+#~ " Therefore A1 will be negatively "
+#~ "correlated with the other ``A``-variables, "
+#~ "and this is why it has a "
+#~ "negative factor loading, as shown in "
+#~ ":numref:`fig-efa7`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "So, we seem to have a pretty "
+#~ "good five factor solution, albeit "
+#~ "accounting for a relatively low overall"
+#~ " proportion of the observed variance. "
+#~ "Let’s assume we are happy with "
+#~ "this solution and want to use our"
+#~ " factors in further analysis. The "
+#~ "straightforward option is to calculate "
+#~ "an overall (average) score for each "
+#~ "factor by adding together the score "
+#~ "for each variable that loads "
+#~ "substantively onto the factor and then"
+#~ " dividing by the number of variables."
+#~ " For each person in our dataset "
+#~ "that would mean, for example for "
+#~ "the Agreeableness factor, adding together "
+#~ "``A1 + A2 + A3 + A4 + "
+#~ "A5``, and then dividing by ``5``\\ "
+#~ "[#]_. In essence, this means that "
+#~ "the factor score we have calculated "
+#~ "is based on equally weighted scores "
+#~ "from each of the included variables. "
+#~ "We can do this in jamovi in "
+#~ "two steps:"
+#~ msgstr ""
 

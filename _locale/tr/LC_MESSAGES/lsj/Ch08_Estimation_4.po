@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch08_Estimation_4.rst:4
 msgid "Estimating population parameters"
@@ -266,6 +266,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch08_Estimation_4.rst:170
+msgid "Sampling distrib. of the std. dev. for a “two IQ scores” experiment"
+msgstr ""
+
+#: ../../lsj/Ch08_Estimation_4.rst:170
 msgid ""
 "Sampling distribution of the sample standard deviation for a “two IQ "
 "scores” experiment. The true population standard deviation is 15 (dashed "
@@ -295,6 +299,10 @@ msgid ""
 ":math:`\\hat\\sigma` about the value of the population standard deviation"
 " *σ* we should make sure our guess is a little bit larger than the sample"
 " standard deviation *s*."
+msgstr ""
+
+#: ../../lsj/Ch08_Estimation_4.rst:203
+msgid "Sample size: Mean (un-biased) and standard deviation (biased)"
 msgstr ""
 
 #: ../../lsj/Ch08_Estimation_4.rst:203

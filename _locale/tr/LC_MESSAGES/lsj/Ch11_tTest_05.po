@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch11_tTest_05.rst:4
 msgid "The paired-samples *t*-test"
@@ -73,6 +73,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_05.rst:51
+msgid "Descriptives for the two grade test variables in the chico dataset"
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_05.rst:51
 msgid "Descriptives for the two grade test variables in the ``chico`` dataset"
 msgstr ""
 
@@ -90,6 +94,10 @@ msgid ""
 " plot alone, looking at how wide those confidence intervals are, we’d be "
 "tempted to think that the apparent improvement in student performance is "
 "pure chance."
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_05.rst:73
+msgid "Mean grade for test 1 and test 2 in Dr Chico's class"
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_05.rst:73
@@ -240,6 +248,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_05.rst:182
+msgid "Results showing a one sample t-test on paired difference scores"
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_05.rst:182
 msgid "Results showing a one sample *t*-test on paired difference scores"
 msgstr ""
 
@@ -261,6 +273,10 @@ msgid ""
 "difference between one-sample and paired-samples tests clear in your "
 "head. If so, you can use the jamovi ‘Paired Samples *t*-Test’ analysis, "
 "getting the results shown in :numref:`fig-ttest_paired3`."
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_05.rst:205
+msgid "Results showing a paired sample t-test"
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_05.rst:205

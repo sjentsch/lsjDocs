@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch08_Estimation_5.rst:4
 msgid "Estimating a confidence interval"
@@ -223,6 +223,10 @@ msgid ""
 "experiment (bottom panel). A bit fortuitously, across the 100 "
 "replications that I simulated, it turned out that exactly 95 of them "
 "contained the true mean."
+msgstr ""
+
+#: ../../lsj/Ch08_Estimation_5.rst:145
+msgid "Confidence intervals for IQ-samples with N=10 (top) and N=25 (bottom)"
 msgstr ""
 
 #: ../../lsj/Ch08_Estimation_5.rst:145

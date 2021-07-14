@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch11_tTest_08.rst:4
 msgid "Checking the normality of a sample"
@@ -54,12 +54,20 @@ msgid "QQ plots"
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_08.rst:37
+msgid "Histogram and QQ plot for normally-distributed data"
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_08.rst:37
 msgid ""
 "Histogram (left panel) and QQ plot (right panel) for the ``normal.data`` "
 "dataset, a normally-distributed sample with 100 observations. The "
 "Shapiro-Wilk statistic associated with these data is W = 0.99, indicating"
 " that no significant departures from normality were detected (*p* = "
 "0.73)."
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_08.rst:48
+msgid "Histogram and QQ plot for skewed and tailed data"
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_08.rst:48
@@ -157,6 +165,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_08.rst:127
+msgid "Sampling distribution of the Shapiro-Wilk W statistic"
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_08.rst:127
 msgid ""
 "Sampling distribution of the Shapiro-Wilk W statistic, under the null "
 "hypothesis that the data are normally-distributed, for samples of size "
@@ -190,6 +202,10 @@ msgid ""
 "to th chapter on `Descriptive statistics <Ch04_Descriptives.html"
 "#descriptive-statistics>`__ didn’t look like they came from a normal "
 "distribution at all. Here’s what happens to the QQ plot:"
+msgstr ""
+
+#: ../../lsj/Ch11_tTest_08.rst:160
+msgid "QQ plot for the data (skewed) data from the aflsmall_margins dataset"
 msgstr ""
 
 #: ../../lsj/Ch11_tTest_08.rst:160

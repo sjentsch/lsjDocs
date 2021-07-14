@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch15_FactorAnalysis_2.rst:4
 msgid "Principal Component Analysis"
@@ -62,7 +62,7 @@ msgid ""
 "PCA, especially with a small number of factors and variables. We’ll use "
 "the same ``bfi_sample`` dataset as before. Much of the procedure is "
 "similar to EFA, so although there are some conceptual differences, "
-"practically the steps are the same\\ [#]_, and with large samples and a "
+"practically the steps are the same,\\ [#]_ and with large samples and a "
 "sufficient number of factors and variables, the results from PCA and EFA "
 "should be fairly similar."
 msgstr ""
@@ -87,6 +87,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_2.rst:55
+msgid "jamovi PCA analysis window"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_2.rst:55
 msgid ""
 "Analysis panel with the settings for conducting a Principal Component "
 "Analysis (PCA) in jamovi"
@@ -98,6 +102,10 @@ msgid ""
 "that (1) Bartlett’s test of sphericity is significant, so this assumption"
 " is satisfied; and (2) the KMO measure of sampling adequacy (MSA) is 0.81"
 " overall, suggesting very good sampling adequacy. No problems here then!"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_2.rst:71
+msgid "Assumption checks for the personality item data"
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_2.rst:71
@@ -131,6 +139,10 @@ msgid ""
 "compared to those that would be obtained from random data. The number of "
 "components extracted is the number with Eigen values greater than what "
 "would be found with random data."
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_2.rst:98
+msgid "Scree plot of the personality item data"
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_2.rst:98
@@ -175,6 +187,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_2.rst:136
+msgid "Component summary statistics and correlations"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_2.rst:136
 msgid ""
 "Component summary statistics and correlations for a five component "
 "solution when conducting a PCA with the personality item data in jamovi"
@@ -209,6 +225,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_2.rst:166
+msgid "Component loadings for a five component solution"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_2.rst:166
 msgid ""
 "Component loadings for a five component solution when conducting a PCA "
 "with the personality item data in jamovi"
@@ -217,7 +237,7 @@ msgstr ""
 #: ../../lsj/Ch15_FactorAnalysis_2.rst:171
 msgid ""
 "For components 1, 2, 3 and 4 the pattern of component loadings closely "
-"matches the putative factors specified in :numref:`fig-efa2`. And "
+"matches the putative factors specified in :numref:`tab-bfi`. And "
 "component 5 is pretty close, with four of the five observed variables "
 "that putatively measure “Openness” loading pretty well onto the "
 "component. Variable ``O4`` doesn’t quite seem to fit though, as the "
@@ -255,6 +275,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch15_FactorAnalysis_2.rst:202
+msgid "Rj editor commands for creating optimally weighted component scores"
+msgstr ""
+
+#: ../../lsj/Ch15_FactorAnalysis_2.rst:202
 msgid ""
 "Rj editor commands for creating optimally weighted component scores for "
 "the five component solution  when conducting a PCA with the personality "
@@ -267,4 +291,42 @@ msgid ""
 "out in the next section. Sorry about that, but hopefully it is not too "
 "bad!"
 msgstr ""
+
+#~ msgid ""
+#~ "PCA has been popular in Psychology "
+#~ "for a number of reasons, and "
+#~ "therefore it’s worth covering, although "
+#~ "nowadays EFA is just as easy to"
+#~ " do given the power of desktop "
+#~ "computers and can be less susceptible"
+#~ " to bias than PCA, especially with"
+#~ " a small number of factors and "
+#~ "variables. We’ll use the same "
+#~ "``bfi_sample`` dataset as before. Much "
+#~ "of the procedure is similar to "
+#~ "EFA, so although there are some "
+#~ "conceptual differences, practically the steps"
+#~ " are the same\\ [#]_, and with "
+#~ "large samples and a sufficient number"
+#~ " of factors and variables, the "
+#~ "results from PCA and EFA should be"
+#~ " fairly similar."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For components 1, 2, 3 and 4 "
+#~ "the pattern of component loadings "
+#~ "closely matches the putative factors "
+#~ "specified in :numref:`fig-efa2`. And "
+#~ "component 5 is pretty close, with "
+#~ "four of the five observed variables "
+#~ "that putatively measure “Openness” loading "
+#~ "pretty well onto the component. Variable"
+#~ " ``O4`` doesn’t quite seem to fit "
+#~ "though, as the component solution in "
+#~ ":numref:`fig-pca5` suggests that it "
+#~ "loads onto component 4 (albeit with "
+#~ "a relatively low loading) but not "
+#~ "substantively onto component 5."
+#~ msgstr ""
 

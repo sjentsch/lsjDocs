@@ -11,14 +11,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Learning statistics with jamovi \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 19:57+0100\n"
+"POT-Creation-Date: 2021-07-14 12:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../lsj/Ch12_Regression_02.rst:4
 msgid "Scatterplots"
@@ -64,6 +64,10 @@ msgid ""
 msgstr ""
 
 #: ../../lsj/Ch12_Regression_02.rst:43
+msgid "Scatterplot via the ‘Correlation Matrix’ command in jamovi"
+msgstr ""
+
+#: ../../lsj/Ch12_Regression_02.rst:43
 msgid "Scatterplot via the ``Correlation Matrix`` command in jamovi"
 msgstr ""
 
@@ -77,6 +81,10 @@ msgid ""
 " command available under the ``Exploration`` button. This plot is a bit "
 "different than the first way, see :numref:`fig-scatterplot2`, but the "
 "important information is the same."
+msgstr ""
+
+#: ../../lsj/Ch12_Regression_02.rst:62
+msgid "Scatterplot via the ‘scatr’ add-on module in jamovi"
 msgstr ""
 
 #: ../../lsj/Ch12_Regression_02.rst:62
@@ -95,6 +103,10 @@ msgid ""
 "for example ``baby.sleep`` to the list of variables to be correlated, and"
 " jamovi will create a scatterplot matrix for you, just like the one in "
 ":numref:`fig-scatterplot3`."
+msgstr ""
+
+#: ../../lsj/Ch12_Regression_02.rst:82
+msgid "Matrix of scatterplots produced using ‘Correlation Matrix’"
 msgstr ""
 
 #: ../../lsj/Ch12_Regression_02.rst:82
