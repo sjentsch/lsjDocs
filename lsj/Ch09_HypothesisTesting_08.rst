@@ -169,7 +169,7 @@ possible with a very large study). Sure, the null hypothesis is wrong
 but it’s not at all clear that we actually *care* because the effect
 size is so small. In the context of my ESP study we might still care
 since any demonstration of real psychic powers would actually be pretty
-cool\ [#]_, but in other contexts a 1% difference usually isn’t very
+cool,\ [#]_ but in other contexts a 1% difference usually isn’t very
 interesting, even if it is a real difference. For instance, suppose
 we’re looking at differences in high school exam scores between males
 and females and it turns out that the female scores are 1% higher on

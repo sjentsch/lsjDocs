@@ -28,7 +28,7 @@ worth covering, although nowadays EFA is just as easy to do given the power of
 desktop computers and can be less susceptible to bias than PCA, especially with
 a small number of factors and variables. We’ll use the same ``bfi_sample``
 dataset as before. Much of the procedure is similar to EFA, so although there
-are some conceptual differences, practically the steps are the same\ [#]_, and
+are some conceptual differences, practically the steps are the same,\ [#]_ and
 with large samples and a sufficient number of factors and variables, the
 results from PCA and EFA should be fairly similar.
 
@@ -169,7 +169,7 @@ threshold at the higher 0.4 value also provided a cleaner, clearer solution.
 .. ----------------------------------------------------------------------------
 
 For components 1, 2, 3 and 4 the pattern of component loadings closely matches
-the putative factors specified in :numref:`fig-efa2`. And component 5 is pretty
+the putative factors specified in :numref:`tab-bfi`. And component 5 is pretty
 close, with four of the five observed variables that putatively measure
 “Openness” loading pretty well onto the component. Variable ``O4`` doesn’t
 quite seem to fit though, as the component solution in :numref:`fig-pca5`

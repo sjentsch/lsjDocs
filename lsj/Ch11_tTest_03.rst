@@ -4,7 +4,7 @@ The independent samples *t*-test (Student test)
 -----------------------------------------------
 
 Although the one sample *t*-test has its uses, it’s not the most
-typical example of a *t*-test\ [#]_. A much more common situation
+typical example of a *t*-test.\ [#]_ A much more common situation
 arises when you’ve got two different groups of observations. In
 psychology, this tends to correspond to two different groups of
 participants, where each group corresponds to a different condition in

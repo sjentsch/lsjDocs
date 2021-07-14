@@ -196,7 +196,7 @@ the null hypothesis is (probably) false. Most people find this pretty
 weird.
 
 The best way to think about it, in my experience, is to imagine that a
-hypothesis test is a criminal trial\ [#]_, *the trial of the null
+hypothesis test is a criminal trial,\ [#]_ *the trial of the null
 hypothesis*. The null hypothesis is the defendant, the researcher is the
 prosecutor, and the statistical test itself is the judge. Just like a
 criminal trial, there is a presumption of innocence. The null hypothesis

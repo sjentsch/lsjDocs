@@ -23,7 +23,7 @@ malleable”, the book says. I’m pretty sure that this isn’t true of
 humans\ [#]_ and it’s definitely not true of jamovi. jamovi is not
 infinitely malleable, it has rather firm opinions on the topic of what
 is and isn’t true, at least as regards basic mathematics. If I ask it to
-calculate ``2 + 2``\ [#]_, it always gives the same answer, and it’s
+calculate ``2 + 2``,\ [#]_ it always gives the same answer, and it’s
 not bloody 5!
 
 Of course, so far jamovi is just doing the calculations. I haven’t asked

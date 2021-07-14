@@ -147,23 +147,50 @@ EFA in jamovi
 ~~~~~~~~~~~~~
 
 First, we need some data. Twenty-five personality self-report items (see
-:numref:`fig-efa2`) taken from the International
-Personality Item Pool (http://ipip.ori.org) were included as part of the
-Synthetic Aperture Personality Assessment (SAPA) web-based personality
-assessment (SAPA: http://sapa-project.org) project. The 25 items are
-organized by five putative factors: Agreeableness, Conscientiousness,
-Extraversion, Neuroticism, and Openness.
+:numref:`tab-bfi`) taken from the International Personality Item Pool
+(http://ipip.ori.org) were included as part of the Synthetic Aperture
+Personality Assessment (SAPA) web-based personality assessment (SAPA:
+http://sapa-project.org) project. The 25 items are short phrases that one
+should respond to by indicating how accurately the statement describes one's
+typical behaviour or attitudes. The items are organized by five putative
+factors: Agreeableness, Conscientiousness, Extraversion, Neuroticism, and
+Openness.
 
-.. ----------------------------------------------------------------------------
+.. _tab-bfi:
+.. table:: Twenty-five observed variable items organised by five putative
+   personality factors in the dataset ``bfi_sample``. If there is an R in the
+   second column, the item is reversed.
 
-.. _fig-efa2:
-.. figure:: ../_images/lsj_efa2.*
-   :alt: Items in ``bfi_sample``organised by five personality factors 
+   ==== = =========================================
+   Name   Question / Item
+   ==== = =========================================
+   A1   R Am indifferent to the feelings of others.
+   A2     Inquire about others' well-being.
+   A3     Know how to comfort others.
+   A4     Love children.
+   A5     Make people feel at ease.
+   C1     Am exacting in my work.
+   C2     Continue until everything is perfect.
+   C3     Do things according to a plan.
+   C4   R Do things in a half-way manner.
+   C5   R Waste my time.
+   E1   R Don't talk a lot.
+   E2   R Find it difficult to approach others.
+   E3     Know how to captivate people.
+   E4     Make friends easily.
+   E5     Take charge.
+   N1     Get angry easily.
+   N2     Get irritated easily.
+   N3     Have frequent mood swings.
+   N4     Often feel blue.
+   N5     Panic easily.
+   O1     Am full of ideas.
+   O2   R Avoid difficult reading material.
+   O3     Carry the conversation to a higher level.
+   O4     Spend time reflecting on things.
+   O5   R Will not probe deeply into a subject.
+   ==== = =========================================
 
-   Twenty-five observed variable items organised by five putative personality
-   factors in the dataset ``bfi_sample``
-      
-.. ----------------------------------------------------------------------------
 
 The item data were collected using a 6-point response scale:
 
@@ -179,7 +206,11 @@ The item data were collected using a 6-point response scale:
 
 #. Very Accurate.
 
-A sample of N=250 responses is contained in the dataset ``bfi_sample``.
+A sample of N=250 responses is contained in the dataset ``bfi_sample``. In
+addition to the items, there are three further columns in the data set: ``ID``
+(the respondent ID, a five digit number) as well as the age (``age``) and the
+gender (``gender``) of the respondent.
+
 As researchers, we are interested in exploring the data to see whether there
 are some underlying latent factors that are measured reasonably well by the 25
 observed variables in the ``bfi_sample`` data file. Open up the dataset and
@@ -206,7 +237,7 @@ are needed). To perform an EFA in jamovi:
 .. ----------------------------------------------------------------------------
 
 .. _fig-efa3:
-.. figure:: ../_images/lsj_efa3.*
+.. figure:: ../_images/lsj_efa2.*
    :alt: jamovi EFA analysis window
 
    Analysis panel with the settings for conducting an Exploratory Factor
@@ -222,7 +253,7 @@ good sampling adequacy. No problems here then!
 .. ----------------------------------------------------------------------------
 
 .. _fig-efa4:
-.. figure:: ../_images/lsj_efa4.*
+.. figure:: ../_images/lsj_efa3.*
    :alt: jamovi EFA assumption checks for the personality questionnaire data
 
    jamovi EFA assumption checks for the personality questionnaire data
@@ -233,7 +264,7 @@ The next thing to check is how many factors to use (or “extract” from the
 data). Three different approaches are available:
 
 -  One convention is to choose all components with Eigen values greater than
-   1\ [#]_. This would give us four factors with our data (try it and see).
+   1.\ [#]_ This would give us four factors with our data (try it and see).
 
 -  Examination of the scree plot, as in :numref:`fig-efa5`, lets you identify
    the “point of inflection”. This is the point at which the slope of the scree
@@ -250,7 +281,7 @@ data). Three different approaches are available:
 .. ----------------------------------------------------------------------------
 
 .. _fig-efa5:
-.. figure:: ../_images/lsj_efa5.*
+.. figure:: ../_images/lsj_efa4.*
    :alt: Scree plot of the personality data
 
    Scree plot of the personality data in the EFA in jamovi, showing a
@@ -289,7 +320,7 @@ solution as the oblique rotation).
 .. ----------------------------------------------------------------------------
 
 .. _fig-efa6:
-.. figure:: ../_images/lsj_efa6.*
+.. figure:: ../_images/lsj_efa5.*
    :alt: Factor summary statistics and correlations
 
    Factor summary statistics and correlations for a five factor solution
@@ -323,7 +354,7 @@ loadings less than 0.3 (set in the options shown in :numref:`fig-efa3`).
 .. ----------------------------------------------------------------------------
 
 .. _fig-efa7:
-.. figure:: ../_images/lsj_efa7.*
+.. figure:: ../_images/lsj_efa6.*
    :alt: Factor loadings for a five factor solution
 
    Factor loadings for a five factor solution in the EFA conducted in jamovi
@@ -331,7 +362,7 @@ loadings less than 0.3 (set in the options shown in :numref:`fig-efa3`).
 .. ----------------------------------------------------------------------------
 
 For Factors 1, 2, 3 and 4 the pattern of factor loadings closely matches the
-putative factors specified in :numref:`fig-efa2`. Phew! And factor 5 is pretty
+putative factors specified in :numref:`tab-bfi`. Phew! And factor 5 is pretty
 close, with four of the five observed variables that putatively measure
 “Openness” loading pretty well onto the factor. Variable ``O4`` doesn’t quite
 seem to fit though, as the factor solution in :numref:`fig-efa7` suggests that
@@ -339,7 +370,7 @@ it loads onto factor 3 (albeit with a relatively low loading) but not
 substantively onto factor \5.
 
 The other thing to note is that those variables that were denoted as “R:
-reverse coding” in :numref:`fig-efa2` are those that have negative factor
+reverse coding” in :numref:`tab-bfi` are those that have negative factor
 loadings. Take a look at the items ``A1`` (“Am indifferent to the feelings of
 others”) and ``A2`` (“Inquire about others’ well-being”). We can see that a
 high score on ``A1`` indicates low Agreeableness, whereas a high score on
@@ -371,7 +402,7 @@ The straightforward option is to calculate an overall (average) score for each
 factor by adding together the score for each variable that loads substantively
 onto the factor and then dividing by the number of variables. For each person
 in our dataset that would mean, for example for the Agreeableness factor,
-adding together ``A1 + A2 + A3 + A4 + A5``, and then dividing by ``5``\ [#]_.
+adding together ``A1 + A2 + A3 + A4 + A5``, and then dividing by ``5``.\ [#]_
 In essence, this means that the factor score we have calculated is based on
 equally weighted scores from each of the included variables. We can do this in
 jamovi in two steps:
@@ -387,7 +418,7 @@ jamovi in two steps:
 .. ----------------------------------------------------------------------------
 
 .. _fig-efa8:
-.. figure:: ../_images/lsj_efa8.*
+.. figure:: ../_images/lsj_efa7.*
    :alt: Recode variable using the Transform command in jamovi
 
    Recode variable using the Transform command in jamovi
@@ -395,7 +426,7 @@ jamovi in two steps:
 .. ----------------------------------------------------------------------------
 
 .. _fig-efa9:
-.. figure:: ../_images/lsj_efa9.*
+.. figure:: ../_images/lsj_efa8.*
    :alt: Compute new scale score variable in jamovi
 
    Compute new scale score variable using a Computed variable in jamovi
@@ -419,7 +450,7 @@ use the jamovi ``Rj`` editor to do this in ``R``. Again, there are two steps:
 .. ----------------------------------------------------------------------------
 
 .. _fig-efa10:
-.. figure:: ../_images/lsj_efa10.*
+.. figure:: ../_images/lsj_efa9.*
    :alt: Rj editor commands for creating optimally weighted factor scores
 
    Rj editor commands for creating optimally weighted factor scores for the
@@ -428,7 +459,7 @@ use the jamovi ``Rj`` editor to do this in ``R``. Again, there are two steps:
 .. ----------------------------------------------------------------------------   
 
 .. _fig-efa11:
-.. figure:: ../_images/lsj_efa11.*
+.. figure:: ../_images/lsj_efa10.*
    :alt: Newly created data file with new factor score variables
 
    Newly created data file “bfifactscores.csv” created in the Rj editor and
@@ -450,7 +481,7 @@ was not a significant difference (Mann-Whitney *U* = 5760.5, p = 0.073).
 .. ----------------------------------------------------------------------------
 
 .. _fig-efa12:
-.. figure:: ../_images/lsj_efa12.*
+.. figure:: ../_images/lsj_efa11.*
    :alt: Gender differences in Agreeableness factor-based scores
 
    Comparing differences in Agreeableness factor-based scores between males and

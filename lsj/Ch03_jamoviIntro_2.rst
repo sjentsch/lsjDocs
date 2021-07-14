@@ -284,7 +284,7 @@ change are:
    For one reason or another, some entries in the table are missing. The
    data file needs to include a “special” value to indicate that the
    entry is missing. By default jamovi assumes that this value is
-   ``99``\ [#]_, for both numeric and text data, so you should make
+   ``99``,\ [#]_ for both numeric and text data, so you should make
    sure that, where necessary, all missing values in the CSV file are
    replaced with ``99`` (or ``-9999``; whichever you choose) before
    opening / importing the file into jamovi. Once you have opened /
@@ -306,7 +306,7 @@ if they are regarded as “system missing” files in SPSS. The ``Default
 missings`` value does not seem to work as expected when importing SPSS
 files, so be aware of this - you might need another step: import the
 SPSS file into jamovi, then export as a CSV file before re-opening in
-jamovi.\ [#]_.
+jamovi.\ [#]_
 
 And that’s pretty much it, at least as far as SPSS goes. As far as other
 statistical software goes, jamovi can also directly open / import SAS

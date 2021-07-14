@@ -150,7 +150,7 @@ variation in grades), in which case you use the same versions of Cohen’s
 d that you would use for a Student or Welch test. It’s not so
 straightforward to do this in jamovi; essentially you have to change the
 structure of the data in the spreadsheet view so I won’t go into that
-here\ [#]_, but the Cohen’s *d* for this perspective is quite different:
+here,\ [#]_ but the Cohen’s *d* for this perspective is quite different:
 it is 0.22 which is quite small when assessed on the scale of the
 original variables.
 

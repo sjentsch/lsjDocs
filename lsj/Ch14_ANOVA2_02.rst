@@ -232,7 +232,7 @@ Adding interaction terms to the ANOVA model in jamovi is
 straightforward. In fact it is more than straightforward because it is
 the default option for ANOVA. This means that when you specify an ANOVA
 with two factors, e.g. ``drug`` and ``therapy`` then the interaction
-component - ``drug*therapy`` - is added automatically to the model\ [#]_.
+component - ``drug*therapy`` - is added automatically to the model.\ [#]_
 When we run the ANOVA with the interaction term included, then we get
 the results shown in :numref:`fig-factorialanova4`.
 

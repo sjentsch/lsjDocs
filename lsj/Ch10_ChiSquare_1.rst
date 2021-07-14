@@ -77,7 +77,7 @@ prefer to talk about general rather than specific things, so you’ll also see
 the notation *O*\ :sub:`i`\, which refers to the number of observations that
 fall within the *i*-th category (where *i* could be 1, 2, 3 or 4). Finally, if
 we want to refer to the set of all observed frequencies, statisticians group
-all observed values into a vector\ [#]_, which I’ll refer to as *O*.
+all observed values into a vector,\ [#]_ which I’ll refer to as *O*.
 
 O = (*O*\ :sub:`1`\, *O*\ :sub:`2`\, *O*\ :sub:`3`\, *O*\ :sub:`4`\)
 
@@ -597,10 +597,10 @@ organised world we’d *always* have a separate name for the test statistic and
 the sampling distribution. That way, the stat block itself would tell you
 exactly what it was that the researcher had calculated. Sometimes this happens.
 For instance, the test statistic used in the Pearson goodness-of-fit test is
-written χ², but there’s a closely related test known as the *G*-test\ [#]_
-(`Sokal & Rohlf, 1994 <References.html#sokal-1994>`__\ ), in which the test
-statistic is written as *G*. As it happens, the Pearson goodness-of-fit test
-and the *G*-test both test the same null hypothesis, and the sampling
+written χ², but there’s a closely related test known as the *G*-test
+(`Sokal & Rohlf, 1994 <References.html#sokal-1994>`__\ ),\ [#]_ in which the
+test statistic is written as *G*. As it happens, the Pearson goodness-of-fit
+test and the *G*-test both test the same null hypothesis, and the sampling
 distribution is exactly the same (i.e., a χ²-distribution  with *k* - 1
 degrees of freedom). If I’d done a *G*-test for the cards data rather than a
 goodness-of-fit test, then I’d have ended up with a test statistic of
@@ -657,52 +657,48 @@ something to be aware of.
    with the χ²-distribution.
 
 .. [#]
-   I feel obliged to point out that this is an over-simplification. It
-   works nicely for quite a few situations, but every now and then we’ll
-   come across degrees of freedom values that aren’t whole numbers.
-   Don’t let this worry you too much; when you come across this just
-   remind yourself that “degrees of freedom” is actually a bit of a
-   messy concept, and that the nice simple story that I’m telling you
-   here isn’t the whole story. For an introductory class it’s usually
-   best to stick to the simple story, but I figure it’s best to warn you
-   to expect this simple story to fall apart. If I didn’t give you this
-   warning you might start getting confused when you see
-   *df* = 3.4 or something, (incorrectly) thinking that you had
-   misunderstood something that I’ve taught you rather than (correctly)
-   realising that there’s something that I haven’t told you.
+   I feel obliged to point out that this is an over-simplification. It works
+   nicely for quite a few situations, but every now and then we’ll come across
+   degrees of freedom values that aren’t whole numbers. Don’t let this worry
+   you too much; when you come across this just remind yourself that “degrees
+   of freedom” is actually a bit of a messy concept, and that the nice simple
+   story that I’m telling you here isn’t the whole story. For an introductory
+   class it’s usually best to stick to the simple story, but I figure it’s best
+   to warn you to expect this simple story to fall apart. If I didn’t give you
+   this warning you might start getting confused when you see *df* = 3.4 or
+   something, (incorrectly) thinking that you had misunderstood something that
+   I’ve taught you rather than (correctly) realising that there’s something
+   that I haven’t told you.
 
 .. [#]
-   In practice, the sample size isn’t always fixed. For example, we
-   might run the experiment over a fixed period of time and the number
-   of people participating depends on how many people show up. That
-   doesn’t matter for the current purposes.
+   In practice, the sample size isn’t always fixed. For example, we might run
+   the experiment over a fixed period of time and the number of people
+   participating depends on how many people show up. That doesn’t matter for
+   the current purposes.
 
 .. [#]
-   Well, sort of. The conventions for how statistics should be reported
-   tend to differ somewhat from discipline to discipline. I’ve tended to
-   stick with how things are done in psychology, since that’s what I do.
-   But the general principle of providing enough information to the
-   reader to allow them to check your results is pretty universal, I
-   think.
+   Well, sort of. The conventions for how statistics should be reported tend to
+   differ somewhat from discipline to discipline. I’ve tended to stick with how
+   things are done in psychology, since that’s what I do. But the general
+   principle of providing enough information to the reader to allow them to
+   check your results is pretty universal, I think.
 
 .. [#]
-   To some people, this advice might sound odd, or at least in conflict
-   with the “usual” advice on how to write a technical report. Very
-   typically, students are told that the “results” section of a report
-   is for describing the data and reporting statistical analysis, and
-   the “discussion” section is for providing interpretation. That’s true
-   as far as it goes, but I think people often interpret it way too
-   literally. The way I usually approach it is to provide a quick and
-   simple interpretation of the data in the results section, so that my
-   reader understands what the data are telling us. Then, in the
-   discussion, I try to tell a bigger story about how my results fit
+   To some people, this advice might sound odd, or at least in conflict with
+   the “usual” advice on how to write a technical report. Very typically,
+   students are told that the “results” section of a report is for describing
+   the data and reporting statistical analysis, and the “discussion” section is
+   for providing interpretation. That’s true as far as it goes, but I think
+   people often interpret it way too literally. The way I usually approach it
+   is to provide a quick and simple interpretation of the data in the results
+   section, so that my reader understands what the data are telling us. Then,
+   in the discussion, I try to tell a bigger story about how my results fit
    with the rest of the scientific literature. In short, don’t let the
-   “interpretation goes in the discussion” advice turn your results
-   section into incomprehensible garbage. Being understood by your
-   reader is *much* more important.
+   “interpretation goes in the discussion” advice turn your results section
+   into incomprehensible garbage. Being understood by your reader is *much*
+   more important.
 
 .. [#]
-   Complicating matters, the *G*-test is a special case of a whole
-   class of tests that are known as *likelihood ratio tests*. I don’t
-   cover LRTs in this book, but they are quite handy things to know
-   about.
+   Complicating matters, the *G*-test is a special case of a whole class of
+   tests that are known as *likelihood ratio tests* (LRT). I don’t cover LRTs
+   in this book, but they are quite handy things to know about.
