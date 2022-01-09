@@ -438,8 +438,9 @@ B is of course the same thing, just with some subscripts shuffled around
 Now that we have these formulas we can check them against the jamovi
 output from the earlier section. Once again, a dedicated spreadsheet
 programme is helpful for these sorts of calculations, so please have a
-go yourself. You can also take a look at the version I did in Excel in
-the file ``clinicaltrial_factorialanova.xls``.
+go yourself, or use the ``clinicaltrial_factorialanova`` file (available in
+`LibreOffice <_static/data/clinicaltrial_factorialanova.ods>`_ or `Excel
+<_static/data/clinicaltrial_factorialanova.xls>`_ format).
 
 First, let’s calculate the sum of squares associated with the main
 effect of ``drug``. There are a total of *N* = 3 people in each

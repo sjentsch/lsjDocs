@@ -475,10 +475,11 @@ Of course, if we actually wanted to get the *right* answer we’d need to
 do this for all 18 observations in the data set, not just the first
 five. We could continue with the pencil and paper calculations if we
 wanted to, but it’s pretty tedious. Alternatively, it’s not too hard to
-do this in a dedicated spreadsheet programme such as OpenOffice or
-Excel. Try and do it yourself. The one that I did, in Excel, is in the
-file ``clinicaltrial_anova.xls``. When you do it you should end up with
-a within-group sum of squares value of 1.39.
+do this in a spreadsheet (LibreOffice Calc, Excel or Google Sheets). Try
+and do it yourself, or use the ``clinicaltrial_anova`` file (available in
+`LibreOffice <_static/data/clinicaltrial_anova.ods>`_ or `Excel
+<_static/data/clinicaltrial_anova.xls>`_ format). When you do it you
+should end up with a within-group sum of squares value of 1.39.
 
 Okay. Now that we’ve calculated the within groups variation,
 |SS_w|, it’s time to turn our attention to the between-group sum of

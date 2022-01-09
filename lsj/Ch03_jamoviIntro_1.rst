@@ -42,7 +42,7 @@ change their sizes.
 
 It is possible to simply begin typing values into the jamovi spreadsheet
 as you would in any other spreadsheet software. Alternatively, existing
-data sets in the CSV (.csv) file format can be opened in jamovi.
+data sets in the CSV (``.csv``) file format can be opened in jamovi.
 Additionally, you can easily import Excel, LibreOffice, SPSS, SAS, Stata
 and JASP files directly into jamovi. To open a file select the File tab
 (three horizontal lines; top left hand corner), select ``Open`` and then

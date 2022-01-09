@@ -451,7 +451,7 @@ use the jamovi |Rj|_ editor to do this in ``R``. Again, there are two steps:
 
 .. _fig-efa10:
 .. figure:: ../_images/lsj_efa9.*
-   :alt: ``Rj`` editor commands for creating optimally weighted factor scores
+   :alt: |Rj|_ editor commands for creating optimally weighted factor scores
 
    |Rj|_ editor commands for creating optimally weighted factor scores for
    the five factor solution

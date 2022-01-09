@@ -36,7 +36,7 @@ want, and then install them, as in :numref:`fig-modules`.
 
 It’s that easy. The newly installed modules can then be accessed from the
 “Analyses” button bar. Try it... useful add-on modules to install include
-”scatr” (added under “Descriptives”) and “Rj”.
+``scatr`` (added under ``Descriptives``) and |Rj|_.
 
 .. ----------------------------------------------------------------------------
 
@@ -70,3 +70,8 @@ jamovi menu select ``Save as`` and type in a file name for this
 ``jamovi file (.omv)``. Remember to save the file in a location where you can find
 it again later. I usually create a new folder for specific data sets and
 analyses.
+
+----
+
+.. |Rj|                                replace:: ``Rj``
+.. _Rj:                                https://docs.jamovi.org/_pages/Rj_overview.html

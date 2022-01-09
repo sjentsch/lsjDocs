@@ -190,19 +190,19 @@ jamovi, and how it is conceptually different but practically fairly similar
 
 You can go on to create component scores in much the same way as in EFA. 
 However, if you take the option to create an optimally-weighted component score
-index then the commands and syntax in the jamovi ``Rj`` editor are a little
+index then the commands and syntax in the jamovi |Rj|_ editor are a little
 different. See :numref:`fig-pca6`.
 
 .. ----------------------------------------------------------------------------
 
 .. _fig-pca6:
 .. figure:: ../_images/lsj_pca6.*
-   :alt: Rj editor commands for creating optimally weighted component scores
+   :alt: |Rj| editor commands for creating optimally weighted component scores
 
-   Rj editor commands for creating optimally weighted component scores for the
-   five component solution  when conducting a PCA with the personality item
+   |Rj|_ editor commands for creating optimally weighted component scores for
+   the five component solution  when conducting a PCA with the personality item
    data in jamovi
-      
+
 .. ----------------------------------------------------------------------------
 
 ------
@@ -211,3 +211,6 @@ different. See :numref:`fig-pca6`.
    ...and that means there is a fair bit of repetition in the PCA steps
    set out in the next section. Sorry about that, but hopefully it is
    not too bad!
+
+.. |Rj|                                replace:: ``Rj``
+.. _Rj:                                https://docs.jamovi.org/_pages/Rj_overview.html

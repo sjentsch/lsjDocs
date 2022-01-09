@@ -26,83 +26,69 @@ outcome variable
 
 .. math:: \mbox{SS}_{tot} = \sum_i (Y_i - \bar{Y})^2
 
-While we’re here, let’s calculate these values ourselves, not by hand
-though. Let’s use something like Excel or another standard spreadsheet
-programme. I have done this by opening up the |parenthood|_ file in a
-spreadsheet (LibreOffice Calc, Excel, Google Sheets) so that we can work
-in it. The first thing to do is calculate the *Ŷ* values, and for the
+While we’re here, let’s calculate these values ourselves, not by hand though.
+Let’s use jamovi instead. Open up the |parenthood|_ data set in so that we can
+work in it. The first thing to do is calculate the *Ŷ* values, and for the
 simple model that uses only a single predictor we would do the following:
 
-. create a new column called ``Y.pred`` using the formula
-``= 125.97 + (-8.94 * dani.sleep)``
+#. Go to an empty column (at the end of the data set) and double click on the
+   column header, choose “New computed variable” and enter ``Y_pred`` in the 
+   first line and the formula ``125.97 + (-8.94 * dani.sleep)`` in the line
+   starting with ``=`` (next to the *f*\ :sub:`x`).
 
 Okay, now that we’ve got a variable which stores the regression model
 predictions for how grumpy I will be on any given day, let’s calculate
 our sum of squared residuals. We would do that using the following
 formula:
 
-| . calculate the SS(resid) by creating a new column called
-  ``(Y - Y.pred) ^ 2`` using the formula
-| ``= (dani.grump - Y.pred) ^ 2``.
+#. Calculate the squared residuals by creating a new column called
+  ``sq_resid`` using the formula ``(dani.grump - Y_pred) ^ 2``. The values
+  in this column are later summed up to obtain SS\ :sub:`res`.
 
-| . Then, at the bottom of this column calculate the sum of these
-  values,
-| i.e. ``sum((Y - Y.pred) ^ 2)``.
+#. Calculate the squared deviation from the mean by creating yet another
+   column    called ``sq_total`` using the formula
+   ``(dani.grump - VMEAN(dani.grump)) ^ 2``. The values in this column are
+   later summed up to obtain SS\ :sub:`tot`.
 
-This should give you a value of **1838.722**. Wonderful. A big number
-that doesn’t mean very much. Still, let’s forge boldly onwards anyway
-and calculate the total sum of squares as well. That’s also pretty
-simple. Calculate the ``SS(tot)`` by:
-
-| . At the bottom of the dani.grump column, calculate the mean value for
-  ``dani.grump`` (NB: LibreOffice and Excel uses the word ``AVERAGE``
-  rather than ``mean`` as function name).
-
-| . Then create a new column, called ``(Y - mean(Y))^2 )`` using the
-  formula: ``= (dani.grump - AVERAGE(dani.grump)) ^ 2`` .
-
-| . Then, at the bottom of this column calculate the sum of these
-  values, i.e. ``sum((Y - mean(Y)) ^ 2)``.
-
-This should give you a value of **9998.59**. Hmm. Well, it’s a much
-bigger number than the last one, so this does suggest that our
-regression model was making good predictions. But it’s not very
+To calculate the sum of these values, click ``Descriptives`` → ``Descriptive
+Statistics`` and move ``sq_resid`` and ``sq_total`` to the ``Variables`` box.
+You’ll then need to select ``Sum`` from the ``Statistics`` drop-down menu
+below. The sum of ``sq_resid`` has a value of **1838.722**. This is a big
+number, however, that doesn’t mean very much. The sum of ``sq_total`` has a
+value of **9998.590**. Well, it’s a much (about five times) bigger number
+than the last one, so this does suggest that our regression model was making
+good predictions (that is, it has greatly reduced the residual error compared
+to the model that uses the mean as a single predictor). But it’s not very
 interpretable.
 
-Perhaps we can fix this. What we’d like to do is to convert these two
-fairly meaningless numbers into one number. A nice, interpretable
-number, which for no particular reason we’ll call *R²*. What we
-would like is for the value of *R²* to be equal to 1 if the
-regression model makes no errors in predicting the data. In other words,
-if it turns out that the residual errors are zero. That is, if
-SS\ :sub:`res` = 0 then we expect *R²* = 1. Similarly,
-if the model is completely useless, we would like *R²* to be
-equal to 0. What do I mean by “useless”? Tempting as it is to demand
-that the regression model move out of the house, cut its hair and get a
-real job, I’m probably going to have to pick a more practical
-definition. In this case, all I mean is that the residual sum of squares
-is no smaller than the total sum of squares,
-SS\ :sub:`res` = SS\ :sub:`tot`. Wait, why don’t we do exactly
-that? The formula that provides us with our *R²* value is pretty
-simple to write down,
+To can fix this, we’d like to convert these two fairly meaningless numbers
+into one number. A nice, interpretable number, which for no particular reason
+we’ll call *R²*. What we would like is for the value of *R²* to be equal to 1
+if the regression model makes no errors in predicting the data. In other words,
+if it turns out that the residual errors are zero. That is, if SS\ :sub:`res`
+= 0 then we expect *R²* = 1. Similarly, if the model is completely useless, we
+would like *R²* to be equal to 0. What do I mean by “useless”? Tempting as it
+is to demand that the regression model move out of the house, cut its hair and
+get a real job, I’m probably going to have to pick a more practical
+definition. In this case, all I mean is that the residual sum of squares is no
+smaller than the total sum of squares, SS\ :sub:`res` = SS\ :sub:`tot`. Wait,
+why don’t we do exactly that? The formula that provides us with our *R²* value
+is pretty simple to write down, and equally simple to calculate by hand:\ [#]_
 
 | R² = 1 - (SS\ :sub:`res` / SS\ :sub:`tot`)
-
-and equally simple to calculate in Excel:
-
-| . Calculate ``R.squared`` by typing into a blank cell the following:
-| ``= 1 - (SS(resid) / SS(tot) )`` .
-
-This gives a value for R² of **0.8161018**. The R² value, sometimes called the
+| R² = 1 - (1838.722 / 9998.590)
+| R² = 1 - 0.184
+             
+This gives a value for R² of **0.816**. The R² value, sometimes called the
 **coefficient of determination**\ [#]_ has a simple interpretation: it is the
 *proportion* of the variance in the outcome variable that can be accounted for
 by the predictor. So, in this case the fact that we have obtained *R²* = 0.816
-means that the predictor (``my.sleep``) explains 81.6% of the variance in the
-outcome (``my.grump``).
+means that the predictor (``dani.sleep``) explains 81.6% of the variance in the
+outcome (``dani.grump``).\ [#]_
 
-Naturally, you don’t actually need to type all these commands into Excel
-yourself if you want to obtain the *R²* value for your regression model. As
-we’ll see later on in `Running the hypothesis tests in jamovi
+Naturally, you don’t actually need to do all these calculations yourself if you
+want to obtain the *R²* value for your regression model. As we’ll see later on
+in `Running the hypothesis tests in jamovi
 <Ch12_Regression_07.html#running-the-hypothesis-tests-in-jamovi>`__, all you
 need to do is specify this as an option in jamovi. However, let’s put that to
 one side for the moment. There’s another property of *R²* that I want to point
@@ -164,8 +150,21 @@ tests for that.
 ------
 
 .. [#]
+   If you don't want to do these calculations by hand, just create another
+   computed variable called, e.g., ``R2``, and containing the formula
+   ``1 - VSUM(sq_resid) / VSUM(sq_total)``. But then you have a whole column
+   containing R².
+
+.. [#]
    And by “sometimes” I mean “almost never”. In practice everyone just calls it
    “*R*-squared”.
 
-.. |parenthood|                        replace:: ``parenthood.csv``
-.. _parenthood:                        _static/data/parenthood.csv
+.. [#]
+   If you made a mistake or could not follow the explanations, you can simply
+   download and open the |parenthood_r2|_ data set.
+
+.. |parenthood|                        replace:: ``parenthood``
+.. _parenthood:                        _static/data/parenthood.omv
+
+.. |parenthood_r2|                     replace:: ``parenthood_r2``
+.. _parenthood_r2:                     _static/data/parenthood_r2.omv
