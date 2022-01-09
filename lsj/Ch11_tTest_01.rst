@@ -20,7 +20,7 @@ class on a curve. Let’s suppose that the average grade in his class is
 students, it turns out that 20 of them also take psychology classes. Out
 of curiosity, I find myself wondering if the psychology students tend to
 get the same grades as everyone else (i.e., mean 67.5) or do they tend
-to score higher or lower? He emails me the ``zeppo`` dataset, which I
+to score higher or lower? He emails me the |zeppo|_ data set, which I
 use to look at the ``grades`` of those students, in the jamovi
 spreadsheet view,
 
@@ -28,8 +28,8 @@ spreadsheet view,
 
    50 60 60 64 66 66 67 69 70 74 76 76 77 79 79 79 81 82 82 89
 
-and then calculate the mean in ``Exploration`` → ``Descriptives``.\ [#]_ The
-mean value is 72.3.
+and then calculate the mean in ``Exploration`` → ``Descriptives``. The mean
+value is 72.3.
 
 Hmm. It *might* be that the psychology students are scoring a bit higher than
 normal. That sample mean of :math:`\bar{X}` = 72.3 is a fair bit higher than
@@ -228,12 +228,11 @@ Now, as I mentioned earlier, the *z*-test is almost never used in
 practice. It’s so rarely used in real life that the basic installation
 of jamovi doesn’t have a built in function for it. However, the test is
 so incredibly simple that it’s really easy to do one manually. Let’s go
-back to the data from Dr Zeppo’s class. Having loaded the ``grades``
-data, the first thing I need to do is calculate the sample mean, which
-I’ve already done (72.3). We already have the known population standard
-deviation (*σ* = 9.5`), and the value of the population mean
-that the null hypothesis specifies (*µ*\ :sub:`0` = 67.5), and we know
-the sample size (*N* = 20).
+back to the |zeppo|_ data set. Having loaded the ``grades`` data, the first
+thing I need to do is calculate the sample mean, which I’ve already done (72.3).
+We already have the known population standard deviation (*σ* = 9.5`), and the
+value of the population mean that the null hypothesis specifies (*µ*\ :sub:`0`
+= 67.5), and we know the sample size (*N* = 20).
 
 Next, let’s calculate the (true) standard error of the mean (easily done
 with a calculator):
@@ -312,12 +311,6 @@ with unicorns and fairies and leprechauns!
 ------
 
 .. [#]
-   In order to do this I had to change the measurement level for ``X``
-   to ‘Continuous’, as during the opening / import of the csv file
-   jamovi made this a nominal level variable, which isn’t right for my
-   analysis
-
-.. [#]
    Actually this is too strong. Strictly speaking the z test
    only requires that the sampling distribution of the mean be normally
    distributed. If the population is normal then it necessarily follows
@@ -328,3 +321,6 @@ with unicorns and fairies and leprechauns!
    However, in light of the sheer ridiculousness of the assumption that
    the true standard deviation is known, there really isn’t much point
    in going into details on this front!
+
+.. |zeppo|                             replace:: ``zeppo``
+.. _zeppo:                             _static/data/zeppo.omv

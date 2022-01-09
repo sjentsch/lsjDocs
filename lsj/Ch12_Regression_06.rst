@@ -28,11 +28,10 @@ outcome variable
 
 While we’re here, let’s calculate these values ourselves, not by hand
 though. Let’s use something like Excel or another standard spreadsheet
-programme. I have done this by opening up the ``parenthood.csv`` file in
-Excel and saving it as ``parenthood_rsquared.xls`` so that I can work on
-it. The first thing to do is calculate the *Ŷ* values, and
-for the simple model that uses only a single predictor we would do the
-following:
+programme. I have done this by opening up the |parenthood|_ file in a
+spreadsheet (LibreOffice Calc, Excel, Google Sheets) so that we can work
+in it. The first thing to do is calculate the *Ŷ* values, and for the
+simple model that uses only a single predictor we would do the following:
 
 . create a new column called ``Y.pred`` using the formula
 ``= 125.97 + (-8.94 * dani.sleep)``
@@ -56,8 +55,8 @@ and calculate the total sum of squares as well. That’s also pretty
 simple. Calculate the ``SS(tot)`` by:
 
 | . At the bottom of the dani.grump column, calculate the mean value for
-  ``dani.grump`` (NB Excel uses the word ``AVERAGE`` rather than ``mean`` in its
-  function).
+  ``dani.grump`` (NB: LibreOffice and Excel uses the word ``AVERAGE``
+  rather than ``mean`` as function name).
 
 | . Then create a new column, called ``(Y - mean(Y))^2 )`` using the
   formula: ``= (dani.grump - AVERAGE(dani.grump)) ^ 2`` .
@@ -167,3 +166,6 @@ tests for that.
 .. [#]
    And by “sometimes” I mean “almost never”. In practice everyone just calls it
    “*R*-squared”.
+
+.. |parenthood|                        replace:: ``parenthood.csv``
+.. _parenthood:                        _static/data/parenthood.csv

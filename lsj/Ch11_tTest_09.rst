@@ -75,12 +75,11 @@ One sample Wilcoxon test
 
 What about the **one sample Wilcoxon test** (or equivalently, the paired
 samples Wilcoxon test)? Suppose I’m interested in finding out whether
-taking a statistics class has any effect on the happiness of students.
-My data is in the ``happiness.csv`` file. What I’ve measured here is the
-happiness of each student ``before`` taking the class and ``after``
-taking the class, and the ``change`` score is the difference between the
-two. Just like we saw with the *t*-test, there’s no fundamental
-difference between doing a paired-samples test using ``before`` and
+taking a statistics class has any effect on the happiness of students. The
+|happiness|_ data set contains the happiness of each student ``before`` taking
+the class and ``after`` taking the class. The ``change`` score is the
+difference between the two. Just like we saw with the *t*-test, there’s no
+fundamental difference between doing a paired-samples test using ``before`` and
 ``after``, versus doing a one-sample test using the ``change`` scores.
 As before, the simplest way to think about the test is to construct a
 tabulation. The way to do it this time is to take those change scores
@@ -125,3 +124,6 @@ of the test won’t give us a different answer, of course; see
    Actually, there are two different versions of the test statistic that differ
    from each other by a constant value. The version that I’ve described is the
    one that jamovi calculates.
+
+.. |happiness|                         replace:: ``happiness``
+.. _happiness:                         _static/data/happiness.omv

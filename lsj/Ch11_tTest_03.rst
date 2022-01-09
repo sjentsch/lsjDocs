@@ -24,7 +24,7 @@ Anastasia and Bernadette. There are *N*\ :sub:`1` = 15 students in
 Anastasia’s tutorials, and *N*\ :sub:`2` = 18 in Bernadette’s tutorials.
 The research question I’m interested in is whether Anastasia or
 Bernadette is a better tutor, or if it doesn’t make much of a
-difference. Dr Harpo emails me the course grades, in the ``harpo.csv``
+difference. Dr Harpo sends me the |harpo|_ data set with the course grades.
 file. As usual, I’ll load the file into jamovi and have a look at what
 variables it contains - there are three variables, ``ID``, ``grade`` and
 ``tutor``. The ``grade`` variable contains each student’s grade, but it
@@ -477,3 +477,6 @@ of the one sample t-test <Ch11_tTest_02.html#assumptions-of-the-one-sample-t-tes
 .. [#]
    A more correct notation will be introduced in Chapter `Comparing several
    means (one-way ANOVA) <Ch13_ANOVA.html#comparing-several-means-one-way-anova>`__.
+
+.. |harpo|                             replace:: ``harpo``
+.. _harpo:                             _static/data/harpo.omv

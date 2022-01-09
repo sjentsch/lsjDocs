@@ -434,9 +434,9 @@ jamovi in two steps:
 .. ----------------------------------------------------------------------------
 
 Another option is to create an optimally-weighted factor score index. We can
-use the jamovi ``Rj`` editor to do this in ``R``. Again, there are two steps:
+use the jamovi |Rj|_ editor to do this in ``R``. Again, there are two steps:
 
-#. Use the ``Rj`` editor to run the EFA in ``R`` to the same specification as
+#. Use the |Rj|_ editor to run the EFA in ``R`` to the same specification as
    the one in jamovi (i.e., five factors and Oblimin rotation) and compute
    optimally weighted factor scores. Save the new dataset, with the factor
    scores, to a file (see :numref:`fig-efa10`).
@@ -451,10 +451,10 @@ use the jamovi ``Rj`` editor to do this in ``R``. Again, there are two steps:
 
 .. _fig-efa10:
 .. figure:: ../_images/lsj_efa9.*
-   :alt: Rj editor commands for creating optimally weighted factor scores
+   :alt: ``Rj`` editor commands for creating optimally weighted factor scores
 
-   Rj editor commands for creating optimally weighted factor scores for the
-   five factor solution
+   |Rj|_ editor commands for creating optimally weighted factor scores for
+   the five factor solution
       
 .. ----------------------------------------------------------------------------   
 
@@ -462,16 +462,16 @@ use the jamovi ``Rj`` editor to do this in ``R``. Again, there are two steps:
 .. figure:: ../_images/lsj_efa10.*
    :alt: Newly created data file with new factor score variables
 
-   Newly created data file “bfifactscores.csv” created in the Rj editor and
-   containing the five factor score variables. Note that each of the new factor
-   score variables is labelled corresponding to the order that the factors are
-   listed in the factor loadings table.
-      
+   Newly created data file ``bfifactscores.csv`` created in the |Rj|_ editor,
+   and containing the five factor score variables. Note that each of the new
+   factor score variables is labelled corresponding to the order that the
+   factors are listed in the factor loadings table.
+
 .. ----------------------------------------------------------------------------
 
 Now you can go ahead and undertake further analyses, using either the factor-
 based scores (a mean scale score approach) or using the optimally-weighted
-factor scores calculated via the ``Rj`` editor. Your choice! For example, one
+factor scores calculated via the |Rj|_ editor. Your choice! For example, one
 thing you might like to do is see whether there are any gender differences in
 each of our personality scales. We did this for the Agreeableness score that we
 calculated using the factor-based score approach, and although the plot (see
@@ -563,3 +563,6 @@ information to include in your write-up:
 
 .. [#]
    remembering to first reverse score some variables if necessary
+   
+.. |Rj|                                replace:: ``Rj``
+.. _Rj:                                https://docs.jamovi.org/_pages/Rj_overview.html

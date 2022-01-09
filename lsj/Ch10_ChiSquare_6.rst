@@ -17,7 +17,7 @@ currently being burned at the stake.\ [#]_ Unfortunately for the
 scientist (but rather fortunately for the general populace), it’s
 actually quite hard to find people in the process of being set on fire,
 so the cell counts are awfully small in some cases. A contingency table
-of the ``salem.csv`` data illustrates the point:
+of the |salem| data set illustrates the point:
 
 .. code-block:: R
 
@@ -76,11 +76,11 @@ extreme. This then gives us the *p*-value.
 
 You can specify this test in jamovi from a check box in the ‘Statistics’
 options of the ‘Contingency Tables’ analysis. When you do this with the
-data from the ``salem.csv`` file, the Fisher exact test statistic is
-shown in the results. The main thing we’re interested in here is the
-*p*-value, which in this case is small enough (*p* = 0.036) to
-justify rejecting the null hypothesis that people on fire are just as
-happy as people not on fire (see :numref:`fig-Fisher`).
+|salem| data set, the Fisher exact test statistic is shown in the results.
+The main thing we’re interested in here is the *p*-value, which in this
+case is small enough (*p* = 0.036) to justify rejecting the null hypothesis
+that people on fire are just as happy as people not on fire
+(see :numref:`fig-Fisher`).
 
 .. ----------------------------------------------------------------------------
 
@@ -103,3 +103,6 @@ happy as people not on fire (see :numref:`fig-Fisher`).
    Not surprisingly, the Fisher exact test is motivated by Fisher’s
    interpretation of a *p*-value, not Neyman’s! See Section `The p value of
    a test <Ch09_HypothesisTesting_05.html#the-p-value-of-a-test>`__.
+   
+.. |salem|                             replace:: ``salem``
+.. _salem:                             _static/data/salem.omv

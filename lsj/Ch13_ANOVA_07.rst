@@ -85,7 +85,7 @@ the tasks was counterbalanced between participants. Each task consisted
 of a series of 10 attempts. The number of attempts successfully
 completed by each patient are shown in :numref:`tab-RManova`.
 Enter these data into jamovi ready for analysis (or take a short-cut and
-load up the ``broca.csv`` file).
+load the |broca|_ data set).
 
 To perform a one-way related ANOVA in jamovi, open the one-way repeated
 measures ANOVA dialogue box, as in :numref:`fig-RManova1`, via
@@ -218,3 +218,6 @@ tests between Speech and Syntax task performance.
 
 .. [#]
    (n - k): (number of subjects - number of groups)
+
+.. |broca|                             replace:: ``broca``
+.. _broca:                             _static/data/broca.omv

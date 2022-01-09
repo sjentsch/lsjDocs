@@ -12,7 +12,7 @@ Creating tables for single variables
 
 Let’s start with a simple example. As a parent of a small child I naturally
 spend a lot of time watching TV shows like *In the Night Garden*. In the
-``nightgarden.csv`` file, I’ve transcribed a short section of the dialogue. The
+|nightgarden| data set, I’ve transcribed a short section of the dialogue. The
 file contains two variables of interest, ``speaker`` and ``utterance``. Open up
 this data set in jamovi and take a look at the data in the ``Data`` view. You
 will see that the data looks something like this:
@@ -121,3 +121,8 @@ set), 100% of the time it’s a Tombliboo saying it.
    column percentages
    
 .. ----------------------------------------------------------------------------
+
+-----
+
+.. |nightgarden|                       replace:: ``nightgarden``
+.. _nightgarden:                       _static/data/nightgarden.omv

@@ -331,8 +331,7 @@ and omit the tedious details about *why* it’s done this way. Suppose we
 construct a frequency table for the raw data, and let f\ :sub:`j` be the
 number of observations that have the *j*-th unique value. This
 might sound a bit abstract, so here’s a concrete example from the
-frequency table of ``mood.gain`` from the ``clinicaltrials.csv`` data
-set:
+frequency table of ``mood.gain`` from the |clinicaltrials|_ data set:
 
 === === === === === === === === === === === === === ===
 0.1 0.2 0.3 0.4 0.5 0.6 0.8 0.9 1.1 1.2 1.3 1.4 1.7 1.8
@@ -364,7 +363,7 @@ Despite the horror that we’ve gone through in trying to understand what the
 Kruskal-Wallis test actually does, it turns out that running the test is pretty
 painless, since jamovi has an analysis as part of the ANOVA analysis set called
 ``Non-Parametric`` - ``One Way ANOVA (Kruskall-Wallis)``. Most of the time
-you’ll have data like the ``clinicaltrial`` data set, in which you have your
+you’ll have data like the |clinicaltrial|_ data set, in which you have your
 outcome variable ``mood.gain`` and a grouping variable ``drug``. If so, you can
 just go ahead and run the analysis in jamovi. What this gives us is a
 Kruskal-Wallis χ² = 12.076, df = 2, *p*-value = 0.00239, as in
@@ -384,3 +383,6 @@ Kruskal-Wallis χ² = 12.076, df = 2, *p*-value = 0.00239, as in
 
 .. [#]
    A technical term.
+   
+.. |clinicaltrial|                     replace:: ``clinicaltrial``
+.. _clinicaltrial:                     _static/data/clinicaltrial.omv

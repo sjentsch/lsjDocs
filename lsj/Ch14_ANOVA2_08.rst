@@ -33,7 +33,7 @@ qualitative ideas. The basic idea in Tukey’s HSD is to examine all
 relevant pairwise comparisons between groups, and it’s only really
 appropriate to use Tukey’s HSD if it is *pairwise* differences that
 you’re interested in.\ [#]_ For instance, earlier we conducted a
-factorial ANOVA using the ``clinicaltrial.csv`` data set, and where we
+factorial ANOVA using the |clinicaltrial|_ data set, and where we
 specified a main effect for drug and a main effect of therapy we would
 be interested in the following four comparisons:
 
@@ -77,7 +77,7 @@ applied. This, along with the corresponding results table, is shown in
    Analysis panel for setting up post-hoc test within jamovi's factorial ANOVA
    procedure (the current settings request a Tukey HSD statistic): Unsaturated
    model with the factors ``drug`` and ``therapy`` but without an interaction
-   term (using the ``clinicaltrial`` data set)
+   term (using the |clinicaltrial|_ data set)
    
 .. ----------------------------------------------------------------------------
 
@@ -127,7 +127,7 @@ to before, but with a lot more comparisons made.
 
    Results table for a Tukey HSD post-hoc test within jamovi's factorial ANOVA
    procedure: Unsaturated model with the factors ``drug`` and ``therapy`` but
-   without an interaction term (using the ``clinicaltrial`` data set)
+   without an interaction term (using the |clinicaltrial|_ data set)
    
 .. ----------------------------------------------------------------------------
 
@@ -140,3 +140,6 @@ to before, but with a lot more comparisons made.
    which is more conservative, and beyond the scope of this book).
    However, in most cases you probably are interested in pairwise group
    differences, so Tukey’s HSD is a pretty useful thing to know about.
+
+.. |clinicaltrial|                     replace:: ``clinicaltrial``
+.. _clinicaltrial:                     _static/data/clinicaltrial.omv

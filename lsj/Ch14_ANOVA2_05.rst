@@ -48,15 +48,14 @@ Running ANCOVA in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 A health psychologist was interested in the effect of routine cycling and
-stress on happiness levels, with age as a covariate. You can find the dataset
-in the file ``ancova.csv``. Open this file in jamovi and then, to undertake an
-ANCOVA, select ``Analyses`` → ``ANOVA`` → ``ANCOVA`` to open the ANCOVA
-analysis window (:numref:`fig-ancova1`). Highlight the dependent variable
-``happiness`` and transfer it into the ``Dependent Variable`` text box.
-Highlight the independent variables ``stress`` and ``commute`` and transfer
-them into the ``Fixed Factors`` text box. Highlight the covariate ``age`` and
-transfer it into the ``Covariates`` text box. Then Click on ``Estimated
-Marginal Means`` to bring up the plots and tables options.
+stress on happiness levels, with age as a covariate. Open the |ancova|_ data set
+in jamovi and then, to undertake an ANCOVA, select ``Analyses`` → ``ANOVA`` →
+``ANCOVA`` to open the ANCOVA analysis window (:numref:`fig-ancova1`). Highlight
+the dependent variable ``happiness`` and transfer it into the ``Dependent
+Variable`` text box. Highlight the independent variables ``stress`` and
+``commute`` and transfer them into the ``Fixed Factors`` text box. Highlight the
+covariate ``age`` and transfer it into the ``Covariates`` text box. Then, click
+on ``Estimated Marginal Means`` to bring up the plots and tables options.
 
 .. ----------------------------------------------------------------------------
 
@@ -76,7 +75,7 @@ jamovi results panel (:numref:`fig-ancova2`). The F value for the covariate
 predictor of the dependent variable, happiness. When we look at the estimated
 marginal mean scores (:numref:`fig-ancova3`), adjustments have been made
 (compared to an analysis without the covariate) because of the inclusion of the
-covariate ‘age’ in this ANCOVA. A plot (:numref:`fig-ancova4`) is a good way of
+covariate ``age`` in this ANCOVA. A plot (:numref:`fig-ancova4`) is a good way of
 visualising and interpreting the significant effects.
 
 .. ----------------------------------------------------------------------------
@@ -139,3 +138,8 @@ the covariate and each independent variable in the jamovi
 can be removed. If it is significant then a different and more advanced
 statistical technique might be appropriate (which is beyond the scope of this
 book so you might want to consult a friendly statistician).
+
+-----
+
+.. |ancova|                            replace:: ``ancova``
+.. _ancova:                            _static/data/ancova.omv

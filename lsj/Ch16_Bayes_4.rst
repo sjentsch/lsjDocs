@@ -66,7 +66,7 @@ Paired samples *t*-test
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Back in Section `The paired-samples t-test <Ch11_tTest_05.html#the-paired-samples-t-test>`__
-I discussed the ``chico.csv`` data set in which student grades were measured on
+I discussed the |chico|_ data set in which student grades were measured on
 two tests, and we were interested in finding out whether grades went up from
 test 1 to test 2. Because every student did both tests, the tool we used to
 analyse the data was a paired samples *t*-test. :numref:`fig-bayes3` shows the
@@ -85,44 +85,7 @@ alternative. We could probably reject the null with some confidence!
    
 .. ----------------------------------------------------------------------------
 
-So that’s pretty straightforward: it’s exactly what we’ve been doing
-throughout the book. The output, however, is a little different from
-what you get from ``lm()``. Here’s what we get:
+-----
 
-.. code-block:: rout
-
-   Bayes factor analysis
-   --------------
-   [1] dani.sleep                    : 1.622545e+34 @plusorminus0%
-   [2] day                           : 0.2724027    @plusorminus0%
-   [3] baby.sleep                    : 10018411     @plusorminus0%
-   [4] dani.sleep + day              : 1.016578e+33 @plusorminus0.01%
-   [5] dani.sleep + baby.sleep       : 9.770233e+32 @plusorminus0.01%
-   [6] day + baby.sleep              : 2340755      @plusorminus0%
-   [7] dani.sleep + day + baby.sleep : 7.835625e+31 @plusorminus0%
-
-   Against denominator:
-     Intercept only 
-   ---
-   Bayes factor type: BFlinearModel, JZS
-
-The format of this is pretty familiar. At the bottom we have some
-techical rubbish, and at the top we have some information about the
-Bayes factors. What’s new is the fact that we seem to have *lots* of
-Bayes factors here. What’s all this about?
-
-The trick to understanding this output is to recognise that if we’re
-interested in working out which of the 3 predictor variables are related
-to ``dani.grump``, there are actually 8 possible regression models that
-could be considered. One possibility is the *intercept only model*, in
-which none of the three variables have an effect. At the other end of
-the spectrum is the *full model* in which all three variables matter. So
-what ``regressionBF()`` does is treat the *intercept only* model as the
-null hypothesis, and print out the Bayes factors for all other models
-when compared against that null. For example, if we look at line 4 in
-the table, we see that the evidence is about 10\ :sup:`33` to 1 in
-favour of the claim that a model that includes both ``dani.sleep`` and
-``day`` is better than the intercept only model. Or if we look at line
-1, we can see that the odds are about 1.6 · 10\ :sup:`34` that a
-model containing the ``dani.sleep`` variable (but no others) is better
-than the intercept only model.
+.. |chico|                             replace:: ``chico``
+.. _chico:                             _static/data/chico.omv

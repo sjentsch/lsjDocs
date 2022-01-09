@@ -12,7 +12,7 @@ The data
 ~~~~~~~~
 
 .. _tab-parenthood:
-.. table:: Descriptive statistics for the parenthood data.
+.. table:: Descriptive statistics for the |parenthood|_ data set.
 
    ======================== ==== ===== ===== ====== ======== ====
    variable                 min  max   mean  median std. dev IQR
@@ -28,15 +28,9 @@ to find out how much my infant son’s sleeping habits affect my mood.
 Let’s say that I can rate my grumpiness very precisely, on a scale from
 0 (not at all grumpy) to 100 (grumpy as a very, very grumpy old man or
 woman). And lets also assume that I’ve been measuring my grumpiness, my
-sleeping patterns and my son’s sleeping patterns for quite some time
-now. Let’s say, for 100 days. And, being a nerd, I’ve saved the data as
-a file called ``parenthood.csv``. If we load the data we can see that
-the file contains four variables ``dani.sleep``, ``baby.sleep``,
-``dani.grump`` and ``day``. Note that when you first load this data set
-jamovi may not have guessed the data type for each variable correctly,
-in which case you should fix it: ``dani.sleep``, ``baby.sleep``,
-``dani.grump`` and ``day`` can be specified as continuous variables, and
-``ID`` is a nominal(integer) variable.\ [#]_
+sleeping patterns and my son’s sleeping patterns for 100 days. The data
+are stored in the |parenthood|_ data set, that contains four variables
+``dani.sleep``, ``baby.sleep``, ``dani.grump`` and ``day``.
 
 Next, I’ll take a look at some basic descriptive statistics and, to give
 a graphical depiction of what each of the three interesting variables
@@ -54,9 +48,9 @@ practice, but other parents tell me that it’s pretty standard.
 
 .. _fig-grumpHist:
 .. figure:: ../_images/lsj_grumpHist.*
-   :alt: Histograms for three variables from the parenthood data set
+   :alt: Histograms for three variables from the ``parenthood`` data set
 
-   Histograms for the three interesting variables in the ``parenthood`` data
+   Histograms for the three interesting variables in the |parenthood|_ data
    set
    
 .. ----------------------------------------------------------------------------
@@ -83,7 +77,7 @@ how many hours I slept.
 
 .. _fig-grumpCor1:
 .. figure:: ../_images/lsj_grumpCor1.*
-   :alt: Scatterplots between dani.sleep and baby.sleep to dani.grump
+   :alt: Scatterplots between ``dani.sleep`` and ``baby.sleep`` to ``dani.grump``
 
    Scatterplots showing the relationship between ``dani.sleep`` and
    ``dani.grump`` (left panel) and the relationship between ``baby.sleep`` and
@@ -196,10 +190,11 @@ variables across into the box on the right to get the output in
 
 .. _fig-correlations:
 .. figure:: ../_images/lsj_correlations.*
-   :alt: jamovi screenshot with correlations in the parenthood dataset
+   :alt: jamovi screenshot with correlations in the ``parenthood`` data set
 
    jamovi screenshot showing correlations between variables in the
-   ``parenthood`` dataset
+   |parenthood|_ data set
+
 .. ----------------------------------------------------------------------------
 
 Interpreting a correlation
@@ -385,11 +380,6 @@ box in the ``Correlation Matrix`` analysis panel.
 ------
 
 .. [#]
-   I’ve noticed that in some versions of jamovi you can also specify an ``ID``
-   variable type, but for our purposes it does not matter how we specify the
-   ID variable as we won’t be including it in any analyses.
-
-.. [#]
    Actually, even that table is more than I’d bother with. In practice, most
    people pick *one* measure of central tendency, and *one* measure of
    variability only.
@@ -400,3 +390,6 @@ box in the ``Correlation Matrix`` analysis panel.
 
 .. [#]
    This is an oversimplification, but it’ll do for our purposes.
+
+.. |parenthood|                        replace:: ``parenthood``
+.. _parenthood:                        _static/data/parenthood.omv
