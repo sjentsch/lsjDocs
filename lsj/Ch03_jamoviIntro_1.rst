@@ -12,10 +12,10 @@ can download it from the jamovi homepage, which is:
 
    `https://www.jamovi.org <https://www.jamovi.org>`__
 
-At the top of the page, under the heading “Download”, you’ll see
-separate links for Windows users, Mac users, and Linux users. If you
-follow the relevant link you’ll see that the online instructions are
-pretty self-explanatory.\ [#]_
+At the top of the page, under the heading `“Download”
+<https://www.jamovi.org/download.html>`__, you’ll see separate links for
+Windows users, Mac users, and Linux users. If you follow the relevant link
+you’ll see that the online instructions are pretty self-explanatory.\ [#]_
 
 Starting up jamovi
 ~~~~~~~~~~~~~~~~~~

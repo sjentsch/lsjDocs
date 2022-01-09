@@ -167,7 +167,7 @@ that are especially important from the perspective of this book:
 
 There are also several other kinds of data file that you might want to
 import into jamovi. For instance, you might want to open Microsoft Excel
-spreadsheets (``.xls`` files), or data files that have been saved in the
+spreadsheets (``.xlsx`` files), or data files that have been saved in the
 native file formats for other statistics software, such as SPSS or SAS.
 Whichever file formats you are using, it’s a good idea to create a
 folder or folders especially for your jamovi data sets and analyses and
@@ -181,7 +181,7 @@ value” file, also called a CSV file, and usually bearing the file
 extension ``.csv``. CSV files are just plain old-fashioned text files
 and what they store is basically just a table of data. This is
 illustrated in :numref:`fig-booksalescsv`, which shows a file called
-``booksales.csv`` that I’ve created. As you can see, each row represents
+|booksales|_ that I’ve created. As you can see, each row represents
 the book sales data for one month. The first row doesn’t contain actual
 data though, it has the names of the variables.
 
@@ -191,7 +191,7 @@ data though, it has the names of the variables.
 .. figure:: ../_images/lsj_booksalescsv.*
    :alt: ``booksales.csv`` data file
 
-   The ``booksales.csv`` data file. On the left I’ve opened the file using a spreadsheet
+   The |booksales|_ data file. On the left I’ve opened the file using a spreadsheet
    program (LibreOffice), which shows that the file is basically a table. On the right
    the same file is open in a standard text editor (the TextEdit program on a Mac),
    which shows how the file is formatted. The entries in the table are wrapped in quote
@@ -226,7 +226,7 @@ There are a few things that you can check to make sure that the data
 gets imported correctly:
 
 -  Heading. Does the first row of the file contain the names for each
-   variable - a “header” row? The ``booksales.csv`` file has a header,
+   variable - a “header” row? The |booksales|_ file has a header,
    so that’s a yes.
 
 -  Separator. What character is used to separate different entries? In
@@ -240,7 +240,7 @@ gets imported correctly:
 
 -  Quote. What character is used to denote a block of text? That’s
    usually going to be a double quote mark (``"``). It is for the
-   ``booksales.csv`` file.
+   |booksales|_ file.
 
 Throughout this book I’ve assumed that your data are stored as a jamovi
 ``.omv`` file or as a “properly” formatted CSV file. However, in real
@@ -270,7 +270,7 @@ change are:
 
 -  ``quote``. It’s conventional in CSV files to include a quoting
    character for textual data. As you can see by looking at the
-   ``booksales.csv`` file, this is usually a double quote character,
+   |booksales|_ file, this is usually a double quote character,
    ``"``. But sometimes there is no quoting character at all, or you
    might see a single quote mark ``’`` used instead.
 
@@ -325,3 +325,6 @@ and STATA files.
 .. [#]
    I know this is a bit of a fudge, but it does work and hopefully this
    will be fixed in a later version of jamovi.
+   
+.. |booksales|                         replace:: ``booksales.csv``
+.. _booksales:                         _static/data/booksales.csv

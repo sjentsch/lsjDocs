@@ -11,7 +11,7 @@ of the data. And because they do so in a fairly compact way box plots
 have become a very popular statistical graphic, especially during the
 exploratory stage of data analysis when you’re trying to understand the
 data yourself. Let’s have a look at how they work, again using the
-``afl.margins`` data as our example.
+``afl.margins`` data from the |aflsmall_margins|_ file as our example.
 
 .. ----------------------------------------------------------------------------
 
@@ -19,7 +19,8 @@ data yourself. Let’s have a look at how they work, again using the
 .. figure:: ../_images/lsj_boxplot1.*
    :alt: Box plot of ``afl.margins``
 
-   Box plot of the ``afl.margins`` variable plotted in jamovi
+   Box plot of the ``afl.margins`` variable from the |aflsmall_margins|_ file
+   plotted in jamovi
    
 .. ----------------------------------------------------------------------------
 
@@ -60,8 +61,8 @@ better to just use a simple box plot.
 .. figure:: ../_images/lsj_boxplot2.*
    :alt: Violin plot of ``afl.margins``
 
-   Violin plot of the ``afl.margins`` variable plotted in jamovi, alsow showing
-   a box plot and data points
+   Violin plot of the ``afl.margins`` variable from the |aflsmall_margins|_
+   file plotted in jamovi, alsow showing a box plot and data points
    
 .. ----------------------------------------------------------------------------
 
@@ -70,8 +71,8 @@ Drawing multiple box plots
 
 One last thing. What if you want to draw multiple box plots at once? Suppose,
 for instance, I wanted separate box plots showing the AFL margins not just for
-2010 but for every year between 1987 and 2010. To do that the first thing we``ll
-have to do is find the data. These are stored in the ``aflsmall2.csv`` file. So
+2010 but for every year between 1987 and 2010. To do that the first thing we’ll
+have to do is find the data. These are stored in the |aflsmall2|_ data set. So
 let’s load it into jamovi and see what is in it. You will see that it is a
 pretty big data set. It contains 4296 games and the variables that we’re
 interested in. What we want to do is have jamovi draw box plots for the
@@ -103,7 +104,7 @@ space: no chance at all that the reader is going to learn anything useful.
    :alt: Multiple box plots: ``margin`` split by ``year`` from ``aflsmall2`` 
 
    Multiple box plots created in jamovi, for the variables ``margin`` split by
-   ``year`` in the ``aflsmall2`` data set
+   ``year`` in the |aflsmall2|_ data set
    
 .. ----------------------------------------------------------------------------
 
@@ -187,3 +188,11 @@ want to use the data *for*. You really need to exercise good judgement here. If
 the outlier looks legitimate to you, then keep it. In any case, I’ll return to
 the topic again in Section `Model checking
 <Ch12_Regression_10.html#model-checking>`__.
+
+-----
+
+.. |aflsmall_margins|                  replace:: ``aflsmall_margins.omv``
+.. _aflsmall_margins:                  https://cloud.jamovi.org/?open=https://github.com/sjentsch/lsjDocs/raw/master/_static/data/aflsmall_margins.omv
+
+.. |aflsmall2|                         replace:: ``aflsmall2.omv``
+.. _aflsmall2:                         https://cloud.jamovi.org/?open=https://github.com/sjentsch/lsjDocs/raw/master/_static/data/aflsmall2.omv

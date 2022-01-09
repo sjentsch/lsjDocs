@@ -220,8 +220,8 @@ To try to get a sense of why you need to pay attention to the
 differences between the mean and the median let’s consider a real life
 example. Since I tend to mock journalists for their poor scientific and
 statistical knowledge, I should give credit where credit is due. This is
-an excellent article on the ABC news website\ [#]_ from 24 September,
-2010:
+described in an excellent article `Housing bubble debate boils over 
+<www.abc.net.au/news/stories/2010/09/24/3021480.htm>`__:
 
    Senior Commonwealth Bank executives have travelled the world in the
    past couple of weeks with a presentation showing how Australian house
@@ -294,8 +294,8 @@ Mode
 
 The mode of a sample is very simple. It is the value that occurs most
 frequently. We can illustrate the mode using a different AFL variable:
-who has played in the most finals? Open the ``aflsmall_finalists`` file
-and take a look at the ``afl.finalists`` variable, see 
+who has played in the most finals? Open the |aflsmall_finalists|_ data
+set and take a look at the ``afl.finalists`` variable, see 
 :numref:`fig-aflsmall_finalists`. This variable contains the names of
 all 400 teams that played in all 200 finals matches played during the
 period 1987 to 2010.
@@ -305,10 +305,10 @@ period 1987 to 2010.
 
 .. _fig-aflsmall_finalists:
 .. figure:: ../_images/lsj_aflsmall_finalists.png
-   :alt: Variables in aflsmall_finalists.csv
+   :alt: Variables in ``aflsmall_finalists``
 
-   Screenshot of jamovi showing the variables stored in the aflsmall
-   finalists.csv file
+   Screenshot of jamovi showing the variables stored in the
+   |aflsmall_finalists|_ data set
    
 .. ----------------------------------------------------------------------------
 
@@ -325,10 +325,10 @@ something like :numref:`fig-aflsmall_finalists_mode`.
 
 .. _fig-aflsmall_finalists_mode:
 .. figure:: ../_images/lsj_aflsmall_finalists_mode.png
-   :alt: Variables in aflsmall_finalists.csv
+   :alt: Frequency table for ``afl.margins`` in ``aflsmall_finalists``
 
    Screenshot of jamovi showing the frequency table for the
-   afl.finalists variable
+   ``afl.finalists`` variable in the |aflsmall_finalists|_ data set
    
 .. ----------------------------------------------------------------------------
 
@@ -369,7 +369,7 @@ checkbox marked ``Mode`` and you will see the modal value presented in the
 
 .. _fig-aflsmall_margins_mode:
 .. figure:: ../_images/lsj_aflsmall_margins_mode.png
-   :alt: Variables in aflsmall_finalists.csv
+   :alt: Modal value in of ``afl.margins`` in ``aflsmall_finalists``
 
    Screenshot of jamovi showing the modal value for the afl.margins variable
    
@@ -384,7 +384,6 @@ checkbox marked ``Mode`` and you will see the modal value presented in the
    multiplication of lots of numbers, because multiplications are also called
    “products” we use the *Π* symbol for this (the Greek upper case pi, which is
    the analogue of the letter P).
-
-.. [#]
-   `Housing bubble debate boils over 
-   <www.abc.net.au/news/stories/2010/09/24/3021480.htm>`__
+   
+.. |aflsmall_finalists|                replace:: ``aflsmall_finalists.omv``
+.. _aflsmall_finalists:                https://cloud.jamovi.org/?open=https://github.com/sjentsch/lsjDocs/raw/master/_static/data/aflsmall_finalists.omv

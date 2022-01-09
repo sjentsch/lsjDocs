@@ -10,17 +10,17 @@ opposed to inferential statistics) is all about. In fact, to many people
 the term “statistics” is synonymous with descriptive statistics. It is
 this topic that we’ll consider in this chapter, but before going into
 any details, let’s take a moment to get a sense of why we need
-descriptive statistics. To do this, let’s open the ``aflsmall_margins``
-file and see what variables are stored in the file.
+descriptive statistics. To do this, let’s open the |aflsmall_margins|_
+data set and see what variables are stored in the file.
 
 .. ----------------------------------------------------------------------------
 
 .. _fig-aflsmall_margins:
 .. figure:: ../_images/lsj_aflsmall_margins.*
-   :alt: Variables stored in the aflsmall margins.csv
+   :alt: Variables stored in ``aflsmall margins``
 
-   Screenshot of jamovi showing the variables stored in the file
-   aflsmall_margins.csv
+   Screenshot of jamovi showing the variables in the |aflsmall_margins|_
+   data set
    
 .. ----------------------------------------------------------------------------
 
@@ -72,3 +72,6 @@ representation of the ``afl.margins`` data.
    Note for non-Australians: the AFL is an Australian rules football
    competition. You don’t need to know anything about Australian rules
    in order to follow this section.
+
+.. |aflsmall_margins|                  replace:: ``aflsmall_margins.omv``
+.. _aflsmall_margins:                  https://cloud.jamovi.org/?open=https://github.com/sjentsch/lsjDocs/raw/master/_static/data/aflsmall_margins.omv

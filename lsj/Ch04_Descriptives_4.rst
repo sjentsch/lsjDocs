@@ -6,9 +6,9 @@ Descriptive statistics separately for each group
 It is very commonly the case that you find yourself needing to look at
 descriptive statistics broken down by some grouping variable. This is
 pretty easy to do in jamovi. For instance, let’s say I want to look at
-the descriptive statistics for some ``clin.trial`` data, broken down
+the descriptive statistics for some ``clinicaltrial`` data, broken down
 separately by ``therapy`` type. This is a new data set, one that you’ve
-never seen before. The data is stored in the ``clinicaltrial.csv`` file
+never seen before. The data is stored in the |clinicaltrial|_ data set
 and we’ll use it a lot in Chapter `Comparing several means (one-way ANOVA)
 <Ch13_ANOVA.html#comparing-several-means-one-way-anova>`__ (you can
 find a complete description of the data at the start of that chapter).
@@ -18,10 +18,10 @@ Let’s load it and see what we’ve got:
 
 .. _fig-clinicaltrial:
 .. figure:: ../_images/lsj_clinicaltrial.*
-   :alt: Variables in ``clinicaltrial.csv``
+   :alt: Variables in ``clinicaltrial``
 
    Screenshot of jamovi showing the variables stored in the
-   ``clinicaltrial.csv`` file
+   |clinicaltrial|_ data set
       
 .. ----------------------------------------------------------------------------
 
@@ -45,10 +45,10 @@ and you should get something like :numref:`fig-clinicaltrial_grouping`.
 
 .. _fig-clinicaltrial_grouping:
 .. figure:: ../_images/lsj_clinicaltrial_grouping.*
-   :alt: Variables in ``clinicaltrial.csv``split by therapy type
+   :alt: Variables in ``clinicaltrial`` split by therapy type
 
    Screenshot of jamovi showing ``Descriptives`` of the variables
-   in ``clinicaltrial.csv`` split by therapy type
+   in the |clinicaltrial|_ data set split by therapy type
       
 .. ----------------------------------------------------------------------------
 
@@ -72,3 +72,6 @@ stating something like ``NaN`` or ``Inf``.\ [#]_
    only very small or very large numbers are expressed in this way, for
    example **6.51e-16**, which would be quite unwieldy to write out in
    the normal way.
+   
+.. |clinicaltrial|                     replace:: ``clinicaltrial.omv``
+.. _clinicaltrial:                     https://cloud.jamovi.org/?open=https://github.com/sjentsch/lsjDocs/raw/master/_static/data/clinicaltrial.omv

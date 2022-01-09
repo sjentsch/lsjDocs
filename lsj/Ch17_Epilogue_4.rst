@@ -17,7 +17,7 @@ Miscellaneous topics
    guess his weight, you'd guess that he is closer to her than to them. Maybe
    you'd make some correction for the fact that Adam and Tim are males and
    Briony and Carol are females. The statistical name for this kind of guessing
-   is ``imputation''. Doing imputation safely is hard, but it's important,
+   is “imputation”. Doing imputation safely is hard, but it's important,
    especially when the missing data are missing in a systematic way. Because of
    the fact that people who are overweight are often pressured to feel poorly
    about their weight (often thanks to public health campaigns), we actually
