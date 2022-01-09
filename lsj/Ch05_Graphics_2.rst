@@ -191,8 +191,8 @@ the topic again in Section `Model checking
 
 -----
 
-.. |aflsmall_margins|                  replace:: ``aflsmall_margins.omv``
-.. _aflsmall_margins:                  https://cloud.jamovi.org/?open=https://github.com/sjentsch/lsjDocs/raw/master/_static/data/aflsmall_margins.omv
+.. |aflsmall_margins|                  replace:: ``aflsmall_margins``
+.. _aflsmall_margins:                  _static/data/aflsmall_margins.omv
 
-.. |aflsmall2|                         replace:: ``aflsmall2.omv``
-.. _aflsmall2:                         https://cloud.jamovi.org/?open=https://github.com/sjentsch/lsjDocs/raw/master/_static/data/aflsmall2.omv
+.. |aflsmall2|                         replace:: ``aflsmall2``
+.. _aflsmall2:                         _static/data/aflsmall2.omv

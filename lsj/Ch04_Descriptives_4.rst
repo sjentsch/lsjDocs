@@ -73,5 +73,5 @@ stating something like ``NaN`` or ``Inf``.\ [#]_
    example **6.51e-16**, which would be quite unwieldy to write out in
    the normal way.
    
-.. |clinicaltrial|                     replace:: ``clinicaltrial.omv``
-.. _clinicaltrial:                     https://cloud.jamovi.org/?open=https://github.com/sjentsch/lsjDocs/raw/master/_static/data/clinicaltrial.omv
+.. |clinicaltrial|                     replace:: ``clinicaltrial``
+.. _clinicaltrial:                     _static/data/clinicaltrial.omv

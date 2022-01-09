@@ -385,5 +385,5 @@ checkbox marked ``Mode`` and you will see the modal value presented in the
    “products” we use the *Π* symbol for this (the Greek upper case pi, which is
    the analogue of the letter P).
    
-.. |aflsmall_finalists|                replace:: ``aflsmall_finalists.omv``
-.. _aflsmall_finalists:                https://cloud.jamovi.org/?open=https://github.com/sjentsch/lsjDocs/raw/master/_static/data/aflsmall_finalists.omv
+.. |aflsmall_finalists|                replace:: ``aflsmall_finalists``
+.. _aflsmall_finalists:                _static/data/aflsmall_finalists.omv
