@@ -31,7 +31,7 @@ for this thing that we calculate to guide our choices is a **test
 statistic**.
 
 Having chosen a test statistic, the next step is to state precisely
-which values of the test statistic would cause is to reject the null
+which values of the test statistic would cause us to reject the null
 hypothesis, and which values would cause us to keep it. In order to do
 so we need to determine what the **sampling distribution of the test
 statistic** would be if the null hypothesis were actually true (we

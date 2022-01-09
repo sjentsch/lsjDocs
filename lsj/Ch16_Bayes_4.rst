@@ -93,13 +93,13 @@ what you get from ``lm()``. Here’s what we get:
 
    Bayes factor analysis
    --------------
-   [1] dan.sleep                    : 1.622545e+34 @plusorminus0%
-   [2] day                          : 0.2724027    @plusorminus0%
-   [3] baby.sleep                   : 10018411     @plusorminus0%
-   [4] dan.sleep + day              : 1.016578e+33 @plusorminus0.01%
-   [5] dan.sleep + baby.sleep       : 9.770233e+32 @plusorminus0.01%
-   [6] day + baby.sleep             : 2340755      @plusorminus0%
-   [7] dan.sleep + day + baby.sleep : 7.835625e+31 @plusorminus0%
+   [1] dani.sleep                    : 1.622545e+34 @plusorminus0%
+   [2] day                           : 0.2724027    @plusorminus0%
+   [3] baby.sleep                    : 10018411     @plusorminus0%
+   [4] dani.sleep + day              : 1.016578e+33 @plusorminus0.01%
+   [5] dani.sleep + baby.sleep       : 9.770233e+32 @plusorminus0.01%
+   [6] day + baby.sleep              : 2340755      @plusorminus0%
+   [7] dani.sleep + day + baby.sleep : 7.835625e+31 @plusorminus0%
 
    Against denominator:
      Intercept only 
@@ -113,7 +113,7 @@ Bayes factors here. What’s all this about?
 
 The trick to understanding this output is to recognise that if we’re
 interested in working out which of the 3 predictor variables are related
-to ``dan.grump``, there are actually 8 possible regression models that
+to ``dani.grump``, there are actually 8 possible regression models that
 could be considered. One possibility is the *intercept only model*, in
 which none of the three variables have an effect. At the other end of
 the spectrum is the *full model* in which all three variables matter. So
@@ -121,8 +121,8 @@ what ``regressionBF()`` does is treat the *intercept only* model as the
 null hypothesis, and print out the Bayes factors for all other models
 when compared against that null. For example, if we look at line 4 in
 the table, we see that the evidence is about 10\ :sup:`33` to 1 in
-favour of the claim that a model that includes both ``dan.sleep`` and
+favour of the claim that a model that includes both ``dani.sleep`` and
 ``day`` is better than the intercept only model. Or if we look at line
 1, we can see that the odds are about 1.6 · 10\ :sup:`34` that a
-model containing the ``dan.sleep`` variable (but no others) is better
+model containing the ``dani.sleep`` variable (but no others) is better
 than the intercept only model.

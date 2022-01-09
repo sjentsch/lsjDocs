@@ -10,7 +10,7 @@ Bayesian statistics
      lowest species of moral evidence. A wise man, therefore,
      proportions his belief to the evidence.*
      
-   -- David Hume\ [#]_
+   -- `David Hume <https://en.wikiquote.org/wiki/David_Hume>`__
 
 The ideas I’ve presented to you in this book describe inferential
 statistics from the frequentist perspective. I’m not alone in doing
@@ -50,8 +50,3 @@ t-tests <Ch16_Bayes_4.html#bayesian-t-tests>`__.
    Ch16_Bayes_3
    Ch16_Bayes_4
    Ch16_Bayes_5
-
-------
-
-.. [#]
-   https://en.wikiquote.org/wiki/David_Hume

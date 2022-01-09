@@ -90,12 +90,12 @@ coefficients we got were:
 
 .. code-block:: rout
 
-   (Intercept)    dan.sleep   baby.sleep  
-     125.97        -8.95        0.01  
+   (Intercept)    dani.sleep    baby.sleep  
+        125.97         -8.95          0.01
 
 I can’t help but notice that the estimated regression coefficient for
 the ``baby.sleep`` variable is tiny (0.01), relative to the value that
-we get for ``dan.sleep`` (-8.95). Given that these two variables are
+we get for ``dani.sleep`` (-8.95). Given that these two variables are
 absolutely on the same scale (they’re both measured in “hours slept”), I
 find this illuminating. In fact, I’m beginning to suspect that it’s
 really only the amount of sleep that *I* get that matters in order to
@@ -167,7 +167,7 @@ coefficients in the regression model. The first row is the intercept
 term, and the later ones look at each of the predictors. The columns
 give you all of the relevant information. The first column is the actual
 estimate of *b* (e.g., 125.97 for the intercept, and -8.95 for the
-``dan.sleep`` predictor). The second column is the standard error
+``dani.sleep`` predictor). The second column is the standard error
 estimate :math:`\hat\sigma_b`. The third and fourth columns provide the
 lower and upper values for the 95% confidence interval around the
 *b* estimate (more on this later). The fifth column gives you the
@@ -187,7 +187,7 @@ model accounts for 81% of the variability in the outcome measure (and
 82% for the adjusted *R²*). However, when we look back up at the
 *t*-tests for each of the individual coefficients, we have pretty
 strong evidence that the ``baby.sleep`` variable has no significant
-effect. All the work in this model is being done by the ``dan.sleep``
+effect. All the work in this model is being done by the ``dani.sleep``
 variable. Taken together, these results suggest that this regression
 model is actually the wrong model for the data. You’d probably be better
 off dropping the ``baby.sleep`` predictor entirely. In other words, the

@@ -28,7 +28,7 @@ One final thing to point out. Whilst jamovi produces some really neat
 default graphics, editing the plots is currently not possible. For more
 advanced graphics and plotting capability the packages available in
 R are much more powerful. One of the most popular graphics systems is
-provided by the ``ggplot2`` package (see http://ggplot2.org/), which is
+provided by the ``ggplot2`` `R package <https://ggplot2.org>`__, which is
 loosely based on “The grammar of graphics” (`Wilkinson, 2006
 <References.html#wilkinson-2006>`__\ ). It’s not for novices. You need
 to have a pretty good grasp of R before you can start using it, and even

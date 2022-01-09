@@ -14,13 +14,13 @@ The data
 .. _tab-parenthood:
 .. table:: Descriptive statistics for the parenthood data.
 
-   ======================= ==== ===== ===== ====== ======== ====
-   variable                min  max   mean  median std. dev IQR
-   ======================= ==== ===== ===== ====== ======== ====
-   Dan’s grumpiness        41   91    63.71 62     10.05    14
-   Dan’s hours slept       4.84 9.00  6.97  7.03   1.02     1.45
-   Dan’s son’s hours slept 3.25 12.07 8.05  7.95   2.07     3.21
-   ======================= ==== ===== ===== ====== ======== ====
+   ======================== ==== ===== ===== ====== ======== ====
+   variable                 min  max   mean  median std. dev IQR
+   ======================== ==== ===== ===== ====== ======== ====
+   Dani’s grumpiness        41   91    63.71 62     10.05    14
+   Dani’s hours slept       4.84 9.00  6.97  7.03   1.02     1.45
+   Dani’s son’s hours slept 3.25 12.07 8.05  7.95   2.07     3.21
+   ======================== ==== ===== ===== ====== ======== ====
 
 Let’s turn to a topic close to every parent’s heart: sleep. The data set
 we’ll use is fictitious, but based on real events. Suppose I’m curious
@@ -31,11 +31,11 @@ woman). And lets also assume that I’ve been measuring my grumpiness, my
 sleeping patterns and my son’s sleeping patterns for quite some time
 now. Let’s say, for 100 days. And, being a nerd, I’ve saved the data as
 a file called ``parenthood.csv``. If we load the data we can see that
-the file contains four variables ``dan.sleep``, ``baby.sleep``,
-``dan.grump`` and ``day``. Note that when you first load this data set
+the file contains four variables ``dani.sleep``, ``baby.sleep``,
+``dani.grump`` and ``day``. Note that when you first load this data set
 jamovi may not have guessed the data type for each variable correctly,
-in which case you should fix it: ``dan.sleep``, ``baby.sleep``,
-``dan.grump`` and ``day`` can be specified as continuous variables, and
+in which case you should fix it: ``dani.sleep``, ``baby.sleep``,
+``dani.grump`` and ``day`` can be specified as continuous variables, and
 ``ID`` is a nominal(integer) variable.\ [#]_
 
 Next, I’ll take a look at some basic descriptive statistics and, to give
@@ -67,13 +67,13 @@ The strength and direction of a relationship
 We can draw scatterplots to give us a general sense of how closely
 related two variables are. Ideally though, we might want to say a bit
 more about it than that. For instance, let’s compare the relationship
-between ``dan.sleep`` and ``dan.grump`` (:numref:`fig-grumpCor1`, left)
-with that between ``baby.sleep`` and ``dan.grump`` (:numref:`fig-grumpCor1`,
+between ``dani.sleep`` and ``dani.grump`` (:numref:`fig-grumpCor1`, left)
+with that between ``baby.sleep`` and ``dani.grump`` (:numref:`fig-grumpCor1`,
 right). When looking at these two plots side by side, it’s clear that the
 relationship is *qualitatively* the same in both cases: more sleep
 equals less grump! However, it’s also pretty obvious that the
-relationship between ``dan.sleep`` and ``dan.grump`` is *stronger* than
-the relationship between ``baby.sleep`` and ``dan.grump``. The plot on
+relationship between ``dani.sleep`` and ``dani.grump`` is *stronger* than
+the relationship between ``baby.sleep`` and ``dani.grump``. The plot on
 the left is “neater” than the one on the right. What it feels like is
 that if you want to predict what my mood is, it’d help you a little bit
 to know how many hours my son slept, but it’d be more helpful to know
@@ -83,18 +83,18 @@ how many hours I slept.
 
 .. _fig-grumpCor1:
 .. figure:: ../_images/lsj_grumpCor1.*
-   :alt: Scatterplots between dan.sleep and baby.sleep to dan.grump
+   :alt: Scatterplots between dani.sleep and baby.sleep to dani.grump
 
-   Scatterplots showing the relationship between ``dan.sleep`` and
-   ``dan.grump`` (left panel) and the relationship between ``baby.sleep`` and
-   ``dan.grump`` (right panel).
+   Scatterplots showing the relationship between ``dani.sleep`` and
+   ``dani.grump`` (left panel) and the relationship between ``baby.sleep`` and
+   ``dani.grump`` (right panel).
    
 .. ----------------------------------------------------------------------------
 
 In contrast, let’s consider the two scatterplots shown in
 :numref:`fig-grumpCor2`. If we compare the
-scatterplot of ``baby.sleep`` vs. ``dan.grump`` (left) to the
-scatterplot of ``baby.sleep`` vs. ``dan.sleep`` (right), the overall
+scatterplot of ``baby.sleep`` vs. ``dani.grump`` (left) to the
+scatterplot of ``baby.sleep`` vs. ``dani.sleep`` (right), the overall
 strength of the relationship is the same, but the direction is
 different. That is, if my son sleeps more, I get *more* sleep (positive
 relationship, right hand side), but if he sleeps more then I get *less*
@@ -104,11 +104,11 @@ grumpy (negative relationship, left hand side).
 
 .. _fig-grumpCor2:
 .. figure:: ../_images/lsj_grumpCor2.*
-   :alt: Scatterplots between baby.sleep to dan.grump and dan.sleep
+   :alt: Scatterplots between baby.sleep to dani.grump and dani.sleep
 
    Scatterplots showing the relationship between ``baby.sleep`` and
-   ``dan.grump`` (left panel) and the relationship between ``baby.sleep`` and
-   ``dan.sleep`` (right panel).
+   ``dani.grump`` (left panel) and the relationship between ``baby.sleep`` and
+   ``dani.sleep`` (right panel).
    
 .. ----------------------------------------------------------------------------
 
@@ -161,8 +161,8 @@ also negative. In other words, the covariance captures the basic qualitative
 idea of correlation. Unfortunately, the raw magnitude of the covariance isn’t
 easy to interpret as it depends on the units in which *X* and *Y* are expressed
 and, worse yet, the actual units that the covariance itself is expressed in are
-really weird. For instance, if *X* refers to the ``dan.sleep`` variable (units:
-hours) and *Y* refers to the ``dan.grump`` variable (units: grumps), then the
+really weird. For instance, if *X* refers to the ``dani.sleep`` variable (units:
+hours) and *Y* refers to the ``dani.grump`` variable (units: grumps), then the
 units for their covariance are “hours × grumps”. And I have no freaking idea
 what that would even mean.
 

@@ -3,48 +3,44 @@
 Miscellaneous topics
 --------------------
 
--  **Missing data.** Suppose you’re doing a survey, and you’re
-   interested in exercise and weight. You send data to four people. Adam
-   says he exercises a lot and is not overweight. Briony says she
-   exercises a lot and is not overweight. Carol says she does not
-   exercise and is overweight. Dan says he does not exercise and refuses
-   to answer the question about his weight. Elaine does not return the
-   survey. You now have a missing data problem. There is one entire
-   survey missing, and one question missing from another one, What do
-   you do about it? Ignoring missing data is not, in general, a safe
-   thing to do. Let’s think about Dan’s survey here. Firstly, notice
-   that, on the basis of my other responses, I appear to be more similar
-   to Carol (neither of us exercise) than to Adam or Briony. So if you
-   were forced to guess my weight, you’d guess that I’m closer to her
-   than to them. Maybe you’d make some correction for the fact that Adam
-   and I are males and Briony and Carol are females. The statistical
-   name for this kind of guessing is “imputation”. Doing imputation
-   safely is hard, but it’s important, especially when the missing data
-   are missing in a systematic way. Because of the fact that people who
-   are overweight are often pressured to feel poorly about their weight
-   (often thanks to public health campaigns), we actually have reason to
-   suspect that the people who are not responding are more likely to be
-   overweight than the people who do respond. Imputing a weight to Dan
-   means that the number of overweight people in the sample will
-   probably rise from 1 out of 3 (if we ignore Dan), to 2 out of 4 (if
-   we impute Dan’s weight). Clearly this matters. But doing it sensibly
-   is more complicated than it sounds. Earlier, I suggested you should
-   treat me like Carol, since we gave the same answer to the exercise
-   question. But that’s not quite right. There is a systematic
-   difference between us. She answered the question, and I didn’t. Given
-   the social pressures faced by overweight people, isn’t it likely that
-   I’m *more* overweight than Carol? And of course this is still
-   ignoring the fact that it’s not sensible to impute a *single* weight
-   to me, as if you actually knew my weight. Instead, what you need to
-   do it is impute a range of plausible guesses (referred to as multiple
-   imputation), in order to capture the fact that you’re more uncertain
-   about my weight than you are about Carol’s. And let’s not get started
-   on the problem posed by the fact that Elaine didn’t send in the
+-  **Missing data.** Suppose you're doing a survey, and you're interested in
+   exercise and weight. You send data to four people. Adam says he exercises a
+   lot and is not overweight. Briony says she exercises a lot and is not
+   overweight. Carol says she does not exercise and is overweight. Tim says he
+   does not exercise and refuses to answer the question about his weight.
+   Elaine does not return the survey. You now have a missing data problem.
+   There is one entire survey missing, and one question missing from another
+   one, What do you do about it? Ignoring missing data is not, in general, a
+   safe thing to do. Let's think about Tim's survey here. Firstly, notice that,
+   on the basis of his other responses, he appears to be more similar to Carol
+   (neither of them exercise) than to Adam or Briony. So if you were forced to
+   guess his weight, you'd guess that he is closer to her than to them. Maybe
+   you'd make some correction for the fact that Adam and Tim are males and
+   Briony and Carol are females. The statistical name for this kind of guessing
+   is ``imputation''. Doing imputation safely is hard, but it's important,
+   especially when the missing data are missing in a systematic way. Because of
+   the fact that people who are overweight are often pressured to feel poorly
+   about their weight (often thanks to public health campaigns), we actually
+   have reason to suspect that the people who are not responding are more
+   likely to be overweight than the people who do respond. Imputing a weight to
+   Tim means that the number of overweight people in the sample will probably
+   rise from 1 out of 3 (if we ignore Tim), to 2 out of 4 (if we impute Tim's
+   weight). Clearly this matters. But doing it sensibly is more complicated
+   than it sounds. Earlier, I suggested you should treat Tim like Carol, since
+   they gave the same answer to the exercise question. But that's not quite
+   right. There is a systematic difference between them. She answered the
+   question, and Tim didn't. Given the social pressures faced by overweight
+   people, isn't it likely that Tim is *more* overweight than Carol? And of
+   course this is still ignoring the fact that it's not sensible to impute a
+   *single* weight to Tim, as if you actually knew his weight. Instead, what
+   you need to do it is impute a range of plausible guesses (referred to as
+   multiple imputation), in order to capture the fact that you're more
+   uncertain about Tim's weight than you are about Carol's. And let's not get
+   started on the problem posed by the fact that Elaine didn't send in the
    survey. As you can probably guess, dealing with missing data is an
-   increasingly important topic. In fact, I’ve been told that a lot of
-   journals in some fields will not accept studies that have missing
-   data unless some kind of sensible multiple imputation scheme is
-   followed.
+   increasingly important topic. In fact, I've been told that a lot of journals
+   in some fields will not accept studies that have missing data unless some
+   kind of sensible multiple imputation scheme is followed.  
 
 -  **Power analysis.** In Chapter `Hypothesis testing
    <Ch09_HypothesisTesting.html#hypothesis-testing>`__ I discussed the concept

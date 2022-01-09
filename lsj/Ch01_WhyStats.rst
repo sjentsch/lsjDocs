@@ -26,7 +26,8 @@ Why do we learn statistics?
 -----
    
 .. [#]
-   The quote comes from Auden’s 1946 poem *Under Which Lyre: A
-   Reactionary Tract for the Times*, delivered as part of a commencement
-   address at Harvard University. The history of the poem is kind of
-   interesting: https://harvardmagazine.com/2007/11/a-poets-warning.html
+   The quote comes from Auden’s 1946 poem *Under Which Lyre: A Reactionary
+   Tract for the Times*, delivered as part of a commencement address at Harvard
+   University. The `history of the poem
+   <https://harvardmagazine.com/2007/11/a-poets-warning.html>`__ is kind of
+   interesting.

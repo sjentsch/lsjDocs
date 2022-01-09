@@ -23,8 +23,8 @@ scatterplots in jamovi, using the same ``parenthood`` data set that I used when
 introducing correlations.
 
 Suppose my goal is to draw a scatterplot displaying the relationship between
-the amount of sleep that I get (``dan.sleep``) and how grumpy I am the next day
-(``dan.grump``). There are two different ways in which we can use jamovi to get
+the amount of sleep that I get (``dani.sleep``) and how grumpy I am the next day
+(``dani.grump``). There are two different ways in which we can use jamovi to get
 the plot that we’re after. The first way is to use the ``Plot`` option under
 the ``Regression`` → ``Correlation Matrix`` button, giving us the output shown
 in :numref:`fig-scatterplot1`. Note that jamovi draws a line through the

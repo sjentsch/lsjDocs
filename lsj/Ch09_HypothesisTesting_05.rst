@@ -27,7 +27,7 @@ my ESP study the data I obtained only just fell inside the critical
 region, so I did get a significant effect but it was a pretty near
 thing. In contrast, suppose that I’d run a study in which *X* = 97
 out of my *N* = 100 participants got the answer right. This would
-obviously be significant too but my a much larger margin, such that
+obviously be significant too but by a much larger margin, such that
 there’s really no ambiguity about this at all. The procedure that I have
 already described makes no distinction between the two. If I adopt the
 standard convention of allowing *α* = 0.05 as my acceptable

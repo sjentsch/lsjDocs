@@ -19,7 +19,7 @@ count as a psychological measurement:
 
 -  My **chromosomal gender** is *male*.
 
--  My **self-identified gender** is *male*.\ [#]_
+-  My **self-identified gender** is *female*.
 
 In the short list above, the **bolded part** is “the thing to be
 measured”, and the *italicised part* is “the measurement itself”. In
@@ -165,28 +165,3 @@ things that are closely related to each other:
 
 In practice, even scientists tend to blur the distinction between these
 things, but it’s very helpful to try to understand the differences.
-
-------
-
-.. [#]
-   Well... now this is awkward, isn’t it? This section is one of the
-   oldest parts of the book, and it’s outdated in a rather embarrassing
-   way. I wrote this in 2010, at which point all of those facts *were*
-   true. Revisiting this in 2018, well I’m not 33 any more, but that’s
-   not surprising I suppose. I can’t imagine my chromosomes have
-   changed, so I’m going to guess my karyotype was then and is now XY.
-   The self-identified gender, on the other hand...ah. I suppose the
-   fact that the title page now refers to me as Danielle rather than
-   Daniel might possibly be a giveaway, but I don’t typically identify
-   as “male” on a gender questionnaire these days, and I prefer
-   *“she/her”* pronouns as a default (it’s a long story)! I did think a
-   little about how I was going to handle this in the book, actually.
-   The book has a somewhat distinct authorial voice to it, and I feel
-   like it would be a rather different work if I went back and wrote
-   everything as Danielle and updated all the pronouns in the work.
-   Besides, it would be a lot of work, so I’ve left my name as “Dan”
-   throughout the book, and in any case “Dan” is a perfectly good
-   nickname for “Danielle”, don’t you think? In any case, it’s not a big
-   deal. I only wanted to mention it to make life a little easier for
-   readers who aren’t sure how to refer to me. I still don’t like
-   anchovies though :-)

@@ -323,5 +323,5 @@ and STATA files.
    a valid value.
 
 .. [#]
-   I know this is a bot of a fudge, but it does work and hopefully this
+   I know this is a bit of a fudge, but it does work and hopefully this
    will be fixed in a later version of jamovi.

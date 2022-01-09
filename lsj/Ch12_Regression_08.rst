@@ -105,7 +105,7 @@ coefficients for you using the ``Standardized estimate`` checkbox in the
    
 .. ----------------------------------------------------------------------------
 
-This clearly shows that the ``dan.sleep`` variable has a much stronger
+This clearly shows that the ``dani.sleep`` variable has a much stronger
 effect than the ``baby.sleep`` variable. However, this is a perfect
 example of a situation where it would probably make sense to use the
 original coefficients *b* rather than the standardised

@@ -157,12 +157,12 @@ to my grumpiness, over and above what we might expect from the amount of
 sleep that I got. We also want to make sure that the day on which we
 took the measurement has no influence on the relationship. That is,
 we’re interested in the relationship between ``baby.sleep`` and
-``dan.grump``, and from that perspective ``dan.sleep`` and ``day`` are
+``dani.grump``, and from that perspective ``dani.sleep`` and ``day`` are
 nuisance variable or **covariates** that we want to control for. In this
 situation, what we would like to know is whether
-``dan.grump ~ dan.sleep + day + baby.sleep`` (which I’ll call Model 2,
+``dani.grump ~ dani.sleep + day + baby.sleep`` (which I’ll call Model 2,
 or ``M2``) is a better regression model for these data than
-``dan.grump ~ dan.sleep + day`` (which I’ll call Model 1, or ``M1``).
+``dani.grump ~ dani.sleep + day`` (which I’ll call Model 1, or ``M1``).
 There are two different ways we can compare these two models, one based
 on a model selection criterion like AIC, and the other based on an
 explicit hypothesis test. I’ll show you the AIC based approach first
@@ -227,7 +227,7 @@ value for *y*\ :sub:`i` according to model M\ :sub:`2`.
 Okay, so that’s the hypothesis test that we use to compare two
 regression models to one another. Now, how do we do it in jamovi? The
 answer is to use the ``Model Builder`` option and specify the Model 1
-predictors ``dan.sleep`` and ``day`` in ``Block 1`` and then add the
+predictors ``dani.sleep`` and ``day`` in ``Block 1`` and then add the
 additional predictor from Model 2 (``baby.sleep``) in ``Block 2``, as in
 :numref:`fig-reg8`. This shows, in the ``Model Comparisons`` Table, that
 for the comparisons between Model 1 and Model 2, *F*\ (1,96) = 0.00,

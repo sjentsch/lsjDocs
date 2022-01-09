@@ -59,7 +59,7 @@ the alternative.
 
 As you can see, what we have today is an odd mishmash of the two. We
 talk about having both a null hypothesis and an alternative (Neyman),
-but usually\ [#]_ define the *p* value in terms of exreme data
+but usually\ [#]_ define the *p* value in terms of extreme data
 (Fisher), but we still have *α* values (Neyman). Some of the
 statistical tests have explicitly specified alternatives (Neyman) but
 others are quite vague about it (Fisher). And, according to some people

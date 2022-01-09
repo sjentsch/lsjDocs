@@ -161,8 +161,7 @@ but there’s no substitute for careful thought.
 ------
 
 .. [#]
-   Earlier versions of these notes incorrectly suggested that they
-   actually were sued. But that’s not true. There’s a nice commentary on
-   this here:
-   https://www.refsmmat.com/posts/2016-05-08-simpsons-paradox-berkeley.html.
+   Earlier versions of these notes incorrectly suggested that they actually
+   were sued. But that’s `not true
+   <https://www.refsmmat.com/posts/2016-05-08-simpsons-paradox-berkeley.html>`__.
    A big thank you to Wilfried Van Hirtum for pointing this out to me.

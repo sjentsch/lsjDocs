@@ -27,13 +27,12 @@ Navarro, D. J., & Foxcroft, D. R. (2019). *learning statistics with jamovi: a
 tutorial for psychology students and other beginners.* (Version 0.70).
 `https://doi.org/10.24384/hgc3-7p15 <https://doi.org/10.24384/hgc3-7p15>`__
 
-This book is published under a Creative Commons BY-SA license (CC BY-SA)
-version 4.0. This means that this book can be reused, remixed, retained,
-revised and redistributed (including commercially) as long as
-appropriate credit is given to the authors. If you remix, or modify the
-original version of this open textbook, you must redistribute all
-versions of this open textbook under the same license - `CC BY-SA 
-<https://creativecommons.org/licenses/by-sa/4.0/>`__.
+This book is published under a Creative Commons BY-SA license (`CC BY-SA
+version 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`__). This means
+that this book can be reused, remixed, retained, revised and redistributed
+(including commercially) as long as appropriate credit is given to the authors.
+If you remix, or modify the original version of this open textbook, you must
+redistribute all versions of this open textbook under the same license.
 
 Preface
 -------
@@ -145,7 +144,7 @@ starting to feel better about the book as a whole. I wanted to get a few
 other things done in this update, but as usual I’m running into teaching
 deadlines, so the update has to go out the way it is!
 
-| *Dan Navarro*
+| *Danielle Navarro*
 | *February 16, 2015*
 
 
@@ -177,7 +176,7 @@ couple of months ago, and (after excluding obvious robots) the book has
 been averaging about 90 downloads per day. That’s encouraging: there’s
 at least a few people who find the book useful!
 
-| *Dan Navarro*
+| *Danielle Navarro*
 | *February 4, 2014*
 
 
@@ -287,5 +286,5 @@ and I’m not arrogant enough to believe that mine is better. Still, I
 rather like the book, and maybe other people will find it useful,
 incomplete though it is.
 
-| *Dan Navarro*
+| *Danielle Navarro*
 | *January 13, 2013*

@@ -357,7 +357,7 @@ much wider the confidence interval for the corresponding coefficient
 predictors are all nice and uncorrelated with one another. If you’ve
 only got two predictors, the VIF values are always going to be the same,
 as we can see if we click on the ``Collinearity`` checkbox in the
-``Regression`` → ``Assumptions`` options in jamovi. For both ``dan.sleep``
+``Regression`` → ``Assumptions`` options in jamovi. For both ``dani.sleep``
 and ``baby.sleep`` the VIF is 1.65. And since the square root of 1.65 is
 1.28, we see that the correlation between our two predictors isn’t
 causing much of a problem.
@@ -371,11 +371,11 @@ at the correlation matrix for all four variables:
 
 .. code-block:: rout
 
-                dan.sleep  baby.sleep   dan.grump         day
-   dan.sleep   1.00000000  0.62794934 -0.90338404 -0.09840768
-   baby.sleep  0.62794934  1.00000000 -0.56596373 -0.01043394
-   dan.grump  -0.90338404 -0.56596373  1.00000000  0.07647926
-   day        -0.09840768 -0.01043394  0.07647926  1.00000000
+                dani.sleep  baby.sleep  dani.grump         day
+   dani.sleep   1.00000000  0.62794934 -0.90338404 -0.09840768
+   baby.sleep   0.62794934  1.00000000 -0.56596373 -0.01043394
+   dani.grump  -0.90338404 -0.56596373  1.00000000  0.07647926
+   day         -0.09840768 -0.01043394  0.07647926  1.00000000
 
 We have some fairly large correlations between some of our predictor
 variables! When we run the regression model and look at the VIF values,

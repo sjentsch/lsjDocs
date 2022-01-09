@@ -35,11 +35,11 @@ On the limits of logical reasoning
      
    -- Arthur Wellesley, 1st Duke of Wellington
 
-I am told that quote above came about as a consequence of a carriage
-ride across the countryside.\ [#]_ He and his companion, J. W. Croker,
-were playing a guessing game, each trying to predict what would be on
-the other side of each hill. In every case it turned out that Wellesley
-was right and Croker was wrong. Many years later when Wellesley was
+I am told that `quote above <http://www.bartleby.com/344/400.html>`__ came
+about as a consequence of a carriage ride across the countryside. He and his
+companion, J. W. Croker, were playing a guessing game, each trying to predict
+what would be on the other side of each hill. In every case it turned out that
+Wellesley was right and Croker was wrong. Many years later when Wellesley was
 asked about the game he explained that “the whole art of war consists in
 getting at what is on the other side of the hill”. Indeed, war is not
 special in this respect. All of life is a guessing game of one form or
@@ -222,8 +222,3 @@ those assumptions are good ones for your data. As we go through the rest
 of this book I’ll often point out the assumptions that underpin a
 particular statistical technique, and how you can check whether those
 assumptions are sensible.
-
-------
-
-.. [#]
-   Source: http://www.bartleby.com/344/400.html

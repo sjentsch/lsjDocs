@@ -37,14 +37,14 @@ that I live in Australia and that much of Australia is hot and dry. The
 city of Adelaide where I live has a Mediterranean climate, very similar
 to southern California, southern Europe or northern Africa. I’m writing
 this in January and so you can assume it’s the middle of summer. In
-fact, you might have decided to take a quick look on Wikipedia\ [#]_ and
-discovered that Adelaide gets an average of 4.4 days of rain across the
-31 days of January. Without knowing anything else, you might conclude
-that the probability of January rain in Adelaide is about 15%, and the
-probability of a dry day is 85%. If this is really what you believe
-about Adelaide rainfall (and now that I’ve told it to you I’m betting
-that this really *is* what you believe) then what I have written here is
-your **prior distribution**, written *P*\ (h):
+fact, you might have decided to take a quick look on Wikipedia and
+discovered that Adelaide gets an `average of 4.6 days of rain across the
+31 days of January <https://en.wikipedia.org/wiki/Climate_of_Adelaide>`__.
+Without knowing anything else, you might conclude that the probability of
+January rain in Adelaide is about 15%, and the probability of a dry day
+is 85%. If this is really what you believe about Adelaide rainfall (and now
+that I’ve told it to you I’m betting that this really *is* what you believe)
+then what I have written here is your **prior distribution**, written *P*\ (h):
 
 ========== ================
 Hypothesis Degree of Belief
@@ -57,7 +57,7 @@ Likelihoods: theories about the data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To solve the reasoning problem you need a theory about my behaviour.
-When does Dan carry an umbrella? You might guess that I’m not a complete
+When does Dani carry an umbrella? You might guess that I’m not a complete
 idiot,\ [#]_ and I try to carry umbrellas only on rainy days. On the
 other hand, you also know that I have young kids, and you wouldn’t be
 all that surprised to know that I’m pretty forgetful about this sort of
@@ -293,9 +293,6 @@ in the face of data. In the Bayesian paradigm, all statistical inference
 flows from this one simple rule.
 
 ------
-
-.. [#]
-   https://en.wikipedia.org/wiki/Climate_of_Adelaide
 
 .. [#]
    It’s a leap of faith, I know, but let’s run with it okay?

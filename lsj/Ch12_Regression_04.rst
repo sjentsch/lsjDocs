@@ -74,7 +74,7 @@ Linear regression in jamovi
 
 To run my linear regression, open up the ``Regression`` - ``Linear Regression``
 analysis in jamovi, using the ``parenthood`` dataset. Then specify
-``dan.grump`` as the ``Dependent Variable`` and ``dan.sleep`` as the variable
+``dani.grump`` as the ``Dependent Variable`` and ``dani.sleep`` as the variable
 entered in the ``Covariates`` box. This gives the results shown in
 :numref:`fig-reg1`, showing an intercept :math:`\hat{b}_0` = 125.96 and the
 slope :math:`\hat{b}_1` = -8.94. In other words, the best-fitting regression

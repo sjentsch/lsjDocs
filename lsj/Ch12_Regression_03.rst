@@ -11,7 +11,7 @@ models are much more powerful tools.
 | Since the basic ideas in regression are closely tied to correlation, we’ll
   return to the ``parenthood`` dataset that we were using to illustrate how
   correlations work. Recall that, in this data set we were trying to find out
-  why Dan is so very grumpy all the time and our working hypothesis was that
+  why Dani is so very grumpy all the time and our working hypothesis was that
   I’m not getting enough sleep. We drew some scatterplots to help us examine
   the relationship between the amount of sleep I get and my grumpiness the
   following day, as in :numref:`fig-scatterplot2`, and as we saw previously

@@ -92,7 +92,7 @@ The only other thing that I need to point out is that probability theory
 allows you to talk about **non elementary events** as well as elementary
 ones. The easiest way to illustrate the concept is with an example. In
 the trousers example it’s perfectly legitimate to refer to the
-probability that I wear jeans. In this scenario, the “Dan wears jeans”
+probability that I wear jeans. In this scenario, the “Dani wears jeans”
 event is said to have happened as long as the elementary event that
 actually did occur is one of the appropriate ones. In this case “blue
 jeans”, “black jeans” or “grey jeans”. In mathematical terms we defined

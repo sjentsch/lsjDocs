@@ -35,7 +35,7 @@ for the simple model that uses only a single predictor we would do the
 following:
 
 . create a new column called ``Y.pred`` using the formula
-``= 125.97 + (-8.94 * dan.sleep)``
+``= 125.97 + (-8.94 * dani.sleep)``
 
 Okay, now that we’ve got a variable which stores the regression model
 predictions for how grumpy I will be on any given day, let’s calculate
@@ -44,7 +44,7 @@ formula:
 
 | . calculate the SS(resid) by creating a new column called
   ``(Y - Y.pred) ^ 2`` using the formula
-| ``= (dan.grump - Y.pred) ^ 2``.
+| ``= (dani.grump - Y.pred) ^ 2``.
 
 | . Then, at the bottom of this column calculate the sum of these
   values,
@@ -55,12 +55,12 @@ that doesn’t mean very much. Still, let’s forge boldly onwards anyway
 and calculate the total sum of squares as well. That’s also pretty
 simple. Calculate the ``SS(tot)`` by:
 
-| . At the bottom of the dan.grump column, calculate the mean value for
-  ``dan.grump`` (NB Excel uses the word ``AVERAGE`` rather than ``mean`` in its
+| . At the bottom of the dani.grump column, calculate the mean value for
+  ``dani.grump`` (NB Excel uses the word ``AVERAGE`` rather than ``mean`` in its
   function).
 
 | . Then create a new column, called ``(Y - mean(Y))^2 )`` using the
-  formula: ``= (dan.grump - AVERAGE(dan.grump)) ^ 2`` .
+  formula: ``= (dani.grump - AVERAGE(dani.grump)) ^ 2`` .
 
 | . Then, at the bottom of this column calculate the sum of these
   values, i.e. ``sum((Y - mean(Y)) ^ 2)``.

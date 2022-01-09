@@ -24,7 +24,8 @@ Statistics that mean what you think they mean
    | *You keep using that word. I do not think it means what you think
      it means*
      
-   -- Inigo Montoya, The Princess Bride\ [#]_
+   -- `Inigo Montoya, The Princess Bride
+   <https://www.imdb.com/title/tt0093779/quotes>`__\ [#]_
 
 To me, one of the biggest advantages to the Bayesian approach is that it
 answers the right questions. Within the Bayesian framework, it is
@@ -53,8 +54,9 @@ basis suggests to me that most actual humans think that “the probability that
 the hypothesis is true” is not only meaningful, it’s the thing we care *most*
 about. It’s such an appealing idea that even trained statisticians fall prey to
 the mistake of trying to interpret a *p*-value this way. For example, here is a
-quote from an official Newspoll report in 2013, explaining how to interpret
-their (frequentist) data analysis:\ [#]_
+quote from an `official Newspoll report in 2013
+<https://about.abc.net.au/reports-publications/appreciation-survey-summary-report-2013>`__,
+explaining how to interpret their (frequentist) data analysis:
 
    Throughout the report, where relevant, statistically significant
    changes have been noted. All significance tests have been based on
@@ -150,7 +152,8 @@ The *p*-value is a lie.
    | *The cake is a lie.*
    | *The cake is a lie.*
    
-   -- Portal\ [#]_
+   -- `Portal <https://knowyourmeme.com/memes/the-cake-is-a-lie>`__
+
 
 Okay, at this point you might be thinking that the real problem is not with
 orthodox statistics, just the *p* < 0.05 standard. In one sense, that’s
@@ -259,14 +262,14 @@ Outcome                  Action
 ======================== =======================================
 
 The “basic” theory of null hypothesis testing isn’t built to handle this
-sort of thing, not in the form I described back in Chapter 
-`Hypothesis testing <Ch09_HypothesisTesting.html#hypothesis-testing>`__.
-If you’re the kind of person who would choose to “collect more data” in real
-life, it implies that you are *not* making decisions in accordance with the
-rules of null hypothesis testing. Even if you happen to arrive at the
-same decision as the hypothesis test, you aren’t following the decision
-*process* it implies, and it’s this failure to follow the process that
-is causing the problem.\ [#]_ Your *p*-values are a lie.
+sort of thing, not in the form I described back in Chapter `Hypothesis testing
+<Ch09_HypothesisTesting.html#hypothesis-testing>`__. If you’re the kind of
+person who would choose to “collect more data” in real life, it implies that
+you are *not* making decisions in accordance with the rules of null hypothesis
+testing. Even if you happen to arrive at the same decision as the hypothesis
+test, you aren’t following the decision *process* it implies, and it’s this
+failure to follow the process that is causing the problem (a `related problem
+<https://xkcd.com/1478>`__). Your *p*-values are a lie.
 
 Worse yet, they’re a lie in a dangerous way, because they’re all *too
 small*. To give you a sense of just how bad it can be, consider the
@@ -402,7 +405,8 @@ this:
 
    | *Good laws have their origins in bad morals.*
    
-   -- Ambrosius Macrobius\ [#]_
+   -- `Ambrosius Macrobius <https://www.quotes.net/quote/20857>`__
+
 
 Good rules for statistical testing have to acknowledge human frailty. None of
 us are without sin. None of us are beyond temptation. A good system for
@@ -412,17 +416,11 @@ Orthodox null hypothesis testing does not.\ [#]_
 ------
 
 .. [#]
-   https://www.imdb.com/title/tt0093779/quotes\ . I should note in passing that
-   I’m not the first person to use this quote to complain about frequentist
-   methods. Rich Morey and colleagues had the idea first. I’m shamelessly
-   stealing it because it’s such an awesome pull quote to use in this context
-   and I refuse to miss any opportunity to quote *The Princess Bride*.
-
-.. [#]
-   https://about.abc.net.au/reports-publications/appreciation-survey-summary-report-2013
-
-.. [#]
-   https://knowyourmeme.com/memes/the-cake-is-a-lie
+   I should note in passing that I’m not the first person to use this quote to
+   complain about frequentist methods. Rich Morey and colleagues had the idea
+   first. I’m shamelessly stealing it because it’s such an awesome pull quote
+   to use in this context and I refuse to miss any opportunity to quote *The
+   Princess Bride*.
 
 .. [#]
    In the interests of being completely honest, I should acknowledge that not
@@ -438,17 +436,11 @@ Orthodox null hypothesis testing does not.\ [#]_
    far and for almost every test I’ve seen reported in the papers I read.
 
 .. [#]
-   A related problem: https://xkcd.com/1478/
-
-.. [#]
    Some readers might wonder why I picked 3:1 rather than 5:1, given that
    `Johnson (2013) <References.html#johnson-2013>`__ suggests that *p* = 0.05
    lies somewhere in that range. I did so in order to be charitable to the
    *p*-value. If I’d chosen a 5:1 Bayes factor instead, the results would look
    even better for the Bayesian approach.
-
-.. [#]
-   https://www.quotes.net/quote/20857
 
 .. [#]
    Okay, I just *know* that some knowledgeable frequentists will read this and

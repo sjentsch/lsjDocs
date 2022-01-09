@@ -10,7 +10,7 @@ something along those lines; I may be confusing computers with the iPad
 marketing campaigns. Anyway, jamovi is freely distributed online and you
 can download it from the jamovi homepage, which is:
 
-   https://www.jamovi.org/
+   `https://www.jamovi.org <https://www.jamovi.org>`__
 
 At the top of the page, under the heading “Download”, you’ll see
 separate links for Windows users, Mac users, and Linux users. If you

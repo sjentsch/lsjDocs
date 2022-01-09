@@ -41,5 +41,5 @@ for the discussion of study design, and `Stevens (1946)
 ------
 
 .. [#]
-   Presidential Address to the First Indian Statistical Congress, 1938.
-   Source: https://en.wikiquote.org/wiki/Ronald_Fisher
+   `Presidential Address to the First Indian Statistical Congress, 1938
+   <https://en.wikiquote.org/wiki/Ronald_Fisher>`__.
