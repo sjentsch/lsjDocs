@@ -12,8 +12,8 @@ in real life. However, this test already exists. It’s called the
 statistical analyses available when you hit the ‘Frequencies’ button. To
 test the null hypothesis that the response probability is one-half
 ``p = 0.5``,\ [#]_ and using data in which ``x = 62`` of ``n = 100``
-people made the correct response, available in the ``binomialtest.omv``
-data file, we get the results shown in :numref:`fig-binomialtest`.
+people made the correct response, available in the |binomialtest|_ data set,
+we get the results shown in :numref:`fig-binomialtest`.
 
 .. ----------------------------------------------------------------------------
 
@@ -39,3 +39,8 @@ you’ll hopefully find it quite easy to read and understand.
    The ``p`` argument in the jamovi binomial test corresponds to the
    probability of making a correct response, according to the null
    hypothesis. In other words, it’s the *θ* value.
+
+.. ----------------------------------------------------------------------------
+
+.. |binomialtest|                      replace:: ``binomialtest``
+.. _binomialtest:                      _static/data/binomialtest.omv

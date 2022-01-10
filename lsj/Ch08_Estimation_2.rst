@@ -14,8 +14,8 @@ can we do about it?
 
 The obvious answer is to collect more data. Suppose that we ran a much
 larger experiment, this time measuring the IQs of 10,000 people. We can
-simulate the results of this experiment using jamovi. The ``IQsim.omv``
-file is a jamovi data file. In this file I have generated 10,000 random
+simulate the results of this experiment using jamovi. The |IQsim|_ data
+set is a jamovi data file. In this file I have generated 10,000 random
 numbers sampled from a normal distribution for a population with
 ``mean = 100`` and ``sd = 15``. This was done by computing a new
 variable using the ``= NORM(100,15)`` function. A histogram and density
@@ -86,3 +86,8 @@ to get closer and closer to the true population parameters.
    numbers. The minimum value of a sample, however, cannot be written as
    an average of anything and is therefore not governed by the law of
    large numbers.
+
+.. ----------------------------------------------------------------------------
+
+.. |IQsim|                             replace:: ``IQsim``
+.. _IQsim:                             _static/data/IQsim.omv

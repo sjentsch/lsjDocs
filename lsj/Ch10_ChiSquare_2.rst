@@ -30,8 +30,8 @@ preferences? That probably wouldn’t be a very good test then, would it?”
 As it happens, I got my hands on the testing data that the civil
 authorities of *Chapek 9* used to check this. It turns out that what
 they did was very simple. They found a bunch of robots and a bunch of
-humans and asked them what they preferred. I saved their data in a file
-called ``chapek9.omv``, which we can now load into jamovi. As well as
+humans and asked them what they preferred. I saved their data in the
+|chapek9|_ data set, which we can now load into jamovi. As well as
 the ``ID`` variable that identifies individual people, there are two
 nominal text variables, ``species`` and ``choice``. In total there are
 180 entries in the data set, one for each person (counting both robots
@@ -316,3 +316,8 @@ instead of doing work.
 
 .. [#]
    A problem many of us worry about in real life.
+
+.. ----------------------------------------------------------------------------
+
+.. |chapek9|                           replace:: ``chapek9``
+.. _chapek9:                           _static/data/chapek9.omv
