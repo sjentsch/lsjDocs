@@ -35,7 +35,7 @@ QQ plots
    :alt: Histogram and QQ plot for normally-distributed data
 
    Histogram (left panel) and QQ plot (right panel) for the ``normal.data``
-   dataset, a normally-distributed sample with 100 observations. The
+   data set, a normally-distributed sample with 100 observations. The
    Shapiro-Wilk statistic associated with these data is W = 0.99, indicating
    that no significant departures from normality were detected (*p* = 0.73).
    
@@ -157,7 +157,7 @@ happens to the QQ plot:
 .. figure:: ../_images/lsj_qq_2b.*
    :alt: QQ plot for the data (skewed) data from the aflsmall_margins dataset
 
-   QQ plot for the data (skewed) data from the ``aflsmall_margins`` dataset
+   QQ plot for the data (skewed) data from the |aflsmall_margins|_ data set
    
 .. ----------------------------------------------------------------------------
 
@@ -177,3 +177,8 @@ value for the Shapiro-Wilk normality test statistic of W = 0.94, and
    Kolomogorov-Smirnov is a general purpose test of distributional equivalence
    that can be adapted to handle other kinds of distribution tests. In jamovi
    the Shapiro-Wilk test is preferred.
+
+.. ----------------------------------------------------------------------------
+
+.. |aflsmall_margins|                  replace:: ``aflsmall_margins``
+.. _aflsmall_margins:                  _static/data/aflsmall_margins.omv

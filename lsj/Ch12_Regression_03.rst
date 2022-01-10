@@ -9,7 +9,7 @@ slightly fancier version of the Pearson correlation (Section `Correlations
 models are much more powerful tools.
 
 | Since the basic ideas in regression are closely tied to correlation, we’ll
-  return to the ``parenthood`` dataset that we were using to illustrate how
+  return to the |parenthood|_ data set that we were using to illustrate how
   correlations work. Recall that, in this data set we were trying to find out
   why Dani is so very grumpy all the time and our working hypothesis was that
   I’m not getting enough sleep. We drew some scatterplots to help us examine
@@ -112,3 +112,8 @@ regression model as
 .. [#]
    The ε symbol is the Greek letter epsilon. It’s traditional to use
    ε\ :sub:`i` or e\ :sub:`i` to denote a residual.
+   
+.. ----------------------------------------------------------------------------
+
+.. |parenthood|                        replace:: ``parenthood``
+.. _parenthood:                        _static/data/parenthood.omv

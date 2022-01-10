@@ -78,7 +78,7 @@ Reliability analysis in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We have a third sample of personality data to use to undertake reliability
-analysis: in the ``bfi_sample3`` dataset. Once again, check that the 25
+analysis: in the |bfi_sample3|_ data set. Once again, check that the 25
 personality item variables are coded as continuous. To perform reliability
 analysis in jamovi:
 
@@ -118,7 +118,7 @@ this is 0.72, not much different from *α*.
    :alt: Results of the Reliability Analysis for Agreeableness
 
    Tables with the results of the Reliability Analysis for the Agreeableness
-   factor from the ``bfi_sample3`` dataset 
+   factor from the |bfi_sample3|_ data set 
       
 .. ----------------------------------------------------------------------------
 
@@ -133,3 +133,8 @@ same for all the other scales (not shown): Conscientiousness (*α* = 0.73, *ω*
 error variance in the Scale score is 40%, which is high and indicates that
 Openness is substantially less consistent as a reliable measure of a
 personality attribute than the other personality scales.
+
+.. ----------------------------------------------------------------------------
+
+.. |bfi_sample3|                       replace:: ``bfi_sample3``
+.. _bfi_sample3:                       _static/data/bfi_sample3.omv

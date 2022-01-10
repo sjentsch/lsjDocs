@@ -384,6 +384,8 @@ checkbox marked ``Mode`` and you will see the modal value presented in the
    multiplication of lots of numbers, because multiplications are also called
    “products” we use the *Π* symbol for this (the Greek upper case pi, which is
    the analogue of the letter P).
+
+.. ----------------------------------------------------------------------------
    
 .. |aflsmall_finalists|                replace:: ``aflsmall_finalists``
 .. _aflsmall_finalists:                _static/data/aflsmall_finalists.omv

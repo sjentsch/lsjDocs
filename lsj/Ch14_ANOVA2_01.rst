@@ -519,8 +519,8 @@ hood.
 
 In any case, it’s probably worth taking a moment to check that we can
 calculate SS\ :sub:`R` using this formula and verify that we do obtain
-the same answer that jamovi produces in its ANOVA table. The
-calculations are pretty straightforward when done in a spreadsheet (see
+the same answer that jamovi produces in its ANOVA table. The calculations
+are pretty straightforward when done in a spreadsheet (see
 the ``clinicaltrial_factorialanova.xls`` file). We can calculate the
 total SS using the formulas above (getting an answer of total SS = 4.85)
 and then the residual SS ( = 0.92). Yet again, we get the same answer.

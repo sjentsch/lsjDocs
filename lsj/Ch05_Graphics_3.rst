@@ -4,10 +4,10 @@ Bar graphs
 ----------
 
 Another form of graph that you often want to plot is the **bar graph**. Let’s
-use the ``afl.finalists`` data set with the ``afl.finalists`` variable that I
+use the |afl.finalists|_ data set with the ``afl.finalists`` variable that I
 introduced in `Mode <Ch04_Descriptives_1.html#mode>`__. What I want to do is
 draw a bar graph that displays the number of finals that each team has played
-in over the time spanned by the ``afl.finalists`` data set. There are lots of
+in over the time spanned by the |afl.finalists|_ data set. There are lots of
 teams, but I am particularly interested in just four: Brisbane, Carlton,
 Fremantle and Richmond. So the first step is to set up a filter so just those
 four teams are included in the bar graph. This is straightforward in jamovi
@@ -48,3 +48,8 @@ papers.
 
 .. [#]
    jamovi uses the symbol “``==``” here to mean “matches”.
+
+.. ----------------------------------------------------------------------------
+
+.. |afl.finalists|                     replace:: ``afl.finalists``
+.. _afl.finalists:                     _static/data/afl.finalists.omv

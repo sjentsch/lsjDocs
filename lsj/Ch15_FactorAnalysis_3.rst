@@ -71,7 +71,7 @@ Right, let’s take a look at how we set this CFA analysis up in jamovi.
 CFA in jamovi
 ~~~~~~~~~~~~~
 
-Open up the ``bfi_sample2`` file, check that the 25 variables are coded as
+Open up the |bfi_sample2|_ data set, check that the 25 variables are coded as
 ordinal (or continuous; it won’t make any difference for this analysis). To
 perform CFA in jamovi:
 
@@ -310,3 +310,8 @@ of information to include in your write-up:
    tend to use EFA. Later on, as they get closer to a final scale, or if
    they want to check an established scale in a new sample, then CFA is
    a good option.
+
+.. ----------------------------------------------------------------------------
+
+.. |bfi_sample2|                       replace:: ``bfi_sample2``
+.. _bfi_sample2:                       _static/data/bfi_sample2.omv

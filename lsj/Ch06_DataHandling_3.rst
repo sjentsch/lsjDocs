@@ -32,16 +32,15 @@ question:
    extent do you agree with the proposition that “Dinosaurs are
    awesome”?
 
-Now let’s load and look at the data. The data file ``likert.omv``
-contains a single variable that contains raw Likert-scale responses for
-these 10 people. However, if you think about it, this isn’t the best way
-to represent these responses. Because of the fairly symmetric way that
-we set up the response scale, there’s a sense in which the midpoint of
-the scale should have been coded as 0 (no opinion), and the two
-endpoints should be **+3** (strongly agree) and **-3** (strongly
-disagree). By recoding the data in this way it’s a bit more reflective
-of how we really think about the responses. The recoding here is pretty
-straightforward, we just subtract 4 from the raw scores. In jamovi you
+Now let’s load and look at the data. The |likert|_ data set contains a single
+variable that contains raw Likert-scale responses for these 10 people. However,
+if you think about it, this isn’t the best way to represent these responses.
+Because of the fairly symmetric way that we set up the response scale, there’s
+a sense in which the midpoint of the scale should have been coded as 0 (no
+opinion), and the two endpoints should be **+3** (strongly agree) and **-3**
+(strongly disagree). By recoding the data in this way it’s a bit more
+reflective of how we really think about the responses. The recoding here is
+pretty straightforward, we just subtract 4 from the raw scores. In jamovi you
 can do this by computing a new variable: click on the ``Compute`` button
 in the ``Data`` tab and you will see that a new variable has been added to the
 spreadsheet. Let’s call this new variable ``likert.centred`` (go ahead
@@ -114,7 +113,7 @@ divided ``likert.centred`` by opinion.strength to give ``-1`` or ``+1``
 depending of the sign of the original value in likert.centred.\ [#]_
 
 And we’re done. We now have three shiny new variables, all of which are
-useful transformations of the original ``likert.raw`` data.
+useful transformations of the original ``likert.raw`` variable.
 
 Collapsing a variable into a smaller number of discrete levels or categories
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -183,7 +182,7 @@ all need to be recalculated or recoded in the same way. And one of the
 neat features in jamovi is that you can create a transformation, using
 the ``Transform`` button in the ``Data`` tab, that can then be saved and
 applied to multiple variables. Let’s go back to the first example above, using
-the data file ``likert.omv`` that contains a single variable with raw
+the |likert|_ data set that contains a single variable with raw
 Likert-scale responses for 10 people. To create a transformation that
 you can save and then apply across multiple variables (assuming you had
 more variables like this in your data file), first in the spreadsheet
@@ -288,3 +287,8 @@ variable that you want to recode.
    doing this, it’s best not to. It tends to introduce all sorts of
    other problems (e.g., the data will probably violate the normality
    assumption) and you can lose a lot of statistical power.
+
+.. ----------------------------------------------------------------------------
+
+.. |likert|                            replace:: ``likert``
+.. _likert:                            _static/data/likert.omv

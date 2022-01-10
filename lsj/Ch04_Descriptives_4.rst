@@ -6,7 +6,7 @@ Descriptive statistics separately for each group
 It is very commonly the case that you find yourself needing to look at
 descriptive statistics broken down by some grouping variable. This is
 pretty easy to do in jamovi. For instance, let’s say I want to look at
-the descriptive statistics for some ``clinicaltrial`` data, broken down
+the descriptive statistics for some clinical trial data, broken down
 separately by ``therapy`` type. This is a new data set, one that you’ve
 never seen before. The data is stored in the |clinicaltrial|_ data set
 and we’ll use it a lot in Chapter `Comparing several means (one-way ANOVA)

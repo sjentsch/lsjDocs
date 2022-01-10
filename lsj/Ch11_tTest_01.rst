@@ -228,8 +228,8 @@ Now, as I mentioned earlier, the *z*-test is almost never used in
 practice. It’s so rarely used in real life that the basic installation
 of jamovi doesn’t have a built in function for it. However, the test is
 so incredibly simple that it’s really easy to do one manually. Let’s go
-back to the |zeppo|_ data set. Having loaded the ``grades`` data, the first
-thing I need to do is calculate the sample mean, which I’ve already done (72.3).
+back to the |zeppo|_ data set. The first thing I need to do is calculate the
+sample mean for the ``grades`` variable, which I’ve already done (72.3).
 We already have the known population standard deviation (*σ* = 9.5`), and the
 value of the population mean that the null hypothesis specifies (*µ*\ :sub:`0`
 = 67.5), and we know the sample size (*N* = 20).
@@ -321,6 +321,8 @@ with unicorns and fairies and leprechauns!
    However, in light of the sheer ridiculousness of the assumption that
    the true standard deviation is known, there really isn’t much point
    in going into details on this front!
+
+.. ----------------------------------------------------------------------------
 
 .. |zeppo|                             replace:: ``zeppo``
 .. _zeppo:                             _static/data/zeppo.omv

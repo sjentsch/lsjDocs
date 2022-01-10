@@ -35,7 +35,7 @@ your data analysis to stupid software, read on.
 The coffee data
 ~~~~~~~~~~~~~~~
 
-As usual, it will help us to work with some data. The ``coffee`` data set
+As usual, it will help us to work with some data. The |coffee|_ data set
 contains a hypothetical data set that produces an unbalanced 3 × 2 ANOVA.
 Suppose we were interested in finding out whether or not the tendency of people
 to ``babble`` when they have too much coffee is purely an effect of the coffee 
@@ -58,7 +58,7 @@ purpose. Take a look at the data in the jamovi spreadsheet view, as in
 .. figure:: ../_images/lsj_factorialanova15.*
    :alt: Descriptive statistics for the different levels of sugar and milk
 
-   The ``coffee`` dataset in jamovi, showing descriptive statistics aggregated
+   The |coffee|_ data set in jamovi, showing descriptive statistics aggregated
    by the different levels of the factors ``sugar`` and ``milk``
    
 .. ----------------------------------------------------------------------------
@@ -186,7 +186,7 @@ options. This gives us the ANOVA table shown in :numref:`fig-factorialanova16`.
    :alt: Results table using Type I sum of squares, factor sugar entered first
 
    ANOVA results table using Type I sum of squares in jamovi (with the
-   ``coffee`` dataset and a saturated model with the factors ``sugar``,
+   |coffee| data set and a saturated model with the factors ``sugar``,
    ``milk``, and their interaction; factor ``sugar`` is entered first).
    
 .. ----------------------------------------------------------------------------
@@ -208,7 +208,7 @@ the question. Yet, look what happens when we change the ordering, as in
    :alt: Results table using Type I sum of squares, factor milk entered first
 
    ANOVA results table using Type I sum of squares in jamovi (with the
-   ``coffee`` dataset and a saturated model with the factors ``milk``,
+   |coffee|_ data set and a saturated model with the factors ``milk``,
    ``sugar``, and their interaction; factor ``milk`` is entered first).
    
 .. ----------------------------------------------------------------------------
@@ -351,7 +351,7 @@ Type III sum of squares, see :numref:`fig-factorialanova18`.
    :alt: Results table using Type III sum of squares
 
    ANOVA results table using Type III sum of squares in jamovi (with the
-   ``coffee`` dataset and a saturated model with the factors ``sugar``,
+   |coffee|_ data set and a saturated model with the factors ``sugar``,
    ``milk``, and their interaction).
    
 .. ----------------------------------------------------------------------------
@@ -484,7 +484,7 @@ This gives us the ANOVA table shown in :numref:`fig-factorialanova19`.
    :alt: Results table using Type II sum of squares
 
    ANOVA results table using Type II sum of squares in jamovi (with the
-   ``coffee`` dataset and a saturated model with the factors ``sugar``,
+   |coffee|_ data set and a saturated model with the factors ``sugar``,
    ``milk``, and their interaction).
    
 .. ----------------------------------------------------------------------------
@@ -632,3 +632,8 @@ them, and it goes missing.
    tests and specify contrasts if you’ve done Type III tests. Or, even
    better, do hypotheses tests that correspond to things you really care
    about and then report those!
+   
+.. ----------------------------------------------------------------------------
+
+.. |coffee|                            replace:: ``coffee``
+.. _coffee:                            _static/data/coffee.omv

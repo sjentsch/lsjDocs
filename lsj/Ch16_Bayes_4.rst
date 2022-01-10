@@ -15,7 +15,7 @@ Independent samples t-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The most common type of *t*-test is the independent samples *t*-test, and it
-arises when you have data as in the ``harpo`` dataset that we used in the
+arises when you have data as in the |harpo|_ data set that we used in the
 earlier chapter on *t*-tests (Chapter `Comparing two means
 <Ch11_tTest.html#comparing-two-means>`__). In this data set, we have two
 groups of students, those who received lessons from Anastasia and those
@@ -85,7 +85,8 @@ alternative. We could probably reject the null with some confidence!
    
 .. ----------------------------------------------------------------------------
 
------
-
 .. |chico|                             replace:: ``chico``
 .. _chico:                             _static/data/chico.omv
+
+.. |harpo|                             replace:: ``harpo``
+.. _harpo:                             _static/data/harpo.omv

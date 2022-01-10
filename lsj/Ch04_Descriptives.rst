@@ -37,12 +37,12 @@ understanding data. In order to get some idea about what the data are actually
 saying we need to calculate some descriptive statistics (this chapter) and draw
 some nice pictures (Chapter `Drawing graphs <Ch05_Graphics.html>`__). Since the
 descriptive statistics are the easier of the two topics I’ll start with those,
-but nevertheless I’ll show you a histogram of the ``afl.margins`` data since it
-should help you get a sense of what the data we’re trying to describe actually
+but nevertheless I’ll show you a histogram of the ``afl.margins`` variable since
+it should help you get a sense of what the data we’re trying to describe actually
 look like, see :numref:`fig-aflMargins`. We’ll talk a lot more about how to
 draw `histograms <Ch05_Graphics_1.html#histograms>`__. For now, it’s enough to
 look at the histogram and note that it provides a fairly interpretable
-representation of the ``afl.margins`` data.
+representation of the ``afl.margins`` variable.
 
 .. ----------------------------------------------------------------------------
 
@@ -50,9 +50,9 @@ representation of the ``afl.margins`` data.
 .. figure:: ../_images/lsj_aflMargins.*
    :alt: Histogram of AFL 2010 winning margin data
 
-   Histogram of the AFL 2010 winning margin data (the afl.margins variable).
-   As you might expect, the larger the winning margin the less frequently you
-   tend to see it.
+   Histogram of the AFL 2010 winning margin data (the ``afl.margins``
+   variable). As you might expect, the larger the winning margin the less
+   frequently you tend to see it.
    
 .. ----------------------------------------------------------------------------
 
@@ -72,6 +72,8 @@ representation of the ``afl.margins`` data.
    Note for non-Australians: the AFL is an Australian rules football
    competition. You don’t need to know anything about Australian rules
    in order to follow this section.
+
+.. ----------------------------------------------------------------------------
 
 .. |aflsmall_margins|                  replace:: ``aflsmall_margins``
 .. _aflsmall_margins:                  _static/data/aflsmall_margins.omv

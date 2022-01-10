@@ -185,7 +185,7 @@ as:
 ``Mean + (1.96 * S.E. Mean)``
 
 95% confidence intervals are the de facto standard in psychology. So, for
-example, if I load the ``IQsim.omv`` file, check mean and S.E mean under
+example, if I load the |IQsim|_ data set, check mean and S.E mean under
 ``Descriptives``, I can work out the confidence interval associated with the
 simulated mean IQ:
 
@@ -214,3 +214,8 @@ so we’ll show you how to do that later on.
    gets a mention in a few academic papers
    (e.g., https://www.amstat.org/publications/jse/v10n3/friedman.html,
    but I’ve never found the original source.
+
+.. ----------------------------------------------------------------------------
+
+.. |IQsim|                             replace:: ``IQsim``
+.. _IQsim:                             _static/data/IQsim.omv

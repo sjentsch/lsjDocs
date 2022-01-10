@@ -10,7 +10,7 @@ data from people over 50 years in age. To do this, the first step is getting
 jamovi to filter the subset of the data corresponding to the observations that
 you’re interested in.
 
-This section returns to the ``nightgarden`` data set. If you’re reading this
+This section returns to the |nightgarden|_ data set. If you’re reading this
 whole chapter in one sitting, then you should already have this data set loaded
 into a jamovi window. For this section, let’s focus on the two variables
 ``speaker`` and ``utterance`` (see `Tabulating and cross-tabulating data
@@ -39,8 +39,8 @@ box and checking ``Frequency tables``. Go on, try it, and see what that shows!
 .. figure:: ../_images/lsj_subset1.*
    :alt: Creating a subset using ``Filters``
 
-   Creating a subset of the ``nightgarden``-data using the jamovi ``Filters``
-   option
+   Creating a subset of the |nightgarden| data set using the jamovi
+   ``Filters`` option
    
 .. ----------------------------------------------------------------------------
 
@@ -53,3 +53,8 @@ following:
 .. code-block:: rout
 
    utterance == "pip" or utterance == "oo"
+   
+.. ----------------------------------------------------------------------------
+
+.. |nightgarden|                       replace:: ``nightgarden``
+.. _nightgarden:                       _static/data/nightgarden.omv

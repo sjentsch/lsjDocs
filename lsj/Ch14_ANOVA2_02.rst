@@ -51,7 +51,7 @@ fix this problem.
 
    jamovi screen shot showing how to generate a descriptive interaction plot
    within the ANOVA (using ``Estimated Marginal Means``) for the
-   ``clinicaltrial`` data set 
+   |clinicaltrial|_ data set 
 
 .. ----------------------------------------------------------------------------
 
@@ -324,3 +324,8 @@ is interesting.
    analysis in jamovi that we described earlier. For the purpose of the
    explanation in this book I removed the interaction component from the
    earlier model to keep things clean and simple
+
+.. ----------------------------------------------------------------------------
+
+.. |clinicaltrial|                     replace:: ``clinicaltrial``
+.. _clinicaltrial:                     _static/data/clinicaltrial.omv

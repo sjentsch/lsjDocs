@@ -31,7 +31,7 @@ by setting hard assessments students are encouraged to work harder. Her
 theory is that the first test is a bit of a “wake up call” for students.
 When they realise how hard her class really is, they’ll work harder for
 the second test and get a better mark. Is she right? To test this, let’s
-import the ``chico`` dataset into jamovi. This time jamovi does a good
+import the |chico|_ data set into jamovi. This time jamovi does a good
 job during the import of attributing measurement levels correctly. The
 chico data set contains three variables: an ``id`` variable that
 identifies each student in the class, the ``grade_test1`` variable that
@@ -46,9 +46,9 @@ there’s an improvement from the first test to the second one.
 
 .. _fig-ttest_paired1:
 .. figure:: ../_images/lsj_ttest_paired1.*
-   :alt: Descriptives for the two grade test variables in the chico dataset
+   :alt: Descriptives for the two grade test variables in the |chico| data set
 
-   Descriptives for the two grade test variables in the ``chico`` dataset
+   Descriptives for the two grade test variables in the |chico|_ data set
    
 .. ----------------------------------------------------------------------------
 
@@ -92,7 +92,7 @@ if only by a small amount. This suggests that we should be looking at
 the *improvement* made by each student from one test to the next and
 treating that as our raw data. To do this, we’ll need to create a new
 variable for the ``improvement`` that each student makes, and add it to
-the ``chico`` data set. The easiest way to do this is to compute a new
+the |chico|_ data set. The easiest way to do this is to compute a new
 variable, with the expression ``grade_test2 - grade_test1``.
 
 Once we have computed this new ``improvement`` variable we can draw a
@@ -224,3 +224,8 @@ which of course they have to be given that the paired samples
 .. [#]
    At this point we have Drs Harpo, Chico and Zeppo. No prizes for guessing who
    Dr Groucho is.
+
+.. ----------------------------------------------------------------------------
+
+.. |chico|                             replace:: ``chico``
+.. _chico:                             _static/data/chico.omv

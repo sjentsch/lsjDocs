@@ -31,7 +31,7 @@ mentally select a second one. For both choices what we’re going to look at is
 the suit (hearts, clubs, spades or diamonds) that people chose. After asking,
 say, *N* =200 people to do this, I’d like to look at the data and figure out
 whether or not the cards that people pretended to select were really random.
-The data are contained in the ``randomness`` data set in which, when you open
+The data are contained in the |randomness|_ data set in which, when you open
 it up in jamovi and take a look at the spreadsheet view, you will see three
 variables. These are: an ``id`` variable that assigns a unique identifier to
 each participant, and the two variables ``choice_1`` and ``choice_2`` that
@@ -702,3 +702,8 @@ something to be aware of.
    Complicating matters, the *G*-test is a special case of a whole class of
    tests that are known as *likelihood ratio tests* (LRT). I don’t cover LRTs
    in this book, but they are quite handy things to know about.
+
+.. ----------------------------------------------------------------------------
+
+.. |randomness|                        replace:: ``randomness``
+.. _randomness:                        _static/data/randomness.omv

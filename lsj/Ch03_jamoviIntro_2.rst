@@ -189,7 +189,7 @@ data though, it has the names of the variables.
 
 .. _fig-booksalescsv:
 .. figure:: ../_images/lsj_booksalescsv.*
-   :alt: ``booksales.csv`` data file
+   :alt: |booksales| data file
 
    The |booksales|_ data file. On the left I’ve opened the file using a spreadsheet
    program (LibreOffice), which shows that the file is basically a table. On the right

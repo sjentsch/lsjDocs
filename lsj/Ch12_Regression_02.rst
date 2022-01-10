@@ -19,7 +19,7 @@ you do have a pretty strong idea which variable you think is most likely to be
 causal, or at least you have some suspicions in that direction. If so, then
 it’s conventional to plot the cause variable on the x-axis, and the effect
 variable on the y-axis. With that in mind, let’s look at how to draw
-scatterplots in jamovi, using the same ``parenthood`` data set that I used when
+scatterplots in jamovi, using the same |parenthood|_ data set that I used when
 introducing correlations.
 
 Suppose my goal is to draw a scatterplot displaying the relationship between
@@ -83,3 +83,6 @@ jamovi will create a scatterplot matrix for you, just like the one in
    in jamovi.
       
 .. ----------------------------------------------------------------------------
+
+.. |parenthood|                        replace:: ``parenthood``
+.. _parenthood:                        _static/data/parenthood.omv

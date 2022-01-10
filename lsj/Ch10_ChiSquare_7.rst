@@ -99,7 +99,7 @@ Doing the McNemar test in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now that you know what the McNemar test is all about, lets actually run one.
-The ``agpp`` dataset contains the raw data that I discussed previously. It
+The |agpp|_ data set contains the raw data that I discussed previously. It
 contains three variables, an ``id`` variable that labels each participant in
 the dataset (we’ll see why that’s useful in a moment), a ``response_before``
 variable that records the person’s answer when they were asked the question the
@@ -133,7 +133,7 @@ What’s the difference between McNemar and independence?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let’s go all the way back to the beginning of the chapter and look at the
-``cards`` data set again. If you recall, the actual experimental design that I
+|cards|_ data set again. If you recall, the actual experimental design that I
 described involved people making *two* choices. Because we have information
 about the first choice and the second choice that everyone made, we can
 construct the following contingency table that cross-tabulates the first choice
@@ -171,3 +171,9 @@ the same test.
    Independent vs. Paired (McNemar) test output in jamovi
    
 .. ----------------------------------------------------------------------------
+
+.. |agpp|                              replace:: ``agpp``
+.. _agpp:                              _static/data/agpp.omv
+
+.. |cards|                             replace:: ``cards``
+.. _cards:                             _static/data/cards.omv

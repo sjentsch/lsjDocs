@@ -148,7 +148,7 @@ model, and it is the one we will test in jamovi.
 MTMM CFA in jamovi
 ~~~~~~~~~~~~~~~~~~
 
-Open up the ``ASQ`` data set and check that the 18 variables (six 
+Open up the |ASQ|_ data set and check that the 18 variables (six 
 “Internality”, six “Stability” and six “Globality” variables) are specified as
 continuous variables.
 
@@ -306,3 +306,8 @@ If you do find yourself adding new parameters to a model using the MI then
 always re-check the MI tables after each new addition (or exclusion – in some
 software a MI can also suggest parameters to be removed from a model to
 improve model fit), as the MIs are refreshed each time.
+
+.. ----------------------------------------------------------------------------
+
+.. |ASQ|                               replace:: ``ASQ``
+.. _ASQ:                               _static/data/ASQ.omv

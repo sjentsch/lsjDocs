@@ -73,7 +73,7 @@ Linear regression in jamovi
 .. ----------------------------------------------------------------------------
 
 To run my linear regression, open up the ``Regression`` - ``Linear Regression``
-analysis in jamovi, using the ``parenthood`` dataset. Then specify
+analysis in jamovi, using the |parenthood|_ data set. Then specify
 ``dani.grump`` as the ``Dependent Variable`` and ``dani.sleep`` as the variable
 entered in the ``Covariates`` box. This gives the results shown in
 :numref:`fig-reg1`, showing an intercept :math:`\hat{b}_0` = 125.96 and the
@@ -116,3 +116,8 @@ grumpiness will go off the scale, to an insane value of (*Y*\ :sub:`i` =
    few things in linear regression can be written in linear algebra
    terms, you’ll see a bunch of footnotes like this one in this chapter.
    If you can follow the maths in them, great. If not, ignore it.
+
+.. ----------------------------------------------------------------------------
+
+.. |parenthood|                        replace:: ``parenthood``
+.. _parenthood:                        _static/data/parenthood.omv

@@ -42,11 +42,11 @@ our sum of squared residuals. We would do that using the following
 formula:
 
 #. Calculate the squared residuals by creating a new column called
-  ``sq_resid`` using the formula ``(dani.grump - Y_pred) ^ 2``. The values
-  in this column are later summed up to obtain SS\ :sub:`res`.
+   ``sq_resid`` using the formula ``(dani.grump - Y_pred) ^ 2``. The values
+   in this column are later summed up to obtain SS\ :sub:`res`.
 
 #. Calculate the squared deviation from the mean by creating yet another
-   column    called ``sq_total`` using the formula
+   column  called ``sq_total`` using the formula
    ``(dani.grump - VMEAN(dani.grump)) ^ 2``. The values in this column are
    later summed up to obtain SS\ :sub:`tot`.
 

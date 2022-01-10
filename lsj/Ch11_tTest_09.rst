@@ -30,7 +30,7 @@ actually simpler than the one sample version. Suppose we’re looking at
 the scores of 10 people on some test. Since my imagination has now
 failed me completely, let’s pretend it’s a “test of awesomeness” and
 there are two groups of people, “A” and “B”. I’m curious to know which
-group is more awesome. The data are included in the ``awesome`` dataset,
+group is more awesome. The data are included in the |awesome|_ data set,
 and there are two variables apart from the usual ``ID`` variable:
 ``scores`` and ``group``.
 
@@ -124,6 +124,11 @@ of the test won’t give us a different answer, of course; see
    Actually, there are two different versions of the test statistic that differ
    from each other by a constant value. The version that I’ve described is the
    one that jamovi calculates.
+
+.. ----------------------------------------------------------------------------
+
+.. |awesome|                           replace:: ``awesome``
+.. _awesome:                           _static/data/awesome.omv
 
 .. |happiness|                         replace:: ``happiness``
 .. _happiness:                         _static/data/happiness.omv

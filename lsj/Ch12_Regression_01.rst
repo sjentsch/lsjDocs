@@ -48,7 +48,7 @@ practice, but other parents tell me that it’s pretty standard.
 
 .. _fig-grumpHist:
 .. figure:: ../_images/lsj_grumpHist.*
-   :alt: Histograms for three variables from the ``parenthood`` data set
+   :alt: Histograms for three variables from the |parenthood| data set
 
    Histograms for the three interesting variables in the |parenthood|_ data
    set
@@ -190,7 +190,7 @@ variables across into the box on the right to get the output in
 
 .. _fig-correlations:
 .. figure:: ../_images/lsj_correlations.*
-   :alt: jamovi screenshot with correlations in the ``parenthood`` data set
+   :alt: jamovi screenshot with correlations in the |parenthood| data set
 
    jamovi screenshot showing correlations between variables in the
    |parenthood|_ data set
@@ -390,6 +390,8 @@ box in the ``Correlation Matrix`` analysis panel.
 
 .. [#]
    This is an oversimplification, but it’ll do for our purposes.
+
+.. ----------------------------------------------------------------------------
 
 .. |parenthood|                        replace:: ``parenthood``
 .. _parenthood:                        _static/data/parenthood.omv

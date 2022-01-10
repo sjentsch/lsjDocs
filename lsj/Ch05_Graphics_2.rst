@@ -11,7 +11,7 @@ of the data. And because they do so in a fairly compact way box plots
 have become a very popular statistical graphic, especially during the
 exploratory stage of data analysis when you’re trying to understand the
 data yourself. Let’s have a look at how they work, again using the
-``afl.margins`` data from the |aflsmall_margins|_ file as our example.
+``afl.margins`` variable from the |aflsmall_margins|_ data set as our example.
 
 .. ----------------------------------------------------------------------------
 
@@ -19,8 +19,8 @@ data yourself. Let’s have a look at how they work, again using the
 .. figure:: ../_images/lsj_boxplot1.*
    :alt: Box plot of ``afl.margins``
 
-   Box plot of the ``afl.margins`` variable from the |aflsmall_margins|_ file
-   plotted in jamovi
+   Box plot of the ``afl.margins`` variable from the |aflsmall_margins|_ data
+   set plotted in jamovi
    
 .. ----------------------------------------------------------------------------
 

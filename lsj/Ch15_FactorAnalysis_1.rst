@@ -158,7 +158,7 @@ Openness.
 
 .. _tab-bfi:
 .. table:: Twenty-five observed variable items organised by five putative
-   personality factors in the dataset ``bfi_sample``. If there is an R in the
+   personality factors in the |bfi_sample|_ data set. If there is an R in the
    second column, the item is reversed.
 
    ==== = =========================================
@@ -206,18 +206,18 @@ The item data were collected using a 6-point response scale:
 
 #. Very Accurate.
 
-A sample of N=250 responses is contained in the dataset ``bfi_sample``. In
+A sample of N=250 responses is contained in the |bfi_sample|_ data set. In
 addition to the items, there are three further columns in the data set: ``ID``
 (the respondent ID, a five digit number) as well as the age (``age``) and the
 gender (``gender``) of the respondent.
 
 As researchers, we are interested in exploring the data to see whether there
 are some underlying latent factors that are measured reasonably well by the 25
-observed variables in the ``bfi_sample`` data file. Open up the dataset and
-check that the 25 variables are coded as continuous variables (technically they
-are ordinal though for EFA in jamovi it mostly doesn’t matter, except if you
-decide to calculate weighted factor scores in which case continuous variables
-are needed). To perform an EFA in jamovi:
+observed variables in the |bfi_sample|_ data set. Open it up and check that the
+25 variables are coded as continuous variables (technically they are ordinal
+though for EFA in jamovi it mostly doesn’t matter, except if you decide to
+calculate weighted factor scores in which case continuous variables are needed).
+To perform an EFA in jamovi:
 
 -  Select ``Factor`` → ``Exploratory Factor Analysis`` from the ``Analyses``
    ribbon menu to open the analysis panel where you can determine the settings
@@ -563,6 +563,11 @@ information to include in your write-up:
 
 .. [#]
    remembering to first reverse score some variables if necessary
-   
+
+.. ----------------------------------------------------------------------------
+
 .. |Rj|                                replace:: ``Rj``
 .. _Rj:                                https://docs.jamovi.org/_pages/Rj_overview.html
+
+.. |bfi_sample|                        replace:: ``bfi_sample``
+.. _bfi_sample:                        _static/data/bfi_sample.omv

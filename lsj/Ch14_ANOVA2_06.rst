@@ -106,7 +106,7 @@ information. In the case of our hypothetical student, we know that
 +----------------+----------------+----------------+----------------+
 
 This isn’t anything particularly special, of course. It’s exactly the format in
-which we expect to see our data! See the ``rtfm`` data set. We can use the
+which we expect to see our data! See the |rtfm|_ data set. We can use the
 jamovi ‘Descriptives’ analysis to confirm that this data set corresponds to a
 balanced design, with 2 observations for each combination of ``attend`` and
 ``reading``. In the same way we can also calculate the mean grade for each
@@ -118,9 +118,9 @@ the class both matter a lot.
 
 .. _fig-rtfmdescriptives:
 .. figure:: ../_images/lsj_rtfmdescriptives.*
-   :alt: jamovi descriptives for the rtfm dataset
+   :alt: jamovi descriptives for the |rtfm| data set
 
-   jamovi descriptives for the ``rtfm`` dataset
+   jamovi descriptives for the |rtfm|_ dataset
    
 .. ----------------------------------------------------------------------------
 
@@ -146,7 +146,7 @@ that most of the readership of this book will find that annoying rather than
 helpful. Instead, I’ll explain the basic ideas and then rely on jamovi to show
 that ANOVA analyses and regression analyses aren’t just similar, they’re
 identical for all intents and purposes. Let’s start by running this as an
-ANOVA. To do this, we’ll use the ``rtfm`` data set, and
+ANOVA. To do this, we’ll use the |rtfm|_ data set, and
 :numref:`fig-factorialanova6` shows what we get when we run the analysis in
 jamovi.
 
@@ -156,7 +156,7 @@ jamovi.
 .. figure:: ../_images/lsj_factorialanova6.*
    :alt: ANOVA with two factors (unsaturated: main effects, no interaction= 
 
-   ANOVA of the ``rtfm`` dataset in jamovi: Model with two factors ``attend``
+   ANOVA of the |rtfm|_ data set in jamovi: Model with two factors ``attend``
    and ``reading`` but without the interaction term for these two factors
    
 .. ----------------------------------------------------------------------------
@@ -168,7 +168,7 @@ attended class (*F*\(1,5) = 21.6, p = 0.0056) and if they read the textbook:
 *F* statistics.
 
 Now let’s think about the same analysis from a linear regression perspective.
-In the ``rtfm`` data set, we have encoded ``attend`` and ``reading`` as if they
+In the |rtfm|_ data set, we have encoded ``attend`` and ``reading`` as if they
 were numeric predictors. In this case, this is perfectly acceptable. There
 really is a sense in which a student who turns up to class (i.e.
 ``attend = 1``) has in fact done “more attendance” than a student who does not
@@ -259,7 +259,7 @@ really true. Running the regression in the usual way gives the results shown in
 .. figure:: ../_images/lsj_factorialanova7.*
    :alt: Regression analysis for the rtfm dataset, unsaturated
 
-   Regression analysis for the ``rtfm`` dataset in jamovi: Model with two
+   Regression analysis for the |rtfm|_ data set in jamovi: Model with two
    factors ``attend`` and ``reading`` but without the interaction term for
    these two factors
    
@@ -305,7 +305,7 @@ this will give you the table shown in :numref:`fig-factorialanova8`.
    :alt: Omnibus ANOVA Test
 
    Results table showing the Omnibus ANOVA Test from the jamovi regression
-   analysis using the ``rtfm`` dataset
+   analysis using the |rtfm|_ dataset
    
 .. ----------------------------------------------------------------------------
 
@@ -317,7 +317,7 @@ model. And it’s pretty easy to see how this generalises to a 2 × 2 × 2 ANOVA
 a 2 × 2 × 2 × 2 ANOVA. It’s the same thing, really. You just add a new binary
 variable for each of your factors. Where it begins to get trickier is when we
 consider factors that have more than two levels. Consider, for instance, the 3
-× 2 ANOVA that we ran earlier in this chapter using the ``clinicaltrial`` data
+× 2 ANOVA that we ran earlier in this chapter using the |clinicaltrial|_ data
 set. How can we convert the three-level ``drug`` factor into a numerical form
 that is appropriate for a regression?
 
@@ -355,7 +355,7 @@ Creating contrast variables is not too difficult to do using the jamovi
 ``drugjoyzepam`` use this logical expression:
 ``IF(drug == ’joyzepam’, 1, 0)``. Likewise for ``CBTtherapy``: 
 ``IF(therapy == ’CBT’, 1, 0)``. You can see these new variables, and the
-corresponding logical expressions, in the ``clinicaltrial2`` data set.
+corresponding logical expressions, in the |clinicaltrial2|_ data set.
 
 We have now recoded our three-level factor in terms of two binary variables,
 and we’ve already seen that ANOVA and regression behave the same way for binary
@@ -366,8 +366,8 @@ The equivalence between ANOVA and regression for non-binary factors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now we have two different versions of the same data set. Our original data in
-which the ``drug`` variable from the ``clinicaltrial`` data set is expressed as
-a single three-level factor, and the ``clinicaltrial2`` data set in which it is
+which the ``drug`` variable from the |clinicaltrial|_ data set is expressed as
+a single three-level factor, and the |clinicaltrial2|_ data set in which it is
 expanded into two binary contrasts. Once again, the thing that we want to
 demonstrate is that our original 3 × 2 factorial ANOVA is equivalent to a
 regression model applied to the contrast variables. Let’s start by re-running
@@ -377,9 +377,9 @@ the ANOVA, with results shown in :numref:`fig-factorialanova9`.
 
 .. _fig-factorialanova9:
 .. figure:: ../_images/lsj_factorialanova9.*
-   :alt: ANOVA results for the ``clinicaltrial`` dataset: Unsaturated model
+   :alt: ANOVA results for the |clinicaltrial| dataset: Unsaturated model
 
-   jamovi ANOVA results for the ``clinicaltrial`` dataset: Unsaturated model
+   jamovi ANOVA results for the |clinicaltrial|_ dataset: Unsaturated model
    with the two main effects for ``drug`` and ``therapy`` but without an
    interaction component for these two factors
    
@@ -396,7 +396,7 @@ and ``CBTtherapy`` as the predictors. The results are shown in
 .. figure:: ../_images/lsj_factorialanova10.*
    :alt: Regression: clinicaltrial dataset, generated contrast-variables
 
-   jamovi regression results for the ``clinicaltrial`` dataset: Model with the
+   jamovi regression results for the |clinicaltrial|_ data set: Model with the
    generated contrast variables ``druganxifree`` and ``drugjoyzepam``
    
 .. ----------------------------------------------------------------------------
@@ -535,3 +535,14 @@ example I gave above, there are *N* = 18 observations in the data
 set and K + 1 = 4 regression coefficients associated with the
 ANOVA model, so the degrees of freedom for the residuals is
 *df*\ :sub:`2` = 18 - 4 = 14.
+
+.. ----------------------------------------------------------------------------
+
+.. |rtfm|                              replace:: ``rtfm``
+.. _rtfm:                              _static/data/rtfm.omv
+
+.. |clinicaltrial|                     replace:: ``clinicaltrial``
+.. _clinicaltrial:                     _static/data/clinicaltrial.omv
+
+.. |clinicaltrial2|                    replace:: ``clinicaltrial2``
+.. _clinicaltrial2:                    _static/data/clinicaltrial2.omv

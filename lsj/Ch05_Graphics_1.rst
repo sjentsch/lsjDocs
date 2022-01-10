@@ -6,7 +6,8 @@ Histograms
 Let’s begin with the humble **histogram**. Histograms are one of the
 simplest and most useful ways of visualising data. They make most sense
 when you have an interval or ratio scale variable (e.g., the
-``afl.margins`` data that we used in `Descriptive statistics
+``afl.margins`` variable from the |aflsmall_finalists|_ data set that we
+used in `Descriptive statistics
 <Ch04_Descriptives.html#descriptive-statistics>`__ ) and what you want
 to do is get an overall impression of the variable. Most of you probably
 know how histograms work, since they’re so widely used, but for the sake
@@ -75,3 +76,6 @@ like. The downside to histograms is that they aren’t very compact. Unlike some
 of the other plots I’ll talk about it’s hard to cram 20-30 histograms into a
 single image without overwhelming the viewer. And of course, if your data are
 nominal scale then histograms are useless.
+
+.. |aflsmall_finalists|                replace:: ``aflsmall_finalists``
+.. _aflsmall_finalists:                _static/data/aflsmall_finalists.omv
