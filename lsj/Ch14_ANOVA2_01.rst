@@ -81,14 +81,17 @@ and no therapy, people who received the placebo while getting CBT,
 etc.). It is helpful to organise all these numbers, plus the marginal
 and grand means, into a single table which looks like this:
 
-======== ========== ==== =====
-         no therapy CBT  total
-======== ========== ==== =====
-placebo  0.30       0.60 0.45
-anxifree 0.40       1.03 0.72
-joyzepam 1.47       1.50 1.48
-total    0.72       1.04 0.88
-======== ========== ==== =====
++----------+------------+------+-------+
+|          | no therapy |  CBT | total |
++==========+============+======+=======+
+| placebo  |       0.30 | 0.60 |  0.45 |
++----------+------------+------+-------+
+| anxifree |       0.40 | 1.03 |  0.72 |
++----------+------------+------+-------+
+| joyzepam |       1.47 | 1.50 |  1.48 |
++----------+------------+------+-------+
+| total    |       0.72 | 1.04 |  0.88 |
++----------+------------+------+-------+
 
 Now, each of these different means is of course a sample statistic. It’s
 a quantity that pertains to the specific observations that we’ve made
@@ -113,14 +116,17 @@ population mean associated with the *r*\ th level of Factor A
 (column number *c*).\ [#]_ So the population means are now written
 like this:
 
-======== ============ ============ ============
-         no therapy   CBT          total
-======== ============ ============ ============
-placebo  µ\ :sub:`11` µ\ :sub:`11`  
-anxifree µ\ :sub:`21` µ\ :sub:`11`  
-joyzepam µ\ :sub:`31` µ\ :sub:`11`  
-total                                       
-======== ============ ============ ============
++----------+--------------+--------------+--------------+
+|          | no therapy   | CBT          | total        |
++==========+==============+==============+==============+
+| placebo  | µ\ :sub:`11` | µ\ :sub:`11` |              |
++----------+--------------+--------------+--------------+
+| anxifree | µ\ :sub:`21` | µ\ :sub:`11` |              |
++----------+--------------+--------------+--------------+
+| joyzepam | µ\ :sub:`31` | µ\ :sub:`11` |              |
++----------+--------------+--------------+--------------+
+| total    |              |              |              |
++----------+--------------+--------------+--------------+
 
 Okay, what about the remaining entries? For instance, how should we
 describe the average mood gain across the entire (hypothetical)
@@ -138,14 +144,17 @@ with the second column in the table, so we use the notation
 (marginalising\ [#]_) over both. So our full table of population means
 can be written down like this:
 
-======== ============ ============ ============
-         no therapy   CBT          total
-======== ============ ============ ============
-placebo  µ\ :sub:`11` µ\ :sub:`12` µ\ :sub:`1.`
-anxifree µ\ :sub:`21` µ\ :sub:`22` µ\ :sub:`2.`
-joyzepam µ\ :sub:`31` µ\ :sub:`32` µ\ :sub:`3.`
-total    µ\ :sub:`.1` µ\ :sub:`.2` µ\ :sub:`..`
-======== ============ ============ ============
++----------+--------------+--------------+--------------+
+|          | no therapy   | CBT          | total        |
++==========+==============+==============+==============+
+| placebo  | µ\ :sub:`11` | µ\ :sub:`12` | µ\ :sub:`1.` |
++----------+--------------+--------------+--------------+
+| anxifree | µ\ :sub:`21` | µ\ :sub:`22` | µ\ :sub:`2.` |
++----------+--------------+--------------+--------------+
+| joyzepam | µ\ :sub:`31` | µ\ :sub:`32` | µ\ :sub:`3.` |
++----------+--------------+--------------+--------------+
+| total    | µ\ :sub:`.1` | µ\ :sub:`.2` | µ\ :sub:`..` |
++----------+--------------+--------------+--------------+
 
 Now that we have this notation, it is straightforward to formulate and express
 some hypotheses. Let’s suppose that the goal is to find out two things. First,
@@ -385,14 +394,17 @@ words, our sample means can be organised into the same table as the
 population means. For our clinical trial data, that table looks like
 this:
 
-======== ==================== ==================== ====================
-         no therapy           CBT                  total
-======== ==================== ==================== ====================
-placebo  :math:`\bar{Y}_{11}` :math:`\bar{Y}_{12}` :math:`\bar{Y}_{1.}`
-anxifree :math:`\bar{Y}_{21}` :math:`\bar{Y}_{22}` :math:`\bar{Y}_{2.}`
-joyzepam :math:`\bar{Y}_{31}` :math:`\bar{Y}_{32}` :math:`\bar{Y}_{3.}`
-total    :math:`\bar{Y}_{.1}` :math:`\bar{Y}_{.2}` :math:`\bar{Y}_{..}`
-======== ==================== ==================== ====================
++----------+----------------------+----------------------+----------------------+
+|          | no therapy           | CBT                  | total                |
++==========+======================+======================+======================+
+| placebo  | :math:`\bar{Y}_{11}` | :math:`\bar{Y}_{12}` | :math:`\bar{Y}_{1.}` |
++----------+----------------------+----------------------+----------------------+
+| anxifree | :math:`\bar{Y}_{21}` | :math:`\bar{Y}_{22}` | :math:`\bar{Y}_{2.}` |
++----------+----------------------+----------------------+----------------------+
+| joyzepam | :math:`\bar{Y}_{31}` | :math:`\bar{Y}_{32}` | :math:`\bar{Y}_{3.}` |
++----------+----------------------+----------------------+----------------------+
+| total    | :math:`\bar{Y}_{.1}` | :math:`\bar{Y}_{.2}` | :math:`\bar{Y}_{..}` |
++----------+----------------------+----------------------+----------------------+
 
 And if we look at the sample means that I showed earlier, we have
 :math:`\bar{Y}_{11} = 0.30`, :math:`\bar{Y}_{12} = 0.60` etc. In our
