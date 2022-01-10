@@ -163,6 +163,8 @@ tests for that.
    If you made a mistake or could not follow the explanations, you can simply
    download and open the |parenthood_r2|_ data set.
 
+.. ----------------------------------------------------------------------------
+
 .. |parenthood|                        replace:: ``parenthood``
 .. _parenthood:                        _static/data/parenthood.omv
 

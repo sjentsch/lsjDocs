@@ -157,19 +157,17 @@ group mean
 
 .. math:: \mbox{SS}_w = \sum_{k=1}^G \sum_{i=1}^{N_k} \left( Y_{ik} - \bar{Y}_k \right)^2
 
-where |Yb_k| is a group mean. In our example,
-|Yb_k| would be the average mood change experienced by those
-people given the *k*-th drug. So, instead of comparing individuals
-to the average of all people in the experiment, we’re only comparing
-them to those people in the the same group. As a consequence, you’d
-expect the value of |SS_w| to be smaller than the total sum
-of squares, because it’s completely ignoring any group differences,
-i.e., whether the drugs will have different effects on people’s moods.
+where |Yb_k| is a group mean. In our example, |Yb_k| would be the average mood
+change experienced by those people given the *k*-th drug. So, instead of
+comparing individuals to the average of all people in the experiment, we’re
+only comparing them to those people in the the same group. As a consequence,
+you’d expect the value of |SS_w| to be smaller than the total sum of squares,
+because it’s completely ignoring any group differences, i.e., whether the drugs
+will have different effects on people’s moods.
 
 Next, we can define a third notion of variation which captures *only*
 the differences between groups. We do this by looking at the differences
-between the group means |Yb_k| and grand mean
-|Yb|.
+between the group means |Yb_k| and grand mean |Yb|.
 
 In order to quantify the extent of this variation, what we do is
 calculate the **between-group sum of squares**
@@ -401,16 +399,15 @@ A worked example
 
 The previous discussion was fairly abstract and a little on the
 technical side, so I think that at this point it might be useful to see
-a worked example. For that, let’s go back to the clinical trial data
-that I introduced at the start of the chapter. The descriptive
-statistics that we calculated at the beginning tell us our group means:
-an average mood gain of 0.45 for the placebo, 0.72 for Anxifree, and
-1.48 for Joyzepam. With that in mind, let’s party like it’s 1899\ [#]_
-and start doing some pencil and paper calculations. I’ll only do this
-for the first 5 observations because it’s not bloody 1899 and I’m very
-lazy. Let’s start by calculating |SS_w|, the within-group
-sums of squares. First, let’s draw up a nice table to help us with our
-calculations:
+a worked example. For that, let’s go back to the |clinicaltrial| data set
+that was introduced earlier in the chapter. The descriptive statistics
+that we calculated at the beginning tell us our group means: An average
+mood gain of 0.45 for the placebo, 0.72 for Anxifree, and 1.48 for Joyzepam.
+With that in mind, let’s party like it’s 1899\ [#]_ and start doing some pencil
+and paper calculations. I’ll only do this for the first 5 observations because
+it’s not bloody 1899 and I’m very lazy. Let’s start by calculating |SS_w|, the
+within-group sums of squares. First, let’s draw up a nice table to help us with
+our calculations:
 
 ========= =======
 group     outcome
@@ -475,19 +472,25 @@ Of course, if we actually wanted to get the *right* answer we’d need to
 do this for all 18 observations in the data set, not just the first
 five. We could continue with the pencil and paper calculations if we
 wanted to, but it’s pretty tedious. Alternatively, it’s not too hard to
-do this in a spreadsheet (LibreOffice Calc, Excel or Google Sheets). Try
-and do it yourself, or use the ``clinicaltrial_anova`` file (available in
-`LibreOffice <_static/data/clinicaltrial_anova.ods>`_ or `Excel
-<_static/data/clinicaltrial_anova.xls>`_ format). When you do it you
-should end up with a within-group sum of squares value of 1.39.
+do this in jamovi. 
 
-Okay. Now that we’ve calculated the within groups variation,
-|SS_w|, it’s time to turn our attention to the between-group sum of
-squares, |SS_b|. The calculations for this case are very similar. The
-main difference is that instead of calculating the differences between
-an observation |Y_ik| and a group mean |Yb_k| for all of the observations,
-we calculate the differences between the group means |Yb_k| and the grand
-mean |Yb| (in this case 0.88) for all of the groups.
+#. Go to an empty column (at the end of the data set) and double click on the
+   column header, choose “New computed variable” and enter ``sq_res_wth`` in
+   the first line and the formula ``(mood.gain - VMEAN(mood.gain, group_by =
+   drug)) ^ 2`` in the line starting with ``=`` (next to the *f*\ :sub:`x`).
+   ``mood.gain`` represents |Y_ik|, ``VMEAN(mood.gain, group_by = drug)`` the
+   group mean |Yb_k|. This difference (third column in the table above) is then
+   squared and it is therefore not much surprise to see that the values are
+   (apart from rounding errors) identical to those in the last column of the
+   table above.
+
+Okay. Now that we’ve calculated the within groups variation, |SS_w|, it’s time
+to turn our attention to the between-group sum of squares, |SS_b|. The
+calculations for this case are very similar. The main difference is that
+instead of calculating the differences between an observation |Y_ik| and a
+group mean |Yb_k| for all of the observations, we calculate the differences
+between the group means |Yb_k| and the grand mean |Yb| (in this case 0.88) for
+all of the groups.
 
 +-----------+-------------+-------------+-------------+-------------+
 | group     | group mean  | grand mean  | deviation   | squared     |
@@ -502,6 +505,15 @@ mean |Yb| (in this case 0.88) for all of the groups.
 +-----------+-------------+-------------+-------------+-------------+
 | joyzepam  | 1.48        | 0.88        | 0.60        | 0.36        |
 +-----------+-------------+-------------+-------------+-------------+
+
+#. We create another computed variable with the name ``sq_res_btw`` and
+   ``(VMEAN(mood.gain, group_by = drug) - VMEAN(mood.gain) - ) ^ 2`` as
+   formula. The term ``VMEAN(mood.gain, group_by = drug)`` represents the
+   group mean |Yb_k|, and ``VMEAN(mood.gain)`` the grand mean |Yb|. Again,
+   we find that the values for that variable are the same as in the last
+   column of the table above: the first three rows represent “placebo”,
+   followed by three lines with “anxifree” and three lines with “joyzepam”;
+   the next nine lines are a repetition of the first nine ones.
 
 However, for the between group calculations we need to multiply each of
 these squared deviations by |N_k|, the number of observations in
@@ -531,11 +543,20 @@ And so now our between group sum of squares is obtained by summing these
 
 |SS_b| = 1.14 + 0.18 + 2.16 = 3.48
 
-As you can see, the between group calculations are a lot shorter.\ [#]_
-Now that we’ve calculated our sums of squares values,
-|SS_b| and |SS_w|, the rest of the ANOVA is
-pretty painless. The next step is to calculate the degrees of freedom.
-Since we have *G* = 3 groups and *N* = 18 observations in
+As you can see, the between group calculations are a lot shorter (when
+calculated b hand).
+
+#. In jamovi, we can calculate these sums, i.e., the values for |SS_b| and
+   |SS_w|, by clicking ``Descriptives`` →  ``Descriptive Statistics``, then
+   moving ``sq_res_wth`` and ``sq_res_btw`` to the ``Variables`` box, and 
+   finally selecting ``Sum`` from the ``Statistics`` drop-down menu. The sum
+   of ``sq_res_wth`` (|SS_w|) has a value of **1.392**, ``sq_res_wth`` (|SS_b|)
+   a value of **3.453** (just rounding errors away from the 3.48 we calculated
+   above).
+
+Now that we’ve calculated our sums of squares values, |SS_b| and |SS_w|, the
+rest of the ANOVA is pretty painless. The next step is to calculate the
+degrees of freedom. Since we have *G* = 3 groups and *N* = 18 observations in
 total our degrees of freedom can be calculated by simple subtraction:
 
 |df_b| = G - 1 = 2
@@ -549,47 +570,45 @@ dividing one by the other:
 .. math::
 
    \begin{array}{lclclcl}
-   \mbox{MS}_b &=& \displaystyle\frac{\mbox{SS}_b }{  \mbox{df}_b } &=& \displaystyle\frac{3.48}{ 2} &=& 1.74 \\ 
-   \mbox{MS}_w &=& \displaystyle\frac{\mbox{SS}_w }{  \mbox{df}_w } &=& \displaystyle\frac{1.39}{15} &=& 0.09
+   \mbox{MS}_b &=& \displaystyle\frac{\mbox{SS}_b }{  \mbox{df}_b } &=& \displaystyle\frac{3.453}{ 2} &=& 1.727 \\ 
+   \mbox{MS}_w &=& \displaystyle\frac{\mbox{SS}_w }{  \mbox{df}_w } &=& \displaystyle\frac{1.392}{15} &=& 0.093
    \end{array}
 
 We’re almost done. The mean square values can be used to calculate the
 *F*-value, which is the test statistic that we’re interested in.
 We do this by dividing the between-groups MS value by the within-groups
-MS value.
+MS value.\ [#]_
 
-.. math:: F = \frac{\mbox{MS}_b }{\mbox{MS}_w} = \frac{1.74}{0.09} = 19.3
+.. math:: F = \frac{\mbox{MS}_b }{\mbox{MS}_w} = \frac{1.727}{0.093} = 18.611
 
 Woohooo! This is terribly exciting, yes? Now that we have our test
 statistic, the last step is to find out whether the test itself gives us
-a significant result. As discussed in Chapter 
-`Hypothesis testing <Ch09_HypothesisTesting.html#hypothesis-testing>`__
-back in the “old days” what we’d do is open up a statistics textbook or flick
-to the back section which would actually have a huge lookup table and we would
-find the threshold *F* value corresponding to a particular value
-of alpha (the null hypothesis rejection region), e.g. 0.05, 0.01 or
-0.001, for 2 and 15 degrees of freedom. Doing it this way would give us
-a threshold *F* value for an alpha of 0.001 of 11.34. As this is
-less than our calculated *F* value we say that *p* < 0.001.
-But those were the old days, and nowadays fancy stats software
-calculates the exact *p*-value for you. In fact, the exact
-*p*-value is 0.000071. So, unless we’re being *extremely*
-conservative about our Type I error rate, we’re pretty much guaranteed
-to reject the null hypothesis.
+a significant result. As discussed in Chapter `Hypothesis testing
+<Ch09_HypothesisTesting.html#hypothesis-testing>`__ back in the “old days”
+what we’d do is open up a statistics textbook or flick to the back section
+which would actually have a huge lookup table and we would find the threshold
+*F* value corresponding to a particular value of alpha (the null hypothesis
+rejection region), e.g. 0.05, 0.01 or 0.001, for 2 and 15 degrees of freedom.
+Doing it this way would give us a threshold *F* value for an alpha of 0.001 of
+11.34. As this is less than our calculated *F* value we say that *p* < 0.001.
+But those were the old days, and nowadays fancy stats software calculates the
+exact *p*-value for you. In fact, the exact *p*-value is 0.000086. So, unless
+we’re being *extremely* conservative about our Type I error rate, we’re pretty
+much guaranteed to reject the null hypothesis.
 
 At this point, we’re basically done. Having completed our calculations,
 it’s traditional to organise all these numbers into an ANOVA table like
 the one in :numref:`tab-anovatable`. For our clinical trial data,
-the ANOVA table would look like this:
+the ANOVA table would look like this:\ [#]_
 
 +-----------+----+-----------+-----------+----------------+-----------+
 |           | df | sum of    | mean      | *F*\-statistic | *p*-value |
 |           |    | squares   | squares   |                |           |
 +===========+====+===========+===========+================+===========+
-| between   | 2  | 3.48      | 1.74      | 19.3           | 0.000071  |
+| between   | 2  | 3.453     | 1.727     | 18.611         | 0.000086  |
 | groups    |    |           |           |                |           |
 +-----------+----+-----------+-----------+----------------+-----------+
-| within    | 15 | 1.39      | 0.09      | -              | -         |
+| within    | 15 | 1.392     | 0.093     | -              | -         |
 | groups    |    |           |           |                |           |
 +-----------+----+-----------+-----------+----------------+-----------+
 
@@ -603,7 +622,7 @@ your write up. A pretty standard way of reporting this result would be
 to write something like this:
 
    One-way ANOVA showed a significant effect of drug on mood gain:
-   *F*\(2,15) = 19.3, *p* < 0.001.
+   *F*\(2,15) = 18.61, *p* < 0.001.
 
 Sigh. So much work for one short sentence.
 
@@ -639,32 +658,45 @@ Sigh. So much work for one short sentence.
    about the 1920s”.
 
 .. [#]
-   In the Excel ``clinicaltrial_anova.xls`` the value for |SS_b|
-   worked out to be very slightly different, 3.45, than that shown in
-   the text above (rounding errors!)
+   We could as well do this with creating yet another computed variable, named
+   ``F`` using the formula ``(VSUM(sq_res_btw) / 2) / (VSUM(sq_res_wth) / 15)``
+   which gives us 18.611 as value.
+   If you could not reprodcuce the calculation steps above, you can download
+   and open the |clinicaltrial_anova| data set.
+
+.. [#]
+   In order to see the *p*-value with a high number of decimal places, click on
+   the ⋮-symbol (top-right corner of the jamovi-window) and set the ``p-value
+   format`` to ``16 dp``.     
    
 .. ----------------------------------------------------------------------------
 
-.. |N_k|    replace:: *N*\ :sub:`k`
+.. |N_k|                               replace:: *N*\ :sub:`k`
                       
-.. |Y_ik|   replace:: *Y*\ :sub:`ik`
-.. |Y_p|    replace:: *Y*\ :sub:`p`
+.. |Y_ik|                              replace:: *Y*\ :sub:`ik`
+.. |Y_p|                               replace:: *Y*\ :sub:`p`
 
-.. |Yb_k|   replace:: :math:`\bar{Y}_k`
-.. |Yb|     replace:: :math:`\bar{Y}`
+.. |Yb_k|                              replace:: :math:`\bar{Y}_k`
+.. |Yb|                                replace:: :math:`\bar{Y}`
 
-.. |SS_b|   replace:: SS\ :sub:`b`
-.. |SS_w|   replace:: SS\ :sub:`w`
-.. |SS_t|   replace:: SS\ :sub:`tot`
+.. |SS_b|                              replace:: SS\ :sub:`b`
+.. |SS_w|                              replace:: SS\ :sub:`w`
+.. |SS_t|                              replace:: SS\ :sub:`tot`
 
-.. |df_b|   replace:: *df*\ :sub:`b`
-.. |df_w|   replace:: *df*\ :sub:`w`
+.. |df_b|                              replace:: *df*\ :sub:`b`
+.. |df_w|                              replace:: *df*\ :sub:`w`
 
-.. |MS_b|   replace:: MS\ :sub:`b`
-.. |MS_w|   replace:: MS\ :sub:`w`
+.. |MS_b|                              replace:: MS\ :sub:`b`
+.. |MS_w|                              replace:: MS\ :sub:`w`
 
-.. |f_SS_b| replace:: :math:`\displaystyle\sum_{k=1}^G N_k(\bar{Y}_k - \bar{Y})^2`
-.. |f_SS_w| replace:: :math:`\displaystyle\sum_{k=1}^G \displaystyle\sum_{i = 1}^{N_k} ({Y}_{ik} - \bar{Y}_k)^2`
+.. |f_SS_b|                            replace:: :math:`\displaystyle\sum_{k=1}^G N_k(\bar{Y}_k - \bar{Y})^2`
+.. |f_SS_w|                            replace:: :math:`\displaystyle\sum_{k=1}^G \displaystyle\sum_{i = 1}^{N_k} ({Y}_{ik} - \bar{Y}_k)^2`
 
 .. `\displaystyle\frac{\mbox{SS}_w}{\mbox{df}_w}`
+
+.. |clinicaltrial|                     replace:: ``clinicaltrial``
+.. _clinicaltrial:                     _static/data/clinicaltrial.omv
+
+.. |clinicaltrial_anova|               replace:: ``clinicaltrial_anova``
+.. _clinicaltrial_anova:               _static/data/clinicaltrial_anova.omv
 

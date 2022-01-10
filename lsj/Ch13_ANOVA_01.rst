@@ -45,7 +45,7 @@ control group, but the difference isn’t as large. The question that we
 want to answer is are these difference “real”, or are they just due to
 chance?
 
------
+.. ----------------------------------------------------------------------------
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
 .. _clinicaltrial:                     _static/data/clinicaltrial.omv
