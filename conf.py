@@ -10,7 +10,7 @@
 import os
 import sys
 import re
-# sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
 from sphinx.locale import _
 
@@ -18,7 +18,7 @@ from sphinx.locale import _
 project = u'Learning statistics with jamovi'
 slug = u'lsj'
 author = u'Danielle J. Navarro & David R. Foxcroft'
-copyright = u'2020, ' + author + '. This work is licensed under a Creative Commons Attribution-Non Commercial 4.0 International License.'
+copyright = u'2020-2022, ' + author + '. This work is licensed under a Creative Commons Attribution-Non Commercial 4.0 International License.'
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
@@ -40,7 +40,8 @@ gettext_compact = False
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.imgmath',
+#   'sphinx.ext.imgmath',
+    'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
     'sphinx_copybutton',
 ]
@@ -94,10 +95,18 @@ html_theme = "sphinx_rtd_theme"
 html_theme_options = {
     'collapse_navigation': False,
     'display_version': False,
+    # only display the logo image, do not display the project name at the top of the sidebar (default: False)
     'logo_only': True,
+    # location of the prev / next buttons (default: 'bottom') and allow navigating using the keyboard’s left and right arrows (default: False)
+    'prev_next_buttons_location': 'bottom',
+    'navigation_with_keys': True,
+    # add an icon next to external links (default: False)
+    'style_external_links': False,
+    # display style for code-versioning-systems (github, etc.)     
+    # 'vcs_pageview_mode': '', # commented out - doesn't work on readthedocs
+    # changes the background of the search area in the navigation bar
     'style_nav_header_background': '#FFFFFF',
-#   Applies to all below: Can be an int, interpreted as pixels or a valid CSS dimension string such as ‘70em’ or ‘50%’.    
-#   Width of the sidebar: Defaults to 230 pixels.    
+    # width of the sidebar (defaults to 230 pixels)
     'sidebarwidth': '20%',
 #   Minimal and maximal width of the document body. Use 'none' if you don’t want a width limit. Defaults may depend on the theme (often 450px [min] and 800px [max]).    
     'body_min_width': 'none',
@@ -134,6 +143,9 @@ html_favicon = '_images/jamovi-v.svg'
 html_css_files = ['jamovi.css', # jamovi style (adapted)
                  ]
 
+html_js_files  = ['gif-player.js', # gif-player
+                 ]
+
 # Custom sidebar templates, must be a dictionary that maps document names to template names.
 # The list specifies the complete list of sidebar templates to include.
 # If all or some of the default sidebars are to be included, they must be put into this list as well.
@@ -151,7 +163,11 @@ html_css_files = ['jamovi.css', # jamovi style (adapted)
 # This will render the custom template windowssidebar.html and the quick search box within the sidebar of the given document, 
 # and render the default sidebars for all other pages (except that the local TOC is replaced by the global TOC).
 # Note that this value only has no effect if the chosen theme does not possess a sidebar, like the builtin scrolls and haiku themes.
-html_sidebars = {'**': ['localtoc.html', 'globaltoc.html', 'relations.html', 'searchbox.html'], }
+html_sidebars = {'**': ['localtoc.html',
+                        'globaltoc.html',
+                        'relations.html',
+                        'searchbox.html',
+                        'versioning.html'], }
 
 # If true, the reST sources are included in the HTML build as _sources/name. The default is True.
 html_copy_source = False
@@ -256,7 +272,7 @@ epub_writing_mode = 'horizontal'
 latex_engine = 'xelatex'
 
 # Grouping the document tree into LaTeX files. List of tuples
-#   (source start file, target name,      title,                       author, theme,    toctree_only).
+#   (source start file, target name,   title,                              author,                                     theme,    toctree_only).
 latex_documents = [
     (master_doc,        'lsjDocs.tex', u'Learning statistics with jamovi', u'Danielle J. Navarro & David R. Foxcroft', 'manual', True),
 ]
@@ -323,17 +339,46 @@ latex_show_pagerefs = True
 
 # -- Options for manual page output ---------------------------------------
 # One entry per manual page. List of tuples
-#   (source start file, name,             description,                 authors,  manual section).
+#   (source start file, name,          description,                        authors,  manual section).
 man_pages = [
     (master_doc,        'lsjDocs',     u'Learning statistics with jamovi', [author], 1),
 ]
 
 # -- Options for Texinfo output -------------------------------------------
 # Grouping the document tree into Texinfo files. List of tuples
-#   (source start file, target name,      title,                       author,   dir menu entry, description,                                                                                category)
+#   (source start file, target name,   title,                              author,   dir menu entry, description,                                                                                category)
 texinfo_documents = [
     (master_doc,        'lsjDocs',     u'Learning statistics with jamovi', [author], 'lsjDocs',   'A jamovi tutorial for psychology students and other beginners', 'Mathematics'),
 ]
 
 # -- Options for Sphinx extensions ----------------------------------------
 imgmath_image_format = 'svg'
+
+# -- Lanaguage chooser ----------------------------------------------------
+
+try:
+   html_context
+except NameError:
+   html_context = dict()
+
+current_version = 'latest'
+html_context['display_lower_left'] = True
+html_context['current_language'] = language
+
+html_context['current_version'] = current_version
+html_context['version'] = current_version
+
+if os.path.abspath('.').startswith('/home'):
+   base_path = os.path.abspath('.') + '/_build/html'
+else:
+   base_path = ''
+ 
+html_context['languages'] = [('en', base_path + '/en')]
+ 
+languages = [lang.name for lang in os.scandir('_locale') if lang.is_dir()]
+for lang in languages:
+   html_context['languages'].append((lang, base_path + '/' + lang))
+ 
+html_context['downloads'] = list()
+html_context['downloads'].append(('PDF',  '/' + language + '/' + current_version + '/' + project + '-docs_' + language + '_' + current_version + '.pdf'))
+html_context['downloads'].append(('epub', '/' + language + '/' + current_version + '/' + project + '-docs_' + language + '_' + current_version + '.epub'))
