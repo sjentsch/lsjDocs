@@ -436,11 +436,7 @@ B is of course the same thing, just with some subscripts shuffled around
 .. math:: \mbox{SS}_{B} = (N \times R) \sum_{c=1}^C \left( \bar{Y}_{.c} - \bar{Y}_{..} \right)^2
 
 Now that we have these formulas we can check them against the jamovi
-output from the earlier section. Once again, a dedicated spreadsheet
-programme is helpful for these sorts of calculations, so please have a
-go yourself, or use the ``clinicaltrial_factorialanova`` file (available in
-`LibreOffice <_static/data/clinicaltrial_factorialanova.ods>`_ or `Excel
-<_static/data/clinicaltrial_factorialanova.xls>`_ format).
+output from the earlier section.
 
 First, let’s calculate the sum of squares associated with the main
 effect of ``drug``. There are a total of *N* = 3 people in each
@@ -520,10 +516,25 @@ hood.
 In any case, it’s probably worth taking a moment to check that we can
 calculate SS\ :sub:`R` using this formula and verify that we do obtain
 the same answer that jamovi produces in its ANOVA table. The calculations
-are pretty straightforward when done in a spreadsheet (see
-the ``clinicaltrial_factorialanova.xls`` file). We can calculate the
-total SS using the formulas above (getting an answer of total SS = 4.85)
-and then the residual SS ( = 0.92). Yet again, we get the same answer.
+are pretty straightforward when done using computed variables in jamovi.
+We download and open the |clinicaltrial|_ data set and define three
+computed variables: (1) ``sq_res_T`` with ``(mood.gain - VMEAN(mood.gain))
+^ 2`` as formula, (2) ``sq_res_A`` with ``(VMEAN(mood.gain) - VMEAN(mood.gain,
+group_by = drug)) ^ 2`` as formula, and (3) ``sq_res_B`` with
+``(VMEAN(mood.gain) - VMEAN(mood.gain, group_by = therapy)) ^ 2`` as formula.
+Once we created those three variables, we calculate the sum of squares using
+``Descriptives`` → ``Descriptive Statistics``, then moving ``sq_res_T``, 
+``sq_res_A`` and ``sq_res_B`` to the ``Variables`` box, and finally selecting
+``Sum`` from the ``Statistics`` drop-down menu. SS\ :sub:`T` (``sq_res_T``)
+has a value of **4.845**, SS\ :sub:`A` (``sq_res_A``) a value of **3.453**,
+and SS\ :sub:`B` (``sq_res_B``) a value of **0.467**. Using these three values,
+we can calculate SS\ :sub:`R` using the formula above.
+
+| SS\ :sub:`R` = 4.845 - (3.453 + 0.467)
+| SS\ :sub:`R` = 0.924
+
+Alternatively, we can create another computed variable with the name ``SS_R`` and
+the formula ``VSUM(sq_res_T) - (VSUM(sq_res_A) + VSUM(sq_res_B))``.
 
 What are our degrees of freedom?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -547,6 +558,27 @@ factor introduces, and the 1 additional group mean that the the ``therapy``
 factor introduces, and so our degrees of freedom is 14. As a formula, this is
 N - 1 - (R - 1) - (C - 1), which simplifies to N - R - C + 1.
 
+Using the degrees of freedom and the square sums we calculated above, we can
+calculate the following F-values for the factors A and B.
+
+| F\ :sub:`A` = (SS\ :sub:`A` / SS\ :sub:`A`) / (SS\ :sub:`R` / SS\ :sub:`R`)
+| F\ :sub:`A` = (3.453 / 2) / (0.924 / 14)
+| F\ :sub:`A` = 1.727 / 0.066
+| F\ :sub:`A` = 26.149
+
+| F\ :sub:`B` = (SS\ :sub:`B` / SS\ :sub:`B`) / (SS\ :sub:`R` / SS\ :sub:`R`)
+| F\ :sub:`B` = (0.467 / 1) / (0.924 / 14)
+| F\ :sub:`B` = 0.467 / 0.066
+| F\ :sub:`B` = 7.076
+
+Again, we can also create two new computed variables, the first with the name
+``F_A`` and the formula ``(VSUM(sq_res_A) / 2) / (SS_R / 14)``, and the second
+with the name ``F_B`` and the formula ``(VSUM(sq_res_B) / 1) / (SS_R / 14)``.
+
+Those, who don't want to have a go themselves or can't reproduce the
+calculations described in the previous paragraphs can download and open the
+|clinicaltrial_factorialanova|_ data set and look at the calculations there.
+
 Factorial ANOVA versus one-way ANOVAs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -563,12 +595,12 @@ alternative hypotheses tested by the one-way ANOVAs are in fact
 identical to the hypotheses tested by the factorial ANOVA. Looking even
 more carefully at the ANOVA tables, we can see that the sum of squares
 associated with the factors are identical in the two different analyses
-(3.45 for ``drug`` and 0.92 for ``therapy``), as are the degrees of
+(3.453 for ``drug`` and 0.467 for ``therapy``), as are the degrees of
 freedom (2 for ``drug``, 1 for ``therapy``). But they don’t give the
 same answers! Most notably, when we ran the one-way ANOVA for
 ``therapy`` in Section `On the relationship between ANOVA and the Student t-test
 <Ch13_ANOVA_09.html#on-the-relationship-between-anova-and-the-student-t-test>`__
-we didn’t find a significant effect (the *p*-value was 0.31). However, when
+we didn’t find a significant effect (the *p*-value was 0.210). However, when
 we look at the main effect of ``therapy`` within the context of the
 two-way ANOVA, we do get a significant effect (p = 0.019). The two
 analyses are clearly not the same.
@@ -639,3 +671,11 @@ matter (bottom-left), and (4) neither A nor B matters (bottom-right).
 
 .. [#]
    English translation: “least tedious”.
+
+.. ----------------------------------------------------------------------------
+
+.. |clinicaltrial|                     replace:: ``clinicaltrial``
+.. _clinicaltrial:                     _static/data/clinicaltrial.omv
+
+.. |clinicaltrial_factorialanova|      replace:: ``clinicaltrial_factorialanova``
+.. _clinicaltrial_factorialanova:      _static/data/clinicaltrial_factorialanova.omv
