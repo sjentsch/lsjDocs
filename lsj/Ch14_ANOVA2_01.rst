@@ -171,8 +171,8 @@ means to be different. Formally, we write down our null and alternative
 hypotheses in terms of the *equality of marginal means*:
 
 +----------------------------------+---------------------------------------------+
-| Null hypothesis, H\ :sub:`0`:    | row means are the same, i.e., `µ\ :sub:`1.` |
-|                                  | = µ\ :sub:`2.` = µ\ :sub:`3.``              |
+| Null hypothesis, H\ :sub:`0`:    | row means are the same, i.e., µ\ :sub:`1.`  |
+|                                  | = µ\ :sub:`2.` = µ\ :sub:`3.`               | 
 +----------------------------------+---------------------------------------------+
 | Alternative hypothesis,          | at least one row mean is                    |
 | H\ :sub:`1`:                     | different.                                  |
