@@ -56,13 +56,13 @@ to say that the valid arguments are valid, and 0% of people to say that
 the invalid arguments are valid. So if you ran an experiment looking at
 this, you’d expect to see data like this:
 
-+---------------------+-----------------------+------------------------+
-|                     | conclusion feels true | conclusion feels false |
-+=====================+=======================+========================+
-| argument is valid   | 100% say “valid”      | 100% say “valid”       |
-+---------------------+-----------------------+------------------------+
-| argument is invalid | 0% say “valid”        | 0% say “valid”         |
-+---------------------+-----------------------+------------------------+
++-------------------------+-----------------------+------------------------+
+|                         | conclusion feels true | conclusion feels false |
++=========================+=======================+========================+
+| **argument is valid**   | 100% say “valid”      | 100% say “valid”       |
++-------------------------+-----------------------+------------------------+
+| **argument is invalid** | 0% say “valid”        | 0% say “valid”         |
++-------------------------+-----------------------+------------------------+
 
 If the psychological data looked like this (or even a good approximation
 to this), we might feel safe in just trusting our gut instincts. That
@@ -76,25 +76,25 @@ experiment looking at exactly this. What they found is that when pre-existing
 biases (i.e., beliefs) were in agreement with the structure of the data,
 everything went the way you’d hope:
 
-+---------------------+-----------------------+------------------------+
-|                     | conclusion feels true | conclusion feels false |
-+=====================+=======================+========================+
-| argument is valid   | 92% say “valid”       |                        |
-+---------------------+-----------------------+------------------------+
-| argument is invalid |                       | 8% say “valid”         |
-+---------------------+-----------------------+------------------------+
++-------------------------+-----------------------+------------------------+
+|                         | conclusion feels true | conclusion feels false |
++=========================+=======================+========================+
+| **argument is valid**   | 92% say “valid”       |                        |
++-------------------------+-----------------------+------------------------+
+| **argument is invalid** |                       | 8% say “valid”         |
++-------------------------+-----------------------+------------------------+
 
 Not perfect, but that’s pretty good. But look what happens when our
 intuitive feelings about the truth of the conclusion run against the
 logical structure of the argument:
 
-+---------------------+-----------------------+------------------------+
-|                     | conclusion feels true | conclusion feels false |
-+=====================+=======================+========================+
-| argument is valid   | 92% say “valid”       | **46% say “valid”**    |
-+---------------------+-----------------------+------------------------+
-| argument is invalid | **92% say “valid”**   | 8% say “valid”         |
-+---------------------+-----------------------+------------------------+
++-------------------------+-----------------------+------------------------+
+|                         | conclusion feels true | conclusion feels false |
++=========================+=======================+========================+
+| **argument is valid**   | 92% say “valid”       | *46% say “valid”*      |
++-------------------------+-----------------------+------------------------+
+| **argument is invalid** | *92% say “valid”*     | 8% say “valid”         |
++-------------------------+-----------------------+------------------------+
 
 Oh dear, that’s not as good. Apparently, when people are presented with
 a strong argument that contradicts our pre-existing beliefs, we find it

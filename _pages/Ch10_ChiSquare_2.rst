@@ -53,17 +53,17 @@ data <Ch06_DataHandling_1.html#tabulating-and-cross-tabulating-data>`__). In
 jamovi we do this using the ``Frequencies`` → ``Contingency Tables`` → 
 ``Independent Samples`` analysis, and we should get a table something like this:
 
-+--------+-------+-------+-------+
-|        | Robot | Human | Total |
-+========+=======+=======+=======+
-| Puppy  | 13    | 15    | 28    |
-+--------+-------+-------+-------+
-| Flower | 30    | 13    | 43    |
-+--------+-------+-------+-------+
-| Data   | 44    | 65    | 109   |
-+--------+-------+-------+-------+
-| Total  | 87    | 93    | 180   |
-+--------+-------+-------+-------+
++------------+-------+-------+-------+
+|            | Robot | Human | Total |
++============+=======+=======+=======+
+| **Puppy**  | 13    | 15    | 28    |
++------------+-------+-------+-------+
+| **Flower** | 30    | 13    | 43    |
++------------+-------+-------+-------+
+| **Data**   | 44    | 65    | 109   |
++------------+-------+-------+-------+
+| **Total**  | 87    | 93    | 180   |
++------------+-------+-------+-------+
 
 From this, it’s quite clear that the vast majority of the humans chose
 the data file, whereas the robots tended to be a lot more even in their
@@ -82,17 +82,17 @@ ways”, how can I construct a test of the *null* hypothesis that “humans
 and robots answer the question the same way”? As before, we begin by
 establishing some notation to describe the data:
 
-+--------+----------------+----------------+---------------+
-|        | Robot          | Human          | Total         |
-+========+================+================+===============+
-| Puppy  | *O*\ :sub:`11` | *O*\ :sub:`12` | *R*\ :sub:`1` |
-+--------+----------------+----------------+---------------+
-| Flower | *O*\ :sub:`21` | *O*\ :sub:`22` | *R*\ :sub:`2` |
-+--------+----------------+----------------+---------------+
-| Data   | *O*\ :sub:`31` | *O*\ :sub:`32` | *R*\ :sub:`3` |
-+--------+----------------+----------------+---------------+
-| Total  | *C*\ :sub:`1`  | *C*\ :sub:`2`  | *N*           |
-+--------+----------------+----------------+---------------+
++------------+----------------+----------------+---------------+
+|            | Robot          | Human          | Total         |
++============+================+================+===============+
+| **Puppy**  | *O*\ :sub:`11` | *O*\ :sub:`12` | *R*\ :sub:`1` |
++------------+----------------+----------------+---------------+
+| **Flower** | *O*\ :sub:`21` | *O*\ :sub:`22` | *R*\ :sub:`2` |
++------------+----------------+----------------+---------------+
+| **Data**   | *O*\ :sub:`31` | *O*\ :sub:`32` | *R*\ :sub:`3` |
++------------+----------------+----------------+---------------+
+| **Total**  | *C*\ :sub:`1`  | *C*\ :sub:`2`  | *N*           |
++------------+----------------+----------------+---------------+
 
 In this notation we say that *O*\ :sub:`ij` is a count (observed
 frequency) of the number of respondents that are of species *j*
