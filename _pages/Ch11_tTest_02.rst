@@ -51,40 +51,36 @@ address.
 Introducing the *t*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This ambiguity is annoying, and it was resolved in 1908 by a guy called
-William Sealy Gosset (`Student, 1908 <References.html#student-1908>`__\ ),
-who was working as a chemist for the Guinness brewery at the time (`Box,
-1987 <References.html#box-1987>`__\ ). Because Guinness took a dim
-view of its employees publishing statistical analysis (apparently they
-felt it was a trade secret), he published the work under the pseudonym
-“A Student” and, to this day, the full name of the *t*-test is
-actually **Student’s *t*-test**. The key thing that Gosset figured
-out is how we should accommodate the fact that we aren’t completely sure
-what the true standard deviation is.\ [#]_ The answer is that it subtly
-changes the sampling distribution. In the *t*-test our test
-statistic, now called a *t*-statistic, is calculated in exactly
-the same way I mentioned above. If our null hypothesis is that the true
-mean is *µ*, but our sample has mean :math:`\bar{X}` and our
-estimate of the population standard deviation is :math:`\hat{\sigma}`,
-then our t statistic is:
+This ambiguity is annoying, and it was resolved in 1908 by a guy called William
+Sealy Gosset (`Student, 1908 <References.html#student-1908>`__\ ), who was
+working as a chemist for the Guinness brewery at the time
+(`Box, 1987 <References.html#box-1987>`__\ ). Because Guinness took a dim view
+of its employees publishing statistical analysis (apparently they felt it was a
+trade secret), he published the work under the pseudonym “A Student” and, to
+this day, the full name of the *t*-test is actually **Student’s *t*-test**. The
+key thing that Gosset figured out is how we should accommodate the fact that we
+aren’t completely sure what the true standard deviation is.\ [#]_ The answer is
+that it subtly changes the sampling distribution. In the *t*-test our test
+statistic, now called a *t*-statistic, is calculated in exactly the same way I
+mentioned above. If our null hypothesis is that the true mean is *µ*, but our
+sample has mean X̅ and our estimate of the population standard deviation is
+:math:`\hat{\sigma}`, then our t statistic is:
 
 .. math:: t = \frac{\bar{X} - \mu}{\hat{\sigma}/\sqrt{N} }
 
-The only thing that has changed in the equation is that instead of using
-the known true value *σ*, we use the estimate
-:math:`\hat{\sigma}`. And if this estimate has been constructed from
-*N* observations, then the sampling distribution turns into a
-*t*-distribution with *N* - 1 **degrees of freedom** (df). The
-t distribution is very similar to the normal distribution, but
-has “heavier” tails, as discussed earlier in `Other useful distributions 
+The only thing that has changed in the equation is that instead of using the
+known true value *σ*, we use the estimate :math:`\hat{\sigma}`. And if this
+estimate has been constructed from *N* observations, then the sampling 
+distribution turns into a *t*-distribution with *N* - 1 **degrees of freedom**
+(df). The t distribution is very similar to the normal distribution, but has
+“heavier” tails, as discussed earlier in `Other useful distributions
 <Ch07_Probability_6.html#other-useful-distributions>`__ and illustrated in
-:numref:`fig-ttestdist`. Notice, though, that as df
-gets larger, the *t*-distribution starts to look identical to the
-standard normal distribution. This is as it should be: if you have a
-sample size of *N* = 70,000,000 then your “estimate” of the
-standard deviation would be pretty much perfect, right? So, you should
-expect that for large *N*, the *t*-test would behave exactly
-the same way as a *z*-test. And that’s exactly what happens!
+:numref:`fig-ttestdist`. Notice, though, that as df gets larger, the
+*t*-distribution starts to look identical to the standard normal distribution.
+This is as it should be: if you have a sample size of *N* = 70,000,000 then
+your “estimate” of the standard deviation would be pretty much perfect, right?
+So, you should expect that for large *N*, the *t*-test would behave exactly the
+same way as a *z*-test. And that’s exactly what happens!
 
 .. ----------------------------------------------------------------------------
 
@@ -209,9 +205,9 @@ population mean.
    *can* weaken the *t*-test assumptions so that we don’t have to assume
    normality of the population. However, for the *t*-test it’s trickier to do
    this. As before, we can replace the assumption of population normality with
-   an assumption that the sampling distribution of :math:`\bar{X}` is normal.
-   However, remember that we’re also relying on a sample estimate of the
-   standard deviation, and so we also require the sampling distribution of
+   an assumption that the sampling distribution of X̅ is normal. However,
+   remember that we’re also relying on a sample estimate of the standard
+   deviation, and so we also require the sampling distribution of
    :math:`\hat{\sigma}` to be χ². That makes things nastier, and this version
    is rarely used in practice. Fortunately, if the population distribution is
    normal, then both of these two assumptions are met.
