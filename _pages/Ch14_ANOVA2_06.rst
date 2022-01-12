@@ -231,12 +231,15 @@ will obtain a grade of *b*\ :sub:`2 + b_0`. I won’t bore you with yet another
 regression formula. Instead, what I’ll do is show you the following table of
 *expected grades*:
 
-========= === =================== =========================
-                                
-              no                  yes
-attended? no  *b*\ :sub:`0`       *b*\ :sub:`0 + b_2`
-          yes *b*\ :sub:`0 + b_1` *b*\ :sub:`0 + b_1 + b_2`
-========= === =================== =========================
++-------------------------+-------------------------------------------------+
+|                         | read textbook?                                  |
++-------------------------+---------------------+---------------------------+
+|                         | no                  | yes                       |
++===============+=========+=====================+===========================+
+| **attended?** | **no**  | *b*\ :sub:`0`       | *b*\ :sub:`0 + b_2`       |
++---------------+---------+---------------------+---------------------------+
+|               | **yes** | *b*\ :sub:`0 + b_1` | *b*\ :sub:`0 + b_1 + b_2` |
++---------------+---------+---------------------+---------------------------+
 
 As you can see, the intercept term *b*\ :sub:`0` acts like a kind of “baseline”
 grade that you would expect from those students who don’t take the time to
@@ -335,13 +338,15 @@ which equals 1 if the drug is joyzepam and 0 if it is not. Taken together,
 these two contrasts allows us to perfectly discriminate between all three
 possible drugs. The table below illustrates this:
 
-============== ================ ================
-``drug``       ``druganxifree`` ``drugjoyzepam``
-============== ================ ================
-``"placebo"``  0                0
-``"anxifree"`` 1                0
-``"joyzepam"`` 0                1
-============== ================ ================
++--------------+------------------+------------------+
+| ``drug``     | ``druganxifree`` | ``drugjoyzepam`` |
++==============+==================+==================+
+| ``placebo``  |                0 |                0 |
++--------------+------------------+------------------+
+| ``anxifree`` |                1 |                0 |
++--------------+------------------+------------------+
+| ``joyzepam`` |                0 |                1 |
++--------------+------------------+------------------+
 
 If the drug administered to a patient is a placebo then both of the two
 contrast variables will equal 0. If the drug is Anxifree then the

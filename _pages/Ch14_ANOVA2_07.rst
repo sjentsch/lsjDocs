@@ -7,13 +7,15 @@ In the previous section, I showed you a method for converting a factor
 into a collection of contrasts. In the method I showed you we specify a
 set of binary variables in which we defined a table like this one:
 
-============== ================ ================
-``drug``       ``druganxifree`` ``drugjoyzepam``
-============== ================ ================
-``"placebo"``  0                0
-``"anxifree"`` 1                0
-``"joyzepam"`` 0                1
-============== ================ ================
++--------------+------------------+------------------+
+| ``drug``     | ``druganxifree`` | ``drugjoyzepam`` |
++==============+==================+==================+
+| ``placebo``  |                0 |                0 |
++--------------+------------------+------------------+
+| ``anxifree`` |                1 |                0 |
++--------------+------------------+------------------+
+| ``joyzepam`` |                0 |                1 |
++--------------+------------------+------------------+
 
 Each row in the table corresponds to one of the factor levels, and each column
 corresponds to one of the contrasts. This table, which always has one more row

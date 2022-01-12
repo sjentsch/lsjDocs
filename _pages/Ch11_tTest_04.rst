@@ -41,7 +41,7 @@ as it is for the Student test. That is, we take the difference between the
 sample means and then divide it by some estimate of the standard error of that
 difference:
 
-.. math:: t = \frac{\bar{X}_1 - \bar{X}_2}{\mbox{\textsc{se}}(\bar{X}_1 - \bar{X}_2)}
+.. math:: t = \frac{\bar{X}_1 - \bar{X}_2}{SE(\bar{X}_1 - \bar{X}_2)}
 
 The main difference is that the standard error calculations are
 different. If the two populations have different standard deviations,
@@ -51,7 +51,7 @@ deviation estimate, because you’re averaging apples and oranges.\ [#]_
 But you can still estimate the standard error of the difference between
 sample means, it just ends up looking different
 
-.. math:: \mbox{\textsc{se}}(\bar{X}_1 - \bar{X}_2) = \sqrt{ \frac{{\hat{\sigma}_1}^2}{N_1} + \frac{{\hat{\sigma}_2}^2}{N_2} }
+.. math:: SE(\bar{X}_1 - \bar{X}_2) = \sqrt{ \frac{{\hat{\sigma}_1}^2}{N_1} + \frac{{\hat{\sigma}_2}^2}{N_2} }
 
 The reason why it’s calculated this way is beyond the scope of this
 book. What matters for our purposes is that the *t*-statistic that

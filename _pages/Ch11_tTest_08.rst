@@ -96,9 +96,9 @@ on. Then the value of *W* is given by
 
 .. math:: W = \frac{ \left( \sum_{i = 1}^N a_i X_i \right)^2 }{ \sum_{i = 1}^N (X_i - \bar{X})^2}
 
-where :math:`\bar{X}` is the mean of the observations, and the
-*a*\ :sub:`i` values are ... mumble, mumble ... something complicated that
-is a bit beyond the scope of an introductory text.
+where *X̄* is the mean of the observations, and the *a*\ :sub:`i` values are
+... mumble, mumble ... something complicated that is a bit beyond the scope of
+an introductory text.
 
 Because it’s a little hard to explain the maths behind the *W*
 statistic, a better idea is to give a broad brush description of how it

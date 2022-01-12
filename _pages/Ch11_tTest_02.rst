@@ -63,7 +63,7 @@ aren’t completely sure what the true standard deviation is.\ [#]_ The answer i
 that it subtly changes the sampling distribution. In the *t*-test our test
 statistic, now called a *t*-statistic, is calculated in exactly the same way I
 mentioned above. If our null hypothesis is that the true mean is *µ*, but our
-sample has mean X̅ and our estimate of the population standard deviation is
+sample has mean *X̄* and our estimate of the population standard deviation is
 :math:`\hat{\sigma}`, then our t statistic is:
 
 .. math:: t = \frac{\bar{X} - \mu}{\hat{\sigma}/\sqrt{N} }
@@ -205,7 +205,7 @@ population mean.
    *can* weaken the *t*-test assumptions so that we don’t have to assume
    normality of the population. However, for the *t*-test it’s trickier to do
    this. As before, we can replace the assumption of population normality with
-   an assumption that the sampling distribution of X̅ is normal. However,
+   an assumption that the sampling distribution of *X̄* is normal. However,
    remember that we’re also relying on a sample estimate of the standard
    deviation, and so we also require the sampling distribution of
    :math:`\hat{\sigma}` to be χ². That makes things nastier, and this version

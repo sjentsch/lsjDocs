@@ -35,15 +35,16 @@ variable (see `Changing data from one level to another
 The ``tutor`` variable is a factor that indicates who each student’s
 tutor was - either Anastasia or Bernadette.
 
-We can calculate means and standard deviations, using the ‘Exploration’
-- ‘descriptives’ analysis, and here’s a nice little summary table:
+We can calculate means and standard deviations, using the ``Exploration`` →
+``Descriptives`` analysis, and here’s a nice little summary table:
 
-===================== ===== ======= ==
-                      mean  std dev N
-===================== ===== ======= ==
-Anastasia’s students  74.53 9.00    15
-Bernadette’s students 69.06 5.77    18
-===================== ===== ======= ==
++---------------------------+-------+-----------+----+
+|                           | mean  | std. dev. | N  |
++===========================+=======+===========+====+
+| **Anastasia’s students**  | 74.53 |      9.00 | 15 |
++---------------------------+-------+-----------+----+
+| **Bernadette’s students** | 69.06 |      5.77 | 18 |
++---------------------------+-------+-----------+----+
 
 To give you a more detailed sense of what’s going on here, I’ve plotted
 histograms (not in jamovi, but using R) showing the distribution of
@@ -96,14 +97,14 @@ mean performance on some outcome measure, then an independent samples
 *t*-test (rather than a paired samples *t*-test) is what
 we’re after.
 
-Okay, so let’s let *µ*\ :sub:`1` denote the true population mean for
-group 1 (e.g., Anastasia’s students), and *µ*\ :sub:`2` will be the true
-population mean for group 2 (e.g., Bernadette’s students),\ [#]_ and as
-usual we’ll let :math:`\bar{X}_1` and :math:`\bar{X}_2` denote the
-observed sample means for both of these groups. Our null hypothesis
-states that the two population means are identical
-(*µ*\ :sub:`1` = *µ*\ :sub:`1`) and the alternative to this is that they are not
-(*µ*\ :sub:`1` ≠ *µ*\ :sub:`1`). Written in mathematical-ese, this is:
+Okay, so let’s let *µ*\ :sub:`1` denote the true population mean for group 1
+(e.g., Anastasia’s students), and *µ*\ :sub:`2` will be the true population
+mean for group 2 (e.g., Bernadette’s students),\ [#]_ and as usual we’ll let
+*X̄*\ :sub:`1`and *X̄*\ :sub:`2` denote the observed sample means for both of
+these groups. Our null hypothesis states that the two population means are
+identical (*µ*\ :sub:`1` = *µ*\ :sub:`1`) and the alternative to this is that
+they are not (*µ*\ :sub:`1` ≠ *µ*\ :sub:`1`). Written in mathematical-ese,
+this is:
 
 | H_0: *µ*\ :sub:`1` = *µ*\ :sub:`2`
 | H_1: *µ*\ :sub:`1` ≠ *µ*\ :sub:`2`
@@ -124,21 +125,20 @@ states that the two population means are identical
    
 .. ----------------------------------------------------------------------------
 
-To construct a hypothesis test that handles this scenario we start by
-noting that if the null hypothesis is true, then the difference between
-the population means is *exactly* zero, *µ*\ :sub:`1` - *µ*\ :sub:`1` = 0.
-As a consequence, a diagnostic test statistic will be based on the difference
-between the two sample means. Because if the null hypothesis is true,
-then we’d expect :math:`\bar{X}_1 - \bar{X}_2` to be *pretty close* to
-zero. However, just like we saw with our one-sample tests (i.e., the
-one-sample *z*-test and the one-sample *t*-test) we have to
-be precise about exactly *how close* to zero this difference should be.
-And the solution to the problem is more or less the same one. We
-calculate a standard error estimate (SE), just like last time, and then
-divide the difference between means by this estimate. So our
+To construct a hypothesis test that handles this scenario we start by noting
+that if the null hypothesis is true, then the difference between the population
+means is *exactly* zero, *µ*\ :sub:`1` - *µ*\ :sub:`1` = 0. As a consequence, a
+diagnostic test statistic will be based on the difference between the two
+sample means. Because if the null hypothesis is true, then we’d expect
+*X̄*\ :sub:`1` – *X̄*\ :sub:`2` to be *pretty close* to zero. However, just
+like we saw with our one-sample tests (i.e., the one-sample *z*-test and the
+one-sample *t*-test) we have to be precise about exactly *how close* to zero
+this difference should be. And the solution to the problem is more or less the
+same one. We calculate a standard error estimate (SE), just like last time, and
+then divide the difference between means by this estimate. So our
 **t-statistic** will be of the form:
 
-.. math:: t = \frac{\bar{X}_1 - \bar{X}_2}{\mbox{SE}}
+| t = (*X̄*\ :sub:`1` – *X̄*\ :sub:`2`) / SE
 
 We just need to figure out what this standard error estimate actually
 is. This is a bit trickier than was the case for either of the two tests
@@ -177,30 +177,28 @@ deviation estimate, by taking the square root.
 
 .. math:: \hat\sigma_p = \sqrt{\frac{w_1 {\hat\sigma_1}^2 + w_2 {\hat\sigma_2}^2}{w_1 + w_2}}
 
-And if you mentally substitute w\ :sub:`1` = *N*\ :sub:`1` - 1 and
-w\ :sub:`2` = *N*\ :sub:`2` - 1 into this equation you get a very ugly looking
-formula. A very ugly formula that actually seems to be the “standard”
-way of describing the pooled standard deviation estimate. It’s not my
-favourite way of thinking about pooled standard deviations, however. I
-prefer to think about it like this. Our data set actually corresponds to
-a set of *N* observations which are sorted into two groups. So
-let’s use the notation *X*\ :sub:`ik` to refer to the grade received by
-the i-th student in the k-th tutorial group. That is,
-*X*\ :sub:`11` is the grade received by the first student in Anastasia’s
-class, *X*\ :sub:`21` is her second student, and so on. And we have two
-separate group means :math:`\bar{X}_1` and :math:`\bar{X}_2`, which we
-could “generically” refer to using the notation :math:`\bar{X}_k`, i.e.,
-the mean grade for the k-th tutorial group. So far, so good.
-Now, since every single student falls into one of the two tutorials, we
-can describe their deviation from the group mean as the difference
+And if you mentally substitute w\ :sub:`1` = *N*\ :sub:`1` - 1 and w\ :sub:`2`
+= *N*\ :sub:`2` - 1 into this equation you get a very ugly looking formula. A
+very ugly formula that actually seems to be the “standard” way of describing
+the pooled standard deviation estimate. It’s not my favourite way of thinking
+about pooled standard deviations, however. I prefer to think about it like
+this. Our data set actually corresponds to a set of *N* observations which are
+sorted into two groups. So let’s use the notation *X*\ :sub:`ik` to refer to
+the grade received by the i-th student in the k-th tutorial group. That is,
+*X*\ :sub:`11` is the grade received by the first student in Anastasia’s class,
+*X*\ :sub:`21` is her second student, and so on. And we have two separate group
+means *X̄*\ :sub:`1` and *X̄*\ :sub:`2`, which we could “generically” refer to
+using the notation *X̄*\ :sub:`k`, i.e., the mean grade for the k-th tutorial
+group. So far, so good. Now, since every single student falls into one of the
+two tutorials, we can describe their deviation from the group mean as the
+difference
 
-| *X*\ :sub:`ik` - :math:`\bar{X}_k`
+| *X*\ :sub:`ik` - *X̄*\ :sub:`k`
 
-So why not just use these deviations (i.e., the extent to which each
-student’s grade differs from the mean grade in their tutorial)?
-Remember, a variance is just the average of a bunch of squared
-deviations, so let’s do that. Mathematically, we could write it like
-this
+So why not just use these deviations (i.e., the extent to which each student’s
+grade differs from the mean grade in their tutorial)? Remember, a variance is
+just the average of a bunch of squared deviations, so let’s do that.
+Mathematically, we could write it like this
 
 .. math:: \frac{\sum_{ik} \left( X_{ik} - \bar{X}_k \right)^2}{N}
 
@@ -229,31 +227,28 @@ calculation.
 Completing the test
 ~~~~~~~~~~~~~~~~~~~
 
-Regardless of which way you want to think about it, we now have our
-pooled estimate of the standard deviation. From now on, I’ll drop the
-silly *p* subscript, and just refer to this estimate as
-:math:`\hat\sigma`. Great. Let’s now go back to thinking about the
-bloody hypothesis test, shall we? Our whole reason for calculating this
-pooled estimate was that we knew it would be helpful when calculating
-our *standard error* estimate. But standard error of *what*? In the
-one-sample *t*-test it was the standard error of the sample mean,
-:math:`\mbox{\textsc{se}}(\bar{X})`, and since
-:math:`\mbox{\textsc{se}}(\bar{X}) = \sigma / \sqrt{N}` that’s what the
-denominator of our *t*-statistic looked like. This time around,
-however, we have *two* sample means. And what we’re interested in,
-specifically, is the the difference between the two
-:math:`\bar{X}_1 - \bar{X}_2`. As a consequence, the standard error that
-we need to divide by is in fact the **standard error of the difference**
-between means.
+Regardless of which way you want to think about it, we now have our pooled
+estimate of the standard deviation. From now on, I’ll drop the silly *p*
+subscript, and just refer to this estimate as :math:`\hat\sigma`. Great. Let’s
+now go back to thinking about the bloody hypothesis test, shall we? Our whole
+reason for calculating this pooled estimate was that we knew it would be
+helpful when calculating our *standard error* estimate. But standard error of
+*what*? In the one-sample *t*-test it was the standard error of the sample
+mean, SE(X̄), and since :math:`SE(X̄) = \sigma / \sqrt{N}` that’s what the
+denominator of our *t*-statistic looked like. This time around, however, we
+have *two* sample means. And what we’re interested in, specifically, is the
+difference between the two *X̄*\ :sub:`1` – *X̄*\ :sub:`2`. As a consequence,
+the standard error that we need to divide by is in fact the **standard error
+of the difference** between means.
 
 As long as the two variables really do have the same standard deviation,
 then our estimate for the standard error is
 
-.. math:: \mbox{\textsc{se}}(\bar{X}_1 - \bar{X}_2) = \hat\sigma \sqrt{\frac{1}{N_1} + \frac{1}{N_2}}
+.. math:: SE(\bar{X}_1 - \bar{X}_2) = \hat\sigma \sqrt{\frac{1}{N_1} + \frac{1}{N_2}}
 
 and our *t*-statistic is therefore
 
-.. math:: t = \frac{\bar{X}_1 - \bar{X}_2}{\mbox{\textsc{se}}(\bar{X}_1 - \bar{X}_2)}
+.. math:: t = \frac{\bar{X}_1 - \bar{X}_2}{SE(\bar{X}_1 - \bar{X}_2)}
 
 Just as we saw with our one-sample test, the sampling distribution of
 this *t*-statistic is a *t*-distribution (shocking, isn’t
@@ -467,12 +462,12 @@ of the one sample t-test <Ch11_tTest_02.html#assumptions-of-the-one-sample-t-tes
    this question every year by my students, I’ll give a brief answer.
    Technically yes, it does matter. If you change your definition of what the
    “real world” population actually is, then the sampling distribution of your
-   observed mean :math:`\bar{X}` changes too. The *t*-test relies on an
-   assumption that the observations are sampled at random from an infinitely
-   large population and, to the extent that real life isn’t like that, then the
-   *t*-test can be wrong. In practice, however, this isn’t usually a big deal.
-   Even though the assumption is almost always wrong, it doesn’t lead to a lot
-   of pathological behaviour from the test, so we tend to just ignore it.
+   observed mean *X̄* changes too. The *t*-test relies on an assumption that
+   the observations are sampled at random from an infinitely large population
+   and, to the extent that real life isn’t like that, then the *t*-test can be
+   wrong. In practice, however, this isn’t usually a big deal. Even though the
+   assumption is almost always wrong, it doesn’t lead to a lot of pathological
+   behaviour from the test, so we tend to just ignore it.
 
 .. [#]
    A more correct notation will be introduced in Chapter `Comparing several

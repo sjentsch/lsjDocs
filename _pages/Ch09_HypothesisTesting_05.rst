@@ -39,10 +39,11 @@ data set, but with a different value of *α* in each case.
 When we do that for my original ESP data what we’d get is something like
 this
 
-================ ==== ==== ==== ==== ====
-Value of *α*     0.05 0.04 0.03 0.02 0.01
-Reject the null? Yes  Yes  Yes  No   No
-================ ==== ==== ==== ==== ====
++------------------+------+------+------+------+------+
+| Value of *α*     | 0.05 | 0.04 | 0.03 | 0.02 | 0.01 |
++------------------+------+------+------+------+------+
+| Reject the null? | Yes  | Yes  | Yes  | No   | No   |
++------------------+------+------+------+------+------+
 
 When we test the ESP data (*X* = 62 successes out of *N* = 100
 observations), using *α* levels of 0.03 and above, we’d always

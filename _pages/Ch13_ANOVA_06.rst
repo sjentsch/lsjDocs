@@ -101,7 +101,7 @@ variable Y\ :sub:`ik`. All we do is define a new variable, which I’ll
 call Z\ :sub:`ik`, corresponding to the absolute deviation from the
 group mean
 
-| Z\ :sub:`ik` = Y\ :sub:`ik` - :math:`\bar{Y}_k`
+| Z\ :sub:`ik` = Y\ :sub:`ik` - Ȳ\ :sub:`k`
 
 Okay, what good does this do us? Well, let’s take a moment to think
 about what Z\ :sub:`ik` actually is and what we’re trying to test. The
@@ -250,24 +250,22 @@ variable for the *i*-th person in the *k*-th group. For
 the Kruskal-Wallis test what we’ll do is rank order all of these
 Y\ :sub:`ik` values and conduct our analysis on the ranked data.
 
-So let’s let R\ :sub:`ik` refer to the ranking given to the
-*i*-th member of the *k*-th group. Now, let’s calculate
-:math:`\bar{R}_k`, the average rank given to observations in the
-*k*-th group:
+So let’s let R\ :sub:`ik` refer to the ranking given to the *i*-th member of
+the *k*-th group. Now, let’s calculate R̄\ :sub:`k`, the average rank given to
+observations in the *k*-th group:
 
 .. math:: \bar{R}_k = \frac{1}{N_K} \sum_{i} R_{ik}
 
-and let’s also calculate :math:`\bar{R}`, the grand mean rank
+and let’s also calculate R̄, the grand mean rank
 
 .. math:: \bar{R} = \frac{1}{N} \sum_{i} \sum_{k} R_{ik}
 
-Now that we’ve done this, we can calculate the squared deviations from
-the grand mean rank :math:`\bar{R}`. When we do this for the individual
-scores, i.e., if we calculate :math:`(R_{ik} - \bar{R})^2`, what we have
-is a “nonparametric” measure of how far the *ik*-th observation
-deviates from the grand mean rank. When we calculate the squared
-deviation of the group means from the grand means, i.e., if we calculate
-:math:`(\bar{R}_k  - \bar{R} )^2`, then what we have is a nonparametric
+Now that we’ve done this, we can calculate the squared deviations from the
+grand mean rank R̄. When we do this for the individual scores, i.e., if we
+calculate (R\ :sub:`ik` – R̄)², what we have is a “nonparametric” measure of
+how far the *ik*-th observation deviates from the grand mean rank. When we
+calculate the squared deviation of the group means from the grand means, i.e.,
+if we calculate (R̄\ :sub:`k` – R̄)², then what we have is a nonparametric
 measure of how much the *group* deviates from the grand mean rank. With
 this in mind, we’ll follow the same logic that we did with ANOVA and
 define our *ranked* sums of squares measures, much like we did earlier.
@@ -333,10 +331,11 @@ number of observations that have the *j*-th unique value. This
 might sound a bit abstract, so here’s a concrete example from the
 frequency table of ``mood.gain`` from the |clinicaltrial|_ data set:
 
-=== === === === === === === === === === === === === ===
-0.1 0.2 0.3 0.4 0.5 0.6 0.8 0.9 1.1 1.2 1.3 1.4 1.7 1.8
-1   1   2   1   1   2   1   1   1   1   2   2   1   1
-=== === === === === === === === === === === === === ===
++-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+| 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.8 | 0.9 | 1.1 | 1.2 | 1.3 | 1.4 | 1.7 | 1.8 |
++-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
+|   1 |   1 |   2 |   1 |   1 |   2 |   1 |   1 |   1 |   1 |   2 |   2 |   1 |   1 |
++-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 
 Looking at this table, notice that the third entry in the frequency
 table has a value of 2. Since this corresponds to a

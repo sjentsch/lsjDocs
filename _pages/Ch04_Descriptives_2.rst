@@ -94,11 +94,11 @@ calculate it. Let’s think about our AFL winning margins data, and once again
 we’ll start by pretending that there are only 5 games in total, with winning
 margins of 56, 31, 56, 8 and 32. Since our calculations rely on an examination
 of the deviation from some reference point (in this case the mean), the first
-thing we need to calculate is the mean, X̅. For these five observations, our
-mean is X̅ = 36.6. The next step is to convert each of our observations
-X\ :sub:`i` into a deviation score. We do this by calculating the difference
-between the observation X\ :sub:`i` and the mean X̅. That is, the deviation
-score is defined to be X\ :sub:`i` - X̅. For the first observation in our
+thing we need to calculate is the mean, *X̄*. For these five observations, our
+mean is *X̄* = 36.6. The next step is to convert each of our observations
+*X*\ :sub:`i` into a deviation score. We do this by calculating the difference
+between the observation *X*\ :sub:`i` and the mean *X̄*. That is, the deviation
+score is defined to be *X*\ :sub:`i` - *X̄*. For the first observation in our
 sample, this is equal to 56 - 36.6 = 19.4. Okay, that’s simple enough. The next
 step in the process is to convert these deviations to absolute deviations, and
 we do this by converting any negative values to positive ones. Mathematically,
@@ -108,21 +108,21 @@ value is higher than the mean or lower than the mean, we’re just interested in
 how *close* it is to the mean. To help make this process as obvious as
 possible, the table below shows these calculations for all five observations:
 
-+-----------+------------+-------------+---------------------+----------------------+
-| English:  | which game | value       | deviation from mean | absolute deviation   |
-+===========+============+=============+=====================+======================+
-| notation: | i          | X\ :sub:`i` | X\ :sub:`i` - X̅    | \|X\ :sub:`i` - X̅\| |
-+-----------+------------+-------------+---------------------+----------------------+
-|           | 1          | 56          | 19.4                | 19.4                 |
-+-----------+------------+-------------+---------------------+----------------------+
-|           | 2          | 31          | -5.6                | 5.6                  |
-+-----------+------------+-------------+---------------------+----------------------+
-|           | 3          | 56          | 19.4                | 19.4                 |
-+-----------+------------+-------------+---------------------+----------------------+
-|           | 4          | 8           | -28.6               | 28.6                 |
-+-----------+------------+-------------+---------------------+----------------------+
-|           | 5          | 32          | -4.6                | 4.6                  |
-+-----------+------------+-------------+---------------------+----------------------+
++-----------+------------+---------------+----------------------+--------------------------+
+| English:  | which game | value         | deviation from mean  | absolute deviation       |
++===========+============+===============+======================+==========================+
+| notation: | i          | *X*\ :sub:`i` | *X*\ :sub:`i` - *X̄* | \|*X*\ :sub:`i` - *X̄*\| |
++-----------+------------+---------------+----------------------+--------------------------+
+|           | 1          | 56            | 19.4                 | 19.4                     |
++-----------+------------+---------------+----------------------+--------------------------+
+|           | 2          | 31            | -5.6                 | 5.6                      |
++-----------+------------+---------------+----------------------+--------------------------+
+|           | 3          | 56            | 19.4                 | 19.4                     |
++-----------+------------+---------------+----------------------+--------------------------+
+|           | 4          | 8             | -28.6                | 28.6                     |
++-----------+------------+---------------+----------------------+--------------------------+
+|           | 5          | 32            | -4.6                 | 4.6                      |
++-----------+------------+---------------+----------------------+--------------------------+
 
 Now that we have calculated the absolute deviation score for every
 observation in the data set, all that we have to do to calculate the
@@ -144,7 +144,7 @@ absolute deviation. Sigh. What I’ll do is use AAD instead, short for
 *average* absolute deviation. Now that we have some unambiguous
 notation, here’s the formula that describes what we just calculated:
 
-.. math:: \mbox{\textsc{aad}}(X) = \frac{1}{N} \sum_{i = 1}^N |X_i - \bar{X}|
+.. math:: AAD(X) = \frac{1}{N} \sum_{i = 1}^N |X_i - \bar{X}|
 
 Variance
 ~~~~~~~~
@@ -175,21 +175,21 @@ example. Once again, let’s use the first five AFL games as our data. If
 we follow the same approach that we took last time, we end up with the
 following table:
 
-+----------+------------+-------------+---------------------+-----------------------+
-| English: | which game | value       | deviation from mean | squared deviation     |
-+==========+============+=============+=====================+=======================+
-| maths:   | i          | X\ :sub:`i` | X\ :sub:`i` - X̅    | (X\ :sub:`i` - X̅)\ ² |
-+----------+------------+-------------+---------------------+-----------------------+
-|          | 1          | 56          | 19.4                | 376.36                |
-+----------+------------+-------------+---------------------+-----------------------+
-|          | 2          | 31          | -5.6                | 31.36                 |
-+----------+------------+-------------+---------------------+-----------------------+
-|          | 3          | 56          | 19.4                | 376.36                |
-+----------+------------+-------------+---------------------+-----------------------+
-|          | 4          | 8           | -28.6               | 817.96                |
-+----------+------------+-------------+---------------------+-----------------------+
-|          | 5          | 32          | -4.6                | 21.16                 |
-+----------+------------+-------------+---------------------+-----------------------+
++-----------+------------+---------------+----------------------+---------------------------+
+| English:  | which game | value         | deviation from mean  | squared deviation         |
++===========+============+===============+======================+===========================+
+| notation: | i          | *X*\ :sub:`i` | *X*\ :sub:`i` - *X̄* | (*X*\ :sub:`i` - *X̄*)\ ² |
++-----------+------------+---------------+----------------------+---------------------------+
+|           | 1          | 56            | 19.4                 | 376.36                    |
++-----------+------------+---------------+----------------------+---------------------------+
+|           | 2          | 31            | -5.6                 | 31.36                     |
++-----------+------------+---------------+----------------------+---------------------------+
+|           | 3          | 56            | 19.4                 | 376.36                    |
++-----------+------------+---------------+----------------------+---------------------------+
+|           | 4          | 8             | -28.6                | 817.96                    |
++-----------+------------+---------------+----------------------+---------------------------+
+|           | 5          | 32            | -4.6                 | 21.16                     |
++-----------+------------+---------------+----------------------+---------------------------+
 
 That last column contains all of our squared deviations, so all we have to do
 is average them. If we do that by hand, i.e. using a calculator, we end up with
@@ -387,20 +387,20 @@ somewhere.
 ------
 
 .. [#]
-   Well, I will very briefly mention the one that I think is coolest,
-   for a very particular definition of “cool”, that is. Variances are
-   *additive*. Here’s what that means. Suppose I have two variables
-   X and Y, whose variances are Var(X) and Var(Y) respectively. Now imagine
-   I want to define a new variable Z that is the sum of the two, Z = X + Y.
-   As it turns out, the variance of Z is equal to Var(X) + Var(Y). This is a
-   *very* useful property, but it’s not true of the other measures that I talk
-   about in this section.
+   Well, I will very briefly mention the one that I think is coolest, for a
+   very particular definition of “cool”, that is. Variances are *additive*.
+   Here’s what that means. Suppose I have two variables *X* and *Y*, whose
+   variances are Var(X) and Var(Y) respectively. Now imagine I want to define
+   a new variable *Z* that is the sum of the two, *Z* = *X* + *Y*. As it turns
+   out, the variance of Z is equal to Var(X) + Var(Y). This is a *very* useful
+   property, but it’s not true of the other measures that I talk about in this
+   section.
 
 .. [#]
    With the possible exception of the third question.
 
 .. [#]
-   Strictly, the assumption is that the data are *normally* distributed,
-   which is an important concept that we’ll discuss more in Chapter
-   `Introduction to probability <Ch07_Probability.html#introduction-to-probability>`__
+   Strictly, the assumption is that the data are *normally* distributed, which
+   is an important concept that we’ll discuss more in Chapter `Introduction to
+   probability <Ch07_Probability.html#introduction-to-probability>`__
    and will turn up over and over again later in the book.

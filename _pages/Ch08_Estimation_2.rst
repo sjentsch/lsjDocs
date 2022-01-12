@@ -62,7 +62,7 @@ applied to the sample mean what the law of large numbers states is that as the
 sample gets larger, the sample mean tends to get closer to the true population
 mean. Or, to say it a little bit more precisely, as the sample size
 “approaches” infinity (written as *N* → ∞), the sample mean approaches the
-population mean (X̅ → *µ*).\ [#]_
+population mean (*X̄* → *µ*).\ [#]_
 
 I don’t intend to subject you to a proof that the law of large numbers
 is true, but it’s one of the most important tools for statistical

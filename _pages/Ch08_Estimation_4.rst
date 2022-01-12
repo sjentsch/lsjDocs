@@ -38,9 +38,9 @@ Estimating the population mean
 
 Suppose we go to Port Pirie and 100 of the locals are kind enough to sit
 through an IQ test. The average IQ score among these people turns out to be
-X̅ = 98.5. So what is the true mean IQ for the entire population of Port Pirie?
-Obviously, we don’t know the answer to that question. It could be 97.2, but it
-could also be 103.5. Our sampling isn’t exhaustive so we cannot give a
+*X̄* = 98.5. So what is the true mean IQ for the entire population of Port
+Pirie? Obviously, we don’t know the answer to that question. It could be 97.2,
+but it could also be 103.5. Our sampling isn’t exhaustive so we cannot give a
 definitive answer. Nevertheless, if I was forced at gunpoint to give a “best
 guess” I’d have to say 98.5. That’s the essence of statistical estimation:
 giving a best guess.
@@ -55,16 +55,16 @@ sample statistic is a description of your data, whereas the estimate is a guess
 about the population. With that in mind, statisticians often different notation
 to refer to them. For instance, if the true population mean is denoted *µ*,
 then we would use :math:`\hat\mu` to refer to our estimate of the population
-mean. In contrast, the sample mean is denoted X̅ or sometimes *m* or *M*.
+mean. In contrast, the sample mean is denoted *X̄* or sometimes *m* or *M*.
 However, in simple random samples the estimate of the population mean is
-identical to the sample mean. If I observe a sample mean of X̅ = 98.5 then my
+identical to the sample mean. If I observe a sample mean of *X̄* = 98.5 then my
 estimate of the population mean is also :math:`\hat\mu` = 98.5. To help keep
 the notation clear, here’s a handy table:
 
 +-------------------+-----------------------+-----------------------------------+
 | Symbol            | What is it?           | Do we know what it is?            |
 +===================+=======================+===================================+
-| X̅                | Sample mean           | Yes, calculated from the raw data |
+| *X̄*              | Sample mean           | Yes, calculated from the raw data |
 +-------------------+-----------------------+-----------------------------------+
 | *µ*               | True population mean  | Almost never known for sure       |
 +-------------------+-----------------------+-----------------------------------+
@@ -78,7 +78,7 @@ Estimating the population standard deviation
 So far, estimation seems pretty simple, and you might be wondering why I forced
 you to read through all that stuff about sampling theory. In the case of the
 mean our estimate of the population parameter (i.e. :math:`\hat\mu`) turned out
-to be identical to the corresponding sample statistic (i.e. X̅). However,
+to be identical to the corresponding sample statistic (i.e. *X̄*). However,
 that’s not always true. To see this, let’s have a think about how to construct
 an **estimate of the population standard deviation**, which we’ll denote
 :math:`\hat\sigma`. What shall we use as our estimate in this case? Your first
@@ -125,7 +125,7 @@ cromulence of shoes, and the complete sample now looks like this:
 This time around, our sample is *just* large enough for us to be able to 
 observe some variability: two observations is the bare minimum number needed
 for any variability to be observed! For our new data set, the sample mean is
-X̅ = 21, and the sample standard deviation is *s* = 1. What intuitions do we
+*X̄* = 21, and the sample standard deviation is *s* = 1. What intuitions do we
 have about the population? Again, as far as the population mean goes, the best
 guess we can possibly make is the sample mean. If forced to guess we’d probably
 guess that the population mean cromulence is 21. What about the standard

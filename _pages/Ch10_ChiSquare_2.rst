@@ -5,17 +5,23 @@ The χ² (chi-square) test of independence (or association)
 
 .. epigraph::
 
-   =========== =================================================
-   GUARDBOT 1: Halt!
-   GUARDBOT 2: Be you robot or human?
-   LEELA:      Robot...we be.
-   FRY:        Uh, yup! Just two robots out roboting it up! Eh?
-   GUARDBOT 1: Administer the test.
-   GUARDBOT 2: Which of the following would you most prefer?
-               A: A puppy, B: A pretty flower from your sweetie,
-               or C: A large properly-formatted data file?
-   GUARDBOT 1: Choose!
-   =========== =================================================
+   +-------------+---------------------------------------------------+
+   | GUARDBOT 1: | Halt!                                             |
+   +-------------+---------------------------------------------------+
+   | GUARDBOT 2: | Be you robot or human?                            |
+   +-------------+---------------------------------------------------+
+   | LEELA:      | Robot...we be.                                    |
+   +-------------+---------------------------------------------------+
+   | FRY:        | Uh, yup! Just two robots out roboting it up! Eh?  |
+   +-------------+---------------------------------------------------+
+   | GUARDBOT 1: | Administer the test.                              |
+   +-------------+---------------------------------------------------+
+   | GUARDBOT 2: | Which of the following would you most prefer?     |
+   |             | A: A puppy, B: A pretty flower from your sweetie, |
+   |             | or C: A large properly-formatted data file?       |
+   +-------------+---------------------------------------------------+
+   | GUARDBOT 1: | Choose!                                           |
+   +-------------+---------------------------------------------------+
 
    -- Futurama, “Fear of a Bot Planet”
 

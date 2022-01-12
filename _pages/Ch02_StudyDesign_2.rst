@@ -34,14 +34,17 @@ including: “train”, “bus”, “car”, “bicycle”. For now, let’s su
 these four are the only possibilities. Then imagine that I ask 100
 people how they got to work today, with this result:
 
-============== ================
-Transportation Number of people
-============== ================
-Train                        12
-Bus                          30
-Car                          48
-Bicycle                      10
-============== ================
++----------------+------------------+
+| Transportation | Number of people |
++================+==================+
+| Train          |               12 |
++----------------+------------------+
+| Bus            |               30 |
++----------------+------------------+
+| Car            |               48 |
++----------------+------------------+
+| Bicycle        |               10 |
++----------------+------------------+
 
 So, what’s the average transportation type? Obviously, the answer here
 is that there isn’t one. It’s a silly question to ask. You can say that
@@ -50,14 +53,17 @@ least popular method, but that’s about all. Similarly, notice that the
 order in which I list the options isn’t very interesting. I could have
 chosen to display the data like this…
 
-============== ================
-Transportation Number of people
-============== ================
-Car                          48
-Train                        12
-Bicycle                      10
-Bus                          30
-============== ================
++----------------+------------------+
+| Transportation | Number of people |
++================+==================+
+| Car            |               48 |
++----------------+------------------+
+| Train          |               12 |
++----------------+------------------+
+| Bicycle        |               10 |
++----------------+------------------+
+| Bus            |               30 |
++----------------+------------------+
 
 …and nothing really changes.
 
@@ -103,14 +109,17 @@ very weird to list the options like this…
 So, let’s suppose I asked 100 people these questions, and got the
 following answers:
 
-===================================================== ======
-Response                                              Number
-===================================================== ======
-Temperatures are rising because of human activity (1)     51
-Temperatures are rising but we don’t know why (2)         20
-Temperatures are rising but not because of humans (3)     10
-Temperatures are not rising (4)                           19
-===================================================== ======
++-------------------------------------------------------+--------+
+| Response                                              | Number |
++=======================================================+========+
+| Temperatures are rising because of human activity (1) |     51 |
++-------------------------------------------------------+--------+
+| Temperatures are rising but we don’t know why (2)     |     20 |
++-------------------------------------------------------+--------+
+| Temperatures are rising but not because of humans (3) |     10 |
++-------------------------------------------------------+--------+
+| Temperatures are not rising (4)                       |     19 |
++-------------------------------------------------------+--------+
 
 When analysing these data it seems quite reasonable to try to group (1),
 \(2) and (3) together, and say that 81 out of 100 people were willing to

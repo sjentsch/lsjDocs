@@ -114,12 +114,13 @@ This is summarised in :numref:`tab-ivdv`.
    variable can play when analysing a data set. Note that this book will
    tend to avoid the classical terminology in favour of the newer names.
 
-   ====================== ========================= ===========
-   role of the variable   classical name            modern name
-   ====================== ========================= ===========
-   “to be explained”      dependent variable (DV)   outcome
-   “to do the explaining” independent variable (IV) predictor
-   ====================== ========================= ===========
+   +------------------------+---------------------------+-------------+
+   | role of the variable   | classical name            | modern name |
+   +========================+===========================+=============+
+   | “to be explained”      | dependent variable (DV)   | outcome     |
+   +------------------------+---------------------------+-------------+
+   | “to do the explaining” | independent variable (IV) | predictor   |
+   +------------------------+---------------------------+-------------+
 
 ------
 

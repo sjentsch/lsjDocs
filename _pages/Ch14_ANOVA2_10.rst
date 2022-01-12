@@ -122,8 +122,8 @@ at a time. Consider the coffee data, for instance. Suppose we want to
 run the full 3 × 2 factorial ANOVA, including interaction
 terms. The full model contains the outcome variable ``babble``, the
 predictor variables ``sugar`` and ``milk``, and the interaction term
-``sugar*milk``. This can be written as
-``babble ~ sugar + milk + sugar*milk``. The Type I strategy builds this
+``sugar * milk``. This can be written as
+``babble ~ sugar + milk + sugar * milk``. The Type I strategy builds this
 model up sequentially, starting from the simplest possible model and
 gradually adding terms.
 
@@ -140,10 +140,11 @@ So, the second model in our sequence of models is ``babble ~ sugar``,
 and it forms the alternative hypothesis for our first test. We now have
 our first hypothesis test:
 
-================== ==================
-Null model:        ``babble ~ 1``
-Alternative model: ``babble ~ sugar``
-================== ==================
++--------------------+--------------------+
+| Null model:        | ``babble ~ 1``     |
++--------------------+--------------------+
+| Alternative model: | ``babble ~ sugar`` |
++--------------------+--------------------+
 
 This comparison forms our hypothesis test of the main effect of
 ``sugar``. The next step in our model building exercise is to add the
@@ -151,10 +152,11 @@ other main effect term, so the next model in our sequence is
 ``babble ~ sugar + milk``. The second hypothesis test is then formed by
 comparing the following pair of models:
 
-================== =========================
-Null model:        ``babble ~ sugar``
-Alternative model: ``babble ~ sugar + milk``
-================== =========================
++--------------------+---------------------------+
+| Null model:        | ``babble ~ sugar``        |
++--------------------+---------------------------+
+| Alternative model: | ``babble ~ sugar + milk`` |
++--------------------+---------------------------+
 
 This comparison forms our hypothesis test of the main effect of
 ``milk``. In one sense, this approach is very elegant: the alternative
@@ -166,13 +168,14 @@ between the two tests. The test of the main effect of ``sugar`` (the
 first test) completely ignores ``milk``, whereas the test of the main
 effect of ``milk`` (the second test) does take ``sugar`` into account.
 In any case, the fourth model in our sequence is now the full model,
-``babble ~ sugar + milk + sugar*milk``, and the corresponding hypothesis
+``babble ~ sugar + milk + sugar * milk``, and the corresponding hypothesis
 test is:
 
-================== ======================================
-Null model:        ``babble ~ sugar + milk``
-Alternative model: ``babble ~ sugar + milk + sugar*milk``
-================== ======================================
++--------------------+------------------------------------------+
+| Null model:        | ``babble ~ sugar + milk``                |
++--------------------+------------------------------------------+
+| Alternative model: | ``babble ~ sugar + milk + sugar * milk`` |
++--------------------+------------------------------------------+
 
 Type III sum of squares is the default hypothesis testing method used by jamovi
 ANOVA, so to run a Type 1 sum of squares analysis we have to select ``Type 1``
@@ -247,31 +250,34 @@ evaluate, run the *F*-test in which the alternative hypothesis
 corresponds to the full ANOVA model as specified by the user, and the
 null model just deletes that one term that you’re testing. For instance,
 in the coffee example, in which our full model was
-``babble ~ sugar + milk + sugar*milk``, the test for a main effect of
+``babble ~ sugar + milk + sugar * milk``, the test for a main effect of
 ``sugar`` would correspond to a comparison between the following two
 models:
 
-================== ======================================
-Null model:        ``babble ~ milk + sugar*milk``
-Alternative model: ``babble ~ sugar + milk + sugar*milk``
-================== ======================================
++--------------------+------------------------------------------+
+| Null model:        | ``babble ~ milk + sugar * milk``         |
++--------------------+------------------------------------------+
+| Alternative model: | ``babble ~ sugar + milk + sugar * milk`` |
++--------------------+------------------------------------------+
 
 Similarly the main effect of ``milk`` is evaluated by testing the full
 model against a null model that removes the ``milk`` term, like so:
 
-================== ======================================
-Null model:        ``babble ~ sugar + sugar*milk``
-Alternative model: ``babble ~ sugar + milk + sugar*milk``
-================== ======================================
++--------------------+------------------------------------------+
+| Null model:        | ``babble ~ sugar + sugar * milk``        |
++--------------------+------------------------------------------+
+| Alternative model: | ``babble ~ sugar + milk + sugar * milk`` |
++--------------------+------------------------------------------+
 
-Finally, the interaction term ``sugar*milk`` is evaluated in exactly the
+Finally, the interaction term ``sugar * milk`` is evaluated in exactly the
 same way. Once again, we test the full model against a null model that
-removes the ``sugar*milk`` interaction term, like so:
+removes the ``sugar * milk`` interaction term, like so:
 
-================== ======================================
-Null model:        ``babble ~ sugar + milk``
-Alternative model: ``babble ~ sugar + milk + sugar*milk``
-================== ======================================
++--------------------+------------------------------------------+
+| Null model:        | ``babble ~ sugar + milk``                |
++--------------------+------------------------------------------+
+| Alternative model: | ``babble ~ sugar + milk + sugar * milk`` |
++--------------------+------------------------------------------+
 
 The basic idea generalises to higher order ANOVAs. For instance, suppose
 that we were trying to run an ANOVA with three factors, ``A``, ``B`` and
@@ -280,36 +286,36 @@ possible interactions, including the three way interaction ``A*B*C``.
 The table below shows you what the Type III tests look like for this
 situation:
 
-+---------------+---------------------+----------------------+
-| Term being    | Null model is       | Alternative model is |
-| tested is     | ``outcome ~ ...``   | ``outcome ~ ...``    |
-+===============+=====================+======================+
-| ``A``         | ``B + C + A*B +     | ``A + B + C + A*B +  |
-|               | A*C + B*C + A*B*C`` | A*C + B*C + A*B*C``  |
-+---------------+---------------------+----------------------+
-| ``B``         | ``A + C + A*B +     | ``A + B + C + A*B +  |
-|               | A*C + B*C + A*B*C`` | A*C + B*C + A*B*C``  |
-+---------------+---------------------+----------------------+
-| ``C``         | ``A + B + A*B +     | ``A + B + C + A*B +  |
-|               | A*C + B*C + A*B*C`` | A*C + B*C + A*B*C``  |
-+---------------+---------------------+----------------------+
-| ``A*B``       | ``A + B + C +       | ``A + B + C + A*B +  |
-|               | A*C + B*C + A*B*C`` | A*C + B*C + A*B*C``  |
-+---------------+---------------------+----------------------+
-| ``A*C``       | ``A + B + C +       | ``A + B + C + A*B +  |
-|               | A*B + B*C + A*B*C`` | A*C + B*C + A*B*C``  |
-+---------------+---------------------+----------------------+
-| ``B*C``       | ``A + B + C +       | ``A + B + C + A*B +  |
-|               | A*B + A*C + A*B*C`` | A*C + B*C + A*B*C``  |
-+---------------+---------------------+----------------------+
-| ``A*B*C``     | ``A + B + C +       | ``A + B + C + A*B +  |
-|               | A*B + A*C + B*C``   | A*C + B*C + A*B*C``  |
-+---------------+---------------------+----------------------+
++---------------+-----------------------------+-----------------------------+
+| Term being    | Null model is               | Alternative model is        |
+| tested is     | ``outcome ~ ...``           | ``outcome ~ ...``           |
++===============+=============================+=============================+
+| ``A``         | ``B + C + A * B +           | ``A + B + C + A * B +       |
+|               | A * C + B * C + A * B * C`` | A * C + B * C + A * B * C`` |
++---------------+-----------------------------+-----------------------------+
+| ``B``         | ``A + C + A * B +           | ``A + B + C + A * B +       |
+|               | A * C + B * C + A * B * C`` | A * C + B * C + A * B * C`` |
++---------------+-----------------------------+-----------------------------+
+| ``C``         | ``A + B + A * B +           | ``A + B + C + A * B +       |
+|               | A * C + B * C + A * B * C`` | A * C + B * C + A * B * C`` |
++---------------+-----------------------------+-----------------------------+
+| ``A * B``     | ``A + B + C +               | ``A + B + C + A * B +       |
+|               | A * C + B * C + A * B * C`` | A * C + B * C + A * B * C`` |
++---------------+-----------------------------+-----------------------------+
+| ``A * C``     | ``A + B + C +               | ``A + B + C + A * B +       |
+|               | A * B + B * C + A * B * C`` | A * C + B * C + A * B * C`` |
++---------------+-----------------------------+-----------------------------+
+| ``B * C``     | ``A + B + C +               | ``A + B + C + A * B +       |
+|               | A * B + A * C + A * B * C`` | A * C + B * C + A * B * C`` |
++---------------+-----------------------------+-----------------------------+
+| ``A * B * C`` | ``A + B + C +               | ``A + B + C + A * B +       |
+|               | A * B + A * C + B * C``     | A * C + B * C + A * B * C`` |
++---------------+-----------------------------+-----------------------------+
 
 As ugly as that table looks, it’s pretty simple. In all cases, the
 alternative hypothesis corresponds to the full model which contains
 three main effect terms (e.g. ``A``), three two-way interactions (e.g.
-``A*B``) and one three-way interaction (i.e., ``A*B*C``). The null model
+``A * B``) and one three-way interaction (i.e., ``A * B * C``). The null model
 always contains 6 of these 7 terms, and the missing one is the one whose
 significance we’re trying to test.
 
@@ -321,9 +327,9 @@ specify them. This is definitely a good thing. However, there is a big
 problem when interpreting the results of the tests, especially for main
 effect terms. Consider the coffee data. Suppose it turns out that the
 main effect of ``milk`` is not significant according to the Type III
-tests. What this is telling us is that ``babble ~ sugar + sugar*milk``
+tests. What this is telling us is that ``babble ~ sugar + sugar * milk``
 is a better model for the data than the full model. But what does that
-even *mean*? If the interaction term ``sugar*milk`` was also
+even *mean*? If the interaction term ``sugar * milk`` was also
 non-significant, we’d be tempted to conclude that the data are telling
 us that the only thing that matters is ``sugar``. But suppose we have a
 significant interaction term, but a non-significant main effect of
@@ -391,23 +397,24 @@ model, and test a particular term by deleting it from that model.
 However, Type II tests are based on the **marginality principle** which
 states that you should not omit a lower order term from your model if
 there are any higher order ones that depend on it. So, for instance, if
-your model contains the two-way interaction ``A*B`` (a 2nd order term),
+your model contains the two-way interaction ``A * B`` (a 2nd order term),
 then it really ought to contain the main effects ``A`` and ``B`` (1st
 order terms). Similarly, if it contains a three-way interaction term
-``A*B*C``, then the model must also include the main effects ``A``,
-``B`` and ``C`` as well as the simpler interactions ``A*B``, ``A*C`` and
-``B*C``. Type III tests routinely violate the marginality principle. For
+``A * B * C``, then the model must also include the main effects ``A``,
+``B`` and ``C`` as well as the simpler interactions ``A * B``, ``A * C`` and
+``B * C``. Type III tests routinely violate the marginality principle. For
 instance, consider the test of the main effect of ``A`` in the context
 of a three-way ANOVA that includes all possible interaction terms.
 According to Type III tests, our null and alternative models are:
 
-================== =================================================
-Null model:        ``outcome ~ B + C + A*B + A*C + B*C + A*B*C``
-Alternative model: ``outcome ~ A + B + C + A*B + A*C + B*C + A*B*C``
-================== =================================================
++--------------------+-----------------------------------------------------------+
+| Null model:        | ``outcome ~ B + C + A * B + A * C + B * C + A * B * C``   |
++--------------------+-----------------------------------------------------------+
+| Alternative model: | ``outcome ~ A + B + C + A * B + A * C + B*C + A * B * C`` |
++--------------------+-----------------------------------------------------------+
 
-Notice that the null hypothesis omits ``A``, but includes ``A*B``,
-``A*C`` and ``A*B*C`` as part of the model. This, according to the Type
+Notice that the null hypothesis omits ``A``, but includes ``A * B``,
+``A * C`` and ``A * B * C`` as part of the model. This, according to the Type
 II tests, is not a good choice of null hypothesis. What we should do
 instead, if we want to test the null hypothesis that ``A`` is not
 relevant to our ``outcome``, is to specify the null hypothesis that is
@@ -418,60 +425,64 @@ most people would intuitively think of as a “main effect of ``A``”, and
 it yields the following as our Type II test of the main effect of
 ``A``:\ [#]_
 
-================== =============================
-Null model:        ``outcome ~ B + C + B*C``
-Alternative model: ``outcome ~ A + B + C + B*C``
-================== =============================
++--------------------+---------------------------------+
+| Null model:        | ``outcome ~ B + C + B * C``     |
++--------------------+---------------------------------+
+| Alternative model: | ``outcome ~ A + B + C + B * C`` |
++--------------------+---------------------------------+
 
 Anyway, just to give you a sense of how the Type II tests play out,
 here’s the full table of tests that would be applied in a three-way
 factorial ANOVA:
 
-+----------------------+----------------------+----------------------+
-| Term being tested is | Null model is        | Alternative model is |
-|                      | ``outcome ~ ...``    | ``outcome ~ ...``    |
-+======================+======================+======================+
-| ``A``                | ``B + C + B*C``      | ``A + B + C + B*C``  |
-+----------------------+----------------------+----------------------+
-| ``B``                | ``A + C + A*C``      | ``A + B + C + A*C``  |
-+----------------------+----------------------+----------------------+
-| ``C``                | ``A + B + A*B``      | ``A + B + C + A*B``  |
-+----------------------+----------------------+----------------------+
-| ``A*B``              | ``A + A*C + B*C``    | ``A + B + C +        |
-|                      |                      | A*B + A*C + B*C``    |
-+----------------------+----------------------+----------------------+
-| ``A*C``              | ``A + B + C +        | ``A + B + C +        |
-|                      | A*B + B*C``          | A*B + A*C + B*C``    |
-+----------------------+----------------------+----------------------+
-| ``B*C``              | ``A + B + C +        | ``A + B + C +        |
-|                      | A*B + A*C``          | A*B + A*C + B*C``    |
-+----------------------+----------------------+----------------------+
-| ``A*B*C``            | ``A + B + C +        | ``A + B + C + A*B +  |
-|                      | A*B + A*C + B*C``    | A*C + B*C + A*B*C``  |
-+----------------------+----------------------+----------------------+
++----------------------+------------------------+-----------------------------+
+| Term being tested is | Null model is          | Alternative model is        |
+|                      | ``outcome ~ ...``      | ``outcome ~ ...``           |
++======================+========================+=============================+
+| ``A``                | ``B + C + B * C``      | ``A + B + C + B * C``       |
++----------------------+------------------------+-----------------------------+
+| ``B``                | ``A + C + A * C``      | ``A + B + C + A * C``       |
++----------------------+------------------------+-----------------------------+
+| ``C``                | ``A + B + A * B``      | ``A + B + C + A * B``       |
++----------------------+------------------------+-----------------------------+
+| ``A * B``            | ``A + A * C + B * C``  | ``A + B + C +               |
+|                      |                        | A * B + A * C + B * C``     |
++----------------------+------------------------+-----------------------------+
+| ``A * C``            | ``A + B + C +          | ``A + B + C +               |
+|                      | A * B + B * C``        | A * B + A * C + B * C``     |
++----------------------+------------------------+-----------------------------+
+| ``B * C``            | ``A + B + C +          | ``A + B + C +               |
+|                      | A * B + A * C``        | A * B + A * C + B * C``     |
++----------------------+------------------------+-----------------------------+
+| ``A * B * C``        | ``A + B + C +          | ``A + B + C + A * B +       |
+|                      | A * B + A * C + B * C``| A * C + B * C + A * B * C`` |
++----------------------+------------------------+-----------------------------+
 
 In the context of the two way ANOVA that we’ve been using in the coffee
 data, the hypothesis tests are even simpler. The main effect of
 ``sugar`` corresponds to an *F*-test comparing these two models:
 
-================== =========================
-Null model:        ``babble ~ milk``
-Alternative model: ``babble ~ sugar + milk``
-================== =========================
++--------------------+---------------------------+
+| Null model:        | ``babble ~ milk``         |
++--------------------+---------------------------+
+| Alternative model: | ``babble ~ sugar + milk`` |
++--------------------+---------------------------+
 
 The test for the main effect of ``milk`` is
 
-================== =========================
-Null model:        ``babble ~ sugar``
-Alternative model: ``babble ~ sugar + milk``
-================== =========================
++--------------------+---------------------------+
+| Null model:        | ``babble ~ sugar``        |
++--------------------+---------------------------+
+| Alternative model: | ``babble ~ sugar + milk`` |
++--------------------+---------------------------+
 
-Finally, the test for the interaction ``sugar*milk`` is:
+Finally, the test for the interaction ``sugar * milk`` is:
 
-================== ======================================
-Null model:        ``babble ~ sugar + milk``
-Alternative model: ``babble ~ sugar + milk + sugar*milk``
-================== ======================================
++--------------------+------------------------------------------+
+| Null model:        | ``babble ~ sugar + milk``                |
++--------------------+------------------------------------------+
+| Alternative model: | ``babble ~ sugar + milk + sugar * milk`` |
++--------------------+------------------------------------------+
 
 Running the tests are again straightforward. Just select ‘Type 2’ in the
 ‘Sum of squares’ selection box in the jamovi ``ANOVA`` → ``Model`` options,
@@ -527,12 +538,13 @@ effect of Factor B. In the extreme case, suppose that we’d run a
 2 × 2 design in which the number of participants in each
 group had been as follows:
 
-======= ===== ========
-        sugar no sugar
-======= ===== ========
-milk    100   0
-no milk 0     100
-======= ===== ========
++-------------+-------+----------+
+|             | sugar | no sugar |
++=============+=======+==========+
+| **milk**    |   100 |        0 |
++-------------+-------+----------+
+| **no milk** |     0 |      100 |
++-------------+-------+----------+
 
 Here we have a spectacularly unbalanced design: 100 people have milk and
 sugar, 100 people have no milk and no sugar, and that’s all. There are 0
@@ -545,12 +557,13 @@ tell, because the presence of sugar has a perfect association with the
 presence of milk. Now suppose the design had been a little more
 balanced:
 
-======= ===== ========
-        sugar no sugar
-======= ===== ========
-milk    100   5
-no milk 5     100
-======= ===== ========
++-------------+-------+----------+
+|             | sugar | no sugar |
++=============+=======+==========+
+| **milk**    |   100 |        5 |
++-------------+-------+----------+
+| **no milk** |     5 |      100 |
++-------------+-------+----------+
 
 This time around, it’s technically possible to distinguish between the
 effect of milk and the effect of sugar, because we have a few people

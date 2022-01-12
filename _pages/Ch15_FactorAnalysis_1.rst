@@ -161,35 +161,59 @@ Openness.
    personality factors in the |bfi_sample|_ data set. If there is an R in the
    second column, the item is reversed.
 
-   ==== = =========================================
-   Name   Question / Item
-   ==== = =========================================
-   A1   R Am indifferent to the feelings of others.
-   A2     Inquire about others' well-being.
-   A3     Know how to comfort others.
-   A4     Love children.
-   A5     Make people feel at ease.
-   C1     Am exacting in my work.
-   C2     Continue until everything is perfect.
-   C3     Do things according to a plan.
-   C4   R Do things in a half-way manner.
-   C5   R Waste my time.
-   E1   R Don't talk a lot.
-   E2   R Find it difficult to approach others.
-   E3     Know how to captivate people.
-   E4     Make friends easily.
-   E5     Take charge.
-   N1     Get angry easily.
-   N2     Get irritated easily.
-   N3     Have frequent mood swings.
-   N4     Often feel blue.
-   N5     Panic easily.
-   O1     Am full of ideas.
-   O2   R Avoid difficult reading material.
-   O3     Carry the conversation to a higher level.
-   O4     Spend time reflecting on things.
-   O5   R Will not probe deeply into a subject.
-   ==== = =========================================
+   +------+---+-------------------------------------------+
+   | Name |   | Question / Item                           |
+   +======+===+===========================================+
+   | A1   | R | Am indifferent to the feelings of others. |
+   +------+---+-------------------------------------------+
+   | A2   |   | Inquire about others' well-being.         |
+   +------+---+-------------------------------------------+
+   | A3   |   | Know how to comfort others.               |
+   +------+---+-------------------------------------------+
+   | A4   |   | Love children.                            |
+   +------+---+-------------------------------------------+
+   | A5   |   | Make people feel at ease.                 |
+   +------+---+-------------------------------------------+
+   | C1   |   | Am exacting in my work.                   |
+   +------+---+-------------------------------------------+
+   | C2   |   | Continue until everything is perfect.     |
+   +------+---+-------------------------------------------+
+   | C3   |   | Do things according to a plan.            |
+   +------+---+-------------------------------------------+
+   | C4   | R | Do things in a half-way manner.           |
+   +------+---+-------------------------------------------+
+   | C5   | R | Waste my time.                            |
+   +------+---+-------------------------------------------+
+   | E1   | R | Don't talk a lot.                         |
+   +------+---+-------------------------------------------+
+   | E2   | R | Find it difficult to approach others.     |
+   +------+---+-------------------------------------------+
+   | E3   |   | Know how to captivate people.             |
+   +------+---+-------------------------------------------+
+   | E4   |   | Make friends easily.                      |
+   +------+---+-------------------------------------------+
+   | E5   |   | Take charge.                              |
+   +------+---+-------------------------------------------+
+   | N1   |   | Get angry easily.                         |
+   +------+---+-------------------------------------------+
+   | N2   |   | Get irritated easily.                     |
+   +------+---+-------------------------------------------+
+   | N3   |   | Have frequent mood swings.                |
+   +------+---+-------------------------------------------+
+   | N4   |   | Often feel blue.                          |
+   +------+---+-------------------------------------------+
+   | N5   |   | Panic easily.                             |
+   +------+---+-------------------------------------------+
+   | O1   |   | Am full of ideas.                         |
+   +------+---+-------------------------------------------+
+   | O2   | R | Avoid difficult reading material.         |
+   +------+---+-------------------------------------------+
+   | O3   |   | Carry the conversation to a higher level. |
+   +------+---+-------------------------------------------+
+   | O4   |   | Spend time reflecting on things.          |
+   +------+---+-------------------------------------------+
+   | O5   | R | Will not probe deeply into a subject.     |
+   +------+---+-------------------------------------------+
 
 
 The item data were collected using a 6-point response scale:

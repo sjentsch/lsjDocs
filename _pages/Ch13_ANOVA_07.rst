@@ -59,19 +59,24 @@ suffering from Broca’s Aphasia (a language deficit commonly experienced
 following a stroke).
 
 .. _tab-RManova:
-.. table:: Number of attempts successfully completed on three
-   experimental tasks.
+.. table::
+   Number of attempts successfully completed on three experimental tasks.
 
-   =========== ====== ========== ======
-   Participant Speech Conceptual Syntax
-   =========== ====== ========== ======
-   1           8      7          6
-   2           7      8          6
-   3           9      5          3
-   4           5      4          5
-   5           6      6          2
-   6           8      7          4
-   =========== ====== ========== ======
+   +-------------+--------+------------+--------+
+   | Participant | Speech | Conceptual | Syntax |
+   +=============+========+============+========+
+   | 1           |      8 |          7 |      6 |
+   +-------------+--------+------------+--------+
+   | 2           |      7 |          8 |      6 |
+   +-------------+--------+------------+--------+
+   | 3           |      9 |          5 |      3 |
+   +-------------+--------+------------+--------+
+   | 4           |      5 |          4 |      5 |
+   +-------------+--------+------------+--------+
+   | 5           |      6 |          6 |      2 |
+   +-------------+--------+------------+--------+
+   | 6           |      8 |          7 |      4 |
+   +-------------+--------+------------+--------+
 
 The patients were required to complete three word recognition tasks. On
 the first (speech production) task, patients were required to repeat

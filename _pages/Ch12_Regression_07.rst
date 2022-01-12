@@ -116,17 +116,17 @@ estimated regression coefficient, is a normal distribution with mean centred on
 *b*. What that would mean is that if the null hypothesis were true, then the
 sampling distribution of :math:`\hat{b}` has mean zero and unknown standard
 deviation. Assuming that we can come up with a good estimate for the standard
-error of the regression coefficient, :math:`\mbox{\textsc{se}}(\hat{b})`, then
+error of the regression coefficient, :math:`SE(\hat{b})`, then
 we’re in luck. That’s *exactly* the situation for which we introduced the
 one-sample *t*-test way back in Chapter `Comparing two means
 <Ch11_tTest.html#comparing-two-means>`__. So let’s define a *t*-statistic like
 this:
 
-.. math:: t = \frac{\hat{b}}{\mbox{\textsc{se}}(\hat{b})}
+.. math:: t = \frac{\hat{b}}{SE(\hat{b})}
 
 I’ll skip over the reasons why, but our degrees of freedom in this case are
 *df* = N - K - 1. Irritatingly, the estimate of the standard error of the
-regression coefficient, :math:`\mbox{\textsc{se}}(\hat{b})`, is not as easy to
+regression coefficient, :math:`SE(\hat{b})`, is not as easy to
 calculate as the standard error of the mean that we used for the simpler
 *t*-tests in Chapter `Comparing two means <Ch11_tTest.html#comparing-two-means>`__.
 In fact, the formula is somewhat ugly, and not terribly helpful to look at.\ [#]_
@@ -172,7 +172,7 @@ estimate :math:`\hat\sigma_b`. The third and fourth columns provide the
 lower and upper values for the 95% confidence interval around the
 *b* estimate (more on this later). The fifth column gives you the
 *t*-statistic, and it’s worth noticing that in this table
-:math:`t= \hat{b}/ \mbox{\textsc{se}}(\hat{b})` every time. Finally, the
+:math:`t= \hat{b}/ SE(\hat{b})` every time. Finally, the
 last column gives you the actual *p*-value for each of these
 tests.\ [#]_
 
@@ -197,12 +197,12 @@ simple regression model that we started with is the better model.
 
 .. [#]
    For advanced readers only. The vector of residuals is
-   :math:`\epsilon = y - X \hat{b}`. For K predictors
-   plus the intercept, the estimated residual variance is
+   :math:`\epsilon = y - X \hat{b}`. For K predictors plus the intercept,
+   the estimated residual variance is
    :math:`\hat\sigma^2 = \epsilon^\prime\epsilon / (N-K-1)`. The
    estimated covariance matrix of the coefficients is
    :math:`\hat\sigma^2(\mathbf{X}^\prime\mathbf{X})^{-1}`, the main
-   diagonal of which is :math:`\mbox{\textsc{se}}(\hat{b})`, our
+   diagonal of which is :math:`SE(\hat{b})`, our
    estimated standard errors.
 
 .. [#]

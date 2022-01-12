@@ -27,7 +27,7 @@ Armed with an understanding of sampling distributions, constructing a
 confidence interval for the mean is actually pretty easy. Here’s how it works.
 Suppose the true population mean is *µ* and the standard deviation is *σ*. I’ve
 just finished running my study that has *N* participants, and the mean IQ among
-those participants is X̅. We know from our discussion of `the central limit
+those participants is *X̄*. We know from our discussion of `the central limit
 theorem <Ch08_Estimation_3.html#the-central-limit-theorem>`__ that the sampling
 distribution of the mean is approximately normal. We also know from our
 discussion of the `normal distribution
@@ -40,12 +40,12 @@ a normally-distributed quantity will fall within 1.96 standard deviations of
 the true mean. Next, recall that the standard deviation of the sampling
 distribution is referred to as the standard error, and the standard error of
 the mean is written as SEM. When we put all these pieces together, we learn
-that there is a 95% probability that the sample mean X̅ that we have actually
+that there is a 95% probability that the sample mean *X̄* that we have actually
 observed lies within 1.96 standard errors of the population mean.
 
 Mathematically, we write this as:
 
-.. math:: \mu - \left( 1.96 \times \mbox{SEM} \right) \ \leq \  \bar{X}\  \leq \  \mu + \left( 1.96 \times \mbox{SEM} \right)
+| *µ* – 1.96 × SEM ≤ *X̄* ≤ *µ* + (1.96 × SEM)
 
 where the SEM is equal to :math:`\sigma / \sqrt{N}` and we can be 95%
 confident that this is true. However, that’s not answering the question that
@@ -56,7 +56,7 @@ we should believe about the population parameters, given that we have observed
 a particular sample. However, it’s not too difficult to do this. Using a little
 high school algebra, a sneaky way to rewrite our equation is like this:
 
-.. math:: \bar{X} -  \left( 1.96 \times \mbox{SEM} \right) \ \leq \ \mu  \ \leq  \ \bar{X} +  \left( 1.96 \times \mbox{SEM}\right)
+| *X̄* − (1.96 × SEM) ≤ *µ* ≤ *X̄* + (1.96 × SEM)
 
 What this is telling is is that the range of values has a 95% probability of
 containing the population mean *µ*. We refer to this range as a **95%

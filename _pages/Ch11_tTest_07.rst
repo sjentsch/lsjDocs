@@ -34,32 +34,34 @@ calculate the effect size for all the different flavours of
 *t*-test it provides.
 
 .. _tab-cohensdinterpretation:
-.. table:: A (very) rough guide to interpreting Cohen’s *d*. My
-   personal recommendation is to not use these blindly. The d
-   statistic has a natural interpretation in and of itself. It
-   re-describes the difference in means as the number of standard
-   deviations that separates those means. So it’s generally a good idea
-   to think about what that means in practical terms. In some contexts a
-   “small” effect could be of big practical importance. In other
-   situations a “large” effect may not be all that interesting.
+.. table::
+   A (very) rough guide to interpreting Cohen’s *d*. My personal recommendation
+   is to not use these blindly. The *d*-statistic has a natural interpretation
+   in and of itself. It re-describes the difference in means as the number of
+   standard deviations that separates those means. So it’s generally a good
+   idea to think about what that means in practical terms. In some contexts a
+   “small” effect could be of big practical importance. In other situations a
+   “large” effect may not be all that interesting.
 
-   ========= ====================
-   d-value   rough interpretation
-   ========= ====================
-   about 0.2       “small” effect
-   about 0.5    “moderate” effect
-   about 0.8       “large” effect
-   ========= ====================
+   +-----------+----------------------+
+   | d-value   | rough interpretation |
+   +===========+======================+
+   | about 0.2 |       “small” effect |
+   +-----------+----------------------+
+   | about 0.5 |    “moderate” effect |
+   +-----------+----------------------+
+   | about 0.8 |       “large” effect |
+   +-----------+----------------------+
 
 Cohen’s *d* from one sample
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The simplest situation to consider is the one corresponding to a one-sample
-*t*-test. In this case, this is the one sample mean :math:`\bar{X}` and one
-(hypothesised) population mean *µ*\ :sub:`o` to compare it to. Not only that,
-there’s really only one sensible way to estimate the population standard
-deviation. We just use our usual estimate :math:`\hat{\sigma}`. Therefore, we
-end up with the following as the only way to calculate d:
+*t*-test. In this case, this is the one sample mean *X̄* and one (hypothesised)
+population mean *µ*\ :sub:`o` to compare it to. Not only that, there’s really
+only one sensible way to estimate the population standard deviation. We just
+use our usual estimate :math:`\hat{\sigma}`. Therefore, we end up with the
+following as the only way to calculate d:
 
 .. math:: d = \frac{\bar{X} - \mu_0}{\hat{\sigma}}
 

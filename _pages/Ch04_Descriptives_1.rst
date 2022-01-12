@@ -33,42 +33,46 @@ talk about how the calculations would be done in jamovi.
 The first piece of notation to introduce is *N*, which we’ll use to refer to
 the number of observations that we’re averaging (in this case *N* = 5`). Next,
 we need to attach a label to the observations themselves. It’s traditional to
-use X for this, and to use subscripts to indicate which observation we’re
-actually talking about. That is, we’ll use X\ :sub:`1` to refer to the first
-observation, X\ :sub:`2` to refer to the second observation, and so on all the
-way up to X\ :sub:`N` for the last one. Or, to say the same thing in a slightly
-more abstract way, we use X\ :sub:`i` to refer to the *i*-th observation. Just
+use *X* for this, and to use subscripts to indicate which observation we’re
+actually talking about. That is, we’ll use *X*\ :sub:`1` to refer to the first
+observation, *X*\ :sub:`2` to refer to the second observation, and so on all the
+way up to *X*\ :sub:`N` for the last one. Or, to say the same thing in a slightly
+more abstract way, we use *X*\ :sub:`i` to refer to the *i*-th observation. Just
 to make sure we’re clear on the notation, the following table lists the 5
 observations in the ``afl.margins`` variable, along with the mathematical
 symbol used to refer to it and the actual value that the observation
 corresponds to:
 
-====================== =========== ==================
-the observation        its symbol  the observed value
-====================== =========== ==================
-winning margin, game 1 X\ :sub:`1` 56 points
-winning margin, game 2 X\ :sub:`2` 31 points
-winning margin, game 3 X\ :sub:`3` 56 points
-winning margin, game 4 X\ :sub:`4` 8 points
-winning margin, game 5 X\ :sub:`5` 32 points
-====================== =========== ==================
++------------------------+---------------+--------------------+
+| the observation        | its symbol    | the observed value |
++========================+===============+====================+
+| winning margin, game 1 | *X*\ :sub:`1` |          56 points |
++------------------------+---------------+--------------------+
+| winning margin, game 2 | *X*\ :sub:`2` |          31 points |
++------------------------+---------------+--------------------+
+| winning margin, game 3 | *X*\ :sub:`3` |          56 points |
++------------------------+---------------+--------------------+
+| winning margin, game 4 | *X*\ :sub:`4` |           8 points |
++------------------------+---------------+--------------------+
+| winning margin, game 5 | *X*\ :sub:`5` |          32 points |
++------------------------+---------------+--------------------+
 
-Okay, now let’s try to write a formula for the mean. By tradition, we
-use X̅ as the notation for the mean. So the calculation for
-the mean could be expressed using the following formula:
+Okay, now let’s try to write a formula for the mean. By tradition, we use *X̄*
+as the notation for the mean. So the calculation for the mean could be
+expressed using the following formula:
 
 .. math:: \bar{X} = \frac{X_1 + X_2 + \ldots + X_{N-1} + X_N}{N}
 
 This formula is entirely correct but it’s terribly long, so we make use
 of the **summation symbol** Σ to shorten it.\ [#]_ If I want to add up the
-first five observations I could write out the sum the long way, X\ :sub:`1` +
-X\ :sub:`2` + X\ :sub:`3` + X\ :sub:`4` + X\ :sub:`5` or I could use the
-summation symbol to shorten it to this:
+first five observations I could write out the sum the long way, *X*\ :sub:`1` +
+*X*\ :sub:`2` + *X*\ :sub:`3` + *X*\ :sub:`4` + *X*\ :sub:`5` or I could use
+the summation symbol to shorten it to this:
 
 .. math:: \sum_{i=1}^5 X_i
 
 Taken literally, this could be read as “the sum, taken over all *i* values from
-1 to 5, of the value X\ :sub:`i`”. But basically what it means is “add up the
+1 to 5, of the value *X*\ :sub:`i`”. But basically what it means is “add up the
 first five observations”. In any case, we can use this notation to write out
 the formula for the mean, which looks like this:
 
@@ -80,12 +84,11 @@ of writing out the same thing I said in words: add all the values up and then
 divide by the total number of items. However, that’s not really the reason I
 went into all that detail. My goal was to try to make sure that everyone
 reading this book is clear on the notation that we’ll be using throughout the
-book: X̅ for the mean, Σ for the idea of summation, X\ :sub:`i`
-for the *i*-th observation, and *N* for the total number of observations. We’re
-going to be re-using these symbols a fair bit so it’s important that you
-understand them well enough to be able to “read” the equations, and to be able
-to see that it’s just saying “add up lots of things and then divide by another
-thing”.
+book: *X̄* for the mean, Σ for the idea of summation, *X*\ :sub:`i` for the
+*i*-th observation, and *N* for the total number of observations. We’re going
+to be re-using these symbols a fair bit so it’s important that you understand
+them well enough to be able to “read” the equations, and to be able to see that
+it’s just saying “add up lots of things and then divide by another thing”.
 
 Calculating the mean in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

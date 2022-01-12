@@ -31,12 +31,12 @@ and then calculate the mean in ``Exploration`` → ``Descriptives``. The mean
 value is 72.3.
 
 Hmm. It *might* be that the psychology students are scoring a bit higher than
-normal. That sample mean of X̄ = 72.3 is a fair bit higher than the 
+normal. That sample mean of *X̄* = 72.3 is a fair bit higher than the 
 hypothesised population mean of µ = 67.5 but, on the other hand, a sample size
 of *N* = 20 isn’t all that big. Maybe it’s pure chance.
 
 To answer the question, it helps to be able to write down what it is that I
-think I know. Firstly, I know that the sample mean is X̄ = 72.3. If I’m willing
+think I know. Firstly, I know that the sample mean is *X̄* = 72.3. If I’m willing
 to assume that the psychology students have the same standard deviation as the
 rest of the class then I can say that the population standard deviation is σ =
 \9.5. I’ll also assume that since Dr Zeppo is grading to a curve, the
@@ -117,15 +117,15 @@ The next step is to figure out what we would be a good choice for a
 diagnostic test statistic, something that would help us discriminate
 between H\ :sub:`0` and H\ :sub:`1`. Given that the hypotheses all refer
 to the population mean *µ*, you’d feel pretty confident that the
-sample mean X̄ would be a pretty useful place to start.
+sample mean *X̄* would be a pretty useful place to start.
 What we could do is look at the difference between the sample mean
-X̄ and the value that the null hypothesis predicts for the
+*X̄* and the value that the null hypothesis predicts for the
 population mean. In our example that would mean we calculate
-X̄ - 67.5. More generally, if we let *µ*\ :sub:`0` refer to
+*X̄* - 67.5. More generally, if we let *µ*\ :sub:`0` refer to
 the value that the null hypothesis claims is our population mean, then
 we’d want to calculate
 
-| X̄ - *µ*\ :sub:`0`
+| *X̄* - *µ*\ :sub:`0`
 
 If this quantity equals or is very close to 0, things are looking good
 for the null hypothesis. If this quantity is a long way away from 0,
@@ -146,29 +146,29 @@ a statistician might write this as:
 
 | X ~ Normal(*µ*\ :sub:`0`, σ²)
 
-Okay, if that’s true, then what can we say about the distribution of X̄? Well,
+Okay, if that’s true, then what can we say about the distribution of *X̄*? Well,
 as we discussed earlier (see `The central limit theorem
 <Ch08_Estimation_3.html#the-central-limit-theorem>`__), the sampling
-distribution of the mean X̄ is also normal, and has mean *µ*. But the standard
-deviation of this sampling distribution SE(X̄), which is called the *standard
+distribution of the mean *X̄* is also normal, and has mean *µ*. But the standard
+deviation of this sampling distribution *SE(X̄)*, which is called the *standard
 error of the mean*, is
 
-.. math:: \mbox{\textsc{se}}(\bar{X}) = \frac{\sigma}{\sqrt{N}}
+.. math:: SE(X̄) = \frac{\sigma}{\sqrt{N}}
 
 In other words, if the null hypothesis is true then the sampling
 distribution of the mean can be written as follows:
 
-| X̄ ~ Normal(*µ*\ :sub:`0`, SE(X̄))
+| *X̄* ~ Normal(*µ*\ :sub:`0`, *SE(X̄)*)
 
-Now comes the trick. What we can do is convert the sample mean X̄
+Now comes the trick. What we can do is convert the sample mean *X̄*
 into a `standard score <Ch04_Descriptives_5.html#standard-scores>`__. This is
 conventionally written as *z*, but for now I’m going to refer to it as
-z\ :sub:`X̄`. (The reason for using this expanded notation is to help
+*z*\ :sub:`X̄`. (The reason for using this expanded notation is to help
 you remember that we’re calculating a standardised version of a sample mean,
 *not* a standardised version of a single observation, which is what a *z*-score
 usually refers to). When we do so the *z*-score for our sample mean is:
 
-.. math:: z_{\bar{X}} = \frac{\bar{X} - \mu_0}{\mbox{\textsc{se}}(\bar{X})}
+.. math:: z_{\bar{X}} = \frac{\bar{X} - \mu_0}{SE(X̄)}
 
 or, equivalently:
 
@@ -178,22 +178,22 @@ This *z*-score is our test statistic. The nice thing about using this as our
 test statistic is that like all *z*-scores, it has a standard normal
 distribution:
 
-| z\ :sub:`X̄` ~ Normal(0, 1)
+| z\ :sub:`*X̄*` ~ Normal(0, 1)
 
 (again, see Section `Standard scores <Ch04_Descriptives_5.html#standard-scores>`__
 if you’ve forgotten why this is true). In other words, regardless of what scale
 the original data are on, the *z*-statistic itself always has the same
 interpretation: it’s equal to the number of standard errors that separate the
-observed sample mean X̄ from the population mean *µ*\ :sub:`0`
+observed sample mean *X̄* from the population mean *µ*\ :sub:`0`
 predicted by the null hypothesis. Better yet, regardless of what the population
 parameters for the raw scores actually are, the 5% critical regions for the
 *z*-test are always the same, as illustrated in :numref:`fig-ztest`. And what
 this meant, way back in the days where people did all their statistics by hand,
 is that someone could publish a table like this:
 
-+-------------------+----------------+----------------+                                          
++-------------------+----------------+----------------+
 | desired *α* level | two-sided test | one-sided test |
-+===================+================+================+                                          
++===================+================+================+
 | 0.1               | 1.644854       | 1.281552       |
 +-------------------+----------------+----------------+
 | 0.05              | 1.959964       | 1.644854       |

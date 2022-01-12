@@ -382,14 +382,14 @@ predictor variables, Factor A and Factor B. If we use *Y* to refer
 to the outcome variable, then we would use *Y*\ :sub:`rci` to refer to
 the outcome associated with the i-th member of group rc
 (i.e., level/row *r* for Factor A and level/column *c* for
-Factor B). Thus, if we use :math:`\bar{Y}` to refer to a sample mean, we
+Factor B). Thus, if we use Ȳ to refer to a sample mean, we
 can use the same notation as before to refer to group means, marginal
-means and grand means. That is, :math:`\bar{Y}_{rc}` is the sample mean
+means and grand means. That is, Ȳ\ :sub:`rc` is the sample mean
 associated with the *r*\ th level of Factor A and the
-*c*\ th level of Factor B, :math:`\bar{Y}_{r.}`\ would be the
-marginal mean for the *r*\ th level of Factor A,
-:math:`\bar{Y}_{.c}` would be the marginal mean for the *c*\ th
-level of Factor B, and :math:`\bar{Y}_{..}` is the grand mean. In other
+*c*\ th level of Factor B, Ȳ\ :sub:`r.` would be the
+marginal mean for the *r*\ th level of Factor A, Ȳ\ :sub:`.c`
+would be the marginal mean for the *c*\ th
+level of Factor B, and Ȳ\ :sub:`..` is the grand mean. In other
 words, our sample means can be organised into the same table as the
 population means. For our clinical trial data, that table looks like
 this:
@@ -407,7 +407,7 @@ this:
 +--------------+--------------+--------------+--------------+
 
 And if we look at the sample means that I showed earlier, we have
-:math:`\bar{Y}_{11} = 0.30`, :math:`\bar{Y}_{12} = 0.60` etc. In our
+Ȳ\ :sub:`11` = 0.30, Ȳ\ :sub:`12` = 0.60 etc. In our
 clinical trial example, the ``drugs`` factor has 3 levels and the
 ``therapy`` factor has 2 levels, and so what we’re trying to run is a
 3 × 2 factorial ANOVA. However, we’ll be a little more
@@ -418,55 +418,50 @@ runnning here is an R × C factorial ANOVA.
 Now that we’ve got our notation straight, we can compute the sum of
 squares values for each of the two factors in a relatively familiar way.
 For Factor A, our between group sum of squares is calculated by
-assessing the extent to which the (row) marginal means
-:math:`\bar{Y}_{1.}`, :math:`\bar{Y}_{2.}` etc, are different from the
-grand mean :math:`\bar{Y}_{..}`. We do this in the same way that we did
+assessing the extent to which the (row) marginal means Ȳ\ :sub:`1.`, Ȳ\ :sub:`2.` etc, are different from the
+grand mean Ȳ\ :sub:`..`\. We do this in the same way that we did
 for one-way ANOVA: calculate the sum of squared difference between the
-:math:`\bar{Y}_{i.}` values and the :math:`\bar{Y}_{..}` values.
+Ȳ\ :sub:`i.` values and the Ȳ\ :sub:`..` values.
 Specifically, if there are *N* people in each group, then we
 calculate this
 
 .. math:: \mbox{SS}_{A} = (N \times C)  \sum_{r=1}^R  \left( \bar{Y}_{r.} - \bar{Y}_{..} \right)^2
 
-As with one-way ANOVA, the most interesting\ [#]_ part of this formula is
-the :math:`\left( \bar{Y}_{r.} - \bar{Y}_{..} \right)^2` bit, which
-corresponds to the squared deviation associated with level *r*.
-All that this formula does is calculate this squared deviation for all
-*R* levels of the factor, add them up, and then multiply the
-result by N × C. The reason for this last part is that
-there are multiple cells in our design that have level *r* on
-Factor A. In fact, there are *C* of them, one corresponding to
-each possible level of Factor B! For instance, in our example there are
-*two* different cells in the design corresponding to the ``anxifree``
-drug: one for people with ``no.therapy`` and one for the ``CBT`` group.
-Not only that, within each of these cells there are *N*
-observations. So, if we want to convert our SS value into a quantity
-that calculates the between-groups sum of squares on a “per observation”
-basis, we have to multiply by N × C. The formula for factor
-B is of course the same thing, just with some subscripts shuffled around
+As with one-way ANOVA, the most interesting\ [#]_ part of this formula is the
+(Ȳ\ :sub:`r.` – Ȳ\ :sub:`..`)² bit, which corresponds to the squared deviation
+associated with level *r*. All that this formula does is calculate this squared
+deviation for all *R* levels of the factor, add them up, and then multiply the
+result by N × C. The reason for this last part is that there are multiple cells
+in our design that have level *r* on Factor A. In fact, there are *C* of them,
+one corresponding to each possible level of Factor B! For instance, in our
+example there are *two* different cells in the design corresponding to the
+``anxifree`` drug: one for people with ``no.therapy`` and one for the ``CBT``
+group. Not only that, within each of these cells there are *N* observations.
+So, if we want to convert our SS value into a quantity that calculates the
+between-groups sum of squares on a “per observation” basis, we have to multiply
+by N × C. The formula for factor B is of course the same thing, just with some
+subscripts shuffled around
 
 .. math:: \mbox{SS}_{B} = (N \times R) \sum_{c=1}^C \left( \bar{Y}_{.c} - \bar{Y}_{..} \right)^2
 
 Now that we have these formulas we can check them against the jamovi
 output from the earlier section.
 
-First, let’s calculate the sum of squares associated with the main
-effect of ``drug``. There are a total of *N* = 3 people in each
-group and *C* = 2 different types of therapy. Or, to put it another
-way, there are 3 · 2 = 6 people who received any particular
-drug. When we do these calculations in a spreadsheet programme, we get a
-value of 3.45 for the sum of squares associated with the main effect of
-``drug``. Not surprisingly, this is the same number that you get when
-you look up the SS value for the drugs factor in the ANOVA table that I
-presented earlier, in :numref:`fig-factorialanova3`.
+First, let’s calculate the sum of squares associated with the main effect of
+``drug``. There are a total of *N* = 3 people in each group and *C* = 2
+different types of therapy. Or, to put it another way, there are 3 · 2 = 6
+people who received any particular drug. When we do these calculations in a
+spreadsheet programme, we get a value of 3.45 for the sum of squares associated
+with the main effect of ``drug``. Not surprisingly, this is the same number
+that you get when you look up the SS value for the drugs factor in the ANOVA
+table that I presented earlier, in :numref:`fig-factorialanova3`.
 
-We can repeat the same kind of calculation for the effect of therapy.
-Again there are *N* = 3 people in each group, but since there are
-R = 3 different drugs, this time around we note that there are
-3 · 3 = 9 people who received CBT and an additional 9
-people who received the placebo. So our calculation in this case gives
-us a value of 0.47 for the sum of squares associated with the main
-effect of ``therapy``. Once again, we are not surprised to see that our
+We can repeat the same kind of calculation for the effect of therapy. Again,
+there are *N* = 3 people in each group, but since there are R = 3 different
+drugs, this time around we note that there are 3 · 3 = 9 people who received
+CBT and an additional 9 people who received the placebo. So our calculation in
+this case gives us a value of 0.47 for the sum of squares associated with the
+main effect of ``therapy``. Once again, we are not surprised to see that our
 calculations are identical to the ANOVA output in :numref:`fig-factorialanova3`.
 
 So that’s how you calculate the SS values for the two main effects. These SS
@@ -482,33 +477,31 @@ that we used in Chapter `Correlation and linear regression
 that jamovi uses when printing out the ANOVA table, I’ll start referring to
 the within-groups SS value as the *residual* sum of squares SS\ :sub:`R`.
 
-The easiest way to think about the residual SS values in this context, I
-think, is to think of it as the leftover variation in the outcome
-variable after you take into account the differences in the marginal
-means (i.e., after you remove SS\ :sub:`A` and SS\ :sub:`B`). What I
-mean by that is we can start by calculating the total sum of squares,
-which I’ll label SS\ :sub:`T`. The formula for this is pretty much the
-same as it was for one-way ANOVA. We take the difference between each
-observation *Y*\ :sub:`rci` and the grand mean :math:`\bar{Y}_{..}`,
-square the differences, and add them all up
+The easiest way to think about the residual SS values in this context, I think,
+is to think of it as the leftover variation in the outcome variable after you
+take into account the differences in the marginal means (i.e., after you remove
+SS\ :sub:`A` and SS\ :sub:`B`). What I mean by that is we can start by
+calculating the total sum of squares, which I’ll label SS\ :sub:`T`. The
+formula for this is pretty much the same as it was for one-way ANOVA. We take
+the difference between each observation *Y*\ :sub:`rci` and the grand mean
+Ȳ\ :sub:`..`, square the differences, and add them all up
 
 .. math:: \mbox{SS}_T = \sum_{r=1}^R \sum_{c=1}^C \sum_{i=1}^N \left( Y_{rci} - \bar{Y}_{..}\right)^2
 
-The “triple summation” here looks more complicated than it is. In the
-first two summations, we’re summing across all levels of Factor A (i.e.,
-over all possible rows *r* in our table) and across all levels of
-Factor B (i.e., all possible columns *c*). Each rc-combination corresponds
-to a single group and each group contains
-*N* people, so we have to sum across all those people (i.e., all
-i values) too. In other words, all we’re doing here is summing
-across all observations in the data set (i.e., all possible rci-combinations).
+The “triple summation” here looks more complicated than it is. In the first two
+summations, we’re summing across all levels of Factor A (i.e., over all
+possible rows *r* in our table) and across all levels of Factor B (i.e., all
+possible columns *c*). Each rc-combination corresponds to a single group and
+each group contains *N* people, so we have to sum across all those people (i.e.,
+all i values) too. In other words, all we’re doing here is summing across all
+observations in the data set (i.e., all possible rci-combinations).
 
 At this point, we know the total variability of the outcome variable
-SS\ :sub:`T`, and we know how much of that variability can be
-attributed to Factor A (SS\ :sub:`A`) and how much of it can be
-attributed to Factor B (SS\ :sub:`B`). The residual sum of squares is
-thus defined to be the variability in *Y* that *can’t* be
-attributed to either of our two factors. In other words
+SS\ :sub:`T`, and we know how much of that variability can be attributed to
+Factor A (SS\ :sub:`A`) and how much of it can be attributed to Factor B
+(SS\ :sub:`B`). The residual sum of squares is thus defined to be the
+variability in *Y* that *can’t* be attributed to either of our two factors.
+In other words 
 
 | SS\ :sub:`R` = SS\ :sub:`T` - (SS\ :sub:`A` + SS\ :sub:`B`)
 

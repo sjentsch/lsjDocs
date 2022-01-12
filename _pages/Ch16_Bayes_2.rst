@@ -96,14 +96,17 @@ in a scientific context. The two most widely used are from `Jeffreys (1961)
 <References.html#kass-1995>`__. Of the two, I tend to prefer the `Kass and Raftery (1995)
 <References.html#kass-1995>`__ table because it’s a bit more conservative. So here it is:
 
-============== ====================
-Bayes factor   Interpretation
-============== ====================
-1 - 3          Negligible evidence
-3 - 20         Positive evidence
-20 - 150       Strong evidence
-> 150          Very strong evidence
-============== ====================
++--------------+----------------------+
+| Bayes factor | Interpretation       |
++==============+======================+
+| 1 - 3        | Negligible evidence  |
++--------------+----------------------+
+| 3 - 20       | Positive evidence    |
++--------------+----------------------+
+| 20 - 150     | Strong evidence      |
++--------------+----------------------+
+| > 150        | Very strong evidence |
++--------------+----------------------+
 
 And to be perfectly honest, I think that even the `Kass and Raftery (1995)
 <References.html#kass-1995>`__ standards are being a bit charitable.

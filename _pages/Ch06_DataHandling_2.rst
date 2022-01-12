@@ -82,16 +82,22 @@ right is larger, then jamovi returns an answer of ``FALSE``.
    these “binary relational operators”, but quite frankly I don’t want
    to. It’s my book so no-one can make me.
 
-   ======================== ======== ============= =========
-   operation                operator example input answer
-   ======================== ======== ============= =========
-   less than                ``<``                  ``TRUE``
-   less than or equal to    ``<=``                 ``TRUE``
-   greater than             ``>``                  ``FALSE``
-   greater than or equal to ``>=``                 ``TRUE``
-   equal to                 ``==``                 ``FALSE``
-   not equal to             ``!=``                 ``TRUE``
-   ======================== ======== ============= =========
+   +--------------------------+----------+---------------+-----------+
+   | operation                | operator | example input | answer    |
+   +==========================+==========+===============+===========+
+   | less than                | ``<``    |     ``2 < 3`` |  ``TRUE`` |
+   +--------------------------+----------+---------------+-----------+
+   | less than or equal to    | ``<=``   |    ``2 <= 2`` |  ``TRUE`` |
+   +--------------------------+----------+---------------+-----------+
+   | greater than             | ``>``    |     ``2 > 3`` | ``FALSE`` |
+   +--------------------------+----------+---------------+-----------+
+   | greater than or equal to | ``>=``   |    ``2 >= 2`` |  ``TRUE`` |
+   +--------------------------+----------+---------------+-----------+
+   | equal to                 | ``==``   |    ``2 == 3`` | ``FALSE`` |
+   +--------------------------+----------+---------------+-----------+
+   | not equal to             | ``!=``   |    ``2 != 3`` |  ``TRUE`` |
+   +--------------------------+----------+---------------+-----------+
+
 
 In contrast, the **less than or equal to** operator ``<=`` will do
 exactly what it says. It returns a value of ``TRUE`` if the number of
@@ -119,26 +125,28 @@ For instance, if I ask you to assess the claim that “either
 it’s an “either-or” statement, all we need is for one of the two parts
 to be true. That’s what the ``or`` operator does:\ [#]_
 
-.. code-block:: rout
+.. code-block:: text
 
    (2 + 2 == 4) or (2 + 2 == 5)
 
 .. _tab-logicals2:
 .. table:: Some more logical operators.
 
-   ========= ======== ===================== =========
-   operation operator example input         answer
-   ========= ======== ===================== =========
-   not       ``NOT``  ``NOT(1==1)``         ``FALSE``
-   or        ``or``   ``(1==1) or (2==3)``  ``TRUE``
-   and       ``and``  ``(1==1) and (2==3)`` ``FALSE``
-   ========= ======== ===================== =========
+   +-----------+----------+-----------------------+-----------+
+   | operation | operator | example input         |    answer |
+   +===========+==========+=======================+===========+
+   | not       | ``NOT``  | ``NOT(1==1)``         | ``FALSE`` |
+   +-----------+----------+-----------------------+-----------+
+   | or        | ``or``   | ``(1==1) or (2==3)``  |  ``TRUE`` |
+   +-----------+----------+-----------------------+-----------+
+   | and       | ``and``  | ``(1==1) and (2==3)`` | ``FALSE`` |
+   +-----------+----------+-----------------------+-----------+
 
 On the other hand, if I ask you to assess the claim that “both 2 + 2 = 4 *and*
 2 + 2 = 5” you’d say that it’s false. Since this is an *and* statement we need
 both parts to be true. And that’s what the ``and`` operator does:
 
-.. code-block:: rout
+.. code-block:: text
 
    (2 + 2 == 4) and (2 + 2 == 5)
 
@@ -148,7 +156,7 @@ in English. If I ask you to assess my claim that “it is not true that
 claim is that “``2 + 2 = 5`` is false”. And I’m right. If we write this in
 jamovi we use this:
 
-.. code-block:: rout
+.. code-block:: text
 
    NOT(2 + 2 == 5)
 

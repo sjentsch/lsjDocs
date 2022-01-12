@@ -46,12 +46,13 @@ is 85%. If this is really what you believe about Adelaide rainfall (and now
 that I’ve told it to you I’m betting that this really *is* what you believe)
 then what I have written here is your **prior distribution**, written *P*\ (h):
 
-========== ================
-Hypothesis Degree of Belief
-========== ================
-Rainy day  0.15
-Dry day    0.85
-========== ================
++------------+------------------+
+| Hypothesis | Degree of Belief |
++============+==================+
+| Rainy day  |             0.15 |
++------------+------------------+
+| Dry day    |             0.85 |
++------------+------------------+
 
 Likelihoods: theories about the data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -66,12 +67,13 @@ of the time (I really am awful at this). But let’s say that on dry days
 I’m only about 5% likely to be carrying an umbrella. So you might write
 out a little table like this:
 
-========== ======== ===========                   
-Hypothesis Umbrella No umbrella
-========== ======== ===========
-Rainy day  0.30     0.70
-Dry day    0.05     0.95
-========== ======== ===========
++------------+----------+-------------+
+| Hypothesis | Umbrella | No umbrella |
++============+==========+=============+
+| Rainy day  |     0.30 |        0.70 |
++------------+----------+-------------+
+| Dry day    |     0.05 |        0.95 |
++------------+----------+-------------+
 
 It’s important to remember that each cell in this table describes your
 beliefs about what data *d* will be observed, *given* the truth of
@@ -124,27 +126,27 @@ day and that I will remember an umbrella. However, there are of course
 exercise for all four. If we do that, we end up with the following
 table:
 
-+-------+----------+-------------+
-|       | Umbrella | No-umbrella |
-+=======+==========+=============+
-| Rainy | 0.0450   | 0.1050      |
-+-------+----------+-------------+
-| Dry   | 0.0425   | 0.8075      |
-+-------+----------+-------------+
++-----------+----------+-------------+
+|           | Umbrella | No-umbrella |
++===========+==========+=============+
+| **Rainy** |   0.0450 |      0.1050 |
++-----------+----------+-------------+
+| **Dry**   |   0.0425 |      0.8075 |
++-----------+----------+-------------+
 
 This table captures all the information about which of the four
 possibilities are likely. To really get the full picture, though, it
 helps to add the row totals and column totals. That gives us this table:
 
-+-------+----------+-------------+-------+
-|       | Umbrella | No-umbrella | Total |
-+=======+==========+=============+=======+
-| Rainy | 0.0450   | 0.1050      | 0.15  |
-+-------+----------+-------------+-------+
-| Dry   | 0.0425   | 0.8075      | 0.85  |
-+-------+----------+-------------+-------+
-| Total | 0.0875   | 0.9125      | 1.00  |
-+-------+----------+-------------+-------+
++-----------+----------+-------------+-------+
+|           | Umbrella | No-umbrella | Total |
++===========+==========+=============+=======+
+| **Rainy** |   0.0450 |      0.1050 |  0.15 |
++-----------+----------+-------------+-------+
+| **Dry**   |   0.0425 |      0.8075 |  0.85 |
++-----------+----------+-------------+-------+
+| **Total** |   0.0875 |      0.9125 |  1.00 |
++-----------+----------+-------------+-------+
 
 This is a very useful table, so it’s worth taking a moment to think
 about what all these numbers are telling us. First, notice that the row
@@ -167,15 +169,15 @@ all possible combinations of data and hypothesis.
 Now, because this table is so useful, I want to make sure you understand
 what all the elements correspond to and how they written:
 
-+-------+------------------------+---------------------------+--------------+
-|       | Umbrella               | No-umbrella               |              |
-+=======+========================+===========================+==============+
-| Rainy | *P*\ (Umbrella, Rainy) | *P*\ (No-umbrella, Rainy) | *P*\ (Rainy) |
-+-------+------------------------+---------------------------+--------------+
-| Dry   | *P*\ (Umbrella, Dry)   | *P*\ (No-umbrella, Dry)   | *P*\ (Dry)   |
-+-------+------------------------+---------------------------+--------------+
-|       | *P*\ (Umbrella)        | *P*\ (No-umbrella)        |              |
-+-------+------------------------+---------------------------+--------------+
++-----------+------------------------+---------------------------+--------------+
+|           | Umbrella               | No-umbrella               |              |
++===========+========================+===========================+==============+
+| **Rainy** | *P*\ (Umbrella, Rainy) | *P*\ (No-umbrella, Rainy) | *P*\ (Rainy) |
++-----------+------------------------+---------------------------+--------------+
+| **Dry**   | *P*\ (Umbrella, Dry)   | *P*\ (No-umbrella, Dry)   | *P*\ (Dry)   |
++-----------+------------------------+---------------------------+--------------+
+|           | *P*\ (Umbrella)        | *P*\ (No-umbrella)        |              |
++-----------+------------------------+---------------------------+--------------+
 
 Finally, let’s use “proper” statistical notation. In the rainy day
 problem, the data corresponds to the observation that I do or do not
@@ -213,15 +215,15 @@ was, you must now adjust your beliefs to accommodate the fact that you
 now *know* that I have an umbrella.\ [#]_ To reflect this new knowledge,
 our *revised* table must have the following numbers:
 
-+-------+----------+-------------+
-|       | Umbrella | No-umbrella |
-+=======+==========+=============+
-| Rainy |          | 0           |
-+-------+----------+-------------+
-| Dry   |          | 0           |
-+-------+----------+-------------+
-| Total | 1        | 0           |
-+-------+----------+-------------+
++-----------+----------+-------------+
+|           | Umbrella | No-umbrella |
++===========+==========+=============+
+| **Rainy** |          | 0           |
++-----------+----------+-------------+
+| **Dry**   |          | 0           |
++-----------+----------+-------------+
+| **Total** | 1        | 0           |
++-----------+----------+-------------+
 
 In other words, the facts have eliminated any possibility of “no
 umbrella”, so we have to put zeros into any cell in the table that
@@ -246,15 +248,15 @@ umbrella” is *slightly* more plausible than “dry and umbrella”, while
 still ensuring that numbers in the table add up. Something like this,
 perhaps?
 
-+-------+----------+-------------+
-|       | Umbrella | No-umbrella |
-+=======+==========+=============+
-| Rainy | 0.514    | 0           |
-+-------+----------+-------------+
-| Dry   | 0.486    | 0           |
-+-------+----------+-------------+
-| Total | 1        | 0           |
-+-------+----------+-------------+
++-----------+----------+-------------+
+|           | Umbrella | No-umbrella |
++===========+==========+=============+
+| **Rainy** |   0.514  | 0           |
++-----------+----------+-------------+
+| **Dry**   |   0.486  | 0           |
++-----------+----------+-------------+
+| **Total** |   1      | 0           |
++-----------+----------+-------------+
 
 What this table is telling you is that, after being told that I’m
 carrying an umbrella, you believe that there’s a 51.4% chance that today

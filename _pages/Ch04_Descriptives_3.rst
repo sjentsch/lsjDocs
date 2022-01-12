@@ -43,7 +43,7 @@ One formula for the skewness of a data set is as follows
 
 .. math:: \mbox{skewness}(X) = \frac{1}{N \hat{\sigma}^3} \sum_{i=1}^N (X_i - \bar{X})^3
 
-where *N* is the number of observations, X̅ is the sample mean, and
+where *N* is the number of observations, *X̄* is the sample mean, and
 :math:`\hat{\sigma}` is the standard deviation (the “divide by *N - 1*”
 version, that is).
 
@@ -87,13 +87,15 @@ data is *leptokurtic*. Only the data in the middle panel are just pointy
 enough, so we say that it is *mesokurtic* and has kurtosis zero. This is
 summarised in the table below:
 
-==================== ============== ==============
-informal term        technical name kurtosis value
-==================== ============== ==============
-“too flat”           platykurtic    negative
-“just pointy enough” mesokurtic     zero
-“too pointy”         leptokurtic    positive
-==================== ============== ==============
++----------------------+----------------+----------------+
+| informal term        | technical name | kurtosis value |
++======================+================+================+
+| “too flat”           | platykurtic    | negative       |
++----------------------+----------------+----------------+
+| “just pointy enough” | mesokurtic     | zero           |
++----------------------+----------------+----------------+
+| “too pointy”         | leptokurtic    | positive       |
++----------------------+----------------+----------------+
 
 The equation for kurtosis is pretty similar in spirit to the formulas
 we’ve seen already for the variance and the skewness. Except that where

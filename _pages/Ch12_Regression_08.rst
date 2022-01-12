@@ -26,19 +26,18 @@ weight *b*.
 Fortunately, confidence intervals for the regression weights can be
 constructed in the usual fashion
 
-.. math:: \mbox{CI}(b) = \hat{b} \pm \left( t_{crit} \times \mbox{\textsc{se}}(\hat{b})  \right)
+.. math:: \mbox{CI}(b) = \hat{b} \pm \left( t_{crit} \times SE(\hat{b})  \right)
 
-where :math:`\mbox{\textsc{se}}(\hat{b})` is the standard error of the
-regression coefficient, and *t*\ :sub:`crit` is the relevant critical
-value of the appropriate *t* distribution. For instance, if it’s a
-95% confidence interval that we want, then the critical value is the
-97.5th quantile of a *t* distribution with *N* - K - 1 degrees
-of freedom. In other words, this is basically the same approach to
-calculating confidence intervals that we’ve used throughout.
+where :math:`SE(\hat{b})` is the standard error of the regression coefficient,
+and *t*\ :sub:`crit` is the relevant critical value of the appropriate
+*t*-distribution. For instance, if it’s a 95% confidence interval that we want,
+then the critical value is the 97.5th quantile of a *t* distribution with
+*N* - *K* - 1 degrees of freedom. In other words, this is basically the same
+approach to calculating confidence intervals that we’ve used throughout.
 
-In jamovi we had already specified the ``95% Confidence interval`` as
-shown if :numref:`fig-reg2`, although we could easily have chosen another
-value, say a ``99% Confidence interval`` if that is what we decided on.
+In jamovi we had already specified the ``95% Confidence interval`` as shown in
+:numref:`fig-reg2`, although we could easily have chosen another value, say a
+``99% Confidence interval`` if that is what we decided on.
 
 Calculating standardised regression coefficients
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

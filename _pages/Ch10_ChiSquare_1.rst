@@ -63,14 +63,17 @@ the observation. So the second observation in our table is written as
 *O*\ :sub:`2` in maths. The relationship between the English descriptions and
 the mathematical symbols are illustrated below:
 
-============ ========== ============= =========
-label        index, *i* math. symbol  the value
-============ ========== ============= =========
-clubs (♣)    1          *O*\ :sub:`1` 35
-diamonds (♢) 2          *O*\ :sub:`2` 51
-hearts (♡)   3          *O*\ :sub:`3` 64
-spades (♠)   4          *O*\ :sub:`4` 50
-============ ========== ============= =========
++---------------+------------+---------------+-----------+
+| label         | index, *i* | math. symbol  | the value |
++===============+============+===============+===========+
+| clubs (♣)    |          1 | *O*\ :sub:`1` |        35 |
++---------------+------------+---------------+-----------+
+| diamonds (♢) |          2 | *O*\ :sub:`2` |        51 |
++---------------+------------+---------------+-----------+
+| hearts (♡)   |          3 | *O*\ :sub:`3` |        64 |
++---------------+------------+---------------+-----------+
+| spades (♠)   |          4 | *O*\ :sub:`4` |        50 |
++---------------+------------+---------------+-----------+
 
 Hopefully that’s pretty clear. It’s also worth noting that mathematicians
 prefer to talk about general rather than specific things, so you’ll also see

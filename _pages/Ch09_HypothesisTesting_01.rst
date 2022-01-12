@@ -156,10 +156,11 @@ hypothesis (a claim about psychology), and this then corresponds to a
 statistical hypothesis (a claim about the data generating population).
 In my ESP example these might be:
 
-================================== ============
-Dani’s **research** hypothesis:    “ESP exists”
-Dani’s **statistical** hypothesis: *θ* ≠ 0.5
-================================== ============
++------------------------------------+--------------+
+| Dani’s **research** hypothesis:    | “ESP exists” |
++------------------------------------+--------------+
+| Dani’s **statistical** hypothesis: | *θ* ≠ 0.5    |
++------------------------------------+--------------+
 
 And a key thing to recognise is this. *A statistical hypothesis test is
 a test of the statistical hypothesis, not the research hypothesis*. If

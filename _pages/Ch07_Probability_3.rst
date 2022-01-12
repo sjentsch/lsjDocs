@@ -57,15 +57,19 @@ if these requirements are satisfied then what we have is a **probability
 distribution**. For example, this is an example of a probability
 distribution:
 
-=============== =========== =========================
-Which trousers? Label       Probability
-=============== =========== =========================
-Blue jeans      X\ :sub:`1` *P*\ (X\ :sub:`1`\ ) = 0.5
-Grey jeans      X\ :sub:`2` *P*\ (X\ :sub:`2`\ ) = 0.3
-Black jeans     X\ :sub:`3` *P*\ (X\ :sub:`3`\ ) = 0.1
-Black suit      X\ :sub:`4` *P*\ (X\ :sub:`4`\ ) =  0
-Blue tracksuit  X\ :sub:`5` *P*\ (X\ :sub:`5`\ ) = 0.1
-=============== =========== =========================
++-----------------+---------------+----------------------------+
+| Which trousers? | Label         | Probability                |
++=================+===============+============================+
+| Blue jeans      | *X*\ :sub:`1` | *P*\ (X\ :sub:`1`\ ) = 0.5 |
++-----------------+---------------+----------------------------+
+| Grey jeans      | *X*\ :sub:`2` | *P*\ (X\ :sub:`2`\ ) = 0.3 |
++-----------------+---------------+----------------------------+
+| Black jeans     | *X*\ :sub:`3` | *P*\ (X\ :sub:`3`\ ) = 0.1 |
++-----------------+---------------+----------------------------+
+| Black suit      | *X*\ :sub:`4` | *P*\ (X\ :sub:`4`\ ) = 0   |
++-----------------+---------------+----------------------------+
+| Blue tracksuit  | *X*\ :sub:`5` | *P*\ (X\ :sub:`5`\ ) = 0.1 |
++-----------------+---------------+----------------------------+
 
 Each of the events has a probability that lies between 0 and 1, and if
 we add up the probability of all events they sum to 1. Awesome. We can even

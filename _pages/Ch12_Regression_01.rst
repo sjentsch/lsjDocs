@@ -14,13 +14,15 @@ The data
 .. _tab-parenthood:
 .. table:: Descriptive statistics for the |parenthood|_ data set.
 
-   ======================== ==== ===== ===== ====== ======== ====
-   variable                 min  max   mean  median std. dev IQR
-   ======================== ==== ===== ===== ====== ======== ====
-   Dani’s grumpiness        41   91    63.71 62     10.05    14
-   Dani’s hours slept       4.84 9.00  6.97  7.03   1.02     1.45
-   Dani’s son’s hours slept 3.25 12.07 8.05  7.95   2.07     3.21
-   ======================== ==== ===== ===== ====== ======== ====
+   +--------------------------+-------+-------+-------+--------+----------+-------+
+   | variable                 | min   | max   | mean  | median | std. dev | IQR   |
+   +==========================+=======+=======+=======+========+==========+=======+
+   | Dani’s grumpiness        | 41    | 91    | 63.71 |  62    |    10.05 | 14    |
+   +--------------------------+-------+-------+-------+--------+----------+-------+
+   | Dani’s hours slept       |  4.84 |  9.00 |  6.97 |   7.03 |     1.02 |  1.45 |
+   +--------------------------+-------+-------+-------+--------+----------+-------+
+   | Dani’s son’s hours slept |  3.25 | 12.07 |  8.05 |   7.95 |     2.07 |  3.21 |
+   +--------------------------+-------+-------+-------+--------+----------+-------+
 
 Let’s turn to a topic close to every parent’s heart: sleep. The data set
 we’ll use is fictitious, but based on real events. Suppose I’m curious
@@ -221,20 +223,29 @@ pretty typical.
    *rough* guide. There aren’t hard and fast rules for what counts as strong or
    weak relationships. It depends on the context.
 
-   ============ =========== =========
-   Correlation  Strength    Direction
-   ============ =========== =========
-   -1.0 to -0.9 Very strong Negative
-   -0.9 to -0.7 Strong      Negative
-   -0.7 to -0.4 Moderate    Negative
-   -0.4 to -0.2 Weak        Negative
-   -0.2 to  0.0 Negligible  Negative
-    0.0 to  0.2 Negligible  Positive
-    0.2 to  0.4 Weak        Positive
-    0.4 to  0.7 Moderate    Positive
-    0.7 to  0.9 Strong      Positive
-    0.9 to  1.0 Very strong Positive
-   ============ =========== =========
+   +--------------+-------------+-----------+
+   | Correlation  | Strength    | Direction |
+   +==============+=============+===========+
+   | -1.0 to -0.9 | Very strong | Negative  |
+   +--------------+-------------+-----------+
+   | -0.9 to -0.7 | Strong      | Negative  |
+   +--------------+-------------+-----------+
+   | -0.7 to -0.4 | Moderate    | Negative  |
+   +--------------+-------------+-----------+
+   | -0.4 to -0.2 | Weak        | Negative  |
+   +--------------+-------------+-----------+
+   | -0.2 to  0.0 | Negligible  | Negative  |
+   +--------------+-------------+-----------+
+   |  0.0 to  0.2 | Negligible  | Positive  |
+   +--------------+-------------+-----------+
+   |  0.2 to  0.4 | Weak        | Positive  |
+   +--------------+-------------+-----------+
+   |  0.4 to  0.7 | Moderate    | Positive  |
+   +--------------+-------------+-----------+
+   |  0.7 to  0.9 | Strong      | Positive  |
+   +--------------+-------------+-----------+
+   |  0.9 to  1.0 | Very strong | Positive  |
+   +--------------+-------------+-----------+
 
 
 .. ----------------------------------------------------------------------------
@@ -351,20 +362,29 @@ effort into remembering!
 Okay, so let’s have a look at our students when we rank them from worst
 to best in terms of effort and reward:
 
-========== =================== =====================
-           rank (hours worked) rank (grade received)
-========== =================== =====================
-student 1  1                   1
-student 2  10                  10
-student 3  6                   6
-student 4  2                   2
-student 5  3                   3
-student 6  5                   5
-student 7  4                   4
-student 8  8                   8
-student 9  7                   7
-student 10 9                   9
-========== =================== =====================
++------------+---------------------+-----------------------+
+|            | rank (hours worked) | rank (grade received) |
++============+=====================+=======================+
+| student 1  |                   1 |                     1 |
++------------+---------------------+-----------------------+
+| student 2  |                  10 |                    10 |
++------------+---------------------+-----------------------+
+| student 3  |                   6 |                     6 |
++------------+---------------------+-----------------------+
+| student 4  |                   2 |                     2 |
++------------+---------------------+-----------------------+
+| student 5  |                   3 |                     3 |
++------------+---------------------+-----------------------+
+| student 6  |                   5 |                     5 |
++------------+---------------------+-----------------------+
+| student 7  |                   4 |                     4 |
++------------+---------------------+-----------------------+
+| student 8  |                   8 |                     8 |
++------------+---------------------+-----------------------+
+| student 9  |                   7 |                     7 |
++------------+---------------------+-----------------------+
+| student 10 |                   9 |                     9 |
++------------+---------------------+-----------------------+
 
 Hmm. These are *identical*. The student who put in the most effort got
 the best grade, the student with the least effort got the worst grade,

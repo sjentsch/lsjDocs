@@ -131,31 +131,29 @@ Calculating sums of squares for the interaction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 How should we calculate the sum of squares for the interaction terms,
-SS\ :sub:`A:B`? Well, first off, it helps to notice how the previous
-section defined the interaction effect in terms of the extent to which
-the actual group means differ from what you’d expect by just looking at
-the marginal means. Of course, all of those formulas refer to population
-parameters rather than sample statistics, so we don’t actually know what
-they are. However, we can estimate them by using sample means in place
-of population means. So for Factor A, a good way to estimate the main
-effect at level *r* is as the difference between the *sample*
-marginal mean :math:`\bar{Y}_{rc}` and the sample grand mean
-:math:`\bar{Y}_{..}`. That is, we would use this as our estimate of the
-effect
+SS\ :sub:`A:B`? Well, first off, it helps to notice how the previous section
+defined the interaction effect in terms of the extent to which the actual group
+means differ from what you’d expect by just looking at the marginal means. Of
+course, all of those formulas refer to population parameters rather than sample
+statistics, so we don’t actually know what they are. However, we can estimate
+them by using sample means in place of population means. So for Factor A, a
+good way to estimate the main effect at level *r* is as the difference between
+the *sample* marginal mean Ȳ\ :sub:`rc` and the sample grand mean
+Ȳ\ :sub:`..`\. That is, we would use this as our estimate of the effect
 
 .. math:: \hat{\alpha}_r = \bar{Y}_{r.} - \bar{Y}_{..}
 
-Similarly, our estimate of the main effect of Factor B at level
-*c* can be defined as follows
+Similarly, our estimate of the main effect of Factor B at level *c* can be
+defined as follows
 
 .. math:: \hat{\beta}_c = \bar{Y}_{.c} - \bar{Y}_{..}
 
-Now, if you go back to the formulas that I used to describe the SS
-values for the two main effects, you’ll notice that these effect terms
-are exactly the quantities that we were squaring and summing! So, what’s
-the analog of this for interaction terms? The answer to this can be
-found by first rearranging the formula for the group means
-µ\ :sub:`rc` under the alternative hypothesis, so that we get this
+Now, if you go back to the formulas that I used to describe the SS values for
+the two main effects, you’ll notice that these effect terms are exactly the
+quantities that we were squaring and summing! So, what’s the analog of this for
+interaction terms? The answer to this can be found by first rearranging the
+formula for the group means µ\ :sub:`rc` under the alternative hypothesis, so
+that we get this
   
 | αβ\ :sub:`rc` = µ\ :sub:`rc` - µ\ :sub:`..` - α\ :sub:`r` - β\ :sub:`c` \\
 | αβ\ :sub:`rc` = µ\ :sub:`rc` - µ\ :sub:`..` - (µ\ :sub:`r.` - µ\ :sub:`..`) - (µ\ :sub:`.c` - µ\ :sub:`..`) \\
@@ -174,19 +172,17 @@ interaction as a whole
 
 .. math:: \mbox{SS}_{A:B} = N \sum_{r=1}^R \sum_{c=1}^C \left( \bar{Y}_{rc} - \bar{Y}_{r.} - \bar{Y}_{.c} + \bar{Y}_{..} \right)^2
 
-where we multiply by *N* because there are *N* observations
-in each of the groups, and we want our SS values to reflect the
-variation among *observations* accounted for by the interaction, not the
-variation among groups.
+where we multiply by *N* because there are *N* observations in each of the
+groups, and we want our SS values to reflect the variation among *observations*
+accounted for by the interaction, not the variation among groups.
 
-Now that we have a formula for calculating SS\ :sub:`A:B`, it’s
-important to recognise that the interaction term is part of the model
-(of course), so the total sum of squares associated with the model,
-SS\ :sub:`M`, is now equal to the sum of the three relevant SS values,
-SS\ :sub:`A` + SS\ :sub:`B` + SS\ :sub:`A:B`. The residual sum of
-squares SS\ :sub:`R` is still defined as the leftover variation,
-namely SS\ :sub:`T` - SS\ :sub:`M`, but now that we have the
-interaction term this becomes
+Now that we have a formula for calculating SS\ :sub:`A:B`, it’s important to
+recognise that the interaction term is part of the model (of course), so the
+total sum of squares associated with the model, SS\ :sub:`M`, is now equal to
+the sum of the three relevant SS values, SS\ :sub:`A` + SS\ :sub:`B` +
+SS\ :sub:`A:B`. The residual sum of squares SS\ :sub:`R` is still defined as
+the leftover variation, namely SS\ :sub:`T` - SS\ :sub:`M`, but now that we
+have the interaction term this becomes
 
 | SS\ :sub:`R` = SS\ :sub:`T` - (SS\ :sub:`A` + SS\ :sub:`B` + SS\ :sub:`A:B`\)
 

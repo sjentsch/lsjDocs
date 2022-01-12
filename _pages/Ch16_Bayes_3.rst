@@ -240,12 +240,13 @@ the experiment is over, it only considers *two* possible decisions. If
 you’re using the conventional *p* < 0.05 threshold, those decisions
 are:
 
-===================== ===============
-Outcome               Action
-===================== ===============
-*p* less than 0.05    Reject the null
-*p* greater than 0.05 Retain the null
-===================== ===============
++-----------------------+-----------------+
+| Outcome               | Action          |
++=======================+=================+
+| *p* less than 0.05    | Reject the null |
++-----------------------+-----------------+
+| *p* greater than 0.05 | Retain the null |
++-----------------------+-----------------+
 
 What *you’re* doing is adding a third possible action to the decision
 making problem. Specifically, what you’re doing is using the
@@ -253,13 +254,15 @@ making problem. Specifically, what you’re doing is using the
 And as a consequence you’ve transformed the decision-making procedure
 into one that looks more like this:
 
-======================== =======================================
-Outcome                  Action
-======================== =======================================
-*p* less than 0.05       Stop the experiment and reject the null
-*p* between 0.05 and 0.1 Continue the experiment
-*p* greater than 0.1     Stop the experiment and retain the null
-======================== =======================================
++--------------------------+-----------------------------------------+
+| Outcome                  | Action                                  |
++==========================+=========================================+
+| *p* less than 0.05       | Stop the experiment and reject the null |
++--------------------------+-----------------------------------------+
+| *p* between 0.05 and 0.1 | Continue the experiment                 |
++--------------------------+-----------------------------------------+
+| *p* greater than 0.1     | Stop the experiment and retain the null |
++--------------------------+-----------------------------------------+
 
 The “basic” theory of null hypothesis testing isn’t built to handle this
 sort of thing, not in the form I described back in Chapter `Hypothesis testing

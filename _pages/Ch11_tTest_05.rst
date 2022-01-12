@@ -140,14 +140,13 @@ is that it is not
 | H\ :sub`0`: *µ*\ :sub`D` = 0
 | H\ :sub`2`: *µ*\ :sub`D` ≠ 0
 
-This is assuming we’re talking about a two-sided test here. This is more
-or less identical to the way we described the hypotheses for the
-one-sample *t*-test. The only difference is that the specific
-value that the null hypothesis predicts is 0. And so our
-*t*-statistic is defined in more or less the same way too. If we
-let :math:`\bar{D}` denote the mean of the difference scores, then
+This is assuming we’re talking about a two-sided test here. This is more or
+less identical to the way we described the hypotheses for the one-sample
+*t*-test. The only difference is that the specific value that the null
+hypothesis predicts is 0. And so our *t*-statistic is defined in more or less
+the same way too. If we let D̄ denote the mean of the difference scores, then
 
-.. math:: t = \frac{\bar{D}}{\mbox{\textsc{se}}(\bar{D})}
+.. math:: t = \frac{\bar{D}}{SE(\bar{D})}
 
 which is
 
