@@ -63,6 +63,7 @@ figure, then the graphics functionality in jamovi is not yet capable of
 supporting advanced work or detail editing.
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
 
    Ch05_Graphics_1

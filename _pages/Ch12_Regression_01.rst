@@ -274,8 +274,8 @@ You’d think that these four data sets would look pretty similar to one another
 They do not. If we draw scatterplots of *X* against *Y* for all four variables,
 as shown in :numref:`fig-anscombe`, we see that all four of these are
 *spectacularly* different to each other. The lesson here, which so very many
-people seem to forget in real life, is “*always graph your raw data*” (Chapter
-`Drawing graphs <Ch05_Graphics.html>`__).
+people seem to forget in real life, is *always graph your raw data* (Chapter
+`Drawing graphs <Ch05_Graphics.html#drawing-graphs>`__).
 
 Spearman’s rank correlations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

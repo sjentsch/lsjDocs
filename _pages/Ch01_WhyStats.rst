@@ -15,6 +15,7 @@ Why do we learn statistics?
    -- W.H. Auden\ [#]_
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
 
    Ch01_WhyStats_1

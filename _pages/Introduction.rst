@@ -82,6 +82,7 @@ far.
 
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
       
    Ch03_jamoviIntro_1

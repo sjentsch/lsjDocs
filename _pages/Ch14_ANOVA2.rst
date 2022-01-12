@@ -32,6 +32,7 @@ several means (one-way ANOVA)
 <Ch13_ANOVA.html#comparing-several-means-one-way-anova>`__.
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
    
    Ch14_ANOVA2_01

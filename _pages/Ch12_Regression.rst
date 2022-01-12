@@ -9,6 +9,7 @@ when analysing the relationship between continuous predictors and
 continuous outcomes.
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
    
    Ch12_Regression_01

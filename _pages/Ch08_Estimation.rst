@@ -27,6 +27,7 @@ confidence interval <Ch08_Estimation_5.html#estimating-a-confidence-interval>`__
 make use of sampling theory to discuss how statisticians think about estimation.
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
    
    Ch08_Estimation_1

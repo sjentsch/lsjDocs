@@ -57,6 +57,7 @@ representation of the ``afl.margins`` variable.
 .. ----------------------------------------------------------------------------
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
 
    Ch04_Descriptives_1

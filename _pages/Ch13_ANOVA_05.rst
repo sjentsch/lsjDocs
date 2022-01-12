@@ -102,20 +102,18 @@ This kind of theory-free search for group differences is referred to as
 **post-hoc analysis** (“post-hoc” being Latin for “after this”).\ [#]_
 
 It’s okay to run post-hoc analyses, but a lot of care is required. For
-instance, the analysis that I ran in the previous section should be
-avoided, as each *individual* *t*-test is designed to have a
-5% Type I error rate (i.e., *α* = 0.05) and I ran
-three of these tests. Imagine what would have happened if my ANOVA
-involved 10 different groups, and I had decided to run 45 “post-hoc”
-*t*-tests to try to find out which ones were significantly
-different from each other, you’d expect 2 or 3 of them to come up
-significant *by chance alone*. As we saw in Chapter
-`Hypothesis testing <Ch09_HypothesisTesting.html#hypothesis-testing>`__,
-the central organising principle behind null hypothesis testing is that we
-seek to control our Type I error rate, but now that I’m running lots of
-*t*-tests at once in order to determine the source of my ANOVA
-results, my actual Type I error rate across this whole *family* of tests
-has gotten completely out of control.
+instance, the analysis that I ran in the previous section should be avoided,
+as each *individual* *t*-test is designed to have a 5% Type I error rate
+(i.e., *α* = 0.05) and I ran three of these tests. Imagine what would have
+happened if my ANOVA involved 10 different groups, and I had decided to run 45
+“post-hoc” *t*-tests to try to find out which ones were significantly different
+from each other, you’d expect 2 or 3 of them to come up significant *by chance
+alone*. As we saw in Chapter `Hypothesis testing
+<Ch09_HypothesisTesting.html#hypothesis-testing>`__, the central organising
+principle behind null hypothesis testing is that we seek to control our Type I
+error rate, but now that I’m running lots of *t*-tests at once in order to
+determine the source of my ANOVA results, my actual Type I error rate across
+this whole *family* of tests has gotten completely out of control.
 
 The usual solution to this problem is to introduce an adjustment to the
 *p*-value, which aims to control the total error rate across the family of

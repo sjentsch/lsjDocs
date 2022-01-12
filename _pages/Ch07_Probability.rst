@@ -70,6 +70,7 @@ part of the book. Nevertheless, because probability theory does underpin
 so much of statistics, it’s worth covering some of the basics.
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
    
    Ch07_Probability_1

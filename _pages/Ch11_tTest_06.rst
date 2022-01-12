@@ -3,22 +3,21 @@
 One-sided tests
 ---------------
 
-When introducing the theory of null hypothesis tests, I mentioned that
-there are some situations when it’s appropriate to specify a *one-sided*
-test (see Section `The difference between one-sided and two-sided tests
+When introducing the theory of null hypothesis tests, I mentioned that there
+are some situations when it’s appropriate to specify a *one-sided* test (see
+Section `The difference between one-sided and two-sided tests
 <Ch09_HypothesisTesting_04.html#the-difference-between-one-sided-and-two-sided-tests>`__).
-So far all of the *t*-tests have been two-sided tests. For instance, when
-we specified a one sample *t*-test for the grades in Dr Zeppo’s
-class the null hypothesis was that the true mean was 67.5%. The
-alternative hypothesis was that the true mean was greater than *or* less
-than 67.5%. Suppose we were only interested in finding out if the true
-mean is greater than 67.5%, and have no interest whatsoever in testing
-to find out if the true mean is lower than 67.5%. If so, our null
-hypothesis would be that the true mean is 67.5% or less, and the
-alternative hypothesis would be that the true mean is greater than
-67.5%. In jamovi, for the ‘One Sample *t*-Test’ analysis, you can specify
-this by clicking on the ``> Test Value`` option, under
-``Hypothesis``. When you have done this, you will get the results as shown
+So far all of the *t*-tests have been two-sided tests. For instance, when we
+specified a one sample *t*-test for the grades in Dr Zeppo’s class the null
+hypothesis was that the true mean was 67.5%. The alternative hypothesis was
+that the true mean was greater than *or* less than 67.5%. Suppose we were only
+interested in finding out if the true mean is greater than 67.5%, and have no
+interest whatsoever in testing to find out if the true mean is lower than
+\67.5%. If so, our null hypothesis would be that the true mean is 67.5% or
+less, and the alternative hypothesis would be that the true mean is greater
+than 67.5%. In jamovi, for the ‘One Sample *t*-Test’ analysis, you can specify
+this by clicking on the ``> Test Value`` option, under ``Hypothesis``. When you
+have done this, you will get the results as shown 
 in :numref:`fig-ttest_onesided1`.
 
 .. ----------------------------------------------------------------------------

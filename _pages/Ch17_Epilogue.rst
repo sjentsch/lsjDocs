@@ -40,6 +40,7 @@ falling victim to that trap, I think it’s useful to give a bit of an
 overview of some of the other ideas out there.
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
    
    Ch17_Epilogue_1

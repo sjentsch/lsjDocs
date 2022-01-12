@@ -43,6 +43,7 @@ t-tests <Ch16_Bayes_4.html#bayesian-t-tests>`__.
 
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
    
    Ch16_Bayes_1

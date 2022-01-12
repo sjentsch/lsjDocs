@@ -38,6 +38,7 @@ cover a related analysis: `Internal consistency reliability analysis
 tests how consistently a scale measures a psychological construct.
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
    
    Ch15_FactorAnalysis_1

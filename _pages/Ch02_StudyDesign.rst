@@ -29,6 +29,7 @@ for the discussion of study design, and `Stevens (1946)
 <References.html#stevens-1946>`__ for the discussion of scales of measurement.
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
 
    Ch02_StudyDesign_1

@@ -57,6 +57,7 @@ later on you’ll need to flick back to this chapter in order to
 understand some of the concepts that I refer to here.
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
 
    Ch06_DataHandling_1

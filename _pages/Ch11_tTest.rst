@@ -22,24 +22,24 @@ our outcome variable is a fairly continuous, interval or ratio scale
 variable, and our predictor is a binary “grouping” variable. In other
 words, we want to compare the means of the two groups.
 
-The standard answer to the problem of comparing means is to use a
-*t*-test, of which there are several varieties depending on
-exactly what question you want to solve. As a consequence, the majority
-of this chapter focuses on different types of *t*-test: `one sample t-tests
+The standard answer to the problem of comparing means is to use a *t*-test, of
+which there are several varieties depending on exactly what question you want
+to solve. As a consequence, the majority of this chapter focuses on different
+types of *t*-test: `one sample t-tests
 <Ch11_tTest_02.html#the-one-sample-t-test>`__ are discussed first, followed by
-two different flavours of the `independent samples t-test
-<Ch11_tTest_03.html#the-independent-samples-t-test-student-test>`__, the
+two different flavours of the `independent samples t-test 
+<Ch11_tTest_03.html#the-independent-samples-t-test-student-test>`__: The
 `Student test <Ch11_tTest_03.html#the-independent-samples-t-test-student-test>`__
 assumes that the groups have the same standard deviation, the `Welch test
 <Ch11_tTest_04.html#the-independent-samples-t-test-welch-test>`__ does not.
-Afterwards, `paired samples t-tests
-<Ch11_tTest_05.html#the-paired-samples-t-test>`__ are discussed. We’ll
-then talk about `One-sided tests <Ch11_tTest_06.html#one-sided-tests>`__ and,
-after that, we’ll talk a bit about Cohen’s *d*, which is the standard measure
-of `effect size <Ch11_tTest_07.html#effect-size>`__ for a *t*-test.
-The later sections of the chapter focus on the assumptions of the *t*-tests, 
-especially `normality` <Ch11_tTest_08.html#checking-the-normality-of-a-sample>`__
-and possible `remedies 
+Afterwards, `paired samples t-tests 
+<Ch11_tTest_05.html#the-paired-samples-t-test>`__ are discussed. We’ll then
+talk about `One-sided tests <Ch11_tTest_06.html#one-sided-tests>`__ and, after
+that, we’ll talk a bit about Cohen’s *d*, which is the standard measure of
+`effect size <Ch11_tTest_07.html#effect-size>`__ for a *t*-test. The later
+sections of the chapter focus on the assumptions of the *t*-tests, especially
+`normality` <Ch11_tTest_08.html#checking-the-normality-of-a-sample>`__ and
+possible `remedies
 <Ch11_tTest_09.html#testing-non-normal-data-with-wilcoxon-tests>`__ if they are
 violated. However, before discussing any of these useful things, we’ll start
 with a discussion of the *z*-test.

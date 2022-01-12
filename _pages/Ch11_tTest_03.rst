@@ -413,8 +413,6 @@ else!
 Assumptions of the Student *t*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-`Assumptions of the Student t-test <Ch11_tTest_03.html#assumptions-of-the-student-t-test>`__
-
 As always, our hypothesis test relies on some assumptions. So what are they?
 For the Student *t*-test there are three assumptions, some of which we saw
 previously in the context of the one sample *t*-test (see Section `Assumptions

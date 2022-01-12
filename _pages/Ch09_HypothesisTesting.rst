@@ -32,6 +32,7 @@ about the various dogmas, rules and heresies that surround the theory of
 hypothesis testing.
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
    
    Ch09_HypothesisTesting_01

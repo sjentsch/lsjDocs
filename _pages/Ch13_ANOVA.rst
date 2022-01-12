@@ -45,6 +45,7 @@ ANOVA and other statistical tools
 <Ch13_ANOVA_09.html#on-the-relationship-between-anova-and-the-student-t-test>`__.
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
    
    Ch13_ANOVA_01
