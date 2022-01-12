@@ -87,45 +87,42 @@ psychology. The measure based on the mean does occasionally show up in
 psychology though. In this section I’ll talk about the first one, and
 I’ll come back to talk about the second one later.
 
-Since the previous paragraph might sound a little abstract, let’s go
-through the **mean absolute deviation** from the mean a little more
-slowly. One useful thing about this measure is that the name actually
-tells you exactly how to calculate it. Let’s think about our AFL winning
-margins data, and once again we’ll start by pretending that there are
-only 5 games in total, with winning margins of 56, 31, 56, 8 and 32.
-Since our calculations rely on an examination of the deviation from some
-reference point (in this case the mean), the first thing we need to
-calculate is the mean, :math:`\bar{X}`. For these five observations, our
-mean is :math:`\bar{X}` = 36.6. The next step is to convert each of our
-observations X\ :sub:`i` into a deviation score. We do this by
-calculating the difference between the observation X\ :sub:`i` and the
-mean :math:`\bar{X}`. That is, the deviation score is defined to be
-:math:`X_i - \bar{X}`. For the first observation in our sample, this is
-equal to 56 - 36.6 = 19.4. Okay, that’s simple enough. The next
-step in the process is to convert these deviations to absolute
-deviations, and we do this by converting any negative values to positive
-ones. Mathematically, we would denote the absolute value of -3 as \|-3\|,
-and so we say that \|-3\| = 3`. We use the absolute value here because
-we don’t really care whether the value is higher than the mean or lower
-than the mean, we’re just interested in how *close* it is to the mean.
-To help make this process as obvious as possible, the table below shows
-these calculations for all five observations:
+Since the previous paragraph might sound a little abstract, let’s go through
+the **mean absolute deviation** from the mean a little more slowly. One useful
+thing about this measure is that the name actually tells you exactly how to
+calculate it. Let’s think about our AFL winning margins data, and once again
+we’ll start by pretending that there are only 5 games in total, with winning
+margins of 56, 31, 56, 8 and 32. Since our calculations rely on an examination
+of the deviation from some reference point (in this case the mean), the first
+thing we need to calculate is the mean, X̅. For these five observations, our
+mean is X̅ = 36.6. The next step is to convert each of our observations
+X\ :sub:`i` into a deviation score. We do this by calculating the difference
+between the observation X\ :sub:`i` and the mean X̅. That is, the deviation
+score is defined to be X\ :sub:`i` - X̅. For the first observation in our
+sample, this is equal to 56 - 36.6 = 19.4. Okay, that’s simple enough. The next
+step in the process is to convert these deviations to absolute deviations, and
+we do this by converting any negative values to positive ones. Mathematically,
+we would denote the absolute value of -3 as \|-3\|, and so we say that \|-3\|
+= 3`. We use the absolute value here because we don’t really care whether the
+value is higher than the mean or lower than the mean, we’re just interested in
+how *close* it is to the mean. To help make this process as obvious as
+possible, the table below shows these calculations for all five observations:
 
-+-----------+------------+-------------+-----------------------+-------------------------+
-| English:  | which game | value       | deviation from mean   | absolute deviation      |
-+-----------+------------+-------------+-----------------------+-------------------------+
-| notation: | i          | :math:`X_i` | :math:`X_i - \bar{X}` | :math:`|X_i - \bar{X}|` |
-+-----------+------------+-------------+-----------------------+-------------------------+
-|           | 1          | 56          | 19.4                  | 19.4                    |
-+-----------+------------+-------------+-----------------------+-------------------------+
-|           | 2          | 31          | -5.6                  | 5.6                     |
-+-----------+------------+-------------+-----------------------+-------------------------+
-|           | 3          | 56          | 19.4                  | 19.4                    |
-+-----------+------------+-------------+-----------------------+-------------------------+
-|           | 4          | 8           | -28.6                 | 28.6                    |
-+-----------+------------+-------------+-----------------------+-------------------------+
-|           | 5          | 32          | -4.6                  | 4.6                     |
-+-----------+------------+-------------+-----------------------+-------------------------+
++-----------+------------+-------------+---------------------+----------------------+
+| English:  | which game | value       | deviation from mean | absolute deviation   |
++===========+============+=============+=====================+======================+
+| notation: | i          | X\ :sub:`i` | X\ :sub:`i` - X̅    | \|X\ :sub:`i` - X̅\| |
++-----------+------------+-------------+---------------------+----------------------+
+|           | 1          | 56          | 19.4                | 19.4                 |
++-----------+------------+-------------+---------------------+----------------------+
+|           | 2          | 31          | -5.6                | 5.6                  |
++-----------+------------+-------------+---------------------+----------------------+
+|           | 3          | 56          | 19.4                | 19.4                 |
++-----------+------------+-------------+---------------------+----------------------+
+|           | 4          | 8           | -28.6               | 28.6                 |
++-----------+------------+-------------+---------------------+----------------------+
+|           | 5          | 32          | -4.6                | 4.6                  |
++-----------+------------+-------------+---------------------+----------------------+
 
 Now that we have calculated the absolute deviation score for every
 observation in the data set, all that we have to do to calculate the
@@ -178,21 +175,21 @@ example. Once again, let’s use the first five AFL games as our data. If
 we follow the same approach that we took last time, we end up with the
 following table:
 
-+----------+------------+-------------+-----------------------+---------------------------+
-| English: | which game | value       | deviation from mean   | squared deviation         |
-+----------+------------+-------------+-----------------------+---------------------------+
-| maths:   | i          | :math:`X_i` | :math:`X_i - \bar{X}` | :math:`(X_i - \bar{X})^2` |
-+----------+------------+-------------+-----------------------+---------------------------+
-|          | 1          | 56          | 19.4                  | 376.36                    |
-+----------+------------+-------------+-----------------------+---------------------------+
-|          | 2          | 31          | -5.6                  | 31.36                     |
-+----------+------------+-------------+-----------------------+---------------------------+
-|          | 3          | 56          | 19.4                  | 376.36                    |
-+----------+------------+-------------+-----------------------+---------------------------+
-|          | 4          | 8           | -28.6                 | 817.96                    |
-+----------+------------+-------------+-----------------------+---------------------------+
-|          | 5          | 32          | -4.6                  | 21.16                     |
-+----------+------------+-------------+-----------------------+---------------------------+
++----------+------------+-------------+---------------------+-----------------------+
+| English: | which game | value       | deviation from mean | squared deviation     |
++==========+============+=============+=====================+=======================+
+| maths:   | i          | X\ :sub:`i` | X\ :sub:`i` - X̅    | (X\ :sub:`i` - X̅)\ ² |
++----------+------------+-------------+---------------------+-----------------------+
+|          | 1          | 56          | 19.4                | 376.36                |
++----------+------------+-------------+---------------------+-----------------------+
+|          | 2          | 31          | -5.6                | 31.36                 |
++----------+------------+-------------+---------------------+-----------------------+
+|          | 3          | 56          | 19.4                | 376.36                |
++----------+------------+-------------+---------------------+-----------------------+
+|          | 4          | 8           | -28.6               | 817.96                |
++----------+------------+-------------+---------------------+-----------------------+
+|          | 5          | 32          | -4.6                | 21.16                 |
++----------+------------+-------------+---------------------+-----------------------+
 
 That last column contains all of our squared deviations, so all we have to do
 is average them. If we do that by hand, i.e. using a calculator, we end up with

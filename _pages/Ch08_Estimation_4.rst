@@ -37,57 +37,53 @@ Estimating the population mean
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Suppose we go to Port Pirie and 100 of the locals are kind enough to sit
-through an IQ test. The average IQ score among these people turns out to
-be :math:`\bar{X}` = 98.5. So what is the true mean IQ for the entire
-population of Port Pirie? Obviously, we don’t know the answer to that
-question. It could be 97.2, but it could also be 103.5.
-Our sampling isn’t exhaustive so we cannot give a definitive answer.
-Nevertheless, if I was forced at gunpoint to give a “best guess” I’d
-have to say 98.5. That’s the essence of statistical estimation:
+through an IQ test. The average IQ score among these people turns out to be
+X̅ = 98.5. So what is the true mean IQ for the entire population of Port Pirie?
+Obviously, we don’t know the answer to that question. It could be 97.2, but it
+could also be 103.5. Our sampling isn’t exhaustive so we cannot give a
+definitive answer. Nevertheless, if I was forced at gunpoint to give a “best
+guess” I’d have to say 98.5. That’s the essence of statistical estimation:
 giving a best guess.
 
-In this example estimating the unknown poulation parameter is
-straightforward. I calculate the sample mean and I use that as my
-**estimate of the population mean**. It’s pretty simple, and in the next
-section I’ll explain the statistical justification for this intuitive
-answer. However, for the moment what I want to do is make sure you
-recognise that the sample statistic and the estimate of the population
-parameter are conceptually different things. A sample statistic is a
-description of your data, whereas the estimate is a guess about the
-population. With that in mind, statisticians often different notation to
-refer to them. For instance, if the true population mean is denoted
-*µ*, then we would use :math:`\hat\mu` to refer to our estimate
-of the population mean. In contrast, the sample mean is denoted
-:math:`\bar{X}` or sometimes *m*. However, in simple random
-samples the estimate of the population mean is identical to the sample
-mean. If I observe a sample mean of :math:`\bar{X}` = 98.5 then my
-estimate of the population mean is also :math:`\hat\mu` = 98.5. To help
-keep the notation clear, here’s a handy table:
+In this example estimating the unknown poulation parameter is straightforward.
+I calculate the sample mean and I use that as my **estimate of the population
+mean**. It’s pretty simple, and in the next section I’ll explain the
+statistical justification for this intuitive answer. However, for the moment
+what I want to do is make sure you recognise that the sample statistic and the
+estimate of the population parameter are conceptually different things. A
+sample statistic is a description of your data, whereas the estimate is a guess
+about the population. With that in mind, statisticians often different notation
+to refer to them. For instance, if the true population mean is denoted *µ*,
+then we would use :math:`\hat\mu` to refer to our estimate of the population
+mean. In contrast, the sample mean is denoted X̅ or sometimes *m* or *M*.
+However, in simple random samples the estimate of the population mean is
+identical to the sample mean. If I observe a sample mean of X̅ = 98.5 then my
+estimate of the population mean is also :math:`\hat\mu` = 98.5. To help keep
+the notation clear, here’s a handy table:
 
-+-------------------+-----------------------+-------------------------------+
-| Symbol            | What is it?           | Do we know what it is?        |
-+===================+=======================+===============================+
-| :math:`\bar{X}`   | Sample mean           | Yes, calculated from the raw  |
-|                   |                       |  data                         |
-+-------------------+-----------------------+-------------------------------+
-| *µ*               | True population mean  | Almost never known for sure   |
-+-------------------+-----------------------+-------------------------------+
-| :math:`\hat{\mu}` | Estimate of the       | Yes, identical to the sample  |
-|                   | population mean       | mean in simple random samples |
-+-------------------+-----------------------+-------------------------------+
++-------------------+-----------------------+-----------------------------------+
+| Symbol            | What is it?           | Do we know what it is?            |
++===================+=======================+===================================+
+| X̅                | Sample mean           | Yes, calculated from the raw data |
++-------------------+-----------------------+-----------------------------------+
+| *µ*               | True population mean  | Almost never known for sure       |
++-------------------+-----------------------+-----------------------------------+
+| :math:`\hat{\mu}` | Estimate of the       | Yes, identical to the sample mean |
+|                   | population mean       | in simple random samples          |
++-------------------+-----------------------+-----------------------------------+
 
 Estimating the population standard deviation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-So far, estimation seems pretty simple, and you might be wondering why I
-forced you to read through all that stuff about sampling theory. In the case of
-the mean our estimate of the population parameter (i.e. :math:`\hat\mu`) turned
-out to identical to the corresponding sample statistic (i.e. :math:`\bar{X}`).
-However, that’s not always true. To see this, let’s have a think about how to
-construct an **estimate of the population standard deviation**, which we’ll
-denote :math:`\hat\sigma`. What shall we use as our estimate in this case? Your
-first thought might be that we could do the same thing we did when estimating
-the mean, and just use the sample statistic as our estimate. That’s almost the
+So far, estimation seems pretty simple, and you might be wondering why I forced
+you to read through all that stuff about sampling theory. In the case of the
+mean our estimate of the population parameter (i.e. :math:`\hat\mu`) turned out
+to be identical to the corresponding sample statistic (i.e. X̅). However,
+that’s not always true. To see this, let’s have a think about how to construct
+an **estimate of the population standard deviation**, which we’ll denote
+:math:`\hat\sigma`. What shall we use as our estimate in this case? Your first
+thought might be that we could do the same thing we did when estimating the
+mean, and just use the sample statistic as our estimate. That’s almost the
 right thing to do, but not quite.
 
 Here’s why. Suppose I have a sample that contains a single observation. For
@@ -126,23 +122,21 @@ cromulence of shoes, and the complete sample now looks like this:
 
 ``20, 22``
 
-This time around, our sample is *just* large enough for us to be able to
-observe some variability: two observations is the bare minimum number
-needed for any variability to be observed! For our new data set, the
-sample mean is :math:`\bar{X}` = 21, and the sample standard deviation is
-*s* = 1. What intuitions do we have about the population? Again, as
-far as the population mean goes, the best guess we can possibly make is
-the sample mean. If forced to guess we’d probably guess that the
-population mean cromulence is 21. What about the standard deviation?
-This is a little more complicated. The sample standard deviation is only
-based on two observations, and if you’re at all like me you probably
-have the intuition that, with only two observations we haven’t given the
-population “enough of a chance” to reveal its true variability to us.
-It’s not just that we suspect that the estimate is *wrong*, after all
-with only two observations we expect it to be wrong to some degree. The
-worry is that the error is *systematic*. Specifically, we suspect that
-the sample standard deviation is likely to be smaller than the
-population standard deviation.
+This time around, our sample is *just* large enough for us to be able to 
+observe some variability: two observations is the bare minimum number needed
+for any variability to be observed! For our new data set, the sample mean is
+X̅ = 21, and the sample standard deviation is *s* = 1. What intuitions do we
+have about the population? Again, as far as the population mean goes, the best
+guess we can possibly make is the sample mean. If forced to guess we’d probably
+guess that the population mean cromulence is 21. What about the standard
+deviation? This is a little more complicated. The sample standard deviation is
+only based on two observations, and if you’re at all like me you probably have
+the intuition that, with only two observations we haven’t given the population
+“enough of a chance” to reveal its true variability to us. It’s not just that
+we suspect that the estimate is *wrong*, after all with only two observations
+we expect it to be wrong to some degree. The worry is that the error is
+*systematic*. Specifically, we suspect that the sample standard deviation is
+likely to be smaller than the population standard deviation.
 
 This intuition feels right, but it would be nice to demonstrate this somehow.
 There are in fact mathematical proofs that confirm this intuition, but unless

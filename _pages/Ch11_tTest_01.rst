@@ -32,17 +32,16 @@ and then calculate the mean in ``Exploration`` → ``Descriptives``. The mean
 value is 72.3.
 
 Hmm. It *might* be that the psychology students are scoring a bit higher than
-normal. That sample mean of :math:`\bar{X}` = 72.3 is a fair bit higher than
-the hypothesised population mean of µ = 67.5 but, on the other hand, a sample
-size of *N* = 20 isn’t all that big. Maybe it’s pure chance.
+normal. That sample mean of X̅ = 72.3 is a fair bit higher than the
+hypothesised population mean of µ = 67.5 but, on the other hand, a sample size
+of *N* = 20 isn’t all that big. Maybe it’s pure chance.
 
-To answer the question, it helps to be able to write down what it is
-that I think I know. Firstly, I know that the sample mean is
-:math:`\bar{X}` = 72.3. If I’m willing to assume that the psychology
-students have the same standard deviation as the rest of the class then
-I can say that the population standard deviation is σ = 9.5. I’ll also assume
-that since Dr Zeppo is grading to a curve, the psychology student grades are
-normally distributed.
+To answer the question, it helps to be able to write down what it is that I
+think I know. Firstly, I know that the sample mean is X̅ = 72.3. If I’m willing
+to assume that the psychology students have the same standard deviation as the
+rest of the class then I can say that the population standard deviation is σ =
+\9.5. I’ll also assume that since Dr Zeppo is grading to a curve, the
+psychology student grades are normally distributed.
 
 Next, it helps to be clear about what I want to learn from the data. In
 this case my research hypothesis relates to the *population* mean *µ* for the
@@ -119,15 +118,15 @@ The next step is to figure out what we would be a good choice for a
 diagnostic test statistic, something that would help us discriminate
 between H\ :sub:`0` and H\ :sub:`1`. Given that the hypotheses all refer
 to the population mean *µ*, you’d feel pretty confident that the
-sample mean :math:`\bar{X}` would be a pretty useful place to start.
+sample mean X̅ would be a pretty useful place to start.
 What we could do is look at the difference between the sample mean
-:math:`\bar{X}` and the value that the null hypothesis predicts for the
+X̅ and the value that the null hypothesis predicts for the
 population mean. In our example that would mean we calculate
-:math:`\bar{X}` - 67.5. More generally, if we let *µ*\ :sub:`0` refer to
+X̅ - 67.5. More generally, if we let *µ*\ :sub:`0` refer to
 the value that the null hypothesis claims is our population mean, then
 we’d want to calculate
 
-| :math:`\bar{X}` - *µ*\ :sub:`0`
+| X̅ - *µ*\ :sub:`0`
 
 If this quantity equals or is very close to 0, things are looking good
 for the null hypothesis. If this quantity is a long way away from 0,
@@ -148,25 +147,24 @@ a statistician might write this as:
 
 | X ~ Normal(*µ*\ :sub:`0`, σ²)
 
-Okay, if that’s true, then what can we say about the distribution of
-:math:`\bar{X}`? Well, as we discussed earlier (see `The central limit theorem 
+Okay, if that’s true, then what can we say about the distribution of X̅? Well,
+as we discussed earlier (see `The central limit theorem
 <Ch08_Estimation_3.html#the-central-limit-theorem>`__), the sampling
-distribution of the mean :math:`\bar{X}` is also normal, and has mean *µ*. But
-the standard deviation of this sampling distribution
-:math:`\mbox{\textsc{se}}(\bar{X})`, which is called the *standard error
-of the mean*, is
+distribution of the mean X̅ is also normal, and has mean *µ*. But the standard
+deviation of this sampling distribution SE(X̅), which is called the *standard
+error of the mean*, is
 
 .. math:: \mbox{\textsc{se}}(\bar{X}) = \frac{\sigma}{\sqrt{N}}
 
 In other words, if the null hypothesis is true then the sampling
 distribution of the mean can be written as follows:
 
-.. math:: \bar{X} \sim \mbox{Normal}(\mu_0,\mbox{\textsc{se}}(\bar{X}))
+| X̅ ~ Normal(*µ*\ :sub:`0`, SE(X̅))
 
-Now comes the trick. What we can do is convert the sample mean :math:`\bar{X}`
+Now comes the trick. What we can do is convert the sample mean X̅
 into a `standard score <Ch04_Descriptives_5.html#standard-scores>`__. This is
 conventionally written as *z*, but for now I’m going to refer to it as
-:math:`z_{\bar{X}}`. (The reason for using this expanded notation is to help
+z\ :sub:`X̅`. (The reason for using this expanded notation is to help
 you remember that we’re calculating a standardised version of a sample mean,
 *not* a standardised version of a single observation, which is what a *z*-score
 usually refers to). When we do so the *z*-score for our sample mean is:
@@ -181,13 +179,13 @@ This *z*-score is our test statistic. The nice thing about using this as our
 test statistic is that like all *z*-scores, it has a standard normal
 distribution:
 
-| :math:`z_{\bar{X}}` ~ Normal(0, 1)
+| z\ :sub:`X̅` ~ Normal(0, 1)
 
 (again, see Section `Standard scores <Ch04_Descriptives_5.html#standard-scores>`__
 if you’ve forgotten why this is true). In other words, regardless of what scale
 the original data are on, the *z*-statistic itself always has the same
 interpretation: it’s equal to the number of standard errors that separate the
-observed sample mean :math:`\bar{X}` from the population mean *µ*\ :sub:`0`
+observed sample mean X̅ from the population mean *µ*\ :sub:`0`
 predicted by the null hypothesis. Better yet, regardless of what the population
 parameters for the raw scores actually are, the 5% critical regions for the
 *z*-test are always the same, as illustrated in :numref:`fig-ztest`. And what

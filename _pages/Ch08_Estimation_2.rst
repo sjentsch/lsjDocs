@@ -49,21 +49,20 @@ described the fact that we all share this intuition:
    there is of wandering from one’s goal* (`Stigler, 1986
    <References.html#stigler-1986>`__\ ).
 
-Okay, so the passage comes across as a bit condescending (not to mention
-sexist), but his main point is correct. It really does feel obvious that
-more data will give you better answers. The question is, why is this so?
-Not surprisingly, this intuition that we all share turns out to be
-correct, and statisticians refer to it as the **law of large numbers**.
-The law of large numbers is a mathematical law that applies to many
-different sample statistics but the simplest way to think about it is as
-a law about averages. The sample mean is the most obvious example of a
-statistic that relies on averaging (because that’s what the mean is...
-an average), so let’s look at that. When applied to the sample mean what
-the law of large numbers states is that as the sample gets larger, the
-sample mean tends to get closer to the true population mean. Or, to say
-it a little bit more precisely, as the sample size “approaches” infinity
-(written as *N* → ∞), the sample mean approaches
-the population mean (:math:`\bar{X}` → *µ*).\ [#]_
+Okay, so the passage comes across as a bit condescending (not to mention 
+sexist), but his main point is correct. It really does feel obvious that more
+data will give you better answers. The question is, why is this so? Not
+surprisingly, this intuition that we all share turns out to be correct, and
+statisticians refer to it as the **law of large numbers**. The law of large
+numbers is a mathematical law that applies to many different sample statistics
+but the simplest way to think about it is as a law about averages. The sample
+mean is the most obvious example of a statistic that relies on averaging
+(because that’s what the mean is... an average), so let’s look at that. When
+applied to the sample mean what the law of large numbers states is that as the
+sample gets larger, the sample mean tends to get closer to the true population
+mean. Or, to say it a little bit more precisely, as the sample size
+“approaches” infinity (written as *N* → ∞), the sample mean approaches the
+population mean (X̅ → *µ*).\ [#]_
 
 I don’t intend to subject you to a proof that the law of large numbers
 is true, but it’s one of the most important tools for statistical

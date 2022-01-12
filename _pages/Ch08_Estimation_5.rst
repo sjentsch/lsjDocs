@@ -23,15 +23,15 @@ it would be nice to be able to say that there is a 95% chance that the true
 mean lies between 109 and 121. The name for this is a **confidence interval**
 for the mean.
 
-Armed with an understanding of sampling distributions, constructing a 
+Armed with an understanding of sampling distributions, constructing a
 confidence interval for the mean is actually pretty easy. Here’s how it works.
 Suppose the true population mean is *µ* and the standard deviation is *σ*. I’ve
 just finished running my study that has *N* participants, and the mean IQ among
-those participants is :math:`\bar{X}`. We know from our discussion of `the
-central limit theorem <Ch08_Estimation_3.html#the-central-limit-theorem>`__
-that the sampling distribution of the mean is approximately normal. We also
-know from our discussion of the `normal distribution 
-<Ch07_Probability_5.html#the-normal-distribution>`__, that there is a 95%
+those participants is X̅. We know from our discussion of `the central limit
+theorem <Ch08_Estimation_3.html#the-central-limit-theorem>`__ that the sampling
+distribution of the mean is approximately normal. We also know from our
+discussion of the `normal distribution
+<Ch07_Probability_5.html#the-normal-distribution>`__, that there is a 95% 
 chance that a normally-distributed quantity will fall within about two standard
 deviations of the true mean.
 
@@ -40,8 +40,8 @@ a normally-distributed quantity will fall within 1.96 standard deviations of
 the true mean. Next, recall that the standard deviation of the sampling
 distribution is referred to as the standard error, and the standard error of
 the mean is written as SEM. When we put all these pieces together, we learn
-that there is a 95% probability that the sample mean :math:`\bar{X}` that we
-have actually observed lies within 1.96 standard errors of the population mean.
+that there is a 95% probability that the sample mean X̅ that we have actually
+observed lies within 1.96 standard errors of the population mean.
 
 Mathematically, we write this as:
 

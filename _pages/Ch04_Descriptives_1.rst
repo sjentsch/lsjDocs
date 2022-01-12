@@ -54,7 +54,7 @@ winning margin, game 5 X\ :sub:`5` 32 points
 ====================== =========== ==================
 
 Okay, now let’s try to write a formula for the mean. By tradition, we
-use :math:`\bar{X}` as the notation for the mean. So the calculation for
+use X̅ as the notation for the mean. So the calculation for
 the mean could be expressed using the following formula:
 
 .. math:: \bar{X} = \frac{X_1 + X_2 + \ldots + X_{N-1} + X_N}{N}
@@ -80,7 +80,7 @@ of writing out the same thing I said in words: add all the values up and then
 divide by the total number of items. However, that’s not really the reason I
 went into all that detail. My goal was to try to make sure that everyone
 reading this book is clear on the notation that we’ll be using throughout the
-book: :math:`\bar{X}` for the mean, Σ for the idea of summation, X\ :sub:`i`
+book: X̅ for the mean, Σ for the idea of summation, X\ :sub:`i`
 for the *i*-th observation, and *N* for the total number of observations. We’re
 going to be re-using these symbols a fair bit so it’s important that you
 understand them well enough to be able to “read” the equations, and to be able

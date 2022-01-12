@@ -43,9 +43,9 @@ One formula for the skewness of a data set is as follows
 
 .. math:: \mbox{skewness}(X) = \frac{1}{N \hat{\sigma}^3} \sum_{i=1}^N (X_i - \bar{X})^3
 
-where *N* is the number of observations, :math:`\bar{X}` is the
-sample mean, and :math:`\hat{\sigma}` is the standard deviation (the
-“divide by *N - 1*” version, that is).
+where *N* is the number of observations, X̅ is the sample mean, and
+:math:`\hat{\sigma}` is the standard deviation (the “divide by *N - 1*”
+version, that is).
 
 Perhaps more helpfully, you can use jamovi to calculate skewness: it’s a
 check box in the ``Statistics`` options under ``Exploration`` → ``Descriptives``.
