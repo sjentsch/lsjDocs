@@ -47,19 +47,19 @@ great to give you a sense of just how much more there is, for example:
    outcomes. There are a lot of very handy analyses that you can run
    that fall within the GLM, so it’s a very useful thing to know about.
 
--  **Survival analysis.** In Chapter `A brief introduction to research
-   design <Ch02_StudyDesign.html>`__, I talked about “differential attrition”,
-   the tendency for people to leave the study in a non-random fashion. Back
-   then, I was talking about it as a potential methodological concern, but
-   there are a lot of situations in which differential attrition is actually
-   the thing you’re interested in. Suppose, for instance, you’re interested in
-   finding out how long people play different kinds of computer games in a
-   single session. Do people tend to play RTS (real time strategy) games
-   for longer stretches than FPS (first person shooter) games? You might
-   design your study like this. People come into the lab, and they can
-   play for as long or as little as they like. Once they’re finished,
-   you record the time they spent playing. However, due to ethical
-   restrictions, let’s suppose that you cannot allow them to keep
+-  **Survival analysis.** In Chapter `A brief introduction to research design
+   <Ch02_StudyDesign.html#a-brief-introduction-to-research-design>`__, I talked
+   about “differential attrition”, the tendency for people to leave the study
+   in a non-random fashion. Back then, I was talking about it as a potential
+   methodological concern, but there are a lot of situations in which
+   differential attrition is actually the thing you’re interested in. Suppose,
+   for instance, you’re interested in finding out how long people play
+   different kinds of computer games in a single session. Do people tend to
+   play RTS (real time strategy) games for longer stretches than FPS (first
+   person shooter) games? You might design your study like this. People come
+   into the lab, and they can play for as long or as little as they like. Once
+   they’re finished, you record the time they spent playing. However, due to
+   ethical restrictions, let’s suppose that you cannot allow them to keep
    playing longer than two hours. A lot of people will stop playing
    before the two hour limit, so you know exactly how long they played.
    But some people will run into the two hour limit, and so you don’t

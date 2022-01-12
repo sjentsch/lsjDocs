@@ -289,15 +289,15 @@ things clear.
 ------
 
 .. [#]
-   Please note that if you were *actually* interested in this question
-   you would need to be a *lot* more careful than I’m being here. You
-   *can’t* just compare IQ scores in Whyalla to Port Pirie and assume
-   that any differences are due to lead poisoning. Even if it were true
-   that the only differences between the two towns corresponded to the
-   different refineries (and it isn’t, not by a long shot), you need to
-   account for the fact that people already *believe* that lead
-   pollution causes cognitive deficits. If you recall back to Chapter `A
-   brief introduction to research design <Ch02_StudyDesign.html>`__, this
+   Please note that if you were *actually* interested in this question you
+   would need to be a *lot* more careful than I’m being here. You *can’t* just
+   compare IQ scores in Whyalla to Port Pirie and assume that any differences
+   are due to lead poisoning. Even if it were true that the only differences
+   between the two towns corresponded to the different refineries (and it
+   isn’t, not by a long shot), you need to account for the fact that people
+   already *believe* that lead pollution causes cognitive deficits. If you
+   recall back to Chapter `A brief introduction to research design
+   <Ch02_StudyDesign.html#a-brief-introduction-to-research-design>`__, this
    means that there are different demand effects for the Port Pirie sample
    than for the Whyalla sample. In other words, you might end up with an
    illusory group difference in your data, caused by the fact that
