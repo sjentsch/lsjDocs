@@ -9,7 +9,7 @@ set of binary variables in which we defined a table like this one:
 
 +--------------+------------------+------------------+
 | ``drug``     | ``druganxifree`` | ``drugjoyzepam`` |
-+==============+==================+==================+
++--------------+------------------+------------------+
 | ``placebo``  |                0 |                0 |
 +--------------+------------------+------------------+
 | ``anxifree`` |                1 |                0 |
@@ -143,41 +143,37 @@ kinds of contrasts in ANOVA. These can be found in the ‘Contrasts’
 option in the main ANOVA analysis window, where the following contrast
 types are listed:
 
-+---------------+-----------------------------------------------------+
-| Contrast type |                                                     |
-+===============+=====================================================+
-| Deviation     | Compares the mean of each level (except a reference |
-|               | category) to the mean of all of the levels (grand   |
-|               | mean).                                              |
-+---------------+-----------------------------------------------------+
-| Simple        | Like the treatment contrasts, the simple contrast   |
-|               | compares the mean of each level to the mean of a    |
-|               | specified level.                                    |
-+---------------+-----------------------------------------------------+
-|               | This type of contrast is useful when there is a     |
-|               | control group. By default the first category is the |
-|               | reference. However, with a simple contrast the      |
-|               | intercept is the grand mean of all the levels of    |
-|               | the factors.                                        |
-+---------------+-----------------------------------------------------+
-| Difference    | Compares the mean of each level (except the first)  |
-|               | to the mean of previous levels. (Sometimes called   |
-|               | reverse Helmert contrasts).                         |
-+---------------+-----------------------------------------------------+
-| Helmert       | Compares the mean of each level of the factor       |
-|               | (except the last) to the mean of subsequent levels. |
-+---------------+-----------------------------------------------------+
-| Repeated      | Compares the mean of each level (except the last)   |
-|               | to the mean of the subsequent level.                |
-+---------------+-----------------------------------------------------+
-| Polynomial    | Compares the linear effect and quadratic effect.    |
-|               | The first degree of freedom contains the linear     |
-|               | effect across all categories;                       |
-+---------------+-----------------------------------------------------+
-|               | the second degree of freedom, the quadratic effect. |
-|               | These contrasts are often used to estimate          |
-|               | polynomial trends.                                  |
-+---------------+-----------------------------------------------------+
++----------------+-----------------------------------------------------+
+| Contrast type  | What does the contrast compare?                     |
++================+=====================================================+
+| **Deviation**  | Compares the mean of each level (except a reference |
+|                | category) to the mean of all of the levels (grand   |
+|                | mean).                                              |
++----------------+-----------------------------------------------------+
+| **Simple**     | Like the treatment contrasts, the simple contrast   |
+|                | compares the mean of each level to the mean of a    |
+|                | specified level. This type of contrast is useful    |
+|                | when there is a control group. By default the first |
+|                | category is the reference. However, with a simple   |
+|                | contrast the intercept is the grand mean of all the |
+|                | levels of the factors.                              |
++----------------+-----------------------------------------------------+
+| **Difference** | Compares the mean of each level (except the first)  |
+|                | to the mean of previous levels. (Sometimes called   |
+|                | reverse Helmert contrasts).                         |
++----------------+-----------------------------------------------------+
+| **Helmert**    | Compares the mean of each level of the factor       |
+|                | (except the last) to the mean of subsequent levels. |
++----------------+-----------------------------------------------------+
+| **Repeated**   | Compares the mean of each level (except the last)   |
+|                | to the mean of the subsequent level.                |
++----------------+-----------------------------------------------------+
+| **Polynomial** | Compares the linear effect and quadratic effect.    |
+|                | The first degree of freedom contains the linear     |
+|                | effect across all categories; the second degree of  |
+|                | freedom, the quadratic effect. These contrasts are  |
+|                | often used to estimate polynomial trends.           |
++----------------+-----------------------------------------------------+
 
 ------
 
@@ -190,4 +186,3 @@ types are listed:
    contrast, i.e., m=-1 and f=1, the intercept is the average of the
    means and the main effect is the difference of each group mean from
    the intercept.
-

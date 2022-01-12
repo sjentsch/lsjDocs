@@ -43,19 +43,19 @@ observations in the ``afl.margins`` variable, along with the mathematical
 symbol used to refer to it and the actual value that the observation
 corresponds to:
 
-+----------------------------+---------------+--------------------+
-| the observation            | its symbol    | the observed value |
-+============================+===============+====================+
-| **winning margin, game 1** | *X*\ :sub:`1` |          56 points |
-+----------------------------+---------------+--------------------+
-| **winning margin, game 2** | *X*\ :sub:`2` |          31 points |
-+----------------------------+---------------+--------------------+
-| **winning margin, game 3** | *X*\ :sub:`3` |          56 points |
-+----------------------------+---------------+--------------------+
-| **winning margin, game 4** | *X*\ :sub:`4` |           8 points |
-+----------------------------+---------------+--------------------+
-| **winning margin, game 5** | *X*\ :sub:`5` |          32 points |
-+----------------------------+---------------+--------------------+
++------------------------+---------------+--------------------+
+| the observation        | its symbol    | the observed value |
++========================+===============+====================+
+| winning margin, game 1 | *X*\ :sub:`1` |          56 points |
++------------------------+---------------+--------------------+
+| winning margin, game 2 | *X*\ :sub:`2` |          31 points |
++------------------------+---------------+--------------------+
+| winning margin, game 3 | *X*\ :sub:`3` |          56 points |
++------------------------+---------------+--------------------+
+| winning margin, game 4 | *X*\ :sub:`4` |           8 points |
++------------------------+---------------+--------------------+
+| winning margin, game 5 | *X*\ :sub:`5` |          32 points |
++------------------------+---------------+--------------------+
 
 Okay, now let’s try to write a formula for the mean. By tradition, we use *X̄*
 as the notation for the mean. So the calculation for the mean could be

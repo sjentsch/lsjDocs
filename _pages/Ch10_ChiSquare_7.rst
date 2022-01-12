@@ -14,15 +14,15 @@ whole lot of other things too, but let’s consider just this one simple
 experiment. One way to describe your data is via the following
 contingency table:
 
-+-------+--------+-------+-------+
-|       | Before | After | Total |
-+=======+========+=======+=======+
-| Yes   | 30     | 10    | 40    |
-+-------+--------+-------+-------+
-| No    | 70     | 90    | 160   |
-+-------+--------+-------+-------+
-| Total | 100    | 100   | 200   |
-+-------+--------+-------+-------+
++-----------+--------+-------+-------+
+|           | Before | After | Total |
++===========+========+=======+=======+
+| **Yes**   | 30     | 10    | 40    |
++-----------+--------+-------+-------+
+| **No**    | 70     | 90    | 160   |
++-----------+--------+-------+-------+
+| **Total** | 100    | 100   | 200   |
++-----------+--------+-------+-------+
 
 At first pass, you might think that this situation lends itself to the Pearson
 `χ² test of independence
@@ -43,15 +43,15 @@ The solution to the problem was published by `McNemar (1947)
 <References.html#mcnemar-1947>`__. The trick is to start by tabulating your
 data in a slightly different way:
 
-+------------+-------------+------------+-------+
-|            | Before: Yes | Before: No | Total |
-+============+=============+============+=======+
-| After: Yes | 5           | 5          | 10    |
-+------------+-------------+------------+-------+
-| After: No  | 25          | 65         | 90    |
-+------------+-------------+------------+-------+
-| Total      | 30          | 70         | 100   |
-+------------+-------------+------------+-------+
++----------------+-------------+------------+-------+
+|                | Before: Yes | Before: No | Total |
++================+=============+============+=======+
+| **After: Yes** | 5           | 5          | 10    |
++----------------+-------------+------------+-------+
+| **After: No**  | 25          | 65         | 90    |
++----------------+-------------+------------+-------+
+| **Total**      | 30          | 70         | 100   |
++----------------+-------------+------------+-------+
 
 This is exactly the same data, but it’s been rewritten so that each of our 100
 participants appears in only one cell. Because we’ve written our data this way
@@ -60,15 +60,15 @@ that we *can* use to construct a χ²-goodness-of-fit statistic. However, as
 we’ll see, we need to do it in a slightly non-standard way. To see what’s going
 on, it helps to label the entries in our table a little differently:
 
-+------------+-------------+------------+-----------+
-|            | Before: Yes | Before: No | Total     |
-+============+=============+============+===========+
-| After: Yes | *a*         | *b*        | *a* + *b* |
-+------------+-------------+------------+-----------+
-| After: No  | *c*         | *d*        | *c* + *d* |
-+------------+-------------+------------+-----------+
-| Total      | *a* + *c*   | *b* + *d*  | *n*       |
-+------------+-------------+------------+-----------+
++----------------+-------------+------------+-----------+
+|                | Before: Yes | Before: No | Total     |
++================+=============+============+===========+
+| **After: Yes** | *a*         | *b*        | *a* + *b* |
++----------------+-------------+------------+-----------+
+| **After: No**  | *c*         | *d*        | *c* + *d* |
++----------------+-------------+------------+-----------+
+| **Total**      | *a* + *c*   | *b* + *d*  | *n*       |
++----------------+-------------+------------+-----------+
 
 Next, let’s think about what our null hypothesis is: it’s that the “before”
 test and the “after” test have the same proportion of people saying “Yes, I
