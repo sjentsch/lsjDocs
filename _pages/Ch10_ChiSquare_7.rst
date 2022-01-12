@@ -14,15 +14,15 @@ whole lot of other things too, but let’s consider just this one simple
 experiment. One way to describe your data is via the following
 contingency table:
 
-+-----------+--------+-------+-------+
-|           | Before | After | Total |
-+===========+========+=======+=======+
-| **Yes**   | 30     | 10    | 40    |
-+-----------+--------+-------+-------+
-| **No**    | 70     | 90    | 160   |
-+-----------+--------+-------+-------+
-| **Total** | 100    | 100   | 200   |
-+-----------+--------+-------+-------+
++-----------++--------+-------+-------+
+|           || Before | After | Total |
++===========++========+=======+=======+
+| **Yes**   || 30     | 10    | 40    |
++-----------++--------+-------+-------+
+| **No**    || 70     | 90    | 160   |
++-----------++--------+-------+-------+
+| **Total** || 100    | 100   | 200   |
++-----------++--------+-------+-------+
 
 At first pass, you might think that this situation lends itself to the Pearson
 `χ² test of independence
