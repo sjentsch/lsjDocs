@@ -12,11 +12,11 @@ jamovi is a free and open statistical software to bridge the gap between researc
    :caption: Learning statistics with jamovi
    :name: sec-lsj
    
-   lsj/Prologue
-   lsj/Background
-   lsj/Introduction
-   lsj/WorkWithData
-   lsj/StatTheory
-   lsj/StatTools
-   lsj/Endings
-   lsj/References
+   _pages/Prologue
+   _pages/Background
+   _pages/Introduction
+   _pages/WorkWithData
+   _pages/StatTheory
+   _pages/StatTools
+   _pages/Endings
+   _pages/References
