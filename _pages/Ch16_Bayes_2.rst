@@ -99,13 +99,13 @@ in a scientific context. The two most widely used are from `Jeffreys (1961)
 +--------------+----------------------+
 | Bayes factor | Interpretation       |
 +==============+======================+
-| 1 - 3        | Negligible evidence  |
+|      1 –   3 | Negligible evidence  |
 +--------------+----------------------+
-| 3 - 20       | Positive evidence    |
+|      3 –  20 | Positive evidence    |
 +--------------+----------------------+
-| 20 - 150     | Strong evidence      |
+|     20 – 150 | Strong evidence      |
 +--------------+----------------------+
-| > 150        | Very strong evidence |
+|        > 150 | Very strong evidence |
 +--------------+----------------------+
 
 And to be perfectly honest, I think that even the `Kass and Raftery (1995)

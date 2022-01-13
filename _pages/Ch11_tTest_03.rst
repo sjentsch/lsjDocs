@@ -163,7 +163,7 @@ number of observations in that sample, minus 1.
 Mathematically, we can write this as
 
 | w\ :sub:`1` = *N*\ :sub:`1` - 1
-| 2\ :sub:`2` = *N*\ :sub:`2` - 1
+| w\ :sub:`2` = *N*\ :sub:`2` - 1
 
 Now that we’ve assigned weights to each sample we calculate the pooled
 estimate of the variance by taking the weighted average of the two
