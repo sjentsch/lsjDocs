@@ -85,7 +85,7 @@ information. In the case of our hypothetical student, we know that
 ``reading = 0``). So the data might look like this:
 
 +----------------+---------------+----------------+----------------+
-| person,        |        grade, |    attendance, |       reading, |
+| person,        | grade,        | attendance,    | reading,       |
 | p              | *Y*\ :sub:`p` | *X*\ :sub:`1p` | *X*\ :sub:`2p` |
 +================+===============+================+================+
 | 1              |            90 |             1  |              1 |
