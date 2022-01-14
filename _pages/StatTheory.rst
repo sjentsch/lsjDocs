@@ -4,17 +4,6 @@
 Statistical theory
 ==================
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Statistical theory
-   :hidden:
-   :name: sec-lsj-theory
-
-   Ch07_Probability
-   Ch08_Estimation
-   Ch09_HypothesisTesting
-
-
 The part on statistical theory is by far the most theoretical, focusing as it
 does on the theory of statistical inference. Over the next three chapters my
 goal is to give you an `introduction to probability theory
