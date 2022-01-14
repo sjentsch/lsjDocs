@@ -11,7 +11,8 @@ means, making this one of the most important chapters in the book. As usual,
 I’ll end the chapter with a quick recap of the key ideas that we’ve talked
 about:
 
--  :doc:`Research hypotheses and statistical hypotheses, Null and alternative hypotheses <Ch09_HypothesisTesting_01>`
+-  :doc:`Research hypotheses and statistical hypotheses, Null and alternative
+   hypotheses <Ch09_HypothesisTesting_01>`
 
 -  :doc:`Type I and Type II errors <Ch09_HypothesisTesting_02>`
 

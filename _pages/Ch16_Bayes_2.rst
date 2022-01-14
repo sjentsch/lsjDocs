@@ -3,19 +3,19 @@
 Bayesian hypothesis tests
 -------------------------
 
-In Chapter `Hypothesis testing
-<Ch09_HypothesisTesting.html#hypothesis-testing>`__ I described the orthodox
-approach to hypothesis testing. It took an entire chapter to describe, because
-null hypothesis testing is a very elaborate contraption that people find very
-hard to make sense of. In contrast, the Bayesian approach to hypothesis testing
-is incredibly simple. Let’s pick a setting that is closely analogous to the
-orthodox scenario. There are two hypotheses that we want to compare, a null
-hypothesis *h*\ :sub:`0` and an alternative hypothesis *h*\ :sub:`1`. Prior to
-running the experiment we have some beliefs *P*\ (h) about which hypotheses
-are true. We run an experiment and obtain data *d*. Unlike frequentist
-statistics, Bayesian statistics does allow us to talk about the probability
-that the null hypothesis is true. Better yet, it allows us to calculate the
-**posterior probability of the null hypothesis**, using Bayes’ rule:
+In chapter :doc:`Hypothesis testing <Ch09_HypothesisTesting>`, I described the
+orthodox approach to hypothesis testing. It took an entire chapter to describe,
+because null hypothesis testing is a very elaborate contraption that people
+find very hard to make sense of. In contrast, the Bayesian approach to
+hypothesis testing is incredibly simple. Let’s pick a setting that is closely
+analogous to the orthodox scenario. There are two hypotheses that we want to
+compare, a null hypothesis *h*\ :sub:`0` and an alternative hypothesis
+*h*\ :sub:`1`. Prior to running the experiment we have some beliefs *P*\ (h)
+about which hypotheses are true. We run an experiment and obtain data *d*.
+Unlike frequentist statistics, Bayesian statistics does allow us to talk about
+the probability that the null hypothesis is true. Better yet, it allows us to
+calculate the **posterior probability of the null hypothesis**, using Bayes’
+rule:
 
 .. math:: P(h_0 | d) = \frac{P(d|h_0) P(h_0)}{P(d)}
 

@@ -60,7 +60,7 @@ measure reliability:
    questionnaire result is added up across several questions) do the individual
    parts tend to give similar answers. We’ll look at this particular form of
    reliability later in the book, in section :doc:`Internal consistency
-   reliability analysis <Ch15_FactorAnalysis_5>`.
+   reliability analysis <Ch15_FactorAnalysis_4>`.
 
 Not all measurements need to possess all forms of reliability. For
 instance, educational assessment can be thought of as a form of
