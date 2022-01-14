@@ -6,6 +6,7 @@ An introduction to jamovi
 
 .. toctree::
    :maxdepth: 1
+   :caption: An introduction to jamovi
    :hidden:
       
    Ch03_jamoviIntro_1

@@ -6,6 +6,7 @@ Endings, alternatives, prospects
 
 .. toctree::
    :maxdepth: 1
+   :caption: Endings, alternatives, prospects
    :name: sec-lsj-endings
 
    Ch16_Bayes

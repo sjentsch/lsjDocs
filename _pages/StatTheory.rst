@@ -6,6 +6,7 @@ Statistical theory
 
 .. toctree::
    :maxdepth: 1
+   :caption: Statistical theory
    :hidden:
    :name: sec-lsj-theory
 

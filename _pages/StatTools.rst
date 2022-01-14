@@ -6,6 +6,7 @@ Statistical tools
 
 .. toctree::
    :maxdepth: 1
+   :caption: Statistical tools
    :hidden:
    :name: sec-lsj-tools
 
