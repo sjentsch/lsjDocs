@@ -371,7 +371,7 @@ administer an IQ test, giving me a simple random sample from the
 population. My sample would consist of a collection of numbers like
 this:
 
-.. code-block:: rout
+.. code-block:: text
 
    106 101 98 80 74 ... 107 72 100
 

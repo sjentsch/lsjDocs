@@ -19,13 +19,13 @@ will see that the data looks something like this:
 
 ``speaker`` variable
 
-.. code-block:: rout
+.. code-block:: text
 
    upsy-daisy upsy-daisy upsy-daisy upsy-daisy tombliboo tombliboo makka-pakka makka-pakka makka-pakka makka-pakka
 
 ``utterance`` variable
 
-.. code-block:: rout
+.. code-block:: text
 
    pip pip onk onk ee oo pip pip onk onk
 
@@ -121,8 +121,6 @@ set), 100% of the time it’s a Tombliboo saying it.
    column percentages
    
 .. ----------------------------------------------------------------------------
-
------
 
 .. |nightgarden|                       replace:: ``nightgarden``
 .. _nightgarden:                       _static/data/nightgarden.omv

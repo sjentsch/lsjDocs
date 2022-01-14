@@ -6,24 +6,23 @@ Statistical theory
 
 The part on statistical theory is by far the most theoretical, focusing as it
 does on the theory of statistical inference. Over the next three chapters my
-goal is to give you an `introduction to probability theory 
-<Ch07_Probability.html#introduction-to-probability>`__), sampling
-and estimation (Chapter `Estimating unknown quantities from a sample
+goal is to give you an `introduction to probability theory
+<Ch07_Probability.html#introduction-to-probability>`__, sampling and estimation
+(Chapter `Estimating unknown quantities from a sample
 <Ch08_Estimation.html#estimating-unknown-quantities-from-a-sample>`__) and
 statistical hypothesis testing (Chapter `Hypothesis testing
-<Ch09_HypothesisTesting.html#hypothesis-testing>`__). Before we
-get started though, I want to say something about the big picture.
-Statistical inference is primarily about *learning from data*. The goal
-is no longer merely to describe our data but to use the data to draw
-conclusions about the world. To motivate the discussion I want to spend
-a bit of time talking about a philosophical puzzle known as the *riddle
-of induction*, because it speaks to an issue that will pop up over and
-over again throughout the book: statistical inference relies on
-*assumptions*. This sounds like a bad thing. In everyday life people say
-things like “you should never make assumptions”, and psychology classes
-often talk about assumptions and biases as bad things that we should try
-to avoid. From bitter personal experience I have learned never to say
-such things around philosophers!
+<Ch09_HypothesisTesting.html#hypothesis-testing>`__). Before we get started
+though, I want to say something about the big picture. Statistical inference is
+primarily about *learning from data*. The goal is no longer merely to describe
+our data but to use the data to draw conclusions about the world. To motivate
+the discussion I want to spend a bit of time talking about a philosophical
+puzzle known as the *riddle of induction*, because it speaks to an issue that
+will pop up over and over again throughout the book: statistical inference
+relies on *assumptions*. This sounds like a bad thing. In everyday life people
+say things like “you should never make assumptions”, and psychology classes
+often talk about assumptions and biases as bad things that we should try to
+avoid. From bitter personal experience I have learned never to say such things
+around philosophers!
 
 On the limits of logical reasoning
 ----------------------------------

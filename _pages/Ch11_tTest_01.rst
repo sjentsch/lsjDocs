@@ -23,7 +23,7 @@ of 67.5) or do they tend to score higher or lower? He emails me the |zeppo|_
 data set, which I use to look at the ``grades`` of those students, in the jamovi
 spreadsheet view,
 
-.. code-block:: rout
+.. code-block:: text
 
    50 60 60 64 66 66 67 69 70 74 76 76 77 79 79 79 81 82 82 89
 
