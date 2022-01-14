@@ -4,12 +4,4 @@
 Working with data
 =================
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Working with data
-   :name: sec-lsj-work-with-data
-
-   Ch04_Descriptives
-   Ch05_Graphics
-   Ch06_DataHandling
 

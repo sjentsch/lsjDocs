@@ -4,20 +4,6 @@
 Statistical tools
 =================
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Statistical tools
-   :hidden:
-   :name: sec-lsj-tools
-
-   Ch10_ChiSquare
-   Ch11_tTest
-   Ch12_Regression   
-   Ch13_ANOVA
-   Ch14_ANOVA2
-   Ch15_FactorAnalysis
-
-
 Now that we’ve covered the basic theory behind hypothesis testing, it’s time to
 start looking at specific tests that are commonly used in psychology. So where
 should we start? Not every textbook agrees on where to start, but I’m going to
