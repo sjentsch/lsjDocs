@@ -6,6 +6,7 @@ Background
 
 .. toctree::
    :maxdepth: 1
+   :caption: Background   
    :name: sec-lsj-background
 
    Ch01_WhyStats
