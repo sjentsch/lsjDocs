@@ -223,7 +223,7 @@ differences between the mean and the median let’s consider a real life
 example. Since I tend to mock journalists for their poor scientific and
 statistical knowledge, I should give credit where credit is due. This is
 described in an excellent article `Housing bubble debate boils over 
-<www.abc.net.au/news/stories/2010/09/24/3021480.htm>`__:
+<https://www.abc.net.au/news/stories/2010/09/24/3021480.htm>`__:
 
    Senior Commonwealth Bank executives have travelled the world in the
    past couple of weeks with a presentation showing how Australian house
