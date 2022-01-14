@@ -6,9 +6,8 @@ An introduction to jamovi
 
 .. epigraph::
 
-   | *Robots are nice to work with.*
-   
-   -- Roger Zelazny\ [#]_
+   | *Robots are nice to work with.*  
+   -- Roger Zelazny (Dismal Light, 1968)
 
 In this chapter I’ll discuss how to get started in jamovi. I’ll briefly
 talk about how to download and install jamovi, but most of the chapter
@@ -81,9 +80,6 @@ outweigh the weakness; more so than any other option I’ve encountered so
 far.
 
 ------
-
-.. [#]
-   Source: *Dismal Light* (1968).
 
 .. [#]
    As of writing this in August 2018.

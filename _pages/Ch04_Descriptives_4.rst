@@ -3,16 +3,15 @@
 Descriptive statistics separately for each group
 ------------------------------------------------
 
-It is very commonly the case that you find yourself needing to look at
-descriptive statistics broken down by some grouping variable. This is
-pretty easy to do in jamovi. For instance, let’s say I want to look at
-the descriptive statistics for some clinical trial data, broken down
-separately by ``therapy`` type. This is a new data set, one that you’ve
-never seen before. The data is stored in the |clinicaltrial|_ data set
-and we’ll use it a lot in Chapter `Comparing several means (one-way ANOVA)
-<Ch13_ANOVA.html#comparing-several-means-one-way-anova>`__ (you can
-find a complete description of the data at the start of that chapter).
-Let’s load it and see what we’ve got:
+It is very commonly the case that you find yourself needing to look at 
+descriptive statistics broken down by some grouping variable. This is pretty
+easy to do in jamovi. For instance, let’s say I want to look at the descriptive
+statistics for some clinical trial data, broken down separately by ``therapy``
+type. This is a new data set, one that you’ve never seen before. The data is
+stored in the |clinicaltrial|_ data set and we’ll use it a lot in chapter
+:doc:`Comparing several means (one-way ANOVA) <Ch13_ANOVA>` (you can find a
+complete description of the data at the start of that chapter). Let’s load it
+and see what we’ve got:
 
 .. ----------------------------------------------------------------------------
 
@@ -25,15 +24,14 @@ Let’s load it and see what we’ve got:
       
 .. ----------------------------------------------------------------------------
 
-Evidently there were three drugs: a placebo, something called “anxifree”
-and something called “joyzepam”, and there were 6 people administered
-each drug. There were 9 people treated using cognitive behavioural
-therapy (CBT) and 9 people who received no psychological treatment. And
-we can see from looking at the ``Descriptives`` of the ``mood.gain``
-variable that most people did show a mood gain (mean = 0.88),
-though without knowing what the scale is here it’s hard to say much more
-than that. Still, that’s not too bad. Overall I feel that I learned
-something from that.
+Evidently there were three drugs: a placebo, something called “anxifree” and
+something called “joyzepam”, and there were 6 people administered each drug.
+There were 9 people treated using cognitive behavioural therapy (CBT) and 9
+people who received no psychological treatment. And we can see from looking
+at the ``Descriptives`` of the ``mood.gain`` variable that most people did show
+a mood gain (mean = 0.88), though without knowing what the scale is here it’s
+hard to say much more than that. Still, that’s not too bad. Overall I feel that
+I learned something from that.
 
 We can also go ahead and look at some other descriptive statistics, and
 this time separately for each type of therapy. In jamovi, check Std.

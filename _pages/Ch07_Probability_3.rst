@@ -71,13 +71,13 @@ distribution:
 | Blue tracksuit  | *X*\ :sub:`5` | *P*\ (X\ :sub:`5`\ ) = 0.1 |
 +-----------------+---------------+----------------------------+
 
-Each of the events has a probability that lies between 0 and 1, and if
-we add up the probability of all events they sum to 1. Awesome. We can even
-draw a nice bar graph (see `Bar graphs <Ch05_Graphics_3.html#bar-graphs>`__)
-to visualise this distribution, as shown in :numref:`fig-pantsDistribution`.
-And, at this point, we’ve all achieved something. You’ve learned what a
-probability distribution is, and I’ve finally managed to find a way to
-create a graph that focuses entirely on my trousers. Everyone wins!
+Each of the events has a probability that lies between 0 and 1, and if we add
+up the probability of all events they sum to 1. Awesome. We can even draw a
+nice bar graph (see :doc:`Bar graphs <Ch05_Graphics_3>`) to visualise this
+distribution, as shown in :numref:`fig-pantsDistribution`. And, at this point,
+we’ve all achieved something. You’ve learned what a probability distribution
+is, and I’ve finally managed to find a way to create a graph that focuses
+entirely on my trousers. Everyone wins!
 
 .. ----------------------------------------------------------------------------
 

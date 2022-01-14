@@ -21,7 +21,8 @@ Pragmatic matters
    *to the plots philosophers have laid out for its convenience.*
    *Maybe a few more tractors would do the trick.*
      
-   -- Roger Zelazny\ [#]_
+   -- Roger Zelazny (Home is the Hangman, 1975)
+   
 
 This is a somewhat strange chapter, even by my standards. My goal in
 this chapter is to talk a bit more honestly about the realities of
@@ -41,34 +42,23 @@ sets that illustrate the underlying issue. Because this chapter is
 essentially a collection of techniques and doesn’t tell a single
 coherent story, it may be useful to start with a list of topics:
 
-- `Tabulating and cross-tabulating data
-  <Ch06_DataHandling_1.html#tabulating-and-cross-tabulating-data>`__
+- :doc:`Tabulating and cross-tabulating data <Ch06_DataHandling_1>`
   
-- `Logical expressions in jamovi
-  <Ch06_DataHandling_2.html#logical-expressions-in-jamovi>`__
+- :doc:`Logical expressions in jamovi <Ch06_DataHandling_2>`
 
-- `Transforming or recoding a variable
-  <Ch06_DataHandling_3.html#transforming-or-recoding-a-variable>`__
+- :doc:`Transforming or recoding a variable <Ch06_DataHandling_3>`
 
-- `Mathematical functions and operations
-  <Ch06_DataHandling_4.html#a-few-more-mathematical-functions-and-operations>`__
+- :doc:`Mathematical functions and operations <Ch06_DataHandling_4>`
 
-- `Extracting a subset of the data
-  <Ch06_DataHandling_5.html#extracting-a-subset-of-the-data>`__
+- :doc:`Extracting a subset of the data <Ch06_DataHandling_5>`
 
-As you can see, the list of topics that the chapter covers is pretty
-broad, and there’s a *lot* of content there. Even though this is one of
-the longest and hardest chapters in the book, I’m really only scratching
-the surface of several fairly different and important topics. My advice,
-as usual, is to read through the chapter once and try to follow as much
-of it as you can. Don’t worry too much if you can’t grasp it all at
-once, especially the later sections. The rest of the book is only
-lightly reliant on this chapter so you can get away with just
-understanding the basics. However, what you’ll probably find is that
-later on you’ll need to flick back to this chapter in order to
-understand some of the concepts that I refer to here.
-
-------
-
-.. [#]
-   The quote comes from *Home is the Hangman*, published in 1975.
+As you can see, the list of topics that the chapter covers is pretty broad, and
+there’s a *lot* of content there. Even though this is one of the longest and
+hardest chapters in the book, I’m really only scratching the surface of several
+fairly different and important topics. My advice, as usual, is to read through
+the chapter once and try to follow as much of it as you can. Don’t worry too
+much if you can’t grasp it all at once, especially the later sections. The rest
+of the book is only lightly reliant on this chapter so you can get away with
+just understanding the basics. However, what you’ll probably find is that later
+on you’ll need to flick back to this chapter in order to understand some of the
+concepts that I refer to here.

@@ -15,14 +15,12 @@ have the saying “a picture is worth a thousand words”. With that in
 mind, I think that this is one of the most important chapters in the
 book. The topics covered were:
 
--  *Common plots*. Much of the chapter was focused on standard graphs
-   that statisticians like to produce:
-   `histograms <Ch05_Graphics_1.html#histograms>`__,
-   `box plots <Ch05_Graphics_2.html#box-plots>`__ and
-   `bar graphs <Ch05_Graphics_3.html#bar-graphs>`__.
+-  *Common plots*. Much of the chapter was focused on standard graphs that
+   statisticians like to produce: :doc:`histograms <Ch05_Graphics_1>`,
+   :doc:`box plots <Ch05_Graphics_2>` and :doc:`bar graphs <Ch05_Graphics_3>`.
 
--  *Saving image files*. Importantly, we also covered how to `export your
-   pictures <Ch05_Graphics_3.html#saving-image-files-using-jamovi>`__
+-  *Saving image files*. Importantly, we also covered how to :doc:`export your
+   pictures <Ch05_Graphics_3>`.
 
 One final thing to point out. Whilst jamovi produces some really neat
 default graphics, editing the plots is currently not possible. For more

@@ -4,16 +4,15 @@ Assessing the reliability of a measurement
 ------------------------------------------
 
 At this point we’ve thought a little bit about how to operationalise a
-theoretical construct and thereby create a psychological measure. And
-we’ve seen that by applying psychological measures we end up with
-variables, which can come in many different types. At this point, we
-should start discussing the obvious question: is the measurement any
-good? We’ll do this in terms of two related ideas: *reliability* and
-*validity*. Put simply, the **reliability** of a measure tells you how
-*precisely* you are measuring something, whereas the validity of a
-measure tells you how *accurate* the measure is. In this section I’ll
-talk about reliability; we’ll talk about validity in Section `Assessing
-the validity of a study <Ch02_StudyDesign_5.html#assessing-the-validity-of-a-study>`__.
+theoretical construct and thereby create a psychological measure. And we’ve
+seen that by applying psychological measures we end up with variables, which
+can come in many different types. At this point, we should start discussing the
+obvious question: is the measurement any good? We’ll do this in terms of two
+related ideas: *reliability* and *validity*. Put simply, the **reliability** of
+a measure tells you how *precisely* you are measuring something, whereas the
+validity of a measure tells you how *accurate* the measure is. In this section
+I’ll talk about reliability; we’ll talk about validity in section
+:doc:`Assessing the validity of a study <Ch02_StudyDesign_5>`.
 
 Reliability is actually a very simple concept. It refers to the
 repeatability or consistency of your measurement. The measurement of my
@@ -60,9 +59,8 @@ measure reliability:
    lots of different parts that perform similar functions (e.g., a personality
    questionnaire result is added up across several questions) do the individual
    parts tend to give similar answers. We’ll look at this particular form of
-   reliability later in the book, in Section `Internal consistency reliability
-   analysis
-   <Ch15_FactorAnalysis_5.html#internal-consistency-reliability-analysis>`__.
+   reliability later in the book, in section :doc:`Internal consistency
+   reliability analysis <Ch15_FactorAnalysis_5>`.
 
 Not all measurements need to possess all forms of reliability. For
 instance, educational assessment can be thought of as a form of

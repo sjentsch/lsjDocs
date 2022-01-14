@@ -30,16 +30,15 @@ This is enough information to answer our question, so let’s have a look
 at how it’s done.
 
 .. _tab-distformulas:
-.. table:: Formulas for the binomial and normal distributions. We
-   don’t really use these formulas for anything in this book, but
-   they’re pretty important for more advanced work, so I thought it
-   might be best to put them here in a table, where they can’t get in
-   the way of the text. In the equation for the binomial, *X!* is
-   the factorial function (i.e., multiply all whole numbers from 1 to
-   *X*), and for the normal distribution “exp” refers to the
-   exponential function, which we discussed in Chapter `Pragmatic matters
-   <Ch06_DataHandling.html#pragmatic-matters>`__. If these equations
-   don’t make a lot of sense to you, don’t worry too much about them.
+.. table:: Formulas for the binomial and normal distributions. We don’t really
+   use these formulas for anything in this book, but they’re pretty important
+   for more advanced work, so I thought it might be best to put them here in a
+   table, where they can’t get in the way of the text. In the equation for the
+   binomial, *X!* is the factorial function (i.e., multiply all whole numbers
+   from 1 to *X*), and for the normal distribution “exp” refers to the
+   exponential function, which we discussed in chapter :doc:`Pragmatic matters
+   <Ch06_DataHandling>`. If these equations don’t make a lot of sense to you,
+   don’t worry too much about them.
 
    +------------+----------+
    | Binomial   | Normal   |

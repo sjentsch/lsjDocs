@@ -3,31 +3,32 @@
 Summary
 -------
 
-Calculating some basic descriptive statistics is one of the very first
-things you do when analysing real data, and descriptive statistics are
-much simpler to understand than inferential statistics, so like every
-other statistics textbook I’ve started with descriptives. In this
-chapter, we talked about the following topics:
+Calculating some basic descriptive statistics is one of the very first things
+you do when analysing real data, and descriptive statistics are much simpler to
+understand than inferential statistics, so like every other statistics textbook
+I’ve started with descriptives. In this chapter, we talked about the following
+topics:
 
--  `Measures of central tendency <Ch04_Descriptives_1.html#measures-of-central-tendency>`__:
-   Broadly speaking, central tendency measures tell you where the data are. There’s three
-   measures that are typically reported in the literature: the mean, median and mode.
+-  :doc:`Measures of central tendency <Ch04_Descriptives_1>`: Broadly speaking,
+   central tendency measures tell you where the data are. There’s three
+   measures that are typically reported in the literature: the mean, median and
+   mode.
 
--  `Measures of variability <Ch04_Descriptives_2.html#measures-of-variability>`__:
-   In contrast, measures of variability tell you about how “spread out” the data are. The
-   key measures are: range, standard deviation, and interquartile range.
+-  :doc:`Measures of variability <Ch04_Descriptives_2>`: In contrast, measures
+   of variability tell you about how “spread out” the data are. The key
+   measures are: range, standard deviation, and interquartile range.
 
--  `Measures of skewness and kurtosis
-   <Ch04_Descriptives_3.html#measures-of-skewness-and-kurtosis>`__: We also looked at
-   assymetry in a variable’s distribution (skew) and pointness (kurtosis).
+-  :doc:`Measures of skewness and kurtosis <Ch04_Descriptives_3>`: We also
+   looked at assymetry in a variable’s distribution (skew) and pointness
+   (kurtosis).
 
--  `Getting group summaries of variables in jamovi
-   <Ch04_Descriptives_4.html#getting-group-summaries-of-variables-in-jamovi>`__: Since
-   this book focuses on doing data analysis in jamovi, we spent a bit of time talking
-   about how descriptive statistics are computed for different subgroups.
+-  :doc:`Getting group summaries of variables in jamovi <Ch04_Descriptives_4>`:
+   Since this book focuses on doing data analysis in jamovi, we spent a bit of
+   time talking about how descriptive statistics are computed for different
+   subgroups.
 
--  `Standard scores <Ch04_Descriptives_5.html#standard-scores>`__: The *z*-score is a
-   slightly unusual beast. It’s not quite a descriptive statistic, and not quite an
+-  :doc:`Standard scores <Ch04_Descriptives_5>`: The *z*-score is a slightly
+   unusual beast. It’s not quite a descriptive statistic, and not quite an
    inference. Make sure you understand that section. It’ll come up again later.
 
 In the next Chapter we’ll move on to a discussion of how to draw pictures!

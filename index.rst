@@ -40,7 +40,6 @@ jamovi is a free and open statistical software to bridge the gap between researc
    :caption: Working with data
    :name: sec-lsj-work-with-data
 
-   _pages/WorkWithData
    _pages/Ch04_Descriptives
    _pages/Ch05_Graphics
    _pages/Ch06_DataHandling

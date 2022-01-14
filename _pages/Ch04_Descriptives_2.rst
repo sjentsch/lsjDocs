@@ -233,11 +233,10 @@ So that’s the *what*. The real question is *why* jamovi is dividing by *N - 1*
 and not by *N*. After all, the variance is supposed to be the *mean* squared
 deviation, right? So shouldn’t we be dividing by *N*, the actual number of
 observations in the sample? Well, yes, we should. However, as we’ll discuss in
-Chapter `Estimating unknown quantities from a sample
-<Ch08_Estimation.html#estimating-unknown-quantities-from-a-sample>`__, there’s
-a subtle distinction between “describing a sample” and “making guesses about
-the population from which the sample came”. Up to this point, it’s been a
-distinction without a difference. Regardless of whether you’re describing
+chapter :doc:`Estimating unknown quantities from a sample <Ch08_Estimation>`,
+there’s a subtle distinction between “describing a sample” and “making guesses
+about the population from which the sample came”. Up to this point, it’s been
+a distinction without a difference. Regardless of whether you’re describing
 a sample or drawing inferences about the population, the mean is calculated
 exactly the same way. Not so for the variance, or the standard deviation,
 or for many other measures besides. What I outlined to you initially (i.e.,
@@ -248,9 +247,8 @@ the sample exists to tell you something about the world. If so, you’re
 actually starting to move away from calculating a “sample statistic” and
 towards the idea of estimating a “population parameter”. However, I’m
 getting ahead of myself. For now, let’s just take it on faith that jamovi
-knows what it’s doing, and we’ll revisit the question later on `when we talk
-about estimation 
-<Ch08_Estimation.html#estimating-unknown-quantities-from-a-sample>`__.
+knows what it’s doing, and we’ll revisit the question later on :doc:`when we
+talk about estimation <Ch08_Estimation>`.
 
 Okay, one last thing. This section so far has read a bit like a mystery
 novel. I’ve shown you how to calculate the variance, described the weird
@@ -306,9 +304,8 @@ what jamovi actually calculates is slightly different to the formula
 given above. Just like the we saw with the variance, what jamovi
 calculates is a version that divides by *N - 1* rather than *N*.
 
-For reasons that will make sense when we return to this topic in
-Chapter `Estimating unknown quantities from a sample 
-<Ch08_Estimation.html#estimating-unknown-quantities-from-a-sample>`__ I’ll
+For reasons that will make sense when we return to this topic in chapter
+:doc:`Estimating unknown quantities from a sample <Ch08_Estimation>`__ I’ll
 refer to this new quantity as :math:`\hat\sigma` (read as: “sigma hat”),
 and the formula for this is:
 
@@ -400,7 +397,7 @@ somewhere.
    With the possible exception of the third question.
 
 .. [#]
-   Strictly, the assumption is that the data are *normally* distributed, which
-   is an important concept that we’ll discuss more in Chapter `Introduction to
-   probability <Ch07_Probability.html#introduction-to-probability>`__
-   and will turn up over and over again later in the book.
+   Strictly, the assumption is that the data are *normally* distributed, which 
+   is an important concept that we’ll discuss more in chapter :doc:`Introduction
+   to probability <Ch07_Probability>` and will turn up over and over again later
+   in the book.

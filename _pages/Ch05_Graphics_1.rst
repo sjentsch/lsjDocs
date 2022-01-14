@@ -3,35 +3,32 @@
 Histograms
 ----------
 
-Let’s begin with the humble **histogram**. Histograms are one of the
-simplest and most useful ways of visualising data. They make most sense
-when you have an interval or ratio scale variable (e.g., the
-``afl.margins`` variable from the |aflsmall_finalists|_ data set that we
-used in `Descriptive statistics
-<Ch04_Descriptives.html#descriptive-statistics>`__ ) and what you want
-to do is get an overall impression of the variable. Most of you probably
-know how histograms work, since they’re so widely used, but for the sake
-of completeness I’ll describe them. All you do is divide up the possible
-values into **bins** and then count the number of observations that fall
-within each bin. This count is referred to as the frequency or density
-of the bin and is displayed as a vertical bar. Ihe AFL winning margins
-data there are 33 games in which the winning margin was less than 10
-points and it is this fact that is represented by the height of the
-leftmost bar that we showed earlier in `Descriptive statistics
-<Ch04_Descriptives.html#descriptive-statistics>`__, and 
-:numref:`fig-aflMargins`. With these earlier graphs we used an advanced
-plotting package in R which, for now, is beyond the capability of jamovi. But
-jamovi gets us close, and drawing this histogram in jamovi is pretty
-straightforward. Open up the ``Plots`` options under ``Exploration`` → 
-``Descriptives`` and click the ``Histogram`` check box, as shown in
-:numref:`fig-jamovi_histogram`. jamovi defaults to labelling the y-axis as
-‘density’ and the x-axis with the variable name. The **bins** are selected
-automatically, and there is no scale, or count, information on the y-axis
-unlike the previous :numref:`fig-aflMargins`. But this does not matter
-too much because after all what we are really interested in is our
-impression of the shape of the distribution: is it normally distributed
-or is there a skew or kurtosis? Our first impressions of these
-characteristics come from drawing a **histogram**.
+Let’s begin with the humble **histogram**. Histograms are one of the simplest
+and most useful ways of visualising data. They make most sense when you have an
+interval or ratio scale variable (e.g., the ``afl.margins`` variable from the
+|aflsmall_finalists|_ data set that we used in :doc:`Descriptive statistics
+<Ch04_Descriptives>`) and what you want to do is get an overall impression of
+the variable. Most of you probably know how histograms work, since they’re so
+widely used, but for the sake of completeness I’ll describe them. All you do is
+divide up the possible values into **bins** and then count the number of
+observations that fall within each bin. This count is referred to as the
+frequency or density of the bin and is displayed as a vertical bar. Ihe AFL
+winning margins data there are 33 games in which the winning margin was less
+than 10 points and it is this fact that is represented by the height of the
+leftmost bar that we showed earlier in :doc:`Descriptive statistics
+<Ch04_Descriptives>`, and :numref:`fig-aflMargins`. With these earlier graphs
+we used an advanced plotting package in R which, for now, is beyond the
+capability of jamovi. But jamovi gets us close, and drawing this histogram in
+jamovi is pretty straightforward. Open up the ``Plots`` options under
+``Exploration`` →  ``Descriptives`` and click the ``Histogram`` check box, as
+shown in :numref:`fig-jamovi_histogram`. jamovi defaults to labelling the
+y-axis as ‘density’ and the x-axis with the variable name. The **bins** are
+selected automatically, and there is no scale, or count, information on the
+y-axis unlike the previous :numref:`fig-aflMargins`. But this does not matter
+too much because after all what we are really interested in is our impression
+of the shape of the distribution: is it normally distributed or is there a skew
+or kurtosis? Our first impressions of these characteristics come from drawing a
+**histogram**.
 
 .. ----------------------------------------------------------------------------
 

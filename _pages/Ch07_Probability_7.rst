@@ -11,18 +11,15 @@ of the chapter talking about some of the more important probability
 distributions that statisticians work with. The section by section
 breakdown looks like this:
 
--  `Probability theory versus statistics 
-   <Ch07_Probability_1.html#how-are-probability-and-statistics-different>`__  
+-  :doc:`Probability theory versus statistics <Ch07_Probability_1>`  
 
--  `Frequentist versus Bayesian views of probability 
-   <Ch07_Probability_2.html#what-does-probability-mean>`__
+-  :doc:`Frequentist versus Bayesian views of probability <Ch07_Probability_2>`
 
--  `Basics of probability theory 
-   <Ch07_Probability_3.html#basic-probability-theory>`__
+-  :doc:`Basics of probability theory <Ch07_Probability_3>`
 
--  `Binomial distribution <Ch07_Probability_4.html#the-binomial-distribution>`__,
-   `Normal distribution <Ch07_Probability_5.html#the-normal-distribution>`__, and
-   `Other useful distributions <Ch07_Probability_6.html#other-useful-distributions>`__
+-  :doc:`Binomial distribution <Ch07_Probability_4>`, :doc:`Normal distribution
+   <Ch07_Probability_5>`, and :doc:`Other useful distributions
+   <Ch07_Probability_6>`
 
 As you’d expect, my coverage is by no means exhaustive. Probability theory is
 a large branch of mathematics in its own right, entirely separate from its
@@ -49,8 +46,8 @@ it’s important to understand these things before moving onto the applications.
 For example, there are a lot of rules about what you’re “allowed” to say when
 doing statistical inference and many of these can seem arbitrary and weird.
 However, they start to make sense if you understand that there is this Bayesian
-/ frequentist distinction. Similarly, in Chapter `Comparing two means
-<Ch11_tTest.html#comparing-two-means>`__ we’re going to talk about something
-called the *t*-test, and if you really want to have a grasp of the mechanics
-of the *t*-test it really helps to have a sense of what a *t*-distribution
-actually looks like. You get the idea, I hope.
+/ frequentist distinction. Similarly, in chapter :doc:`Comparing two means
+<Ch11_tTest>` we’re going to talk about something called the *t*-test, and if
+you really want to have a grasp of the mechanics of the *t*-test it really
+helps to have a sense of what a *t*-distribution actually looks like. You get
+the idea, I hope.

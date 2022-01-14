@@ -13,11 +13,10 @@ want to convert a variable from one measurement level into another one.
 Or, to use the correct term, you want to **coerce** the variable from
 one class into another.
 
-In `The spreadsheet <Ch03_jamoviIntro_2.html#the-spreadsheet>`__ we
-saw how to specify different variable levels, and if you want to change
-a variable’s measurement level then you can do this in the jamovi data
-view for that variable. Just click the check box for the measurement
-level you want - continuous, ordinal, or nominal.
+In :doc:`The spreadsheet <Ch03_jamoviIntro_2>` we saw how to specify different
+variable levels, and if you want to change a variable’s measurement level then
+you can do this in the jamovi data view for that variable. Just click the check
+box for the measurement level you want - continuous, ordinal, or nominal.
 
 Installing add-on modules into jamovi
 -------------------------------------

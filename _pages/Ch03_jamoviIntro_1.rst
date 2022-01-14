@@ -18,7 +18,7 @@ Windows users, Mac users, and Linux users. If you follow the relevant link
 you’ll see that the online instructions are pretty self-explanatory.\ [#]_
 
 Starting up jamovi
-~~~~~~~~~~~~~~~~~~
+------------------
 
 One way or another, regardless of what operating system you’re using,
 it’s time to open jamovi and get started. When first starting jamovi you

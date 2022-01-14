@@ -37,9 +37,8 @@ introductory text I don’t want to focus on it, so I’ve tucked it away in
    distributions that makes the y axis behave a bit oddly: the height of the
    curve here isn’t actually the probability of observing a particular x value.
    On the other hand, it is true that the heights of the curve tells you which
-   x values are more likely (the higher ones!; see `Probability density   
-   <Ch07_Probability_5.html#probability-density>`__ for all the annoying
-   details).
+   x values are more likely (the higher ones!; see :doc:`Probability density
+   <Ch07_Probability_5>` for all the annoying details).
   
 .. ----------------------------------------------------------------------------
 

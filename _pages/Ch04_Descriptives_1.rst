@@ -166,8 +166,8 @@ As a rough guide:
 -  If your data are nominal scale you probably shouldn’t be using either
    the mean or the median. Both the mean and the median rely on the idea
    that the numbers assigned to values are meaningful. If the numbering
-   scheme is arbitrary then it’s probably best to use the `Mode 
-   <Ch04_Descriptives_1.html#mode>`__ instead.
+   scheme is arbitrary then it’s probably best to use the :doc:`Mode 
+   <Ch04_Descriptives_1>` instead.
 
 -  If your data are ordinal scale you’re more likely to want to use the
    median than the mean. The median only makes use of the order
@@ -200,21 +200,20 @@ As a rough guide:
    
 .. ----------------------------------------------------------------------------
 
-Let’s expand on that last part a little. One consequence is that there are systematic
-differences between the mean and the median when the histogram is asymmetric (skewed;
-see `Skew and kurtosis <Ch04_Descriptives_3.html#skew-and-kurtosis>`__).
-This is illustrated in :numref:`fig-meanmedian`. Notice that the median (right
-hand side) is located closer to the “body” of the histogram, whereas the mean
-(left hand side) gets dragged towards the “tail” (where
-the extreme values are). To give a concrete example, suppose Bob (income
-$50,000), Kate (income $60,000) and Jane (income $65,000) are sitting at
-a table. The average income at the table is $58,333 and the median
-income is $60,000. Then Bill sits down with them (income $100,000,000).
-The average income has now jumped to $25,043,750 but the median rises
-only to $62,500. If you’re interested in looking at the overall income
-at the table the mean might be the right answer. But if you’re
-interested in what counts as a typical income at the table the median
-would be a better choice here.
+Let’s expand on that last part a little. One consequence is that there are
+systematic differences between the mean and the median when the histogram is
+asymmetric (skewed; see :doc:`Skew and kurtosis <Ch04_Descriptives_3>`). This
+is illustrated in :numref:`fig-meanmedian`. Notice that the median (right hand
+side) is located closer to the “body” of the histogram, whereas the mean (left
+hand side) gets dragged towards the “tail” (where the extreme values are). To
+give a concrete example, suppose Bob (income $50,000), Kate (income $60,000)
+and Jane (income $65,000) are sitting at a table. The average income at the
+table is $58,333 and the median income is $60,000. Then Bill sits down with
+them (income $100,000,000). The average income has now jumped to $25,043,750
+but the median rises only to $62,500. If you’re interested in looking at the
+overall income at the table the mean might be the right answer. But if you’re
+interested in what counts as a typical income at the table the median would be
+a better choice here.
 
 A real life example
 ~~~~~~~~~~~~~~~~~~~
@@ -345,28 +344,26 @@ for Mean, Median, Minimum or Maximum. This is because the
 ``afl.finalists`` variable is a nominal text variable so it makes no
 sense to calculate these values.
 
-One last point to make regarding the mode. Whilst the mode is most often
-calculated when you have nominal data, because means and medians are
-useless for those sorts of variables, there are some situations in which
-you really do want to know the mode of an ordinal, interval or ratio
-scale variable. For instance, let’s go back to our ``afl.margins``
-variable. This variable is clearly ratio scale (if it’s not clear to
-you, it may help to re-read Section `Scales of measurement
-<Ch02_StudyDesign_2.html#scales-of-measurement>`__), and
-so in most situations the mean or the median is the measure of central
-tendency that you want. But consider this scenario: a friend of yours is
-offering a bet and they pick a football game at random. Without knowing
-who is playing you have to guess the *exact* winning margin. If you
-guess correctly you win $50. If you don’t you lose $1. There are no
-consolation prizes for “almost” getting the right answer. You have to
-guess exactly the right margin. For this bet, the mean and the median
-are completely useless to you. It is the mode that you should bet on. To
-calculate the mode for the ``afl.margins`` variable in jamovi, go back
-to that data set and on the ``Exploration`` → ``Descriptives`` screen you
-will see you can expand the section marked ``Statistics``. Click on the
-checkbox marked ``Mode`` and you will see the modal value presented in the
-``Descriptives`` Table, as in :numref:`fig-aflsmall_margins_mode`. So the
-2010 data suggest you should bet on a 3 point margin.
+One last point to make regarding the mode. Whilst the mode is most often 
+calculated when you have nominal data, because means and medians are useless
+for those sorts of variables, there are some situations in which you really do
+want to know the mode of an ordinal, interval or ratio scale variable. For
+instance, let’s go back to our ``afl.margins`` variable. This variable is
+clearly ratio scale (if it’s not clear to you, it may help to re-read section
+:doc:`Scales of measurement <Ch02_StudyDesign_2>`), and so in most situations
+the mean or the median is the measure of central tendency that you want. But
+consider this scenario: a friend of yours is offering a bet and they pick a
+football game at random. Without knowing who is playing you have to guess the
+*exact* winning margin. If you guess correctly you win $50. If you don’t you
+lose $1. There are no consolation prizes for “almost” getting the right answer.
+You have to guess exactly the right margin. For this bet, the mean and the
+median are completely useless to you. It is the mode that you should bet on. To
+calculate the mode for the ``afl.margins`` variable in jamovi, go back to that
+data set and on the ``Exploration`` → ``Descriptives`` screen you will see you
+can expand the section marked ``Statistics``. Click on the checkbox marked
+``Mode`` and you will see the modal value presented in the ``Descriptives``
+Table, as in :numref:`fig-aflsmall_margins_mode`. So the 2010 data suggest you
+should bet on a 3 point margin.
 
 .. ----------------------------------------------------------------------------
 
