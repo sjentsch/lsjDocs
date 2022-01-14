@@ -7,7 +7,7 @@ When writing up the results of a hypothesis test there’s usually several piece
 of information that you need to report, but it varies a fair bit from test to
 test. Throughout the rest of the book I’ll spend a little time talking about
 how to report the results of different tests (see section :doc:`How to report
-the results of the test <Ch10_ChiSquare_1>`__ for a particularly detailed
+the results of the test <Ch10_ChiSquare_1>` for a particularly detailed
 example), so that you can get a feel for how it’s usually done. However,
 regardless of what test you’re doing, the one thing that you always have to do
 is say something about the *p* value and whether or not the outcome was

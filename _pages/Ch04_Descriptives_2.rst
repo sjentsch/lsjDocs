@@ -305,7 +305,7 @@ given above. Just like the we saw with the variance, what jamovi
 calculates is a version that divides by *N - 1* rather than *N*.
 
 For reasons that will make sense when we return to this topic in chapter
-:doc:`Estimating unknown quantities from a sample <Ch08_Estimation>`__ I’ll
+:doc:`Estimating unknown quantities from a sample <Ch08_Estimation>` I’ll
 refer to this new quantity as :math:`\hat\sigma` (read as: “sigma hat”),
 and the formula for this is:
 
