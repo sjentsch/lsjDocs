@@ -3,6 +3,17 @@
 Drawing graphs
 ==============
 
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   Ch05_Graphics_1
+   Ch05_Graphics_2
+   Ch05_Graphics_3
+   Ch05_Graphics_4
+
+
 .. epigraph::
 
    | *Above all else show the data.*
@@ -61,15 +72,6 @@ graphic. However, on those occasions when you do want to do something
 non-standard, or if you need to make highly specific changes to the
 figure, then the graphics functionality in jamovi is not yet capable of
 supporting advanced work or detail editing.
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   Ch05_Graphics_1
-   Ch05_Graphics_2
-   Ch05_Graphics_3
-   Ch05_Graphics_4
    
 ------
 

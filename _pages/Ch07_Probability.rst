@@ -3,6 +3,19 @@
 Introduction to probability
 ===========================
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   
+   Ch07_Probability_1
+   Ch07_Probability_2
+   Ch07_Probability_3
+   Ch07_Probability_4
+   Ch07_Probability_5
+   Ch07_Probability_6
+   Ch07_Probability_7
+
+
 .. epigraph::
 
    | *[God] has afforded us only the twilight … of Probability.*
@@ -68,15 +81,3 @@ not a lot of statistics per se in this chapter, and you don’t need to
 understand this material in as much depth as the other chapters in this
 part of the book. Nevertheless, because probability theory does underpin
 so much of statistics, it’s worth covering some of the basics.
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   
-   Ch07_Probability_1
-   Ch07_Probability_2
-   Ch07_Probability_3
-   Ch07_Probability_4
-   Ch07_Probability_5
-   Ch07_Probability_6
-   Ch07_Probability_7

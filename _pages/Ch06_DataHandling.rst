@@ -3,6 +3,18 @@
 Pragmatic matters
 =================
 
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   Ch06_DataHandling_1
+   Ch06_DataHandling_2
+   Ch06_DataHandling_3
+   Ch06_DataHandling_4
+   Ch06_DataHandling_5
+
+
 .. epigraph::
 
    *The garden of life never seems to confine itself*
@@ -55,16 +67,6 @@ lightly reliant on this chapter so you can get away with just
 understanding the basics. However, what you’ll probably find is that
 later on you’ll need to flick back to this chapter in order to
 understand some of the concepts that I refer to here.
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   Ch06_DataHandling_1
-   Ch06_DataHandling_2
-   Ch06_DataHandling_3
-   Ch06_DataHandling_4
-   Ch06_DataHandling_5
 
 ------
 

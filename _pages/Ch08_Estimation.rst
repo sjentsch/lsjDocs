@@ -3,6 +3,18 @@
 Estimating unknown quantities from a sample
 ===========================================
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   
+   Ch08_Estimation_1
+   Ch08_Estimation_2
+   Ch08_Estimation_3
+   Ch08_Estimation_4
+   Ch08_Estimation_5
+   Ch08_Estimation_6
+
+
 At the start of the last chapter I highlighted the critical distinction between
 *descriptive statistics* and *inferential statistics*. As discussed in
 `Descriptive statistics <Ch04_Descriptives.html#descriptive-statistics>`__,
@@ -25,14 +37,3 @@ are focused on sampling theory, and `Estimating means and standard deviations
 <Ch08_Estimation_4.html#estimating-population-parameters>`__ and `Estimating a
 confidence interval <Ch08_Estimation_5.html#estimating-a-confidence-interval>`__
 make use of sampling theory to discuss how statisticians think about estimation.
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   
-   Ch08_Estimation_1
-   Ch08_Estimation_2
-   Ch08_Estimation_3
-   Ch08_Estimation_4
-   Ch08_Estimation_5
-   Ch08_Estimation_6

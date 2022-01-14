@@ -3,6 +3,18 @@
 A brief introduction to research design
 =======================================
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   Ch02_StudyDesign_1
+   Ch02_StudyDesign_2
+   Ch02_StudyDesign_3
+   Ch02_StudyDesign_4
+   Ch02_StudyDesign_5
+   Ch02_StudyDesign_6
+
+
 .. epigraph::
 
    | *To consult the statistician after an experiment is finished is
@@ -27,17 +39,6 @@ textbooks to discuss the problem in a little detail. This chapter relies
 heavily on `Campbell and Stanley (1963) <References.html#campbell-1963>`__
 for the discussion of study design, and `Stevens (1946)
 <References.html#stevens-1946>`__ for the discussion of scales of measurement.
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   Ch02_StudyDesign_1
-   Ch02_StudyDesign_2
-   Ch02_StudyDesign_3
-   Ch02_StudyDesign_4
-   Ch02_StudyDesign_5
-   Ch02_StudyDesign_6
 
 ------
 

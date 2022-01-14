@@ -3,6 +3,22 @@
 Hypothesis testing
 ==================
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   
+   Ch09_HypothesisTesting_01
+   Ch09_HypothesisTesting_02
+   Ch09_HypothesisTesting_03
+   Ch09_HypothesisTesting_04
+   Ch09_HypothesisTesting_05
+   Ch09_HypothesisTesting_06
+   Ch09_HypothesisTesting_07
+   Ch09_HypothesisTesting_08
+   Ch09_HypothesisTesting_09
+   Ch09_HypothesisTesting_10
+
+
 .. epigraph::
 
    | *The process of induction is the process of assuming the simplest
@@ -30,21 +46,6 @@ dogmatic while doing so, and focus instead on the underlying logic of
 the testing procedure.\ [#]_ Afterwards, I’ll spend a bit of time talking
 about the various dogmas, rules and heresies that surround the theory of
 hypothesis testing.
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   
-   Ch09_HypothesisTesting_01
-   Ch09_HypothesisTesting_02
-   Ch09_HypothesisTesting_03
-   Ch09_HypothesisTesting_04
-   Ch09_HypothesisTesting_05
-   Ch09_HypothesisTesting_06
-   Ch09_HypothesisTesting_07
-   Ch09_HypothesisTesting_08
-   Ch09_HypothesisTesting_09
-   Ch09_HypothesisTesting_10
 
 ------
 

@@ -3,6 +3,18 @@
 Descriptive statistics
 ======================
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   Ch04_Descriptives_1
+   Ch04_Descriptives_2
+   Ch04_Descriptives_3
+   Ch04_Descriptives_4
+   Ch04_Descriptives_5
+   Ch04_Descriptives_6
+
+
 Any time that you get a new data set to look at one of the first tasks
 that you have to do is find ways of summarising the data in a compact,
 easily understood fashion. This is what **descriptive statistics** (as
@@ -55,17 +67,6 @@ interpretable representation of the ``afl.margins`` variable.
    frequently you tend to see it.
    
 .. ----------------------------------------------------------------------------
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-
-   Ch04_Descriptives_1
-   Ch04_Descriptives_2
-   Ch04_Descriptives_3
-   Ch04_Descriptives_4
-   Ch04_Descriptives_5
-   Ch04_Descriptives_6
 
 ------
 

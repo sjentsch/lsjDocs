@@ -3,6 +3,21 @@
 Comparing two means
 ===================
 
+.. toctree::
+   :hidden:
+
+   Ch11_tTest_01
+   Ch11_tTest_02
+   Ch11_tTest_03
+   Ch11_tTest_04
+   Ch11_tTest_05
+   Ch11_tTest_06
+   Ch11_tTest_07
+   Ch11_tTest_08
+   Ch11_tTest_09
+   Ch11_tTest_10
+
+
 In Chapter `Categorical data analysis
 <Ch10_ChiSquare.html#categorical-data-analysis>`__ we covered the situation
 when your outcome variable is nominal scale and your predictor variable
@@ -43,20 +58,6 @@ possible `remedies
 <Ch11_tTest_09.html#testing-non-normal-data-with-wilcoxon-tests>`__ if they are
 violated. However, before discussing any of these useful things, we’ll start
 with a discussion of the *z*-test.
-
-.. toctree::
-   :hidden:
-
-   Ch11_tTest_01
-   Ch11_tTest_02
-   Ch11_tTest_03
-   Ch11_tTest_04
-   Ch11_tTest_05
-   Ch11_tTest_06
-   Ch11_tTest_07
-   Ch11_tTest_08
-   Ch11_tTest_09
-   Ch11_tTest_10
    
 ------
 

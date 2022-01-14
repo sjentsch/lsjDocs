@@ -4,6 +4,16 @@
 An introduction to jamovi
 =========================
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+      
+   Ch03_jamoviIntro_1
+   Ch03_jamoviIntro_2
+   Ch03_jamoviIntro_3
+   Ch03_jamoviIntro_4
+
+
 .. epigraph::
 
    | *Robots are nice to work with.*
@@ -79,16 +89,6 @@ and other resources to support it, and it has a few annoying quirks that
 we’re all pretty much stuck with, but on the whole I think the strengths
 outweigh the weakness; more so than any other option I’ve encountered so
 far.
-
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-      
-   Ch03_jamoviIntro_1
-   Ch03_jamoviIntro_2
-   Ch03_jamoviIntro_3
-   Ch03_jamoviIntro_4
 
 ------
 

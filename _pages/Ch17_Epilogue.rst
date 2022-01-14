@@ -4,6 +4,17 @@
 Epilogue
 ========
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   
+   Ch17_Epilogue_1
+   Ch17_Epilogue_2
+   Ch17_Epilogue_3
+   Ch17_Epilogue_4
+   Ch17_Epilogue_5
+
+   
 .. epigraph::
    | *“Begin at the beginning”*, the King said, very gravely,
    | ““and go on till you come to the end: then stop”*
@@ -38,13 +49,3 @@ covered in undergrad. Don’t assume that something is the right thing to
 do just because it *was* covered in an undergrad class. To stop you from
 falling victim to that trap, I think it’s useful to give a bit of an
 overview of some of the other ideas out there.
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   
-   Ch17_Epilogue_1
-   Ch17_Epilogue_2
-   Ch17_Epilogue_3
-   Ch17_Epilogue_4
-   Ch17_Epilogue_5

@@ -3,6 +3,18 @@
 Factor Analysis
 ===============
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   
+   Ch15_FactorAnalysis_1
+   Ch15_FactorAnalysis_2
+   Ch15_FactorAnalysis_3
+   Ch15_FactorAnalysis_4
+   Ch15_FactorAnalysis_5
+   Ch15_FactorAnalysis_6
+
+
 Previous chapters have covered statistical tests for differences between
 two or more groups. However, sometimes when conducting research, we may
 wish to examine how multiple variables *co-vary*. That is, how they are
@@ -36,14 +48,3 @@ and therefore method variance is an important consideration. Finally, we will
 cover a related analysis: `Internal consistency reliability analysis
 <Ch15_FactorAnalysis_5.html#internal-consistency-reliability-analysis>`__
 tests how consistently a scale measures a psychological construct.
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   
-   Ch15_FactorAnalysis_1
-   Ch15_FactorAnalysis_2
-   Ch15_FactorAnalysis_3
-   Ch15_FactorAnalysis_4
-   Ch15_FactorAnalysis_5
-   Ch15_FactorAnalysis_6

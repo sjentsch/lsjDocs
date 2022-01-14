@@ -3,6 +3,22 @@
 Comparing several means (one-way ANOVA)
 =======================================
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   
+   Ch13_ANOVA_01
+   Ch13_ANOVA_02
+   Ch13_ANOVA_03
+   Ch13_ANOVA_04
+   Ch13_ANOVA_05
+   Ch13_ANOVA_06
+   Ch13_ANOVA_07
+   Ch13_ANOVA_08
+   Ch13_ANOVA_09
+   Ch13_ANOVA_10
+
+
 This chapter introduces one of the most widely used tools in
 psychological statistics, known as “the analysis of variance”, but
 usually referred to as ANOVA. The basic technique was developed by Sir
@@ -43,18 +59,3 @@ equivalent, the `Friedman test
 At the end of the chapter we’ll talk a little about the `relationship between
 ANOVA and other statistical tools
 <Ch13_ANOVA_09.html#on-the-relationship-between-anova-and-the-student-t-test>`__.
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   
-   Ch13_ANOVA_01
-   Ch13_ANOVA_02
-   Ch13_ANOVA_03
-   Ch13_ANOVA_04
-   Ch13_ANOVA_05
-   Ch13_ANOVA_06
-   Ch13_ANOVA_07
-   Ch13_ANOVA_08
-   Ch13_ANOVA_09
-   Ch13_ANOVA_10

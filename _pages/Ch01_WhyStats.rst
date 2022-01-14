@@ -4,16 +4,6 @@
 Why do we learn statistics?
 ===========================
 
-.. epigraph::
-   | *“Thou shalt not answer questionnaires*
-   | *Or quizzes upon World Affairs,*
-   | *Nor with compliance*
-   | *Take any test. Thou shalt not sit*
-   | *With statisticians nor commit*
-   | *A social science”*
-   
-   -- W.H. Auden\ [#]_
-
 .. toctree::
    :maxdepth: 1
    :hidden:
@@ -23,6 +13,17 @@ Why do we learn statistics?
    Ch01_WhyStats_3
    Ch01_WhyStats_4
    Ch01_WhyStats_5
+
+
+.. epigraph::
+   | *“Thou shalt not answer questionnaires*
+   | *Or quizzes upon World Affairs,*
+   | *Nor with compliance*
+   | *Take any test. Thou shalt not sit*
+   | *With statisticians nor commit*
+   | *A social science”*
+   
+   -- W.H. Auden\ [#]_
 
 -----
    

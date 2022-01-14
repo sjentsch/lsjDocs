@@ -3,6 +3,17 @@
 Bayesian statistics
 ===================
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   
+   Ch16_Bayes_1
+   Ch16_Bayes_2
+   Ch16_Bayes_3
+   Ch16_Bayes_4
+   Ch16_Bayes_5
+
+
 .. epigraph::
 
    | *In our reasonings concerning matter of fact, there are all
@@ -38,16 +49,3 @@ rules for how it works as well as an explanation for why I think the Bayesian
 approach is so useful. 
 Afterwards, I provide a brief overview of how you can do `Bayesian versions of
 t-tests <Ch16_Bayes_4.html#bayesian-t-tests>`__.
-
-`Bayesian statistics <Ch16_Bayes.html#bayesian-statistics>`__
-
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   
-   Ch16_Bayes_1
-   Ch16_Bayes_2
-   Ch16_Bayes_3
-   Ch16_Bayes_4
-   Ch16_Bayes_5
