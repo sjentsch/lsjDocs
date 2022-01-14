@@ -88,8 +88,7 @@ outcome (``dani.grump``).\ [#]_
 
 Naturally, you don’t actually need to do all these calculations yourself if you
 want to obtain the *R²* value for your regression model. As we’ll see later on
-in `Running the hypothesis tests in jamovi
-<Ch12_Regression_07.html#running-the-hypothesis-tests-in-jamovi>`__, all you
+in :doc:`Running the hypothesis tests in jamovi <Ch12_Regression_07>`, all you
 need to do is specify this as an option in jamovi. However, let’s put that to
 one side for the moment. There’s another property of *R²* that I want to point
 out.
@@ -140,9 +139,8 @@ This is probably a matter of personal preference. If you care more about
 interpretability, then *R²* is better. If you care more about correcting for
 bias, then adjusted *R²* is probably better. Speaking just for myself, I prefer
 *R²*. My feeling is that it’s more important to be able to interpret your
-measure of model performance. Besides, as we’ll see in Section `Hypothesis tests
-for regression models
-<Ch12_Regression_07.html#hypothesis-tests-for-regression-models>`__, if you’re
+measure of model performance. Besides, as we’ll see in section
+:doc:`Hypothesis tests for regression models <Ch12_Regression_07>`, if you’re
 worried that the improvement in *R²* that you get by adding a predictor is just
 due to chance and not because it’s a better model, well we’ve got hypothesis
 tests for that.

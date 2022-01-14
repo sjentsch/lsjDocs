@@ -12,18 +12,16 @@ carefully, try to do it the long way once or twice to make sure you
 really understand how ANOVA works, and then once you’ve grasped the
 concept never *ever* do it this way again.
 
-The experimental design that I described in the previous section
-strongly suggests that we’re interested in comparing the average mood
-change for the three different drugs. In that sense, we’re talking about
-an analysis similar to the *t*-test (Chapter `Comparing two means
-<Ch11_tTest.html#comparing-two-means>`__) but involving more than two groups.
-If we let µ\ :sub:`P` denote the population mean for the mood change
-induced by the placebo, and let µ\ :sub:`A` and µ\ :sub:`J` denote
-the corresponding means for our two drugs, Anxifree and Joyzepam, then
-the (somewhat pessimistic) null hypothesis that we want to test is that
-all three population means are identical. That is, *neither* of the two
-drugs is any more effective than a placebo. We can write out this null
-hypothesis as:
+The experimental design that I described in the previous section strongly
+suggests that we’re interested in comparing the average mood change for the
+three different drugs. In that sense, we’re talking about an analysis similar
+to the *t*-test (chapter :doc:`Comparing two means <Ch11_tTest>`) but involving
+more than two groups. If we let µ\ :sub:`P` denote the population mean for the
+mood change induced by the placebo, and let µ\ :sub:`A` and µ\ :sub:`J` denote
+the corresponding means for our two drugs, Anxifree and Joyzepam, then the
+(somewhat pessimistic) null hypothesis that we want to test is that all three
+population means are identical. That is, *neither* of the two drugs is any more
+effective than a placebo. We can write out this null hypothesis as:
 
 H\ :sub:`0`: it is true that µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`
 
@@ -67,28 +65,27 @@ average mood change, taken across all 18 people in the experiment, and
 
 Now that we’ve got our notation sorted out we can start writing down formulas.
 To start with, let’s recall the formula for the variance that we used in
-`Measures of variability <Ch04_Descriptives_2.html#measures-of-variability>`__,
-way back in those kinder days when we were just doing descriptive statistics.
-The sample variance of *Y* is defined as follows
+:doc:`Measures of variability <Ch04_Descriptives_2>`, way back in those kinder
+days when we were just doing descriptive statistics. The sample variance of
+*Y* is defined as follows
 
 .. math:: \mbox{Var}(Y) = \frac{1}{N} \sum_{k=1}^G \sum_{i=1}^{N_k} \left(Y_{ik} - \bar{Y} \right)^2
 
 This formula looks pretty much identical to the formula for the variance in
-`Measures of variability <Ch04_Descriptives_2.html#measures-of-variability>`__.
-The only difference is that this time around I’ve got two summations here: I’m
-summing over groups (i.e., values for *k*) and over the people within the
-groups (i.e., values for *:`i*). This is purely a cosmetic detail. If I’d
-instead used the notation |Y_p| to refer to the value of the outcome
-variable for person *p* in the sample, then I’d only have a single
-summation. The only reason that we have a double summation here is that
-I’ve classified people into groups, and then assigned numbers to people
-within groups.
+:doc:`Measures of variability <Ch04_Descriptives_2>`. The only difference is
+that this time around I’ve got two summations here: I’m summing over groups
+(i.e., values for *k*) and over the people within the groups (i.e., values for
+*:`i*). This is purely a cosmetic detail. If I’d instead used the notation
+|Y_p| to refer to the value of the outcome variable for person *p* in the
+sample, then I’d only have a single summation. The only reason that we have a
+double summation here is that I’ve classified people into groups, and then
+assigned numbers to people within groups.
 
-A concrete example might be useful here. Let’s consider this table, in
-which we have a total of *N* = 5 people sorted into :*G* = 2
-groups. Arbitrarily, let’s say that the “cool” people are group 1 and
-the “uncool” people are group 2. It turns out that we have three cool
-people (*N*\ :sub:`1` = 3) and two uncool people (*N*\ :sub:`2` = 2)
+A concrete example might be useful here. Let’s consider this table, in which we
+have a total of *N* = 5 people sorted into :*G* = 2 groups. Arbitrarily, let’s
+say that the “cool” people are group 1 and the “uncool” people are group 2. It
+turns out that we have three cool people (*N*\ :sub:`1` = 3) and two uncool
+people (*N*\ :sub:`2` = 2).
 
 +------+--------+--------+------------+----------------+-----------------+
 | name | person | group  | group num. | index in group |      grumpiness |
@@ -266,22 +263,20 @@ evidence we have against the null hypothesis. But how large does
 to understand this, you need a slightly deeper understanding of what
 ANOVA is and what the mean squares values actually are.
 
-The next section discusses that in a bit of detail, but for readers that
-aren’t interested in the details of what the test is actually measuring
-I’ll cut to the chase. In order to complete our hypothesis test we need
-to know the sampling distribution for *F* if the null hypothesis
-is true. Not surprisingly, the sampling distribution for the *F*
-statistic under the null hypothesis is an *F* distribution. If you
-recall our discussion of the *F* distribution in Chapter `Introduction to 
-probability <Ch07_Probability.html#introduction-to-probability>`__, the
+The next section discusses that in a bit of detail, but for readers that aren’t
+interested in the details of what the test is actually measuring I’ll cut to
+the chase. In order to complete our hypothesis test we need to know the
+sampling distribution for *F* if the null hypothesis is true. Not surprisingly,
+the sampling distribution for the *F* statistic under the null hypothesis is an
+*F* distribution. If you recall our discussion of the *F* distribution in
+chapter :doc:`Introduction to probability <Ch07_Probability>`, the
 *F*-distribution has two parameters, corresponding to the two degrees of
-freedom involved. The first one *df*\ :sub:`1` is the between groups
-degrees of freedom |df_b|, and the second one *df*\ :sub:`2` is
-the within groups degrees of freedom |df_w|\.
+freedom involved. The first one *df*\ :sub:`1` is the between groups degrees of
+freedom |df_b|, and the second one *df*\ :sub:`2` is the within groups degrees
+of freedom |df_w|\.
 
-A summary of all the key quantities involved in a one-way ANOVA,
-including the formulas showing how they are calculated, is shown in
-:numref:`tab-anovatable`.
+A summary of all the key quantities involved in a one-way ANOVA, including the
+formulas showing how they are calculated, is shown in :numref:`tab-anovatable`.
 
 .. _tab-anovatable:
 .. table:: All of the key quantities involved in an ANOVA organised
@@ -325,12 +320,11 @@ as a statistical model
 
 |Y_ik| = µ + ϵ\ :sub:`ik`
 
-where we make the *assumption* (discussed later) that the residual
-values ϵ\ :sub:`ik` are normally distributed, with mean 0 and a
-standard deviation *σ* that is the same for all groups. To
-use the notation that we introduced in Chapter `Introduction to probability 
-<Ch07_Probability.html#introduction-to-probability>`__ we would write this
-assumption like this:
+where we make the *assumption* (discussed later) that the residual values
+ϵ\ :sub:`ik` are normally distributed, with mean 0 and a standard deviation *σ*
+that is the same for all groups. To use the notation that we introduced in
+chapter :doc:`Introduction to probability <Ch07_Probability>` we would write
+this assumption like this:
 
 ϵ\ :sub:`ik` ~ Normal(0, σ²)
 
@@ -348,19 +342,16 @@ distributed with mean 0 and standard deviation *σ*. That is,
 the alternative hypothesis also assumes that
 ϵ ~ Normal(0, σ²)
 
-Okay, now that we’ve described the statistical models underpinning
-H\ :sub:`0` and H\ :sub:`1` in more detail, it’s now pretty
-straightforward to say what the mean square values are measuring, and
-what this means for the interpretation of *F*. I won’t bore you
-with the proof of this but it turns out that the within-groups mean
-square, |MS_w|, can be viewed as an estimator (in the technical
-sense, Chapter `Estimating unknown quantities from a sample
-<Ch08_Estimation.html#estimating-unknown-quantities-from-a-sample>`__) of
-the error variance σ². The between-groups mean square |MS_b|
-is also an estimator, but what it estimates is the error variance *plus*
-a quantity that depends on the true differences among the group means.
-If we call this quantity Q, then we can see that the
-*F*-statistic is basically:\ [#]_
+Okay, now that we’ve described the statistical models underpinning H\ :sub:`0`
+and H\ :sub:`1` in more detail, it’s now pretty straightforward to say what the
+mean square values are measuring, and what this means for the interpretation of
+*F*. I won’t bore you with the proof of this but it turns out that the
+within-groups mean square, |MS_w|, can be viewed as an estimator (in the
+technical sense, chapter :doc:`Estimating unknown quantities from a sample
+<Ch08_Estimation>`) of the error variance σ². The between-groups mean square
+|MS_b| is also an estimator, but what it estimates is the error variance *plus*
+a quantity that depends on the true differences among the group means. If we
+call this quantity Q, then we can see that the *F*-statistic is basically:\ [#]_
 
 .. math:: F = \frac{\hat{Q} + \hat\sigma^2}{\hat\sigma^2}
 
@@ -374,20 +365,18 @@ that if the null hypothesis is true the sampling distribution of the
 *F* ratio has a mean of 1,\ [#]_ and so we need to see
 *F*-values larger than 1 in order to safely reject the null.
 
-To be a bit more precise about the sampling distribution, notice that if
-the null hypothesis is true, both |MS_b| and |MS_w| are
-estimators of the variance of the residuals ϵ\ :sub:`ik`. If
-those residuals are normally distributed, then you might suspect that
-the estimate of the variance of ϵ\ :sub:`ik` is χ²-distributed,
-because (as discussed in `Other useful distributions 
-<Ch07_Probability_6.html#other-useful-distributions>`__) that’s what a
-χ²-distribution *is*: it’s what you get when you square a bunch of
-normally-distributed things and add them up. And since the *F*
-distribution is (again, by definition) what you get when you take the
-ratio between two things that are χ² distributed, we have
-our sampling distribution. Obviously, I’m glossing over a whole lot of
-stuff when I say this, but in broad terms, this really is where our
-sampling distribution comes from.
+To be a bit more precise about the sampling distribution, notice that if the
+null hypothesis is true, both |MS_b| and |MS_w| are estimators of the variance
+of the residuals ϵ\ :sub:`ik`. If those residuals are normally distributed,
+then you might suspect that the estimate of the variance of ϵ\ :sub:`ik` is
+χ²-distributed, because (as discussed in :doc:`Other useful distributions
+<Ch07_Probability_6>`) that’s what a χ²-distribution *is*: it’s what you get
+when you square a bunch of normally-distributed things and add them up. And
+since the *F* distribution is (again, by definition) what you get when you take
+the ratio between two things that are χ² distributed, we have our sampling
+distribution. Obviously, I’m glossing over a whole lot of stuff when I say
+this, but in broad terms, this really is where our sampling distribution comes
+from.
 
 A worked example
 ~~~~~~~~~~~~~~~~
@@ -582,20 +571,20 @@ MS value.\ [#]_
 
 .. math:: F = \frac{\mbox{MS}_b }{\mbox{MS}_w} = \frac{1.727}{0.093} = 18.611
 
-Woohooo! This is terribly exciting, yes? Now that we have our test
-statistic, the last step is to find out whether the test itself gives us
-a significant result. As discussed in Chapter `Hypothesis testing
-<Ch09_HypothesisTesting.html#hypothesis-testing>`__ back in the “old days”
-what we’d do is open up a statistics textbook or flick to the back section
-which would actually have a huge lookup table and we would find the threshold
-*F* value corresponding to a particular value of alpha (the null hypothesis
-rejection region), e.g. 0.05, 0.01 or 0.001, for 2 and 15 degrees of freedom.
-Doing it this way would give us a threshold *F* value for an alpha of 0.001 of
-11.34. As this is less than our calculated *F* value we say that *p* < 0.001.
-But those were the old days, and nowadays fancy stats software calculates the
-exact *p*-value for you. In fact, the exact *p*-value is 0.000086. So, unless
-we’re being *extremely* conservative about our Type I error rate, we’re pretty
-much guaranteed to reject the null hypothesis.
+Woohooo! This is terribly exciting, yes? Now that we have our test statistic,
+the last step is to find out whether the test itself gives us a significant
+result. As discussed in chapter :doc:`Hypothesis testing
+<Ch09_HypothesisTesting>` back in the “old days” what we’d do is open up a
+statistics textbook or flick to the back section which would actually have a
+huge lookup table and we would find the threshold *F* value corresponding to a
+particular value of alpha (the null hypothesis rejection region), e.g. 0.05,
+0.01 or 0.001, for 2 and 15 degrees of freedom. Doing it this way would give
+us a threshold *F* value for an alpha of 0.001 of 11.34. As this is less than
+our calculated *F* value we say that *p* < 0.001. But those were the old days,
+and nowadays fancy stats software calculates the exact *p*-value for you. In
+fact, the exact *p*-value is 0.000086. So, unless we’re being *extremely*
+conservative about our Type I error rate, we’re pretty much guaranteed to
+reject the null hypothesis.
 
 At this point, we’re basically done. Having completed our calculations,
 it’s traditional to organise all these numbers into an ANOVA table like
@@ -637,13 +626,12 @@ Sigh. So much work for one short sentence.
    the error variance, or SS\ :sub:`error`
 
 .. [#]
-   If you read ahead to Chapter `Factorial ANOVA
-   <Ch14_ANOVA2.html#factorial-anova>`__ and look at how the “treatment effect”
-   at level k of a factor is defined in terms of the α\ :sub:`k` values (see
-   Section `Factorial ANOVA 2: balanced designs, interactions allowed
-   <Ch14_ANOVA2_02.html#factorial-anova-2-balanced-designs-interactions-allowed>`__),
-   it turns out that Q refers to a weighted mean of the squared treatment
-   effects, :math:`Q = (\sum_{k=1}^G N_k \alpha_k^2)/(G-1)`.
+   If you read ahead to chapter :doc:`Factorial ANOVA <Ch14_ANOVA2>` and look
+   at how the “treatment effect” at level k of a factor is defined in terms of
+   the α\ :sub:`k` values (see section :doc:`Factorial ANOVA 2: balanced
+   designs, interactions allowed <Ch14_ANOVA2_02>`), it turns out that Q refers
+   to a weighted mean of the squared treatment effects,
+   :math:`Q = (\sum_{k=1}^G N_k \alpha_k^2)/(G-1)`.
 
 .. [#]
    Or, if we want to be sticklers for accuracy,

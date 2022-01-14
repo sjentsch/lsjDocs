@@ -7,9 +7,9 @@ Statistical theory: A Prelude
 The part on statistical theory is by far the most theoretical, focusing as it
 does on the theory of statistical inference. Over the next three chapters my
 goal is to give you an :doc:`introduction to probability theory
-<Ch07_Probability>`, sampling and estimation (Chapter :doc:`Estimating unknown
+<Ch07_Probability>`, sampling and estimation (chapter :doc:`Estimating unknown
 quantities from a sample <Ch08_Estimation>`) and statistical hypothesis testing
-(Chapter :doc:`Hypothesis testing <Ch09_HypothesisTesting>`). Before we get
+(chapter :doc:`Hypothesis testing <Ch09_HypothesisTesting>`). Before we get
 started though, I want to say something about the big picture. Statistical
 inference is primarily about *learning from data*. The goal is no longer merely
 to describe our data but to use the data to draw conclusions about the world.

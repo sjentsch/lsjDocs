@@ -3,26 +3,24 @@
 Checking the normality of a sample
 ----------------------------------
 
-All of the tests that we have discussed so far in this chapter have
-assumed that the data are normally distributed. This assumption is often
-quite reasonable, because `the central limit theorem
-<Ch08_Estimation_3.html#the-central-limit-theorem>`__ does tend to ensure that
-many real world quantities are normally distributed. Any time that you suspect
-that your variable is *actually* an average of lots of different things,
-there’s a pretty good chance that it will be normally distributed, or at
-least close enough to normal that you can get away with using
-*t*-tests. However, life doesn’t come with guarantees, and besides
-there are lots of ways in which you can end up with variables that are
-highly non-normal. For example, any time you think that your variable is
-actually the minimum of lots of different things, there’s a very good
-chance it will end up quite skewed. In psychology, response time (RT)
-data is a good example of this. If you suppose that there are lots of
-things that could trigger a response from a human participant, then the
-actual response will occur the first time one of these trigger events
-occurs.\ [#]_ This means that RT data are systematically non-normal.
-Okay, so if normality is assumed by all the tests, and is mostly but not
-always satisfied (at least approximately) by real world data, how can we
-check the normality of a sample? In this section I discuss two methods:
+All of the tests that we have discussed so far in this chapter have assumed
+that the data are normally distributed. This assumption is often quite
+reasonable, because :doc:`the central limit theorem <Ch08_Estimation_3>` does
+tend to ensure that many real world quantities are normally distributed. Any
+time that you suspect that your variable is *actually* an average of lots of
+different things, there’s a pretty good chance that it will be normally
+distributed, or at least close enough to normal that you can get away with
+using *t*-tests. However, life doesn’t come with guarantees, and besides there
+are lots of ways in which you can end up with variables that are highly
+non-normal. For example, any time you think that your variable is actually the
+minimum of lots of different things, there’s a very good chance it will end up
+quite skewed. In psychology, response time (RT) data is a good example of this.
+If you suppose that there are lots of things that could trigger a response from
+a human participant, then the actual response will occur the first time one of
+these trigger events occurs.\ [#]_ This means that RT data are systematically
+non-normal. Okay, so if normality is assumed by all the tests, and is mostly
+but not always satisfied (at least approximately) by real world data, how can
+we check the normality of a sample? In this section I discuss two methods:
 QQ plots and the Shapiro-Wilk test.
 
 QQ plots
@@ -100,23 +98,20 @@ where *X̄* is the mean of the observations, and the *a*\ :sub:`i` values are
 ... mumble, mumble ... something complicated that is a bit beyond the scope of
 an introductory text.
 
-Because it’s a little hard to explain the maths behind the *W*
-statistic, a better idea is to give a broad brush description of how it
-behaves. Unlike most of the test statistics that we’ll encounter in this
-book, it’s actually *small* values of *W* that indicate departure
-from normality. The *W* statistic has a maximum value of 1, which
-occurs when the data look “perfectly normal”. The smaller the value of
-*W* the less normal the data are. However, the sampling
-distribution for *W*, which is not one of the standard ones that I
-discussed in Chapter `Introduction to probability 
-<Ch07_Probability.html#introduction-to-probability>`__ and is in
-fact a complete pain in the arse to work with, does depend on the sample
-size *N*. To give you a feel for what these sampling distributions
-look like, I’ve plotted three of them in :numref:`fig-swdist`. Notice that,
-as the sample size starts to get large, the sampling distribution becomes
-very tightly clumped up near *W* = 1, and as a consequence, for larger samples
-*W* doesn’t have to be very much smaller than 1 in order for the
-test to be significant.
+Because it’s a little hard to explain the maths behind the *W* statistic, a
+better idea is to give a broad brush description of how it behaves. Unlike most
+of the test statistics that we’ll encounter in this book, it’s actually *small*
+values of *W* that indicate departure from normality. The *W* statistic has a
+maximum value of 1, which occurs when the data look “perfectly normal”. The
+smaller the value of *W* the less normal the data are. However, the sampling
+distribution for *W*, which is not one of the standard ones that I discussed in
+chapter :doc:`Introduction to probability <Ch07_Probability>` and is in fact a
+complete pain in the arse to work with, does depend on the sample size *N*. To
+give you a feel for what these sampling distributions look like, I’ve plotted
+three of them in :numref:`fig-swdist`. Notice that, as the sample size starts
+to get large, the sampling distribution becomes very tightly clumped up near
+*W* = 1, and as a consequence, for larger samples *W* doesn’t have to be very
+much smaller than 1 in order for the test to be significant.
 
 .. ----------------------------------------------------------------------------
 
@@ -147,9 +142,8 @@ In the meantime, it’s probably worth showing you an example of what happens to
 the QQ plot and the Shapiro-Wilk test when the data turn out to be non-normal.
 For that, let’s look at the distribution of our AFL winning margins data
 (``aflsmall_margins``), which if you remember back to th chapter on
-`Descriptive statistics <Ch04_Descriptives.html#descriptive-statistics>`__
-didn’t look like they came from a normal distribution at all. Here’s what
-happens to the QQ plot:
+:doc:`Descriptive statistics <Ch04_Descriptives>` didn’t look like they came
+from a normal distribution at all. Here’s what happens to the QQ plot:
 
 .. ----------------------------------------------------------------------------
 

@@ -184,10 +184,10 @@ called ``improvement``, let’s do that and see what we get
 
 The output shown in :numref:`fig-ttest_paired2` is (obviously) formatted
 exactly the same was as it was the last time we used the ‘One Sample *t*-Test’
-analysis (Section `The one-sample t-test
-<Ch11_tTest_02.html#the-one-sample-t-test>`__), and it confirms our intuition.
-There’s an average improvement of 1.4% from test 1 to test 2, and this is
-significantly different from 0 (*t*\(19) = 6.48, p < 0.001).
+analysis (section :doc:`The one-sample t-test <Ch11_tTest_02>`), and it
+confirms our intuition. There’s an average improvement of 1.4% from test 1 to
+test 2, and this is significantly different from 0 (*t*\(19) = 6.48,
+p < 0.001).
 
 However, suppose you’re lazy and you don’t want to go to all the effort
 of creating a new variable. Or perhaps you just want to keep the
@@ -213,12 +213,12 @@ which of course they have to be given that the paired samples
 ------
 
 .. [#]
-   This design is very similar to the one in Section `The McNemar test
-   <Ch10_ChiSquare_7.html#the-mcnemar-test>`__ that motivated the McNemar test.
-   This should be no surprise. Both are standard repeated measures designs
-   involving two measurements. The only difference is that this time our
-   outcome variable is interval scale (working memory capacity) rather than a
-   binary, nominal scale variable (a yes-or-no question).
+   This design is very similar to the one in section :doc:`The McNemar test
+   <Ch10_ChiSquare_7>` that motivated the McNemar test. This should be no
+   surprise. Both are standard repeated measures designs involving two
+   measurements. The only difference is that this time our outcome variable is
+   interval scale (working memory capacity) rather than a binary, nominal scale
+   variable (a yes-or-no question).
 
 .. [#]
    At this point we have Drs Harpo, Chico and Zeppo. No prizes for guessing who

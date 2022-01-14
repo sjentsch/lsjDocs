@@ -25,19 +25,18 @@ contingency table:
 +-----------+--------+-------+-------+
 
 At first pass, you might think that this situation lends itself to the Pearson
-`χ² test of independence
-<Ch10_ChiSquare_2.html#the-2-chi-square-test-of-independence-or-association>`__.
-However, a little bit of thought reveals that we’ve got a problem. We have 100
-participants but 200 observations. This is because each person has provided us
-with an answer in *both* the before column and the after column. What this
-means is that the 200 observations aren’t independent of each other. If voter A
-says “yes” the first time and voter B says “no”, then you’d expect that voter A
-is more likely to say “yes” the second time than voter B! The consequence of
-this is that the usual χ² test won’t give trustworthy answers due to the
-violation of the independence assumption. Now, if this were a really uncommon
-situation, I wouldn’t be bothering to waste your time talking about it. But
-it’s not uncommon at all. This is a *standard* repeated measures design, and
-none of the tests we’ve considered so far can handle it. Eek.
+:doc:`χ² test of independence <Ch10_ChiSquare_2>`. However, a little bit of
+thought reveals that we’ve got a problem. We have 100 participants but 200
+observations. This is because each person has provided us with an answer in
+*both* the before column and the after column. What this means is that the 200
+observations aren’t independent of each other. If voter A says “yes” the first
+time and voter B says “no”, then you’d expect that voter A is more likely to
+say “yes” the second time than voter B! The consequence of this is that the
+usual χ² test won’t give trustworthy answers due to the violation of the
+independence assumption. Now, if this were a really uncommon situation, I
+wouldn’t be bothering to waste your time talking about it. But it’s not
+uncommon at all. This is a *standard* repeated measures design, and none of
+the tests we’ve considered so far can handle it. Eek.
 
 The solution to the problem was published by `McNemar (1947)
 <References.html#mcnemar-1947>`__. The trick is to start by tabulating your

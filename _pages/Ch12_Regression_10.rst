@@ -122,17 +122,16 @@ non-standard.
 Three kinds of anomalous data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-One danger that you can run into with linear regression models is that
-your analysis might be disproportionately sensitive to a smallish number
-of “unusual” or “anomalous” observations. I discussed this idea
-previously in Section `Using box plots to detect outliers
-<Ch05_Graphics_2.html#using-box-plots-to-detect-outliers>`__
-in the context of discussing the outliers that get automatically
-identified by the ``Box plot`` option under ``Exploration`` → ``Descriptives``,
-but this time we need to be much more precise. In the context of linear
-regression, there are three conceptually distinct ways in which an
-observation might be called “anomalous”. All three are interesting, but
-they have rather different implications for your analysis.
+One danger that you can run into with linear regression models is that your
+analysis might be disproportionately sensitive to a smallish number of
+“unusual” or “anomalous” observations. I discussed this idea previously in
+section :doc:`Using box plots to detect outliers <Ch05_Graphics_2>` in the
+context of discussing the outliers that get automatically identified by the
+``Box plot`` option under ``Exploration`` → ``Descriptives``, but this time we
+need to be much more precise. In the context of linear regression, there are
+three conceptually distinct ways in which an observation might be called
+“anomalous”. All three are interesting, but they have rather different
+implications for your analysis.
 
 The first kind of unusual observation is an **outlier**. The definition
 of an outlier (in this context) is an observation that is very different
@@ -312,12 +311,11 @@ probably not worth worrying about.
 
 If we were worried, then in a lot of cases the solution to this problem (and
 many others) is to transform one or more of the variables. We discussed the
-basics of variable transformation in the sections `Transforming or recoding a
-variable <Ch06_DataHandling_3.html#transforming-or-recoding-a-variable>`__
-and `Mathematical functions and operations
-<Ch06_DataHandling_4.html#a-few-more-mathematical-functions-and-operations>`__,
-but I do want to make special note of one additional possibility that I didn’t
-explain fully earlier: the Box-Cox transform.
+basics of variable transformation in the sections :doc:`Transforming or
+recoding a variable <Ch06_DataHandling_3>` and :doc:`Mathematical functions and
+operations <Ch06_DataHandling_4>`, but I do want to make special note of one
+additional possibility that I didn’t explain fully earlier: the Box-Cox
+transform.
 
 .. _box-cox:
 

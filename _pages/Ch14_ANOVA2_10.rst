@@ -104,14 +104,14 @@ different from one another. To that end, it’s a lot more helpful to think of
 the three different kinds of ANOVA as three different *hypothesis testing
 strategies*. These different strategies lead to different SS values, to be
 sure, but it’s the strategy that is the important thing here, not the SS values
-themselves. Recall from Section `ANOVA as a linear model
-<Ch14_ANOVA2_06.html#anova-as-a-linear-model>`__, that any particular *F*-test
-is best thought of as a comparison between two linear models. So, when you’re
-looking at an ANOVA table, it helps to remember that each of those *F*-tests
-corresponds to a *pair* of models that are being compared. Of course, this
-leads naturally to the question of *which* pair of models is being compared.
-This is the fundamental difference between ANOVA Types I, II and III: each one
-corresponds to a different way of choosing the model pairs for the tests.
+themselves. Recall from section :doc:`ANOVA as a linear model <Ch14_ANOVA2_06>`,
+that any particular *F*-test is best thought of as a comparison between two
+linear models. So, when you’re looking at an ANOVA table, it helps to remember
+that each of those *F*-tests corresponds to a *pair* of models that are being
+compared. Of course, this leads naturally to the question of *which* pair of
+models is being compared. This is the fundamental difference between ANOVA
+Types I, II and III: each one corresponds to a different way of choosing the
+model pairs for the tests.
 
 Type I sum of squares
 ~~~~~~~~~~~~~~~~~~~~~
@@ -364,9 +364,9 @@ Type III sum of squares, see :numref:`fig-factorialanova18`.
 
 But be aware, one of the perverse features of the Type III testing strategy is
 that typically the results turn out to depend on the *contrasts* that you use
-to encode your factors (see Section `Different ways to specify contrasts
-<Ch14_ANOVA2_07.html#different-ways-to-specify-contrasts>`__ if you’ve
-forgotten what the different types of contrasts are).\ [#]_
+to encode your factors (see section :doc:`Different ways to specify contrasts
+<Ch14_ANOVA2_07>` if you’ve forgotten what the different types of contrasts
+are).\ [#]_
 
 Okay, so if the *p*-values that typically come out of Type III analyses (but
 not in jamovi) are so sensitive to the choice of contrasts, does that mean that

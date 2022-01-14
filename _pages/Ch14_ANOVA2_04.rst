@@ -23,21 +23,20 @@ checks we did for a one-way ANOVA.
 Homogeneity of variance
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-As mentioned in Section `Checking the homogeneity of variance assumption
-<Ch13_ANOVA_06.html#checking-the-homogeneity-of-variance-assumption>`__, it’s a
-good idea to visually inspect a plot of the standard deviations compared across
-different groups / categories, and also see if the Levene test is consistent
-with the visual inspection. The theory behind the Levene test was discussed in
-that section, so I won’t discuss it again. This test expects that you have a
-saturated model (i.e., including all of the relevant terms), because the test
-is primarily concerned with the within-group variance, and it doesn’t really
-make a lot of sense to calculate this any way other than with respect to the
-full model. The Levene test can be specified under the ANOVA ``Assumption
-Checks`` → ``Homogeneity Tests`` option in jamovi, with the result shown as in
-:numref:`fig-factorialanova5`. The fact that the Levene test is non-significant
-means that, providing it is consistent with a visual inspection of the plot of
-standard deviations, we can safely assume that the homogeneity of variance
-assumption is not violated.
+As mentioned in section :doc:`Checking the homogeneity of variance assumption
+<Ch13_ANOVA_06>`, it’s a good idea to visually inspect a plot of the standard
+deviations compared across different groups / categories, and also see if the
+Levene test is consistent with the visual inspection. The theory behind the
+Levene test was discussed in that section, so I won’t discuss it again. This
+test expects that you have a saturated model (i.e., including all of the
+relevant terms), because the test is primarily concerned with the within-group
+variance, and it doesn’t really make a lot of sense to calculate this any way
+other than with respect to the full model. The Levene test can be specified
+under the ANOVA ``Assumption Checks`` → ``Homogeneity Tests`` option in jamovi,
+with the result shown as in :numref:`fig-factorialanova5`. The fact that the
+Levene test is non-significant means that, providing it is consistent with a
+visual inspection of the plot of standard deviations, we can safely assume that
+the homogeneity of variance assumption is not violated.
 
 .. ----------------------------------------------------------------------------
 
@@ -52,8 +51,7 @@ assumption is not violated.
 Normality of residuals
 ~~~~~~~~~~~~~~~~~~~~~~
 
-As with one-way ANOVA we can test for the normality of residuals in a 
-straightforward fashion (see `Checking the normality assumption
-<Ch13_ANOVA_06.html#checking-the-normality-assumption>`__). Primarily though,
-it’s generally a good idea to examine the residuals graphically using a
-QQ-plot. See :numref:`fig-factorialanova5`.
+As with one-way ANOVA we can test for the normality of residuals in a
+straightforward fashion (see :doc:`Checking the normality assumption
+<Ch13_ANOVA_06>`). Primarily though, it’s generally a good idea to examine the
+residuals graphically using a QQ-plot. See :numref:`fig-factorialanova5`.

@@ -23,10 +23,10 @@ than columns, has a special name. It is called a **contrast matrix**. However,
 there are lots of different ways to specify a contrast matrix. In this section
 I discuss a few of the standard contrast matrices that statisticians use and
 how you can use them in jamovi. If you’re planning to read the section on
-unbalanced ANOVA later on (Section `Factorial ANOVA 3: unbalanced designs
-<Ch14_ANOVA2_10.html#factorial-anova-3-unbalanced-designs>`__), it’s worth
-reading this section carefully. If not, you can get away with skimming it,
-because the choice of contrasts doesn’t matter much for balanced designs.
+unbalanced ANOVA later on (section :doc:`Factorial ANOVA 3: unbalanced designs
+<Ch14_ANOVA2_10>`), it’s worth reading this section carefully. If not, you can
+get away with skimming it, because the choice of contrasts doesn’t matter much
+for balanced designs.
 
 Treatment contrasts
 ~~~~~~~~~~~~~~~~~~~
@@ -104,10 +104,10 @@ treatment contrasts, in which the intercept term corresponds to the group mean
 for the baseline category. This property can be very useful in some situations.
 It doesn’t matter very much if you have a balanced design, which we’ve been
 assuming so far, but it will turn out to be important later when we consider
-unbalanced designs in Section `Factorial ANOVA 3: unbalanced designs
-<Ch14_ANOVA2_10.html#factorial-anova-3-unbalanced-designs>`__. In fact, the
-main reason why I’ve even bothered to include this section is that contrasts
-become important if you want to understand unbalanced ANOVA.
+unbalanced designs in section :doc:`Factorial ANOVA 3: unbalanced designs
+<Ch14_ANOVA2_10>`. In fact, the main reason why I’ve even bothered to include
+this section is that contrasts become important if you want to understand
+unbalanced ANOVA.
 
 Sum to zero contrasts
 ~~~~~~~~~~~~~~~~~~~~~

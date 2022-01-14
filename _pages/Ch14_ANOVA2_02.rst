@@ -255,12 +255,11 @@ results of factorial ANOVA. First, there’s the same issue that we had with
 one-way ANOVA, which is that if you obtain a significant main effect of (say)
 ``drug``, it doesn’t tell you anything about which drugs are different to one
 another. To find that out, you need to run additional analyses. We’ll talk
-about some analyses that you can run in Sections `Different ways to specify
-contrasts <Ch14_ANOVA2_07.html#different-ways-to-specify-contrasts>`__ and
-`Post-hoc tests <Ch14_ANOVA2_08.html#post-hoc-tests>`__. The same is true for
-interaction effects. Knowing that there’s a significant interaction doesn’t
-tell you anything about what kind of interaction exists. Again, you’ll need to
-run additional analyses.
+about some analyses that you can run in sections :doc:`Different ways to
+specify contrasts <Ch14_ANOVA2_07>` and :doc:`Post-hoc tests <Ch14_ANOVA2_08>`.
+The same is true for interaction effects. Knowing that there’s a significant
+interaction doesn’t tell you anything about what kind of interaction exists.
+Again, you’ll need to run additional analyses.
 
 Secondly, there’s a very peculiar interpretation issue that arises when you
 obtain a significant interaction effect but no corresponding main effect. This
@@ -273,13 +272,13 @@ like to give in this situation is that you shouldn’t pay much attention to the
 main effects when an interaction is present. The reason they say this is that,
 although the tests of the main effects are perfectly valid from a mathematical
 point of view, when there is a significant interaction effect the main effects
-rarely test interesting hypotheses. Recall from Section `What hypotheses are we
-testing? <Ch14_ANOVA2_01.html#what-hypotheses-are-we-testing>`__ that the null
-hypothesis for a main effect is that the *marginal means* are equal to each
-other, and that a marginal mean is formed by averaging across several different
-groups. But if you have a significant interaction effect then you *know* that
-the groups that comprise the marginal mean aren’t homogeneous, so it’s not
-really obvious why you would even care about those marginal means.
+rarely test interesting hypotheses. Recall from section :doc:`What hypotheses
+are we testing? <Ch14_ANOVA2_01>` that the null hypothesis for a main effect is
+that the *marginal means* are equal to each other, and that a marginal mean is
+formed by averaging across several different groups. But if you have a
+significant interaction effect then you *know* that the groups that comprise
+the marginal mean aren’t homogeneous, so it’s not really obvious why you would
+even care about those marginal means.
 
 Here’s what I mean. Again, let’s stick with a clinical example. Suppose that we
 had a 2 × 2 design comparing two different treatments for phobias (e.g.,

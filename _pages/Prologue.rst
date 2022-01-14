@@ -111,7 +111,7 @@ this actually. A few quick comments...
    when people have pointed out typos or other errors. In particular
    it’s worth noting the issue associated with the etaSquared function
    in the **lsr** package (which isn’t really being maintained any more)
-   in Section 14.4. The function works fine for the simple examples in
+   in section 14.4. The function works fine for the simple examples in
    the book, but there are definitely bugs in there that I haven’t found
    time to check! So please take care with that one.
 
@@ -134,7 +134,7 @@ Best,
 Another year, another update. This time around, the update has focused
 almost entirely on the theory sections of the book. Chapters 9, 10 and
 11 have been rewritten, hopefully for the better. Along the same lines,
-Chapter 17 is entirely new, and focuses on Bayesian statistics. I think
+chapter 17 is entirely new, and focuses on Bayesian statistics. I think
 the changes have improved the book a great deal. I’ve always felt
 uncomfortable about the fact that all the inferential statistics in the
 book are presented from an orthodox perspective, even though I almost
@@ -152,7 +152,7 @@ deadlines, so the update has to go out the way it is!
 
 A year has gone by since I wrote the last preface. The book has changed
 in a few important ways: Chapters 3 and 4 do a better job of documenting
-some of the time saving features of Rstudio, Chapters 12 and 13 now make
+some of the time saving features of RStudio, chapters 12 and 13 now make
 use of new functions in the lsr package for running χ²-tests and t tests,
 and the discussion of correlations has been adapted to refer to the new
 functions in the lsr package. The soft copy of 0.4 now has better internal

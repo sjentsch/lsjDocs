@@ -102,18 +102,18 @@ This kind of theory-free search for group differences is referred to as
 **post-hoc analysis** (“post-hoc” being Latin for “after this”).\ [#]_
 
 It’s okay to run post-hoc analyses, but a lot of care is required. For
-instance, the analysis that I ran in the previous section should be avoided,
-as each *individual* *t*-test is designed to have a 5% Type I error rate
-(i.e., *α* = 0.05) and I ran three of these tests. Imagine what would have
-happened if my ANOVA involved 10 different groups, and I had decided to run 45
-“post-hoc” *t*-tests to try to find out which ones were significantly different
-from each other, you’d expect 2 or 3 of them to come up significant *by chance
-alone*. As we saw in Chapter `Hypothesis testing
-<Ch09_HypothesisTesting.html#hypothesis-testing>`__, the central organising
-principle behind null hypothesis testing is that we seek to control our Type I
-error rate, but now that I’m running lots of *t*-tests at once in order to
-determine the source of my ANOVA results, my actual Type I error rate across
-this whole *family* of tests has gotten completely out of control.
+instance, the analysis that I ran in the previous section should be avoided, as
+each *individual* *t*-test is designed to have a 5% Type I error rate (i.e.,
+*α* = 0.05) and I ran three of these tests. Imagine what would have happened if
+my ANOVA involved 10 different groups, and I had decided to run 45 “post-hoc”
+*t*-tests to try to find out which ones were significantly different from each
+other, you’d expect 2 or 3 of them to come up significant *by chance alone*. As
+we saw in chapter :doc:`Hypothesis testing <Ch09_HypothesisTesting>`, the
+central organising principle behind null hypothesis testing is that we seek to
+control our Type I error rate, but now that I’m running lots of *t*-tests at
+once in order to determine the source of my ANOVA results, my actual Type I
+error rate across this whole *family* of tests has gotten completely out of
+control.
 
 The usual solution to this problem is to introduce an adjustment to the
 *p*-value, which aims to control the total error rate across the family of
@@ -122,9 +122,9 @@ this form, which is usually (but not always) applied because one is doing
 post-hoc analysis, is often referred to as a **correction for multiple
 comparisons**, though it is sometimes referred to as “simultaneous inference”.
 In any case, there are quite a few different ways of doing this adjustment.
-I’ll discuss a few of them in this section and in Section `Post-hoc tests
-<Ch14_ANOVA2_08.html#post-hoc-tests>`__, but you should be aware that there are
-many other methods out there (`Hsu, 1996 <References.html#hsu-1996>`__\ ).
+I’ll discuss a few of them in this section and in section :doc:`Post-hoc tests
+<Ch14_ANOVA2_08>`, but you should be aware that there are many other methods
+out there (`Hsu, 1996 <References.html#hsu-1996>`__\ ).
 
 Bonferroni corrections
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -253,9 +253,8 @@ terribly informative.
    If you *do* have some theoretical basis for wanting to investigate some
    comparisons but not others, it’s a different story. In those circumstances
    you’re not really running “post-hoc” analyses at all, you’re making “planned
-   comparisons”. I do talk about this situation later in the book in Section
-   `The method of planned comparisons
-   <Ch14_ANOVA2_09.html#the-method-of-planned-comparisons>`__), but for now I
+   comparisons”. I do talk about this situation later in the book in section
+   :doc:`The method of planned comparisons <Ch14_ANOVA2_09>`), but for now I
    want to keep things simple.
 
 .. [#]

@@ -21,12 +21,11 @@ of each person after a 3 month run with each drug, and the overall
 data set. It contains the three variables ``drug``, ``therapy`` and
 ``mood.gain``.
 
-For the purposes of this chapter, what we’re really interested in is the
-effect of ``drug`` on ``mood.gain``. The first thing to do is calculate
-some descriptive statistics and draw some graphs. In `Descriptive statistics
-<Ch04_Descriptives.html#descriptive-statistics>`__ we showed you how to do
-this, and some of the descriptive statistics we can calculate in jamovi
-are shown in :numref`fig-anova1`.
+For the purposes of this chapter, what we’re really interested in is the effect
+of ``drug`` on ``mood.gain``. The first thing to do is calculate some
+descriptive statistics and draw some graphs. In :doc:`Descriptive statistics
+<Ch04_Descriptives>` we showed you how to do this, and some of the descriptive
+statistics we can calculate in jamovi are shown in :numref`fig-anova1`.
 
 .. ----------------------------------------------------------------------------
 

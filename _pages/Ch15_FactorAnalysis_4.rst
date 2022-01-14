@@ -10,9 +10,8 @@ in at this stage is to see how well the factors are measured using a scale that
 combines the observed variables.
 
 In psychometrics we use reliability analysis to provide information about how
-consistently a scale measures a psychological construct (see Section `Assessing
-the reliability of a measurement
-<Ch02_StudyDesign_3.html#assessing-the-reliability-of-a-measurement>`__).
+consistently a scale measures a psychological construct (see section
+:doc:`Assessing the reliability of a measurement <Ch02_StudyDesign_3>`).
 **Internal consistency** is what we are concerned with here, and that refers to
 the consistency across all the individual items that make up a measurement
 scale. So, if we have V1, V2, V3, V4 and V5 as observed item variables, then we

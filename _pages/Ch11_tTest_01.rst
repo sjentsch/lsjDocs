@@ -133,25 +133,23 @@ then it’s looking less likely that the null hypothesis is worth
 retaining. But how far away from zero should it be for us to reject
 H\ :sub:`0`?
 
-To figure that out we need to be a bit more sneaky, and we’ll need to
-rely on those two pieces of background knowledge that I wrote down
-previously; namely that the raw data are normally distributed and that
-we know the value of the population standard deviation *σ*.
-If the null hypothesis is actually true, and the true mean is
-*µ*\ :sub:`0`, then these facts together mean that we know the complete
-population distribution of the data: a normal distribution with mean *µ*\ :sub:`0`
-and standard deviation *σ*. Adopting the notation from Section
-`Normal distribution <Ch07_Probability_5.html#the-normal-distribution>`__,
-a statistician might write this as:
+To figure that out we need to be a bit more sneaky, and we’ll need to rely on
+those two pieces of background knowledge that I wrote down previously; namely
+that the raw data are normally distributed and that we know the value of the
+population standard deviation *σ*. If the null hypothesis is actually true, and
+the true mean is *µ*\ :sub:`0`, then these facts together mean that we know the
+complete population distribution of the data: a normal distribution with mean
+*µ*\ :sub:`0` and standard deviation *σ*. Adopting the notation from section
+:doc:`Normal distribution <Ch07_Probability_5>`, a statistician might write
+this as:
 
 | X ~ Normal(*µ*\ :sub:`0`, σ²)
 
-Okay, if that’s true, then what can we say about the distribution of *X̄*? Well,
-as we discussed earlier (see `The central limit theorem
-<Ch08_Estimation_3.html#the-central-limit-theorem>`__), the sampling
-distribution of the mean *X̄* is also normal, and has mean *µ*. But the standard
-deviation of this sampling distribution *SE(X̄)*, which is called the *standard
-error of the mean*, is
+Okay, if that’s true, then what can we say about the distribution of *X̄*?
+Well, as we discussed earlier (see :doc:`The central limit theorem
+<Ch08_Estimation_3>`), the sampling distribution of the mean *X̄* is also
+normal, and has mean *µ*. But the standard deviation of this sampling
+distribution *SE(X̄)*, which is called the *standard error of the mean*, is
 
 .. math:: SE(X̄) = \frac{\sigma}{\sqrt{N}}
 
@@ -160,13 +158,13 @@ distribution of the mean can be written as follows:
 
 | *X̄* ~ Normal(*µ*\ :sub:`0`, *SE(X̄)*)
 
-Now comes the trick. What we can do is convert the sample mean *X̄*
-into a `standard score <Ch04_Descriptives_5.html#standard-scores>`__. This is
-conventionally written as *z*, but for now I’m going to refer to it as
-*z*\ :sub:`X̄`. (The reason for using this expanded notation is to help
-you remember that we’re calculating a standardised version of a sample mean,
-*not* a standardised version of a single observation, which is what a *z*-score
-usually refers to). When we do so the *z*-score for our sample mean is:
+Now comes the trick. What we can do is convert the sample mean *X̄* into a
+:doc:`standard score <Ch04_Descriptives_5>`. This is conventionally written as
+*z*, but for now I’m going to refer to it as *z*\ :sub:`X̄` (the reason for
+using this expanded notation is to help you remember that we’re calculating a
+standardised version of a sample mean, *not* a standardised version of a single
+observation, which is what a *z*-score usually refers to). When we do so the
+*z*-score for our sample mean is:
 
 .. math:: z_{\bar{X}} = \frac{\bar{X} - \mu_0}{SE(X̄)}
 
@@ -180,16 +178,16 @@ distribution:
 
 | z\ :sub:`*X̄*` ~ Normal(0, 1)
 
-(again, see Section `Standard scores <Ch04_Descriptives_5.html#standard-scores>`__
-if you’ve forgotten why this is true). In other words, regardless of what scale
-the original data are on, the *z*-statistic itself always has the same
+(again, see section :doc:`Standard scores <Ch04_Descriptives_5>` if you’ve
+forgotten why this is true). In other words, regardless of what scale the
+original data are on, the *z*-statistic itself always has the same
 interpretation: it’s equal to the number of standard errors that separate the
-observed sample mean *X̄* from the population mean *µ*\ :sub:`0`
-predicted by the null hypothesis. Better yet, regardless of what the population
-parameters for the raw scores actually are, the 5% critical regions for the
-*z*-test are always the same, as illustrated in :numref:`fig-ztest`. And what
-this meant, way back in the days where people did all their statistics by hand,
-is that someone could publish a table like this:
+observed sample mean *X̄* from the population mean *µ*\ :sub:`0` predicted by
+the null hypothesis. Better yet, regardless of what the population parameters
+for the raw scores actually are, the 5% critical regions for the *z*-test are
+always the same, as illustrated in :numref:`fig-ztest`. And what this meant,
+way back in the days where people did all their statistics by hand, is that
+someone could publish a table like this:
 
 +-------------------+----------------+----------------+
 | desired *α* level | two-sided test | one-sided test |
@@ -275,8 +273,8 @@ the one sample *z*-test, makes three basic assumptions. These are:
 -  *Normality*. As usually described, the *z*-test assumes that the true
    population distribution is normal.\ [#]_ This is often a pretty reasonable
    assumption, and it’s also an assumption that we can check if we feel worried
-   about it (see Section `Checking the normality of a sample 
-   <Ch11_tTest_08.html#checking-the-normality-of-a-sample>`__).
+   about it (see section :doc:`Checking the normality of a sample
+   <Ch11_tTest_08>`).
 
 -  *Independence*. The second assumption of the test is that the
    observations in your data set are not correlated with each other, or

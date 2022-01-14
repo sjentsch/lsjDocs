@@ -31,7 +31,7 @@ topics:
    unusual beast. It’s not quite a descriptive statistic, and not quite an
    inference. Make sure you understand that section. It’ll come up again later.
 
-In the next Chapter we’ll move on to a discussion of how to draw pictures!
+In the next chapter we’ll move on to a discussion of how to draw pictures!
 Everyone loves a pretty picture, right? But before we do, I want to end on
 an important point. A traditional first course in statistics spends only a
 small proportion of the class on descriptive statistics, maybe one or two
