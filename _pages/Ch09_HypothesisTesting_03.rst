@@ -30,17 +30,16 @@ or to reject the null hypothesis in favour of the alternative. The name
 for this thing that we calculate to guide our choices is a **test
 statistic**.
 
-Having chosen a test statistic, the next step is to state precisely
-which values of the test statistic would cause us to reject the null
-hypothesis, and which values would cause us to keep it. In order to do
-so we need to determine what the **sampling distribution of the test
-statistic** would be if the null hypothesis were actually true (we
-talked about sampling distributions earlier in `Sampling distribution of the
-mean <Ch08_Estimation_3.html#sampling-distribution-of-the-mean>`__). Why do we
-need this? Because this distribution tells us exactly what values of
-*X* our null hypothesis would lead us to expect. And, therefore,
-we can use this distribution as a tool for assessing how closely the
-null hypothesis agrees with our data.
+Having chosen a test statistic, the next step is to state precisely which
+values of the test statistic would cause us to reject the null hypothesis, and
+which values would cause us to keep it. In order to do so we need to determine
+what the **sampling distribution of the test statistic** would be if the null
+hypothesis were actually true (we talked about sampling distributions earlier
+in :doc:`Sampling distribution of the mean <Ch08_Estimation_3>`). Why do we
+need this? Because this distribution tells us exactly what values of *X* our
+null hypothesis would lead us to expect. And, therefore, we can use this
+distribution as a tool for assessing how closely the null hypothesis agrees
+with our data.
 
 .. ----------------------------------------------------------------------------
 
@@ -57,21 +56,19 @@ null hypothesis agrees with our data.
    
 .. ----------------------------------------------------------------------------
 
-How do we actually determine the sampling distribution of the test
-statistic? For a lot of hypothesis tests this step is actually quite
-complicated, and later on in the book you’ll see me being slightly
-evasive about it for some of the tests (some of them I don’t even
-understand myself). However, sometimes it’s very easy. And, fortunately
-for us, our ESP example provides us with one of the easiest cases. Our
-population parameter *θ* is just the overall probability that
-people respond correctly when asked the question, and our test statistic
-*X* is the *count* of the number of people who did so out of a
-sample size of *N*. We’ve seen a distribution like this before, in Section
-`Binomial distribution <Ch07_Probability_4.html#the-binomial-distribution>`__,
-and that’s exactly what the binomial distribution describes! So, to use the
-notation and terminology
-that I introduced in that section, we would say that the null hypothesis
-predicts that *X* is binomially distributed, which is written
+How do we actually determine the sampling distribution of the test statistic?
+For a lot of hypothesis tests this step is actually quite complicated, and
+later on in the book you’ll see me being slightly evasive about it for some of
+the tests (some of them I don’t even understand myself). However, sometimes
+it’s very easy. And, fortunately for us, our ESP example provides us with one
+of the easiest cases. Our population parameter *θ* is just the overall
+probability that people respond correctly when asked the question, and our test
+statistic *X* is the *count* of the number of people who did so out of a sample
+size of *N*. We’ve seen a distribution like this before, in section
+:doc:`Binomial distribution <Ch07_Probability_4>`, and that’s exactly what the
+binomial distribution describes! So, to use the notation and terminology that I
+introduced in that section, we would say that the null hypothesis predicts that
+*X* is binomially distributed, which is written:
 
 *X* ~ Binomial(θ, N)
 

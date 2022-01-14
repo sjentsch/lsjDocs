@@ -3,13 +3,12 @@
 Effect size
 -----------
 
-As we discussed earlier in Section `Effect size, sample size and power
-<Ch09_HypothesisTesting_08.html#effect-size-sample-size-and-power>`__,
-it’s becoming commonplace to ask researchers to report some measure of effect
-size. So, let’s suppose that you’ve run your χ²-test, which turns out
-to be significant. So you now know that there is some association
-between your variables (independence test) or some deviation from the
-specified probabilities (goodness-of-fit test). Now you want to report a
+As we discussed earlier in section :doc:`Effect size, sample size and power
+<Ch09_HypothesisTesting_08>`, it’s becoming commonplace to ask researchers to
+report some measure of effect size. So, let’s suppose that you’ve run your
+χ²-test, which turns out to be significant. So you now know that there is some
+association between your variables (independence test) or some deviation from
+the specified probabilities (goodness-of-fit test). Now you want to report a
 measure of effect size. That is, given that there is an association or
 deviation, how strong is it?
 

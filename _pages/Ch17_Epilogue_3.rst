@@ -3,59 +3,54 @@
 Other ways of doing inference
 -----------------------------
 
-A different sense in which this book is incomplete is that it focuses
-pretty heavily on a very narrow and old-fashioned view of how inferential
-statistics should be done. In Chapter `Estimating unknown quantities from a
-sample <Ch08_Estimation.html#estimating-unknown-quantities-from-a-sample>`__
-I talked a little bit about the idea of unbiased estimators, sampling
-distributions and so on. In Chapter `Hypothesis testing
-<Ch09_HypothesisTesting.html#hypothesis-testing>`__ I talked
-about the theory of null hypothesis significance testing and p-values.
-These ideas have been around since the early 20th century, and the tools
-that I’ve talked about in the book rely very heavily on the theoretical
-ideas from that time. I’ve felt obligated to stick to those topics
-because the vast majority of data analysis in science is also reliant on
-those ideas. However, the theory of statistics is not restricted to those
-topics and, whilst everyone should know about them because of their
+A different sense in which this book is incomplete is that it focuses pretty
+heavily on a very narrow and old-fashioned view of how inferential statistics
+should be done. In chapter :doc:`Estimating unknown quantities from a sample
+<Ch08_Estimation>` I talked a little bit about the idea of unbiased estimators,
+sampling distributions and so on. In chapter :doc:`Hypothesis testing
+<Ch09_HypothesisTesting>` I talked about the theory of null hypothesis
+significance testing and p-values. These ideas have been around since the early
+20th century, and the tools that I’ve talked about in the book rely very
+heavily on the theoretical ideas from that time. I’ve felt obligated to stick
+to those topics because the vast majority of data analysis in science is also
+reliant on those ideas. However, the theory of statistics is not restricted to
+those topics and, whilst everyone should know about them because of their
 practical importance, in many respects those ideas do not represent best
-practice for contemporary data analysis. One of the things that I’m
-especially happy with is that I’ve been able to go a little beyond this.
-Chapter `Bayesian statistics <Ch16_Bayes.html#bayesian-statistics>`__
-now presents the Bayesian perspective in a reasonable amount of detail, but
-the book overall is still pretty heavily weighted towards the frequentist
-orthodoxy. Additionally, there are a number of other approaches to inference
-that are worth mentioning:
+practice for contemporary data analysis. One of the things that I’m especially
+happy with is that I’ve been able to go a little beyond this. Chapter
+:doc:`Bayesian statistics <Ch16_Bayes>` now presents the Bayesian perspective
+in a reasonable amount of detail, but the book overall is still pretty heavily
+weighted towards the frequentist orthodoxy. Additionally, there are a number of
+other approaches to inference that are worth mentioning:
 
 -  **Bootstrapping.** Throughout the book, whenever I’ve introduced a
    hypothesis test, I’ve had a strong tendency just to make assertions like
    “the sampling distribution for BLAH is a t-distribution” or something like
    that. In some cases, I’ve actually attempted to justify this assertion. For
-   example, when talking about χ²-tests in Chapter `Categorical data analysis
-   <Ch10_ChiSquare.html#categorical-data-analysis>`__, I made reference to the
-   known relationship between normal distributions and χ²-distributions (see
-   Chapter `Introduction to probability 
-   <Ch07_Probability.html#introduction-to-probability>`__ to explain how we end
-   up assuming that the sampling distribution of the goodness-of-fit
-   statistic is χ². However, it’s also the case that a lot of these
-   sampling distributions are, well, wrong. The χ²-test is a good example.
-   It is based on an assumption about the distribution of your data, an
-   assumption which is known to be wrong for small sample sizes! Back in
-   the early 20th century, there wasn’t much you could do about this
-   situation. Statisticians had developed mathematical results that said
-   that “under assumptions BLAH about the data, the sampling distribution
-   is approximately BLAH”, and that was about the best you could do. A lot
-   of times they didn’t even have that. There are lots of data analysis
-   situations for which no-one has found a mathematical solution for the
-   sampling distributions that you need. And so up until the late 20th
-   century, the corresponding tests didn’t exist or didn’t work. However,
-   computers have changed all that now. There are lots of fancy tricks,
-   and some not-so-fancy, that you can use to get around it. The simplest
-   of these is bootstrapping, and in it’s simplest form it’s incredibly
-   simple. What you do is simulate the results of your experiment lots and
-   lots of times, under the twin assumptions that (a) the null hypothesis
-   is true and (b) the unknown population distribution actually looks pretty
-   similar to your raw data. In other words, instead of assuming that the
-   data are (for instance) normally distributed, just assume that the
+   example, when talking about χ²-tests in chapter :doc:`Categorical data
+   analysis <Ch10_ChiSquare>`, I made reference to the known relationship
+   between normal distributions and χ²-distributions (see chapter
+   :doc:`Introduction to probability <Ch07_Probability>` to explain how we end
+   up assuming that the sampling distribution of the goodness-of-fit statistic
+   is χ². However, it’s also the case that a lot of these sampling
+   distributions are, well, wrong. The χ²-test is a good example. It is based
+   on an assumption about the distribution of your data, an assumption which is
+   known to be wrong for small sample sizes! Back in the early 20th century,
+   there wasn’t much you could do about this situation. Statisticians had
+   developed mathematical results that said that “under assumptions BLAH about
+   the data, the sampling distribution is approximately BLAH”, and that was
+   about the best you could do. A lot of times they didn’t even have that.
+   There are lots of data analysis situations for which no-one has found a
+   mathematical solution for the sampling distributions that you need. And so
+   up until the late 20th century, the corresponding tests didn’t exist or
+   didn’t work. However, computers have changed all that now. There are lots of
+   fancy tricks, and some not-so-fancy, that you can use to get around it. The
+   simplest of these is bootstrapping, and in it’s simplest form it’s
+   incredibly simple. What you do is simulate the results of your experiment
+   lots and lots of times, under the twin assumptions that (a) the null
+   hypothesis is true and (b) the unknown population distribution actually
+   looks pretty similar to your raw data. In other words, instead of assuming
+   that the data are (for instance) normally distributed, just assume that the
    population looks the same as your sample, and then use computers to
    simulate the sampling distribution for your test statistic if that
    assumption holds. Despite relying on a somewhat dubious assumption (i.e.,

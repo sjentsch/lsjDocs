@@ -25,33 +25,31 @@ The χ² (chi-square) test of independence (or association)
 
    -- Futurama, “Fear of a Bot Planet”
 
-The other day I was watching an animated documentary examining the
-quaint customs of the natives of the planet *Chapek 9*. Apparently, in
-order to gain access to their capital city a visitor must prove that
-they’re a robot, not a human. In order to determine whether or not a
-visitor is human, the natives ask whether the visitor prefers puppies,
-flowers, or large, properly formatted data files. “Pretty clever,” I
-thought to myself “but what if humans and robots have the same
-preferences? That probably wouldn’t be a very good test then, would it?”
-As it happens, I got my hands on the testing data that the civil
-authorities of *Chapek 9* used to check this. It turns out that what
-they did was very simple. They found a bunch of robots and a bunch of
-humans and asked them what they preferred. I saved their data in the
-|chapek9|_ data set, which we can now load into jamovi. As well as
-the ``ID`` variable that identifies individual people, there are two
-nominal text variables, ``species`` and ``choice``. In total there are
-180 entries in the data set, one for each person (counting both robots
-and humans as “people”) who was asked to make a choice. Specifically,
-there are 93 humans and 87 robots, and overwhelmingly the preferred
-choice is the data file. You can check this yourself by asking jamovi
-for Frequency Tables, under the ‘Exploration’ - ‘Descriptives’ button.
-However, this summary does not address the question we’re interested in.
-To do that, we need a more detailed description of the data. What we
-want to do is look at the ``choices`` broken down *by* ``species``. That
-is, we need to cross-tabulate the data (see `Tabulating and cross-tabulating
-data <Ch06_DataHandling_1.html#tabulating-and-cross-tabulating-data>`__). In
-jamovi we do this using the ``Frequencies`` → ``Contingency Tables`` → 
-``Independent Samples`` analysis, and we should get a table something like this:
+The other day I was watching an animated documentary examining the quaint
+customs of the natives of the planet *Chapek 9*. Apparently, in order to gain
+access to their capital city a visitor must prove that they’re a robot, not a
+human. In order to determine whether or not a visitor is human, the natives ask
+whether the visitor prefers puppies, flowers, or large, properly formatted data
+files. “Pretty clever,” I thought to myself “but what if humans and robots have
+the same preferences? That probably wouldn’t be a very good test then, would
+it?” As it happens, I got my hands on the testing data that the civil
+authorities of *Chapek 9* used to check this. It turns out that what they did
+was very simple. They found a bunch of robots and a bunch of humans and asked
+them what they preferred. I saved their data in the |chapek9|_ data set, which
+we can now load into jamovi. As well as the ``ID`` variable that identifies
+individual people, there are two nominal text variables, ``species`` and
+``choice``. In total there are 180 entries in the data set, one for each person
+(counting both robots and humans as “people”) who was asked to make a choice.
+Specifically, there are 93 humans and 87 robots, and overwhelmingly the
+preferred choice is the data file. You can check this yourself by asking jamovi
+for Frequency Tables, under the ‘Exploration’ - ‘Descriptives’ button. However,
+this summary does not address the question we’re interested in. To do that, we
+need a more detailed description of the data. What we want to do is look at the
+``choices`` broken down *by* ``species``. That is, we need to cross-tabulate
+the data (see :doc:`Tabulating and cross-tabulating data
+<Ch06_DataHandling_1>`). In jamovi we do this using the ``Frequencies`` →
+``Contingency Tables`` →  ``Independent Samples`` analysis, and we should get a
+table something like this:
 
 +------------+-------+-------+-------+
 |            | Robot | Human | Total |
@@ -143,8 +141,7 @@ and the true probability of anyone (regardless of species) choosing option
 Now, this is all very well and good, but we have a problem. Unlike the
 situation we had with the goodness-of-fit test, the null hypothesis
 doesn’t actually specify a particular value for *P*\ :sub:`i`. It’s
-something we have to `estimate from the data
-<Ch08_Estimation.html#estimating-unknown-quantities-from-a-sample>`__!
+something we have to :doc:`estimate from the data <Ch08_Estimation>`!
 Fortunately, this is pretty easy to do. If 28 out of 180 people selected
 the flowers, then a natural estimate for the probability of choosing
 flowers is 28 / 180, which is approximately 0.16. If we
