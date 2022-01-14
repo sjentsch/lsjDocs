@@ -26,7 +26,7 @@ jamovi is a free and open statistical software to bridge the gap between researc
 .. toctree::
    :maxdepth: 1
    :caption: An introduction to jamovi
-   :name: sec-lsj-work-with-data
+   :name: sec-lsj-introduction
 
    _pages/Ch03_jamoviIntro
    _pages/Ch04_Descriptives
