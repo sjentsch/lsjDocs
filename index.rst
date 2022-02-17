@@ -11,7 +11,7 @@ jamovi is a free and open statistical software to bridge the gap between researc
 .. toctree::
    :maxdepth: 1
    
-   _pages/Prologue
+   Other/Prologue
 
 
 .. toctree::
@@ -19,8 +19,8 @@ jamovi is a free and open statistical software to bridge the gap between researc
    :caption: Background
    :name: sec-lsj-background
 
-   _pages/Ch01_WhyStats
-   _pages/Ch02_StudyDesign
+   Ch01/Ch01_WhyStats
+   Ch02/Ch02_StudyDesign
 
 
 .. toctree::
@@ -28,10 +28,10 @@ jamovi is a free and open statistical software to bridge the gap between researc
    :caption: An introduction to jamovi
    :name: sec-lsj-introduction
 
-   _pages/Ch03_jamoviIntro
-   _pages/Ch04_Descriptives
-   _pages/Ch05_Graphics
-   _pages/Ch06_DataHandling
+   Ch03/Ch03_jamoviIntro
+   Ch04/Ch04_Descriptives
+   Ch05/Ch05_Graphics
+   Ch06/Ch06_DataHandling
 
 
 .. toctree::
@@ -39,10 +39,10 @@ jamovi is a free and open statistical software to bridge the gap between researc
    :caption: Statistical theory
    :name: sec-lsj-theory
 
-   _pages/StatTheory
-   _pages/Ch07_Probability
-   _pages/Ch08_Estimation
-   _pages/Ch09_HypothesisTesting
+   Other/StatTheory
+   Ch07/Ch07_Probability
+   Ch08/Ch08_Estimation
+   Ch09/Ch09_HypothesisTesting
 
 
 .. toctree::
@@ -51,13 +51,13 @@ jamovi is a free and open statistical software to bridge the gap between researc
    :hidden:
    :name: sec-lsj-tools
 
-   _pages/StatTools
-   _pages/Ch10_ChiSquare
-   _pages/Ch11_tTest
-   _pages/Ch12_Regression   
-   _pages/Ch13_ANOVA
-   _pages/Ch14_ANOVA2
-   _pages/Ch15_FactorAnalysis
+   Other/StatTools
+   Ch10/Ch10_ChiSquare
+   Ch11/Ch11_tTest
+   Ch12/Ch12_Regression   
+   Ch13/Ch13_ANOVA
+   Ch14/Ch14_ANOVA2
+   Ch15/Ch15_FactorAnalysis
 
 
 .. toctree::
@@ -65,11 +65,11 @@ jamovi is a free and open statistical software to bridge the gap between researc
    :caption: Endings, alternatives, prospects
    :name: sec-lsj-endings
 
-   _pages/Ch16_Bayes
-   _pages/Ch17_Epilogue
+   Ch16/Ch16_Bayes
+   Ch17/Ch17_Epilogue
 
 
 .. toctree::
    :maxdepth: 1
    
-   _pages/References
+   Other/References
