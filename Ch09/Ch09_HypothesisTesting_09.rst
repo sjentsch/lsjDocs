@@ -22,7 +22,7 @@ Neyman versus Fisher
 The first thing you should be aware of is that orthodox NHST is actually
 a mash-up of two rather different approaches to hypothesis testing, one
 proposed by Sir Ronald Fisher and the other proposed by Jerzy Neyman
-(see `Lehmann, 2011 <References.html#cronbach-1951>`__ for a historical
+(see `Lehmann, 2011 <../Other/References.html#cronbach-1951>`__ for a historical
 summary). The history is messy because Fisher and Neyman were real people
 whose opinions changed over time, and at no point did either of them offer
 “the definitive statement” of how we should interpret their work many
@@ -117,7 +117,7 @@ checking whether that’s consistent with how you’ve interpreted it.
 That’s where the biggest trap lies.
 
 To give an example of this, consider the following example (`Gelman &
-Stern, 2006 <References.html#gleman-2006>`__\ ). Suppose I’m running my
+Stern, 2006 <../Other/References.html#gleman-2006>`__\ ). Suppose I’m running my
 ESP study and I’ve decided to analyse the data separately for the male
 participants and the female participants. Of the male participants, 33
 out of 50 guessed the colour of the card correctly. This is a

@@ -3,8 +3,8 @@
 Bayesian hypothesis tests
 -------------------------
 
-In chapter :doc:`Hypothesis testing <../Ch09/Ch09_HypothesisTesting>`, I described the
-orthodox approach to hypothesis testing. It took an entire chapter to describe,
+In chapter :doc:`Hypothesis testing <../Ch09/Ch09_HypothesisTesting>`, I described
+the orthodox approach to hypothesis testing. It took an entire chapter to describe,
 because null hypothesis testing is a very elaborate contraption that people
 find very hard to make sense of. In contrast, the Bayesian approach to
 hypothesis testing is incredibly simple. Let’s pick a setting that is closely
@@ -92,9 +92,10 @@ factor of 4, it means that the evidence provided by your data corresponds to
 betting odds of 4:1 in favour of the alternative. However, there have been some
 attempts to quantify the standards of evidence that would be considered meaningful
 in a scientific context. The two most widely used are from `Jeffreys (1961)
-<References.html#jeffreys-1961>`__ and `Kass and Raftery (1995)
-<References.html#kass-1995>`__. Of the two, I tend to prefer the `Kass and Raftery (1995)
-<References.html#kass-1995>`__ table because it’s a bit more conservative. So here it is:
+<../Other/References.html#jeffreys-1961>`__ and `Kass and Raftery (1995)
+<../Other/References.html#kass-1995>`__. Of the two, I tend to prefer the `Kass
+and Raftery (1995) <../Other/References.html#kass-1995>`__ table because it’s a
+bit more conservative. So here it is:
 
 +--------------+----------------------+
 | Bayes factor | Interpretation       |
@@ -109,7 +110,7 @@ in a scientific context. The two most widely used are from `Jeffreys (1961)
 +--------------+----------------------+
 
 And to be perfectly honest, I think that even the `Kass and Raftery (1995)
-<References.html#kass-1995>`__ standards are being a bit charitable.
+<../Other/References.html#kass-1995>`__ standards are being a bit charitable.
 If it were up to me, I’d have called the “positive evidence” category
 “weak evidence”. To me, anything in the range 3:1 to 20:1 is “weak” or
 “modest” evidence at best. But there are no hard and fast rules here.

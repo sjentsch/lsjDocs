@@ -104,8 +104,8 @@ identical (*µ*\ :sub:`1` = *µ*\ :sub:`1`) and the alternative to this is that
 they are not (*µ*\ :sub:`1` ≠ *µ*\ :sub:`1`). Written in mathematical-ese,
 this is:
 
-| H_0: *µ*\ :sub:`1` = *µ*\ :sub:`2`
-| H_1: *µ*\ :sub:`1` ≠ *µ*\ :sub:`2`
+| H\ :sub:`0`: *µ*\ :sub:`1` = *µ*\ :sub:`2`
+| H\ :sub:`1`: *µ*\ :sub:`1` ≠ *µ*\ :sub:`2`
 
 .. ----------------------------------------------------------------------------
 

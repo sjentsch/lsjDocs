@@ -52,9 +52,9 @@ Introducing the *t*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This ambiguity is annoying, and it was resolved in 1908 by a guy called William
-Sealy Gosset (`Student, 1908 <References.html#student-1908>`__\ ), who was
+Sealy Gosset (`Student, 1908 <../Other/References.html#student-1908>`__\ ), who was
 working as a chemist for the Guinness brewery at the time
-(`Box, 1987 <References.html#box-1987>`__\ ). Because Guinness took a dim view
+(`Box, 1987 <../Other/References.html#box-1987>`__\ ). Because Guinness took a dim view
 of its employees publishing statistical analysis (apparently they felt it was a
 trade secret), he published the work under the pseudonym “A Student” and, to
 this day, the full name of the *t*-test is actually **Student’s *t*-test**. The

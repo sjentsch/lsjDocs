@@ -230,7 +230,7 @@ The item data were collected using a 6-point response scale:
 
 #. Very Accurate.
 
-A sample of N=250 responses is contained in the |bfi_sample|_ data set. In
+A sample of N = 250 responses is contained in the |bfi_sample|_ data set. In
 addition to the items, there are three further columns in the data set: ``ID``
 (the respondent ID, a five digit number) as well as the age (``age``) and the
 gender (``gender``) of the respondent.
@@ -314,7 +314,7 @@ data). Three different approaches are available:
 .. ----------------------------------------------------------------------------
 
 The third approach is a good one according to `Fabrigar et al. (1999)
-<References.html#fabrigar-1999>`__, although in practice researchers tend to
+<../Other/References.html#fabrigar-1999>`__, although in practice researchers tend to
 look at all three and then make a judgement about the number of factors that
 are most easily or helpfully interpreted. This can be understood as the
 “meaningfulness criterion”, and researchers will typically examine, in addition

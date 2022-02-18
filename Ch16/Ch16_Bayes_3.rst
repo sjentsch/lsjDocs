@@ -106,7 +106,7 @@ Evidentiary standards you can believe
      consider that [smaller values of *p*] indicate a real
      discrepancy.
      
-   -- `Sir Ronald Fisher (1925) <References.html#fisher-1925>`__
+   -- `Sir Ronald Fisher (1925) <../Other/References.html#fisher-1925>`__
 
 Consider the quote above by Sir Ronald Fisher, one of the founders of
 what has become the orthodox approach to statistics. If anyone has ever
@@ -126,7 +126,7 @@ It’s not an easy thing to do because a *p*-value is a
 fundamentally different kind of calculation to a Bayes factor, and they
 don’t measure the same thing. However, there have been some attempts to
 work out the relationship between the two, and it’s somewhat surprising.
-For example, `Johnson (2013) <References.html#johnson-2013>`__ presents
+For example, `Johnson (2013) <../Other/References.html#johnson-2013>`__ presents
 a pretty compelling case that (for *t*-tests at least) the 
 *p* < 0.05 threshold corresponds roughly to a Bayes factor of somewhere
 between 3:1 and 5:1 in favour of the alternative. If that’s right, then
@@ -134,7 +134,7 @@ Fisher’s claim is a bit of a stretch. Let’s suppose that the null hypothesis
 is true about half the time (i.e., the prior probability of H\ :sub:`0` is
 0.5), and we use those numbers to work out the posterior probability of
 the null hypothesis given that it has been rejected at *p* < 0.05.
-Using the data from `Johnson (2013) <References.html#johnson-2013>`__ ,
+Using the data from `Johnson (2013) <../Other/References.html#johnson-2013>`__ ,
 we see that if you reject the null at *p* < 0.05, you’ll be correct
 about 80% of the time. I don’t know about you but, in my opinion, an
 evidential standard that ensures you’ll be wrong on 20% of your decisions
@@ -157,7 +157,7 @@ The *p*-value is a lie.
 
 Okay, at this point you might be thinking that the real problem is not with
 orthodox statistics, just the *p* < 0.05 standard. In one sense, that’s
-true. The recommendation that `Johnson (2013) <References.html#johnson-2013>`__
+true. The recommendation that `Johnson (2013) <../Other/References.html#johnson-2013>`__
 gives is not that “everyone must be a Bayesian now”. Instead, the suggestion
 is that it would be wiser to shift the conventional standard to something like
 a *p* < 0.01 level. That’s not an unreasonable view to take, but in my view
@@ -315,7 +315,7 @@ I error. That’s, um, quite a bit bigger than the 5% that it’s supposed to be
 By way of comparison, imagine that you had used the following strategy. Start
 collecting data. Every single time an observation arrives, run a :doc:`Bayesian
 t-test <../Ch16/Ch16_Bayes_4>` and look at the Bayes factor. I’ll assume that `Johnson
-(2013) <References.html#johnson-2013>`__ is right, and I’ll treat a Bayes
+(2013) <../Other/References.html#johnson-2013>`__ is right, and I’ll treat a Bayes
 factor of 3:1 as roughly equivalent to a *p*-value of 0.05.\ [#]_ This time
 around, our trigger happy researcher uses the following procedure. If the Bayes
 factor is 3:1 or more in favour of the null, stop the experiment and retain the
@@ -435,7 +435,7 @@ Orthodox null hypothesis testing does not.\ [#]_
 
 .. [#]
    Some readers might wonder why I picked 3:1 rather than 5:1, given that
-   `Johnson (2013) <References.html#johnson-2013>`__ suggests that *p* = 0.05
+   `Johnson (2013) <../Other/References.html#johnson-2013>`__ suggests that *p* = 0.05
    lies somewhere in that range. I did so in order to be charitable to the
    *p*-value. If I’d chosen a 5:1 Bayes factor instead, the results would look
    even better for the Bayesian approach.

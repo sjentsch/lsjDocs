@@ -55,7 +55,7 @@ Epilogue: Good descriptive statistics are descriptive!
    | *950,000 – 1,200,000*
    
    -- Estimate of Soviet repression deaths, 1937-1938 (`Ellman, 2002
-      <References.html#ellman-2002>`__\ )
+      <../Other/References.html#ellman-2002>`__\ )
 
 Stalin’s infamous quote about the statistical character of the deaths of
 millions is worth giving some thought. The clear intent of his statement

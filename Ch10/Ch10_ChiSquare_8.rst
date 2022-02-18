@@ -26,10 +26,10 @@ The key ideas discussed in this chapter are:
    violations of independence.
 
 If you’re interested in learning more about categorical data analysis a
-good first choice would be `Agresti (2018) <References.html#agresti-2018>`__
+good first choice would be `Agresti (2018) <../Other/References.html#agresti-2018>`__
 which, as the title suggests, provides an *Introduction to Categorical Data
 Analysis*. If the introductory book isn’t enough for you (or can’t solve
 the problem you’re working on) you could consider `Agresti (2012)
-<References.html#agresti-2012>`__, *Categorical Data Analysis*. The
+<../Other/References.html#agresti-2012>`__, *Categorical Data Analysis*. The
 latter is a more advanced text, so it’s probably not wise to jump
 straight from this book to that one.

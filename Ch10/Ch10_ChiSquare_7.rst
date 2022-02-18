@@ -39,7 +39,7 @@ uncommon at all. This is a *standard* repeated measures design, and none of
 the tests we’ve considered so far can handle it. Eek.
 
 The solution to the problem was published by `McNemar (1947)
-<References.html#mcnemar-1947>`__. The trick is to start by tabulating your
+<../Other/References.html#mcnemar-1947>`__. The trick is to start by tabulating your
 data in a slightly different way:
 
 +----------------+-------------+------------+-------+

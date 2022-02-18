@@ -262,7 +262,7 @@ However, something that can never be stressed enough is that you should
 *always* look at the scatterplot before attaching any interpretation to the
 data. A correlation might not mean what you think it means. The classic
 illustration of this is “Anscombe’s Quartet” (`Anscombe, 1973
-<References.html#anscombe-1973>`__\ ), a collection of four data sets. Each
+<../Other/References.html#anscombe-1973>`__\ ), a collection of four data sets. Each
 data set has two variables, an *X* and a *Y*. For all four data sets the mean
 value for *X* is 9 and the mean for *Y* is 7.5. The standard deviations for all
 *X* variables are almost identical, as are those for the *Y* variables. And in

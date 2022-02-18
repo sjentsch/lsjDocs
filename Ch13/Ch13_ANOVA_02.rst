@@ -357,7 +357,7 @@ call this quantity Q, then we can see that the *F*-statistic is basically:\ [#]_
 
 where the true value Q = 0 if the null hypothesis is true, and
 Q > 0 if the alternative hypothesis is true (`Hays, 1994
-<References.html#hays-1994>`__\ , Ch. 10). Therefore, at a bare
+<../Other/References.html#hays-1994>`__\ , Ch. 10). Therefore, at a bare
 minimum *the *F* value must be larger than 1* to have any chance
 of rejecting the null hypothesis. Note that this *doesn’t* mean that
 it’s impossible to get an *F*-value less than 1. What it means is

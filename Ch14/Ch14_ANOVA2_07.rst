@@ -180,9 +180,9 @@ types are listed:
 .. [#]
    What’s the difference between treatment and simple contrasts, I hear
    you ask? Well, as a basic example consider a gender main effect, with
-   m=0 and f=1. The coefficient corresponding to the treatment contrast
+   m = 0 and f = 1. The coefficient corresponding to the treatment contrast
    will measure the difference in mean between females and males, and
    the intercept would be the mean of the males. However, with a simple
-   contrast, i.e., m=-1 and f=1, the intercept is the average of the
+   contrast, i.e., m = -1 and f = 1, the intercept is the average of the
    means and the main effect is the difference of each group mean from
    the intercept.

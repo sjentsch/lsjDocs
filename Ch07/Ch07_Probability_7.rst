@@ -29,7 +29,7 @@ devoted entirely to probability theory. Even the “simpler” task of documenti
 standard probability distributions is a big topic. I’ve described five standard
 probability distributions in this chapter, but sitting on my bookshelf I have a
 45-chapter book called “Statistical Distributions” (`Evans, 2000 
-<References.html#evans-2000>`__\ ) that lists a *lot* more than that.
+<../Other/References.html#evans-2000>`__\ ) that lists a *lot* more than that.
 Fortunately for you, very little of this is necessary. You’re unlikely to need
 to know dozens of statistical distributions when you go out and do real world
 data analysis, and you definitely won’t need them for this book, but it never

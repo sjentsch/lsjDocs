@@ -19,9 +19,9 @@ so far in this chapter, the assumptions are:
    tables you would probably be okay if at least 80% of the the expected
    frequencies are above 5 and none of them are below 1. However, from what
    I’ve been able to discover (`Cochran, 1954
-   <References.html#cochran-1954>`__\ ), these seem to have been proposed as
+   <../Other/References.html#cochran-1954>`__\ ), these seem to have been proposed as
    rough guidelines, not hard and fast rules, and they seem to be somewhat
-   conservative (`Larntz, 1978 <References.html#larntz-1978>`__\ ).
+   conservative (`Larntz, 1978 <../Other/References.html#larntz-1978>`__\ ).
 
 -  *Data are independent of one another*. One somewhat hidden assumption
    of the χ²-test is that you have to genuinely believe that the
@@ -43,7 +43,7 @@ so far in this chapter, the assumptions are:
    suppose I asked 50 people to select 4 cards. One possibility would be
    that *everyone* selects one heart, one club, one diamond and one
    spade (in keeping with the “representativeness heuristic”; `Tversky &
-   Kahneman, 1983 <References.html#tversky-1974>`__\ ). This is highly
+   Kahneman, 1983 <../Other/References.html#tversky-1974>`__\ ). This is highly
    non-random behaviour from people, but in this case I would get an observed
    frequency of 50 for all four suits. For this example the fact that
    the observations are non-independent (because the four cards that you

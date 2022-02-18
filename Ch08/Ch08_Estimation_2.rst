@@ -47,7 +47,7 @@ described the fact that we all share this intuition:
    himself and without any instruction (which is a remarkable thing), is
    convinced that the more observations have been made, the less danger
    there is of wandering from one’s goal* (`Stigler, 1986
-   <References.html#stigler-1986>`__\ ).
+   <../Other/References.html#stigler-1986>`__\ ).
 
 Okay, so the passage comes across as a bit condescending (not to mention 
 sexist), but his main point is correct. It really does feel obvious that more

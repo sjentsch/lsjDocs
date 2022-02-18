@@ -9,7 +9,7 @@ One answer would be “collect more data”, but that’s far too glib There
 are a lot of situations in which it would be either infeasible or
 unethical do that. If so, statisticians have a kind of moral obligation
 to provide scientists with better tests. In this instance, `Fisher (1922a)
-<References.html#fisher-1922a>`__ kindly provided the right answer to
+<../Other/References.html#fisher-1922a>`__ kindly provided the right answer to
 the question. To illustrate the basic idea let’s suppose that we’re
 analysing data from a field experiment looking at the emotional status
 of people who have been accused of Witchcraft, some of whom are
@@ -32,7 +32,7 @@ the χ²-test makes this very hard to test because of the small
 sample size. So, speaking as someone who doesn’t want to be set on fire,
 I’d *really* like to be able to get a better answer than this. This is
 where **Fisher’s exact test** (`Fisher, 1922a
-<References.html#fisher-1922a>`__\ ) comes in very handy.
+<../Other/References.html#fisher-1922a>`__\ ) comes in very handy.
 
 The Fisher exact test works somewhat differently to the χ²-test
 (or in fact any of the other hypothesis tests that I talk about in this

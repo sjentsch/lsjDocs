@@ -26,6 +26,6 @@ have discussed, the key topics were:
 As with all of the chapters in this book, there are quite a few different
 sources that I’ve relied upon, but the one stand-out text that I’ve been most
 heavily influenced by is `Sahai and Ageel (2000)
-<References.html#sahai-2000>`__. It’s not a good book for beginners, but it’s
+<../Other/References.html#sahai-2000>`__. It’s not a good book for beginners, but it’s
 an excellent book for more advanced readers who are interested in
 understanding the mathematics behind ANOVA.

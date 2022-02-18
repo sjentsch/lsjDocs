@@ -21,7 +21,7 @@ to summarize the observed data set without losing much information. However, if
 identification of underlying structure is a goal of the analysis, then EFA is
 to be preferred. And, as we saw, EFA produces factor scores that can be used
 for data reduction purposes just like principal component scores
-(`Fabrigar et al., 1999 <References.html#fabrigar-1999>`__\ ).
+(`Fabrigar et al., 1999 <../Other/References.html#fabrigar-1999>`__\ ).
 
 PCA has been popular in Psychology for a number of reasons, and therefore it’s
 worth covering, although nowadays EFA is just as easy to do given the power of
@@ -101,7 +101,7 @@ the data). As with EFA, three different approaches are available:
 .. ----------------------------------------------------------------------------
 
 The third approach is a good one according to `Fabrigar et al. (1999)
-<References.html#fabrigar-1999>`__, although in practice researchers tend to
+<../Other/References.html#fabrigar-1999>`__, although in practice researchers tend to
 look at all three and then make a judgement about the number of components that
 are most easily or helpfully interpreted. This can be understood as the
 “meaningfulness criterion”, and researchers will typically examine, in addition

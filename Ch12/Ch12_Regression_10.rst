@@ -26,12 +26,12 @@ don’t usually cover all of this in my intro stats class either. However,
 I do think it’s important that you get a sense of what tools are at your
 disposal, so I’ll try to introduce a bunch of them here. Finally, I
 should note that this section draws quite heavily from `Fox and Weisberg
-(2011) <References.html#fox-2011>`__, the book associated with the
+(2011) <../Other/References.html#fox-2011>`__, the book associated with the
 ``car`` package that is used to conduct regression analysis in R. The
 ``car`` package is notable for providing some excellent tools for
 regression diagnostics, and the book itself talks about them in an
 admirably clear fashion. I don’t want to sound too gushy about it, but I
-do think that `Fox and Weisberg (2011) <References.html#fox-2011>`__ is
+do think that `Fox and Weisberg (2011) <../Other/References.html#fox-2011>`__ is
 well worth reading, even if some of the advanced diagnostic techniques
 are only available in R and not jamovi.
 

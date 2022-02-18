@@ -4,7 +4,7 @@ Effect size
 -----------
 
 The most commonly used measure of effect size for a *t*-test is
-**Cohen’s d** (`Cohen, 1988 <References.html#cohen-1988>`__\ ).
+**Cohen’s d** (`Cohen, 1988 <../Other/References.html#cohen-1988>`__\ ).
 It’s a very simple measure in principle, with quite a few wrinkles when
 you start digging into the details. Cohen himself defined it primarily
 in the context of an independent samples *t*-test, specifically the
@@ -21,7 +21,7 @@ be pretty unambiguous, but it’s not. This is largely because Cohen
 wasn’t too specific on what he thought should be used as the measure of
 the standard deviation (in his defence he was trying to make a broader
 point in his book, not nitpick about tiny details). As discussed by
-`McGrath and Meyer (2006) <References.html#mcgrath-2006>`__, there are
+`McGrath and Meyer (2006) <../Other/References.html#mcgrath-2006>`__, there are
 several different versions in common usage, and each author tends to 
 adopt slightly different notation. For the sake of simplicity (as opposed
 to accuracy), I’ll use d to refer to any statistic that you calculate from
@@ -98,7 +98,7 @@ measure that appears in the *t*-test. This is the most commonly
 used version of Cohen’s *d* when applied to the outcome of a
 Student *t*-test, and is the one provided in jamovi. It is
 sometimes referred to as Hedges’ *g* statistic (`Hedges, 1981
-<References.html#hedges-1981>`__\ ).
+<../Other/References.html#hedges-1981>`__\ ).
 
 However, there are other possibilities which I’ll briefly describe.
 Firstly, you may have reason to want to use only one of the two groups
@@ -113,7 +113,7 @@ one version of Cohen’s *d* this correction is omitted, and instead
 we divide by *N*. This version makes sense primarily when you’re
 trying to calculate the effect size in the sample rather than estimating
 an effect size in the population. Finally, there is a version based on
-`Hedges and Olkin (1985) <References.html#hedges-1985>`__, who point out
+`Hedges and Olkin (1985) <../Other/References.html#hedges-1985>`__, who point out
 there is a small bias in the usual (pooled) estimation for Cohen’s *d*.
 Thus they introduce a small correction by multiplying the usual value of
 *d* by (*N* - 3) / (*N* - 2.25).

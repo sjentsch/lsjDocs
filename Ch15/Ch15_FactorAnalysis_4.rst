@@ -19,7 +19,7 @@ can calculate a statistic that tells us how internally consistent these items
 are in measuring the underlying construct.
 
 A popular statistic used to check the internal consistency of a scale is
-**Cronbach’s *α** (alpha; `Cronbach, 1951 <References.html#cronbach-1951>`__\ ).
+**Cronbach’s *α** (alpha; `Cronbach, 1951 <../Other/References.html#cronbach-1951>`__\ ).
 Cronbach’s *α* is a measure of equivalence (whether different sets of scale
 items would give the same measurement outcomes). Equivalence is tested by
 dividing the scale items into two groups (a “split-half”) and seeing whether

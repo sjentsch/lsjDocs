@@ -15,7 +15,7 @@ is of little use in real life.
    run we are all dead. Economists set themselves too easy, too useless
    a task, if in tempestuous seasons they can only tell us, that when
    the storm is long past, the ocean is flat again* (`Keynes, 1923
-   <References.html#keynes-1923>`__\ ).
+   <../Other/References.html#keynes-1923>`__\ ).
 
 As in economics, so too in psychology and statistics. It is not enough
 to know that we will *eventually* arrive at the right answer when

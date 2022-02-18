@@ -50,7 +50,7 @@ subjects in the independent ANOVA design).
 Repeated measures ANOVA in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-First, we need some data. `Geschwind (1972) <References.html#geschwind-1972>`__
+First, we need some data. `Geschwind (1972) <../Other/References.html#geschwind-1972>`__
 has suggested that the exact nature of a patient’s language deficit
 following a stroke can be used to diagnose the specific region of the
 brain that has been damaged. A researcher is concerned with identifying

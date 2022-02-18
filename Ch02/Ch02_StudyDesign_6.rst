@@ -42,7 +42,7 @@ discussed the following topics:
 
 All this should make clear to you that study design is a critical part
 of research methodology. I built this chapter from the classic little
-book by `Campbell and Stanley (1963) <References.html#campbell-1963>`__,
+book by `Campbell and Stanley (1963) <../Other/References.html#campbell-1963>`__,
 but there are of course a large number of textbooks out there on research
 design. Spend a few minutes with your favourite search engine and you’ll
 find dozens.

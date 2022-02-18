@@ -28,7 +28,7 @@ advanced graphics and plotting capability the packages available in
 R are much more powerful. One of the most popular graphics systems is
 provided by the ``ggplot2`` `R package <https://ggplot2.org>`__, which is
 loosely based on “The grammar of graphics” (`Wilkinson, 2006
-<References.html#wilkinson-2006>`__\ ). It’s not for novices. You need
+<../Other/References.html#wilkinson-2006>`__\ ). It’s not for novices. You need
 to have a pretty good grasp of R before you can start using it, and even
 then it takes a while to really get the hang of it. But when you’re
 ready it’s worth taking the time to teach yourself, because it’s a much

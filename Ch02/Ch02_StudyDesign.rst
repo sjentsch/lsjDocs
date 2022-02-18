@@ -36,9 +36,9 @@ more heavily on the scientific problem of research methodology, and much
 less on the statistical problem of data analysis. Nevertheless, the two
 problems are related to one another, so it’s traditional for stats
 textbooks to discuss the problem in a little detail. This chapter relies
-heavily on `Campbell and Stanley (1963) <References.html#campbell-1963>`__
+heavily on `Campbell and Stanley (1963) <../Other/References.html#campbell-1963>`__
 for the discussion of study design, and `Stevens (1946)
-<References.html#stevens-1946>`__ for the discussion of scales of measurement.
+<../Other/References.html#stevens-1946>`__ for the discussion of scales of measurement.
 
 ------
 

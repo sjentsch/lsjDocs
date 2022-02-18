@@ -19,7 +19,7 @@ where you’re testing multiple hypotheses, but they’re not necessarily the be
 choices if you’re interested in doing efficient post-hoc testing in an ANOVA
 context. There are actually quite a lot of different methods for performing
 multiple comparisons in the statistics literature (`Hsu, 1996
-<References.html#hsu-1996>`__\ ), and it would be beyond the scope of an
+<../Other/References.html#hsu-1996>`__\ ), and it would be beyond the scope of an
 introductory text like this one to discuss all of them in any detail.
 
 That being said, there’s one tool that I do want to draw your attention

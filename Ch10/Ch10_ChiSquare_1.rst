@@ -4,9 +4,9 @@ The χ² (chi-square) goodness-of-fit test
 ----------------------------------------
 
 The χ² goodness-of-fit test is one of the oldest hypothesis tests around. It 
-was invented by `Karl Pearson (1900) <References.html#pearson-1900>`__, with
+was invented by `Karl Pearson (1900) <../Other/References.html#pearson-1900>`__, with
 some corrections made later by `Sir Ronald Fisher (1922a)
-<References.html#fisher-1922a>`__. It tests whether an observed frequency
+<../Other/References.html#fisher-1922a>`__. It tests whether an observed frequency
 distribution of a nominal variable matches an expected frequency distribution.
 For example, suppose a group of patients has been undergoing an experimental
 treatment and have had their health assessed to see whether their condition has
@@ -596,7 +596,7 @@ the sampling distribution. That way, the stat block itself would tell you
 exactly what it was that the researcher had calculated. Sometimes this happens.
 For instance, the test statistic used in the Pearson goodness-of-fit test is
 written χ², but there’s a closely related test known as the *G*-test
-(`Sokal & Rohlf, 1994 <References.html#sokal-1994>`__\ ),\ [#]_ in which the
+(`Sokal & Rohlf, 1994 <../Other/References.html#sokal-1994>`__\ ),\ [#]_ in which the
 test statistic is written as *G*. As it happens, the Pearson goodness-of-fit
 test and the *G*-test both test the same null hypothesis, and the sampling
 distribution is exactly the same (i.e., a χ²-distribution  with *k* - 1
