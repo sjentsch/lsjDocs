@@ -22,6 +22,6 @@ sed -i "/Language:.*/d" _locale/pot/*.pot
 #      fi
 #   fi
 #done
-for L in da de es fr it ja ko no pt ru si sv tr zh; do 
+for L in $(cat .languages); do 
     sphinx-intl update -p _locale/pot -l ${L}
 done
