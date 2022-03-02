@@ -1,8 +1,10 @@
 # lsjDocs
 
-Readthedocs-version (rST / HTML) of "Learning statistics with jamovi"
+Web-version of "Learning statistics with jamovi" using (rST / HTML) Sphinx. The documentation is available at https://lsj.readthedocs.io (and translations can be chosen by clicking at the menu that unfolds after pressing at «Read the Docs» at the bottom). Whoever would like to contribute with translations, please read a little [further down](#translate).
 
-Install and build (first time):
+-----------
+
+### Install and build (first time):
 
    `$ virtualenv _env`<br>
    `$ source _env/bin/activate`<br>
@@ -16,26 +18,33 @@ Install and build (first time):
 
 -----------
 
-Install and build (later):<br>
+### Install and build (later):
+
    `$ virtualenv _env`<br>
    `$ source _env/bin/activate`<br>
    Set up and activate the virtual environment.<br>
 
-   `$ clear && make clean && make html`<br>
-   Remove all former contents of the build directory and create a first version of the HTML build (i.e., showing how the web is going to look like later).<br>
+   `$ ./.crtLng.sh`<br>
+   Creates / updates the language files.
 
-   `$ make gettext && cat .exclude | while read -r line; do rm -fR ${line}; done && for F in $(find _build/gettext/* -type f -name *.pot); do sed -n '/msgid "|.*|"/{N;s/.*//;x;d;};x;p;${x;p;}' ${F} | cat -s | sed 1d > tmp.pot && mv tmp.pot ${F}; done && for F in $(find _locale -name *.po); do FS=$(echo ${F} | cut -d"/" -f4-); if [ ! -e "_build/gettext/${FS}t" ]; then mv ${F} ${F}.rmv; fi; done && for L in da de es fr it ja ko no pt ru sv tr zh; do sphinx-intl update -p _build/gettext/ -l ${L}; done`<br>
-   The line combines several commands (separated by `&&` so that the next command is only run if the previous one was finished without error. The first command (make gettext) creates the text files (.pot) that later form the starting point for the translation files. The second command removes those files defined in .exclude because certain parts of the documentation, e.g., the developers-hub are not supposed to be translated. The third command does some cleaning in the .pot-files. The fourth command (for F in ...) changes the names of files (left-overs, e.g., if the file names for some parts of the original documentation were changed) by appending .rmv (those files are not removed straight-away since they may contain some earlier translations, so that it is better to copy those manually and afterwards remove those files). The last command (for L in ...) finally creates the output files for the translation into the different languages.<br>
+   `$ make clean && git remote update weblate && for L in en de; do sphinx-build -b html -D language=${L} . _build/html/${L}; rm -fR _build/html/${L}/.doctrees; if [ "${L}" != "en" ]; then cd _build/html/${L}; for D in _images _static; do rm -fR ${D}; ln -s ../en/${D}; done; cd -; fi; done`<br>
+   Pull the translated resources and build the documentation in the target language. Please note that if you would like to build for any other language than English (en) or German (de) you will have to add the language code in the for loop. After building, the doctree-pickles are removed and, if the lanaguage is not English (default), the directories _images and _static are removed from the translated directories and linked to the respective directories under "en".<br>
 
-<!---
-   `$ sphinx-intl update-txconfig-resources --pot-dir _build/gettext/ --transifex-project-name learning-statistics-with-jamovi && for F in $(grep "source_file" .tx/config | sed 's/source_file = //g'); do if [ ! -e ${F} ]; then echo "${F}: .pot file doesn't exist (anymore)"; fi; done`<br>
+   NB: Before using the weblate repository for the first time, it has to be added using the following command (the second part prevents from accidentially pushing to it):
+   `$ git remote add weblate https://hosted.weblate.org/git/lsjdocs/start/ && git remote set-url --push weblate DISABLED`
 
-   `$ tx push -s`<br>
-   Afterwards translate the resources on transifex.com<br>
-
-   `$ for L in de nb tr; do rm -fR _locale/${L}/LC_MESSAGES/* && rm -fR _build/${L} && tx pull -l ${L} && sphinx-build -b html -D language=${L} . _build/html/${L}; done`<br>  --->
-
-   `$ for L in de nb tr; do rm -fR _locale/${L}/LC_MESSAGES/* && rm -fR _build/${L} && sphinx-build -b html -D language=${L} . _build/html/${L}; done`<br>
-   Pull the translated resources and build the documentation in the target language<br>
-   
    After it is pushed to the github-repository, readthedocs is reading from the respective language project there (which is then integrated into the main documentation).<br>
+
+-----------
+
+### How to contribute with your translations?<a name="translate"></a>
+
+If you are willing to contribute to the project with translating it into your language, please [obtain further information about how to get involved](https://hosted.weblate.org/engage/lsjdocs/). The following status overview tells you how much content for your language already has been translated.
+
+<a href="https://hosted.weblate.org/engage/lsjdocs/">
+<img src="https://hosted.weblate.org/widgets/lsjdocs/-/multi-auto.svg" alt="Translation status" />
+</a>
+
+Please also have a look at two other translation projects related to jamovi, the [translation of the jamovi user interface](https://hosted.weblate.org/engage/jamovi/) and the [translation of the jamovi documentation](https://hosted.weblate.org/engage/jamovidocs/)
+
+We are grateful to the [Weblate-team](https://weblate.org/) who host libre projects as ours free of charge.
