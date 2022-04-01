@@ -48,7 +48,6 @@ jamovi is a free and open statistical software to bridge the gap between researc
 .. toctree::
    :maxdepth: 1
    :caption: Statistical tools
-   :hidden:
    :name: sec-lsj-tools
 
    Other/StatTools
@@ -71,5 +70,5 @@ jamovi is a free and open statistical software to bridge the gap between researc
 
 .. toctree::
    :maxdepth: 1
-   
+
    Other/References
