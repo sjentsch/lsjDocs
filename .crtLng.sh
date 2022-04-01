@@ -1,5 +1,5 @@
 #!/bin/bash
-clear && make clean && make html && make gettext
+clear && rm -fR _build/gettext && make gettext
 # clean substitions (typically image that shouldn't be translated) in order to simplify translation on Weblate
 for F in $(ls _build/gettext/* | grep -v -f .exclude | cut -d/ -f3); do
    msgmerge -q _locale/pot/${F} _build/gettext/${F} -o _locale/pot/${F}
@@ -22,6 +22,6 @@ sed -i "/Language:.*/d" _locale/pot/*.pot
 #      fi
 #   fi
 #done
-for L in $(cat .languages); do 
+for L in $(cat .languages); do
     sphinx-intl update -p _locale/pot -l ${L}
 done
