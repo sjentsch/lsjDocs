@@ -229,8 +229,8 @@ allow you to be “partially correct”, there’s nothing in between 5/10 and
 6/10. :numref:`tab-scalescont` summarises the relationship between the
 scales of measurement and the discrete / continuity distinction. Cells
 with a tick mark correspond to things that are possible. I’m trying to
-hammer this point home, because (a) some textbooks get this wrong, and
-\(b) people very often say things like “discrete variable” when they mean
+hammer this point home, because (a) some textbooks get this wrong, and (b)
+people very often say things like “discrete variable” when they mean
 “nominal scale variable”. It’s very unfortunate.
 
 .. _tab-scalescont:
