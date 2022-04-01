@@ -156,10 +156,10 @@ typical behaviour or attitudes. The items are organized by five putative
 factors: Agreeableness, Conscientiousness, Extraversion, Neuroticism, and
 Openness.
 
-.. _tab-bfi:
 .. table:: Twenty-five observed variable items organised by five putative
    personality factors in the |bfi_sample|_ data set. If there is an R in the
    second column, the item is reversed.
+   :name: tab-bfi
 
    +------+---+-------------------------------------------+
    | Name |   | Question / Item                           |

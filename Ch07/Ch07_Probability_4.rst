@@ -29,7 +29,6 @@ way, the skull probability for a single die is approximately 0.167.
 This is enough information to answer our question, so let’s have a look
 at how it’s done.
 
-.. _tab-distformulas:
 .. table:: Formulas for the binomial and normal distributions. We don’t really
    use these formulas for anything in this book, but they’re pretty important
    for more advanced work, so I thought it might be best to put them here in a
@@ -39,7 +38,8 @@ at how it’s done.
    exponential function, which we discussed in chapter :doc:`Pragmatic matters
    <../Ch06/Ch06_DataHandling>`. If these equations don’t make a lot of sense to you,
    don’t worry too much about them.
-
+   :name: tab-distformulas
+   
    +------------+----------+
    | Binomial   | Normal   |
    +============+==========+

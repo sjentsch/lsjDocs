@@ -278,11 +278,11 @@ of freedom |df_w|\.
 A summary of all the key quantities involved in a one-way ANOVA, including the
 formulas showing how they are calculated, is shown in :numref:`tab-anovatable`.
 
-.. _tab-anovatable:
 .. table:: All of the key quantities involved in an ANOVA organised
    into a “standard” ANOVA table. The formulas for all quantities
    (except the *p*-value which has a very ugly formula and would
    be nightmarishly hard to calculate without a computer) are shown.
+   :name: tab-anovatable
 
    +--------------------+----------------+-------------------+--------------------------+---------------------+---------------+
    |                    | df             | sum of squares    | mean squares             | *F*-statistic       | *p*-value     |

@@ -77,10 +77,10 @@ left is less than the number on the right. If it’s less, then jamovi returns a
 answer of ``TRUE``, but if the two numbers are equal, or if the one on the
 right is larger, then jamovi returns an answer of ``FALSE``.
 
-.. _tab-logicals:
 .. table:: Some logical operators. Technically I should be calling
    these “binary relational operators”, but quite frankly I don’t want
    to. It’s my book so no-one can make me.
+   :name: tab-logicals
 
    +--------------------------+----------+---------------+-----------+
    | operation                | operator | example input | answer    |
@@ -129,8 +129,8 @@ to be true. That’s what the ``or`` operator does:\ [#]_
 
    (2 + 2 == 4) or (2 + 2 == 5)
 
-.. _tab-logicals2:
 .. table:: Some more logical operators.
+   :name: tab-logicals2
 
    +-----------+----------+-----------------------+-----------+
    | operation | operator | example input         |    answer |

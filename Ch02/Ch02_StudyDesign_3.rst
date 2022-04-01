@@ -107,10 +107,10 @@ that I find more appealing. The terms that I’ll use in this book are
 do is use ``X`` (the predictors) to make guesses about ``Y`` (the outcomes).\ [#]_
 This is summarised in :numref:`tab-ivdv`.
 
-.. _tab-ivdv:
 .. table:: The terminology used to distinguish between different roles that a
    variable can play when analysing a data set. Note that this book will
    tend to avoid the classical terminology in favour of the newer names.
+   :name: tab-ivdv
 
    +------------------------+---------------------------+-------------+
    | role of the variable   | classical name            | modern name |

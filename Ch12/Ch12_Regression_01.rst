@@ -11,8 +11,8 @@ data.
 The data
 ~~~~~~~~
 
-.. _tab-parenthood:
 .. table:: Descriptive statistics for the |parenthood|_ data set.
+   :name: tab-parenthood
 
    +------------------------------+-------+-------+-------+--------+----------+-------+
    | Variable                     | min   | max   | mean  | median | std. dev | IQR   |
@@ -217,10 +217,10 @@ In short, the interpretation of a correlation depends a lot on the context.
 That said, the rough guide in :numref:`tab-interpretcorrelations` is
 pretty typical.
 
-.. _tab-interpretcorrelations:
 .. table:: A rough guide to interpreting correlations. Note that I say a
    *rough* guide. There aren’t hard and fast rules for what counts as strong or
    weak relationships. It depends on the context.
+   :name: tab-interpretcorrelations
 
    +--------------+-------------+-----------+
    | Correlation  | Strength    | Direction |

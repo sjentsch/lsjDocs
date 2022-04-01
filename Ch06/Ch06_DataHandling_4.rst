@@ -14,8 +14,8 @@ later.\ [#]_ Obviously this doesn’t even come close to cataloguing the range o
 possibilities available, but it does cover a range of functions that are used
 regularly in data analysis and that are available in jamovi.
 
-.. _tab-mathfunc:
 .. table:: Some of the mathematical functions available in jamovi
+   :name: tab-mathfunc
 
    +----------------+----------------------+----------------------+----------+
    |                | Function             | Example input        |   result |

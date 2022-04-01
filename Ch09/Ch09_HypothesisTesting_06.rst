@@ -94,7 +94,6 @@ Nevertheless, since these levels are fixed in advance by convention, it
 does prevent people choosing their *α* level after looking at
 the data.
 
-.. _tab-pvaltable:
 .. table:: A commonly adopted convention for reporting *p*
    values: in many places it is conventional to report one of four
    different things (e.g., *p* < 0.05) as shown below. I’ve included
@@ -102,7 +101,8 @@ the data.
    *p* < 0.05) because you sometimes see this notation produced by
    statistical software. It’s also worth noting that some people will
    write *n.s.* (not significant) rather than *p* > 0.05.
-
+   :name: tab-pvaltable
+   
    +-------------+---------+------------------------------+----------+
    | Usual       | Signif. | English                      | The null |
    | notation    | stars   | translation                  | is...    |

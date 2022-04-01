@@ -122,13 +122,13 @@ of the other rules that probabilities satisfy. These rules can be derived
 from the simple assumptions that I’ve outlined above, but since we don’t
 actually use these rules for anything in this book I won’t do so here.
 
-.. _tab-probrules:
 .. table::
    Some basic rules that probabilities must satisfy. You
    don’t really need to know these rules in order to understand the
    analyses that we’ll talk about later in the book, but they are
    important if you want to understand probability theory a bit more
    deeply.
+   :name: tab-probrules
 
    +-----------------+--------------+---+------------------------------------+
    | English         | Notation     |   | Formula                            |

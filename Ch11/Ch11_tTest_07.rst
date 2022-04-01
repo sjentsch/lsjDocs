@@ -33,7 +33,6 @@ is when you’re running a *t*-test, and jamovi has an option to
 calculate the effect size for all the different flavours of
 *t*-test it provides.
 
-.. _tab-cohensdinterpretation:
 .. table::
    A (very) rough guide to interpreting Cohen’s *d*. My personal recommendation
    is to not use these blindly. The *d*-statistic has a natural interpretation
@@ -42,6 +41,7 @@ calculate the effect size for all the different flavours of
    idea to think about what that means in practical terms. In some contexts a
    “small” effect could be of big practical importance. In other situations a
    “large” effect may not be all that interesting.
+   :name: tab-cohensdinterpretation
 
    +-----------+----------------------+
    | d-value   | rough interpretation |

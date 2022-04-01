@@ -226,16 +226,16 @@ you get right on a true-or-false test (a ratio scale variable) is also
 discrete. Since a true-or-false question doesn’t allow you to be “partially
 correct”, there’s nothing in between 5/10 and 6/10. The relationship between
 the scales of measurement and the discrete / continuity distinction is
-summarized in :numref:`tab-sclrel`. Cells with a tick mark correspond to
+summarized in :numref:`tab-scl`. Cells with a tick mark correspond to
 things that are possible. I’m trying to hammer this point home, because (a)
 some textbooks get this wrong, and (b) people very often say things like
 “discrete variable” when they mean “nominal scale variable”. It’s very
 unfortunate.
 
-.. _tab-sclrel:
 .. table:: The relationship between the scales of measurement and the
    discrete / continuity distinction. Cells with a tick mark correspond to
    things that are possible.  
+   :name: tab-scl
 
    +--------------+------------+----------+
    |              | continuous | discrete |
@@ -248,6 +248,7 @@ unfortunate.
    +--------------+------------+----------+
    | **ratio**    |          ✓ |        ✓ |
    +--------------+------------+----------+
+
 
 Some complexities
 ~~~~~~~~~~~~~~~~~

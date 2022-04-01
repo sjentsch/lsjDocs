@@ -58,9 +58,8 @@ the specific communication difficulties experienced by six patients
 suffering from Broca’s Aphasia (a language deficit commonly experienced
 following a stroke).
 
-.. _tab-RManova:
-.. table::
-   Number of attempts successfully completed on three experimental tasks.
+.. table:: Number of attempts successfully completed on three experimental tasks.
+   :name: tab-RManova
 
    +-------------+--------+------------+--------+
    | Participant | Speech | Conceptual | Syntax |
