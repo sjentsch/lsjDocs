@@ -1,8 +1,8 @@
 .. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_ and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_
 
-=========================
-An introduction to jamovi
-=========================
+===========================
+Getting started with jamovi
+===========================
 
 .. toctree::
    :maxdepth: 1

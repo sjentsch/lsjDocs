@@ -50,7 +50,6 @@ jamovi is a free and open statistical software to bridge the gap between researc
    :caption: Statistical tools
    :name: sec-lsj-tools
 
-   Other/StatTools
    Ch10/Ch10_ChiSquare
    Ch11/Ch11_tTest
    Ch12/Ch12_Regression   
