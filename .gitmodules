@@ -1,4 +1,4 @@
 [submodule "_locale"]
-    path = _locale
-    url = https://github.com/sjentsch/lsjDocs-i18n.git
-    branch = main
+	path = _locale
+	url = https://github.com/sjentsch/lsjDocs-i18n.git
+	branch = main
