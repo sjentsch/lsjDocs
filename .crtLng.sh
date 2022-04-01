@@ -1,4 +1,5 @@
 #!/bin/bash
+git submodule update --remote
 clear && rm -fR _build/gettext && make gettext
 # clean substitions (typically image that shouldn't be translated) in order to simplify translation on Weblate
 for F in $(ls _build/gettext/* | grep -v -f .exclude | cut -d/ -f3); do
