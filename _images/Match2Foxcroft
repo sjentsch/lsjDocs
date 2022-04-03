@@ -11,17 +11,34 @@ binomHeads{20,100}			lsj_binomHeads
 cltDemo{1,2,4,8}			lsj_cltDemo
 confIntReplicated{ ,2}			lsj_confIntSmp
 corr{0,33,33n,67,67n,100,100n}		lsj_corr
+fa1					lsj_efa2
+fa2					Table 
+fa3					delete (= fa1)
+fa4					lsj_efa3
+fa5					lsj_efa4
+fa6					lsj_efa5
+fa7					lsj_efa6
+fa8					lsj_efa7
+fa9					lsj_efa8
+fa10					lsj_efa9
+fa11					lsj_efa10
+fa12					lsj_efa11
+grumpCor{1,2}				lsj_grumpCor1
+grumpCor{2,3}				lsj_grumpCor2
+interaction[1-4]			lsj_interactions
+introPic{Bad,God}Line			lsj_introPicLine
+introPic{Bad,God}SSE			lsj_introPicSSE
 
+maineffect{0,A,B,AB}			lsj_maineffects
+{mean,median}				lsj_meanmedian
+normAreaOther[1-2]			lsj_normAreaOther
+normArea{1,2}SD				lsj_normAreaSD
+paired{Hist,Means,Scatterplot}		lsj_pairedMnSnH
+qqNormal{Plot,Hist}			lsj_qqNormal
+qq{HeavyTailed,Skewed}{Plot,Hist}	lsj_qqSkewedTailed
 
-
-
-
-
-
-
-
-
-
+samplingDist[1-3]			lsj_samplingDistDiffN
+zTest{One,Two}Tailed			lsj_zTestOneTwoTailed
 
 
 
