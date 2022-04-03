@@ -1,0 +1,29 @@
+berkeleyadmissions3			lsj_berkeleyadmissions
+ttesthyp1				lsj_oneSampleTTestHyp	
+critregion1				lsj_samplingDistMax
+fibonacci2				lsj_unusual_leverage
+harpo_{Anastasia,Bernadette}		lsj_harpoAnB
+IQ{population,sample100,sample10000}	lsj_IQ_Pop_Smp
+anova{Between,Within}			lsj_anovaBtwWth
+anscombe[1-4]				lsj_anscombe
+bias{Mean,SD}				lsj_biasMeanSD
+binomHeads{20,100}			lsj_binomHeads
+cltDemo{1,2,4,8}			lsj_cltDemo
+confIntReplicated{ ,2}			lsj_confIntSmp
+corr{0,33,33n,67,67n,100,100n}		lsj_corr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bar1
+boxplot
