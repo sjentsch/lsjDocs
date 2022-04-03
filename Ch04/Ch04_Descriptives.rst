@@ -23,7 +23,8 @@ the term “statistics” is synonymous with descriptive statistics. It is
 this topic that we’ll consider in this chapter, but before going into
 any details, let’s take a moment to get a sense of why we need
 descriptive statistics. To do this, let’s open the |aflsmall_margins|_
-data set and see what variables are stored in the file.
+data set and see what variables are stored in the file
+(:numref:`fig-aflsmall_margins`).
 
 .. ----------------------------------------------------------------------------
 

@@ -330,10 +330,10 @@ correlated. Dimensions of interest to psychologists and behavioural scientists
 are not often dimensions we would expect to be orthogonal, so oblique solutions
 are arguably more sensible.\ [#]_
 
-Practically, if in an oblique rotation the factors are found to be
+Practically, if in an oblique rotation the factors are found to be 
 substantially correlated (positive or negative, and > 0.3), as in
 :numref:`fig-efa6` where a correlation between two of the extracted factors is
--0.398, then this would confirm our intuition to prefer oblique rotation. If
+0.31, then this would confirm our intuition to prefer oblique rotation. If
 the factors are, in fact, correlated, then an oblique rotation will produce a
 better estimate of the true factors and a better simple structure than will an
 orthogonal rotation. And, if the oblique rotation indicates that the factors
@@ -385,12 +385,12 @@ loadings less than 0.3 (set in the options shown in :numref:`fig-efa3`).
       
 .. ----------------------------------------------------------------------------
 
-For Factors 1, 2, 3 and 4 the pattern of factor loadings closely matches the
+For factors 1, 2, 3 and 4 the pattern of factor loadings closely matches the
 putative factors specified in :numref:`tab-bfi`. Phew! And factor 5 is pretty
 close, with four of the five observed variables that putatively measure
 “Openness” loading pretty well onto the factor. Variable ``O4`` doesn’t quite
 seem to fit though, as the factor solution in :numref:`fig-efa7` suggests that
-it loads onto factor 3 (albeit with a relatively low loading) but not
+it loads onto factor 4 (albeit with a relatively low loading) but not
 substantively onto factor \5.
 
 The other thing to note is that those variables that were denoted as “R:
@@ -405,10 +405,10 @@ in :numref:`fig-efa7`.
 
 We can also see in :numref:`fig-efa7` the “uniqueness” of each variable.
 Uniqueness is the proportion of variance that is ‘unique’ to the variable and
-not explained by the factors.\ [#]_ For example, 74% of the variance in ``A1``
+not explained by the factors.\ [#]_ For example, 72% of the variance in ``A1``
 is not explained by the factors in the five factor solution. In contrast,
 ``N1`` has relatively low variance not accounted for by the factor solution
-(31%). Note that the greater the ‘uniqueness’, the lower the relevance or
+(35%). Note that the greater the ‘uniqueness’, the lower the relevance or
 contribution of the variable in the factor model.
 
 To be honest, it’s unusual to get such a neat solution in EFA. It’s typically
@@ -458,7 +458,8 @@ jamovi in two steps:
 .. ----------------------------------------------------------------------------
 
 Another option is to create an optimally-weighted factor score index. We can
-use the jamovi |Rj|_ editor to do this in ``R``. Again, there are two steps:
+use the jamovi |Rj|_ editor to do this in ``R``.\ [#]_ Again, there are two
+steps:
 
 #. Use the |Rj|_ editor to run the EFA in ``R`` to the same specification as
    the one in jamovi (i.e., five factors and Oblimin rotation) and compute
@@ -586,7 +587,12 @@ information to include in your write-up:
    solution. Uniqueness is equal to (1 - *communality*)
 
 .. [#]
-   remembering to first reverse score some variables if necessary
+   Remembering to first reverse score some variables if necessary.
+
+.. [#]
+   In the latest versions of jamovi you can now save factor scores directly
+   from within jamovi - it's an option. But this explanation is helpful as it's
+   a good insight into using R directly from jamovi.
 
 .. ----------------------------------------------------------------------------
 

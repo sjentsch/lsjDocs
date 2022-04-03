@@ -58,44 +58,44 @@ the data to possibly limit its use in some statistical analyses. Though there
 is no clear agreement on this interpretation. That said, this does indicate
 that the AFL winning margins data is somewhat skewed (0.780 / 0.183 = 4.262).
 
+The final measure that is sometimes referred to, though very rarely in practice,
+is the **kurtosis** of a data set. Put simply, kurtosis is a measure of how thin
+or fat the tails of a distribution are, as illustrated in :numref:`fig-kurtosis`.
+By convention, we say that the “normal curve” (black lines) has zero kurtosis,
+and the degree of kurtosis is assessed relative to this curve.
+
 .. ----------------------------------------------------------------------------
 
 .. _fig-kurtosis:
 .. figure:: ../_images/lsj_kurtosis.*
    :alt: Illustration of kurtosis
 
-   Illustration of kurtosis. On the left, we have a “platykurtic” data set
-   (kurtosis = -.95) meaning that the data set is “too flat”. In the middle we
-   have a “mesokurtic” data set (kurtosis is almost exactly 0) which means that
-   the pointiness of the data is just about right. Finally, on the right, we
-   have a “leptokurtic” data set (kurtosis “ 2.12) indicating that the data
-   set is “too pointy”. Note that kurtosis is measured with respect to a normal
-   curve (black line).
+   An illustration of kurtosis. On the left, we have a “platykurtic” distribution
+   (kurtosis = -.95) meaning that the distribution has ``thin'' or flat tails. In
+   the middle we have a “mesokurtic” distribution (kurtosis is almost exactly 0)
+   which means that the tails are neither thin or fat. Finally, on the right, we
+   have a “leptokurtic” distribution (kurtosis = 2.12) indicating that the 
+   distribution has “fat” tails. Note that kurtosis is measured with respect to a
+   normal distribution (black line).
       
 .. ----------------------------------------------------------------------------
 
-The final measure that is sometimes referred to, though very rarely in practice,
-is the **kurtosis** of a data set. Put simply, kurtosis is a measure of the
-“pointiness” of a data set, as illustrated in :numref:`fig-kurtosis`.
-By convention, we say that the “normal curve” (black lines) has zero kurtosis,
-so the pointiness of a data set is assessed relative to this curve.
+The data in the left panel of :numref:`fig-kurtosis` have a pretty flat
+distribution, with thin tails, so the kurtosis is negative and we call the data
+*platykurtic*. The data in the right panel have a distribution with fat tails,
+so the kurtosis is positive and we say that the data is *leptokurtic*. Only the
+data in the middle panel have neither thin or fat tails, so we say that it is
+*mesokurtic* and has kurtosis zero. This is summarised in the table below:
 
-The data in the left panel of :numref:`fig-kurtosis` are not pointy enough, so
-the kurtosis is negative and we call the data *platykurtic*. The data in the
-right panel are too pointy, so the kurtosis is positive and we say that the
-data is *leptokurtic*. Only the data in the middle panel are just pointy
-enough, so we say that it is *mesokurtic* and has kurtosis zero. This is
-summarised in the table below:
-
-+----------------------+----------------+----------------+
-| informal term        | technical name | kurtosis value |
-+======================+================+================+
-| “too flat”           | platykurtic    | negative       |
-+----------------------+----------------+----------------+
-| “just pointy enough” | mesokurtic     | zero           |
-+----------------------+----------------+----------------+
-| “too pointy”         | leptokurtic    | positive       |
-+----------------------+----------------+----------------+
++-----------------------------+----------------+----------------+
+| informal term               | technical name | kurtosis value |
++=============================+================+================+
+| “tails to thin”             | platykurtic    | negative       |
++-----------------------------+----------------+----------------+
+| “tails neither thin or fat” | mesokurtic     | zero           |
++-----------------------------+----------------+----------------+
+| “tails too fat”             | leptokurtic    | positive       |
++-----------------------------+----------------+----------------+
 
 The equation for kurtosis is pretty similar in spirit to the formulas
 we’ve seen already for the variance and the skewness. Except that where
@@ -110,7 +110,7 @@ I know, it’s not terribly interesting to me either.
 More to the point, jamovi has a check box for kurtosis just below the
 check box for skewness, and this gives a value for kurtosis of **0.101**
 with a standard error of **0.364**. This means that the AFL winning
-margins data are just pointy enough.
+margins data has only a small kurtosis, which is ok.
 
 ------
 

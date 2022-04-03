@@ -106,9 +106,9 @@ analysis in jamovi:
 
 Once done, look across at the jamovi results window. You should see something
 like :numref:`fig-rel2`. This tells us that the Cronbach’s *α* coefficient for
-the Agreeableness scale is 0.70. This means that just under 30% of the
+the Agreeableness scale is 0.72. This means that just under 30% of the
 Agreeableness scale score is error variance. McDonald’s *ω* is also given, and
-this is 0.72, not much different from *α*.
+this is 0.74, not much different from *α*.
 
 .. ----------------------------------------------------------------------------
 
@@ -126,12 +126,12 @@ from the scale. For example, *α* would increase to 0.72 and *ω* to 0.74 if we
 dropped item A1. This isn’t a big increase, so probably not worth doing.
 
 The process of calculating and checking scale statistics (*α* and *ω*) is the
-same for all the other scales (not shown): Conscientiousness (*α* = 0.73, *ω*
-= 0.74 ), Extraversion (*α* = 0.76, *ω* = 0.76), Neuroticism (*α* = 0.81, *ω*
-= 0.82) and Openness (*α* = 0.60, *ω* = 0.62). For Openness then, the amount of
-error variance in the Scale score is 40%, which is high and indicates that
+same for all the other scales, and they all had similar reliability estimates
+apart from Openness (*α* = 0.60, *ω* = 0.62). For Openness, the amount of error
+variance in the Scale score is around 40\%, which is high and indicates that
 Openness is substantially less consistent as a reliable measure of a
 personality attribute than the other personality scales.
+
 
 .. ----------------------------------------------------------------------------
 

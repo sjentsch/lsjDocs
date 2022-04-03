@@ -22,12 +22,12 @@ book. The topics covered were:
 -  *Saving image files*. Importantly, we also covered how to :doc:`export your
    pictures <../Ch05/Ch05_Graphics_3>`.
 
-One final thing to point out. Whilst jamovi produces some really neat
-default graphics, editing the plots is currently not possible. For more
-advanced graphics and plotting capability the packages available in
-R are much more powerful. One of the most popular graphics systems is
-provided by the ``ggplot2`` `R package <https://ggplot2.org>`__, which is
-loosely based on “The grammar of graphics” (`Wilkinson, 2006
+One final thing to point out. Whilst jamovi produces some really neat default
+graphics, editing the plots is currently not possible. For more advanced
+graphics and plotting capability the packages available in R are much more
+powerful. One of the most popular graphics systems is provided by the
+``ggplot2`` `R package <https://ggplot2.tidyverse.org>`__, which is loosely
+based on “The grammar of graphics” (`Wilkinson, 2006
 <../Other/References.html#wilkinson-2006>`__\ ). It’s not for novices. You need
 to have a pretty good grasp of R before you can start using it, and even
 then it takes a while to really get the hang of it. But when you’re

@@ -81,21 +81,15 @@ However, while failing this test is a pretty strong indicator that the model
 has problems, *passing* the test (i.e., rejecting the null) doesn’t imply that
 the model is good! Why is that, you might be wondering? The answer to that can
 be found by looking at the coefficients for the multiple regression model we
-have already looked at in section :doc:`Multiple linear regression
-<../Ch12/Ch12_Regression_05>` above, where the coefficients we got were:
-
-.. code-block:: rout
-
-   (Intercept)    dani.sleep    baby.sleep  
-        125.97         -8.95          0.01
-
-I can’t help but notice that the estimated regression coefficient for
-the ``baby.sleep`` variable is tiny (0.01), relative to the value that
-we get for ``dani.sleep`` (-8.95). Given that these two variables are
-absolutely on the same scale (they’re both measured in “hours slept”), I
-find this illuminating. In fact, I’m beginning to suspect that it’s
-really only the amount of sleep that *I* get that matters in order to
-predict my grumpiness.
+have already looked at :numref:`tab-parent_coeff` in section :doc:`Multiple
+linear regression <../Ch12/Ch12_Regression_05>` above, where the coefficients
+we got were 125.966 (for the intercept), -8.950 (for ``dani.sleep``) and 0.011
+(for ``baby.sleep``). I can’t help but notice that the estimated regression
+coefficient for the ``baby.sleep`` variable is tiny, relative to the value that
+we get for ``dani.sleep``. Given that these two variables are absolutely on the
+same scale (they’re both measured in “hours slept”), I find this illuminating.
+In fact, I’m beginning to suspect that it’s really only the amount of sleep
+that *I* get that matters in order to predict my grumpiness.
 
 We can re-use a hypothesis test that we discussed earlier, the
 *t*-test. The test that we’re interested in has a null hypothesis
@@ -142,7 +136,8 @@ Running the hypothesis tests in jamovi
 
 To compute all of the statistics that we have talked about so far, all
 you need to do is make sure the relevant options are checked in jamovi
-and then run the regression. If we do that, as in :numref:`fig-reg2`, we get a whole bunch of useful output.
+and then run the regression. If we do that, as in :numref:`fig-reg2`, we get
+a whole bunch of useful output.
 
 .. ----------------------------------------------------------------------------
 

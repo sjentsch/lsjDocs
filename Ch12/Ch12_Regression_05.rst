@@ -5,7 +5,7 @@ Multiple linear regression
 
 The simple linear regression model that we’ve discussed up to this point
 assumes that there’s a single predictor variable that you’re interested
-in, in this case ``dan.sleep``. In fact, up to this point *every*
+in, in this case ``dani.sleep``. In fact, up to this point *every*
 statistical tool that we’ve talked about has assumed that your analysis
 uses one predictor variable and one outcome variable. However, in many
 (perhaps most) research projects you actually have multiple predictors
@@ -17,7 +17,7 @@ in order?
 Multiple regression is conceptually very simple. All we do is add more
 terms to our regression equation. Let’s suppose that we’ve got two
 variables that we’re interested in; perhaps we want to use both
-``dan.sleep`` and ``baby.sleep`` to predict the ``dan.grump`` variable.
+``dani.sleep`` and ``baby.sleep`` to predict the ``dani.grump`` variable.
 As before, we let *Y*\ :sub:`i` refer to my grumpiness on the i-th
 day. But now we have two *X* variables: the first corresponding to
 the amount of sleep I got and the second corresponding to the amount of
@@ -44,18 +44,27 @@ Doing it in jamovi
 
 Multiple regression in jamovi is no different to simple regression. All
 we have to do is add additional variables to the ``Covariates`` box in
-jamovi. For example, if we want to use both ``dan.sleep`` and
+jamovi. For example, if we want to use both ``dani.sleep`` and
 ``baby.sleep`` as predictors in our attempt to explain why I’m so
 grumpy, then move ``baby.sleep`` across into the ``Covariates`` box
-alongside ``dan.sleep``. By default, jamovi assumes that the model
+alongside ``dani.sleep``. By default, jamovi assumes that the model
 should include an intercept. The coefficients we get this time are:
 
-.. code-block:: rout
+.. table:: Model coefficients for the linear model predicting ``dani.grump``
+   using ``baby.sleep`` and ``dani.sleep`` (from the |parenthood|_ data set).
+   :name: tab-parent_coeff
 
-   (Intercept)    dan.sleep   baby.sleep  
-     125.97        -8.95        0.01  
+   +----------------+----------+
+   | Predictor      | Estimate |
+   +================+==========+
+   | Intercept      |  125.966 |
+   +----------------+----------+
+   | ``dani.sleep`` |   −8.950 |
+   +----------------+----------+
+   | ``baby.sleep`` |    0.011 |   
+   +----------------+----------+
 
-The coefficient associated with ``dan.sleep`` is quite large, suggesting
+The coefficient associated with ``dani.sleep`` is quite large, suggesting
 that every hour of sleep I lose makes me a lot grumpier. However, the
 coefficient for ``baby.sleep`` is very small, suggesting that it doesn’t
 really matter how much sleep my son gets. What matters as far as my
@@ -71,8 +80,8 @@ itself.
    :alt: 3D visualisation of a multiple regression model
 
    3D visualisation of a multiple regression model: There are two predictors in
-   the model, ``dan.sleep`` and ``baby.sleep`` and the outcome variable is
-   ``dan.grump``. Together, these three variables form a 3D space. Each
+   the model, ``dani.sleep`` and ``baby.sleep`` and the outcome variable is
+   ``dani.grump``. Together, these three variables form a 3D space. Each
    observation (dot) is a point in this space. In much the same way that a
    simple linear regression model forms a line in 2D space, this multiple
    regression model forms a plane in 3D space. When we estimate the regression

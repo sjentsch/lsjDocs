@@ -23,8 +23,8 @@ factor analysis. Bayesian statistics are covered at the end of the book.
 Citation
 --------
 
-Navarro, D. J., & Foxcroft, D. R. (2019). *learning statistics with jamovi: a
-tutorial for psychology students and other beginners.* (Version 0.70).
+Navarro, D. J., & Foxcroft, D. R. (2022). *learning statistics with jamovi: a
+tutorial for psychology students and other beginners.* (Version 0.75).
 `https://doi.org/10.24384/hgc3-7p15 <https://doi.org/10.24384/hgc3-7p15>`__
 
 This book is published under a Creative Commons BY-SA license (`CC BY-SA
@@ -36,6 +36,23 @@ redistribute all versions of this open textbook under the same license.
 
 Preface
 -------
+
+**Preface to Version 0.75**
+
+In this version we have updated the figures, images and text to maintain
+compatibility with latest versions of jamovi; many thanks to Peter Fisk for his
+help with this. Also tweaked and corrected are a few sections
+where improvements have been suggested by readers. This has mainly included
+fixing typos but also in places correcting conceptual detail, for example we
+have updated the information on kurtosis to reflect that it isn't really about
+distribution “pointiness” and instead kurtosis is about whether data
+distributions have thin or fat tails. Thanks to all the readers who made
+suggestions, either through contacting me by email, or raising an issue on
+github. 
+
+| *David Foxcroft*
+| *February 9th, 2022
+
 
 **Preface to Version 0.70**
 
@@ -209,11 +226,11 @@ uncomfortable. However, it’s the 21st century, so I can post the pdf on
 my website for free, and I can distribute hard copies via a
 print-on-demand service for less than half what a textbook publisher
 would charge. And so my guilt is assuaged, and I’m willing to share!
-With that in mind, you can obtain free soft copies and cheap hard copies
-online, from the following webpages:
+With that in mind, you can obtain a free soft copy online from:
+https://learningstatisticswithr.com
 
-- **Soft copy**: https://learningstatisticswithr.com
-- **Hard copy**: https://www.lulu.com/content/13570633
+(The hard copies that were earlier available are not available any
+longer and the respective link was removed).
 
 Even so, the warning still stands: what you are looking at is Version
 \0.3 of a work in progress. If and when it hits Version 1.0, I would be

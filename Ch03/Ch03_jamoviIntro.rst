@@ -60,7 +60,7 @@ so I’m really talking about why I use it.
    and some of which I don’t. They’re usually very glossy in their
    appearance and generally very powerful (much more powerful than
    spreadsheets). However, they’re also very expensive. Usually, the
-   company sells “student versions” (crippled versions of the real
+   company sells “student versions” (limited versions of the real
    thing) very cheaply, and then they they sell full powered
    “educational versions” at a price that makes me wince. They will also
    sell commercial licences with a staggeringly high price tag. The

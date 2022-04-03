@@ -284,12 +284,14 @@ change are:
    For one reason or another, some entries in the table are missing. The
    data file needs to include a “special” value to indicate that the
    entry is missing. By default jamovi assumes that this value is
-   ``99``,\ [#]_ for both numeric and text data, so you should make
+   ``NA``,\ [#]_ for both numeric and text data, so you should make
    sure that, where necessary, all missing values in the CSV file are
    replaced with ``99`` (or ``-9999``; whichever you choose) before
    opening / importing the file into jamovi. Once you have opened /
    imported the file into jamovi all the missing values are converted to
-   blank cells in the jamovi spreadsheet view.
+   blank or greyed out cells in the jamovi spreadsheet view. You can also
+   change the missing value for each variable as an option in the Data →
+   Setup view.
 
 Importing data from SPSS (and other statistics packages)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -318,9 +320,9 @@ and STATA files.
    You can change the default value for missing values in jamovi from
    the top right menu (three vertical dots), but this only works at the
    time of importing data files into jamovi. The default missing value
-   in the dataset should not be a valid number associated with any of
-   the variables, e.g. you could use ``-9999`` as this is unlikely to be
-   a valid value.
+   in the dataset should not be a valid number or value associated with
+   any of the variables, e.g. you could use ``-9999`` as this is unlikely
+   to be a valid value.
 
 .. [#]
    I know this is a bit of a fudge, but it does work and hopefully this

@@ -72,9 +72,9 @@ Drawing multiple box plots
 One last thing. What if you want to draw multiple box plots at once? Suppose,
 for instance, I wanted separate box plots showing the AFL margins not just for
 2010 but for every year between 1987 and 2010. To do that the first thing we’ll
-have to do is find the data. These are stored in the |aflsmall2|_ data set. So
-let’s load it into jamovi and see what is in it. You will see that it is a
-pretty big data set. It contains 4296 games and the variables that we’re
+have to do is find the data. These are stored in the |aflmarginbyyear|_ data
+set. So let’s load it into jamovi and see what is in it. You will see that it is
+a pretty big data set. It contains 4296 games and the variables that we’re
 interested in. What we want to do is have jamovi draw box plots for the
 ``margin`` variable, but plotted separately for each ``year``. The way to do
 this is to move the ``year`` variable across into the ``Split by`` box, as in
@@ -101,10 +101,11 @@ space: no chance at all that the reader is going to learn anything useful.
 
 .. _fig-boxplot3:
 .. figure:: ../_images/lsj_boxplot3.*
-   :alt: Multiple box plots: ``margin`` split by ``year`` from ``aflsmall2`` 
+   :alt: Multiple box plots: ``margin`` split by ``year`` from
+   ``aflmarginbyyear`` 
 
    Multiple box plots created in jamovi, for the variables ``margin`` split by
-   ``year`` in the |aflsmall2|_ data set
+   ``year`` in the |aflmarginbyyear|_ data set
    
 .. ----------------------------------------------------------------------------
 
@@ -193,5 +194,5 @@ the topic again in section :doc:`Model checking <../Ch12/Ch12_Regression_10>`.
 .. |aflsmall_margins|                  replace:: ``aflsmall_margins``
 .. _aflsmall_margins:                  _static/data/aflsmall_margins.omv
 
-.. |aflsmall2|                         replace:: ``aflsmall2``
-.. _aflsmall2:                         _static/data/aflsmall2.omv
+.. |aflmarginbyyear|                   replace:: ``aflmarginbyyear``
+.. _aflmarginbyyear:                   _static/data/aflmarginbyyear.omv

@@ -104,13 +104,12 @@ coefficients for you using the ``Standardized estimate`` checkbox in the
    
 .. ----------------------------------------------------------------------------
 
-This clearly shows that the ``dani.sleep`` variable has a much stronger
-effect than the ``baby.sleep`` variable. However, this is a perfect
-example of a situation where it would probably make sense to use the
-original coefficients *b* rather than the standardised
-coefficients *β*. After all, my sleep and the baby’s sleep are
-*already* on the same scale: number of hours slept. Why complicate
-matters by converting these to *z*-scores?
+These results clearly show that the ``dani.sleep`` variable has a much stronger
+effect than the ``baby.sleep`` variable. However, this is a perfect example of
+a situation where it would probably make sense to use the original coefficients
+*b* rather than the standardised coefficients *β*. After all, my sleep and the
+baby’s sleep are *already* on the same scale: number of hours slept. Why
+complicate matters by converting these to *z*-scores?
 
 ------
 

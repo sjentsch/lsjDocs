@@ -178,7 +178,7 @@ but not substantively onto component 5.
 
 We can also see in :numref:`fig-pca1` the “uniqueness” of each variable. 
 Uniqueness is the proportion of variance that is ‘unique’ to the variable and
-not explained by the components. For example, 58% of the variance in ``A1`` is
+not explained by the components. For example, 52% of the variance in ``A1`` is
 not explained by the components in the five component solution. In contrast,
 ``N1`` has relatively low variance not accounted for by the component solution
 (30%). Note that the greater the ‘uniqueness’, the lower the relevance or
@@ -188,10 +188,10 @@ Hopefully, this has given you a good first idea about how to undertake PCA in
 jamovi, and how it is conceptually different but practically fairly similar
 (given the right data) to EFA.
 
-You can go on to create component scores in much the same way as in EFA. 
-However, if you take the option to create an optimally-weighted component score
-index then the commands and syntax in the jamovi |Rj|_ editor are a little
-different. See :numref:`fig-pca6`.
+You can go on to create and save component scores in much the same way as in
+EFA. However, if you take the option to create an optimally-weighted component
+score index then the commands and syntax in the jamovi |Rj|_ editor are a
+little different. See :numref:`fig-pca6`.
 
 .. ----------------------------------------------------------------------------
 

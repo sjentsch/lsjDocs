@@ -314,17 +314,6 @@ period 1987 to 2010.
    
 .. ----------------------------------------------------------------------------
 
-
-What we *could* do is read through all 400 entries and count the number
-of occasions on which each team name appears in our list of finalists,
-thereby producing a **frequency table**. However, that would be mindless
-and boring: exactly the sort of task that computers are great at. So
-let’s use jamovi to do this for us. Under ``Exploration`` → ``Descriptives``
-click the small check box labelled ``Frequency tables`` and you should get
-something like :numref:`fig-aflsmall_finalists_mode`.
-
-.. ----------------------------------------------------------------------------
-
 .. _fig-aflsmall_finalists_mode:
 .. figure:: ../_images/lsj_aflsmall_finalists_mode.png
    :alt: Frequency table for ``afl.margins`` in ``aflsmall_finalists``
@@ -333,6 +322,15 @@ something like :numref:`fig-aflsmall_finalists_mode`.
    ``afl.finalists`` variable in the |aflsmall_finalists|_ data set
    
 .. ----------------------------------------------------------------------------
+
+
+What we *could* do is read through all 400 entries and count the number
+of occasions on which each team name appears in our list of finalists,
+thereby producing a **frequency table**. However, that would be mindless
+and boring: exactly the sort of task that computers are great at. So
+let’s use jamovi to do this for us. Under ``Exploration`` → ``Descriptives``
+click the small check box labelled ``Frequency tables`` and you should get
+something like :numref:`fig-aflsmall_finalists_mode`.
 
 Now that we have our frequency table we can just look at it and see
 that, over the 24 years for which we have data, Geelong has played in
