@@ -395,13 +395,17 @@ of critical value tables, like the one in :numref:`tab-chisquared_critvalues`.
 We can see that the critical value for a χ²-distribution with 3 degrees of
 freedom, and *p* = 0.05 is 7.815.
 
-.. table::    Table of critical values for the χ² (chi-square) distribution
+.. tabularcolumns:: |r|r|r|r|r|r|r|r|r|r|
+
+.. table:: Table of critical values for the χ² (chi-square) distribution
    :name: tab-chisquared_critvalues
 
    +----+----------------------------------------------------------------------------+
-   | df | Probability                                                                |
+   |    | Probability                                                                |
+   |    +-------------------------------------------------+--------------------------+
+   |    | non-significant                                 | significant              |
    |    +-------+-------+-------+-------+--------+--------+--------+--------+--------+
-   |    |  0.95 |  0.90 |  0.70 |  0.50 |   0.30 |   0.10 |   0.05 |   0.01 |  0.001 |
+   | df |  0.95 |  0.90 |  0.70 |  0.50 |   0.30 |   0.10 |   0.05 |   0.01 |  0.001 |
    +====+=======+=======+=======+=======+========+========+========+========+========+
    |  1 | 0.004 | 0.016 | 0.148 | 0.455 |  1.074 |  2.706 |  3.841 |  6.635 | 10.828 |
    +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
@@ -423,9 +427,6 @@ freedom, and *p* = 0.05 is 7.815.
    +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
    | 10 | 3.940 | 4.865 | 7.267 | 9.342 | 11.781 | 15.987 | 18.307 | 23.209 | 29.588 |
    +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
-   |    | **non-significant**                             | **significant**          |
-   +----+-------------------------------------------------+--------------------------+
-
    
 So, if our calculated χ² statistic is bigger than the critical value of 7.815,
 then we can reject the null hypothesis (remember that the null hypothesis,
