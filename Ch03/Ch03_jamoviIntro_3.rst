@@ -76,7 +76,7 @@ analyses.
 .. |Rj|                                replace:: ``Rj``
 .. _Rj:                                https://docs.jamovi.org/_pages/Rj_overview.html
 
-.. |ID|                               image:: ../_images/variable-ID.*
+.. |ID|                               image:: ../_images/variable-id.*
    :width: 16px
  
 .. |continuous|                       image:: ../_images/variable-continuous.*

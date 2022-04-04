@@ -317,7 +317,7 @@ and STATA files.
 .. |booksales|                         replace:: ``booksales.csv``
 .. _booksales:                         _static/data/booksales.csv
 
-.. |ID|                               image:: ../_images/variable-ID.*
+.. |ID|                               image:: ../_images/variable-id.*
    :width: 16px
 
 .. |continuous|                       image:: ../_images/variable-continuous.*
