@@ -17,9 +17,9 @@ we get the results shown in :numref:`fig-binomialtest`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-binomialtest:
 .. figure:: ../_images/lsj_binomialtest.*
    :alt: Binomial test analysis and results in jamovi
+   :name: fig-binomialtest
 
    Binomial test analysis and results in jamovi
       

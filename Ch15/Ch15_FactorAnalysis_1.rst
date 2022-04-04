@@ -21,9 +21,9 @@ unexplained by the underlying latent factor.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-efa1:
 .. figure:: ../_images/lsj_efa1.*
    :alt: Latent factor underlying the relationship between observed variables
+   :name: fig-efa1
 
    Latent factor underlying the relationship between several observed variables
       
@@ -245,14 +245,14 @@ variables |continuous| are needed). To perform an EFA in jamovi:
 
 -  Select ``Factor`` → ``Exploratory Factor Analysis`` from the ``Analyses``
    ribbon menu to open the analysis panel where you can determine the settings
-   for the EFA (:numref:`fig-efa3`).
+   for the EFA (:numref:`fig-efa2`).
 
 -  Select the 25 personality questions and transfer them into the
    ``Variables`` box.
 
 -  Check appropriate options, including ``Assumption Checks``, but also
    ``Rotation`` under ``Method``, ``Number of Factors`` to extract, and
-   ``Additional Output`` options (see :numref:`fig-efa3` for suggested
+   ``Additional Output`` options (see :numref:`fig-efa2` for suggested
    options for this illustrative EFA, and please note that the ``Rotation``
    under ``Method`` and ``Number of Factors`` extracted is typically adjusted
    by the researcher during the analysis to find the best result, as
@@ -260,25 +260,25 @@ variables |continuous| are needed). To perform an EFA in jamovi:
    
 .. ----------------------------------------------------------------------------
 
-.. _fig-efa3:
 .. figure:: ../_images/lsj_efa2.*
    :alt: jamovi EFA analysis window
+   :name: fig-efa2
 
    Analysis panel with the settings for conducting an Exploratory Factor
    Analysis (EFA) in jamovi
       
 .. ----------------------------------------------------------------------------  
 
-First, check the assumptions (:numref:`fig-efa4`). You can see that (1)
+First, check the assumptions (:numref:`fig-efa3`). You can see that (1)
 Bartlett’s test of sphericity is significant, so this assumption is satisfied;
 and (2) the KMO measure of sampling adequacy (MSA) is 0.81 overall, suggesting
 good sampling adequacy. No problems here then!
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-efa4:
 .. figure:: ../_images/lsj_efa3.*
    :alt: jamovi EFA assumption checks for the personality questionnaire data
+   :name: fig-efa3
 
    jamovi EFA assumption checks for the personality questionnaire data
       
@@ -290,11 +290,11 @@ data). Three different approaches are available:
 -  One convention is to choose all components with Eigen values greater than
    1.\ [#]_ This would give us four factors with our data (try it and see).
 
--  Examination of the scree plot, as in :numref:`fig-efa5`, lets you identify
+-  Examination of the scree plot, as in :numref:`fig-efa4`, lets you identify
    the “point of inflection”. This is the point at which the slope of the scree
    curve clearly levels off, below the “elbow”. This would give us five factors
    with our data. Interpreting scree plots is a bit of an art: in
-   :numref:`fig-efa5` there is a noticeable step from 5 to 6 factors, but in
+   :numref:`fig-efa4` there is a noticeable step from 5 to 6 factors, but in
    other scree plots you look at it will not be so clear cut.
 
 -  Using a parallel analysis technique, the obtained Eigen values are compared
@@ -304,9 +304,9 @@ data). Three different approaches are available:
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-efa5:
 .. figure:: ../_images/lsj_efa4.*
    :alt: Scree plot of the personality data
+   :name: fig-efa4
 
    Scree plot of the personality data in the EFA in jamovi, showing a
    noticeable inflection and levelling off after point 5 (the “elbow”)
@@ -332,7 +332,7 @@ are arguably more sensible.\ [#]_
 
 Practically, if in an oblique rotation the factors are found to be 
 substantially correlated (positive or negative, and > 0.3), as in
-:numref:`fig-efa6` where a correlation between two of the extracted factors is
+:numref:`fig-efa5` where a correlation between two of the extracted factors is
 0.31, then this would confirm our intuition to prefer oblique rotation. If
 the factors are, in fact, correlated, then an oblique rotation will produce a
 better estimate of the true factors and a better simple structure than will an
@@ -343,9 +343,9 @@ solution as the oblique rotation).
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-efa6:
 .. figure:: ../_images/lsj_efa5.*
    :alt: Factor summary statistics and correlations
+   :name: fig-efa5
 
    Factor summary statistics and correlations for a five factor solution
    in the EFA conducted in jamovi
@@ -353,9 +353,9 @@ solution as the oblique rotation).
 .. ----------------------------------------------------------------------------
 
 On checking the correlation between the extracted factors at least one
-correlation was greater than 0.3 (:numref:`fig-efa6`), so an oblique
+correlation was greater than 0.3 (:numref:`fig-efa5`), so an oblique
 (``Oblimin``) rotation of the five extracted factors is preferred. We can also
-see in :numref:`fig-efa6` that the proportion of overall variance in the data
+see in :numref:`fig-efa5` that the proportion of overall variance in the data
 that is accounted for by the five factors is 46%. Factor one accounts for
 around 10% of the variance, factors two to four around 9% each, and factor five
 just over 7%. This isn’t great; it would have been better if the overall
@@ -371,15 +371,15 @@ rest without losing too much of the original variability. But if it takes 18
 factors (for example) to explain most of the variance in those 25 variables,
 you might as well just use the original 25.
 
-:numref:`fig-efa7` shows the factor loadings. That is, how the 25 different
+:numref:`fig-efa6` shows the factor loadings. That is, how the 25 different
 personality items load onto each of the five selected factors. We have hidden
-loadings less than 0.3 (set in the options shown in :numref:`fig-efa3`).
+loadings less than 0.3 (set in the options shown in :numref:`fig-efa2`).
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-efa7:
 .. figure:: ../_images/lsj_efa6.*
    :alt: Factor loadings for a five factor solution
+   :name: fig-efa6
 
    Factor loadings for a five factor solution in the EFA conducted in jamovi
       
@@ -389,7 +389,7 @@ For factors 1, 2, 3 and 4 the pattern of factor loadings closely matches the
 putative factors specified in :numref:`tab-bfi`. Phew! And factor 5 is pretty
 close, with four of the five observed variables that putatively measure
 “Openness” loading pretty well onto the factor. Variable ``O4`` doesn’t quite
-seem to fit though, as the factor solution in :numref:`fig-efa7` suggests that
+seem to fit though, as the factor solution in :numref:`fig-efa6` suggests that
 it loads onto factor 4 (albeit with a relatively low loading) but not
 substantively onto factor \5.
 
@@ -401,9 +401,9 @@ high score on ``A1`` indicates low Agreeableness, whereas a high score on
 ``A2`` (and all the other ``A``-variables for that matter) indicates high
 Agreeableness. Therefore A1 will be negatively correlated with the other 
 ``A``-variables, and this is why it has a negative factor loading, as shown
-in :numref:`fig-efa7`.
+in :numref:`fig-efa6`.
 
-We can also see in :numref:`fig-efa7` the “uniqueness” of each variable.
+We can also see in :numref:`fig-efa6` the “uniqueness” of each variable.
 Uniqueness is the proportion of variance that is ‘unique’ to the variable and
 not explained by the factors.\ [#]_ For example, 72% of the variance in ``A1``
 is not explained by the factors in the five factor solution. In contrast,
@@ -433,25 +433,25 @@ jamovi in two steps:
 
 #. Recode ``A1`` into ``A1R`` by reverse scoring the values in the variable
    (i.e. 6 = 1; 5 = 2; 4 = 3; 3 = 4; 2 = 5; 1 = 6) using the jamovi
-   transform variable command (see :numref:`fig-efa8`).
+   transform variable command (see :numref:`fig-efa7`).
 
 #. Compute a new variable, called ``Agreeableness``, by calculating the mean of
    ``A1R``, ``A2``, ``A3``, ``A4`` and ``A5``. Do this using the jamovi
-   ``Compute`` command to create a new variable (see :numref:`fig-efa9`).
+   ``Compute`` command to create a new variable (see :numref:`fig-efa8`).
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-efa8:
 .. figure:: ../_images/lsj_efa7.*
    :alt: Recode variable using the Transform command in jamovi
+   :name: fig-efa7
 
    Recode variable using the Transform command in jamovi
       
 .. ----------------------------------------------------------------------------
 
-.. _fig-efa9:
 .. figure:: ../_images/lsj_efa8.*
    :alt: Compute new scale score variable in jamovi
+   :name: fig-efa8
 
    Compute new scale score variable using a Computed variable in jamovi
       
@@ -464,9 +464,9 @@ steps:
 #. Use the |Rj|_ editor to run the EFA in ``R`` to the same specification as
    the one in jamovi (i.e., five factors and Oblimin rotation) and compute
    optimally weighted factor scores. Save the new dataset, with the factor
-   scores, to a file (see :numref:`fig-efa10`).
+   scores, to a file (see :numref:`fig-efa9`).
 
-#. Open up the new file in jamovi (see :numref:`fig-efa11`) and check that
+#. Open up the new file in jamovi (see :numref:`fig-efa10`) and check that
    variable types have been set correctly. Label the new factor score variables
    corresponding to the relevant factor names or definitions (NB: it is 
    possible that the factors will not be in the expected order, so make sure
@@ -474,18 +474,18 @@ steps:
    
 .. ----------------------------------------------------------------------------
 
-.. _fig-efa10:
 .. figure:: ../_images/lsj_efa9.*
    :alt: |Rj|_ editor commands for creating optimally weighted factor scores
+   :name: fig-efa9
 
    |Rj|_ editor commands for creating optimally weighted factor scores for
    the five factor solution
       
 .. ----------------------------------------------------------------------------   
 
-.. _fig-efa11:
 .. figure:: ../_images/lsj_efa10.*
    :alt: Newly created data file with new factor score variables
+   :name: fig-efa10
 
    Newly created data file ``bfifactscores.csv`` created in the |Rj|_ editor,
    and containing the five factor score variables. Note that each of the new
@@ -500,14 +500,14 @@ factor scores calculated via the |Rj|_ editor. Your choice! For example, one
 thing you might like to do is see whether there are any gender differences in
 each of our personality scales. We did this for the Agreeableness score that we
 calculated using the factor-based score approach, and although the plot (see
-:numref:`fig-efa12`) showed that males were less agreeable than females, this
+:numref:`fig-efa11`) showed that males were less agreeable than females, this
 was not a significant difference (Mann-Whitney *U* = 5760.5, p = 0.073).
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-efa12:
 .. figure:: ../_images/lsj_efa11.*
    :alt: Gender differences in Agreeableness factor-based scores
+   :name: fig-efa11
 
    Comparing differences in Agreeableness factor-based scores between males and
    females

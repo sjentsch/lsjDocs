@@ -141,9 +141,9 @@ a whole bunch of useful output.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-reg2:
 .. figure:: ../_images/lsj_reg2.*
    :alt: jamovi screenshot showing a multiple linear regression
+   :name: fig-reg2
 
    jamovi screenshot showing a multiple linear regression analysis, with some
    useful options checked.

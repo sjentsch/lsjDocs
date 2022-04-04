@@ -157,9 +157,9 @@ the sample means is also 100.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-samplingDistSampleSD:
 .. figure:: ../_images/lsj_samplingDistSampleSD.*
    :alt: Sampling distrib. of the std. dev. for a “two IQ scores” experiment
+   :name: fig-samplingDistSampleSD
 
    Sampling distribution of the sample standard deviation for a “two IQ
    scores” experiment. The true population standard deviation is 15 (dashed
@@ -190,9 +190,9 @@ little bit larger than the sample standard deviation *s*.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-biasMeanSD:
 .. figure:: ../_images/lsj_biasMeanSD.*
    :alt: Sample size: Mean (un-biased) and standard deviation (biased)
+   :name: fig-biasMeanSD
 
    Illustration of the fact that the sample mean is an unbiased estimator of
    the population mean (left panel), but the sample standard deviation is a

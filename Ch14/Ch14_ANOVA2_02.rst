@@ -5,9 +5,9 @@ Factorial ANOVA 2: balanced designs, interactions allowed
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-interactions:
 .. figure:: ../_images/lsj_interactions.*
    :alt: Qualitatively different interactions for a 2 × 2 ANOVA
+   :name: fig-interactions
 
    Qualitatively different interactions for a 2 × 2 ANOVA
    
@@ -45,9 +45,9 @@ fix this problem.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-interaction:
 .. figure:: ../_images/lsj_interaction.*
    :alt: Descriptive interaction plot in jamovi
+   :name: fig-interaction
 
    jamovi screen shot showing how to generate a descriptive interaction plot
    within the ANOVA (using ``Estimated Marginal Means``) for the
@@ -234,9 +234,9 @@ the results shown in :numref:`fig-factorialanova4`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova4:
 .. figure:: ../_images/lsj_factorialanova4.*
    :alt: Results for the full factorial model
+   :name: fig-factorialanova4
 
    Results for the full factorial model, including the interaction component
    drug × therapy

@@ -44,9 +44,9 @@ data type of either ``Text``, ``Integer`` or ``Decimal``.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-measurementlevels:
 .. figure:: ../_images/lsj_measurementlevels.*
    :alt: Measurement levels and data types in jamovi
+   :name: fig-measurementlevels
 
    Window to set measurement levels and data types in jamovi.
    
@@ -99,9 +99,9 @@ example data set).
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-computedvariable:
 .. figure:: ../_images/lsj_computedvariable.*
    :alt: Computed variable: z-score of ``dose``
+   :name: fig-computedvariable
 
    A newly computed variable, the z-score of ``dose``.
    
@@ -187,9 +187,9 @@ data though, it has the names of the variables.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-booksalescsv:
 .. figure:: ../_images/lsj_booksalescsv.*
    :alt: |booksales| data file
+   :name: fig-booksalescsv
 
    The |booksales|_ data file. On the left I’ve opened the file using a spreadsheet
    program (LibreOffice), which shows that the file is basically a table. On the right

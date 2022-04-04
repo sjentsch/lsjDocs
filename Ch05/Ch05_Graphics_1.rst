@@ -32,9 +32,9 @@ or kurtosis? Our first impressions of these characteristics come from drawing a
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-jamovi_histogram:
 .. figure:: ../_images/lsj_jamovi_histogram.*
    :alt: Histogram check box in jamovi
+   :name: fig-jamovi_histogram
 
    jamovi screen showing the histogram check box
    
@@ -56,9 +56,9 @@ histogram would. However, with density plots, this isn’t an issue.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-histogram2:
 .. figure:: ../_images/lsj_histogram2.*
    :alt: Density plot of ``afl.margins``
+   :name: fig-histogram2
 
    Density plot of the ``afl.margins`` variable plotted in jamovi
    

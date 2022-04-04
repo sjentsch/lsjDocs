@@ -44,9 +44,9 @@ there’s an improvement from the first test to the second one.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttest_paired1:
 .. figure:: ../_images/lsj_ttest_paired1.*
    :alt: Descriptives for the two grade test variables in the |chico| data set
+   :name: fig-ttest_paired1
 
    Descriptives for the two grade test variables in the |chico|_ data set
    
@@ -66,9 +66,9 @@ pure chance.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-pairedt:
 .. figure:: ../_images/lsj_pairedMnSnH.*
    :alt: Mean grade for test 1 and test 2 in Dr Chico's class
+   :name: fig-pairedt
 
    Mean grade for test 1 and test 2, with associated 95% confidence intervals
    (left panel). Scatterplot showing the individual grades for test 1 and test
@@ -174,9 +174,9 @@ called ``improvement``, let’s do that and see what we get
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttest_paired2:
 .. figure:: ../_images/lsj_ttest_paired2.*
    :alt: Results showing a one sample t-test on paired difference scores
+   :name: fig-ttest_paired2
 
    Results showing a one sample *t*-test on paired difference scores
    
@@ -197,9 +197,9 @@ getting the results shown in :numref:`fig-ttest_paired3`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttest_paired3:
 .. figure:: ../_images/lsj_ttest_paired3.*
    :alt: Results showing a paired sample t-test
+   :name: fig-ttest_paired3
 
    Results showing a paired sample *t*-test. Compare it with
    :numref:`fig-ttest_paired2`.

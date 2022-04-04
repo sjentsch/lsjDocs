@@ -15,9 +15,9 @@ Let’s load it and see what we’ve got:
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-clinicaltrial:
 .. figure:: ../_images/lsj_clinicaltrial.*
    :alt: Variables in ``clinicaltrial``
+   :name: fig-clinicaltrial
 
    Screenshot of jamovi showing the variables stored in the
    |clinicaltrial|_ data set
@@ -41,9 +41,9 @@ and you should get something like :numref:`fig-clinicaltrial_grouping`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-clinicaltrial_grouping:
 .. figure:: ../_images/lsj_clinicaltrial_grouping.*
    :alt: Variables in ``clinicaltrial`` split by therapy type
+   :name: fig-clinicaltrial_grouping
 
    Screenshot of jamovi showing ``Descriptives`` of the variables
    in the |clinicaltrial|_ data set split by therapy type

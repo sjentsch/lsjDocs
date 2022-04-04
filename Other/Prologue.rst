@@ -51,7 +51,7 @@ suggestions, either through contacting me by email, or raising an issue on
 github. 
 
 | *David Foxcroft*
-| *February 9th, 2022
+| *February 9th, 2022*
 
 
 **Preface to Version 0.70**

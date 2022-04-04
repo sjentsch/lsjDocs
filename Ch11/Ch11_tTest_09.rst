@@ -109,9 +109,9 @@ of the test won’t give us a different answer, of course; see
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttest_nonparametric:
 .. figure:: ../_images/lsj_ttest_nonparametric.*
    :alt: Results for one sample and paired sample Wilcoxon non-parametric tests
+   :name: fig-ttest_nonparametric
 
    jamovi screen showing results for one sample and paired sample Wilcoxon
    non-parametric tests

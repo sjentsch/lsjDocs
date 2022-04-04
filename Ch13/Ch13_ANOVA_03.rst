@@ -24,9 +24,9 @@ results table. We will come back to effect sizes a bit later.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-anova2:
 .. figure:: ../_images/lsj_anova2.*
    :alt: Results table for ANOVA of mood gain by drug administered
+   :name: fig-anova2
 
    jamovi results table for ANOVA of ``mood.gain`` by ``drug`` administered
    

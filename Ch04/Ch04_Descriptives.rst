@@ -28,9 +28,9 @@ data set and see what variables are stored in the file
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-aflsmall_margins:
 .. figure:: ../_images/lsj_aflsmall_margins.*
    :alt: Variables stored in ``aflsmall margins``
+   :name: fig-aflsmall_margins
 
    Screenshot of jamovi showing the variables in the |aflsmall_margins|_
    data set
@@ -59,9 +59,9 @@ representation of the ``afl.margins`` variable.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-aflMargins:
 .. figure:: ../_images/lsj_aflMargins.*
    :alt: Histogram of AFL 2010 winning margin data
+   :name: fig-aflMargins
 
    Histogram of the AFL 2010 winning margin data (the ``afl.margins``
    variable). As you might expect, the larger the winning margin the less

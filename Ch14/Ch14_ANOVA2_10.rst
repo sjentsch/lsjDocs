@@ -54,9 +54,9 @@ spreadsheet view, as in :numref:`fig-factorialanova15`\.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova15:
 .. figure:: ../_images/lsj_factorialanova15.*
    :alt: Descriptive statistics for the different levels of sugar and milk
+   :name: fig-factorialanova15
 
    The |coffee|_ data set in jamovi, showing descriptive statistics aggregated
    by the different levels of the factors ``sugar`` and ``milk``
@@ -184,9 +184,9 @@ options. This gives us the ANOVA table shown in :numref:`fig-factorialanova16`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova16:
 .. figure:: ../_images/lsj_factorialanova16.*
    :alt: Results table using Type I sum of squares, factor sugar entered first
+   :name: fig-factorialanova16
 
    ANOVA results table using Type I sum of squares in jamovi (with the
    |coffee| data set and a saturated model with the factors ``sugar``,
@@ -206,9 +206,9 @@ the question. Yet, look what happens when we change the ordering, as in
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova17:
 .. figure:: ../_images/lsj_factorialanova17.*
    :alt: Results table using Type I sum of squares, factor milk entered first
+   :name: fig-factorialanova17
 
    ANOVA results table using Type I sum of squares in jamovi (with the
    |coffee|_ data set and a saturated model with the factors ``milk``,
@@ -352,9 +352,9 @@ Type III sum of squares, see :numref:`fig-factorialanova18`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova18:
 .. figure:: ../_images/lsj_factorialanova18.*
    :alt: Results table using Type III sum of squares
+   :name: fig-factorialanova18
 
    ANOVA results table using Type III sum of squares in jamovi (with the
    |coffee|_ data set and a saturated model with the factors ``sugar``,
@@ -490,9 +490,9 @@ This gives us the ANOVA table shown in :numref:`fig-factorialanova19`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova19:
 .. figure:: ../_images/lsj_factorialanova19.*
    :alt: Results table using Type II sum of squares
+   :name: fig-factorialanova19
 
    ANOVA results table using Type II sum of squares in jamovi (with the
    |coffee|_ data set and a saturated model with the factors ``sugar``,

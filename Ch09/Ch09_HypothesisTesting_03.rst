@@ -43,9 +43,9 @@ with our data.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-samplingDist:
 .. figure:: ../_images/lsj_samplingDist.*
    :alt: Sampling distribution when the null hypothesis is true
+   :name: fig-samplingDist
 
    The sampling distribution for our test statistic X when the null hypothesis
    is true. For our ESP scenario this is a binomial distribution. Not

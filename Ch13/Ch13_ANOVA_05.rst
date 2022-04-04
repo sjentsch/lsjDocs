@@ -82,9 +82,9 @@ pairwise *t*-test comparisons amongst the three levels of the
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-anova3:
 .. figure:: ../_images/lsj_anova3.*
    :alt: Uncorrected pairwise t-tests as post-hoc comparisons in jamovi
+   :name: fig-anova3
 
    Uncorrected pairwise t-tests as post-hoc comparisons in jamovi
    

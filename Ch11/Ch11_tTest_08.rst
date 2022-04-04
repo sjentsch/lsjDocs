@@ -28,9 +28,9 @@ QQ plots
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-qq1:
 .. figure:: ../_images/lsj_qqNormal.*
    :alt: Histogram and QQ plot for normally-distributed data
+   :name: fig-qq1
 
    Histogram (left panel) and QQ plot (right panel) for the ``normal.data``
    data set, a normally-distributed sample with 100 observations. The
@@ -39,9 +39,9 @@ QQ plots
    
 .. ----------------------------------------------------------------------------
 
-.. _fig-qq2:
 .. figure:: ../_images/lsj_qqSkewedTailed.*
    :alt: Histogram and QQ plot for skewed and tailed data
+   :name: fig-qq2
 
    In the top row, a histogram (top-left panel) and QQ plot (top-right panel)
    of the 100 observations in a ``skewed.data`` data set. The skewness of the
@@ -95,11 +95,11 @@ on. Then the value of *W* is given by
 .. math:: W = \frac{ \left( \sum_{i = 1}^N a_i X_i \right)^2 }{ \sum_{i = 1}^N (X_i - \bar{X})^2}
 
 where *X̄* is the mean of the observations, and the *a*\ :sub:`i` values are
-... mumble, mumble ... something complicated that is a bit beyond the scope of
 an introductory text.
 
 Because it’s a little hard to explain the maths behind the *W* statistic, a
 better idea is to give a broad brush description of how it behaves. Unlike most
+... mumble, mumble ... something complicated that is a bit beyond the scope of
 of the test statistics that we’ll encounter in this book, it’s actually *small*
 values of *W* that indicate departure from normality. The *W* statistic has a
 maximum value of 1, which occurs when the data look “perfectly normal”. The
@@ -115,9 +115,9 @@ much smaller than 1 in order for the test to be significant.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-swdist:
 .. figure:: ../_images/lsj_shapirowilkdist.*
    :alt: Sampling distribution of the Shapiro-Wilk W statistic
+   :name: fig-swdist
 
    Sampling distribution of the Shapiro-Wilk W statistic, under the null
    hypothesis that the data are normally-distributed, for samples of size 10,
@@ -147,9 +147,9 @@ from a normal distribution at all. Here’s what happens to the QQ plot:
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-qq_2b:
 .. figure:: ../_images/lsj_qq_2b.*
    :alt: QQ plot for the data (skewed) data from the aflsmall_margins dataset
+   :name: fig-qq_2b
 
    QQ plot for the data (skewed) data from the |aflsmall_margins|_ data set
    

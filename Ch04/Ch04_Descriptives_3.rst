@@ -13,9 +13,9 @@ to date.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-skewness:
 .. figure:: ../_images/lsj_skewness.*
    :alt: Illustration of skewness
+   :name: fig-skewness
 
    Illustration of skewness. On the left we have a negatively skewed data set
    (skewness = -.93), in the middle we have a data set with no skew (well,
@@ -66,18 +66,18 @@ and the degree of kurtosis is assessed relative to this curve.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-kurtosis:
 .. figure:: ../_images/lsj_kurtosis.*
    :alt: Illustration of kurtosis
+   :name: fig-kurtosis
 
    An illustration of kurtosis. On the left, we have a “platykurtic” distribution
-   (kurtosis = -.95) meaning that the distribution has ``thin'' or flat tails. In
+   (kurtosis = -.95) meaning that the distribution has “thin” or flat tails. In
    the middle we have a “mesokurtic” distribution (kurtosis is almost exactly 0)
    which means that the tails are neither thin or fat. Finally, on the right, we
    have a “leptokurtic” distribution (kurtosis = 2.12) indicating that the 
    distribution has “fat” tails. Note that kurtosis is measured with respect to a
    normal distribution (black line).
-      
+
 .. ----------------------------------------------------------------------------
 
 The data in the left panel of :numref:`fig-kurtosis` have a pretty flat

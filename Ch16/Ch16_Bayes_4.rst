@@ -26,9 +26,9 @@ obtain a *p*-value less than \0.05, we reject the null hypothesis.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-bayes1:
 .. figure:: ../_images/lsj_bayes1.*
    :alt: Independent Samples t-test result in jamovi
+   :name: fig-bayes1
 
    Independent Samples t-test result in jamovi
    
@@ -43,9 +43,9 @@ data are about 1.8:1 in favour of the alternative hypothesis.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-bayes2:
 .. figure:: ../_images/lsj_bayes2.*
    :alt: Bayes factors analysis alongside Independent Samples t-Test
+   :name: fig-bayes2
 
    Bayes factors analysis alongside Independent Samples t-Test
    
@@ -75,9 +75,9 @@ probably reject the null with some confidence!
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-bayes3:
 .. figure:: ../_images/lsj_bayes3.*
    :alt: Paired samples T-Test and Bayes Factor result in jamovi
+   :name: fig-bayes3
 
    Paired samples T-Test and Bayes Factor result in jamovi
    

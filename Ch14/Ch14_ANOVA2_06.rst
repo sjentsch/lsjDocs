@@ -113,9 +113,9 @@ the class both matter a lot.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-rtfmdescriptives:
 .. figure:: ../_images/lsj_rtfmdescriptives.*
    :alt: jamovi descriptives for the |rtfm| data set
+   :name: fig-rtfmdescriptives
 
    jamovi descriptives for the |rtfm|_ dataset
    
@@ -149,9 +149,9 @@ jamovi.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova6:
 .. figure:: ../_images/lsj_factorialanova6.*
    :alt: ANOVA with two factors (unsaturated: main effects, no interaction= 
+   :name: fig-factorialanova6
 
    ANOVA of the |rtfm|_ data set in jamovi: Model with two factors ``attend``
    and ``reading`` but without the interaction term for these two factors
@@ -255,9 +255,9 @@ really true. Running the regression in the usual way gives the results shown in
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova7:
 .. figure:: ../_images/lsj_factorialanova7.*
    :alt: Regression analysis for the rtfm dataset, unsaturated
+   :name: fig-factorialanova7
 
    Regression analysis for the |rtfm|_ data set in jamovi: Model with two
    factors ``attend`` and ``reading`` but without the interaction term for
@@ -300,9 +300,9 @@ this will give you the table shown in :numref:`fig-factorialanova8`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova8:
 .. figure:: ../_images/lsj_factorialanova8.*
    :alt: Omnibus ANOVA Test
+   :name: fig-factorialanova8
 
    Results table showing the Omnibus ANOVA Test from the jamovi regression
    analysis using the |rtfm|_ dataset
@@ -377,9 +377,9 @@ the ANOVA, with results shown in :numref:`fig-factorialanova9`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova9:
 .. figure:: ../_images/lsj_factorialanova9.*
    :alt: ANOVA results for the |clinicaltrial| dataset: Unsaturated model
+   :name: fig-factorialanova9
 
    jamovi ANOVA results for the |clinicaltrial|_ dataset: Unsaturated model
    with the two main effects for ``drug`` and ``therapy`` but without an
@@ -394,9 +394,9 @@ and ``CBTtherapy`` as the predictors. The results are shown in
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova10:
 .. figure:: ../_images/lsj_factorialanova10.*
    :alt: Regression: clinicaltrial dataset, generated contrast-variables
+   :name: fig-factorialanova10
 
    jamovi regression results for the |clinicaltrial|_ data set: Model with the
    generated contrast variables ``druganxifree`` and ``drugjoyzepam``
@@ -428,9 +428,9 @@ do is specify our null model, which in this case would include the
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova11:
 .. figure:: ../_images/lsj_factorialanova11.*
    :alt: Model comparison: Null model 1 vs. contrasts model 2
+   :name: fig-factorialanova11
 
    Model comparison in jamovi regression: Null model (Model 1) vs. model using
    the generated contrast variables (Model 2)
@@ -458,9 +458,9 @@ You can also specify which group to use as the reference level, via the
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-regfactors:
 .. figure:: ../_images/lsj_regfactors.*
    :alt: Regression analysis with factors and contrasts
+   :name: fig-regfactors
 
    Regression analysis with factors and contrasts in jamovi, including omnibus
    ANOVA test results

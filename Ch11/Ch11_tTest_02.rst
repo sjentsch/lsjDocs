@@ -34,9 +34,9 @@ address.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttesthyp_onesample:
 .. figure:: ../_images/lsj_oneSampleTTestHyp.*
    :alt: Illustration: Null and alternative hypotheses by the one-sample t-test
+   :name: fig-ttesthyp_onesample
 
    Graphical illustration of the null and alternative hypotheses assumed by the
    (two-sided) one-sample t-test. Note the similarity to the z-test 
@@ -84,9 +84,9 @@ exactly what happens!
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttestdist:
 .. figure:: ../_images/lsj_tdist_3.*
    :alt: *t*-distribution with df = 2 and df = 10
+   :name: fig-ttestdist
 
    The *t*-distribution with 2 degrees of freedom (left panel) and 10 degrees
    of freedom (right panel), with a standard normal distribution (i.e., mean =
@@ -122,9 +122,9 @@ associated *p*-value of 0.036.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttest_one:
 .. figure:: ../_images/lsj_ttest_one.*
    :alt: Conducting an One-sample t-test in jamovi
+   :name: fig-ttest_one
 
    Conducting an One-sample t-test in jamovi
    

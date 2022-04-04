@@ -145,9 +145,9 @@ similar (i.e. homogeneity of variance) or not.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-anova4:
 .. figure:: ../_images/lsj_anova4.*
    :alt: Levene test output for One-Way ANOVA in jamovi
+   :name: fig-anova4
 
    Levene test output for One-Way ANOVA in jamovi
    
@@ -175,9 +175,9 @@ option for Welch’s test (see :numref:`fig-anova4a`).
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-anova4a:
 .. figure:: ../_images/lsj_anova4a.*
    :alt: Welch’s test as part of the One-Way ANOVA analysis in jamovi
+   :name: fig-anova4a
 
    Welch’s test as part of the One-Way ANOVA analysis in jamovi
    
@@ -219,9 +219,9 @@ indication that normality is violated.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-anova5:
 .. figure:: ../_images/lsj_anova5.*
    :alt: QQ-plot produced from jamovi One-Way ANOVA options
+   :name: fig-anova5
 
    QQ-plot produced from jamovi One-Way ANOVA options
    
@@ -367,9 +367,9 @@ Kruskal-Wallis χ² = 12.076, df = 2, *p*-value = 0.00239, as in
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-anova6:
 .. figure:: ../_images/lsj_anova6.*
    :alt: Kruskal-Wallis One-Way non-parametric ANOVA in jamovi
+   :name: fig-anova6
 
    Kruskal-Wallis One-Way non-parametric ANOVA in jamovi
    

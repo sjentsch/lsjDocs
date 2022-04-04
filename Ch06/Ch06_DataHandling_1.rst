@@ -38,9 +38,9 @@ just this, see :numref:`fig-freqtable`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-freqtable:
 .. figure:: ../_images/lsj_freqtable.*
    :alt: Frequency table for the ``speaker`` variable
+   :name: fig-freqtable
 
    Frequency table for the ``speaker`` variable
    
@@ -64,9 +64,9 @@ in :numref:`fig-contingencytable`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-contingencytable:
 .. figure:: ../_images/lsj_contingencytable.*
    :alt: Contingency table for ``speaker`` and ``utterances``
+   :name: fig-contingencytable
 
    Contingency table for the ``speaker`` and ``utterances`` variables
    
@@ -93,9 +93,9 @@ Contingency Table in the output window will change to the one in
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-contingencyrow:
 .. figure:: ../_images/lsj_contingencyrow.*
    :alt: Contingency table with row percentages for ``speaker`` and ``utterances``
+   :name: fig-contingencyrow
 
    Contingency table for the ``speaker`` and ``utterances`` variables, with row
    percentages
@@ -113,9 +113,9 @@ set), 100% of the time it’s a Tombliboo saying it.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-contingencycol:
 .. figure:: ../_images/lsj_contingencycol.*
    :alt: Contingency table with column percentages for ``speaker`` and ``utterances``
+   :name: fig-contingencycol
 
    Contingency table for the ``speaker`` and ``utterances`` variables, with
    column percentages

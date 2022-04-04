@@ -48,9 +48,9 @@ of the sampling distribution of our test statistic.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-rejectionRegion1:
 .. figure:: ../_images/lsj_rejectionRegion1.*
    :alt: Critical region associated with a two-sided test
+   :name: fig-rejectionRegion1
 
    The critical region associated with the hypothesis test for the ESP study,
    for a hypothesis test with a significance level of α = 0.05. The plot shows
@@ -161,9 +161,9 @@ is illustrated in :numref:`fig-rejectionRegion2`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-rejectionRegion2:
 .. figure:: ../_images/lsj_rejectionRegion2.*
    :alt: Critical region associated with a one-sided test
+   :name: fig-rejectionRegion2
 
    The critical region for a one-sided test. In this case, the alternative
    hypothesis is that θ = 0.5 so we would only reject the null hypothesis for

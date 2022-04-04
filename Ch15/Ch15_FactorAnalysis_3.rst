@@ -22,9 +22,9 @@ observed data.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-cfa1:
 .. figure:: ../_images/lsj_cfa1.*
    :alt: Initial pre-specification of latent factor structure
+   :name: fig-cfa1
 
    Initial pre-specification of latent factor structure for the five factor
    personality scales, for use in CFA
@@ -105,9 +105,9 @@ this analysis). To perform CFA in jamovi:
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-cfa2:
 .. figure:: ../_images/lsj_cfa2.*
    :alt: Settings for conducting a Confirmatory Factor Analysis
+   :name: fig-cfa2
 
    Analysis panel with the settings for conducting a Confirmatory Factor
    Analysis (CFA) in jamovi
@@ -123,9 +123,9 @@ to zero.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-cfa3:
 .. figure:: ../_images/lsj_cfa3.*
    :alt: Model Fit results for the specified CFA model in jamovi
+   :name: fig-cfa3
 
    Table with Model Fit results for the specified CFA model in jamovi
       
@@ -168,17 +168,17 @@ article.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-cfa4:
 .. figure:: ../_images/lsj_cfa4.*
    :alt: Table with Factor Loadings for the specified CFA model in jamovi
+   :name: fig-cfa4
 
    Table with Factor Loadings for the specified CFA model in jamovi
       
 .. ----------------------------------------------------------------------------
 
-.. _fig-cfa5:
 .. figure:: ../_images/lsj_cfa5.*
    :alt: Table with Factor Covariances for the specified CFA model in jamovi
+   :name: fig-cfa5
 
    Table with Factor Covariances for the specified CFA model in jamovi
       
@@ -192,9 +192,9 @@ specified as an ‘Additional output’ option in jamovi (see :numref:`fig-cfa6`
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-cfa6:
 .. figure:: ../_images/lsj_cfa6.*
    :alt: Table with Factor Loadings Modification Indices
+   :name: fig-cfa6
 
    Table with Factor Loadings Modification Indices for the specified CFA
    model in jamovi
@@ -234,9 +234,9 @@ looking for the biggest MI in the re-calculated results.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-cfa7:
 .. figure:: ../_images/lsj_cfa7.*
    :alt: Table with Residual Covariances Modification Indices
+   :name: fig-cfa7
 
    Table with Residual Covariances Modification Indices for the specified CFA
    model in jamovi

@@ -186,9 +186,9 @@ Yay.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-anovaWthBtw:
 .. figure:: ../_images/lsj_anovaWthBtw.*
    :alt: illustration of between and within groups variation
+   :name: fig-anovaWthBtw
 
    Graphical illustration of “between groups” variation (left panel) and
    “within groups” variation (right panel). In the left panel, the arrows show

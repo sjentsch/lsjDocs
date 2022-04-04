@@ -25,9 +25,9 @@ introductory text I don’t want to focus on it, so I’ve tucked it away in
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-standardNormal:
 .. figure:: ../_images/lsj_standardNormal.*
    :alt: Binomial distribution: θ = 1/2 and N = 20 (left) or N = 1000 (right) 
+   :name: fig-standardNormal
 
    The normal distribution with mean μ = 0 and standard deviation σ = 1. The
    x-axis corresponds to the value of some variable, and the y-axis tells us
@@ -65,9 +65,9 @@ Spring temperatures.\ [#]_
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-meanShiftNormal:
 .. figure:: ../_images/lsj_meanShiftNormal.*
    :alt: Normal distribution: σ = 1 and µ = 4 (solid) or µ = 7 (dashed)
+   :name: fig-meanShiftNormal
 
    Illustration of what happens when you change the mean of a normal
    distribution. The solid line depicts a normal distribution with a mean of
@@ -92,9 +92,9 @@ gets wider, as you can see in :numref:`fig-scaleShiftNormal`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-scaleShiftNormal:
 .. figure:: ../_images/lsj_scaleShiftNormal.*
    :alt: Normal distribution: µ = 5 and σ = 1 (solid) or σ = 2 (dashed)
+   :name: fig-scaleShiftNormal
 
    Illustration of what happens when you change the standard deviation of a
    normal distribution. Both distributions plotted in this figure have a mean
@@ -120,9 +120,9 @@ in :numref:`fig-normAreaSD`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-normAreaSD:
 .. figure:: ../_images/lsj_normAreaSD.*
    :alt: Normal distribution: area under the curve for 1 and 2 SD
+   :name: fig-normAreaSD
 
    The area under the curve tells you the probability that an observation falls
    within a particular range. The solid lines plot normal distributions with
@@ -134,10 +134,10 @@ in :numref:`fig-normAreaSD`.
      
 .. ----------------------------------------------------------------------------
 
-.. _fig-normAreaOther:
 .. figure:: ../_images/lsj_normAreaOther.*
    :alt: Normal distribution: area under the curve for 1 SD bordering the mean
          and below 1 SD to the tails of the distribution
+   :name: fig-normAreaOther
 
    Two more examples of the “area under the curve” idea. There is a 15.9%
    chance that an observation is one standard deviation below the mean or

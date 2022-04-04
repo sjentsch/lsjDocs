@@ -23,9 +23,9 @@ pictures.
    
 .. ----------------------------------------------------------------------------
 
-.. _fig-tDist:
 .. figure:: ../_images/lsj_tDist.*
    :alt: t-distribution with df = 3 in comparison to a normal distribution
+   :name: fig-tDist
 
    t-distribution with 3 degrees of freedom (solid line). It looks similar to a
    normal distribution, but it’s not quite the same. For comparison purposes
@@ -47,9 +47,9 @@ pictures.
    
 .. ----------------------------------------------------------------------------
 
-.. _fig-chiSqDist:
 .. figure:: ../_images/lsj_chiSqDist.*
    :alt: χ²-distribution with with df = 3
+   :name: fig-chiSqDist
 
    χ²-distribution with 3 degrees of freedom. Notice that the observed values
    must always be greater than zero, and that the distribution is pretty
@@ -67,14 +67,14 @@ pictures.
    talking about something that has an *F*-distribution. Of course, as yet I
    still haven’t given you an example of anything that involves a sum of
    squares, but I will in chapter :doc:`Comparing several means (one-way ANOVA)
-   <../Ch13/Ch13_ANOVA>`. And that’s where we’ll run into the *F*-distribution. Oh, and
-   there’s a picture in :numref:`fig-Fdist`.
+   <../Ch13/Ch13_ANOVA>`. And that’s where we’ll run into the *F*-distribution.
+   Oh, and there’s a picture in :numref:`fig-Fdist`.
    
 .. ----------------------------------------------------------------------------
 
-.. _fig-FDist:
 .. figure:: ../_images/lsj_FDist.*
    :alt: F-distribution with df = 3 and df = 5
+   :name: fig-FDist
 
    F-distribution with 3 and 5 degrees of freedom. Qualitatively speaking, it
    looks pretty similar to a χ²-distribution, but they’re not quite the same in

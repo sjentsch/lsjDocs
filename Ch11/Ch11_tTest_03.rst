@@ -52,9 +52,9 @@ intervals for both groups of students (:numref:`fig-ttestci`).
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-harpohist:
 .. figure:: ../_images/lsj_HarpoAnB.*
    :alt: Histogram with grades in Anastasia’s and Bernadette’s classes
+   :name: fig-harpohist
 
    Histograms showing the distribution of grades for students in Anastasia’s
    (left panel) and in Bernadette’s (right panel) classes. Visually, these
@@ -63,9 +63,9 @@ intervals for both groups of students (:numref:`fig-ttestci`).
    
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttestci:
 .. figure:: ../_images/lsj_ttestci.*
    :alt: Mean grades (with error bars) in Anastasia’s and Bernadette’s classes
+   :name: fig-ttestci
 
    The plots show the mean grade for students in Anastasia’s and Bernadette’s
    tutorials. Error bars depict 95% confidence intervals around the mean.
@@ -109,9 +109,9 @@ this is:
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttesthyp:
 .. figure:: ../_images/lsj_studentTestHyp.*
    :alt: Illustration: Null and alternative hypotheses, indep. samples t-test
+   :name: fig-ttesthyp
 
    Graphical illustration of the null and alternative hypotheses assumed by the
    Student t-test for Independent Samples. The null hypothesis assumes that
@@ -274,9 +274,9 @@ the ``Grouping Variable`` box, as shown in :numref:`fig-ttest_ind`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttest_ind:
 .. figure:: ../_images/lsj_ttest_ind.*
    :alt: Conducting an Independent t-test in jamovi
+   :name: fig-ttest_ind
 
    Conducting an Independent t-test in jamovi, with options for recommended
    outputs checked.

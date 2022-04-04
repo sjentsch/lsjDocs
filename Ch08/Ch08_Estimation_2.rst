@@ -27,9 +27,9 @@ close to the true population, as :numref:`fig-IQsim` demonstrates.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-IQsim:
 .. figure:: ../_images/lsj_IQsim.*
    :alt: Random sample drawn from a normal distribution using jamovi
+   :name: fig-IQsim
 
    Random sample drawn from a normal distribution using jamovi
    

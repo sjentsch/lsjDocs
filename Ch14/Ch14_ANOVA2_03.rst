@@ -114,9 +114,9 @@ than use a separate one for each group.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-margmean1:
 .. figure:: ../_images/lsj_margmean1.*
    :alt: Estimated marginal means for the saturated model
+   :name: fig-margmean1
 
    jamovi screenshot showing the estimated marginal means for the saturated
    model, i.e. including the interaction component, with the ``clinicaltrial``
@@ -145,9 +145,9 @@ provides the marginal means for the analysis shown in :numref:`fig-margmean2`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-margmean2:
 .. figure:: ../_images/lsj_margmean2.*
    :alt: Estimated marginal means for the unsaturated model
+   :name: fig-margmean2
 
    jamovi screenshot showing the estimated marginal means for the unsaturated
    model, i.e. without the interaction component, with the ``clinicaltrial``

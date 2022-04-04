@@ -126,9 +126,9 @@ replacement**.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-srs1:
 .. figure:: ../_images/lsj_srs1.*
    :alt: Simple random sampling WITHOUT replacement from a finite population
+   :name: fig-srs1
 
    Simple random sampling WITHOUT replacement from a finite population
    
@@ -148,9 +148,9 @@ the data analysis *much* easier.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-brs:
 .. figure:: ../_images/lsj_brs.*
    :alt: Biased sampling WITHOUT replacement from a finite population
+   :name: fig-brs
 
    Biased sampling WITHOUT replacement from a finite population
    
@@ -168,9 +168,9 @@ population member multiple times, as illustrated in numref:`fig-srs2`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-srs2:
 .. figure:: ../_images/lsj_srs2.*
    :alt: Simple random sampling WITH replacement from a finite population
+   :name: fig-srs2
 
    Simple random sampling WITH replacement from a finite population
    
@@ -351,9 +351,9 @@ and the population standard deviation *σ* is 15.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-IQ_Pop_Smp:
 .. figure:: ../_images/lsj_IQ_Pop_Smp.*
    :alt: Population distribution of IQ and two samples with N=100 and N=10,000 
+   :name: fig-IQ_Pop_Smp
 
    The population distribution of IQ scores (left panel) and two samples drawn
    randomly from it: In the middle panel, we have a sample of 100 observations,

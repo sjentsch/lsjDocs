@@ -105,9 +105,9 @@ appears on the right hand side of the screen containing default
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-descriptives_default:
 .. figure:: ../_images/lsj_descriptives_default.*
    :alt: AFL 2010 winning margin data
+   :name: fig-descriptives_default
 
    Default descriptives for the AFL 2010 winning margin data
    (the ``afl.margins`` variable).
@@ -186,10 +186,9 @@ As a rough guide:
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-meanmedian:
-
 .. figure:: ../_images/lsj_meanmedian.*
    :alt: Comparison of mean and median
+   :name: fig-meanmedian
 
    Illustration of the difference between how the mean and the median should be
    interpreted. The mean is basically the “centre of gravity” of the data set.
@@ -305,18 +304,18 @@ period 1987 to 2010.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-aflsmall_finalists:
 .. figure:: ../_images/lsj_aflsmall_finalists.png
    :alt: Variables in ``aflsmall_finalists``
+   :name: fig-aflsmall_finalists
 
    Screenshot of jamovi showing the variables stored in the
    |aflsmall_finalists|_ data set
    
 .. ----------------------------------------------------------------------------
 
-.. _fig-aflsmall_finalists_mode:
 .. figure:: ../_images/lsj_aflsmall_finalists_mode.png
    :alt: Frequency table for ``afl.margins`` in ``aflsmall_finalists``
+   :name: fig-aflsmall_finalists_mode
 
    Screenshot of jamovi showing the frequency table for the
    ``afl.finalists`` variable in the |aflsmall_finalists|_ data set
@@ -365,9 +364,9 @@ should bet on a 3 point margin.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-aflsmall_margins_mode:
 .. figure:: ../_images/lsj_aflsmall_margins_mode.png
    :alt: Modal value in of ``afl.margins`` in ``aflsmall_finalists``
+   :name: fig-aflsmall_margins_mode
 
    Screenshot of jamovi showing the modal value for the afl.margins variable
    

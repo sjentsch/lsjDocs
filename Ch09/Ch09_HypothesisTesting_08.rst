@@ -20,9 +20,9 @@ The power function
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-rejectionRegion3:
 .. figure:: ../_images/lsj_rejectionRegion3.*
    :alt: Sampling distribution under the alternative hypothesis, θ = 0.55
+   :name: fig-rejectionRegion3
 
    Sampling distribution under the alternative hypothesis for a population
    parameter value of θ = 0.55. A reasonable proportion of the distribution
@@ -61,9 +61,9 @@ hypothesis, the Type II error rate is different.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-rejectionRegion4:
 .. figure:: ../_images/lsj_rejectionRegion4.*
    :alt: Sampling distribution under the alternative hypothesis, θ = 0.70
+   :name: fig-rejectionRegion4
 
    Sampling distribution under the alternative hypothesis for a population
    parameter value of θ = 0.70. Almost all of the distribution lies in the
@@ -84,9 +84,9 @@ power is large.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-powerTheta:
 .. figure:: ../_images/lsj_powerTheta.*
    :alt: Probability to reject the null hypothesis as function of θ
+   :name: fig-powerTheta
 
    The probability that we will reject the null hypothesis, plotted as a
    function of the true value of θ. Obviously, the test is more powerful
@@ -222,9 +222,9 @@ the null hypothesis predicts that *θ*\ :sub:`0` = 0.5.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-powerN:
 .. figure:: ../_images/lsj_powerN.*
    :alt: Probability to reject the null hypothesis as function of θ
+   :name: fig-powerN
 
    The power of our test plotted as a function of the sample size N. In this
    case, the true value of θ is 0.7 but the null hypothesis is that θ = 0.5.

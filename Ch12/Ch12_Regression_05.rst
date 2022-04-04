@@ -75,9 +75,9 @@ itself.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-scatter3d_1:
 .. figure:: ../_images/lsj_scatter3d_1.*
    :alt: 3D visualisation of a multiple regression model
+   :name: fig-scatter3d_1
 
    3D visualisation of a multiple regression model: There are two predictors in
    the model, ``dani.sleep`` and ``baby.sleep`` and the outcome variable is
@@ -101,3 +101,9 @@ you have K predictor variables in the model then the regression
 equation looks like this
 
 .. math:: Y_i = b_0 + \left( \sum_{k=1}^K b_{k} X_{ik} \right) + \epsilon_i
+
+.. ----------------------------------------------------------------------------
+
+.. |parenthood|                        replace:: ``parenthood``
+.. _parenthood:                        _static/data/parenthood.omv
+

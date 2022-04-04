@@ -21,9 +21,9 @@ shown in :numref:`fig-ttest_onesided1`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttest_onesided1:
 .. figure:: ../_images/lsj_ttest_onesided1.*
    :alt: jamovi results showing a One Sample T-Test
+   :name: fig-ttest_onesided1
 
    jamovi results showing a ``One Sample T-Test`` where the actual hypothesis
    is one-sided, i.e. that the true mean is greater than 67.5%.
@@ -60,9 +60,9 @@ You should get the results shown in :numref:`fig-ttest_onesided2`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttest_onesided2:
 .. figure:: ../_images/lsj_ttest_onesided2.*
    :alt: One-sided hypothesis in an Independent Samples t-Test
+   :name: fig-ttest_onesided2
 
    jamovi results showing an ``Independent Samples T-Test`` where the actual
    hypothesis is one-sided, i.e. that Anastasia’s students had higher grades
@@ -86,9 +86,9 @@ this first into the paired variables box) > ``grade_test1``
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttest_onesided3:
 .. figure:: ../_images/lsj_ttest_onesided3.*
    :alt: One-sided hypothesis in an Paired Samples t-Test
+   :name: fig-ttest_onesided3
 
    jamovi results showing a ``Paired Samples T-Test`` where the actual
    hypothesis is one-sided, i.e. that ``grade test2`` (‘Measure 1’) is larger 

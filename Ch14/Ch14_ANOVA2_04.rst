@@ -40,9 +40,9 @@ the homogeneity of variance assumption is not violated.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova5:
 .. figure:: ../_images/lsj_factorialanova5.*
    :alt: Checking assumptions in an ANOVA model
+   :name: fig-factorialanova5
 
    Checking assumptions in an ANOVA model
    

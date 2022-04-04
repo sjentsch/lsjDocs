@@ -48,9 +48,9 @@ adjusted during the analysis to find the best result, as described below).
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-pca1:
 .. figure:: ../_images/lsj_pca1.*
    :alt: jamovi PCA analysis window
+   :name: fig-pca1
 
    Analysis panel with the settings for conducting a Principal Component
    Analysis (PCA) in jamovi
@@ -64,9 +64,9 @@ very good sampling adequacy. No problems here then!
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-pca2:
 .. figure:: ../_images/lsj_pca2.*
    :alt: Assumption checks for the personality item data
+   :name: fig-pca2
 
    Assumption checks for the personality item data when using a PCA in jamovi  
       
@@ -91,9 +91,9 @@ the data). As with EFA, three different approaches are available:
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-pca3:
 .. figure:: ../_images/lsj_pca3.*
    :alt: Scree plot of the personality item data
+   :name: fig-pca3
 
    Scree plot of the personality item data when conducting a PCA in jamovi,
    showing the levelling off point, the “elbow”, after component 5
@@ -129,9 +129,9 @@ orthogonal (``Varimax``) rotation.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-pca4:
 .. figure:: ../_images/lsj_pca4.*
    :alt: Component summary statistics and correlations
+   :name: fig-pca4
 
    Component summary statistics and correlations for a five component solution
    when conducting a PCA with the personality item data in jamovi
@@ -159,9 +159,9 @@ threshold at the higher 0.4 value also provided a cleaner, clearer solution.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-pca5:
 .. figure:: ../_images/lsj_pca5.*
    :alt: Component loadings for a five component solution
+   :name: fig-pca5
 
    Component loadings for a five component solution when conducting a PCA
    with the personality item data in jamovi
@@ -195,9 +195,9 @@ little different. See :numref:`fig-pca6`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-pca6:
 .. figure:: ../_images/lsj_pca6.*
    :alt: |Rj| editor commands for creating optimally weighted component scores
+   :name: fig-pca6
 
    |Rj|_ editor commands for creating optimally weighted component scores for
    the five component solution  when conducting a PCA with the personality item

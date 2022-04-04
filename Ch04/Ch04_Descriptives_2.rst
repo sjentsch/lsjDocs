@@ -48,9 +48,9 @@ the ``Exploration`` → ``Descriptives`` → ``Statistics`` screen.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-aflsmall_margins_iqr:
 .. figure:: ../_images/lsj_aflsmall_margins_iqr.*
    :alt: Quartiles for ``afl.margins``
+   :name: fig-aflsmall_margins_iqr
 
    Screenshot of jamovi showing the Quartiles for the ``afl.margins`` variable
       
@@ -208,9 +208,9 @@ That’s just weird. Is jamovi broken? Is this a typo? Am I an idiot?
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-aflsmall_margins_variance1:
 .. figure:: ../_images/lsj_aflsmall_margins_variance1.*
    :alt: Variance for the first 5 values of ``afl.margins``
+   :name: fig-aflsmall_margins_variance1
 
    Screenshot of jamovi showing the Variance for the first 5 values of the
    ``afl.margins`` variable
@@ -329,9 +329,9 @@ standard deviation of the mean. This is shown visually in :numref:`fig-aflSD`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-aflSD:
 .. figure:: ../_images/lsj_aflSD.*
    :alt: Variance for the first 5 values of ``afl.margins``
+   :name: fig-aflSD
 
    Illustration of the standard deviation from the AFL winning margins data.
    The shaded bars in the histogram show how much of the data fall within one

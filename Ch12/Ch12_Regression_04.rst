@@ -5,9 +5,9 @@ Estimating a linear regression model
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-regression3:
 .. figure:: ../_images/lsj_introPicSSE.*
    :alt: Residuals associated with the best and with a poor regression line
+   :name: fig-regression3
 
    Depiction of the residuals associated with the best fitting regression line
    (left panel), and the residuals associated with a poor regression line (right
@@ -64,9 +64,9 @@ Linear regression in jamovi
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-reg1:
 .. figure:: ../_images/lsj_reg1.*
    :alt: jamovi screenshot showing a simple linear regression analysis
+   :name: fig-reg1
 
    jamovi screenshot showing a simple linear regression analysis
    

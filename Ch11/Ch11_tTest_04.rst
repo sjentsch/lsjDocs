@@ -23,9 +23,9 @@ probably the best place to discuss it.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttesthyp2:
 .. figure:: ../_images/lsj_welchTestHyp.*
    :alt: Illustration: Null and alternative hypotheses for the Welch t-test
+   :name: fig-ttesthyp2
 
    Graphical illustration of the null and alternative hypotheses assumed by the
    Welch t-test. Like the Student t-test for Independent Samples
@@ -83,9 +83,9 @@ above, then this is what it gives you :numref:`fig-ttest_welch`:
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ttest_welch:
 .. figure:: ../_images/lsj_ttest_welch.*
    :alt: Results showing the Welch test alongside the default Student’s t-test
+   :name: fig-ttest_welch
 
    Results showing the Welch test alongside the default Student’s t-test in
    jamovi

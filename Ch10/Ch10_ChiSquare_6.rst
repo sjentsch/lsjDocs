@@ -84,9 +84,9 @@ that people on fire are just as happy as people not on fire
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-Fisher:
 .. figure:: ../_images/lsj_Fisher.*
    :alt: Fisher exact test output in jamovi
+   :name: fig-Fisher
 
    Fisher exact test output in jamovi. Ignore the ‘Value’ and just refer to
    the p-value

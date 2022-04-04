@@ -27,9 +27,9 @@ will be presented with a user interface which looks something like
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-startjamovi:
 .. figure:: ../_images/lsj_startingjamovi.*
    :alt: jamovi start window
+   :name: fig-startjamovi
 
    jamovi looks like this when you start it.
 

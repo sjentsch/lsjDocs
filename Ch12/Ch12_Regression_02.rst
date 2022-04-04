@@ -34,9 +34,9 @@ density curve showing how the data in each variable is distributed.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-scatterplot1:
 .. figure:: ../_images/lsj_scatterplot1.*
    :alt: Scatterplot via the ‘Correlation Matrix’ command in jamovi
+   :name: fig-scatterplot1
 
    Scatterplot via the ``Correlation Matrix`` command in jamovi
    
@@ -53,9 +53,9 @@ information is the same.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-scatterplot2:
 .. figure:: ../_images/lsj_scatterplot2.*
    :alt: Scatterplot via the ‘scatr’ add-on module in jamovi
+   :name: fig-scatterplot2
 
    Scatterplot via the ``scatr`` add-on module in jamovi
    
@@ -73,9 +73,9 @@ jamovi will create a scatterplot matrix for you, just like the one in
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-scatterplot3:
 .. figure:: ../_images/lsj_scatterplot3.*
    :alt: Matrix of scatterplots produced using ‘Correlation Matrix’
+   :name: fig-scatterplot3
 
    Matrix of scatterplots produced using the ``Correlation Matrix`` command
    in jamovi.

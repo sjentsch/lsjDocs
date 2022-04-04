@@ -97,9 +97,9 @@ at which it finally settles is the true probability of heads.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-frequentistProb:
 .. figure:: ../_images/lsj_frequentistProb.*
    :alt: Illustration of how frequentist probability works
+   :name: fig-frequentistProb
 
    Illustration of how frequentist probability works: If you flip a fair coin
    over and over again the proportion of heads that you’ve seen eventually

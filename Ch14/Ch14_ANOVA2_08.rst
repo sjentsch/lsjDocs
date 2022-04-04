@@ -66,9 +66,9 @@ applied. This, along with the corresponding results table, is shown in
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova13:
 .. figure:: ../_images/lsj_factorialanova13.*
    :alt: Analysis panel to set up post hoc tests
+   :name: fig-factorialanova13
 
    Analysis panel for setting up post-hoc test within jamovi's factorial ANOVA
    procedure (the current settings request a Tukey HSD statistic): Unsaturated
@@ -117,9 +117,9 @@ to before, but with a lot more comparisons made.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova14:
 .. figure:: ../_images/lsj_factorialanova14.*
    :alt: Results table for a Tukey HSD post-hoc test
+   :name: fig-factorialanova14
 
    Results table for a Tukey HSD post-hoc test within jamovi's factorial ANOVA
    procedure: Unsaturated model with the factors ``drug`` and ``therapy`` but

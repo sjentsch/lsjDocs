@@ -26,9 +26,9 @@ get a bar graph, something like that shown in :numref:`fig-bar1`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-bar1:
 .. figure:: ../_images/lsj_bar1.*
    :alt: Bar plot in jamovi, showing just four AFL teams
+   :name: fig-bar1
 
    Filtering to include just four AFL teams, and drawing a bar plot in jamovi
    

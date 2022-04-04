@@ -47,9 +47,9 @@ visualisation.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-snowMap:
 .. figure:: ../_images/lsj_snowMap.*
    :alt: Redrawing of Snow’s original cholera map
+   :name: fig-snowMap
 
    Stylised redrawing of John Snow’s original cholera map. Each small dot
    represents the location of a cholera case and each large circle shows the

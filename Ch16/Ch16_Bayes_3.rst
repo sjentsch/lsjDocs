@@ -299,9 +299,9 @@ result, all bets are off.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-adapt:
 .. figure:: ../_images/lsj_adapt.*
    :alt: Effect of re-running your tests every time new data arrive
+   :name: fig-adapt
 
    How badly can things go wrong if you re-run your tests every time
    new data arrive? If you are a frequentist, the answer is “very wrong”.

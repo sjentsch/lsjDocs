@@ -49,9 +49,9 @@ and type that in) and then add the following in the formula box, like in
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-likertraw:
 .. figure:: ../_images/lsj_likertraw.*
    :alt: Creating a new computed variable in jamovi
+   :name: fig-likertraw
 
    Creating a new computed variable in jamovi
    
@@ -75,9 +75,9 @@ spreadsheet view, as in :numref:`fig-opinionstrength`:
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-opinionstrength:
 .. figure:: ../_images/lsj_opinionstrength.*
    :alt: fx button to select functions and variables
+   :name: fig-opinionstrength
 
    Using the *f*\ :sub:`x` button to select functions and variables
    
@@ -152,9 +152,9 @@ manipulation, along with an accompanying frequency table, is shown in
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-agecats:
 .. figure:: ../_images/lsj_agecats.*
    :alt: Using the ``IF`` function
+   :name: fig-agecats
 
    Collapsing a variable into a smaller number of discrete levels using the
    jamovi ``IF`` function
@@ -193,9 +193,9 @@ something like :numref:`fig-transform1`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-transform1:
 .. figure:: ../_images/lsj_transform1.*
    :alt: Using the jamovi ``Transform`` command
+   :name: fig-transform1
 
    Creating a new variable transformation using the jamovi ``Transform``
    command
@@ -221,9 +221,9 @@ otherwise you’ll lose it!).
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-transform2:
 .. figure:: ../_images/lsj_transform2.*
    :alt: Specifying a transformation in jamovi
+   :name: fig-transform2
 
    Specifying a transformation in jamovi, to be saved as the imaginatively
    named ``Transform 1``
@@ -254,9 +254,9 @@ variable that you want to recode.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-transform3:
 .. figure:: ../_images/lsj_transform3.*
    :alt: jamovi transformation into categories
+   :name: fig-transform3
 
    jamovi transformation into three age categories, using the ``Add 
    condition`` button

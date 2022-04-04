@@ -326,9 +326,9 @@ understand degrees of freedom in terms of our data. So here goes.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-chiSqDists:
 .. figure:: ../_images/lsj_chiSqDists.*
    :alt: χ² distributions with different degrees of freedom
+   :name: fig-chiSqDists
 
    χ² (chi-square) distributions with different values for the “degrees of
    freedom”
@@ -379,9 +379,9 @@ illustrated in :numref:`fig-chiSqTest`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-chiSqTest:
 .. figure:: ../_images/lsj_chiSqTest.*
    :alt: Hypothesis testing works for the χ² GOF test
+   :name: fig-chiSqTest
 
    Illustration of how the hypothesis testing works for the χ² (chi-square)
    goodness-of-fit test
@@ -397,9 +397,9 @@ value for a χ²-distribution with 3 degrees of freedom, and *p* = 0.05 is 7.815
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-chisquared_critvalues:
 .. figure:: ../_images/lsj_chisquared_critvalues.*
    :alt: Table of critical values for the χ² distribution
+   :name: fig-chisquared_critvalues
 
    Table of critical values for the χ² (chi-square) distribution
    
@@ -430,9 +430,9 @@ for *df* = 3.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-chisquared_analysis1:
 .. figure:: ../_images/lsj_chisquared_analysis1.*
    :alt: χ² One Sample Proportion Test in jamovi
+   :name: fig-chisquared_analysis1
 
    χ² One Sample Proportion Test in jamovi, with table showing both observed
    and expected frequencies and proportions
@@ -479,9 +479,9 @@ provide enough evidence against it.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-chisquared_analysis2:
 .. figure:: ../_images/lsj_chisquared_analysis2.*
    :alt: Changing expected proportions in the χ² One Sample Proportion Test
+   :name: fig-chisquared_analysis2
 
    Changing the expected proportions in the χ² One Sample Proportion Test in
    jamovi

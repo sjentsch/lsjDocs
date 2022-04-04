@@ -12,9 +12,9 @@ assumption of normality is not met, then the Friedman test can be used.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-RManova6:
 .. figure:: ../_images/lsj_RManova6.*
    :alt: ‘Repeated Measures ANOVA (Non-parametric)’ dialogue box in jamovi
+   :name: fig-RManova6
 
    ‘Repeated Measures ANOVA (Non-parametric)’ dialogue box in jamovi
    

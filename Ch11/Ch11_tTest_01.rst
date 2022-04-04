@@ -53,9 +53,9 @@ need some statistics.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-zeppo:
 .. figure:: ../_images/lsj_Zeppo.*
    :alt: Theoretical and empirical distribution of student grades
+   :name: fig-zeppo
 
    The theoretical distribution (solid line) from which the psychology student
    grades (bars) are supposed to have been generated.
@@ -98,9 +98,9 @@ For now though, we’ll keep things simple.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ztesthyp:
 .. figure:: ../_images/lsj_oneSampleZTestHyp.*
    :alt: One-sample z-test: Illustration of the null and alternative hypotheses
+   :name: fig-ztesthyp
 
    Graphical illustration of the null and alternative hypotheses assumed by the
    one sample z-test (the two sided version, that is). The null and alternative
@@ -207,9 +207,9 @@ text book.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ztest:
 .. figure:: ../_images/lsj_zTestOneTwoTailed.*
    :alt: Rejection regions for the two- and one-sided z-tests
+   :name: fig-ztest
 
    Rejection regions for the two-sided z-test (left panel) and the one-sided
    z-test (right panel)

@@ -104,9 +104,9 @@ of the mean**.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-samplingDist4:
 .. figure:: ../_images/lsj_samplingDist4.*
    :alt: Sampling distribution: Mean for the “five IQ scores experiment”
+   :name: fig-samplingDist4
 
    The sampling distribution of the mean for the “five IQ scores experiment”:
    If you sample 5 people at random and calculate their average IQ you’ll
@@ -148,9 +148,9 @@ measured in the 100 to 140 range.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-samplingDistMax:
 .. figure:: ../_images/lsj_samplingDistMax.*
    :alt: Sampling distribution: Maximum for the “five IQ scores experiment” 
+   :name: fig-samplingDistMax
 
    The sampling distribution of the maximum for the “five IQ scores
    experiment”: If you sample 5 people at random and select the one with the
@@ -184,9 +184,9 @@ the sample size *N* increases, the SEM decreases.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-samplingDistDiffN:
 .. figure:: ../_images/lsj_samplingDistDiffN.*
    :alt: Shape of the sampling distribution in dependence of the sample size 
+   :name: fig-samplingDistDiffN
 
    Illustration of the how sampling distribution of the mean depends on sample
    size. In each panel I generated 10,000 samples of IQ data and calculated the
@@ -236,9 +236,9 @@ approximately normal no matter what your population distribution looks like!
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-cltDemo:
 .. figure:: ../_images/lsj_cltDemo.*
    :alt: Demonstration of the central limit theorem 
+   :name: fig-cltDemo
 
    Demonstration of the central limit theorem: In the top-left panel, we have a
    non-normal population distribution, and the remaining panels show the

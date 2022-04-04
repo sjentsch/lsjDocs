@@ -95,9 +95,9 @@ reliability analysis in jamovi:
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-rel1:
 .. figure:: ../_images/lsj_rel1.*
    :alt: Settings for conducting a Reliability Analysis
+   :name: fig-rel1
 
    Analysis panel with the settings for conducting a Reliability Analysis
    in jamovi
@@ -112,9 +112,9 @@ this is 0.74, not much different from *α*.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-rel2:
 .. figure:: ../_images/lsj_rel2.*
    :alt: Results of the Reliability Analysis for Agreeableness
+   :name: fig-rel2
 
    Tables with the results of the Reliability Analysis for the Agreeableness
    factor from the |bfi_sample3|_ data set 

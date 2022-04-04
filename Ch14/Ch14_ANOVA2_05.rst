@@ -32,9 +32,9 @@ the two groups do not overlap and analysis of variance has essentially
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ancova_groups:
 .. figure:: ../_images/lsj_ancova_groups.*
    :alt: Plot of Statistics anxiety against age for two distinct groups
+   :name: fig-ancova_groups
 
    Plot of Statistics anxiety against age for two distinct groups
    
@@ -60,9 +60,9 @@ up the plots and tables options.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ancova1:
 .. figure:: ../_images/lsj_ancova1.*
    :alt: The jamovi ANCOVA analysis panel
+   :name: fig-ancova1
 
    Analysis panel showing the variable boxes to assign the ``Dependent
    Variable``, ``Fixed Factors`` and the ``Covariates`` for the ANCOVA in
@@ -81,18 +81,18 @@ visualising and interpreting the significant effects.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ancova2:
 .. figure:: ../_images/lsj_ancova2.*
    :alt: jamovi ANCOVA output
+   :name: fig-ancova2
 
    jamovi ANCOVA output for happiness as a function of stress and commuting
    method, with age as a covariate
    
 .. ----------------------------------------------------------------------------
 
-.. _fig-ancova3:
 .. figure:: ../_images/lsj_ancova3.*
    :alt: Estimated Marginal means within the ANCOVA
+   :name: fig-ancova3
 
    Table with the Estimated Marginal means within the ANCOVA: Shown are the 
    mean happiness level as a function of stress and commuting method
@@ -121,9 +121,9 @@ people who cycle are happier, on average, than those who drive to work.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ancova4:
 .. figure:: ../_images/lsj_ancova4.*
    :alt: Plot with the Estimated Marginal means within the ANCOVA
+   :name: fig-ancova4
 
    Plot with the Estimated Marginal means within the ANCOVA: Shown are the 
    mean happiness level as a function of stress and commuting method

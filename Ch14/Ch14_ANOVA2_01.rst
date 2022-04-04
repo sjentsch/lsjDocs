@@ -31,9 +31,9 @@ in :numref:`fig-factorialanova1`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova1:
 .. figure:: ../_images/lsj_factorialanova1.*
    :alt: jamovi contingency table of drug by therapy
+   :name: fig-factorialanova1
 
    jamovi contingency table for ``drug`` by ``therapy``
    
@@ -234,9 +234,9 @@ outcome variable (i.e., ``mood.gain``), and we got the results shown in
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova2:
 .. figure:: ../_images/lsj_factorialanova2.*
    :alt: jamovi One-way ANOVA of mood.gain by drug
+   :name: fig-factorialanova2
 
    jamovi One-way ANOVA of ``mood.gain`` by ``drug``
    
@@ -251,10 +251,9 @@ add ``therapy`` as a second ``Fixed Factor`` in the analysis, see
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-factorialanova3:
 .. figure:: ../_images/lsj_factorialanova3.*
    :alt: jamovi factorial ANOVA for mood.gain with the factors drug and therapy
-
+   :name: fig-factorialanova3
 
    jamovi factorial ANOVA for mood.gain with the two factors ``drug`` and
    ``therapy``
@@ -613,9 +612,9 @@ that actually make a difference!
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-maineffects:
 .. figure:: ../_images/lsj_maineffects.*
    :alt: Four different outcomes for a 2 × 2 ANOVA
+   :name: fig-maineffects
 
    The four different outcomes for a 2 × 2 ANOVA when no interactions are
    present. In the top-left panel, we see a main effect of Factor A and no

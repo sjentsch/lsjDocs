@@ -95,9 +95,9 @@ coefficients for you using the ``Standardized estimate`` checkbox in the
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-reg3:
 .. figure:: ../_images/lsj_reg3.*
    :alt: Standardised coefficients with 95% confidence intervals
+   :name: fig-reg3
 
    Standardised coefficients, with 95% confidence intervals, for multiple
    linear regression

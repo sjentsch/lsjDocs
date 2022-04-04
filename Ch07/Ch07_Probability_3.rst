@@ -81,9 +81,9 @@ entirely on my trousers. Everyone wins!
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-pantsDistribution:
 .. figure:: ../_images/lsj_pantsDistribution.*
    :alt: “Trousers” probability distribution
+   :name: fig-pantsDistribution
 
    Visual depiction of the “trousers” probability distribution. There are five
    “elementary events”, corresponding to the five pairs of trousers that I own.

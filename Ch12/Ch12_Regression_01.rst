@@ -48,9 +48,9 @@ practice, but other parents tell me that it’s pretty standard.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-grumpHist:
 .. figure:: ../_images/lsj_grumpHist.*
    :alt: Histograms for three variables from the |parenthood| data set
+   :name: fig-grumpHist
 
    Histograms for the three interesting variables in the |parenthood|_ data
    set
@@ -77,9 +77,9 @@ how many hours I slept.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-grumpCor1:
 .. figure:: ../_images/lsj_grumpCor1.*
    :alt: Scatterplots between ``dani.sleep`` and ``baby.sleep`` to ``dani.grump``
+   :name: fig-grumpCor1
 
    Scatterplots showing the relationship between ``dani.sleep`` and
    ``dani.grump`` (left panel) and the relationship between ``baby.sleep`` and
@@ -98,9 +98,9 @@ grumpy (negative relationship, left hand side).
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-grumpCor2:
 .. figure:: ../_images/lsj_grumpCor2.*
    :alt: Scatterplots between baby.sleep to dani.grump and dani.sleep
+   :name: fig-grumpCor2
 
    Scatterplots showing the relationship between ``baby.sleep`` and
    ``dani.grump`` (left panel) and the relationship between ``baby.sleep`` and
@@ -123,9 +123,9 @@ you can see several plots showing what different correlations look like.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-corr:
 .. figure:: ../_images/lsj_corr.*
    :alt: Effect of varying the strength and direction of a correlation
+   :name: fig-corr
 
    Illustration of the effect of varying the strength and direction of a
    correlation. In the left hand column, the correlations are 0.00, 0.33, 0.67
@@ -189,9 +189,9 @@ variables |continuous| across into the box on the right to get the output in
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-correlations:
 .. figure:: ../_images/lsj_correlations.*
    :alt: jamovi screenshot with correlations in the |parenthood| data set
+   :name: fig-correlations
 
    jamovi screenshot showing correlations between variables in the
    |parenthood|_ data set
@@ -249,9 +249,9 @@ pretty typical.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-anscombe:
 .. figure:: ../_images/lsj_anscombe.*
    :alt: Anscombe’s quartet
+   :name: fig-anscombe
 
    Anscombe’s quartet: All four of these data sets have a Pearson correlation
    of *r* = 0.816, but they are qualitatively different from one another.
@@ -324,9 +324,9 @@ correlation of *r* = 0.91 says at all.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ordinalRelationship:
 .. figure:: ../_images/lsj_ordinalRelationship.*
    :alt: relationship between hours worked and grade received
+   :name: fig-ordinalRelationship
 
    The relationship between hours worked and grade received for a toy data set
    consisting of only 10 students (each circle corresponds to one student). The

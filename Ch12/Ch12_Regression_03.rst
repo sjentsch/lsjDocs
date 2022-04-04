@@ -26,9 +26,9 @@ powerful tools.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-regression1:
 .. figure:: ../_images/lsj_introPicLine.*
    :alt: Best and poor choice of regression line
+   :name: fig-regression1
 
    The left panel shows the sleep-grumpiness scatterplot from
    :numref:`fig-scatterplot2` with the best fitting regression line drawn over

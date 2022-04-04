@@ -15,9 +15,9 @@ data yourself. Let’s have a look at how they work, again using the
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-boxplot1:
 .. figure:: ../_images/lsj_boxplot1.*
    :alt: Box plot of ``afl.margins``
+   :name: fig-boxplot1
 
    Box plot of the ``afl.margins`` variable from the |aflsmall_margins|_ data
    set plotted in jamovi
@@ -57,9 +57,9 @@ better to just use a simple box plot.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-boxplot2:
 .. figure:: ../_images/lsj_boxplot2.*
    :alt: Violin plot of ``afl.margins``
+   :name: fig-boxplot2
 
    Violin plot of the ``afl.margins`` variable from the |aflsmall_margins|_
    file plotted in jamovi, alsow showing a box plot and data points
@@ -82,9 +82,9 @@ this is to move the ``year`` variable across into the ``Split by`` box, as in
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-splitfile1:
 .. figure:: ../_images/lsj_splitfile1.*
    :alt: ``Split by`` box
+   :name: fig-splitfile1
 
    jamovi screen shot showing the ``Split by`` box
    
@@ -99,10 +99,10 @@ space: no chance at all that the reader is going to learn anything useful.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-boxplot3:
 .. figure:: ../_images/lsj_boxplot3.*
    :alt: Multiple box plots: ``margin`` split by ``year`` from
-   ``aflmarginbyyear`` 
+         ``aflmarginbyyear``
+   :name: fig-boxplot3
 
    Multiple box plots created in jamovi, for the variables ``margin`` split by
    ``year`` in the |aflmarginbyyear|_ data set
@@ -121,9 +121,9 @@ like :numref:`fig-boxplot4`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-boxplot4:
 .. figure:: ../_images/lsj_boxplot4.*
    :alt: Box plot with outliers
+   :name: fig-boxplot4
 
    Box plot showing two very suspicious outliers
    
@@ -144,9 +144,9 @@ type ``margin > 300`` into the filter field, as in :numref:`fig-filter1`.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-filter1:
 .. figure:: ../_images/lsj_filter1.*
    :alt: jamovi filter screen
+   :name: fig-filter1
 
    The jamovi filter screen
    
@@ -164,9 +164,9 @@ to the original data source to find out what is going on.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-filter2:
 .. figure:: ../_images/lsj_filter2.*
    :alt: Frequency table for ID
+   :name: fig-filter2
 
    Frequency table for ID showing the ID numbers for the two suspicious
    outliers: 14 and 134

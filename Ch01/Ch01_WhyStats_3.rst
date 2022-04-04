@@ -90,9 +90,9 @@ complicated data.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-berkeley:
 .. figure:: ../_images/lsj_berkeleyadmissions.*
    :alt: Berkeley 1973 college admissions data
+   :name: fig-berkeley
 
    The Berkeley 1973 college admissions data. This figure plots the admission
    rate for the 85 departments that had at least one female applicant, as a

@@ -113,9 +113,9 @@ with the statistic for the McNemar test just below it (see
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-McNemar:
 .. figure:: ../_images/lsj_McNemar.*
    :alt: McNemar test output in jamovi
+   :name: fig-McNemar
 
    McNemar test output in jamovi
    
@@ -163,9 +163,9 @@ the same test.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-ind_paired:
 .. figure:: ../_images/lsj_ind_paired.*
    :alt: Independent vs. Paired (McNemar) test output in jamovi
+   :name: fig-ind_paired
 
    Independent vs. Paired (McNemar) test output in jamovi
    

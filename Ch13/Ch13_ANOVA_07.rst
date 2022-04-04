@@ -114,9 +114,9 @@ measures ANOVA dialogue box, as in :numref:`fig-RManova1`, via
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-RManova1:
 .. figure:: ../_images/lsj_RManova1.*
    :alt: Repeated measures ANOVA dialogue box in jamovi
+   :name: fig-RManova1
 
    Repeated measures ANOVA dialogue box in jamovi
    
@@ -136,9 +136,9 @@ and sphericity can be assumed.).
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-RManova2:
 .. figure:: ../_images/lsj_RManova2.*
    :alt: One-way repeated measures ANOVA output: Mauchly’s Test of Sphericity
+   :name: fig-RManova2
 
    One-way repeated measures ANOVA output: Mauchly’s Test of Sphericity
    
@@ -164,9 +164,9 @@ corrected *F*-values are then shown in the results table, as in
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-RManova3:
 .. figure:: ../_images/lsj_RManova3.*
    :alt: Repeated measures ANOVA output: Tests of Within-Subjects Effects
+   :name: fig-RManova3
 
    One-way repeated measures ANOVA output: Tests of Within-Subjects Effects
    
@@ -185,9 +185,9 @@ syntax based (*F*\(2,10) = 6.93, p = 0.013).
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-RManova4:
 .. figure:: ../_images/lsj_RManova4.*
    :alt: Post-hoc tests in repeated measures ANOVA in jamovi
+   :name: fig-RManova4
 
    Post-hoc tests in repeated measures ANOVA in jamovi
    
@@ -210,9 +210,9 @@ tests between Speech and Syntax task performance.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-RManova5:
 .. figure:: ../_images/lsj_RManova5.*
    :alt: One-way repeated measures ANOVA output: Descriptive Statistics
+   :name: fig-RManova5
 
    One-way repeated measures ANOVA output: Descriptive Statistics
    

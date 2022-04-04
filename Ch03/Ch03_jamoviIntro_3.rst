@@ -40,9 +40,9 @@ It’s that easy. The newly installed modules can then be accessed from the
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-modules:
 .. figure:: ../_images/lsj_modules.*
    :alt: jamovi modules in the jamovi library
+   :name: fig-modules
 
    Installing add-on modules in jamovi
    

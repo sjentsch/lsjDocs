@@ -148,9 +148,9 @@ out why it’s so different.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-outlier:
 .. figure:: ../_images/lsj_unusual_outlier.*
    :alt: Outliers and their effect
+   :name: fig-outlier
 
    Illustration of outliers: The dotted lines plot the regression line that
    would have been estimated without the anomalous observation included, and
@@ -164,9 +164,9 @@ out why it’s so different.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-leverage:
 .. figure:: ../_images/lsj_unusual_leverage.*
    :alt: High leverage points and their effect
+   :name: fig-leverage
 
    Illustration of high leverage points: The anomalous observation in this case
    is unusual both in terms of the predictor (x axis) and the outcome (y axis),
@@ -196,9 +196,9 @@ likely to be a cause for concern unless they are also outliers.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-influence:
 .. figure:: ../_images/lsj_unusual_influence.*
    :alt: High influence points and their effect
+   :name: fig-influence
 
    Illustration of high influence points: In this case, the anomalous 
    observation is highly unusual on the predictor variable (x axis), and falls
@@ -238,9 +238,9 @@ in :numref:`fig-reg4`\.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-reg4:
 .. figure:: ../_images/lsj_reg4.*
    :alt: jamovi output showing the table for the Cook’s distance statistics
+   :name: fig-reg4
 
    jamovi output showing the table for the Cook’s distance statistics
    
@@ -279,9 +279,9 @@ regression model.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-reg5:
 .. figure:: ../_images/lsj_reg5.*
    :alt: Quantiles according to the model against standardised residuals
+   :name: fig-reg5
 
    Plot of the theoretical quantiles according to the model, against the
    quantiles of the standardised residuals, produced in jamovi
@@ -301,9 +301,9 @@ probably not worth worrying about.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-reg6:
 .. figure:: ../_images/lsj_reg6.*
    :alt: Residuals plots produced in jamovi
+   :name: fig-reg6
 
    Residuals plots produced in jamovi
    
@@ -383,9 +383,9 @@ yep, that’s some mighty fine collinearity there.
 
 .. ----------------------------------------------------------------------------
 
-.. _fig-reg7:
 .. figure:: ../_images/lsj_reg7.*
    :alt: Collinearity statistics for multiple regression, produced in jamovi
+   :name: fig-reg7
 
    Collinearity statistics for multiple regression, produced in jamovi
    
