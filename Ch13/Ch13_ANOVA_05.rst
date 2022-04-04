@@ -123,7 +123,7 @@ post-hoc analysis, is often referred to as a **correction for multiple
 comparisons**, though it is sometimes referred to as “simultaneous inference”.
 In any case, there are quite a few different ways of doing this adjustment.
 I’ll discuss a few of them in this section and in section :doc:`Post-hoc tests
-<../Ch14/Ch14_ANOVA2_08>`, but you should be aware that there are many other methods
+<../Ch14/Ch14_ANOVA2_09>`, but you should be aware that there are many other methods
 out there (`Hsu, 1996 <../Other/References.html#hsu-1996>`__\ ).
 
 Bonferroni corrections
@@ -254,8 +254,8 @@ terribly informative.
    comparisons but not others, it’s a different story. In those circumstances
    you’re not really running “post-hoc” analyses at all, you’re making “planned
    comparisons”. I do talk about this situation later in the book in section
-   :doc:`The method of planned comparisons <../Ch14/Ch14_ANOVA2_09>`), but for now I
-   want to keep things simple.
+   :doc:`The method of planned comparisons <../Ch14/Ch14_ANOVA2_10>`), but for
+   now I    want to keep things simple.
 
 .. [#]
    It’s worth noting in passing that not all adjustment methods try to

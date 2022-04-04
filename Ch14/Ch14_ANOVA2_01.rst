@@ -535,7 +535,7 @@ levels minus 1 (i.e., R - 1 for the row variable Factor A, and C - 1 for the
 column variable Factor B). So, for the ``drugs`` factor we obtain *df* = 2, and
 for the ``therapy`` factor we obtain *df* = 1. Later on, when we discuss the
 interpretation of ANOVA as a regression model (see section :doc:`ANOVA as a
-linear model <../Ch14/Ch14_ANOVA2_06>`), I’ll give a clearer statement of how we arrive
+linear model <../Ch14/Ch14_ANOVA2_07>`), I’ll give a clearer statement of how we arrive
 at this number. But for the moment we can use the simple definition of degrees
 of freedom, namely that the degrees of freedom equals the number of quantities
 that are observed, minus the number of constraints. So, for the ``drugs``

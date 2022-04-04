@@ -1,143 +1,188 @@
 .. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_ and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_
 
-Post-hoc tests
---------------
- 
-Time to switch to a different topic. Rather than pre-planned comparisons that
-you have tested using contrasts, let’s suppose you’ve done your ANOVA and it
-turns out that you obtained some significant effects. Because of the fact that
-the *F*-tests are “omnibus” tests that only really test the null hypothesis
-that there are no differences among groups, obtaining a significant effect
-doesn’t tell you which groups are different to which other ones. We discussed
-this issue back in chapter :doc:`Comparing several means (one-way ANOVA)
-<../Ch13/Ch13_ANOVA>`, and in that chapter our solution was to run *t*-tests for all
-possible pairs of groups, making corrections for multiple comparisons (e.g.,
-Bonferroni, Holm) to control the Type I error rate across all comparisons. The
-methods that we used back there have the advantage of being relatively simple
-and being the kind of tools that you can use in a lot of different situations
-where you’re testing multiple hypotheses, but they’re not necessarily the best
-choices if you’re interested in doing efficient post-hoc testing in an ANOVA
-context. There are actually quite a lot of different methods for performing
-multiple comparisons in the statistics literature (`Hsu, 1996
-<../Other/References.html#hsu-1996>`__\ ), and it would be beyond the scope of an
-introductory text like this one to discuss all of them in any detail.
+Different ways to specify contrasts
+-----------------------------------
 
-That being said, there’s one tool that I do want to draw your attention
-to, namely Tukey’s “Honestly Significant Difference”, or **Tukey’s HSD**
-for short. For once, I’ll spare you the formulas and just stick to the
-qualitative ideas. The basic idea in Tukey’s HSD is to examine all
-relevant pairwise comparisons between groups, and it’s only really
-appropriate to use Tukey’s HSD if it is *pairwise* differences that
-you’re interested in.\ [#]_ For instance, earlier we conducted a
-factorial ANOVA using the |clinicaltrial|_ data set, and where we
-specified a main effect for ``drug`` and a main effect of ``therapy`` we
-would be interested in the following four comparisons:
+In the previous section, I showed you a method for converting a factor
+into a collection of contrasts. In the method I showed you we specify a
+set of binary variables in which we defined a table like this one:
 
--  The difference in mood gain for people given ``Anxifree`` versus people
-   given the ``Placebo``.
++--------------+------------------+------------------+
+| ``drug``     | ``druganxifree`` | ``drugjoyzepam`` |
++--------------+------------------+------------------+
+| ``placebo``  |                0 |                0 |
++--------------+------------------+------------------+
+| ``anxifree`` |                1 |                0 |
++--------------+------------------+------------------+
+| ``joyzepam`` |                0 |                1 |
++--------------+------------------+------------------+
 
--  The difference in mood gain for people given ``Joyzepam`` versus people
-   given the ``Placebo``.
+Each row in the table corresponds to one of the factor levels, and each column
+corresponds to one of the contrasts. This table, which always has one more row
+than columns, has a special name. It is called a **contrast matrix**. However,
+there are lots of different ways to specify a contrast matrix. In this section
+I discuss a few of the standard contrast matrices that statisticians use and
+how you can use them in jamovi. If you’re planning to read the section on
+unbalanced ANOVA later on (section :doc:`Factorial ANOVA 3: unbalanced designs
+<../Ch14/Ch14_ANOVA2_11>`), it’s worth reading this section carefully. If not, you can
+get away with skimming it, because the choice of contrasts doesn’t matter much
+for balanced designs.
 
--  The difference in mood gain for people given ``Anxifree`` versus people
-   given ``Joyzepam``.
+Treatment contrasts
+~~~~~~~~~~~~~~~~~~~
 
--  The difference in mood gain for people treated with ``CBT`` and people
-   given ``No therapy``.
+In the particular kind of contrasts that I’ve described above, one level
+of the factor is special, and acts as a kind of “baseline” category
+(i.e., ``placebo`` in our example), against which the other two are
+defined. The name for these kinds of contrasts is **treatment
+contrasts**, also known as “dummy coding”. In this contrast each level
+of the factor is compared to a base reference level, and the base
+reference level is the value of the intercept.
 
-For any one of these comparisons, we’re interested in the true
-difference between (population) group means. Tukey’s HSD constructs
-**simultaneous confidence intervals** for all four of these comparisons.
-What we mean by 95% “simultaneous” confidence interval is that, if we
-were to repeat this study many times, then in 95% of the study results
-the confidence intervals would contain the relevant true value.
-Moreover, we can use these confidence intervals to calculate an adjusted
-*p* value for any specific comparison.
+The name reflects the fact that these contrasts are quite natural and
+sensible when one of the categories in your factor really is special
+because it actually does represent a baseline. That makes sense in our
+clinical trial example. The ``placebo`` condition corresponds to the
+situation where you don’t give people any real drugs, and so it’s
+special. The other two conditions are defined in relation to the
+placebo. In one case you replace the placebo with Anxifree, and in the
+other case your replace it with Joyzepam.
 
-The ``TukeyHSD`` function in jamovi is pretty easy to use. You simply
-specify the ANOVA model term that you want to run the post-hoc tests
-for. For example, if we were looking to run post-hoc tests for the main
-effects but not the interaction, we would open up the ‘Post Hoc Tests’
-option in the ANOVA analysis screen, move the ``drug`` and ``therapy``
-variables across to the box on the right, and then select the ‘Tukey’
-checkbox in the list of possible post-hoc corrections that could be
-applied. This, along with the corresponding results table, is shown in
-:numref:`fig-factorialanova13`.
+The table shown above is a matrix of treatment contrasts for a factor
+that has 3 levels. But suppose I want a matrix of treatment contrasts
+for a factor with 5 levels? You would set this out like this:
 
-.. ----------------------------------------------------------------------------
+.. code-block:: rout
 
-.. figure:: ../_images/lsj_factorialanova13.*
-   :alt: Analysis panel to set up post hoc tests
-   :name: fig-factorialanova13
+   Level   2 3 4 5
+     1     0 0 0 0
+     2     1 0 0 0
+     3     0 1 0 0
+     4     0 0 1 0
+     5     0 0 0 1
 
-   Analysis panel for setting up post-hoc test within jamovi's factorial ANOVA
-   procedure (the current settings request a Tukey HSD statistic): Unsaturated
-   model with the factors ``drug`` and ``therapy`` but without an interaction
-   term (using the |clinicaltrial|_ data set)
-   
-.. ----------------------------------------------------------------------------
+In this example, the first contrast is level 2 compared with level 1,
+the second contrast is level 3 compared with level 1, and so on. Notice
+that, by default, the *first* level of the factor is always treated as
+the baseline category (i.e., it’s the one that has all zeros and doesn’t
+have an explicit contrast associated with it). In jamovi you can change
+which category is the first level of the factor by manipulating the
+order of the levels of the variable shown in the ‘Data Variable’ window
+(double click on the name of the variable in the spreadsheet column to
+bring up the ‘Data Variable’ view.
 
-The output shown in the ‘Post Hoc Tests’ results table is (I hope)
-pretty straightforward. The first comparison, for example, is the
-Anxifree versus placebo difference, and the first part of the output
-indicates that the observed difference in group means is 0.27.
-The next number is the standard error for the difference, from which we
-could calculate the 95% confidence interval if we wanted, though jamovi
-does not currently provide this option. Then there is a column with the
-degrees of freedom, a column with the *t*-value, and finally a
-column with the *p*-value. For the first comparison the adjusted
-*p*-value is 0.21. In contrast, if you look at the next
-line, we see that the observed difference between joyzepam and the
-placebo is 1.03, and this result is significant (*p* < 0.001).
+Helmert contrasts
+~~~~~~~~~~~~~~~~~
 
-So far, so good. What about the situation where your model includes
-interaction terms? For instance, the default option in jamovi is to
-allow for the possibility that there is an interaction between drug and
-therapy. If that’s the case, the number of pairwise comparisons that we
-need to consider starts to increase. As before, we need to consider the
-three comparisons that are relevant to the main effect of ``drug`` and
-the one comparison that is relevant to the main effect of ``therapy``.
-But, if we want to consider the possibility of a significant interaction
-(and try to find the group differences that underpin that significant
-interaction), we need to include comparisons such as the following:
+Treatment contrasts are useful for a lot of situations. However, they
+make most sense in the situation when there really is a baseline
+category, and you want to assess all the other groups in relation to
+that one. In other situations, however, no such baseline category
+exists, and it may make more sense to compare each group to the mean of
+the other groups. This is where we meet **Helmert contrasts**, generated
+by the ‘helmert’ option in the jamovi ‘ANOVA’ - ‘Contrasts’ selection
+box. The idea behind Helmert contrasts is to compare each group to the
+mean of the “previous” ones. That is, the first contrast represents the
+difference between group 2 and group 1, the second contrast represents
+the difference between group 3 and the mean of groups 1 and 2, and so
+on. This translates to a contrast matrix that looks like this for a
+factor with five levels:
 
--  The difference in mood gain for people given Anxifree and treated
-   with CBT, versus people given the placebo and treated with CBT
+.. code-block:: rout
 
--  The difference in mood gain for people given Anxifree and given no
-   therapy, versus people given the placebo and given no therapy.
+   1   -1   -1   -1   -1
+   2    1   -1   -1   -1
+   3    0    2   -1   -1
+   4    0    0    3   -1
+   5    0    0    0    4
 
--  etc
+One useful thing about Helmert contrasts is that every contrast sums to zero
+(i.e., all the columns sum to zero). This has the consequence that, when we
+interpret the ANOVA as a regression, the intercept term corresponds to the
+grand mean µ\ :sub:`..` if we are using Helmert contrasts. Compare this to
+treatment contrasts, in which the intercept term corresponds to the group mean
+for the baseline category. This property can be very useful in some situations.
+It doesn’t matter very much if you have a balanced design, which we’ve been
+assuming so far, but it will turn out to be important later when we consider
+unbalanced designs in section :doc:`Factorial ANOVA 3: unbalanced designs
+<../Ch14/Ch14_ANOVA2_11>`. In fact, the main reason why I’ve even bothered to include
+this section is that contrasts become important if you want to understand
+unbalanced ANOVA.
 
-There are quite a lot of these comparisons that you need to consider.
-So, when we run the Tukey post-hoc analysis for this ANOVA model, we see
-that it has made a *lot* of pairwise comparisons (19 in total), as shown
-in :numref:`fig-factorialanova14`. You can see that it looks pretty similar
-to before, but with a lot more comparisons made.
+Sum to zero contrasts
+~~~~~~~~~~~~~~~~~~~~~
 
-.. ----------------------------------------------------------------------------
+The third option that I should briefly mention are “sum to zero” contrasts,
+called “Simple” contrasts in jamovi, which are used to construct pairwise
+comparisons between groups. Specifically, each contrast encodes the difference
+between one of the groups and a baseline category, which in this case
+corresponds to the first group:
 
-.. figure:: ../_images/lsj_factorialanova14.*
-   :alt: Results table for a Tukey HSD post-hoc test
-   :name: fig-factorialanova14
+.. code-block:: rout
 
-   Results table for a Tukey HSD post-hoc test within jamovi's factorial ANOVA
-   procedure: Unsaturated model with the factors ``drug`` and ``therapy`` but
-   without an interaction term (using the |clinicaltrial|_ data set)
-   
-.. ----------------------------------------------------------------------------
+   1   -1   -1   -1   -1
+   2    1    0    0    0
+   3    0    1    0    0
+   4    0    0    1    0
+   5    0    0    0    1
+
+Much like Helmert contrasts, we see that each column sums to zero, which
+means that the intercept term corresponds to the grand mean when ANOVA
+is treated as a regression model. When interpreting these contrasts, the
+thing to recognise is that each of these contrasts is a pairwise
+comparison between group 1 and one of the other four groups.
+Specifically, contrast 1 corresponds to a “group 2 minus group 1”
+comparison, contrast 2 corresponds to a “group 3 minus group 1”
+comparison, and so on.\ [#]_
+
+Optional contrasts in jamovi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+jamovi also comes with a variety of options that can generate different
+kinds of contrasts in ANOVA. These can be found in the ‘Contrasts’
+option in the main ANOVA analysis window, where the following contrast
+types are listed:
+
++----------------+-----------------------------------------------------+
+| Contrast type  | What does the contrast compare?                     |
++================+=====================================================+
+| **Deviation**  | Compares the mean of each level (except a reference |
+|                | category) to the mean of all of the levels (grand   |
+|                | mean).                                              |
++----------------+-----------------------------------------------------+
+| **Simple**     | Like the treatment contrasts, the simple contrast   |
+|                | compares the mean of each level to the mean of a    |
+|                | specified level. This type of contrast is useful    |
+|                | when there is a control group. By default the first |
+|                | category is the reference. However, with a simple   |
+|                | contrast the intercept is the grand mean of all the |
+|                | levels of the factors.                              |
++----------------+-----------------------------------------------------+
+| **Difference** | Compares the mean of each level (except the first)  |
+|                | to the mean of previous levels. (Sometimes called   |
+|                | reverse Helmert contrasts).                         |
++----------------+-----------------------------------------------------+
+| **Helmert**    | Compares the mean of each level of the factor       |
+|                | (except the last) to the mean of subsequent levels. |
++----------------+-----------------------------------------------------+
+| **Repeated**   | Compares the mean of each level (except the last)   |
+|                | to the mean of the subsequent level.                |
++----------------+-----------------------------------------------------+
+| **Polynomial** | Compares the linear effect and quadratic effect.    |
+|                | The first degree of freedom contains the linear     |
+|                | effect across all categories; the second degree of  |
+|                | freedom, the quadratic effect. These contrasts are  |
+|                | often used to estimate polynomial trends.           |
++----------------+-----------------------------------------------------+
 
 ------
 
 .. [#]
-   If, for instance, you actually find yourself interested to know if
-   Group A is significantly different from the mean of Group B and Group
-   C, then you need to use a different tool (e.g., Scheffe’s method,
-   which is more conservative, and beyond the scope of this book).
-   However, in most cases you probably are interested in pairwise group
-   differences, so Tukey’s HSD is a pretty useful thing to know about.
-
-.. ----------------------------------------------------------------------------
-
-.. |clinicaltrial|                     replace:: ``clinicaltrial``
-.. _clinicaltrial:                     _static/data/clinicaltrial.omv
+   What’s the difference between treatment and simple contrasts, I hear
+   you ask? Well, as a basic example consider a gender main effect, with
+   m = 0 and f = 1. The coefficient corresponding to the treatment contrast
+   will measure the difference in mean between females and males, and
+   the intercept would be the mean of the males. However, with a simple
+   contrast, i.e., m = -1 and f = 1, the intercept is the average of the
+   means and the main effect is the difference of each group mean from
+   the intercept.

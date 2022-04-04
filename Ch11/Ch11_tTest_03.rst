@@ -258,8 +258,6 @@ case, we have *N* observations (*N*\ :sub:`1` in sample 1, and
 *N*\ :sub:`2` in sample 2), and 2 constraints (the sample means). So the
 total degrees of freedom for this test are *N* - 2.
 
-.. _doing-the-test-in-jamovi-1:
-
 Doing the test in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~
 

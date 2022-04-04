@@ -314,7 +314,7 @@ after every single observation, there is a 49% chance that you will make a Type
 I error. That’s, um, quite a bit bigger than the 5% that it’s supposed to be.
 By way of comparison, imagine that you had used the following strategy. Start
 collecting data. Every single time an observation arrives, run a :doc:`Bayesian
-t-test <../Ch16/Ch16_Bayes_4>` and look at the Bayes factor. I’ll assume that
+t-test <../Ch16/Ch16_Bayes_5>` and look at the Bayes factor. I’ll assume that
 `Johnson (2013) <../Other/References.html#johnson-2013>`__ is right, and I’ll
 treat a Bayes factor of 3:1 as roughly equivalent to a *p*-value of 0.05.\ [#]_
 This time around, our trigger happy researcher uses the following procedure. If

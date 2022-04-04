@@ -11,13 +11,13 @@ Factorial ANOVA
    Ch14_ANOVA2_02
    Ch14_ANOVA2_03
    Ch14_ANOVA2_04
-   Ch14_ANOVA2_05
    Ch14_ANOVA2_06
    Ch14_ANOVA2_07
    Ch14_ANOVA2_08
    Ch14_ANOVA2_09
    Ch14_ANOVA2_10
    Ch14_ANOVA2_11
+   Ch14_ANOVA2_12
 
 
 Over the course of the last few chapters we have done quite a lot. We have
