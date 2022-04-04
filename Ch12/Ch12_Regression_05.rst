@@ -59,7 +59,7 @@ should include an intercept. The coefficients we get this time are:
    +================+==========+
    | Intercept      |  125.966 |
    +----------------+----------+
-   | ``dani.sleep`` |   −8.950 |
+   | ``dani.sleep`` |   -8.950 |
    +----------------+----------+
    | ``baby.sleep`` |    0.011 |   
    +----------------+----------+
