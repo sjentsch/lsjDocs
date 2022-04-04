@@ -391,20 +391,42 @@ illustrated in :numref:`fig-chiSqTest`.
 Ah but, I hear you ask, how do I find the critical value of a χ²-distribution
 with *k* - 1 degrees of freedom? Many many years ago when I first took a
 psychology statistics class we used to look up these critical values in a book
-of critical value tables, like the one in :numref:`fig-chisquared_critvalues`.
-Looking at :numref:`fig-chisquared_critvalues`, we can see that the critical
-value for a χ²-distribution with 3 degrees of freedom, and *p* = 0.05 is 7.815.
+of critical value tables, like the one in :numref:`tab-chisquared_critvalues`.
+We can see that the critical value for a χ²-distribution with 3 degrees of
+freedom, and *p* = 0.05 is 7.815.
 
-.. ----------------------------------------------------------------------------
+.. table::    Table of critical values for the χ² (chi-square) distribution
+   :name: tab-chisquared_critvalues
 
-.. figure:: ../_images/lsj_chisquared_critvalues.*
-   :alt: Table of critical values for the χ² distribution
-   :name: fig-chisquared_critvalues
+   +----+----------------------------------------------------------------------------+
+   | df | Probability                                                                |
+   |    +-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |    |  0.95 |  0.90 |  0.70 |  0.50 |   0.30 |   0.10 |   0.05 |   0.01 |  0.001 |
+   +====+=======+=======+=======+=======+========+========+========+========+========+
+   |  1 | 0.004 | 0.016 | 0.148 | 0.455 |  1.074 |  2.706 |  3.841 |  6.635 | 10.828 |
+   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |  2 | 0.103 | 0.211 | 0.713 | 1.386 |  2.408 |  4.605 |  5.991 |  9.210 | 13.816 |
+   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |  3 | 0.352 | 0.584 | 1.424 | 2.366 |  3.665 |  6.251 |  7.815 | 11.345 | 16.266 |
+   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |  4 | 0.711 | 1.064 | 2.195 | 3.357 |  4.878 |  7.779 |  9.488 | 13.277 | 18.467 |
+   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |  5 | 1.145 | 1.610 | 3.000 | 4.351 |  6.064 |  9.236 | 11.070 | 15.086 | 20.515 |
+   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |  6 | 1.635 | 2.204 | 3.828 | 5.348 |  7.231 | 10.645 | 12.592 | 16.812 | 22.458 |
+   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |  7 | 2.167 | 2.833 | 4.671 | 6.346 |  8.383 | 12.017 | 14.067 | 18.475 | 24.322 |
+   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |  8 | 2.733 | 3.490 | 5.527 | 7.344 |  9.524 | 13.362 | 15.507 | 20.090 | 26.124 |
+   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |  9 | 3.325 | 4.168 | 6.393 | 8.343 | 10.656 | 14.684 | 16.919 | 21.666 | 27.877 |
+   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   | 10 | 3.940 | 4.865 | 7.267 | 9.342 | 11.781 | 15.987 | 18.307 | 23.209 | 29.588 |
+   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |    | **non-significant**                             | **significant**          |
+   +----+-------------------------------------------------+--------------------------+
 
-   Table of critical values for the χ² (chi-square) distribution
    
-.. ----------------------------------------------------------------------------
-
 So, if our calculated χ² statistic is bigger than the critical value of 7.815,
 then we can reject the null hypothesis (remember that the null hypothesis,
 H\ :sub:`0`, is that all four suits are chosen with equal probability). Since
