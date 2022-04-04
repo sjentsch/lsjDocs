@@ -58,8 +58,8 @@ github.
 
 This update from version 0.65 introduces some new analyses. In the ANOVA
 chapters we have added sections on repeated measures ANOVA and analysis
-of covariance (ANCOVA). In a new chapter we have introduced Factor
-Analysis and related techniques. Hopefully the style of this new
+of covariance (ANCOVA). In a new chapter, we have introduced Factor
+analysis and related techniques. Hopefully the style of this new
 material is consistent with the rest of the book, though eagle-eyed
 readers might spot a bit more of an emphasis on conceptual and practical
 explanations, and a bit less algebra. I’m not sure this is a good thing,

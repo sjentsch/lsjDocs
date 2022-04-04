@@ -5,10 +5,10 @@ The Friedman non-parametric repeated measures ANOVA test
 
 The Friedman test is a non-parametric version of a repeated measures ANOVA and
 can be used instead of the Kruskall-Wallis test when testing for differences
-between three or more groups where the same participants are in each group, or
-each participant is closely matched with participants in other conditions. If
-the dependent variable is ordinal, or if the assumption of normality is not
-met, then the Friedman test can be used.
+between three or more groups |nominal| where the same participants are in each
+group, or each participant is closely matched with participants in other
+conditions. If the dependent variable is ordinal |ordinal|, or if the
+assumption of normality is not met, then the Friedman test can be used.
 
 .. ----------------------------------------------------------------------------
 
@@ -42,3 +42,11 @@ conclude that Broca’s Aphasics perform reasonably well on speech production
 performance was considerably worse on the syntax task (median = 4.5), with a
 significant difference in post-hoc tests between Speech and Syntax task
 performance.
+
+.. ----------------------------------------------------------------------------
+
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px
+ 
+.. |ordinal|                          image:: ../_images/variable-ordinal.*
+   :width: 16px

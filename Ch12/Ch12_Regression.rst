@@ -22,6 +22,11 @@ Correlation and linear regression
 
 
 The goal in this chapter is to introduce **correlation** and **linear
-regression**. These are the standard tools that statisticians rely on
-when analysing the relationship between continuous predictors and
-continuous outcomes.
+regression**. These are the standard tools that statisticians rely on when
+analysing the relationship between continuous predictors |continuous| and
+continuous outcomes |continuous|.
+
+.. ----------------------------------------------------------------------------
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px

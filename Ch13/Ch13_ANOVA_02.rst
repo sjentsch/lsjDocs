@@ -112,7 +112,7 @@ sample. For instance, the table shows that Tim is the fourth so we’d say
 saying that |Y_p| = 91, for person *p* = 4 that is. However,
 that’s not the only way we could refer to Tim. As an alternative we
 could note that Tim belongs to the “uncool” group (*k* = 2), and
-is in fact the first person listed in the uncool group (*i* = 1).
+is in fact the first person listed in the “uncool” group (*i* = 1).
 So it’s equally valid to refer to Tim’s grumpiness by saying that
 |Y_ik| = 91, where *k* = 2 and *i* = 1.
 

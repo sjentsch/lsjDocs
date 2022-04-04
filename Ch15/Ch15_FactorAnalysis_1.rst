@@ -238,10 +238,10 @@ gender (``gender``) of the respondent.
 As researchers, we are interested in exploring the data to see whether there
 are some underlying latent factors that are measured reasonably well by the 25
 observed variables in the |bfi_sample|_ data set. Open it up and check that the
-25 variables are coded as continuous variables (technically they are ordinal
-though for EFA in jamovi it mostly doesn’t matter, except if you decide to
-calculate weighted factor scores in which case continuous variables are needed).
-To perform an EFA in jamovi:
+25 variables are coded as continuous variables |continuous| (technically they
+are ordinal |ordinal| though for EFA in jamovi it mostly doesn’t matter, except
+if you decide to calculate weighted factor scores in which case continuous
+variables |continuous| are needed). To perform an EFA in jamovi:
 
 -  Select ``Factor`` → ``Exploratory Factor Analysis`` from the ``Analyses``
    ribbon menu to open the analysis panel where you can determine the settings
@@ -530,8 +530,8 @@ information to include in your write-up:
 #. A description of the sample (e.g. demographic information, sample size,
    sampling method).
 
-#. A description of the type of data used (e.g., nominal, continuous) and
-   descriptive statistics.
+#. A description of the type of data used (e.g., nominal |nominal|, continuous
+   |continuous|) and descriptive statistics.
 
 #. Describe how you went about testing the assumptions for EFA. Details
    regarding sphericity checks and measures of sampling adequacy should be
@@ -601,3 +601,12 @@ information to include in your write-up:
 
 .. |bfi_sample|                        replace:: ``bfi_sample``
 .. _bfi_sample:                        _static/data/bfi_sample.omv
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+ 
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px
+ 
+.. |ordinal|                          image:: ../_images/variable-ordinal.*
+   :width: 16px

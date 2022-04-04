@@ -30,20 +30,20 @@ relevant pairwise comparisons between groups, and it’s only really
 appropriate to use Tukey’s HSD if it is *pairwise* differences that
 you’re interested in.\ [#]_ For instance, earlier we conducted a
 factorial ANOVA using the |clinicaltrial|_ data set, and where we
-specified a main effect for drug and a main effect of therapy we would
-be interested in the following four comparisons:
+specified a main effect for ``drug`` and a main effect of ``therapy`` we
+would be interested in the following four comparisons:
 
--  The difference in mood gain for people given Anxifree versus people
-   given the placebo.
+-  The difference in mood gain for people given ``Anxifree`` versus people
+   given the ``Placebo``.
 
--  The difference in mood gain for people given Joyzepam versus people
-   given the placebo.
+-  The difference in mood gain for people given ``Joyzepam`` versus people
+   given the ``Placebo``.
 
--  The difference in mood gain for people given Anxifree versus people
-   given Joyzepam.
+-  The difference in mood gain for people given ``Anxifree`` versus people
+   given ``Joyzepam``.
 
--  The difference in mood gain for people treated with CBT and people
-   given no therapy.
+-  The difference in mood gain for people treated with ``CBT`` and people
+   given ``No therapy``.
 
 For any one of these comparisons, we’re interested in the true
 difference between (population) group means. Tukey’s HSD constructs
@@ -136,6 +136,8 @@ to before, but with a lot more comparisons made.
    which is more conservative, and beyond the scope of this book).
    However, in most cases you probably are interested in pairwise group
    differences, so Tukey’s HSD is a pretty useful thing to know about.
+
+.. ----------------------------------------------------------------------------
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
 .. _clinicaltrial:                     _static/data/clinicaltrial.omv

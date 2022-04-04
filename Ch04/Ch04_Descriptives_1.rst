@@ -163,23 +163,23 @@ the data. What this implies, as far as which one you should use, depends
 a little on what type of data you’ve got and what you’re trying to achieve.
 As a rough guide:
 
--  If your data are nominal scale you probably shouldn’t be using either
+-  If your data are nominal scale |nominal| you probably shouldn’t be using either
    the mean or the median. Both the mean and the median rely on the idea
    that the numbers assigned to values are meaningful. If the numbering
    scheme is arbitrary then it’s probably best to use the :doc:`Mode 
    <../Ch04/Ch04_Descriptives_1>` instead.
 
--  If your data are ordinal scale you’re more likely to want to use the
-   median than the mean. The median only makes use of the order
+-  If your data are ordinal scale |ordinal| you’re more likely to want to use
+   the median than the mean. The median only makes use of the order
    information in your data (i.e., which numbers are bigger) but doesn’t
    depend on the precise numbers involved. That’s exactly the situation
-   that applies when your data are ordinal scale. The mean, on the other
-   hand, makes use of the precise numeric values assigned to the
+   that applies when your data are ordinal scale |ordinal|. The mean, on the
+   other hand, makes use of the precise numeric values assigned to the
    observations, so it’s not really appropriate for ordinal data.
 
--  For interval and ratio scale data either one is generally acceptable.
-   Which one you pick depends a bit on what you’re trying to achieve.
-   The mean has the advantage that it uses all the information in the
+-  For interval and ratio scale data |continuous| either one is generally
+   acceptable. Which one you pick depends a bit on what you’re trying to
+   achieve. The mean has the advantage that it uses all the information in the
    data (which is useful when you don’t have a lot of data). But it’s
    very sensitive to extreme, outlying values.
 
@@ -387,3 +387,12 @@ should bet on a 3 point margin.
    
 .. |aflsmall_finalists|                replace:: ``aflsmall_finalists``
 .. _aflsmall_finalists:                _static/data/aflsmall_finalists.omv
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+ 
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px
+ 
+.. |ordinal|                          image:: ../_images/variable-ordinal.*
+   :width: 16px

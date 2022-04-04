@@ -314,18 +314,18 @@ after every single observation, there is a 49% chance that you will make a Type
 I error. That’s, um, quite a bit bigger than the 5% that it’s supposed to be.
 By way of comparison, imagine that you had used the following strategy. Start
 collecting data. Every single time an observation arrives, run a :doc:`Bayesian
-t-test <../Ch16/Ch16_Bayes_4>` and look at the Bayes factor. I’ll assume that `Johnson
-(2013) <../Other/References.html#johnson-2013>`__ is right, and I’ll treat a Bayes
-factor of 3:1 as roughly equivalent to a *p*-value of 0.05.\ [#]_ This time
-around, our trigger happy researcher uses the following procedure. If the Bayes
-factor is 3:1 or more in favour of the null, stop the experiment and retain the
-null. If it is 3:1 or more in favour of the alternative, stop the experiment
-and reject the null. Otherwise continue testing. Now, just like last time,
-let’s assume that the null hypothesis is true. What happens? As it happens, I
-ran the simulations for this scenario too, and the results are shown as the
-dashed line in :numref:`fig-adapt`. It turns out that the Type I error rate is
-much much lower than the 49% rate that we were getting by using the orthodox
-*t*-test.
+t-test <../Ch16/Ch16_Bayes_4>` and look at the Bayes factor. I’ll assume that
+`Johnson (2013) <../Other/References.html#johnson-2013>`__ is right, and I’ll
+treat a Bayes factor of 3:1 as roughly equivalent to a *p*-value of 0.05.\ [#]_
+This time around, our trigger happy researcher uses the following procedure. If
+the Bayes factor is 3:1 or more in favour of the null, stop the experiment and
+retain the null. If it is 3:1 or more in favour of the alternative, stop the
+experiment and reject the null. Otherwise continue testing. Now, just like last
+time, let’s assume that the null hypothesis is true. What happens? As it
+happens, I ran the simulations for this scenario too, and the results are shown
+as the dashed line in :numref:`fig-adapt`. It turns out that the Type I error
+rate is much much lower than the 49% rate that we were getting by using the
+orthodox *t*-test.
 
 In some ways, this is remarkable. The entire *point* of orthodox null
 hypothesis testing is to control the Type I error rate. Bayesian methods

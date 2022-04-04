@@ -28,10 +28,10 @@ grades. file. As usual, I’ll load the file into jamovi and have a look at what
 variables it contains - there are three variables, ``ID``, ``grade`` and
 ``tutor``. The ``grade`` variable contains each student’s grade, but it is not
 imported into jamovi with the correct measurement level attribute, so I need to
-change this so it is regarded as a continuous variable (see :doc:`Changing data
-from one level to another <../Ch03/Ch03_jamoviIntro_3>`). The ``tutor`` variable is a
-factor that indicates who each student’s tutor was - either Anastasia or
-Bernadette.
+change this so it is regarded as a continuous variable |continuous| (see
+:doc:`Changing data from one level to another <../Ch03/Ch03_jamoviIntro_3>`).
+The ``tutor`` variable is a factor |nominal| that indicates who each student’s
+tutor was - either Anastasia or Bernadette.
 
 We can calculate means and standard deviations, using the ``Exploration`` →
 ``Descriptives`` analysis, and here’s a nice little summary table:
@@ -468,5 +468,13 @@ previously in the context of the one sample *t*-test (see section
    A more correct notation will be introduced in chapter :doc:`Comparing
    several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`.
 
+.. ----------------------------------------------------------------------------
+
 .. |harpo|                             replace:: ``harpo``
 .. _harpo:                             _static/data/harpo.omv
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+ 
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px

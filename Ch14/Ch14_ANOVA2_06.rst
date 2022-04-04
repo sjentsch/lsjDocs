@@ -318,8 +318,8 @@ a 2 × 2 × 2 × 2 ANOVA. It’s the same thing, really. You just add a new bina
 variable for each of your factors. Where it begins to get trickier is when we
 consider factors that have more than two levels. Consider, for instance, the 3
 × 2 ANOVA that we ran earlier in this chapter using the |clinicaltrial|_ data
-set. How can we convert the three-level ``drug`` factor into a numerical form
-that is appropriate for a regression?
+set. How can we convert the three-level ``drug`` factor |nominal| into a
+numerical form that is appropriate for a regression?
 
 The answer to this question is pretty simple, actually. All we have to do is
 realise that a three-level factor can be redescribed as *two* binary variables.
@@ -407,9 +407,9 @@ Hmm. This isn’t the same output that we got last time. Not surprisingly, the
 regression output prints out the results for each of the three predictors
 separately, just like it did every other time we conducted a regression
 analysis. On the one hand we can see that the *p*-value for the ``CBTtherapy``
-variable is exactly the same as the one for the ``therapy`` factor in our
-original ANOVA, so we can be reassured that the regression model is doing the
-same thing as the ANOVA did. On the other hand, this regression model is
+variable is exactly the same as the one for the ``therapy`` factor |nominal| in
+our original ANOVA, so we can be reassured that the regression model is doing
+the same thing as the ANOVA did. On the other hand, this regression model is
 testing the ``druganxifree`` contrast and the ``drugjoyzepam`` contrast
 *separately*, as if they were two completely unrelated variables. It’s not
 surprising of course, because the poor regression analysis has no way of
@@ -548,3 +548,6 @@ ANOVA model, so the degrees of freedom for the residuals is
 
 .. |clinicaltrial2|                    replace:: ``clinicaltrial2``
 .. _clinicaltrial2:                    _static/data/clinicaltrial2.omv
+
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px

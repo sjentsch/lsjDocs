@@ -42,15 +42,15 @@ to ``babble`` when they have too much coffee is purely an effect of the coffee
 itself, or whether there’s some effect of the ``milk`` and ``sugar`` that
 people add to the coffee. Suppose we took 18 people and gave them some coffee
 to drink. The amount of coffee / caffeine was held constant, and we varied
-whether or not milk was added, so ``milk`` is a binary factor with two levels,
-``"yes"`` and ``"no"``. We also varied the kind of sugar involved. The coffee
-might contain ``"real"`` sugar or it might contain ``"fake"`` sugar (i.e.,
-artificial sweetener) or it might contain ``"none"`` at all, so the ``sugar``
-variable is a three level factor. Our outcome variable is a continuous variable
-that presumably refers to some psychologically sensible measure of the extent
-to which someone is “babbling”. The details don’t really matter for our
-purpose. Take a look at the data in the jamovi spreadsheet view, as in
-:numref:`fig-factorialanova15`\.
+whether or not milk was added, so ``milk`` is a binary factor |nominal| with
+two levels, ``yes`` and ``no``. We also varied the kind of sugar involved. The
+coffee |nominal| might contain ``real`` sugar or it might contain ``fake``
+sugar (i.e., artificial sweetener) or it might contain ``none`` at all, so the
+``sugar`` variable |nominal| is a three level factor. Our outcome variable is a
+continuous variable |continuous| that presumably refers to some psychologically
+sensible measure of the extent to which someone is “babbling”. The details
+don’t really matter for our purpose. Take a look at the data in the jamovi
+spreadsheet view, as in :numref:`fig-factorialanova15`\.
 
 .. ----------------------------------------------------------------------------
 
@@ -365,8 +365,8 @@ Type III sum of squares, see :numref:`fig-factorialanova18`.
 But be aware, one of the perverse features of the Type III testing strategy is
 that typically the results turn out to depend on the *contrasts* that you use
 to encode your factors (see section :doc:`Different ways to specify contrasts
-<../Ch14/Ch14_ANOVA2_07>` if you’ve forgotten what the different types of contrasts
-are).\ [#]_
+<../Ch14/Ch14_ANOVA2_07>` if you’ve forgotten what the different types of
+contrasts are).\ [#]_
 
 Okay, so if the *p*-values that typically come out of Type III analyses (but
 not in jamovi) are so sensitive to the choice of contrasts, does that mean that
@@ -650,3 +650,9 @@ them, and it goes missing.
 
 .. |coffee|                            replace:: ``coffee``
 .. _coffee:                            _static/data/coffee.omv
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+ 
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px

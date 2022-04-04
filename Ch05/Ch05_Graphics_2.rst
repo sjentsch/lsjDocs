@@ -156,11 +156,11 @@ This filter creates a new column in the spreadsheet view where only those
 observations that pass the filter are included. One neat way to quickly
 identify which observations these are is to tell jamovi to produce a
 ``Frequency table`` (in the ``Exploration`` → ``Descriptives`` window) for the
-``ID`` variable (which must be a nominal variable otherwise the Frequency table
-is not produced). In :numref:`fig-filter2` you can see that the ID values for
-the observations where the margin was over 300 are **14** and **134**. These
-are suspicious cases, or observations, where you should go back to the original
-data source to find out what is going on.
+``ID`` variable (which must be a nominal variable |nominal| otherwise the
+Frequency table is not produced). In :numref:`fig-filter2` you can see that the
+ID values for the observations where the margin was over 300 are **14** and
+**134**. These are suspicious cases, or observations, where you should go back
+to the original data source to find out what is going on.
 
 .. ----------------------------------------------------------------------------
 
@@ -189,10 +189,13 @@ want to use the data *for*. You really need to exercise good judgement here. If
 the outlier looks legitimate to you, then keep it. In any case, I’ll return to
 the topic again in section :doc:`Model checking <../Ch12/Ch12_Regression_10>`.
 
------
+.. ----------------------------------------------------------------------------
 
 .. |aflsmall_margins|                  replace:: ``aflsmall_margins``
 .. _aflsmall_margins:                  _static/data/aflsmall_margins.omv
 
 .. |aflmarginbyyear|                   replace:: ``aflmarginbyyear``
 .. _aflmarginbyyear:                   _static/data/aflmarginbyyear.omv
+
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px

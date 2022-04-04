@@ -12,12 +12,12 @@ not exhaustive list of topics that I’d like to expand on at some time:
 -  **Other types of correlations.** In chapter :doc:`Correlation and linear
    regression <../Ch12/Ch12_Regression>` I talked about two types of correlation:
    Pearson and Spearman. Both of these methods of assessing correlation are
-   applicable to the case where you have two continuous variables and want to
-   assess the relationship between them. What about the case where your
-   variables are both nominal scale? Or when one is nominal scale and the
-   other is continuous? There are actually methods for computing correlations
-   in such cases (e.g., polychoric correlation), and it would be good to see
-   these included.
+   applicable to the case where you have two continuous variables |continuous| 
+   and want to assess the relationship between them. What about the case where
+   your variables are both nominal scale |nominal|? Or when one is nominal
+   |nominal| scale and the other is continuous |continuous|? There are actually
+   methods for computing correlations in such cases (e.g., polychoric
+   correlation), and it would be good to see these included.
 
 -  **More detail on effect sizes.** In general, I think the treatment of
    effect sizes throughout the book is a little more cursory than it
@@ -38,16 +38,16 @@ not exhaustive list of topics that I’d like to expand on at some time:
    but the discussion isn’t detailed enough I think.
 
 -  **Interaction terms for regression.** In chapter :doc:`Factorial ANOVA
-   <../Ch14/Ch14_ANOVA2>`, I talked about the fact that you can have interaction terms
-   in an ANOVA, and I also pointed out that ANOVA can be interpreted as a kind
-   of linear regression model. Yet, when talking about regression in chapter
-   :doc:`Correlation and linear regression <../Ch12/Ch12_Regression>` I made not
-   mention of interactions at all. However, there’s nothing stopping you from
-   including interaction terms in a regression model. It’s just a little more
-   complicated to figure out what an “interaction” actually means when you’re
-   talking about the interaction between two continuous predictors, and it can
-   be done in more than one way. Even so, I would have liked to talk a little
-   about this.
+   <../Ch14/Ch14_ANOVA2>`, I talked about the fact that you can have
+   interaction terms in an ANOVA, and I also pointed out that ANOVA can be
+   interpreted as a kind of linear regression model. Yet, when talking about
+   regression in chapter :doc:`Correlation and linear regression
+   <../Ch12/Ch12_Regression>` I made not mention of interactions at all.
+   However, there’s nothing stopping you from including interaction terms in a
+   regression model. It’s just a little more complicated to figure out what an
+   “interaction” actually means when you’re talking about the interaction
+   between two continuous predictors |continuous|, and it can be done in more
+   than one way. Even so, I would have liked to talk a little about this.
 
 -  **Method of planned comparison.** As I mentioned this in chapter
    :doc:`Factorial ANOVA <../Ch14/Ch14_ANOVA2>`, it’s not always appropriate to be
@@ -59,3 +59,11 @@ not exhaustive list of topics that I’d like to expand on at some time:
    about post-hoc tests and multiple comparisons, I would have liked to
    talk about the methods in more detail, and talk about what other
    methods exist besides the few options I mentioned.
+
+.. ----------------------------------------------------------------------------
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+ 
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px

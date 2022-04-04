@@ -4,14 +4,14 @@ Descriptive statistics separately for each group
 ------------------------------------------------
 
 It is very commonly the case that you find yourself needing to look at 
-descriptive statistics broken down by some grouping variable. This is pretty
-easy to do in jamovi. For instance, let’s say I want to look at the descriptive
-statistics for some clinical trial data, broken down separately by ``therapy``
-type. This is a new data set, one that you’ve never seen before. The data is
-stored in the |clinicaltrial|_ data set and we’ll use it a lot in chapter
-:doc:`Comparing several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>` (you can find a
-complete description of the data at the start of that chapter). Let’s load it
-and see what we’ve got:
+descriptive statistics broken down by some grouping variable |nominal|. This is
+pretty easy to do in jamovi. For instance, let’s say I want to look at the
+descriptive statistics for some clinical trial data, broken down separately by
+``therapy`` type. This is a new data set, one that you’ve never seen before.
+The data is stored in the |clinicaltrial|_ data set and we’ll use it a lot in
+chapter :doc:`Comparing several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`
+(you can find a complete description of the data at the start of that chapter).
+Let’s load it and see what we’ve got:
 
 .. ----------------------------------------------------------------------------
 
@@ -50,8 +50,8 @@ and you should get something like :numref:`fig-clinicaltrial_grouping`.
       
 .. ----------------------------------------------------------------------------
 
-What if you have multiple grouping variables? Suppose you want to look
-at the average mood gain separately for all possible combinations of
+What if you have multiple grouping variables |nominal|? Suppose you want to
+look at the average mood gain separately for all possible combinations of
 drug and therapy. It is possible to do this by adding another variable,
 ``drug``, into the ``Split by`` box. Easy peasy, though sometimes if you
 split too much there isn’t enough data in each breakdown combination to
@@ -70,6 +70,11 @@ stating something like ``NaN`` or ``Inf``.\ [#]_
    only very small or very large numbers are expressed in this way, for
    example **6.51e-16**, which would be quite unwieldy to write out in
    the normal way.
-   
+
+.. ----------------------------------------------------------------------------
+
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
 .. _clinicaltrial:                     _static/data/clinicaltrial.omv
+
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px

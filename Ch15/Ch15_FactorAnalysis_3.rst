@@ -72,8 +72,8 @@ CFA in jamovi
 ~~~~~~~~~~~~~
 
 Open up the |bfi_sample2|_ data set, check that the 25 variables are coded as
-ordinal (or continuous; it won’t make any difference for this analysis). To
-perform CFA in jamovi:
+ordinal |ordinal| (or continuous |continuous|; it won’t make any difference for
+this analysis). To perform CFA in jamovi:
 
 -  Select ``Factor`` → ``Confirmatory Factor Analysis`` from the ``Analyses``
    ribbon menu to open the analysis panel where you can determine the settings
@@ -279,8 +279,8 @@ of information to include in your write-up:
 #. A description of the sample (e.g. demographic information, sample size,
    sampling method).
 
-#. A description of the type of data used (e.g., nominal, continuous) and
-   descriptive statistics.
+#. A description of the type of data used (e.g., nominal |nominal|, continuous
+   |continuous|) and descriptive statistics.
 
 #. Tests of assumptions and estimation method used.
 
@@ -314,3 +314,12 @@ of information to include in your write-up:
 
 .. |bfi_sample2|                       replace:: ``bfi_sample2``
 .. _bfi_sample2:                       _static/data/bfi_sample2.omv
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+ 
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px
+
+.. |ordinal|                          image:: ../_images/variable-ordinal.*
+   :width: 16px

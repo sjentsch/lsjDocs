@@ -59,8 +59,8 @@ located at *X* = 3 and another one at *X* = 4 but there’s
 nothing in between. Continuous quantities don’t have this constraint.
 For instance, suppose we’re talking about the weather. The temperature
 on a pleasant Spring day could be 23 degrees, 24 degrees, 23.9 degrees,
-or anything in between since temperature is a continuous variable. And
-so a normal distribution might be quite appropriate for describing
+or anything in between since temperature is a continuous variable |continuous|.
+And so a normal distribution might be quite appropriate for describing
 Spring temperatures.\ [#]_
 
 .. ----------------------------------------------------------------------------
@@ -172,8 +172,8 @@ than density. Maybe you noticed that I used *p*\ (X) instead of
 As it turns out, what is presented here isn’t actually a probability,
 it’s something else. To understand what that something is you have to
 spend a little time thinking about what it really *means* to say that
-*X* is a continuous variable. Let’s say we’re talking about the
-temperature outside. The thermometer tells me it’s 23 degrees, but I
+*X* is a continuous variable |continuous|. Let’s say we’re talking about
+the temperature outside. The thermometer tells me it’s 23 degrees, but I
 know that’s not really true. It’s not *exactly* 23 degrees. Maybe it’s
 \23.1 degrees, I think to myself. But I know that that’s not really true
 either because it might actually be 23.09 degrees. But I know that...
@@ -244,3 +244,8 @@ that’s about as much as you really need to know for now.\ [#]_
    corresponding range, :math:`\int_a^b p(x) \ dx`. If you don’t
    remember or never learned calculus, don’t worry about this. It’s not
    needed for this book.
+
+.. ----------------------------------------------------------------------------
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px

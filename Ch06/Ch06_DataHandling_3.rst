@@ -4,8 +4,8 @@ Transforming and recoding a variable
 ------------------------------------
 
 It’s not uncommon in real world data analysis to find that one of your
-variables isn’t quite equivalent to the variable that you really want.
-For instance, it’s often convenient to take a continuous-valued variable
+variables isn’t quite equivalent to the variable that you really want. For
+instance, it’s often convenient to take a continuous variable |continuous|
 (e.g., age) and break it up into a smallish number of categories (e.g.,
 younger, middle, older). At other times, you may need to convert a
 numeric variable into a different numeric variable (e.g., you may want
@@ -292,3 +292,6 @@ variable that you want to recode.
 
 .. |likert|                            replace:: ``likert``
 .. _likert:                            _static/data/likert.omv
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px

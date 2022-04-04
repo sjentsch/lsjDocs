@@ -4,30 +4,30 @@ Factorial ANOVA 1: balanced designs, no interactions
 ----------------------------------------------------
 
 When we discussed analysis of variance in chapter :doc:`Comparing several means
-(one-way ANOVA) <../Ch13/Ch13_ANOVA>`, we assumed a fairly simple experimental design.
-Each person is in one of several groups and we want to know whether these
-groups have different mean scores on some outcome variable. In this section,
-I’ll discuss a broader class of experimental designs known as **factorial
-designs**, in which we have more than one grouping variable. I gave one
-example of how this kind of design might arise above. Another example appears
-in chapter :doc:`Comparing several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>` in which
-we were looking at the effect of different drugs on the ``mood.gain``
-experienced by each person. In that chapter we did find a significant effect of
-drug, but at the end of the chapter we also ran an analysis to see if there was
-an effect of therapy. We didn’t find one, but there’s something a bit worrying
-about trying to run two *separate* analyses trying to predict the same outcome.
-Maybe there actually *is* an effect of therapy on mood gain, but we couldn’t
-find it because it was being “hidden” by the effect of drug? In other words,
-we’re going to want to run a *single* analysis that includes *both* ``drug``
-and ``therapy`` as predictors. For this analysis each person is
-cross-classified by the drug they were given (a factor with 3 levels) and what
-therapy they received (a factor with 2 levels). We refer to this as a 3 × 2
-factorial design.
+(one-way ANOVA) <../Ch13/Ch13_ANOVA>`, we assumed a fairly simple experimental
+design. Each person is in one of several groups and we want to know whether
+these groups have different mean scores on some outcome variable. In this
+section, I’ll discuss a broader class of experimental designs known as
+**factorial designs**, in which we have more than one grouping variable
+|nominal|. I gave one example of how this kind of design might arise above.
+Another example appears in chapter :doc:`Comparing several means (one-way
+ANOVA) <../Ch13/Ch13_ANOVA>` in which we were looking at the effect of
+different drugs on the ``mood.gain`` experienced by each person |continuous|.
+In that chapter we did find a significant effect of drug, but at the end of the
+chapter we also ran an analysis to see if there was an effect of therapy. We
+didn’t find one, but there’s something a bit worrying about trying to run two
+*separate* analyses trying to predict the same outcome. Maybe there actually
+*is* an effect of therapy on mood gain, but we couldn’t find it because it was
+being “hidden” by the effect of drug? In other words, we’re going to want to
+run a *single* analysis that includes *both* ``drug`` and ``therapy`` as
+predictors. For this analysis each person is cross-classified by the drug they
+were given (a factor with 3 levels) and what therapy they received (a factor
+with 2 levels). We refer to this as a 3 × 2 factorial design.
 
 If we cross-tabulate ``drug`` by ``therapy``, using the ``Frequencies`` →
 ``Contingency Tables`` analysis in jamovi (see :doc:`Tabulating and
-cross-tabulating data <../Ch06/Ch06_DataHandling_1>`), we get the table shown in
-:numref:`fig-factorialanova1`.
+cross-tabulating data <../Ch06/Ch06_DataHandling_1>`), we get the table shown
+in :numref:`fig-factorialanova1`.
 
 .. ----------------------------------------------------------------------------
 
@@ -665,3 +665,9 @@ matter (bottom-left), and (4) neither A nor B matters (bottom-right).
 
 .. |clinicaltrial_factorialanova|      replace:: ``clinicaltrial_factorialanova``
 .. _clinicaltrial_factorialanova:      _static/data/clinicaltrial_factorialanova.omv
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+ 
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px

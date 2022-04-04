@@ -3,20 +3,21 @@
 Changing data from one level to another
 ---------------------------------------
 
-Sometimes you want to change the variable level. This can happen for all
-sorts of reasons. Sometimes when you import data from files, it can come
-to you in the wrong format. Numbers sometimes get imported as nominal,
-text values. Dates may get imported as text. ParticipantID values can
-sometimes be read as continuous: nominal values can sometimes be read as
-ordinal or even continuous. There’s a good chance that sometimes you’ll
-want to convert a variable from one measurement level into another one.
-Or, to use the correct term, you want to **coerce** the variable from
-one class into another.
+Sometimes you want to change the variable level. This can happen for all sorts
+of reasons. Sometimes when you import data from files, it can come to you in
+the wrong format. Numbers sometimes get imported as nominal |nominal|, text
+values. Dates may get imported as text. Participant-ID values |ID| can
+sometimes be read as continuous |continuous|: nominal values |nominal| can
+sometimes be read as ordinal |ordinal| or even continuous |continuous|. There’s
+a good chance that sometimes you’ll want to convert a variable from one
+measurement level into another one. Or, to use the correct term, you want to
+**coerce** the variable from one class into another.
 
-In :doc:`The spreadsheet <../Ch03/Ch03_jamoviIntro_2>` we saw how to specify different
-variable levels, and if you want to change a variable’s measurement level then
-you can do this in the jamovi data view for that variable. Just click the check
-box for the type level you want - continuous, ordinal, or nominal.
+In :doc:`The spreadsheet <../Ch03/Ch03_jamoviIntro_2>` we saw how to specify
+different variable levels, and if you want to change a variable’s measurement
+level then you can do this in the jamovi data view for that variable. Just
+click the check box for the type level you want - continuous |continuous|,
+ordinal |ordinal|, or nominal |nominal|.
 
 Installing add-on modules into jamovi
 -------------------------------------
@@ -74,3 +75,15 @@ analyses.
 
 .. |Rj|                                replace:: ``Rj``
 .. _Rj:                                https://docs.jamovi.org/_pages/Rj_overview.html
+
+.. |ID|                               image:: ../_images/variable-ID.*
+   :width: 16px
+ 
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+ 
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px
+ 
+.. |ordinal|                          image:: ../_images/variable-ordinal.*
+   :width: 16px

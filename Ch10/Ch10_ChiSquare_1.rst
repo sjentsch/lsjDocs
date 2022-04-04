@@ -4,16 +4,17 @@ The χ² (chi-square) goodness-of-fit test
 ----------------------------------------
 
 The χ² goodness-of-fit test is one of the oldest hypothesis tests around. It 
-was invented by `Karl Pearson (1900) <../Other/References.html#pearson-1900>`__, with
-some corrections made later by `Sir Ronald Fisher (1922a)
-<../Other/References.html#fisher-1922a>`__. It tests whether an observed frequency
-distribution of a nominal variable matches an expected frequency distribution.
-For example, suppose a group of patients has been undergoing an experimental
-treatment and have had their health assessed to see whether their condition has
-improved, stayed the same or worsened. A goodness-of-fit test could be used to
-determine whether the numbers in each category - improved, no change, worsened
-\- match the numbers that would be expected given the standard treatment
-option. Let’s think about this some more, with some psychology.
+was invented by `Karl Pearson (1900) <../Other/References.html#pearson-1900>`__,
+with some corrections made later by `Sir Ronald Fisher (1922a)
+<../Other/References.html#fisher-1922a>`__. It tests whether an observed
+frequency distribution of a nominal variable |nominal| matches an expected
+frequency distribution. For example, suppose a group of patients has been
+undergoing an experimental treatment and have had their health assessed to see
+whether their condition has improved, stayed the same or worsened. A
+goodness-of-fit test could be used to determine whether the numbers in each
+category - improved, no change, worsened - match the numbers that would be
+expected given the standard treatment option. Let’s think about this some more,
+with some psychology.
 
 The cards data
 ~~~~~~~~~~~~~~
@@ -704,3 +705,6 @@ be aware of.
 
 .. |randomness|                        replace:: ``randomness``
 .. _randomness:                        _static/data/randomness.omv
+
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px

@@ -3,24 +3,24 @@
 Analysis of Covariance (ANCOVA)
 -------------------------------
 
-A variation in ANOVA is when you have an additional continuous variable that
-you think might be related to the dependent variable. This additional variable
-can be added to the analysis as a covariate, in the aptly named analysis of
-covariance (ANCOVA).
+A variation in ANOVA is when you have an additional continuous variable
+|continuous| that you think might be related to the dependent variable. This
+additional variable can be added to the analysis as a covariate, in the aptly
+named analysis of covariance (ANCOVA).
 
 In ANCOVA the values of the dependent variable are “adjusted” for the influence
 of the covariate, and then the “adjusted” score means are tested between groups
-in the usual way. This technique can increase the precision of an experiment,
-and therefore provide a more “powerful” test of the equality of group means in
-the dependent variable. How does ANCOVA do this? Well, although the covariate
-itself is typically not of any experimental interest, adjustment for the
-covariate can decrease the estimate of experimental error and thus, by reducing
-error variance, precision is increased. This means that an inappropriate
+|nominal| in the usual way. This technique can increase the precision of an
+experiment, and therefore provide a more “powerful” test of the equality of
+group means in the dependent variable. How does ANCOVA do this? Well, although
+the covariate itself is typically not of any experimental interest, adjustment
+for the covariate can decrease the estimate of experimental error and thus, by
+reducing error variance, precision is increased. This means that an inappropriate
 failure to reject the null hypothesis (false negative or type II error) is less
 likely.
 
 Despite this advantage, ANCOVA runs the risk of undoing real differences
-between groups, and this should be avoided. Look at
+between groups |nominal|, and this should be avoided. Look at
 :numref:`fig-ancova_groups`, for example, which shows a plot of Statistics
 anxiety against age and shows two distinct groups – students who have either
 an Arts or Science background or preference. ANCOVA with age as a covariate
@@ -51,11 +51,12 @@ A health psychologist was interested in the effect of routine cycling and
 stress on happiness levels, with age as a covariate. Open the |ancova|_ data set
 in jamovi and then, to undertake an ANCOVA, select ``Analyses`` → ``ANOVA`` →
 ``ANCOVA`` to open the ANCOVA analysis window (:numref:`fig-ancova1`). Highlight
-the dependent variable ``happiness`` and transfer it into the ``Dependent
-Variable`` text box. Highlight the independent variables ``stress`` and
-``commute`` and transfer them into the ``Fixed Factors`` text box. Highlight the
-covariate ``age`` and transfer it into the ``Covariates`` text box. Then, click
-on ``Estimated Marginal Means`` to bring up the plots and tables options.
+the dependent variable ``happiness`` |continuous| and transfer it into the
+``Dependent Variable`` text box. Highlight the independent variables ``stress``
+|nominal| and ``commute`` |nominal| and transfer them into the ``Fixed Factors``
+text box. Highlight the covariate ``age`` |continuous| and transfer it into the
+``Covariates`` text box. Then, click on ``Estimated Marginal Means`` to bring
+up the plots and tables options.
 
 .. ----------------------------------------------------------------------------
 
@@ -139,7 +140,13 @@ can be removed. If it is significant then a different and more advanced
 statistical technique might be appropriate (which is beyond the scope of this
 book so you might want to consult a friendly statistician).
 
------
+.. ----------------------------------------------------------------------------
 
 .. |ancova|                            replace:: ``ancova``
 .. _ancova:                            _static/data/ancova.omv
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px

@@ -24,18 +24,18 @@ great to give you a sense of just how much more there is, for example:
    others assume that the relationship is of a known form that happens to
    be nonlinear (e.g., polynomial regression).
 
--  **Logistic regression.** Yet another variation on regression occurs
-   when the outcome variable is binary, but the predictors are
-   continuous. For instance, suppose you’re investigating social media,
-   and you want to know if it’s possible to predict whether or not
-   someone is on Twitter as a function of their income, their age, and a
-   range of other variables. This is basically a regression model, but
-   you can’t use regular linear regression because the outcome variable
-   is binary (you’re either on Twitter or you’re not). Because the
-   outcome variable is binary, there’s no way that the residuals could
-   possibly be normally distributed. There are a number of tools that
-   statisticians can apply to this situation, the most prominent of
-   which is logistic regression.
+-  **Logistic regression.** Yet another variation on regression occurs when the
+   outcome variable is binary |nominal|, multinomial |nominal| (several groups)
+   or ordinal |ordinal|, but the predictors are continuous |continuous|. For
+   instance, suppose you’re investigating social media, and you want to know if
+   it’s possible to predict whether or not someone is on Twitter as a function
+   of their income, their age, and a range of other variables. This is
+   basically a regression model, but you can’t use regular linear regression
+   because the outcome variable is categorical (e.g., whether you’re either on
+   Twitter or you’re not). Because the outcome variable is categorical, there’s
+   no way that the residuals could possibly be normally distributed. There are
+   a number of tools that statisticians can apply to this situation, the most
+   prominent of which is logistic regression.
 
 -  **The General Linear Model (GLM).** The GLM is actually a family of
    models that includes logistic regression, linear regression, (some)
@@ -168,3 +168,14 @@ topics. However, the list that I’ve given above is essentially my wish
 list for this book. Sure, it would double the length of the book, but it
 would mean that the scope has become broad enough to cover most things
 that applied researchers in psychology would need to use.
+
+.. ----------------------------------------------------------------------------
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+ 
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px
+
+.. |ordinal|                          image:: ../_images/variable-ordinal.*
+   :width: 16px

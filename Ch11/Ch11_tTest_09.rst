@@ -32,7 +32,7 @@ failed me completely, let’s pretend it’s a “test of awesomeness” and
 there are two groups of people, “A” and “B”. I’m curious to know which
 group is more awesome. The data are included in the |awesome|_ data set,
 and there are two variables apart from the usual ``ID`` variable:
-``scores`` and ``group``.
+``scores`` |continuous| and ``group`` |nominal|.
 
 As long as there are no ties (i.e., people with the exact same
 awesomeness score) then the test that we want to do is surprisingly
@@ -64,27 +64,27 @@ or *z*. That is, if we want a two-sided test then we reject the null hypothesis
 when *W* is very large or very small, but if we have a directional (i.e.,
 one-sided) hypothesis then we only use one or the other.
 
-In jamovi, if we run an ``Independent Samples t-Test`` with ``scores`` as
-the dependent variable. and ``group`` as the grouping variable, and then
-under the options for ``Tests`` check the option for ``Mann-Whitney U``, we
-will get results showing that U = 3 (i.e., the same number of check marks
-as shown above), and a p-value = 0.05556.
+In jamovi, if we run an ``Independent Samples t-Test`` with ``scores``
+|continuous| as the dependent variable. and ``group`` as the grouping variable
+|nominal|, and then under the options for ``Tests`` check the option for
+``Mann-Whitney U``, we will get results showing that U = 3 (i.e., the same
+number of check marks as shown above), and a p-value = 0.05556.
 
 One sample Wilcoxon test
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-What about the **one sample Wilcoxon test** (or equivalently, the paired
-samples Wilcoxon test)? Suppose I’m interested in finding out whether
-taking a statistics class has any effect on the happiness of students. The
-|happiness|_ data set contains the happiness of each student ``before`` taking
-the class and ``after`` taking the class. The ``change`` score is the
+What about the **one sample Wilcoxon test** (or equivalently, the paired 
+samples Wilcoxon test)? Suppose I’m interested in finding out whether taking a
+statistics class has any effect on the happiness of students. The |happiness|_
+data set contains the happiness of each student ``before`` taking the class
+|ordinal| and ``after`` taking the class |ordinal|. The ``change`` score is the
 difference between the two. Just like we saw with the *t*-test, there’s no
 fundamental difference between doing a paired-samples test using ``before`` and
-``after``, versus doing a one-sample test using the ``change`` scores.
-As before, the simplest way to think about the test is to construct a
-tabulation. The way to do it this time is to take those change scores
-that are positive differences, and tabulate them against all the
-complete sample. What you end up with is a table that looks like this:
+``after``, versus doing a one-sample test using the ``change`` scores. As
+before, the simplest way to think about the test is to construct a tabulation.
+The way to do it this time is to take those change scores that are positive
+differences, and tabulate them against all the complete sample. What you end up
+with is a table that looks like this:
 
 +--------------------------+-----------------------------------------------------------+
 |                          |                      all differences                      |
@@ -132,3 +132,12 @@ of the test won’t give us a different answer, of course; see
 
 .. |happiness|                         replace:: ``happiness``
 .. _happiness:                         _static/data/happiness.omv
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px
+ 
+.. |ordinal|                          image:: ../_images/variable-ordinal.*
+   :width: 16px

@@ -6,8 +6,10 @@ harpo_{Anastasia,Bernadette}		lsj_harpoAnB
 IQ{population,sample100,sample10000}	lsj_IQ_Pop_Smp
 anova{Between,Within}			lsj_anovaBtwWth
 anscombe[1-4]				lsj_anscombe
+bar1.png				lsj_bar1
 bias{Mean,SD}				lsj_biasMeanSD
 binomHeads{20,100}			lsj_binomHeads
+boxplot1.png				lsj_boxplot1
 cltDemo{1,2,4,8}			lsj_cltDemo
 confIntReplicated{ ,2}			lsj_confIntSmp
 corr{0,33,33n,67,67n,100,100n}		lsj_corr
@@ -38,6 +40,7 @@ qq{HeavyTailed,Skewed}{Plot,Hist}	lsj_qqSkewedTailed
 samplingDist[1-3]			lsj_samplingDistDiffN
 zTest{One,Two}Tailed			lsj_zTestOneTwoTailed
 
-
-bar1
-boxplot
+Remove:
+defunct
+aflMargins.png
+factorialanova12

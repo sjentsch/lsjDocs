@@ -78,8 +78,8 @@ Reliability analysis in jamovi
 
 We have a third sample of personality data to use to undertake reliability
 analysis: in the |bfi_sample3|_ data set. Once again, check that the 25
-personality item variables are coded as continuous. To perform reliability
-analysis in jamovi:
+personality item variables are coded as continuous |continuous|. To perform
+reliability analysis in jamovi:
 
 -  Select ``Factor`` → ``Reliability Analysis`` from the ``Analyses`` ribbon
    menu in jamovi to open the analysis panel where you can determine the
@@ -137,3 +137,6 @@ personality attribute than the other personality scales.
 
 .. |bfi_sample3|                       replace:: ``bfi_sample3``
 .. _bfi_sample3:                       _static/data/bfi_sample3.omv
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px

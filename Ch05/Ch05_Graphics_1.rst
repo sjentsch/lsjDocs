@@ -72,7 +72,12 @@ spread of the data, so you can get a pretty good sense about what it looks
 like. The downside to histograms is that they aren’t very compact. Unlike some
 of the other plots I’ll talk about it’s hard to cram 20-30 histograms into a
 single image without overwhelming the viewer. And of course, if your data are
-nominal scale then histograms are useless.
+nominal scale |nominal| then histograms are useless.
+
+.. ----------------------------------------------------------------------------
 
 .. |aflsmall_finalists|                replace:: ``aflsmall_finalists``
 .. _aflsmall_finalists:                _static/data/aflsmall_finalists.omv
+
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px

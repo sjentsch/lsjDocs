@@ -18,22 +18,23 @@ Comparing two means
    Ch11_tTest_10
 
 
-In chapter :doc:`Categorical data analysis <../Ch10/Ch10_ChiSquare>` we covered the
-situation when your outcome variable is nominal scale and your predictor
-variable is also nominal scale. Lots of real world situations have that
-character, and so you’ll find that χ²-tests in particular are quite widely
-used. However, you’re much more likely to find yourself in a situation where
-your outcome variable is interval scale or higher, and what you’re interested
-in is whether the average value of the outcome variable is higher in one group
-or another. For instance, a psychologist might want to know if anxiety levels
-are higher among parents than non-parents, or if working memory capacity is
-reduced by listening to music (relative to not listening to music). In a
-medical context we might want to know if a new drug increases or decreases
-blood pressure. An agricultural scientist might want to know whether adding
-phosphorus to Australian native plants will kill them.\ [#]_ In all these
-situations our outcome variable is a fairly continuous, interval or ratio scale
-variable, and our predictor is a binary “grouping” variable. In other words, we
-want to compare the means of the two groups.
+In chapter :doc:`Categorical data analysis <../Ch10/Ch10_ChiSquare>` we covered
+the situation when your outcome variable is nominal scale |nominal| and your
+predictor variable is also nominal scale |nominal|. Lots of real world
+situations have that character, and so you’ll find that χ²-tests in particular
+are quite widely used. However, you’re much more likely to find yourself in a
+situation where your outcome variable is interval scale or higher |continuous|,
+and what you’re interested in is whether the average value of the outcome
+variable is higher in one group or another. For instance, a psychologist might
+want to know if anxiety levels are higher among parents than non-parents, or if
+working memory capacity is reduced by listening to music (relative to not
+listening to music). In a medical context we might want to know if a new drug
+increases or decreases blood pressure. An agricultural scientist might want to
+know whether adding phosphorus to Australian native plants will kill
+them.\ [#]_ In all these situations our outcome variable is a fairly continuous
+|continuous|, interval or ratio scale variable, and our predictor is a binary
+“grouping” variable |nominal|. In other words, we want to compare the means of
+the two groups.
 
 The standard answer to the problem of comparing means is to use a *t*-test, of
 which there are several varieties depending on exactly what question you want
@@ -59,3 +60,11 @@ discussing any of these useful things, we’ll start with a discussion of the
    Earth, so if you’ve bought a house with a bunch of exotics and you want to
    plant natives, keep them separate; nutrients to European plants are poison
    to Australian ones.
+
+.. ----------------------------------------------------------------------------
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+ 
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px   

@@ -16,27 +16,27 @@ by the user. Data variables can be one of four measurement levels.
 These levels are designated by the symbol in the header of the
 variable’s column:
 
-- The *ID* variable type is unique to jamovi. It’s intended for variables
+- The *ID* variable type |ID| is unique to jamovi. It’s intended for variables
   that contain identifiers that you would almost never want to analyse.
   For example, a persons name, or a participant ID. Specifying an ID
   variable type can improve performance when interacting with very large
   data sets.
 
-- *Nominal* variables are for categorical variables which are text labels,
-  for example a column called Gender with the values Male and Female would
-  be nominal. So would a person’s name. Nominal variable values can also
-  have a numeric value. These variables are used most often when importing
-  data which codes values with numbers rather than text. For example, a
-  column in a dataset may contain the values 1 for males, and 2 for
-  females. It is possible to add nice “human-readable” labels to these
+- *Nominal* variables |nominal| are for categorical variables which are text
+  labels, for example a column called Gender with the values “Male” and
+  “Female” would be nominal. So would a person’s name. Nominal variable values
+  can also have a numeric value. These variables are used most often when
+  importing data which codes values with numbers rather than text. For example,
+  a column in a dataset may contain the values 1 for “Male”, and 2 for
+  “Female”. It is possible to add nice “human-readable” labels to these
   values with the variable editor (more on this later).
 
-- *Ordinal* variables are like Nominal variables, except the values have a
-  specific order. An example is a Likert scale with 3 being “strongly
+- *Ordinal* variables |ordinal| are like Nominal variables, except the values
+  have a specific order. An example is a Likert scale with 3 being “strongly
   agree” and -3 being “strongly disagree”.
 
-- *Continuous* variables are variables which exist on a continuous scale.
-  Examples might be height or weight. This is also referred to as
+- *Continuous* variables |continuous| are variables which exist on a continuous
+  scale. Examples might be height or weight. This is also referred to as
   ``Interval`` or ``Ratio scale``.
 
 In addition, you can also specify different data types: variables have a
@@ -203,24 +203,10 @@ It’s easy to open CSV files in jamovi. From the top left menu (the
 button with three parallel lines) choose ``Open`` and browse to where you
 have stored the CSV file on your computer. If you’re on a Mac, it’ll
 look like the usual Finder window that you use to choose a file; on
-Windows it looks like an Explorer window. An example of what it looks
-like on a Mac is shown in :numref:`fig-fileopen`. I’m assuming that you’re
+Windows it looks like an Explorer window. I’m assuming that you’re
 familiar with your own computer, so you should have no problem finding the
 CSV-file that you want to import! Find the one you want, then click on the
 “Open” button.
-
-.. ----------------------------------------------------------------------------
-
-.. _fig-fileopen:
-.. figure:: ../_images/lsj_fileopen.*
-   :alt: ``Open File`` dialog on MacOS
-
-   A dialog box on a Mac asking you to select the csv file jamovi should try to import.
-   Mac users will recognise this immediately, it’s the usual way in which a Mac asks
-   you to find a file. Windows users won’t see this, instead they’ll see the usual
-   explorer window that Windows always gives you when it wants you to select a file.
-      
-.. ----------------------------------------------------------------------------
 
 There are a few things that you can check to make sure that the data
 gets imported correctly:
@@ -330,3 +316,15 @@ and STATA files.
    
 .. |booksales|                         replace:: ``booksales.csv``
 .. _booksales:                         _static/data/booksales.csv
+
+.. |ID|                               image:: ../_images/variable-ID.*
+   :width: 16px
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px
+
+.. |ordinal|                          image:: ../_images/variable-ordinal.*
+   :width: 16px

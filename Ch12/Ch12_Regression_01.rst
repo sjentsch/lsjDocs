@@ -184,7 +184,7 @@ Calculating correlations in jamovi
 
 Calculating correlations in jamovi can be done by clicking on the
 ``Regression`` → ``Correlation Matrix`` button. Transfer all four continuous
-variables across into the box on the right to get the output in
+variables |continuous| across into the box on the right to get the output in
 :numref:`fig-correlations`.
 
 .. ----------------------------------------------------------------------------
@@ -342,21 +342,20 @@ correlation of *r* = 0.91 says at all.
 
 .. ----------------------------------------------------------------------------
 
-How should we address this? Actually, it’s really easy. If we’re looking
-for ordinal relationships all we have to do is treat the data as if it
-were ordinal scale! So, instead of measuring effort in terms of “hours
-worked”, lets rank all 10 of our students in order of hours worked. That
-is, student 1 did the least work out of anyone (2 hours) so they get the
-lowest rank (rank = 1). Student 4 was the next laziest, putting in only
-6 hours of work over the whole semester, so they get the next lowest
-rank (rank = 2). Notice that I’m using “rank =1” to mean “low rank”.
-Sometimes in everyday language we talk about “rank = 1” to mean “top
-rank” rather than “bottom rank”. So be careful, you can rank “from
-smallest value to largest value” (i.e., small equals rank 1) or you can
-rank “from largest value to smallest value” (i.e., large equals rank 1).
-In this case, I’m ranking from smallest to largest, but as it’s really
-easy to forget which way you set things up you have to put a bit of
-effort into remembering!
+How should we address this? Actually, it’s really easy. If we’re looking for
+ordinal relationships all we have to do is treat the data as if it were ordinal
+scale |ordinal|! So, instead of measuring effort in terms of “hours worked”,
+lets rank all 10 of our students in order of hours worked. That is, student 1
+did the least work out of anyone (2 hours) so they get the lowest rank (rank =
+1). Student 4 was the next laziest, putting in only 6 hours of work over the
+whole semester, so they get the next lowest rank (rank = 2). Notice that I’m
+using “rank =1” to mean “low rank”. Sometimes in everyday language we talk
+about “rank = 1” to mean “top rank” rather than “bottom rank”. So be careful,
+you can rank “from smallest value to largest value” (i.e., small equals rank 1)
+or you can rank “from largest value to smallest value” (i.e., large equals rank
+1). In this case, I’m ranking from smallest to largest, but as it’s really easy
+to forget which way you set things up you have to put a bit of effort into
+remembering!
 
 Okay, so let’s have a look at our students when we rank them from worst
 to best in terms of effort and reward:
@@ -414,3 +413,9 @@ box in the ``Correlation Matrix`` analysis panel.
 
 .. |parenthood|                        replace:: ``parenthood``
 .. _parenthood:                        _static/data/parenthood.omv
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+ 
+.. |ordinal|                          image:: ../_images/variable-ordinal.*
+   :width: 16px

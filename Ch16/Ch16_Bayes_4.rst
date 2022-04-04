@@ -15,14 +15,14 @@ Independent samples t-test
 
 The most common type of *t*-test is the independent samples *t*-test, and it
 arises when you have data as in the |harpo|_ data set that we used in the
-earlier chapter on *t*-tests (chapter :doc:`Comparing two means <../Ch11/Ch11_tTest>`).
-In this data set, we have two groups of students, those who received lessons
-from Anastasia and those who took their classes with Bernadette. The question
-we want to answer is whether there’s any difference in the grades received by
-these two groups of students. Back in that chapter, I suggested you could
-analyse this kind of data using the Independent Samples *t*-test in jamovi,
-which gave us the results in :numref:`fig-bayes1`. As we obtain a *p*-value
-less than \0.05, we reject the null hypothesis.
+earlier chapter on *t*-tests (chapter :doc:`Comparing two means
+<../Ch11/Ch11_tTest>`). In this data set, we have two groups of students, those
+who received lessons from Anastasia and those who took their classes with
+Bernadette. The question we want to answer is whether there’s any difference in
+the grades received by these two groups of students. Back in that chapter, I
+suggested you could analyse this kind of data using the Independent Samples
+*t*-test in jamovi, which gave us the results in :numref:`fig-bayes1`. As we
+obtain a *p*-value less than \0.05, we reject the null hypothesis.
 
 .. ----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ less than \0.05, we reject the null hypothesis.
 .. ----------------------------------------------------------------------------
 
 What does the Bayesian version of the *t*-test look like? We can get the Bayes
-factor analysis by selecting the ‘Bayes factor’ checkbox under the ‘Tests’
-option, and accepting the suggested default value for the ‘Prior’. This gives
-the results shown in the table in :numref:`fig-bayes2`. What we get in this
-table is a Bayes factor statistic of 1.75, meaning that the evidence provided
-by these data are about 1.8:1 in favour of the alternative hypothesis.
+factor by selecting the ‘Bayes factor’ checkbox under the ‘Tests’ option, and
+accepting the suggested default value for the ‘Prior’. This gives the results
+shown in the table in :numref:`fig-bayes2`. What we get in this table is a
+Bayes factor statistic of 1.75, meaning that the evidence provided by these
+data are about 1.8:1 in favour of the alternative hypothesis.
 
 .. ----------------------------------------------------------------------------
 
