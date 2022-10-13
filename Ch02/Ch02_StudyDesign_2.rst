@@ -85,10 +85,10 @@ interested in people’s attitudes to climate change. I then go and ask
 some people to pick the statement (from four listed statements) that
 most closely matches their beliefs:
 
-   | (1) Temperatures are rising because of human activity
-   | (2) Temperatures are rising but we don’t know why
-   | (3) Temperatures are rising but not because of humans
-   | (4) Temperatures are not rising
+   | \(1\) Temperatures are rising because of human activity
+   | \(2\) Temperatures are rising but we don’t know why
+   | \(3\) Temperatures are rising but not because of humans
+   | \(4\) Temperatures are not rising
 
 Notice that these four statements actually do have a natural ordering,
 in terms of “the extent to which they agree with the current science”.
@@ -99,10 +99,10 @@ in (the extent to which people endorse the science), I can order the
 items as 1 > 2 > 3 > 4. Since this ordering exists, it would be
 very weird to list the options like this…
 
-   | (3) Temperatures are rising but not because of humans
-   | (1) Temperatures are rising because of human activity
-   | (4) Temperatures are not rising
-   | (2) Temperatures are rising but we don’t know why
+   | \(3\) Temperatures are rising but not because of humans
+   | \(1\) Temperatures are rising because of human activity
+   | \(4\) Temperatures are not rising
+   | \(2\) Temperatures are rising but we don’t know why
 
 …because it seems to violate the natural “structure” to the question.
 
@@ -274,11 +274,11 @@ like this:
 
 and then the options presented to the participant are these:
 
-   | (1) Strongly disagree
-   | (2) Disagree
-   | (3) Neither agree nor disagree
-   | (4) Agree
-   | (5) Strongly agree
+   | \(1\) Strongly disagree
+   | \(2\) Disagree
+   | \(3\) Neither agree nor disagree
+   | \(4\) Agree
+   | \(5\) Strongly agree
 
 This set of items is an example of a 5-point Likert scale, in which
 people are asked to choose among one of several (in this case 5) clearly
@@ -287,11 +287,11 @@ case. However, it’s not necessary that all items are explicitly
 described. This is a perfectly good example of a 5-point Likert scale
 too:
 
-   | (1) Strongly disagree
-   | (2)
-   | (3)
-   | (4)
-   | (5) Strongly agree
+   | \(1\) Strongly disagree
+   | \(2\)
+   | \(3\)
+   | \(4\)
+   | \(5\) Strongly agree
 
 Likert scales are very handy, if somewhat limited, tools. The question
 is what kind of variable are they? They’re obviously discrete, since you
