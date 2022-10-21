@@ -99,7 +99,7 @@ it’s much easier to do these sorts of calculations using a computer. To
 calculate the mean using all the data we can use jamovi. The first step
 is to click on the ``Exploration`` button and then click ``Descriptives``.
 Then you can highlight the ``afl.margins`` variable and click the ``→`` to
-move it across into the ``Variables box``. As soon as you do that a Table
+move it across into the ``Variables`` box. As soon as you do that a Table
 appears on the right hand side of the screen containing default
 ``Descriptives`` information; see :numref:`fig-descriptives_default`.
 
