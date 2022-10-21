@@ -50,7 +50,7 @@ keep only those cases when the utterance is either ``pip`` or ``oo``. In this
 case in the ``Filter 1`` text box, next to the ``=`` sign, you would type the
 following:
 
-.. code-block:: rout
+.. code-block:: text
 
    utterance == "pip" or utterance == "oo"
    

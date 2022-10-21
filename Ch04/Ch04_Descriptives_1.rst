@@ -334,7 +334,7 @@ something like :numref:`fig-aflsmall_finalists_mode`.
 Now that we have our frequency table we can just look at it and see
 that, over the 24 years for which we have data, Geelong has played in
 more finals than any other team. Thus, the mode of the ``afl.finalists``
-data is "Geelong". We can see that Geelong (39 finals) played in
+data is “Geelong”. We can see that Geelong (39 finals) played in
 more finals than any other team during the 1987 to 2010 period. It’s also
 worth noting that in the ``Descriptives`` Table no results are calculated
 for Mean, Median, Minimum or Maximum. This is because the

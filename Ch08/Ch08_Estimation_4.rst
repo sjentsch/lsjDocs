@@ -61,16 +61,22 @@ identical to the sample mean. If I observe a sample mean of *X̄* = 98.5 then my
 estimate of the population mean is also :math:`\hat\mu` = 98.5. To help keep
 the notation clear, here’s a handy table:
 
-+-------------------+-----------------------+-----------------------------------+
-| Symbol            | What is it?           | Do we know what it is?            |
-+===================+=======================+===================================+
-| *X̄*              | Sample mean           | Yes, calculated from the raw data |
-+-------------------+-----------------------+-----------------------------------+
-| *µ*               | True population mean  | Almost never known for sure       |
-+-------------------+-----------------------+-----------------------------------+
-| :math:`\hat{\mu}` | Estimate of the       | Yes, identical to the sample mean |
-|                   | population mean       | in simple random samples          |
-+-------------------+-----------------------+-----------------------------------+
+.. list-table::
+   :header-rows: 1
+
+   * - Symbol
+     - What is it?
+     - Do we know what it is?
+   * - *X̄*
+     - Sample mean
+     - Yes, calculated from the raw data
+   * - *µ*
+     - True population mean
+     - Almost never known for sure
+   * - :math:`\hat{\mu}`
+     - Estimate of the population mean
+     - Yes, identical to the sample mean in simple random samples
+
 
 Estimating the population standard deviation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -269,10 +275,7 @@ things clear.
 |                        | population standard  | as the sample standard |
 |                        | deviation            | deviation              |
 +------------------------+----------------------+------------------------+
-
 +------------------------+----------------------+------------------------+
-| Symbol                 | What is it?          | Do we know what it is? |
-+========================+======================+========================+
 | *s*\ ²                 | Sample variance      | Yes, calculated from   |
 |                        |                      | the raw data           |
 +------------------------+----------------------+------------------------+

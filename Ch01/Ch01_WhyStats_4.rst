@@ -27,7 +27,7 @@ stats. So here’s my attempt to answer a few of them...
    Basically, we teach statistics to you as psychologists because you
    need to be better at stats than physicists. There’s actually a saying
    used sometimes in physics, to the effect that “if your experiment
-   needs statistics, you should have done a better experiment". They
+   needs statistics, you should have done a better experiment”. They
    have the luxury of being able to say that because their objects of
    study are pathetically simple in comparison to the vast mess that
    confronts social scientists. And it’s not just psychology. Most

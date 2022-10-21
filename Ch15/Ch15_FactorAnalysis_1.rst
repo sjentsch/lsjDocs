@@ -137,8 +137,8 @@ a sample specific optimally-weighted combination.
 
 A more advanced statistical technique, one which is beyond the scope of
 this book, undertakes regression modelling where latent factors are used
-in prediction models of other latent factors. This is called "structural
-equation modelling" and there are specific software programmes and R
+in prediction models of other latent factors. This is called “structural
+equation modelling” and there are specific software programmes and R
 packages dedicated to this approach. But let’s not get ahead of
 ourselves; what we should really focus on now is how to do an EFA in
 jamovi.
