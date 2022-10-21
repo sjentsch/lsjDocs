@@ -368,7 +368,8 @@ should bet on a 3 point margin.
    :alt: Modal value in of ``afl.margins`` in ``aflsmall_finalists``
    :name: fig-aflsmall_margins_mode
 
-   Screenshot of jamovi showing the modal value for the afl.margins variable
+   Screenshot of jamovi showing the modal value for the ``afl.margins`` 
+   variable
    
 .. ----------------------------------------------------------------------------
 
