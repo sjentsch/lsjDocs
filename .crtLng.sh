@@ -13,9 +13,9 @@ for F in $(ls _build/gettext/* | grep -v -f .exclude | cut -d/ -f3); do
 #  grep ' = ' _locale/pot/${F} | sed 's/msgid //' | sed 's/msgstr //' | grep '[\\\\|\|]' | uniq -u | sed -e "s/^/${F}: /"
 done
 sed -i "/Language:.*/d" _locale/pot/*.pot
-#for F in $(find _locale -name *.po); do
-#   msgmerge -q _locale/pot/$(echo ${F} | cut -d"/" -f4-)t ${F} -o tmp.po && mv tmp.po ${F}
-#done   
+for F in $(find _locale -name *.po); do	
+   msgcat _locale/pot/$(echo ${F} | cut -d"/" -f4-)t ${F} -o tmp.po && mv tmp.po ${F}
+done   
 #for F in $(find _locale -name *.po); do
 #   FS=$(echo ${F} | cut -d"/" -f4-);
 #   if [ ! -e "_locale/${FS}t" ]; then
@@ -27,6 +27,6 @@ sed -i "/Language:.*/d" _locale/pot/*.pot
 #   fi
 #done
 for L in $(cat .languages); do
-    sed -i "/Language:.*/d" _locale/${L}/LC_MESSAGES/*.po
+    sed -i "/Language: /d" _locale/${L}/LC_MESSAGES/*.po
     sphinx-intl update -p _locale/pot -l ${L}
 done
