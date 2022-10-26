@@ -12,10 +12,12 @@ I am particularly interested in just four: Brisbane, Carlton, Fremantle and
 Richmond. So the first step is to set up a filter so just those four teams are
 included in the bar graph. This is straightforward in jamovi and you can do it
 by using the ``Filters`` function that we used previously. Open up the
-``Filters`` screen and type in the following:
+``Filters`` screen and type in the following:\ [#]_
 
-``afl.finalists == "Brisbane" or afl.finalists == 'Carlton' or afl.finalists ==
-'Fremantle' or afl.finalists == 'Richmond'``\ [#]_
+.. code-block:: text
+
+   afl.finalists == "Brisbane" or afl.finalists == 'Carlton' or afl.finalists ==
+   'Fremantle' or afl.finalists == 'Richmond'
 
 When you have done this you will see, in the ``Data`` view, that jamovi has
 filtered out all values apart from those we have specified. Next, open up the
@@ -47,7 +49,7 @@ friends, or include in your assignments or manuscripts.
 ------
 
 .. [#]
-   jamovi uses the symbol “``==``” here to mean “matches”.
+   jamovi uses the symbol ``==`` here to mean “matches”.
 
 .. ----------------------------------------------------------------------------
 

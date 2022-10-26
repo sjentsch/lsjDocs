@@ -62,7 +62,7 @@ the different sample means that we can calculate for this kind of
 design. Firstly, there’s the obvious idea that we might be interested in
 this list of group means:
 
-.. code-block:: rout
+.. code-block:: text
 
    drug     therapy     mood.gain
    placebo  no.therapy  0.300000

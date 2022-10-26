@@ -89,7 +89,9 @@ variable. In jamovi we can use the ``IF`` function to do this. Create
 another new variable using the ``Compute`` button, name this one
 ``opinion.sign``, and then type the following into the function box:
 
-``IF(likert.centred == 0, 0, likert.centred / opinion.strength)``
+.. code-block:: text
+
+   IF(likert.centred == 0, 0, likert.centred / opinion.strength)
 
 When done, you’ll see that all negative numbers from the
 ``likert.centred`` variable are converted to **-1**, all positive
@@ -140,7 +142,7 @@ TRUE, insert a first value, but IF a second logical expression is TRUE,
 insert a second value, but IF a third logical expression is TRUE, then
 insert a third value. This can be written as:
 
-.. code-block:: rout
+.. code-block:: text
 
    IF(Age >= 0 and Age <= 20, 1, IF(Age >= 21 and Age <= 40, 2, IF(Age >= 41 and Age <= 60, 3 )))
 
