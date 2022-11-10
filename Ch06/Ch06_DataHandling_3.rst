@@ -76,7 +76,7 @@ spreadsheet view, as in :numref:`fig-opinionstrength`:
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_opinionstrength.*
-   :alt: fx button to select functions and variables
+   :alt: *f*\ :sub:`x` button to select functions and variables
    :name: fig-opinionstrength
 
    Using the *f*\ :sub:`x` button to select functions and variables
@@ -135,11 +135,11 @@ three broad categories: young (0-20), adult (21-40) and older (41-60).
 This is a quite coarse-grained classification, and the labels that I’ve
 attached only make sense in the context of this data set (e.g., viewed
 more generally, a 42 year old wouldn’t consider themselves as “older”).
-We can slice this variable up quite easily using the jamovi ``IF’
+We can slice this variable up quite easily using the jamovi ``IF``
 function that we have already used. This time we have to specify nested
-‘IF`` statements, meaning simply that IF the first logical expression is
-TRUE, insert a first value, but IF a second logical expression is TRUE,
-insert a second value, but IF a third logical expression is TRUE, then
+``IF`` statements, meaning simply that ``IF`` the first logical expression is
+``TRUE``, insert a first value, but ``IF`` a second logical expression is ``TRUE``,
+insert a second value, but ``IF`` a third logical expression is ``TRUE``, then
 insert a third value. This can be written as:
 
 .. code-block:: text

@@ -12,7 +12,7 @@ Creating tables for single variables
 
 Let’s start with a simple example. As a parent of a small child I naturally
 spend a lot of time watching TV shows like *In the Night Garden*. In the
-|nightgarden| data set, I’ve transcribed a short section of the dialogue. The
+|nightgarden|_ data set, I’ve transcribed a short section of the dialogue. The
 file contains two variables of interest, ``speaker`` and ``utterance``. Open up
 this data set in jamovi and take a look at the data in the ``Data`` view. You
 will see that the data looks something like this:
@@ -58,17 +58,17 @@ single variables. For a table of two variables, for example combining
 said a particular utterance, we need a cross-tabulation or contingency table.
 In jamovi you can do this by selecting the ``Frequencies`` → ``Contingency
 Tables`` → ``Independent Samples`` analysis, and moving the ``speaker``
-variable into the ``Rows`` box, and the ``utterances`` variable into the
+variable into the ``Rows`` box, and the ``utterance`` variable into the
 ``Columns`` box. You then should have a contingency table like the one shown
 in :numref:`fig-contingencytable`.
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_contingencytable.*
-   :alt: Contingency table for ``speaker`` and ``utterances``
+   :alt: Contingency table for ``speaker`` and ``utterance``
    :name: fig-contingencytable
 
-   Contingency table for the ``speaker`` and ``utterances`` variables
+   Contingency table for the ``speaker`` and ``utterance`` variables
    
 .. ----------------------------------------------------------------------------
 
@@ -94,10 +94,10 @@ Contingency Table in the output window will change to the one in
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_contingencyrow.*
-   :alt: Contingency table with row percentages for ``speaker`` and ``utterances``
+   :alt: Contingency table with row percentages for ``speaker`` and ``utterance``
    :name: fig-contingencyrow
 
-   Contingency table for the ``speaker`` and ``utterances`` variables, with row
+   Contingency table for the ``speaker`` and ``utterance`` variables, with row
    percentages
    
 .. ----------------------------------------------------------------------------
@@ -114,10 +114,10 @@ set), 100% of the time it’s a Tombliboo saying it.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_contingencycol.*
-   :alt: Contingency table with column percentages for ``speaker`` and ``utterances``
+   :alt: Contingency table with column percentages for ``speaker`` and ``utterance``
    :name: fig-contingencycol
 
-   Contingency table for the ``speaker`` and ``utterances`` variables, with
+   Contingency table for the ``speaker`` and ``utterance`` variables, with
    column percentages
    
 .. ----------------------------------------------------------------------------

@@ -189,7 +189,7 @@ options. This gives us the ANOVA table shown in :numref:`fig-factorialanova16`.
    :name: fig-factorialanova16
 
    ANOVA results table using Type I sum of squares in jamovi (with the
-   |coffee| data set and a saturated model with the factors ``sugar``,
+   |coffee|_ data set and a saturated model with the factors ``sugar``,
    ``milk``, and their interaction; factor ``sugar`` is entered first).
    
 .. ----------------------------------------------------------------------------

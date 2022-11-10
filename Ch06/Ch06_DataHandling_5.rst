@@ -39,7 +39,7 @@ box and checking ``Frequency tables``. Go on, try it, and see what that shows!
    :alt: Creating a subset using ``Filters``
    :name: fig-subset1
 
-   Creating a subset of the |nightgarden| data set using the jamovi
+   Creating a subset of the |nightgarden|_ data set using the jamovi
    ``Filters`` option
    
 .. ----------------------------------------------------------------------------

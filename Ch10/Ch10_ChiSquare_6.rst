@@ -17,7 +17,7 @@ currently being burned at the stake.\ [#]_ Unfortunately for the
 scientist (but rather fortunately for the general populace), it’s
 actually quite hard to find people in the process of being set on fire,
 so the cell counts are awfully small in some cases. A contingency table
-of the |salem| data set illustrates the point:
+of the |salem|_ data set illustrates the point:
 
 .. code-block:: R
 
@@ -76,7 +76,7 @@ extreme. This then gives us the *p*-value.
 
 You can specify this test in jamovi from a check box in the ‘Statistics’
 options of the ‘Contingency Tables’ analysis. When you do this with the
-|salem| data set, the Fisher exact test statistic is shown in the results.
+|salem|_ data set, the Fisher exact test statistic is shown in the results.
 The main thing we’re interested in here is the *p*-value, which in this
 case is small enough (*p* = 0.036) to justify rejecting the null hypothesis
 that people on fire are just as happy as people not on fire

@@ -383,7 +383,7 @@ A worked example
 
 The previous discussion was fairly abstract and a little on the
 technical side, so I think that at this point it might be useful to see
-a worked example. For that, let’s go back to the |clinicaltrial| data set
+a worked example. For that, let’s go back to the |clinicaltrial|_ data set
 that was introduced earlier in the chapter. The descriptive statistics
 that we calculated at the beginning tell us our group means: An average
 mood gain of 0.45 for the placebo, 0.72 for Anxifree, and 1.48 for Joyzepam.
@@ -648,7 +648,7 @@ Sigh. So much work for one short sentence.
    ``F`` using the formula ``(VSUM(sq_res_btw) / 2) / (VSUM(sq_res_wth) / 15)``
    which gives us 18.611 as value.
    If you could not reprodcuce the calculation steps above, you can download
-   and open the |clinicaltrial_anova| data set.
+   and open the |clinicaltrial_anova|_ data set.
 
 .. [#]
    In order to see the *p*-value with a high number of decimal places, click on
