@@ -140,18 +140,21 @@ Example
 
 In the meantime, it’s probably worth showing you an example of what happens to
 the QQ plot and the Shapiro-Wilk test when the data turn out to be non-normal.
-For that, let’s look at the distribution of our AFL winning margins data
-(``aflsmall_margins``), which if you remember back to th chapter on
-:doc:`Descriptive statistics <../Ch04/Ch04_Descriptives>` didn’t look like they came
-from a normal distribution at all. Here’s what happens to the QQ plot:
+For that, let’s look at the distribution of our AFL winning margins
+(``afl.margins``) variable (from the |aflsmall_margins|_ data set), which if
+you remember back to th chapter on
+:doc:`Descriptive statistics <../Ch04/Ch04_Descriptives>` didn’t look like they
+came from a normal distribution at all. Here’s what happens to the QQ plot:
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_qq_2b.*
-   :alt: QQ plot for the data (skewed) data from the aflsmall_margins dataset
+   :alt: QQ plot for the data (skewed) data in the ``afl.margins`` variable
+         of the |aflsmall_margins| dataset
    :name: fig-qq_2b
 
-   QQ plot for the data (skewed) data from the |aflsmall_margins|_ data set
+   QQ plot for the (skewed) data in the ``afl.margins`` variable of the
+   |aflsmall_margins|_ data set
    
 .. ----------------------------------------------------------------------------
 

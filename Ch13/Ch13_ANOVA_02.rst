@@ -652,8 +652,8 @@ Sigh. So much work for one short sentence.
 
 .. [#]
    In order to see the *p*-value with a high number of decimal places, click on
-   the ⋮-symbol (top-right corner of the jamovi-window) and set the ``p-value
-   format`` to ``16 dp``.     
+   the settings menu (``⋮``, top-right corner) and set the ``p-value format``
+   to ``16 dp``.
    
 .. ----------------------------------------------------------------------------
 

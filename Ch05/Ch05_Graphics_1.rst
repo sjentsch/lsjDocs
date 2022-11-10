@@ -7,13 +7,13 @@ Let’s begin with the humble **histogram**. Histograms are one of the simplest
 and most useful ways of visualising data. They make most sense when you have an
 interval or ratio scale variable (e.g., the ``afl.margins`` variable from the
 |aflsmall_finalists|_ data set that we used in :doc:`Descriptive statistics
-<../Ch04/Ch04_Descriptives>`) and what you want to do is get an overall impression of
-the variable. Most of you probably know how histograms work, since they’re so
-widely used, but for the sake of completeness I’ll describe them. All you do is
-divide up the possible values into **bins** and then count the number of
-observations that fall within each bin. This count is referred to as the
-frequency or density of the bin and is displayed as a vertical bar. Ihe AFL
-winning margins data there are 33 games in which the winning margin was less
+<../Ch04/Ch04_Descriptives>`) and what you want to do is get an overall
+impression of the variable. Most of you probably know how histograms work,
+since they’re so widely used, but for the sake of completeness I’ll describe
+them. All you do is divide up the possible values into **bins** and then count
+the number of observations that fall within each bin. This count is referred to
+as the frequency or density of the bin and is displayed as a vertical bar. The
+``afl.margins`` variable contains 33 games in which the winning margin was less
 than 10 points and it is this fact that is represented by the height of the
 leftmost bar that we showed earlier in :doc:`Descriptive statistics
 <../Ch04/Ch04_Descriptives>`, and :numref:`fig-aflMargins`. With these earlier graphs
@@ -57,10 +57,10 @@ histogram would. However, with density plots, this isn’t an issue.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_histogram2.*
-   :alt: Density plot of ``afl.margins``
+   :alt: Density plot for the ``afl.margins`` variable
    :name: fig-histogram2
 
-   Density plot of the ``afl.margins`` variable plotted in jamovi
+   Density plot for the ``afl.margins`` variable plotted in jamovi
    
 .. ----------------------------------------------------------------------------
 

@@ -16,7 +16,7 @@ data yourself. Let’s have a look at how they work, again using the
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_boxplot1.*
-   :alt: Box plot of ``afl.margins``
+   :alt: Box plot of the ``afl.margins`` variable
    :name: fig-boxplot1
 
    Box plot of the ``afl.margins`` variable from the |aflsmall_margins|_ data
@@ -25,8 +25,8 @@ data yourself. Let’s have a look at how they work, again using the
 .. ----------------------------------------------------------------------------
 
 The easiest way to describe what a box plot looks like is just to draw one.
-Click on the ``Box plot`` check box and you will get the plot shown on the lower
-right of :numref:`fig-boxplot1`. jamovi has drawn the most basic box plot
+Click on the ``Box plot`` check box and you will get the plot shown on the
+lower right of :numref:`fig-boxplot1`. jamovi has drawn the most basic box plot
 possible. When you look at this plot this is how you should interpret it: the
 thick line in the middle of the box is the median; the box itself spans the
 range from the 25th percentile to the 75th percentile; and the “whiskers” go
@@ -35,11 +35,11 @@ default, this value is 1.5 times the interquartile range (IQR), calculated as
 *25th percentile - (1.5 \* IQR)* for the lower boundary, and *75th percentile
 \+ (1.5 \* IQR)* for the upper boundary. Any observation whose value falls
 outside this range is plotted as a circle or dot instead of being covered by
-the whiskers, and is commonly referred to as an **outlier**. For our AFL
-margins data there are two observations that fall outside this range, and these
-observations are plotted as dots (the upper boundary is 107, and looking over
-the data column in the spreadsheet there are two observations with values
-higher than this, 108 and 116, so these are the dots).
+the whiskers, and is commonly referred to as an **outlier**. For the
+``afl.margins`` variable there are two observations that fall outside this
+range, and these observations are plotted as dots (the upper boundary is 107,
+and looking over the data column in the spreadsheet there are two observations
+with values higher than this, 108 and 116, so these are the dots).
 
 Violin plots
 ~~~~~~~~~~~~
@@ -58,7 +58,7 @@ better to just use a simple box plot.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_boxplot2.*
-   :alt: Violin plot of ``afl.margins``
+   :alt: Violin plot of the ``afl.margins`` variable
    :name: fig-boxplot2
 
    Violin plot of the ``afl.margins`` variable from the |aflsmall_margins|_
@@ -100,8 +100,7 @@ space: no chance at all that the reader is going to learn anything useful.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_boxplot3.*
-   :alt: Multiple box plots: ``margin`` split by ``year`` from
-         ``aflmarginbyyear``
+   :alt: Multiple box plots: ``margin`` split by ``year`` from |aflmarginbyyear|
    :name: fig-boxplot3
 
    Multiple box plots created in jamovi, for the variables ``margin`` split by
@@ -116,16 +115,17 @@ Because the box plot automatically separates out those observations that lie
 outside a certain range, depicting them with a dot in jamovi, people often use
 them as an informal method for detecting **outliers**: observations that are
 “suspiciously” distant from the rest of the data. Here’s an example. Suppose
-that I’d drawn the box plot for the AFL margins data and it came up looking
-like :numref:`fig-boxplot4`.
+that I’d drawn the box plot for the ``afl.margins`` variable and it came up
+looking like :numref:`fig-boxplot4`.
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_boxplot4.*
-   :alt: Box plot with outliers
+   :alt: Box plot of the ``afl.margins`` variable with outliers
    :name: fig-boxplot4
 
-   Box plot showing two very suspicious outliers
+   Box plot of the ``afl.margins`` variable showing two very suspicious
+   outliers
    
 .. ----------------------------------------------------------------------------
 

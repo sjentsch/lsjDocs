@@ -81,9 +81,9 @@ analysis: in the |bfi_sample3|_ data set. Once again, check that the 25
 personality item variables are coded as continuous |continuous|. To perform
 reliability analysis in jamovi:
 
--  Select ``Factor`` → ``Reliability Analysis`` from the ``Analyses`` ribbon
-   menu in jamovi to open the analysis panel where you can determine the
-   settings for the reliability analysis (:numref:`fig-rel1`).
+-  Select ``Factor`` → ``Reliability Analysis`` from the ``Analyses`` tab
+   in jamovi to open the analysis panel where you can determine the settings
+   for the reliability analysis (:numref:`fig-rel1`).
 
 -  Select the 5 ``A``-variables and transfer them into the ``Items`` box.
 

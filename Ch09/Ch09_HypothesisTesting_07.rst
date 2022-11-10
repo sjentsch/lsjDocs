@@ -9,11 +9,11 @@ previous discussion I built the test from first principles, thinking
 that it was the simplest possible problem that you might ever encounter
 in real life. However, this test already exists. It’s called the
 *binomial test*, and it’s implemented by jamovi as one of the
-statistical analyses available when you hit the ‘Frequencies’ button. To
-test the null hypothesis that the response probability is one-half
+statistical analyses available when you hit the ``Frequencies`` button.
+To test the null hypothesis that the response probability is one-half
 ``p = 0.5``,\ [#]_ and using data in which ``x = 62`` of ``n = 100``
-people made the correct response, available in the |binomialtest|_ data set,
-we get the results shown in :numref:`fig-binomialtest`.
+people made the correct response, available in the |binomialtest|_ data
+set, we get the results shown in :numref:`fig-binomialtest`.
 
 .. ----------------------------------------------------------------------------
 

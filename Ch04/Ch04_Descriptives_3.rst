@@ -56,7 +56,7 @@ one rule of thumb suggests that a value of 2 or less can mean that the data
 is not very skewed, and a value of over 2 that there is sufficient skew in
 the data to possibly limit its use in some statistical analyses. Though there
 is no clear agreement on this interpretation. That said, this does indicate
-that the AFL winning margins data is somewhat skewed (0.780 / 0.183 = 4.262).
+that the ``afl.margins`` variable is somewhat skewed (0.780 / 0.183 = 4.262).
 
 The final measure that is sometimes referred to, though very rarely in practice,
 is the **kurtosis** of a data set. Put simply, kurtosis is a measure of how thin
@@ -109,8 +109,8 @@ I know, it’s not terribly interesting to me either.
 
 More to the point, jamovi has a check box for kurtosis just below the
 check box for skewness, and this gives a value for kurtosis of **0.101**
-with a standard error of **0.364**. This means that the AFL winning
-margins data has only a small kurtosis, which is ok.
+with a standard error of **0.364**. This means that the ``afl.margins``
+variable has only a small kurtosis, which is ok.
 
 ------
 

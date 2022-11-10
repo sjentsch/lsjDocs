@@ -10,34 +10,34 @@ representing a “variable” and each row representing a “case” or
 Variables
 ~~~~~~~~~
 
-The most commonly used variables in jamovi are ``Data Variables``, these
+The most commonly used variables in jamovi are ``Data`` variables, these
 variables simply contain data either loaded from a data file, or “typed in”
-by the user. Data variables can be one of four measurement levels.
+by the user. ``Data`` variables can be one of four measurement levels.
 These levels are designated by the symbol in the header of the
 variable’s column:
 
-- The *ID* variable type |ID| is unique to jamovi. It’s intended for variables
+- The ``ID`` variable type |ID| is unique to jamovi. It’s intended for variables
   that contain identifiers that you would almost never want to analyse.
   For example, a persons name, or a participant ID. Specifying an ID
   variable type can improve performance when interacting with very large
   data sets.
 
-- *Nominal* variables |nominal| are for categorical variables which are text
-  labels, for example a column called Gender with the values “Male” and
-  “Female” would be nominal. So would a person’s name. Nominal variable values
-  can also have a numeric value. These variables are used most often when
-  importing data which codes values with numbers rather than text. For example,
-  a column in a dataset may contain the values 1 for “Male”, and 2 for
-  “Female”. It is possible to add nice “human-readable” labels to these
+- ``Nominal`` variables |nominal| are for categorical variables which are text
+  labels, for example a column called Gender with the values ``Male`` and
+  ``Female`` would be nominal. So would a person’s name. Nominal variable
+  values can also have a numeric value. These variables are used most often
+  when importing data which codes values with numbers rather than text. For
+  example, a column in a dataset may contain the values 1 for ``Male``, and 2
+  for ``Female``. It is possible to add nice “human-readable” labels to these
   values with the variable editor (more on this later).
 
-- *Ordinal* variables |ordinal| are like Nominal variables, except the values
-  have a specific order. An example is a Likert scale with 3 being “strongly
-  agree” and -3 being “strongly disagree”.
+- ``Ordinal`` variables |ordinal| are like ``Nominal`` variables, except the
+  values have a specific order. An example is a Likert scale with 3 being
+  “strongly agree” and -3 being “strongly disagree”.
 
-- *Continuous* variables |continuous| are variables which exist on a continuous
+- ``Continuous`` variables |continuous| are variables which exist on a continuous
   scale. Examples might be height or weight. This is also referred to as
-  ``Interval`` or ``Ratio scale``.
+  “interval scale” or “ratio scale”.
 
 In addition, you can also specify different data types: variables have a
 data type of either ``Text``, ``Integer`` or ``Decimal``.
@@ -67,9 +67,9 @@ the variable type, the order of the levels, and the label displayed for
 each level. Changes can be applied by clicking the “tick” to the top
 right. The variable editor can be dismissed by clicking ``↑``.
 
-New variables can be inserted or appended to the data set using the
-``Add`` button from the data ribbon. The ``Add`` button also allows the
-addition of computed variables.
+New variables can be inserted or appended to the data set using the ``Add``
+button from the ``Data`` tab. The ``Add`` button also allows the addition
+of computed variables.
 
 Computed variables
 ~~~~~~~~~~~~~~~~~~
@@ -133,20 +133,24 @@ do some analyses.
 Syntax mode
 ~~~~~~~~~~~
 
-jamovi also provides an “R Syntax Mode”. In this mode jamovi produces
+jamovi also provides an “Syntax Mode”. In this mode jamovi produces
 equivalent R code for each analysis. To change to syntax mode, select
-the Application menu to the top right of jamovi (a button with three
-vertical dots) and click the ``Syntax mode`` checkbox there. You can turn
-off syntax mode by clicking this a second time.
+the settings menu (``⋮``; top right corner in jamovi) and click the
+``Syntax mode`` checkbox there. You can turn off syntax mode by clicking
+this a second time.
 
 In syntax mode analyses continue to operate as before but now they
-produce R syntax, and “ASCII output” like an R session. Like all results
-objects in jamovi, you can right click on these items (including the
-R syntax) and copy and paste them, for example into an R session. At
-present, the provided R syntax does not include the data import step and
-so this must be performed manually in R. There are many resources
-explaining how to import data into R and if you are interested we
-recommend you take a look at these; just search on the interweb.
+produce R syntax. Like all results objects in jamovi, you can right click
+on these items (including the R syntax) and copy and paste them, for example
+into an R session. To import jamovi-files within an R session, you can use
+the function ``read_omv`` from the R-package ``jmvReadWrite`` (which can be
+installed using ``install.packages("jmvReadWrite")`` in an R-session. The
+package also contains further functions for handling jamovi-files in R (e.g.,
+``write_omv`` for writing jamovi-files, ``convert_omv`` for converting other
+file formats to a jamovi-file, or ``merge_cols_omv`` for adding columns from
+a second dataset while matching the two datasets by an index variable). Help
+how to use these functions can be obtained by preceding the function name by
+a ``?`` (e.g., ``?jmvReadWrite::read_omv``).
 
 Loading data in jamovi
 ----------------------
@@ -199,14 +203,13 @@ data though, it has the names of the variables.
 
 .. ----------------------------------------------------------------------------
 
-It’s easy to open CSV files in jamovi. From the top left menu (the
-button with three parallel lines) choose ``Open`` and browse to where you
-have stored the CSV file on your computer. If you’re on a Mac, it’ll
-look like the usual Finder window that you use to choose a file; on
-Windows it looks like an Explorer window. I’m assuming that you’re
-familiar with your own computer, so you should have no problem finding the
-CSV-file that you want to import! Find the one you want, then click on the
-“Open” button.
+It’s easy to open CSV files in jamovi. From the jamovi main menu (``☰``; top
+left hand corner) choose ``Open`` and browse to where you have stored the CSV
+file on your computer. If you’re on a Mac, it’ll look like the usual Finder
+window that you use to choose a file; on Windows it looks like an Explorer
+window. I’m assuming that you’re familiar with your own computer, so you
+should have no problem finding the CSV-file that you want to import! Find the
+one you want, then click on the ``Open`` button.
 
 There are a few things that you can check to make sure that the data
 gets imported correctly:
@@ -275,9 +278,9 @@ change are:
    replaced with ``99`` (or ``-9999``; whichever you choose) before
    opening / importing the file into jamovi. Once you have opened /
    imported the file into jamovi all the missing values are converted to
-   blank or greyed out cells in the jamovi spreadsheet view. You can also
-   change the missing value for each variable as an option in the Data →
-   Setup view.
+   blank or greyed out cells in the jamovi spreadsheet view. You can
+   also change the missing value for each variable as an option in the
+   ``Data`` → ``Setup`` view.
 
 Importing data from SPSS (and other statistics packages)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -303,12 +306,12 @@ and STATA files.
 ------
 
 .. [#]
-   You can change the default value for missing values in jamovi from
-   the top right menu (three vertical dots), but this only works at the
-   time of importing data files into jamovi. The default missing value
-   in the dataset should not be a valid number or value associated with
-   any of the variables, e.g. you could use ``-9999`` as this is unlikely
-   to be a valid value.
+   You can change the default value for missing values in jamovi from the
+   settings menu (``⋮``, top right corner), but this only works at the time
+   of importing data files into jamovi. The default missing value in the 
+   dataset should not be a valid number or value associated with any of the
+   variables, e.g. you could use ``-9999`` as this is unlikely to be a valid
+   value.
 
 .. [#]
    I know this is a bit of a fudge, but it does work and hopefully this

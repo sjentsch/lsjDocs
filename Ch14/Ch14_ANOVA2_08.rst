@@ -67,9 +67,9 @@ that, by default, the *first* level of the factor is always treated as
 the baseline category (i.e., it’s the one that has all zeros and doesn’t
 have an explicit contrast associated with it). In jamovi you can change
 which category is the first level of the factor by manipulating the
-order of the levels of the variable shown in the ‘Data Variable’ window
+order of the levels of the variable shown in the ``Data Variable`` window
 (double click on the name of the variable in the spreadsheet column to
-bring up the ‘Data Variable’ view.
+bring up the ``Data Variable`` view).
 
 Helmert contrasts
 ~~~~~~~~~~~~~~~~~

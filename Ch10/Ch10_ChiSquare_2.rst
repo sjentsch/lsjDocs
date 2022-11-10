@@ -42,11 +42,11 @@ and ``choice``. In total there are 180 entries in the data set, one for each
 person (counting both robots and humans as “people”) who was asked to make a
 choice. Specifically, there are 93 humans and 87 robots, and overwhelmingly the
 preferred choice is the data file. You can check this yourself by asking jamovi
-for Frequency Tables, under the ‘Exploration’ - ‘Descriptives’ button. However,
-this summary does not address the question we’re interested in. To do that, we
-need a more detailed description of the data. What we want to do is look at the
-``choices`` broken down *by* ``species``. That is, we need to cross-tabulate
-the data (see :doc:`Tabulating and cross-tabulating data
+for ``Frequency Tables``, under the ``Exploration`` → ``Descriptives`` button.
+However, this summary does not address the question we’re interested in. To do
+that, we need a more detailed description of the data. What we want to do is
+look at the ``choices`` broken down *by* ``species``. That is, we need to
+cross-tabulate the data (see :doc:`Tabulating and cross-tabulating data
 <../Ch06/Ch06_DataHandling_1>`). In jamovi we do this using the ``Frequencies``
 → ``Contingency Tables`` →  ``Independent Samples`` analysis, and we should get
 a table something like this:

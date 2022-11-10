@@ -60,7 +60,7 @@ representation of the ``afl.margins`` variable.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_aflMargins.*
-   :alt: Histogram of AFL 2010 winning margin data
+   :alt: Histogram of AFL 2010 winning margin data (the ``afl.margins`` variable)
    :name: fig-aflMargins
 
    Histogram of the AFL 2010 winning margin data (the ``afl.margins``

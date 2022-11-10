@@ -11,7 +11,7 @@ really want is a measure of the **variability** of the data. That is,
 how “spread out” are the data? How “far” away from the mean or median do
 the observed values tend to be? For now, let’s assume that the data are
 interval or ratio scale, and we’ll continue to use the ``afl.margins``
-data. We’ll use this data to discuss several different measures of
+variable. We’ll use this data to discuss several different measures of
 spread, each with different strengths and weaknesses.
 
 Range
@@ -49,7 +49,7 @@ the ``Exploration`` → ``Descriptives`` → ``Statistics`` screen.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_aflsmall_margins_iqr.*
-   :alt: Quartiles for ``afl.margins``
+   :alt: Quartiles for the ``afl.margins`` variable
    :name: fig-aflsmall_margins_iqr
 
    Screenshot of jamovi showing the Quartiles for the ``afl.margins`` variable
@@ -245,19 +245,19 @@ a variance of 324.64. Exciting, isn’t it? For the moment, let’s ignore the
 burning question that you’re all probably thinking (i.e., what the heck does a
 variance of 324.64 actually mean?) and instead talk a bit more about how to do
 the calculations in jamovi, because this will reveal something very weird.
-Start a new jamovi session by clicking on the main menu button (three
-horizontal lines in the top left corner and selecting ``New``. Now type in the
-first five values from the afl.margins data set in column A (56, 31, 56, 8,
-32). Change the variable type to ``Continuous`` and under ``Descriptives``
-click the ``Variance`` check box, and you get the same values for variance as
-the one we calculated by hand (**324.64**). No, wait, you get a completely
-*different* answer (**405.80**) - see :numref:`fig-aflsmall_margins_variance1`.
+Start a new jamovi session by clicking on the main menu button (``☰``; top
+left hand corner) and selecting ``New``. Now type in the first five values
+from the |aflsmall_margins|_ data set in column A (56, 31, 56, 8, 32). Change
+the variable type to ``Continuous`` and under ``Descriptives`` click the
+``Variance`` check box, and you get the same values for variance as the one we
+calculated by hand (**324.64**). No, wait, you get a completely *different*
+answer (**405.80**) - see :numref:`fig-aflsmall_margins_variance1`.
 That’s just weird. Is jamovi broken? Is this a typo? Am I an idiot?
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_aflsmall_margins_variance1.*
-   :alt: Variance for the first 5 values of ``afl.margins``
+   :alt: Variance for the first 5 values of the ``afl.margins`` variable
    :name: fig-aflsmall_margins_variance1
 
    Screenshot of jamovi showing the Variance for the first 5 values of the
@@ -378,7 +378,7 @@ standard deviation of the mean. This is shown visually in :numref:`fig-aflSD`.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_aflSD.*
-   :alt: Variance for the first 5 values of ``afl.margins``
+   :alt: Standard deviation for the first 5 values of the ``afl.margins`` variable
    :name: fig-aflSD
 
    Illustration of the standard deviation from the AFL winning margins data.
@@ -449,3 +449,8 @@ somewhere.
    is an important concept that we’ll discuss more in chapter :doc:`Introduction
    to probability <../Ch07/Ch07_Probability>` and will turn up over and over again later
    in the book.
+
+.. ----------------------------------------------------------------------------
+
+.. |aflsmall_margins|                  replace:: ``aflsmall_margins``
+.. _aflsmall_margins:                  _static/data/aflsmall_margins.omv

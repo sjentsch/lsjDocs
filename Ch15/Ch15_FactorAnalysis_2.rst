@@ -36,7 +36,7 @@ Performing PCA in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once you have loaded up the |bfi_sample|_ data set, select ``Factor`` → 
-``Principal Component Analysis`` from the ``Analyses`` ribbbon menu to open
+``Principal Component Analysis`` from the ``Analyses`` tab to open
 the analysis panel where you can determine the settings for the PCA 
 (:numref:`fig-pca1`). Then select the 25 personality questions and transfer
 them into the ‘Variables’ box. Check appropriate options, including

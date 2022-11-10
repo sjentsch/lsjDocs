@@ -44,20 +44,22 @@ It is possible to simply begin typing values into the jamovi spreadsheet
 as you would in any other spreadsheet software. Alternatively, existing
 data sets in the CSV (``.csv``) file format can be opened in jamovi.
 Additionally, you can easily import Excel, LibreOffice, SPSS, SAS, Stata
-and JASP files directly into jamovi. To open a file select the File tab
-(three horizontal lines; top left hand corner), select ``Open`` and then
-choose from the files listed on ``Browse`` depending on whether you want to
-open an example or a file stored on your computer.
+and JASP files directly into jamovi. To open a file select the main jamovi
+menu (``☰``; top left hand corner), select ``Open`` and then choose from
+the files listed on ``Browse`` depending on whether you want to open an
+example or a file stored on your computer.
 
 Analyses
 --------
 
-Analyses can be selected from the analysis ribbon or menu along the top.
-Selecting an analysis will present an **options panel** for that particular
-analysis, allowing you to assign different variables to different parts of the
-analysis, and select different options. At the same time, the results for the
-analysis will appear in the right **results panel** and will update in real-
-time as you make changes to the options.
+Analyses can be selected from the analysis ribbon (activate it by pressing the
+``Analysis``). Here, individual analyses can be chosen from their respective
+category (e.g., ``T-Tests``, ``ANOVA`` or ``Regression``). Selecting an
+analysis will present an **options panel** for that particular analysis,
+allowing you to assign different variables to different parts of the analysis,
+and select different options. At the same time, the results for the analysis
+will appear in the right **results panel** and will update in real-time as you
+make changes to the options.
 
 When you have the analysis set up correctly you can dismiss the analysis
 options by clicking the arrow to the top right of the optional panel. If

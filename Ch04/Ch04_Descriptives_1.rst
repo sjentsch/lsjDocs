@@ -305,7 +305,7 @@ period 1987 to 2010.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_aflsmall_finalists.png
-   :alt: Variables in ``aflsmall_finalists``
+   :alt: Variables in |aflsmall_finalists|
    :name: fig-aflsmall_finalists
 
    Screenshot of jamovi showing the variables stored in the
@@ -314,7 +314,7 @@ period 1987 to 2010.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_aflsmall_finalists_mode.png
-   :alt: Frequency table for ``afl.margins`` in ``aflsmall_finalists``
+   :alt: Frequency table for the ``afl.margins`` variable in |aflsmall_finalists|
    :name: fig-aflsmall_finalists_mode
 
    Screenshot of jamovi showing the frequency table for the
@@ -365,7 +365,7 @@ should bet on a 3 point margin.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_aflsmall_margins_mode.png
-   :alt: Modal value in of ``afl.margins`` in ``aflsmall_finalists``
+   :alt: Modal value of the ``afl.margins`` variable in |aflsmall_finalists|
    :name: fig-aflsmall_margins_mode
 
    Screenshot of jamovi showing the modal value for the ``afl.margins`` 

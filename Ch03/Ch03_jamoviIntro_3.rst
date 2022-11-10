@@ -29,13 +29,13 @@ have created special software add-ons that do other, usually more
 advanced, analyses that go beyond the capabilities of the base jamovi
 program.
 
-To install add-on modules, just click on the large “+” in the top right
-of the jamovi window, select “jamovi-library” and then browse through
+To install add-on modules, just click on the large ``+`` in the top right
+of the jamovi window, select ``jamovi library`` and then browse through
 the various add-on modules that are available. Choose the one(s) you
-want, and then install them, as in :numref:`fig-modules`.
+want, and then install them (as shown in :numref:`fig-modules`).
 
 It’s that easy. The newly installed modules can then be accessed from the
-“Analyses” button bar. Try it... useful add-on modules to install include
+``Analyses`` tab. Try it... useful add-on modules to install include
 ``scatr`` (added under ``Descriptives``) and |Rj|_.
 
 .. ----------------------------------------------------------------------------
@@ -61,8 +61,8 @@ data set, and saving the analyses that you ran.
 It is good practice to save any changes to the data set as a *new* data
 set. That way you can always go back to the original data. To save any
 changes in jamovi, select ``Export`` → ``Data`` from the main jamovi menu
-(button with three horizontal bars in the top left) and create a new
-file name for the changed data set.
+(``☰``; top left hand corner) and create a new file name for the changed
+data set.
 
 Alternatively, you can save *both* the changed data and any analyses you
 have undertaken by saving as a jamovi file. To do this, from the main
