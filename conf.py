@@ -359,30 +359,34 @@ texinfo_documents = [
 # -- Options for Sphinx extensions ----------------------------------------
 imgmath_image_format = 'svg'
 
-# -- Lanaguage chooser ----------------------------------------------------
-
+# -- Lower-left roll-up menu ----------------------------------------------
 try:
    html_context
 except NameError:
    html_context = dict()
 
-current_version = 'latest'
-html_context['display_lower_left'] = True
-html_context['current_language'] = language
-
-html_context['current_version'] = current_version
-html_context['version'] = current_version
-
 if os.path.abspath('.').startswith('/home'):
    base_path = os.path.abspath('.') + '/_build/html'
 else:
    base_path = ''
- 
+
+html_context['display_lower_left'] = True
+
+html_context['current_language'] = language
 languages = sorted([lang.name for lang in os.scandir('_locale') if (lang.is_dir() and lang.name != 'pot')])
 html_context['languages'] = [('en', base_path + '/en')]
 for lang in languages:
       html_context['languages'].append((lang, base_path + '/' + lang))
+
+html_context['display_version'] = False
+current_version = 'latest'
+html_context['current_version'] = current_version
+html_context['version'] = current_version
  
 html_context['downloads'] = list()
 html_context['downloads'].append(('PDF',  '/' + language + '/' + current_version + '/' + project + '-docs_' + language + '_' + current_version + '.pdf'))
 html_context['downloads'].append(('epub', '/' + language + '/' + current_version + '/' + project + '-docs_' + language + '_' + current_version + '.epub'))
+
+html_context['display_github'] = False
+html_context['last_updated'] = False
+html_context['commit'] = False

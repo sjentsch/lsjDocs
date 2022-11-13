@@ -116,7 +116,7 @@ to each other. Therefore, since ``2 + 2`` isn’t equal to *5* we would get
    2 + 2 != 5
    
 We’re not quite done yet. There are three more logical operations that
-are worth knowing about, listed in :numref:'tab-logicals2`. These
+are worth knowing about, listed in :numref:`tab-logicals2`. These
 are the **not** operator ``!``, the ``and``-operator and, and the
 ``or``-operator ``or``. Like the other logical operators, their
 behaviour is more or less exactly what you’d expect given their names.
