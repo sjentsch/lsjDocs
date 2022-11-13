@@ -6,18 +6,18 @@ One-sided tests
 When introducing the theory of null hypothesis tests, I mentioned that there
 are some situations when it’s appropriate to specify a *one-sided* test (see
 section :doc:`The difference between one-sided and two-sided tests
-<../Ch09/Ch09_HypothesisTesting_04>`). So far all of the *t*-tests have been two-sided
-tests. For instance, when we specified a one sample *t*-test for the grades in
-Dr Zeppo’s class the null hypothesis was that the true mean was 67.5%. The
-alternative hypothesis was that the true mean was greater than *or* less than
-\67.5%. Suppose we were only interested in finding out if the true mean is
-greater than 67.5%, and have no interest whatsoever in testing to find out if
-the true mean is lower than \67.5%. If so, our null hypothesis would be that
-the true mean is 67.5% or less, and the alternative hypothesis would be that
-the true mean is greater than 67.5%. In jamovi, for the ‘One Sample *t*-Test’
-analysis, you can specify this by clicking on the ``> Test Value`` option,
-under ``Hypothesis``. When you have done this, you will get the results as
-shown in :numref:`fig-ttest_onesided1`.
+<../Ch09/Ch09_HypothesisTesting_04>`). So far all of the *t*-tests have been
+two-sided tests. For instance, when we specified a one sample *t*-test for the
+grades in Dr Zeppo’s class the null hypothesis was that the true mean was
+67.5%. The alternative hypothesis was that the true mean was greater than *or*
+less than 67.5%. Suppose we were only interested in finding out if the true
+mean is greater than 67.5%, and have no interest whatsoever in testing to find
+out if the true mean is lower than \67.5%. If so, our null hypothesis would be
+that the true mean is 67.5% or less, and the alternative hypothesis would be
+that the true mean is greater than 67.5%. In jamovi, for the ``One Sample
+T-Test`` analysis, you can specify this by clicking on the ``> Test Value``
+option, under ``Hypothesis``. When you have done this, you will get the results
+as shown in :numref:`fig-ttest_onesided1`.
 
 .. ----------------------------------------------------------------------------
 
@@ -36,17 +36,17 @@ different test. The second thing to note is that although the *t*-statistic and
 degrees of freedom have not changed, the *p*-value has. This is because the
 one-sided test has a different rejection region from the two-sided test. If
 you’ve forgotten why this is and what it means, you may find it helpful to read
-back over chapter :doc:`Hypothesis testing <../Ch09/Ch09_HypothesisTesting>`, and
-section :doc:`The difference between one-sided and two-sided tests
-<../Ch09/Ch09_HypothesisTesting_04>` in particular. The third thing to note is that the
-confidence interval is different too: it now reports a “one-sided” confidence
-interval rather than a two-sided one. In a two-sided confidence interval we’re
-trying to find numbers *a* and *b* such that we’re confident that, if we were
-to repeat the study many times, then 95% of the time the mean would lie
-*between* *a* and *b*. In a one-sided confidence interval, we’re trying to find
-a single number *a* such that we’re confident that 95% of the time the true
-mean would be *greater than* *a* (or less than *a* if you selected Measure 1 <
-Measure 2 in the ‘Hypothesis’ section).
+back over chapter :doc:`Hypothesis testing <../Ch09/Ch09_HypothesisTesting>`,
+and section :doc:`The difference between one-sided and two-sided tests
+<../Ch09/Ch09_HypothesisTesting_04>` in particular. The third thing to note is
+that the confidence interval is different too: it now reports a “one-sided”
+confidence interval rather than a two-sided one. In a two-sided confidence
+interval we’re trying to find numbers *a* and *b* such that we’re confident
+that, if we were to repeat the study many times, then 95% of the time the mean
+would lie *between* *a* and *b*. In a one-sided confidence interval, we’re
+trying to find a single number *a* such that we’re confident that 95% of the
+time the true mean would be *greater than* *a* (or less than *a* if you
+selected ``Measure 1 < Measure 2`` in the ``Hypothesis`` section).
 
 So that’s how to do a one-sided one sample *t*-test. However, all
 versions of the *t*-test can be one-sided. For an independent

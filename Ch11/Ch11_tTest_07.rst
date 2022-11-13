@@ -142,7 +142,7 @@ indicating that the time 2 grade scores are, on average, 1.45 standard
 deviations higher than the time 1 grade scores.
 
 This is the version of Cohen’s *d* that gets reported by the
-jamovi ‘Paired Samples *t*-Test’ analysis. The only wrinkle is figuring
+jamovi ``Paired Samples T-Test`` analysis. The only wrinkle is figuring
 out whether this is the measure you want or not. To the extent that you
 care about the practical consequences of your research, you often want
 to measure the effect size relative to the *original* variables, not the
