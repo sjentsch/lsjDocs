@@ -126,7 +126,7 @@ in the possible outcomes.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_binomHeads.*
-   :alt: Binomial distribution: θ = 1/2 and N = 20 (left) or N = 1000 (right) 
+   :alt: Binomial distribution: θ = 1/2 and N = 20 (left) or N = 100 (right) 
    :name: fig-binomHeads
 
    Two binomial distributions, involving a scenario in which I’m flipping a

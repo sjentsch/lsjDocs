@@ -26,7 +26,7 @@ introductory text I don’t want to focus on it, so I’ve tucked it away in
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_standardNormal.*
-   :alt: Binomial distribution: θ = 1/2 and N = 20 (left) or N = 1000 (right) 
+   :alt: Normal distribution with mean μ = 0 and standard deviation σ = 1 
    :name: fig-standardNormal
 
    The normal distribution with mean μ = 0 and standard deviation σ = 1. The
