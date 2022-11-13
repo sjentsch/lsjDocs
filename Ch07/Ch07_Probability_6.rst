@@ -48,7 +48,7 @@ pictures.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_chiSqDist.*
-   :alt: χ²-distribution with with df = 3
+   :alt: χ²-distribution with df = 3
    :name: fig-chiSqDist
 
    χ²-distribution with 3 degrees of freedom. Notice that the observed values

@@ -112,7 +112,7 @@ is zero, keep them zero. In the next part, ``else``, we can enter another
 logical or mathematical statement to be used if part one evaluates to
 ``FALSE``, i.e. where ``likert.centred`` is not zero. In our example we have
 divided ``likert.centred`` by opinion.strength to give ``-1`` or ``+1``
-depending of the sign of the original value in likert.centred.\ [#]_
+depending of the sign of the original value in ``likert.centred``.\ [#]_
 
 And we’re done. We now have three shiny new variables, all of which are
 useful transformations of the original ``likert.raw`` variable.

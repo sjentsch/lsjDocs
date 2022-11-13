@@ -127,16 +127,16 @@ in :numref:`fig-normAreaSD`.
    The area under the curve tells you the probability that an observation falls
    within a particular range. The solid lines plot normal distributions with
    mean μ = 0 and standard deviation σ = 1. The shaded areas illustrate “areas
-   under the curve” for two important cases. In panel a, we can see that there
-   is a 68.3% chance that an observation will fall within one standard
-   deviation of the mean. In panel b, we see that there is a 95.4% chance that
-   an observation will fall within two standard deviations of the mean.
+   under the curve” for two important cases. In the left panel, we can see that
+   there is a 68.3% chance that an observation will fall within one standard
+   deviation of the mean. In the right panel, we see that there is a 95.4%
+   chance that an observation will fall within two standard deviations of the
+   mean.
      
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_normAreaOther.*
-   :alt: Normal distribution: area under the curve for 1 SD bordering the mean
-         and below 1 SD to the tails of the distribution
+   :alt: Area under the curve for 1 SD bordering the mean and at the tails
    :name: fig-normAreaOther
 
    Two more examples of the “area under the curve” idea. There is a 15.9%
@@ -166,7 +166,7 @@ worry too much, but try to make sure that you follow the gist of it.
 Throughout my discussion of the normal distribution there’s been one or
 two things that don’t quite make sense. Perhaps you noticed that the
 *y*-axis in these figures is labelled “Probability Density” rather
-than density. Maybe you noticed that I used *p*\ (X) instead of
+than “Density”. Maybe you noticed that I used *p*\ (X) instead of
 *P*\ (X) when giving the formula for the normal distribution.
 
 As it turns out, what is presented here isn’t actually a probability,
