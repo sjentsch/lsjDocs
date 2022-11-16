@@ -172,9 +172,10 @@ Calculating confidence intervals in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As far as I can tell, jamovi does not (yet) include a simple way to calculate
-confidence intervals for the mean as part of the ‘Descriptives’ functionality.
-But the ``Descriptives`` do have a check box for the S.E. Mean, so you can use
-this to calculate the lower 95% confidence interval as:
+confidence intervals for the mean as part of the functionality of
+``Descriptives``. But the ``Descriptives`` do have a check box for the
+``S.E. Mean``, so you can use this to calculate the lower 95% confidence
+interval as:
 
 ``Mean - (1.96 * S.E. Mean)`` , and the upper 95% confidence interval
 as:

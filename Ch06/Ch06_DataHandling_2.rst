@@ -33,7 +33,8 @@ this: ``2 + 2 == 4``
 
 What I’ve done here is use the **equality operator**, ``==``, to force jamovi
 to make a “``TRUE`` or ``FALSE``” judgement.\ [#]_ Okay, let’s see what jamovi
-thinks of the Party slogan, so type this into the compute new variable ``Formula`` box:
+thinks of the Party slogan, so type this into the compute new variable
+``Formula`` box:
 
 .. code-block:: text
 
@@ -164,8 +165,8 @@ In other words, since ``2 + 2 == 5`` is a ``FALSE`` statement, it must be the
 case that ``NOT(2 + 2 == 5)`` is a ``TRUE`` one. Essentially, what we’ve really
 done is claim that “not false” is the same thing as “true”. Obviously, this
 isn’t really quite right in real life. But jamovi lives in a much more black or
-white world. For jamovi everything is either true or false. No shades of grey
-are allowed.
+white world. For jamovi everything is either ``TRUE`` or ``FALSE``. No shades of
+grey are allowed.
 
 Of course, in our ``2 + 2 = 5`` example, we didn’t really need to use
 the “not” operator ``NOT`` and the “equals to” operator ``==`` as two
@@ -216,7 +217,7 @@ say that they’re not equal to each other, as with the following:
 
 You can also use other logical operators too. For instance jamovi also
 allows you to use the ``<`` and ``>`` operators to determine which of
-two text ‘strings’ comes first, alphabetically speaking. Sort of.
+two text “strings” comes first, alphabetically speaking. Sort of.
 Actually, it’s a bit more complicated than that, but let’s start with a
 simple example:
 
@@ -228,8 +229,8 @@ In jamovi, this example evaluates to ``TRUE``. This is because ``cat``
 does does come before ``dog`` alphabetically, so jamovi judges the
 statement to be true. However, if we ask jamovi to tell us if ``cat``
 comes before ``anteater`` then it will evaluate the expression as
-false. So far, so good. But text data is a bit more complicated than the
-dictionary suggests. What about ``cat`` and ``CAT``? Which of these
+``FALSE``. So far, so good. But text data is a bit more complicated than
+the dictionary suggests. What about ``cat`` and ``CAT``? Which of these
 comes first? Try it and find out:
 
 .. code-block:: text
@@ -249,7 +250,7 @@ extract illustrates. Try this:
 
    "anteater" < "ZEBRA"
 
-This evaluates to ‘false’, and this may seem slightly counterintuitive. With
+This evaluates to ``FALSE``, and this may seem slightly counterintuitive. With
 that in mind, it may help to have a quick look at the various text characters
 in the order that jamovi processes them:
 

@@ -217,7 +217,7 @@ value for *y*\ :sub:`i` according to model M\ :sub:`2`.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_reg8.*
-   :alt: Model comparison in jamovi using the ‘Model Builder’ option
+   :alt: Model comparison in jamovi using the ``Model Builder`` option
    :name: fig-reg8
 
    Model comparison in jamovi using the ``Model Builder`` option

@@ -159,5 +159,10 @@ original variables.
 ------
 
 .. [#]
-   If you are interested, you can look at how this was done in the ``chico2``
+   If you are interested, you can look at how this was done in the |chico2|_
    dataset
+
+.. ----------------------------------------------------------------------------
+
+.. |chico2|                            replace:: ``chico2``
+.. _chico2:                            _static/data/chico2.omv

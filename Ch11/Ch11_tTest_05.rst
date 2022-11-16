@@ -33,7 +33,7 @@ When they realise how hard her class really is, they’ll work harder for
 the second test and get a better mark. Is she right? To test this, let’s
 import the |chico|_ data set into jamovi. This time jamovi does a good
 job during the import of attributing measurement levels correctly. The
-chico data set contains three variables: an ``id`` variable that
+|chico|_ data set contains three variables: an ``id`` variable that
 identifies each student in the class, the ``grade_test1`` variable that
 records the student grade for the first test, and the ``grade_test2``
 variable that has the grades for the second test.
@@ -183,7 +183,7 @@ called ``improvement``, let’s do that and see what we get
 .. ----------------------------------------------------------------------------
 
 The output shown in :numref:`fig-ttest_paired2` is (obviously) formatted
-exactly the same was as it was the last time we used the ‘One Sample *t*-Test’
+exactly the same was as it was the last time we used the ``One Sample T-Test``
 analysis (section :doc:`The one-sample t-test <../Ch11/Ch11_tTest_02>`), and it
 confirms our intuition. There’s an average improvement of 1.4% from test 1 to
 test 2, and this is significantly different from 0 (*t*\(19) = 6.48,
@@ -192,7 +192,7 @@ p < 0.001).
 However, suppose you’re lazy and you don’t want to go to all the effort
 of creating a new variable. Or perhaps you just want to keep the
 difference between one-sample and paired-samples tests clear in your
-head. If so, you can use the jamovi ‘Paired Samples *t*-Test’ analysis,
+head. If so, you can use the jamovi ``Paired Samples T-Test`` analysis,
 getting the results shown in :numref:`fig-ttest_paired3`.
 
 .. ----------------------------------------------------------------------------

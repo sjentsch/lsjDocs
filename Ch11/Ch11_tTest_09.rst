@@ -64,7 +64,7 @@ or *z*. That is, if we want a two-sided test then we reject the null hypothesis
 when *W* is very large or very small, but if we have a directional (i.e.,
 one-sided) hypothesis then we only use one or the other.
 
-In jamovi, if we run an ``Independent Samples t-Test`` with ``scores``
+In jamovi, if we run an ``Independent Samples T-Test`` with ``scores``
 |continuous| as the dependent variable. and ``group`` as the grouping variable
 |nominal|, and then under the options for ``Tests`` check the option for
 ``Mann-Whitney U``, we will get results showing that U = 3 (i.e., the same

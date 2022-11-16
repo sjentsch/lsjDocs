@@ -22,7 +22,7 @@ capability of jamovi. But jamovi gets us close, and drawing this histogram in
 jamovi is pretty straightforward. Open up the ``Plots`` options under
 ``Exploration`` →  ``Descriptives`` and click the ``Histogram`` check box, as
 shown in :numref:`fig-jamovi_histogram`. jamovi defaults to labelling the
-y-axis as ‘density’ and the x-axis with the variable name. The **bins** are
+y-axis as ``density`` and the x-axis with the variable name. The **bins** are
 selected automatically, and there is no scale, or count, information on the
 y-axis unlike the previous :numref:`fig-aflMargins`. But this does not matter
 too much because after all what we are really interested in is our impression

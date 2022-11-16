@@ -247,20 +247,20 @@ there’s no point. I already showed you how to do it the long way for the
 goodness-of-fit test in the last section, and since the test of
 independence isn’t conceptually any different, you won’t learn anything
 new by doing it the long way. So instead I’ll go straight to showing you
-the easy way. After you have run the test in jamovi (‘Frequencies’ -
-‘Contingency Tables’ - ‘Independent Samples’), all you have to do is
+the easy way. After you have run the test in jamovi (``Frequencies`` -
+``Contingency Tables`` - ``Independent Samples``), all you have to do is
 look underneath the contingency table in the jamovi results window and
 there is the χ² statistic for you. This shows a
 χ² statistic value of 10.72, with 2 d.f. and *p*-value
 = 0.005.
 
 That was easy, wasn’t it! You can also ask jamovi to show you the
-expected counts - just click on the check box for ‘Counts’ - ‘Expected’
-in the ‘Cells’ options and the expected counts will appear in the
+expected counts - just click on the check box for ``Expected Counts``
+in the ``Cells`` options and the expected counts will appear in the
 contingency table. And whilst you are doing that, an effect size measure
-would be helpful. We’ll choose Cramer’s V, and you can specify this from
-a check box in the ‘Statistics’ options, and it gives a value for
-Cramer’s V of 0.24. We will talk about this some more in just a moment.
+would be helpful. We’ll choose ``Phi and Cramer’s V``, and you can specify
+this from a check box in the ``Statistics`` options, and it gives a value
+for Cramer’s V of 0.24. We will talk about this some more in just a moment.
 
 This output gives us enough information to write up the result:
 

@@ -33,5 +33,5 @@ As far as I can tell from reading Yates’ paper, the correction is
 basically a hack. It’s not derived from any principled theory. Rather,
 it’s based on an examination of the behaviour of the test, and observing
 that the corrected version seems to work better. You can specify this
-correction in jamovi from a check box in the ‘Statistics’ options, where
-it is called ‘χ² continuity correction’.
+correction in jamovi from a check box in the ``Statistics`` options, where
+it is called ``χ² continuity correction``.

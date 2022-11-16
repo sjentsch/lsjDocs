@@ -333,10 +333,11 @@ the way that mathematicians do. As a consequence, statistical theory tends to
 be a bit abstract in how a population is defined. In much the same way that
 psychological researchers operationalise our abstract theoretical ideas in
 terms of concrete measurements (section :doc:`Introduction to psychological
-measurement <../Ch02/Ch02_StudyDesign_1>`), statisticians operationalise the concept
-of a “population” in terms of mathematical objects that they know how to work
-with. You’ve already come across these objects in chapter :doc:`Introduction to
-probability  <../Ch07/Ch07_Probability>`. They’re called probability distributions.
+measurement <../Ch02/Ch02_StudyDesign_1>`), statisticians operationalise the
+concept of a “population” in terms of mathematical objects that they know how
+to work with. You’ve already come across these objects in chapter 
+:doc:`Introduction to probability <../Ch07/Ch07_Probability>`. They’re called
+probability distributions.
 
 The idea is quite simple. Let’s say we’re talking about IQ scores. To a
 psychologist the population of interest is a group of actual humans who
@@ -386,8 +387,8 @@ population parameters are the things you want to learn about. Later on in this
 chapter I’ll talk about how you can estimate population parameters using your
 sample statistics (:doc:`Estimating means and standard deviations
 <../Ch08/Ch08_Estimation_4>`) and how to work out how confident you are in your
-estimates (:doc:`Estimating a confidence interval <../Ch08/Ch08_Estimation_5>`) but
-before we get to that there’s a few more ideas in sampling theory that you
+estimates (:doc:`Estimating a confidence interval <../Ch08/Ch08_Estimation_5>`)
+but before we get to that there’s a few more ideas in sampling theory that you
 need to know about.
 
 ------

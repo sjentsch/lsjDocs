@@ -9,10 +9,10 @@ the same participants are used in each group (or each participant is
 closely matched with participants in other experimental groups). For
 this reason, there should always be an equal number of scores (data
 points) in each experimental group. This type of design and analysis can
-also be called a ‘related ANOVA’ or a ‘within-subjects ANOVA’.
+also be called a “related ANOVA” or a “within-subjects ANOVA”.
 
 The logic behind a repeated measures ANOVA is very similar to that of an
-independent ANOVA (sometimes called a ‘between-subjects’ ANOVA). You’ll
+independent ANOVA (sometimes called a “between-subjects” ANOVA). You’ll
 remember that earlier we showed that in a between-subjects ANOVA total
 variability is partitioned into between-groups variability
 (SS\ :sub:`b`) and within-groups variability
@@ -95,21 +95,21 @@ To perform a one-way related ANOVA in jamovi, open the one-way repeated
 measures ANOVA dialogue box, as in :numref:`fig-RManova1`, via
 ``ANOVA - Repeated Measures ANOVA``. Then:
 
--  Enter a Repeated Measures Factor Name. This should be a label that
-   you choose to describe the conditions repeated by all participants.
-   For example, to describe the speech, conceptual and syntax tasks
-   completed by all participants a suitable label would be ‘Task’. Note
-   that this new factor name represents the independent variable in the
-   analysis.
+-  Enter a name for the Repeated Measures Factor (orginally: ``RM Factor …``).
+   This should be a label that you choose to describe the conditions repeated
+   by all participants. For example, to describe the speech, conceptual and
+   syntax tasks completed by all participants a suitable label would be
+   ``Task``. Note that this new factor name represents the independent
+   variable in the analysis.
 
 -  Add a third level in the Repeated Measures Factors text box, as there
-   are three levels representing the three tasks: speech, conceptual and
-   syntax. Change the labels of the levels accordingly.
+   are three levels representing the three tasks: ``Speech``, ``Conceptual``
+   and ``Syntax``. Change the labels of the levels accordingly.
 
--  Then move each of the levels variables across to the Repeated
-   Measures Cells text box.
+-  Then move each of the levels variables across to the ``Repeated
+   Measures Cells`` text box.
 
--  Finally, under the Assumption Checks option, tick the ``Sphericity
+-  Finally, under the ``Assumption Checks`` option, tick the ``Sphericity
    checks`` text box.
 
 .. ----------------------------------------------------------------------------
@@ -122,10 +122,10 @@ measures ANOVA dialogue box, as in :numref:`fig-RManova1`, via
    
 .. ----------------------------------------------------------------------------
 
-jamovi output for a one-way repeated measures ANOVA is produced as shown
+jamovi output for a one-way ``Repeated Measures ANOVA`` is produced as shown
 in the :numref:`fig-RManova2` to :numref:`fig-RManova5`. The first output we
-should look at is Mauchly’s Test of Sphericity, which tests the hypothesis that
-the variances of the differences between the conditions are equal (meaning
+should look at is ``Mauchly’s Test of Sphericity``, which tests the hypothesis
+that the variances of the differences between the conditions are equal (meaning
 that the spread of difference scores between the study conditions is
 approximately the same). In :numref:`fig-RManova2`, Mauchly’s test significance
 level is *p* = 0.720. If Mauchly’s test
@@ -151,14 +151,14 @@ of sphericity has not been met. In this case, we should apply a
 correction to the *F*-value obtained in the one-way related ANOVA
 analysis:
 
--  If the Greenhouse-Geisser value in the “Tests of Sphericity” table is
+-  If the ``Greenhouse-Geisser`` value in the ``Tests of Sphericity`` table is
    > 0.75 then you should use the Huynh-Feldt correction.
 
--  But if the Greenhouse-Geisser value is < 0.75, then you should
+-  But if the ``Greenhouse-Geisser`` value is < 0.75, then you should
    use the Greenhouse-Geisser correction.
 
-Both these corrected *F*-values can be specified in the Sphericity
-Corrections check boxes under the Assumption Checks options, and the
+Both these corrected *F*-values can be specified in the ``Sphericity
+Corrections`` check boxes under the ``Assumption Checks`` options, and the
 corrected *F*-values are then shown in the results table, as in
 :numref:`fig-RManova3`.
 
@@ -177,8 +177,8 @@ In our analysis, we saw that the significance of Mauchly’s Test of
 Sphericity was *p* = 0.720 (i.e. *p* > 0.05). So, this means we
 can assume that the requirement of sphericity has been met so no
 correction to the *F*-value is needed. Therefore, we can use the
-‘None’ Sphericity Correction output values for the repeated measure
-‘Task’: *F* = 6.93, *df* = 2, *p* = 0.013, and we can conclude that the
+``None`` Sphericity Correction output values for the repeated measure
+``Task``: *F* = 6.93, *df* = 2, *p* = 0.013, and we can conclude that the
 number of tests successfully completed on each language task did vary
 significantly depending on whether the task was speech, comprehension or
 syntax based (*F*\(2,10) = 6.93, p = 0.013).
@@ -196,7 +196,7 @@ syntax based (*F*\(2,10) = 6.93, p = 0.013).
 Post-hoc tests can also be specified in jamovi for repeated measures
 ANOVA in the same way as for independent ANOVA. The results are shown in
 :numref:`fig-RManova4`. These indicate that there is
-a significant difference between Speech and Syntax, but not between
+a significant difference between ``Speech`` and ``Syntax``, but not between
 other levels.
 
 Descriptive statistics (marginal means) can be reviewed to help interpret the
@@ -206,7 +206,7 @@ shows that Broca’s Aphasics perform reasonably well on speech production
 (mean = 7.17) and language comprehension (mean = 6.17)
 tasks. However, their performance was considerably worse on the syntax
 task (mean = 4.33), with a significant difference in post-hoc
-tests between Speech and Syntax task performance.
+tests between ``Speech`` and ``Syntax`` task performance.
 
 .. ----------------------------------------------------------------------------
 

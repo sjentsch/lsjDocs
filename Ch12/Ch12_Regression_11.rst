@@ -270,8 +270,7 @@ Checking the normality of the residuals
 Like many of the statistical tools we’ve discussed in this book, regression
 models rely on a normality assumption. In this case, we assume that the
 residuals are normally distributed. The first thing we can do is draw a QQ-plot
-via the ``Assumption Checks`` → ``Assumption Checks`` → ``Q-Q plot of
-residuals`` option.
+via the ``Assumption Checks`` → ``Q-Q plot of residuals`` option.
 
 The output is shown in :numref:`fig-reg5`, showing the standardised residuals
 plotted as a function of their theoretical quantiles according to the
@@ -355,7 +354,7 @@ much wider the confidence interval for the corresponding coefficient
 predictors are all nice and uncorrelated with one another. If you’ve
 only got two predictors, the VIF values are always going to be the same,
 as we can see if we click on the ``Collinearity`` checkbox in the
-``Regression`` → ``Assumptions`` options in jamovi. For both ``dani.sleep``
+``Regression`` → ``Assumption Checks`` options in jamovi. For both ``dani.sleep``
 and ``baby.sleep`` the VIF is 1.65. And since the square root of 1.65 is
 1.28, we see that the correlation between our two predictors isn’t
 causing much of a problem.

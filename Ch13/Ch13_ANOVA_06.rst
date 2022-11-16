@@ -126,8 +126,8 @@ where median\ :sub:`k(Y)` is the median for group *k*.
 Running the Levene-test in jamovi
 #################################
 
-Okay, so how do we run the Levene test? Simple really - under the ANOVA
-‘Assumption Checks’ option, just click on the ‘Homogeneity tests’
+Okay, so how do we run the Levene test? Simple really - under the ``ANOVA`` →
+``Assumption Checks`` option, just click on the ``Homogeneity tests``
 checkbox. If we look at the output, shown in :numref:`fig-anova4`, we see that
 the test is non-significant (*F*\{2,15} = 1.45, *p* = 0.266), so it looks like
 the homogeneity of variance assumption is fine. However, looks can be
@@ -146,10 +146,10 @@ similar (i.e. homogeneity of variance) or not.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_anova4.*
-   :alt: Levene test output for One-Way ANOVA in jamovi
+   :alt: ``Levene test`` output for ``One-Way ANOVA`` in jamovi
    :name: fig-anova4
 
-   Levene test output for One-Way ANOVA in jamovi
+   ``Levene test`` output for ``One-Way ANOVA`` in jamovi
    
 .. ----------------------------------------------------------------------------
 
@@ -171,7 +171,7 @@ jamovi using the ``One-Way ANOVA`` analysis. This is a specific analysis
 approach just for one-way ANOVA, and to run the Welch one-way ANOVA for
 our example, we would re-run the analysis as previously, but this time
 use the jamovi ``ANOVA`` → ``One Way ANOVA`` analysis command, and check the
-option for Welch’s test (see :numref:`fig-anova4a`).
+option ``Don't assume equal (Welch’s)`` (see :numref:`fig-anova4a`).
 
 .. ----------------------------------------------------------------------------
 
@@ -357,8 +357,8 @@ How to run the Kruskal-Wallis test in jamovi
 
 Despite the horror that we’ve gone through in trying to understand what the
 Kruskal-Wallis test actually does, it turns out that running the test is pretty
-painless, since jamovi has an analysis as part of the ANOVA analysis set called
-``Non-Parametric`` - ``One Way ANOVA (Kruskall-Wallis)``. Most of the time
+painless, since jamovi has an analysis as part of the ``ANOVA`` analysis set called
+``Non-Parametric`` - ``One-Way ANOVA (Kruskall-Wallis)``. Most of the time
 you’ll have data like the |clinicaltrial|_ data set, in which you have your
 outcome variable ``mood.gain`` and a grouping variable ``drug``. If so, you can
 just go ahead and run the analysis in jamovi. What this gives us is a
@@ -368,10 +368,10 @@ Kruskal-Wallis χ² = 12.076, df = 2, *p*-value = 0.00239, as in
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_anova6.*
-   :alt: Kruskal-Wallis One-Way non-parametric ANOVA in jamovi
+   :alt: non-parametric ``One-Way ANOVA (Kruskal-Wallis)`` in jamovi
    :name: fig-anova6
 
-   Kruskal-Wallis One-Way non-parametric ANOVA in jamovi
+   Non-parametric ``One-Way ANOVA (Kruskal-Wallis)`` in jamovi
    
 .. ----------------------------------------------------------------------------
 

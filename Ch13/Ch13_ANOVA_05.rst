@@ -73,10 +73,10 @@ Running “pairwise” *t*-tests
 How might we go about solving our problem? Given that we’ve got three
 separate pairs of means (placebo versus Anxifree, placebo versus
 Joyzepam, and Anxifree versus Joyzepam) to compare, what we could do is
-run three separate *t*-tests and see what happens. This is easy to
-do in jamovi. Go to the ANOVA ‘Post Hoc Tests’ options, move the ‘drug’
+run three separate *t*-tests and see what happens. This is easy to do in
+jamovi. Go to the ``ANOVA`` → ``Post Hoc Tests`` options, move the ``drug``
 variable across into the active box on the right, and then click on the
-‘No correction’ checkbox. This will produce a neat table showing all the
+``No correction`` checkbox. This will produce a neat table showing all the
 pairwise *t*-test comparisons amongst the three levels of the
 ``drug`` variable, as in :numref:`fig-anova3`.
 
@@ -156,8 +156,8 @@ pretty simple, so much so that in the original paper, the author writes,
    (`Dunn, 1961 <../Other/References.html#dunn-1961>`__\ , pp. 52-53).
 
 To use the Bonferroni correction in jamovi, just click on the
-‘Bonferroni’ checkbox in the ‘Correction’ options, and you will see
-another column added to the ANOVA results table showing the adjusted
+``Bonferroni`` checkbox in the ``Correction`` options, and you will see
+another column added to the ``ANOVA`` results table showing the adjusted
 *p*-values for the Bonferroni correction (:numref:`fig-anova3`). If
 we compare these three *p*-values to those for the uncorrected, pairwise
 *t*-tests, it is clear that the only thing that jamovi has done is multiply

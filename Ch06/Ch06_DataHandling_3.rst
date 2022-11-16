@@ -84,7 +84,7 @@ spreadsheet view, as in :numref:`fig-opinionstrength`:
 .. ----------------------------------------------------------------------------
 
 Second, to compute a variable that contains only the direction of the
-opinion and ignores the strength, we want to calculate the ‘sign’ of the
+opinion and ignores the strength, we want to calculate the “sign” of the
 variable. In jamovi we can use the ``IF`` function to do this. Create
 another new variable using the ``Compute`` button, name this one
 ``opinion.sign``, and then type the following into the function box:
@@ -103,7 +103,7 @@ numbers are converted to **1** and zero stays as **0**, like so:
 
 Let’s break down what this ``IF`` command is doing. In jamovi there are
 three parts to an ``IF`` statement, written as ``IF(expression, value,
-else)``. The first part, ‘expression’ can be a logical or mathematical
+else)``. The first part, ``expression`` can be a logical or mathematical
 statement. In our example, we have specified ``likert.centred == 0``,
 which is ``TRUE`` for values where ``likert.centred`` is zero. The next part,
 ``value``, is the new value where the expression in part one is ``TRUE``. In

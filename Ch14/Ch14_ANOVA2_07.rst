@@ -104,7 +104,7 @@ information. In the case of our hypothetical student, we know that
 
 This isn’t anything particularly special, of course. It’s exactly the format in
 which we expect to see our data! See the |rtfm|_ data set. We can use the
-jamovi ‘Descriptives’ analysis to confirm that this data set corresponds to a
+jamovi analysis ``Descriptives`` to confirm that this data set corresponds to a
 balanced design, with 2 observations for each combination of ``attend`` and
 ``reading``. In the same way we can also calculate the mean grade for each
 combination. This is shown in :numref:`fig-rtfmdescriptives`. Looking at the
@@ -248,7 +248,7 @@ main effect of attendance, and *b*\ :sub:`2` as the main effect of reading!
 In fact, for a simple 2 × 2 ANOVA that’s *exactly* how it plays out.
 
 Okay, now that we’re really starting to see why ANOVA and regression are
-basically the same thing, let’s actually run our regression using the ``rtfm``
+basically the same thing, let’s actually run our regression using the |rtfm|_
 data set and the jamovi regression analysis to convince ourselves that this is
 really true. Running the regression in the usual way gives the results shown in
 :numref:`fig-factorialanova7`.
@@ -497,8 +497,8 @@ with the *difference* between these two models is *df*\ :sub:`1` = 4 - 2 = 2.
 
 What about the case when there doesn’t seem to *be* a null model? For
 instance, you might be thinking of the *F*-test that shows up when
-you select ‘\ *F* Test‘ under the ‘Linear Regression’ - ‘Model
-Fit’ options. I originally described that as a test of the regression
+you select ``F Test`` under the ``Linear Regression`` - ``Model
+Fit`` options. I originally described that as a test of the regression
 model as a whole. However, that is still a comparison between two
 models. The null model is the trivial model that only includes 1
 regression coefficient, for the intercept term. The alternative model

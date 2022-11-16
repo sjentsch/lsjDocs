@@ -484,8 +484,8 @@ Finally, the test for the interaction ``sugar * milk`` is:
 | Alternative model: | ``babble ~ sugar + milk + sugar * milk`` |
 +--------------------+------------------------------------------+
 
-Running the tests are again straightforward. Just select ‘Type 2’ in the
-‘Sum of squares’ selection box in the jamovi ``ANOVA`` → ``Model`` options,
+Running the tests are again straightforward. Just select ``Type 2`` in the
+``Sum of squares`` selection box in the jamovi ``ANOVA`` → ``Model`` options,
 This gives us the ANOVA table shown in :numref:`fig-factorialanova19`.
 
 .. ----------------------------------------------------------------------------

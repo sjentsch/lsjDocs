@@ -119,7 +119,7 @@ than use a separate one for each group.
    :name: fig-margmean1
 
    jamovi screenshot showing the estimated marginal means for the saturated
-   model, i.e. including the interaction component, with the ``clinicaltrial``
+   model, i.e. including the interaction component, with the |clinicaltrial|_
    dataset
    
 .. ----------------------------------------------------------------------------
@@ -140,7 +140,7 @@ for level *r* on the (row) Factor A and level *c* on the (column) Factor B
 would be µ\ :sub:`..` + α\ :sub:`r` + β\ :sub:`c`\. If there are genuinely no
 interactions between the two factors, this is actually a better estimate of the
 population mean than the raw sample mean would be. Removing the interaction
-term from the model, via the ‘Model’ options in the jamovi ANOVA analysis,
+term from the model, via the ``Model`` options in the jamovi ANOVA analysis,
 provides the marginal means for the analysis shown in :numref:`fig-margmean2`.
 
 .. ----------------------------------------------------------------------------
@@ -150,7 +150,7 @@ provides the marginal means for the analysis shown in :numref:`fig-margmean2`.
    :name: fig-margmean2
 
    jamovi screenshot showing the estimated marginal means for the unsaturated
-   model, i.e. without the interaction component, with the ``clinicaltrial``
+   model, i.e. without the interaction component, with the |clinicaltrial|_
    dataset
    
 .. ----------------------------------------------------------------------------
@@ -169,3 +169,8 @@ provides the marginal means for the analysis shown in :numref:`fig-margmean2`.
 .. [#]
    Implausibly large, I would think. The artificiality of this data set
    is really starting to show!
+
+.. ----------------------------------------------------------------------------
+
+.. |clinicaltrial|                     replace:: ``clinicaltrial``
+.. _clinicaltrial:                     _static/data/clinicaltrial.omv

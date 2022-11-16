@@ -100,8 +100,8 @@ visualising and interpreting the significant effects.
    
 .. ----------------------------------------------------------------------------
 
-The *F*-value for the main effect ‘stress’ (52.61) has an associated
-probability of *p* < 0.001. The F value for the main effect ‘commute’ (42.33)
+The *F*-value for the main effect ``stress`` (52.61) has an associated
+probability of *p* < 0.001. The F value for the main effect ``commute`` (42.33)
 has an associated probability of *p* < 0.001. Since both of these are less than
 the probability that is typically used to decide if a statistical result is
 significant (*p* < 0.05) we can conclude that there was a significant main
@@ -134,11 +134,11 @@ One thing to be aware of is that, if you are thinking of including a covariate
 in your ANOVA, there is an additional assumption: the relationship between the
 covariate and the dependent variable should be similar for all levels of the
 independent variable. This can be checked by adding an interaction term between
-the covariate and each independent variable in the jamovi
-``Model - Model terms`` option. If the interaction effect is not significant it
-can be removed. If it is significant then a different and more advanced
-statistical technique might be appropriate (which is beyond the scope of this
-book so you might want to consult a friendly statistician).
+the covariate and each independent variable in the jamovi ``Model`` → ``Model
+terms`` option. If the interaction effect is not significant it can be removed.
+If it is significant then a different and more advanced statistical technique
+might be appropriate (which is beyond the scope of this book so you might want
+to consult a friendly statistician).
 
 .. ----------------------------------------------------------------------------
 

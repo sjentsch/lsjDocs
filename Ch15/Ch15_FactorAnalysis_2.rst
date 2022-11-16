@@ -26,7 +26,7 @@ for data reduction purposes just like principal component scores
 PCA has been popular in Psychology for a number of reasons, and therefore it’s
 worth covering, although nowadays EFA is just as easy to do given the power of
 desktop computers and can be less susceptible to bias than PCA, especially with
-a small number of factors and variables. We’ll use the same ``bfi_sample``
+a small number of factors and variables. We’ll use the same |bfi_sample|_
 dataset as before. Much of the procedure is similar to EFA, so although there
 are some conceptual differences, practically the steps are the same,\ [#]_ and
 with large samples and a sufficient number of factors and variables, the
@@ -39,7 +39,7 @@ Once you have loaded up the |bfi_sample|_ data set, select ``Factor`` →
 ``Principal Component Analysis`` from the ``Analyses`` tab to open
 the analysis panel where you can determine the settings for the PCA 
 (:numref:`fig-pca1`). Then select the 25 personality questions and transfer
-them into the ‘Variables’ box. Check appropriate options, including
+them into the ``Variables`` box. Check appropriate options, including
 ``Assumption Checks``, but also ``Rotation`` under ``Method``, ``Number of
 Factors`` to extract, and the ``Additional Output`` options (see
 :numref:`fig-pca1` for suggested options for this PCA, and please note that
@@ -176,12 +176,12 @@ quite seem to fit though, as the component solution in :numref:`fig-pca5`
 suggests that it loads onto component 4 (albeit with a relatively low loading)
 but not substantively onto component 5.
 
-We can also see in :numref:`fig-pca1` the “uniqueness” of each variable. 
-Uniqueness is the proportion of variance that is ‘unique’ to the variable and
+We can also see in :numref:`fig-pca1` the ``Uniqueness`` of each variable. 
+Uniqueness is the proportion of variance that is “unique” to the variable and
 not explained by the components. For example, 52% of the variance in ``A1`` is
 not explained by the components in the five component solution. In contrast,
 ``N1`` has relatively low variance not accounted for by the component solution
-(30%). Note that the greater the ‘uniqueness’, the lower the relevance or
+(30%). Note that the greater the ``Uniqueness``, the lower the relevance or
 contribution of the variable in the component model.
 
 Hopefully, this has given you a good first idea about how to undertake PCA in

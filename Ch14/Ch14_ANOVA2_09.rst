@@ -57,9 +57,9 @@ Moreover, we can use these confidence intervals to calculate an adjusted
 The ``TukeyHSD`` function in jamovi is pretty easy to use. You simply
 specify the ANOVA model term that you want to run the post-hoc tests
 for. For example, if we were looking to run post-hoc tests for the main
-effects but not the interaction, we would open up the ‘Post Hoc Tests’
+effects but not the interaction, we would open up the ``Post Hoc Tests``
 option in the ANOVA analysis screen, move the ``drug`` and ``therapy``
-variables across to the box on the right, and then select the ‘Tukey’
+variables across to the box on the right, and then select the ``Tukey``
 checkbox in the list of possible post-hoc corrections that could be
 applied. This, along with the corresponding results table, is shown in
 :numref:`fig-factorialanova13`.
@@ -77,7 +77,7 @@ applied. This, along with the corresponding results table, is shown in
    
 .. ----------------------------------------------------------------------------
 
-The output shown in the ‘Post Hoc Tests’ results table is (I hope)
+The output shown in the ``Post Hoc Tests`` results table is (I hope)
 pretty straightforward. The first comparison, for example, is the
 Anxifree versus placebo difference, and the first part of the output
 indicates that the observed difference in group means is 0.27.

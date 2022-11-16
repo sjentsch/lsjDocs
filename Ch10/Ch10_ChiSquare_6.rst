@@ -5,7 +5,7 @@ The Fisher exact test
 
 What should you do if your cell counts are too small, but you’d still
 like to test the null hypothesis that the two variables are independent?
-One answer would be “collect more data”, but that’s far too glib There
+One answer would be “collect more data”, but that’s far too glib. There
 are a lot of situations in which it would be either infeasible or
 unethical do that. If so, statisticians have a kind of moral obligation
 to provide scientists with better tests. In this instance, `Fisher (1922a)
@@ -74,22 +74,22 @@ contingency table is more “extreme” than another. The easiest solution
 is to say that the table with the lowest probability is the most
 extreme. This then gives us the *p*-value.
 
-You can specify this test in jamovi from a check box in the ‘Statistics’
-options of the ‘Contingency Tables’ analysis. When you do this with the
-|salem|_ data set, the Fisher exact test statistic is shown in the results.
-The main thing we’re interested in here is the *p*-value, which in this
-case is small enough (*p* = 0.036) to justify rejecting the null hypothesis
-that people on fire are just as happy as people not on fire
+You can specify this test in jamovi from a check box in the ``Statistics``
+options of the ``Contingency Tables`` analysis. When you do this with the
+|salem|_ data set, the ``Fisher's exact test`` statistic is shown in the
+results. The main thing we’re interested in here is the *p*-value, which in
+this case is small enough (*p* = 0.036) to justify rejecting the null
+hypothesis that people on fire are just as happy as people not on fire
 (see :numref:`fig-Fisher`).
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_Fisher.*
-   :alt: Fisher exact test output in jamovi
+   :alt: ``Fisher's exact test`` output in jamovi
    :name: fig-Fisher
 
-   Fisher exact test output in jamovi. Ignore the ‘Value’ and just refer to
-   the p-value
+   ``Fisher's exact test`` output in jamovi. Ignore the ``Value`` and just
+   refer to the p-value
    
 .. ----------------------------------------------------------------------------
 

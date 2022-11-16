@@ -12,7 +12,7 @@ factor cannot be measured through just one observed variable but instead
 is manifested in the relationships it causes in a set of observed
 variables.
 
-In :numref:`fig-efa1` each observed variable V is ‘caused’
+In :numref:`fig-efa1` each observed variable V is “caused”
 to some extent by the underlying latent factor (F), depicted by the
 coefficients b1 to b5 (also called factor loadings). Each observed
 variable also has an associated error term, e1 to e5. Each error term is
@@ -403,12 +403,12 @@ Agreeableness. Therefore A1 will be negatively correlated with the other
 ``A``-variables, and this is why it has a negative factor loading, as shown
 in :numref:`fig-efa6`.
 
-We can also see in :numref:`fig-efa6` the “uniqueness” of each variable.
-Uniqueness is the proportion of variance that is ‘unique’ to the variable and
+We can also see in :numref:`fig-efa6` the ``Uniqueness`` of each variable.
+Uniqueness is the proportion of variance that is “unique” to the variable and
 not explained by the factors.\ [#]_ For example, 72% of the variance in ``A1``
 is not explained by the factors in the five factor solution. In contrast,
 ``N1`` has relatively low variance not accounted for by the factor solution
-(35%). Note that the greater the ‘uniqueness’, the lower the relevance or
+(35%). Note that the greater the ``Uniqueness``, the lower the relevance or
 contribution of the variable in the factor model.
 
 To be honest, it’s unusual to get such a neat solution in EFA. It’s typically

@@ -86,15 +86,15 @@ this analysis). To perform CFA in jamovi:
    Select the 5 ``C`` variables and transfer them into the ``Factors`` box
    under the “Conscientiousness” label.
 
--  Create another new Factor in the ‘Factors’ box and label it “Extraversion”.
+-  Create another new Factor in the ``Factors`` box and label it “Extraversion”.
    Select the 5 ``E`` variables and transfer them into the ``Factors`` box
    under the “Extraversion” label.
 
--  Create another new Factor in the ‘Factors’ box and label it “Neuroticism”.
+-  Create another new Factor in the ``Factors`` box and label it “Neuroticism”.
    Select the 5 ``N`` variables and transfer them into the ``Factors`` box
    under the “Neuroticism” label.
 
--  Create another new Factor in the ‘Factors’ box and label it “Openness”.
+-  Create another new Factor in the ``Factors`` box and label it “Openness”.
    Select the 5 ``O`` variables and transfer them into the ``Factors`` box
    under the “Openness” label.
 
@@ -124,10 +124,10 @@ to zero.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_cfa3.*
-   :alt: Model Fit results for the specified CFA model in jamovi
+   :alt: ``Model Fit`` results for the specified CFA model in jamovi
    :name: fig-cfa3
 
-   Table with Model Fit results for the specified CFA model in jamovi
+   Table with ``Model Fit`` results for the specified CFA model in jamovi
       
 .. ----------------------------------------------------------------------------
 
@@ -162,25 +162,25 @@ shown in :numref:`fig-cfa4` and :numref:`fig-cfa5`. The *Z*-statistic and
 contribution to the model (i.e. they are not zero) so there doesn’t appear to
 be any reason to remove any of the specified variable-factor paths, or
 factor-factor correlations from the model. Often the standardized estimates are
-easier to interpret, and these can be specified under the ‘Estimates’ option.
+easier to interpret, and these can be specified under the ``Estimates`` option.
 These tables can usefully be incorporated into a written report or scientific
 article.
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_cfa4.*
-   :alt: Table with Factor Loadings for the specified CFA model in jamovi
+   :alt: Table with ``Factor Loadings`` for the specified CFA model in jamovi
    :name: fig-cfa4
 
-   Table with Factor Loadings for the specified CFA model in jamovi
+   Table with ``Factor Loadings`` for the specified CFA model in jamovi
       
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_cfa5.*
-   :alt: Table with Factor Covariances for the specified CFA model in jamovi
+   :alt: Table with ``Factor Covariances`` for the specified CFA model in jamovi
    :name: fig-cfa5
 
-   Table with Factor Covariances for the specified CFA model in jamovi
+   Table with ``Factor Covariances`` for the specified CFA model in jamovi
       
 .. ----------------------------------------------------------------------------
 
@@ -188,15 +188,15 @@ How could we improve the model? One option is to go back a few stages and think
 again about the items / measures we are using and how they might be improved or
 changed. Another option is to make some *post-hoc* tweaks to the model to
 improve the fit. One way of doing this is to use “modification indices”,
-specified as an ‘Additional output’ option in jamovi (see :numref:`fig-cfa6`).
+specified as an ``Additional Output`` option in jamovi (see :numref:`fig-cfa6`).
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_cfa6.*
-   :alt: Table with Factor Loadings Modification Indices
+   :alt: Table with ``Factor Loadings Modification Indices``
    :name: fig-cfa6
 
-   Table with Factor Loadings Modification Indices for the specified CFA
+   Table with ``Factor Loadings Modification Indices`` for the specified CFA
    model in jamovi
       
 .. ----------------------------------------------------------------------------
@@ -224,8 +224,8 @@ If you do find yourself adding new parameters to a model using the MI values
 then always re-check the MI tables after each new addition, as the MIs are
 refreshed each time.
 
-There is also a Table of Residual Covariance Modification Indices produced by
-jamovi (:numref:`fig-cfa7`). In other words, a table showing which correlated
+There is also a Table of ``Residual Covariance Modification Indices`` produced
+by jamovi (:numref:`fig-cfa7`). In other words, a table showing which correlated
 errors, if added to the model, would improve the model fit the most. It’s a
 good idea to look across both MI tables at the same time, spot the largest MI,
 think about whether the addition of the suggested parameter can be reasonably
@@ -235,11 +235,11 @@ looking for the biggest MI in the re-calculated results.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_cfa7.*
-   :alt: Table with Residual Covariances Modification Indices
+   :alt: Table with ``Residual Covariances Modification Indices``
    :name: fig-cfa7
 
-   Table with Residual Covariances Modification Indices for the specified CFA
-   model in jamovi
+   Table with ``Residual Covariances Modification Indices`` for the specified
+   CFA model in jamovi
       
 .. ----------------------------------------------------------------------------
 

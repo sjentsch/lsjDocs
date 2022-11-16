@@ -80,7 +80,7 @@ category, and you want to assess all the other groups in relation to
 that one. In other situations, however, no such baseline category
 exists, and it may make more sense to compare each group to the mean of
 the other groups. This is where we meet **Helmert contrasts**, generated
-by the ‘helmert’ option in the jamovi ‘ANOVA’ - ‘Contrasts’ selection
+by the ``Helmert`` option in the jamovi ``ANOVA`` - ``Contrasts`` selection
 box. The idea behind Helmert contrasts is to compare each group to the
 mean of the “previous” ones. That is, the first contrast represents the
 difference between group 2 and group 1, the second contrast represents
@@ -139,7 +139,7 @@ Optional contrasts in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 jamovi also comes with a variety of options that can generate different
-kinds of contrasts in ANOVA. These can be found in the ‘Contrasts’
+kinds of contrasts in ANOVA. These can be found in the ``Contrasts``
 option in the main ANOVA analysis window, where the following contrast
 types are listed:
 

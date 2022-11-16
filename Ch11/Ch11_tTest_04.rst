@@ -10,16 +10,16 @@ two samples don’t have the same means, why should we expect them to have
 the same standard deviation? There’s really no reason to expect this
 assumption to be true. We’ll talk a little bit about how you can check
 this assumption later on because it does crop up in a few different
-places, not just the *t*-test. But right now I’ll talk about a
-different form of the *t*-test (`Welch, 1947
-<../Other/References.html#welch-1947>`__\ ) that does not rely on this assumption.
-A graphical illustration of what the **Welch t test** assumes about
-the data is shown in :numref:`fig-ttesthyp2`, to provide a contrast with
-the Student test version in :numref:`fig-ttesthyp`.
-I’ll admit it’s a bit odd to talk about the cure before talking about
-the diagnosis, but as it happens the Welch test can be specified as one
-of the ‘Independent Samples *t*-Test’ options in jamovi, so this is
-probably the best place to discuss it.
+places, not just the *t*-test. But right now I’ll talk about a different
+form of the *t*-test (`Welch, 1947 
+<../Other/References.html#welch-1947>`__\ ) that does not rely on this
+assumption. A graphical illustration of what the **Welch t test** assumes
+about the data is shown in :numref:`fig-ttesthyp2`, to provide a contrast
+with the Student test version in :numref:`fig-ttesthyp`.
+I’ll admit it’s a bit odd to talk about the cure before talking about the
+diagnosis, but as it happens the ``Welch's`` test can be specified as one
+of the ``Independent Samples T-Test`` options in jamovi, so this is probably
+the best place to discuss it.
 
 .. ----------------------------------------------------------------------------
 
