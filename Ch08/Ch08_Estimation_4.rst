@@ -181,15 +181,14 @@ Now let’s extend the simulation. Instead of restricting ourselves to the
 situation where *N* = 2, let’s repeat the exercise for sample sizes
 from 1 to 10. If we plot the average sample mean and average sample
 standard deviation as a function of sample size, you get the results
-shown in :numref:`fig-biasMeanSD`. On the
-left hand side (panel a) I’ve plotted the average sample mean and on the
-right hand side (panel b) I’ve plotted the average standard deviation.
-The two plots are quite different:*on average*, the average sample mean
-is equal to the population mean. It is an **unbiased estimator**, which
-is essentially the reason why your best estimate for the population mean
-is the sample mean.\ [#]_ The plot on the right is quite different: on
-average, the sample standard deviation *s* is *smaller* than the
-population standard deviation *σ*. It is a **biased estimator**. In other
+shown in :numref:`fig-biasMeanSD`. On the left hand side I’ve plotted the
+average sample mean and on the right hand side I’ve plotted the average
+standard deviation. The two plots are quite different: *on average*, the
+average sample mean is equal to the population mean. It is an **unbiased
+estimator**, which is essentially the reason why your best estimate for the
+population mean is the sample mean.\ [#]_ The plot on the right is quite
+different: on average, the sample standard deviation *s* is *smaller* than
+the population standard deviation *σ*. It is a **biased estimator**. In other
 words, if we want to make a “best guess” :math:`\hat\sigma` about the value
 of the population standard deviation *σ* we should make sure our guess is a
 little bit larger than the sample standard deviation *s*.

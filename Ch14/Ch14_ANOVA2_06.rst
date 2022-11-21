@@ -61,10 +61,10 @@ up the plots and tables options.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_ancova1.*
-   :alt: The jamovi ANCOVA analysis panel
+   :alt: The jamovi ANCOVA options panel
    :name: fig-ancova1
 
-   Analysis panel showing the variable boxes to assign the ``Dependent
+   Options panel showing the variable boxes to assign the ``Dependent
    Variable``, ``Fixed Factors`` and the ``Covariates`` for the ANCOVA in
    jamovi  
    

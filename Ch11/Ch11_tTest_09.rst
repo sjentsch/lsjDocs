@@ -101,7 +101,7 @@ As before, if our test is two-sided, then we reject the null hypothesis
 when *W* is very large or very small. As far as running it in jamovi goes,
 it’s pretty much what you’d expect. For the one-sample version, you specify
 the ``Wilcoxon rank`` option under ``Tests`` in the ``One Sample *t*-Test``
-analysis panel.This gives you Wilcoxon *W* = 7, *p*-value = 0.03711. As this
+options panel.This gives you Wilcoxon *W* = 7, *p*-value = 0.03711. As this
 shows, we have a significant effect. Evidently, taking a statistics class
 does have an effect on your happiness. Switching to a paired samples version
 of the test won’t give us a different answer, of course; see

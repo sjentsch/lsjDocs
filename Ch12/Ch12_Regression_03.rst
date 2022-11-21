@@ -33,8 +33,8 @@ powerful tools.
    The left panel shows the sleep-grumpiness scatterplot from
    :numref:`fig-scatterplot2` with the best fitting regression line drawn over
    the top. Not surprisingly, the line goes through the middle of the data. In
-   contrast, panel b shows the same data, but with a very poor choice of
-   regression line drawn over the top.
+   contrast, the right panel shows the same data, but with a very poor choice
+   of regression line drawn over the top.
       
 .. ----------------------------------------------------------------------------
 

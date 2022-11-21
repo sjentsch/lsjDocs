@@ -171,38 +171,21 @@ As promised, though, I’ll talk more about the Bayesian perspective in chapter
 Calculating confidence intervals in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As far as I can tell, jamovi does not (yet) include a simple way to calculate
-confidence intervals for the mean as part of the functionality of
-``Descriptives``. But the ``Descriptives`` do have a check box for the
-``S.E. Mean``, so you can use this to calculate the lower 95% confidence
-interval as:
-
-``Mean - (1.96 * S.E. Mean)`` , and the upper 95% confidence interval
-as:
-
-``Mean + (1.96 * S.E. Mean)``
+jamovi provides a simple way to calculate confidence intervals for the mean as
+part of the functionality of ``Descriptives``. Just set the check box
+``Confidence interval for Mean``.
 
 95% confidence intervals are the de facto standard in psychology. So, for
-example, if I load the |IQsim|_ data set, check mean and S.E mean under
-``Descriptives``, I can work out the confidence interval associated with the
-simulated mean IQ:
+example, if I load the |IQsim|_ data set (our simulated large sample data with
+N=10,000), and check ``Confidence interval for Mean`` under ``Descriptives``,
+we obtain a mean IQ score of 99.683 with a 95% CI from 99.391 to 99.975. 
 
-Lower 95% CI = 99.68 - (1.96 \* 0.15) = 99.39
-
-Upper 95% CI = 99.68 + (1.96 \* 0.15) = 99.98
-
-So, in our simulated large sample data with N=10,000, the mean IQ score is
-\99.68 with a 95% CI from 99.39 to 99.98. Hopefully that’s fairly clear. So,
-although there currently is not a straightforward way to get jamovi to
-calculate the confidence interval as part of the variable ``Descriptives``
-options, if we wanted to we could pretty easily work it out by hand.
-
-Similarly, when it comes to plotting confidence intervals in jamovi, this is
+When it comes to plotting confidence intervals for the mean in jamovi, this is
 not (yet) available as part of the ``Descriptives`` options. However, when we
 get onto learning about specific statistical tests, for example in chapter
-:doc:`Comparing several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`, we will see that
-we can plot confidence intervals as part of the data analysis. That’s pretty
-cool, so we’ll show you how to do that later on.
+:doc:`Comparing several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`, we will
+see that we can plot confidence intervals as part of the data analysis. That’s
+pretty cool, so we’ll show you how to do that later on.
 
 ------
 

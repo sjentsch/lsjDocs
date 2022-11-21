@@ -440,7 +440,7 @@ Doing the test in jamovi
 
 Not surprisingly, jamovi provides an analysis that will do these calculations
 for you. From the main ``Analyses`` toolbar select ``Frequencies`` → ``One
-Sample Proportion Tests`` → ``N Outcomes``. Then in the analysis panel that
+Sample Proportion Tests`` → ``N Outcomes``. Then in the options panel that
 appears move the variable you want to analyse (``choice_1`` across into the
 ``Variable`` box. Also, click on the ``Expected counts`` check box so that
 these are shown on the results table. When you have done all this, you should

@@ -244,7 +244,7 @@ if you decide to calculate weighted factor scores in which case continuous
 variables |continuous| are needed). To perform an EFA in jamovi:
 
 -  Select ``Factor`` → ``Exploratory Factor Analysis`` from the ``Analyses``
-   tab to open the analysis panel where you can determine the settings
+   tab to open the options panel where you can determine the settings
    for the EFA (:numref:`fig-efa2`).
 
 -  Select the 25 personality questions and transfer them into the
@@ -264,7 +264,7 @@ variables |continuous| are needed). To perform an EFA in jamovi:
    :alt: jamovi EFA analysis window
    :name: fig-efa2
 
-   Analysis panel with the settings for conducting an Exploratory Factor
+   Options panel with the settings for conducting an Exploratory Factor
    Analysis (EFA) in jamovi
       
 .. ----------------------------------------------------------------------------  

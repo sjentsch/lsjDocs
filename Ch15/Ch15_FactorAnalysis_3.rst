@@ -76,7 +76,7 @@ ordinal |ordinal| (or continuous |continuous|; it won’t make any difference fo
 this analysis). To perform CFA in jamovi:
 
 -  Select ``Factor`` → ``Confirmatory Factor Analysis`` from the ``Analyses``
-   tab to open the analysis panel where you can determine the settings
+   tab to open the options panel where you can determine the settings
    for the CFA (:numref:`fig-cfa2`).
 
 -  Select the 5 ``A`` variables and transfer them into the ``Factors`` box
@@ -109,7 +109,7 @@ this analysis). To perform CFA in jamovi:
    :alt: Settings for conducting a Confirmatory Factor Analysis
    :name: fig-cfa2
 
-   Analysis panel with the settings for conducting a Confirmatory Factor
+   Options panel with the settings for conducting a Confirmatory Factor
    Analysis (CFA) in jamovi
       
 .. ----------------------------------------------------------------------------
