@@ -82,7 +82,7 @@ personality item variables are coded as continuous |continuous|. To perform
 reliability analysis in jamovi:
 
 -  Select ``Factor`` → ``Reliability Analysis`` from the ``Analyses`` tab
-   in jamovi to open the analysis panel where you can determine the settings
+   in jamovi to open the options panel where you can determine the settings
    for the reliability analysis (:numref:`fig-rel1`).
 
 -  Select the 5 ``A``-variables and transfer them into the ``Items`` box.
@@ -99,7 +99,7 @@ reliability analysis in jamovi:
    :alt: Settings for conducting a Reliability Analysis
    :name: fig-rel1
 
-   Analysis panel with the settings for conducting a Reliability Analysis
+   Options panel with the settings for conducting a Reliability Analysis
    in jamovi
       
 .. ----------------------------------------------------------------------------

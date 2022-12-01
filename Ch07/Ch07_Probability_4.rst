@@ -116,8 +116,8 @@ that I’m interested in is the number of heads that I observe. In this
 scenario, the success probability is now *θ* = 1/2. Suppose I
 were to flip the coin *N* = 20 times. In this example, I’ve changed
 the success probability but kept the size of the experiment the same.
-What does this do to our binomial distribution? Well, as 
-:numref:`fig-binomHeads` (left panel) shows, the main effect of this is to
+What does this do to our binomial distribution? Well, as the left panel of
+:numref:`fig-binomHeads` shows, the main effect of this is to
 shift the whole distribution, as you’d expect. Okay, what if we flipped a coin
 *N* = 100 times? Well, in that case we get what is shown in the right panel.
 The distribution stays roughly in the middle but there’s a bit more variability

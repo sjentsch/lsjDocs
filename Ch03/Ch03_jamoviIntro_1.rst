@@ -62,7 +62,7 @@ will appear in the right **results panel** and will update in real-time as you
 make changes to the options.
 
 When you have the analysis set up correctly you can dismiss the analysis
-options by clicking the arrow to the top right of the optional panel. If
+options by clicking the arrow to the top right of the options panel. If
 you wish to return to these options, you can click on the results that
 were produced. In this way, you can return to any analysis that you (or
 say, a colleague) created earlier.

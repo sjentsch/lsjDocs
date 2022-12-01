@@ -63,7 +63,7 @@ evidence provided by the data
    \begin{array}{ccccc}\displaystyle
    \frac{P(h_1 | d)}{P(h_0 | d)} & = & \displaystyle\frac{P(d|h_1)}{P(d|h_0)} & \times & \displaystyle\frac{P(h_1)}{P(h_0)} \\[6pt] \\[-2pt]
    \uparrow                      & ~ & \uparrow                               & ~      & \uparrow                           \\[6pt]
-   \mbox{Posterior odds}         & ~ & \mbox{\bf{Bayes factor}}               & ~      & \mbox{Prior odds}                  \\
+   \mbox{Posterior odds}         & ~ & \mbox{Bayes factor}                    & ~      & \mbox{Prior odds}                  \\
    \end{array}
 
 The Bayes factor (sometimes abbreviated as **BF**) has a special place

@@ -393,7 +393,7 @@ of **1.0**.
 What we’ve just re-invented is **Spearman’s rank order correlation**, usually
 denoted *ρ* to distinguish it from the Pearson correlation *r*. We can
 calculate Spearman’s ρ using jamovi simply by clicking the ``Spearman`` check
-box in the ``Correlation Matrix`` analysis panel.
+box in the ``Correlation Matrix`` options panel.
 
 ------
 

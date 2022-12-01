@@ -67,10 +67,10 @@ applied. This, along with the corresponding results table, is shown in
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova13.*
-   :alt: Analysis panel to set up post hoc tests
+   :alt: Options panel to set up post hoc tests
    :name: fig-factorialanova13
 
-   Analysis panel for setting up post-hoc test within jamovi's factorial ANOVA
+   Options panel for setting up post-hoc test within jamovi's factorial ANOVA
    procedure (the current settings request a Tukey HSD statistic): Unsaturated
    model with the factors ``drug`` and ``therapy`` but without an interaction
    term (using the |clinicaltrial|_ data set)

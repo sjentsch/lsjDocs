@@ -148,9 +148,9 @@ EFA in jamovi
 
 First, we need some data. Twenty-five personality self-report items (see
 :numref:`tab-bfi`) taken from the International Personality Item Pool
-(http://ipip.ori.org) were included as part of the Synthetic Aperture
-Personality Assessment (SAPA) web-based personality assessment (SAPA:
-http://sapa-project.org) project. The 25 items are short phrases that one
+(https://ipip.ori.org) were included as part of the Synthetic Aperture
+Personality Assessment (SAPA) web-based personality assessment
+(https://sapa-project.org) project. The 25 items are short phrases that one
 should respond to by indicating how accurately the statement describes one's
 typical behaviour or attitudes. The items are organized by five putative
 factors: Agreeableness, Conscientiousness, Extraversion, Neuroticism, and
@@ -244,7 +244,7 @@ if you decide to calculate weighted factor scores in which case continuous
 variables |continuous| are needed). To perform an EFA in jamovi:
 
 -  Select ``Factor`` → ``Exploratory Factor Analysis`` from the ``Analyses``
-   tab to open the analysis panel where you can determine the settings
+   tab to open the options panel where you can determine the settings
    for the EFA (:numref:`fig-efa2`).
 
 -  Select the 25 personality questions and transfer them into the
@@ -264,7 +264,7 @@ variables |continuous| are needed). To perform an EFA in jamovi:
    :alt: jamovi EFA analysis window
    :name: fig-efa2
 
-   Analysis panel with the settings for conducting an Exploratory Factor
+   Options panel with the settings for conducting an Exploratory Factor
    Analysis (EFA) in jamovi
       
 .. ----------------------------------------------------------------------------  
