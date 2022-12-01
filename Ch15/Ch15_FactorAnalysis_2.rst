@@ -208,7 +208,7 @@ little different. See :numref:`fig-pca6`.
 ------
 
 .. [#]
-   ...and that means there is a fair bit of repetition in the PCA steps
+   …and that means there is a fair bit of repetition in the PCA steps
    set out in the next section. Sorry about that, but hopefully it is
    not too bad!
 

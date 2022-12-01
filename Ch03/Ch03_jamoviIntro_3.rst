@@ -35,7 +35,7 @@ the various add-on modules that are available. Choose the one(s) you
 want, and then install them (as shown in :numref:`fig-modules`).
 
 It’s that easy. The newly installed modules can then be accessed from the
-``Analyses`` tab. Try it... useful add-on modules to install include
+``Analyses`` tab. Try it… useful add-on modules to install include
 ``scatr`` (added under ``Descriptives``) and |Rj|_.
 
 .. ----------------------------------------------------------------------------

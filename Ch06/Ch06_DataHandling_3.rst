@@ -206,7 +206,7 @@ something like :numref:`fig-transform1`.
 
 Give your new variable a name, let’s call it ``opinion.strength`` and
 then click on the ``Using transform`` selection box and select ``Create New
-Transform...``. This is where you will create, and name, the
+Transform…``. This is where you will create, and name, the
 transformation that can be re-applied to as many variables as you like.
 The transformation is automatically named for us as ``Transform 1``
 (imaginative, huh. You can change this if you like). Then type the

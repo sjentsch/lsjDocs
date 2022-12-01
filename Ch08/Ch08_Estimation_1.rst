@@ -369,7 +369,7 @@ this:
 
 .. code-block:: text
 
-   106 101 98 80 74 ... 107 72 100
+   106 101 98 80 74 … 107 72 100
 
 Each of these IQ scores is sampled from a normal distribution with mean 100 and
 standard deviation 15. So if I plot a histogram of the sample I get something

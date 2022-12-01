@@ -127,7 +127,7 @@ When analysing these data it seems quite reasonable to try to group (1),
 reasonable to group (2), (3) and (4) together and say that 49 out of 100
 people registered *at least some disagreement* with the dominant
 scientific view. However, it would be entirely bizarre to try to group
-(1), (2) and (4) together and say that 90 out of 100 people said…what?
+(1), (2) and (4) together and say that 90 out of 100 people said… what?
 There’s nothing sensible that allows you to group those responses
 together at all.
 
@@ -324,4 +324,4 @@ that we usually think of it as being **quasi-interval scale**.
    ignore this little inconvenient truth.
 
 .. [#]
-   Ah, psychology …never an easy answer to anything!
+   Ah, psychology… never an easy answer to anything!

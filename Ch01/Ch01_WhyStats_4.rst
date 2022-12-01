@@ -7,7 +7,7 @@ I hope that the discussion above helped explain why science in general
 is so focused on statistics. But I’m guessing that you have a lot more
 questions about what role statistics plays in psychology, and
 specifically why psychology classes always devote so many lectures to
-stats. So here’s my attempt to answer a few of them...
+stats. So here’s my attempt to answer a few of them…
 
 -  **Why does psychology have so much statistics?**
 

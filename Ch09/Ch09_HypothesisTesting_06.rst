@@ -105,7 +105,7 @@ the data.
    
    +-------------+---------+------------------------------+----------+
    | Usual       | Signif. | English                      | The null |
-   | notation    | stars   | translation                  | is...    |
+   | notation    | stars   | translation                  | is…      |
    +=============+=========+==============================+==========+
    | *p* > 0.05  |         | The test wasn’t significant. | Retained |
    +-------------+---------+------------------------------+----------+

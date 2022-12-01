@@ -57,7 +57,7 @@ statisticians refer to it as the **law of large numbers**. The law of large
 numbers is a mathematical law that applies to many different sample statistics
 but the simplest way to think about it is as a law about averages. The sample
 mean is the most obvious example of a statistic that relies on averaging
-(because that’s what the mean is... an average), so let’s look at that. When
+(because that’s what the mean is… an average), so let’s look at that. When
 applied to the sample mean what the law of large numbers states is that as the
 sample gets larger, the sample mean tends to get closer to the true population
 mean. Or, to say it a little bit more precisely, as the sample size

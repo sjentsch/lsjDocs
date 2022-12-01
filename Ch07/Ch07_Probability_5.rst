@@ -176,7 +176,7 @@ spend a little time thinking about what it really *means* to say that
 the temperature outside. The thermometer tells me it’s 23 degrees, but I
 know that’s not really true. It’s not *exactly* 23 degrees. Maybe it’s
 \23.1 degrees, I think to myself. But I know that that’s not really true
-either because it might actually be 23.09 degrees. But I know that...
+either because it might actually be 23.09 degrees. But I know that…
 well, you get the idea. The tricky thing with genuinely continuous
 quantities is that you never really know exactly what they are.
 

@@ -99,19 +99,19 @@ an introductory text.
 
 Because it’s a little hard to explain the maths behind the *W* statistic, a
 better idea is to give a broad brush description of how it behaves. Unlike most
-... mumble, mumble ... something complicated that is a bit beyond the scope of
+… mumble, mumble … something complicated that is a bit beyond the scope of
 of the test statistics that we’ll encounter in this book, it’s actually *small*
 values of *W* that indicate departure from normality. The *W* statistic has a
 maximum value of 1, which occurs when the data look “perfectly normal”. The
 smaller the value of *W* the less normal the data are. However, the sampling
 distribution for *W*, which is not one of the standard ones that I discussed in
-chapter :doc:`Introduction to probability <../Ch07/Ch07_Probability>` and is in fact a
-complete pain in the arse to work with, does depend on the sample size *N*. To
-give you a feel for what these sampling distributions look like, I’ve plotted
-three of them in :numref:`fig-swdist`. Notice that, as the sample size starts
-to get large, the sampling distribution becomes very tightly clumped up near
-*W* = 1, and as a consequence, for larger samples *W* doesn’t have to be very
-much smaller than 1 in order for the test to be significant.
+chapter :doc:`Introduction to probability <../Ch07/Ch07_Probability>` and is in
+fact a complete pain in the arse to work with, does depend on the sample size
+*N*. To give you a feel for what these sampling distributions look like, I’ve
+plotted three of them in :numref:`fig-swdist`. Notice that, as the sample size
+starts to get large, the sampling distribution becomes very tightly clumped up
+near *W* = 1, and as a consequence, for larger samples *W* doesn’t have to be
+very much smaller than 1 in order for the test to be significant.
 
 .. ----------------------------------------------------------------------------
 

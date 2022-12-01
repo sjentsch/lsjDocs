@@ -140,7 +140,7 @@ homogeneity of variance assumption might not be satisfied and yet a
 Levene test could be non-significant (i.e. *p* > 0.05). What this
 means is that, alongside any statistical test of the assumption being
 met, you should always plot the standard deviation around the means for
-each group / category in the analysis...just to see if they look fairly
+each group / category in the analysis… just to see if they look fairly
 similar (i.e. homogeneity of variance) or not.
 
 .. ----------------------------------------------------------------------------

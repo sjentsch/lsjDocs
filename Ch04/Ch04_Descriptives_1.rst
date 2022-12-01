@@ -279,7 +279,7 @@ Couldn’t have put it better myself. The way that Demographia calculated
 the ratio is the right thing to do. The way that the Bank did it is
 incorrect. As for why an extremely quantitatively sophisticated
 organisation such as a major bank made such an elementary mistake,
-well... I can’t say for sure since I have no special insight into their
+well… I can’t say for sure since I have no special insight into their
 thinking. But the article itself does happen to mention the following
 facts, which may or may not be relevant:
 

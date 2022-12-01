@@ -451,7 +451,7 @@ the contrasts ``druganxifree`` and ``drugjoyzepam``, just to show that ANOVA
 and regression are essentially the same, in the jamovi linear regression
 analysis there is actually a nifty shortcut to get these contrasts, see
 :numref:`fig-regfactors`. What jamovi is doing here is allowing you to enter
-the predictor variables that are factors as, wait for it...factors! Smart, eh.
+the predictor variables that are factors as, wait for it… factors! Smart, eh.
 You can also specify which group to use as the reference level, via the 
 ``Reference Levels`` option. We’ve changed this to ``placebo`` and
 ``no.therapy``, respectively, because this makes most sense.
@@ -513,7 +513,7 @@ with the residuals. It is possible to think of this in terms of
 parameters too, but in a slightly counter-intuitive way. Think of it
 like this. Suppose that the total number of observations across the
 study as a whole is *N*. If you wanted to *perfectly* describe
-each of these *N* values, you need to do so using, well...
+each of these *N* values, you need to do so using, well…
 *N* numbers. When you build a regression model, what you’re really
 doing is specifying that some of the numbers need to perfectly describe
 the data. If your model has K predictors and an intercept, then

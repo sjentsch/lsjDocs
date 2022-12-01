@@ -357,7 +357,7 @@ couple of years back, I asked students to think about this scenario.
 Suppose you started running your study with the intention of collecting
 *N* = 80 people. When the study starts out you follow the rules,
 refusing to look at the data or run any tests. But when you reach
-*N* = 50 your willpower gives in... and you take a peek. Guess what?
+*N* = 50 your willpower gives in… and you take a peek. Guess what?
 You’ve got a significant result! Now, sure, you know you *said* that
 you’d keep running the study out to a sample size of *N* = 80, but
 it seems sort of pointless now, right? The result is significant with a

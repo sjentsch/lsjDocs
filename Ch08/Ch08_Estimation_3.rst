@@ -91,7 +91,7 @@ out like this:
 
 .. code-block:: text
 
-   95.0 101.0 101.6 103.8 104.4 ...
+   95.0 101.0 101.6 103.8 104.4 …
 
 What if I continued like this for 10,000 replications, and then drew a
 histogram. Well that’s exactly what I did, and you can see the results
@@ -136,7 +136,7 @@ experiment. This would give me a data set that started out like this:
 
 .. code-block:: text
 
-   110 117 122 119 113 ... 
+   110 117 122 119 113 …
 
 Doing this over and over again would give me a very different sampling
 distribution, namely the *sampling distribution of the maximum*. The sampling

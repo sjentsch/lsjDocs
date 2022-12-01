@@ -97,7 +97,7 @@ output for the Welch’s test in the same way that you would for the
 Student’s test. You’ve got your descriptive statistics, the test results
 and some other information. So that’s all pretty easy.
 
-Except, except...our result isn’t significant anymore. When we ran the
+Except, except… our result isn’t significant anymore. When we ran the
 Student test we did get a significant effect, but the Welch test on the
 same data set is not (*t*\(23.02) = 2.03, *p* = 0.054). What
 does this mean? Should we panic? Is the sky burning? Probably not. The
