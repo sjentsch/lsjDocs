@@ -187,7 +187,7 @@ article.
 How could we improve the model? One option is to go back a few stages and think
 again about the items / measures we are using and how they might be improved or
 changed. Another option is to make some *post-hoc* tweaks to the model to
-improve the fit. One way of doing this is to use “modification indices”,
+improve the fit. One way of doing this is to use ``Modification indices``,
 specified as an ``Additional Output`` option in jamovi (see :numref:`fig-cfa6`).
 
 .. ----------------------------------------------------------------------------
@@ -254,13 +254,11 @@ second sample and CFA. Unfortunately, we didn’t find that the factor structure
 from the EFA was confirmed in the CFA, so it’s back to the drawing board as far
 as the development of this personality scale goes.
 
-Although we could have tweaked the CFA using modification indexes, there really
-were not any good reasons (that I could think of) for these suggested
-additional factor loadings or residual covariances to be included. However,
-sometimes there is a good reason for residuals to be allowed to co-vary
-(or correlate), and a good example of this is shown in the next section on
-**Multi-Trait Multi-Method (MTMM)** CFA. Before we do that, let’s cover how to
-report the results of a CFA.
+Whereas there are sometimes good reasons for allowing residuals to covary (or
+correlate), there were no such reasons to “optimize” the CFA for the model that
+we defined by including additional factor loadings or residual covariances
+using modification indices. Nevertheless, let's discuss how to report the
+results of a CFA (with a more fitted model).
 
 Reporting a CFA
 ~~~~~~~~~~~~~~~
