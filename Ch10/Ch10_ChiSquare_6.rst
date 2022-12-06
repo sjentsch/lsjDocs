@@ -38,7 +38,7 @@ The Fisher exact test works somewhat differently to the χ²-test
 (or in fact any of the other hypothesis tests that I talk about in this
 book) insofar as it doesn’t have a test statistic, but it calculates the
 *p*-value “directly”. I’ll explain the basics of how the test
-works for a 2 · 2 contingency table. As before, let’s have some notation:
+works for a 2 × 2 contingency table. As before, let’s have some notation:
 
 +---------------------+----------------+----------------+---------------+
 |                     | Happy          | Sad            | Total         |

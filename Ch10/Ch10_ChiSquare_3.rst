@@ -12,7 +12,7 @@ approximation, specifically on the assumption that the binomial
 distribution starts to look like a normal distribution for large
 *N*. One problem with this is that it often doesn’t quite work,
 especially when you’ve only got 1 degree of freedom (e.g., when you’re
-doing a test of independence on a 2 · 2 contingency table).
+doing a test of independence on a 2 × 2 contingency table).
 The main reason for this is that the true sampling distribution for the
 χ²-statistic is actually discrete (because you’re dealing with
 categorical data!) but the χ² distribution is continuous.

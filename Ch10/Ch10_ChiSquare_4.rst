@@ -30,7 +30,7 @@ and take the square root:
 The idea here is that the ϕ statistic is supposed to range
 between 0 (no association at all) and 1 (perfect association), but it
 doesn’t always do this when your contingency table is bigger than
-2 · 2, which is a total pain. For bigger tables it’s
+2 × 2, which is a total pain. For bigger tables it’s
 actually possible to obtain ϕ > 1, which is pretty unsatisfactory.
 So, to correct for this, people usually prefer to report the *V*
 statistic proposed by `Cramer (1946) <../Other/References.html#cramer-1946>`__.
