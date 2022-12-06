@@ -155,7 +155,7 @@ Therefore, our expected frequency can be written as the product (i.e.
 multiplication) of the row total and the column total, divided by the
 total number of observations:\ [#]_
 
-| Ê\ :sub:`ij` = (R\ :sub:`i` × C\ :sub:`j`) / *N*
+| Ê\ :sub:`ij` = (R\ :sub:`i` · C\ :sub:`j`) / *N*
 
 Now that we’ve figured out how to calculate the expected frequencies,
 it’s straightforward to define a test statistic, following the exact
