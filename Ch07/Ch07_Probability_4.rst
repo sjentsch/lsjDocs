@@ -7,7 +7,7 @@ As you might imagine, probability distributions vary enormously and there’s an
 enormous range of distributions out there. However, they aren’t all equally
 important. In fact, the vast majority of the content in this book relies on one
 of five distributions: the binomial distribution, the normal distribution, the
-*t*-distribution, the *χ²*-distribution (chi-square) and the *F*-distribution.
+*t*-distribution, the χ²-distribution (chi-square) and the *F*-distribution.
 Given this, what I’ll do over the next few sections is provide a brief
 introduction to all five of these, paying special attention to the binomial and
 the normal. I’ll start with the binomial distribution since it’s the simplest

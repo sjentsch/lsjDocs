@@ -606,8 +606,8 @@ bit wrong with writing “χ²(3) = 8.44”, you might be thinking. After all, i
 the goodness-of-fit statistic that is equal to 8.44, so shouldn’t I have
 written χ² = 8.44` or maybe GOF = 8.44? This seems to be conflating the
 *sampling distribution* (i.e., χ² with *df* = 3) with the *test statistic*
-(i.e., χ²). Odds are you figured it was a typo, since *χ* and *X* look pretty
-similar. Oddly, it’s not. Writing :χ²(3) = 8.44 is essentially a highly
+(i.e., χ²). Odds are you figured it was a typo, since χ and *X* look pretty
+similar. Oddly, it’s not. Writing χ²(3) = 8.44 is essentially a highly
 condensed way of writing “the sampling distribution of the test statistic is
 χ²(3), and the value of the test statistic is 8.44”.
 
@@ -651,7 +651,7 @@ by lots of other people, and then explained to students in textbooks by someone
 else. As a consequence, there’s a *lot* of test statistics that don’t even have
 names, and as a consequence they’re just given the same name as the
 corresponding sampling distribution. As we’ll see later, any test statistic
-that follows a χ² distribution is commonly called a χ²-statistic”,
+that follows a χ² distribution is commonly called a “χ²-statistic”,
 anything that follows a *t*-distribution is called a “*t*-statistic”, and so
 on. But, as the χ² versus *G* example illustrates, two different things with
 the same sampling distribution are still, well, different.

@@ -14,7 +14,7 @@ distribution starts to look like a normal distribution for large
 especially when you’ve only got 1 degree of freedom (e.g., when you’re
 doing a test of independence on a 2 · 2 contingency table).
 The main reason for this is that the true sampling distribution for the
-*X*\²-statistic is actually discrete (because you’re dealing with
+χ²-statistic is actually discrete (because you’re dealing with
 categorical data!) but the χ² distribution is continuous.
 This can introduce systematic problems. Specifically, when *N* is
 small and when *df* = 1, the goodness-of-fit statistic tends to be

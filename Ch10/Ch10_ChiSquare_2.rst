@@ -106,7 +106,7 @@ humans are responding in the same way to the question, it means that the
 probability that “a robot says puppy” is the same as the probability
 that “a human says puppy”, and so on for the other two possibilities.
 So, if we use *P*\ :sub:`ij` to denote “the probability that a member of
-species *j* gives response *i* then our null hypothesis is
+species *j* gives response *i*” then our null hypothesis is
 that:
 
 +--------------+---------------------------------------------+
@@ -163,18 +163,18 @@ same strategy that we used in the goodness-of-fit test. In fact, it’s
 pretty much the *same* statistic.
 
 For a contingency table with *r* rows and *c* columns, the
-equation that defines our *X*\² statistic is
+equation that defines our χ² statistic is
 
-.. math:: X^2 = \sum_{i=1}^r\sum_{j=1}^c \frac{({E}_{ij} - O_{ij})^2}{{E}_{ij}}
+.. math:: \chi^2 = \sum_{i=1}^r\sum_{j=1}^c \frac{({E}_{ij} - O_{ij})^2}{{E}_{ij}}
 
 The only difference is that I have to include two summation signs (i.e., Σ) to
 indicate that we’re summing over both rows and columns.
 
-As before, large values of *X*\² indicate that the null hypothesis
+As before, large values of χ² indicate that the null hypothesis
 provides a poor description of the data, whereas small values of
-*X*\² suggest that it does a good job of accounting for the data.
+χ² suggest that it does a good job of accounting for the data.
 Therefore, just like last time, we want to reject the null hypothesis if
-*X*\² is too large.
+χ² is too large.
 
 Not surprisingly, this statistic is χ² distributed. All we
 need to do is figure out how many degrees of freedom are involved, which
