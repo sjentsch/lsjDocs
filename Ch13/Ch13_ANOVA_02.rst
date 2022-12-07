@@ -3,7 +3,7 @@
 How ANOVA works
 ---------------
 
-In order to answer the question posed by our clinical trial data we’re
+In order to answer the question posed by our |clinicaltrial|_ data we’re
 going to run a one-way ANOVA. I’m going to start by showing you how to
 do it the hard way, building the statistical tool from the ground up and
 showing you how you could do it if you didn’t have access to any of the
@@ -53,7 +53,7 @@ refer to the total number of groups. For our data set there are three
 drugs, so there are *G* = 3 groups. Next, we’ll use *N* to
 refer to the total sample size; there are a total of *N* = 18
 people in our data set. Similarly, let’s use |N_k| to denote the
-number of people in the *k*-th group. In our fake clinical trial,
+number of people in the *k*-th group. In our |clinicaltrial|_ data,
 the sample size is |N_k| = 6` for all three groups.\ [#]_ Finally,
 we’ll use *Y* to denote the outcome variable. In our case,
 *Y* refers to mood change. Specifically, we’ll use |Y_ik|
@@ -588,7 +588,7 @@ reject the null hypothesis.
 
 At this point, we’re basically done. Having completed our calculations,
 it’s traditional to organise all these numbers into an ANOVA table like
-the one in :numref:`tab-anovatable`. For our clinical trial data,
+the one in :numref:`tab-anovatable`. For our |clinicaltrial|_ data,
 the ANOVA table would look like this:\ [#]_
 
 +--------------------+----+----------------+--------------+---------------+-----------+

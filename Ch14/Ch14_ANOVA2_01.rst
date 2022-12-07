@@ -392,13 +392,12 @@ this:
 +--------------+--------------+--------------+--------------+
 
 And if we look at the sample means that I showed earlier, we have
-Ȳ\ :sub:`11` = 0.30, Ȳ\ :sub:`12` = 0.60 etc. In our
-clinical trial example, the ``drug`` factor has 3 levels and the
-``therapy`` factor has 2 levels, and so what we’re trying to run is a
-3 × 2 factorial ANOVA. However, we’ll be a little more
-general and say that Factor A (the row factor) has *R* levels and
-Factor B (the column factor) has *C* levels, and so what we’re
-runnning here is an R × C factorial ANOVA.
+Ȳ\ :sub:`11` = 0.30, Ȳ\ :sub:`12` = 0.60 etc. In our |clinicaltrial|_
+data, the ``drug`` factor has 3 levels and the ``therapy`` factor has
+2 levels, and so what we’re trying to run is a 3 × 2 factorial ANOVA.
+However, we’ll be a little more general and say that Factor A (the row
+factor) has *R* levels and Factor B (the column factor) has *C* levels,
+and so what we’re runnning here is an R × C factorial ANOVA.
 
 Now that we’ve got our notation straight, we can compute the sum of
 squares values for each of the two factors in a relatively familiar way.

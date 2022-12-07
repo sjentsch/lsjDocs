@@ -42,7 +42,7 @@ reference level is the value of the intercept.
 The name reflects the fact that these contrasts are quite natural and
 sensible when one of the categories in your factor really is special
 because it actually does represent a baseline. That makes sense in our
-clinical trial example. The ``placebo`` condition corresponds to the
+|clinicaltrial|_ data. The ``placebo`` condition corresponds to the
 situation where you don’t give people any real drugs, and so it’s
 special. The other two conditions are defined in relation to the
 placebo. In one case you replace the placebo with Anxifree, and in the
@@ -186,3 +186,8 @@ types are listed:
    contrast, i.e., m = -1 and f = 1, the intercept is the average of the
    means and the main effect is the difference of each group mean from
    the intercept.
+
+.. ----------------------------------------------------------------------------
+
+.. |clinicaltrial|                     replace:: ``clinicaltrial``
+.. _clinicaltrial:                     _static/data/clinicaltrial.omv
