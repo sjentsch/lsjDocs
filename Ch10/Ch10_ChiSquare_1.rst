@@ -527,7 +527,7 @@ would be to write something like this:
    first choice, 51 selected diamonds, 50 selected spades, and 35 selected
    clubs. A χ²-goodness-of-fit test was conducted to test whether the choice
    probabilities were identical for all four suits. The results were
-   significant (χ²(3) = 8.44, p < 0.05), suggesting that people did not
+   significant (χ²(3) = 8.44, *p* < 0.05), suggesting that people did not
    select suits purely at random.
 
 This is pretty straightforward and hopefully it seems pretty unremarkable. That
@@ -570,8 +570,8 @@ said, there’s a few things that you should note about this description:
    information that gets reported is the test statistic (that the
    goodness-of-fit statistic was 8.44), the information about the distribution
    used in the test (χ² with 3 degrees of freedom which is usually shortened to
-   χ²(3)), and then the information about whether the result was significant
-   (in this case p < 0.05). The particular information that needs to go into
+   “χ²(3)”), and then the information about whether the result was significant
+   (in this case *p* < 0.05). The particular information that needs to go into
    the stat block is different for every test, and so each time I introduce a
    new test I’ll show you what the stat block should look like.\ [#]_ However,
    the general principle is that you should always provide enough information
@@ -631,10 +631,10 @@ earlier and which produces a slightly smaller *p*-value of *p* = 0.034. Suppose
 that the convention was to report the test statistic, then the sampling
 distribution, and then the *p*-value. If that were true, then these two
 situations would produce different stat blocks: my original result would be
-written χ² = 8.44, χ²(3), p = 0.038, whereas the new version using the *G*-test
-would be written as *G* = 8.65, χ²(3), p = 0.034. However, using the condensed
-reporting standard, the original result is written χ²(3) = 8.44, p = 0.038,
-and the new one is written χ²(3) = 8.65, p = 0.034, and so it’s actually
+written χ² = 8.44, χ²(3), *p* = 0.038, whereas the new version using the *G*-test
+would be written as *G* = 8.65, χ²(3),*p* = 0.034. However, using the condensed
+reporting standard, the original result is written χ²(3) = 8.44, *p* = 0.038,
+and the new one is written χ²(3) = 8.65,*p* = 0.034, and so it’s actually
 unclear which test I actually ran.
 
 So why don’t we live in a world in which the contents of the stat block

@@ -181,7 +181,7 @@ correction to the *F*-value is needed. Therefore, we can use the
 ``Task``: *F* = 6.93, *df* = 2, *p* = 0.013, and we can conclude that the
 number of tests successfully completed on each language task did vary
 significantly depending on whether the task was speech, comprehension or
-syntax based (*F*\(2,10) = 6.93, p = 0.013).
+syntax based (*F*\(2,10) = 6.93, *p* = 0.013).
 
 .. ----------------------------------------------------------------------------
 

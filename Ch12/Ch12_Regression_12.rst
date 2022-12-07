@@ -196,8 +196,8 @@ is
 where *N* is the number of observations, *p* is the number
 of predictors in the full model (not including the intercept), and
 k is the difference in the number of parameters between the two
-models.\ [#]_ The degrees of freedom here are k and
-*N* - p - 1. Note that it’s often more convenient to think about the
+models.\ [#]_ The degrees of freedom here are *k* and
+*N* - *p* - 1. Note that it’s often more convenient to think about the
 difference between those two SS values as a sum of squares in its own
 right. That is
 
@@ -231,7 +231,7 @@ predictors ``dani.sleep`` and ``day`` in ``Block 1`` and then add the
 additional predictor from Model 2 (``baby.sleep``) in ``Block 2``, as in
 :numref:`fig-reg8`. This shows, in the ``Model Comparisons`` Table, that
 for the comparisons between Model 1 and Model 2, *F*\ (1,96) = 0.00,
-*p* = 0.954. Since we have p > 0.05 we retain the null hypothesis (``M1``).
+*p* = 0.954. Since we have *p* > 0.05 we retain the null hypothesis (``M1``).
 This approach to regression, in which we add all of our covariates into a
 null model, then *add* the variables of interest into an alternative model,
 and then compare the two models in a hypothesis testing framework, is often

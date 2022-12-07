@@ -393,7 +393,7 @@ use has Bernadette’s class listed first. If so, it makes more sense to
 treat her class as group 1, and if so, the write up looks like this
 
    Bernadette’s class had lower grades than Anastasia’s class:
-   *t*\(31) = -2.1, p = 0.04.
+   *t*\(31) = -2.1, *p* = 0.04.
 
 Because I’m talking about one group having “lower” scores this time
 around, it is more sensible to use the negative form of the

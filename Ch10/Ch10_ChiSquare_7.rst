@@ -123,10 +123,10 @@ with the statistic for the McNemar test just below it (see
 
 And we’re done. We’ve just run a McNemar’s test to determine if people were
 just as likely to vote AGPP after the ads as they were before hand. The test
-was significant (χ²(1) = 12.03, p < 0.001), suggesting that they were not. And,
-in fact it looks like the ads had a negative effect: people were less likely to
-vote AGPP after seeing the ads. Which makes a lot of sense when you consider
-the quality of a typical political advertisement.
+was significant (χ²(1) = 12.03, *p* < 0.001), suggesting that they were not.
+And, in fact it looks like the ads had a negative effect: people were less
+likely to vote AGPP after seeing the ads. Which makes a lot of sense when you
+consider the quality of a typical political advertisement.
 
 What’s the difference between McNemar and independence?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

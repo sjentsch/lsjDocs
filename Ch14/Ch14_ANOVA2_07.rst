@@ -160,8 +160,8 @@ jamovi.
 
 So, by reading the key numbers off the ANOVA table and the mean scores that we
 presented earlier, we can see that the students obtained a higher grade if they
-attended class (*F*\(1,5) = 21.6, p = 0.0056) and if they read the textbook:
-*F*\(1,5) = 52.3, p = 0.0008. Let’s make a note of those *p*-values and those
+attended class (*F*\(1,5) = 21.6, *p* = 0.0056) and if they read the textbook:
+*F*\(1,5) = 52.3,*p* = 0.0008. Let’s make a note of those *p*-values and those
 *F* statistics.
 
 Now let’s think about the same analysis from a linear regression perspective.

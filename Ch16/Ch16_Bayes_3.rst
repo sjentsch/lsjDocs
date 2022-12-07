@@ -365,7 +365,7 @@ sample size of *N* = 50, so wouldn’t it be wasteful and inefficient
 to keep collecting data? Aren’t you tempted to stop? Just a little?
 Well, keep in mind that if you do, your Type I error rate at
 *p* < 0.05 just ballooned out to 8%. When you report *p* < 0.05 in
-your paper, what you’re *really* saying is p < 0.08. That’s how bad
+your paper, what you’re *really* saying is *p* < 0.08. That’s how bad
 the consequences of “just one peek” can be.
 
 Now consider this. The scientific literature is filled with *t*-tests, ANOVAs,

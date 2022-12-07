@@ -330,8 +330,8 @@ At this point, I hope you can see that the ANOVA table for this more
 complicated factorial analysis should be read in much the same way as
 the ANOVA table for the simpler one-way analysis. In short, it’s telling
 us that the factorial ANOVA for our 3 × 2 design found a
-significant effect of drug: F\(2,14) = 26.15, p < 0.001, as well
-as a significant effect of therapy: F\(1,14) = 7.08, p = 0.02.
+significant effect of drug: *F*\(2,14) = 26.15, *p* < 0.001, as well
+as a significant effect of therapy: *F*\(1,14) = 7.08, *p* = 0.02.
 Or, to use the more technically correct terminology, we would say that
 there are two **main effects** of drug and therapy. At the moment, it
 probably seems a bit redundant to refer to these as “main” effects, but
@@ -376,7 +376,7 @@ marginal mean for the *r*\ th level of Factor A, Ȳ\ :sub:`.c`
 would be the marginal mean for the *c*\ th
 level of Factor B, and Ȳ\ :sub:`..` is the grand mean. In other
 words, our sample means can be organised into the same table as the
-population means. For our clinical trial data, that table looks like
+population means. For our |clinicaltrial|_ data, that table looks like
 this:
 
 +--------------+--------------+--------------+--------------+
