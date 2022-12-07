@@ -32,7 +32,7 @@ in :numref:`fig-factorialanova1`.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova1.*
-   :alt: jamovi contingency table of drug by therapy
+   :alt: jamovi contingency table for ``drug`` by ``therapy``
    :name: fig-factorialanova1
 
    jamovi contingency table for ``drug`` by ``therapy``
