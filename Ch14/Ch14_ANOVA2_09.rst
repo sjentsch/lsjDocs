@@ -92,8 +92,8 @@ placebo is 1.03, and this result is significant (*p* < 0.001).
 
 So far, so good. What about the situation where your model includes
 interaction terms? For instance, the default option in jamovi is to
-allow for the possibility that there is an interaction between drug and
-therapy. If that’s the case, the number of pairwise comparisons that we
+allow for the possibility that there is an interaction between ``drug`` and
+``therapy``. If that’s the case, the number of pairwise comparisons that we
 need to consider starts to increase. As before, we need to consider the
 three comparisons that are relevant to the main effect of ``drug`` and
 the one comparison that is relevant to the main effect of ``therapy``.
@@ -101,11 +101,12 @@ But, if we want to consider the possibility of a significant interaction
 (and try to find the group differences that underpin that significant
 interaction), we need to include comparisons such as the following:
 
--  The difference in mood gain for people given Anxifree and treated
-   with CBT, versus people given the placebo and treated with CBT
+-  The difference in ``mood.gain`` for people given ``anxifree`` and treated
+   with ``CBT``, versus people given the ``placebo`` and treated with ``CBT``
 
--  The difference in mood gain for people given Anxifree and given no
-   therapy, versus people given the placebo and given no therapy.
+-  The difference in ``mood.gain`` for people given ``anxifree`` and given
+   ``no.therapy``, versus people given the ``placebo`` and given
+   ``no.therapy``.
 
 -  etc
 

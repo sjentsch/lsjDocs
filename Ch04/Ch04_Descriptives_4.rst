@@ -52,7 +52,7 @@ and you should get something like :numref:`fig-clinicaltrial_grouping`.
 
 What if you have multiple grouping variables |nominal|? Suppose you want to
 look at the average mood gain separately for all possible combinations of
-drug and therapy. It is possible to do this by adding another variable,
+``drug`` and ``therapy``. It is possible to do this by adding another variable,
 ``drug``, into the ``Split by`` box. Easy peasy, though sometimes if you
 split too much there isn’t enough data in each breakdown combination to
 make meaningful calculations. In this case jamovi tells you this by

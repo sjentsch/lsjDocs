@@ -8,9 +8,9 @@ ANOVA, I think the method of planned comparisons is important enough to deserve
 a quick discussion. In our discussions of multiple comparisons, in the previous
 section and back in chapter :doc:`Comparing several means (one-way ANOVA)
 <../Ch13/Ch13_ANOVA>`, I’ve been assuming that the tests you want to run are genuinely
-post-hoc. For instance, in our drugs example above, maybe you thought that the
-drugs would all have different effects on mood (i.e., you hypothesised a main
-effect of drug), but you didn’t have any specific hypothesis about how they
+post-hoc. For instance, in our |clinicaltrial|_ example above, maybe you thought that the
+levels of ``drug`` would all have different effects on mood (i.e., you hypothesised a main
+effect of ``drug``), but you didn’t have any specific hypothesis about how they
 would be different, nor did you have any real idea about *which* pairwise
 comparisons would be worth looking at. If that is the case, then you really
 have to resort to something like Tukey’s HSD to do your pairwise comparisons.
@@ -30,3 +30,8 @@ for multiple testing. This situation is known as the **method of planned
 comparisons**, and it is sometimes used in clinical trials. However, further
 consideration is out of scope for this introductory book, but at least you know
 that this method exists!
+
+.. ----------------------------------------------------------------------------
+
+.. |clinicaltrial|                     replace:: ``clinicaltrial``
+.. _clinicaltrial:                     _static/data/clinicaltrial.omv

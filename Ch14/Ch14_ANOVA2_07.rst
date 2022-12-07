@@ -326,14 +326,15 @@ realise that a three-level factor can be redescribed as *two* binary variables.
 Suppose, for instance, I were to create a new binary variable called
 ``druganxifree``. Whenever the ``drug`` variable is equal to ``"anxifree"`` we
 set ``druganxifree = 1``. Otherwise, we set ``druganxifree = 0``. This variable
-sets up a **contrast**, in this case between anxifree and the other two drugs.
-By itself, of course, the ``druganxifree`` contrast isn’t enough to fully
-capture all of the information in our ``drug`` variable. We need a second
-contrast, one that allows us to distinguish between joyzepam and the placebo.
-To do this, we can create a second binary contrast, called ``drugjoyzepam``,
-which equals 1 if the drug is joyzepam and 0 if it is not. Taken together,
-these two contrasts allows us to perfectly discriminate between all three
-possible drugs. The table below illustrates this:
+sets up a **contrast**, in this case between ``anxifree`` and the other two
+drugs. By itself, of course, the ``druganxifree`` contrast isn’t enough to
+fully capture all of the information in our ``drug`` variable. We need a second
+contrast, one that allows us to distinguish between ``joyzepam`` and the
+``placebo``. To do this, we can create a second binary contrast, called
+``drugjoyzepam``, which equals 1 if the ``drug`` is ``joyzepam`` and 0 if it is
+not. Taken together, these two contrasts allows us to perfectly discriminate
+between all three possible levels of ``drug``. The table below illustrates
+this:
 
 +--------------+------------------+------------------+
 | ``drug``     | ``druganxifree`` | ``drugjoyzepam`` |
@@ -345,18 +346,19 @@ possible drugs. The table below illustrates this:
 | ``joyzepam`` |                0 |                1 |
 +--------------+------------------+------------------+
 
-If the drug administered to a patient is a placebo then both of the two
-contrast variables will equal 0. If the drug is Anxifree then the
+If the ``drug`` administered to a patient is a ``placebo`` then both of the
+two contrast variables will equal 0. If the ``drug`` is ``anxifree`` then the
 ``druganxifree`` variable will equal 1, and ``drugjoyzepam`` will be 0. The
-reverse is true for Joyzepam: ``drugjoyzepam`` is 1 and ``druganxifree`` is 0.
+reverse is true for ``joyzepam``: ``drugjoyzepam`` is 1 and ``druganxifree``
+is 0.
 
 Creating contrast variables is not too difficult to do using the jamovi 
 ``Compute`` command to create a new variable. For example, to create the
 ``druganxifree`` variable, write this logical expression in the formula box:
-``IF(drug == ’anxifree’, 1, 0)``. Similarly, to create the new variable
+``IF(drug == 'anxifree', 1, 0)``. Similarly, to create the new variable
 ``drugjoyzepam`` use this logical expression:
-``IF(drug == ’joyzepam’, 1, 0)``. Likewise for ``CBTtherapy``: 
-``IF(therapy == ’CBT’, 1, 0)``. You can see these new variables, and the
+``IF(drug == 'joyzepam', 1, 0)``. Likewise for ``CBTtherapy``: 
+``IF(therapy == 'CBT', 1, 0)``. You can see these new variables, and the
 corresponding logical expressions, in the |clinicaltrial2|_ data set.
 
 We have now recoded our three-level factor in terms of two binary variables,
@@ -419,10 +421,10 @@ far as it knows, ``drugjoyzepam`` and ``druganxifree`` are no more related to
 one another than ``drugjoyzepam`` and ``therapyCBT``. However, you and I know
 better. At this stage we’re not at all interested in determining whether these
 two contrasts are individually significant. We just want to know if there’s an
-“overall” effect of drug. That is, what *we* want jamovi to do is to run some
-kind of “model comparison” test, one in which the two “drug-related” contrasts
-are lumped together for the purpose of the test. Sound familiar? All we need to
-do is specify our null model, which in this case would include the 
+“overall” effect of ``drug``. That is, what *we* want jamovi to do is to run
+some kind of “model comparison” test, one in which the two “drug-related”
+contrasts are lumped together for the purpose of the test. Sound familiar? All
+we need to do is specify our null model, which in this case would include the
 ``CBTtherapy`` predictor, and omit both of the drug-related variables, as in
 :numref:`fig-factorialanova11`\.
 

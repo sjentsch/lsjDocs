@@ -30,7 +30,7 @@ statistics we can calculate in jamovi are shown in :numref`fig-anova1`.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_anova1.*
-   :alt: Descriptives for mood.gain, and box plots by drug administered
+   :alt: Descriptives for ``mood.gain``, and box plots by ``drug`` administered
    :name: fig-anova1
 
    Descriptives for ``mood.gain``, and box plots by ``drug`` administered

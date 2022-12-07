@@ -34,14 +34,14 @@ helps to plot the various group means. In jamovi this is done via the ANOVA
 ``Estimated Marginal Means`` option - just move ``drug`` and ``therapy``
 across into the ``Marginal Means`` box under ``Term 1``. This should look
 something like :numref:`fig-interaction`. Our main concern relates to the fact
-that the two lines aren’t parallel. The effect of CBT (difference between solid
-line and dotted line) when the drug is Joyzepam (right side) appears to be near
-zero, even smaller than the effect of CBT when a placebo is used (left side).
-However, when Anxifree is administered, the effect of CBT is larger than the
-placebo (middle). Is this effect real, or is this just random variation due to
-chance? Our original ANOVA cannot answer this question, because we make no
-allowances for the idea that interactions even exist! In this section, we’ll
-fix this problem.
+that the two lines aren’t parallel. The effect of ``CBT`` (difference between
+solid line and dotted line) when the ``drug`` is ``joyzepam`` (right side)
+appears to be near zero, even smaller than the effect of ``CBT`` when a
+``placebo`` is used (left side). However, when ``anxifree`` is administered,
+the effect of ``CBT`` is larger than that of ``no.therapy`` (middle). Is this
+effect real, or is this just random variation due to chance? Our original ANOVA
+cannot answer this question, because we make no allowances for the idea that
+interactions even exist! In this section, we’ll fix this problem.
 
 .. ----------------------------------------------------------------------------
 
@@ -228,9 +228,10 @@ Adding interaction terms to the ANOVA model in jamovi is
 straightforward. In fact it is more than straightforward because it is
 the default option for ANOVA. This means that when you specify an ANOVA
 with two factors, e.g. ``drug`` and ``therapy`` then the interaction
-component - ``drug*therapy`` - is added automatically to the model.\ [#]_
-When we run the ANOVA with the interaction term included, then we get
-the results shown in :numref:`fig-factorialanova4`.
+component - ``drug`` × ``therapy`` (shown as ``drug * therapy``) - is
+added automatically to the model.\ [#]_ When we run the ANOVA with the
+interaction term included, then we get the results shown in
+:numref:`fig-factorialanova4`.
 
 .. ----------------------------------------------------------------------------
 
@@ -239,13 +240,14 @@ the results shown in :numref:`fig-factorialanova4`.
    :name: fig-factorialanova4
 
    Results for the full factorial model, including the interaction component
-   drug × therapy
+   ``drug`` × ``therapy``
    
 .. ----------------------------------------------------------------------------
 
-As it turns out, while we do have a significant main effect of drug:
-*F*\(2,12) = 31.7, *p* < 0.001, and therapy type: *F*\(1,12) = 8.6, *p* = 0.013),
-there is no significant interaction between the two: *F*\(2,12) = 2.5, *p* = 0.125).
+As it turns out, while we do have a significant main effect of ``drug``:
+*F*\(2,12) = 31.7, *p* < 0.001, and ``therapy``: *F*\(1,12) = 8.6, *p* =
+\0.013), there is no significant interaction between the two: *F*\(2,12) = 2.5,
+*p* = 0.125).
 
 Interpreting the results
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -253,18 +255,19 @@ Interpreting the results
 There’s a couple of very important things to consider when interpreting the
 results of factorial ANOVA. First, there’s the same issue that we had with
 one-way ANOVA, which is that if you obtain a significant main effect of (say)
-``drug``, it doesn’t tell you anything about which drugs are different to one
-another. To find that out, you need to run additional analyses. We’ll talk
-about some analyses that you can run in sections :doc:`Different ways to
-specify contrasts <../Ch14/Ch14_ANOVA2_08>` and :doc:`Post-hoc tests
-<../Ch14/Ch14_ANOVA2_09>`. The same is true for interaction effects. Knowing
-that there’s a significant interaction doesn’t tell you anything about what
-kind of interaction exists. Again, you’ll need to run additional analyses.
+``drug``, it doesn’t tell you anything about how the levels of ``drug`` are
+different to one another. To find that out, you need to run additional
+analyses. We’ll talk about some analyses that you can run in sections
+:doc:`Different ways to specify contrasts <../Ch14/Ch14_ANOVA2_08>` and
+:doc:`Post-hoc tests <../Ch14/Ch14_ANOVA2_09>`. The same is true for
+interaction effects. Knowing that there’s a significant interaction doesn’t
+tell you anything about what kind of interaction exists. Again, you’ll need
+to run additional analyses.
 
 Secondly, there’s a very peculiar interpretation issue that arises when you
 obtain a significant interaction effect but no corresponding main effect. This
 happens sometimes. For instance, in the crossover interaction shown in
-:numref:`fig-interactions`\ (top-left panel), this is exactly what you’d find.
+:numref:`fig-interactions` (top-left panel), this is exactly what you’d find.
 In this case, neither of the main effects would be significant, but the
 interaction effect would be. This is a difficult situation to interpret, and
 people often get a bit confused about it. The general advice that statisticians
@@ -273,15 +276,15 @@ main effects when an interaction is present. The reason they say this is that,
 although the tests of the main effects are perfectly valid from a mathematical
 point of view, when there is a significant interaction effect the main effects
 rarely test interesting hypotheses. Recall from section :doc:`What hypotheses
-are we testing? <../Ch14/Ch14_ANOVA2_01>` that the null hypothesis for a main effect is
-that the *marginal means* are equal to each other, and that a marginal mean is
-formed by averaging across several different groups. But if you have a
-significant interaction effect then you *know* that the groups that comprise
-the marginal mean aren’t homogeneous, so it’s not really obvious why you would
-even care about those marginal means.
+are we testing? <../Ch14/Ch14_ANOVA2_01>` that the null hypothesis for a main
+effect is that the *marginal means* are equal to each other, and that a
+marginal mean is formed by averaging across several different groups. But if
+you have a significant interaction effect then you *know* that the groups that
+comprise the marginal mean aren’t homogeneous, so it’s not really obvious why
+you would even care about those marginal means.
 
-Here’s what I mean. Again, let’s stick with a clinical example. Suppose that we
-had a 2 × 2 design comparing two different treatments for phobias (e.g.,
+Here’s what I mean. Again, let’s stick with a clinical example. Suppose that
+we had a 2 × 2 design comparing two different treatments for phobias (e.g.,
 systematic desensitisation vs. flooding), and two different anxiety reducing
 drugs (e.g., Anxifree vs Joyzepam). Now, suppose what we found was that
 Anxifree had no effect when desensitisation was the treatment, and Joyzepam had

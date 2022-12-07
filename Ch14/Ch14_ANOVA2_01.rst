@@ -235,7 +235,7 @@ outcome variable (i.e., ``mood.gain``), and we got the results shown in
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova2.*
-   :alt: jamovi One-way ANOVA of mood.gain by drug
+   :alt: jamovi One-way ANOVA of ``mood.gain`` by ``drug``
    :name: fig-factorialanova2
 
    jamovi One-way ANOVA of ``mood.gain`` by ``drug``
@@ -252,10 +252,10 @@ add ``therapy`` as a second ``Fixed Factor`` in the analysis, see
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova3.*
-   :alt: jamovi factorial ANOVA for mood.gain with the factors drug and therapy
+   :alt: jamovi factorial ANOVA for ``mood.gain`` with the factors ``drug`` and ``therapy``
    :name: fig-factorialanova3
 
-   jamovi factorial ANOVA for mood.gain with the two factors ``drug`` and
+   jamovi factorial ANOVA for ``mood.gain`` with the two factors ``drug`` and
    ``therapy``
    
 .. ----------------------------------------------------------------------------
@@ -302,7 +302,7 @@ that this use of “R” to refer to residuals is a bit awkward, since we
 also used the letter R to refer to the number of rows in the table, but
 I’m only going to use “R” to mean residuals in the context of
 SS\ :sub:`R` and MS\ :sub:`R`, so hopefully this shouldn’t be
-confusing. Anyway, to apply this formula to the ``drugs`` factor we take
+confusing. Anyway, to apply this formula to the ``drug`` factor we take
 the mean square of 1.73 and divide it by the residual mean
 square value of 0.07, which gives us an *F*-statistic of 26.15. The
 corresponding calculation for the ``therapy`` variable would be to divide 0.47
@@ -359,7 +359,7 @@ to hurl abuse at the authors of statistics textbooks.
 
 Okay, let’s start by looking at some of those details. The explanation
 that I gave in the last section illustrates the fact that the hypothesis
-tests for the main effects (of drug and therapy in this case) are
+tests for the main effects (of ``drug`` and ``therapy`` in this case) are
 *F*-tests, but what it doesn’t do is show you how the sum of
 squares (SS) values are calculated. Nor does it tell you explicitly how
 to calculate degrees of freedom (*df* values) though that’s a
@@ -394,7 +394,7 @@ this:
 
 And if we look at the sample means that I showed earlier, we have
 Ȳ\ :sub:`11` = 0.30, Ȳ\ :sub:`12` = 0.60 etc. In our
-clinical trial example, the ``drugs`` factor has 3 levels and the
+clinical trial example, the ``drug`` factor has 3 levels and the
 ``therapy`` factor has 2 levels, and so what we’re trying to run is a
 3 × 2 factorial ANOVA. However, we’ll be a little more
 general and say that Factor A (the row factor) has *R* levels and
@@ -439,14 +439,14 @@ different types of therapy. Or, to put it another way, there are 3 · 2 = 6
 people who received any particular drug. When we do these calculations in a
 spreadsheet programme, we get a value of 3.45 for the sum of squares associated
 with the main effect of ``drug``. Not surprisingly, this is the same number
-that you get when you look up the SS value for the drugs factor in the ANOVA
+that you get when you look up the SS value for the ``drug`` factor in the ANOVA
 table that I presented earlier, in :numref:`fig-factorialanova3`.
 
-We can repeat the same kind of calculation for the effect of therapy. Again,
-there are *N* = 3 people in each group, but since there are R = 3 different
-drugs, this time around we note that there are 3 · 3 = 9 people who received
-CBT and an additional 9 people who received the placebo. So our calculation in
-this case gives us a value of 0.47 for the sum of squares associated with the
+We can repeat the same kind of calculation for the effect of ``therapy``. Again,
+there are *N* = 3 people in each group, but since there are R = 3 different values
+in ``drug``, this time around we note that there are 3 · 3 = 9 people who received
+``CBT`` and an additional 9 people who received ``no.therapy``. So our calculation
+in this case gives us a value of 0.47 for the sum of squares associated with the
 main effect of ``therapy``. Once again, we are not surprised to see that our
 calculations are identical to the ANOVA output in :numref:`fig-factorialanova3`.
 
@@ -532,13 +532,13 @@ What are our degrees of freedom?
 The degrees of freedom are calculated in much the same way as for one-way
 ANOVA. For any given factor, the degrees of freedom is equal to the number of
 levels minus 1 (i.e., R - 1 for the row variable Factor A, and C - 1 for the
-column variable Factor B). So, for the ``drugs`` factor we obtain *df* = 2, and
+column variable Factor B). So, for the ``drug`` factor we obtain *df* = 2, and
 for the ``therapy`` factor we obtain *df* = 1. Later on, when we discuss the
 interpretation of ANOVA as a regression model (see section :doc:`ANOVA as a
 linear model <../Ch14/Ch14_ANOVA2_07>`), I’ll give a clearer statement of how we arrive
 at this number. But for the moment we can use the simple definition of degrees
 of freedom, namely that the degrees of freedom equals the number of quantities
-that are observed, minus the number of constraints. So, for the ``drugs``
+that are observed, minus the number of constraints. So, for the ``drug``
 factor, we observe 3 separate group means, but these are constrained by 1 grand
 mean, and therefore the degrees of freedom is 2. For the residuals, the logic
 is similar, but not quite the same. The total number of observations in our
@@ -575,22 +575,22 @@ Factorial ANOVA versus one-way ANOVAs
 Now that we’ve seen *how* a factorial ANOVA works, it’s worth taking a moment
 to compare it to the results of the one-way analyses, because this will give us
 a really good sense of *why* it’s a good idea to run the factorial ANOVA. In
-chapter :doc:`Comparing several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`, I ran a
-one-way ANOVA that looked to see if there are any differences between drugs,
-and a second one-way ANOVA to see if there were any differences between
-therapies. As we saw in section :doc:`What hypotheses are we testing?
-<../Ch14/Ch14_ANOVA2_01>`, the null and alternative hypotheses tested by the one-way
-ANOVAs are in fact identical to the hypotheses tested by the factorial ANOVA.
-Looking even more carefully at the ANOVA tables, we can see that the sum of
-squares associated with the factors are identical in the two different analyses
-(3.453 for ``drug`` and 0.467 for ``therapy``), as are the degrees of freedom
-(2 for ``drug``, 1 for ``therapy``). But they don’t give the same answers! Most
-notably, when we ran the one-way ANOVA for ``therapy`` in section :doc:`On the
-relationship between ANOVA and the Student t-test <../Ch13/Ch13_ANOVA_09>` we didn’t
-find a significant effect (the *p*-value was 0.210). However, when we look at
-the main effect of ``therapy`` within the context of the two-way ANOVA, we do
-get a significant effect (p = 0.019). The two analyses are clearly not the
-same.
+chapter :doc:`Comparing several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`, I
+ran a one-way ANOVA that looked to see if there are any differences between the
+three levels of ``drug``, and a second one-way ANOVA to see if there were any
+differences between the two levels of ``therapy``. As we saw in section
+:doc:`What hypotheses are we testing? <../Ch14/Ch14_ANOVA2_01>`, the null and
+alternative hypotheses tested by the one-way ANOVAs are in fact identical to
+the hypotheses tested by the factorial ANOVA. Looking even more carefully at
+the ANOVA tables, we can see that the sum of squares associated with the
+factors are identical in the two different analyses (3.453 for ``drug`` and
+\0.467 for ``therapy``), as are the degrees of freedom (2 for ``drug``, 1 for
+``therapy``). But they don’t give the same answers! Most notably, when we ran
+the one-way ANOVA for ``therapy`` in section :doc:`On the relationship between
+ANOVA and the Student t-test <../Ch13/Ch13_ANOVA_09>` we didn’t find a
+significant effect (the *p*-value was 0.210). However, when we look at the main
+effect of ``therapy`` within the context of the two-way ANOVA, we do get a
+significant effect (p = 0.019). The two analyses are clearly not the same.
 
 Why does that happen? The answer lies in understanding how the *residuals* are
 calculated. Recall that the whole idea behind an *F*-test is to compare the
