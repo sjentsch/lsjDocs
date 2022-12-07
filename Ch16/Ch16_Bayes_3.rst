@@ -348,7 +348,7 @@ completely different way of doing hypothesis tests or enforce a strict
 rule of *no peeking*. You are *not* allowed to use the data to decide
 when to terminate the experiment. You are *not* allowed to look at a
 “borderline” *p*-value and decide to collect more data. You aren’t
-even allowed to change your data analyis strategy after looking at data.
+even allowed to change your data analysis strategy after looking at data.
 You are strictly required to follow these rules, otherwise the
 *p*-values you calculate will be nonsense.
 
