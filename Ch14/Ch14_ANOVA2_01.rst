@@ -175,8 +175,8 @@ alternative hypotheses in terms of the *equality of marginal means*:
 +----------------------------------+---------------------------------------------+
 
 It’s worth noting that these are *exactly* the same statistical hypotheses that
-we formed when we ran a one-way ANOVA on these data back in chapter
-:doc:`Comparing several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`. Back then, I used
+we formed when we ran a one-way ANOVA on these data back in :doc:`the previous
+chapter <../Ch13/Ch13_ANOVA>`. Back then, I used
 the notation µ\ :sub:`P` to refer to the mean mood gain for the placebo group,
 with µ\ :sub:`A` and µ\ :sub:`J` corresponding to the group means for the two
 drugs, and the null hypothesis was µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`. So
@@ -207,22 +207,21 @@ Running the analysis in jamovi
 
 The null and alternative hypotheses that I described in the last section should
 seem awfully familiar. They’re basically the same as the hypotheses that we
-were testing in our simpler :doc:`One-way ANOVAs <../Ch13/Ch13_ANOVA>`. So you’re
+were testing in our simpler :doc:`one-way ANOVAs <../Ch13/Ch13_ANOVA>`. So you’re
 probably expecting that the hypothesis *tests* that are used in factorial ANOVA
-will be essentially the same as the *F*-test from chapter :doc:`Comparing
-several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`. You’re expecting to see references
-to sums of squares (SS), mean squares (MS), degrees of freedom (df), and
-finally an *F*-statistic that we can convert into a *p*-value, right? Well,
-you’re absolutely and completely right. So much so that I’m going to depart
-from my usual approach. Throughout this book, I’ve generally taken the
-approach of describing the logic (and to an extent the mathematics) that
-underpins a particular analysis first and only then introducing the analysis
-in jamovi. This time I’m going to do it the other way around and show you how
-to do it in jamovi first.
-The reason for doing this is that I want to highlight the similarities between
-the simple One-Way ANOVA tool that we discussed in chapter :doc:`Comparing
-several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`, and the more complicated approach
-that we’re going to use in this chapter.
+will be essentially the same as the *F*-test from :doc:`the previous chapter
+<../Ch13/Ch13_ANOVA>`. You’re expecting to see references to sums of squares
+(SS), mean squares (MS), degrees of freedom (df), and finally an *F*-statistic
+that we can convert into a *p*-value, right? Well, you’re absolutely and
+completely right. So much so that I’m going to depart from my usual approach.
+Throughout this book, I’ve generally taken the approach of describing the logic
+(and to an extent the mathematics) that underpins a particular analysis first
+and only then introducing the analysis in jamovi. This time I’m going to do it
+the other way around and show you how to do it in jamovi first. The reason for
+doing this is that I want to highlight the similarities between the simpler
+one-Way ANOVA that we discussed in :doc:`the previous chapter
+<../Ch13/Ch13_ANOVA>`, and the more complicated approach that we’re going to
+use in this chapter.
 
 If the data you’re trying to analyse correspond to a balanced factorial design
 then running your analysis of variance is easy. To see how easy it is, let’s
@@ -452,8 +451,8 @@ calculations are identical to the ANOVA output in :numref:`fig-factorialanova3`.
 
 So that’s how you calculate the SS values for the two main effects. These SS
 values are analogous to the between-group sum of squares values that we
-calculated when doing one-way ANOVA in chapter :doc:`Comparing several means
-(one-way ANOVA) <../Ch13/Ch13_ANOVA>`. However, it’s not a good idea to think of them
+calculated when doing the one-way ANOVA in :doc:`the previous chapter
+<../Ch13/Ch13_ANOVA>`. However, it’s not a good idea to think of them
 as between-groups SS values anymore, just because we have two different
 grouping variables and it’s easy to get confused. In order to construct an
 *F*-test, however, we also need to calculate the within-groups sum of squares.
