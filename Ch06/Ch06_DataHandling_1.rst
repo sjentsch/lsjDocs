@@ -123,4 +123,4 @@ set), 100% of the time it’s a Tombliboo saying it.
 .. ----------------------------------------------------------------------------
 
 .. |nightgarden|                       replace:: ``nightgarden``
-.. _nightgarden:                       _static/data/nightgarden.omv
+.. _nightgarden:                       ../_static/data/nightgarden.omv

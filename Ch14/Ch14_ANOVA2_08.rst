@@ -190,4 +190,4 @@ types are listed:
 .. ----------------------------------------------------------------------------
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
-.. _clinicaltrial:                     _static/data/clinicaltrial.omv
+.. _clinicaltrial:                     ../_static/data/clinicaltrial.omv

@@ -326,4 +326,4 @@ is interesting.
 .. ----------------------------------------------------------------------------
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
-.. _clinicaltrial:                     _static/data/clinicaltrial.omv
+.. _clinicaltrial:                     ../_static/data/clinicaltrial.omv

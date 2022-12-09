@@ -293,7 +293,7 @@ variable that you want to recode.
 .. ----------------------------------------------------------------------------
 
 .. |likert|                            replace:: ``likert``
-.. _likert:                            _static/data/likert.omv
+.. _likert:                            ../_static/data/likert.omv
 
 .. |continuous|                       image:: ../_images/variable-continuous.*
    :width: 16px

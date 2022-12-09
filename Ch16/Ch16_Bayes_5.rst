@@ -84,7 +84,7 @@ the alternative. We could probably reject the null with some confidence!
 .. ----------------------------------------------------------------------------
 
 .. |chico|                             replace:: ``chico``
-.. _chico:                             _static/data/chico.omv
+.. _chico:                             ../_static/data/chico.omv
 
 .. |harpo|                             replace:: ``harpo``
-.. _harpo:                             _static/data/harpo.omv
+.. _harpo:                             ../_static/data/harpo.omv

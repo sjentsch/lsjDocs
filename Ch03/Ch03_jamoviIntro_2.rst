@@ -318,7 +318,7 @@ and STATA files.
    will be fixed in a later version of jamovi.
    
 .. |booksales|                         replace:: ``booksales.csv``
-.. _booksales:                         _static/data/booksales.csv
+.. _booksales:                         ../_static/data/booksales.csv
 
 .. |ID|                               image:: ../_images/variable-id.*
    :width: 16px

@@ -224,4 +224,4 @@ tests between ``Speech`` and ``Syntax`` task performance.
    (n - k): (number of subjects - number of groups)
 
 .. |broca|                             replace:: ``broca``
-.. _broca:                             _static/data/broca.omv
+.. _broca:                             ../_static/data/broca.omv

@@ -18,7 +18,7 @@ Range
 ~~~~~
 
 The **range** of a variable is very simple. It’s the biggest value minus
-the smallest value. For the AFL winning margins data the maximum value
+the smallest value. For the ``afl.margins`` variable the maximum value
 is 116 and the minimum value is 0. Although the range is the simplest
 way to quantify the notion of “variability”, it’s one of the worst.
 Recall from our discussion of the mean that we want our summary measure
@@ -453,4 +453,4 @@ somewhere.
 .. ----------------------------------------------------------------------------
 
 .. |aflsmall_margins|                  replace:: ``aflsmall_margins``
-.. _aflsmall_margins:                  _static/data/aflsmall_margins.omv
+.. _aflsmall_margins:                  ../_static/data/aflsmall_margins.omv

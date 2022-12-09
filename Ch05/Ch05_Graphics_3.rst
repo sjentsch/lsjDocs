@@ -54,4 +54,4 @@ friends, or include in your assignments or manuscripts.
 .. ----------------------------------------------------------------------------
 
 .. |afl.finalists|                     replace:: ``afl.finalists``
-.. _afl.finalists:                     _static/data/aflsmall_finalists.omv
+.. _afl.finalists:                     ../_static/data/aflsmall_finalists.omv

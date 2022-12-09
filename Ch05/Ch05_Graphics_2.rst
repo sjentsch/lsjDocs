@@ -192,10 +192,10 @@ the topic again in section :doc:`Model checking <../Ch12/Ch12_Regression_11>`.
 .. ----------------------------------------------------------------------------
 
 .. |aflsmall_margins|                  replace:: ``aflsmall_margins``
-.. _aflsmall_margins:                  _static/data/aflsmall_margins.omv
+.. _aflsmall_margins:                  ../_static/data/aflsmall_margins.omv
 
 .. |aflmarginbyyear|                   replace:: ``aflmarginbyyear``
-.. _aflmarginbyyear:                   _static/data/aflmarginbyyear.omv
+.. _aflmarginbyyear:                   ../_static/data/aflmarginbyyear.omv
 
 .. |nominal|                          image:: ../_images/variable-nominal.*
    :width: 16px

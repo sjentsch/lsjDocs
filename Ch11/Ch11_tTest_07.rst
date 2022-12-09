@@ -165,4 +165,4 @@ original variables.
 .. ----------------------------------------------------------------------------
 
 .. |chico2|                            replace:: ``chico2``
-.. _chico2:                            _static/data/chico2.omv
+.. _chico2:                            ../_static/data/chico2.omv

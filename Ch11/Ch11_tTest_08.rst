@@ -140,11 +140,11 @@ Example
 
 In the meantime, it’s probably worth showing you an example of what happens to
 the QQ plot and the Shapiro-Wilk test when the data turn out to be non-normal.
-For that, let’s look at the distribution of our AFL winning margins
-(``afl.margins``) variable (from the |aflsmall_margins|_ data set), which if
-you remember back to th chapter on
-:doc:`Descriptive statistics <../Ch04/Ch04_Descriptives>` didn’t look like they
-came from a normal distribution at all. Here’s what happens to the QQ plot:
+For that, let’s look at the distribution of our AFL winning margins variable
+(``afl.margins`` from the |aflsmall_margins|_ data set), which if you remember
+back to th chapter on :doc:`Descriptive statistics <../Ch04/Ch04_Descriptives>`
+didn’t look like they came from a normal distribution at all. Here’s what
+happens to the QQ plot:
 
 .. ----------------------------------------------------------------------------
 
@@ -158,9 +158,9 @@ came from a normal distribution at all. Here’s what happens to the QQ plot:
    
 .. ----------------------------------------------------------------------------
 
-And when we run the Shapiro-Wilk test on the AFL margins data, we get a
-value for the Shapiro-Wilk normality test statistic of W = 0.94, and
-*p*-value = 9.481e-07. Clearly a significant effect!
+And when we run the Shapiro-Wilk test with ``afl.margins``, we get a value for
+the Shapiro-Wilk normality test statistic of W = 0.94, and *p*-value = 9.481e-07.
+Clearly a significant effect!
 
 ------
 
@@ -178,4 +178,4 @@ value for the Shapiro-Wilk normality test statistic of W = 0.94, and
 .. ----------------------------------------------------------------------------
 
 .. |aflsmall_margins|                  replace:: ``aflsmall_margins``
-.. _aflsmall_margins:                  _static/data/aflsmall_margins.omv
+.. _aflsmall_margins:                  ../_static/data/aflsmall_margins.omv

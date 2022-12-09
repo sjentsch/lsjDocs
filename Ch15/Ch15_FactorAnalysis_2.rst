@@ -218,4 +218,4 @@ little different. See :numref:`fig-pca6`.
 .. _Rj:                                https://docs.jamovi.org/_pages/Rj_overview.html
 
 .. |bfi_sample|                        replace:: ``bfi_sample``
-.. _bfi_sample:                        _static/data/bfi_sample.omv
+.. _bfi_sample:                        ../_static/data/bfi_sample.omv

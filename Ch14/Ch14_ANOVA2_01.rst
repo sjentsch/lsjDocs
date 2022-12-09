@@ -658,10 +658,10 @@ matter (bottom-left), and (4) neither A nor B matters (bottom-right).
 .. ----------------------------------------------------------------------------
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
-.. _clinicaltrial:                     _static/data/clinicaltrial.omv
+.. _clinicaltrial:                     ../_static/data/clinicaltrial.omv
 
 .. |clinicaltrial_factorialanova|      replace:: ``clinicaltrial_factorialanova``
-.. _clinicaltrial_factorialanova:      _static/data/clinicaltrial_factorialanova.omv
+.. _clinicaltrial_factorialanova:      ../_static/data/clinicaltrial_factorialanova.omv
 
 .. |continuous|                       image:: ../_images/variable-continuous.*
    :width: 16px

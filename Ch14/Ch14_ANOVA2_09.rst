@@ -141,4 +141,4 @@ to before, but with a lot more comparisons made.
 .. ----------------------------------------------------------------------------
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
-.. _clinicaltrial:                     _static/data/clinicaltrial.omv
+.. _clinicaltrial:                     ../_static/data/clinicaltrial.omv

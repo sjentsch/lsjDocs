@@ -600,7 +600,7 @@ information to include in your write-up:
 .. _Rj:                                https://docs.jamovi.org/_pages/Rj_overview.html
 
 .. |bfi_sample|                        replace:: ``bfi_sample``
-.. _bfi_sample:                        _static/data/bfi_sample.omv
+.. _bfi_sample:                        ../_static/data/bfi_sample.omv
 
 .. |continuous|                       image:: ../_images/variable-continuous.*
    :width: 16px

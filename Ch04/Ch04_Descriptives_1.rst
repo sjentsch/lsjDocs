@@ -386,7 +386,7 @@ should bet on a 3 point margin.
 .. ----------------------------------------------------------------------------
    
 .. |aflsmall_finalists|                replace:: ``aflsmall_finalists``
-.. _aflsmall_finalists:                _static/data/aflsmall_finalists.omv
+.. _aflsmall_finalists:                ../_static/data/aflsmall_finalists.omv
 
 .. |continuous|                       image:: ../_images/variable-continuous.*
    :width: 16px

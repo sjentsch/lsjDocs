@@ -105,5 +105,5 @@ equation looks like this
 .. ----------------------------------------------------------------------------
 
 .. |parenthood|                        replace:: ``parenthood``
-.. _parenthood:                        _static/data/parenthood.omv
+.. _parenthood:                        ../_static/data/parenthood.omv
 

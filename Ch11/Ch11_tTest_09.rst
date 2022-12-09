@@ -4,11 +4,11 @@ Testing non-normal data with Wilcoxon tests
 -------------------------------------------
 
 Okay, suppose your data turn out to be pretty substantially non-normal,
-but you still want to run something like a *t*-test? This
-situation occurs a lot in real life. For the AFL winning margins data,
-for instance, the Shapiro-Wilk test made it very clear that the
-normality assumption is violated. This is the situation where you want
-to use Wilcoxon tests.
+but you still want to run something like a *t*-test? This situation occurs
+a lot in real life. For the AFL winning margins data (``afl.margins`` from
+the |aflsmall_margins|_ data set), for instance, the Shapiro-Wilk test made
+it very clear that the normality assumption is violated. This is the
+situation where you want to use Wilcoxon tests.
 
 Like the *t*-test, the Wilcoxon test comes in two forms,
 one-sample and two-sample, and they’re used in more or less the exact
@@ -127,11 +127,14 @@ of the test won’t give us a different answer, of course; see
 
 .. ----------------------------------------------------------------------------
 
+.. |aflsmall_margins|                  replace:: ``aflsmall_margins``
+.. _aflsmall_margins:                  ../_static/data/aflsmall_margins.omv
+
 .. |awesome|                           replace:: ``awesome``
-.. _awesome:                           _static/data/awesome.omv
+.. _awesome:                           ../_static/data/awesome.omv
 
 .. |happiness|                         replace:: ``happiness``
-.. _happiness:                         _static/data/happiness.omv
+.. _happiness:                         ../_static/data/happiness.omv
 
 .. |continuous|                       image:: ../_images/variable-continuous.*
    :width: 16px

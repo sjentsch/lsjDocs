@@ -83,4 +83,4 @@ jamovi will create a scatterplot matrix for you, just like the one in
 .. ----------------------------------------------------------------------------
 
 .. |parenthood|                        replace:: ``parenthood``
-.. _parenthood:                        _static/data/parenthood.omv
+.. _parenthood:                        ../_static/data/parenthood.omv

@@ -89,4 +89,4 @@ to get closer and closer to the true population parameters.
 .. ----------------------------------------------------------------------------
 
 .. |IQsim|                             replace:: ``IQsim``
-.. _IQsim:                             _static/data/IQsim.omv
+.. _IQsim:                             ../_static/data/IQsim.omv

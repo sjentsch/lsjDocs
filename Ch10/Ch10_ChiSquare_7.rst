@@ -172,7 +172,7 @@ the same test.
 .. ----------------------------------------------------------------------------
 
 .. |agpp|                              replace:: ``agpp``
-.. _agpp:                              _static/data/agpp.omv
+.. _agpp:                              ../_static/data/agpp.omv
 
 .. |cards|                             replace:: ``cards``
-.. _cards:                             _static/data/cards.omv
+.. _cards:                             ../_static/data/cards.omv

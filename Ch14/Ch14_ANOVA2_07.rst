@@ -543,13 +543,13 @@ ANOVA model, so the degrees of freedom for the residuals is
 .. ----------------------------------------------------------------------------
 
 .. |rtfm|                              replace:: ``rtfm``
-.. _rtfm:                              _static/data/rtfm.omv
+.. _rtfm:                              ../_static/data/rtfm.omv
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
-.. _clinicaltrial:                     _static/data/clinicaltrial.omv
+.. _clinicaltrial:                     ../_static/data/clinicaltrial.omv
 
 .. |clinicaltrial2|                    replace:: ``clinicaltrial2``
-.. _clinicaltrial2:                    _static/data/clinicaltrial2.omv
+.. _clinicaltrial2:                    ../_static/data/clinicaltrial2.omv
 
 .. |nominal|                          image:: ../_images/variable-nominal.*
    :width: 16px

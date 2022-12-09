@@ -105,4 +105,4 @@ hypothesis that people on fire are just as happy as people not on fire
    of a test <../Ch09/Ch09_HypothesisTesting_05>`.
    
 .. |salem|                             replace:: ``salem``
-.. _salem:                             _static/data/salem.omv
+.. _salem:                             ../_static/data/salem.omv
