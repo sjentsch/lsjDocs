@@ -41,16 +41,16 @@ Suppose we were interested in finding out whether or not the tendency of people
 to ``babble`` when they have too much coffee is purely an effect of the coffee 
 itself, or whether there’s some effect of the ``milk`` and ``sugar`` that
 people add to the coffee. Suppose we took 18 people and gave them some coffee
-to drink. The amount of coffee / caffeine was held constant, and we varied
-whether or not milk was added, so ``milk`` is a binary factor |nominal| with
-two levels, ``yes`` and ``no``. We also varied the kind of sugar involved. The
-coffee |nominal| might contain ``real`` sugar or it might contain ``fake``
-sugar (i.e., artificial sweetener) or it might contain ``none`` at all, so the
-``sugar`` variable |nominal| is a three level factor. Our outcome variable is a
-continuous variable |continuous| that presumably refers to some psychologically
-sensible measure of the extent to which someone is “babbling”. The details
-don’t really matter for our purpose. Take a look at the data in the jamovi
-spreadsheet view, as in :numref:`fig-factorialanova15`\.
+to drink. The amount of coffee, i.e., the caffeine, was held constant, and we
+varied whether or not milk was added, so ``milk`` is a binary factor |nominal|
+with two levels, ``yes`` and ``no``. We also varied the kind of sugar involved.
+The coffee might contain ``real`` sugar or it might contain ``fake`` sugar
+(i.e., artificial sweetener) or it might contain ``none`` at all, so the
+``sugar`` variable |nominal| is a three level factor. Our outcome variable
+``babble`` is a continuous variable |continuous| that presumably refers to
+some psychologically sensible measure of the extent to which someone is
+“babbling”. The details don’t really matter for our purpose. Take a look at
+the data in the jamovi spreadsheet view, as in :numref:`fig-factorialanova15`\.
 
 .. ----------------------------------------------------------------------------
 
@@ -118,7 +118,7 @@ Type 1 sum of squares
 
 The Type 1 method is sometimes referred to as the “sequential” sum of
 squares, because it involves a process of adding terms to the model one
-at a time. Consider the coffee data, for instance. Suppose we want to
+at a time. Consider, for instance, the |coffee|_ data. Suppose we want to
 run the full 3 × 2 factorial ANOVA, including interaction
 terms. The full model contains the outcome variable ``babble``, the
 predictor variables ``sugar`` and ``milk``, and the interaction term
@@ -132,7 +132,7 @@ milk nor sugar is assumed to have any effect on babbling. The only term
 that would be included in such a model is the intercept, written as
 ``babble ~ 1``. This is our initial null hypothesis. The next simplest
 model for the data would be one in which only one of the two main
-effects is included. In the coffee data, there are two different
+effects is included. In the |coffee|_ data, there are two different
 possible choices here, because we could choose to add milk first or to
 add sugar first. The order actually turns out to matter, as we’ll see
 later, but for now let’s just make a choice arbitrarily and pick sugar.
@@ -185,7 +185,7 @@ options. This gives us the ANOVA table shown in :numref:`fig-factorialanova16`.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova16.*
-   :alt: Results table using Type 1 sum of squares, factor sugar entered first
+   :alt: Results table using Type 1 sum of squares, factor ``sugar`` entered first
    :name: fig-factorialanova16
 
    ANOVA results table using Type 1 sum of squares in jamovi (with the
@@ -249,7 +249,7 @@ tests is extremely simple. Regardless of which term you’re trying to
 evaluate, run the *F*-test in which the alternative hypothesis
 corresponds to the full ANOVA model as specified by the user, and the
 null model just deletes that one term that you’re testing. For instance,
-in the coffee example, in which our full model was
+in the example from the |coffee|_ data set, in which our full model was
 ``babble ~ sugar + milk + sugar * milk``, the test for a main effect of
 ``sugar`` would correspond to a comparison between the following two
 models:
@@ -325,7 +325,7 @@ removed the asymmetry that caused us to have problems when running Type
 results of the hypothesis tests do not depend on the order in which we
 specify them. This is definitely a good thing. However, there is a big
 problem when interpreting the results of the tests, especially for main
-effect terms. Consider the coffee data. Suppose it turns out that the
+effect terms. Consider the |coffee|_ data. Suppose it turns out that the
 main effect of ``milk`` is not significant according to the Type 3
 tests. What this is telling us is that ``babble ~ sugar + sugar * milk``
 is a better model for the data than the full model. But what does that
@@ -458,7 +458,7 @@ factorial ANOVA:
 |                      | A * B + A * C + B * C``| A * C + B * C + A * B * C`` |
 +----------------------+------------------------+-----------------------------+
 
-In the context of the two way ANOVA that we’ve been using in the coffee
+In the context of the two way ANOVA that we’ve been using in the |coffee|_
 data, the hypothesis tests are even simpler. The main effect of
 ``sugar`` corresponds to an *F*-test comparing these two models:
 
