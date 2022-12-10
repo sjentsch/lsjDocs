@@ -91,7 +91,7 @@ situation. Some methods will be more appropriate to your situation than
 others. Given all this, it’s important to understand what the different
 types of ANOVA are and how they differ from one another.
 
-The first kind of ANOVA is conventionally referred to as **Type I sum of
+The first kind of ANOVA is conventionally referred to as **Type 1 sum of
 squares**. I’m sure you can guess what the other two are called. The “sum of
 squares” part of the name was introduced by the SAS statistical software
 package and has become standard nomenclature, but it’s a bit misleading in some
@@ -110,20 +110,20 @@ comparison between two linear models. So, when you’re looking at an ANOVA
 table, it helps to remember that each of those *F*-tests corresponds to a
 *pair* of models that are being compared. Of course, this leads naturally to
 the question of *which* pair of models is being compared. This is the
-fundamental difference between ANOVA Types I, II and III: each one corresponds
+fundamental difference between ANOVA Types 1, 2 and 3: each one corresponds
 to a different way of choosing the model pairs for the tests.
 
-Type I sum of squares
+Type 1 sum of squares
 ~~~~~~~~~~~~~~~~~~~~~
 
-The Type I method is sometimes referred to as the “sequential” sum of
+The Type 1 method is sometimes referred to as the “sequential” sum of
 squares, because it involves a process of adding terms to the model one
 at a time. Consider the coffee data, for instance. Suppose we want to
 run the full 3 × 2 factorial ANOVA, including interaction
 terms. The full model contains the outcome variable ``babble``, the
 predictor variables ``sugar`` and ``milk``, and the interaction term
 ``sugar * milk``. This can be written as
-``babble ~ sugar + milk + sugar * milk``. The Type I strategy builds this
+``babble ~ sugar + milk + sugar * milk``. The Type 1 strategy builds this
 model up sequentially, starting from the simplest possible model and
 gradually adding terms.
 
@@ -161,7 +161,7 @@ comparing the following pair of models:
 This comparison forms our hypothesis test of the main effect of
 ``milk``. In one sense, this approach is very elegant: the alternative
 hypothesis from the first test forms the null hypothesis for the second
-one. It is in this sense that the Type I method is strictly sequential.
+one. It is in this sense that the Type 1 method is strictly sequential.
 Every test builds directly on the results of the last one. However, in
 another sense it’s very inelegant, because there’s a strong asymmetry
 between the two tests. The test of the main effect of ``sugar`` (the
@@ -177,7 +177,7 @@ test is:
 | Alternative model: | ``babble ~ sugar + milk + sugar * milk`` |
 +--------------------+------------------------------------------+
 
-Type III sum of squares is the default hypothesis testing method used by jamovi
+Type 3 sum of squares is the default hypothesis testing method used by jamovi
 ANOVA, so to run a Type 1 sum of squares analysis we have to select ``Type 1``
 in the ``Sum of squares`` selection box in the jamovi ``ANOVA`` → ``Model``
 options. This gives us the ANOVA table shown in :numref:`fig-factorialanova16`.
@@ -185,16 +185,16 @@ options. This gives us the ANOVA table shown in :numref:`fig-factorialanova16`.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova16.*
-   :alt: Results table using Type I sum of squares, factor sugar entered first
+   :alt: Results table using Type 1 sum of squares, factor sugar entered first
    :name: fig-factorialanova16
 
-   ANOVA results table using Type I sum of squares in jamovi (with the
+   ANOVA results table using Type 1 sum of squares in jamovi (with the
    |coffee|_ data set and a saturated model with the factors ``sugar``,
    ``milk``, and their interaction; factor ``sugar`` is entered first).
    
 .. ----------------------------------------------------------------------------
 
-The big problem with using Type I sum of squares is the fact that it really
+The big problem with using Type 1 sum of squares is the fact that it really
 does depend on the order in which you enter the variables. Yet, in many
 situations the researcher has no reason to prefer one ordering over another.
 This is presumably the case for our milk and sugar problem. Should we add milk
@@ -207,10 +207,10 @@ the question. Yet, look what happens when we change the ordering, as in
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova17.*
-   :alt: Results table using Type I sum of squares, factor milk entered first
+   :alt: Results table using Type 1 sum of squares, factor milk entered first
    :name: fig-factorialanova17
 
-   ANOVA results table using Type I sum of squares in jamovi (with the
+   ANOVA results table using Type 1 sum of squares in jamovi (with the
    |coffee|_ data set and a saturated model with the factors ``milk``,
    ``sugar``, and their interaction; factor ``milk`` is entered first).
    
@@ -227,24 +227,24 @@ When you look at the hypothesis tests that are used to define the
 qualitatively different from one another. In our initial example, we saw
 that the test for the main effect of ``sugar`` completely ignores
 ``milk``, whereas the test of the main effect of ``milk`` does take
-``sugar`` into account. As such, the Type I testing strategy really does
+``sugar`` into account. As such, the Type 1 testing strategy really does
 treat the first main effect as if it had a kind of theoretical primacy
 over the second one. In my experience there is very rarely if ever any
 theoretically primacy of this kind that would justify treating any two
 main effects asymmetrically.
 
-The consequence of all this is that Type I tests are very rarely of much
-interest, and so we should move on to discuss Type II tests and Type III
+The consequence of all this is that Type 1 tests are very rarely of much
+interest, and so we should move on to discuss Type 2 tests and Type 3
 tests.
 
-Type III sum of squares
+Type 3 sum of squares
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Having just finished talking about Type I tests, you might think that
-the natural thing to do next would be to talk about Type II tests.
-However, I think it’s actually a bit more natural to discuss Type III
+Having just finished talking about Type 1 tests, you might think that
+the natural thing to do next would be to talk about Type 2 tests.
+However, I think it’s actually a bit more natural to discuss Type 3
 tests (which are simple and the default in jamovi ANOVA) before talking
-about Type II tests (which are trickier). The basic idea behind Type III
+about Type 2 tests (which are trickier). The basic idea behind Type 3
 tests is extremely simple. Regardless of which term you’re trying to
 evaluate, run the *F*-test in which the alternative hypothesis
 corresponds to the full ANOVA model as specified by the user, and the
@@ -283,7 +283,7 @@ The basic idea generalises to higher order ANOVAs. For instance, suppose
 that we were trying to run an ANOVA with three factors, ``A``, ``B`` and
 ``C``, and we wanted to consider all possible main effects and all
 possible interactions, including the three way interaction ``A*B*C``.
-The table below shows you what the Type III tests look like for this
+The table below shows you what the Type 3 tests look like for this
 situation:
 
 +---------------+-----------------------------+-----------------------------+
@@ -319,14 +319,14 @@ three main effect terms (e.g. ``A``), three two-way interactions (e.g.
 always contains 6 of these 7 terms, and the missing one is the one whose
 significance we’re trying to test.
 
-At first pass, Type III tests seem like a nice idea. Firstly, we’ve
+At first pass, Type 3 tests seem like a nice idea. Firstly, we’ve
 removed the asymmetry that caused us to have problems when running Type
-I tests. And because we’re now treating all terms the same way, the
+1 tests. And because we’re now treating all terms the same way, the
 results of the hypothesis tests do not depend on the order in which we
 specify them. This is definitely a good thing. However, there is a big
 problem when interpreting the results of the tests, especially for main
 effect terms. Consider the coffee data. Suppose it turns out that the
-main effect of ``milk`` is not significant according to the Type III
+main effect of ``milk`` is not significant according to the Type 3
 tests. What this is telling us is that ``babble ~ sugar + sugar * milk``
 is a better model for the data than the full model. But what does that
 even *mean*? If the interaction term ``sugar * milk`` was also
@@ -340,61 +340,61 @@ meaningless\ [#]_ to talk about the main effect if the interaction is
 significant. In general, this seems to be what most statisticians advise
 us to do, and I think that’s the right advice. But if it really is
 meaningless to talk about non-significant main effects in the presence
-of a significant interaction, then it’s not at all obvious why Type III
+of a significant interaction, then it’s not at all obvious why Type 3
 tests should allow the null hypothesis to rely on a model that includes
 the interaction but omits one of the main effects that make it up. When
 characterised in this fashion, the null hypotheses really don’t make
 much sense at all.
 
-Later on, we’ll see that Type III tests can be redeemed in some
+Later on, we’ll see that Type 3 tests can be redeemed in some
 contexts, but first let’s take a look at the ANOVA results table using
-Type III sum of squares, see :numref:`fig-factorialanova18`.
+Type 3 sum of squares, see :numref:`fig-factorialanova18`.
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova18.*
-   :alt: Results table using Type III sum of squares
+   :alt: Results table using Type 3 sum of squares
    :name: fig-factorialanova18
 
-   ANOVA results table using Type III sum of squares in jamovi (with the
+   ANOVA results table using Type 3 sum of squares in jamovi (with the
    |coffee|_ data set and a saturated model with the factors ``sugar``,
    ``milk``, and their interaction).
    
 .. ----------------------------------------------------------------------------
 
-But be aware, one of the perverse features of the Type III testing strategy is
+But be aware, one of the perverse features of the Type 3 testing strategy is
 that typically the results turn out to depend on the *contrasts* that you use
 to encode your factors (see section :doc:`Different ways to specify contrasts
 <../Ch14/Ch14_ANOVA2_08>` if you’ve forgotten what the different types of
 contrasts are).\ [#]_
 
-Okay, so if the *p*-values that typically come out of Type III analyses (but
+Okay, so if the *p*-values that typically come out of Type 3 analyses (but
 not in jamovi) are so sensitive to the choice of contrasts, does that mean that
-Type III tests are essentially arbitrary and not to be trusted? To some extent
-that’s true, and when we turn to a discussion of Type II tests we’ll see that
-Type II analyses avoid this arbitrariness entirely, but I think that’s too
+Type 3 tests are essentially arbitrary and not to be trusted? To some extent
+that’s true, and when we turn to a discussion of Type 2 tests we’ll see that
+Type 2 analyses avoid this arbitrariness entirely, but I think that’s too
 strong a conclusion. Firstly, it’s important to recognise that some choices of
 contrasts will always produce the same answers (ah, so this is what is
 happening in jamovi). Of particular importance is the fact that if the columns
-of our contrast matrix are all constrained to sum to zero, then the Type III
+of our contrast matrix are all constrained to sum to zero, then the Type 3
 analysis will always give the same answers.
 
-Type II sum of squares
+Type 2 sum of squares
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Okay, so we’ve seen Type I and III tests now, and both are pretty
-straightforward. Type I tests are performed by gradually adding terms
-one at a time, whereas Type III tests are performed by taking the full
+Okay, so we’ve seen Type 1 and 3 tests now, and both are pretty
+straightforward. Type 1 tests are performed by gradually adding terms
+one at a time, whereas Type 3 tests are performed by taking the full
 model and looking to see what happens when you remove each term.
-However, both can have some limitations. Type I tests are dependent on
-the order in which you enter the terms, and Type III tests are dependent
-on how you code up your contrasts. Type II tests are a little harder to
+However, both can have some limitations. Type 1 tests are dependent on
+the order in which you enter the terms, and Type 3 tests are dependent
+on how you code up your contrasts. Type 2 tests are a little harder to
 describe, but they avoid both of these problems, and as a result they
 are a little easier to interpret.
 
-Type II tests are broadly similar to Type III tests. Start with a “full”
+Type 2 tests are broadly similar to Type 3 tests. Start with a “full”
 model, and test a particular term by deleting it from that model.
-However, Type II tests are based on the **marginality principle** which
+However, Type 2 tests are based on the **marginality principle** which
 states that you should not omit a lower order term from your model if
 there are any higher order ones that depend on it. So, for instance, if
 your model contains the two-way interaction ``A * B`` (a 2nd order term),
@@ -402,10 +402,10 @@ then it really ought to contain the main effects ``A`` and ``B`` (1st
 order terms). Similarly, if it contains a three-way interaction term
 ``A * B * C``, then the model must also include the main effects ``A``,
 ``B`` and ``C`` as well as the simpler interactions ``A * B``, ``A * C`` and
-``B * C``. Type III tests routinely violate the marginality principle. For
+``B * C``. Type 3 tests routinely violate the marginality principle. For
 instance, consider the test of the main effect of ``A`` in the context
 of a three-way ANOVA that includes all possible interaction terms.
-According to Type III tests, our null and alternative models are:
+According to Type 3 tests, our null and alternative models are:
 
 +--------------------+-----------------------------------------------------------+
 | Null model:        | ``outcome ~ B + C + A * B + A * C + B * C + A * B * C``   |
@@ -415,14 +415,14 @@ According to Type III tests, our null and alternative models are:
 
 Notice that the null hypothesis omits ``A``, but includes ``A * B``,
 ``A * C`` and ``A * B * C`` as part of the model. This, according to the Type
-II tests, is not a good choice of null hypothesis. What we should do
+2 tests, is not a good choice of null hypothesis. What we should do
 instead, if we want to test the null hypothesis that ``A`` is not
 relevant to our ``outcome``, is to specify the null hypothesis that is
 the most complicated model that does not rely on ``A`` in any form, even
 as an interaction. The alternative hypothesis corresponds to this null
 model plus a main effect term of ``A``. This is a lot closer to what
 most people would intuitively think of as a “main effect of ``A``”, and
-it yields the following as our Type II test of the main effect of
+it yields the following as our Type 2 test of the main effect of
 ``A``:\ [#]_
 
 +--------------------+---------------------------------+
@@ -431,7 +431,7 @@ it yields the following as our Type II test of the main effect of
 | Alternative model: | ``outcome ~ A + B + C + B * C`` |
 +--------------------+---------------------------------+
 
-Anyway, just to give you a sense of how the Type II tests play out,
+Anyway, just to give you a sense of how the Type 2 tests play out,
 here’s the full table of tests that would be applied in a three-way
 factorial ANOVA:
 
@@ -491,28 +491,28 @@ This gives us the ANOVA table shown in :numref:`fig-factorialanova19`.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova19.*
-   :alt: Results table using Type II sum of squares
+   :alt: Results table using Type 2 sum of squares
    :name: fig-factorialanova19
 
-   ANOVA results table using Type II sum of squares in jamovi (with the
+   ANOVA results table using Type 2 sum of squares in jamovi (with the
    |coffee|_ data set and a saturated model with the factors ``sugar``,
    ``milk``, and their interaction).
    
 .. ----------------------------------------------------------------------------
 
-Type II tests have some clear advantages over Type I and Type III tests.
+Type 2 tests have some clear advantages over Type 1 and Type 3 tests.
 They don’t depend on the order in which you specify factors (unlike Type
-I), and they don’t depend on the contrasts that you use to specify your
-factors (unlike Type III). And although opinions may differ on this last
+1), and they don’t depend on the contrasts that you use to specify your
+factors (unlike Type 3). And although opinions may differ on this last
 point, and it will definitely depend on what you’re trying to do with
 your data, I do think that the hypothesis tests that they specify are
 more likely to correspond to something that you actually care about. As
 a consequence, I find that it’s usually easier to interpret the results
-of a Type II test than the results of a Type I or Type III test. For
+of a Type 2 test than the results of a Type 1 or Type 3 test. For
 this reason my tentative advice is that, if you can’t think of any
 obvious model comparisons that directly map onto your research questions
-but you still want to run an ANOVA in an unbalanced design, Type II
-tests are probably a better choice than Type I or Type III.\ [#]_
+but you still want to run an ANOVA in an unbalanced design, Type 2
+tests are probably a better choice than Type 1 or Type 3.\ [#]_
 
 Effect sizes (and non-additive sums of squares)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -578,11 +578,11 @@ main effect of one or the other predictor, or the interaction.
 This uncertainty is the reason for the missing variance. The “missing”
 variance corresponds to variation in the outcome variable that is
 clearly attributable to the predictors, but we don’t know which of the
-effects in the model is responsible. When you calculate Type I sum of
-squares, no variance ever goes missing. The sequential nature of Type I
+effects in the model is responsible. When you calculate Type 1 sum of
+squares, no variance ever goes missing. The sequential nature of Type 1
 sum of squares means that the ANOVA automatically attributes this
-variance to whichever effects are entered first. However, the Type II
-and Type III tests are more conservative. Variance that cannot be
+variance to whichever effects are entered first. However, the Type 2
+and Type 3 tests are more conservative. Variance that cannot be
 clearly attributed to a specific effect doesn’t get attributed to any of
 them, and it goes missing.
 
@@ -615,7 +615,7 @@ them, and it goes missing.
    Or, at the very least, rarely of interest.
 
 .. [#]
-   However, in jamovi the results for Type III sum of squares ANOVA are
+   However, in jamovi the results for Type 3 sum of squares ANOVA are
    the same regardless of the contrast selected, so jamovi is obviously
    doing something different!
 
@@ -623,26 +623,26 @@ them, and it goes missing.
    Note, of course, that this does depend on the model that the user
    specified. If the original ANOVA model doesn’t contain an interaction
    term for ``B * C``, then obviously it won’t appear in either the null
-   or the alternative. But that’s true for Types I, II and III. They
+   or the alternative. But that’s true for Types 1, 2 and 3. They
    never include any terms that you *didn’t* include, but they make
    different choices about how to construct tests for the ones that you
    did include.
 
 .. [#]
-   I find it amusing to note that the default in R is Type I and the
-   default in SPSS and jamovi is Type III. Neither of these appeals to
+   I find it amusing to note that the default in R is Type 1 and the
+   default in SPSS and jamovi is Type 3. Neither of these appeals to
    me all that much. Relatedly, I find it depressing that almost nobody
    in the psychological literature ever bothers to report which Type of
-   tests they ran, much less the order of variables (for Type I) or the
-   contrasts used (for Type III). Often they don’t report what software
+   tests they ran, much less the order of variables (for Type 1) or the
+   contrasts used (for Type 3). Often they don’t report what software
    they used either. The only way I can ever make any sense of what
    people typically report is to try to guess from auxiliary cues which
    software they were using, and to assume that they never changed the
    default settings. Please don’t do this! Now that you know about these
    issues make sure you indicate what software you used, and if you’re
    reporting ANOVA results for unbalanced data, then specify what Type
-   of tests you ran, specify order information if you’ve done Type I
-   tests and specify contrasts if you’ve done Type III tests. Or, even
+   of tests you ran, specify order information if you’ve done Type 1
+   tests and specify contrasts if you’ve done Type 3 tests. Or, even
    better, do hypotheses tests that correspond to things you really care
    about and then report those!
    
