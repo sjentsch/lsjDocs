@@ -48,11 +48,11 @@ would be interested in the following four comparisons:
 For any one of these comparisons, we’re interested in the true
 difference between (population) group means. Tukey’s HSD constructs
 **simultaneous confidence intervals** for all four of these comparisons.
-What we mean by 95% “simultaneous” confidence interval is that, if we
-were to repeat this study many times, then in 95% of the study results
+What we mean by 95\% “simultaneous” confidence interval is that, if we
+were to repeat this study many times, then in 95\% of the study results
 the confidence intervals would contain the relevant true value.
 Moreover, we can use these confidence intervals to calculate an adjusted
-*p* value for any specific comparison.
+*p*-value for any specific comparison.
 
 The ``TukeyHSD`` function in jamovi is pretty easy to use. You simply
 specify the ANOVA model term that you want to run the post-hoc tests

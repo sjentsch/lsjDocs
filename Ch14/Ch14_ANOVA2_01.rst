@@ -96,7 +96,7 @@ during our study. What we want to make inferences about are the
 corresponding population parameters. That is, the true means as they
 exist within some broader population. Those population means can also be
 organised into a similar table, but we’ll need a little mathematical
-notation to do so. As usual, I’ll use the symbol *µ* to denote a
+notation to do so. As usual, I’ll use the symbol µ to denote a
 population mean. However, because there are lots of different means,
 I’ll need to use subscripts to distinguish between them.
 
@@ -283,7 +283,7 @@ with a mean square value of 1.73. For the ``therapy`` factor, there’s only 1
 degree of freedom, so our calculations are even simpler: dividing 0.47 (the SS
 value) by 1 gives us an answer of 0.47 (the MS value).
 
-Turning to the *F* statistics and the *p* values, notice
+Turning to the *F* statistics and the *p*-values, notice
 that we have two of each; one corresponding to the ``drug`` factor and
 the other corresponding to the ``therapy`` factor. Regardless of which
 one we’re talking about, the *F* statistic is calculated by
@@ -309,14 +309,14 @@ by 0.07 which gives 7.08 as the *F*-statistic. Not surprisingly, of course,
 these are the same values that jamovi has reported in the ANOVA table
 above.
 
-Also in the ANOVA table is the calculation of the *p* values. Once
+Also in the ANOVA table is the calculation of the *p*-values. Once
 again, there is nothing new here. For each of our two factors what we’re
 trying to do is test the null hypothesis that there is no relationship
 between the factor and the outcome variable (I’ll be a bit more precise
 about this later on). To that end, we’ve (apparently) followed a similar
 strategy to what we did in the One-Way ANOVA and have calculated an
 *F*-statistic for each of these hypotheses. To convert these to
-*p* values, all we need to do is note that the sampling
+*p*-values, all we need to do is note that the sampling
 distribution for the *F* *statistic* under the null hypothesis
 (that the factor in question is irrelevant) is an *F*
 *distribution*. Also note that the two degrees of freedom values are
@@ -585,7 +585,7 @@ factors are identical in the two different analyses (3.453 for ``drug`` and
 \0.467 for ``therapy``), as are the degrees of freedom (2 for ``drug``, 1 for
 ``therapy``). But they don’t give the same answers! Most notably, when we ran
 the one-way ANOVA for ``therapy`` in section :doc:`On the relationship between
-ANOVA and the Student t-test <../Ch13/Ch13_ANOVA_09>` we didn’t find a
+ANOVA and the Student *t*-test <../Ch13/Ch13_ANOVA_09>` we didn’t find a
 significant effect (the *p*-value was 0.210). However, when we look at the main
 effect of ``therapy`` within the context of the two-way ANOVA, we do get a
 significant effect (p = 0.019). The two analyses are clearly not the same.

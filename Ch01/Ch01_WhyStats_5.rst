@@ -14,7 +14,7 @@ articles posted to the ABC news website. Of those 20 articles, it turned out
 that 8 of them involved a discussion of something that I would call a
 statistical topic and 6 of those made a mistake. The most common error, if
 you’re curious, was failing to report baseline data (e.g., the article mentions
-that 5% of people in situation X have some characteristic Y, but doesn’t say
+that 5\% of people in situation X have some characteristic Y, but doesn’t say
 how common the characteristic is for everyone else!). The point I’m trying to
 make here isn’t that journalists are bad at statistics (though they almost
 always are), it’s that a basic knowledge of statistics is very helpful for
@@ -34,7 +34,7 @@ fair, you wouldn’t be far wrong, but research methodology is a broader
 concept than statistics. So most research methods courses will cover a
 lot of topics that relate much more to the pragmatics of research
 design, and in particular the issues that you encounter when trying to
-do research with humans. However, about 99% of student *fears* relate to
+do research with humans. However, about 99\% of student *fears* relate to
 the statistics part of the course, so I’ve focused on the stats in this
 discussion, and hopefully I’ve convinced you that statistics matters,
 and more importantly, that it’s not to be feared. That being said, it’s

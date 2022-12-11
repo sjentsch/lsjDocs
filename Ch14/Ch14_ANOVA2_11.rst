@@ -98,7 +98,7 @@ package and has become standard nomenclature, but it’s a bit misleading in som
 ways. I think the logic for referring to them as different types of sum of
 squares is that, when you look at the ANOVA tables that they produce, the key
 difference in the numbers is the SS values. The degrees of freedom don’t
-change, the MS values are still defined as SS divided by df, etc. However, what
+change, the MS values are still defined as SS divided by *df*, etc. However, what
 the terminology gets wrong is that it hides the reason *why* the SS values are
 different from one another. To that end, it’s a lot more helpful to think of
 the three different kinds of ANOVA as three different *hypothesis testing

@@ -47,16 +47,16 @@ everyday life, but let’s have a think about what it entails. A polling
 company has conducted a survey, usually a pretty big one because they
 can afford it. I’m too lazy to track down the original survey so let’s
 just imagine that they called 1000 New South Wales (NSW) voters at
-random, and 230 (23%) of those claimed that they intended to vote for
+random, and 230 (23\%) of those claimed that they intended to vote for
 the Australian Labor Party (ALP). For the 2010 Federal election the
 Australian Electoral Commission reported 4,610,795 enrolled voters in
-NSW, so the opinions of the remaining 4,609,795 voters (about 99.98% of
+NSW, so the opinions of the remaining 4,609,795 voters (about 99.98\% of
 voters) remain unknown to us. Even assuming that no-one lied to the
-polling company the only thing we can say with 100% confidence is that
+polling company the only thing we can say with 100\% confidence is that
 the true ALP primary vote is somewhere between 230/4610795 (about
-\0.005%) and 4610025/4610795 (about 99.83%). So, on what basis is it
+\0.005\%) and 4610025/4610795 (about 99.83\%). So, on what basis is it
 legitimate for the polling company, the newspaper, and the readership to
-conclude that the ALP primary vote is only about 23%?
+conclude that the ALP primary vote is only about 23\%?
 
 The answer to the question is pretty obvious. If I call 1000 people at
 random, and 230 of them say they intend to vote for the ALP, then it
@@ -65,9 +65,9 @@ entire voting public who actually intend to vote ALP. In other words, we
 assume that the data collected by the polling company is pretty
 representative of the population at large. But how representative? Would
 we be surprised to discover that the true ALP primary vote is actually
-24%? 29%? 37%? At this point everyday intuition starts to break down a
-bit. No-one would be surprised by 24%, and everybody would be surprised
-by 37%, but it’s a bit hard to say whether 29% is plausible. We need
+24\%? 29\%? 37\%? At this point everyday intuition starts to break down a
+bit. No-one would be surprised by 24\%, and everybody would be surprised
+by 37\%, but it’s a bit hard to say whether 29\% is plausible. We need
 some more powerful tools than just looking at the numbers and guessing.
 
 **Inferential statistics** provides the tools that we need to answer

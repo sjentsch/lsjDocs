@@ -9,12 +9,12 @@ section :doc:`The difference between one-sided and two-sided tests
 <../Ch09/Ch09_HypothesisTesting_04>`). So far all of the *t*-tests have been
 two-sided tests. For instance, when we specified a one sample *t*-test for the
 grades in Dr Zeppo’s class the null hypothesis was that the true mean was
-67.5%. The alternative hypothesis was that the true mean was greater than *or*
-less than 67.5%. Suppose we were only interested in finding out if the true
-mean is greater than 67.5%, and have no interest whatsoever in testing to find
-out if the true mean is lower than \67.5%. If so, our null hypothesis would be
-that the true mean is 67.5% or less, and the alternative hypothesis would be
-that the true mean is greater than 67.5%. In jamovi, for the ``One Sample
+67.5\%. The alternative hypothesis was that the true mean was greater than *or*
+less than 67.5\%. Suppose we were only interested in finding out if the true
+mean is greater than 67.5\%, and have no interest whatsoever in testing to find
+out if the true mean is lower than \67.5\%. If so, our null hypothesis would be
+that the true mean is 67.5\% or less, and the alternative hypothesis would be
+that the true mean is greater than 67.5\%. In jamovi, for the ``One Sample
 T-Test`` analysis, you can specify this by clicking on the ``> Test Value``
 option, under ``Hypothesis``. When you have done this, you will get the results
 as shown in :numref:`fig-ttest_onesided1`.
@@ -26,7 +26,7 @@ as shown in :numref:`fig-ttest_onesided1`.
    :name: fig-ttest_onesided1
 
    jamovi results showing a ``One Sample T-Test`` where the actual hypothesis
-   is one-sided, i.e. that the true mean is greater than 67.5%.
+   is one-sided, i.e. that the true mean is greater than 67.5\%.
    
 .. ----------------------------------------------------------------------------
 
@@ -42,15 +42,15 @@ and section :doc:`The difference between one-sided and two-sided tests
 that the confidence interval is different too: it now reports a “one-sided”
 confidence interval rather than a two-sided one. In a two-sided confidence
 interval we’re trying to find numbers *a* and *b* such that we’re confident
-that, if we were to repeat the study many times, then 95% of the time the mean
+that, if we were to repeat the study many times, then 95\% of the time the mean
 would lie *between* *a* and *b*. In a one-sided confidence interval, we’re
-trying to find a single number *a* such that we’re confident that 95% of the
+trying to find a single number *a* such that we’re confident that 95\% of the
 time the true mean would be *greater than* *a* (or less than *a* if you
 selected ``Measure 1 < Measure 2`` in the ``Hypothesis`` section).
 
 So that’s how to do a one-sided one sample *t*-test. However, all
 versions of the *t*-test can be one-sided. For an independent
-samples t test, you could have a one-sided test if you’re only
+samples *t*-test, you could have a one-sided test if you’re only
 interested in testing to see if group A has *higher* scores than group
 B, but have no interest in finding out if group B has higher scores than
 group A. Let’s suppose that, for Dr Harpo’s class, you wanted to see if

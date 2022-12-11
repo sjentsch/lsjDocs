@@ -39,11 +39,11 @@ the two groups.
 The standard answer to the problem of comparing means is to use a *t*-test, of
 which there are several varieties depending on exactly what question you want
 to solve. As a consequence, the majority of this chapter focuses on different
-types of *t*-test: :doc:`one sample t-tests <../Ch11/Ch11_tTest_02>` are discussed
-first, followed by two different flavours of the independent samples t-test:
+types of *t*-test: :doc:`one sample *t*-tests <../Ch11/Ch11_tTest_02>` are discussed
+first, followed by two different flavours of the independent samples *t*-test:
 The :doc:`Student test <../Ch11/Ch11_tTest_03>` assumes that the groups have the same
 standard deviation, the :doc:`Welch test <../Ch11/Ch11_tTest_04>` does not. Afterwards,
-:doc:`paired samples t-tests <../Ch11/Ch11_tTest_05>` are discussed. We’ll then talk
+:doc:`paired samples *t*-tests <../Ch11/Ch11_tTest_05>` are discussed. We’ll then talk
 about :doc:`One-sided tests <../Ch11/Ch11_tTest_06>` and, after that, we’ll talk a bit
 about Cohen’s *d*, which is the standard measure of :doc:`effect size
 <../Ch11/Ch11_tTest_07>` for a *t*-test. The later sections of the chapter focus on the

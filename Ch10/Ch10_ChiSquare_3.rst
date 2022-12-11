@@ -18,8 +18,8 @@ The main reason for this is that the true sampling distribution for the
 categorical data!) but the χ² distribution is continuous.
 This can introduce systematic problems. Specifically, when *N* is
 small and when *df* = 1, the goodness-of-fit statistic tends to be
-“too big”, meaning that you actually have a bigger *α* value
-than you think (or, equivalently, the *p* values are a bit too
+“too big”, meaning that you actually have a bigger α value
+than you think (or, equivalently, the *p*-values are a bit too
 small).
 
 `Yates (1934) <../Other/References.html#yates-1934>`__ suggested a simple fix,

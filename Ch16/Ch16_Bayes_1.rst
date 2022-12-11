@@ -41,8 +41,8 @@ fact, you might have decided to take a quick look on Wikipedia and
 discovered that Adelaide gets an `average of 4.6 days of rain across the
 31 days of January <https://en.wikipedia.org/wiki/Climate_of_Adelaide>`__.
 Without knowing anything else, you might conclude that the probability of
-January rain in Adelaide is about 15%, and the probability of a dry day
-is 85%. If this is really what you believe about Adelaide rainfall (and now
+January rain in Adelaide is about 15\%, and the probability of a dry day
+is 85\%. If this is really what you believe about Adelaide rainfall (and now
 that I’ve told it to you I’m betting that this really *is* what you believe)
 then what I have written here is your **prior distribution**, written *P*\ (h):
 
@@ -62,9 +62,9 @@ When does Dani carry an umbrella? You might guess that I’m not a complete
 idiot,\ [#]_ and I try to carry umbrellas only on rainy days. On the
 other hand, you also know that I have young kids, and you wouldn’t be
 all that surprised to know that I’m pretty forgetful about this sort of
-thing. Let’s suppose that on rainy days I remember my umbrella about 30%
+thing. Let’s suppose that on rainy days I remember my umbrella about 30\%
 of the time (I really am awful at this). But let’s say that on dry days
-I’m only about 5% likely to be carrying an umbrella. So you might write
+I’m only about 5\% likely to be carrying an umbrella. So you might write
 out a little table like this:
 
 +---------------+----------+-------------+
@@ -107,8 +107,8 @@ written *P*\ (d, h), and you can calculate it by multiplying the prior
 
 So, what is the probability that today is a rainy day *and* I remember
 to carry an umbrella? As we discussed earlier, the prior tells us that
-the probability of a rainy day is 15%, and the likelihood tells us that
-the probability of me remembering my umbrella on a rainy day is 30%. So
+the probability of a rainy day is 15\%, and the likelihood tells us that
+the probability of me remembering my umbrella on a rainy day is 30\%. So
 the probability that both of these things are true is calculated by
 multiplying the two:
 
@@ -120,7 +120,7 @@ multiplying the two:
    & = & 0.045\end{aligned}
 
 In other words, before being told anything about what actually happened,
-you think that there is a 4.5% probability that today will be a rainy
+you think that there is a 4.5\% probability that today will be a rainy
 day and that I will remember an umbrella. However, there are of course
 *four* possible things that could happen, right? So let’s repeat the
 exercise for all four. If we do that, we end up with the following
@@ -152,7 +152,7 @@ This is a very useful table, so it’s worth taking a moment to think
 about what all these numbers are telling us. First, notice that the row
 sums aren’t telling us anything new at all. For example, the first row
 tells us that if we ignore all this umbrella business, the chance that
-today will be a rainy day is 15%. That’s not surprising, of course, as
+today will be a rainy day is 15\%. That’s not surprising, of course, as
 that’s our prior.\ [#]_ The important thing isn’t the number itself.
 Rather, the important thing is that it gives us some confidence that our
 calculations are sensible! Now take a look at the column sums and notice
@@ -161,7 +161,7 @@ the same way that the row sums tell us the probability of rain, the
 column sums tell us the probability of me carrying an umbrella.
 Specifically, the first column tells us that on average (i.e., ignoring
 whether it’s a rainy day or not) the probability of me carrying an
-umbrella is 8.75%. Finally, notice that when we sum across all four
+umbrella is 8.75\%. Finally, notice that when we sum across all four
 logically-possible events, everything adds up to 1. In other words, what
 we have written down is a proper probability distribution defined over
 all possible combinations of data and hypothesis.
@@ -207,7 +207,7 @@ before being given any data. It’s now time to consider what happens to
 our beliefs when we are actually given the data. In the rainy day
 problem, you are told that I really *am* carrying an umbrella. This is
 something of a surprising event. According to our table, the probability
-of me carrying an umbrella is only 8.75%. But that makes sense, right? A
+of me carrying an umbrella is only 8.75\%. But that makes sense, right? A
 guy carrying an umbrella on a summer day in a hot dry city is pretty
 unusual, and so you really weren’t expecting that. Nevertheless, the
 data tells you that it is true. No matter how unlikely you thought it
@@ -235,8 +235,8 @@ What two numbers should we put in the empty cells? Again, let’s not
 worry about the maths, and instead think about our intuitions. When we
 wrote out our table the first time, it turned out that those two cells
 had almost identical numbers, right? We worked out that the joint
-probability of “rain and umbrella” was 4.5%, and the joint probability
-of “dry and umbrella” was 4.25%. In other words, before I told you that
+probability of “rain and umbrella” was 4.5\%, and the joint probability
+of “dry and umbrella” was 4.25\%. In other words, before I told you that
 I am in fact carrying an umbrella, you’d have said that these two events
 were almost identical in probability, yes? But notice that *both* of
 these possibilities are consistent with the fact that I actually am
@@ -259,10 +259,10 @@ perhaps?
 +-----------+----------+-------------+
 
 What this table is telling you is that, after being told that I’m
-carrying an umbrella, you believe that there’s a 51.4% chance that today
-will be a rainy day, and a 48.6% chance that it won’t. That’s the answer
+carrying an umbrella, you believe that there’s a 51.4\% chance that today
+will be a rainy day, and a 48.6\% chance that it won’t. That’s the answer
 to our problem! The **posterior probability** of rain *P*\ (h|d)
-given that I am carrying an umbrella is 51.4%
+given that I am carrying an umbrella is 51.4\%
 
 How did I calculate these numbers? You can probably guess. To work out
 that there was a 0.514 probability of “rain”, all I did was take the

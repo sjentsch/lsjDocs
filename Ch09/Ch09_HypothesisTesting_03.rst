@@ -13,7 +13,7 @@ suppose for the moment that the null hypothesis really is true, that ESP
 doesn’t exist and the true probability that anyone picks the correct
 colour is exactly *θ* = 0.5. What would we *expect* the data
 to look like? Well, obviously we’d expect the proportion of people who
-make the correct response to be pretty close to 50%. Or, to phrase this
+make the correct response to be pretty close to 50\%. Or, to phrase this
 in more mathematical terms, we’d say that *X* / *N* is approximately
 \0.5. Of course, we wouldn’t expect this fraction to be *exactly*
 \0.5. If, for example, we tested *N* = 100 people and *X* = 53

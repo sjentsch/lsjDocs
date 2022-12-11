@@ -3,16 +3,16 @@
 Summary
 -------
 
--  A :doc:`one sample t-test <../Ch11/Ch11_tTest_02>` is used to compare a single
+-  A :doc:`one sample *t*-test <../Ch11/Ch11_tTest_02>` is used to compare a single
    sample mean against a hypothesised value for the population mean.
 
--  An :doc:`independent samples t-test <../Ch11/Ch11_tTest_03>` is used to compare the
+-  An :doc:`independent samples *t*-test <../Ch11/Ch11_tTest_03>` is used to compare the
    means of two groups, and tests the null hypothesis that they have the same
    mean. It comes in two forms: the :doc:`Student test <../Ch11/Ch11_tTest_03>` assumes
    that the groups have the same standard deviation, the :doc:`Welch test
    <../Ch11/Ch11_tTest_04>` does not.
 
--  A :doc:`paired samples t-test <../Ch11/Ch11_tTest_05>` is used when you have two
+-  A :doc:`paired samples *t*-test <../Ch11/Ch11_tTest_05>` is used when you have two
    scores from each person, and you want to test the null hypothesis that the
    two scores have the same mean. It is equivalent to taking the difference
    between the two scores for each person, and then running a one sample

@@ -7,8 +7,8 @@ While the binomial distribution is conceptually the simplest
 distribution to understand, it’s not the most important one. That
 particular honour goes to the **normal distribution**, also referred to
 as “the bell curve” or a “Gaussian distribution”. A normal distribution
-is described using two parameters: the mean of the distribution *µ* and
-the standard deviation of the distribution *σ*.
+is described using two parameters: the mean of the distribution µ and
+the standard deviation of the distribution σ.
 
 The notation that we sometimes use to say that a variable *X* is
 normally distributed is as follows:
@@ -45,7 +45,7 @@ introductory text I don’t want to focus on it, so I’ve tucked it away in
 Instead of focusing on the maths, let’s try to get a sense for what it
 means for a variable to be normally distributed. To that end, have a
 look at :numref:`fig-standardNormal` which plots a normal distribution with
-mean *µ* = 0 and standard deviation *σ* = 1. You can see where the name “bell
+mean µ = 0 and standard deviation σ = 1. You can see where the name “bell
 curve” comes from; it looks a bit like a bell. Notice that, unlike the plots
 that I drew to illustrate the binomial distribution, the picture of the normal
 distribution in :numref:`fig-standardNormal` shows a smooth
@@ -112,9 +112,9 @@ the bars that we used to draw a discrete binomial distribution have to
 *sum* to 1, the total *area under the curve* for the normal distribution
 must equal 1. Before moving on, I want to point out one important
 characteristic of the normal distribution. Irrespective of what the
-actual mean and standard deviation are, 68.3% of the area falls within 1
-standard deviation of the mean. Similarly, 95.4% of the distribution
-falls within 2 standard deviations of the mean, and 99.7% of the
+actual mean and standard deviation are, 68.3\% of the area falls within 1
+standard deviation of the mean. Similarly, 95.4\% of the distribution
+falls within 2 standard deviations of the mean, and 99.7\% of the
 distribution is within 3 standard deviations. This idea is illustrated
 in :numref:`fig-normAreaSD`.
 
@@ -128,8 +128,8 @@ in :numref:`fig-normAreaSD`.
    within a particular range. The solid lines plot normal distributions with
    mean μ = 0 and standard deviation σ = 1. The shaded areas illustrate “areas
    under the curve” for two important cases. In the left panel, we can see that
-   there is a 68.3% chance that an observation will fall within one standard
-   deviation of the mean. In the right panel, we see that there is a 95.4%
+   there is a 68.3\% chance that an observation will fall within one standard
+   deviation of the mean. In the right panel, we see that there is a 95.4\%
    chance that an observation will fall within two standard deviations of the
    mean.
      
@@ -139,14 +139,14 @@ in :numref:`fig-normAreaSD`.
    :alt: Area under the curve for 1 SD bordering the mean and at the tails
    :name: fig-normAreaOther
 
-   Two more examples of the “area under the curve” idea. There is a 15.9%
+   Two more examples of the “area under the curve” idea. There is a 15.9\%
    chance that an observation is one standard deviation below the mean or
-   smaller (left panel), and a 34.1% chance that the observation is somewhere
+   smaller (left panel), and a 34.1\% chance that the observation is somewhere
    between one standard deviation below the mean and the mean (right panel).
-   Notice that if you add these two numbers together you get 15.9% + 34.1% = 
-   50%. For normally distributed data, there is a 50% chance that an
+   Notice that if you add these two numbers together you get 15.9\% + 34.1\% = 
+   50\%. For normally distributed data, there is a 50\% chance that an
    observation falls below the mean. And of course that also implies that there
-   is a 50% chance that it falls above the mean.
+   is a 50\% chance that it falls above the mean.
 
 .. ----------------------------------------------------------------------------
 

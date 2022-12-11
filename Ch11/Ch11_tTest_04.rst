@@ -24,11 +24,11 @@ the best place to discuss it.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_welchTestHyp.*
-   :alt: Illustration: Null and alternative hypotheses for the Welch t-test
+   :alt: Illustration: Null and alternative hypotheses for the Welch *t*-test
    :name: fig-ttesthyp2
 
    Graphical illustration of the null and alternative hypotheses assumed by the
-   Welch t-test. Like the Student t-test for Independent Samples
+   Welch *t*-test. Like the Student *t*-test for Independent Samples
    (:numref:`fig-ttesthyp`) we assume that both samples are drawn from a
    normally-distributed population; but the alternative hypothesis no longer
    requires the two populations to have equal variance.
@@ -84,10 +84,10 @@ above, then this is what it gives you :numref:`fig-ttest_welch`:
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_ttest_welch.*
-   :alt: Results showing the Welch test alongside the default Student’s t-test
+   :alt: Results showing the Welch test alongside the default Student’s *t*-test
    :name: fig-ttest_welch
 
-   Results showing the Welch test alongside the default Student’s t-test in
+   Results showing the Welch test alongside the default Student’s *t*-test in
    jamovi
    
 .. ----------------------------------------------------------------------------
@@ -121,11 +121,12 @@ no-one *actually* believes that the population variances are identical.
 Assumptions of the test
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The assumptions of the Welch test are very similar to those made by the Student
-*t*-test (see :doc:`Assumptions of the Student t-test <../Ch11/Ch11_tTest_03>`), except
-that the Welch test does not assume homogeneity of variance. This leaves only
-the assumption of normality and the assumption of independence. The specifics
-of these assumptions are the same for the Welch test as for the Student test.
+The assumptions of the Welch test are very similar to those made by the
+Student *t*-test (see :doc:`Assumptions of the Student *t*-test
+<../Ch11/Ch11_tTest_03>`), except that the Welch test does not assume
+homogeneity of variance. This leaves only the assumption of normality and
+the assumption of independence. The specifics of these assumptions are the
+same for the Welch test as for the Student test.
 
 ------
 

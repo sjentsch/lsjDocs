@@ -356,9 +356,9 @@ On checking the correlation between the extracted factors at least one
 correlation was greater than 0.3 (:numref:`fig-efa5`), so an oblique
 (``Oblimin``) rotation of the five extracted factors is preferred. We can also
 see in :numref:`fig-efa5` that the proportion of overall variance in the data
-that is accounted for by the five factors is 46%. Factor one accounts for
-around 10% of the variance, factors two to four around 9% each, and factor five
-just over 7%. This isn’t great; it would have been better if the overall
+that is accounted for by the five factors is 46\%. Factor one accounts for
+around 10\% of the variance, factors two to four around 9\% each, and factor five
+just over 7\%. This isn’t great; it would have been better if the overall
 solution accounted for a more substantive proportion of the variance in our
 data.
 
@@ -405,10 +405,10 @@ in :numref:`fig-efa6`.
 
 We can also see in :numref:`fig-efa6` the ``Uniqueness`` of each variable.
 Uniqueness is the proportion of variance that is “unique” to the variable and
-not explained by the factors.\ [#]_ For example, 72% of the variance in ``A1``
+not explained by the factors.\ [#]_ For example, 72\% of the variance in ``A1``
 is not explained by the factors in the five factor solution. In contrast,
 ``N1`` has relatively low variance not accounted for by the factor solution
-(35%). Note that the greater the ``Uniqueness``, the lower the relevance or
+(35\%). Note that the greater the ``Uniqueness``, the lower the relevance or
 contribution of the variable in the factor model.
 
 To be honest, it’s unusual to get such a neat solution in EFA. It’s typically

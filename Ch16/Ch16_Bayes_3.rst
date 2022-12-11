@@ -36,22 +36,22 @@ you? To an actual human being, this would seem to be the whole *point*
 of doing statistics, i.e., to determine what is true and what isn’t. Any
 time that you aren’t exactly sure about what the truth is, you should
 use the language of probability theory to say things like “there is an
-80% chance that Theory A is true, but a 20% chance that Theory B is true
+80\% chance that Theory A is true, but a 20\% chance that Theory B is true
 instead”.
 
 This seems so obvious to a human, yet it is explicitly forbidden within the
 orthodox framework. To a frequentist, such statements are a nonsense because
 “the theory is true” is not a repeatable event. A theory is true or it is not,
 and no probabilistic statements are allowed, no matter how much you might want
-to make them. There’s a reason why, back in section :doc:`The p value of a test
-<../Ch09/Ch09_HypothesisTesting_05>`, I repeatedly warned you *not* to interpret the
-*p*-value as the probability that the null hypothesis is true. There’s a reason
-why almost every textbook on statstics is forced to repeat that warning. It’s
-because people desperately *want* that to be the correct interpretation.
-Frequentist dogma notwithstanding, a lifetime of experience of teaching
-undergraduates and of doing data analysis on a daily basis suggests to me that
-most actual humans think that “the probability that the hypothesis is true” is
-not only meaningful, it’s the thing we care *most* about. It’s such an
+to make them. There’s a reason why, back in section :doc:`The *p*-value of a
+test <../Ch09/Ch09_HypothesisTesting_05>`, I repeatedly warned you *not* to
+interpret the *p*-value as the probability that the null hypothesis is true.
+There’s a reason why almost every textbook on statstics is forced to repeat
+that warning. It’s because people desperately *want* that to be the correct
+interpretation. Frequentist dogma notwithstanding, a lifetime of experience of
+teaching undergraduates and of doing data analysis on a daily basis suggests to
+me that most actual humans think that “the probability that the hypothesis is
+true” is not only meaningful, it’s the thing we care *most* about. It’s such an
 appealing idea that even trained statisticians fall prey to the mistake of
 trying to interpret a *p*-value this way. For example, here is a quote from an
 `official Newspoll report in 2013
@@ -65,9 +65,9 @@ explaining how to interpret their (frequentist) data analysis:
    probability that a real change has occurred**, and is not simply due
    to chance variation. (emphasis added)
 
-Nope! That’s *not* what *p* < 0.05 means. That’s *not* what 95%
+Nope! That’s *not* what *p* < 0.05 means. That’s *not* what 95\%
 confidence means to a frequentist statistician. The bolded section is
-just plain wrong. Orthodox methods cannot tell you that “there is a 95%
+just plain wrong. Orthodox methods cannot tell you that “there is a 95\%
 chance that a real change has occurred”, because this is not the kind of
 event to which frequentist probabilities may be assigned. To an
 ideological frequentist, this sentence should be meaningless. Even if
@@ -78,7 +78,7 @@ if you want to rely on orthodox statistical tools.
 On the other hand, let’s suppose you are a Bayesian. Although the bolded
 passage is the wrong definition of a *p*-value, it’s pretty much
 exactly what a Bayesian means when they say that the posterior
-probability of the alternative hypothesis is greater than 95%. And
+probability of the alternative hypothesis is greater than 95\%. And
 here’s the thing. If the Bayesian posterior is actually the thing you
 *want* to report, why are you even trying to use orthodox methods? If
 you want to make Bayesian claims, all you have to do is be a Bayesian
@@ -88,7 +88,7 @@ Speaking for myself, I found this to be the most liberating thing about
 switching to the Bayesian view. Once you’ve made the jump, you no longer
 have to wrap your head around counter-intuitive definitions of
 *p*-values. You don’t have to bother remembering why you can’t say
-that you’re 95% confident that the true mean lies within some interval.
+that you’re 95\% confident that the true mean lies within some interval.
 All you have to do is be honest about what you believed before you ran
 the study and then report what you learned from doing it. Sounds nice,
 doesn’t it? To me, this is the big promise of the Bayesian approach. You
@@ -136,8 +136,8 @@ is true about half the time (i.e., the prior probability of H\ :sub:`0` is
 the null hypothesis given that it has been rejected at *p* < 0.05.
 Using the data from `Johnson (2013) <../Other/References.html#johnson-2013>`__ ,
 we see that if you reject the null at *p* < 0.05, you’ll be correct
-about 80% of the time. I don’t know about you but, in my opinion, an
-evidential standard that ensures you’ll be wrong on 20% of your decisions
+about 80\% of the time. I don’t know about you but, in my opinion, an
+evidential standard that ensures you’ll be wrong on 20\% of your decisions
 isn’t good enough. The fact remains that, quite contrary to Fisher’s claim,
 if you reject at *p* < 0.05 you shall quite often go astray. It’s not a
 very stringent evidential threshold at all.
@@ -183,7 +183,7 @@ What should you do? Here are some possibilities:
 
 #. You give up and try a new study
 
-#. You collect some more data to see if the *p* value goes up or
+#. You collect some more data to see if the *p*-value goes up or
    (preferably!) drops below the “magic” criterion of *p* < 0.05
 
 Which would *you* choose? Before reading any further, I urge you to take
@@ -289,9 +289,9 @@ spending limit for this experiment. Let’s say that limit kicks in at
 that there is no real effect to be found: the null hypothesis is true.
 So, what’s the chance that you’ll make it to the end of the experiment
 and (correctly) conclude that there is no effect? In an ideal world, the
-answer here should be 95%. After all, the whole *point* of the
-*p* < 0.05 criterion is to control the Type I error rate at 5%, so
-what we’d hope is that there’s only a 5% chance of falsely rejecting the
+answer here should be 95\%. After all, the whole *point* of the
+*p* < 0.05 criterion is to control the Type I error rate at 5\%, so
+what we’d hope is that there’s only a 5\% chance of falsely rejecting the
 null hypothesis in this situation. However, there’s no guarantee that
 will be true. You’re breaking the rules. Because you’re running tests
 repeatedly, “peeking” at your data to see if you’ve gotten a significant
@@ -310,8 +310,8 @@ result, all bets are off.
 
 So how bad is it? The answer is shown as the solid black line in
 :numref:`fig-adapt`, and it’s *astoundingly* bad. If you peek at your data
-after every single observation, there is a 49% chance that you will make a Type
-I error. That’s, um, quite a bit bigger than the 5% that it’s supposed to be.
+after every single observation, there is a 49\% chance that you will make a Type
+I error. That’s, um, quite a bit bigger than the 5\% that it’s supposed to be.
 By way of comparison, imagine that you had used the following strategy. Start
 collecting data. Every single time an observation arrives, run a :doc:`Bayesian
 t-test <../Ch16/Ch16_Bayes_5>` and look at the Bayes factor. I’ll assume that
@@ -324,7 +324,7 @@ experiment and reject the null. Otherwise continue testing. Now, just like last
 time, let’s assume that the null hypothesis is true. What happens? As it
 happens, I ran the simulations for this scenario too, and the results are shown
 as the dashed line in :numref:`fig-adapt`. It turns out that the Type I error
-rate is much much lower than the 49% rate that we were getting by using the
+rate is much much lower than the 49\% rate that we were getting by using the
 orthodox *t*-test.
 
 In some ways, this is remarkable. The entire *point* of orthodox null
@@ -341,7 +341,7 @@ Is it really this bad?
 The example I gave in the previous section is a pretty extreme
 situation. In real life, people don’t run hypothesis tests every time a
 new observation arrives. So it’s not fair to say that the *p* < 0.05
-threshold “really” corresponds to a 49% Type I error rate (i.e.,
+threshold “really” corresponds to a 49\% Type I error rate (i.e.,
 *p* = 0.49). But the fact remains that if you want your
 *p*-values to be honest then you either have to switch to a
 completely different way of doing hypothesis tests or enforce a strict
@@ -364,7 +364,7 @@ it seems sort of pointless now, right? The result is significant with a
 sample size of *N* = 50, so wouldn’t it be wasteful and inefficient
 to keep collecting data? Aren’t you tempted to stop? Just a little?
 Well, keep in mind that if you do, your Type I error rate at
-*p* < 0.05 just ballooned out to 8%. When you report *p* < 0.05 in
+*p* < 0.05 just ballooned out to 8\%. When you report *p* < 0.05 in
 your paper, what you’re *really* saying is *p* < 0.08. That’s how bad
 the consequences of “just one peek” can be.
 

@@ -133,7 +133,7 @@ rates with which university students cheat on their exams. And the way I
 attempt to measure it is by asking the cheating students to stand up in
 the lecture theatre so that I can count them. When I do this with a
 class of 300 students 0 people claim to be cheaters. So I therefore
-conclude that the proportion of cheaters in my class is 0%. Clearly this
+conclude that the proportion of cheaters in my class is 0\%. Clearly this
 is a bit ridiculous. But the point here is not that this is a very deep
 methodological example, but rather to explain what construct validity
 is. The problem with my measure is that while I’m *trying* to measure
@@ -362,7 +362,7 @@ an experiment with two groups of participants where each group gets a
 different “treatment”, and you want to see if the different treatments
 lead to different outcomes. However, suppose that, despite your best
 efforts, you’ve ended up with a gender imbalance across groups (say,
-group A has 80% females and group B has 50% females). It might sound
+group A has 80\% females and group B has 50\% females). It might sound
 like this could never happen but, trust me, it can. This is an example
 of a selection bias, in which the people “selected into” the two groups
 have different characteristics. If any of those characteristics turns

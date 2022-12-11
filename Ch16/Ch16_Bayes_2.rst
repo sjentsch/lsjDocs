@@ -37,8 +37,8 @@ In practice, most Bayesian data analysts tend not to talk in terms of the raw
 posterior probabilities *P*\ (h\ :sub:`0`\|d) and *P*\ (h\ :sub:`1`\|d).
 Instead, we tend to talk in terms of the **posterior odds** ratio. Think of it
 like betting. Suppose, for instance, the posterior probability of
-the null hypothesis is 25%, and the posterior probability of the
-alternative is 75%. The alternative hypothesis is three times as
+the null hypothesis is 25\%, and the posterior probability of the
+alternative is 75\%. The alternative hypothesis is three times as
 probable as the null, so we say that the *odds* are 3:1 in favour of the
 alternative. Mathematically, all we have to do to calculate the
 posterior odds is divide one posterior probability by the other

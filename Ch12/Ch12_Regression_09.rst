@@ -30,21 +30,21 @@ constructed in the usual fashion
 
 where :math:`SE(\hat{b})` is the standard error of the regression coefficient,
 and *t*\ :sub:`crit` is the relevant critical value of the appropriate
-*t*-distribution. For instance, if it’s a 95% confidence interval that we want,
+*t*-distribution. For instance, if it’s a 95\% confidence interval that we want,
 then the critical value is the 97.5th quantile of a *t* distribution with
 *N* - *K* - 1 degrees of freedom. In other words, this is basically the same
 approach to calculating confidence intervals that we’ve used throughout.
 
-In jamovi we had already specified the ``95% Confidence interval`` as shown in
+In jamovi we had already specified the ``95\% Confidence interval`` as shown in
 :numref:`fig-reg2`, although we could easily have chosen another value, say a
-``99% Confidence interval`` if that is what we decided on.
+``99\% Confidence interval`` if that is what we decided on.
 
 Calculating standardised regression coefficients
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 One more thing that you might want to do is to calculate “standardised”
-regression coefficients, often denoted *β*. The rationale
-behind standardised coefficients goes like this. In a lot of situations,
+regression coefficients, often denoted β. The rationale behind standardised
+coefficients goes like this. In a lot of situations,
 your variables are on fundamentally different scales. Suppose, for
 example, my regression model aims to predict people’s IQ scores using
 their educational attainment (number of years of education) and their
@@ -67,10 +67,10 @@ variables to *z*-scores before running the regression.\ [#]_ The
 idea here is that, by converting all the predictors to *z*-scores,
 they all go into the regression on the same scale, thereby removing the
 problem of having variables on different scales. Regardless of what the
-original variables were, a *β* value of 1 means that an
+original variables were, a β value of 1 means that an
 increase in the predictor of 1 standard deviation will produce a
 corresponding 1 standard deviation increase in the outcome variable.
-Therefore, if variable A has a larger absolute value of *β*
+Therefore, if variable A has a larger absolute value of β
 than variable B, it is deemed to have a stronger relationship with the
 outcome. Or at least that’s the idea. It’s worth being a little cautious
 here, since this does rely very heavily on the assumption that “a 1
@@ -80,7 +80,7 @@ all variables. It’s not always obvious that this is true.
 Leaving aside the interpretation issues, let’s look at how it’s
 calculated. What you could do is standardise all the variables yourself
 and then run a regression, but there’s a much simpler way to do it. As
-it turns out, the *β* coefficient for a predictor *X*
+it turns out, the β coefficient for a predictor *X*
 and outcome *Y* has a very simple formula, namely
 
 | β\ :sub:`X` = *b*\ :sub:`X` × (σ\ :sub:`X` / σ\ :sub:`Y`)
@@ -89,17 +89,17 @@ where σ\ :sub:`X` is the standard deviation of the predictor, and σ\ :sub:`Y`
 is the standard deviation of the outcome variable *Y*. This makes matters a lot
 simpler.
 
-To make things even simpler, jamovi has an option that computes the *β*
+To make things even simpler, jamovi has an option that computes the β
 coefficients for you using the ``Standardized estimate`` checkbox in the
 ``Model Coefficients`` options, see results in :numref:`fig-reg3`.
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_reg3.*
-   :alt: Standardised coefficients with 95% confidence intervals
+   :alt: Standardised coefficients with 95\% confidence intervals
    :name: fig-reg3
 
-   Standardised coefficients, with 95% confidence intervals, for multiple
+   Standardised coefficients, with 95\% confidence intervals, for multiple
    linear regression
    
 .. ----------------------------------------------------------------------------
@@ -107,7 +107,7 @@ coefficients for you using the ``Standardized estimate`` checkbox in the
 These results clearly show that the ``dani.sleep`` variable has a much stronger
 effect than the ``baby.sleep`` variable. However, this is a perfect example of
 a situation where it would probably make sense to use the original coefficients
-*b* rather than the standardised coefficients *β*. After all, my sleep and the
+*b* rather than the standardised coefficients β. After all, my sleep and the
 baby’s sleep are *already* on the same scale: number of hours slept. Why
 complicate matters by converting these to *z*-scores?
 

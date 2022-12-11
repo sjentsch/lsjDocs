@@ -40,7 +40,7 @@ The **interquartile range** (IQR) is like the range, but instead of the
 difference between the biggest and smallest value the difference between
 the 25th percentile and the 75th percentile is taken. If you don’t
 already know what a **percentile** is, the 10th percentile of a data set
-is the smallest number *x* such that 10% of the data is less than
+is the smallest number *x* such that 10\% of the data is less than
 *x*. In fact, we’ve already come across the idea. The median of a
 data set is its 50th percentile! In jamovi you can easily specify the
 25th, 50th and 75th percentiles by clicking the checkbox ``Quartiles`` in
@@ -364,15 +364,15 @@ standard deviation is derived from the variance, and the variance is a
 quantity that has little to no meaning that makes sense to us humans,
 the standard deviation doesn’t have a simple interpretation. As a
 consequence, most of us just rely on a simple rule of thumb. In general,
-you should expect 68% of the data to fall within 1 standard deviation of
-the mean, 95% of the data to fall within 2 standard deviation of the
-mean, and 99.7% of the data to fall within 3 standard deviations of the
+you should expect 68\% of the data to fall within 1 standard deviation of
+the mean, 95\% of the data to fall within 2 standard deviation of the
+mean, and 99.7\% of the data to fall within 3 standard deviations of the
 mean. This rule tends to work pretty well most of the time, but it’s not
 exact. It’s actually calculated based on an *assumption* that the
 histogram is symmetric and “bell shaped”.\ [#]_ As you can tell from
 looking at the AFL winning margins histogram in :numref:`fig-aflMargins`,
 this isn’t exactly true of our data! Even so, the rule is approximately
-correct. As it turns out, 65.3% of the AFL margins data fall within one
+correct. As it turns out, 65.3\% of the AFL margins data fall within one
 standard deviation of the mean. This is shown visually in :numref:`fig-aflSD`.
 
 .. ----------------------------------------------------------------------------
@@ -383,8 +383,8 @@ standard deviation of the mean. This is shown visually in :numref:`fig-aflSD`.
 
    Illustration of the standard deviation from the AFL winning margins data.
    The shaded bars in the histogram show how much of the data fall within one
-   standard deviation of the mean. In this case, 65.3% of the data set lies
-   within this range, which is pretty consistent with the “approximately 68%
+   standard deviation of the mean. In this case, 65.3\% of the data set lies
+   within this range, which is pretty consistent with the “approximately 68\%
    rule” discussed in the main text.
       
 .. ----------------------------------------------------------------------------

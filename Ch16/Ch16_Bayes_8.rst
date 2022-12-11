@@ -10,7 +10,7 @@ agents <../Ch16/Ch16_Bayes_1>`), and gave a very basic overview of how :doc:`Bay
 hypothesis testing <../Ch16/Ch16_Bayes_2>` is typically done. Finally, I devoted some
 space to talking about why I think Bayesian methods are worth using (section
 :doc:`Why be a Bayesian? <../Ch16/Ch16_Bayes_3>`). Then I gave a practical example,
-a :doc:`Bayesian t-test <../Ch16/Ch16_Bayes_5>`.
+a :doc:`Bayesian *t*-test <../Ch16/Ch16_Bayes_5>`.
 
 If you’re interested in learning more about the Bayesian approach, there are
 many good books you could look into. `John Kruschke’s (2015)

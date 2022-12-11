@@ -68,7 +68,7 @@ intervals for both groups of students (:numref:`fig-ttestci`).
    :name: fig-ttestci
 
    The plots show the mean grade for students in Anastasia’s and Bernadette’s
-   tutorials. Error bars depict 95% confidence intervals around the mean.
+   tutorials. Error bars depict 95\% confidence intervals around the mean.
    Visually, it does look like there’s a real difference between the groups,
    though it’s hard to say for sure.
    
@@ -95,28 +95,28 @@ mean performance on some outcome measure, then an independent samples
 *t*-test (rather than a paired samples *t*-test) is what
 we’re after.
 
-Okay, so let’s let *µ*\ :sub:`1` denote the true population mean for group 1
-(e.g., Anastasia’s students), and *µ*\ :sub:`2` will be the true population
+Okay, so let’s let µ\ :sub:`1` denote the true population mean for group 1
+(e.g., Anastasia’s students), and µ\ :sub:`2` will be the true population
 mean for group 2 (e.g., Bernadette’s students),\ [#]_ and as usual we’ll let
 *X̄*\ :sub:`1`and *X̄*\ :sub:`2` denote the observed sample means for both of
 these groups. Our null hypothesis states that the two population means are
-identical (*µ*\ :sub:`1` = *µ*\ :sub:`1`) and the alternative to this is that
-they are not (*µ*\ :sub:`1` ≠ *µ*\ :sub:`1`). Written in mathematical-ese,
+identical (µ\ :sub:`1` = µ\ :sub:`1`) and the alternative to this is that
+they are not (µ\ :sub:`1` ≠ µ\ :sub:`1`). Written in mathematical-ese,
 this is:
 
-| H\ :sub:`0`: *µ*\ :sub:`1` = *µ*\ :sub:`2`
-| H\ :sub:`1`: *µ*\ :sub:`1` ≠ *µ*\ :sub:`2`
+| H\ :sub:`0`: µ\ :sub:`1` = µ\ :sub:`2`
+| H\ :sub:`1`: µ\ :sub:`1` ≠ µ\ :sub:`2`
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_studentTestHyp.*
-   :alt: Illustration: Null and alternative hypotheses, indep. samples t-test
+   :alt: Illustration: Null and alternative hypotheses, indep. samples *t*-test
    :name: fig-ttesthyp
 
    Graphical illustration of the null and alternative hypotheses assumed by the
-   Student t-test for Independent Samples. The null hypothesis assumes that
-   both groups have the same mean *μ*, whereas the alternative assumes that
-   they have different means *μ*\ :sub:`1` and *μ*\ :sub:`2`\. Notice that it
+   Student *t*-test for Independent Samples. The null hypothesis assumes that
+   both groups have the same mean µ, whereas the alternative assumes that
+   they have different means µ\ :sub:`1` and µ\ :sub:`2`\. Notice that it
    is assumed that the population distributions are normal, and that, although
    the alternative hypothesis allows the group to have different means, it
    assumes they have the same standard deviation.
@@ -125,7 +125,7 @@ this is:
 
 To construct a hypothesis test that handles this scenario we start by noting
 that if the null hypothesis is true, then the difference between the population
-means is *exactly* zero, *µ*\ :sub:`1` - *µ*\ :sub:`1` = 0. As a consequence, a
+means is *exactly* zero, µ\ :sub:`1` - µ\ :sub:`1` = 0. As a consequence, a
 diagnostic test statistic will be based on the difference between the two
 sample means. Because if the null hypothesis is true, then we’d expect
 *X̄*\ :sub:`1` – *X̄*\ :sub:`2` to be *pretty close* to zero. However, just
@@ -136,7 +136,7 @@ same one. We calculate a standard error estimate (SE), just like last time, and
 then divide the difference between means by this estimate. So our
 **t-statistic** will be of the form:
 
-| t = (*X̄*\ :sub:`1` – *X̄*\ :sub:`2`) / SE
+| *t* = (*X̄*\ :sub:`1` – *X̄*\ :sub:`2`) / SE
 
 We just need to figure out what this standard error estimate actually
 is. This is a bit trickier than was the case for either of the two tests
@@ -149,9 +149,9 @@ A “pooled estimate” of the standard deviation
 In the original “Student *t*-test”, we make the assumption that the two groups
 have the same population standard deviation. That is, regardless of whether the
 population means are the same, we assume that the population standard
-deviations are identical, *σ*\ :sub:`1` = *σ*\ :sub:`2`. Since we’re assuming
+deviations are identical, σ\ :sub:`1` = σ\ :sub:`2`. Since we’re assuming
 that the two standard deviations are the same, we drop the subscripts and refer
-to both of them as *σ*. How should we estimate this? How should we construct a
+to both of them as σ. How should we estimate this? How should we construct a
 single estimate of a standard deviation when we have two samples? The answer
 is, basically, we average them. Well, sort of. Actually, what we do is take a
 *weighed* average of the *variance* estimates, which we use as our **pooled
@@ -200,7 +200,7 @@ Mathematically, we could write it like this
 
 .. math:: \frac{\sum_{ik} \left( X_{ik} - \bar{X}_k \right)^2}{N}
 
-where the notation “*Σ*\ :sub:`ik`” is a lazy way of saying “calculate a sum by
+where the notation “Σ\ :sub:`ik`” is a lazy way of saying “calculate a sum by
 looking at all students in all tutorials”, since each “ik” corresponds to one
 student.\ [#]_ But, as we saw in chapter :doc:`Estimating unknown quantities
 from a sample <../Ch08/Ch08_Estimation>`, calculating the variance by dividing by *N*
@@ -273,11 +273,11 @@ the ``Grouping Variable`` box, as shown in :numref:`fig-ttest_ind`.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_ttest_ind.*
-   :alt: Conducting an Independent t-test in jamovi
+   :alt: Conducting an Independent Samples *t*-test in jamovi
    :name: fig-ttest_ind
 
-   Conducting an Independent t-test in jamovi, with options for recommended
-   outputs checked.
+   Conducting an Independent Samples *t*-test in jamovi, with options for
+   recommended outputs checked.
    
 .. ----------------------------------------------------------------------------
 
@@ -297,7 +297,7 @@ of 69.06, so the difference between the two sample means is 5.48. But of
 course the difference between population means might be bigger or
 smaller than this. The confidence interval reported in :numref:`fig-ttest_ind`
 tells you that there’s a if we
-replicated this study again and again, then 95% of the time the true difference
+replicated this study again and again, then 95\% of the time the true difference
 in means would lie between 0.20 and 10.76. Look back at :doc:`Estimating a
 confidence interval <../Ch08/Ch08_Estimation_5>` for a reminder about what confidence
 intervals mean.
@@ -305,9 +305,9 @@ intervals mean.
 In any case, the difference between the two groups is significant (just
 barely), so we might write up the result using text like this:
 
-   The mean grade in Anastasia’s class was 74.5% (std dev = 9.0),
-   whereas the mean in Bernadette’s class was 69.1% (std dev = 5.8). A
-   Student’s independent samples *t*-test showed that this 5.4%
+   The mean grade in Anastasia’s class was 74.5\% (std dev = 9.0),
+   whereas the mean in Bernadette’s class was 69.1\% (std dev = 5.8). A
+   Student’s independent samples *t*-test showed that this 5.4\%
    difference was significant (*t*\(31) = 2.1, *p* < 0.05, CI\ :sub:`95` =
    [0.2, 10.8]`, *d* = 0.74), suggesting that a genuine difference in
    learning outcomes has occurred.
@@ -412,7 +412,7 @@ Assumptions of the Student *t*-test
 As always, our hypothesis test relies on some assumptions. So what are they?
 For the Student *t*-test there are three assumptions, some of which we saw
 previously in the context of the one sample *t*-test (see section
-:doc:`Assumptions of the one sample t-test <../Ch11/Ch11_tTest_02>`):
+:doc:`Assumptions of the one sample *t*-test <../Ch11/Ch11_tTest_02>`):
 
 -  *Normality*. Like the one-sample *t*-test, it is assumed that the data are
    normally distributed. Specifically, we assume that both groups are normally

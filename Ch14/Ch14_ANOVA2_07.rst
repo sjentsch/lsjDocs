@@ -48,7 +48,7 @@ Some data
 
 To make things concrete, let’s suppose that our outcome variable is the
 ``grade`` that a student receives in my class, a ratio-scale variable
-corresponding to a mark from 0% to 100%. There are two predictor
+corresponding to a mark from 0\% to 100\%. There are two predictor
 variables of interest: whether or not the student turned up to lectures
 (the ``attend`` variable) and whether or not the student actually read
 the textbook (the ``reading`` variable). We’ll say that ``attend = 1``
@@ -269,7 +269,7 @@ There’s a few interesting things to note here. First, notice that the intercep
 term is 43.5 which is close to the “group” mean of 42.5 observed for those two
 students who didn’t read the text or attend class. Second, notice that we have
 the regression coefficient of *b*\ :sub:`1` = 18.0 for the attendance variable,
-suggesting that those students that attended class scored 18% higher than those
+suggesting that those students that attended class scored 18\% higher than those
 who didn’t. So our expectation would be that those students who turned up to
 class but didn’t read the textbook would obtain a grade of *b*\ :sub:`0` + 
 *b*\ :sub:`1`, which is equal to 43.5 + 18.0 = 61.5. You can verify for

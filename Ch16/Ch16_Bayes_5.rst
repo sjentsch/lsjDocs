@@ -1,7 +1,7 @@
 .. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_ and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_
 
-Bayesian t-tests
-----------------
+Bayesian *t*-tests
+------------------
 
 An important type of statistical inference problem discussed in this book is
 the comparison between two means, discussed in some detail in the chapter on
@@ -10,8 +10,8 @@ remember back that far, you’ll recall that there are several versions of the
 *t*-test. I’ll talk a little about Bayesian versions of the independent samples
 *t*-tests and the paired samples *t*-test in this section.
 
-Independent samples t-test
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Independent samples *t*-test
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The most common type of *t*-test is the independent samples *t*-test, and it
 arises when you have data as in the |harpo|_ data set that we used in the
@@ -63,7 +63,7 @@ more evidence before rejecting the null.
 Paired samples *t*-test
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Back in section :doc:`The paired-samples t-test <../Ch11/Ch11_tTest_05>` I
+Back in section :doc:`The paired-samples *t*-test <../Ch11/Ch11_tTest_05>` I
 discussed the |chico|_ data set in which student grades were measured on two
 tests, and we were interested in finding out whether grades went up from test
 1 to test 2. Because every student did both tests, the tool we used to analyse

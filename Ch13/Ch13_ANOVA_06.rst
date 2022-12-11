@@ -16,7 +16,7 @@ way:
 | H\ :sub:`0`: Y\ :sub:`ik` = µ           + ϵ\ :sub:`ik`
 | H\ :sub:`1`: Y\ :sub:`ik` = µ\ :sub:`k` + ϵ\ :sub:`ik` 
 
-In these equations *µ* refers to a single grand population mean
+In these equations µ refers to a single grand population mean
 which is the same for all groups, and µ\ :sub:`k` is the population
 mean for the *k*-th group. Up to this point we’ve been mostly
 interested in whether our data are best described in terms of a single
@@ -40,7 +40,7 @@ accurate? Well, as I indicated above, there are three distinct claims
 buried in this one statement, and we’ll consider them separately.
 
 -  **Homogeneity of variance**. Notice that we’ve only got the one value for
-   the population standard deviation (i.e., *σ*), rather than allowing each
+   the population standard deviation (i.e., σ), rather than allowing each
    group to have it’s own value (i.e., σ\ :sub:`k`). This is referred to as the
    homogeneity of variance (sometimes called homoscedasticity) assumption.
    ANOVA assumes that the population standard deviation is the same for all
@@ -362,7 +362,7 @@ painless, since jamovi has an analysis as part of the ``ANOVA`` analysis set cal
 you’ll have data like the |clinicaltrial|_ data set, in which you have your
 outcome variable ``mood.gain`` and a grouping variable ``drug``. If so, you can
 just go ahead and run the analysis in jamovi. What this gives us is a
-Kruskal-Wallis χ² = 12.076, df = 2, *p*-value = 0.00239, as in
+Kruskal-Wallis χ² = 12.076, *df* = 2, *p*-value = 0.00239, as in
 :numref:`fig-anova6`.
 
 .. ----------------------------------------------------------------------------

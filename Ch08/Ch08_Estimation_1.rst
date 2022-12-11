@@ -347,8 +347,8 @@ panel of :numref:`fig-IQ_Pop_Smp`. IQ tests are designed so that
 the average IQ is 100, the standard deviation of IQ scores is 15, and
 the distribution of IQ scores is normal. These values are referred to as
 the **population parameters** because they are characteristics of the
-entire population. That is, we say that the population mean *µ* is 100
-and the population standard deviation *σ* is 15.
+entire population. That is, we say that the population mean µ is 100
+and the population standard deviation σ is 15.
 
 .. ----------------------------------------------------------------------------
 

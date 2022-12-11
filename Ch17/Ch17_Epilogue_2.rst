@@ -4,7 +4,7 @@ Statistical models missing from the book
 ----------------------------------------
 
 Statistics is a huge field. The core tools that I’ve described in this book
-(χ²-tests, t-tests, regression and ANOVA) are basic tools that are widely used
+(χ²-tests, *t*-tests, regression and ANOVA) are basic tools that are widely used
 in everyday data analysis, and they form the core of most introductory stats
 books. However, there are a lot of other tools out there. There are so very
 many data analysis situations that these tools don’t cover, and it would be

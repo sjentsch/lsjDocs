@@ -25,7 +25,7 @@ answer using probability theory:
 Notice that all of these questions have something in common. In each
 case the “truth of the world” is known and my question relates to the
 “what kind of events” will happen. In the first question I *know* that
-the coin is fair so there’s a 50% chance that any individual coin flip
+the coin is fair so there’s a 50\% chance that any individual coin flip
 will come up heads. In the second question I *know* that the chance of
 rolling a 6 on a single die is 1 in 6. In the third question I *know*
 that the deck is shuffled properly. And in the fourth question I *know*
@@ -38,8 +38,8 @@ can write down the model like this:
 *P*\ (heads) = *0.5*
 
 which you can read as “the probability of heads is 0.5”. As we’ll see
-later, in the same way that percentages are numbers that range from 0%
-to 100%, probabilities are just numbers that range from 0 to 1. When
+later, in the same way that percentages are numbers that range from 0\%
+to 100\%, probabilities are just numbers that range from 0 to 1. When
 using this probability model to answer the first question I don’t
 actually know exactly what’s going to happen. Maybe I’ll get 10 heads,
 like the question says. But maybe I’ll get three heads. That’s the key
