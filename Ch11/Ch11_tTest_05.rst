@@ -18,7 +18,7 @@ each person’s working memory capacity in two conditions: with music, and
 without music. In an experimental design such as this one,\ [#]_ each
 participant appears in *both* groups. This requires us to approach the
 problem in a different way, by using the **paired samples
-*t*-test**.
+t-test**.
 
 The data
 ~~~~~~~~
@@ -160,8 +160,7 @@ It’s a one-sample *t*-test, but applied to the difference between two
 variables. It’s actually very simple. The only reason it merits a
 discussion as long as the one we’ve just gone through is that you need
 to be able to recognise *when* a paired samples test is appropriate, and
-to understand *why* it’s better than an independent samples t
-test.
+to understand *why* it’s better than an independent samples *t*-test.
 
 Doing the test in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -217,8 +216,8 @@ which of course they have to be given that the paired samples
    <../Ch10/Ch10_ChiSquare_7>` that motivated the McNemar test. This should be no
    surprise. Both are standard repeated measures designs involving two
    measurements. The only difference is that this time our outcome variable is
-   interval scale (working memory capacity) rather than a binary, nominal scale
-   variable (a yes-or-no question).
+   interval scale (working memory capacity, |continuous|) rather than a binary
+   scale variable (a yes-or-no question, |nominal|).
 
 .. [#]
    At this point we have Drs Harpo, Chico and Zeppo. No prizes for guessing who
@@ -228,3 +227,9 @@ which of course they have to be given that the paired samples
 
 .. |chico|                             replace:: ``chico``
 .. _chico:                             ../_static/data/chico.omv
+
+.. |continuous|                       image:: ../_images/variable-continuous.*
+   :width: 16px
+ 
+.. |nominal|                          image:: ../_images/variable-nominal.*
+   :width: 16px

@@ -15,8 +15,8 @@ standard deviation. In other words, we’re looking to calculate
 
 | d = (mean 1 - mean 2) / std. dev.
 
-and he suggested a rough guide for interpreting d in :numref:`tab-cohensdinterpretation`.
-You’d think that this would
+and he suggested a rough guide for interpreting *d* in
+:numref:`tab-cohensdinterpretation`. You’d think that this would
 be pretty unambiguous, but it’s not. This is largely because Cohen
 wasn’t too specific on what he thought should be used as the measure of
 the standard deviation (in his defence he was trying to make a broader
@@ -24,7 +24,7 @@ point in his book, not nitpick about tiny details). As discussed by
 `McGrath and Meyer (2006) <../Other/References.html#mcgrath-2006>`__, there are
 several different versions in common usage, and each author tends to 
 adopt slightly different notation. For the sake of simplicity (as opposed
-to accuracy), I’ll use d to refer to any statistic that you calculate from
+to accuracy), I’ll use *d* to refer to any statistic that you calculate from
 the sample, and use δ to refer to a theoretical population effect. Obviously,
 that does mean that there are several different things all called *d*.
 
@@ -44,7 +44,7 @@ calculate the effect size for all the different flavours of
    :name: tab-cohensdinterpretation
 
    +-----------+----------------------+
-   | d-value   | rough interpretation |
+   | *d*-value | rough interpretation |
    +===========+======================+
    | about 0.2 |       “small” effect |
    +-----------+----------------------+
@@ -81,9 +81,9 @@ that the story becomes messier, since there are several different versions of
 *d* that you might want to use in this situation. To understand why there are
 multiple versions of *d*, it helps to take the time to write down a formula
 that corresponds to the true population effect size δ. It’s pretty
-straightforward, δ = (µ\ _sub:`1` - µ\ _sub:`2`) / 
+straightforward, δ = (µ\ :sub:`1` - µ\ :sub:`2`) / 
 
-where, as usual, µ\ _sub:`1` and µ\ _sub:`2` are the population
+where, as usual, µ\ :sub:`1` and µ\ :sub:`2` are the population
 means corresponding to group 1 and group 2 respectively, and
 σ is the standard deviation (the same for both
 populations). The obvious way to estimate δ is to do
@@ -131,7 +131,7 @@ Cohen’s *d* from a paired-samples test
 Finally, what should we do for a paired samples *t*-test? In this
 case, the answer depends on what it is you’re trying to do. jamovi
 assumes that you want to measure your effect sizes relative to the
-distribution of difference scores, and the measure of d that you
+distribution of difference scores, and the measure of *d* that you
 calculate is:
 
 .. math:: d = \frac{\bar{D}}{\hat{\sigma}_D}
@@ -149,7 +149,7 @@ to measure the effect size relative to the *original* variables, not the
 *difference* scores (e.g., the 1\% improvement in Dr Chico’s class over
 time is pretty small when measured against the amount of between-student
 variation in grades), in which case you use the same versions of Cohen’s
-d that you would use for a Student or Welch test. It’s not so
+*d* that you would use for a Student or Welch test. It’s not so
 straightforward to do this in jamovi; essentially you have to change the
 structure of the data in the spreadsheet view so I won’t go into that
 here,\ [#]_ but the Cohen’s *d* for this perspective is quite different:

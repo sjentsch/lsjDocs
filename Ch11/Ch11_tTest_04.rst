@@ -78,7 +78,7 @@ doesn’t have to be a whole number.
 Doing the Welch test in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you tick the check box for the Welch test in the analysis we did
+If you tick the check box for the ``Welch's`` test in the analysis we did
 above, then this is what it gives you :numref:`fig-ttest_welch`:
 
 .. ----------------------------------------------------------------------------
