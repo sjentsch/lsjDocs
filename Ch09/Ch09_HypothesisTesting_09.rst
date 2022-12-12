@@ -51,7 +51,7 @@ it is critical to specify your alternative hypothesis properly. If you
 don’t know what the alternative hypothesis is, then you don’t know how
 powerful the test is, or even which action makes sense. His framework
 genuinely requires a competition between different hypotheses. For
-Neyman, the *p* value didn’t directly measure the probability of
+Neyman, the *p*-value didn’t directly measure the probability of
 the data (or data more extreme) under the null, it was more of an
 abstract description about which “possible tests” were telling you to
 accept the null, and which “possible tests” were telling you to accept
@@ -59,8 +59,8 @@ the alternative.
 
 As you can see, what we have today is an odd mishmash of the two. We
 talk about having both a null hypothesis and an alternative (Neyman),
-but usually\ [#]_ define the *p* value in terms of extreme data
-(Fisher), but we still have *α* values (Neyman). Some of the
+but usually\ [#]_ define the *p*-value in terms of extreme data
+(Fisher), but we still have α values (Neyman). Some of the
 statistical tests have explicitly specified alternatives (Neyman) but
 others are quite vague about it (Fisher). And, according to some people
 at least, we’re not allowed to talk about accepting the alternative
@@ -71,12 +71,12 @@ Bayesians versus frequentists
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Earlier on in this chapter I was quite emphatic about the fact that you
-*cannot* interpret the *p* value as the probability that the null hypothesis is
+*cannot* interpret the *p*-value as the probability that the null hypothesis is
 true. NHST is fundamentally a frequentist tool (see chapter :doc:`Introduction
 to probability <../Ch07/Ch07_Probability>`) and as such it does not allow you to assign
 probabilities to hypotheses. The null hypothesis is either true or it is not.
 The Bayesian approach to statistics interprets probability as a degree of
-belief, so it’s totally okay to say that there is a 10% chance that the null
+belief, so it’s totally okay to say that there is a 10\% chance that the null
 hypothesis is true. That’s just a reflection of the degree of confidence that
 you have in this hypothesis. You aren’t allowed to do this within the
 frequentist approach. Remember, if you’re a frequentist, a probability can only
@@ -92,9 +92,9 @@ Most importantly, this *isn’t* a purely ideological matter. If you decide that
 you are a Bayesian and that you’re okay with making probability statements
 about hypotheses, you have to follow the Bayesian rules for calculating those
 probabilities. I’ll talk more about this in chapter :doc:`Bayesian statistics
-<../Ch16/Ch16_Bayes>`, but for now what I want to point out to you is the *p* value is
+<../Ch16/Ch16_Bayes>`, but for now what I want to point out to you is the *p*-value is
 a *terrible* approximation to the probability that H\ :sub:`0` is true. If what
-you want to know is the probability of the null, then the *p* value is not what
+you want to know is the probability of the null, then the *p*-value is not what
 you’re looking for!
 
 Traps
@@ -155,7 +155,7 @@ could possibly make any sense in the real world.
 
 .. [#]
    Although this book describes both Neyman’s and Fisher’s definition of
-   the *p* value, most don’t. Most introductory textbooks will
+   the *p*-value, most don’t. Most introductory textbooks will
    only give you the Fisher version.
 
 .. [#]

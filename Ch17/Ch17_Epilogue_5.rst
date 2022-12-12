@@ -36,14 +36,14 @@ hypothesis tests in more detail than I needed to. Why did I do all this?
 Looking back, you might ask whether I really *needed* to spend all that
 time talking about what a probability distribution is, or why there was
 even a section on probability density. If the goal of the book was to
-teach you how to run a t-test or an ANOVA, was all that really necessary?
+teach you how to run a *t*-test or an ANOVA, was all that really necessary?
 Was this all just a huge waste of everyone’s time???
 
 The answer, I hope you’ll agree, is no. The goal of an introductory
-stats is *not* to teach ANOVA. It’s not to teach t-tests, or regressions,
-or histograms, or p-values. The goal is to start you on the path towards
+stats is *not* to teach ANOVA. It’s not to teach *t*-tests, or regressions,
+or histograms, or *p*-values. The goal is to start you on the path towards
 becoming a skilled data analyst. And in order for you to become a skilled
-data analyst, you need to be able to do more than ANOVA, more than t-tests,
+data analyst, you need to be able to do more than ANOVA, more than *t*-tests,
 regressions and histograms. You need to be able to *think properly* about
 data. You need to be able to learn the more advanced statistical models
 that I talked about in the last section, and to understand the theory upon

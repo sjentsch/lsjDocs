@@ -294,13 +294,13 @@ really is reflected in an increase in another variable *Y*, but
 the nature of the relationship isn’t necessarily linear. An example of
 this might be the relationship between effort and reward when studying
 for an exam. If you put zero effort (*X*) into learning a subject
-then you should expect a grade of 0% (*Y*). However, a little bit
+then you should expect a grade of 0\% (*Y*). However, a little bit
 of effort will cause a *massive* improvement. Just turning up to
 lectures means that you learn a fair bit, and if you just turn up to
-classes and scribble a few things down your grade might rise to 35%, all
+classes and scribble a few things down your grade might rise to 35\%, all
 without a lot of effort. However, you just don’t get the same effect at
 the other end of the scale. As everyone knows, it takes *a lot* more
-effort to get a grade of 90% than it takes to get a grade of 55%. What
+effort to get a grade of 90\% than it takes to get a grade of 55\%. What
 this means is that, if I’ve got data looking at study effort and grades,
 there’s a pretty good chance that Pearson correlations will be
 misleading.

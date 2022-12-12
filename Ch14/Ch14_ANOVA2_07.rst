@@ -48,7 +48,7 @@ Some data
 
 To make things concrete, let’s suppose that our outcome variable is the
 ``grade`` that a student receives in my class, a ratio-scale variable
-corresponding to a mark from 0% to 100%. There are two predictor
+corresponding to a mark from 0\% to 100\%. There are two predictor
 variables of interest: whether or not the student turned up to lectures
 (the ``attend`` variable) and whether or not the student actually read
 the textbook (the ``reading`` variable). We’ll say that ``attend = 1``
@@ -150,7 +150,7 @@ jamovi.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova6.*
-   :alt: ANOVA with two factors (unsaturated: main effects, no interaction= 
+   :alt: ANOVA with two factors (only main effects, without their interaction) 
    :name: fig-factorialanova6
 
    ANOVA of the |rtfm|_ data set in jamovi: Model with two factors ``attend``
@@ -191,7 +191,7 @@ what happens when we insert these numbers into the general formula for our
 regression line. For student number 6, the regression predicts that:
 
 | *Ŷ*\ :sub:`6` = *b*\ :sub:`0` + *b*\ :sub:`1` *X*\ :sub:`1,6` +  *b*\ :sub:`2` *X*\ :sub:`2,6`
-| *Ŷ*\ :sub:`6` = *b*\ :sub:`0` + *b*\ :sub:`1` × 0 + *b*\ :sub:`2` × 0
+| *Ŷ*\ :sub:`6` = *b*\ :sub:`0` + *b*\ :sub:`1` · 0 + *b*\ :sub:`2` · 0
 | *Ŷ*\ :sub:`6` = *b*\ :sub:`0`
 
 So we’re expecting that this student will obtain a grade corresponding to the
@@ -200,7 +200,7 @@ we insert the numbers into the formula for the regression line, we obtain the
 following:
 
 | *Ŷ*\ :sub:`7` = *b*\ :sub:`0` + *b*\ :sub:`1` *X*\ :sub:`1,7` +  *b*\ :sub:`2` *X*\ :sub:`2,7`
-| *Ŷ*\ :sub:`7` = *b*\ :sub:`0` + *b*\ :sub:`1` × 1 + *b*\ :sub:`2` × 0
+| *Ŷ*\ :sub:`7` = *b*\ :sub:`0` + *b*\ :sub:`1` · 1 + *b*\ :sub:`2` · 0
 | *Ŷ*\ :sub:`7` = *b*\ :sub:`0` + *b*\ :sub:`1`
 
 Because this student attended class, the predicted grade is equal to the
@@ -214,29 +214,29 @@ number 1, who turned up to class (*X*\ :sub:`1,1` = 1) *and* read the textbook
 (*X*\ :sub:`2,1` = 1)? If we plug these numbers into the regression we get:
 
 | *Ŷ*\ :sub:`1` = *b*\ :sub:`0` + *b*\ :sub:`1` *X*\ :sub:`1,1` +  *b*\ :sub:`2` *X*\ :sub:`2,1`
-| *Ŷ*\ :sub:`1` = *b*\ :sub:`0` + *b*\ :sub:`1` × 1 + *b*\ :sub:`2` × 1
+| *Ŷ*\ :sub:`1` = *b*\ :sub:`0` + *b*\ :sub:`1` · 1 + *b*\ :sub:`2` · 1
 | *Ŷ*\ :sub:`1` = *b*\ :sub:`0` + *b*\ :sub:`1` + *b*\ :sub:`2`
 
 So if we assume that attending class helps you get a good grade (i.e.,
-*b*\ :sub:`1 > 0`) and if we assume that reading the textbook also helps you
-get a good grade (i.e., *b*\ :sub:`2 >0`), then our expectation is that student
+*b*\ :sub:`1` > 0) and if we assume that reading the textbook also helps you
+get a good grade (i.e., *b*\ :sub:`2` > 0), then our expectation is that student
 1 will get a grade that that is higher than student 6 and student 7.
 
 And at this point you won’t be at all suprised to learn that the regression
 model predicts that student 3, who read the book but didn’t attend lectures,
-will obtain a grade of *b*\ :sub:`2 + b_0`. I won’t bore you with yet another
-regression formula. Instead, what I’ll do is show you the following table of
-*expected grades*:
+will obtain a grade of *b*\ :sub:`2` + *b*\ :sub:`0`. I won’t bore you with yet
+another regression formula. Instead, what I’ll do is show you the following
+table of *expected grades*:
 
-+-------------------------+-------------------------------------------------+
-|                         | read textbook?                                  |
-+-------------------------+---------------------+---------------------------+
-|                         | no                  | yes                       |
-+===============+=========+=====================+===========================+
-| **attended?** | **no**  | *b*\ :sub:`0`       | *b*\ :sub:`0 + b_2`       |
-+---------------+---------+---------------------+---------------------------+
-|               | **yes** | *b*\ :sub:`0 + b_1` | *b*\ :sub:`0 + b_1 + b_2` |
-+---------------+---------+---------------------+---------------------------+
++-------------------------+-------------------------------------------------------------------------------+
+|                         | read the textbook?                                                            |
++-------------------------+-------------------------------+-----------------------------------------------+
+|                         | no                            | yes                                           |
++===============+=========+===============================+===============================================+
+| **attended?** | **no**  | *b*\ :sub:`0`                 | *b*\ :sub:`0` + *b*\ :sub:`2`                 |
++---------------+---------+-------------------------------+-----------------------------------------------+
+|               | **yes** | *b*\ :sub:`0` + *b*\ :sub:`1` | *b*\ :sub:`0` + *b*\ :sub:`1` + *b*\ :sub:`2` |
++---------------+---------+-------------------------------+-----------------------------------------------+
 
 As you can see, the intercept term *b*\ :sub:`0` acts like a kind of “baseline”
 grade that you would expect from those students who don’t take the time to
@@ -269,7 +269,7 @@ There’s a few interesting things to note here. First, notice that the intercep
 term is 43.5 which is close to the “group” mean of 42.5 observed for those two
 students who didn’t read the text or attend class. Second, notice that we have
 the regression coefficient of *b*\ :sub:`1` = 18.0 for the attendance variable,
-suggesting that those students that attended class scored 18% higher than those
+suggesting that those students that attended class scored 18\% higher than those
 who didn’t. So our expectation would be that those students who turned up to
 class but didn’t read the textbook would obtain a grade of *b*\ :sub:`0` + 
 *b*\ :sub:`1`, which is equal to 43.5 + 18.0 = 61.5. You can verify for
@@ -295,7 +295,7 @@ variable we get a *t*-value of 4.65. If we square this number we end up with
 Finally, one last thing you should know. Because jamovi understands the fact
 that ANOVA and regression are both examples of linear models, it lets you
 extract the classic ANOVA table from your regression model using the ``Linear
-Regression`` - ``Model Coefficients`` - ``Omnibus Test`` - ``ANOVA Test``, and
+Regression`` - ``Model Coefficients`` - ``Omnibus Test`` - ``ANOVA test``, and
 this will give you the table shown in :numref:`fig-factorialanova8`.
 
 .. ----------------------------------------------------------------------------
@@ -469,7 +469,7 @@ You can also specify which group to use as the reference level, via the
    
 .. ----------------------------------------------------------------------------
 
-If you also click on the ``ANOVA`` test checkbox under the ``Model
+If you also click on the ``ANOVA test`` checkbox under the ``Model
 Coefficients`` → ``Omnibus Test`` option, we see that the *F*-statistic is
 26.15, the degrees of freedom are 2 and 14, and the *p*-value is 0.00002 (see
 :numref:`fig-regfactors`). The numbers are identical to the ones we obtained

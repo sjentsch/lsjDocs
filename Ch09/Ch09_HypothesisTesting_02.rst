@@ -51,37 +51,37 @@ way. Punishing the innocent is deemed to be much worse than letting the
 guilty go free. A statistical test is pretty much the same. The single
 most important design principle of the test is to *control* the
 probability of a type I error, to keep it below some fixed probability.
-This probability, which is denoted *α*, is called the
+This probability, which is denoted α, is called the
 **significance level** of the test. And I’ll say it again, because it is
 so central to the whole set-up, a hypothesis test is said to have
-significance level *α* if the type I error rate is no larger
-than *α*.
+significance level α if the type I error rate is no larger
+than α.
 
 So, what about the type II error rate? Well, we’d also like to keep
 those under control too, and we denote this probability by
-*β*. However, it’s much more common to refer to the **power**
+β. However, it’s much more common to refer to the **power**
 of the test, that is the probability with which we reject a null
-hypothesis when it really is false, which is 1 - *β*. To help
+hypothesis when it really is false, which is 1 - β. To help
 keep this straight, here’s the same table again but with the relevant
 numbers added:
 
 +--------------------------+--------------------------------------+-----------------------+
 |                          | retain H\ :sub:`0`                   | reject H\ :sub:`0`    |
 +==========================+======================================+=======================+
-| **H\ :sub:`0` is true**  | | 1 - *α*                            | | *α*                 |
+| **H\ :sub:`0` is true**  | | 1 - α                              | | α                   |
 |                          | | (probability of correct retention) | | (type I error rate) |
 +--------------------------+--------------------------------------+-----------------------+
-| **H\ :sub:`0` is false** | | *β*                                | | 1 - *β*             |
+| **H\ :sub:`0` is false** | | β                                  | | 1 - β               |
 |                          | | (type II error rate)               | | (power of the test) |
 +--------------------------+--------------------------------------+-----------------------+
 
 A “powerful” hypothesis test is one that has a small value of
-*β*, while still keeping *α* fixed at some (small)
+β, while still keeping α fixed at some (small)
 desired level. By convention, scientists make use of three different
-*α* levels: *.05*, *.01* and *.001*. Notice
+α levels: *.05*, *.01* and *.001*. Notice
 the asymmetry here; the tests are designed to *ensure* that the
-*α* level is kept small but there’s no corresponding
-guarantee regarding *β*. We’d certainly *like* the type II
+α level is kept small but there’s no corresponding
+guarantee regarding β. We’d certainly *like* the type II
 error rate to be small and we try to design tests that keep it small,
 but this is typically secondary to the overwhelming need to control the
 type I error rate. As Blackstone might have said if he were a

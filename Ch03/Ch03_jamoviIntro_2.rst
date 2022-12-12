@@ -76,7 +76,7 @@ Computed variables
 
 Computed Variables are those which take their value by performing a
 computation on other variables. Computed Variables can be used for a
-range of purposes, including log transforms, z-scores, sum-scores,
+range of purposes, including log transforms, *z*-scores, sum-scores,
 negative scoring and means.
 
 Computed variables can be added to the data set with the ``Add`` button
@@ -91,31 +91,31 @@ examples of formulas are:
    MEAN(A, B)
    (dose - VMEAN(dose)) / VSTDEV(dose)
 
-In order, these are the sum of A and B, a log (base 10) transform of
-len, the mean of A and B, and the z-score of the variable dose. 
-:numref:`fig-computedvariable` shows the jamovi screen for the new
-variable computed as the z-score of dose (from the ``Tooth Growth``
+In order, these are the sum of ``A`` and ``B``, a log (base 10) transform
+of ``len``, the mean of ``A`` and ``B``, and the *z*-score of the variable
+``dose``. :numref:`fig-computedvariable` shows the jamovi screen for the
+new variable computed as the *z*-score of ``dose`` (from the ``Tooth Growth``
 example data set).
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_computedvariable.*
-   :alt: Computed variable: z-score of ``dose``
+   :alt: Computed variable: *z*-score of ``dose``
    :name: fig-computedvariable
 
-   A newly computed variable, the z-score of ``dose``.
+   A newly computed variable, the *z*-score of ``dose``.
    
 .. ----------------------------------------------------------------------------
 
 *V-functions*
 
 Several functions are already available in jamovi and available from the
-drop down box labelled *f\ x*. A number of functions appear in pairs,
+drop down box labelled *f*\ :sub:`x`. A number of functions appear in pairs,
 one prefixed with a V and the other not. V functions perform their
 calculation on a variable as a whole, where as non-V functions perform
-their calculation row by row. For example, MEAN(A, B) will produce the
-mean of A and B for each row. Where as VMEAN(A) gives the mean of all
-the values in A.
+their calculation row by row. For example, ``MEAN(A, B)`` will produce the
+mean of ``A`` and ``B`` for each row. Where as ``VMEAN(A)`` gives the mean of
+all the values in ``A``.
 
 Copy and Paste
 ~~~~~~~~~~~~~~

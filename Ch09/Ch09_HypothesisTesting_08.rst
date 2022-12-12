@@ -5,14 +5,14 @@ Effect size, sample size and power
 
 In previous sections I’ve emphasised the fact that the major design principle
 behind statistical hypothesis testing is that we try to control our Type I
-error rate. When we fix *α* = 0.05 we are attempting to ensure that only 5% of
+error rate. When we fix α = 0.05 we are attempting to ensure that only 5\% of
 true null hypotheses are incorrectly rejected. However, this doesn’t mean that
 we don’t care about Type II errors. In fact, from the researcher’s perspective,
 the error of failing to reject the null when it is actually false is an
 extremely annoying one. With that in mind, a secondary goal of hypothesis
-testing is to try to minimise *β*, the Type II error rate, although we don’t
+testing is to try to minimise β, the Type II error rate, although we don’t
 usually *talk* in terms of minimising Type II errors. Instead, we talk about
-maximising the *power* of the test. Since power is defined as 1 - *β*, this is
+maximising the *power* of the test. Since power is defined as 1 - β, this is
 the same thing.
 
 The power function
@@ -33,13 +33,13 @@ The power function
 Let’s take a moment to think about what a Type II error actually is. A Type II
 error occurs when the alternative hypothesis is true, but we are nevertheless
 unable to reject the null hypothesis. Ideally, we’d be able to calculate a
-single number *β* that tells us the Type II error rate, in the same way that we
-can set *α* = 0.05 for the Type I error rate. Unfortunately, this is a lot
+single number β that tells us the Type II error rate, in the same way that we
+can set α = 0.05 for the Type I error rate. Unfortunately, this is a lot
 trickier to do. To see this, notice that in my ESP study the alternative
 hypothesis actually corresponds to lots of possible values of *θ*. In fact, the
 alternative hypothesis corresponds to every value of *θ* *except* 0.5. Let’s
 suppose that the true probability of someone choosing the correct response is
-55% (i.e., *θ* = 0.55). If so, then the *true* sampling distribution for *X* is
+55\% (i.e., *θ* = 0.55). If so, then the *true* sampling distribution for *X* is
 not the same one that the null hypothesis predicts, as the most likely value
 for *X* is now 55 out of 100. Not only that, the whole sampling distribution
 has now shifted, as shown in :numref:`fig-rejectionRegion3`. The critical
@@ -71,13 +71,13 @@ hypothesis, the Type II error rate is different.
       
 .. ----------------------------------------------------------------------------
 
-What all this means is that the power of a test (i.e., 1 - *β*)
+What all this means is that the power of a test (i.e., 1 - β)
 depends on the true value of *θ*. To illustrate this, I’ve
 calculated the expected probability of rejecting the null hypothesis for
 all values of *θ*, and plotted it in :numref:`fig-powerTheta`. This plot
 describes what is usually called the **power function** of the test. It’s a
 nice summary of how good the test is, because it actually tells you the power
-(1 - *β*) for all possible values of *θ*. As you can
+(1 - β) for all possible values of *θ*. As you can
 see, when the true value of *θ* is very close to 0.5, the
 power of the test drops very sharply, but when it is further away, the
 power is large.
@@ -169,13 +169,13 @@ possible with a very large study). Sure, the null hypothesis is wrong
 but it’s not at all clear that we actually *care* because the effect
 size is so small. In the context of my ESP study we might still care
 since any demonstration of real psychic powers would actually be pretty
-cool,\ [#]_ but in other contexts a 1% difference usually isn’t very
+cool,\ [#]_ but in other contexts a 1\% difference usually isn’t very
 interesting, even if it is a real difference. For instance, suppose
 we’re looking at differences in high school exam scores between males
-and females and it turns out that the female scores are 1% higher on
+and females and it turns out that the female scores are 1\% higher on
 average than the males. If I’ve got data from thousands of students then
 this difference will almost certainly be *statistically significant*,
-but regardless of how small the *p* value is it’s just not very
+but regardless of how small the *p*-value is it’s just not very
 interesting. You’d hardly want to go around proclaiming a crisis in boys
 education on the basis of such a tiny difference would you? It’s for
 this reason that it is becoming more standard (slowly, but surely) to

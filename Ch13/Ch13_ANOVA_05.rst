@@ -83,10 +83,10 @@ pairwise *t*-test comparisons amongst the three levels of the
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_anova3.*
-   :alt: Uncorrected pairwise t-tests as post-hoc comparisons in jamovi
+   :alt: Uncorrected pairwise *t*-tests as post-hoc comparisons in jamovi
    :name: fig-anova3
 
-   Uncorrected pairwise t-tests as post-hoc comparisons in jamovi
+   Uncorrected pairwise *t*-tests as post-hoc comparisons in jamovi
    
 .. ----------------------------------------------------------------------------
 
@@ -103,8 +103,8 @@ This kind of theory-free search for group differences is referred to as
 
 It’s okay to run post-hoc analyses, but a lot of care is required. For
 instance, the analysis that I ran in the previous section should be avoided, as
-each *individual* *t*-test is designed to have a 5% Type I error rate (i.e.,
-*α* = 0.05) and I ran three of these tests. Imagine what would have happened if
+each *individual* *t*-test is designed to have a 5\% Type I error rate (i.e.,
+α = 0.05) and I ran three of these tests. Imagine what would have happened if
 my ANOVA involved 10 different groups, and I had decided to run 45 “post-hoc”
 *t*-tests to try to find out which ones were significantly different from each
 other, you’d expect 2 or 3 of them to come up significant *by chance alone*. As
@@ -133,7 +133,7 @@ The simplest of these adjustments is called the **Bonferroni correction**
 (`Dunn, 1961 <../Other/References.html#dunn-1961>`__\ ), and it’s very very
 simple indeed. Suppose that my post-hoc analysis consists of *m*
 separate tests, and I want to ensure that the total probability of
-making *any* Type I errors at all is at most *α*.\ [#]_ If so,
+making *any* Type I errors at all is at most α.\ [#]_ If so,
 then the Bonferroni correction just says “multiply all your raw
 *p*-values by *m*”. If we let *p* denote the original
 *p*-value, and let *p*'\ :sub:`j` be the corrected value, then
@@ -142,11 +142,11 @@ the Bonferroni correction tells that:
 *p*'\ :sub:`j` = *m* × *p*
 
 And therefore, if you’re using the Bonferroni correction, you would
-reject the null hypothesis if *p*'\ :sub:`j` < *α*. The logic
+reject the null hypothesis if *p*'\ :sub:`j` < α. The logic
 behind this correction is very straightforward. We’re doing *m*
 different tests, so if we arrange it so that each test has a Type I
-error rate of at most *α* / *m*, then the *total* Type I error
-rate across these tests cannot be larger than *α*. That’s
+error rate of at most α / *m*, then the *total* Type I error
+rate across these tests cannot be larger than α. That’s
 pretty simple, so much so that in the original paper, the author writes,
 
    The method given here is so simple and so general that I am sure it
@@ -188,7 +188,7 @@ does. First, you sort all of your *p*-values in order, from
 smallest to largest. For the smallest *p*-value all you do is
 multiply it by *m*, and you’re done. However, for all the other
 ones it’s a two-stage process. For instance, when you move to the second
-smallest *p* value, you first multiply it by *m* - 1. If this
+smallest *p*-value, you first multiply it by *m* - 1. If this
 produces a number that is bigger than the adjusted *p*-value that
 you got last time, then you keep it. But if it’s smaller than the last
 one, then you copy the last *p*-value. To illustrate how this

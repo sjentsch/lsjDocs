@@ -89,7 +89,7 @@ hypothesis that people on fire are just as happy as people not on fire
    :name: fig-Fisher
 
    ``Fisher's exact test`` output in jamovi. Ignore the ``Value`` and just
-   refer to the p-value
+   refer to the *p*-value
    
 .. ----------------------------------------------------------------------------
 
@@ -101,7 +101,7 @@ hypothesis that people on fire are just as happy as people not on fire
 
 .. [#]
    Not surprisingly, the Fisher exact test is motivated by Fisher’s
-   interpretation of a *p*-value, not Neyman’s! See section :doc:`The p value
+   interpretation of a *p*-value, not Neyman’s! See section :doc:`The *p*-value
    of a test <../Ch09/Ch09_HypothesisTesting_05>`.
    
 .. |salem|                             replace:: ``salem``

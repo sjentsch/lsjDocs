@@ -96,7 +96,7 @@ visualising and interpreting the significant effects.
 
    Table with the Estimated Marginal means within the ANCOVA: Shown are the 
    mean happiness level as a function of stress and commuting method
-   (adjusted for the covariate age) with 95% confidence intervals
+   (adjusted for the covariate age) with 95\% confidence intervals
    
 .. ----------------------------------------------------------------------------
 

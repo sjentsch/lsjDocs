@@ -266,13 +266,13 @@ As it happens, not only are all of these statements true, there is a
 very famous theorem in statistics that proves all three of them, known
 as the **central limit theorem**. Among other things, the central limit
 theorem tells us that if the population distribution has mean
-*µ* and standard deviation *σ*, then the sampling
-distribution of the mean also has mean *µ* and the standard
+µ and standard deviation σ, then the sampling
+distribution of the mean also has mean µ and the standard
 error of the mean is
 
 .. math:: \mbox{SEM} = \frac{\sigma}{ \sqrt{N} }
 
-Because we divide the population standard deviation *σ* by
+Because we divide the population standard deviation σ by
 the square root of the sample size *N*, the SEM gets smaller as
 the sample size increases. It also tells us that the shape of the
 sampling distribution becomes normal.\ [#]_

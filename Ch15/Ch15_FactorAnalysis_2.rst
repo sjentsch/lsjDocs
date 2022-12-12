@@ -140,8 +140,8 @@ orthogonal (``Varimax``) rotation.
 
 In :numref:`fig-pca4` we also have the proportion of overall variance in the
 data that is accounted for by the two components. Components one and two
-account for just over 12% of the variance each. Taken together, the five
-component solution accounts for just over half of the variance (56%) in the
+account for just over 12\% of the variance each. Taken together, the five
+component solution accounts for just over half of the variance (56\%) in the
 observed data. Be aware that in every PCA you could potentially have the same
 number of components as observed variables, but every additional component you
 include will add a smaller amount of explained variance. If the first few
@@ -178,10 +178,10 @@ but not substantively onto component 5.
 
 We can also see in :numref:`fig-pca1` the ``Uniqueness`` of each variable. 
 Uniqueness is the proportion of variance that is “unique” to the variable and
-not explained by the components. For example, 52% of the variance in ``A1`` is
+not explained by the components. For example, 52\% of the variance in ``A1`` is
 not explained by the components in the five component solution. In contrast,
 ``N1`` has relatively low variance not accounted for by the component solution
-(30%). Note that the greater the ``Uniqueness``, the lower the relevance or
+(30\%). Note that the greater the ``Uniqueness``, the lower the relevance or
 contribution of the variable in the component model.
 
 Hopefully, this has given you a good first idea about how to undertake PCA in

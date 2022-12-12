@@ -140,7 +140,7 @@ the data almost always produces a large and significant (p < 0.05) χ²-value.
 So, we need some other ways of assessing model fit. jamovi provides several by
 default. These are the Comparative Fit Index (CFI), the Tucker Lewis Index
 (TLI) and the Root Mean Square Error of Approximation (RMSEA) together with the
-90% confidence interval for the RMSEA. Some useful rules of thumb are that a
+90\% confidence interval for the RMSEA. Some useful rules of thumb are that a
 satisfactory fit is indicated by CFI > 0.9, TLI > 0.9, and RMSEA of about 0.05
 to 0.08. A good fit is CFI > 0.95, TLI > 0.95, and RMSEA and upper CI for RMSEA
 < 0.05.
@@ -148,7 +148,7 @@ to 0.08. A good fit is CFI > 0.95, TLI > 0.95, and RMSEA and upper CI for RMSEA
 So, looking at :numref:`fig-cfa3`, we can see that the χ²-value is large and
 highly significant. Our sample size is not too large, so this possibly
 indicates a poor fit. The CFI is 0.762 and the TLI is 0.731, indicating poor
-fit between the model and the data. The RMSEA is 0.085 with a 90% confidence
+fit between the model and the data. The RMSEA is 0.085 with a 90\% confidence
 interval from 0.077 to 0.092, again this does not indicate a good fit.
 
 Pretty disappointing, huh? But perhaps not too surprising given that in the

@@ -53,7 +53,7 @@ what I want to do is make sure you recognise that the sample statistic and the
 estimate of the population parameter are conceptually different things. A
 sample statistic is a description of your data, whereas the estimate is a guess
 about the population. With that in mind, statisticians often different notation
-to refer to them. For instance, if the true population mean is denoted *µ*,
+to refer to them. For instance, if the true population mean is denoted µ,
 then we would use :math:`\hat\mu` to refer to our estimate of the population
 mean. In contrast, the sample mean is denoted *X̄* or sometimes *m* or *M*.
 However, in simple random samples the estimate of the population mean is
@@ -70,7 +70,7 @@ the notation clear, here’s a handy table:
    * - *X̄*
      - Sample mean
      - Yes, calculated from the raw data
-   * - *µ*
+   * - µ
      - True population mean
      - Almost never known for sure
    * - :math:`\hat{\mu}`
@@ -188,9 +188,9 @@ average sample mean is equal to the population mean. It is an **unbiased
 estimator**, which is essentially the reason why your best estimate for the
 population mean is the sample mean.\ [#]_ The plot on the right is quite
 different: on average, the sample standard deviation *s* is *smaller* than
-the population standard deviation *σ*. It is a **biased estimator**. In other
+the population standard deviation σ. It is a **biased estimator**. In other
 words, if we want to make a “best guess” :math:`\hat\sigma` about the value
-of the population standard deviation *σ* we should make sure our guess is a
+of the population standard deviation σ we should make sure our guess is a
 little bit larger than the sample standard deviation *s*.
 
 .. ----------------------------------------------------------------------------
@@ -220,17 +220,17 @@ from the sample mean. That is:
 
 .. math:: s^2 = \frac{1}{N} \sum_{i=1}^N (X_i - \bar{X})^2
 
-The sample variance *s*² is a biased estimator of the population variance 
-*σ*². But as it turns out, we only need to make a tiny tweak to transform this
+The sample variance *s*\² is a biased estimator of the population variance 
+σ². But as it turns out, we only need to make a tiny tweak to transform this
 into an unbiased estimator. All we have to do is divide by *N* - 1 rather than
 by *N*. If we do that, we obtain the following formula:
 
 .. math:: \hat\sigma^2 = \frac{1}{N-1} \sum_{i=1}^N (X_i - \bar{X})^2
 
-This is an unbiased estimator of the population variance *σ*. Moreover, this
+This is an unbiased estimator of the population variance σ. Moreover, this
 finally answers the question we raised in :doc:`Measures of variability
 <../Ch04/Ch04_Descriptives_2>`. Why did jamovi give us slightly different answers for
-variance? It’s because jamovi calculates :math:`\hat\sigma^2` not *s*², that’s
+variance? It’s because jamovi calculates :math:`\hat\sigma^2` not *s*\², that’s
 why. A similar story applies for the standard deviation. If we divide by *N* -
 1 rather than *N* our estimate of the population standard deviation becomes:
 
@@ -267,7 +267,7 @@ things clear.
 | *s*                    | Sample standard      | Yes, calculated from   |
 |                        | deviation            | the raw data           |
 +------------------------+----------------------+------------------------+
-| *σ*                    | Population standard  | Almost never known for |
+| σ                      | Population standard  | Almost never known for |
 |                        | deviation            | sure                   |
 +------------------------+----------------------+------------------------+
 | :math:`\hat{\sigma}`   | Estimate of the      | Yes, but not the same  |
@@ -275,10 +275,10 @@ things clear.
 |                        | deviation            | deviation              |
 +------------------------+----------------------+------------------------+
 +------------------------+----------------------+------------------------+
-| *s*\ ²                 | Sample variance      | Yes, calculated from   |
+| *s*\²                  | Sample variance      | Yes, calculated from   |
 |                        |                      | the raw data           |
 +------------------------+----------------------+------------------------+
-| *σ*\ ²                 | Population variance  | Almost never known for |
+| σ²                     | Population variance  | Almost never known for |
 |                        |                      | sure                   |
 +------------------------+----------------------+------------------------+
 | :math:`\hat{\sigma}^2` | Estimate of the      | Yes, but not the same  |
@@ -320,17 +320,17 @@ things clear.
 
 .. [#]
    Okay, I’m hiding something else here. In a bizarre and counter-intuitive
-   twist, since :math:`\hat\sigma^2` is an unbiased estimator of *σ*², you’d
+   twist, since :math:`\hat\sigma^2` is an unbiased estimator of σ², you’d
    assume that taking the square root would be fine and :math:`\hat\sigma`
-   would be an unbiased estimator of *σ*. Right? Weirdly, it’s not. There’s
+   would be an unbiased estimator of σ. Right? Weirdly, it’s not. There’s
    actually a subtle, tiny bias in :math:`\hat\sigma`. This is just bizarre:
    :math:`\hat\sigma^2` is an unbiased estimate of the population variance
-   *σ*², but when you take the square root, it turns out that
-   :math:`\hat\sigma` is a biased estimator of the population standard
-   deviation *σ*. Weird, weird, weird, right? So, why is :math:`\hat\sigma`
-   biased? The technical answer is “because non-linear transformations (e.g.,
-   the square root) don’t commute with expectation”, but that just sounds
-   like gibberish to everyone who hasn’t taken a course in mathematical
-   statistics. Fortunately, it doesn’t matter for practical purposes. The bias
-   is small, and in real life everyone uses :math:`\hat\sigma` and it works
-   just fine. Sometimes mathematics is just annoying.
+   σ², but when you take the square root, it turns out that :math:`\hat\sigma`
+   is a biased estimator of the population standard deviation σ. Weird, weird,
+   weird, right? So, why is :math:`\hat\sigma` biased? The technical answer is
+   “because non-linear transformations (e.g., the square root) don’t commute
+   with expectation”, but that just sounds like gibberish to everyone who
+   hasn’t taken a course in mathematical statistics. Fortunately, it doesn’t
+   matter for practical purposes. The bias is small, and in real life everyone
+   uses :math:`\hat\sigma` and it works just fine. Sometimes mathematics is
+   just annoying.

@@ -51,17 +51,17 @@ And finally, an invalid argument with an unbelievable conclusion:
 
 Now, suppose that people really are perfectly able to set aside their
 pre-existing biases about what is true and what isn’t, and purely
-evaluate an argument on its logical merits. We’d expect 100% of people
-to say that the valid arguments are valid, and 0% of people to say that
+evaluate an argument on its logical merits. We’d expect 100\% of people
+to say that the valid arguments are valid, and 0\% of people to say that
 the invalid arguments are valid. So if you ran an experiment looking at
 this, you’d expect to see data like this:
 
 +-------------------------+-----------------------+------------------------+
 |                         | conclusion feels true | conclusion feels false |
 +=========================+=======================+========================+
-| **argument is valid**   | 100% say “valid”      | 100% say “valid”       |
+| **argument is valid**   | 100\% say “valid”     | 100\% say “valid”      |
 +-------------------------+-----------------------+------------------------+
-| **argument is invalid** | 0% say “valid”        | 0% say “valid”         |
+| **argument is invalid** | 0\% say “valid”       | 0\% say “valid”        |
 +-------------------------+-----------------------+------------------------+
 
 If the psychological data looked like this (or even a good approximation
@@ -79,9 +79,9 @@ everything went the way you’d hope:
 +-------------------------+-----------------------+------------------------+
 |                         | conclusion feels true | conclusion feels false |
 +=========================+=======================+========================+
-| **argument is valid**   | 92% say “valid”       |                        |
+| **argument is valid**   | 92\% say “valid”      |                        |
 +-------------------------+-----------------------+------------------------+
-| **argument is invalid** |                       | 8% say “valid”         |
+| **argument is invalid** |                       | 8\% say “valid”        |
 +-------------------------+-----------------------+------------------------+
 
 Not perfect, but that’s pretty good. But look what happens when our
@@ -91,26 +91,26 @@ logical structure of the argument:
 +-------------------------+-----------------------+------------------------+
 |                         | conclusion feels true | conclusion feels false |
 +=========================+=======================+========================+
-| **argument is valid**   | 92% say “valid”       | *46% say “valid”*      |
+| **argument is valid**   | 92\% say “valid”      | *46\% say “valid”*     |
 +-------------------------+-----------------------+------------------------+
-| **argument is invalid** | *92% say “valid”*     | 8% say “valid”         |
+| **argument is invalid** | *92\% say “valid”*    | 8\% say “valid”        |
 +-------------------------+-----------------------+------------------------+
 
 Oh dear, that’s not as good. Apparently, when people are presented with
 a strong argument that contradicts our pre-existing beliefs, we find it
 pretty hard to even perceive it to be a strong argument (people only did
-so 46% of the time). Even worse, when people are presented with a weak
+so 46\% of the time). Even worse, when people are presented with a weak
 argument that agrees with our pre-existing biases, almost no-one can see
-that the argument is weak (people got that one wrong 92% of the
+that the argument is weak (people got that one wrong 92\% of the
 time!).\ [#]_
 
 If you think about it, it’s not as if these data are horribly damning.
 Overall, people did do better than chance at compensating for their
-prior biases, since about 60% of people’s judgements were correct (you’d
-expect 50% by chance). Even so, if you were a professional “evaluator of
+prior biases, since about 60\% of people’s judgements were correct (you’d
+expect 50\% by chance). Even so, if you were a professional “evaluator of
 evidence”, and someone came along and offered you a magic tool that
-improves your chances of making the right decision from 60% to (say)
-95%, you’d probably jump at it, right? Of course you would. Thankfully,
+improves your chances of making the right decision from 60\% to (say)
+95\%, you’d probably jump at it, right? Of course you would. Thankfully,
 we actually do have a tool that can do this. But it’s not magic, it’s
 statistics. So that’s reason #1 why scientists love statistics. It’s
 just *too easy* for us to “believe what we want to believe”. So instead,
@@ -121,5 +121,5 @@ it helps keep us honest.
 ------
 
 .. [#]
-   In my more cynical moments I feel like this fact alone explains 95%
+   In my more cynical moments I feel like this fact alone explains 95\%
    of what I read on the internet.

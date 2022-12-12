@@ -103,13 +103,13 @@ Contingency Table in the output window will change to the one in
 .. ----------------------------------------------------------------------------
 
 What we’re looking at here is the percentage of utterances made by each 
-character. In other words, 50% of ``makka-pakka``’s utterances are ``pip``, and
-the other 50% are ``onk``. Let’s contrast this with the table we get when we
-calculate column percentages (uncheck ``Row`` and check ``Column`` in the
+character. In other words, 50\% of ``makka-pakka``’s utterances are ``pip``,
+and the other 50\% are ``onk``. Let’s contrast this with the table we get when
+we calculate column percentages (uncheck ``Row`` and check ``Column`` in the
 ``Cells`` options window), see :numref:`fig-contingencycol`. In this version,
 what we’re seeing is the percentage of characters associated with each
 utterance. For instance, whenever the utterance ``ee`` is made (in this data
-set), 100% of the time it’s a Tombliboo saying it.
+set), 100\% of the time it’s a Tombliboo saying it.
 
 .. ----------------------------------------------------------------------------
 

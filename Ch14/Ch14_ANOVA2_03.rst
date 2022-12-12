@@ -62,10 +62,10 @@ without the interaction term, from :numref:`fig-factorialanova3`:
    drug           0.71        0.79
    therapy        0.10        0.34
 
-Looking at the η² values first, we see that ``drug`` accounts for 71% of the
+Looking at the η² values first, we see that ``drug`` accounts for 71\% of the
 variance (i.e. η² = 0.71) in ``mood.gain``, whereas ``therapy`` only accounts
-for 10%. This leaves a total of 19% of the variation unaccounted for (i.e., the
-residuals constitute 19% of the variation in the outcome). Overall, this
+for 10\%. This leaves a total of 19\% of the variation unaccounted for (i.e., the
+residuals constitute 19\% of the variation in the outcome). Overall, this
 implies that we have a very large effect\ [#]_ of ``drug`` and a modest effect
 of ``therapy``.
 
@@ -125,7 +125,7 @@ than use a separate one for each group.
 .. ----------------------------------------------------------------------------
 
 In the output we see that the estimated mean mood gain for the placebo group
-with no therapy was 0.300, with a 95% confidence interval from 0.006 to 0.594.
+with no therapy was 0.300, with a 95\% confidence interval from 0.006 to 0.594.
 Note that these are not the same confidence intervals that you would get if you
 calculated them separately for each group, because of the fact that the ANOVA
 model assumes homogeneity of variance and therefore uses a pooled estimate of

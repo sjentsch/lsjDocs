@@ -62,4 +62,4 @@ hypothesis testing.
    should work. The standard treatment of hypothesis testing that most
    texts use is a hybrid of the two approaches. The treatment here is a
    little more Neyman-style than the orthodox view, especially as
-   regards the meaning of the *p* value.
+   regards the meaning of the *p*-value.

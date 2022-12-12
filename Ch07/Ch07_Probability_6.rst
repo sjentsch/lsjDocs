@@ -24,11 +24,11 @@ pictures.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_tDist.*
-   :alt: t-distribution with df = 3 in comparison to a normal distribution
+   :alt: *t*-distribution with *df* = 3 in comparison to a normal distribution
    :name: fig-tDist
 
-   t-distribution with 3 degrees of freedom (solid line). It looks similar to a
-   normal distribution, but it’s not quite the same. For comparison purposes
+   *t*-distribution with 3 degrees of freedom (solid line). It looks similar to
+   a normal distribution, but it’s not quite the same. For comparison purposes
    I’ve plotted a standard normal distribution as the dashed line.
 
 .. ----------------------------------------------------------------------------
@@ -48,7 +48,7 @@ pictures.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_chiSqDist.*
-   :alt: χ²-distribution with df = 3
+   :alt: χ²-distribution with *df* = 3
    :name: fig-chiSqDist
 
    χ²-distribution with 3 degrees of freedom. Notice that the observed
@@ -73,10 +73,10 @@ pictures.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_FDist.*
-   :alt: F-distribution with df = 3 and df = 5
+   :alt: *F*-distribution with *df* = 3 and *df* = 5
    :name: fig-FDist
 
-   F-distribution with 3 and 5 degrees of freedom. Qualitatively speaking, it
+   *F*-distribution with 3 and 5 degrees of freedom. Qualitatively speaking, it
    looks pretty similar to a χ²-distribution, but they’re not quite the
    same in general.
    

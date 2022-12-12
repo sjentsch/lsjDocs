@@ -159,7 +159,7 @@ give you all of the relevant information. The first column is the actual
 estimate of *b* (e.g., 125.97 for the intercept, and -8.95 for the
 ``dani.sleep`` predictor). The second column is the standard error
 estimate :math:`\hat\sigma_b`. The third and fourth columns provide the
-lower and upper values for the 95% confidence interval around the
+lower and upper values for the 95\% confidence interval around the
 *b* estimate (more on this later). The fifth column gives you the
 *t*-statistic, and it’s worth noticing that in this table
 :math:`t= \hat{b}/ SE(\hat{b})` every time. Finally, the
@@ -173,8 +173,8 @@ labelled ``Model Fit Measures``. We can see from this table that the model
 performs significantly better than you’d expect by chance
 (*F*\(2,97) = 215.24, *p* < 0.001), which isn’t all that
 surprising: the *R²* = 0.81 value indicate that the regression
-model accounts for 81% of the variability in the outcome measure (and
-82% for the adjusted *R²*). However, when we look back up at the
+model accounts for 81\% of the variability in the outcome measure (and
+82\% for the adjusted *R²*). However, when we look back up at the
 *t*-tests for each of the individual coefficients, we have pretty
 strong evidence that the ``baby.sleep`` variable has no significant
 effect. All the work in this model is being done by the ``dani.sleep``

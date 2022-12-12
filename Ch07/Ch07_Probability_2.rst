@@ -16,7 +16,7 @@ turns out that you don’t *really* know what it’s all about.
 
 So I’ll have a go at it. Let’s suppose I want to bet on a soccer game
 between two teams of robots, *Arduino Arsenal* and *C Milan*. After
-thinking about it, I decide that there is an 80% probability of *Arduino
+thinking about it, I decide that there is an 80\% probability of *Arduino
 Arsenal* winning. What do I mean by that? Here are three possibilities:
 
 -  They’re robot teams so I can make them play over and over again, and
@@ -53,7 +53,7 @@ is that the first 20 flips might look like this:
 
    T,H,H,H,H,T,T,H,H,H,H,T,H,H,T,T,T,T,T,H
 
-In this case 11 of these 20 coin flips (55%) came up heads. Now suppose
+In this case 11 of these 20 coin flips (55\%) came up heads. Now suppose
 that I’d been keeping a running tally of the number of heads (which I’ll
 call *N*\ :sub:`H`\ ) that I’ve seen, across the first *N* flips, and
 calculate the proportion of heads *N*\ :sub:`H` / *N* every time. Here’s
@@ -81,7 +81,7 @@ one gets the impression that it dampens out a bit, with more and more of
 the values actually being pretty close to the “right” answer of 0.50.
 This is the frequentist definition of probability in a nutshell. Flip a
 fair coin over and over again, and as *N* grows large (approaches
-infinity, denoted *N* → ∞) the proportion of heads will converge to 50%.
+infinity, denoted *N* → ∞) the proportion of heads will converge to 50\%.
 There are some subtle technicalities that the mathematicians care about, but
 qualitatively speaking that’s how the
 frequentists define probability. Unfortunately, I don’t have an infinite
@@ -135,7 +135,7 @@ out there that human beings are happy to assign probability to in
 everyday language, but cannot (even in theory) be mapped onto a
 hypothetical sequence of events. For instance, if a meteorologist comes
 on TV and says “the probability of rain in Adelaide on 2 November 2048
-is 60%” we humans are happy to accept this. But it’s not clear how to
+is 60\%” we humans are happy to accept this. But it’s not clear how to
 define this in frequentist terms. There’s only one city of Adelaide, and
 only one 2 November 2048. There’s no infinite sequence of events here,
 just a one-off thing. Frequentist probability genuinely *forbids* us
@@ -145,8 +145,8 @@ There is no “probability” that attaches to a single non-repeatable
 event. Now, it should be said that there are some very clever tricks
 that frequentists can use to get around this. One possibility is that
 what the meteorologist means is something like “There is a category of
-days for which I predict a 60% chance of rain, and if we look only
-across those days for which I make this prediction, then on 60% of those
+days for which I predict a 60\% chance of rain, and if we look only
+across those days for which I make this prediction, then on 60\% of those
 days it will actually rain”. It’s very weird and counterintuitive to
 think of it this way, but you do see frequentists do this sometimes. And
 it *will* come up later in this book (see :doc:`Estimating a confidence
@@ -169,11 +169,11 @@ intelligent beings.
 However, in order for this approach to work we need some way of
 operationalising “degree of belief”. One way that you can do this is to
 formalise it in terms of “rational gambling”, though there are many
-other ways. Suppose that I believe that there’s a 60% probability of
+other ways. Suppose that I believe that there’s a 60\% probability of
 rain tomorrow. If someone offers me a bet that if it rains tomorrow then
 I win $5, but if it doesn’t rain I lose $5. Clearly, from my
 perspective, this is a pretty good bet. On the other hand, if I think
-that the probability of rain is only 40% then it’s a bad bet to take. So
+that the probability of rain is only 40\% then it’s a bad bet to take. So
 we can operationalise the notion of a “subjective probability” in terms
 of what bets I’m willing to accept.
 

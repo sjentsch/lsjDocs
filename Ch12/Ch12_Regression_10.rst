@@ -23,7 +23,7 @@ let’s have a look at each of them.
 -  *Homogeneity of variance*. Strictly speaking, the regression model assumes
    that each residual ε\ :sub:`i` is generated from a normal distribution with
    mean 0, and (more importantly for the current purposes) with a standard
-   deviation *σ* that is the same for every single residual. In practice, it’s
+   deviation σ that is the same for every single residual. In practice, it’s
    impossible to test the assumption that every residual is identically
    distributed. Instead, what we care about is that the standard deviation of
    the residual is the same for all values of *Ŷ*, and (if we’re being

@@ -28,14 +28,14 @@ set, we get the results shown in :numref:`fig-binomialtest`.
 Right now, this output looks pretty unfamiliar to you, but you can see
 that it’s telling you more or less the right things. Specifically, the
 *p*-value of 0.02 is less than the usual choice of
-*α* = 0.05, so you can reject the null. We’ll talk a lot more
+α = 0.05, so you can reject the null. We’ll talk a lot more
 about how to read this sort of output as we go along, and after a while
 you’ll hopefully find it quite easy to read and understand.
 
 ------
 
 .. [#]
-   Note that the ``p`` here has nothing to do with a *p* value.
+   Note that the ``p`` here has nothing to do with a *p*-value.
    The ``p`` argument in the jamovi binomial test corresponds to the
    probability of making a correct response, according to the null
    hypothesis. In other words, it’s the *θ* value.

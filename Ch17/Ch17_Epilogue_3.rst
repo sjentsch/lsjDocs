@@ -9,7 +9,7 @@ should be done. In chapter :doc:`Estimating unknown quantities from a sample
 <../Ch08/Ch08_Estimation>` I talked a little bit about the idea of unbiased estimators,
 sampling distributions and so on. In chapter :doc:`Hypothesis testing
 <../Ch09/Ch09_HypothesisTesting>` I talked about the theory of null hypothesis
-significance testing and p-values. These ideas have been around since the early
+significance testing and *p*-values. These ideas have been around since the early
 20th century, and the tools that I’ve talked about in the book rely very
 heavily on the theoretical ideas from that time. I’ve felt obligated to stick
 to those topics because the vast majority of data analysis in science is also
@@ -25,7 +25,7 @@ other approaches to inference that are worth mentioning:
 
 -  **Bootstrapping.** Throughout the book, whenever I’ve introduced a
    hypothesis test, I’ve had a strong tendency just to make assertions like
-   “the sampling distribution for BLAH is a t-distribution” or something like
+   “the sampling distribution for BLAH is a *t*-distribution” or something like
    that. In some cases, I’ve actually attempted to justify this assertion. For
    example, when talking about χ²-tests in chapter :doc:`Categorical data
    analysis <../Ch10/Ch10_ChiSquare>`, I made reference to the known relationship

@@ -30,7 +30,7 @@ region? Well, let’s consider what we know:
 -  If the null hypothesis is true, the sampling distribution of
    *X* is Binomial(0.5, N).
 
--  If *α* = 0.05, the critical region must cover 5% of this
+-  If α = 0.05, the critical region must cover 5\% of this
    sampling distribution.
 
 It’s important to make sure you understand this last point. The critical
@@ -38,12 +38,12 @@ region corresponds to those values of *X* for which we would
 reject the null hypothesis, and the sampling distribution in question
 describes the probability that we would obtain a particular value of
 *X* if the null hypothesis were actually true. Now, let’s suppose
-that we chose a critical region that covers 20% of the sampling
+that we chose a critical region that covers 20\% of the sampling
 distribution, and suppose that the null hypothesis is actually true.
 What would be the probability of incorrectly rejecting the null? The
-answer is of course 20%. And, therefore, we would have built a test that
-had an *α* level of 0.2. If we want
-*α* = 0.05, the critical region is only *allowed* to cover 5%
+answer is of course 20\%. And, therefore, we would have built a test that
+had an α level of 0.2. If we want
+α = 0.05, the critical region is only *allowed* to cover 5\%
 of the sampling distribution of our test statistic.
 
 .. ----------------------------------------------------------------------------
@@ -61,14 +61,14 @@ of the sampling distribution of our test statistic.
    null. Because the alternative hypothesis is two-sided (i.e., allows both
    θ < 0.5 and θ > 0.5), the critical region covers both tails of the
    distribution. To ensure an α level of 0.05, we need to ensure that each of
-   the two regions encompasses 2.5% of the sampling distribution.
+   the two regions encompasses 2.5\% of the sampling distribution.
    
 .. ----------------------------------------------------------------------------
 
 As it turns out those three things uniquely solve the problem. Our critical
 region consists of the most *extreme values*, known as the **tails** of the
 distribution. This is illustrated in :numref:`fig-rejectionRegion1`. If we
-want *α* = 0.05 then our critical regions correspond to *X* ≤ 40` and
+want α = 0.05 then our critical regions correspond to *X* ≤ 40` and
 *X* ≥ 60.\ [#]_ That is, if the number of people saying “true” is between 41
 and 59, then we should retain the null hypothesis. If the number is between 0
 to 40, or between 60 to 100, then we should reject the null hypothesis. The
@@ -77,7 +77,7 @@ define the edges of the critical region.
 
 At this point, our hypothesis test is essentially complete:
 
-#. (1) we choose an *α* level (e.g., *α* = 0.05;
+#. (1) we choose an α level (e.g., α = 0.05;
 
 #. (2) come up with some test statistic (e.g., *X*) that does a
    good job (in some meaningful sense) of comparing H\ :sub:`0` to
@@ -88,7 +88,7 @@ At this point, our hypothesis test is essentially complete:
    and then
 
 #. (4) calculate the critical region that produces an appropriate
-   *α* level (0-40 and 60-100).
+   α level (0-40 and 60-100).
 
 All that we have to do now is calculate the value of the test statistic
 for the real data (e.g., *X* = 62) and then compare it to the
@@ -142,8 +142,8 @@ there are some people who think that). In statistical language this is
 an example of a **two-sided test**. It’s called this because the
 alternative hypothesis covers the area on both “sides” of the null
 hypothesis, and as a consequence the critical region of the test covers
-both tails of the sampling distribution (2.5% on either side if
-*α* = 0.05), as illustrated earlier in :numref:`fig-rejectionRegion1`.
+both tails of the sampling distribution (2.5\% on either side if
+α = 0.05), as illustrated earlier in :numref:`fig-rejectionRegion1`.
 
 However, that’s not the only possibility. I might only be willing to
 believe in ESP if it produces better than chance performance. If so,
@@ -168,7 +168,7 @@ is illustrated in :numref:`fig-rejectionRegion2`.
    The critical region for a one-sided test. In this case, the alternative
    hypothesis is that θ = 0.5 so we would only reject the null hypothesis for
    large values of X. As a consequence, the critical region only covers the
-   upper tail of the sampling distribution, specifically the upper 5% of the
+   upper tail of the sampling distribution, specifically the upper 5\% of the
    distribution. Contrast this to the two-sided version in
    :numref:`fig-rejectionRegion1`.
    
@@ -178,12 +178,12 @@ is illustrated in :numref:`fig-rejectionRegion2`.
 
 .. [#]
    Strictly speaking, the test I just constructed has
-   *α* = 0.057, which is a bit too generous. However, if I’d
+   α = 0.057, which is a bit too generous. However, if I’d
    chosen 39 and 61 to be the boundaries for the critical region then
-   the critical region only covers 3.5% of the distribution. I figured
+   the critical region only covers 3.5\% of the distribution. I figured
    that it makes more sense to use 40 and 60 as my critical values, and
-   be willing to tolerate a 5.7% type I error rate, since that’s as
-   close as I can get to a value of *α* = 0.05.
+   be willing to tolerate a 5.7\% type I error rate, since that’s as
+   close as I can get to a value of α = 0.05.
 
 .. [#]
    The internet seems fairly convinced that Ashley said this, though I

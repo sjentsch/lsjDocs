@@ -48,11 +48,11 @@ would be interested in the following four comparisons:
 For any one of these comparisons, we’re interested in the true
 difference between (population) group means. Tukey’s HSD constructs
 **simultaneous confidence intervals** for all four of these comparisons.
-What we mean by 95% “simultaneous” confidence interval is that, if we
-were to repeat this study many times, then in 95% of the study results
+What we mean by 95\% “simultaneous” confidence interval is that, if we
+were to repeat this study many times, then in 95\% of the study results
 the confidence intervals would contain the relevant true value.
 Moreover, we can use these confidence intervals to calculate an adjusted
-*p* value for any specific comparison.
+*p*-value for any specific comparison.
 
 The ``TukeyHSD`` function in jamovi is pretty easy to use. You simply
 specify the ANOVA model term that you want to run the post-hoc tests
@@ -77,17 +77,14 @@ applied. This, along with the corresponding results table, is shown in
    
 .. ----------------------------------------------------------------------------
 
-The output shown in the ``Post Hoc Tests`` results table is (I hope)
-pretty straightforward. The first comparison, for example, is the
-Anxifree versus placebo difference, and the first part of the output
-indicates that the observed difference in group means is 0.27.
-The next number is the standard error for the difference, from which we
-could calculate the 95% confidence interval if we wanted, though jamovi
-does not currently provide this option. Then there is a column with the
-degrees of freedom, a column with the *t*-value, and finally a
-column with the *p*-value. For the first comparison the adjusted
-*p*-value is 0.21. In contrast, if you look at the next
-line, we see that the observed difference between joyzepam and the
+The output shown in the ``Post Hoc Tests`` results table is (I hope) pretty
+straightforward. The first comparison, for example, is the Anxifree versus
+placebo difference, and the first part of the output indicates that the
+observed difference in group means is 0.27. The next number is the standard
+error for the difference. Then there is a column with the degrees of freedom,
+a column with the *t*-value, and finally a column with the *p*-value. For the
+first comparison the adjusted *p*-value is 0.21. In contrast, if you look at
+the next line, we see that the observed difference between joyzepam and the
 placebo is 1.03, and this result is significant (*p* < 0.001).
 
 So far, so good. What about the situation where your model includes

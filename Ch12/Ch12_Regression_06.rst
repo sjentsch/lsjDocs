@@ -83,7 +83,7 @@ This gives a value for R² of **0.816**. The R² value, sometimes called the
 **coefficient of determination**\ [#]_ has a simple interpretation: it is the
 *proportion* of the variance in the outcome variable that can be accounted for
 by the predictor. So, in this case the fact that we have obtained *R²* = 0.816
-means that the predictor (``dani.sleep``) explains 81.6% of the variance in the
+means that the predictor (``dani.sleep``) explains 81.6\% of the variance in the
 outcome (``dani.grump``).\ [#]_
 
 Naturally, you don’t actually need to do all these calculations yourself if you

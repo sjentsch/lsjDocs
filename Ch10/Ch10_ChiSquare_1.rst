@@ -106,7 +106,7 @@ H\ :sub:`0`: All four suits are chosen with equal probability
 Now, because this is statistics, we have to be able to say the same thing in a
 mathematical way. To do this, let’s use the notation *P*\ :sub:`j`\ to refer to
 the true probability that the *j*-th suit is chosen. If the null hypothesis is
-true, then each of the four suits has a 25% chance of being selected. In other
+true, then each of the four suits has a 25\% chance of being selected. In other
 words, our null hypothesis claims that *P*\ :sub:`1` = 0.25, 
 *P*\ :sub:`2` = 0.25, *P*\ :sub:`3` = 0.25 and finally that *P*\ :sub:`4` = 0.25.
 However, in the same way that we can group our observed frequencies into a
@@ -369,13 +369,13 @@ well. Therefore, a pretty sensible strategy would be to say there is some
 critical value such that if χ² is bigger than the critical value we reject the
 null, but if χ² is smaller than this value we retain the null. In other words,
 to use the language we introduced in chapter :doc:`Hypothesis testing
-<../Ch09/Ch09_HypothesisTesting>` the χ²-goodness-of-fit test is always a **one-sided
-test**. Right, so all we have to do is figure out what this critical value is.
-And it’s pretty straightforward. If we want our test to have significance level
-of *α* = 0.05 (that is, we are willing to tolerate a Type I error rate of 5%),
-then we have to choose our critical value so that there is only a 5% chance
-that χ² could get to be that big if the null hypothesis is true. This is
-illustrated in :numref:`fig-chiSqTest`.
+<../Ch09/Ch09_HypothesisTesting>` the χ²-goodness-of-fit test is always a 
+**one-sided test**. Right, so all we have to do is figure out what this
+critical value is. And it’s pretty straightforward. If we want our test to
+have significance level of α = 0.05 (that is, we are willing to tolerate a
+Type I error rate of 5\%), then we have to choose our critical value so that
+there is only a 5\% chance that χ² could get to be that big if the null
+hypothesis is true. This is illustrated in :numref:`fig-chiSqTest`.
 
 .. ----------------------------------------------------------------------------
 
@@ -468,12 +468,12 @@ Specifying a different null hypothesis
 At this point you might be wondering what to do if you want to run a
 goodness-of-fit test but your null hypothesis is *not* that all categories are
 equally likely. For instance, let’s suppose that someone had made the
-theoretical prediction that people should choose red cards 60% of the time, and
-black cards 40% of the time (I’ve no idea why you’d predict that), but had no
+theoretical prediction that people should choose red cards 60\% of the time, and
+black cards 40\% of the time (I’ve no idea why you’d predict that), but had no
 other preferences. If that were the case, the null hypothesis would be to
-expect 30% of the choices to be hearts, 30% to be diamonds, 20% to be spades
-and 20% to be clubs. In other words we would expect hearts and diamonds to
-appear 1.5 times more often than spades and clubs (the ratio 30% : 20% is the
+expect 30\% of the choices to be hearts, 30\% to be diamonds, 20\% to be spades
+and 20\% to be clubs. In other words we would expect hearts and diamonds to
+appear 1.5 times more often than spades and clubs (the ratio 30\% : 20\% is the
 same as 1.5 : 1). This seems like a silly theory to me, and it’s pretty easy to
 test this explicitly specified null hypothesis with the data in our jamovi
 analysis. In the analysis window (labelled ``Proportion Test (N Outcomes)`` in
@@ -495,10 +495,10 @@ and the χ² statistic is 4.74, *df* = 3, *p* = 0.192. Now, the results of our
 updated hypotheses and the expected frequencies are different from what they
 were last time. As a consequence our χ² test statistic is different, and our
 *p*-value is different too. Annoyingly, the *p*-value is 0.192, so we can’t
-reject the null hypothesis (look back at section :doc:`The p value of a test
-<../Ch09/Ch09_HypothesisTesting_05>` to remind yourself why). Sadly, despite the fact
-that the null hypothesis corresponds to a very silly theory, these data don’t
-provide enough evidence against it.
+reject the null hypothesis (look back at section :doc:`The *p*-value of a test
+<../Ch09/Ch09_HypothesisTesting_05>` to remind yourself why). Sadly, despite the
+fact that the null hypothesis corresponds to a very silly theory, these data
+don’t provide enough evidence against it.
 
 .. ----------------------------------------------------------------------------
 

@@ -39,7 +39,7 @@ records the student grade for the first test, and the ``grade_test2``
 variable that has the grades for the second test.
 
 If we look at the jamovi spreadsheet it does seem like the class is a
-hard one (most grades are between 50% and 60%), but it does look like
+hard one (most grades are between 50\% and 60\%), but it does look like
 there’s an improvement from the first test to the second one.
 
 .. ----------------------------------------------------------------------------
@@ -54,9 +54,9 @@ there’s an improvement from the first test to the second one.
 
 If we take a quick look at the descriptive statistics, in
 :numref:`fig-ttest_paired1`, we see that this impression seems to be supported.
-Across all 20 students the mean grade for the first test is 57%, but this
-rises to 58% for the second test. Although, given that the standard deviations
-are 6.6% and 6.4% respectively, it’s starting to feel like maybe the
+Across all 20 students the mean grade for the first test is 57\%, but this
+rises to 58\% for the second test. Although, given that the standard deviations
+are 6.6\% and 6.4\% respectively, it’s starting to feel like maybe the
 improvement is just illusory; maybe just random variation. This impression is
 reinforced when you see the means and confidence intervals plotted in
 :numref:`fig-pairedt` (left panel). If we were to rely on this
@@ -70,7 +70,7 @@ pure chance.
    :alt: Mean grade for test 1 and test 2 in Dr Chico's class
    :name: fig-pairedt
 
-   Mean grade for test 1 and test 2, with associated 95% confidence intervals
+   Mean grade for test 1 and test 2, with associated 95\% confidence intervals
    (left panel). Scatterplot showing the individual grades for test 1 and test
    2 (middle panel). Histogram showing the improvement made by each student in
    Dr Chico’s class (right panel). In the right panel, notice that almost the
@@ -106,7 +106,7 @@ What is the paired samples *t*-test?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In light of the previous exploration, let’s think about how to construct
-an appropriate t test. One possibility would be to try to run an
+an appropriate *t*-test. One possibility would be to try to run an
 independent samples *t*-test using ``grade_test1`` and
 ``grade_test2`` as the variables of interest. However, this is clearly
 the wrong thing to do as the independent samples *t*-test assumes
@@ -132,13 +132,13 @@ second one, then the difference score is:
 Notice that the difference scores is *variable 1 minus variable 2* and not the
 other way around, so if we want improvement to correspond to a positive valued
 difference, we actually want “test 2” to be our “variable 1”. Equally, we would
-say that *µ*\ :sub`D` = *µ*\ :sub`1` - *µ*\ :sub`2` is the population mean for
+say that µ\ :sub`D` = µ\ :sub`1` - µ\ :sub`2` is the population mean for
 this difference variable. So, to convert this to a hypothesis test, our null
 hypothesis is that this mean difference is zero and the alternative hypothesis
 is that it is not
 
-| H\ :sub`0`: *µ*\ :sub`D` = 0
-| H\ :sub`2`: *µ*\ :sub`D` ≠ 0
+| H\ :sub`0`: µ\ :sub`D` = 0
+| H\ :sub`2`: µ\ :sub`D` ≠ 0
 
 This is assuming we’re talking about a two-sided test here. This is more or
 less identical to the way we described the hypotheses for the one-sample
@@ -175,7 +175,7 @@ called ``improvement``, let’s do that and see what we get
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_ttest_paired2.*
-   :alt: Results showing a one sample t-test on paired difference scores
+   :alt: Results showing a one sample *t*-test on paired difference scores
    :name: fig-ttest_paired2
 
    Results showing a one sample *t*-test on paired difference scores
@@ -184,8 +184,8 @@ called ``improvement``, let’s do that and see what we get
 
 The output shown in :numref:`fig-ttest_paired2` is (obviously) formatted
 exactly the same was as it was the last time we used the ``One Sample T-Test``
-analysis (section :doc:`The one-sample t-test <../Ch11/Ch11_tTest_02>`), and it
-confirms our intuition. There’s an average improvement of 1.4% from test 1 to
+analysis (section :doc:`The one-sample *t*-test <../Ch11/Ch11_tTest_02>`), and it
+confirms our intuition. There’s an average improvement of 1.4\% from test 1 to
 test 2, and this is significantly different from 0 (*t*\(19) = 6.48,
 p < 0.001).
 
@@ -198,7 +198,7 @@ getting the results shown in :numref:`fig-ttest_paired3`.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_ttest_paired3.*
-   :alt: Results showing a paired sample t-test
+   :alt: Results showing a paired sample *t*-test
    :name: fig-ttest_paired3
 
    Results showing a paired sample *t*-test. Compare it with

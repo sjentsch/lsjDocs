@@ -58,7 +58,7 @@ Cohen’s *d* from one sample
 
 The simplest situation to consider is the one corresponding to a one-sample
 *t*-test. In this case, this is the one sample mean *X̄* and one (hypothesised)
-population mean *µ*\ :sub:`o` to compare it to. Not only that, there’s really
+population mean µ\ :sub:`o` to compare it to. Not only that, there’s really
 only one sensible way to estimate the population standard deviation. We just
 use our usual estimate :math:`\hat{\sigma}`. Therefore, we end up with the
 following as the only way to calculate d:
@@ -67,8 +67,8 @@ following as the only way to calculate d:
 
 When we look back at the results in :numref:`fig-ttest_one`, the effect size
 value is Cohen’s *d* = 0.50. Overall, then, the psychology students in Dr
-Zeppo’s class are achieving grades (mean = 72.3%) that are about 0.5 standard
-deviations higher than the level that you’d expect (67.5%) if they were
+Zeppo’s class are achieving grades (mean = 72.3\%) that are about 0.5 standard
+deviations higher than the level that you’d expect (67.5\%) if they were
 performing at the same level as other students. Judged against Cohen’s rough
 guide, this is a moderate effect size.
 
@@ -76,16 +76,16 @@ Cohen’s *d* from a Student’s *t*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The majority of discussions of Cohen’s *d* focus on a situation that is
-analogous to Student’s independent samples t test, and it’s in this context
+analogous to Student’s independent samples *t*-test, and it’s in this context
 that the story becomes messier, since there are several different versions of
 *d* that you might want to use in this situation. To understand why there are
 multiple versions of *d*, it helps to take the time to write down a formula
 that corresponds to the true population effect size δ. It’s pretty
-straightforward, δ = (*µ*\ _sub:`1` - *µ*\ _sub:`2`) / 
+straightforward, δ = (µ\ _sub:`1` - µ\ _sub:`2`) / 
 
-where, as usual, *µ*\ _sub:`1` and *µ*\ _sub:`2` are the population
+where, as usual, µ\ _sub:`1` and µ\ _sub:`2` are the population
 means corresponding to group 1 and group 2 respectively, and
-*σ* is the standard deviation (the same for both
+σ is the standard deviation (the same for both
 populations). The obvious way to estimate δ is to do
 exactly the same thing that we did in the *t*-test itself, i.e.,
 use the sample means as the top line and a pooled standard deviation
@@ -146,7 +146,7 @@ jamovi ``Paired Samples T-Test`` analysis. The only wrinkle is figuring
 out whether this is the measure you want or not. To the extent that you
 care about the practical consequences of your research, you often want
 to measure the effect size relative to the *original* variables, not the
-*difference* scores (e.g., the 1% improvement in Dr Chico’s class over
+*difference* scores (e.g., the 1\% improvement in Dr Chico’s class over
 time is pretty small when measured against the amount of between-student
 variation in grades), in which case you use the same versions of Cohen’s
 d that you would use for a Student or Welch test. It’s not so

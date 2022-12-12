@@ -11,19 +11,19 @@ distributed, with the mean grumpiness score being 17 out of 50 questions
 answered in a grumpy way, and the standard deviation is 5. In contrast,
 when I take the questionnaire I answer 35 out of 50 questions in a
 grumpy way. So, how grumpy am I? One way to think about it would be to
-say that I have grumpiness of 35/50, so you might say that I’m 70%
+say that I have grumpiness of 35/50, so you might say that I’m 70\%
 grumpy. But that’s a bit weird, when you think about it. If my friend
 had phrased her questions a bit differently people might have answered
 them in a different way, so the overall distribution of answers could
 easily move up or down depending on the precise way in which the
-questions were asked. So, I’m only 70% grumpy *with respect to this set
+questions were asked. So, I’m only 70\% grumpy *with respect to this set
 of survey questions*. Even if it’s a very good questionnaire this isn’t
 very a informative statement.
 
 A simpler way around this is to describe my grumpiness by comparing me
 to other people. Shockingly, out of my friend’s sample of 1,000,000
 people, only 159 people were as grumpy as me (that’s not at all
-unrealistic, frankly) suggesting that I’m in the top 0.016% of people
+unrealistic, frankly) suggesting that I’m in the top 0.016\% of people
 for grumpiness. This makes much more sense than trying to interpret the
 raw data. This idea, that we should describe my grumpiness in terms of
 the overall distribution of the grumpiness of humans, is the qualitative
@@ -55,10 +55,10 @@ grumpiness into a standardised grumpiness score.
 .. math:: z = \frac{35 - 17}{5} = 3.6
 
 To interpret this value, recall the rough heuristic that I provided in section
-:doc:`Standard deviation <../Ch04/Ch04_Descriptives_2>` in which I noted that 99.7% of
-values are expected to lie within 3 standard deviations of the mean. So the
-fact that my grumpiness corresponds to a *z* score of 3.6 indicates that I’m
-very grumpy indeed. In fact this suggests that I’m grumpier than 99.98% of
+:doc:`Standard deviation <../Ch04/Ch04_Descriptives_2>` in which I noted that
+99.7\% of values are expected to lie within 3 standard deviations of the mean.
+So the fact that my grumpiness corresponds to a *z* score of 3.6 indicates that
+I’m very grumpy indeed. In fact this suggests that I’m grumpier than 99.98\% of
 people. Sounds about right.
 
 In addition to allowing you to interpret a raw score in relation to a

@@ -16,7 +16,7 @@ so far in this chapter, the assumptions are:
    frequencies need to be reasonably big. How big is reasonably big? Opinions
    differ, but the default assumption seems to be that you generally would like
    to see all your expected frequencies larger than about 5, though for larger
-   tables you would probably be okay if at least 80% of the the expected
+   tables you would probably be okay if at least 80\% of the the expected
    frequencies are above 5 and none of them are below 1. However, from what
    I’ve been able to discover (`Cochran, 1954
    <../Other/References.html#cochran-1954>`__\ ), these seem to have been proposed as

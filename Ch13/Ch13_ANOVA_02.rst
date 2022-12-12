@@ -285,7 +285,7 @@ formulas showing how they are calculated, is shown in :numref:`tab-anovatable`.
    :name: tab-anovatable
 
    +--------------------+----------------+-------------------+--------------------------+---------------------+---------------+
-   |                    | df             | sum of squares    | mean squares             | *F*-statistic       | *p*-value     |
+   |                    | *df*           | sum of squares    | mean squares             | *F*-statistic       | *p*-value     |
    +====================+================+===================+==========================+=====================+===============+
    | **between groups** | |df_b| = G - 1 | |SS_b| = |f_SS_b| | |MS_b| = |SS_b| / |df_b| | F = |MS_b| / |MS_w| | [complicated] |
    +--------------------+----------------+-------------------+--------------------------+---------------------+---------------+
@@ -303,7 +303,7 @@ now, though you probably won’t like me for doing so. If you recall, our
 null hypothesis was that all of the group means are identical to one
 another. If so, then a natural way to think about the outcome variable
 |Y_ik| is to describe individual scores in terms of a single
-population mean *µ*, plus the deviation from that population
+population mean µ, plus the deviation from that population
 mean. This deviation is usually denoted ϵ\ :sub:`ik` and is
 traditionally called the *error* or **residual** associated with that
 observation. Be careful though. Just like we saw with the word
@@ -321,7 +321,7 @@ as a statistical model
 |Y_ik| = µ + ϵ\ :sub:`ik`
 
 where we make the *assumption* (discussed later) that the residual values
-ϵ\ :sub:`ik` are normally distributed, with mean 0 and a standard deviation *σ*
+ϵ\ :sub:`ik` are normally distributed, with mean 0 and a standard deviation σ
 that is the same for all groups. To use the notation that we introduced in
 chapter :doc:`Introduction to probability <../Ch07/Ch07_Probability>` we would write
 this assumption like this:
@@ -338,7 +338,7 @@ is
 |Y_ik| = µ\ :sub:`k` + ϵ\ :sub:`ik`
 
 where, once again, we assume that the error terms are normally
-distributed with mean 0 and standard deviation *σ*. That is,
+distributed with mean 0 and standard deviation σ. That is,
 the alternative hypothesis also assumes that
 ϵ ~ Normal(0, σ²)
 
@@ -591,13 +591,13 @@ it’s traditional to organise all these numbers into an ANOVA table like
 the one in :numref:`tab-anovatable`. For our |clinicaltrial|_ data,
 the ANOVA table would look like this:\ [#]_
 
-+--------------------+----+----------------+--------------+---------------+-----------+
-|                    | df | sum of squares | mean squares | *F*-statistic | *p*-value |
-+====================+====+================+==============+===============+===========+
-| **between groups** |  2 |          3.453 |        1.727 |        18.611 |  0.000086 |
-+--------------------+----+----------------+--------------+---------------+-----------+
-| **within groups**  | 15 |          1.392 |        0.093 |             - |         - |
-+--------------------+----+----------------+--------------+---------------+-----------+
++--------------------+------+----------------+--------------+---------------+-----------+
+|                    | *df* | sum of squares | mean squares | *F*-statistic | *p*-value |
++====================+======+================+==============+===============+===========+
+| **between groups** |    2 |          3.453 |        1.727 |        18.611 |  0.000086 |
++--------------------+------+----------------+--------------+---------------+-----------+
+| **within groups**  |   15 |          1.392 |        0.093 |             - |         - |
++--------------------+------+----------------+--------------+---------------+-----------+
 
 These days, you’ll probably never have much reason to want to construct
 one of these tables yourself, but you will find that almost all

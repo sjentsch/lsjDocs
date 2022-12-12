@@ -105,7 +105,7 @@ bar chart, and is no different to the “trousers probability” plot I drew in
 possible events, and on the vertical axis we can read off the probability of
 each of those events. So, the probability of rolling 4 skulls out of 20 is
 about 0.20 (the actual answer is 0.2022036, as we’ll see in a moment). In other
-words, you’d expect that to happen about 20% of the times you repeated this
+words, you’d expect that to happen about 20\% of the times you repeated this
 experiment.
 
 To give you a feel for how the binomial distribution changes when we
