@@ -7,7 +7,7 @@ The normal distribution is the distribution that statistics makes most use of
 (for reasons to be discussed shortly), and the binomial distribution is a very
 useful one for lots of purposes. But the world of statistics is filled with
 probability distributions, some of which we’ll run into in passing. In
-particular, the three that will appear in this book are the *t* distribution,
+particular, the three that will appear in this book are the *t*-distribution,
 the χ²-distribution and the *F*-distribution. I won’t give formulas for any
 of these, or talk about them in too much detail, but I will show you some
 pictures.
@@ -61,12 +61,12 @@ pictures.
    whenever you need to compare two χ²-distributions to one another. 
    Admittedly, this doesn’t exactly sound like something that any sane person
    would want to do, but it turns out to be very important in real world data
-   analysis. Remember when I said that χ² turns out to be the key
-   distribution when we’re taking a “sum of squares”? Well, what that means is
-   if you want to compare two different “sums of squares”, you’re probably
-   talking about something that has an *F*-distribution. Of course, as yet I
-   still haven’t given you an example of anything that involves a sum of
-   squares, but I will in chapter :doc:`Comparing several means (one-way ANOVA)
+   analysis. Remember when I said that χ² turns out to be the key distribution
+   when we’re taking a “sum of squares”? Well, what that means is if you want
+   to compare two different “sums of squares”, you’re probably talking about
+   something that has an *F*-distribution. Of course, as yet I still haven’t
+   given you an example of anything that involves a sum of squares, but I will
+   in chapter :doc:`Comparing several means (one-way ANOVA)
    <../Ch13/Ch13_ANOVA>`. And that’s where we’ll run into the *F*-distribution.
    Oh, and there’s a picture in :numref:`fig-Fdist`.
    
@@ -82,13 +82,13 @@ pictures.
    
 .. ----------------------------------------------------------------------------
 
-Okay, time to wrap this section up. We’ve seen three new distributions: χ²,
-*t* and *F*. They’re all continuous distributions, and they’re all closely
+Okay, time to wrap this section up. We’ve seen three new distributions: *t*,
+χ² and *F*. They’re all continuous distributions, and they’re all closely
 related to the normal distribution. The main thing for our purposes is that you
 grasp the basic idea that these distributions are all deeply related to one
 another, and to the normal distribution. Later on in this book we’re going to
 run into data that are normally distributed, or at least assumed to be normally
 distributed. What I want you to understand right now is that, if you make the
 assumption that your data are normally distributed, you shouldn’t be surprised
-to see χ²-, *t*-and *F*-distributions popping up all over the place when you
+to see *t*-, χ²- and *F*-distributions popping up all over the place when you
 start trying to do your data analysis.

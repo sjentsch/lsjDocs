@@ -63,7 +63,7 @@ that it subtly changes the sampling distribution. In the *t*-test our test
 statistic, now called a *t*-statistic, is calculated in exactly the same way I
 mentioned above. If our null hypothesis is that the true mean is µ, but our
 sample has mean *X̄* and our estimate of the population standard deviation is
-:math:`\hat{\sigma}`, then our *t* statistic is:
+:math:`\hat{\sigma}`, then our *t*-statistic is:
 
 .. math:: t = \frac{\bar{X} - \mu}{\hat{\sigma}/\sqrt{N} }
 
@@ -71,7 +71,7 @@ The only thing that has changed in the equation is that instead of using the
 known true value σ, we use the estimate :math:`\hat{\sigma}`. And if this
 estimate has been constructed from *N* observations, then the sampling 
 distribution turns into a *t*-distribution with *N* - 1 **degrees of freedom**
-(df). The *t* distribution is very similar to the normal distribution, but has
+(df). The *t*-distribution is very similar to the normal distribution, but has
 “heavier” tails, as discussed earlier in :doc:`Other useful distributions
 <../Ch07/Ch07_Probability_6>` and illustrated in :numref:`fig-ttestdist`. Notice,
 though, that as *df* gets larger, the *t*-distribution starts to look identical

@@ -283,15 +283,15 @@ with a mean square value of 1.73. For the ``therapy`` factor, there’s only 1
 degree of freedom, so our calculations are even simpler: dividing 0.47 (the SS
 value) by 1 gives us an answer of 0.47 (the MS value).
 
-Turning to the *F* statistics and the *p*-values, notice
+Turning to the *F*-statistics and the *p*-values, notice
 that we have two of each; one corresponding to the ``drug`` factor and
 the other corresponding to the ``therapy`` factor. Regardless of which
-one we’re talking about, the *F* statistic is calculated by
+one we’re talking about, the *F*-statistic is calculated by
 dividing the mean square value associated with the factor by the mean
 square value associated with the residuals. If we use “A” as shorthand
 notation to refer to the first factor (factor A; in this case ``drug``)
 and “R” as shorthand notation to refer to the residuals, then the
-*F* statistic associated with factor A is denoted *F*\ :sub:`A`, and
+*F*-statistic associated with factor A is denoted *F*\ :sub:`A`, and
 is calculated as follows:
 
 | *F*\ :sub:`A` = MS\ :sub:`A` / MS\ :sub:`R`
@@ -317,11 +317,11 @@ about this later on). To that end, we’ve (apparently) followed a similar
 strategy to what we did in the One-Way ANOVA and have calculated an
 *F*-statistic for each of these hypotheses. To convert these to
 *p*-values, all we need to do is note that the sampling
-distribution for the *F* *statistic* under the null hypothesis
-(that the factor in question is irrelevant) is an *F*
+distribution for the *F*-*statistic* under the null hypothesis
+(that the factor in question is irrelevant) is an *F*-
 *distribution*. Also note that the two degrees of freedom values are
 those corresponding to the factor and those corresponding to the
-residuals. For the ``drug`` factor we’re talking about an *F*
+residuals. For the ``drug`` factor we’re talking about an *F*-
 distribution with 2 and 14 degrees of freedom (I’ll discuss degrees of
 freedom in more detail later). In contrast, for the ``therapy`` factor
 the sampling distribution is *F* with 1 and 14 degrees of freedom.
@@ -361,7 +361,7 @@ that I gave in the last section illustrates the fact that the hypothesis
 tests for the main effects (of ``drug`` and ``therapy`` in this case) are
 *F*-tests, but what it doesn’t do is show you how the sum of
 squares (SS) values are calculated. Nor does it tell you explicitly how
-to calculate degrees of freedom (*df* values) though that’s a
+to calculate degrees of freedom (*df*-values) though that’s a
 simple thing by comparison. Let’s assume for now that we have only two
 predictor variables, Factor A and Factor B. If we use *Y* to refer
 to the outcome variable, then we would use *Y*\ :sub:`rci` to refer to

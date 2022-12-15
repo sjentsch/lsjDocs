@@ -255,7 +255,7 @@ terribly informative.
    you’re not really running “post-hoc” analyses at all, you’re making “planned
    comparisons”. I do talk about this situation later in the book in section
    :doc:`The method of planned comparisons <../Ch14/Ch14_ANOVA2_10>`), but for
-   now I    want to keep things simple.
+   now I want to keep things simple.
 
 .. [#]
    It’s worth noting in passing that not all adjustment methods try to

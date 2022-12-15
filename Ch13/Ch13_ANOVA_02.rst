@@ -223,7 +223,7 @@ compare the two sums of squares values |SS_b| and
 means for the different groups aren’t identical to each other. In order
 to convert this into a workable hypothesis test, there’s a little bit of
 “fiddling around” needed. What I’ll do is first show you *what* we do to
-calculate our test statistic, the ***F* ratio**, and then try to
+calculate our test statistic, the **F-ratio**, and then try to
 give you a feel for *why* we do it this way.
 
 In order to convert our SS values into an *F*-ratio the first
@@ -254,7 +254,7 @@ MS by the within-groups MS:
 
 | F = |MS_b| / |MS_w|
 
-At a very general level, the intuition behind the *F* statistic is
+At a very general level, the intuition behind the *F*-statistic is
 straightforward. Bigger values of *F* means that the
 between-groups variation is large relative to the within-groups
 variation. As a consequence, the larger the value of *F* the more
@@ -267,8 +267,8 @@ The next section discusses that in a bit of detail, but for readers that aren’
 interested in the details of what the test is actually measuring I’ll cut to
 the chase. In order to complete our hypothesis test we need to know the
 sampling distribution for *F* if the null hypothesis is true. Not surprisingly,
-the sampling distribution for the *F* statistic under the null hypothesis is an
-*F* distribution. If you recall our discussion of the *F* distribution in
+the sampling distribution for the *F*-statistic under the null hypothesis is an
+*F*-distribution. If you recall our discussion of the *F*-distribution in
 chapter :doc:`Introduction to probability <../Ch07/Ch07_Probability>`, the
 *F*-distribution has two parameters, corresponding to the two degrees of
 freedom involved. The first one *df*\ :sub:`1` is the between groups degrees of
@@ -358,11 +358,11 @@ call this quantity Q, then we can see that the *F*-statistic is basically:\ [#]_
 where the true value Q = 0 if the null hypothesis is true, and
 Q > 0 if the alternative hypothesis is true (`Hays, 1994
 <../Other/References.html#hays-1994>`__\ , Ch. 10). Therefore, at a bare
-minimum *the *F* value must be larger than 1* to have any chance
+minimum *the *F*-value must be larger than 1* to have any chance
 of rejecting the null hypothesis. Note that this *doesn’t* mean that
 it’s impossible to get an *F*-value less than 1. What it means is
 that if the null hypothesis is true the sampling distribution of the
-*F* ratio has a mean of 1,\ [#]_ and so we need to see
+*F*-ratio has a mean of 1,\ [#]_ and so we need to see
 *F*-values larger than 1 in order to safely reject the null.
 
 To be a bit more precise about the sampling distribution, notice that if the
@@ -372,7 +372,7 @@ then you might suspect that the estimate of the variance of ϵ\ :sub:`ik` is
 χ²-distributed, because (as discussed in :doc:`Other useful distributions
 <../Ch07/Ch07_Probability_6>`) that’s what a χ²-distribution *is*: it’s what you get
 when you square a bunch of normally-distributed things and add them up. And
-since the *F* distribution is (again, by definition) what you get when you take
+since the *F*-distribution is (again, by definition) what you get when you take
 the ratio between two things that are χ² distributed, we have our sampling
 distribution. Obviously, I’m glossing over a whole lot of stuff when I say
 this, but in broad terms, this really is where our sampling distribution comes
@@ -576,11 +576,11 @@ the last step is to find out whether the test itself gives us a significant
 result. As discussed in chapter :doc:`Hypothesis testing
 <../Ch09/Ch09_HypothesisTesting>` back in the “old days” what we’d do is open up a
 statistics textbook or flick to the back section which would actually have a
-huge lookup table and we would find the threshold *F* value corresponding to a
-particular value of alpha (the null hypothesis rejection region), e.g. 0.05,
+huge lookup table and we would find the threshold *F*-value corresponding to a
+particular value of α (the null hypothesis rejection region), e.g. 0.05,
 0.01 or 0.001, for 2 and 15 degrees of freedom. Doing it this way would give
-us a threshold *F* value for an alpha of 0.001 of 11.34. As this is less than
-our calculated *F* value we say that *p* < 0.001. But those were the old days,
+us a threshold *F*-value for an α of 0.001 of 11.34. As this is less than
+our calculated *F*-value we say that *p* < 0.001. But those were the old days,
 and nowadays fancy stats software calculates the exact *p*-value for you. In
 fact, the exact *p*-value is 0.000086. So, unless we’re being *extremely*
 conservative about our Type I error rate, we’re pretty much guaranteed to

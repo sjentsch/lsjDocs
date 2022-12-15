@@ -188,7 +188,7 @@ test for this in a fairly straightforward fashion.
 We can fit both models to the data and obtain a residual sum of squares
 for both models. I’ll denote these as SS\ :sub:`res`\ :sup:`(1)` and
 SS\ :sub:`res`\ :sup:`(2)` respectively. The superscripting here just
-indicates which model we’re talking about. Then our *F* statistic
+indicates which model we’re talking about. Then our *F*-statistic
 is
 
 .. math:: F = \frac{(\mbox{SS}_{res}^{(1)} - \mbox{SS}_{res}^{(1)})/k}{(\mbox{SS}_{res}^{(2)})/(N-p-1)}

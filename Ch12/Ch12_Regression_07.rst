@@ -63,9 +63,9 @@ Now that we’ve got our mean square values we can calculate an
 and the degrees of freedom associated with this are K and
 N - K - 1.
 
-We’ll see much more of the *F* statistic in chapter :doc:`Comparing several
+We’ll see much more of the *F*-statistic in chapter :doc:`Comparing several
 means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`, but for now just know that we can
-interpret large *F* values as indicating that the null hypothesis is performing
+interpret large *F*-values as indicating that the null hypothesis is performing
 poorly in comparison to the alternative hypothesis. In a moment I’ll show you
 how to do the test in jamovi the easy way, but first let’s have a look at the
 tests for the individual regression coefficients.
