@@ -57,7 +57,7 @@ less can mean that the data is not very skewed, and a value of over 2 that
 there is sufficient skew in the data to possibly limit its use in some
 statistical analyses. Though there is no clear agreement on this
 interpretation. That said, this does indicate that the ``afl.margins``
-variable is somewhat skewed (0.780 / 0.183 = 4.262)."
+variable is somewhat skewed (0.780 / 0.183 = 4.262).
 
 The final measure that is sometimes referred to, though very rarely in practice,
 is the **kurtosis** of a data set. Put simply, kurtosis is a measure of how thin

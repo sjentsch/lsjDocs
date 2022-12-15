@@ -258,7 +258,7 @@ required to be significant at a level of α = 0.01.
 Therefore, we can conclude that we have a significant effect, which we
 might write up by saying something like this:
 
-   With a mean grade of 73.2 in the sample of psychology students, and
+   With a mean grade of 72.3 in the sample of psychology students, and
    assuming a true population standard deviation of 9.5, we can conclude
    that the psychology students have significantly different statistics
    scores to the class average (*z* = 2.26, *N* = 20, *p* < 0.05).

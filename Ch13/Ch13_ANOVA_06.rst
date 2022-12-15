@@ -8,10 +8,10 @@ assumptions about the data, specifically the residuals. There are three
 key assumptions that you need to be aware of: *normality*, *homogeneity
 of variance* and *independence*.
 
-If you remember back to section :doc:`The model for the data and the meaning of
-F <../Ch13/Ch13_ANOVA_02>` which I hope you at least skimmed even if you didn’t read
-the whole thing, I described the statistical models underpinning ANOVA in this
-way:
+If you remember back to section :doc:`The model for the data and the meaning
+of *F* <../Ch13/Ch13_ANOVA_02>` which I hope you at least skimmed even if you
+didn’t read the whole thing, I described the statistical models underpinning
+ANOVA in this way:
 
 | H\ :sub:`0`: Y\ :sub:`ik` = µ           + ϵ\ :sub:`ik`
 | H\ :sub:`1`: Y\ :sub:`ik` = µ\ :sub:`k` + ϵ\ :sub:`ik` 

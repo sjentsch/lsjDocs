@@ -71,7 +71,7 @@ up the plots and tables options.
 .. ----------------------------------------------------------------------------
 
 An ANCOVA table showing Tests of Between-Subjects Effects is produced in the
-jamovi results panel (:numref:`fig-ancova2`). The F value for the covariate
+jamovi results panel (:numref:`fig-ancova2`). The *F*-value for the covariate
 ``age`` is significant at *p* = 0.023, suggesting that age is an important
 predictor of the dependent variable, happiness. When we look at the estimated
 marginal mean scores (:numref:`fig-ancova3`), adjustments have been made
@@ -101,7 +101,7 @@ visualising and interpreting the significant effects.
 .. ----------------------------------------------------------------------------
 
 The *F*-value for the main effect ``stress`` (52.61) has an associated
-probability of *p* < 0.001. The F value for the main effect ``commute`` (42.33)
+probability of *p* < 0.001. The *F*-value for the main effect ``commute`` (42.33)
 has an associated probability of *p* < 0.001. Since both of these are less than
 the probability that is typically used to decide if a statistical result is
 significant (*p* < 0.05) we can conclude that there was a significant main

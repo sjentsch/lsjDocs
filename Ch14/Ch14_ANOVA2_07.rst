@@ -324,7 +324,7 @@ numerical form that is appropriate for a regression?
 The answer to this question is pretty simple, actually. All we have to do is
 realise that a three-level factor can be redescribed as *two* binary variables.
 Suppose, for instance, I were to create a new binary variable called
-``druganxifree``. Whenever the ``drug`` variable is equal to ``"anxifree"`` we
+``druganxifree``. Whenever the ``drug`` variable is equal to ``anxifree`` we
 set ``druganxifree = 1``. Otherwise, we set ``druganxifree = 0``. This variable
 sets up a **contrast**, in this case between ``anxifree`` and the other two
 drugs. By itself, of course, the ``druganxifree`` contrast isn’t enough to

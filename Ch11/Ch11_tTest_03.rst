@@ -330,8 +330,8 @@ sake of clarity, if you’re taking my class, my default position is that
 it’s usually worth including both the effect size and the confidence
 interval.
 
-Positive and negative t values
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Positive and negative *t*-values
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Before moving on to talk about the assumptions of the *t*-test,
 there’s one additional point I want to make about the use of
@@ -342,8 +342,8 @@ running their first *t*-test is that they often end up with
 negative values for the *t*-statistic and don’t know how to
 interpret it. In fact, it’s not at all uncommon for two people working
 independently to end up with results that are almost identical, except
-that one person has a negative t values and the other one has a
-positive t value. Assuming that you’re running a two-sided test
+that one person has a negative *t*-values and the other one has a
+positive *t*-value. Assuming that you’re running a two-sided test
 then the *p*-values will be identical. On closer inspection, the
 students will notice that the confidence intervals also have the
 opposite signs. This is perfectly okay. Whenever this happens, what
@@ -354,8 +354,8 @@ the form
 
 | *t* = (mean 1 - mean 2) / SE
 
-If “mean 1” is larger than “mean 2” the t statistic will be
-positive, whereas if “mean 2” is larger then the t statistic
+If “mean 1” is larger than “mean 2” the *t*-statistic will be
+positive, whereas if “mean 2” is larger then the *t*-statistic
 will be negative. Similarly, the confidence interval that jamovi reports
 is the confidence interval for the difference “(mean 1) minus (mean 2)”,
 which will be the reverse of what you’d get if you were calculating the
@@ -388,7 +388,7 @@ Anastasia’s class corresponded to group 1. If so, I would write
 
 (I wouldn’t actually underline the word “higher” in real life, I’m just
 doing it to emphasise the point that “higher” corresponds to positive
-t values). On the other hand, suppose the phrasing I wanted to
+*t*-values). On the other hand, suppose the phrasing I wanted to
 use has Bernadette’s class listed first. If so, it makes more sense to
 treat her class as group 1, and if so, the write up looks like this
 

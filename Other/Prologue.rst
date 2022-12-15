@@ -17,7 +17,7 @@ jamovi as well as giving an introduction to data manipulation. From a
 statistical perspective, the book discusses descriptive statistics and graphing
 first, followed by chapters on probability theory, sampling and estimation, and
 null hypothesis testing. After introducing the theory, the book covers the
-analysis of contingency tables, correlation, t-tests, regression, ANOVA and
+analysis of contingency tables, correlation, *t*-tests, regression, ANOVA and
 factor analysis. Bayesian statistics are covered at the end of the book.
 
 Citation
@@ -170,7 +170,7 @@ deadlines, so the update has to go out the way it is!
 A year has gone by since I wrote the last preface. The book has changed
 in a few important ways: Chapters 3 and 4 do a better job of documenting
 some of the time saving features of RStudio, chapters 12 and 13 now make
-use of new functions in the lsr package for running χ²-tests and t tests,
+use of new functions in the lsr package for running χ²-tests and *t*-tests,
 and the discussion of correlations has been adapted to refer to the new
 functions in the lsr package. The soft copy of 0.4 now has better internal
 referencing (i.e., actual hyperlinks between sections), though that was
@@ -264,7 +264,7 @@ the book aims to be. At its core, it is an introductory statistics
 textbook pitched primarily at psychology students. As such, it covers
 the standard topics that you’d expect of such a book: study design,
 descriptive statistics, the theory of hypothesis testing,
-t-tests, χ²-tests, ANOVA and regression. However, there are also several
+*t*-tests, χ²-tests, ANOVA and regression. However, there are also several
 chapters devoted to the R statistical package, including a chapter on
 data manipulation and another one on scripts and programming. Moreover,
 when you look at the content presented in the book, you’ll notice a lot

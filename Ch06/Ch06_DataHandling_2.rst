@@ -122,7 +122,7 @@ are the **not** operator ``!``, the ``and``-operator and, and the
 ``or``-operator ``or``. Like the other logical operators, their
 behaviour is more or less exactly what you’d expect given their names.
 For instance, if I ask you to assess the claim that “either
-``2 + 2 = 4`` *or* ``2+2 = 5``” you’d say that it’s true. Since
+``2 + 2 = 4`` *or* ``2 + 2 = 5``” you’d say that it’s true. Since
 it’s an “either-or” statement, all we need is for one of the two parts
 to be true. That’s what the ``or`` operator does:\ [#]_
 

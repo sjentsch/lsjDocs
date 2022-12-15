@@ -547,7 +547,7 @@ is 14. As a formula, this is N - 1 - (R - 1) - (C - 1), which simplifies to
 N - R - C + 1.
 
 Using the degrees of freedom and the square sums we calculated above, we can
-calculate the following F-values for the factors A and B.
+calculate the following *F*-values for the factors A and B.
 
 | F\ :sub:`A` = (SS\ :sub:`A` / SS\ :sub:`A`) / (SS\ :sub:`R` / SS\ :sub:`R`)
 | F\ :sub:`A` = (3.453 / 2) / (0.924 / 14)
