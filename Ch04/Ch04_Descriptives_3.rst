@@ -47,16 +47,17 @@ where *N* is the number of observations, *X̄* is the sample mean, and
 :math:`\hat{\sigma}` is the standard deviation (the “divide by *N - 1*”
 version, that is).
 
-Perhaps more helpfully, you can use jamovi to calculate skewness: it’s a
-check box in the ``Statistics`` options under ``Exploration`` → ``Descriptives``.
-For the ``afl.margins`` variable, the skewness figure is **0.780**. If you
-divide the skewness estimate by the Std. error for skewness you have an
-indication of how skewed the data is. Especially in small samples (*N* < 50),
-one rule of thumb suggests that a value of 2 or less can mean that the data
-is not very skewed, and a value of over 2 that there is sufficient skew in
-the data to possibly limit its use in some statistical analyses. Though there
-is no clear agreement on this interpretation. That said, this does indicate
-that the ``afl.margins`` variable is somewhat skewed (0.780 / 0.183 = 4.262).
+Perhaps more helpfully, you can use jamovi to calculate skewness: set the
+check box ``Skewness`` in the ``Statistics`` options under ``Exploration``
+→ ``Descriptives``. For the ``afl.margins`` variable, the skewness figure
+is **0.780**. If you divide the skewness estimate by the Std. error for
+skewness you have an indication of how skewed the data is. Especially in
+small samples (*N* < 50), one rule of thumb suggests that a value of 2 or
+less can mean that the data is not very skewed, and a value of over 2 that
+there is sufficient skew in the data to possibly limit its use in some
+statistical analyses. Though there is no clear agreement on this
+interpretation. That said, this does indicate that the ``afl.margins``
+variable is somewhat skewed (0.780 / 0.183 = 4.262)."
 
 The final measure that is sometimes referred to, though very rarely in practice,
 is the **kurtosis** of a data set. Put simply, kurtosis is a measure of how thin
@@ -107,8 +108,8 @@ power:\ [#]_
 
 I know, it’s not terribly interesting to me either.
 
-More to the point, jamovi has a check box for kurtosis just below the
-check box for skewness, and this gives a value for kurtosis of **0.101**
+More to the point, jamovi has a check box for ``Kurtosis`` just below the
+check box for ``Skewness``, and this gives a value for kurtosis of **0.101**
 with a standard error of **0.364**. This means that the ``afl.margins``
 variable has only a small kurtosis, which is ok.
 

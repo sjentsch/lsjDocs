@@ -33,11 +33,11 @@ a mood gain (mean = 0.88), though without knowing what the scale is here it’s
 hard to say much more than that. Still, that’s not too bad. Overall I feel that
 I learned something from that.
 
-We can also go ahead and look at some other descriptive statistics, and
-this time separately for each type of therapy. In jamovi, check Std.
-deviation, Skewness and Kurtosis in the ``Statistics`` options. At the
-same time, transfer the ``therapy`` variable into the ``Split by`` box,
-and you should get something like :numref:`fig-clinicaltrial_grouping`.
+We can also go ahead and look at some other descriptive statistics, and this
+time separately for each type of therapy. In jamovi, check ``Std. deviation``,
+``Skewness`` and ``Kurtosis`` in the ``Statistics`` options. At the same
+time, transfer the ``therapy`` variable into the ``Split by`` box, and you
+should get something like :numref:`fig-clinicaltrial_grouping`.
 
 .. ----------------------------------------------------------------------------
 
