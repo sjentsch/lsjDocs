@@ -122,23 +122,23 @@ The solution to the problem is obvious, I hope, since we already did all
 the hard work in the previous section. Instead of running an independent
 samples *t*-test on ``grade_test1`` and ``grade_test2``, we run a
 *one-sample* *t*-test on the within-subject difference variable,
-``improvement``. To formalise this slightly, if *X*\ :sub`i1` is the
+``improvement``. To formalise this slightly, if *X*\ :sub:`i1` is the
 score that the i-th participant obtained on the first variable,
-and *X*\ :sub`i2` is the score that the same person obtained on the
+and *X*\ :sub:`i2` is the score that the same person obtained on the
 second one, then the difference score is:
 
-| *D*\ :sub`i` = *X*\ :sub`i1` - *X*\ :sub`i2`}
+| *D*\ :sub:`i` = *X*\ :sub:`i1` - *X*\ :sub:`i2`}
 
 Notice that the difference scores is *variable 1 minus variable 2* and not the
 other way around, so if we want improvement to correspond to a positive valued
 difference, we actually want “test 2” to be our “variable 1”. Equally, we would
-say that µ\ :sub`D` = µ\ :sub`1` - µ\ :sub`2` is the population mean for
+say that µ\ :sub:`D` = µ\ :sub:`1` - µ\ :sub:`2` is the population mean for
 this difference variable. So, to convert this to a hypothesis test, our null
 hypothesis is that this mean difference is zero and the alternative hypothesis
 is that it is not
 
-| H\ :sub`0`: µ\ :sub`D` = 0
-| H\ :sub`2`: µ\ :sub`D` ≠ 0
+| H\ :sub:`0`: µ\ :sub:`D` = 0
+| H\ :sub:`2`: µ\ :sub:`D` ≠ 0
 
 This is assuming we’re talking about a two-sided test here. This is more or
 less identical to the way we described the hypotheses for the one-sample

@@ -17,7 +17,7 @@ parameters. The section breakdown looks like this:
 -  :doc:`Sampling distributions and the central limit theorem
    <../Ch08/Ch08_Estimation_3>`
 
--  :doc:`Estimating means and standard deviations <../Ch08/Ch08_Estimation_4>`
+-  :doc:`Estimating population parameters <../Ch08/Ch08_Estimation_4>`
 
 -  :doc:`Estimating a confidence interval <../Ch08/Ch08_Estimation_5>`
 

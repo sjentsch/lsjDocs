@@ -385,7 +385,7 @@ similar to the true population values they are not the same. In general, sample
 statistics are the things you can calculate from your data set and the
 population parameters are the things you want to learn about. Later on in this
 chapter I’ll talk about how you can estimate population parameters using your
-sample statistics (:doc:`Estimating means and standard deviations
+sample statistics (:doc:`Estimating population parameters
 <../Ch08/Ch08_Estimation_4>`) and how to work out how confident you are in your
 estimates (:doc:`Estimating a confidence interval <../Ch08/Ch08_Estimation_5>`)
 but before we get to that there’s a few more ideas in sampling theory that you

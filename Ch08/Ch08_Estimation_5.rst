@@ -78,10 +78,10 @@ As usual, I lied. The formula that I’ve given above for the 95\% confidence
 interval is approximately correct, but I glossed over an important detail in
 the discussion. Notice my formula requires you to use the standard error of the
 mean, *SEM*, which in turn requires you to use the true population standard
-deviation σ. Yet, in :doc:`Estimating means and standard deviations 
-<../Ch08/Ch08_Estimation_4>` I stressed the fact that we don’t actually *know* the true
-population parameters. Because we don’t know the true value of σ we have to
-use an estimate of the population standard deviation :math:`\hat{\sigma}`
+deviation σ. Yet, in :doc:`Estimating population parameters
+<../Ch08/Ch08_Estimation_4>` I stressed the fact that we don’t actually *know*
+the true population parameters. Because we don’t know the true value of σ we
+have to use an estimate of the population standard deviation :math:`\hat{\sigma}`
 instead. This is pretty straightforward to do, but this has the consequence
 that we need to use the percentiles of the *t*-distribution rather than the
 normal distribution to calculate our magic number, and the answer depends on

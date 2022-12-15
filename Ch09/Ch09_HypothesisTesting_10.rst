@@ -8,8 +8,8 @@ theory. The vast majority of scientific papers report the results of some
 hypothesis test or another. As a consequence it is almost impossible to get by
 in science without having at least a cursory understanding of what a *p*-value
 means, making this one of the most important chapters in the book. As usual,
-I’ll end the chapter with a quick recap of the key ideas that we’ve talked
-about:
+I’ll end the chapter with a quick recapitulation of the key ideas that we’ve
+talked about:
 
 -  :doc:`Research hypotheses and statistical hypotheses, Null and alternative
    hypotheses <../Ch09/Ch09_HypothesisTesting_01>`
@@ -21,7 +21,7 @@ about:
 -  :doc:`Hypothesis testing as a decision making process
    <../Ch09/Ch09_HypothesisTesting_04>`
 
--  :doc:`p-values as “soft” decisions <../Ch09/Ch09_HypothesisTesting_05>`
+-  :doc:`*p*-values as “soft” decisions <../Ch09/Ch09_HypothesisTesting_05>`
 
 -  :doc:`Writing up the results of a hypothesis test
    <../Ch09/Ch09_HypothesisTesting_06>`
