@@ -230,7 +230,7 @@ The item data were collected using a 6-point response scale:
 
 #. Very Accurate.
 
-A sample of N = 250 responses is contained in the |bfi_sample|_ data set. In
+A sample of *N* = 250 responses is contained in the |bfi_sample|_ data set. In
 addition to the items, there are three further columns in the data set: ``ID``
 (the respondent ID, a five digit number) as well as the age (``age``) and the
 gender (``gender``) of the respondent.

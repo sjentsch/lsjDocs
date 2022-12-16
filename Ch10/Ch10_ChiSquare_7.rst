@@ -6,7 +6,7 @@ The McNemar test
 Suppose you’ve been hired to work for the *Australian Generic Political
 Party* (AGPP), and part of your job is to find out how effective the
 AGPP political advertisements are. So you decide to put together a
-sample of N = 100 people and ask them to watch the AGPP ads. Before they
+sample of *N* = 100 people and ask them to watch the AGPP ads. Before they
 see anything, you ask them if they intend to vote for the AGPP, and then
 after showing the ads you ask them again to see if anyone has changed
 their minds. Obviously, if you’re any good at your job, you’d also do a

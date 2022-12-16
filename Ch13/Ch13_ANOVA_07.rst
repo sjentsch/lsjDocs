@@ -40,12 +40,12 @@ smaller SS\ :sub:`error` term:
 | Independent ANOVA:       SS\ :sub:`error` = SS\ :sub:`w`
 | Repeated Measures ANOVA: SS\ :sub:`error` = SS\ :sub:`w - SS\ :sub:`subjects`
 
-This change in SS\ :sub:`error` term often leads to a more
-powerful statistical test, but this does depend on whether the reduction
-in the SS\ :sub:`error` more than compensates for the reduction
-in degrees of freedom for the error term (as degrees of freedom go from
-(n - k)\ [#]_ to (n - 1)(k - 1) (remembering that there are more
-subjects in the independent ANOVA design).
+This change in SS\ :sub:`error` term often leads to a more powerful
+statistical test, but this does depend on whether the reduction in the
+SS\ :sub:`error` more than compensates for the reduction in degrees of
+freedom for the error term: the degrees of freedom go from
+(*n* - *k*)\ [#]_ to (*n* - 1)(*k* - 1) remembering that there are more
+subjects in the independent ANOVA design.
 
 Repeated measures ANOVA in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -95,22 +95,22 @@ To perform a one-way related ANOVA in jamovi, open the one-way repeated
 measures ANOVA dialogue box, as in :numref:`fig-RManova1`, via
 ``ANOVA - Repeated Measures ANOVA``. Then:
 
--  Enter a name for the Repeated Measures Factor (orginally: ``RM Factor …``).
-   This should be a label that you choose to describe the conditions repeated
-   by all participants. For example, to describe the speech, conceptual and
-   syntax tasks completed by all participants a suitable label would be
-   ``Task``. Note that this new factor name represents the independent
-   variable in the analysis.
+-  Enter a name for the ``Repeated Measures Factors`` (orginally:
+   ``RM Factor …``). This should be a label that you choose to describe the
+   conditions repeated by all participants. For example, to describe the
+   speech, conceptual and syntax tasks completed by all participants a
+   suitable label would be ``Task``. Note that this new factor name
+   represents the independent variable in the analysis.
 
--  Add a third level in the Repeated Measures Factors text box, as there
-   are three levels representing the three tasks: ``Speech``, ``Conceptual``
-   and ``Syntax``. Change the labels of the levels accordingly.
+-  Add a third level in the ``Repeated Measures Factors`` variable box, as
+   there are three levels representing the three tasks: ``Speech``,
+   ``Conceptual`` and ``Syntax``. Change the labels of the levels accordingly.
 
 -  Then move each of the levels variables across to the ``Repeated
    Measures Cells`` text box.
 
 -  Finally, under the ``Assumption Checks`` option, tick the ``Sphericity
-   checks`` text box.
+   checks`` check box.
 
 .. ----------------------------------------------------------------------------
 
@@ -173,15 +173,15 @@ corrected *F*-values are then shown in the results table, as in
 .. ----------------------------------------------------------------------------
 
 
-In our analysis, we saw that the significance of Mauchly’s Test of
-Sphericity was *p* = 0.720 (i.e. *p* > 0.05). So, this means we
-can assume that the requirement of sphericity has been met so no
-correction to the *F*-value is needed. Therefore, we can use the
-``None`` Sphericity Correction output values for the repeated measure
-``Task``: *F* = 6.93, *df* = 2, *p* = 0.013, and we can conclude that the
-number of tests successfully completed on each language task did vary
-significantly depending on whether the task was speech, comprehension or
-syntax based (*F*\(2,10) = 6.93, *p* = 0.013).
+In our analysis, we saw that the significance of Mauchly’s Test of Sphericity
+was *p* = 0.720 (i.e. *p* > 0.05). So, this means we can assume that the
+requirement of sphericity has been met so no correction to the *F*-value is
+needed. Therefore, we can use the ``None`` Sphericity Correction output values
+for the repeated measure ``Task``: *F* = 6.93, *df1* = 2, *df2* = 10,
+*p* = 0.013, and we can conclude that the number of tests successfully
+completed on each language task did vary significantly depending on whether
+the task was speech, comprehension or syntax based (*F*\(2,10) = 6.93,
+*p* = 0.013).
 
 .. ----------------------------------------------------------------------------
 

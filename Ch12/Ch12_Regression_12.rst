@@ -49,7 +49,7 @@ simply because it’s available as an option in jamovi.
 
 In the context of a linear regression model (and ignoring terms that
 don’t depend on the model in any way!), the AIC for a model that has
-K predictor variables plus an intercept is
+*K* predictor variables plus an intercept is
 
 .. math:: \mbox{AIC} = \displaystyle\frac{\mbox{SS}_{res}}{\hat{\sigma}^2} + 2K
 
@@ -195,7 +195,7 @@ is
 
 where *N* is the number of observations, *p* is the number
 of predictors in the full model (not including the intercept), and
-k is the difference in the number of parameters between the two
+*k* is the difference in the number of parameters between the two
 models.\ [#]_ The degrees of freedom here are *k* and
 *N* - *p* - 1. Note that it’s often more convenient to think about the
 difference between those two SS values as a sum of squares in its own

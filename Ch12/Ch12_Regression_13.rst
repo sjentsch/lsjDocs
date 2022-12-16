@@ -13,7 +13,7 @@ Summary
 
 -  :doc:`Multiple linear regression <../Ch12/Ch12_Regression_05>`
 
--  Measuring the :doc:`overall performance of a regression model using R²
+-  Measuring the :doc:`overall performance of a regression model using *R*\²
    <../Ch12/Ch12_Regression_06>`
    
 -  :doc:`Hypothesis tests for regression models <../Ch12/Ch12_Regression_07>`

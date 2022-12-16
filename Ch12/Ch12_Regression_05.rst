@@ -28,16 +28,15 @@ like this:
 
 | *Y*\ :sub:`i` = *b*\ :sub:`0` + *b*\ :sub:`1` *X*\ :sub:`i1` + *b*\ :sub:`2` *X*\ :sub:`i2` + ε\ :sub:`i`
 
-As before, ε\ :sub:`i` is the residual associated with the
-i-th observation, ε\ :sub:`i` = {Y}_i - \hat{Y}_i`. In
-this model, we now have three coefficients that need to be estimated:
-*b*\ :sub:`0` is the intercept, *b*\ :sub:`1` is the coefficient associated
-with my sleep, and *b*\ :sub:`2` is the coefficient associated with my
-son’s sleep. However, although the number of coefficients that need to
-be estimated has changed, the basic idea of how the estimation works is
-unchanged: our estimated coefficients :math:`\hat{b}_0`,
-:math:`\hat{b}_1` and :math:`\hat{b}_2` are those that minimise the sum
-squared residuals.
+As before, ε\ :sub:`i` is the residual associated with the i-th observation,
+:math:`{\epsilon}_i = {Y}_i - \hat{Y}_i`. In this model, we now have three
+coefficients that need to be estimated: *b*\ :sub:`0` is the intercept,
+*b*\ :sub:`1` is the coefficient associated with my sleep, and *b*\ :sub:`2`
+is the coefficient associated with my son’s sleep. However, although the
+number of coefficients that need to be estimated has changed, the basic idea
+of how the estimation works is unchanged: our estimated coefficients
+:math:`\hat{b}_0`, :math:`\hat{b}_1` and :math:`\hat{b}_2` are those that
+minimise the sum squared residuals.
 
 Doing it in jamovi
 ~~~~~~~~~~~~~~~~~~

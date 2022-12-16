@@ -32,7 +32,7 @@ work in it. The first thing to do is calculate the *Ŷ* values, and for the
 simple model that uses only a single predictor we would do the following:
 
 #. Go to an empty column (at the end of the data set) and double click on the
-   column header, choose “New computed variable” and enter ``Y_pred`` in the 
+   column header, choose ``New computed variable`` and enter ``Y_pred`` in the 
    first line and the formula ``125.97 + (-8.94 * dani.sleep)`` in the line
    starting with ``=`` (next to the *f*\ :sub:`x`).
 
@@ -46,7 +46,7 @@ formula:
    in this column are later summed up to obtain SS\ :sub:`res`.
 
 #. Calculate the squared deviation from the mean by creating yet another
-   column  called ``sq_total`` using the formula
+   column called ``sq_total`` using the formula
    ``(dani.grump - VMEAN(dani.grump)) ^ 2``. The values in this column are
    later summed up to obtain SS\ :sub:`tot`.
 
@@ -117,7 +117,7 @@ predictors into the model will *always* cause the *R*\² value to
 increase (or at least not decrease).
 
 The adjusted *R*\² value introduces a slight change to the
-calculation, as follows. For a regression model with K
+calculation, as follows. For a regression model with *K*
 predictors, fit to a data set containing *N* observations, the
 adjusted *R*\² is:
 

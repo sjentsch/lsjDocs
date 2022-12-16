@@ -183,11 +183,12 @@ option ``Don't assume equal (Welch’s)`` (see :numref:`fig-anova4a`).
    
 .. ----------------------------------------------------------------------------
 
-To understand what’s happening here, let’s compare these numbers to what we got
-earlier in section :doc:`Running an ANOVA in jamovi <../Ch13/Ch13_ANOVA_03>`. To save
-you the trouble of flicking back, this is what we got last time: *F*\(2,15) =
-18.611, *p* = 0.00009, also shown as the Fisher’s test in the ``One-Way ANOVA``
-shown in :numref:`fig-anova4a`.
+To understand what’s happening here, let’s compare these numbers with those
+obtained earlier in section :doc:`Running an ANOVA in jamovi
+<../Ch13/Ch13_ANOVA_03>`, namely: *F*\(2,15) = 18.611, *p* = 0.00009. As
+shown in :numref:`fig-anova4a`, these values are also displayed in the
+``One-Way ANOVA`` table (in the row starting with ``Fisher's``) if the option
+``Assume equal (Fisher's)`` was chosen.
 
 Okay, so originally our ANOVA gave us the result *F*\(2,15) = 18.6,
 whereas the Welch one-way test gave us *F*\(2,9.49) = 26.32. In
@@ -291,11 +292,10 @@ different way,
 .. math:: K = (N - 1) \times \frac{\mbox{RSS}_b}{\mbox{RSS}_{tot}}
 
 and if the null hypothesis is true, then the sampling distribution of
-*K* is *approximately* χ² with G - 1 degrees of
-freedom (where G is the number of groups). The larger the value
-of *K*, the less consistent the data are with the null hypothesis,
-so this is a one-sided test. We reject H\ :sub:`0` when *K* is
-sufficiently large.
+*K* is *approximately* χ² with *G* - 1 degrees of freedom (where *G* is
+the number of groups). The larger the value of *K*, the less consistent
+the data are with the null hypothesis, so this is a one-sided test. We
+reject H\ :sub:`0` when *K* is sufficiently large.
 
 The description in the previous section illustrates the logic behind the
 Kruskal-Wallis test. At a conceptual level, this is the right way to

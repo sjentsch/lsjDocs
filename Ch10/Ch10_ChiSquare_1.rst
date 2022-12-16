@@ -154,13 +154,13 @@ test statistic that measures how “close” the data are to the null hypothesis
 If the data don’t resemble what you’d “expect” to see if the null hypothesis
 were true, then it probably isn’t true. Okay, if the null hypothesis were true,
 what would we expect to see? Or, to use the correct terminology, what are the
-**expected frequencies**. There are N = 200 observations, and (if the null is
+**expected frequencies**. There are *N* = 200 observations, and (if the null is
 true) the probability of any one of them choosing a heart is *P*\ :sub:`3` =
 \0.25, so I guess we’re expecting 200 · 0.25 = 50 hearts, right? Or, more
 specifically, if we let *E*\ :sub:`i` refer to “the number of category *i*
 responses that we’re expecting if the null is true”, then:
 
-*E*\ :sub:`i` = N · *P*\ :sub:`i`
+*E*\ :sub:`i` = *N* · *P*\ :sub:`i`
 
 This is pretty easy to calculate.If there are 200 observations that can fall
 into four categories, and we think that all four categories are equally likely,

@@ -228,7 +228,7 @@ the null hypothesis predicts that *θ*\ :sub:`0` = 0.5.
 
    The power of our test plotted as a function of the sample size N. In this
    case, the true value of θ is 0.7 but the null hypothesis is that θ = 0.5.
-   Overall, larger N means greater power (the small zig-zags in this function
+   Overall, larger *N* means greater power (the small zig-zags in this function
    occur because of some odd interactions between θ, α and the fact that the
    binomial distribution is discrete, it doesn’t matter for any serious
    purpose).

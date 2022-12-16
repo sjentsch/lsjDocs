@@ -406,6 +406,8 @@ that, yep, that’s some mighty fine collinearity there.
    **H** = **X**\(**X**'**X**\)\ :sup:`-1` **X**'\. Pretty, isn’t it?
 
 .. [#]
-   Although, currently there isn’t a very easy way to do this in jamovi, so a
-   more powerful regression program such as the ``car`` package in ``R`` would
-   be better for this more advanced analysis
+   In order to obtain the Cook’s distance for each participant, open the
+   drop-down menu ``Save`` within the ``Linear Regression`` analysis options
+   and set the check box ``Cook's distance``. A now column containing Cook’s
+   distances will be added to the end of your data set. Those values can then
+   be used in connection with a :doc:`filter <../Ch06/Ch06_DataHandling_5>`.

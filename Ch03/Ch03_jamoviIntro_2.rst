@@ -3,12 +3,18 @@
 The spreadsheet
 ---------------
 
+It is possible to simply begin typing values into the jamovi spreadsheet
+as you would in any other spreadsheet software. Alternatively, existing
+data sets can be opened in jamovi (see the section “” further down on the
+page).
+
 In jamovi data is represented in a spreadsheet with each column
 representing a “variable” and each row representing a “case” or
 “participant”.
 
-Variables
-~~~~~~~~~
+
+Data Variables
+~~~~~~~~~~~~~~
 
 The most commonly used variables in jamovi are ``Data`` variables, these
 variables simply contain data either loaded from a data file, or “typed in”
@@ -71,6 +77,21 @@ New variables can be inserted or appended to the data set using the ``Add``
 button from the ``Data`` tab. The ``Add`` button also allows the addition
 of computed variables.
 
+Sometimes you want to change the variable level. This can happen for all sorts
+of reasons. Sometimes when you import data from files, it can come to you in
+the wrong format. Numbers sometimes get imported as nominal |nominal|, text
+values. Dates may get imported as text. Participant-ID values |ID| can
+sometimes be read as continuous |continuous|: nominal values |nominal| can
+sometimes be read as ordinal |ordinal| or even continuous |continuous|. There’s
+a good chance that sometimes you’ll want to convert a variable from one
+measurement level into another one. Or, to use the correct term, you want to
+**coerce** the variable from one class into another.
+
+If you want to change a variable’s measurement level then you can do this in
+the jamovi data view for that variable. Just click the check box for the type
+level you want - continuous |continuous|, ordinal |ordinal|, or nominal
+|nominal|.
+
 Computed variables
 ~~~~~~~~~~~~~~~~~~
 
@@ -117,43 +138,8 @@ their calculation row by row. For example, ``MEAN(A, B)`` will produce the
 mean of ``A`` and ``B`` for each row. Where as ``VMEAN(A)`` gives the mean of
 all the values in ``A``.
 
-Copy and Paste
-~~~~~~~~~~~~~~
-
-jamovi produces nice American Psychological Association (APA) formatted
-tables and attractive plots. It is often useful to be able to copy and
-paste these, perhaps into a Word document, or into an email to a
-colleague. To copy results right click on the object of interest and
-from the menu select exactly what you want to copy. The menu allows you
-to choose to copy only the image or the entire analysis. Selecting
-“copy” copies the content to the clipboard and this can be pasted into
-other programs in the usual way. You can practice this later on when we
-do some analyses.
-
-Syntax mode
-~~~~~~~~~~~
-
-jamovi also provides an “Syntax Mode”. In this mode jamovi produces
-equivalent R code for each analysis. To change to syntax mode, select
-the settings menu (``⋮``; top right corner in jamovi) and click the
-``Syntax mode`` checkbox there. You can turn off syntax mode by clicking
-this a second time.
-
-In syntax mode analyses continue to operate as before but now they
-produce R syntax. Like all results objects in jamovi, you can right click
-on these items (including the R syntax) and copy and paste them, for example
-into an R session. To import jamovi-files within an R session, you can use
-the function ``read_omv`` from the R-package ``jmvReadWrite`` (which can be
-installed using ``install.packages("jmvReadWrite")`` in an R-session. The
-package also contains further functions for handling jamovi-files in R (e.g.,
-``write_omv`` for writing jamovi-files, ``convert_omv`` for converting other
-file formats to a jamovi-file, or ``merge_cols_omv`` for adding columns from
-a second dataset while matching the two datasets by an index variable). Help
-how to use these functions can be obtained by preceding the function name by
-a ``?`` (e.g., ``?jmvReadWrite::read_omv``).
-
 Loading data in jamovi
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 There are several different types of files that are likely to be
 relevant to us when doing data analysis. There are two in particular
@@ -173,21 +159,29 @@ There are also several other kinds of data file that you might want to
 import into jamovi. For instance, you might want to open Microsoft Excel
 spreadsheets (``.xlsx`` files), or data files that have been saved in the
 native file formats for other statistics software, such as SPSS or SAS.
-Whichever file formats you are using, it’s a good idea to create a
-folder or folders especially for your jamovi data sets and analyses and
-to make sure you keep these backed up regularly.
+
+Whichever file formats you are using, it’s a good idea to create a folder or
+folders especially for your jamovi data sets and analyses and to make sure
+you keep these backed up regularly.
+
+To open a file select the main jamovi menu (``☰``; top left hand corner),
+select ``Open`` and then choose from the files listed under ``This PC`` if you
+want to open an file stored on your computer or select an example data set by
+choosing ``Data Library``. The example files in this book can be found within
+the ``Data Library`` → ``learning statistics with jamovi`` (or ``lsj-data``).
+
 
 Importing data from CSV files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*****************************
 
-One quite commonly used data format is the humble “comma separated
-value” file, also called a CSV file, and usually bearing the file
-extension ``.csv``. CSV files are just plain old-fashioned text files
-and what they store is basically just a table of data. This is
-illustrated in :numref:`fig-booksalescsv`, which shows a file called
-|booksales|_ that I’ve created. As you can see, each row represents
-the book sales data for one month. The first row doesn’t contain actual
-data though, it has the names of the variables.
+One quite commonly used data format is the humble “comma separated value”
+file, also called a CSV file, and usually bearing the file extension ``.csv``.
+CSV files are just plain old-fashioned text files and what they store is
+basically just a table of data. This is illustrated in
+:numref:`fig-booksalescsv`, which shows a file called |booksales|_ that I’ve
+created. As you can see, each row represents the book sales data for one
+month. The first row doesn’t contain actual data though, it has the names of
+the variables.
 
 .. ----------------------------------------------------------------------------
 
@@ -282,8 +276,8 @@ change are:
    also change the missing value for each variable as an option in the
    ``Data`` → ``Setup`` view.
 
-Importing data from SPSS (and other statistics packages)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Importing data from other statistics packages
+*********************************************
 
 The commands listed above are the main ones we’ll need for data files in
 this book. But in real life we have many more possibilities. For
@@ -291,17 +285,12 @@ example, you might want to read data files in from other statistics
 programs. Since SPSS is probably the most widely used statistics package
 in psychology, it’s worth mentioning that jamovi can also import SPSS
 data files (file extension ``.sav``). Just follow the instructions above
-for how to open a CSV file, but this time navigate to the .sav file you
-want to import. For SPSS files, jamovi will regard all values as missing
-if they are regarded as “system missing” files in SPSS. The ``Default
-missings`` value does not seem to work as expected when importing SPSS
-files, so be aware of this - you might need another step: import the
-SPSS file into jamovi, then export as a CSV file before re-opening in
-jamovi.\ [#]_
+for how to open a CSV file, but this time navigate to the ``.sav`` file
+you want to import.
 
-And that’s pretty much it, at least as far as SPSS goes. As far as other
-statistical software goes, jamovi can also directly open / import SAS
-and STATA files.
+As far as other statistical software goes, jamovi can also directly open
+/ import a wealth of other formats such as R, SAS, STATA, Excel,
+LibreOffice, and JSON.
 
 ------
 
@@ -312,10 +301,6 @@ and STATA files.
    dataset should not be a valid number or value associated with any of the
    variables, e.g. you could use ``-9999`` as this is unlikely to be a valid
    value.
-
-.. [#]
-   I know this is a bit of a fudge, but it does work and hopefully this
-   will be fixed in a later version of jamovi.
    
 .. |booksales|                         replace:: ``booksales.csv``
 .. _booksales:                         ../_static/data/booksales.csv

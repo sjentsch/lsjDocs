@@ -86,10 +86,10 @@ what the binomial distribution looks like.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_binomSkulls20.*
-   :alt: Binomial distribution for N = 20 and θ = 1/6
+   :alt: Binomial distribution for *N* = 20 and θ = 1/6
    :name: fig-binomSkulls20
 
-   Binomial distribution with size parameter of N = 20 and an underlying
+   Binomial distribution with size parameter of *N* = 20 and an underlying
    success probability of θ = 1/6. Each vertical bar depicts the probability of
    one specific outcome (i.e., one possible value of X). Because this is a
    probability distribution, each of the probabilities must be a number between
@@ -126,13 +126,13 @@ in the possible outcomes.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_binomHeads.*
-   :alt: Binomial distribution: θ = 1/2 and N = 20 (left) or N = 100 (right) 
+   :alt: Binomial distribution: θ = 1/2 and *N* = 20 (left) or *N* = 100 (right) 
    :name: fig-binomHeads
 
    Two binomial distributions, involving a scenario in which I’m flipping a
    fair coin, so the underlying success probability is θ = 1/2. In the left
-   panel, we assume I’m flipping the coin N = 20 times. In the right panel, 
-   we assume that the coin is flipped N = 100 times.
+   panel, we assume I’m flipping the coin *N* = 20 times. In the right panel, 
+   we assume that the coin is flipped *N* = 100 times.
    
 .. ----------------------------------------------------------------------------
 

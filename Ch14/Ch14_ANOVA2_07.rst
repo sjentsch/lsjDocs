@@ -12,7 +12,7 @@ variables. And, as far as it goes that’s perfectly true. But when you look
 under the hood, so to speak, the underlying mechanics of ANOVA and regression
 are awfully similar. In fact, if you think about it, you’ve already seen
 evidence of this. ANOVA and regression both rely heavily on sums of squares
-(SS), both make use of *F* tests, and so on. Looking back, it’s hard to escape
+(SS), both make use of *F*-tests, and so on. Looking back, it’s hard to escape
 the feeling that chapters :doc:`Correlation and linear regression
 <../Ch12/Ch12_Regression>` and :doc:`Comparing several means (one-way ANOVA)
 <../Ch13/Ch13_ANOVA>` were a bit repetitive.
@@ -498,47 +498,43 @@ and one more for the intercept. So the degrees of freedom associated
 with the *difference* between these two models is *df*\ :sub:`1` = 4 - 2 = 2.
 
 What about the case when there doesn’t seem to *be* a null model? For
-instance, you might be thinking of the *F*-test that shows up when
+instance, you might be thinking of the *F*-test that shows up when 
 you select ``F Test`` under the ``Linear Regression`` - ``Model
 Fit`` options. I originally described that as a test of the regression
 model as a whole. However, that is still a comparison between two
 models. The null model is the trivial model that only includes 1
 regression coefficient, for the intercept term. The alternative model
-contains *K* + 1 regression coefficients, one for each of the
-K predictor variables and one more for the intercept. So the
-*df*-value that you see in this *F* test is equal to
+contains *K* + 1 regression coefficients, one for each of the *K*
+predictor variables and one more for the intercept. So the
+*df*-value that you see in this *F*-test is equal to
 *df*\ :sub:`1` = *K* + 1 - 1 = *K*.
 
-What about the second *df*-value that appears in the
-*F*-test? This always refers to the degrees of freedom associated
-with the residuals. It is possible to think of this in terms of
-parameters too, but in a slightly counter-intuitive way. Think of it
-like this. Suppose that the total number of observations across the
-study as a whole is *N*. If you wanted to *perfectly* describe
-each of these *N* values, you need to do so using, well…
-*N* numbers. When you build a regression model, what you’re really
-doing is specifying that some of the numbers need to perfectly describe
-the data. If your model has *K* predictors and an intercept, then
-you’ve specified *K* + 1 numbers. So, without bothering to figure
-out exactly *how* this would be done, how many *more* numbers do you
-think are going to be needed to transform a *K* + 1 parameter
-regression model into a perfect re-description of the raw data? If you
-found yourself thinking that (*K* + 1) + (*N* - *K* - 1) = *N*, and so
-the answer would have to be *N* - *K* - 1, well done! That’s exactly right.
-In principle you can imagine an absurdly complicated regression model
-that includes a parameter for every single data point, and it would of
-course provide a perfect description of the data. This model would
-contain *N* parameters in total, but we’re interested in the
-difference between the number of parameters required to describe this
-full model (i.e. *N*) and the number of parameters used by the
-simpler regression model that you’re actually interested in (i.e.,
-K + 1), and so the second degrees of freedom in the *F* test
-is *df*\ :sub:`2` = *N* - *K* - 1, where *K* is the number of predictors
-(in a regression model) or the number of contrasts (in an ANOVA). In the
-example I gave above, there are *N* = 18 observations in the data
-set and *K* + 1 = 4 regression coefficients associated with the
-ANOVA model, so the degrees of freedom for the residuals is
-*df*\ :sub:`2` = 18 - 4 = 14.
+What about the second *df*-value that appears in the *F*-test? This always
+refers to the degrees of freedom associated with the residuals. It is
+possible to think of this in terms of parameters too, but in a slightly
+counter-intuitive way. Think of it like this. Suppose that the total number
+of observations across the study as a whole is *N*. If you wanted to
+*perfectly* describe each of these *N* values, you need to do so using, well…
+*N* numbers. When you build a regression model, what you’re really doing is
+specifying that some of the numbers need to perfectly describe the data. If
+your model has *K* predictors and an intercept, then you’ve specified *K* + 1
+numbers. So, without bothering to figure out exactly *how* this would be done,
+how many *more* numbers do you think are going to be needed to transform a
+*K* + 1 parameter regression model into a perfect re-description of the raw
+data? If you found yourself thinking that (*K* + 1) + (*N* - *K* - 1) = *N*,
+and so the answer would have to be *N* - *K* - 1, well done! That’s exactly
+right. In principle you can imagine an absurdly complicated regression model
+that includes a parameter for every single data point, and it would of course
+provide a perfect description of the data. This model would contain *N*
+parameters in total, but we’re interested in the difference between the number
+of parameters required to describe this full model (i.e. *N*) and the number
+of parameters used by the simpler regression model that you’re actually
+interested in (i.e., *K* + 1), and so the second degrees of freedom in the
+*F*-test is *df*\ :sub:`2` = *N* - *K* - 1, where *K* is the number of
+predictors (in a regression model) or the number of contrasts (in an ANOVA).
+In the example I gave above, there are *N* = 18 observations in the data set
+and *K* + 1 = 4 regression coefficients associated with the ANOVA model, so
+the degrees of freedom for the residuals is *df*\ :sub:`2` = 18 - 4 = 14.
 
 .. ----------------------------------------------------------------------------
 

@@ -82,7 +82,7 @@ double summation here is that I’ve classified people into groups, and then
 assigned numbers to people within groups.
 
 A concrete example might be useful here. Let’s consider this table, in which we
-have a total of *N* = 5 people sorted into :*G* = 2 groups. Arbitrarily, let’s
+have a total of *N* = 5 people sorted into *G* = 2 groups. Arbitrarily, let’s
 say that the “cool” people are group 1 and the “uncool” people are group 2. It
 turns out that we have three cool people (*N*\ :sub:`1` = 3) and two uncool
 people (*N*\ :sub:`2` = 2).
@@ -239,8 +239,8 @@ interested in the variation of the group means (*G* data points)
 around the grand mean (1 constraint). Therefore, the degrees of freedom
 here are:
 
-| |df_b| = G - 1
-| |df_w| = N - G
+| |df_b| = *G* - 1
+| |df_w| = *N* - *G*
 
 Okay, that seems simple enough. What we do next is convert our summed
 squares value into a “mean squares” value, which we do by dividing by
@@ -284,13 +284,13 @@ formulas showing how they are calculated, is shown in :numref:`tab-anovatable`.
    be nightmarishly hard to calculate without a computer) are shown.
    :name: tab-anovatable
 
-   +--------------------+----------------+-------------------+--------------------------+---------------------+---------------+
-   |                    | *df*           | sum of squares    | mean squares             | *F*-statistic       | *p*-value     |
-   +====================+================+===================+==========================+=====================+===============+
-   | **between groups** | |df_b| = G - 1 | |SS_b| = |f_SS_b| | |MS_b| = |SS_b| / |df_b| | F = |MS_b| / |MS_w| | [complicated] |
-   +--------------------+----------------+-------------------+--------------------------+---------------------+---------------+
-   | **within groups**  | |df_w| = N - G | |SS_w| = |f_SS_w| | |MS_w| = |SS_w| / |df_w| |                   - |             - |
-   +--------------------+----------------+-------------------+--------------------------+---------------------+---------------+
+   +--------------------+--------------------+-------------------+--------------------------+---------------------+---------------+
+   |                    | *df*               | sum of squares    | mean squares             | *F*-statistic       | *p*-value     |
+   +====================+====================+===================+==========================+=====================+===============+
+   | **between groups** | |df_b| = *G* - 1   | |SS_b| = |f_SS_b| | |MS_b| = |SS_b| / |df_b| | F = |MS_b| / |MS_w| | [complicated] |
+   +--------------------+--------------------+-------------------+--------------------------+---------------------+---------------+
+   | **within groups**  | |df_w| = *N* - *G* | |SS_w| = |f_SS_w| | |MS_w| = |SS_w| / |df_w| |                   - |             - |
+   +--------------------+--------------------+-------------------+--------------------------+---------------------+---------------+
 
 The model for the data and the meaning of *F*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -351,14 +351,14 @@ technical sense, chapter :doc:`Estimating unknown quantities from a sample
 <../Ch08/Ch08_Estimation>`) of the error variance σ². The between-groups mean square
 |MS_b| is also an estimator, but what it estimates is the error variance *plus*
 a quantity that depends on the true differences among the group means. If we
-call this quantity Q, then we can see that the *F*-statistic is basically:\ [#]_
+call this quantity *Q*, then we can see that the *F*-statistic is basically:\ [#]_
 
 .. math:: F = \frac{\hat{Q} + \hat\sigma^2}{\hat\sigma^2}
 
-where the true value Q = 0 if the null hypothesis is true, and
-Q > 0 if the alternative hypothesis is true (`Hays, 1994
+where the true value *Q* = 0 if the null hypothesis is true, and
+*Q* > 0 if the alternative hypothesis is true (`Hays, 1994
 <../Other/References.html#hays-1994>`__\ , Ch. 10). Therefore, at a bare
-minimum *the *F*-value must be larger than 1* to have any chance
+minimum *the F-value must be larger than 1* to have any chance
 of rejecting the null hypothesis. Note that this *doesn’t* mean that
 it’s impossible to get an *F*-value less than 1. What it means is
 that if the null hypothesis is true the sampling distribution of the
@@ -549,8 +549,8 @@ rest of the ANOVA is pretty painless. The next step is to calculate the
 degrees of freedom. Since we have *G* = 3 groups and *N* = 18 observations in
 total our degrees of freedom can be calculated by simple subtraction:
 
-|df_b| = G - 1 = 2
-|df_w| = N - G = 15
+|df_b| = *G* - 1 = 2
+|df_w| = *N* - *G* = 15
 
 Next, since we’ve now calculated the values for the sums of squares and
 the degrees of freedom, for both the within-groups variability and the
@@ -626,11 +626,11 @@ Sigh. So much work for one short sentence.
    the error variance, or SS\ :sub:`error`
 
 .. [#]
-   If you read ahead to chapter :doc:`Factorial ANOVA <../Ch14/Ch14_ANOVA2>` and look
-   at how the “treatment effect” at level k of a factor is defined in terms of
-   the α\ :sub:`k` values (see section :doc:`Factorial ANOVA 2: balanced
-   designs, interactions allowed <../Ch14/Ch14_ANOVA2_02>`), it turns out that Q refers
-   to a weighted mean of the squared treatment effects,
+   If you read ahead to chapter :doc:`Factorial ANOVA <../Ch14/Ch14_ANOVA2>`
+   and look at how the “treatment effect” at level *k* of a factor is defined
+   in terms of the α\ :sub:`k` values (see section :doc:`Factorial ANOVA 2:
+   balanced designs, interactions allowed <../Ch14/Ch14_ANOVA2_02>`), it turns
+   out that *Q* refers to a weighted mean of the squared treatment effects,
    :math:`Q = (\sum_{k=1}^G N_k \alpha_k^2)/(G-1)`.
 
 .. [#]

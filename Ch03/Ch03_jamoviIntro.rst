@@ -7,9 +7,9 @@ Getting started with jamovi
    :maxdepth: 1
    :hidden:
 
-   Ch03_jamoviIntro_1.rst
-   Ch03_jamoviIntro_2.rst
-   Ch03_jamoviIntro_3.rst
+   Ch03_jamoviIntro_1
+   Ch03_jamoviIntro_2
+   Ch03_jamoviIntro_3
 
 
 .. epigraph::
@@ -27,6 +27,9 @@ concepts: we’re just trying to learn the basics of how jamovi works and
 get comfortable interacting with the system. To do this we’ll spend a
 bit of time looking at datasets and variables. In doing so, you’ll get a
 bit of a feel for what it’s like to work in jamovi.
+
+Why using jamovi?
+-----------------
 
 However, before going into any of the specifics, it’s worth talking a
 little about why you might want to use jamovi at all. Given that you’re
@@ -82,14 +85,4 @@ so I’m really talking about why I use it.
    One of the consequences of this, I’ve noticed, is that if you look at
    recent advanced data analysis textbooks then a *lot* of them use R.
 
-Those are the main reasons I use jamovi. It’s not without its flaws,
-though. It’s relatively new\ [#]_ so there is not a huge set of textbooks
-and other resources to support it, and it has a few annoying quirks that
-we’re all pretty much stuck with, but on the whole I think the strengths
-outweigh the weakness; more so than any other option I’ve encountered so
-far.
-
-------
-
-.. [#]
-   As of writing this in August 2018.
+These are the main reasons I use jamovi.
