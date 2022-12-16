@@ -415,16 +415,16 @@ As with one-way ANOVA, the most interesting\ [#]_ part of this formula is the
 (Ȳ\ :sub:`r.` – Ȳ\ :sub:`..`)² bit, which corresponds to the squared deviation
 associated with level *r*. All that this formula does is calculate this squared
 deviation for all *R* levels of the factor, add them up, and then multiply the
-result by N × C. The reason for this last part is that there are multiple cells
-in our design that have level *r* on Factor A. In fact, there are *C* of them,
-one corresponding to each possible level of Factor B! For instance, in our
-example there are *two* different cells in the design corresponding to the
+result by *N* × *C*. The reason for this last part is that there are multiple
+cells in our design that have level *r* on Factor A. In fact, there are *C* of
+them, one corresponding to each possible level of Factor B! For instance, in
+our example there are *two* different cells in the design corresponding to the
 ``anxifree`` drug: one for people with ``no.therapy`` and one for the ``CBT``
 group. Not only that, within each of these cells there are *N* observations.
 So, if we want to convert our SS value into a quantity that calculates the
 between-groups sum of squares on a “per observation” basis, we have to multiply
-by N × C. The formula for factor B is of course the same thing, just with some
-subscripts shuffled around
+by *N* × *C*. The formula for factor B is of course the same thing, just with
+some subscripts shuffled around
 
 .. math:: \mbox{SS}_{B} = (N \times R) \sum_{c=1}^C \left( \bar{Y}_{.c} - \bar{Y}_{..} \right)^2
 
@@ -543,8 +543,8 @@ is similar, but not quite the same. The total number of observations in our
 experiment is 18. The constraints correspond to 1 grand mean, the 2 additional
 group means that the ``drug`` factor introduces, and the 1 additional group
 mean that the the ``therapy`` factor introduces, and so our degrees of freedom
-is 14. As a formula, this is N - 1 - (R - 1) - (C - 1), which simplifies to
-N - R - C + 1.
+is 14. As a formula, this is *N* - 1 - (*R* - 1) - (*C* - 1), which simplifies
+to *N* - *R* - *C* + 1.
 
 Using the degrees of freedom and the square sums we calculated above, we can
 calculate the following *F*-values for the factors A and B.

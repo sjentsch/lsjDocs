@@ -28,7 +28,7 @@ intercept term *b*\ :sub:`0`:
 
 | H\ :sub:`0`: *Y*\ :sub:`i` = b\ :sub:`0` + ε\ :sub:`i`
 
-If our regression model has K predictors, the “alternative
+If our regression model has *K* predictors, the “alternative
 model” is described using the usual formula for a multiple regression
 model:
 
@@ -52,16 +52,16 @@ the degrees of freedom.
 So, how many degrees of freedom do we have? As you might expect the
 *df* associated with the model is closely tied to the number of
 predictors that we’ve included. In fact, it turns out that
-*df*\ :sub:`mod` = K. For the residuals the total degrees of freedom is
-*df*\ :sub:`res` = N - K - 1.
+*df*\ :sub:`mod` = *K*. For the residuals the total degrees of freedom is
+*df*\ :sub:`res` = *N* - *K* - 1.
 
 Now that we’ve got our mean square values we can calculate an
 *F*-statistic like this
 
 | F = MS\ :sub:`mod` / SS\ :sub:`res`
 
-and the degrees of freedom associated with this are K and
-N - K - 1.
+and the degrees of freedom associated with this are *K* and
+*N* - *K* - 1.
 
 We’ll see much more of the *F*-statistic in chapter :doc:`Comparing several
 means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`, but for now just know that we can
@@ -114,7 +114,7 @@ way back in chapter :doc:`Comparing two means <../Ch11/Ch11_tTest>`. So let’s
 .. math:: t = \frac{\hat{b}}{SE(\hat{b})}
 
 I’ll skip over the reasons why, but our degrees of freedom in this case are
-*df* = N - K - 1. Irritatingly, the estimate of the standard error of the
+*df* = *N* - *K* - 1. Irritatingly, the estimate of the standard error of the
 regression coefficient, :math:`SE(\hat{b})`, is not as easy to calculate as the
 standard error of the mean that we used for the simpler *t*-tests in chapter
 :doc:`Comparing two means <../Ch11/Ch11_tTest>`. In fact, the formula is somewhat ugly,
@@ -168,7 +168,7 @@ tests.\ [#]_
 
 The only thing that the coefficients table itself doesn’t list is the
 degrees of freedom used in the *t*-test, which is always
-*N* - K - 1 and is listed in the table at the top of the output,
+*N* - *K* - 1 and is listed in the table at the top of the output,
 labelled ``Model Fit Measures``. We can see from this table that the model
 performs significantly better than you’d expect by chance
 (*F*\(2,97) = 215.24, *p* < 0.001), which isn’t all that
@@ -187,9 +187,9 @@ simple regression model that we started with is the better model.
 
 .. [#]
    For advanced readers only. The vector of residuals is
-   :math:`\epsilon = y - X \hat{b}`. For K predictors plus the intercept,
-   the estimated residual variance is
-   :math:`\hat\sigma^2 = \epsilon^\prime\epsilon / (N-K-1)`. The
+   :math:`\epsilon = y - X \hat{b}`. For *K* predictors plus the
+   intercept, the estimated residual variance is
+   :math:`\hat\sigma^2 = \epsilon^\prime\epsilon / (N - K - 1)`. The
    estimated covariance matrix of the coefficients is
    :math:`\hat\sigma^2(\mathbf{X}^\prime\mathbf{X})^{-1}`, the main
    diagonal of which is :math:`SE(\hat{b})`, our

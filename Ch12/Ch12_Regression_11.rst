@@ -190,7 +190,7 @@ interpretation is not: h\ :sub:`i` is a measure of the extent to which the
 In general, if an observation lies far away from the other ones in terms of the
 predictor variables, it will have a large hat value (as a rough guide, high
 leverage is when the hat value is more than 2 - 3 times the average; and note
-that the sum of the hat values is constrained to be equal to K + 1). High
+that the sum of the hat values is constrained to be equal to *K* + 1). High
 leverage points are also worth looking at in more detail, but they’re much less
 likely to be a cause for concern unless they are also outliers.
 

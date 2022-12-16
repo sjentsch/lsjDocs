@@ -13,7 +13,7 @@ rubbish. Remember, the regression model only produces a prediction
 done a good job. If they are very different, then it has done a bad job.
 
 The *R*\² (R-squared) value
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once again, let’s wrap a little bit of mathematics around this. Firstly,
 we’ve got the sum of the squared residuals
@@ -107,7 +107,7 @@ Pearson correlation is more or less equivalent to running a linear regression
 model that uses only one predictor variable.
 
 The adjusted *R*\² (R-squared) value
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 One final thing to point out before moving on. It’s quite common for
 people to report a slightly different measure of model performance,
@@ -121,7 +121,7 @@ calculation, as follows. For a regression model with K
 predictors, fit to a data set containing *N* observations, the
 adjusted *R*\² is:
 
-.. math:: \mbox{adj. } R^2 = 1 - \left(\frac{\mbox{SS}_{res}}{\mbox{SS}_{tot}} \times \frac{N-1}{N-K-1} \right)
+.. math:: \mbox{adj. } R^2 = 1 - \left(\frac{\mbox{SS}_{res}}{\mbox{SS}_{tot}} \times \frac{N - 1}{N - K - 1} \right)
 
 This adjustment is an attempt to take the degrees of freedom into
 account. The big advantage of the adjusted *R*\² value is that
