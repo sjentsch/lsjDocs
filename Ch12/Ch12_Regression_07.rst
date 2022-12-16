@@ -172,9 +172,9 @@ degrees of freedom used in the *t*-test, which is always
 labelled ``Model Fit Measures``. We can see from this table that the model
 performs significantly better than you’d expect by chance
 (*F*\(2,97) = 215.24, *p* < 0.001), which isn’t all that
-surprising: the *R²* = 0.81 value indicate that the regression
+surprising: the *R*\² = 0.81 value indicate that the regression
 model accounts for 81\% of the variability in the outcome measure (and
-82\% for the adjusted *R²*). However, when we look back up at the
+82\% for the adjusted *R*\²). However, when we look back up at the
 *t*-tests for each of the individual coefficients, we have pretty
 strong evidence that the ``baby.sleep`` variable has no significant
 effect. All the work in this model is being done by the ``dani.sleep``

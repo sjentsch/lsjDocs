@@ -340,12 +340,12 @@ model.
 
 The formula for the k-th VIF is:
 
-| VIF\ :sub:`k` = 1 / (1 - *R²*\ :sub:`(-k)`\)
+| VIF\ :sub:`k` = 1 / (1 - *R*\²\ :sub:`(-k)`\)
 
-where *R²*\ :sub:`(-k)` refers to *R*-squared value you would get
+where *R*\²\ :sub:`(-k)` refers to *R*-squared value you would get
 if you ran a regression using *X*\ :sub:`k` as the outcome variable, and
 all the other *X* variables as the predictors. The idea here is
-that *R²*\ :sub:`(-k)` is a very good measure of the extent to which
+that *R*\²\ :sub:`(-k)` is a very good measure of the extent to which
 *X*\ :sub:`k` is correlated with all the other variables in the model.
 
 The square root of the VIF is pretty interpretable. It tells you how

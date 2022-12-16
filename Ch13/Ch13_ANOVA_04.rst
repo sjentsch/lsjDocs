@@ -24,7 +24,7 @@ proportion of the variability in the outcome variable (``mood.gain``) that can
 be explained in terms of the predictor (``drug``). A value of η² = 0 means that
 there is no relationship at all between the two, whereas a value of η = 1 means
 that the relationship is perfect. Better yet, the η² value is very closely
-related to *R²*, as discussed previously in section :doc:`The R² (R-squared)
+related to *R*\², as discussed previously in section :doc:`The *R*\² (R-squared)
 value <../Ch12/Ch12_Regression_06>`, and has an equivalent interpretation.
 
 Although many statistics text books suggest η² as the default effect size

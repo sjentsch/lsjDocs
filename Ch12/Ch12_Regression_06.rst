@@ -12,7 +12,7 @@ rubbish. Remember, the regression model only produces a prediction
 *Y*\ :sub:`i`. If these two are very close, then the regression model has
 done a good job. If they are very different, then it has done a bad job.
 
-The *R²* (R-squared) value
+The *R*\² (R-squared) value
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once again, let’s wrap a little bit of mathematics around this. Firstly,
@@ -63,34 +63,34 @@ interpretable.
 
 To can fix this, we’d like to convert these two fairly meaningless numbers
 into one number. A nice, interpretable number, which for no particular reason
-we’ll call *R²*. What we would like is for the value of *R²* to be equal to 1
+we’ll call *R*\². What we would like is for the value of *R*\² to be equal to 1
 if the regression model makes no errors in predicting the data. In other words,
 if it turns out that the residual errors are zero. That is, if SS\ :sub:`res`
-= 0 then we expect *R²* = 1. Similarly, if the model is completely useless, we
-would like *R²* to be equal to 0. What do I mean by “useless”? Tempting as it
+= 0 then we expect *R*\² = 1. Similarly, if the model is completely useless, we
+would like *R*\² to be equal to 0. What do I mean by “useless”? Tempting as it
 is to demand that the regression model move out of the house, cut its hair and
 get a real job, I’m probably going to have to pick a more practical
 definition. In this case, all I mean is that the residual sum of squares is no
 smaller than the total sum of squares, SS\ :sub:`res` = SS\ :sub:`tot`. Wait,
-why don’t we do exactly that? The formula that provides us with our *R²* value
+why don’t we do exactly that? The formula that provides us with our *R*\² value
 is pretty simple to write down, and equally simple to calculate by hand:\ [#]_
 
-| R² = 1 - (SS\ :sub:`res` / SS\ :sub:`tot`)
-| R² = 1 - (1838.722 / 9998.590)
-| R² = 1 - 0.184
+| *R*\² = 1 - (SS\ :sub:`res` / SS\ :sub:`tot`)
+| *R*\² = 1 - (1838.722 / 9998.590)
+| *R*\² = 1 - 0.184
              
-This gives a value for R² of **0.816**. The R² value, sometimes called the
+This gives a value for *R*\² of **0.816**. The *R*\² value, sometimes called the
 **coefficient of determination**\ [#]_ has a simple interpretation: it is the
 *proportion* of the variance in the outcome variable that can be accounted for
-by the predictor. So, in this case the fact that we have obtained *R²* = 0.816
+by the predictor. So, in this case the fact that we have obtained *R*\² = 0.816
 means that the predictor (``dani.sleep``) explains 81.6\% of the variance in the
 outcome (``dani.grump``).\ [#]_
 
 Naturally, you don’t actually need to do all these calculations yourself if you
-want to obtain the *R²* value for your regression model. As we’ll see later on
+want to obtain the *R*\² value for your regression model. As we’ll see later on
 in :doc:`Running the hypothesis tests in jamovi <../Ch12/Ch12_Regression_07>`, all you
 need to do is specify this as an option in jamovi. However, let’s put that to
-one side for the moment. There’s another property of *R²* that I want to point
+one side for the moment. There’s another property of *R*\² that I want to point
 out.
 
 The relationship between regression and correlation
@@ -100,48 +100,48 @@ At this point we can revisit my earlier claim that regression, in this very
 simple form that I’ve discussed so far, is basically the same thing as a
 correlation. Previously, we used the symbol *r* to denote a Pearson
 correlation. Might there be some relationship between the value of the
-correlation coefficient *r* and the *R²* value from linear regression? Of
-course there is: the squared correlation *r²* is identical to the *R²* value
+correlation coefficient *r* and the *R*\² value from linear regression? Of
+course there is: the squared correlation *R*\² is identical to the *R*\² value
 for a linear regression with only a single predictor. In other words, running a
 Pearson correlation is more or less equivalent to running a linear regression
 model that uses only one predictor variable.
 
-The adjusted *R²* (R-squared) value
+The adjusted *R*\² (R-squared) value
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 One final thing to point out before moving on. It’s quite common for
 people to report a slightly different measure of model performance,
-known as “adjusted *R²*”. The motivation behind calculating the
-adjusted *R²* value is the observation that adding more
-predictors into the model will *always* cause the *R²* value to
+known as “adjusted *R*\²”. The motivation behind calculating the
+adjusted *R*\² value is the observation that adding more
+predictors into the model will *always* cause the *R*\² value to
 increase (or at least not decrease).
 
-The adjusted *R²* value introduces a slight change to the
+The adjusted *R*\² value introduces a slight change to the
 calculation, as follows. For a regression model with K
 predictors, fit to a data set containing *N* observations, the
-adjusted *R²* is:
+adjusted *R*\² is:
 
 .. math:: \mbox{adj. } R^2 = 1 - \left(\frac{\mbox{SS}_{res}}{\mbox{SS}_{tot}} \times \frac{N-1}{N-K-1} \right)
 
 This adjustment is an attempt to take the degrees of freedom into
-account. The big advantage of the adjusted *R²* value is that
-when you add more predictors to the model, the adjusted *R²*
+account. The big advantage of the adjusted *R*\² value is that
+when you add more predictors to the model, the adjusted *R*\²
 value will only increase if the new variables improve the model
 performance more than you’d expect by chance. The big disadvantage is
-that the adjusted *R²* value *can’t* be interpreted in the
-elegant way that *R²* can. *R²* has a simple
+that the adjusted *R*\² value *can’t* be interpreted in the
+elegant way that *R*\² can. *R*\² has a simple
 interpretation as the proportion of variance in the outcome variable
 that is explained by the regression model. To my knowledge, no
-equivalent interpretation exists for adjusted *R²*.
+equivalent interpretation exists for adjusted *R*\².
 
-An obvious question then is whether you should report *R²* or adjusted *R²*.
+An obvious question then is whether you should report *R*\² or adjusted *R*\².
 This is probably a matter of personal preference. If you care more about
-interpretability, then *R²* is better. If you care more about correcting for
-bias, then adjusted *R²* is probably better. Speaking just for myself, I prefer
-*R²*. My feeling is that it’s more important to be able to interpret your
+interpretability, then *R*\² is better. If you care more about correcting for
+bias, then adjusted *R*\² is probably better. Speaking just for myself, I prefer
+*R*\². My feeling is that it’s more important to be able to interpret your
 measure of model performance. Besides, as we’ll see in section
 :doc:`Hypothesis tests for regression models <../Ch12/Ch12_Regression_07>`, if you’re
-worried that the improvement in *R²* that you get by adding a predictor is just
+worried that the improvement in *R*\² that you get by adding a predictor is just
 due to chance and not because it’s a better model, well we’ve got hypothesis
 tests for that.
 
@@ -151,7 +151,7 @@ tests for that.
    If you don't want to do these calculations by hand, just create another
    computed variable called, e.g., ``R2``, and containing the formula
    ``1 - VSUM(sq_resid) / VSUM(sq_total)``. But then you have a whole column
-   containing R².
+   containing *R*\².
 
 .. [#]
    And by “sometimes” I mean “almost never”. In practice everyone just calls it

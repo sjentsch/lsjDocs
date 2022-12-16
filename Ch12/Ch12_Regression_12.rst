@@ -29,7 +29,7 @@ your model. First, the two principles:
    more predictors to the model you make it more complex. Each predictor
    adds a new free parameter (i.e., a new regression coefficient), and
    each new parameter increases the model’s capacity to “absorb” random
-   variations. So the goodness of fit (e.g., *R²*) continues to
+   variations. So the goodness of fit (e.g., *R*\²) continues to
    rise, sometimes trivially or by chance, as you add more predictors no
    matter what. If you want your model to be able to generalise well to
    new observations you need to avoid throwing in too many variables.
@@ -38,7 +38,7 @@ This latter principle is often referred to as **Ockham’s razor** and is
 often summarised in terms of the following pithy saying: *do not
 multiply entities beyond necessity*. In this context, it means don’t
 chuck in a bunch of largely irrelevant predictors just to boost your
-*R²*. Hmm. Yeah, the original was better.
+*R*\². Hmm. Yeah, the original was better.
 
 In any case, what we need is an actual mathematical criterion that will
 implement the qualitative principle behind Ockham’s razor in the context
