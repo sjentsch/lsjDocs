@@ -20,8 +20,9 @@ Windows users, Mac users, and Linux users. If you follow the relevant link
 you’ll see that the online instructions are pretty self-explanatory.\ [#]_
 
 Whereas this text book was one of the first resources available to support
-jamovi, there is now an abundance of them: They can be found under `Community
-resources <https://www.jamovi.org/community.html>`__ on the jamovi-web page.
+jamovi, there is now an abundance of them: Have a look under “resources” →
+`community resources <https://www.jamovi.org/community.html>`__ on the
+jamovi homepage.
 
 The jamovi window
 ~~~~~~~~~~~~~~~~~
