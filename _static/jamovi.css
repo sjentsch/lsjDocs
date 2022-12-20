@@ -658,6 +658,9 @@ img.person {
 }
 
 /* Remove “On …” section from versions menu */
-div.rst-versions {
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(3) {
+    display: none;
+}
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
     display: none;
 }
