@@ -9,7 +9,7 @@ is a tutorial that aims to help psychology students and other beginners with
 the first steps into jamovi. jamovi is a free and open statistical software to
 bridge the gap between researcher and statistician.
 
-Before we begin, a few remarks on how to use this web page. The content is
+Before we begin, a brief remark on how to use this web page. The content is
 available in different languages. To change the language, please head to the
 “Learning statistics with jamovi” roll-up menu (in the bottom-left corner) and
 click on it. A larger menu unfolds where you can select the language you would
