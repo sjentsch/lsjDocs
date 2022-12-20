@@ -3,14 +3,13 @@
 The spreadsheet
 ---------------
 
-It is possible to simply begin typing values into the jamovi spreadsheet
-as you would in any other spreadsheet software. Alternatively, existing
-data sets can be opened in jamovi (see the section “” further down on the
-page).
+It is possible to simply begin typing values into the jamovi spreadsheet as
+you would in any other spreadsheet software. Alternatively, existing data
+sets can be opened in jamovi (see the section “Loading data in jamovi”
+further down on the page).
 
-In jamovi data is represented in a spreadsheet with each column
-representing a “variable” and each row representing a “case” or
-“participant”.
+In jamovi data is represented in a spreadsheet with each column representing
+a “variable” and each row representing a “case” or “participant”.
 
 
 Data Variables
@@ -58,20 +57,19 @@ data type of either ``Text``, ``Integer`` or ``Decimal``.
    
 .. ----------------------------------------------------------------------------
 
-When starting with a blank spreadsheet and typing values in the variable
-type will change automatically depending on the data you enter. This is
-a good way to get a feel for which variable types go with which sorts of
-data. Similarly, when opening a data file jamovi will try and guess the
-variable type from the data in each column. In both cases this automatic
-approach may not be correct, and it may be necessary to manually specify
-the variable type with the variable editor.
+When starting with a blank spreadsheet and typing values in the variable type
+will change automatically depending on the data you enter. This isa good way
+to get a feel for which variable types go with which sorts of data. Similarly,
+when opening a data file jamovi will try and guess the variable type from the
+data in each column. In both cases this automatic approach may not be correct,
+and it may be necessary to manually specify the variable type with the variable
+editor.
 
-The variable editor can be opened by selecting ``Setup`` from the data tab
-or by double-clicking on the variable column header. The variable editor
-allows you to change the name of the variable and, for data variables,
-the variable type, the order of the levels, and the label displayed for
-each level. Changes can be applied by clicking the “tick” to the top
-right. The variable editor can be dismissed by clicking ``↑``.
+The variable editor can be opened by selecting ``Setup`` from the ``Data``
+ribbon or by double-clicking on the variable column header. The variable
+editor allows you to change the name of the variable and, for data variables,
+the measure type, the order of the value levels, and the label displayed for
+each level. The variable editor can be dismissed by clicking ``↑``.
 
 New variables can be inserted or appended to the data set using the ``Add``
 button from the ``Data`` tab. The ``Add`` button also allows the addition
@@ -88,17 +86,21 @@ measurement level into another one. Or, to use the correct term, you want to
 **coerce** the variable from one class into another.
 
 If you want to change a variable’s measurement level then you can do this in
-the jamovi data view for that variable. Just click the check box for the type
-level you want - continuous |continuous|, ordinal |ordinal|, or nominal
-|nominal|.
+the jamovi ``Data`` view. Click on the variable name in the top row of the data
+table and then select the desired measurement level under ``Measure Type`` –
+continuous |continuous|, ordinal |ordinal| or nominal |nominal|.
+
 
 Computed variables
 ~~~~~~~~~~~~~~~~~~
 
 Computed Variables are those which take their value by performing a
-computation on other variables. Computed Variables can be used for a
-range of purposes, including log transforms, *z*-scores, sum-scores,
-negative scoring and means.
+computation on other variables. Computed Variables can be used for a range of
+purposes, including log transforms, *z*-scores, sum-scores, negative scoring
+and means. There is another variable type, Transformed variables, that can be
+used to “recode” variables (e.g., when inverting items). This variable type is
+briefly described at the end of the section :doc:`EFA in jamovi
+<../Ch15/Ch15_FactorAnalysis_1>` and in :numref:`fig-efa7`.
 
 Computed variables can be added to the data set with the ``Add`` button
 available on the data tab. This will produce a formula box where you can
@@ -137,6 +139,7 @@ calculation on a variable as a whole, where as non-V functions perform
 their calculation row by row. For example, ``MEAN(A, B)`` will produce the
 mean of ``A`` and ``B`` for each row. Where as ``VMEAN(A)`` gives the mean of
 all the values in ``A``.
+
 
 Loading data in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~

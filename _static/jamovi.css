@@ -656,3 +656,8 @@ img.person {
 .red {
     color: red;
 }
+
+/* Remove “On …” section from versions menu */
+div.rst-versions {
+    display: none;
+}

@@ -3,14 +3,14 @@
 Analyses
 --------
 
-Analyses can be selected from the analyses ribbon (activate it by pressing the
-). Here, individual analyses can be chosen from their respective
-category (e.g., ``T-Tests``, ``ANOVA`` or ``Regression``). Selecting an
-analysis will present an **options panel** for that particular analysis,
-allowing you to assign different variables to different parts of the analysis,
-and select different options. At the same time, the results for the analysis
-will appear in the right **results panel** and will update in real-time as you
-make changes to the options.
+Analyses can be selected from the ``Analyses`` ribbon (activate it by clicking
+the ``Analyses``-tab at the top of the jamovi window). Here, individual
+analyses can be chosen from their respective category (e.g., ``T-Tests``,
+``ANOVA`` or ``Regression``). Selecting an analysis will present an **options
+panel** for that particular analysis, allowing you to assign different
+variables to different parts of the analysis, and select different options. At
+the same time, the results for the analysis will appear in the right **results
+panel** and will update in real-time as you make changes to the options.
 
 When you have the analysis set up correctly you can dismiss the analysis
 options by clicking the arrow to the top right of the options panel. If
@@ -27,20 +27,21 @@ more detailed look at the spreadsheet view.
 Copy and Paste
 ~~~~~~~~~~~~~~
 
-jamovi produces nice American Psychological Association (APA) formatted
-tables and attractive plots. It is often useful to be able to copy and
-paste these, perhaps into a Word document, or into an email to a
-colleague. To copy results right click on the object of interest and
+jamovi produces nice tables and attractive plots that are formatted in
+accordance with the American Psychological Association (APA) Publication
+Manual. A very useful feature of jamovi is the opportunity to be able to
+directly copy and paste these, perhaps into a Word document, or into an email
+to a colleague. To copy results right click on the object of interest and
 from the menu select exactly what you want to copy. The menu allows you
 to choose to copy only the image or the entire analysis. Selecting
-“copy” copies the content to the clipboard and this can be pasted into
+``Copy`` copies the content to the clipboard and this can be pasted into
 other programs in the usual way. You can practice this later on when we
 do some analyses.
 
 Syntax mode
 ~~~~~~~~~~~
 
-jamovi also provides an “Syntax Mode”. In this mode jamovi produces
+jamovi also provides an syntax mode. In this mode jamovi produces
 equivalent R code for each analysis. To change to syntax mode, select
 the settings menu (``⋮``; top right corner in jamovi) and click the
 ``Syntax mode`` checkbox there. You can turn off syntax mode by clicking
