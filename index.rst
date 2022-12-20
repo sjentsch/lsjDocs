@@ -4,9 +4,20 @@
 Learning statistics with jamovi
 ===============================
 
-Welcome to Learning statistics with `jamovi <https://www.jamovi.org>`__, which is a tutorial that aims to help psychology students and other beginners with the first steps into jamovi.
-jamovi is a free and open statistical software to bridge the gap between researcher and statistician.
+Welcome to Learning statistics with `jamovi <https://www.jamovi.org>`__, which
+is a tutorial that aims to help psychology students and other beginners with
+the first steps into jamovi. jamovi is a free and open statistical software to
+bridge the gap between researcher and statistician.
 
+Before we begin, a few remarks on how to use this web page. The content is
+available in different languages. To change the language, please head to the
+“Learning statistics with jamovi” roll-up menu (in the bottom-left corner) and
+click on it. A larger menu unfolds where you can select the language you would
+like to read the documentation in.
+
+So far, only a few languages (e.g., German) are translated completely, but you
+are very welcome to contribute to a `translation into your language
+<https://hosted.weblate.org/projects/lsjdocs/>`__.
 
 .. toctree::
    :maxdepth: 1
