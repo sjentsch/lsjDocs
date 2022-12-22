@@ -2,6 +2,7 @@
 .DS_Store
 
 # build stuff
+_env
 _env/
 _build/
 

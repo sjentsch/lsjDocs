@@ -13,11 +13,9 @@ Before we begin, a brief remark on how to use this web page. The content is
 available in different languages. To change the language, please head to the
 “Learning statistics with jamovi” roll-up menu (in the bottom-left corner) and
 click on it. A larger menu unfolds where you can select the language you would
-like to read the documentation in.
-
-So far, only a few languages (e.g., German) are translated completely, but you
-are very welcome to contribute to a `translation into your language
-<https://hosted.weblate.org/projects/lsjdocs/>`__.
+like to read the documentation in. So far, only a few languages are translated
+completely, but you are very welcome to contribute to a `translation into your
+language <https://hosted.weblate.org/projects/lsjdocs/>`__.
 
 .. toctree::
    :maxdepth: 1
