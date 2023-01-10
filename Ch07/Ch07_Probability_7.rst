@@ -11,15 +11,15 @@ of the chapter talking about some of the more important probability
 distributions that statisticians work with. The section by section
 breakdown looks like this:
 
--  :doc:`Probability theory versus statistics <../Ch07/Ch07_Probability_1>`  
+-  :doc:`Probability theory versus statistics <Ch07_Probability_1>`
 
--  :doc:`Frequentist versus Bayesian views of probability <../Ch07/Ch07_Probability_2>`
+-  :doc:`Frequentist versus Bayesian views of probability <Ch07_Probability_2>`
 
--  :doc:`Basics of probability theory <../Ch07/Ch07_Probability_3>`
+-  :doc:`Basics of probability theory <Ch07_Probability_3>`
 
--  :doc:`Binomial distribution <../Ch07/Ch07_Probability_4>`, :doc:`Normal distribution
-   <../Ch07/Ch07_Probability_5>`, and :doc:`Other useful distributions
-   <../Ch07/Ch07_Probability_6>`
+-  :doc:`Binomial distribution <Ch07_Probability_4>`, :doc:`Normal distribution
+   <Ch07_Probability_5>`, and :doc:`Other useful distributions
+   <Ch07_Probability_6>`
 
 As you’d expect, my coverage is by no means exhaustive. Probability theory is
 a large branch of mathematics in its own right, entirely separate from its
@@ -28,12 +28,12 @@ books written on the subject and universities generally offer multiple classes
 devoted entirely to probability theory. Even the “simpler” task of documenting
 standard probability distributions is a big topic. I’ve described five standard
 probability distributions in this chapter, but sitting on my bookshelf I have a
-45-chapter book called “Statistical Distributions” (`Evans, 2000 
-<../Other/References.html#evans-2000>`__\ ) that lists a *lot* more than that.
-Fortunately for you, very little of this is necessary. You’re unlikely to need
-to know dozens of statistical distributions when you go out and do real world
-data analysis, and you definitely won’t need them for this book, but it never
-hurts to know that there’s other possibilities out there.
+47-chapter book called “Statistical Distributions” (:ref:`Forbes et al., 2011
+<Forbes_2011>`) that lists a *lot* more than that. Fortunately for you, very
+little of this is necessary. You’re unlikely to need to know dozens of
+statistical distributions when you go out and do real world data analysis, and
+you definitely won’t need them for this book, but it never hurts to know that
+there’s other possibilities out there.
 
 Picking up on that last point, there’s a sense in which this whole chapter is
 something of a digression. Many undergraduate psychology classes on statistics
@@ -47,7 +47,7 @@ For example, there are a lot of rules about what you’re “allowed” to say w
 doing statistical inference and many of these can seem arbitrary and weird.
 However, they start to make sense if you understand that there is this Bayesian
 / frequentist distinction. Similarly, in chapter :doc:`Comparing two means
-<../Ch11/Ch11_tTest>` we’re going to talk about something called the *t*-test, and if
-you really want to have a grasp of the mechanics of the *t*-test it really
-helps to have a sense of what a *t*-distribution actually looks like. You get
-the idea, I hope.
+<../Ch11/Ch11_tTest>` we’re going to talk about something called the *t*-test,
+and if you really want to have a grasp of the mechanics of the *t*-test it
+really helps to have a sense of what a *t*-distribution actually looks like.
+You get the idea, I hope.

@@ -57,7 +57,7 @@ Data from berkeley. *Science, 187*\ (4175), 398–404. `https://doi.org/10.1126/
 .. _Box_1953:
 
 Box, G. E. P. (1953). Non-normality and tests on variances. *Biometrika, 40*\ (3–4), 318–335.
-`https://doi.org/10.1093/biomet/40.3-4.318 <https://doi.org/10.1093/biomet/40.3-4.318>`__
+`https://doi.org/10.2307/2333350 <https://doi.org/10.2307/2333350>`__
 
 
 .. _Box_1976:
@@ -174,6 +174,12 @@ Transactions of the Royal Society A, 222*, 309–368. `https://doi.org/10.1098/r
 .. _Fisher_1925:
 
 Fisher, R. A. (1925). *Statistical Methods for Research Workers*. Oliver & Boyd.
+
+
+.. _Forbes_2011:
+
+Forbes, C., Evans, M., Hastings, N., & Peacock, B. (2010). *Statistical Distributions*
+(4th ed.). Wiley.
 
 
 .. _Fox_2011:
@@ -398,14 +404,13 @@ Shaffer, J. P. (1995). Multiple hypothesis testing. *Annual Review of Psychology
 .. _Shapiro_1965:
 
 Shapiro, S. S., & Wilk, M. B. (1965). An analysis of variance test for normality (Complete samples).
-*Biometrika, 52*\ (3–4), 591–611. `https://doi.org/10.1093/biomet/52.3-4.591
-<https://doi.org/10.1093/biomet/52.3-4.591>`__
+*Biometrika, 52*\ (3–4), 591–611. `https://doi.org/10.2307/2333709 <https://doi.org/10.2307/2333709>`__
 
 
-.. _Sokal_1995:
+.. _Sokal_2011:
 
-Sokal, R. R., & Rohlf, F. J. (1995). *Biometry: The principles and practice of statistics in biological
-research* (3rd ed.). W. H. Freeman.
+Sokal, R. R., & Rohlf, F. J. (2011). *Biometry: The principles and practice of statistics in biological
+research* (4th ed.). W. H. Freeman.
 
 
 .. _Stevens_1946:
@@ -414,9 +419,9 @@ Stevens, S. S. (1946). On the theory of scales of measurement. *Science, 103*\ (
 `https://doi.org/10.1126/science.103.2684.677 <https://doi.org/10.1126/science.103.2684.677>`__
 
 
-.. _Stigler_2000:
+.. _Stigler_1986:
 
-Stigler, S. M. (2000). *The history of statistics: The measurement of uncertainty before 1900* (8th ed.).
+Stigler, S. M. (1986). *The history of statistics: The measurement of uncertainty before 1900*.
 Harvard University Press.
 
 
@@ -441,7 +446,7 @@ involved. *Biometrika, 34*\ (1/2), 28-35. `https://doi.org/10.2307/2332510 <http
 .. _Welch_1951:
 
 Welch, B. L. (1951). On the comparison of several mean values: An alternative approach. *Biometrika, 38*\ (3–4),
-330–336. `https://doi.org/10.1093/biomet/38.3-4.330 <https://doi.org/10.1093/biomet/38.3-4.330>`__
+330–336. `https://doi.org/10.2307/2332579 <https://doi.org/10.2307/2332579>`__
 
 
 .. _Wilkinson_2006:

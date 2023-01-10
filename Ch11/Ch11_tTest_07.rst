@@ -3,35 +3,33 @@
 Effect size
 -----------
 
-The most commonly used measure of effect size for a *t*-test is
-**Cohen’s d** (`Cohen, 1988 <../Other/References.html#cohen-1988>`__\ ).
-It’s a very simple measure in principle, with quite a few wrinkles when
-you start digging into the details. Cohen himself defined it primarily
-in the context of an independent samples *t*-test, specifically the
-Student test. In that context, a natural way of defining the effect size
-is to divide the difference between the means by an estimate of the
-standard deviation. In other words, we’re looking to calculate
+The most commonly used measure of effect size for a *t*-test is **Cohen’s d**
+(:ref:`Cohen, 1988 <Cohen_1988>`). It’s a very simple measure in principle,
+with quite a few wrinkles when you start digging into the details. Cohen
+himself defined it primarily in the context of an independent samples
+*t*-test, specifically the Student test. In that context, a natural way of
+defining the effect size is to divide the difference between the means by an
+estimate of the standard deviation. In other words, we’re looking to calculate
 *something* along the lines of this:
 
 | d = (mean 1 - mean 2) / std. dev.
 
 and he suggested a rough guide for interpreting *d* in
-:numref:`tab-cohensdinterpretation`. You’d think that this would
-be pretty unambiguous, but it’s not. This is largely because Cohen
-wasn’t too specific on what he thought should be used as the measure of
-the standard deviation (in his defence he was trying to make a broader
-point in his book, not nitpick about tiny details). As discussed by
-`McGrath and Meyer (2006) <../Other/References.html#mcgrath-2006>`__, there are
-several different versions in common usage, and each author tends to 
-adopt slightly different notation. For the sake of simplicity (as opposed
-to accuracy), I’ll use *d* to refer to any statistic that you calculate from
-the sample, and use δ to refer to a theoretical population effect. Obviously,
-that does mean that there are several different things all called *d*.
+:numref:`tab-cohensdinterpretation`. You’d think that this would be pretty
+unambiguous, but it’s not. This is largely because Cohen wasn’t too specific
+on what he thought should be used as the measure of the standard deviation
+(in his defence he was trying to make a broader point in his book, not
+nitpick about tiny details). As discussed by :ref:`McGrath and Meyer (2006)
+<Mcgrath_2006>`, there are several different versions in common usage, and
+each author tends to adopt slightly different notation. For the sake of
+simplicity (as opposed to accuracy), I’ll use *d* to refer to any statistic
+that you calculate from the sample, and use δ to refer to a theoretical
+population effect. Obviously, that does mean that there are several different
+things all called *d*.
 
-My suspicion is that the only time that you would want Cohen’s *d*
-is when you’re running a *t*-test, and jamovi has an option to
-calculate the effect size for all the different flavours of
-*t*-test it provides.
+My suspicion is that the only time that you would want Cohen’s *d* is when
+you’re running a *t*-test, and jamovi has an option to calculate the effect
+size for all the different flavours of *t*-test it provides.
 
 .. table::
    A (very) rough guide to interpreting Cohen’s *d*. My personal recommendation
@@ -94,29 +92,27 @@ estimate for the bottom line
 .. math:: d = \frac{\bar{X}_1 - \bar{X}_2}{\hat{\sigma}_p}
 
 where :math:`\hat\sigma_p` is the exact same pooled standard deviation
-measure that appears in the *t*-test. This is the most commonly
-used version of Cohen’s *d* when applied to the outcome of a
-Student *t*-test, and is the one provided in jamovi. It is
-sometimes referred to as Hedges’ *g* statistic (`Hedges, 1981
-<../Other/References.html#hedges-1981>`__\ ).
+measure that appears in the *t*-test. This is the most commonly used version
+of Cohen’s *d* when applied to the outcome of a Student *t*-test, and is the
+one provided in jamovi. It is sometimes referred to as Hedges’ *g* statistic
+(:ref:`Hedges, 1981 <Hedges_1981>`).
 
-However, there are other possibilities which I’ll briefly describe.
-Firstly, you may have reason to want to use only one of the two groups
-as the basis for calculating the standard deviation. This approach
-(often called Glass’ *Δ*, pronounced *delta*) only makes most
-sense when you have good reason to treat one of the two groups as a
-purer reflection of “natural variation” than the other. This can happen
-if, for instance, one of the two groups is a control group. Secondly,
-recall that in the usual calculation of the pooled standard deviation we
-divide by *N* - 2 to correct for the bias in the sample variance. In
-one version of Cohen’s *d* this correction is omitted, and instead
-we divide by *N*. This version makes sense primarily when you’re
-trying to calculate the effect size in the sample rather than estimating
-an effect size in the population. Finally, there is a version based on
-`Hedges and Olkin (1985) <../Other/References.html#hedges-1985>`__, who point out
-there is a small bias in the usual (pooled) estimation for Cohen’s *d*.
-Thus they introduce a small correction by multiplying the usual value of
-*d* by (*N* - 3) / (*N* - 2.25).
+However, there are other possibilities which I’ll briefly describe. Firstly,
+you may have reason to want to use only one of the two groups as the basis
+for calculating the standard deviation. This approach (often called Glass’
+*Δ*, pronounced *delta*) only makes most sense when you have good reason to
+treat one of the two groups as a purer reflection of “natural variation” than
+the other. This can happen if, for instance, one of the two groups is a
+control group. Secondly, recall that in the usual calculation of the pooled
+standard deviation we divide by *N* - 2 to correct for the bias in the sample
+variance. In one version of Cohen’s *d* this correction is omitted, and
+instead we divide by *N*. This version makes sense primarily when you’re
+trying to calculate the effect size in the sample rather than estimating an
+effect size in the population. Finally, there is a version based on
+:ref:`Hedges and Olkin (1985) <Hedges_1985>`, who point out there is a small
+bias in the usual (pooled) estimation for Cohen’s *d*. Thus they introduce a
+small correction by multiplying the usual value of *d* by (*N* - 3) /
+(*N* -2.25).
 
 In any case, ignoring all those variations that you could make use of if you
 wanted, let’s have a look at the default version in jamovi. In

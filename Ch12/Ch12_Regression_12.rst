@@ -44,8 +44,8 @@ In any case, what we need is an actual mathematical criterion that will
 implement the qualitative principle behind Ockham’s razor in the context
 of selecting a regression model. As it turns out there are several
 possibilities. The one that I’ll talk about is the **Akaike information
-criterion** (AIC; `Akaike, 1974 <../Other/References.html#akaike-1974>`__\ )
-simply because it’s available as an option in jamovi.
+criterion** (AIC; :ref:`Akaike, 1974 <Akaike_1974>`) simply because it’s
+available as an option in jamovi.
 
 In the context of a linear regression model (and ignoring terms that
 don’t depend on the model in any way!), the AIC for a model that has

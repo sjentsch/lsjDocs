@@ -3,18 +3,17 @@
 The χ² (chi-square) goodness-of-fit test
 ----------------------------------------
 
-The χ² goodness-of-fit test is one of the oldest hypothesis tests around. It 
-was invented by `Karl Pearson (1900) <../Other/References.html#pearson-1900>`__,
-with some corrections made later by `Sir Ronald Fisher (1922a)
-<../Other/References.html#fisher-1922a>`__. It tests whether an observed
-frequency distribution of a nominal variable |nominal| matches an expected
-frequency distribution. For example, suppose a group of patients has been
-undergoing an experimental treatment and have had their health assessed to see
-whether their condition has improved, stayed the same or worsened. A
-goodness-of-fit test could be used to determine whether the numbers in each
-category - improved, no change, worsened - match the numbers that would be
-expected given the standard treatment option. Let’s think about this some more,
-with some psychology.
+The χ² goodness-of-fit test is one of the oldest hypothesis tests around. It
+was invented by :ref:`Karl Pearson (1900) <Pearson_1900>`, with some
+corrections made later by :ref:`Sir Ronald Fisher (1922a) <Fisher_1922a>`. It
+tests whether an observed frequency distribution of a nominal variable
+|nominal| matches an expected frequency distribution. For example, suppose a
+group of patients has been undergoing an experimental treatment and have had
+their health assessed to see whether their condition has improved, stayed the
+same or worsened. A goodness-of-fit test could be used to determine whether
+the numbers in each category - improved, no change, worsened - match the
+numbers that would be expected given the standard treatment option. Let’s
+think about this some more, with some psychology.
 
 The cards data
 ~~~~~~~~~~~~~~
@@ -620,22 +619,22 @@ the sampling distribution. That way, the stat block itself would tell you
 exactly what it was that the researcher had calculated. Sometimes this happens.
 For instance, the test statistic used in the Pearson goodness-of-fit test is
 written χ², but there’s a closely related test known as the *G*-test
-(`Sokal & Rohlf, 1994 <../Other/References.html#sokal-1994>`__\ ),\ [#]_ in which the
-test statistic is written as *G*. As it happens, the Pearson goodness-of-fit
-test and the *G*-test both test the same null hypothesis, and the sampling
-distribution is exactly the same (i.e., a χ²-distribution  with *k* - 1
-degrees of freedom). If I’d done a *G*-test for the cards data rather than a
-goodness-of-fit test, then I’d have ended up with a test statistic of
-*G* = 8.65, which is slightly different from the χ² = 8.44 value that I got
-earlier and which produces a slightly smaller *p*-value of *p* = 0.034. Suppose
-that the convention was to report the test statistic, then the sampling
-distribution, and then the *p*-value. If that were true, then these two
-situations would produce different stat blocks: my original result would be
-written χ² = 8.44, χ²(3), *p* = 0.038, whereas the new version using the *G*-test
-would be written as *G* = 8.65, χ²(3),*p* = 0.034. However, using the condensed
-reporting standard, the original result is written χ²(3) = 8.44, *p* = 0.038,
-and the new one is written χ²(3) = 8.65,*p* = 0.034, and so it’s actually
-unclear which test I actually ran.
+(:ref:`Sokal & Rohlf, 2011 <Sokal_2011>`),\ [#]_ in which the test statistic
+is written as *G*. As it happens, the Pearson goodness-of-fit test and the
+*G*-test both test the same null hypothesis, and the sampling distribution is
+exactly the same (i.e., a χ²-distribution  with *k* - 1 degrees of freedom).
+If I’d done a *G*-test for the cards data rather than a goodness-of-fit test,
+then I’d have ended up with a test statistic of *G* = 8.65, which is slightly
+different from the χ² = 8.44 value that I got earlier and which produces a
+slightly smaller *p*-value of *p* = 0.034. Suppose that the convention was to
+report the test statistic, then the sampling distribution, and then the
+*p*-value. If that were true, then these two situations would produce
+different stat blocks: my original result would be written χ² = 8.44, χ²(3),
+*p* = 0.038, whereas the new version using the *G*-test would be written as
+*G* = 8.65, χ²(3),*p* = 0.034. However, using the condensed reporting
+standard, the original result is written χ²(3) = 8.44, *p* = 0.038, and the
+new one is written χ²(3) = 8.65,*p* = 0.034, and so it’s actually unclear
+which test I actually ran.
 
 So why don’t we live in a world in which the contents of the stat block
 uniquely specifies what tests were ran? The deep reason is that life is messy.
@@ -660,9 +659,9 @@ As a consequence, it’s sometimes a good idea to be clear about what the actual
 test was that you ran, especially if you’re doing something unusual. If you
 just say “χ²-test” it’s not actually clear what test you’re talking about.
 Although, since the two most common χ² tests are the goodness-of-fit test and
-the :doc:`test of independence (or association) <../Ch10/Ch10_ChiSquare_2>`, most
-readers with stats training can probably guess. Nevertheless, it’s something to
-be aware of.
+the :doc:`test of independence (or association) <Ch10_ChiSquare_2>`, most
+readers with stats training can probably guess. Nevertheless, it’s something
+to be aware of.
 
 ------
 

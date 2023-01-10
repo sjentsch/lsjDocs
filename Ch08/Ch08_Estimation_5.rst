@@ -192,7 +192,7 @@ pretty cool, so we’ll show you how to do that later on.
 .. [#]
    This quote appears on a great many t-shirts and websites, and even
    gets a mention in a few academic papers
-   (e.g., https://www.amstat.org/publications/jse/v10n3/friedman.html,
+   (e.g., https://doi.org/10.1080/10691898.2002.11910681,
    but I’ve never found the original source.
 
 .. ----------------------------------------------------------------------------

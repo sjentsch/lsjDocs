@@ -27,8 +27,8 @@ data *actually* reflect a weak bias in favour of women (sort of!), you’d
 probably think that I was either crazy or sexist.
 
 Oddly, it’s actually sort of true. When people started looking more
-carefully at the they told a rather different story (`Bickel et al., 1975
-<../Other/References.html#bickel-1975>`__\ ). Specifically, when they looked at
+carefully at the they told a rather different story (:ref:`Bickel et al., 1975
+<Bickel_1975>`). Specifically, when they looked at
 it on a department by department basis, it turned out that most of the
 departments actually had a slightly *higher* success rate for female
 applicants than for male applicants. The table below shows the admission
@@ -97,10 +97,10 @@ complicated data.
    The Berkeley 1973 college admissions data. This figure plots the admission
    rate for the 85 departments that had at least one female applicant, as a
    function of the percentage of applicants that were female. The plot is a
-   redrawing of Figure 1 from `Bickel et al. (1975) <../Other/References.html#bickel-1975>`__.
-   Circles plot departments with more than 40 applicants; the area of the circle is
-   proportional to the total number of applicants. The crosses plot departments
-   with fewer than 40 applicants.
+   redrawing of Figure 1 from :ref:`Bickel et al. (1975) <Bickel_1975>`.
+   Circles plot departments with more than 40 applicants; the area of the
+   circle is proportional to the total number of applicants. The crosses plot
+   departments with fewer than 40 applicants.
    
 .. ----------------------------------------------------------------------------
 

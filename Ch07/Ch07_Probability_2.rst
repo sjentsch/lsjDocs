@@ -231,13 +231,13 @@ relaxed. For instance, consider Sir Ronald Fisher, one of the towering
 figures of 20th century statistics and a vehement opponent to all things
 Bayesian, whose paper on the mathematical foundations of statistics
 referred to Bayesian probability as “an impenetrable jungle [that]
-arrests progress towards precision of statistical concepts” (`Fisher,
-1922b <../Other/References.html#fisher-1922b>`__\ ). Or the psychologist Paul
-Meehl, who suggests that relying on frequentist methods could turn you
-into “a potent but sterile intellectual rake who leaves in his merry
-path a long train of ravished maidens but no viable scientific offspring”
-(`Meehl, 1967 <../Other/References.html#cronbach-1951>`__\ ; p. 114). The history
-of statistics, as you might gather, is not devoid of entertainment.
+arrests progress towards precision of statistical concepts” (:ref:`Fisher,
+1922b <Fisher_1922b>`). Or the psychologist Paul Meehl, who suggests that
+relying on frequentist methods could turn you into “a potent but sterile
+intellectual rake who leaves in his merry path a long train of ravished
+maidens but no viable scientific offspring” (:ref:`Meehl, 1967
+<Cronbach_1951>`; p. 114). The history of statistics, as you might gather,
+is not devoid of entertainment.
 
 In any case, whilst I personally prefer the Bayesian view, the majority
 of statistical analyses are based on the frequentist approach. My

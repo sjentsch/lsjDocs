@@ -33,7 +33,7 @@ On the limits of logical reasoning
      
    -- Arthur Wellesley, 1st Duke of Wellington
 
-I am told that `quote above <http://www.bartleby.com/344/400.html>`__ came
+I am told that `quote above <https://www.bartleby.com/344/400.html>`__ came
 about as a consequence of a carriage ride across the countryside. He and his
 companion, J. W. Croker, were playing a guessing game, each trying to predict
 what would be on the other side of each hill. In every case it turned out that

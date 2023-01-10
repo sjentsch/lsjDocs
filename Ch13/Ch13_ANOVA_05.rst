@@ -117,27 +117,26 @@ control.
 
 The usual solution to this problem is to introduce an adjustment to the
 *p*-value, which aims to control the total error rate across the family of
-tests (`Shaffer, 1995 <../Other/References.html#shaffer-1995>`__\ ). An adjustment of
-this form, which is usually (but not always) applied because one is doing
-post-hoc analysis, is often referred to as a **correction for multiple
-comparisons**, though it is sometimes referred to as “simultaneous inference”.
-In any case, there are quite a few different ways of doing this adjustment.
-I’ll discuss a few of them in this section and in section :doc:`Post-hoc tests
-<../Ch14/Ch14_ANOVA2_09>`, but you should be aware that there are many other methods
-out there (`Hsu, 1996 <../Other/References.html#hsu-1996>`__\ ).
+tests (:ref:`Shaffer, 1995 <Shaffer_1995>`). An adjustment of this form, which
+is usually (but not always) applied because one is doing post-hoc analysis, is
+often referred to as a **correction for multiple comparisons**, though it is
+sometimes referred to as “simultaneous inference”. In any case, there are
+quite a few different ways of doing this adjustment. I’ll discuss a few of
+them in this section and in section :doc:`Post-hoc tests
+<../Ch14/Ch14_ANOVA2_09>`, but you should be aware that there are many other
+methods out there (:ref:`Hsu, 1996 <Hsu_1996>`).
 
 Bonferroni corrections
 ~~~~~~~~~~~~~~~~~~~~~~
 
 The simplest of these adjustments is called the **Bonferroni correction**
-(`Dunn, 1961 <../Other/References.html#dunn-1961>`__\ ), and it’s very very
-simple indeed. Suppose that my post-hoc analysis consists of *m*
-separate tests, and I want to ensure that the total probability of
-making *any* Type I errors at all is at most α.\ [#]_ If so,
-then the Bonferroni correction just says “multiply all your raw
-*p*-values by *m*”. If we let *p* denote the original
-*p*-value, and let *p*'\ :sub:`j` be the corrected value, then
-the Bonferroni correction tells that:
+(:ref:`Dunn, 1961 <Dunn_1961>`), and it’s very very simple indeed. Suppose
+that my post-hoc analysis consists of *m* separate tests, and I want to ensure
+that the total probability of making *any* Type I errors at all is at most
+α.\ [#]_ If so, then the Bonferroni correction just says “multiply all your
+raw *p*-values by *m*”. If we let *p* denote the original *p*-value, and let
+*p*'\ :sub:`j` be the corrected value, then the Bonferroni correction tells
+that:
 
 *p*'\ :sub:`j` = *m* × *p*
 
@@ -153,7 +152,7 @@ pretty simple, so much so that in the original paper, the author writes,
    must have been used before this. I do not find it, however, so can
    only conclude that perhaps its very simplicity has kept statisticians
    from realizing that it is a very good method in some situations
-   (`Dunn, 1961 <../Other/References.html#dunn-1961>`__\ , pp. 52-53).
+   (:ref:`Dunn, 1961 <Dunn_1961>`, pp. 52-53).
 
 To use the Bonferroni correction in jamovi, just click on the
 ``Bonferroni`` checkbox in the ``Correction`` options, and you will see
@@ -168,11 +167,10 @@ Holm corrections
 
 Although the Bonferroni correction is the simplest adjustment out there, it’s
 not usually the best one to use. One method that is often used instead is the
-**Holm correction** (`Holm, 1979 <../Other/References.html#holm-1979>`__\ ).
-The idea behind the Holm correction is to pretend that you’re doing the
-tests sequentially, starting with the smallest (raw) *p*-value and
-moving onto the largest one. For the *j*-th largest of the
-*p*-values, the adjustment is *either*
+**Holm correction** (:ref:`Holm, 1979 <Holm_1979>`). The idea behind the Holm
+correction is to pretend that you’re doing the tests sequentially, starting
+with the smallest (raw) *p*-value and moving onto the largest one. For the
+*j*-th largest of the *p*-values, the adjustment is *either*
 
 *p*'\ :sub:`j` = j × *p*\ :sub:`j`
 

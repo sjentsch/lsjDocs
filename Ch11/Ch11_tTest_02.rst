@@ -51,19 +51,18 @@ Introducing the *t*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This ambiguity is annoying, and it was resolved in 1908 by a guy called William
-Sealy Gosset (`Student, 1908 <../Other/References.html#student-1908>`__\ ), who was
-working as a chemist for the Guinness brewery at the time
-(`Box, 1987 <../Other/References.html#box-1987>`__\ ). Because Guinness took a dim view
-of its employees publishing statistical analysis (apparently they felt it was a
-trade secret), he published the work under the pseudonym “A Student” and, to
-this day, the full name of the *t*-test is actually **Student’s *t*-test**. The
-key thing that Gosset figured out is how we should accommodate the fact that we
-aren’t completely sure what the true standard deviation is.\ [#]_ The answer is
-that it subtly changes the sampling distribution. In the *t*-test our test
-statistic, now called a *t*-statistic, is calculated in exactly the same way I
-mentioned above. If our null hypothesis is that the true mean is µ, but our
-sample has mean *X̄* and our estimate of the population standard deviation is
-:math:`\hat{\sigma}`, then our *t*-statistic is:
+Sealy Gosset (:ref:`Student, 1908 <Student_1908>`), who was working as a
+chemist for the Guinness brewery at the time (:ref:`Box, 1987 <Box_1987>`).
+Because Guinness took a dim view of its employees publishing statistical
+analysis (apparently they felt it was a trade secret), he published the work
+under the pseudonym “A Student” and, to this day, the full name of the *t*-test
+is actually **Student’s *t*-test**. The key thing that Gosset figured out is
+how we should accommodate the fact that we aren’t completely sure what the true
+standard deviation is.\ [#]_ The answer is that it subtly changes the sampling
+distribution. In the *t*-test our test statistic, now called a *t*-statistic,
+is calculated in exactly the same way I mentioned above. If our null hypothesis
+is that the true mean is µ, but our sample has mean *X̄* and our estimate of the
+population standard deviation is :math:`\hat{\sigma}`, then our *t*-statistic is:
 
 .. math:: t = \frac{\bar{X} - \mu}{\hat{\sigma}/\sqrt{N} }
 

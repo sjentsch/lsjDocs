@@ -313,14 +313,13 @@ data). Three different approaches are available:
       
 .. ----------------------------------------------------------------------------
 
-The third approach is a good one according to `Fabrigar et al. (1999)
-<../Other/References.html#fabrigar-1999>`__, although in practice researchers tend to
-look at all three and then make a judgement about the number of factors that
-are most easily or helpfully interpreted. This can be understood as the
-“meaningfulness criterion”, and researchers will typically examine, in addition
-to the solution from one of the approaches above, solutions with one or two
-more or fewer factors. They then adopt the solution which makes the most sense
-to them.
+The third approach is a good one according to :ref:`Fabrigar et al. (1999)
+<Fabrigar_1999>`, although in practice researchers tend to look at all three
+and then make a judgement about the number of factors that are most easily or
+helpfully interpreted. This can be understood as the “meaningfulness criterion”,
+and researchers will typically examine, in addition to the solution from one of
+the approaches above, solutions with one or two more or fewer factors. They then
+adopt the solution which makes the most sense to them.
 
 At the same time, we should also consider the best way to rotate the final
 solution. There are two main approaches to rotation: orthogonal (e.g.

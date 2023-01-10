@@ -71,10 +71,10 @@ their common sense, and not bother with all this murky statistics stuff.
 However, you guys have taken psych classes, and by now you probably know
 where this is going.
 
-In a classic study, `Evans et al. (1983) <../Other/References.html#evans-1983>`__ ran an
-experiment looking at exactly this. What they found is that when pre-existing
-biases (i.e., beliefs) were in agreement with the structure of the data,
-everything went the way you’d hope:
+In a classic study, :ref:`Evans et al. (1983) <Evans_1983>` ran an experiment
+looking at exactly this. What they found is that when pre-existing biases
+(i.e., beliefs) were in agreement with the structure of the data, everything
+went the way you’d hope:
 
 +-------------------------+-----------------------+------------------------+
 |                         | conclusion feels true | conclusion feels false |

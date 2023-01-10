@@ -258,16 +258,16 @@ pretty typical.
 
 .. ----------------------------------------------------------------------------
 
-However, something that can never be stressed enough is that you should
+However, something that can never be stressed enough is that you should 
 *always* look at the scatterplot before attaching any interpretation to the
 data. A correlation might not mean what you think it means. The classic
-illustration of this is “Anscombe’s Quartet” (`Anscombe, 1973
-<../Other/References.html#anscombe-1973>`__\ ), a collection of four data sets. Each
-data set has two variables, an *X* and a *Y*. For all four data sets the mean
-value for *X* is 9 and the mean for *Y* is 7.5. The standard deviations for all
-*X* variables are almost identical, as are those for the *Y* variables. And in
-each case the correlation between *X* and *Y* is *r* = 0.816`. You can verify
-this yourself, since I happen to have saved it as a dataset called |anscombe|_.
+illustration of this is “Anscombe’s Quartet” (:ref:`Anscombe, 1973
+<Anscombe_1973>`), a collection of four data sets. Each data set has two
+variables, an *X* and a *Y*. For all four data sets the mean value for *X* is
+9 and the mean for *Y* is 7.5. The standard deviations for all *X* variables
+are almost identical, as are those for the *Y* variables. And in each case the
+correlation between *X* and *Y* is *r* = 0.816`. You can verify this yourself,
+since I happen to have saved it as a dataset called |anscombe|_.
 
 You’d think that these four data sets would look pretty similar to one another.
 They do not. If we draw scatterplots of *X* against *Y* for all four variables,

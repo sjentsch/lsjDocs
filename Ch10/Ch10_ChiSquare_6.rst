@@ -3,21 +3,20 @@
 The Fisher exact test
 ---------------------
 
-What should you do if your cell counts are too small, but you’d still
-like to test the null hypothesis that the two variables are independent?
-One answer would be “collect more data”, but that’s far too glib. There
-are a lot of situations in which it would be either infeasible or
-unethical do that. If so, statisticians have a kind of moral obligation
-to provide scientists with better tests. In this instance, `Fisher (1922a)
-<../Other/References.html#fisher-1922a>`__ kindly provided the right answer to
-the question. To illustrate the basic idea let’s suppose that we’re
-analysing data from a field experiment looking at the emotional status
-of people who have been accused of Witchcraft, some of whom are
-currently being burned at the stake.\ [#]_ Unfortunately for the
-scientist (but rather fortunately for the general populace), it’s
-actually quite hard to find people in the process of being set on fire,
-so the cell counts are awfully small in some cases. A contingency table
-of the |salem|_ data set illustrates the point:
+What should you do if your cell counts are too small, but you’d still like to
+test the null hypothesis that the two variables are independent? One answer
+would be “collect more data”, but that’s far too glib. There are a lot of
+situations in which it would be either infeasible or unethical do that. If so,
+statisticians have a kind of moral obligation to provide scientists with
+better tests. In this instance, :ref:`Fisher 1922a) <Fisher_1922a>` kindly
+provided the right answer to the question. To illustrate the basic idea let’s
+suppose that we’re analysing data from a field experiment looking at the
+emotional status of people who have been accused of Witchcraft, some of whom
+are currently being burned at the stake.\ [#]_ Unfortunately for the scientist
+(but rather fortunately for the general populace), it’s actually quite hard to
+find people in the process of being set on fire, so the cell counts are
+awfully small in some cases. A contingency table of the |salem|_ data set
+illustrates the point:
 
 .. code-block:: R
 
@@ -26,13 +25,12 @@ of the |salem|_ data set illustrates the point:
      FALSE      3    3
      TRUE      10    0
 
-Looking at this data, you’d be hard pressed not to suspect that people
-not on fire are more likely to be happy than people on fire. However,
-the χ²-test makes this very hard to test because of the small
-sample size. So, speaking as someone who doesn’t want to be set on fire,
-I’d *really* like to be able to get a better answer than this. This is
-where **Fisher’s exact test** (`Fisher, 1922a
-<../Other/References.html#fisher-1922a>`__\ ) comes in very handy.
+Looking at this data, you’d be hard pressed not to suspect that people not on
+fire are more likely to be happy than people on fire. However, the χ²-test
+makes this very hard to test because of the small sample size. So, speaking as
+someone who doesn’t want to be set on fire, I’d *really* like to be able to
+get a better answer than this. This is where **Fisher’s exact test**
+(:ref:`Fisher, 1922a <Fisher_1922a>`) comes in very handy.
 
 The Fisher exact test works somewhat differently to the χ²-test
 (or in fact any of the other hypothesis tests that I talk about in this
@@ -50,13 +48,13 @@ works for a 2 × 2 contingency table. As before, let’s have some notation:
 | **Total**           | *C*\ :sub:`1`  | *C*\ :sub:`2`  | *N*           |
 +---------------------+----------------+----------------+---------------+
 
-In order to construct the test Fisher treats both the row and column
-totals (*R*\ :sub:`1`\, *R*\ :sub:`2`, *C*\ :sub:`1` and *C*\ :sub:`2`\)
-as known, fixed quantities and then calculates the probability that we would have
-obtained the observed frequencies that we did (*O*\ :sub:`11`\, *O*\ :sub:`12`\,
-*O*\ :sub:`21` and *O*\ :sub:`22`\) given those totals. In the notation that we
-developed in chapter :doc:`Introduction to probability <../Ch07/Ch07_Probability>` this
-is written:
+In order to construct the test Fisher treats both the row and column totals
+(*R*\ :sub:`1`\, *R*\ :sub:`2`, *C*\ :sub:`1` and *C*\ :sub:`2`\) as known,
+fixed quantities and then calculates the probability that we would have
+obtained the observed frequencies that we did (*O*\ :sub:`11`\,
+*O*\ :sub:`12`\, *O*\ :sub:`21` and *O*\ :sub:`22`\) given those totals. In
+the notation that we developed in chapter :doc:`Introduction to probability
+<../Ch07/Ch07_Probability>` this is written:
 
 | *P*\(*O*\ :sub:`11`, *O*\ :sub:`12`, *O*\ :sub:`21`, *O*\ :sub:`22` |
   *R*\ :sub:`1`, *R*\ :sub:`2`, *C*\ :sub:`1`, *C*\ :sub:`2`)

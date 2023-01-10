@@ -9,27 +9,28 @@ understand than inferential statistics, so like every other statistics textbook
 I’ve started with descriptives. In this chapter, we talked about the following
 topics:
 
--  :doc:`Measures of central tendency <../Ch04/Ch04_Descriptives_1>`: Broadly speaking,
-   central tendency measures tell you where the data are. There’s three
-   measures that are typically reported in the literature: the mean, median and
-   mode.
+-  :doc:`Measures of central tendency <../Ch04/Ch04_Descriptives_1>`: Broadly
+   speaking, central tendency measures tell you where the data are. There’s
+   three measures that are typically reported in the literature: the mean,
+   median and mode.
 
--  :doc:`Measures of variability <../Ch04/Ch04_Descriptives_2>`: In contrast, measures
-   of variability tell you about how “spread out” the data are. The key
-   measures are: range, standard deviation, and interquartile range.
+-  :doc:`Measures of variability <../Ch04/Ch04_Descriptives_2>`: In contrast,
+   measures of variability tell you about how “spread out” the data are. The
+   key measures are: range, standard deviation, and interquartile range.
 
--  :doc:`Measures of skewness and kurtosis <../Ch04/Ch04_Descriptives_3>`: We also
-   looked at assymetry in a variable’s distribution (skew) and pointness
+-  :doc:`Measures of skewness and kurtosis <../Ch04/Ch04_Descriptives_3>`: We
+   also looked at assymetry in a variable’s distribution (skew) and pointness
    (kurtosis).
 
--  :doc:`Getting group summaries of variables in jamovi <../Ch04/Ch04_Descriptives_4>`:
-   Since this book focuses on doing data analysis in jamovi, we spent a bit of
-   time talking about how descriptive statistics are computed for different
-   subgroups.
+-  :doc:`Getting group summaries of variables in jamovi
+   <../Ch04/Ch04_Descriptives_4>`: Since this book focuses on doing data
+   analysis in jamovi, we spent a bit of time talking about how descriptive
+   statistics are computed for different subgroups.
 
--  :doc:`Standard scores <../Ch04/Ch04_Descriptives_5>`: The *z*-score is a slightly
-   unusual beast. It’s not quite a descriptive statistic, and not quite an
-   inference. Make sure you understand that section. It’ll come up again later.
+-  :doc:`Standard scores <../Ch04/Ch04_Descriptives_5>`: The *z*-score is a
+   slightly unusual beast. It’s not quite a descriptive statistic, and not
+   quite an inference. Make sure you understand that section. It’ll come up
+   again later.
 
 In the next chapter we’ll move on to a discussion of how to draw pictures!
 Everyone loves a pretty picture, right? But before we do, I want to end on
@@ -54,8 +55,8 @@ Epilogue: Good descriptive statistics are descriptive!
 
    | *950,000 – 1,200,000*
    
-   -- Estimate of Soviet repression deaths, 1937-1938 (`Ellman, 2002
-      <../Other/References.html#ellman-2002>`__\ )
+   -- Estimate of Soviet repression deaths, 1937-1938 (:ref:`Ellman, 2002
+      <Ellman_2002>`)
 
 Stalin’s infamous quote about the statistical character of the deaths of
 millions is worth giving some thought. The clear intent of his statement

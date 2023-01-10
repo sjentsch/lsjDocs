@@ -10,17 +10,17 @@ the *F*-tests are “omnibus” tests that only really test the null hypothesis
 that there are no differences among groups, obtaining a significant effect
 doesn’t tell you which groups are different to which other ones. We discussed
 this issue back in chapter :doc:`Comparing several means (one-way ANOVA)
-<../Ch13/Ch13_ANOVA>`, and in that chapter our solution was to run *t*-tests for all
-possible pairs of groups, making corrections for multiple comparisons (e.g.,
+<../Ch13/Ch13_ANOVA>`, and in that chapter our solution was to run *t*-tests for
+all possible pairs of groups, making corrections for multiple comparisons (e.g.,
 Bonferroni, Holm) to control the Type I error rate across all comparisons. The
 methods that we used back there have the advantage of being relatively simple
 and being the kind of tools that you can use in a lot of different situations
 where you’re testing multiple hypotheses, but they’re not necessarily the best
 choices if you’re interested in doing efficient post-hoc testing in an ANOVA
 context. There are actually quite a lot of different methods for performing
-multiple comparisons in the statistics literature (`Hsu, 1996
-<../Other/References.html#hsu-1996>`__\ ), and it would be beyond the scope of an
-introductory text like this one to discuss all of them in any detail.
+multiple comparisons in the statistics literature (:ref:`Hsu, 1996 <Hsu_1996>`),
+and it would be beyond the scope of an introductory text like this one to
+discuss all of them in any detail.
 
 That being said, there’s one tool that I do want to draw your attention
 to, namely Tukey’s “Honestly Significant Difference”, or **Tukey’s HSD**

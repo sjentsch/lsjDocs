@@ -106,7 +106,7 @@ Evidentiary standards you can believe
      consider that [smaller values of *p*] indicate a real
      discrepancy.
      
-   -- `Sir Ronald Fisher (1925) <../Other/References.html#fisher-1925>`__
+   -- :ref:`Sir Ronald Fisher (1925) <Fisher_1925>`
 
 Consider the quote above by Sir Ronald Fisher, one of the founders of
 what has become the orthodox approach to statistics. If anyone has ever
@@ -122,25 +122,24 @@ fairly stringent evidential standard.
 
 Well, how true is that? One way to approach this question is to try to
 convert *p*-values to Bayes factors, and see how the two compare.
-It’s not an easy thing to do because a *p*-value is a
-fundamentally different kind of calculation to a Bayes factor, and they
-don’t measure the same thing. However, there have been some attempts to
-work out the relationship between the two, and it’s somewhat surprising.
-For example, `Johnson (2013) <../Other/References.html#johnson-2013>`__ presents
-a pretty compelling case that (for *t*-tests at least) the 
-*p* < 0.05 threshold corresponds roughly to a Bayes factor of somewhere
-between 3:1 and 5:1 in favour of the alternative. If that’s right, then
-Fisher’s claim is a bit of a stretch. Let’s suppose that the null hypothesis
-is true about half the time (i.e., the prior probability of H\ :sub:`0` is
-0.5), and we use those numbers to work out the posterior probability of
-the null hypothesis given that it has been rejected at *p* < 0.05.
-Using the data from `Johnson (2013) <../Other/References.html#johnson-2013>`__ ,
-we see that if you reject the null at *p* < 0.05, you’ll be correct
-about 80\% of the time. I don’t know about you but, in my opinion, an
-evidential standard that ensures you’ll be wrong on 20\% of your decisions
-isn’t good enough. The fact remains that, quite contrary to Fisher’s claim,
-if you reject at *p* < 0.05 you shall quite often go astray. It’s not a
-very stringent evidential threshold at all.
+It’s not an easy thing to do because a *p*-value is a fundamentally different
+kind of calculation to a Bayes factor, and they don’t measure the same thing.
+However, there have been some attempts to work out the relationship between
+the two, and it’s somewhat surprising. For example, :ref:`Johnson (2013)
+<Johnson_2013>` presents a pretty compelling case that (for *t*-tests at
+least) the *p* < 0.05 threshold corresponds roughly to a Bayes factor of
+somewhere between 3:1 and 5:1 in favour of the alternative. If that’s right,
+then Fisher’s claim is a bit of a stretch. Let’s suppose that the null
+hypothesis is true about half the time (i.e., the prior probability of
+H\ :sub:`0` is 0.5), and we use those numbers to work out the posterior
+probability of the null hypothesis given that it has been rejected at *p*
+< 0.05. Using the data from :ref:`Johnson (2013) <Johnson_2013>`, we see that
+if you reject the null at *p* < 0.05, you’ll be correct about 80\% of the
+time. I don’t know about you but, in my opinion, an evidential standard that
+ensures you’ll be wrong on 20\% of your decisions isn’t good enough. The fact
+remains that, quite contrary to Fisher’s claim, if you reject at *p* < 0.05
+you shall quite often go astray. It’s not a very stringent evidential
+threshold at all.
 
 The *p*-value is a lie.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -157,12 +156,12 @@ The *p*-value is a lie.
 
 Okay, at this point you might be thinking that the real problem is not with
 orthodox statistics, just the *p* < 0.05 standard. In one sense, that’s
-true. The recommendation that `Johnson (2013) <../Other/References.html#johnson-2013>`__
-gives is not that “everyone must be a Bayesian now”. Instead, the suggestion
-is that it would be wiser to shift the conventional standard to something like
-a *p* < 0.01 level. That’s not an unreasonable view to take, but in my view
-the problem is a little more severe than that. In my opinion, there’s a fairly
-big problem built into the way most (but not all) orthodox hypothesis tests are
+true. The recommendation that :ref:`Johnson (2013) <Johnson_2013>` gives is
+not that “everyone must be a Bayesian now”. Instead, the suggestion is that
+it would be wiser to shift the conventional standard to something like a *p*
+< 0.01 level. That’s not an unreasonable view to take, but in my view the
+problem is a little more severe than that. In my opinion, there’s a fairly big
+problem built into the way most (but not all) orthodox hypothesis tests are
 constructed. They are grossly naive about how humans actually do research, and
 because of this most *p*-values are wrong.
 
@@ -232,11 +231,11 @@ data until the the results *are* conclusive. What’s wrong with that?
 Honestly, there’s nothing wrong with it. It’s a reasonable, sensible and
 rational thing to do. In real life, this is exactly what every researcher does.
 Unfortunately, the theory of null hypothesis testing as I described it in
-chapter :doc:`Hypothesis testing <../Ch09/Ch09_HypothesisTesting>` *forbids* you from
-doing this.\ [#]_ The reason is that the theory assumes that the experiment is
-finished and all the data are in. And because it assumes the experiment is
-over, it only considers *two* possible decisions. If you’re using the
-conventional *p* < 0.05 threshold, those decisions are:
+chapter :doc:`Hypothesis testing <../Ch09/Ch09_HypothesisTesting>` *forbids*
+you from doing this.\ [#]_ The reason is that the theory assumes that the
+experiment is finished and all the data are in. And because it assumes the
+experiment is over, it only considers *two* possible decisions. If you’re
+using the conventional *p* < 0.05 threshold, those decisions are:
 
 +-----------------------+-----------------+
 | Outcome               | Action          |
@@ -310,22 +309,22 @@ result, all bets are off.
 
 So how bad is it? The answer is shown as the solid black line in
 :numref:`fig-adapt`, and it’s *astoundingly* bad. If you peek at your data
-after every single observation, there is a 49\% chance that you will make a Type
-I error. That’s, um, quite a bit bigger than the 5\% that it’s supposed to be.
-By way of comparison, imagine that you had used the following strategy. Start
-collecting data. Every single time an observation arrives, run a :doc:`Bayesian
-*t*-test <../Ch16/Ch16_Bayes_5>` and look at the Bayes factor. I’ll assume that
-`Johnson (2013) <../Other/References.html#johnson-2013>`__ is right, and I’ll
-treat a Bayes factor of 3:1 as roughly equivalent to a *p*-value of 0.05.\ [#]_
-This time around, our trigger happy researcher uses the following procedure. If
-the Bayes factor is 3:1 or more in favour of the null, stop the experiment and
+after every single observation, there is a 49\% chance that you will make a
+Type I error. That’s, um, quite a bit bigger than the 5\% that it’s supposed
+to be. By way of comparison, imagine that you had used the following strategy.
+Start collecting data. Every single time an observation arrives, run a
+:doc:`Bayesian *t*-test <Ch16_Bayes_5>` and look at the Bayes factor.
+I’ll assume that :ref:`Johnson (2013) <Johnson_2013>` is right, and I’ll treat
+a Bayes factor of 3:1 as roughly equivalent to a *p*-value of 0.05.\ [#]_ This
+time around, our trigger happy researcher uses the following procedure. If the
+Bayes factor is 3:1 or more in favour of the null, stop the experiment and
 retain the null. If it is 3:1 or more in favour of the alternative, stop the
-experiment and reject the null. Otherwise continue testing. Now, just like last
-time, let’s assume that the null hypothesis is true. What happens? As it
-happens, I ran the simulations for this scenario too, and the results are shown
-as the dashed line in :numref:`fig-adapt`. It turns out that the Type I error
-rate is much much lower than the 49\% rate that we were getting by using the
-orthodox *t*-test.
+experiment and reject the null. Otherwise continue testing. Now, just like
+last time, let’s assume that the null hypothesis is true. What happens? As it
+happens, I ran the simulations for this scenario too, and the results are
+shown as the dashed line in :numref:`fig-adapt`. It turns out that the Type I
+error rate is much much lower than the 49\% rate that we were getting by using
+the orthodox *t*-test.
 
 In some ways, this is remarkable. The entire *point* of orthodox null
 hypothesis testing is to control the Type I error rate. Bayesian methods
@@ -435,10 +434,10 @@ Orthodox null hypothesis testing does not.\ [#]_
 
 .. [#]
    Some readers might wonder why I picked 3:1 rather than 5:1, given that
-   `Johnson (2013) <../Other/References.html#johnson-2013>`__ suggests that *p* = 0.05
-   lies somewhere in that range. I did so in order to be charitable to the
-   *p*-value. If I’d chosen a 5:1 Bayes factor instead, the results would look
-   even better for the Bayesian approach.
+   :ref:`Johnson (2013) <Johnson_2013>` suggests that *p* = 0.05 lies somewhere
+   in that range. I did so in order to be charitable to the *p*-value. If I’d
+   chosen a 5:1 Bayes factor instead, the results would look even better for
+   the Bayesian approach.
 
 .. [#]
    Okay, I just *know* that some knowledgeable frequentists will read this and

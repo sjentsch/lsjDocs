@@ -50,13 +50,12 @@ subjects in the independent ANOVA design.
 Repeated measures ANOVA in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-First, we need some data. `Geschwind (1972) <../Other/References.html#geschwind-1972>`__
-has suggested that the exact nature of a patient’s language deficit
-following a stroke can be used to diagnose the specific region of the
-brain that has been damaged. A researcher is concerned with identifying
-the specific communication difficulties experienced by six patients
-suffering from Broca’s Aphasia (a language deficit commonly experienced
-following a stroke).
+First, we need some data. :ref:`Geschwind (1972) <Geschwind_1972>` has
+suggested that the exact nature of a patient’s language deficit following a
+stroke can be used to diagnose the specific region of the brain that has been
+damaged. A researcher is concerned with identifying the specific communication
+difficulties experienced by six patients suffering from Broca’s Aphasia (a
+language deficit commonly experienced following a stroke).
 
 .. table:: Number of attempts successfully completed on three experimental tasks.
    :name: tab-RManova

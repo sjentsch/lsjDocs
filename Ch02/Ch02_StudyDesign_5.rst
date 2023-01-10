@@ -504,8 +504,7 @@ mean, that performance on the next trial should be worse regardless of
 whether reinforcement is given. Similarly, after a bad trial, people
 will tend to improve all on their own. The apparent superiority of
 negative feedback is an artefact caused by regression to the mean
-(see `Kahneman & Tversky, 1973 <../Other/References.html#kahneman-1973>`__ for a 
-discussion).
+(see :ref:`Kahneman & Tversky, 1973 <Kahneman_1973>` for a discussion).
 
 Experimenter bias
 ~~~~~~~~~~~~~~~~~
@@ -519,15 +518,14 @@ that the participant does not, for example the right answer to the
 questions being asked or knowledge of the expected pattern of
 performance for the condition that the participant is in. The classic
 example of this happening is the case study of “Clever Hans”, which
-dates back to 1907 (`Pfungst, 1911 <../Other/References.html#pfungst-1911>`__; 
-`Hothersall, 2004 <../Other/References.html#hothersall-2004>`__\ ).
-Clever Hans was a horse that apparently was able to read and count and
-perform other human like feats of intelligence. After Clever Hans became
-famous, psychologists started examining his behaviour more closely. It
-turned out that, not surprisingly, Hans didn’t know how to do maths.
-Rather, Hans was responding to the human observers around him, because
-the humans did know how to count and the horse had learned to change its
-behaviour when people changed theirs.
+dates back to 1907 (:ref:`Pfungst, 1911 <Pfungst_1911>`; :ref:`Hothersall,
+2004 <Hothersall_2004>`). Clever Hans was a horse that apparently was able
+to read and count and perform other human like feats of intelligence. After
+Clever Hans became famous, psychologists started examining his behaviour
+more closely. It turned out that, not surprisingly, Hans didn’t know how
+to do maths. Rather, Hans was responding to the human observers around him,
+because the humans did know how to count and the horse had learned to change
+its behaviour when people changed theirs.
 
 The general solution to the problem of experimenter bias is to engage in
 double blind studies, where neither the experimenter nor the participant
@@ -559,23 +557,21 @@ other words, the expectations become a self-fulfilling prophesy.
 Demand effects and reactivity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When talking about experimenter bias, the worry is that the
-experimenter’s knowledge or desires for the experiment are communicated
-to the participants, and that these can change people’s behaviour
-(`Rosenthal, 1966 <../Other/References.html#rosenthal-1966>`__\ ). However, even
-if you manage to stop this from happening, it’s almost impossible to stop
-people from knowing that they’re part of a psychological study. And the
-mere fact of knowing that someone is watching or studying you can have a
-pretty big effect on behaviour. This is generally referred to as **reactivity**
-or **demand effects**. The basic idea is captured by the Hawthorne effect:
-people alter their performance because of the attention that the study
-focuses on them. The effect takes its name from a study that took place
-in the “Hawthorne Works” factory outside of Chicago (see `Adair, 1984
-<../Other/References.html#adair-1984>`__\ ). This study, from the 1920s,
-looked at the effects of factory lighting on worker productivity. But,
-importantly, change in worker behaviour occurred because the workers
-*knew* they were being studied, rather than any effect of factory
-lighting.
+When talking about experimenter bias, the worry is that the experimenter’s
+knowledge or desires for the experiment are communicated to the participants,
+and that these can change people’s behaviour (:ref:`Rosenthal, 1966
+<Rosenthal_1966>`). However, even if you manage to stop this from happening,
+it’s almost impossible to stop people from knowing that they’re part of a
+psychological study. And the mere fact of knowing that someone is watching or
+studying you can have a pretty big effect on behaviour. This is generally
+referred to as **reactivity** or **demand effects**. The basic idea is
+captured by the Hawthorne effect: people alter their performance because of
+the attention that the study focuses on them. The effect takes its name from
+a study that took place in the “Hawthorne Works” factory outside of Chicago
+(see :ref:`Adair, 1984 <Adair_1984>`). This study, from the 1920s, looked at
+the effects of factory lighting on worker productivity. But, importantly,
+change in worker behaviour occurred because the workers *knew* they were
+being studied, rather than any effect of factory lighting.
 
 To get a bit more specific about some of the ways in which the mere fact
 of being in a study can change how people behave, it helps to think like
@@ -617,8 +613,7 @@ is in fact some combination of natural healing (some people just get
 better on their own), regression to the mean and other quirks of study
 design. Of interest to psychology is that the strongest evidence for at
 least some placebo effect is in self-reported outcomes, most notably in
-treatment of pain (`Hróbjartsson & Gøtzsche, 2010
-<../Other/References.html#hrobjartsson-2010>`__\ ).
+treatment of pain (:ref:`Hróbjartsson & Gøtzsche, 2010 <Hrobjartsson_2010>`).
 
 Situation, measurement and sub-population effects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -720,17 +715,16 @@ arise:
    just happens to end up with a built in flaw, and that flaw then
    magically erases itself when the study is written up for publication.
 
--  **Data mining & post-hoc hypothesising**. Another way in which the
-   authors of a study can more or less misrepresent the data is by
-   engaging in what’s referred to as “data mining” (see `Gelman & Loken,
-   2014 <../Other/References.html#gelman-2014>`__, for a broader discussion of
-   this as part of the “garden of forking paths” in statistical analysis).
-   As we’ll discuss later, if you keep trying to analyse your data in
-   lots of different ways, you’ll eventually find something that “looks”
-   like a real effect but isn’t. This is referred to as “data mining”.
-   It used to be quite rare because data analysis used to take weeks,
-   but now that everyone has very powerful statistical software on their
-   computers it’s becoming very common. Data mining per se isn’t
+-  **Data mining & post-hoc hypothesising**. Another way in which the authors
+   of a study can more or less misrepresent the data is by engaging in what’s
+   referred to as “data mining” (see :ref:`Gelman & Loken, 2014 <Gelman_2014>`,
+   for a broader discussion of this as part of the “garden of forking paths”
+   in statistical analysis). As we’ll discuss later, if you keep trying to
+   analyse your data in lots of different ways, you’ll eventually find
+   something that “looks” like a real effect but isn’t. This is referred to
+   as “data mining”. It used to be quite rare because data analysis used to
+   take weeks, but now that everyone has very powerful statistical software
+   on their computers it’s becoming very common. Data mining per se isn’t
    “wrong”, but the more that you do it the bigger the risk you’re
    taking. The thing that is wrong, and I suspect is very common, is
    *unacknowledged* data mining. That is, the researcher runs every
@@ -765,11 +759,10 @@ arise:
    something up) others might be genuine “null” results that you ought
    to acknowledge when you write up the “good” experiment. And telling
    which is which is often hard to do. A good place to start is a paper
-   by `Ioannidis (2005) <../Other/References.html#ioannidis-2005>`__ with the
-   depressing title “Why most published research findings are false”.
-   I’d also suggest taking a look at work by `Kühberger et al. (2014)
-   <../Other/References.html#kuhberger-2014>`__ presenting statistical evidence
-   that this actually happens in psychology.
+   by :ref:`Ioannidis (2005) <Ioannidis_2005>` with the depressing title
+   “Why most published research findings are false”. I’d also suggest
+   taking a look at work by :ref:`Kühberger et al. (2014) <Kühberger_2014>`
+   presenting statistical evidence that this actually happens in psychology.
 
 There’s probably a lot more issues like this to think about, but that’ll
 do to start with. What I really want to point out is the blindingly

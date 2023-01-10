@@ -19,15 +19,14 @@ these issues.
 Neyman versus Fisher
 ~~~~~~~~~~~~~~~~~~~~
 
-The first thing you should be aware of is that orthodox NHST is actually
-a mash-up of two rather different approaches to hypothesis testing, one
-proposed by Sir Ronald Fisher and the other proposed by Jerzy Neyman
-(see `Lehmann, 2011 <../Other/References.html#cronbach-1951>`__ for a historical
-summary). The history is messy because Fisher and Neyman were real people
-whose opinions changed over time, and at no point did either of them offer
-“the definitive statement” of how we should interpret their work many
-decades later. That said, here’s a quick summary of what I take these
-two approaches to be.
+The first thing you should be aware of is that orthodox NHST is actually a
+mash-up of two rather different approaches to hypothesis testing, one proposed
+by Sir Ronald Fisher and the other proposed by Jerzy Neyman (see
+:ref:`Lehmann, 2011 <Lehmann_2011>` for a historical summary). The history is
+messy because Fisher and Neyman were real people whose opinions changed over
+time, and at no point did either of them offer “the definitive statement” of
+how we should interpret their work many decades later. That said, here’s a
+quick summary of what I take these two approaches to be.
 
 First, let’s talk about Fisher’s approach. As far as I can tell, Fisher
 assumed that you only had the one hypothesis (the null) and that what
@@ -116,24 +115,22 @@ time thinking through what each test actually says about the data, and
 checking whether that’s consistent with how you’ve interpreted it.
 That’s where the biggest trap lies.
 
-To give an example of this, consider the following example (`Gelman &
-Stern, 2006 <../Other/References.html#gleman-2006>`__\ ). Suppose I’m running my
-ESP study and I’ve decided to analyse the data separately for the male
-participants and the female participants. Of the male participants, 33
-out of 50 guessed the colour of the card correctly. This is a
-significant effect (*p* = 0.03). Of the female participants, 29 out
-of 50 guessed correctly. This is not a significant effect
-(p = 0.32). Upon observing this, it is extremely tempting for
-people to start wondering why there is a difference between males and
-females in terms of their psychic abilities. However, this is wrong. If
-you think about it, we haven’t *actually* run a test that explicitly
-compares males to females. All we have done is compare males to chance
-(binomial test was significant) and compared females to chance (binomial
-test was non significant). If we want to argue that there is a real
-difference between the males and the females, we should probably run a
-test of the null hypothesis that there is no difference! We can do that
-using a different hypothesis test,\ [#]_ but when we do that it turns
-out that we have no evidence that males and females are significantly
+To give an example of this, consider the following example (:ref:`Gelman &
+Stern, 2006 <Gelman_2006>`). Suppose I’m running my ESP study and I’ve decided
+to analyse the data separately for the male participants and the female
+participants. Of the male participants, 33 out of 50 guessed the colour of the
+card correctly. This is a significant effect (*p* = 0.03). Of the female
+participants, 29 out of 50 guessed correctly. This is not a significant effect
+(p = 0.32). Upon observing this, it is extremely tempting for people to start
+wondering why there is a difference between males and females in terms of
+their psychic abilities. However, this is wrong. If you think about it, we
+haven’t *actually* run a test that explicitly compares males to females. All
+we have done is compare males to chance (binomial test was significant) and
+compared females to chance (binomial test was non significant). If we want to
+argue that there is a real difference between the males and the females, we
+should probably run a test of the null hypothesis that there is no difference!
+We can do that using a different hypothesis test,\ [#]_ but when we do that it
+turns out that we have no evidence that males and females are significantly
 different (*p* = 0.54). *Now* do you think that there’s anything
 fundamentally different between the two groups? Of course not. What’s
 happened here is that the data from both groups (male and female) are

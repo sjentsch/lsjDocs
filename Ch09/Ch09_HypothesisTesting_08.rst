@@ -107,7 +107,7 @@ Effect size
      importantly wrong. It is inappropriate to be concerned with mice
      when there are tigers abroad*
      
-   -- `George Box (1976) <../Other/References.html#box-1976>`__
+   -- :ref:`George Box (1976) <Box_1976>`
 
 The plot shown in :numref:`fig-powerTheta` captures a fairly basic point about
 hypothesis testing. If the true state of the world is very different from what
@@ -116,8 +116,7 @@ state of the world is similar to the null (but not identical) then the power of
 the test is going to be very low. Therefore, it’s useful to be able to have
 some way of quantifying how “similar” the true state of the world is to the
 null hypothesis. A statistic that does this is called a measure of **effect
-size** (`Cohen, 1988 <../Other/References.html#cohen-1988>`__\ , `Ellis, 2010
-<../Other/References.html#ellis-2010>`__\ ).
+size** (:ref:`Cohen, 1988 <Cohen_1988>`, :ref:`Ellis, 2010 <Ellis_2010>`).
 
 Effect size is defined slightly differently in different contexts (and
 so this section just talks in general terms) but the qualitative idea

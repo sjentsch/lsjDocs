@@ -81,10 +81,10 @@ Shapiro-Wilk tests
 
 QQ plots provide a nice way to informally check the normality of your
 data, but sometimes you’ll want to do something a bit more formal and
-the **Shapiro-Wilk test** (`Shapiro & Wilk, 1965
-<../Other/References.html#shapiro-1965>`__\ ) is probably what you’re looking
-for.\ [#]_ As you’d expect, the null hypothesis being tested is that
-a set of *N* observations is normally distributed.
+the **Shapiro-Wilk test** (:ref:`Shapiro & Wilk, 1965 <Shapiro_1965>`)
+is probably what you’re looking for.\ [#]_ As you’d expect, the null
+hypothesis being tested is that a set of *N* observations is normally
+distributed.
 
 The test statistic that it calculates is conventionally denoted as
 *W*, and it’s calculated as follows. First, we sort the

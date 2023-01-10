@@ -22,8 +22,8 @@ small and when *df* = 1, the goodness-of-fit statistic tends to be
 than you think (or, equivalently, the *p*-values are a bit too
 small).
 
-`Yates (1934) <../Other/References.html#yates-1934>`__ suggested a simple fix,
-in which you redefine the goodness-of-fit statistic as:
+:ref:`Yates (1934) <Yates_1934>` suggested a simple fix, in which you redefine
+the goodness-of-fit statistic as:
 
 .. math:: \chi^2 = \sum_{i} \frac{(|E_i - O_i| - 0.5)^2}{E_i}
 

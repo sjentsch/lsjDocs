@@ -306,12 +306,12 @@ instead of doing work.
    totals are fixed (i.e., the researcher intended to survey 87 robots and 93
    humans) and the row totals are random (i.e., it just turned out that 28
    people chose the puppy). To use the terminology from my mathematical
-   statistics textbook (`Hogg et al., 2005 <../Other/References.html#hogg-2005>`__\ ),
-   I should technically refer to this situation as a χ²-test of homogeneity and
-   reserve the term χ²-test of independence for the situation where both the
-   row and column totals are random outcomes of the experiment. In the initial
-   drafts of this book that’s exactly what I did. However, it turns out that
-   these two tests are identical, and so I’ve collapsed them together.
+   statistics textbook (:ref:`Hogg et al., 2005 <Hogg_2005>`), I should
+   technically refer to this situation as a χ²-test of homogeneity and reserve
+   the term χ²-test of independence for the situation where both the row and
+   column totals are random outcomes of the experiment. In the initial drafts
+   of this book that’s exactly what I did. However, it turns out that these
+   two tests are identical, and so I’ve collapsed them together.
 
 .. [#]
    Technically, *E*\ :sub:`ij` here is an estimate, so I should probably write

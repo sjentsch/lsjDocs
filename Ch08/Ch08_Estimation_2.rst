@@ -46,8 +46,8 @@ described the fact that we all share this intuition:
    *For even the most stupid of men, by some instinct of nature, by
    himself and without any instruction (which is a remarkable thing), is
    convinced that the more observations have been made, the less danger
-   there is of wandering from one’s goal* (`Stigler, 1986
-   <../Other/References.html#stigler-1986>`__\ ).
+   there is of wandering from one’s goal* (:ref:`Stigler, 1986
+   <Stigler_1986>`).
 
 Okay, so the passage comes across as a bit condescending (not to mention 
 sexist), but his main point is correct. It really does feel obvious that more

@@ -150,21 +150,19 @@ a whole bunch of useful output.
    
 .. ----------------------------------------------------------------------------
 
-The ``Model Coefficients`` at the bottom of the jamovi analysis results
-shown in `fig-reg2` provides the coefficients of the
-regression model. Each row in this table refers to one of the
-coefficients in the regression model. The first row is the intercept
-term, and the later ones look at each of the predictors. The columns
-give you all of the relevant information. The first column is the actual
-estimate of *b* (e.g., 125.97 for the intercept, and -8.95 for the
-``dani.sleep`` predictor). The second column is the standard error
-estimate :math:`\hat\sigma_b`. The third and fourth columns provide the
-lower and upper values for the 95\% confidence interval around the
-*b* estimate (more on this later). The fifth column gives you the
-*t*-statistic, and it’s worth noticing that in this table
-:math:`t= \hat{b}/ SE(\hat{b})` every time. Finally, the
-last column gives you the actual *p*-value for each of these
-tests.\ [#]_
+The ``Model Coefficients`` at the bottom of the jamovi analysis results shown
+in :numref:`fig-reg2` provides the coefficients of the regression model. Each
+row in this table refers to one of the coefficients in the regression model.
+The first row is the intercept term, and the later ones look at each of the
+predictors. The columns give you all of the relevant information. The first
+column is the actual estimate of *b* (e.g., 125.97 for the intercept, and
+-8.95 for the ``dani.sleep`` predictor). The second column is the standard
+error estimate :math:`\hat\sigma_b`. The third and fourth columns provide the
+lower and upper values for the 95\% confidence interval around the *b*
+estimate (more on this later). The fifth column gives you the *t*-statistic,
+and it’s worth noticing that in this table :math:`t= \hat{b}/ SE(\hat{b})`
+every time. Finally, the last column gives you the actual *p*-value for each
+of these tests.\ [#]_
 
 The only thing that the coefficients table itself doesn’t list is the
 degrees of freedom used in the *t*-test, which is always

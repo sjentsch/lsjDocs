@@ -91,11 +91,10 @@ inherently meaningful. If you run an experiment and you compute a Bayes
 factor of 4, it means that the evidence provided by your data corresponds to
 betting odds of 4:1 in favour of the alternative. However, there have been some
 attempts to quantify the standards of evidence that would be considered meaningful
-in a scientific context. The two most widely used are from `Jeffreys (1961)
-<../Other/References.html#jeffreys-1961>`__ and `Kass and Raftery (1995)
-<../Other/References.html#kass-1995>`__. Of the two, I tend to prefer the `Kass
-and Raftery (1995) <../Other/References.html#kass-1995>`__ table because it’s a
-bit more conservative. So here it is:
+in a scientific context. The two most widely used are from :ref:`Jeffreys (1961)
+<Jeffreys_1961>` and :ref:`Kass and Raftery (1995) <Kass_1995>`. Of the two, I
+tend to prefer the :ref:`Kass and Raftery (1995) <Kass_1995>` table because it’s
+a bit more conservative. So here it is:
 
 +--------------+----------------------+
 | Bayes factor | Interpretation       |
@@ -109,14 +108,13 @@ bit more conservative. So here it is:
 |        > 150 | Very strong evidence |
 +--------------+----------------------+
 
-And to be perfectly honest, I think that even the `Kass and Raftery (1995)
-<../Other/References.html#kass-1995>`__ standards are being a bit charitable.
-If it were up to me, I’d have called the “positive evidence” category
-“weak evidence”. To me, anything in the range 3:1 to 20:1 is “weak” or
-“modest” evidence at best. But there are no hard and fast rules here.
-What counts as strong or weak evidence depends entirely on how
-conservative you are and upon the standards that your community insists
-upon before it is willing to label a finding as “true”.
+And to be perfectly honest, I think that even the :ref:`Kass and Raftery (1995)
+<Kass_1995>` standards are being a bit charitable. If it were up to me, I’d
+have called the “positive evidence” category “weak evidence”. To me, anything
+in the range 3:1 to 20:1 is “weak” or “modest” evidence at best. But there are
+no hard and fast rules here. What counts as strong or weak evidence depends
+entirely on how conservative you are and upon the standards that your community
+insists upon before it is willing to label a finding as “true”.
 
 In any case, note that all the numbers listed above make sense if the
 Bayes factor is greater than 1 (i.e., the evidence favours the

@@ -76,15 +76,14 @@ Checking the homogeneity of variance assumption
      to sea in a rowing boat to find out whether conditions are
      sufficiently calm for an ocean liner to leave port!*
      
-   -- `George Box (1961) <../Other/References.html#box-1961>`__
+   -- :ref:`George Box (1961) <Box_1961>`
 
 There’s more than one way to skin a cat, as the saying goes, and more
 than one way to test the homogeneity of variance assumption, too (though
 for some reason no-one made a saying out of that). The most commonly
 used test for this that I’ve seen in the literature is the **Levene
-test** (`Levene, 1960 <../Other/References.html#levene-1960>`__\ ), and the closely
-related **Brown-Forsythe test** (`Brown & Forsythe, 1974
-<../Other/References.html#brown-1974>`__\ ).
+test** (:ref:`Levene, 1960 <Levene_1960>`), and the closely related
+**Brown-Forsythe test** (:ref:`Brown & Forsythe, 1974 <Brown_1974>`).
 
 Regardless of whether you’re doing the standard Levene test or the
 Brown-Forsythe test, the test statistic, which is sometimes denoted
@@ -156,22 +155,20 @@ similar (i.e. homogeneity of variance) or not.
 Removing the homogeneity of variance assumption
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In our example, the homogeneity of variance assumption turned out to be
-a pretty safe one: the Levene test came back non-significant
-(notwithstanding that we should also look at the plot of standard
-deviations), so we probably don’t need to worry. However, in real life
-we aren’t always that lucky. How do we save our ANOVA when the
-homogeneity of variance assumption is violated? If you recall from our
-discussion of *t*-tests, we’ve seen this problem before. The
-Student *t*-test assumes equal variances, so the solution was to
-use the Welch *t*-test, which does not. In fact, `Welch (1961)
-<../Other/References.html#welch-1951>`__ also showed how we can solve this
-problem for ANOVA too (the **Welch One-way test**). It’s implemented in
-jamovi using the ``One-Way ANOVA`` analysis. This is a specific analysis
-approach just for one-way ANOVA, and to run the Welch one-way ANOVA for
-our example, we would re-run the analysis as previously, but this time
-use the jamovi ``ANOVA`` → ``One Way ANOVA`` analysis command, and check the
-option ``Don't assume equal (Welch’s)`` (see :numref:`fig-anova4a`).
+In our example, the homogeneity of variance assumption turned out to be a
+pretty safe one: the Levene test came back non-significant (notwithstanding
+that we should also look at the plot of standard deviations), so we probably
+don’t need to worry. However, in real life we aren’t always that lucky. How do
+we save our ANOVA when the homogeneity of variance assumption is violated? If
+you recall from our discussion of *t*-tests, we’ve seen this problem before.
+The Student *t*-test assumes equal variances, so the solution was to use the
+Welch *t*-test, which does not. In fact, :ref:`Welch (1961) <Welch_1951>` also
+showed how we can solve this problem for ANOVA too (the **Welch One-way
+test**). It’s implemented in jamovi using the ``One-Way ANOVA`` analysis. This
+is a specific analysis approach just for one-way ANOVA, and to run the Welch
+one-way ANOVA for our example, we would re-run the analysis as previously, but
+this time use the jamovi ``ANOVA`` → ``One Way ANOVA`` analysis command, and
+check the option ``Don't assume equal (Welch’s)`` (see :numref:`fig-anova4a`).
 
 .. ----------------------------------------------------------------------------
 
@@ -236,11 +233,11 @@ what we can do to address violations of normality. In the context of a One-way
 ANOVA, the easiest solution is probably to switch to a non-parametric test
 (i.e., one that doesn’t rely on any particular assumption about the kind of
 distribution involved). We’ve seen non-parametric tests before, in chapter
-:doc:`Comparing two means <../Ch11/Ch11_tTest>`. When you only have two groups, the
-Mann-Whitney or the Wilcoxon test provides the non-parametric alternative that
-you need. When you’ve got three or more groups, you can use the
-**Kruskal-Wallis rank sum test** (`Kruskal & Wallis, 1952
-<../Other/References.html#kruskal-1952>`__\ ). So that’s the test we’ll talk about next.
+:doc:`Comparing two means <../Ch11/Ch11_tTest>`. When you only have two groups,
+the Mann-Whitney or the Wilcoxon test provides the non-parametric alternative
+that you need. When you’ve got three or more groups, you can use the
+**Kruskal-Wallis rank sum test** (:ref:`Kruskal & Wallis, 1952 <Kruskal_1952>`).
+So that’s the test we’ll talk about next.
 
 The Kruskal-Wallis test is surprisingly similar to ANOVA, in some ways.
 In ANOVA we started with Y\ :sub:`ik`, the value of the outcome

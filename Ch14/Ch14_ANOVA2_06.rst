@@ -27,8 +27,7 @@ an Arts or Science background or preference. ANCOVA with age as a covariate
 might lead to the conclusion that statistics anxiety does not differ in the two
 groups. Would this conclusion be reasonable – probably not because the ages of
 the two groups do not overlap and analysis of variance has essentially
-“extrapolated into a region with no data” (`Everitt, 1996
-<../Other/References.html#everitt-1996>`__\ ).
+“extrapolated into a region with no data” (:ref:`Everitt, 1996 <Everitt_1996>`).
 
 .. ----------------------------------------------------------------------------
 

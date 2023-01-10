@@ -43,9 +43,9 @@ will be presented with a user interface which looks something like
 .. ----------------------------------------------------------------------------
 
 To the left is the :doc:`spreadsheet view <Ch03_jamoviIntro_2>`, and to the
-right is where the results of your `statistical analyses <Ch03_jamoviIntro_3>`
-appear. Down the middle is a bar separating these two regions and this can be
-dragged to the left or the right to change their sizes.
+right is where the results of your :doc:`statistical analyses
+<Ch03_jamoviIntro_3>` appear. Down the middle is a bar separating these two
+regions and this can be dragged to the left or the right to change their sizes.
 
 The first time you open jamovi, you may want to change some of the default
 settings. These can be accessed from the settings menu (``⋮``, at the top-left

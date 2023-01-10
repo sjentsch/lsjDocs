@@ -38,9 +38,9 @@ wouldn’t be bothering to waste your time talking about it. But it’s not
 uncommon at all. This is a *standard* repeated measures design, and none of
 the tests we’ve considered so far can handle it. Eek.
 
-The solution to the problem was published by `McNemar (1947)
-<../Other/References.html#mcnemar-1947>`__. The trick is to start by tabulating your
-data in a slightly different way:
+The solution to the problem was published by :ref:`McNemar (1947)
+<McNemar_1947>`. The trick is to start by tabulating your data in a slightly
+different way:
 
 +----------------+-------------+------------+-------+
 |                | Before: Yes | Before: No | Total |
