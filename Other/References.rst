@@ -138,12 +138,6 @@ syllogistic reasoning. *Memory & Cognition, 11*\ (3), 295–306. `https://doi.or
 <https://doi.org/10.3758/BF03196976>`__
 
 
-.. _Evans_2011:
-
-Evans, M., Hastings, N., & Peacock, B. (2011). *Statistical Distributions* (3rd ed). Wiley.
-`https://doi.org/10.1002/9780470627242 <https://doi.org/10.1002/9780470627242>`__
-
-
 .. _Everitt_1996:
 
 Everitt, B. S. (1996). *Making Sense of Statistics in Psychology. A Second-Level Course.*
@@ -176,7 +170,7 @@ Transactions of the Royal Society A, 222*, 309–368. `https://doi.org/10.1098/r
 Fisher, R. A. (1925). *Statistical Methods for Research Workers*. Oliver & Boyd.
 
 
-.. _Forbes_2011:
+.. _Forbes_2010:
 
 Forbes, C., Evans, M., Hastings, N., & Peacock, B. (2010). *Statistical Distributions*
 (4th ed.). Wiley.
@@ -222,13 +216,6 @@ estimators. *Journal of Educational Statistics, 6*\ (2), 107–128. `https://doi
 
 Hedges, L. V. & Olkin, I. (1985). *Statistical Methods for Meta-Analysis*. Academic Press.
 `https://doi.org/10.1016/C2009-0-03396-0 <https://doi.org/10.1016/C2009-0-03396-0>`__
-
-
-.. _Hewitt_2004:
-
-Hewitt, A. K., Foxcroft, D. R., & MacDonald, J. (2004). Multitrait-multimethod confirmatory factor
-analysis of the attributional style questionnaire. *Personality and Individual Differences, 37*\ (7),
-1483–1491. `https://doi.org/10.1016/j.paid.2004.02.005 <https://doi.org/10.1016/j.paid.2004.02.005>`__
 
 
 .. _Hogg_2005:

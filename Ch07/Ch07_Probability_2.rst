@@ -236,7 +236,7 @@ arrests progress towards precision of statistical concepts” (:ref:`Fisher,
 relying on frequentist methods could turn you into “a potent but sterile
 intellectual rake who leaves in his merry path a long train of ravished
 maidens but no viable scientific offspring” (:ref:`Meehl, 1967
-<Cronbach_1951>`; p. 114). The history of statistics, as you might gather,
+<Meehl_1967>`; p. 114). The history of statistics, as you might gather,
 is not devoid of entertainment.
 
 In any case, whilst I personally prefer the Bayesian view, the majority

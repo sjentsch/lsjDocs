@@ -162,7 +162,7 @@ don’t need to worry. However, in real life we aren’t always that lucky. How 
 we save our ANOVA when the homogeneity of variance assumption is violated? If
 you recall from our discussion of *t*-tests, we’ve seen this problem before.
 The Student *t*-test assumes equal variances, so the solution was to use the
-Welch *t*-test, which does not. In fact, :ref:`Welch (1961) <Welch_1951>` also
+Welch *t*-test, which does not. In fact, :ref:`Welch (1951) <Welch_1951>` also
 showed how we can solve this problem for ANOVA too (the **Welch One-way
 test**). It’s implemented in jamovi using the ``One-Way ANOVA`` analysis. This
 is a specific analysis approach just for one-way ANOVA, and to run the Welch

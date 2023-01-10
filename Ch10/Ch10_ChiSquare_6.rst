@@ -8,7 +8,7 @@ test the null hypothesis that the two variables are independent? One answer
 would be “collect more data”, but that’s far too glib. There are a lot of
 situations in which it would be either infeasible or unethical do that. If so,
 statisticians have a kind of moral obligation to provide scientists with
-better tests. In this instance, :ref:`Fisher 1922a) <Fisher_1922a>` kindly
+better tests. In this instance, :ref:`Fisher (1922a) <Fisher_1922a>` kindly
 provided the right answer to the question. To illustrate the basic idea let’s
 suppose that we’re analysing data from a field experiment looking at the
 emotional status of people who have been accused of Witchcraft, some of whom

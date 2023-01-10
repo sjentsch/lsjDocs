@@ -20,7 +20,7 @@ unambiguous, but it’s not. This is largely because Cohen wasn’t too specific
 on what he thought should be used as the measure of the standard deviation
 (in his defence he was trying to make a broader point in his book, not
 nitpick about tiny details). As discussed by :ref:`McGrath and Meyer (2006)
-<Mcgrath_2006>`, there are several different versions in common usage, and
+<McGrath_2006>`, there are several different versions in common usage, and
 each author tends to adopt slightly different notation. For the sake of
 simplicity (as opposed to accuracy), I’ll use *d* to refer to any statistic
 that you calculate from the sample, and use δ to refer to a theoretical
