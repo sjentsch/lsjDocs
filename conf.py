@@ -17,8 +17,8 @@ from sphinx.locale import _
 # -- Project information -----------------------------------------------------
 project = u'Learning statistics with jamovi'
 slug = u'lsj'
-author = u'Danielle J. Navarro, David R. Foxcroft, and Sebastian Jentschke (curating this documentation)'
-copyright = u'2011-2022, ' + author + '. This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License'
+author = u'Danielle J. Navarro, David R. Foxcroft'
+copyright = u'2011-2023, ' + author + ', and Sebastian Jentschke (curating this documentation). This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
@@ -40,6 +40,7 @@ gettext_compact = True
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.autosectionlabel',
 #   'sphinx.ext.imgmath',
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
@@ -74,6 +75,9 @@ show_authors = True
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'default'
 
+# True to prefix each section label with the name of the document it is in, followed by a colon.
+# For example, index:Introduction for a section called Introduction that appears in document index.rst.
+autosectionlabel_prefix_document = True
 
 # -- Options for HTML output -------------------------------------------------
 # Customize the "best image" order for the StandaloneHTMLBuilder class.
@@ -203,12 +207,12 @@ epub_basename = 'lsjDocs'
 # The title and the description of the document. It defaults to the html_title option but can be set independently for epub creation. It defaults to the project option.
 epub_title = 'Learning statistics with jamovi'
 epub_description = 'A jamovi tutorial for psychology students and other beginners'
-epub_publisher = 'www.learningstatisticswithjamovi.com'
+epub_publisher = 'www.learningstatswithjamovi.com'
 # An identifier and the publication scheme for the document. This is put in the Dublin Core metadata.
 # For published documents this is the ISBN number and the scheme is 'ISBN'.
 # You can also use an alternative scheme, e.g. the project homepage, then the scheme is 'URL'. 
 # NB: Might be wise to set this to a DOI later.
-epub_identifier = 'www.learningstatisticswithjamovi.com'
+epub_identifier = 'www.learningstatswithjamovi.com'
 epub_scheme = 'URL'
 # The cover page information. This is a tuple containing the filenames of the cover image and the html template.
 # The rendered html cover page is inserted as the first item in the spine in content.opf. If the template filename is empty,
@@ -279,12 +283,12 @@ latex_engine = 'xelatex'
 # Grouping the document tree into LaTeX files. List of tuples
 #   (source start file, target name,   title,                              author,                                     theme,    toctree_only).
 latex_documents = [
-    (master_doc,        'lsjDocs.tex', u'Learning statistics with jamovi', u'Danielle J. Navarro & David R. Foxcroft', 'manual', True),
+    (master_doc,        'lsjDocs.tex', u'Learning statistics with jamovi', [author], 'manual', True),
 ]
 
 # If given, this must be the name of an image file (relative to the configuration directory) that
 # is the logo of the docs. It is placed at the top of the title page. Default: None.
-#latex_logo = None
+latex_logo = '_images/header-logo.svg'
 
 # If true, the topmost sectioning unit is parts, else it is chapters. Default: False.
 latex_use_parts = False
@@ -364,6 +368,13 @@ try:
    html_context
 except NameError:
    html_context = dict()
+
+current_version = 'latest'
+html_context['display_lower_left'] = True
+html_context['current_language'] = language
+
+html_context['current_version'] = current_version
+html_context['version'] = current_version
 
 if os.path.abspath('.').startswith('/home'):
    base_path = os.path.abspath('.') + '/_build/html'

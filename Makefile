@@ -29,6 +29,9 @@ html:
 gettext:
 	@$(SPHINXBUILD) -b gettext                     . $(BUILDDIR)/gettext
 
+checklinks:
+	@$(SPHINXBUILD) -b linkcheck $(ALLSPHINXOPTS)  . $(BUILDDIR)/linkcheck
+
 htmlhelp:
 	@echo "Not permitted."
 
