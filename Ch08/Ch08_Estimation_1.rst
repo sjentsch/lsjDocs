@@ -22,11 +22,12 @@ researchers is a **sample** of data. We might have run experiment with some
 number of participants, a polling company might have phoned some number of
 people to ask questions about voting intentions, and so on. In this way the
 data set available to us is finite and incomplete. We can’t possibly get every
-person in the world to do our experiment, for example a polling company doesn’t
-have the time or the money to ring up every voter in the country. In our
-earlier discussion of :doc:`Descriptive statistics <../Ch04/Ch04_Descriptives>`, this
-sample was the only thing we were interested in. Our only goal was to find ways
-of describing, summarising and graphing that sample. This is about to change.
+person in the world to do our experiment, for example a polling company
+doesn’t have the time or the money to ring up every voter in the country. In
+our earlier discussion of :doc:`Descriptive statistics
+<../Ch04/Ch04_Descriptives>`, this sample was the only thing we were
+interested in. Our only goal was to find ways of describing, summarising and
+graphing that sample. This is about to change.
 
 Defining a population
 ~~~~~~~~~~~~~~~~~~~~~
@@ -385,11 +386,10 @@ similar to the true population values they are not the same. In general, sample
 statistics are the things you can calculate from your data set and the
 population parameters are the things you want to learn about. Later on in this
 chapter I’ll talk about how you can estimate population parameters using your
-sample statistics (:doc:`Estimating population parameters
-<../Ch08/Ch08_Estimation_4>`) and how to work out how confident you are in your
-estimates (:doc:`Estimating a confidence interval <../Ch08/Ch08_Estimation_5>`)
-but before we get to that there’s a few more ideas in sampling theory that you
-need to know about.
+sample statistics (:doc:`Estimating population parameters <Ch08_Estimation_4>`)
+and how to work out how confident you are in your estimates (:doc:`Estimating a
+confidence interval <Ch08_Estimation_5>`) but before we get to that there’s a
+few more ideas in sampling theory that you need to know about.
 
 ------
 

@@ -48,14 +48,14 @@ This output doesn’t make it easy to get a sense of what the data are actually
 saying. Just “looking at the data” isn’t a terribly effective way of 
 understanding data. In order to get some idea about what the data are actually
 saying we need to calculate some descriptive statistics (this chapter) and draw
-some nice pictures (chapter :doc:`Drawing graphs <../Ch05/Ch05_Graphics>`). Since the
-descriptive statistics are the easier of the two topics I’ll start with those,
-but nevertheless I’ll show you a histogram of the ``afl.margins`` variable
-since it should help you get a sense of what the data we’re trying to describe
-actually look like, see :numref:`fig-aflMargins`. We’ll talk a lot more about
-how to draw :doc:`histograms <../Ch05/Ch05_Graphics_1>`. For now, it’s enough to look
-at the histogram and note that it provides a fairly interpretable
-representation of the ``afl.margins`` variable.
+some nice pictures (chapter :doc:`Drawing graphs <../Ch05/Ch05_Graphics>`).
+Since the descriptive statistics are the easier of the two topics I’ll start
+with those, but nevertheless I’ll show you a histogram of the ``afl.margins``
+variable since it should help you get a sense of what the data we’re trying to
+describe actually look like, see :numref:`fig-aflMargins`. We’ll talk a lot
+more about how to draw :doc:`histograms <../Ch05/Ch05_Graphics_1>`. For now,
+it’s enough to look at the histogram and note that it provides a fairly
+interpretable representation of the ``afl.margins`` variable.
 
 .. ----------------------------------------------------------------------------
 

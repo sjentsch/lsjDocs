@@ -15,13 +15,14 @@ concept never *ever* do it this way again.
 The experimental design that I described in the previous section strongly
 suggests that we’re interested in comparing the average mood change for the
 three different drugs. In that sense, we’re talking about an analysis similar
-to the *t*-test (chapter :doc:`Comparing two means <../Ch11/Ch11_tTest>`) but involving
-more than two groups. If we let µ\ :sub:`P` denote the population mean for the
-mood change induced by the placebo, and let µ\ :sub:`A` and µ\ :sub:`J` denote
-the corresponding means for our two drugs, Anxifree and Joyzepam, then the
-(somewhat pessimistic) null hypothesis that we want to test is that all three
-population means are identical. That is, *neither* of the two drugs is any more
-effective than a placebo. We can write out this null hypothesis as:
+to the *t*-test (chapter :doc:`Comparing two means <../Ch11/Ch11_tTest>`) but
+involving more than two groups. If we let µ\ :sub:`P` denote the population
+mean for the mood change induced by the placebo, and let µ\ :sub:`A` and
+µ\ :sub:`J` denote the corresponding means for our two drugs, Anxifree and
+Joyzepam, then the (somewhat pessimistic) null hypothesis that we want to test
+is that all three population means are identical. That is, *neither* of the
+two drugs is any more effective than a placebo. We can write out this null
+hypothesis as:
 
 H\ :sub:`0`: it is true that µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`
 
@@ -64,22 +65,22 @@ average mood change, taken across all 18 people in the experiment, and
 6 people in group *k*.\ [#]
 
 Now that we’ve got our notation sorted out we can start writing down formulas.
-To start with, let’s recall the formula for the variance that we used in
-:doc:`Measures of variability <../Ch04/Ch04_Descriptives_2>`, way back in those kinder
-days when we were just doing descriptive statistics. The sample variance of
-*Y* is defined as follows
+To start with, let’s recall the :ref:`formula for the variance
+<variance_formula>` that we used way back in those kinder days when we were
+just doing descriptive statistics. The sample variance of *Y* is defined as
+follows:
 
 .. math:: \mbox{Var}(Y) = \frac{1}{N} \sum_{k=1}^G \sum_{i=1}^{N_k} \left(Y_{ik} - \bar{Y} \right)^2
 
-This formula looks pretty much identical to the formula for the variance in
-:doc:`Measures of variability <../Ch04/Ch04_Descriptives_2>`. The only difference is
-that this time around I’ve got two summations here: I’m summing over groups
-(i.e., values for *k*) and over the people within the groups (i.e., values for
-*:`i*). This is purely a cosmetic detail. If I’d instead used the notation
-|Y_p| to refer to the value of the outcome variable for person *p* in the
-sample, then I’d only have a single summation. The only reason that we have a
-double summation here is that I’ve classified people into groups, and then
-assigned numbers to people within groups.
+This formula looks pretty much identical to the :ref:`formula for the variance
+<variance_formula>`. The only difference is that this time around I’ve got two
+summations here: I’m summing over groups (i.e., values for *k*) and over the
+people within the groups (i.e., values for *:`i*). This is purely a cosmetic
+detail. If I’d instead used the notation |Y_p| to refer to the value of the
+outcome variable for person *p* in the sample, then I’d only have a single
+summation. The only reason that we have a double summation here is that I’ve
+classified people into groups, and then assigned numbers to people within
+groups.
 
 A concrete example might be useful here. Let’s consider this table, in which we
 have a total of *N* = 5 people sorted into *G* = 2 groups. Arbitrarily, let’s
@@ -292,6 +293,8 @@ formulas showing how they are calculated, is shown in :numref:`tab-anovatable`.
    | **within groups**  | |df_w| = *N* - *G* | |SS_w| = |f_SS_w| | |MS_w| = |SS_w| / |df_w| |                   - |             - |
    +--------------------+--------------------+-------------------+--------------------------+---------------------+---------------+
 
+.. _meaning_of_F:
+
 The model for the data and the meaning of *F*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -369,13 +372,15 @@ null hypothesis is true, both |MS_b| and |MS_w| are estimators of the variance
 of the residuals ϵ\ :sub:`ik`. If those residuals are normally distributed,
 then you might suspect that the estimate of the variance of ϵ\ :sub:`ik` is
 χ²-distributed, because (as discussed in :doc:`Other useful distributions
-<../Ch07/Ch07_Probability_6>`) that’s what a χ²-distribution *is*: it’s what you get
-when you square a bunch of normally-distributed things and add them up. And
-since the *F*-distribution is (again, by definition) what you get when you take
-the ratio between two things that are χ² distributed, we have our sampling
+<../Ch07/Ch07_Probability_6>`) that’s what a χ²-distribution *is*: it’s what
+you get when you square a bunch of normally-distributed things and add them up.
+And since the *F*-distribution is (again, by definition) what you get when you
+take the ratio between two things that are χ² distributed, we have our sampling
 distribution. Obviously, I’m glossing over a whole lot of stuff when I say
 this, but in broad terms, this really is where our sampling distribution comes
 from.
+
+.. _worked_example:
 
 A worked example
 ~~~~~~~~~~~~~~~~
@@ -573,10 +578,10 @@ MS value.\ [#]_
 Woohooo! This is terribly exciting, yes? Now that we have our test statistic,
 the last step is to find out whether the test itself gives us a significant
 result. As discussed in chapter :doc:`Hypothesis testing
-<../Ch09/Ch09_HypothesisTesting>` back in the “old days” what we’d do is open up a
-statistics textbook or flick to the back section which would actually have a
-huge lookup table and we would find the threshold *F*-value corresponding to a
-particular value of α (the null hypothesis rejection region), e.g. 0.05,
+<../Ch09/Ch09_HypothesisTesting>` back in the “old days” what we’d do is open
+up a statistics textbook or flick to the back section which would actually have
+a huge lookup table and we would find the threshold *F*-value corresponding to
+a particular value of α (the null hypothesis rejection region), e.g. 0.05,
 0.01 or 0.001, for 2 and 15 degrees of freedom. Doing it this way would give
 us a threshold *F*-value for an α of 0.001 of 11.34. As this is less than
 our calculated *F*-value we say that *p* < 0.001. But those were the old days,

@@ -12,7 +12,7 @@ Drawing graphs
    Ch05_Graphics_2
    Ch05_Graphics_3
    Ch05_Graphics_4
-
+   Ch05_Graphics_5
 
 .. epigraph::
 

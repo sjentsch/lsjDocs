@@ -153,6 +153,8 @@ reporting the mean difference, like this:
 With that much jargon crammed into half a line, you know it must be
 really smart.\ [#]_
 
+.. _assumptions_one_sample_t_test:
+
 Assumptions of the one sample *t*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -166,14 +168,14 @@ is
 -  *Normality*. We’re still assuming that the population distribution is
    normal,\ [#]_ and as noted earlier, there are standard tools that you can
    use to check to see if this assumption is met (section :doc:`Checking the
-   normality of a sample <../Ch11/Ch11_tTest_08>`), and other tests you can do in it’s
+   normality of a sample <Ch11_tTest_08>`), and other tests you can do in it’s
    place if this assumption is violated (section :doc:`Testing non-normal data
-   with Wilcoxon tests <../Ch11/Ch11_tTest_09>`).
+   with Wilcoxon tests <Ch11_tTest_09>`).
 
 -  *Independence*. Once again, we have to assume that the observations in our
    sample are generated independently of one another. See the earlier
-   discussion about the *z*-test for specifics (section :doc:`Assumptions of
-   the *z*-test <../Ch11/Ch11_tTest_01>`).
+   discussion about the *z*-test for specifics (section :ref:`Assumptions of
+   the *z*-test <assumptions_z_test>`).
 
 Overall, these two assumptions aren’t terribly unreasonable, and as a
 consequence the one-sample *t*-test is pretty widely used in

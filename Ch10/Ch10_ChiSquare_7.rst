@@ -25,7 +25,7 @@ contingency table:
 +-----------+--------+-------+-------+
 
 At first pass, you might think that this situation lends itself to the Pearson
-:doc:`χ² test of independence <../Ch10/Ch10_ChiSquare_2>`. However, a little bit of
+:doc:`χ² test of independence <Ch10_ChiSquare_2>`. However, a little bit of
 thought reveals that we’ve got a problem. We have 100 participants but 200
 observations. This is because each person has provided us with an answer in
 *both* the before column and the after column. What this means is that the 200

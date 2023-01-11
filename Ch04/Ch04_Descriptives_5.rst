@@ -55,10 +55,10 @@ grumpiness into a standardised grumpiness score.
 .. math:: z = \frac{35 - 17}{5} = 3.6
 
 To interpret this value, recall the rough heuristic that I provided in section
-:doc:`Standard deviation <../Ch04/Ch04_Descriptives_2>` in which I noted that
-99.7\% of values are expected to lie within 3 standard deviations of the mean.
-So the fact that my grumpiness corresponds to a *z* score of 3.6 indicates that
-I’m very grumpy indeed. In fact this suggests that I’m grumpier than 99.98\% of
+:ref:`Standard deviation <standard_deviation>` in which I noted that 99.7\% of
+values are expected to lie within 3 standard deviations of the mean. So the
+fact that my grumpiness corresponds to a *z* score of 3.6 indicates that I’m
+very grumpy indeed. In fact this suggests that I’m grumpier than 99.98\% of
 people. Sounds about right.
 
 In addition to allowing you to interpret a raw score in relation to a

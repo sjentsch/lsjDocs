@@ -5,13 +5,13 @@ One-sided tests
 
 When introducing the theory of null hypothesis tests, I mentioned that there
 are some situations when it’s appropriate to specify a *one-sided* test (see
-section :doc:`The difference between one-sided and two-sided tests
-<../Ch09/Ch09_HypothesisTesting_04>`). So far all of the *t*-tests have been
-two-sided tests. For instance, when we specified a one sample *t*-test for the
-grades in Dr Zeppo’s class the null hypothesis was that the true mean was
-67.5\%. The alternative hypothesis was that the true mean was greater than *or*
-less than 67.5\%. Suppose we were only interested in finding out if the true
-mean is greater than 67.5\%, and have no interest whatsoever in testing to find
+section :ref:`The difference between one-sided and two-sided tests
+<one_vs_twosided_tests>`). So far all of the *t*-tests have been two-sided
+tests. For instance, when we specified a one sample *t*-test for the grades in
+Dr Zeppo’s class the null hypothesis was that the true mean was 67.5\%. The
+alternative hypothesis was that the true mean was greater than *or* less
+than 67.5\%. Suppose we were only interested in finding out if the true mean
+is greater than 67.5\%, and have no interest whatsoever in testing to find
 out if the true mean is lower than \67.5\%. If so, our null hypothesis would be
 that the true mean is 67.5\% or less, and the alternative hypothesis would be
 that the true mean is greater than 67.5\%. In jamovi, for the ``One Sample
@@ -37,8 +37,8 @@ degrees of freedom have not changed, the *p*-value has. This is because the
 one-sided test has a different rejection region from the two-sided test. If
 you’ve forgotten why this is and what it means, you may find it helpful to read
 back over chapter :doc:`Hypothesis testing <../Ch09/Ch09_HypothesisTesting>`,
-and section :doc:`The difference between one-sided and two-sided tests
-<../Ch09/Ch09_HypothesisTesting_04>` in particular. The third thing to note is
+and section :ref:`The difference between one-sided and two-sided tests
+<one_vs_twosided_tests>` in particular. The third thing to note is
 that the confidence interval is different too: it now reports a “one-sided”
 confidence interval rather than a two-sided one. In a two-sided confidence
 interval we’re trying to find numbers *a* and *b* such that we’re confident

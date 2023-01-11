@@ -88,10 +88,10 @@ outcome (``dani.grump``).\ [#]_
 
 Naturally, you don’t actually need to do all these calculations yourself if you
 want to obtain the *R*\² value for your regression model. As we’ll see later on
-in :doc:`Running the hypothesis tests in jamovi <../Ch12/Ch12_Regression_07>`, all you
-need to do is specify this as an option in jamovi. However, let’s put that to
-one side for the moment. There’s another property of *R*\² that I want to point
-out.
+in :ref:`Running the hypothesis tests in jamovi <coefficients_in_jamovi>`, all
+you need to do is specify this as an option in jamovi. However, let’s put that
+to one side for the moment. There’s another property of *R*\² that I want to
+point out.
 
 The relationship between regression and correlation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -139,11 +139,10 @@ This is probably a matter of personal preference. If you care more about
 interpretability, then *R*\² is better. If you care more about correcting for
 bias, then adjusted *R*\² is probably better. Speaking just for myself, I prefer
 *R*\². My feeling is that it’s more important to be able to interpret your
-measure of model performance. Besides, as we’ll see in section
-:doc:`Hypothesis tests for regression models <../Ch12/Ch12_Regression_07>`, if you’re
-worried that the improvement in *R*\² that you get by adding a predictor is just
-due to chance and not because it’s a better model, well we’ve got hypothesis
-tests for that.
+measure of model performance. Besides, as we’ll see in section :doc:`Hypothesis
+tests for regression models <Ch12_Regression_07>`, if you’re worried that the
+improvement in *R*\² that you get by adding a predictor is just due to chance
+and not because it’s a better model, well we’ve got hypothesis tests for that.
 
 ------
 

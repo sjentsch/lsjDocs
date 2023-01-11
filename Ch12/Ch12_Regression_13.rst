@@ -4,24 +4,24 @@ Summary
 -------
 
 -  Want to know how strong the relationship is between two variables? Calculate
-   a :doc:`correlation <../Ch12/Ch12_Regression_01>`
+   a :doc:`correlation <Ch12_Regression_01>`
    
--  Drawing :doc:`scatterplots <../Ch12/Ch12_Regression_02>`
+-  Drawing :doc:`scatterplots <Ch12_Regression_02>`
 
--  :doc:`Basic ideas in linear regression <../Ch12/Ch12_Regression_03>` and :doc:`how
-   regression models are estimated <../Ch12/Ch12_Regression_04>`
+-  :doc:`Basic ideas in linear regression <Ch12_Regression_03>` and :doc:`how
+   regression models are estimated <Ch12_Regression_04>`
 
--  :doc:`Multiple linear regression <../Ch12/Ch12_Regression_05>`
+-  :doc:`Multiple linear regression <Ch12_Regression_05>`
 
 -  Measuring the :doc:`overall performance of a regression model using *R*\²
-   <../Ch12/Ch12_Regression_06>`
+   <Ch12_Regression_06>`
    
--  :doc:`Hypothesis tests for regression models <../Ch12/Ch12_Regression_07>`
+-  :doc:`Hypothesis tests for regression models <Ch12_Regression_07>`
 
 -  :doc:`Calculating confidence intervals for regression coefficients and
-   standardised coefficients <../Ch12/Ch12_Regression_09>`
+   standardised coefficients <Ch12_Regression_09>`
 
--  The :doc:`assumptions of regression <../Ch12/Ch12_Regression_10>` and :doc:`how to
-   check them <../Ch12/Ch12_Regression_11>`
+-  The :doc:`assumptions of regression <Ch12_Regression_10>` and :doc:`how to
+   check them <Ch12_Regression_11>`
 
--  :doc:`Selecting a regression model <../Ch12/Ch12_Regression_12>`
+-  :doc:`Selecting a regression model <Ch12_Regression_12>`

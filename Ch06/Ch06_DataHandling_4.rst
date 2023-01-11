@@ -1,7 +1,7 @@
 .. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_ and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_
 
 Mathematical functions and operations
-------------------------------------------------
+-------------------------------------
 
 In the previous section, I discussed the ideas behind variable transformations
 and showed that a lot of the transformations that you might want to apply to

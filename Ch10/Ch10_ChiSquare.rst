@@ -26,7 +26,7 @@ not as powerful as “regression” (chapter :doc:`Correlation and linear
 regression <../Ch12/Ch12_Regression>`) and “Analysis of Variance” (chapters
 :doc:`Comparing several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>` and
 :doc:`Factorial ANOVA <../Ch14/Ch14_ANOVA2>`) they’re much easier to
-understand. Finally, there is :doc:`Factor analysis 
+understand. Finally, there is :doc:`Factor analysis
 <../Ch15/Ch15_FactorAnalysis>` that aims to describe the  variability among
 observed, correlated variables in terms of a lower number of unobserved
 variables called factors or latent Variables.

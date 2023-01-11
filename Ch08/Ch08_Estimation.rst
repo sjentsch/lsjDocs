@@ -30,9 +30,8 @@ the first of these big ideas, estimation theory, but I’m going to witter on
 about sampling theory first because estimation theory doesn’t make sense
 until you understand sampling. As a consequence, this chapter divides
 naturally into two parts :doc:`Samples, populations and sampling
-<../Ch08/Ch08_Estimation_1>` through :doc:`Sampling distributions and the
-central limit theorem <../Ch08/Ch08_Estimation_3>` are focused on sampling
-theory, and :doc:`Estimating population parameters
-<../Ch08/Ch08_Estimation_4>` and :doc:`Estimating a confidence interval
-<../Ch08/Ch08_Estimation_5>` make use of sampling theory to discuss how
-statisticians think about estimation.
+<Ch08_Estimation_1>` through :doc:`Sampling distributions and the central
+limit theorem <Ch08_Estimation_3>` are focused on sampling theory, and
+:doc:`Estimating population parameters <Ch08_Estimation_4>` and
+:doc:`Estimating a confidence interval <Ch08_Estimation_5>` make use of
+sampling theory to discuss how statisticians think about estimation.

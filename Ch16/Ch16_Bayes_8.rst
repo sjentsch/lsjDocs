@@ -6,12 +6,11 @@ Summary
 The first half of this chapter was focused primarily on the theoretical
 underpinnings of Bayesian statistics. I introduced the mathematics for how
 Bayesian inference works (section :doc:`Probabilistic reasoning by rational
-agents <../Ch16/Ch16_Bayes_1>`), and gave a very basic overview of how
-:doc:`Bayesian hypothesis testing <../Ch16/Ch16_Bayes_2>` is typically done.
-Finally, I devoted some space to talking about why I think Bayesian methods
-are worth using (section :doc:`Why be a Bayesian? <../Ch16/Ch16_Bayes_3>`).
-Then I gave a practical example, a :doc:`Bayesian *t*-test
-<../Ch16/Ch16_Bayes_5>`.
+agents <Ch16_Bayes_1>`), and gave a very basic overview of how :doc:`Bayesian
+hypothesis testing <Ch16_Bayes_2>` is typically done. Finally, I devoted some
+space to talking about why I think Bayesian methods are worth using (section
+:doc:`Why be a Bayesian? <Ch16_Bayes_3>`). Then I gave a practical example,
+a :doc:`Bayesian *t*-test <Ch16_Bayes_5>`.
 
 If you’re interested in learning more about the Bayesian approach, there are
 many good books you could look into. :ref:`John Kruschke’s (2015)

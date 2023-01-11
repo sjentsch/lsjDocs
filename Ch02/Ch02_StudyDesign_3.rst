@@ -12,7 +12,7 @@ related ideas: *reliability* and *validity*. Put simply, the **reliability** of
 a measure tells you how *precisely* you are measuring something, whereas the
 validity of a measure tells you how *accurate* the measure is. In this section
 I’ll talk about reliability; we’ll talk about validity in section
-:doc:`Assessing the validity of a study <../Ch02/Ch02_StudyDesign_5>`.
+:doc:`Ch02_StudyDesign_5`.
 
 Reliability is actually a very simple concept. It refers to the
 repeatability or consistency of your measurement. The measurement of my
@@ -59,8 +59,8 @@ measure reliability:
    lots of different parts that perform similar functions (e.g., a personality
    questionnaire result is added up across several questions) do the individual
    parts tend to give similar answers. We’ll look at this particular form of
-   reliability later in the book, in section :doc:`Internal consistency
-   reliability analysis <../Ch15/Ch15_FactorAnalysis_4>`.
+   reliability later in the book, in section
+   :doc:`../Ch15/Ch15_FactorAnalysis_4`.
 
 Not all measurements need to possess all forms of reliability. For
 instance, educational assessment can be thought of as a form of

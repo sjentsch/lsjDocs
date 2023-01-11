@@ -50,10 +50,11 @@ not exhaustive list of topics that I’d like to expand on at some time:
    than one way. Even so, I would have liked to talk a little about this.
 
 -  **Method of planned comparison.** As I mentioned this in chapter
-   :doc:`Factorial ANOVA <../Ch14/Ch14_ANOVA2>`, it’s not always appropriate to be
-   using a post-hoc correction like Tukey’s HSD when doing an ANOVA, especially
-   when you had a very clear (and limited) set of comparisons that you cared
-   about ahead of time. I would like to talk more about this in the future.
+   :doc:`Factorial ANOVA <../Ch14/Ch14_ANOVA2>`, it’s not always appropriate to
+   be using a post-hoc correction like Tukey’s HSD when doing an ANOVA,
+   especially when you had a very clear (and limited) set of comparisons that
+   you cared about ahead of time. I would like to talk more about this in the
+   future.
 
 -  **Multiple comparison methods.** Even within the context of talking
    about post-hoc tests and multiple comparisons, I would have liked to

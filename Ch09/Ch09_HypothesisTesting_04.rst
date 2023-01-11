@@ -123,6 +123,8 @@ is that the data allowed us to reject a null hypothesis. Whether or not
 the result is actually important in the real world is a very different
 question, and depends on all sorts of other things.
 
+.. _one_vs_twosided_tests:
+
 The difference between one-sided and two-sided tests
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

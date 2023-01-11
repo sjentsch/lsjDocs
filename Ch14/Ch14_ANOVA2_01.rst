@@ -47,6 +47,8 @@ this section I’ll talk about how to analyse data from balanced designs,
 since this is the simplest case. The story for unbalanced designs is
 quite tedious, so we’ll put it to one side for the moment.
 
+.. _what_hypotheses:
+
 What hypotheses are we testing?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -159,7 +161,7 @@ does the choice of drug have any effect on mood? And second, does CBT have any
 effect on mood? These aren’t the only hypotheses that we could formulate of
 course, and we’ll see a really important example of a different kind of
 hypothesis in section :doc:`Factorial ANOVA 2: balanced designs, interactions
-allowed <../Ch14/Ch14_ANOVA2_02>`, but these are the two simplest hypotheses to test,
+allowed <Ch14_ANOVA2_02>`, but these are the two simplest hypotheses to test,
 and so we’ll start there. Consider the first test. If the drug has no effect
 then we would expect all of the row means to be identical, right? So that’s
 our null hypothesis. On the other hand, if the drug does matter then we should
@@ -244,8 +246,8 @@ outcome variable (i.e., ``mood.gain``), and we got the results shown in
 Now, suppose I’m also curious to find out if ``therapy`` has a relationship to
 ``mood.gain``. In light of what we’ve seen from our discussion of multiple
 regression in chapter :doc:`Correlation and linear regression
-<../Ch12/Ch12_Regression>`, you probably won’t be surprised that all we have to do is
-add ``therapy`` as a second ``Fixed Factor`` in the analysis, see
+<../Ch12/Ch12_Regression>`, you probably won’t be surprised that all we have
+to do is add ``therapy`` as a second ``Fixed Factor`` in the analysis, see
 :numref:`fig-factorialanova3`.
 
 .. ----------------------------------------------------------------------------
@@ -533,7 +535,7 @@ levels minus 1 (i.e., R - 1 for the row variable Factor A, and C - 1 for the
 column variable Factor B). So, for the ``drug`` factor we obtain *df* = 2, and
 for the ``therapy`` factor we obtain *df* = 1. Later on, when we discuss the
 interpretation of ANOVA as a regression model (see section :doc:`ANOVA as a
-linear model <../Ch14/Ch14_ANOVA2_07>`), I’ll give a clearer statement of how we arrive
+linear model <Ch14_ANOVA2_07>`), I’ll give a clearer statement of how we arrive
 at this number. But for the moment we can use the simple definition of degrees
 of freedom, namely that the degrees of freedom equals the number of quantities
 that are observed, minus the number of constraints. So, for the ``drug``
@@ -577,7 +579,7 @@ chapter :doc:`Comparing several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`, I
 ran a one-way ANOVA that looked to see if there are any differences between the
 three levels of ``drug``, and a second one-way ANOVA to see if there were any
 differences between the two levels of ``therapy``. As we saw in section
-:doc:`What hypotheses are we testing? <../Ch14/Ch14_ANOVA2_01>`, the null and
+:ref:`What hypotheses are we testing? <what_hypotheses>`, the null and
 alternative hypotheses tested by the one-way ANOVAs are in fact identical to
 the hypotheses tested by the factorial ANOVA. Looking even more carefully at
 the ANOVA tables, we can see that the sum of squares associated with the

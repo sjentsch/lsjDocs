@@ -82,7 +82,7 @@ has problems, *passing* the test (i.e., rejecting the null) doesn’t imply that
 the model is good! Why is that, you might be wondering? The answer to that can
 be found by looking at the coefficients for the multiple regression model we
 have already looked at :numref:`tab-parent_coeff` in section :doc:`Multiple
-linear regression <../Ch12/Ch12_Regression_05>` above, where the coefficients
+linear regression <Ch12_Regression_05>` above, where the coefficients
 we got were 125.966 (for the intercept), -8.950 (for ``dani.sleep``) and 0.011
 (for ``baby.sleep``). I can’t help but notice that the estimated regression
 coefficient for the ``baby.sleep`` variable is tiny, relative to the value that
@@ -130,6 +130,8 @@ In any case, this *t*-statistic can be interpreted in the same way as the
 really care if *b* > 0 or *b* < 0), then it’s the extreme values of *t* (i.e.,
 a lot less than zero or a lot greater than zero) that suggest that you should
 reject the null hypothesis.
+
+.. _coefficients_in_jamovi:
 
 Running the hypothesis tests in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

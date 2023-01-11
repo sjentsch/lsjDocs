@@ -14,12 +14,12 @@ This section returns to the |nightgarden|_ data set. If you’re reading this
 whole chapter in one sitting, then you should already have this data set loaded
 into a jamovi window. For this section, let’s focus on the two variables
 ``speaker`` and ``utterance`` (see :doc:`Tabulating and cross-tabulating data
-<../Ch06/Ch06_DataHandling_1>` if you’ve forgotten what those variables look like).
-Suppose that what I want to do is pull out only those utterances that were made
-by ``makka-pakka``. To that end, we need to specify a filter in jamovi. First
-open up a filter window by clicking on ``Filters`` on the main jamovi ``Data``
-toolbar. Then, in the ``Filter 1`` text box, next to the ``=`` sign, type the
-following:
+<Ch06_DataHandling_1>` if you’ve forgotten what those variables look
+like). Suppose that what I want to do is pull out only those utterances that
+were made by ``makka-pakka``. To that end, we need to specify a filter in
+jamovi. First open up a filter window by clicking on ``Filters`` on the main
+jamovi ``Data`` toolbar. Then, in the ``Filter 1`` text box, next to the ``=``
+sign, type the following:
 
 .. code-block:: text
 

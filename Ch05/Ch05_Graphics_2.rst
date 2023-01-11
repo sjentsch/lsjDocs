@@ -108,6 +108,8 @@ space: no chance at all that the reader is going to learn anything useful.
    
 .. ----------------------------------------------------------------------------
 
+.. _box_plots_detect_outliers:
+
 Using box plots to detect outliers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

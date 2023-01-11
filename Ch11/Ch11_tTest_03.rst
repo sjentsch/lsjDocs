@@ -406,19 +406,21 @@ the tests I talk about in this book. So don’t over-generalise this
 advice! I’m really just talking about *t*-tests here and nothing
 else!
 
+.. _assumptions_student_t_test:
+
 Assumptions of the Student *t*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As always, our hypothesis test relies on some assumptions. So what are they?
 For the Student *t*-test there are three assumptions, some of which we saw
 previously in the context of the one sample *t*-test (see section
-:doc:`Assumptions of the one sample *t*-test <../Ch11/Ch11_tTest_02>`):
+:ref:`Assumptions of the one sample *t*-test <assumptions_one_sample_t_test>`):
 
 -  *Normality*. Like the one-sample *t*-test, it is assumed that the data are
    normally distributed. Specifically, we assume that both groups are normally
    distributed. In section :doc:`Checking the normality of sample
-   <../Ch11/Ch11_tTest_08>`, we’ll discuss how to test for normality, and in section
-   :doc:`Testing non-normal data with Wilcoxon tests <../Ch11/Ch11_tTest_09>` we’ll
+   <Ch11_tTest_08>`, we’ll discuss how to test for normality, and in section
+   :doc:`Testing non-normal data with Wilcoxon tests <Ch11_tTest_09>` we’ll
    discuss possible solutions.
 
 -  *Independence*. Once again, it is assumed that the observations are

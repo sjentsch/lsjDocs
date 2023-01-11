@@ -25,6 +25,8 @@ my *actual* data set has a sample size of *N* = 100. In real life,
 then, we must know something about the behaviour of the sample mean when
 it is calculated from a more modest data set!
 
+.. _sampling_distribution_of_the_mean:
+
 Sampling distribution of the mean
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -158,6 +160,7 @@ measured in the 100 to 140 range.
    
 .. ----------------------------------------------------------------------------
 
+.. _central_limit_theorem:
 
 The central limit theorem
 ~~~~~~~~~~~~~~~~~~~~~~~~~

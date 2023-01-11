@@ -5,7 +5,7 @@ What is a linear regression model?
 
 Stripped to its bare essentials, linear regression models are basically a
 slightly fancier version of the Pearson correlation (section :doc:`Correlations
-<../Ch12/Ch12_Regression_01>`), though as we’ll see regression models are much more
+<Ch12_Regression_01>`), though as we’ll see regression models are much more
 powerful tools.
 
 | Since the basic ideas in regression are closely tied to correlation, we’ll

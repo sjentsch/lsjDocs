@@ -27,12 +27,12 @@ Armed with an understanding of sampling distributions, constructing a
 confidence interval for the mean is actually pretty easy. Here’s how it works.
 Suppose the true population mean is µ and the standard deviation is σ. I’ve
 just finished running my study that has *N* participants, and the mean IQ among
-those participants is *X̄*. We know from our discussion of :doc:`the central
-limit theorem <../Ch08/Ch08_Estimation_3>` that the sampling distribution of the mean
-is approximately normal. We also know from our discussion of the :doc:`normal
-distribution <../Ch07/Ch07_Probability_5>`, that there is a 95\% chance that a
-normally-distributed quantity will fall within about two standard deviations of
-the true mean.
+those participants is *X̄*. We know from our discussion of :ref:`the central
+limit theorem <central_limit_theorem>` that the sampling distribution of the
+mean is approximately normal. We also know from our discussion of the
+:doc:`normal distribution <../Ch07/Ch07_Probability_5>`, that there is a 95\%
+chance that a normally-distributed quantity will fall within about two standard
+deviations of the true mean.
 
 To be more precise, the more correct answer is that there is a 95\% chance that
 a normally-distributed quantity will fall within 1.96 standard deviations of
@@ -78,13 +78,13 @@ As usual, I lied. The formula that I’ve given above for the 95\% confidence
 interval is approximately correct, but I glossed over an important detail in
 the discussion. Notice my formula requires you to use the standard error of the
 mean, *SEM*, which in turn requires you to use the true population standard
-deviation σ. Yet, in :doc:`Estimating population parameters
-<../Ch08/Ch08_Estimation_4>` I stressed the fact that we don’t actually *know*
-the true population parameters. Because we don’t know the true value of σ we
-have to use an estimate of the population standard deviation :math:`\hat{\sigma}`
-instead. This is pretty straightforward to do, but this has the consequence
-that we need to use the percentiles of the *t*-distribution rather than the
-normal distribution to calculate our magic number, and the answer depends on
+deviation σ. Yet, in :doc:`Estimating population parameters 
+<Ch08_Estimation_4>` I stressed the fact that we don’t actually *know* the true
+population parameters. Because we don’t know the true value of σ we have to use
+an estimate of the population standard deviation :math:`\hat{\sigma}` instead.
+This is pretty straightforward to do, but this has the consequence that we need
+to use the percentiles of the *t*-distribution rather than the normal
+distribution to calculate our magic number, and the answer depends on
 the sample size. When *N* is very large, we get pretty much the same value
 using the *t*-distribution or the normal distribution: 1.96. But when *N* is
 small we get a much bigger number when we use the *t*-distribution: 2.26.

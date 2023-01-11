@@ -153,7 +153,7 @@ interval from 0.077 to 0.092, again this does not indicate a good fit.
 
 Pretty disappointing, huh? But perhaps not too surprising given that in the
 earlier EFA, when we ran with a similar data set (section :doc:`Exploratory
-Factor Analysis <../Ch15/Ch15_FactorAnalysis_1>`), only around half of the variance
+Factor Analysis <Ch15_FactorAnalysis_1>`), only around half of the variance
 in the data was accounted for by the five factor model.
 
 Let’s go on to look at the factor loadings and the factor covariance estimates,

@@ -28,15 +28,15 @@ observed (directly measured).
 
 In this chapter we will consider a number of different Factor Analysis and
 related techniques, starting with :doc:`Exploratory Factor Analysis
-<../Ch15/Ch15_FactorAnalysis_1>` (EFA). EFA is a statistical technique for identifying
+<Ch15_FactorAnalysis_1>` (EFA). EFA is a statistical technique for identifying
 underlying latent factors in a data set. In the next section, we will cover
-:doc:`Principal Component Analysis <../Ch15/Ch15_FactorAnalysis_2>` (PCA) which is a
+:doc:`Principal Component Analysis <Ch15_FactorAnalysis_2>` (PCA) which is a
 data reduction technique which, strictly speaking, does not identify underlying
 latent factors. Instead, PCA simply produces a linear combination of observed
 variables. Following this, the section :doc:`Confirmatory Factor Analysis
-<../Ch15/Ch15_FactorAnalysis_3>` (CFA) shows that, unlike EFA, with CFA you start with
+<Ch15_FactorAnalysis_3>` (CFA) shows that, unlike EFA, with CFA you start with
 an idea - a model - of how the variables in your data are related to each
 other. You then test your model against the observed data and assess how good a
 fit the model is. Finally, we introduce :doc:`Internal consistency reliability
-analysis <../Ch15/Ch15_FactorAnalysis_4>` which tests how consistently a scale measures
+analysis <Ch15_FactorAnalysis_4>` which tests how consistently a scale measures
 a psychological construct.

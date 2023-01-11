@@ -146,8 +146,8 @@ this as:
 | X ~ Normal(µ\ :sub:`0`, σ²)
 
 Okay, if that’s true, then what can we say about the distribution of *X̄*?
-Well, as we discussed earlier (see :doc:`The central limit theorem
-<../Ch08/Ch08_Estimation_3>`), the sampling distribution of the mean *X̄* is also
+Well, as we discussed earlier (see :ref:`The central limit theorem
+<central_limit_theorem>`), the sampling distribution of the mean *X̄* is also
 normal, and has mean µ. But the standard deviation of this sampling
 distribution *SE(X̄)*, which is called the *standard error of the mean*, is
 
@@ -263,6 +263,8 @@ might write up by saying something like this:
    that the psychology students have significantly different statistics
    scores to the class average (*z* = 2.26, *N* = 20, *p* < 0.05).
 
+.. _assumptions_z_test:
+
 Assumptions of the *z*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -274,7 +276,7 @@ the one sample *z*-test, makes three basic assumptions. These are:
    population distribution is normal.\ [#]_ This is often a pretty reasonable
    assumption, and it’s also an assumption that we can check if we feel worried
    about it (see section :doc:`Checking the normality of a sample
-   <../Ch11/Ch11_tTest_08>`).
+   <Ch11_tTest_08>`).
 
 -  *Independence*. The second assumption of the test is that the
    observations in your data set are not correlated with each other, or

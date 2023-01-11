@@ -4,16 +4,16 @@ Assumptions of regression
 -------------------------
 
 The linear regression model that I’ve been discussing relies on several
-assumptions. In section :doc:`Model checking <../Ch12/Ch12_Regression_11>` we’ll talk a
-lot more about how to check that these assumptions are being met, but first
+assumptions. In section :doc:`Model checking <Ch12_Regression_11>` we’ll talk
+a lot more about how to check that these assumptions are being met, but first
 let’s have a look at each of them.
 
 -  *Normality*. Like many of the models in statistics, basic simple or multiple
    linear regression relies on an assumption of normality. Specifically, it
    assumes that the *residuals* are normally distributed. It’s actually okay if
    the predictors *X* and the outcome *Y* are non-normal, so long as the
-   residuals ε are normal. See section :doc:`Checking the normality of the
-   residuals <../Ch12/Ch12_Regression_11>`.
+   residuals ε are normal. See section :ref:`Checking the normality of the
+   residuals <checking_normality_residuals>`.
 
 -  *Linearity*. A pretty fundamental assumption of the linear regression model
    is that the relationship between *X* and *Y* actually is linear! Regardless
@@ -35,7 +35,7 @@ let’s have a look at each of them.
    the regression model, but in practice it’s required. Predictors that
    are too strongly correlated with each other (referred to as
    “collinearity”) can cause problems when evaluating the model. See
-   section :doc:`Checking for collinearity <../Ch12/Ch12_Regression_11>`.
+   section :ref:`Checking for collinearity <checking_collinearity>`.
 
 -  *Residuals are independent of each other*. This is really just a
    “catch all” assumption, to the effect that “there’s nothing else
@@ -48,4 +48,4 @@ let’s have a look at each of them.
    implicit assumption that your regression model isn’t being too strongly
    influenced by one or two anomalous data points because this raises questions
    about the adequacy of the model and the trustworthiness of the data in some
-   cases. See section :doc:`Three kinds of anomalous data <../Ch12/Ch12_Regression_11>`.
+   cases. See section :ref:`Three kinds of anomalous data <anomalous_data>`.

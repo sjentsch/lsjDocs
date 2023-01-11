@@ -163,11 +163,11 @@ the data. What this implies, as far as which one you should use, depends
 a little on what type of data you’ve got and what you’re trying to achieve.
 As a rough guide:
 
--  If your data are nominal scale |nominal| you probably shouldn’t be using either
-   the mean or the median. Both the mean and the median rely on the idea
-   that the numbers assigned to values are meaningful. If the numbering
-   scheme is arbitrary then it’s probably best to use the :doc:`Mode 
-   <../Ch04/Ch04_Descriptives_1>` instead.
+-  If your data are nominal scale |nominal| you probably shouldn’t be using
+   either the mean or the median. Both the mean and the median rely on the
+   idea that the numbers assigned to values are meaningful. If the numbering
+   scheme is arbitrary then it’s probably best to use the :ref:`Mode <mode>`
+   instead.
 
 -  If your data are ordinal scale |ordinal| you’re more likely to want to use
    the median than the mean. The median only makes use of the order
@@ -201,11 +201,11 @@ As a rough guide:
 
 Let’s expand on that last part a little. One consequence is that there are
 systematic differences between the mean and the median when the histogram is
-asymmetric (skewed; see :doc:`Skew and kurtosis <../Ch04/Ch04_Descriptives_3>`). This
-is illustrated in :numref:`fig-meanmedian`. Notice that the median (right hand
-side) is located closer to the “body” of the histogram, whereas the mean (left
-hand side) gets dragged towards the “tail” (where the extreme values are). To
-give a concrete example, suppose Bob (income $50,000), Kate (income $60,000)
+asymmetric (skewed; see :doc:`Skew and kurtosis <Ch04_Descriptives_3>`).
+This is illustrated in :numref:`fig-meanmedian`. Notice that the median (right
+hand side) is located closer to the “body” of the histogram, whereas the mean
+(left hand side) gets dragged towards the “tail” (where the extreme values are).
+To give a concrete example, suppose Bob (income $50,000), Kate (income $60,000)
 and Jane (income $65,000) are sitting at a table. The average income at the
 table is $58,333 and the median income is $60,000. Then Bill sits down with
 them (income $100,000,000). The average income has now jumped to $25,043,750
@@ -213,6 +213,8 @@ but the median rises only to $62,500. If you’re interested in looking at the
 overall income at the table the mean might be the right answer. But if you’re
 interested in what counts as a typical income at the table the median would be
 a better choice here.
+
+.. _a_real_life_example:
 
 A real life example
 ~~~~~~~~~~~~~~~~~~~
@@ -289,6 +291,8 @@ facts, which may or may not be relevant:
    for its home loans as well as many small business loans.
 
 My, my.
+
+.. _mode:
 
 Mode
 ~~~~

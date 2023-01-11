@@ -176,7 +176,7 @@ By standardising the covariance, not only do we keep all of the nice properties
 of the covariance discussed earlier, but the actual values of *r* are on a
 meaningful scale: *r* = 1 implies a perfect positive relationship and *r* = -1
 implies a perfect negative relationship. I’ll expand a little more on this
-point later, in section :doc:`Interpreting a correlation <../Ch12/Ch12_Regression_01>`.
+point later, in section :doc:`Interpreting a correlation <Ch12_Regression_01>`.
 But before I do, let’s look at how to calculate correlations in jamovi.
 
 Calculating correlations in jamovi

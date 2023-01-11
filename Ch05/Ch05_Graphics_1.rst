@@ -16,8 +16,8 @@ as the frequency or density of the bin and is displayed as a vertical bar. The
 ``afl.margins`` variable contains 33 games in which the winning margin was less
 than 10 points and it is this fact that is represented by the height of the
 leftmost bar that we showed earlier in :doc:`Descriptive statistics
-<../Ch04/Ch04_Descriptives>`, and :numref:`fig-aflMargins`. With these earlier graphs
-we used an advanced plotting package in R which, for now, is beyond the
+<../Ch04/Ch04_Descriptives>`, and :numref:`fig-aflMargins`. With these earlier
+graphs we used an advanced plotting package in R which, for now, is beyond the
 capability of jamovi. But jamovi gets us close, and drawing this histogram in
 jamovi is pretty straightforward. Open up the ``Plots`` options under
 ``Exploration`` →  ``Descriptives`` and click the ``Histogram`` check box, as

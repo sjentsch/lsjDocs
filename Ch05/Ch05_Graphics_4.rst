@@ -1,35 +1,19 @@
 .. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_ and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_
 
-Summary
--------
+Saving image files using jamovi
+-------------------------------
 
-Perhaps I’m a simple minded person, but I love pictures. Every time I
-write a new scientific paper one of the first things I do is sit down
-and think about what the pictures will be. In my head an article is
-really just a sequence of pictures linked together by a story. All the
-rest of it is just window dressing. What I’m really trying to say here
-is that the human visual system is a very powerful data analysis tool.
-Give it the right kind of information and it will supply a human reader
-with a massive amount of knowledge very quickly. Not for nothing do we
-have the saying “a picture is worth a thousand words”. With that in
-mind, I think that this is one of the most important chapters in the
-book. The topics covered were:
+Hold on, you might be thinking. What’s the good of being able to draw pretty
+pictures in jamovi if I can’t save them and send them to friends to brag about
+how awesome my data is? How do I save the picture? Simples. Just right click on
+the plot image and export it to a file, either as ``png``, ``eps`, ``svg`` or
+``pdf``. These formats all produce nice images that you can the send to your
+friends, or include in your assignments or manuscripts. Whereas ``png`` and 
+``pdf`` files are especially suited to share them with others (a lot of
+different software packages read them), are ``eps`` and ``svg`` files very
+suited to be edited (e.g., with `Inkscape <https://inkscape.org/>`__\\.
 
--  *Common plots*. Much of the chapter was focused on standard graphs that
-   statisticians like to produce: :doc:`histograms <../Ch05/Ch05_Graphics_1>`,
-   :doc:`box plots <../Ch05/Ch05_Graphics_2>` and :doc:`bar graphs
-   <../Ch05/Ch05_Graphics_3>`.
+.. ----------------------------------------------------------------------------
 
--  *Saving image files*. Importantly, we also covered how to :doc:`export your
-   pictures <../Ch05/Ch05_Graphics_3>`.
-
-One final thing to point out. Whilst jamovi produces some really neat default
-graphics, editing the plots is currently not possible. For more advanced
-graphics and plotting capability the packages available in R are much more
-powerful. One of the most popular graphics systems is provided by the
-``ggplot2`` `R package <https://ggplot2.tidyverse.org>`__, which is loosely
-based on “The grammar of graphics” (:ref:`Wilkinson, 2006 <Wilkinson_2006>`).
-It’s not for novices. You need to have a pretty good grasp of R before you can
-start using it, and even then it takes a while to really get the hang of it.
-But when you’re ready it’s worth taking the time to teach yourself, because
-it’s a much more powerful and cleaner system.
+.. |afl.finalists|                     replace:: ``afl.finalists``
+.. _afl.finalists:                     ../_static/data/aflsmall_finalists.omv

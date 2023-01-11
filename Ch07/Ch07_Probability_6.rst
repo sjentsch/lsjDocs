@@ -35,10 +35,10 @@ pictures.
 
 -  The **χ²-distribution** is another distribution that turns up in lots of
    different places. The situation in which we’ll see it is when doing
-   :doc:`Categorical data analysis <../Ch10/Ch10_ChiSquare>`, but it’s one of those
-   things that actually pops up all over the place. When you dig into the maths
-   (and who doesn’t love doing that?), it turns out that the main reason why
-   the χ²-distribution turns up all over the place is that if you have a
+   :doc:`Categorical data analysis <../Ch10/Ch10_ChiSquare>`, but it’s one of
+   those things that actually pops up all over the place. When you dig into the
+   maths (and who doesn’t love doing that?), it turns out that the main reason
+   why the χ²-distribution turns up all over the place is that if you have a
    bunch of variables that are normally distributed, square their values and
    then add them up (a procedure referred to as taking a “sum of squares”),
    this sum has a χ²-distribution. You’d be amazed how often this fact turns

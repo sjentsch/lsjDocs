@@ -273,6 +273,8 @@ formula to the one I showed you above. Instead of averaging the squared
 deviations, which requires you to divide by the number of data points *N*,
 jamovi has chosen to divide by *N - 1*.
 
+.. _variance_formula:
+
 In other words, the formula that jamovi is using is this one:
 
 .. math:: \frac{1}{N - 1} \sum_{i=1}^N \left( X_i - \bar{X} \right)^2
@@ -321,6 +323,8 @@ squared”. It’s *not* a real unit of measurement, and since the variance
 is expressed in terms of this gibberish unit, it is totally meaningless
 to a human.
 
+.. _standard_deviation:
+
 Standard deviation
 ~~~~~~~~~~~~~~~~~~
 
@@ -353,8 +357,8 @@ given above. Just like the we saw with the variance, what jamovi
 calculates is a version that divides by *N - 1* rather than *N*.
 
 For reasons that will make sense when we return to this topic in chapter
-:doc:`Estimating unknown quantities from a sample <../Ch08/Ch08_Estimation>` I’ll
-refer to this new quantity as :math:`\hat\sigma` (read as: “sigma hat”),
+:doc:`Estimating unknown quantities from a sample <../Ch08/Ch08_Estimation>`
+I’ll refer to this new quantity as :math:`\hat\sigma` (read as: “sigma hat”),
 and the formula for this is:
 
 .. math:: \hat\sigma = \sqrt{ \frac{1}{N - 1} \sum_{i=1}^N \left( X_i - \bar{X} \right)^2 }
@@ -445,10 +449,10 @@ somewhere.
    With the possible exception of the third question.
 
 .. [#]
-   Strictly, the assumption is that the data are *normally* distributed, which 
-   is an important concept that we’ll discuss more in chapter :doc:`Introduction
-   to probability <../Ch07/Ch07_Probability>` and will turn up over and over again later
-   in the book.
+   Strictly, the assumption is that the data are *normally* distributed, which
+   is an important concept that we’ll discuss more in chapter
+   :doc:`Introduction to probability <../Ch07/Ch07_Probability>` and will turn
+   up over and over again later in the book.
 
 .. ----------------------------------------------------------------------------
 

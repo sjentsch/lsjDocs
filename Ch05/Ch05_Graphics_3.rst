@@ -5,10 +5,10 @@ Bar graphs
 
 Another form of graph that you often want to plot is the **bar graph**. Let’s
 use the |afl.finalists|_ data set with the ``afl.finalists`` variable that I
-introduced in :doc:`Mode <../Ch04/Ch04_Descriptives_1>`. What I want to do is draw a
-bar graph that displays the number of finals that each team has played in over
-the time spanned by the |afl.finalists|_ data set. There are lots of teams, but
-I am particularly interested in just four: Brisbane, Carlton, Fremantle and
+introduced in :ref:`Mode <mode>`. What I want to do is draw a bar graph that
+displays the number of finals that each team has played in over the time
+spanned by the |afl.finalists|_ data set. There are lots of teams, but I am
+particularly interested in just four: Brisbane, Carlton, Fremantle and
 Richmond. So the first step is to set up a filter so just those four teams are
 included in the bar graph. This is straightforward in jamovi and you can do it
 by using the ``Filters`` function that we used previously. Open up the
@@ -35,16 +35,6 @@ get a bar graph, something like that shown in :numref:`fig-bar1`.
    Filtering to include just four AFL teams, and drawing a bar plot in jamovi
    
 .. ----------------------------------------------------------------------------
-
-Saving image files using jamovi
--------------------------------
-
-Hold on, you might be thinking. What’s the good of being able to draw pretty
-pictures in jamovi if I can’t save them and send them to friends to brag about
-how awesome my data is? How do I save the picture? Simples. Just right click on
-the plot image and export it to a file, either as ``png``, ``eps`, ``svg`` or
-``pdf``. These formats all produce nice images that you can the send to your
-friends, or include in your assignments or manuscripts.
 
 ------
 

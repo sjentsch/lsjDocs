@@ -5,7 +5,7 @@ Scatterplots
 
 **Scatterplots** are a simple but effective tool for visualising the
 relationship between *two* variables, like we saw with the figures in the
-section on correlation (section :doc:`Correlations <../Ch12/Ch12_Regression_01>`). It’s
+section on correlation (section :doc:`Correlations <Ch12_Regression_01>`). It’s
 this latter application that we usually have in mind when we use the term
 “scatterplot”. In this kind of plot each observation corresponds to one dot.
 The horizontal location of the dot plots the value of the observation on one
@@ -28,7 +28,7 @@ the plot that we’re after. The first way is to use the ``Plot`` option under
 the ``Regression`` → ``Correlation Matrix`` button, giving us the output shown
 in :numref:`fig-scatterplot1`. Note that jamovi draws a line through the
 points, we’ll come onto this a bit later in section :doc:`What is a linear
-regression model? <../Ch12/Ch12_Regression_03>`. Plotting a scatterplot in this way
+regression model? <Ch12_Regression_03>`. Plotting a scatterplot in this way
 also allow you to specify ``Densities for variables`` and this option adds a
 density curve showing how the data in each variable is distributed.
 

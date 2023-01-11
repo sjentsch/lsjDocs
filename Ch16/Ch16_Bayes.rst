@@ -42,9 +42,9 @@ think this and provide an introduction to Bayesian statistics, an
 approach that I think is generally superior to the orthodox approach.
 
 This chapter comes in two parts: In sections :doc:`Probabilistic reasoning by
-rational agents <../Ch16/Ch16_Bayes_1>` through :doc:`Why be a Bayesian?
-<../Ch16/Ch16_Bayes_3>` I talk about what Bayesian statistics are all about,
+rational agents <Ch16_Bayes_1>` through :doc:`Why be a Bayesian?
+<Ch16_Bayes_3>` I talk about what Bayesian statistics are all about,
 covering the basic mathematical rules for how it works as well as an
 explanation for why I think the Bayesian approach is so useful. Afterwards, I
 provide a brief overview of how you can do :doc:`Bayesian versions of *t*-tests
-<../Ch16/Ch16_Bayes_5>`.
+<Ch16_Bayes_5>`.

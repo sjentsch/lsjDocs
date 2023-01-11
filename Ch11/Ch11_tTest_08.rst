@@ -5,10 +5,10 @@ Checking the normality of a sample
 
 All of the tests that we have discussed so far in this chapter have assumed
 that the data are normally distributed. This assumption is often quite
-reasonable, because :doc:`the central limit theorem <../Ch08/Ch08_Estimation_3>` does
-tend to ensure that many real world quantities are normally distributed. Any
-time that you suspect that your variable is *actually* an average of lots of
-different things, there’s a pretty good chance that it will be normally
+reasonable, because :ref:`the central limit theorem <central_limit_theorem>`
+does tend to ensure that many real world quantities are normally distributed.
+Any time that you suspect that your variable is *actually* an average of lots
+of different things, there’s a pretty good chance that it will be normally
 distributed, or at least close enough to normal that you can get away with
 using *t*-tests. However, life doesn’t come with guarantees, and besides there
 are lots of ways in which you can end up with variables that are highly

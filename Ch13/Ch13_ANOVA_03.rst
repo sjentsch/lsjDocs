@@ -40,7 +40,7 @@ particular example, the *between groups* variance corresponds to the effect
 that the ``drug`` has on the outcome variable, and the *within groups* variance
 corresponds to the “leftover” variability so it calls that the *residuals*. If
 we compare these numbers to the numbers that I calculated by hand in section
-:doc:`A worked example <../Ch13/Ch13_ANOVA_02>`, you can see that they’re more
+:ref:`A worked example <worked_example>`, you can see that they’re more
 or less the same, apart from rounding errors. The between groups sums of
 squares is SS\ :sub:`b` = 3.45, the within groups sums of squares is
 SS\ :sub:`w` = 1.39, and the degrees of freedom are 2 and 15 respectively. We

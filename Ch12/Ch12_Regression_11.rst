@@ -118,19 +118,22 @@ calculations for you. Even so, it’s always nice to know how to actually
 get hold of these things yourself in case you ever need to do something
 non-standard.
 
+.. _anomalous_data:
+
 Three kinds of anomalous data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 One danger that you can run into with linear regression models is that your
 analysis might be disproportionately sensitive to a smallish number of
 “unusual” or “anomalous” observations. I discussed this idea previously in
-section :doc:`Using box plots to detect outliers <../Ch05/Ch05_Graphics_2>` in
-the context of discussing the outliers that get automatically identified by the
-``Box plot`` option under ``Exploration`` → ``Descriptives``, but this time we
-need to be much more precise. In the context of linear regression, there are
-three conceptually distinct ways in which an observation might be called
-“anomalous”. All three are interesting, but they have rather different
-implications for your analysis.
+subsection :ref:`Using box plots to detect outliers
+<box_plots_detect_outliers>` in the context of discussing the outliers that
+get automatically identified by the ``Box plot`` option under
+``Exploration`` → ``Descriptives``, but this time we need to be much more
+precise. In the context of linear regression, there are three conceptually
+distinct ways in which an observation might be called “anomalous”. All
+three are interesting, but they have rather different implications for your
+analysis.
 
 The first kind of unusual observation is an **outlier**. The definition
 of an outlier (in this context) is an observation that is very different
@@ -263,6 +266,8 @@ excluding it, but that’s less than ideal unless you have a solid explanation
 for why this particular case is qualitatively different from the others and
 therefore deserves to be handled separately.
 
+.. _checking_normality_residuals:
+
 Checking the normality of the residuals
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -326,6 +331,8 @@ for all values of λ except λ = 0. When λ = 0 we just take the natural logarit
 
 You can calculate it using the ``BOXCOX`` function in the ``Compute`` variables
 screen in jamovi.
+
+.. _checking_collinearity:
 
 Checking for collinearity
 ~~~~~~~~~~~~~~~~~~~~~~~~~

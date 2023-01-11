@@ -214,8 +214,8 @@ little bit larger than the sample standard deviation *s*.
 
 The fix to this systematic bias turns out to be very simple. Here’s how it
 works. Before tackling the standard deviation let’s look at the variance. If
-you recall from :doc:`Measures of variability <../Ch04/Ch04_Descriptives_2>`, the
-sample variance is defined to be the average of the squared deviations
+you recall from :doc:`Measures of variability <../Ch04/Ch04_Descriptives_2>`,
+the sample variance is defined to be the average of the squared deviations
 from the sample mean. That is:
 
 .. math:: s^2 = \frac{1}{N} \sum_{i=1}^N (X_i - \bar{X})^2
@@ -229,10 +229,11 @@ by *N*. If we do that, we obtain the following formula:
 
 This is an unbiased estimator of the population variance σ. Moreover, this
 finally answers the question we raised in :doc:`Measures of variability
-<../Ch04/Ch04_Descriptives_2>`. Why did jamovi give us slightly different answers for
-variance? It’s because jamovi calculates :math:`\hat\sigma^2` not *s*\², that’s
-why. A similar story applies for the standard deviation. If we divide by *N* -
-1 rather than *N* our estimate of the population standard deviation becomes:
+<../Ch04/Ch04_Descriptives_2>`. Why did jamovi give us slightly different
+answers for variance? It’s because jamovi calculates :math:`\hat\sigma^2` not
+*s*\², that’s why. A similar story applies for the standard deviation. If we
+divide by *N* - 1 rather than *N* our estimate of the population standard
+deviation becomes:
 
 .. math:: \hat\sigma = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (X_i - \bar{X})^2}
 

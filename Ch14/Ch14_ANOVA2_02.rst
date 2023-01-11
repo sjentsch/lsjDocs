@@ -258,8 +258,8 @@ one-way ANOVA, which is that if you obtain a significant main effect of (say)
 ``drug``, it doesn’t tell you anything about how the levels of ``drug`` are
 different to one another. To find that out, you need to run additional
 analyses. We’ll talk about some analyses that you can run in sections
-:doc:`Different ways to specify contrasts <../Ch14/Ch14_ANOVA2_08>` and
-:doc:`Post-hoc tests <../Ch14/Ch14_ANOVA2_09>`. The same is true for
+:doc:`Different ways to specify contrasts <Ch14_ANOVA2_08>` and
+:doc:`Post-hoc tests <Ch14_ANOVA2_09>`. The same is true for
 interaction effects. Knowing that there’s a significant interaction doesn’t
 tell you anything about what kind of interaction exists. Again, you’ll need
 to run additional analyses.
@@ -275,8 +275,8 @@ like to give in this situation is that you shouldn’t pay much attention to the
 main effects when an interaction is present. The reason they say this is that,
 although the tests of the main effects are perfectly valid from a mathematical
 point of view, when there is a significant interaction effect the main effects
-rarely test interesting hypotheses. Recall from section :doc:`What hypotheses
-are we testing? <../Ch14/Ch14_ANOVA2_01>` that the null hypothesis for a main
+rarely test interesting hypotheses. Recall from section :ref:`What hypotheses
+are we testing? <what_hypotheses>` that the null hypothesis for a main
 effect is that the *marginal means* are equal to each other, and that a
 marginal mean is formed by averaging across several different groups. But if
 you have a significant interaction effect then you *know* that the groups that

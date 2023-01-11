@@ -9,17 +9,17 @@ we can use sampling theory to construct estimates of the population
 parameters. The section breakdown looks like this:
 
 -  :doc:`Basic ideas about samples, sampling and populations
-   <../Ch08/Ch08_Estimation_1>`
+   <Ch08_Estimation_1>`
 
 -  :doc:`Statistical theory of sampling: the law of large numbers 
-   <../Ch08/Ch08_Estimation_2>`
+   <Ch08_Estimation_2>`
     
 -  :doc:`Sampling distributions and the central limit theorem
-   <../Ch08/Ch08_Estimation_3>`
+   <Ch08_Estimation_3>`
 
--  :doc:`Estimating population parameters <../Ch08/Ch08_Estimation_4>`
+-  :doc:`Estimating population parameters <Ch08_Estimation_4>`
 
--  :doc:`Estimating a confidence interval <../Ch08/Ch08_Estimation_5>`
+-  :doc:`Estimating a confidence interval <Ch08_Estimation_5>`
 
 As always, there’s a lot of topics related to sampling and estimation
 that aren’t covered in this chapter, but for an introductory psychology

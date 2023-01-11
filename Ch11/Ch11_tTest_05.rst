@@ -183,7 +183,7 @@ called ``improvement``, let’s do that and see what we get
 
 The output shown in :numref:`fig-ttest_paired2` is (obviously) formatted
 exactly the same was as it was the last time we used the ``One Sample T-Test``
-analysis (section :doc:`The one-sample *t*-test <../Ch11/Ch11_tTest_02>`), and it
+analysis (section :doc:`The one-sample *t*-test <Ch11_tTest_02>`), and it
 confirms our intuition. There’s an average improvement of 1.4\% from test 1 to
 test 2, and this is significantly different from 0 (*t*\(19) = 6.48,
 *p* < 0.001).

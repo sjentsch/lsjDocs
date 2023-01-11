@@ -35,9 +35,9 @@ values of the test statistic would cause us to reject the null hypothesis, and
 which values would cause us to keep it. In order to do so we need to determine
 what the **sampling distribution of the test statistic** would be if the null
 hypothesis were actually true (we talked about sampling distributions earlier
-in :doc:`Sampling distribution of the mean <../Ch08/Ch08_Estimation_3>`). Why do we
-need this? Because this distribution tells us exactly what values of *X* our
-null hypothesis would lead us to expect. And, therefore, we can use this
+in :ref:`Sampling distribution of the mean <sampling_distribution_of_the_mean>`).
+Why do we need this? Because this distribution tells us exactly what values of
+*X* our null hypothesis would lead us to expect. And, therefore, we can use this
 distribution as a tool for assessing how closely the null hypothesis agrees
 with our data.
 

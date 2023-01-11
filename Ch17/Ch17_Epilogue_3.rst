@@ -6,22 +6,22 @@ Other ways of doing inference
 A different sense in which this book is incomplete is that it focuses pretty
 heavily on a very narrow and old-fashioned view of how inferential statistics
 should be done. In chapter :doc:`Estimating unknown quantities from a sample
-<../Ch08/Ch08_Estimation>` I talked a little bit about the idea of unbiased estimators,
-sampling distributions and so on. In chapter :doc:`Hypothesis testing
-<../Ch09/Ch09_HypothesisTesting>` I talked about the theory of null hypothesis
-significance testing and *p*-values. These ideas have been around since the early
-20th century, and the tools that I’ve talked about in the book rely very
-heavily on the theoretical ideas from that time. I’ve felt obligated to stick
-to those topics because the vast majority of data analysis in science is also
-reliant on those ideas. However, the theory of statistics is not restricted to
-those topics and, whilst everyone should know about them because of their
-practical importance, in many respects those ideas do not represent best
-practice for contemporary data analysis. One of the things that I’m especially
-happy with is that I’ve been able to go a little beyond this. Chapter
-:doc:`Bayesian statistics <../Ch16/Ch16_Bayes>` now presents the Bayesian perspective
-in a reasonable amount of detail, but the book overall is still pretty heavily
-weighted towards the frequentist orthodoxy. Additionally, there are a number of
-other approaches to inference that are worth mentioning:
+<../Ch08/Ch08_Estimation>` I talked a little bit about the idea of unbiased
+estimators, sampling distributions and so on. In chapter :doc:`Hypothesis
+testing <../Ch09/Ch09_HypothesisTesting>` I talked about the theory of null
+hypothesis significance testing and *p*-values. These ideas have been around
+since the early 20th century, and the tools that I’ve talked about in the book
+rely very heavily on the theoretical ideas from that time. I’ve felt obligated
+to stick to those topics because the vast majority of data analysis in science
+is also reliant on those ideas. However, the theory of statistics is not
+restricted to those topics and, whilst everyone should know about them because
+of their practical importance, in many respects those ideas do not represent
+best practice for contemporary data analysis. One of the things that I’m
+especially happy with is that I’ve been able to go a little beyond this.
+Chapter :doc:`Bayesian statistics <../Ch16/Ch16_Bayes>` now presents the
+Bayesian perspective in a reasonable amount of detail, but the book overall is
+still pretty heavily weighted towards the frequentist orthodoxy. Additionally,
+there are a number of other approaches to inference that are worth mentioning:
 
 -  **Bootstrapping.** Throughout the book, whenever I’ve introduced a
    hypothesis test, I’ve had a strong tendency just to make assertions like

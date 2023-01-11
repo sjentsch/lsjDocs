@@ -21,9 +21,8 @@ always are), it’s that a basic knowledge of statistics is very helpful for
 trying to figure out when someone else is either making a mistake or even lying
 to you. In fact, one of the biggest things that a knowledge of statistics does
 to you is cause you to get angry at the newspaper or the internet on a far more
-frequent basis. You can find a good example of this in the section :doc:`A real
-life example <../Ch04/Ch04_Descriptives_1>`. In later versions of this book I’ll try to
-include more anecdotes along those lines.
+frequent basis. You can find a good example of this in the section :ref:`A real
+life example <a_real_life_example>`.
 
 There’s more to research methods than statistics
 ------------------------------------------------

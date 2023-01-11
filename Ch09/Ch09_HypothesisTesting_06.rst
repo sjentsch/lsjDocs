@@ -6,12 +6,12 @@ Reporting the results of a hypothesis test
 When writing up the results of a hypothesis test there’s usually several pieces
 of information that you need to report, but it varies a fair bit from test to
 test. Throughout the rest of the book I’ll spend a little time talking about
-how to report the results of different tests (see section :doc:`How to report
-the results of the test <../Ch10/Ch10_ChiSquare_1>` for a particularly detailed
-example), so that you can get a feel for how it’s usually done. However,
-regardless of what test you’re doing, the one thing that you always have to do
-is say something about the *p*-value and whether or not the outcome was
-significant.
+how to report the results of different tests (see subsection :ref:`How to
+report the results of the test <how_to_report_tests>` for a particularly
+detailed example), so that you can get a feel for how it’s usually done.
+However, regardless of what test you’re doing, the one thing that you always
+have to do is say something about the *p*-value and whether or not the outcome
+was significant.
 
 The fact that you have to do this is unsurprising, it’s the whole point of
 doing the test. What might be surprising is the fact that there is some

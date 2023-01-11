@@ -8,8 +8,8 @@ assumptions about the data, specifically the residuals. There are three
 key assumptions that you need to be aware of: *normality*, *homogeneity
 of variance* and *independence*.
 
-If you remember back to section :doc:`The model for the data and the meaning
-of *F* <../Ch13/Ch13_ANOVA_02>` which I hope you at least skimmed even if you
+If you remember back to subsection :ref:`The model for the data and the
+meaning of *F* <meaning_of_F>` which I hope you at least skimmed even if you
 didn’t read the whole thing, I described the statistical models underpinning
 ANOVA in this way:
 
@@ -44,14 +44,14 @@ buried in this one statement, and we’ll consider them separately.
    group to have it’s own value (i.e., σ\ :sub:`k`). This is referred to as the
    homogeneity of variance (sometimes called homoscedasticity) assumption.
    ANOVA assumes that the population standard deviation is the same for all
-   groups. We’ll talk about this extensively in section :doc:`Checking the
-   homogeneity of variance assumption <../Ch13/Ch13_ANOVA_06>`.
+   groups. We’ll talk about this extensively in subsection :ref:`Checking the
+   homogeneity of variance assumption <homogeneity_of_variance_anova>`.
 
 -  **Normality**. The residuals are assumed to be normally distributed. As we
-   saw in section :doc:`Checking the normality of a sample <../Ch11/Ch11_tTest_08>`,
-   we can assess this by looking at QQ-plots (or running a Shapiro-Wilk test).
-   I’ll talk about this more in an ANOVA context in section :doc:`Checking the
-   normality assumption <../Ch13/Ch13_ANOVA_06>`.
+   saw in subsection :doc:`Checking the normality of a sample 
+   <../Ch11/Ch11_tTest_08>`, we can assess this by looking at QQ-plots (or
+   running a Shapiro-Wilk test). I’ll talk about this more in an ANOVA context
+   in subsection :ref:`Checking the normality assumption <normality_anova>`.
 
 -  **Independence**. The independence assumption is a little trickier.
    What it basically means is that, knowing one residual tells you
@@ -65,7 +65,9 @@ buried in this one statement, and we’ll consider them separately.
    between some observations, namely those that correspond to the same
    person! When that happens, you need to use something like repeated
    measures ANOVA (see section :doc:`Repeated measures one-way ANOVA
-   <../Ch13/Ch13_ANOVA_07>`).
+   <Ch13_ANOVA_07>`).
+
+.. _homogeneity_of_variance_anova:
 
 Checking the homogeneity of variance assumption
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -181,17 +183,19 @@ check the option ``Don't assume equal (Welch’s)`` (see :numref:`fig-anova4a`).
 .. ----------------------------------------------------------------------------
 
 To understand what’s happening here, let’s compare these numbers with those
-obtained earlier in section :doc:`Running an ANOVA in jamovi
-<../Ch13/Ch13_ANOVA_03>`, namely: *F*\(2,15) = 18.611, *p* = 0.00009. As
-shown in :numref:`fig-anova4a`, these values are also displayed in the
-``One-Way ANOVA`` table (in the row starting with ``Fisher's``) if the option
-``Assume equal (Fisher's)`` was chosen.
+obtained earlier in section :doc:`Running an ANOVA in jamovi <Ch13_ANOVA_03>`,
+namely: *F*\(2,15) = 18.611, *p* = 0.00009. As shown in :numref:`fig-anova4a`,
+these values are also displayed in the ``One-Way ANOVA`` table (in the row
+starting with ``Fisher's``) if the option ``Assume equal (Fisher's)`` was
+chosen.
 
 Okay, so originally our ANOVA gave us the result *F*\(2,15) = 18.6,
 whereas the Welch one-way test gave us *F*\(2,9.49) = 26.32. In
 other words, the Welch test has reduced the within-groups degrees of
 freedom from 15 to 9.49, and the *F*-value has
 increased from 18.6 to 26.32.
+
+.. _normality_anova:
 
 Checking the normality assumption
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

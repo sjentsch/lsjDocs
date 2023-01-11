@@ -12,26 +12,26 @@ I’ll end the chapter with a quick recapitulation of the key ideas that we’ve
 talked about:
 
 -  :doc:`Research hypotheses and statistical hypotheses, Null and alternative
-   hypotheses <../Ch09/Ch09_HypothesisTesting_01>`
+   hypotheses <Ch09_HypothesisTesting_01>`
 
--  :doc:`Type I and Type II errors <../Ch09/Ch09_HypothesisTesting_02>`
+-  :doc:`Type I and Type II errors <Ch09_HypothesisTesting_02>`
 
--  :doc:`Test statistics and sampling distributions <../Ch09/Ch09_HypothesisTesting_03>`
+-  :doc:`Test statistics and sampling distributions <Ch09_HypothesisTesting_03>`
 
 -  :doc:`Hypothesis testing as a decision making process
-   <../Ch09/Ch09_HypothesisTesting_04>`
+   <Ch09_HypothesisTesting_04>`
 
--  :doc:`*p*-values as “soft” decisions <../Ch09/Ch09_HypothesisTesting_05>`
+-  :doc:`*p*-values as “soft” decisions <Ch09_HypothesisTesting_05>`
 
 -  :doc:`Writing up the results of a hypothesis test
-   <../Ch09/Ch09_HypothesisTesting_06>`
+   <Ch09_HypothesisTesting_06>`
 
--  :doc:`Running the hypothesis test in practice <../Ch09/Ch09_HypothesisTesting_07>`
+-  :doc:`Running the hypothesis test in practice <Ch09_HypothesisTesting_07>`
 
--  :doc:`Effect size and power <../Ch09/Ch09_HypothesisTesting_08>`
+-  :doc:`Effect size and power <Ch09_HypothesisTesting_08>`
 
 -  :doc:`A few issues to consider regarding hypothesis testing
-   <../Ch09/Ch09_HypothesisTesting_09>`
+   <Ch09_HypothesisTesting_09>`
 
 Later in the book, in chapter :doc:`Bayesian statistics <../Ch16/Ch16_Bayes>`, I’ll
 revisit the theory of null hypothesis tests from a Bayesian perspective and
