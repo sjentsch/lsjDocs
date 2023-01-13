@@ -5,18 +5,17 @@ Summary
 
 The key ideas discussed in this chapter are:
 
--  :doc:`The χ² (chi-square) goodness-of-fit test <Ch10_ChiSquare_1>` is used
-   when you have a table of observed frequencies of different categories, and
-   the null hypothesis gives you a set of “known” probabilities to compare
-   them to.
+-  :doc:`Ch10_ChiSquare_1` is used when you have a table of observed
+   frequencies of different categories, and the null hypothesis gives you a
+   set of “known” probabilities to compare them to.
 
 -  :doc:`The χ² (chi-square) test of independence <Ch10_ChiSquare_2>` is used
    when you have a contingency table (cross-tabulation) of two categorical
    variables. The null hypothesis is that there is no relationship or
    association between the variables.
 
--  :doc:`Effect size <Ch10_ChiSquare_4>` for a contingency table can be
-   measured in several ways. In particular we noted the Cramér’s *V* statistic.
+-  :doc:`Ch10_ChiSquare_4` for a contingency table can be measured in several
+   ways. In particular we noted the Cramér’s *V* statistic.
 
 -  Both versions of the Pearson test rely on two :doc:`assumptions
    <Ch10_ChiSquare_5>`: that the expected frequencies are sufficiently large,

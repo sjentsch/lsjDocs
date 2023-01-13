@@ -137,12 +137,12 @@ equivalent interpretation exists for adjusted *R*\².
 An obvious question then is whether you should report *R*\² or adjusted *R*\².
 This is probably a matter of personal preference. If you care more about
 interpretability, then *R*\² is better. If you care more about correcting for
-bias, then adjusted *R*\² is probably better. Speaking just for myself, I prefer
-*R*\². My feeling is that it’s more important to be able to interpret your
-measure of model performance. Besides, as we’ll see in section :doc:`Hypothesis
-tests for regression models <Ch12_Regression_07>`, if you’re worried that the
-improvement in *R*\² that you get by adding a predictor is just due to chance
-and not because it’s a better model, well we’ve got hypothesis tests for that.
+bias, then adjusted *R*\² is probably better. Speaking just for myself, I
+prefer *R*\². My feeling is that it’s more important to be able to interpret
+your measure of model performance. Besides, as we’ll see in section
+:doc:`Ch12_Regression_07`, if you’re worried that the improvement in *R*\²
+that you get by adding a predictor is just due to chance and not because it’s
+a better model, well we’ve got hypothesis tests for that.
 
 ------
 

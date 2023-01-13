@@ -214,9 +214,9 @@ little bit larger than the sample standard deviation *s*.
 
 The fix to this systematic bias turns out to be very simple. Here’s how it
 works. Before tackling the standard deviation let’s look at the variance. If
-you recall from :doc:`Measures of variability <../Ch04/Ch04_Descriptives_2>`,
-the sample variance is defined to be the average of the squared deviations
-from the sample mean. That is:
+you recall from :doc:`../Ch04/Ch04_Descriptives_2`, the sample variance is
+defined to be the average of the squared deviations from the sample mean. That
+is:
 
 .. math:: s^2 = \frac{1}{N} \sum_{i=1}^N (X_i - \bar{X})^2
 
@@ -228,12 +228,11 @@ by *N*. If we do that, we obtain the following formula:
 .. math:: \hat\sigma^2 = \frac{1}{N-1} \sum_{i=1}^N (X_i - \bar{X})^2
 
 This is an unbiased estimator of the population variance σ. Moreover, this
-finally answers the question we raised in :doc:`Measures of variability
-<../Ch04/Ch04_Descriptives_2>`. Why did jamovi give us slightly different
-answers for variance? It’s because jamovi calculates :math:`\hat\sigma^2` not
-*s*\², that’s why. A similar story applies for the standard deviation. If we
-divide by *N* - 1 rather than *N* our estimate of the population standard
-deviation becomes:
+finally answers the question we raised in :doc:`../Ch04/Ch04_Descriptives_2`.
+Why did jamovi give us slightly different answers for variance? It’s because
+jamovi calculates :math:`\hat\sigma^2` not *s*\², that’s why. A similar story
+applies for the standard deviation. If we divide by *N* - 1 rather than *N*
+our estimate of the population standard deviation becomes:
 
 .. math:: \hat\sigma = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (X_i - \bar{X})^2}
 
@@ -296,21 +295,20 @@ things clear.
    between the two towns corresponded to the different refineries (and it
    isn’t, not by a long shot), you need to account for the fact that people
    already *believe* that lead pollution causes cognitive deficits. If you
-   recall back to chapter :doc:`A brief introduction to research design
-   <../Ch02/Ch02_StudyDesign>`, this means that there are different demand effects for
-   the Port Pirie sample than for the Whyalla sample. In other words, you might
-   end up with an illusory group difference in your data, caused by the fact
-   that people *think* that there is a real difference. I find it pretty
-   implausible to think that the locals wouldn’t be well aware of what you were
-   trying to do if a bunch of researchers turned up in Port Pirie with lab
-   coats and IQ tests, and even less plausible to think that a lot of people
-   would be pretty resentful of you for doing it. Those people won’t be as
-   co-operative in the tests. Other people in Port Pirie might be *more*
-   motivated to do well because they don’t want their home town to look bad.
-   The motivational effects that would apply in Whyalla are likely to be
-   weaker, because people don’t have any concept of “iron ore poisoning” in
-   the same way that they have a concept for “lead poisoning”. Psychology is
-   *hard*.
+   recall back to chapter :doc:`../Ch02/Ch02_StudyDesign`, this means that
+   there are different demand effects for the Port Pirie sample than for the
+   Whyalla sample. In other words, you might end up with an illusory group
+   difference in your data, caused by the fact that people *think* that there
+   is a real difference. I find it pretty implausible to think that the locals
+   wouldn’t be well aware of what you were trying to do if a bunch of
+   researchers turned up in Port Pirie with lab coats and IQ tests, and even
+   less plausible to think that a lot of people would be pretty resentful of
+   you for doing it. Those people won’t be as co-operative in the tests. Other
+   people in Port Pirie might be *more* motivated to do well because they
+   don’t want their home town to look bad. The motivational effects that would
+   apply in Whyalla are likely to be weaker, because people don’t have any
+   concept of “iron ore poisoning” in the same way that they have a concept
+   for “lead poisoning”. Psychology is *hard*.
 
 .. [#]
    I should note that I’m hiding something here. Unbiasedness is a

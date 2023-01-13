@@ -65,6 +65,8 @@ data in each column. In both cases this automatic approach may not be correct,
 and it may be necessary to manually specify the variable type with the variable
 editor.
 
+.. _variable_editor:
+
 The variable editor can be opened by selecting ``Setup`` from the ``Data``
 ribbon or by double-clicking on the variable column header. The variable
 editor allows you to change the name of the variable and, for data variables,
@@ -99,8 +101,8 @@ computation on other variables. Computed Variables can be used for a range of
 purposes, including log transforms, *z*-scores, sum-scores, negative scoring
 and means. There is another variable type, Transformed variables, that can be
 used to “recode” variables (e.g., when inverting items). This variable type is
-briefly described at the end of the section :doc:`EFA in jamovi
-<../Ch15/Ch15_FactorAnalysis_1>` and in :numref:`fig-efa7`.
+briefly described at the end of the subsection :ref:`EFA_in_jamovi` and in
+:numref:`fig-efa7`.
 
 Computed variables can be added to the data set with the ``Add`` button
 available on the data tab. This will produce a formula box where you can

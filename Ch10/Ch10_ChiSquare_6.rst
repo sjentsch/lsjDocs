@@ -53,8 +53,8 @@ In order to construct the test Fisher treats both the row and column totals
 fixed quantities and then calculates the probability that we would have
 obtained the observed frequencies that we did (*O*\ :sub:`11`\,
 *O*\ :sub:`12`\, *O*\ :sub:`21` and *O*\ :sub:`22`\) given those totals. In
-the notation that we developed in chapter :doc:`Introduction to probability
-<../Ch07/Ch07_Probability>` this is written:
+the notation that we developed in chapter :doc:`../Ch07/Ch07_Probability`
+this is written:
 
 | *P*\(*O*\ :sub:`11`, *O*\ :sub:`12`, *O*\ :sub:`21`, *O*\ :sub:`22` |
   *R*\ :sub:`1`, *R*\ :sub:`2`, *C*\ :sub:`1`, *C*\ :sub:`2`)
@@ -99,8 +99,8 @@ hypothesis that people on fire are just as happy as people not on fire
 
 .. [#]
    Not surprisingly, the Fisher exact test is motivated by Fisher’s
-   interpretation of a *p*-value, not Neyman’s! See section :doc:`The *p*-value
-   of a test <../Ch09/Ch09_HypothesisTesting_05>`.
+   interpretation of a *p*-value, not Neyman’s! See section
+   :doc:`../Ch09/Ch09_HypothesisTesting_05`.
    
 .. |salem|                             replace:: ``salem``
 .. _salem:                             ../_static/data/salem.omv

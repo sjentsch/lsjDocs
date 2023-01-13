@@ -9,9 +9,8 @@ pretty easy to do in jamovi. For instance, let’s say I want to look at the
 descriptive statistics for some clinical trial data, broken down separately by
 ``therapy`` type. This is a new data set, one that you’ve never seen before.
 The data is stored in the |clinicaltrial|_ data set and we’ll use it a lot in
-chapter :doc:`Comparing several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`
-(you can find a complete description of the data at the start of that chapter).
-Let’s load it and see what we’ve got:
+chapter :doc:`../Ch13/Ch13_ANOVA` (you can find a complete description of the
+data at the start of that chapter). Let’s load it and see what we’ve got:
 
 .. ----------------------------------------------------------------------------
 

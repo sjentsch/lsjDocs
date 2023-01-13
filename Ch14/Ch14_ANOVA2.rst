@@ -22,10 +22,9 @@ Factorial ANOVA
 
 Over the course of the last few chapters we have done quite a lot. We have
 looked at statistical tests you can use when you have one nominal predictor
-variable |nominal| with two groups (e.g. the *t*-test, chapter :doc:`Comparing
-two means <../Ch11/Ch11_tTest>`) or with three or more groups (e.g. in chapter
-:doc:`Comparing several means: One-way ANOVA <../Ch13/Ch13_ANOVA>`). The
-chapter on :doc:`Correlation and linear regression <../Ch12/Ch12_Regression>`
+variable |nominal| with two groups (e.g. the *t*-test, chapter
+:doc:`../Ch11/Ch11_tTest`) or with three or more groups (e.g. in chapter
+:doc:`../Ch13/Ch13_ANOVA`). The chapter on :doc:`../Ch12/Ch12_Regression`
 introduced a powerful new idea, that is building statistical models with
 *multiple* continuous predictor variables |continuous| used to explain a single
 outcome variable |continuous|. For instance, a regression model could be used
@@ -44,7 +43,7 @@ comprehension scores in terms of *both* of these grouping variables |nominal|.
 The tool for doing so is generically referred to as **factorial ANOVA**.
 However, since we have two grouping variables |nominal|, we sometimes refer to
 the analysis as a two-way ANOVA, in contrast to the one-way ANOVAs that we ran
-in chapter :doc:`Comparing several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`.
+in chapter :doc:`../Ch13/Ch13_ANOVA`.
 
 .. ----------------------------------------------------------------------------
 

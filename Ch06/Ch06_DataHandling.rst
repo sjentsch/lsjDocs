@@ -42,15 +42,15 @@ sets that illustrate the underlying issue. Because this chapter is
 essentially a collection of techniques and doesn’t tell a single
 coherent story, it may be useful to start with a list of topics:
 
-- :doc:`Tabulating and cross-tabulating data <Ch06_DataHandling_1>`
+- :doc:`Ch06_DataHandling_1`
   
-- :doc:`Logical expressions in jamovi <Ch06_DataHandling_2>`
+- :doc:`Ch06_DataHandling_2`
 
-- :doc:`Transforming or recoding a variable <Ch06_DataHandling_3>`
+- :doc:`Ch06_DataHandling_3`
 
-- :doc:`Mathematical functions and operations <Ch06_DataHandling_4>`
+- :doc:`Ch06_DataHandling_4`
 
-- :doc:`Extracting a subset of the data <Ch06_DataHandling_5>`
+- :doc:`Ch06_DataHandling_5`
 
 As you can see, the list of topics that the chapter covers is pretty broad, and
 there’s a *lot* of content there. Even though this is one of the longest and

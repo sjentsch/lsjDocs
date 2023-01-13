@@ -11,12 +11,12 @@ Summary
 -  :doc:`Basic ideas in linear regression <Ch12_Regression_03>` and :doc:`how
    regression models are estimated <Ch12_Regression_04>`
 
--  :doc:`Multiple linear regression <Ch12_Regression_05>`
+-  :doc:`Ch12_Regression_05`
 
 -  Measuring the :doc:`overall performance of a regression model using *R*\²
    <Ch12_Regression_06>`
    
--  :doc:`Hypothesis tests for regression models <Ch12_Regression_07>`
+-  :doc:`Ch12_Regression_07`
 
 -  :doc:`Calculating confidence intervals for regression coefficients and
    standardised coefficients <Ch12_Regression_09>`

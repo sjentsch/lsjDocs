@@ -176,8 +176,9 @@ By standardising the covariance, not only do we keep all of the nice properties
 of the covariance discussed earlier, but the actual values of *r* are on a
 meaningful scale: *r* = 1 implies a perfect positive relationship and *r* = -1
 implies a perfect negative relationship. I’ll expand a little more on this
-point later, in section :doc:`Interpreting a correlation <Ch12_Regression_01>`.
-But before I do, let’s look at how to calculate correlations in jamovi.
+point later, in subsection :ref:`Interpreting a correlation
+<interpreting_a_correlation>`. But before I do, let’s look at how to calculate
+correlations in jamovi.
 
 Calculating correlations in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -197,6 +198,8 @@ variables |continuous| across into the box on the right to get the output in
    |parenthood|_ data set
 
 .. ----------------------------------------------------------------------------
+
+.. _interpreting_a_correlation:
 
 Interpreting a correlation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -274,7 +277,7 @@ They do not. If we draw scatterplots of *X* against *Y* for all four variables,
 as shown in :numref:`fig-anscombe`, we see that all four of these are
 *spectacularly* different to each other. The lesson here, which so very many
 people seem to forget in real life, is *always graph your raw data* (chapter
-:doc:`Drawing graphs <../Ch05/Ch05_Graphics>`).
+:doc:`../Ch05/Ch05_Graphics`).
 
 Spearman’s rank correlations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

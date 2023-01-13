@@ -283,22 +283,21 @@ So that’s the *what*. The real question is *why* jamovi is dividing by *N - 1*
 and not by *N*. After all, the variance is supposed to be the *mean* squared
 deviation, right? So shouldn’t we be dividing by *N*, the actual number of
 observations in the sample? Well, yes, we should. However, as we’ll discuss in
-chapter :doc:`Estimating unknown quantities from a sample <../Ch08/Ch08_Estimation>`,
-there’s a subtle distinction between “describing a sample” and “making guesses
-about the population from which the sample came”. Up to this point, it’s been
-a distinction without a difference. Regardless of whether you’re describing
-a sample or drawing inferences about the population, the mean is calculated
-exactly the same way. Not so for the variance, or the standard deviation,
-or for many other measures besides. What I outlined to you initially (i.e.,
-take the actual average, and thus divide by *N*) assumes that you literally
-intend to calculate the variance of the sample. Most of the time, however,
-you’re not terribly interested in the sample *in and of itself*. Rather,
-the sample exists to tell you something about the world. If so, you’re
-actually starting to move away from calculating a “sample statistic” and
-towards the idea of estimating a “population parameter”. However, I’m
-getting ahead of myself. For now, let’s just take it on faith that jamovi
-knows what it’s doing, and we’ll revisit the question later on :doc:`when we
-talk about estimation <../Ch08/Ch08_Estimation>`.
+chapter :doc:`../Ch08/Ch08_Estimation`, there’s a subtle distinction between
+“describing a sample” and “making guesses about the population from which the
+sample came”. Up to this point, it’s been a distinction without a difference.
+Regardless of whether you’re describing a sample or drawing inferences about
+the population, the mean is calculated exactly the same way. Not so for the
+variance, or the standard deviation, or for many other measures besides. What
+I outlined to you initially (i.e., take the actual average, and thus divide
+by *N*) assumes that you literally intend to calculate the variance of the
+sample. Most of the time, however, you’re not terribly interested in the
+sample *in and of itself*. Rather, the sample exists to tell you something
+about the world. If so, you’re actually starting to move away from calculating
+a “sample statistic” and towards the idea of estimating a “population
+parameter”. However, I’m getting ahead of myself. For now, let’s just take it
+on faith that jamovi knows what it’s doing, and we’ll revisit the question
+later on when we talk about :doc:`estimation <../Ch08/Ch08_Estimation>`.
 
 Okay, one last thing. This section so far has read a bit like a mystery
 novel. I’ve shown you how to calculate the variance, described the weird
@@ -357,9 +356,8 @@ given above. Just like the we saw with the variance, what jamovi
 calculates is a version that divides by *N - 1* rather than *N*.
 
 For reasons that will make sense when we return to this topic in chapter
-:doc:`Estimating unknown quantities from a sample <../Ch08/Ch08_Estimation>`
-I’ll refer to this new quantity as :math:`\hat\sigma` (read as: “sigma hat”),
-and the formula for this is:
+:doc:`../Ch08/Ch08_Estimation` I’ll refer to this new quantity as
+:math:`\hat\sigma` (read as: “sigma hat”), and the formula for this is:
 
 .. math:: \hat\sigma = \sqrt{ \frac{1}{N - 1} \sum_{i=1}^N \left( X_i - \bar{X} \right)^2 }
 
@@ -451,8 +449,8 @@ somewhere.
 .. [#]
    Strictly, the assumption is that the data are *normally* distributed, which
    is an important concept that we’ll discuss more in chapter
-   :doc:`Introduction to probability <../Ch07/Ch07_Probability>` and will turn
-   up over and over again later in the book.
+   :doc:`../Ch07/Ch07_Probability` and will turn u over and over again later
+   in the book.
 
 .. ----------------------------------------------------------------------------
 

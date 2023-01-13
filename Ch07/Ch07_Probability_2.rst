@@ -149,8 +149,7 @@ days for which I predict a 60\% chance of rain, and if we look only
 across those days for which I make this prediction, then on 60\% of those
 days it will actually rain”. It’s very weird and counterintuitive to
 think of it this way, but you do see frequentists do this sometimes. And
-it *will* come up later in this book (see :doc:`Estimating a confidence
-interval <../Ch08/Ch08_Estimation_5>`).
+it *will* come up later in this book (see :doc:`../Ch08/Ch08_Estimation_5`).
 
 The Bayesian view
 ~~~~~~~~~~~~~~~~~
@@ -250,7 +249,7 @@ to the Bayesian perspective, you really should read through at least one
 book on the “orthodox” frequentist view. Besides, I won’t completely
 ignore the Bayesian perspective. Every now and then I’ll add some commentary
 from a Bayesian point of view, and I’ll revisit the topic in more depth
-in chapter :doc:`Bayesian statistics <../Ch16/Ch16_Bayes>`.
+in chapter :doc:`../Ch16/Ch16_Bayes`.
 
 ------
 

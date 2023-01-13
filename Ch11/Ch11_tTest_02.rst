@@ -71,14 +71,13 @@ known true value σ, we use the estimate :math:`\hat{\sigma}`. And if this
 estimate has been constructed from *N* observations, then the sampling 
 distribution turns into a *t*-distribution with *N* - 1 **degrees of freedom**
 (df). The *t*-distribution is very similar to the normal distribution, but has
-“heavier” tails, as discussed earlier in :doc:`Other useful distributions
-<../Ch07/Ch07_Probability_6>` and illustrated in :numref:`fig-ttestdist`. Notice,
-though, that as *df* gets larger, the *t*-distribution starts to look identical
-to the standard normal distribution. This is as it should be: if you have a
-sample size of *N* = 70,000,000 then your “estimate” of the standard deviation
-would be pretty much perfect, right? So, you should expect that for large *N*,
-the *t*-test would behave exactly the same way as a *z*-test. And that’s
-exactly what happens!
+“heavier” tails, as discussed earlier in :doc:`../Ch07/Ch07_Probability_6` and
+illustrated in :numref:`fig-ttestdist`. Notice, though, that as *df* gets
+larger, the *t*-distribution starts to look identical to the standard normal
+distribution. This is as it should be: if you have a sample size of *N* =
+70,000,000 then your “estimate” of the standard deviation would be pretty much
+perfect, right? So, you should expect that for large *N*, the *t*-test would
+behave exactly the same way as a *z*-test. And that’s exactly what happens!
 
 .. ----------------------------------------------------------------------------
 
@@ -167,10 +166,9 @@ is
 
 -  *Normality*. We’re still assuming that the population distribution is
    normal,\ [#]_ and as noted earlier, there are standard tools that you can
-   use to check to see if this assumption is met (section :doc:`Checking the
-   normality of a sample <Ch11_tTest_08>`), and other tests you can do in it’s
-   place if this assumption is violated (section :doc:`Testing non-normal data
-   with Wilcoxon tests <Ch11_tTest_09>`).
+   use to check to see if this assumption is met (section
+   :doc:`Ch11_tTest_08`), and other tests you can do in it’s place if this
+   assumption is violated (section :doc:`Ch11_tTest_09`).
 
 -  *Independence*. Once again, we have to assume that the observations in our
    sample are generated independently of one another. See the earlier

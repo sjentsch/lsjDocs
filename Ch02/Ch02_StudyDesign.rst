@@ -13,6 +13,7 @@ A brief introduction to research design
    Ch02_StudyDesign_4
    Ch02_StudyDesign_5
    Ch02_StudyDesign_6
+   Ch02_StudyDesign_7
 
 
 .. epigraph::
@@ -20,7 +21,7 @@ A brief introduction to research design
    | *To consult the statistician after an experiment is finished is
      often merely to ask him to conduct a post mortem examination. He
      can perhaps say what the experiment died of.*
-     
+
    -- Sir Ronald Fisher\ [#]_
 
 In this chapter, we’re going to start thinking about the basic ideas

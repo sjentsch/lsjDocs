@@ -16,7 +16,7 @@ talked about:
 
 -  :doc:`Type I and Type II errors <Ch09_HypothesisTesting_02>`
 
--  :doc:`Test statistics and sampling distributions <Ch09_HypothesisTesting_03>`
+-  :doc:`Ch09_HypothesisTesting_03`
 
 -  :doc:`Hypothesis testing as a decision making process
    <Ch09_HypothesisTesting_04>`
@@ -26,16 +26,15 @@ talked about:
 -  :doc:`Writing up the results of a hypothesis test
    <Ch09_HypothesisTesting_06>`
 
--  :doc:`Running the hypothesis test in practice <Ch09_HypothesisTesting_07>`
+-  :doc:`Ch09_HypothesisTesting_07`
 
--  :doc:`Effect size and power <Ch09_HypothesisTesting_08>`
+-  :doc:`Ch09_HypothesisTesting_08`
 
--  :doc:`A few issues to consider regarding hypothesis testing
+-  :doc:`Some issues to consider regarding hypothesis testing
    <Ch09_HypothesisTesting_09>`
 
-Later in the book, in chapter :doc:`Bayesian statistics <../Ch16/Ch16_Bayes>`, I’ll
-revisit the theory of null hypothesis tests from a Bayesian perspective and
-introduce a number of new tools that you can use if you aren’t particularly
-fond of the orthodox approach. But for now, though, we’re done with the
-abstract statistical theory, and we can start discussing specific data analysis
-tools.
+Later in the book, in chapter :doc:`../Ch16/Ch16_Bayes`, I’ll revisit the
+theory of null hypothesis tests from a Bayesian perspective and introduce a
+number of new tools that you can use if you aren’t particularly fond of the
+orthodox approach. But for now, though, we’re done with the abstract
+statistical theory, and we can start discussing specific data analysis tools.

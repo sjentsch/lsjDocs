@@ -24,10 +24,9 @@ people to ask questions about voting intentions, and so on. In this way the
 data set available to us is finite and incomplete. We can’t possibly get every
 person in the world to do our experiment, for example a polling company
 doesn’t have the time or the money to ring up every voter in the country. In
-our earlier discussion of :doc:`Descriptive statistics
-<../Ch04/Ch04_Descriptives>`, this sample was the only thing we were
-interested in. Our only goal was to find ways of describing, summarising and
-graphing that sample. This is about to change.
+our earlier discussion of :doc:`../Ch04/Ch04_Descriptives`, this sample was
+the only thing we were interested in. Our only goal was to find ways of
+describing, summarising and graphing that sample. This is about to change.
 
 Defining a population
 ~~~~~~~~~~~~~~~~~~~~~
@@ -333,12 +332,11 @@ are. On the other hand, they also operate in the realm of pure abstraction in
 the way that mathematicians do. As a consequence, statistical theory tends to
 be a bit abstract in how a population is defined. In much the same way that
 psychological researchers operationalise our abstract theoretical ideas in
-terms of concrete measurements (section :doc:`Introduction to psychological
-measurement <../Ch02/Ch02_StudyDesign_1>`), statisticians operationalise the
-concept of a “population” in terms of mathematical objects that they know how
-to work with. You’ve already come across these objects in chapter 
-:doc:`Introduction to probability <../Ch07/Ch07_Probability>`. They’re called
-probability distributions.
+terms of concrete measurements (section :doc:`../Ch02/Ch02_StudyDesign_1`),
+statisticians operationalise the concept of a “population” in terms of
+mathematical objects that they know how to work with. You’ve already come
+across these objects in chapter :doc:`../Ch07/Ch07_Probability`. They’re
+called probability distributions.
 
 The idea is quite simple. Let’s say we’re talking about IQ scores. To a
 psychologist the population of interest is a group of actual humans who
@@ -386,10 +384,9 @@ similar to the true population values they are not the same. In general, sample
 statistics are the things you can calculate from your data set and the
 population parameters are the things you want to learn about. Later on in this
 chapter I’ll talk about how you can estimate population parameters using your
-sample statistics (:doc:`Estimating population parameters <Ch08_Estimation_4>`)
-and how to work out how confident you are in your estimates (:doc:`Estimating a
-confidence interval <Ch08_Estimation_5>`) but before we get to that there’s a
-few more ideas in sampling theory that you need to know about.
+sample statistics (:doc:`Ch08_Estimation_4`) and how to work out how confident
+you are in your estimates (:doc:`Ch08_Estimation_5`) but before we get to that
+there’s a few more ideas in sampling theory that you need to know about.
 
 ------
 

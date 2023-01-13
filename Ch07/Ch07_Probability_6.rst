@@ -19,7 +19,7 @@ pictures.
    the two. This distribution tends to arise in situations where you think that
    the data actually follow a normal distribution, but you don’t know the mean
    or standard deviation. We’ll run into this distribution again in chapter 
-   :doc:`Comparing two means <../Ch11/Ch11_tTest>`.
+   :doc:`../Ch11/Ch11_tTest`.
    
 .. ----------------------------------------------------------------------------
 
@@ -35,14 +35,14 @@ pictures.
 
 -  The **χ²-distribution** is another distribution that turns up in lots of
    different places. The situation in which we’ll see it is when doing
-   :doc:`Categorical data analysis <../Ch10/Ch10_ChiSquare>`, but it’s one of
-   those things that actually pops up all over the place. When you dig into the
-   maths (and who doesn’t love doing that?), it turns out that the main reason
-   why the χ²-distribution turns up all over the place is that if you have a
-   bunch of variables that are normally distributed, square their values and
-   then add them up (a procedure referred to as taking a “sum of squares”),
-   this sum has a χ²-distribution. You’d be amazed how often this fact turns
-   out to be useful. Anyway, :numref:`fig-chiSqDist` illustrates what a
+   :doc:`../Ch10/Ch10_ChiSquare`, but it’s one of those things that actually
+   pops up all over the place. When you dig into the maths (and who doesn’t
+   love doing that?), it turns out that the main reason why the χ²-distribution
+   turns up all over the place is that if you have a bunch of variables that
+   are normally distributed, square their values and then add them up (a
+   procedure referred to as taking a “sum of squares”), this sum has a
+   χ²-distribution. You’d be amazed how often this fact turns out to be
+   useful. Anyway, :numref:`fig-chiSqDist` illustrates what a
    χ²-distribution looks like.
    
 .. ----------------------------------------------------------------------------
@@ -66,9 +66,8 @@ pictures.
    to compare two different “sums of squares”, you’re probably talking about
    something that has an *F*-distribution. Of course, as yet I still haven’t
    given you an example of anything that involves a sum of squares, but I will
-   in chapter :doc:`Comparing several means (one-way ANOVA)
-   <../Ch13/Ch13_ANOVA>`. And that’s where we’ll run into the *F*-distribution.
-   Oh, and there’s a picture in :numref:`fig-Fdist`.
+   in chapter :doc:`../Ch13/Ch13_ANOVA`. And that’s where we’ll run into the
+   *F*-distribution. Oh, and there’s a picture in :numref:`fig-Fdist`.
    
 .. ----------------------------------------------------------------------------
 

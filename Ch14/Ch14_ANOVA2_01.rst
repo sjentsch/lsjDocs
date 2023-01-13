@@ -3,17 +3,16 @@
 Factorial ANOVA 1: balanced designs, no interactions
 ----------------------------------------------------
 
-When we discussed analysis of variance in chapter :doc:`Comparing several means
-(one-way ANOVA) <../Ch13/Ch13_ANOVA>`, we assumed a fairly simple experimental
-design. Each person is in one of several groups and we want to know whether
-these groups have different mean scores on some outcome variable. In this
-section, I’ll discuss a broader class of experimental designs known as
-**factorial designs**, in which we have more than one grouping variable
-|nominal|. I gave one example of how this kind of design might arise above.
-Another example appears in chapter :doc:`Comparing several means (one-way
-ANOVA) <../Ch13/Ch13_ANOVA>` in which we were looking at the effect of
-different drugs on the ``mood.gain`` experienced by each person |continuous|.
-In that chapter we did find a significant effect of drug, but at the end of the
+When we discussed analysis of variance in chapter :doc:`../Ch13/Ch13_ANOVA`,
+we assumed a fairly simple experimental design. Each person is in one of
+several groups and we want to know whether these groups have different mean
+scores on some outcome variable. In this section, I’ll discuss a broader
+class of experimental designs known as **factorial designs**, in which we
+have more than one grouping variable |nominal|. I gave one example of how
+this kind of design might arise above. Another example appears in chapter
+:doc:`../Ch13/Ch13_ANOVA` in which we were looking at the effect of different
+drugs on the ``mood.gain`` experienced by each person |continuous|. In that
+chapter we did find a significant effect of drug, but at the end of the
 chapter we also ran an analysis to see if there was an effect of therapy. We
 didn’t find one, but there’s something a bit worrying about trying to run two
 *separate* analyses trying to predict the same outcome. Maybe there actually
@@ -25,9 +24,9 @@ were given (a factor with 3 levels) and what therapy they received (a factor
 with 2 levels). We refer to this as a 3 × 2 factorial design.
 
 If we cross-tabulate ``drug`` by ``therapy``, using the ``Frequencies`` →
-``Contingency Tables`` analysis in jamovi (see :doc:`Tabulating and
-cross-tabulating data <../Ch06/Ch06_DataHandling_1>`), we get the table shown
-in :numref:`fig-factorialanova1`.
+``Contingency Tables`` analysis in jamovi (see
+:doc:`../Ch06/Ch06_DataHandling_1`), we get the table shown in
+:numref:`fig-factorialanova1`.
 
 .. ----------------------------------------------------------------------------
 
@@ -160,13 +159,13 @@ some hypotheses. Let’s suppose that the goal is to find out two things. First,
 does the choice of drug have any effect on mood? And second, does CBT have any
 effect on mood? These aren’t the only hypotheses that we could formulate of
 course, and we’ll see a really important example of a different kind of
-hypothesis in section :doc:`Factorial ANOVA 2: balanced designs, interactions
-allowed <Ch14_ANOVA2_02>`, but these are the two simplest hypotheses to test,
-and so we’ll start there. Consider the first test. If the drug has no effect
-then we would expect all of the row means to be identical, right? So that’s
-our null hypothesis. On the other hand, if the drug does matter then we should
-expect these row means to be different. Formally, we write down our null and
-alternative hypotheses in terms of the *equality of marginal means*:
+hypothesis in section :doc:`Ch14_ANOVA2_02`, but these are the two simplest
+hypotheses to test, and so we’ll start there. Consider the first test. If the
+drug has no effect then we would expect all of the row means to be identical,
+right? So that’s our null hypothesis. On the other hand, if the drug does
+matter then we should expect these row means to be different. Formally, we
+write down our null and alternative hypotheses in terms of the *equality of
+marginal means*:
 
 +----------------------------------+---------------------------------------------+
 | Null hypothesis, H\ :sub:`0`:    | row means are the same, i.e., µ\ :sub:`1.`  |
@@ -176,10 +175,10 @@ alternative hypotheses in terms of the *equality of marginal means*:
 | H\ :sub:`1`:                     | different.                                  |
 +----------------------------------+---------------------------------------------+
 
-It’s worth noting that these are *exactly* the same statistical hypotheses that
-we formed when we ran a one-way ANOVA on these data back in :doc:`the previous
-chapter <../Ch13/Ch13_ANOVA>`. Back then, I used
-the notation µ\ :sub:`P` to refer to the mean mood gain for the placebo group,
+It’s worth noting that these are *exactly* the same statistical hypotheses
+that we formed when we ran a one-way ANOVA on these data back in :doc:`the
+previous chapter <../Ch13/Ch13_ANOVA>`. Back then, I used the notation 
+µ\ :sub:`P` to refer to the mean mood gain for the placebo group,
 with µ\ :sub:`A` and µ\ :sub:`J` corresponding to the group means for the two
 drugs, and the null hypothesis was µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`. So
 we’re actually talking about the same hypothesis, it’s just that the more
@@ -227,10 +226,10 @@ use in this chapter.
 
 If the data you’re trying to analyse correspond to a balanced factorial design
 then running your analysis of variance is easy. To see how easy it is, let’s
-start by reproducing the original analysis from chapter :doc:`Comparing several
-means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`. In case you’ve forgotten, for that
-analysis we were using only a single factor (i.e., ``drug``) to predict our
-outcome variable (i.e., ``mood.gain``), and we got the results shown in
+start by reproducing the original analysis from chapter
+:doc:`../Ch13/Ch13_ANOVA`. In case you’ve forgotten, for that analysis we were
+using only a single factor (i.e., ``drug``) to predict our outcome variable
+(i.e., ``mood.gain``), and we got the results shown in
 :numref:`fig-factorialanova2`.
 
 .. ----------------------------------------------------------------------------
@@ -245,10 +244,9 @@ outcome variable (i.e., ``mood.gain``), and we got the results shown in
 
 Now, suppose I’m also curious to find out if ``therapy`` has a relationship to
 ``mood.gain``. In light of what we’ve seen from our discussion of multiple
-regression in chapter :doc:`Correlation and linear regression
-<../Ch12/Ch12_Regression>`, you probably won’t be surprised that all we have
-to do is add ``therapy`` as a second ``Fixed Factor`` in the analysis, see
-:numref:`fig-factorialanova3`.
+regression in chapter :doc:`../Ch12/Ch12_Regression`, you probably won’t be
+surprised that all we have to do is add ``therapy`` as a second
+``Fixed Factor`` in the analysis, see :numref:`fig-factorialanova3`.
 
 .. ----------------------------------------------------------------------------
 
@@ -457,8 +455,8 @@ calculated when doing the one-way ANOVA in :doc:`the previous chapter
 as between-groups SS values anymore, just because we have two different
 grouping variables and it’s easy to get confused. In order to construct an
 *F*-test, however, we also need to calculate the within-groups sum of squares.
-In keeping with the terminology that we used in chapter :doc:`Correlation and
-linear regression <../Ch12/Ch12_Regression>` and the terminology that jamovi uses when
+In keeping with the terminology that we used in chapter
+:doc:`../Ch12/Ch12_Regression` and the terminology that jamovi uses when
 printing out the ANOVA table, I’ll start referring to the within-groups SS
 value as the *residual* sum of squares SS\ :sub:`R`.
 
@@ -575,22 +573,21 @@ Factorial ANOVA versus one-way ANOVAs
 Now that we’ve seen *how* a factorial ANOVA works, it’s worth taking a moment
 to compare it to the results of the one-way analyses, because this will give us
 a really good sense of *why* it’s a good idea to run the factorial ANOVA. In
-chapter :doc:`Comparing several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`, I
-ran a one-way ANOVA that looked to see if there are any differences between the
-three levels of ``drug``, and a second one-way ANOVA to see if there were any
-differences between the two levels of ``therapy``. As we saw in section
-:ref:`What hypotheses are we testing? <what_hypotheses>`, the null and
-alternative hypotheses tested by the one-way ANOVAs are in fact identical to
-the hypotheses tested by the factorial ANOVA. Looking even more carefully at
-the ANOVA tables, we can see that the sum of squares associated with the
-factors are identical in the two different analyses (3.453 for ``drug`` and
-\0.467 for ``therapy``), as are the degrees of freedom (2 for ``drug``, 1 for
-``therapy``). But they don’t give the same answers! Most notably, when we ran
-the one-way ANOVA for ``therapy`` in section :doc:`On the relationship between
-ANOVA and the Student *t*-test <../Ch13/Ch13_ANOVA_09>` we didn’t find a
-significant effect (the *p*-value was 0.210). However, when we look at the main
-effect of ``therapy`` within the context of the two-way ANOVA, we do get a
-significant effect (p = 0.019). The two analyses are clearly not the same.
+chapter :doc:`../Ch13/Ch13_ANOVA`, I ran a one-way ANOVA that looked to see if
+there are any differences between the three levels of ``drug``, and a second
+one-way ANOVA to see if there were any differences between the two levels of
+``therapy``. As we saw in section :ref:`What hypotheses are we testing?
+<what_hypotheses>`, the null and alternative hypotheses tested by the one-way
+ANOVAs are in fact identical to the hypotheses tested by the factorial ANOVA.
+Looking even more carefully at the ANOVA tables, we can see that the sum of
+squares associated with the factors are identical in the two different
+analyses (3.453 for ``drug`` and 0.467 for ``therapy``), as are the degrees
+of freedom (2 for ``drug``, 1 for ``therapy``). But they don’t give the same
+answers! Most notably, when we ran the one-way ANOVA for ``therapy`` in
+section :doc:`../Ch13/Ch13_ANOVA_09` we didn’t find a significant effect (the
+*p*-value was 0.210). However, when we look at the main effect of ``therapy``
+within the context of the two-way ANOVA, we do get a significant effect (p
+= 0.019). The two analyses are clearly not the same.
 
 Why does that happen? The answer lies in understanding how the *residuals* are
 calculated. Recall that the whole idea behind an *F*-test is to compare the

@@ -35,11 +35,11 @@ model:
 | H\ :sub:`1`: *Y*\ :sub:`i` = b\ :sub:`0` + math:`\left( \sum_{k=1}^K b_{k} X_{ik} \right)` + ε\ :sub:`i`
 
 How can we test these two hypotheses against each other? The trick is to
-understand that it’s possible to divide up the total variance
-SS\ :sub:`tot` into the sum of the residual variance SS\ :sub:`res` and the
-regression model variance SS\ :sub:`mod`. I’ll skip over the technicalities,
-since we’ll get to that later when we look at ANOVA in chapter :doc:`Comparing
-several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`. But just note that
+understand that it’s possible to divide up the total variance SS\ :sub:`tot`
+into the sum of the residual variance SS\ :sub:`res` and the regression model
+variance SS\ :sub:`mod`. I’ll skip over the technicalities, since we’ll get
+to that later when we look at ANOVA in chapter :doc:`../Ch13/Ch13_ANOVA`.
+But just note that
 
 | SS\ :sub:`mod` = SS\ :sub:`tot` - SS\ :sub:`res`
 
@@ -63,12 +63,12 @@ Now that we’ve got our mean square values we can calculate an
 and the degrees of freedom associated with this are *K* and
 *N* - *K* - 1.
 
-We’ll see much more of the *F*-statistic in chapter :doc:`Comparing several
-means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`, but for now just know that we can
-interpret large *F*-values as indicating that the null hypothesis is performing
-poorly in comparison to the alternative hypothesis. In a moment I’ll show you
-how to do the test in jamovi the easy way, but first let’s have a look at the
-tests for the individual regression coefficients.
+We’ll see much more of the *F*-statistic in chapter :doc:`../Ch13/Ch13_ANOVA`,
+but for now just know that we can interpret large *F*-values as indicating
+that the null hypothesis is performing poorly in comparison to the alternative
+hypothesis. In a moment I’ll show you how to do the test in jamovi the easy
+way, but first let’s have a look at the tests for the individual regression
+coefficients.
 
 Tests for individual coefficients
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -81,10 +81,10 @@ However, while failing this test is a pretty strong indicator that the model
 has problems, *passing* the test (i.e., rejecting the null) doesn’t imply that
 the model is good! Why is that, you might be wondering? The answer to that can
 be found by looking at the coefficients for the multiple regression model we
-have already looked at :numref:`tab-parent_coeff` in section :doc:`Multiple
-linear regression <Ch12_Regression_05>` above, where the coefficients
-we got were 125.966 (for the intercept), -8.950 (for ``dani.sleep``) and 0.011
-(for ``baby.sleep``). I can’t help but notice that the estimated regression
+have already looked at :numref:`tab-parent_coeff` in section
+:doc:`Ch12_Regression_05` above, where the coefficients we got were 125.966
+(for the intercept), -8.950 (for ``dani.sleep``) and 0.011 (for
+``baby.sleep``). I can’t help but notice that the estimated regression
 coefficient for the ``baby.sleep`` variable is tiny, relative to the value that
 we get for ``dani.sleep``. Given that these two variables are absolutely on the
 same scale (they’re both measured in “hours slept”), I find this illuminating.
@@ -108,8 +108,8 @@ sampling distribution of :math:`\hat{b}` has mean zero and unknown standard
 deviation. Assuming that we can come up with a good estimate for the standard
 error of the regression coefficient, :math:`SE(\hat{b})`, then we’re in luck.
 That’s *exactly* the situation for which we introduced the one-sample *t*-test
-way back in chapter :doc:`Comparing two means <../Ch11/Ch11_tTest>`. So let’s define a
-*t*-statistic like this:
+way back in chapter :doc:`../Ch11/Ch11_tTest`. So let’s define a *t*-statistic
+like this:
 
 .. math:: t = \frac{\hat{b}}{SE(\hat{b})}
 
@@ -117,19 +117,18 @@ I’ll skip over the reasons why, but our degrees of freedom in this case are
 *df* = *N* - *K* - 1. Irritatingly, the estimate of the standard error of the
 regression coefficient, :math:`SE(\hat{b})`, is not as easy to calculate as the
 standard error of the mean that we used for the simpler *t*-tests in chapter
-:doc:`Comparing two means <../Ch11/Ch11_tTest>`. In fact, the formula is somewhat ugly,
-and not terribly helpful to look at.\ [#]_ For our purposes it’s sufficient to
-point out that the standard error of the estimated regression coefficient
-depends on both the predictor and outcome variables, and it is somewhat
-sensitive to violations of the homogeneity of variance assumption (discussed
-shortly).
+:doc:`../Ch11/Ch11_tTest`. In fact, the formula is somewhat ugly, and not
+terribly helpful to look at.\ [#]_ For our purposes it’s sufficient to point
+out that the standard error of the estimated regression coefficient depends on
+both the predictor and outcome variables, and it is somewhat sensitive to
+violations of the homogeneity of variance assumption (discussed shortly).
 
 In any case, this *t*-statistic can be interpreted in the same way as the
-*t*-statistics that we discussed in chapter :doc:`Comparing two means
-<../Ch11/Ch11_tTest>`. Assuming that you have a two-sided alternative (i.e., you don’t
-really care if *b* > 0 or *b* < 0), then it’s the extreme values of *t* (i.e.,
-a lot less than zero or a lot greater than zero) that suggest that you should
-reject the null hypothesis.
+*t*-statistics that we discussed in chapter :doc:`../Ch11/Ch11_tTest`.
+Assuming that you have a two-sided alternative (i.e., you don’t really care if
+*b* > 0 or *b* < 0), then it’s the extreme values of *t* (i.e., a lot less
+than zero or a lot greater than zero) that suggest that you should reject the
+null hypothesis.
 
 .. _coefficients_in_jamovi:
 

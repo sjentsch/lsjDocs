@@ -5,14 +5,14 @@ Scatterplots
 
 **Scatterplots** are a simple but effective tool for visualising the
 relationship between *two* variables, like we saw with the figures in the
-section on correlation (section :doc:`Correlations <Ch12_Regression_01>`). It’s
-this latter application that we usually have in mind when we use the term
-“scatterplot”. In this kind of plot each observation corresponds to one dot.
-The horizontal location of the dot plots the value of the observation on one
-variable, and the vertical location displays its value on the other variable.
-In many situations you don’t really have a clear opinions about what the
-*causal* relationship is (e.g., does A cause B, or does B cause A, or does some
-other variable C control both A and B). If that’s the case, it doesn’t really
+section on correlation (section :doc:`Ch12_Regression_01`). It’s this latter
+application that we usually have in mind when we use the term “scatterplot”.
+In this kind of plot each observation corresponds to one dot. The horizontal
+location of the dot plots the value of the observation on one variable, and
+the vertical location displays its value on the other variable. In many
+situations you don’t really have a clear opinions about what the *causal*
+relationship is (e.g., does A cause B, or does B cause A, or does some other
+variable C control both A and B). If that’s the case, it doesn’t really
 matter which variable you plot on the x-axis and which one you plot on the
 y-axis. However, in many situations you do have a pretty strong idea which
 variable you think is most likely to be causal, or at least you have some
@@ -27,10 +27,10 @@ the amount of sleep that I get (``dani.sleep``) and how grumpy I am the next day
 the plot that we’re after. The first way is to use the ``Plot`` option under
 the ``Regression`` → ``Correlation Matrix`` button, giving us the output shown
 in :numref:`fig-scatterplot1`. Note that jamovi draws a line through the
-points, we’ll come onto this a bit later in section :doc:`What is a linear
-regression model? <Ch12_Regression_03>`. Plotting a scatterplot in this way
-also allow you to specify ``Densities for variables`` and this option adds a
-density curve showing how the data in each variable is distributed.
+points, we’ll come onto this a bit later in section :doc:`Ch12_Regression_03`.
+Plotting a scatterplot in this way also allow you to specify ``Densities for
+variables`` and this option adds a density curve showing how the data in each
+variable is distributed.
 
 .. ----------------------------------------------------------------------------
 

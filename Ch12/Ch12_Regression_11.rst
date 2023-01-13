@@ -314,11 +314,10 @@ probably not worth worrying about.
 
 If we were worried, then in a lot of cases the solution to this problem (and
 many others) is to transform one or more of the variables. We discussed the
-basics of variable transformation in the sections :doc:`Transforming or
-recoding a variable <../Ch06/Ch06_DataHandling_3>` and :doc:`Mathematical
-functions and operations <../Ch06/Ch06_DataHandling_4>`, but I do want to make
-special note of one additional possibility that I didn’t explain fully earlier:
-the Box-Cox transform.
+basics of variable transformation in the sections
+:doc:`../Ch06/Ch06_DataHandling_3` and :doc:`../Ch06/Ch06_DataHandling_4`, but
+I do want to make special note of one additional possibility that I didn’t
+explain fully earlier: the Box-Cox transform.
 
 .. _box-cox:
 

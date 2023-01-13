@@ -13,9 +13,8 @@ under the hood, so to speak, the underlying mechanics of ANOVA and regression
 are awfully similar. In fact, if you think about it, you’ve already seen
 evidence of this. ANOVA and regression both rely heavily on sums of squares
 (SS), both make use of *F*-tests, and so on. Looking back, it’s hard to escape
-the feeling that chapters :doc:`Correlation and linear regression
-<../Ch12/Ch12_Regression>` and :doc:`Comparing several means (one-way ANOVA)
-<../Ch13/Ch13_ANOVA>` were a bit repetitive.
+the feeling that chapters :doc:`../Ch12/Ch12_Regression` and
+:doc:`../Ch13/Ch13_ANOVA` were a bit repetitive.
 
 The reason for this is that ANOVA and regression are both kinds of
 **linear models**. In the case of regression, this is kind of obvious.
@@ -282,15 +281,15 @@ variable and the ``reading`` variable in the regression output. They’re
 identical to the ones we encountered earlier when running the ANOVA. This might
 seem a little surprising, since the test used when running our regression model
 calculates a *t*-statistic and the ANOVA calculates an *F*-statistic. However,
-if you can remember all the way back to chapter :doc:`Introduction to
-probability <../Ch07/Ch07_Probability>`, I mentioned that there’s a relationship
+if you can remember all the way back to chapter
+:doc:`../Ch07/Ch07_Probability`, I mentioned that there’s a relationship
 between the *t*-distribution and the *F*-distribution. If you have some
 quantity that is distributed according to a *t*-distribution with *k* degrees of
 freedom and you square it, then this new squared quantity follows an
 *F*-distribution whose degrees of freedom are 1 and *k*. We can check this with
 respect to the *t*-statistics in our regression model. For the ``attend``
-variable we get a *t*-value of 4.65. If we square this number we end up with
-\21.6, which matches the corresponding *F*-statistic in our ANOVA.
+variable we get a *t*-value of 4.65. If we square this number we end up
+with 21.6, which matches the corresponding *F*-statistic in our ANOVA.
 
 Finally, one last thing you should know. Because jamovi understands the fact
 that ANOVA and regression are both examples of linear models, it lets you

@@ -3,8 +3,8 @@
 Bayesian hypothesis tests
 -------------------------
 
-In chapter :doc:`Hypothesis testing <../Ch09/Ch09_HypothesisTesting>`, I described
-the orthodox approach to hypothesis testing. It took an entire chapter to describe,
+In chapter :doc:`../Ch09/Ch09_HypothesisTesting`, I described the orthodox
+approach to hypothesis testing. It took an entire chapter to describe,
 because null hypothesis testing is a very elaborate contraption that people
 find very hard to make sense of. In contrast, the Bayesian approach to
 hypothesis testing is incredibly simple. Let’s pick a setting that is closely

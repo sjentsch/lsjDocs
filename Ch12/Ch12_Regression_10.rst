@@ -4,9 +4,9 @@ Assumptions of regression
 -------------------------
 
 The linear regression model that I’ve been discussing relies on several
-assumptions. In section :doc:`Model checking <Ch12_Regression_11>` we’ll talk
-a lot more about how to check that these assumptions are being met, but first
-let’s have a look at each of them.
+assumptions. In section :doc:`Ch12_Regression_11` we’ll talk a lot more about
+how to check that these assumptions are being met, but first let’s have a look
+at each of them.
 
 -  *Normality*. Like many of the models in statistics, basic simple or multiple
    linear regression relies on an assumption of normality. Specifically, it

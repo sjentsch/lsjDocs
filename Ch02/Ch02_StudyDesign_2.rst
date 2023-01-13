@@ -1,7 +1,7 @@
 .. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_ and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_
 
-Scales of measurement
----------------------
+Scales of measurement and types of variables
+--------------------------------------------
 
 As the previous section indicates, the outcome of a psychological
 measurement is called a variable. But not all variables are of the same

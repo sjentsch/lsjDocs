@@ -11,18 +11,17 @@ many data analysis situations that these tools don’t cover, and it would be
 great to give you a sense of just how much more there is, for example:
 
 -  **Nonlinear regression.** When discussing regression in chapter
-   :doc:`Correlation and linear regression <../Ch12/Ch12_Regression>`, we saw that
-   regression assumes that the relationship between predictors and outcomes is
-   linear. On the other hand, when we talked about the simpler problem
-   of correlation, we saw that there exist tools (e.g., Spearman
-   correlations) that are able to assess non-linear relationships between
-   variables. There are a number of tools in statistics that can be used
-   to do non-linear regression. For instance, some non-linear regression
-   models assume that the relationship between predictors and outcomes is
-   monotonic (e.g., isotonic regression), while others assume that it is
-   smooth but not necessarily monotonic (e.g., Lowess regression), while
-   others assume that the relationship is of a known form that happens to
-   be nonlinear (e.g., polynomial regression).
+   :doc:`../Ch12/Ch12_Regression`, we saw that regression assumes that the
+   relationship between predictors and outcomes is linear. On the other hand,
+   hen we talked about the simpler problem of correlation, we saw that there
+   exist tools (e.g., Spearman correlations) that are able to assess
+   non-linear relationships between variables. There are a number of tools in
+   statistics that can be used to do non-linear regression. For instance, some
+   non-linear regression models assume that the relationship between
+   predictors and outcomes is monotonic (e.g., isotonic regression), while
+   others assume that it is smooth but not necessarily monotonic (e.g., Lowess
+   regression), while others assume that the relationship is of a known form
+   that happens to be nonlinear (e.g., polynomial regression).
 
 -  **Logistic regression.** Yet another variation on regression occurs when the
    outcome variable is binary |nominal|, multinomial |nominal| (several groups)
@@ -46,31 +45,30 @@ great to give you a sense of just how much more there is, for example:
    outcomes. There are a lot of very handy analyses that you can run
    that fall within the GLM, so it’s a very useful thing to know about.
 
--  **Survival analysis.** In chapter :doc:`A brief introduction to research
-   design <../Ch02/Ch02_StudyDesign>`, I talked about “differential attrition”, the
-   tendency for people to leave the study in a non-random fashion. Back then,
-   I was talking about it as a potential methodological concern, but there are
-   a lot of situations in which differential attrition is actually the thing
-   you’re interested in. Suppose, for instance, you’re interested in finding
-   out how long people play different kinds of computer games in a single
-   session. Do people tend to play RTS (real time strategy) games for longer
-   stretches than FPS (first person shooter) games? You might design your study
-   like this. People come into the lab, and they can play for as long or as
-   little as they like. Once they’re finished, you record the time they spent
-   playing. However, due to ethical restrictions, let’s suppose that you cannot
-   allow them to keep playing longer than two hours. A lot of people will stop
-   playing before the two hour limit, so you know exactly how long they played.
-   But some people will run into the two hour limit, and so you don’t
-   know how long they would have kept playing if you’d been able to
-   continue the study. As a consequence, your data are systematically
-   *censored*: you’re missing all of the very long times. How do you
-   analyse this data sensibly? This is the problem that survival
-   analysis solves. It is specifically designed to handle this
-   situation, where you’re systematically missing one “side” of the data
-   because the study ended. It’s very widely used in health research,
-   and in that context it is often literally used to analyse survival.
-   For instance, you may be tracking people with a particular type of
-   cancer, some who have received treatment A and others who have
+-  **Survival analysis.** In chapter :doc:`../Ch02/Ch02_StudyDesign`, I talked
+   about “differential attrition”, the tendency for people to leave the study
+   in a non-random fashion. Back then, I was talking about it as a potential
+   methodological concern, but there are a lot of situations in which
+   differential attrition is actually the thing you’re interested in. Suppose,
+   for instance, you’re interested in finding out how long people play
+   different kinds of computer games in a single session. Do people tend to
+   play RTS (real time strategy) games for longer stretches than FPS (first
+   person shooter) games? You might design your study like this. People come
+   into the lab, and they can play for as long or as little as they like. Once
+   they’re finished, you record the time they spent playing. However, due to
+   ethical restrictions, let’s suppose that you cannot allow them to keep
+   playing longer than two hours. A lot of people will stop playing before the
+   wo hour limit, so you know exactly how long they played. But some people
+   will run into the two hour limit, and so you don’t know how long they would
+   have kept playing if you’d been able to continue the study. As a
+   consequence, your data are systematically *censored*: you’re missing all of
+   the very long times. How do you analyse this data sensibly? This is the
+   problem that survival analysis solves. It is specifically designed to
+   handle this situation, where you’re systematically missing one “side” of
+   the data because the study ended. It’s very widely used in health
+   research, and in that context it is often literally used to analyse
+   survival. For instance, you may be tracking people with a particular type
+   of cancer, some who have received treatment A and others who have
    received treatment B, but you only have funding to track them for 5
    years. At the end of the study period some people are alive, others
    are not. In this context, survival analysis is useful for determining

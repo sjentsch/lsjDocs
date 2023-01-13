@@ -119,5 +119,5 @@ complicate matters by converting these to *z*-scores?
    regression models that I’ve talked about so far, each predictor variable
    maps onto exactly one regressor, and vice versa. However, that’s not
    actually true in general and we’ll see some examples of this in chapter
-   :doc:`Factorial ANOVA <../Ch14/Ch14_ANOVA2>`. But, for now we don’t need to
-   care too much about this distinction.
+   :doc:`../Ch14/Ch14_ANOVA2`. But, for now we don’t need to care too much
+   about this distinction.

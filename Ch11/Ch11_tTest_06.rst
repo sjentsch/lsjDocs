@@ -36,8 +36,8 @@ different test. The second thing to note is that although the *t*-statistic and
 degrees of freedom have not changed, the *p*-value has. This is because the
 one-sided test has a different rejection region from the two-sided test. If
 you’ve forgotten why this is and what it means, you may find it helpful to read
-back over chapter :doc:`Hypothesis testing <../Ch09/Ch09_HypothesisTesting>`,
-and section :ref:`The difference between one-sided and two-sided tests
+back over chapter :doc:`../Ch09/Ch09_HypothesisTesting`, and section
+:ref:`The difference between one-sided and two-sided tests
 <one_vs_twosided_tests>` in particular. The third thing to note is
 that the confidence interval is different too: it now reports a “one-sided”
 confidence interval rather than a two-sided one. In a two-sided confidence

@@ -20,8 +20,8 @@ book. The topics covered were:
    :doc:`box plots <Ch05_Graphics_2>` and :doc:`bar graphs
    <Ch05_Graphics_3>`.
 
--  *Saving image files*. Importantly, we also covered how to :doc:`export your
-   pictures <Ch05_Graphics_4>`.
+-  *Saving image files*. Importantly, we also covered how to :doc:`export 
+   <Ch05_Graphics_4>` your pictures.
 
 One final thing to point out. Whilst jamovi produces some really neat default
 graphics, editing the plots is currently not possible. For more advanced

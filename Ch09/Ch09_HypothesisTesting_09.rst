@@ -71,13 +71,13 @@ Bayesians versus frequentists
 
 Earlier on in this chapter I was quite emphatic about the fact that you
 *cannot* interpret the *p*-value as the probability that the null hypothesis is
-true. NHST is fundamentally a frequentist tool (see chapter :doc:`Introduction
-to probability <../Ch07/Ch07_Probability>`) and as such it does not allow you
-to assign probabilities to hypotheses. The null hypothesis is either true or it
-is not. The Bayesian approach to statistics interprets probability as a degree
-of belief, so it’s totally okay to say that there is a 10\% chance that the
-null hypothesis is true. That’s just a reflection of the degree of confidence
-that you have in this hypothesis. You aren’t allowed to do this within the
+true. NHST is fundamentally a frequentist tool (see chapter
+:doc:`../Ch07/Ch07_Probability`) and as such it does not allow you to assign
+probabilities to hypotheses. The null hypothesis is either true or it is not.
+The Bayesian approach to statistics interprets probability as a degree of
+belief, so it’s totally okay to say that there is a 10\% chance that the null
+hypothesis is true. That’s just a reflection of the degree of confidence that
+you have in this hypothesis. You aren’t allowed to do this within the
 frequentist approach. Remember, if you’re a frequentist, a probability can only
 be defined in terms of what happens after a large number of independent
 replications (i.e., a long run frequency). If this is your interpretation of
@@ -90,11 +90,11 @@ colour of freedom”. It doesn’t have one!
 Most importantly, this *isn’t* a purely ideological matter. If you decide that
 you are a Bayesian and that you’re okay with making probability statements
 about hypotheses, you have to follow the Bayesian rules for calculating those
-probabilities. I’ll talk more about this in chapter :doc:`Bayesian statistics
-<../Ch16/Ch16_Bayes>`, but for now what I want to point out to you is the 
-*p*-value is a *terrible* approximation to the probability that H\ :sub:`0` is
-true. If what you want to know is the probability of the null, then the 
-*p*-value is not what you’re looking for!
+probabilities. I’ll talk more about this in chapter :doc:`../Ch16/Ch16_Bayes`,
+but for now what I want to point out to you is the *p*-value is a *terrible*
+approximation to the probability that H\ :sub:`0` is true. If what you want to
+know is the probability of the null, then the *p*-value is not what you’re
+looking for!
 
 Traps
 ~~~~~

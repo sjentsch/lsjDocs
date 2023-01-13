@@ -23,8 +23,8 @@ data set. It contains the three variables ``drug`` |nominal|, ``therapy``
 
 For the purposes of this chapter, what we’re really interested in is the
 effect of ``drug`` on ``mood.gain``. The first thing to do is calculate some
-descriptive statistics and draw some graphs. In :doc:`Descriptive statistics
-<../Ch04/Ch04_Descriptives>` we showed you how to do this, and some of the
+descriptive statistics and draw some graphs. In
+:doc:`../Ch04/Ch04_Descriptives` we showed you how to do this, and some of the
 descriptive statistics we can calculate in jamovi are shown in
 :numref:`fig-anova1`.
 

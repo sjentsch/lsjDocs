@@ -35,9 +35,9 @@ at how it’s done.
    table, where they can’t get in the way of the text. In the equation for the
    binomial, *X!* is the factorial function (i.e., multiply all whole numbers
    from 1 to *X*), and for the normal distribution “exp” refers to the
-   exponential function, which we discussed in chapter :doc:`Pragmatic matters
-   <../Ch06/Ch06_DataHandling>`. If these equations don’t make a lot of sense
-   to you, don’t worry too much about them.
+   exponential function, which we discussed in chapter
+   :doc:`../Ch06/Ch06_DataHandling`. If these equations don’t make a lot of
+   sense to you, don’t worry too much about them.
    :name: tab-distformulas
    
    +------------+----------+

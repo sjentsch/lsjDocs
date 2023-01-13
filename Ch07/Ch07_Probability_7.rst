@@ -17,8 +17,8 @@ breakdown looks like this:
 
 -  :doc:`Basics of probability theory <Ch07_Probability_3>`
 
--  :doc:`Binomial distribution <Ch07_Probability_4>`, :doc:`Normal distribution
-   <Ch07_Probability_5>`, and :doc:`Other useful distributions
+-  :doc:`Binomial distribution <Ch07_Probability_4>`, :doc:`normal distribution
+   <Ch07_Probability_5>`, and :doc:`other useful distributions
    <Ch07_Probability_6>`
 
 As you’d expect, my coverage is by no means exhaustive. Probability theory is
@@ -46,8 +46,8 @@ it’s important to understand these things before moving onto the applications.
 For example, there are a lot of rules about what you’re “allowed” to say when
 doing statistical inference and many of these can seem arbitrary and weird.
 However, they start to make sense if you understand that there is this Bayesian
-/ frequentist distinction. Similarly, in chapter :doc:`Comparing two means
-<../Ch11/Ch11_tTest>` we’re going to talk about something called the *t*-test,
-and if you really want to have a grasp of the mechanics of the *t*-test it
-really helps to have a sense of what a *t*-distribution actually looks like.
-You get the idea, I hope.
+/ frequentist distinction. Similarly, in chapter :doc:`../Ch11/Ch11_tTest`
+we’re going to talk about something called the *t*-test, and if you really
+want to have a grasp of the mechanics of the *t*-test it really helps to have
+a sense of what a *t*-distribution actually looks like. You get the idea, I
+hope.

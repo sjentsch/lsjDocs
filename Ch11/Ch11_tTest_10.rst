@@ -18,14 +18,14 @@ Summary
    between the two scores for each person, and then running a one sample
    *t*-test on the difference scores.
 
--  :doc:`One-sided tests <Ch11_tTest_06>` are perfectly legitimate as long as
-   they are pre-planned.
+-  :doc:`Ch11_tTest_06` are perfectly legitimate as long as they are
+   pre-planned.
 
--  :doc:`Effect size calculations <Ch11_tTest_07>` for the difference between
-   means can be calculated via the Cohen’s *d*-statistic.
+-  :doc:`Ch11_tTest_07` calculations for the difference between means can be
+   calculated via the Cohen’s *d*-statistic.
 
--  You can check the normality of a sample using QQ plots and the
-   :doc:`Shapiro-Wilk test <Ch11_tTest_08>`.
+-  You can :doc:`check the normality of a sample <Ch11_tTest_08>` using QQ
+   plots and the Shapiro-Wilk test.
 
 -  If your data are non-normal, you can use :doc:`Mann-Whitney or Wilcoxon
    tests <Ch11_tTest_09>` instead of *t*-tests.

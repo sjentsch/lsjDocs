@@ -27,11 +27,11 @@ of a difference. Dr Harpo sends me the |harpo|_ data set with the course
 grades. file. As usual, I’ll load the file into jamovi and have a look at what
 variables it contains - there are three variables, ``ID``, ``grade`` and
 ``tutor``. The ``grade`` variable contains each student’s grade, but it is not
-imported into jamovi with the correct measurement level attribute, so I need to
-change this so it is regarded as a continuous variable |continuous| (see
-:doc:`Changing data from one level to another <../Ch03/Ch03_jamoviIntro_3>`).
-The ``tutor`` variable is a factor |nominal| that indicates who each student’s
-tutor was - either Anastasia or Bernadette.
+imported into jamovi with the correct measurement level attribute, so I need
+to change this so it is regarded as a continuous variable |continuous| (see
+:ref:`Changing measurement levels <variable_editor>`). The ``tutor`` variable
+is a factor |nominal| that indicates who each student’s tutor was - either
+Anastasia or Bernadette.
 
 We can calculate means and standard deviations, using the ``Exploration`` →
 ``Descriptives`` analysis, and here’s a nice little summary table:
@@ -202,17 +202,16 @@ Mathematically, we could write it like this
 
 where the notation “Σ\ :sub:`ik`” is a lazy way of saying “calculate a sum by
 looking at all students in all tutorials”, since each “ik” corresponds to one
-student.\ [#]_ But, as we saw in chapter :doc:`Estimating unknown quantities
-from a sample <../Ch08/Ch08_Estimation>`, calculating the variance by dividing by *N*
-produces a biased estimate of the population variance. And previously we needed
-to divide by *N* - 1 to fix this. However, as I mentioned at the time, the
-reason why this bias exists is because the variance estimate relies on the
-sample mean, and to the extent that the sample mean isn’t equal to the
-population mean it can systematically bias our estimate of the variance. But
-this time we’re relying on *two* sample means! Does this mean that we’ve got
-more bias? Yes, yes it does. And does this mean we now need to divide by 
-*N* - 2 instead of *N* - 1, in order to calculate our pooled variance estimate?
-Why, yes
+student.\ [#]_ But, as we saw in chapter :doc:`../Ch08/Ch08_Estimation`,
+calculating the variance by dividing by *N* produces a biased estimate of the
+population variance. And previously we needed to divide by *N* - 1 to fix
+this. However, as I mentioned at the time, the reason why this bias exists is
+because the variance estimate relies on the sample mean, and to the extent
+that the sample mean isn’t equal to the population mean it can systematically
+bias our estimate of the variance. But this time we’re relying on *two* sample
+means! Does this mean that we’ve got more bias? Yes, yes it does. And does
+this mean we now need to divide by *N* - 2 instead of *N* - 1, in order to
+calculate our pooled variance estimate? Why, yes
 
 .. math:: \hat\sigma^2_p = \frac{\sum_{ik} \left( X_{ik} - \bar{X}_k \right)^2}{N -2}
 
@@ -296,11 +295,10 @@ average grade of 74.53, and Bernadette’s students had an average grade
 of 69.06, so the difference between the two sample means is 5.48. But of
 course the difference between population means might be bigger or
 smaller than this. The confidence interval reported in :numref:`fig-ttest_ind`
-tells you that there’s a if we
-replicated this study again and again, then 95\% of the time the true difference
-in means would lie between 0.20 and 10.76. Look back at :doc:`Estimating a
-confidence interval <../Ch08/Ch08_Estimation_5>` for a reminder about what confidence
-intervals mean.
+tells you that there’s a if we replicated this study again and again, then
+95\% of the time the true difference in means would lie between 0.20
+and 10.76. Look back at :doc:`../Ch08/Ch08_Estimation_5` for a reminder about
+what confidence intervals mean.
 
 In any case, the difference between the two groups is significant (just
 barely), so we might write up the result using text like this:
@@ -418,10 +416,9 @@ previously in the context of the one sample *t*-test (see section
 
 -  *Normality*. Like the one-sample *t*-test, it is assumed that the data are
    normally distributed. Specifically, we assume that both groups are normally
-   distributed. In section :doc:`Checking the normality of sample
-   <Ch11_tTest_08>`, we’ll discuss how to test for normality, and in section
-   :doc:`Testing non-normal data with Wilcoxon tests <Ch11_tTest_09>` we’ll
-   discuss possible solutions.
+   distributed. In section :doc:`Ch11_tTest_08`, we’ll discuss how to test for
+   normality, and in section :doc:`Ch11_tTest_09` we’ll discuss possible
+   solutions.
 
 -  *Independence*. Once again, it is assumed that the observations are
    independently sampled. In the context of the Student test this has
@@ -437,10 +434,10 @@ previously in the context of the one sample *t*-test (see section
 -  *Homogeneity of variance* (also called “homoscedasticity”). The third 
    assumption is that the population standard deviation is the same in both
    groups. You can test this assumption using the Levene test, which I’ll talk
-   about later on in the book (section :doc:`Checking the homogeneity of
-   variance assumption <../Ch13/Ch13_ANOVA_06>`). However, there’s a very simple
-   remedy for this assumption if you are worried, which I’ll talk about in the
-   next section.
+   about later on in the book (section :ref:`Checking the homogeneity of
+   variance assumption <homogeneity_of_variance_anova>`). However, there’s a
+   very simple remedy for this assumption if you are worried, which I’ll talk
+   about in the next section.
 
 ------
 
@@ -465,8 +462,8 @@ previously in the context of the one sample *t*-test (see section
    behaviour from the test, so we tend to just ignore it.
 
 .. [#]
-   A more correct notation will be introduced in chapter :doc:`Comparing
-   several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`.
+   A more correct notation will be introduced in chapter
+   :doc:`../Ch13/Ch13_ANOVA`.
 
 .. ----------------------------------------------------------------------------
 

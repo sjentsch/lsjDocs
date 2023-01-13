@@ -105,13 +105,13 @@ values of *W* that indicate departure from normality. The *W* statistic has a
 maximum value of 1, which occurs when the data look “perfectly normal”. The
 smaller the value of *W* the less normal the data are. However, the sampling
 distribution for *W*, which is not one of the standard ones that I discussed in
-chapter :doc:`Introduction to probability <../Ch07/Ch07_Probability>` and is in
-fact a complete pain in the arse to work with, does depend on the sample size
-*N*. To give you a feel for what these sampling distributions look like, I’ve
-plotted three of them in :numref:`fig-swdist`. Notice that, as the sample size
-starts to get large, the sampling distribution becomes very tightly clumped up
-near *W* = 1, and as a consequence, for larger samples *W* doesn’t have to be
-very much smaller than 1 in order for the test to be significant.
+chapter :doc:`../Ch07/Ch07_Probability` and is in fact a complete pain in the
+arse to work with, does depend on the sample size *N*. To give you a feel for
+what these sampling distributions look like, I’ve plotted three of them in
+:numref:`fig-swdist`. Notice that, as the sample size starts to get large, the
+sampling distribution becomes very tightly clumped up near *W* = 1, and as a
+consequence, for larger samples *W* doesn’t have to be very much smaller than
+1 in order for the test to be significant.
 
 .. ----------------------------------------------------------------------------
 
@@ -142,9 +142,8 @@ In the meantime, it’s probably worth showing you an example of what happens to
 the QQ plot and the Shapiro-Wilk test when the data turn out to be non-normal.
 For that, let’s look at the distribution of our AFL winning margins variable
 (``afl.margins`` from the |aflsmall_margins|_ data set), which if you remember
-back to th chapter on :doc:`Descriptive statistics <../Ch04/Ch04_Descriptives>`
-didn’t look like they came from a normal distribution at all. Here’s what
-happens to the QQ plot:
+back to th chapter on :doc:`../Ch04/Ch04_Descriptives` didn’t look like they
+came from a normal distribution at all. Here’s what happens to the QQ plot:
 
 .. ----------------------------------------------------------------------------
 

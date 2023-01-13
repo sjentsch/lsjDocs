@@ -46,10 +46,9 @@ for ``Frequency Tables``, under the ``Exploration`` → ``Descriptives`` button.
 However, this summary does not address the question we’re interested in. To do
 that, we need a more detailed description of the data. What we want to do is
 look at the ``choices`` broken down *by* ``species``. That is, we need to
-cross-tabulate the data (see :doc:`Tabulating and cross-tabulating data
-<../Ch06/Ch06_DataHandling_1>`). In jamovi we do this using the ``Frequencies``
-→ ``Contingency Tables`` →  ``Independent Samples`` analysis, and we should get
-a table something like this:
+cross-tabulate the data (see :doc:`../Ch06/Ch06_DataHandling_1`). In jamovi we
+do this using the ``Frequencies`` → ``Contingency Tables`` →  ``Independent
+Samples`` analysis, and we should get a table something like this:
 
 +------------+-------+-------+-------+
 |            | Robot | Human | Total |

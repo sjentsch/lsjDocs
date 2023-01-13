@@ -4,7 +4,7 @@ Effect size
 -----------
 
 The effect size calculation for a factorial ANOVA is pretty similar to those
-used in One-Way ANOVA (see section :doc:`Effect size <../Ch13/Ch13_ANOVA_04>`).
+used in One-Way ANOVA (see section :doc:`../Ch13/Ch13_ANOVA_04`).
 Specifically, we can use η² (eta-squared) as a simple way to measure how big
 the overall effect is for any particular term. As before, η² is defined by
 dividing the sum of squares associated with that term by the total sum of

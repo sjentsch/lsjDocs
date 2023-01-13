@@ -10,18 +10,17 @@ so far in this chapter, the assumptions are:
 -  *Expected frequencies are sufficiently large*. Remember how in the previous
    section we saw that the χ² sampling distribution emerges because the
    binomial distribution is pretty similar to a normal distribution? Well,
-   like we discussed in chapter :doc:`Introduction to probability
-   <../Ch07/Ch07_Probability>` this is only true when the number of
-   observations is sufficiently large. What that means in practice is that all
-   of the expected frequencies need to be reasonably big. How big is
-   reasonably big? Opinions differ, but the default assumption seems to be
-   that you generally would like to see all your expected frequencies larger
-   than about 5, though for larger tables you would probably be okay if at
-   least 80\% of the the expected frequencies are above 5 and none of them are
-   below 1. However, from what I’ve been able to discover (:ref:`Cochran, 1954
-   <Cochran_1954>`), these seem to have been proposed as rough guidelines, not
-   hard and fast rules, and they seem to be somewhat conservative
-   (:ref:`Larntz, 1978 <Larntz_1978>`).
+   like we discussed in chapter :doc:`../Ch07/Ch07_Probability` this is only
+   true when the number of observations is sufficiently large. What that means
+   in practice is that all of the expected frequencies need to be reasonably
+   big. How big is reasonably big? Opinions differ, but the default assumption
+   seems to be that you generally would like to see all your expected
+   frequencies larger than about 5, though for larger tables you would
+   probably be okay if at least 80\% of the the expected frequencies are above
+   5 and none of them are below 1. However, from what I’ve been able to
+   discover (:ref:`Cochran, 1954 <Cochran_1954>`), these seem to have been
+   proposed as rough guidelines, not hard and fast rules, and they seem to be
+   somewhat conservative (:ref:`Larntz, 1978 <Larntz_1978>`).
 
 -  *Data are independent of one another*. One somewhat hidden assumption
    of the χ²-test is that you have to genuinely believe that the

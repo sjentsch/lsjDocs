@@ -143,6 +143,8 @@ packages dedicated to this approach. But let’s not get ahead of
 ourselves; what we should really focus on now is how to do an EFA in
 jamovi.
 
+.. _EFA_in_jamovi:
+
 EFA in jamovi
 ~~~~~~~~~~~~~
 

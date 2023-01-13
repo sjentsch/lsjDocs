@@ -11,7 +11,7 @@ Summary
 
 -  :doc:`Checking assumptions in the ANOVA <Ch14_ANOVA2_04>`
 
--  :doc:`Analysis of Covariance (ANCOVA) <Ch14_ANOVA2_06>`
+-  :doc:`Ch14_ANOVA2_06`
 
 -  :doc:`Understanding the linear model underlying ANOVA <Ch14_ANOVA2_07>`,
    including :doc:`different contrasts <Ch14_ANOVA2_08>`

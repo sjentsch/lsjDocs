@@ -65,8 +65,8 @@ of the easiest cases. Our population parameter *θ* is just the overall
 probability that people respond correctly when asked the question, and our test
 statistic *X* is the *count* of the number of people who did so out of a sample
 size of *N*. We’ve seen a distribution like this before, in section
-:doc:`Binomial distribution <../Ch07/Ch07_Probability_4>`, and that’s exactly what the
-binomial distribution describes! So, to use the notation and terminology that I
+:doc:`../Ch07/Ch07_Probability_4`, and that’s exactly what the binomial
+distribution describes! So, to use the notation and terminology that I
 introduced in that section, we would say that the null hypothesis predicts that
 *X* is binomially distributed, which is written:
 

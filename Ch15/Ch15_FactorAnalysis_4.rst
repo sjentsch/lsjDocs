@@ -11,12 +11,12 @@ combines the observed variables.
 
 In psychometrics we use reliability analysis to provide information about how
 consistently a scale measures a psychological construct (see section
-:doc:`Assessing the reliability of a measurement <../Ch02/Ch02_StudyDesign_3>`).
-**Internal consistency** is what we are concerned with here, and that refers to
-the consistency across all the individual items that make up a measurement
-scale. So, if we have V1, V2, V3, V4 and V5 as observed item variables, then we
-can calculate a statistic that tells us how internally consistent these items
-are in measuring the underlying construct.
+:doc:`../Ch02/Ch02_StudyDesign_3`). **Internal consistency** is what we are
+concerned with here, and that refers to the consistency across all the
+individual items that make up a measurement scale. So, if we have V1, V2, V3,
+V4 and V5 as observed item variables, then we can calculate a statistic that
+tells us how internally consistent these items are in measuring the underlying
+construct.
 
 A popular statistic used to check the internal consistency of a scale is
 **Cronbach’s α** (alpha; :ref:`Cronbach, 1951 <Cronbach_1951>`).

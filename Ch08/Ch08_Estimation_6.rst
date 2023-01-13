@@ -14,12 +14,11 @@ parameters. The section breakdown looks like this:
 -  :doc:`Statistical theory of sampling: the law of large numbers 
    <Ch08_Estimation_2>`
     
--  :doc:`Sampling distributions and the central limit theorem
-   <Ch08_Estimation_3>`
+-  :doc:`Ch08_Estimation_3`
 
--  :doc:`Estimating population parameters <Ch08_Estimation_4>`
+-  :doc:`Ch08_Estimation_4`
 
--  :doc:`Estimating a confidence interval <Ch08_Estimation_5>`
+-  :doc:`Ch08_Estimation_5`
 
 As always, there’s a lot of topics related to sampling and estimation
 that aren’t covered in this chapter, but for an introductory psychology

@@ -98,20 +98,20 @@ package and has become standard nomenclature, but it’s a bit misleading in som
 ways. I think the logic for referring to them as different types of sum of
 squares is that, when you look at the ANOVA tables that they produce, the key
 difference in the numbers is the SS values. The degrees of freedom don’t
-change, the MS values are still defined as SS divided by *df*, etc. However, what
-the terminology gets wrong is that it hides the reason *why* the SS values are
-different from one another. To that end, it’s a lot more helpful to think of
-the three different kinds of ANOVA as three different *hypothesis testing
+change, the MS values are still defined as SS divided by *df*, etc. However,
+what the terminology gets wrong is that it hides the reason *why* the SS values
+are different from one another. To that end, it’s a lot more helpful to think
+of the three different kinds of ANOVA as three different *hypothesis testing
 strategies*. These different strategies lead to different SS values, to be
 sure, but it’s the strategy that is the important thing here, not the SS values
-themselves. Recall from section :doc:`ANOVA as a linear model <Ch14_ANOVA2_07>`,
-that any particular *F*-test is best thought of as a comparison between two
-linear models. So, when you’re looking at an ANOVA table, it helps to remember
-that each of those *F*-tests corresponds to a *pair* of models that are being
-compared. Of course, this leads naturally to the question of *which* pair of
-models is being compared. This is the fundamental difference between ANOVA
-Types 1, 2 and 3: each one corresponds to a different way of choosing the
-model pairs for the tests.
+themselves. Recall from section :doc:`Ch14_ANOVA2_07`, that any particular
+*F*-test is best thought of as a comparison between two linear models. So,
+when you’re looking at an ANOVA table, it helps to remember that each of
+those *F*-tests corresponds to a *pair* of models that are being compared. Of
+course, this leads naturally to the question of *which* pair of models is
+being compared. This is the fundamental difference between ANOVA Types 1, 2
+and 3: each one corresponds to a different way of choosing the model pairs for
+the tests.
 
 Type 1 sum of squares
 ~~~~~~~~~~~~~~~~~~~~~
@@ -364,9 +364,8 @@ Type 3 sum of squares, see :numref:`fig-factorialanova18`.
 
 But be aware, one of the perverse features of the Type 3 testing strategy is
 that typically the results turn out to depend on the *contrasts* that you use
-to encode your factors (see section :doc:`Different ways to specify contrasts
-<Ch14_ANOVA2_08>` if you’ve forgotten what the different types of
-contrasts are).\ [#]_
+to encode your factors (see section :doc:`Ch14_ANOVA2_08` if you’ve forgotten
+what the different types of contrasts are).\ [#]_
 
 Okay, so if the *p*-values that typically come out of Type 3 analyses (but
 not in jamovi) are so sensitive to the choice of contrasts, does that mean that

@@ -43,8 +43,8 @@ This seems so obvious to a human, yet it is explicitly forbidden within the
 orthodox framework. To a frequentist, such statements are a nonsense because
 “the theory is true” is not a repeatable event. A theory is true or it is not,
 and no probabilistic statements are allowed, no matter how much you might want
-to make them. There’s a reason why, back in section :doc:`The *p*-value of a
-test <../Ch09/Ch09_HypothesisTesting_05>`, I repeatedly warned you *not* to
+to make them. There’s a reason why, back in section
+:doc:`../Ch09/Ch09_HypothesisTesting_05`, I repeatedly warned you *not* to
 interpret the *p*-value as the probability that the null hypothesis is true.
 There’s a reason why almost every textbook on statstics is forced to repeat
 that warning. It’s because people desperately *want* that to be the correct
@@ -229,13 +229,13 @@ results weren’t conclusive, so now what you want to do is collect more
 data until the the results *are* conclusive. What’s wrong with that?
 
 Honestly, there’s nothing wrong with it. It’s a reasonable, sensible and
-rational thing to do. In real life, this is exactly what every researcher does.
-Unfortunately, the theory of null hypothesis testing as I described it in
-chapter :doc:`Hypothesis testing <../Ch09/Ch09_HypothesisTesting>` *forbids*
-you from doing this.\ [#]_ The reason is that the theory assumes that the
-experiment is finished and all the data are in. And because it assumes the
-experiment is over, it only considers *two* possible decisions. If you’re
-using the conventional *p* < 0.05 threshold, those decisions are:
+rational thing to do. In real life, this is exactly what every researcher
+does. Unfortunately, the theory of null hypothesis testing as I described it
+in chapter :doc:`../Ch09/Ch09_HypothesisTesting` *forbids* you from doing
+this.\ [#]_ The reason is that the theory assumes that the experiment is
+finished and all the data are in. And because it assumes the experiment is
+over, it only considers *two* possible decisions. If you’re using the
+conventional *p* < 0.05 threshold, those decisions are:
 
 +-----------------------+-----------------+
 | Outcome               | Action          |
@@ -262,13 +262,13 @@ into one that looks more like this:
 +--------------------------+-----------------------------------------+
 
 The “basic” theory of null hypothesis testing isn’t built to handle this sort
-of thing, not in the form I described back in chapter :doc:`Hypothesis testing
-<../Ch09/Ch09_HypothesisTesting>`. If you’re the kind of person who would choose to
-“collect more data” in real life, it implies that you are *not* making
-decisions in accordance with the rules of null hypothesis testing. Even if you
-happen to arrive at the same decision as the hypothesis test, you aren’t
-following the decision *process* it implies, and it’s this failure to follow
-the process that is causing the problem (a `related problem
+of thing, not in the form I described back in chapter
+:doc:`../Ch09/Ch09_HypothesisTesting`. If you’re the kind of person who would
+choose to “collect more data” in real life, it implies that you are *not*
+making decisions in accordance with the rules of null hypothesis testing. Even
+if you happen to arrive at the same decision as the hypothesis test, you
+aren’t following the decision *process* it implies, and it’s this failure to
+follow the process that is causing the problem (a `related problem
 <https://xkcd.com/1478>`__). Your *p*-values are a lie.
 
 Worse yet, they’re a lie in a dangerous way, because they’re all *too
@@ -313,18 +313,18 @@ after every single observation, there is a 49\% chance that you will make a
 Type I error. That’s, um, quite a bit bigger than the 5\% that it’s supposed
 to be. By way of comparison, imagine that you had used the following strategy.
 Start collecting data. Every single time an observation arrives, run a
-:doc:`Bayesian *t*-test <Ch16_Bayes_5>` and look at the Bayes factor.
-I’ll assume that :ref:`Johnson (2013) <Johnson_2013>` is right, and I’ll treat
-a Bayes factor of 3:1 as roughly equivalent to a *p*-value of 0.05.\ [#]_ This
-time around, our trigger happy researcher uses the following procedure. If the
-Bayes factor is 3:1 or more in favour of the null, stop the experiment and
-retain the null. If it is 3:1 or more in favour of the alternative, stop the
-experiment and reject the null. Otherwise continue testing. Now, just like
-last time, let’s assume that the null hypothesis is true. What happens? As it
-happens, I ran the simulations for this scenario too, and the results are
-shown as the dashed line in :numref:`fig-adapt`. It turns out that the Type I
-error rate is much much lower than the 49\% rate that we were getting by using
-the orthodox *t*-test.
+:doc:`Ch16_Bayes_5` and look at the Bayes factor. I’ll assume that
+:ref:`Johnson (2013) <Johnson_2013>` is right, and I’ll treat a Bayes factor
+of 3:1 as roughly equivalent to a *p*-value of 0.05.\ [#]_ This time around,
+our trigger happy researcher uses the following procedure. If the Bayes factor
+is 3:1 or more in favour of the null, stop the experiment and retain the null.
+If it is 3:1 or more in favour of the alternative, stop the experiment and
+reject the null. Otherwise continue testing. Now, just like last time, let’s
+assume that the null hypothesis is true. What happens? As it happens, I ran
+the simulations for this scenario too, and the results are shown as the dashed
+line in :numref:`fig-adapt`. It turns out that the Type I error rate is much
+much lower than the 49\% rate that we were getting by using the orthodox
+*t*-test.
 
 In some ways, this is remarkable. The entire *point* of orthodox null
 hypothesis testing is to control the Type I error rate. Bayesian methods
@@ -387,8 +387,8 @@ Given all of the above, what is the take home message? It’s not that Bayesian
 methods are foolproof. If a researcher is determined to cheat, they can always
 do so. Bayes’ rule cannot stop people from lying, nor can it stop them from
 rigging an experiment. That’s not my point here. My point is the same one I
-made at the very beginning of the book in section :doc:`On the psychology of
-statistics <../Ch01/Ch01_WhyStats_1>`: the reason why we run statistical tests is to
+made at the very beginning of the book in section
+:doc:`../Ch01/Ch01_WhyStats_1`: the reason why we run statistical tests is to
 protect us from ourselves. And the reason why “data peeking” is such a concern
 is that it’s so tempting, *even for honest researchers*. A theory for
 statistical inference has to acknowledge this. Yes, you might try to defend

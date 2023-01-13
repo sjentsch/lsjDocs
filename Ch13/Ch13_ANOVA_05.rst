@@ -108,12 +108,11 @@ each *individual* *t*-test is designed to have a 5\% Type I error rate (i.e.,
 my ANOVA involved 10 different groups, and I had decided to run 45 “post-hoc”
 *t*-tests to try to find out which ones were significantly different from each
 other, you’d expect 2 or 3 of them to come up significant *by chance alone*. As
-we saw in chapter :doc:`Hypothesis testing <../Ch09/Ch09_HypothesisTesting>`, the
-central organising principle behind null hypothesis testing is that we seek to
-control our Type I error rate, but now that I’m running lots of *t*-tests at
-once in order to determine the source of my ANOVA results, my actual Type I
-error rate across this whole *family* of tests has gotten completely out of
-control.
+we saw in chapter :doc:`../Ch09/Ch09_HypothesisTesting`, the central organising
+principle behind null hypothesis testing is that we seek to control our Type I
+error rate, but now that I’m running lots of *t*-tests at once in order to
+determine the source of my ANOVA results, my actual Type I error rate across
+this whole *family* of tests has gotten completely out of control.
 
 The usual solution to this problem is to introduce an adjustment to the
 *p*-value, which aims to control the total error rate across the family of
@@ -122,9 +121,9 @@ is usually (but not always) applied because one is doing post-hoc analysis, is
 often referred to as a **correction for multiple comparisons**, though it is
 sometimes referred to as “simultaneous inference”. In any case, there are
 quite a few different ways of doing this adjustment. I’ll discuss a few of
-them in this section and in section :doc:`Post-hoc tests
-<../Ch14/Ch14_ANOVA2_09>`, but you should be aware that there are many other
-methods out there (:ref:`Hsu, 1996 <Hsu_1996>`).
+them in this section and in section :doc:`../Ch14/Ch14_ANOVA2_09`, but you
+should be aware that there are many other methods out there (:ref:`Hsu, 1996
+<Hsu_1996>`).
 
 Bonferroni corrections
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -252,8 +251,7 @@ terribly informative.
    comparisons but not others, it’s a different story. In those circumstances
    you’re not really running “post-hoc” analyses at all, you’re making “planned
    comparisons”. I do talk about this situation later in the book in section
-   :doc:`The method of planned comparisons <../Ch14/Ch14_ANOVA2_10>`), but for
-   now I want to keep things simple.
+   :doc:`../Ch14/Ch14_ANOVA2_10`), but for now I want to keep things simple.
 
 .. [#]
    It’s worth noting in passing that not all adjustment methods try to

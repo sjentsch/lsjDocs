@@ -48,10 +48,10 @@ buried in this one statement, and we’ll consider them separately.
    homogeneity of variance assumption <homogeneity_of_variance_anova>`.
 
 -  **Normality**. The residuals are assumed to be normally distributed. As we
-   saw in subsection :doc:`Checking the normality of a sample 
-   <../Ch11/Ch11_tTest_08>`, we can assess this by looking at QQ-plots (or
-   running a Shapiro-Wilk test). I’ll talk about this more in an ANOVA context
-   in subsection :ref:`Checking the normality assumption <normality_anova>`.
+   saw in subsection :doc:`../Ch11/Ch11_tTest_08`, we can assess this by
+   looking at QQ-plots (or running a Shapiro-Wilk test). I’ll talk about this
+   more in an ANOVA context in subsection :ref:`Checking the normality
+   assumption <normality_anova>`.
 
 -  **Independence**. The independence assumption is a little trickier.
    What it basically means is that, knowing one residual tells you
@@ -64,8 +64,7 @@ buried in this one statement, and we’ll consider them separately.
    condition, then independence doesn’t hold. There’s a special relationship
    between some observations, namely those that correspond to the same
    person! When that happens, you need to use something like repeated
-   measures ANOVA (see section :doc:`Repeated measures one-way ANOVA
-   <Ch13_ANOVA_07>`).
+   measures ANOVA (see section :doc:`Ch13_ANOVA_07`).
 
 .. _homogeneity_of_variance_anova:
 
@@ -183,11 +182,10 @@ check the option ``Don't assume equal (Welch’s)`` (see :numref:`fig-anova4a`).
 .. ----------------------------------------------------------------------------
 
 To understand what’s happening here, let’s compare these numbers with those
-obtained earlier in section :doc:`Running an ANOVA in jamovi <Ch13_ANOVA_03>`,
-namely: *F*\(2,15) = 18.611, *p* = 0.00009. As shown in :numref:`fig-anova4a`,
-these values are also displayed in the ``One-Way ANOVA`` table (in the row
-starting with ``Fisher's``) if the option ``Assume equal (Fisher's)`` was
-chosen.
+obtained earlier in section :doc:`Ch13_ANOVA_03`, namely: *F*\(2,15) = 18.611,
+*p* = 0.00009. As shown in :numref:`fig-anova4a`, these values are also
+displayed in the ``One-Way ANOVA`` table (in the row starting with
+``Fisher's``) if the option ``Assume equal (Fisher's)`` was chosen.
 
 Okay, so originally our ANOVA gave us the result *F*\(2,15) = 18.6,
 whereas the Welch one-way test gave us *F*\(2,9.49) = 26.32. In
@@ -200,18 +198,18 @@ increased from 18.6 to 26.32.
 Checking the normality assumption
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Testing the normality assumption is relatively straightforward. We covered most
-of what you need to know in section :doc:`Checking the normality of a sample 
-<../Ch11/Ch11_tTest_08>`. The only thing we really need to do is draw a QQ plot and, in
-addition if it is available, run the Shapiro-Wilk test. The QQ plot is shown in
-:numref:`fig-anova5` and it looks pretty normal to me. If the Shapiro-Wilk test
-is not significant (i.e. *p* > 0.05) then this indicates that the assumption of
-normality is not violated. However, as with Levene’s test, if the sample size
-is large then a significant Shapiro-Wilk test may in fact be a false positive,
-where the assumption of normality is not violated in any substantive
-problematic sense for the analysis. And, similarly, a very small sample can
-produce false negatives. That’s why a visual inspection of the QQ plot is
-important.
+Testing the normality assumption is relatively straightforward. We covered
+most of what you need to know in section :doc:`../Ch11/Ch11_tTest_08`. The
+only thing we really need to do is draw a QQ plot and, in addition if it is
+available, run the Shapiro-Wilk test. The QQ plot is shown in
+:numref:`fig-anova5` and it looks pretty normal to me. If the Shapiro-Wilk
+test is not significant (i.e. *p* > 0.05) then this indicates that the
+assumption of normality is not violated. However, as with Levene’s test, if
+the sample size is large then a significant Shapiro-Wilk test may in fact be
+a false positive, where the assumption of normality is not violated in any
+substantive problematic sense for the analysis. And, similarly, a very small
+sample can produce false negatives. That’s why a visual inspection of the QQ
+plot is important.
 
 Alongside inspecting the QQ plot for any deviations from normality, the
 Shapiro-Wilk test for our data does show a non-significant effect, with
@@ -236,12 +234,12 @@ Now that we’ve seen how to check for normality, we are led naturally to ask
 what we can do to address violations of normality. In the context of a One-way
 ANOVA, the easiest solution is probably to switch to a non-parametric test
 (i.e., one that doesn’t rely on any particular assumption about the kind of
-distribution involved). We’ve seen non-parametric tests before, in chapter
-:doc:`Comparing two means <../Ch11/Ch11_tTest>`. When you only have two groups,
-the Mann-Whitney or the Wilcoxon test provides the non-parametric alternative
-that you need. When you’ve got three or more groups, you can use the
-**Kruskal-Wallis rank sum test** (:ref:`Kruskal & Wallis, 1952 <Kruskal_1952>`).
-So that’s the test we’ll talk about next.
+distribution involved). We’ve seen non-parametric tests before, in section
+:doc:`../Ch11/Ch11_tTest_09`. When you only have two groups, the Mann-Whitney
+or the Wilcoxon test provides the non-parametric alternative that you need.
+When you’ve got three or more groups, you can use the **Kruskal-Wallis rank
+sum test** (:ref:`Kruskal & Wallis, 1952 <Kruskal_1952>`). So that’s the test
+we’ll talk about next.
 
 The Kruskal-Wallis test is surprisingly similar to ANOVA, in some ways.
 In ANOVA we started with Y\ :sub:`ik`, the value of the outcome

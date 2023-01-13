@@ -258,8 +258,7 @@ one-way ANOVA, which is that if you obtain a significant main effect of (say)
 ``drug``, it doesn’t tell you anything about how the levels of ``drug`` are
 different to one another. To find that out, you need to run additional
 analyses. We’ll talk about some analyses that you can run in sections
-:doc:`Different ways to specify contrasts <Ch14_ANOVA2_08>` and
-:doc:`Post-hoc tests <Ch14_ANOVA2_09>`. The same is true for
+:doc:`Ch14_ANOVA2_08` and :doc:`Ch14_ANOVA2_09`. The same is true for
 interaction effects. Knowing that there’s a significant interaction doesn’t
 tell you anything about what kind of interaction exists. Again, you’ll need
 to run additional analyses.

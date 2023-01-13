@@ -4,9 +4,9 @@ Summary
 -------
 
 There’s a fair bit covered in this chapter, but there’s still a lot missing.
-Most obviously, I haven’t discussed how to run an ANOVA when you are interested
-in more than one grouping variable, but that will be discussed in a lot of
-detail in chapter :doc:`Factorial ANOVA <../Ch14/Ch14_ANOVA2>`. In terms of what we
+Most obviously, I haven’t discussed how to run an ANOVA when you are
+interested in more than one grouping variable, but that will be discussed in
+a lot of detail in chapter :doc:`../Ch14/Ch14_ANOVA2`. In terms of what we
 have discussed, the key topics were:
 
 -  The basic logic behind :doc:`how ANOVA works <Ch13_ANOVA_02>` and :doc:`how

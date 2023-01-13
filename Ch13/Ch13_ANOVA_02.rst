@@ -15,14 +15,13 @@ concept never *ever* do it this way again.
 The experimental design that I described in the previous section strongly
 suggests that we’re interested in comparing the average mood change for the
 three different drugs. In that sense, we’re talking about an analysis similar
-to the *t*-test (chapter :doc:`Comparing two means <../Ch11/Ch11_tTest>`) but
-involving more than two groups. If we let µ\ :sub:`P` denote the population
-mean for the mood change induced by the placebo, and let µ\ :sub:`A` and
-µ\ :sub:`J` denote the corresponding means for our two drugs, Anxifree and
-Joyzepam, then the (somewhat pessimistic) null hypothesis that we want to test
-is that all three population means are identical. That is, *neither* of the
-two drugs is any more effective than a placebo. We can write out this null
-hypothesis as:
+to the *t*-test (chapter :doc:`../Ch11/Ch11_tTest`) but involving more than
+two groups. If we let µ\ :sub:`P` denote the population mean for the mood
+change induced by the placebo, and let µ\ :sub:`A` and µ\ :sub:`J` denote the
+corresponding means for our two drugs, Anxifree and Joyzepam, then the
+(somewhat pessimistic) null hypothesis that we want to test is that all three
+population means are identical. That is, *neither* of the two drugs is any
+more effective than a placebo. We can write out this null hypothesis as:
 
 H\ :sub:`0`: it is true that µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`
 
@@ -270,11 +269,10 @@ the chase. In order to complete our hypothesis test we need to know the
 sampling distribution for *F* if the null hypothesis is true. Not surprisingly,
 the sampling distribution for the *F*-statistic under the null hypothesis is an
 *F*-distribution. If you recall our discussion of the *F*-distribution in
-chapter :doc:`Introduction to probability <../Ch07/Ch07_Probability>`, the
-*F*-distribution has two parameters, corresponding to the two degrees of
-freedom involved. The first one *df*\ :sub:`1` is the between groups degrees of
-freedom |df_b|, and the second one *df*\ :sub:`2` is the within groups degrees
-of freedom |df_w|\.
+chapter :doc:`../Ch07/Ch07_Probability`, the *F*-distribution has two
+parameters, corresponding to the two degrees of freedom involved. The first one
+*df*\ :sub:`1` is the between groups degrees of freedom |df_b|, and the second
+one *df*\ :sub:`2` is the within groups degrees of freedom |df_w|\.
 
 A summary of all the key quantities involved in a one-way ANOVA, including the
 formulas showing how they are calculated, is shown in :numref:`tab-anovatable`.
@@ -326,8 +324,8 @@ as a statistical model
 where we make the *assumption* (discussed later) that the residual values
 ϵ\ :sub:`ik` are normally distributed, with mean 0 and a standard deviation σ
 that is the same for all groups. To use the notation that we introduced in
-chapter :doc:`Introduction to probability <../Ch07/Ch07_Probability>` we would write
-this assumption like this:
+chapter :doc:`../Ch07/Ch07_Probability` we would write this assumption like
+this:
 
 ϵ\ :sub:`ik` ~ Normal(0, σ²)
 
@@ -350,11 +348,11 @@ and H\ :sub:`1` in more detail, it’s now pretty straightforward to say what th
 mean square values are measuring, and what this means for the interpretation of
 *F*. I won’t bore you with the proof of this but it turns out that the
 within-groups mean square, |MS_w|, can be viewed as an estimator (in the
-technical sense, chapter :doc:`Estimating unknown quantities from a sample
-<../Ch08/Ch08_Estimation>`) of the error variance σ². The between-groups mean square
-|MS_b| is also an estimator, but what it estimates is the error variance *plus*
-a quantity that depends on the true differences among the group means. If we
-call this quantity *Q*, then we can see that the *F*-statistic is basically:\ [#]_
+technical sense, chapter :doc:`../Ch08/Ch08_Estimation`) of the error variance
+σ². The between-groups mean square |MS_b| is also an estimator, but what it
+estimates is the error variance *plus* a quantity that depends on the true
+differences among the group means. If we call this quantity *Q*, then we can
+see that the *F*-statistic is basically:\ [#]_
 
 .. math:: F = \frac{\hat{Q} + \hat\sigma^2}{\hat\sigma^2}
 
@@ -371,14 +369,13 @@ To be a bit more precise about the sampling distribution, notice that if the
 null hypothesis is true, both |MS_b| and |MS_w| are estimators of the variance
 of the residuals ϵ\ :sub:`ik`. If those residuals are normally distributed,
 then you might suspect that the estimate of the variance of ϵ\ :sub:`ik` is
-χ²-distributed, because (as discussed in :doc:`Other useful distributions
-<../Ch07/Ch07_Probability_6>`) that’s what a χ²-distribution *is*: it’s what
-you get when you square a bunch of normally-distributed things and add them up.
-And since the *F*-distribution is (again, by definition) what you get when you
-take the ratio between two things that are χ² distributed, we have our sampling
-distribution. Obviously, I’m glossing over a whole lot of stuff when I say
-this, but in broad terms, this really is where our sampling distribution comes
-from.
+χ²-distributed, because (as discussed in :doc:`../Ch07/Ch07_Probability_6`)
+that’s what a χ²-distribution *is*: it’s what you get when you square a bunch
+of normally-distributed things and add them up. And since the *F*-distribution
+is (again, by definition) what you get when you take the ratio between two
+things that are χ² distributed, we have our sampling distribution. Obviously,
+I’m glossing over a whole lot of stuff when I say this, but in broad terms,
+this really is where our sampling distribution comes from.
 
 .. _worked_example:
 
@@ -577,18 +574,17 @@ MS value.\ [#]_
 
 Woohooo! This is terribly exciting, yes? Now that we have our test statistic,
 the last step is to find out whether the test itself gives us a significant
-result. As discussed in chapter :doc:`Hypothesis testing
-<../Ch09/Ch09_HypothesisTesting>` back in the “old days” what we’d do is open
-up a statistics textbook or flick to the back section which would actually have
-a huge lookup table and we would find the threshold *F*-value corresponding to
-a particular value of α (the null hypothesis rejection region), e.g. 0.05,
-0.01 or 0.001, for 2 and 15 degrees of freedom. Doing it this way would give
-us a threshold *F*-value for an α of 0.001 of 11.34. As this is less than
-our calculated *F*-value we say that *p* < 0.001. But those were the old days,
-and nowadays fancy stats software calculates the exact *p*-value for you. In
-fact, the exact *p*-value is 0.000086. So, unless we’re being *extremely*
-conservative about our Type I error rate, we’re pretty much guaranteed to
-reject the null hypothesis.
+result. As discussed in chapter :doc:`../Ch09/Ch09_HypothesisTesting` back in
+the “old days” what we’d do is open up a statistics textbook or flick to the
+back section which would actually have a huge lookup table and we would find
+the threshold *F*-value corresponding to a particular value of α (the null
+hypothesis rejection region), e.g. 0.05, 0.01 or 0.001, for 2 and 15 degrees of
+freedom. Doing it this way would give us a threshold *F*-value for an α
+of 0.001 of 11.34. As this is less than our calculated *F*-value we say that
+*p* < 0.001. But those were the old days, and nowadays fancy stats software
+calculates the exact *p*-value for you. In fact, the exact *p*-value
+is 0.000086. So, unless we’re being *extremely* conservative about our Type I
+error rate, we’re pretty much guaranteed to reject the null hypothesis.
 
 At this point, we’re basically done. Having completed our calculations,
 it’s traditional to organise all these numbers into an ANOVA table like
@@ -630,10 +626,9 @@ Sigh. So much work for one short sentence.
    the error variance, or SS\ :sub:`error`
 
 .. [#]
-   If you read ahead to chapter :doc:`Factorial ANOVA <../Ch14/Ch14_ANOVA2>`
-   and look at how the “treatment effect” at level *k* of a factor is defined
-   in terms of the α\ :sub:`k` values (see section :doc:`Factorial ANOVA 2:
-   balanced designs, interactions allowed <../Ch14/Ch14_ANOVA2_02>`), it turns
+   If you read ahead to chapter :doc:`../Ch14/Ch14_ANOVA2` and look at how the
+   “treatment effect” at level *k* of a factor is defined in terms of the
+   α\ :sub:`k` values (see section :doc:`../Ch14/Ch14_ANOVA2_02`), it turns
    out that *Q* refers to a weighted mean of the squared treatment effects,
    :math:`Q = (\sum_{k=1}^G N_k \alpha_k^2)/(G-1)`.
 

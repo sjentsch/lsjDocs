@@ -152,9 +152,9 @@ fit between the model and the data. The RMSEA is 0.085 with a 90\% confidence
 interval from 0.077 to 0.092, again this does not indicate a good fit.
 
 Pretty disappointing, huh? But perhaps not too surprising given that in the
-earlier EFA, when we ran with a similar data set (section :doc:`Exploratory
-Factor Analysis <Ch15_FactorAnalysis_1>`), only around half of the variance
-in the data was accounted for by the five factor model.
+earlier EFA, when we ran with a similar data set (section
+:doc:`Ch15_FactorAnalysis_1`), only around half of the variance in the data
+was accounted for by the five factor model.
 
 Let’s go on to look at the factor loadings and the factor covariance estimates,
 shown in :numref:`fig-cfa4` and :numref:`fig-cfa5`. The *Z*-statistic and

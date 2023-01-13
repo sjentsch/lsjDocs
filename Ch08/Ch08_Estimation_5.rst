@@ -78,16 +78,16 @@ As usual, I lied. The formula that I’ve given above for the 95\% confidence
 interval is approximately correct, but I glossed over an important detail in
 the discussion. Notice my formula requires you to use the standard error of the
 mean, *SEM*, which in turn requires you to use the true population standard
-deviation σ. Yet, in :doc:`Estimating population parameters 
-<Ch08_Estimation_4>` I stressed the fact that we don’t actually *know* the true
-population parameters. Because we don’t know the true value of σ we have to use
-an estimate of the population standard deviation :math:`\hat{\sigma}` instead.
-This is pretty straightforward to do, but this has the consequence that we need
-to use the percentiles of the *t*-distribution rather than the normal
-distribution to calculate our magic number, and the answer depends on
-the sample size. When *N* is very large, we get pretty much the same value
-using the *t*-distribution or the normal distribution: 1.96. But when *N* is
-small we get a much bigger number when we use the *t*-distribution: 2.26.
+deviation σ. Yet, in :doc:`Ch08_Estimation_4` I stressed the fact that we don’t
+actually *know* the true population parameters. Because we don’t know the true
+value of σ we have to use an estimate of the population standard deviation
+:math:`\hat{\sigma}` instead. This is pretty straightforward to do, but this
+has the consequence that we need to use the percentiles of the *t*-distribution
+rather than the normal distribution to calculate our magic number, and the
+answer depends on the sample size. When *N* is very large, we get pretty much
+the same value using the *t*-distribution or the normal distribution: 1.96.
+But when *N* is small we get a much bigger number when we use the
+*t*-distribution: 2.26.
 
 There’s nothing too mysterious about what’s happening here. Bigger values mean
 that the confidence interval is wider, indicating that we’re more uncertain
@@ -110,13 +110,13 @@ sense idea of what it means to say that I am “95\% confident”. Unfortunately
 it’s not quite right. The intuitive definition relies very heavily on your own
 personal *beliefs* about the value of the population mean. I say that I am 95\%
 confident because those are my beliefs. In everyday life that’s perfectly okay,
-but if you remember back to :doc:`What does probability mean?
-<../Ch07/Ch07_Probability_2>`, you’ll notice that talking about personal belief and
-confidence is a Bayesian idea. However, confidence intervals are *not* Bayesian
-tools. Like everything else in this chapter, confidence intervals are
-*frequentist* tools, and if you are going to use frequentist methods then it’s
-not appropriate to attach a Bayesian interpretation to them. If you use
-frequentist methods, you must adopt frequentist interpretations!
+but if you remember back to :doc:`../Ch07/Ch07_Probability_2`, you’ll notice
+that talking about personal belief and confidence is a Bayesian idea. However,
+confidence intervals are *not* Bayesian tools. Like everything else in this
+chapter, confidence intervals are *frequentist* tools, and if you are going to
+use frequentist methods then it’s not appropriate to attach a Bayesian
+interpretation to them. If you use frequentist methods, you must adopt
+frequentist interpretations!
 
 Okay, so if that’s not the right answer, what is? Remember what we said about
 frequentist probability. The only way we are allowed to make “probability
@@ -166,7 +166,7 @@ mathematics. There is a Bayesian alternative to confidence intervals, known as
 *credible intervals*. In most situations credible intervals are quite similar
 to confidence intervals, but in other cases they are drastically different.
 As promised, though, I’ll talk more about the Bayesian perspective in chapter
-:doc:`Bayesian statistics <../Ch16/Ch16_Bayes>`.
+:doc:`../Ch16/Ch16_Bayes`.
 
 Calculating confidence intervals in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -183,9 +183,9 @@ we obtain a mean IQ score of 99.683 with a 95\% CI from 99.391 to 99.975.
 When it comes to plotting confidence intervals for the mean in jamovi, this is
 not (yet) available as part of the ``Descriptives`` options. However, when we
 get onto learning about specific statistical tests, for example in chapter
-:doc:`Comparing several means (one-way ANOVA) <../Ch13/Ch13_ANOVA>`, we will
-see that we can plot confidence intervals as part of the data analysis. That’s
-pretty cool, so we’ll show you how to do that later on.
+:doc:`../Ch13/Ch13_ANOVA`, we will see that we can plot confidence intervals
+as part of the data analysis. That’s pretty cool, so we’ll show you how to do
+that later on.
 
 ------
 
