@@ -10,7 +10,9 @@
 import os
 import sys
 import re
+import time
 sys.path.insert(0, os.path.abspath('.'))
+import sphinx
 import sphinx_rtd_theme
 from sphinx.locale import _
 
@@ -18,7 +20,8 @@ from sphinx.locale import _
 project = u'Learning statistics with jamovi'
 slug = u'lsj'
 author = u'Danielle J. Navarro, David R. Foxcroft'
-copyright = u'2011-2023, ' + author + ', and Sebastian Jentschke (curating this documentation). This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+copyright = f'2011-{time.strftime("%Y")}, ' + author + ', and Sebastian Jentschke (curating this documentation). This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+version = sphinx.__display_version__
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
@@ -319,18 +322,27 @@ latex_elements = {
     'fncychap': '\\usepackage[Bjarne]{fncychap}', 
 
     # “inputenc” package inclusion, default '\\usepackage[utf8]{inputenc}'.
-    'inputenc' :  '\\usepackage[utf8x]{inputenc}',
-#    'utf8extra': ('\\ifdefined\\DeclareUnicodeCharacter\n'
-#                  ' \\ifdefined\\DeclareUnicodeCharacterAsOptional\\else\n'
-#                  '  \\DeclareUnicodeCharacter{2261}{\\equiv}\n'
-#                  '  \\DeclareUnicodeCharacter{2630}{\\equiv}\n'
-#                  '\\fi\\fi'),
-
+    'inputenc' : '\\usepackage[utf8]{inputenc}',
+    'utf8extra': '',
     # “fontenc” package inclusion, default '\\usepackage[T1]{fontenc}'.
     'fontenc': '\\usepackage[T1]{fontenc}',
 
     # Latex figure (float) alignment
     'figure_align': 'htbp',
+
+    # preamble
+    'preamble': r'''
+\usepackage{newunicodechar}
+\newunicodechar{χ}{\chi}
+\newunicodechar{–}{--}
+\newunicodechar{‘}{`}
+\newunicodechar{’}{'}
+\newunicodechar{“}{``}
+\newunicodechar{”}{''}
+\newunicodechar{…}{\ldots}
+\newunicodechar{⋮}{\vdots}
+\newunicodechar{☰}{\equiv}
+    ''',
 }
 
 # If true, add page references after internal references. This is very useful for printed copies of the manual. Default is False.
