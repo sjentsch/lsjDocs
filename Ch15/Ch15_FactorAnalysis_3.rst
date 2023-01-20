@@ -224,7 +224,7 @@ If you do find yourself adding new parameters to a model using the MI values
 then always re-check the MI tables after each new addition, as the MIs are
 refreshed each time.
 
-There is also a Table of ``Residual Covariance Modification Indices`` produced
+There is also a Table of ``Residual Covariances Modification Indices`` produced
 by jamovi (:numref:`fig-cfa7`). In other words, a table showing which correlated
 errors, if added to the model, would improve the model fit the most. It’s a
 good idea to look across both MI tables at the same time, spot the largest MI,
