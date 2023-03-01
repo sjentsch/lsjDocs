@@ -35,7 +35,7 @@ QQ plots
    Histogram (left panel) and QQ plot (right panel) for the column ``Normal``
    in the |distributions|_ data set, a normally-distributed sample with 200
    observations. The Shapiro-Wilk statistic associated with these data is
-   W = 0.992, indicating that no significant departures from normality were
+   *W* = 0.992, indicating that no significant departures from normality were
    detected (*p* = 0.361).
    
 .. ----------------------------------------------------------------------------
@@ -45,16 +45,17 @@ QQ plots
    :name: fig-qq2
 
    In the top row, a histogram (top-left panel) and QQ plot (top-right panel)
-   for 200 observations in the ``Skewed`` column of the |distributions|_ data
-   set. The skewness of the data here is 1.94, and is reflected in a QQ plot that curves upwards. As a
-   consequence, the Shapiro-Wilk statistic is W = 0.80, reflecting a
-   significant departure from normality (\ *p* < 0.001). The bottom row shows
-   the same plots for a heavy-tailed data set, again consisting of 100
-   observations. In this case the heavy tails in the data produce a high
-   kurtosis (2.80), and cause the QQ plot to flatten in the middle, and curve
-   away sharply on either side. The resulting Shapiro-Wilk statistic is
-   W = 0.93, again reflecting a significant deviation from normality (\ *p* <
-   0.001).
+   for 200 observations in the column ``Skewed`` of the |distributions|_ data
+   set. The skewness of the data here is 1.543, and is reflected in a QQ plot
+   that curves upwards and is lacking the lower values within the
+   ``Standardized Residuals``. As a consequence, the Shapiro-Wilk statistic is
+   *W* = 0.732, reflecting a significant departure from normality (*p* <
+   0.001). The bottom row shows the same plots for the 200 observations in the
+   column ``Heavy Tailed`` of the |distributions|_ data set. In this case, the
+   heavy tails in the data produce a high kurtosis (8.225), and cause the QQ
+   plot to flatten in the middle, and curve away sharply on either side. The
+   resulting Shapiro-Wilk statistic is *W* = 0.765, again reflecting a
+   significant deviation from normality (*p* < 0.001).
    
 .. ----------------------------------------------------------------------------
 
