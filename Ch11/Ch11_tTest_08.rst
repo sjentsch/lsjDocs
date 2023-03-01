@@ -32,10 +32,11 @@ QQ plots
    :alt: Histogram and QQ plot for normally-distributed data
    :name: fig-qq1
 
-   Histogram (left panel) and QQ plot (right panel) for the ``normal.data``
-   data set, a normally-distributed sample with 100 observations. The
-   Shapiro-Wilk statistic associated with these data is W = 0.99, indicating
-   that no significant departures from normality were detected (*p* = 0.73).
+   Histogram (left panel) and QQ plot (right panel) for the column ``Normal``
+   in the |distributions|_ data set, a normally-distributed sample with 200
+   observations. The Shapiro-Wilk statistic associated with these data is
+   W = 0.992, indicating that no significant departures from normality were
+   detected (*p* = 0.361).
    
 .. ----------------------------------------------------------------------------
 
@@ -44,8 +45,8 @@ QQ plots
    :name: fig-qq2
 
    In the top row, a histogram (top-left panel) and QQ plot (top-right panel)
-   of the 100 observations in a ``skewed.data`` data set. The skewness of the
-   data here is 1.94, and is reflected in a QQ plot that curves upwards. As a
+   for 200 observations in the ``Skewed`` column of the |distributions|_ data
+   set. The skewness of the data here is 1.94, and is reflected in a QQ plot that curves upwards. As a
    consequence, the Shapiro-Wilk statistic is W = 0.80, reflecting a
    significant departure from normality (\ *p* < 0.001). The bottom row shows
    the same plots for a heavy-tailed data set, again consisting of 100
@@ -175,6 +176,9 @@ Clearly a significant effect!
    the Shapiro-Wilk test is preferred.
 
 .. ----------------------------------------------------------------------------
+
+.. |distributions|                     replace:: ``distributions``
+.. _distributions:                     ../_static/data/distributions.omv
 
 .. |aflsmall_margins|                  replace:: ``aflsmall_margins``
 .. _aflsmall_margins:                  ../_static/data/aflsmall_margins.omv
