@@ -23,6 +23,11 @@ Web-version of "Learning statistics with jamovi" using (rST / HTML) Sphinx. The 
    `$ virtualenv _env`<br>
    `$ source _env/bin/activate`<br>
    Set up and activate the virtual environment.<br>
+   
+   `$ python3 -m pip install --upgrade --no-cache-dir pip 'setuptools<58.3.0'`
+   `$ python3 -m pip install --upgrade --no-cache-dir pillow mock==1.0.1 'alabaster>=0.7,<0.8,!=0.7.5' commonmark==0.9.1 recommonmark==0.5.0 sphinx sphinx-rtd-theme 'readthedocs-sphinx-ext<2.3'`
+   `$ python3 -m pip install --exists-action=w --no-cache-dir -r requirements.txt`<br>
+   Update the required packages (wheels) in the virtual environment (if necessary).<br>
 
    `$ ./.crtLng.sh`<br>
    Creates / updates the language files.
