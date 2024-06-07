@@ -284,7 +284,7 @@ epub_writing_mode = 'horizontal'
 latex_engine = 'xelatex'
 
 # Grouping the document tree into LaTeX files. List of tuples
-#   (source start file, target name,   title,                              author,                                     theme,    toctree_only).
+#   (source start file, target name,   title,                              author,   theme,    toctree_only).
 latex_documents = [
     (master_doc,        'lsjDocs.tex', u'Learning statistics with jamovi', [author], 'manual', True),
 ]
