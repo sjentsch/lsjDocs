@@ -11,7 +11,7 @@ the plot image and export it to a file, either as ``png``, ``eps`, ``svg`` or
 friends, or include in your assignments or manuscripts. Whereas ``png`` and 
 ``pdf`` files are especially suited to share them with others (a lot of
 different software packages read them), are ``eps`` and ``svg`` files very
-suited to be edited (e.g., with `Inkscape <https://inkscape.org/>`__\\.
+suited to be edited (e.g., with `Inkscape <https://inkscape.org/>`__).
 
 .. ----------------------------------------------------------------------------
 
