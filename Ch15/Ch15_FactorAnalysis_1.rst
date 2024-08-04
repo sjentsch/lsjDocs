@@ -526,7 +526,7 @@ information to include in your write-up:
 
 #. What are the theoretical underpinnings for the area you are studying, and
    specifically for the constructs that you are interested in uncovering
-   through EFA.
+   through EFA?
 
 #. A description of the sample (e.g. demographic information, sample size,
    sampling method).
