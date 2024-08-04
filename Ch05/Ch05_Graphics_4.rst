@@ -6,7 +6,7 @@ Saving image files using jamovi
 Hold on, you might be thinking. What’s the good of being able to draw pretty
 pictures in jamovi if I can’t save them and send them to friends to brag about
 how awesome my data is? How do I save the picture? Simples. Just right click on
-the plot image and export it to a file, either as ``png``, ``eps`, ``svg`` or
+the plot image and export it to a file, either as ``png``, ``eps``, ``svg`` or
 ``pdf``. These formats all produce nice images that you can the send to your
 friends, or include in your assignments or manuscripts. Whereas ``png`` and 
 ``pdf`` files are especially suited to share them with others (a lot of
