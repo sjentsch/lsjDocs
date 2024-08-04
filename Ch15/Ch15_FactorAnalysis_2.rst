@@ -41,9 +41,9 @@ the options panel where you can determine the settings for the PCA
 (:numref:`fig-pca1`). Then select the 25 personality questions and transfer
 them into the ``Variables`` box. Check appropriate options, including
 ``Assumption Checks``, but also ``Rotation`` under ``Method``, ``Number of
-Factors`` to extract, and the ``Additional Output`` options (see
+Components`` to extract, and the ``Additional Output`` options (see
 :numref:`fig-pca1` for suggested options for this PCA, and please note that
-``Rotation`` under ``Method`` and ``Number of Factors`` extracted is typically
+``Rotation`` under ``Method`` and ``Number of Components`` extracted is typically
 adjusted during the analysis to find the best result, as described below).
 
 .. ----------------------------------------------------------------------------

@@ -103,7 +103,7 @@ sample, this is equal to 56 - 36.6 = 19.4. Okay, that’s simple enough. The nex
 step in the process is to convert these deviations to absolute deviations, and
 we do this by converting any negative values to positive ones. Mathematically,
 we would denote the absolute value of -3 as \|-3\|, and so we say that \|-3\|
-= 3`. We use the absolute value here because we don’t really care whether the
+= 3. We use the absolute value here because we don’t really care whether the
 value is higher than the mean or lower than the mean, we’re just interested in
 how *close* it is to the mean. To help make this process as obvious as
 possible, the table below shows these calculations for all five observations:

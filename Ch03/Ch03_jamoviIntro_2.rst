@@ -90,7 +90,7 @@ measurement level into another one. Or, to use the correct term, you want to
 If you want to change a variable’s measurement level then you can do this in
 the jamovi ``Data`` view. Click on the variable name in the top row of the data
 table and then select the desired measurement level under ``Measure Type`` –
-continuous |continuous|, ordinal |ordinal| or nominal |nominal|.
+``continuous`` |continuous|, ``ordinal`` |ordinal| or ``nominal`` |nominal|.
 
 
 Computed variables
@@ -105,7 +105,7 @@ briefly described at the end of the subsection :ref:`EFA_in_jamovi` and in
 :numref:`fig-efa7`.
 
 Computed variables can be added to the data set with the ``Add`` button
-available on the data tab. This will produce a formula box where you can
+available on the ``Data`` tab. This will produce a formula box where you can
 specify the formula. The usual arithmetic operators are available. Some
 examples of formulas are:
 

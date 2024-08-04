@@ -31,7 +31,7 @@ mathematical notation that statisticians use to describe this calculation, and
 talk about how the calculations would be done in jamovi.
 
 The first piece of notation to introduce is *N*, which we’ll use to refer to
-the number of observations that we’re averaging (in this case *N* = 5`). Next,
+the number of observations that we’re averaging (in this case *N* = 5). Next,
 we need to attach a label to the observations themselves. It’s traditional to
 use *X* for this, and to use subscripts to indicate which observation we’re
 actually talking about. That is, we’ll use *X*\ :sub:`1` to refer to the first
