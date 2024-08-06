@@ -118,8 +118,8 @@ to each other. Therefore, since ``2 + 2`` isn’t equal to *5* we would get
    
 We’re not quite done yet. There are three more logical operations that
 are worth knowing about, listed in :numref:`tab-logicals2`. These
-are the **not** operator ``!``, the ``and``-operator and, and the
-``or``-operator ``or``. Like the other logical operators, their
+are the **not** operator ``!``, the **and**-operator ``and``, and the
+**or**-operator ``or``. Like the other logical operators, their
 behaviour is more or less exactly what you’d expect given their names.
 For instance, if I ask you to assess the claim that “either
 ``2 + 2 = 4`` *or* ``2 + 2 = 5``” you’d say that it’s true. Since

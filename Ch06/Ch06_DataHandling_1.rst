@@ -72,11 +72,11 @@ in :numref:`fig-contingencytable`.
    
 .. ----------------------------------------------------------------------------
 
-Don’t worry about the “χ² Tests” table that is produced. We are going to cover
-this later on in chapter :doc:`../Ch10/Ch10_ChiSquare`. When interpreting the
-contingency table remember that these are counts, so the fact that the first
-row and second column of numbers corresponds to a value of 2 indicates that
-``makka-pakka`` (row 1) says ``onk`` (column 2) twice in this data set.
+Don’t worry about the ``χ² Tests`` table that is produced. We are going to
+cover this later on in chapter :doc:`../Ch10/Ch10_ChiSquare`. When interpreting
+the contingency table remember that these are counts, so the fact that the
+first row and second column of numbers corresponds to a value of 2 indicates
+that ``makka-pakka`` (row 1) says ``onk`` (column 2) twice in this data set.
 
 Adding percentages to a contingency table
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

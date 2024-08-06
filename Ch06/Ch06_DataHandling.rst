@@ -17,9 +17,9 @@ Pragmatic matters
 
 .. epigraph::
 
-   *The garden of life never seems to confine itself*
-   *to the plots philosophers have laid out for its convenience.*
-   *Maybe a few more tractors would do the trick.*
+   *The garden of life never seems to confine itself to the plots
+   philosophers have laid out for its convenience. Maybe a few more
+   tractors would do the trick.*
      
    -- Roger Zelazny (Home is the Hangman, 1975)
    

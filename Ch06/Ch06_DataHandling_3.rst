@@ -273,9 +273,9 @@ variable that you want to recode.
 
 .. [#]
    The reason we have to use the ``IF`` command and keep zero as zero is
-   that you cannot just use likert.centred / opinion.strength to
-   calculate the sign of likert.centred, because mathematically dividing
-   zero by zero does not work. Try it and see
+   that you cannot just use ``likert.centred / opinion.strength`` to
+   calculate the sign of ``likert.centred``, because mathematically dividing
+   zero by zero does not work. Try it and see.
 
 .. [#]
    If you’ve read further into the book, and are re-reading this
