@@ -39,9 +39,9 @@ descriptive statistics we can calculate in jamovi are shown in
 .. ----------------------------------------------------------------------------
 
 As the plot makes clear, there is a larger improvement in mood for participants
-in the ``Joyzepam`` group than for either the ``Anxifree`` group or the
-``Placebo`` group. The ``Anxifree`` group shows a larger mood gain than the
-``Placebo`` group, but the difference isn’t as large. The question that we want
+in the ``joyzepam`` group than for either the ``anxifree`` group or the
+``placebo`` group. The ``anxifree`` group shows a larger mood gain than the
+``placebo`` group, but the difference isn’t as large. The question that we want
 to answer is are these difference “real”, or are they just due to chance?
 
 .. ----------------------------------------------------------------------------

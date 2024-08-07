@@ -27,7 +27,7 @@ Hypothesis testing
      psychological one. It is clear that there are no grounds for
      believing that the simplest course of events will really happen. It
      is an hypothesis that the sun will rise tomorrow: and this means
-     that we do not know whether it will rise.*
+     that we do not know whether it will rise*.
      
    -- Ludwig Wittgenstein\ [#]_
 

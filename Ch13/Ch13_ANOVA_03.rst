@@ -13,7 +13,7 @@ this over and over again every time you wanted to do an ANOVA.
 Using jamovi to specify your ANOVA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To make life easier for you, jamovi can do ANOVA..hurrah! Go to the
+To make life easier for you, jamovi can do ANOVA… hurrah! Go to the
 ``ANOVA`` - ``ANOVA`` analysis, and move the ``mood.gain`` variable across
 so it is in the ``Dependent Variable`` box, and then move the ``drug``
 variable across so it is in the ``Fixed Factors`` box. This should give

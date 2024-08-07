@@ -81,7 +81,7 @@ information. In the case of our hypothetical student, we know that
 ``reading = 0``). So the data might look like this:
 
 +----------------+---------------+----------------+----------------+
-| person,        | grade,        | attendance,    | reading,       |
+| person,        | ``grade``,    | ``attend``,    | ``reading``,   |
 | p              | *Y*\ :sub:`p` | *X*\ :sub:`1p` | *X*\ :sub:`2p` |
 +================+===============+================+================+
 | 1              |            90 |             1  |              1 |
@@ -113,7 +113,7 @@ the class both matter a lot.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_rtfmdescriptives.*
-   :alt: jamovi descriptives for the |rtfm| data set
+   :alt: jamovi descriptives for the |rtfm|_ data set
    :name: fig-rtfmdescriptives
 
    jamovi descriptives for the |rtfm|_ dataset
@@ -267,7 +267,7 @@ really true. Running the regression in the usual way gives the results shown in
 There’s a few interesting things to note here. First, notice that the intercept
 term is 43.5 which is close to the “group” mean of 42.5 observed for those two
 students who didn’t read the text or attend class. Second, notice that we have
-the regression coefficient of *b*\ :sub:`1` = 18.0 for the attendance variable,
+the regression coefficient of *b*\ :sub:`1` = 18.0 for the variable ``attend``,
 suggesting that those students that attended class scored 18\% higher than those
 who didn’t. So our expectation would be that those students who turned up to
 class but didn’t read the textbook would obtain a grade of *b*\ :sub:`0` + 

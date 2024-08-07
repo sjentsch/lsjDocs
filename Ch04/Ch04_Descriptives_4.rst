@@ -23,14 +23,14 @@ data at the start of that chapter). Let’s load it and see what we’ve got:
       
 .. ----------------------------------------------------------------------------
 
-Evidently there were three drugs: a placebo, something called “anxifree” and
-something called “joyzepam”, and there were 6 people administered each drug.
-There were 9 people treated using cognitive behavioural therapy (CBT) and 9
-people who received no psychological treatment. And we can see from looking
-at the ``Descriptives`` of the ``mood.gain`` variable that most people did show
-a mood gain (mean = 0.88), though without knowing what the scale is here it’s
-hard to say much more than that. Still, that’s not too bad. Overall I feel that
-I learned something from that.
+Evidently there were three drugs: a ``placebo``, something called ``anxifree``
+and something called ``joyzepam``, and there were 6 people administered each
+drug. There were 9 people treated using cognitive behavioural therapy (``CBT``)
+and 9 people who received no psychological treatment (``no.therapy``). And we
+can see from looking at the ``Descriptives`` of the ``mood.gain`` variable that
+most people did show a mood gain (mean = 0.88), though without knowing what the
+scale is here it’s hard to say much more than that. Still, that’s not too bad.
+Overall I feel that I learned something from that.
 
 We can also go ahead and look at some other descriptive statistics, and this
 time separately for each type of therapy. In jamovi, check ``Std. deviation``,

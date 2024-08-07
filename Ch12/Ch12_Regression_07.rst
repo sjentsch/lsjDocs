@@ -20,7 +20,7 @@ Okay, suppose you’ve estimated your regression model. The first
 hypothesis test you might try is the null hypothesis that there is *no
 relationship* between the predictors and the outcome, and the
 alternative hypothesis that *the data are distributed in exactly the way
-that the regression model predicts.*
+that the regression model predicts*.
 
 Formally, our “null model” corresponds to the fairly trivial
 “regression” model in which we include 0 predictors and only include the

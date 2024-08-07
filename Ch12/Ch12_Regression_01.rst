@@ -49,7 +49,7 @@ practice, but other parents tell me that it’s pretty standard.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_grumpHist.*
-   :alt: Histograms for three variables from the |parenthood| data set
+   :alt: Histograms for three variables from the |parenthood|_ data set
    :name: fig-grumpHist
 
    Histograms for the three interesting variables in the |parenthood|_ data
@@ -191,7 +191,7 @@ variables |continuous| across into the box on the right to get the output in
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_correlations.*
-   :alt: jamovi screenshot with correlations in the |parenthood| data set
+   :alt: jamovi screenshot with correlations in the |parenthood|_ data set
    :name: fig-correlations
 
    jamovi screenshot showing correlations between variables in the

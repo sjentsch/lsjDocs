@@ -80,7 +80,7 @@ etc.). It is helpful to organise all these numbers, plus the marginal
 and grand means, into a single table which looks like this:
 
 +--------------+--------------+--------------+--------------+
-|              | no therapy   |          CBT |        total |
+|              |   no therapy |          CBT |        total |
 +==============+==============+==============+==============+
 | **placebo**  |         0.30 |         0.60 |         0.45 |
 +--------------+--------------+--------------+--------------+

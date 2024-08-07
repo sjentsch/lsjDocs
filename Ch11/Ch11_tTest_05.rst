@@ -45,7 +45,7 @@ there’s an improvement from the first test to the second one.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_ttest_paired1.*
-   :alt: Descriptives for the two grade test variables in the |chico| data set
+   :alt: Descriptives for the two grade test variables in the |chico|_ data set
    :name: fig-ttest_paired1
 
    Descriptives for the two grade test variables in the |chico|_ data set

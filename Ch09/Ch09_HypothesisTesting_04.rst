@@ -104,7 +104,7 @@ A note on statistical “significance”
 
    | *Like other occult techniques of divination, the statistical method
      has a private jargon deliberately contrived to obscure its methods
-     from non-practitioners.*
+     from non-practitioners*.
      
    -- Attributed to G. O. Ashley\ [#]_
 

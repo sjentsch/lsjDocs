@@ -33,17 +33,17 @@ factorial ANOVA using the |clinicaltrial|_ data set, and where we
 specified a main effect for ``drug`` and a main effect of ``therapy`` we
 would be interested in the following four comparisons:
 
--  The difference in mood gain for people given ``Anxifree`` versus people
-   given the ``Placebo``.
+-  The difference in ``mood.gain`` for people given ``anxifree`` versus people
+   given the ``placebo``.
 
--  The difference in mood gain for people given ``Joyzepam`` versus people
-   given the ``Placebo``.
+-  The difference in ``mood.gain`` for people given ``joyzepam`` versus people
+   given the ``placebo``.
 
--  The difference in mood gain for people given ``Anxifree`` versus people
-   given ``Joyzepam``.
+-  The difference in ``mood.gain`` for people given ``anxifree`` versus people
+   given ``joyzepam``.
 
--  The difference in mood gain for people treated with ``CBT`` and people
-   given ``No therapy``.
+-  The difference in ``mood.gain`` for people treated with ``CBT`` and people
+   given ``no.therapy``.
 
 For any one of these comparisons, we’re interested in the true
 difference between (population) group means. Tukey’s HSD constructs
@@ -105,7 +105,7 @@ interaction), we need to include comparisons such as the following:
    ``no.therapy``, versus people given the ``placebo`` and given
    ``no.therapy``.
 
--  etc
+-  etc.
 
 There are quite a lot of these comparisons that you need to consider.
 So, when we run the Tukey post-hoc analysis for this ANOVA model, we see

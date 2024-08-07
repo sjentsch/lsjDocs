@@ -504,8 +504,8 @@ all of the groups.
    formula. The term ``VMEAN(mood.gain, group_by = drug)`` represents the
    group mean |Yb_k|, and ``VMEAN(mood.gain)`` the grand mean |Yb|. Again,
    we find that the values for that variable are the same as in the last
-   column of the table above: the first three rows represent “placebo”,
-   followed by three lines with “anxifree” and three lines with “joyzepam”;
+   column of the table above: the first three rows represent ``placebo``,
+   followed by three lines with ``anxifree`` and three lines with ``joyzepam``;
    the next nine lines are a repetition of the first nine ones.
 
 However, for the between group calculations we need to multiply each of

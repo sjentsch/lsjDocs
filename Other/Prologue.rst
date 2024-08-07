@@ -114,7 +114,7 @@ it’s probably fair to say that I’ve changed more than it has. I moved
 from Adelaide to Sydney in 2016 and my teaching profile at UNSW is
 different to what it was at Adelaide, and I haven’t really had a chance
 to work on it since arriving here! It’s a little strange looking back at
-this actually. A few quick comments...
+this actually. A few quick comments…
 
 -  Weirdly, the book *consistently* misgenders me, but I suppose I have
    only myself to blame for that one :-) There’s now a brief footnote on
@@ -137,7 +137,7 @@ this actually. A few quick comments...
    to adapt it.
 
 Maybe someone would like to write a version that makes use of the
-**tidyverse**... I hear that’s become rather important to R these days
+**tidyverse**… I hear that’s become rather important to R these days
 :-)
 
 Best,
