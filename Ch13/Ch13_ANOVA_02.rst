@@ -470,7 +470,7 @@ wanted to, but it’s pretty tedious. Alternatively, it’s not too hard to
 do this in jamovi. 
 
 #. Go to an empty column (at the end of the data set) and double click on the
-   column header, choose “New computed variable” and enter ``sq_res_wth`` in
+   column header, choose ``New computed variable`` and enter ``sq_res_wth`` in
    the first line and the formula ``(mood.gain - VMEAN(mood.gain, group_by =
    drug)) ^ 2`` in the line starting with ``=`` (next to the *f*\ :sub:`x`).
    ``mood.gain`` represents |Y_ik|, ``VMEAN(mood.gain, group_by = drug)`` the

@@ -356,7 +356,7 @@ Creating contrast variables is not too difficult to do using the jamovi
 ``druganxifree`` variable, write this logical expression in the formula box:
 ``IF(drug == 'anxifree', 1, 0)``. Similarly, to create the new variable
 ``drugjoyzepam`` use this logical expression:
-``IF(drug == 'joyzepam', 1, 0)``. Likewise for ``CBTtherapy``: 
+``IF(drug == 'joyzepam', 1, 0)``. Likewise for ``therapyCBT``: 
 ``IF(therapy == 'CBT', 1, 0)``. You can see these new variables, and the
 corresponding logical expressions, in the |clinicaltrial2|_ data set.
 
@@ -390,7 +390,7 @@ the ANOVA, with results shown in :numref:`fig-factorialanova9`.
 
 Obviously, there are no surprises here. That’s the exact same ANOVA that we ran
 earlier. Next, let’s run a regression using ``druganxifree``, ``drugjoyzepam``
-and ``CBTtherapy`` as the predictors. The results are shown in 
+and ``therapyCBT`` as the predictors. The results are shown in 
 :numref:`fig-factorialanova10`.
 
 .. ----------------------------------------------------------------------------
@@ -407,7 +407,7 @@ and ``CBTtherapy`` as the predictors. The results are shown in
 Hmm. This isn’t the same output that we got last time. Not surprisingly, the
 regression output prints out the results for each of the three predictors
 separately, just like it did every other time we conducted a regression
-analysis. On the one hand we can see that the *p*-value for the ``CBTtherapy``
+analysis. On the one hand we can see that the *p*-value for the ``therapyCBT``
 variable is exactly the same as the one for the ``therapy`` factor |nominal| in
 our original ANOVA, so we can be reassured that the regression model is doing
 the same thing as the ANOVA did. On the other hand, this regression model is
@@ -424,7 +424,7 @@ two contrasts are individually significant. We just want to know if there’s an
 some kind of “model comparison” test, one in which the two “drug-related”
 contrasts are lumped together for the purpose of the test. Sound familiar? All
 we need to do is specify our null model, which in this case would include the
-``CBTtherapy`` predictor, and omit both of the drug-related variables, as in
+``therapyCBT`` predictor, and omit both of the drug-related variables, as in
 :numref:`fig-factorialanova11`\.
 
 .. ----------------------------------------------------------------------------
