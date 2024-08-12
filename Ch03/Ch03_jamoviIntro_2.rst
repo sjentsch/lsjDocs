@@ -260,7 +260,7 @@ change are:
    character for textual data. As you can see by looking at the
    |booksales|_ file, this is usually a double quote character,
    ``"``. But sometimes there is no quoting character at all, or you
-   might see a single quote mark ``’`` used instead.
+   might see a single quote mark ``'`` used instead.
 
 -  ``skip``. It’s actually very common to receive CSV files in which the
    first few rows have nothing to do with the actual data. Instead, they

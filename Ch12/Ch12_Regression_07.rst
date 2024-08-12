@@ -56,7 +56,7 @@ predictors that we’ve included. In fact, it turns out that
 *df*\ :sub:`res` = *N* - *K* - 1.
 
 Now that we’ve got our mean square values we can calculate an
-*F*-statistic like this
+*F*-statistic like this:
 
 | F = MS\ :sub:`mod` / SS\ :sub:`res`
 

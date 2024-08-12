@@ -270,7 +270,7 @@ First, we have our “total ranked sums of squares”
 
 .. math:: \mbox{RSS}_{tot} = \sum_k \sum_i ( R_{ik} - \bar{R} )^2
 
-and we can define the “between groups ranked sums of squares” like this
+and we can define the “between groups ranked sums of squares” like this:
 
 .. math::
 

@@ -37,7 +37,7 @@ This is where the *p*-value comes in handy. To understand how it
 works, let’s suppose that we ran lots of hypothesis tests on the same
 data set, but with a different value of α in each case.
 When we do that for my original ESP data what we’d get is something like
-this
+this:
 
 +------------------+------+------+------+------+------+
 | Value of α       | 0.05 | 0.04 | 0.03 | 0.02 | 0.01 |

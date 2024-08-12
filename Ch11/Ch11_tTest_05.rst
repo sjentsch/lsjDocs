@@ -166,10 +166,10 @@ Doing the test in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 How do you do a paired samples *t*-test in jamovi? One possibility is to follow
-the process I outlined above. That is, create a ``difference`` variable and
-then run a one sample *t*-test on that. Since we’ve already created a variable
-called ``improvement``, let’s do that and see what we get
-(see :numref:`fig-ttest_paired2`\).
+the process I outlined above. That is, create a difference variable and then
+run a one sample *t*-test on that. Since we’ve already created a variable
+called ``improvement``, let’s do that and see what we get (see
+:numref:`fig-ttest_paired2`\).
 
 .. ----------------------------------------------------------------------------
 

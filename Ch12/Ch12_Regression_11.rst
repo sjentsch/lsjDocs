@@ -74,7 +74,7 @@ have standard deviation 1.
 
 The way we calculate these is to divide the ordinary residual by an
 estimate of the (population) standard deviation of these residuals. For
-technical reasons, mumble mumble, the formula for this is
+technical reasons, mumble mumble, the formula for this is:
 
 | ε\ :sub:`i`\' = :math:`\frac{\epsilon_i}{\hat{\sigma} \sqrt{1-h_i}}`
 

@@ -227,7 +227,7 @@ by *N*. If we do that, we obtain the following formula:
 
 .. math:: \hat\sigma^2 = \frac{1}{N-1} \sum_{i=1}^N (X_i - \bar{X})^2
 
-This is an unbiased estimator of the population variance σ. Moreover, this
+This is an unbiased estimator of the population variance σ². Moreover, this
 finally answers the question we raised in :doc:`../Ch04/Ch04_Descriptives_2`.
 Why did jamovi give us slightly different answers for variance? It’s because
 jamovi calculates :math:`\hat\sigma^2` not *s*\², that’s why. A similar story

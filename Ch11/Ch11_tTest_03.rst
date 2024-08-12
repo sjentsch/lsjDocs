@@ -196,7 +196,7 @@ difference
 So why not just use these deviations (i.e., the extent to which each student’s
 grade differs from the mean grade in their tutorial)? Remember, a variance is
 just the average of a bunch of squared deviations, so let’s do that.
-Mathematically, we could write it like this
+Mathematically, we could write it like this:
 
 .. math:: \frac{\sum_{ik} \left( X_{ik} - \bar{X}_k \right)^2}{N}
 
@@ -388,7 +388,7 @@ Anastasia’s class corresponded to group 1. If so, I would write
 doing it to emphasise the point that “higher” corresponds to positive
 *t*-values). On the other hand, suppose the phrasing I wanted to
 use has Bernadette’s class listed first. If so, it makes more sense to
-treat her class as group 1, and if so, the write up looks like this
+treat her class as group 1, and if so, the write up looks like this:
 
    Bernadette’s class had lower grades than Anastasia’s class:
    *t*\(31) = -2.1, *p* = 0.04.
