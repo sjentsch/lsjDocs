@@ -55,7 +55,7 @@ interested in testing to see if group A has *higher* scores than group
 B, but have no interest in finding out if group B has higher scores than
 group A. Let’s suppose that, for Dr Harpo’s class, you wanted to see if
 Anastasia’s students had higher grades than Bernadette’s. For this
-analysis, in the ``Hypothesis`` options, specify that ``Group 1 > Group2``.
+analysis, in the ``Hypothesis`` options, specify that ``Group 1 > Group 2``.
 You should get the results shown in :numref:`fig-ttest_onesided2`.
 
 .. ----------------------------------------------------------------------------
@@ -91,8 +91,8 @@ this first into the paired variables box) > ``grade_test1``
    :name: fig-ttest_onesided3
 
    jamovi results showing a ``Paired Samples T-Test`` where the actual
-   hypothesis is one-sided, i.e. that ``grade test2`` (``Measure 1``) is larger 
-   than ``grade test1`` (``Measure 2``).
+   hypothesis is one-sided, i.e. that ``grade_test2`` (``Measure 1``) is larger 
+   than ``grade_test1`` (``Measure 2``).
    
 .. ----------------------------------------------------------------------------
 

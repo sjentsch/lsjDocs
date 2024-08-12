@@ -652,7 +652,7 @@ matter (bottom-left), and (4) neither A nor B matters (bottom-right).
    real headache. But let’s ignore this for now.
 
 .. [#]
-   English translation: “least tedious”.
+   To put it bluntly: “least tedious”.
 
 .. ----------------------------------------------------------------------------
 

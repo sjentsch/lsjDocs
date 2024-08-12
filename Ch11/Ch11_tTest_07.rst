@@ -79,7 +79,7 @@ that the story becomes messier, since there are several different versions of
 *d* that you might want to use in this situation. To understand why there are
 multiple versions of *d*, it helps to take the time to write down a formula
 that corresponds to the true population effect size δ. It’s pretty
-straightforward, δ = (µ\ :sub:`1` - µ\ :sub:`2`) / 
+straightforward, δ = (µ\ :sub:`1` - µ\ :sub:`2`) / σ.
 
 where, as usual, µ\ :sub:`1` and µ\ :sub:`2` are the population
 means corresponding to group 1 and group 2 respectively, and

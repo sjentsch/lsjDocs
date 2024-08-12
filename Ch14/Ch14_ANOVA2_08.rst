@@ -111,7 +111,7 @@ Sum to zero contrasts
 ~~~~~~~~~~~~~~~~~~~~~
 
 The third option that I should briefly mention are “sum to zero” contrasts,
-called “Simple” contrasts in jamovi, which are used to construct pairwise
+called ``Simple`` contrasts in jamovi, which are used to construct pairwise
 comparisons between groups. Specifically, each contrast encodes the difference
 between one of the groups and a baseline category, which in this case
 corresponds to the first group:
