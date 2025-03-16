@@ -10,9 +10,9 @@
 import os
 import sys
 import re
-import time
 sys.path.insert(0, os.path.abspath('.'))
-import sphinx
+from time import strftime
+from sphinx import __display_version__
 import sphinx_rtd_theme
 from sphinx.locale import _
 
@@ -20,8 +20,8 @@ from sphinx.locale import _
 project = u'Learning statistics with jamovi'
 slug = u'lsj'
 author = u'Danielle J. Navarro, David R. Foxcroft'
-copyright = f'2011-{time.strftime("%Y")}, ' + author + ', and Sebastian Jentschke (curating this documentation). This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
-version = sphinx.__display_version__
+copyright = f'2011-{strftime("%Y")}, ' + author + ', and Sebastian Jentschke (curating this documentation). This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+version = __display_version__
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.

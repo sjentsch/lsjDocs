@@ -2,9 +2,9 @@
 .DS_Store
 
 # build stuff
-_env
 _env/
 _build/
+_original/
 
 # exclude removed files
 *.rmv

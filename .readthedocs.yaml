@@ -5,7 +5,18 @@
 # Required
 version: 2
 
-# submodules
+# set the OS, Python version and other tools you might need
+build:
+  image: latest
+  os: ubuntu-22.04
+  tools:
+    python: "3.12"
+    # nodejs: "20"
+# build documentation with MkDocs
+#mkdocs:
+#  configuration: mkdocs.yml
+
+# submodules (submodules contain the translations)
 submodules:
   include: all
 
@@ -20,16 +31,23 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.12"
-# build documentation with MkDocs
-#mkdocs:
-#  configuration: mkdocs.yml
-
-# Optionally build your docs in additional formats such as PDF
-#formats:
-#  - pdf
-# - epub
 
 # optionally: set the version of Python and requirements required to build your docs
+  configuration: conf.py
+  # You can configure Sphinx to use a different builder,
+  # for instance use the dirhtml builder for simpler URLs
+  builder: "dirhtml"
+  # Fail on all warnings to avoid broken references
+  fail_on_warning: false
+
+# Optionally build your docs in additional formats such as PDF and ePub
+#formats:
+#   - pdf
+#   - epub
+
+# Optional but recommended, declare the Python requirements required
+# to build your documentation
+# See https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html
 python:
   install:
     - requirements: requirements.txt
