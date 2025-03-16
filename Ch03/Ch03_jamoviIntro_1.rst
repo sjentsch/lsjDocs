@@ -17,7 +17,9 @@ distributed online and you can download it from the jamovi homepage, which is:
 At the top of the page, under the heading `“Download”
 <https://www.jamovi.org/download.html>`__, you’ll see separate links for
 Windows users, Mac users, and Linux users. If you follow the relevant link
-you’ll see that the online instructions are pretty self-explanatory.\ [#]_
+you’ll see that the online instructions are pretty self-explanatory. At the
+time of writing, the current version of jamovi is 2.6, but they usually issue
+updates every few months, so you’ll probably have a newer version.\ [#]_
 
 Whereas this text book was one of the first resources available to support
 jamovi, there is now an abundance of them: Have a look under “resources” →
@@ -51,9 +53,9 @@ The first time you open jamovi, you may want to change some of the default
 settings. These can be accessed from the settings menu (``⋮``, at the top-left
 corner). You can for example change there how many decimals you would like to
 be displayed in your analyses’ output, the plot and color schemes for your
-figures and (since version 2.3 of jamovi) also the language of your jamovi
-user interface. On most operating systems (OS), the language defaults to the
-language you have set for your OS.\ [#]
+figures and (since version 2.3 of jamovi) the language of your jamovi user
+interface. On most operating systems (OS), the language defaults to the
+language you have set for your OS.\ [#]_
 
 To quit jamovi, just close the program the same way you would any other
 program. However, what you might want to do before you quit is save your
