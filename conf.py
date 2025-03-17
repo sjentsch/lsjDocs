@@ -100,6 +100,8 @@ html_theme = "sphinx_rtd_theme"
 # further.  For a list of options available for each theme, see the documentation.
 # https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html
 html_theme_options = {
+    # privacy options
+    'analytics_anonymize_ip': True,
     # TOC options: (1) maximum number iof (heading) levels to show in the TOC, (2) navigation entries are not expandable ([+], default: True),
     #              (3) scroll the navigation with the main page content as you scroll the page (default: True), (4) if the navigation includes
     #              hidden table(s) of contents (Default: True), (5) whether to include page subheadings in the TOC (default: False)
@@ -108,9 +110,12 @@ html_theme_options = {
     'sticky_navigation': True,
     'includehidden': True,
     'titles_only': True,
-    # only display the logo image (default: False), do not display the project name and the version number at the top of the sidebar (default: True)
+    # only display the logo image (default: False), do not display a version selector in the sidebar (default: True),
+    # but do display a langauge selector (default: True)
     'logo_only': True,
-    'display_version': False,    
+    'flyout_display': 'attached',
+    'version_selector': False,
+    'language_selector': True,
     # location of the prev / next buttons (default: 'bottom') and allow navigating using the keyboard’s left and right arrows (default: False)
     'prev_next_buttons_location': 'bottom',
     'navigation_with_keys': True,
