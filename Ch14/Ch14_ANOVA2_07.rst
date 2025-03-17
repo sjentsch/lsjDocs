@@ -238,7 +238,7 @@ table of *expected grades*:
 +---------------+---------+-------------------------------+-----------------------------------------------+
 
 As you can see, the intercept term *b*\ :sub:`0` acts like a kind of “baseline”
-grade that you would expect from those students who don’t take the time to
+``grade`` that you would expect from those students who don’t take the time to
 attend class or read the textbook. Similarly, *b*\ :sub:`1` represents the
 boost that you’re expected to get if you come to class, and *b*\ :sub:`2`
 represents the boost that comes from reading the textbook. In fact, if this
