@@ -489,9 +489,9 @@ In other words
 | SS\ :sub:`R` = SS\ :sub:`T` - (SS\ :sub:`A` + SS\ :sub:`B`)
 
 Of course, there is a formula that you can use to calculate the residual
-SS directly, but I think that it makes more conceptual sense to think of
-it like this. The whole point of calling it a residual is that it’s the
-leftover variation, and the formula above makes that clear. I should
+SS (SS\ :sub:`R`) directly, but I think that it makes more conceptual sense
+to think of it like this. The whole point of calling it a residual is that
+it’s the leftover variation, and the formula above makes that clear. I should
 also note that, in keeping with the terminology used in the regression
 chapter, it is commonplace to refer to SS\ :sub:`A` + SS\ :sub:`B`
 as the variance attributable to the “ANOVA model”, denoted
