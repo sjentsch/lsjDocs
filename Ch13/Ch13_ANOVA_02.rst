@@ -61,7 +61,7 @@ to refer to the mood change experienced by the *i*-th member of
 the *k*-th group. Similarly, we’ll use |Yb| to be the
 average mood change, taken across all 18 people in the experiment, and
 |Yb_k| to refer to the average mood change experienced by the
-6 people in group *k*.\ [#]
+6 people in group *k*.
 
 Now that we’ve got our notation sorted out we can start writing down formulas.
 To start with, let’s recall the :ref:`formula for the variance
@@ -202,15 +202,15 @@ variability associated with the outcome variable
 (|SS_t|\) can be mathematically carved up into the sum
 of “the variation due to the differences in the sample means for the
 different groups” (|SS_b|\) plus “all the rest of the
-variation” (|SS_w|\).\ [#]_ How does that help me find out
-whether the groups have different population means? Um. Wait. Hold on a
-second. Now that I think about it, this is *exactly* what we were
-looking for. If the null hypothesis is true then you’d expect all the
-sample means to be pretty similar to each other, right? And that would
-imply that you’d expect |SS_b| to be really small, or at
-least you’d expect it to be a lot smaller than “the variation associated
-with everything else”, |SS_w|\. Hmm. I detect a hypothesis
-test coming on.
+variation” (|SS_w|\).\ [#]_
+
+How does that help me find out whether the groups have different population
+means? Um. Wait. Hold on a second. Now that I think about it, this is *exactly*
+what we were looking for. If the null hypothesis is true then you’d expect all
+the sample means to be pretty similar to each other, right? And that would
+imply that you’d expect |SS_b| to be really small, or at least you’d expect it
+to be a lot smaller than “the variation associated with everything else”,
+|SS_w|\. Hmm. I detect a hypothesis test coming on.
 
 From sums of squares to the *F*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

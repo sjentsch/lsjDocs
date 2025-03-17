@@ -17,9 +17,13 @@ distributed online and you can download it from the jamovi homepage, which is:
 At the top of the page, under the heading `“Download”
 <https://www.jamovi.org/download.html>`__, you’ll see separate links for
 Windows users, Mac users, and Linux users. If you follow the relevant link
-you’ll see that the online instructions are pretty self-explanatory. At the
-time of writing, the current version of jamovi is 2.6, but they usually issue
-updates every few months, so you’ll probably have a newer version.\ [#]_
+you’ll see that the online instructions are pretty self-explanatory.\ [#]_
+
+..
+   (removed)
+   At the time of writing, the current version of jamovi is 2.6, but they
+   usually issue updates every few months, so you’ll probably have a newer
+   version.
 
 Whereas this text book was one of the first resources available to support
 jamovi, there is now an abundance of them: Have a look under “resources” →
