@@ -20,7 +20,7 @@ from sphinx.locale import _
 project = u'Learning statistics with jamovi'
 slug = u'lsj'
 author = u'Danielle J. Navarro, David R. Foxcroft'
-copyright = f'2011-{strftime("%Y")}, ' + author + ', and Sebastian Jentschke (curating this documentation). This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+copyright = u'2011-{}, {}, and Sebastian Jentschke (curating this documentation). This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'.format(strftime("%Y"), author)
 version = __display_version__
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
