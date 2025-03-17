@@ -23,12 +23,11 @@ Web-version of "Learning statistics with jamovi" using (rST / HTML) Sphinx. The 
    `$ source _env/bin/activate`<br>
    Set up and activate the virtual environment.<br>
    
-   `$ pip install --upgrade --no-cache-dir pip 'setuptools<58.3.0'`
-   `$ pip install --upgrade --no-cache-dir pillow mock==1.0.1 'alabaster>=0.7,<0.8,!=0.7.5' commonmark==0.9.1 recommonmark==0.5.0 sphinx sphinx-rtd-theme 'readthedocs-sphinx-ext<2.3'`
-   `$ pip install --exists-action=w --no-cache-dir -r requirements.txt`<br>
+   `$ pip install --upgrade --no-cache-dir -r requirements.txt`<br>
    Update the required packages (wheels) in the virtual environment (if necessary).<br>
 
-   `$ ./.crtLng.sh`<br>
+   `$ ./.crtLng.sh` or perhaps (if there is an error about locales)<br>
+   `$ LC_ALL='en_GB.utf8' ./.crtLng.sh`<br>
    Creates / updates the language files.
 
    `$ rm -fR _build/{html,doctrees} && git submodule update --remote && git add _locale && git commit -am "Weblate-updates ($(date +%F))" && git push && for L in $(less .languages); do sphinx-build -b html -D language=${L} . _build/html/${L}; rm -fR _build/html/${L}/.doctrees; if [ "${L}" != "en" ]; then cd _build/html/${L}; for D in _images _static; do rm -fR ${D}; ln -s ../en/${D}; done; cd -; fi; done`<br>
