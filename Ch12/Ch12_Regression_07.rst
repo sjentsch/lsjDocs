@@ -161,7 +161,7 @@ column is the actual estimate of *b* (e.g., 125.97 for the intercept, and
 error estimate :math:`\hat\sigma_b`. The third and fourth columns provide the
 lower and upper values for the 95\% confidence interval around the *b*
 estimate (more on this later). The fifth column gives you the *t*-statistic,
-and it’s worth noticing that in this table :math:`t= \hat{b}/ SE(\hat{b})`
+and it’s worth noticing that in this table :math:`t= \hat{b} / SE(\hat{b})`
 every time. Finally, the last column gives you the actual *p*-value for each
 of these tests.\ [#]_
 
