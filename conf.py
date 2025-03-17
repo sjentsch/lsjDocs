@@ -10,8 +10,8 @@
 import os
 import sys
 import re
-sys.path.insert(0, os.path.abspath('.'))
 from time import strftime
+sys.path.insert(0, os.path.abspath('.'))
 from sphinx import __display_version__
 import sphinx_rtd_theme
 from sphinx.locale import _
@@ -411,9 +411,9 @@ current_version = 'latest'
 html_context['current_version'] = current_version
 html_context['version'] = current_version
  
-html_context['downloads'] = list()
-html_context['downloads'].append(('PDF',  '/' + language + '/' + current_version + '/' + project + '-docs_' + language + '_' + current_version + '.pdf'))
-html_context['downloads'].append(('epub', '/' + language + '/' + current_version + '/' + project + '-docs_' + language + '_' + current_version + '.epub'))
+#html_context['downloads'] = list()
+#html_context['downloads'].append(('PDF',  '/' + language + '/' + current_version + '/' + #project + '-docs_' + language + '_' + current_version + '.pdf'))
+#html_context['downloads'].append(('epub', '/' + language + '/' + current_version + '/' + #project + '-docs_' + language + '_' + current_version + '.epub'))
 
 html_context['display_github'] = False
 html_context['last_updated'] = False
