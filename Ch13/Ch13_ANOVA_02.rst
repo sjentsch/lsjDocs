@@ -176,9 +176,8 @@ calculate the **between-group sum of squares**
                  &=& \sum_{k=1}^G N_k \left( \bar{Y}_k - \bar{Y} \right)^2\end{aligned}
 
 It’s not too difficult to show that the total variation among people in
-the experiment |SS_t| is actually the sum of the
-differences between the groups |SS_b| and the variation
-inside the groups S\ :sub:`w`\. That is,
+the experiment |SS_t| is actually the sum of the differences between the
+groups |SS_b| and the variation inside the groups |SS_w|. That is,
 
 |SS_w| + |SS_b| = |SS_t|
 
@@ -187,7 +186,7 @@ Yay.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_anovaWthBtw.*
-   :alt: illustration of between and within groups variation
+   :alt: Illustration of between and within groups variation
    :name: fig-anovaWthBtw
 
    Graphical illustration of “between groups” variation (left panel) and
