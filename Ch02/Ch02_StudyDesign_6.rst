@@ -554,8 +554,8 @@ where if you expect great things of people they’ll tend to rise to the
 occasion. But if you expect them to fail then they’ll do that too. In
 other words, the expectations become a self-fulfilling prophesy.
 
-Demand effects and reactivity
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Demand characteristics and reactivity
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When talking about experimenter bias, the worry is that the experimenter’s
 knowledge or desires for the experiment are communicated to the participants,
@@ -564,7 +564,7 @@ and that these can change people’s behaviour (:ref:`Rosenthal, 1966
 it’s almost impossible to stop people from knowing that they’re part of a
 psychological study. And the mere fact of knowing that someone is watching or
 studying you can have a pretty big effect on behaviour. This is generally
-referred to as **reactivity** or **demand effects**. The basic idea is
+referred to as **reactivity** or **demand characteristics**. The basic idea is
 captured by the Hawthorne effect: people alter their performance because of
 the attention that the study focuses on them. The effect takes its name from
 a study that took place in the “Hawthorne Works” factory outside of Chicago
@@ -598,8 +598,8 @@ events were occurring in the real world:
 Placebo effects
 ~~~~~~~~~~~~~~~
 
-The **placebo effect** is a specific type of demand effect that we worry
-a lot about. It refers to the situation where the mere fact of being
+The **placebo effect** is a specific type of demand characteristic that we
+worry a lot about. It refers to the situation where the mere fact of being
 treated causes an improvement in outcomes. The classic example comes
 from clinical trials. If you give people a completely chemically inert
 drug and tell them that it’s a cure for a disease, they will tend to get
