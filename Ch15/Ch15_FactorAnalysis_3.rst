@@ -313,11 +313,11 @@ of information to include in your write-up:
 .. |bfi_sample2|                       replace:: ``bfi_sample2``
 .. _bfi_sample2:                       ../../_statics/data/bfi_sample2.omv
 
-.. |continuous|                       image:: ../_images/variable-continuous.*
+.. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px
  
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px
 
-.. |ordinal|                          image:: ../_images/variable-ordinal.*
+.. |ordinal|                           image:: ../_images/variable-ordinal.*
    :width: 16px

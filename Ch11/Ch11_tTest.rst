@@ -63,8 +63,8 @@ discussing any of these useful things, we’ll start with a discussion of the
 
 .. ----------------------------------------------------------------------------
 
-.. |continuous|                       image:: ../_images/variable-continuous.*
+.. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px
  
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px   

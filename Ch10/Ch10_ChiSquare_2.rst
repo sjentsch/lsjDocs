@@ -324,5 +324,5 @@ instead of doing work.
 .. |chapek9|                           replace:: ``chapek9``
 .. _chapek9:                           ../../_statics/data/chapek9.omv
 
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px

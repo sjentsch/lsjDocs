@@ -470,8 +470,8 @@ previously in the context of the one sample *t*-test (see section
 .. |harpo|                             replace:: ``harpo``
 .. _harpo:                             ../../_statics/data/harpo.omv
 
-.. |continuous|                       image:: ../_images/variable-continuous.*
+.. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px
  
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px

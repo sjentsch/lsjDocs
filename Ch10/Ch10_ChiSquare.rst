@@ -44,5 +44,5 @@ more common ones.
 
 .. ----------------------------------------------------------------------------
 
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px

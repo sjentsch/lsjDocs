@@ -249,5 +249,5 @@ that’s about as much as you really need to know for now.\ [#]_
 
 .. ----------------------------------------------------------------------------
 
-.. |continuous|                       image:: ../_images/variable-continuous.*
+.. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px

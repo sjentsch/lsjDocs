@@ -650,8 +650,8 @@ them, and it goes missing.
 .. |coffee|                            replace:: ``coffee``
 .. _coffee:                            ../../_statics/data/coffee.omv
 
-.. |continuous|                       image:: ../_images/variable-continuous.*
+.. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px
  
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px

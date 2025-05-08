@@ -144,8 +144,8 @@ to consult a friendly statistician).
 .. |ancova|                            replace:: ``ancova``
 .. _ancova:                            ../../_statics/data/ancova.omv
 
-.. |continuous|                       image:: ../_images/variable-continuous.*
+.. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px
 
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px

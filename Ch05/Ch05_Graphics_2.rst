@@ -199,5 +199,5 @@ the topic again in section :doc:`../Ch12/Ch12_Regression_11`.
 .. |aflmarginbyyear|                   replace:: ``aflmarginbyyear``
 .. _aflmarginbyyear:                   ../../_statics/data/aflmarginbyyear.omv
 
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px

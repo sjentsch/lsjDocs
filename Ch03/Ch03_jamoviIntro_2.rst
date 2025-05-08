@@ -310,14 +310,14 @@ LibreOffice, and JSON.
 .. |booksales|                         replace:: ``booksales.csv``
 .. _booksales:                         ../../_statics/data/booksales.csv
 
-.. |ID|                               image:: ../_images/variable-id.*
+.. |ID|                                image:: ../_images/variable-id.*
    :width: 16px
 
-.. |continuous|                       image:: ../_images/variable-continuous.*
+.. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px
 
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px
 
-.. |ordinal|                          image:: ../_images/variable-ordinal.*
+.. |ordinal|                           image:: ../_images/variable-ordinal.*
    :width: 16px

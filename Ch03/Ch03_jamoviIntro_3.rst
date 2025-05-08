@@ -105,14 +105,14 @@ modules to install include ``scatr`` (added under ``Descriptives``) and |Rj|_.
 .. |Rj|                                replace:: ``Rj``
 .. _Rj:                                https://docs.jamovi.org/_pages/Rj_overview.html
 
-.. |ID|                               image:: ../_images/variable-id.*
+.. |ID|                                image:: ../_images/variable-id.*
    :width: 16px
  
-.. |continuous|                       image:: ../_images/variable-continuous.*
+.. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px
  
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px
  
-.. |ordinal|                          image:: ../_images/variable-ordinal.*
+.. |ordinal|                           image:: ../_images/variable-ordinal.*
    :width: 16px

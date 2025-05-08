@@ -603,11 +603,11 @@ information to include in your write-up:
 .. |bfi_sample|                        replace:: ``bfi_sample``
 .. _bfi_sample:                        ../../_statics/data/bfi_sample.omv
 
-.. |continuous|                       image:: ../_images/variable-continuous.*
+.. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px
  
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px
  
-.. |ordinal|                          image:: ../_images/variable-ordinal.*
+.. |ordinal|                           image:: ../_images/variable-ordinal.*
    :width: 16px

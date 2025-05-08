@@ -28,5 +28,5 @@ continuous outcomes |continuous|.
 
 .. ----------------------------------------------------------------------------
 
-.. |continuous|                       image:: ../_images/variable-continuous.*
+.. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px

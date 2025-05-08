@@ -546,5 +546,5 @@ the degrees of freedom for the residuals is *df*\ :sub:`2` = 18 - 4 = 14.
 .. |clinicaltrial2|                    replace:: ``clinicaltrial2``
 .. _clinicaltrial2:                    ../../_statics/data/clinicaltrial2.omv
 
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px

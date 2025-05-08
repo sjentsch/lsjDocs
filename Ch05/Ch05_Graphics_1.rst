@@ -79,5 +79,5 @@ nominal scale |nominal| then histograms are useless.
 .. |aflsmall_finalists|                replace:: ``aflsmall_finalists``
 .. _aflsmall_finalists:                ../../_statics/data/aflsmall_finalists.omv
 
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px

@@ -45,8 +45,8 @@ performance.
 
 .. ----------------------------------------------------------------------------
 
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px
  
-.. |ordinal|                          image:: ../_images/variable-ordinal.*
+.. |ordinal|                           image:: ../_images/variable-ordinal.*
    :width: 16px

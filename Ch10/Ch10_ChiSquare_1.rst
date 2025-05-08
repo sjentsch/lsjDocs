@@ -730,5 +730,5 @@ to be aware of.
 .. |randomness|                        replace:: ``randomness``
 .. _randomness:                        ../../_statics/data/randomness.omv
 
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px

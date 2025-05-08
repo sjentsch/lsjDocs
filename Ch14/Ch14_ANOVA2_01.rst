@@ -662,8 +662,8 @@ matter (bottom-left), and (4) neither A nor B matters (bottom-right).
 .. |clinicaltrial_factorialanova|      replace:: ``clinicaltrial_factorialanova``
 .. _clinicaltrial_factorialanova:      ../../_statics/data/clinicaltrial_factorialanova.omv
 
-.. |continuous|                       image:: ../_images/variable-continuous.*
+.. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px
  
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px

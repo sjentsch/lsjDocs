@@ -392,11 +392,11 @@ should bet on a 3 point margin.
 .. |aflsmall_finalists|                replace:: ``aflsmall_finalists``
 .. _aflsmall_finalists:                ../../_statics/data/aflsmall_finalists.omv
 
-.. |continuous|                       image:: ../_images/variable-continuous.*
+.. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px
  
-.. |nominal|                          image:: ../_images/variable-nominal.*
+.. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px
  
-.. |ordinal|                          image:: ../_images/variable-ordinal.*
+.. |ordinal|                           image:: ../_images/variable-ordinal.*
    :width: 16px
