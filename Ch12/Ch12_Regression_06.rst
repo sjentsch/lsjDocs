@@ -163,7 +163,7 @@ a better model, well we’ve got hypothesis tests for that.
 .. ----------------------------------------------------------------------------
 
 .. |parenthood|                        replace:: ``parenthood``
-.. _parenthood:                        ../_static/data/parenthood.omv
+.. _parenthood:                        ../../_statics/data/parenthood.omv
 
 .. |parenthood_r2|                     replace:: ``parenthood_r2``
-.. _parenthood_r2:                     ../_static/data/parenthood_r2.omv
+.. _parenthood_r2:                     ../../_statics/data/parenthood_r2.omv

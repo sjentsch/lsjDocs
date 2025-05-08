@@ -136,7 +136,7 @@ personality attribute than the other personality scales.
 .. ----------------------------------------------------------------------------
 
 .. |bfi_sample3|                       replace:: ``bfi_sample3``
-.. _bfi_sample3:                       ../_static/data/bfi_sample3.omv
+.. _bfi_sample3:                       ../../_statics/data/bfi_sample3.omv
 
 .. |continuous|                       image:: ../_images/variable-continuous.*
    :width: 16px

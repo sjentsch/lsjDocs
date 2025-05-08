@@ -120,4 +120,4 @@ grumpiness will go off the scale, to an insane value of (*Y*\ :sub:`i` =
 .. ----------------------------------------------------------------------------
 
 .. |parenthood|                        replace:: ``parenthood``
-.. _parenthood:                        ../_static/data/parenthood.omv
+.. _parenthood:                        ../../_statics/data/parenthood.omv

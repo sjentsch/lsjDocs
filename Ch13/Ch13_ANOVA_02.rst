@@ -679,8 +679,8 @@ Sigh. So much work for one short sentence.
 .. `\displaystyle\frac{\mbox{SS}_w}{\mbox{df}_w}`
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
-.. _clinicaltrial:                     ../_static/data/clinicaltrial.omv
+.. _clinicaltrial:                     ../../_statics/data/clinicaltrial.omv
 
 .. |clinicaltrial_anova|               replace:: ``clinicaltrial_anova``
-.. _clinicaltrial_anova:               ../_static/data/clinicaltrial_anova.omv
+.. _clinicaltrial_anova:               ../../_statics/data/clinicaltrial_anova.omv
 

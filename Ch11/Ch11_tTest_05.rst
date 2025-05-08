@@ -225,7 +225,7 @@ which of course they have to be given that the paired samples
 .. ----------------------------------------------------------------------------
 
 .. |chico|                             replace:: ``chico``
-.. _chico:                             ../_static/data/chico.omv
+.. _chico:                             ../../_statics/data/chico.omv
 
 .. |continuous|                       image:: ../_images/variable-continuous.*
    :width: 16px

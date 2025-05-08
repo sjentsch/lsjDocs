@@ -56,4 +56,4 @@ following:
 .. ----------------------------------------------------------------------------
 
 .. |nightgarden|                       replace:: ``nightgarden``
-.. _nightgarden:                       ../_static/data/nightgarden.omv
+.. _nightgarden:                       ../../_statics/data/nightgarden.omv

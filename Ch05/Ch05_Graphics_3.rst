@@ -44,4 +44,4 @@ get a bar graph, something like that shown in :numref:`fig-bar1`.
 .. ----------------------------------------------------------------------------
 
 .. |afl.finalists|                     replace:: ``afl.finalists``
-.. _afl.finalists:                     ../_static/data/aflsmall_finalists.omv
+.. _afl.finalists:                     ../../_statics/data/aflsmall_finalists.omv

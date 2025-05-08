@@ -415,10 +415,10 @@ box in the ``Correlation Matrix`` options panel.
 .. ----------------------------------------------------------------------------
 
 .. |parenthood|                        replace:: ``parenthood``
-.. _parenthood:                        ../_static/data/parenthood.omv
+.. _parenthood:                        ../../_statics/data/parenthood.omv
 
 .. |anscombe|                          replace:: ``anscombe``
-.. _anscombe:                          ../_static/data/anscombe.omv
+.. _anscombe:                          ../../_statics/data/anscombe.omv
 
 .. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px

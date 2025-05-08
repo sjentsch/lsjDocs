@@ -142,7 +142,7 @@ to consult a friendly statistician).
 .. ----------------------------------------------------------------------------
 
 .. |ancova|                            replace:: ``ancova``
-.. _ancova:                            ../_static/data/ancova.omv
+.. _ancova:                            ../../_statics/data/ancova.omv
 
 .. |continuous|                       image:: ../_images/variable-continuous.*
    :width: 16px

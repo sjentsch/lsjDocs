@@ -320,4 +320,4 @@ with unicorns and fairies and leprechauns!
 .. ----------------------------------------------------------------------------
 
 .. |zeppo|                             replace:: ``zeppo``
-.. _zeppo:                             ../_static/data/zeppo.omv
+.. _zeppo:                             ../../_statics/data/zeppo.omv

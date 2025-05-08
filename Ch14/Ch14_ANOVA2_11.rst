@@ -648,7 +648,7 @@ them, and it goes missing.
 .. ----------------------------------------------------------------------------
 
 .. |coffee|                            replace:: ``coffee``
-.. _coffee:                            ../_static/data/coffee.omv
+.. _coffee:                            ../../_statics/data/coffee.omv
 
 .. |continuous|                       image:: ../_images/variable-continuous.*
    :width: 16px

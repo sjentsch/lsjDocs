@@ -128,13 +128,13 @@ of the test won’t give us a different answer, of course; see
 .. ----------------------------------------------------------------------------
 
 .. |aflsmall_margins|                  replace:: ``aflsmall_margins``
-.. _aflsmall_margins:                  ../_static/data/aflsmall_margins.omv
+.. _aflsmall_margins:                  ../../_statics/data/aflsmall_margins.omv
 
 .. |awesome|                           replace:: ``awesome``
-.. _awesome:                           ../_static/data/awesome.omv
+.. _awesome:                           ../../_statics/data/awesome.omv
 
 .. |happiness|                         replace:: ``happiness``
-.. _happiness:                         ../_static/data/happiness.omv
+.. _happiness:                         ../../_statics/data/happiness.omv
 
 .. |continuous|                       image:: ../_images/variable-continuous.*
    :width: 16px

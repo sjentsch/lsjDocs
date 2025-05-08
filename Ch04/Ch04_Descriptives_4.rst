@@ -73,7 +73,7 @@ stating something like ``NaN`` or ``Inf``.\ [#]_
 .. ----------------------------------------------------------------------------
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
-.. _clinicaltrial:                     ../_static/data/clinicaltrial.omv
+.. _clinicaltrial:                     ../../_statics/data/clinicaltrial.omv
 
 .. |nominal|                          image:: ../_images/variable-nominal.*
    :width: 16px

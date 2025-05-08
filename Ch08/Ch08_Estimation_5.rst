@@ -198,4 +198,4 @@ that later on.
 .. ----------------------------------------------------------------------------
 
 .. |IQsim|                             replace:: ``IQsim``
-.. _IQsim:                             ../_static/data/IQsim.omv
+.. _IQsim:                             ../../_statics/data/IQsim.omv

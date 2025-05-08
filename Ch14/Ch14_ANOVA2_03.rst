@@ -173,4 +173,4 @@ provides the marginal means for the analysis shown in :numref:`fig-margmean2`.
 .. ----------------------------------------------------------------------------
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
-.. _clinicaltrial:                     ../_static/data/clinicaltrial.omv
+.. _clinicaltrial:                     ../../_statics/data/clinicaltrial.omv

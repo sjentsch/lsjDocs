@@ -43,4 +43,4 @@ you’ll hopefully find it quite easy to read and understand.
 .. ----------------------------------------------------------------------------
 
 .. |binomialtest|                      replace:: ``binomialtest``
-.. _binomialtest:                      ../_static/data/binomialtest.omv
+.. _binomialtest:                      ../../_statics/data/binomialtest.omv

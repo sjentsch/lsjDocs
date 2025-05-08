@@ -468,7 +468,7 @@ previously in the context of the one sample *t*-test (see section
 .. ----------------------------------------------------------------------------
 
 .. |harpo|                             replace:: ``harpo``
-.. _harpo:                             ../_static/data/harpo.omv
+.. _harpo:                             ../../_statics/data/harpo.omv
 
 .. |continuous|                       image:: ../_images/variable-continuous.*
    :width: 16px
