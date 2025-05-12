@@ -282,7 +282,7 @@ removes the ``sugar * milk`` interaction term, like so:
 The basic idea generalises to higher order ANOVAs. For instance, suppose
 that we were trying to run an ANOVA with three factors, ``A``, ``B`` and
 ``C``, and we wanted to consider all possible main effects and all
-possible interactions, including the three way interaction ``A*B*C``.
+possible interactions, including the three way interaction ``A * B * C``.
 The table below shows you what the Type 3 tests look like for this
 situation:
 
@@ -406,11 +406,11 @@ instance, consider the test of the main effect of ``A`` in the context
 of a three-way ANOVA that includes all possible interaction terms.
 According to Type 3 tests, our null and alternative models are:
 
-+--------------------+-----------------------------------------------------------+
-| Null model:        | ``outcome ~ B + C + A * B + A * C + B * C + A * B * C``   |
-+--------------------+-----------------------------------------------------------+
-| Alternative model: | ``outcome ~ A + B + C + A * B + A * C + B*C + A * B * C`` |
-+--------------------+-----------------------------------------------------------+
++--------------------+-------------------------------------------------------------+
+| Null model:        | ``outcome ~ B + C + A * B + A * C + B * C + A * B * C``     |
++--------------------+-------------------------------------------------------------+
+| Alternative model: | ``outcome ~ A + B + C + A * B + A * C + B * C + A * B * C`` |
++--------------------+-------------------------------------------------------------+
 
 Notice that the null hypothesis omits ``A``, but includes ``A * B``,
 ``A * C`` and ``A * B * C`` as part of the model. This, according to the Type
