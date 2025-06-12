@@ -38,7 +38,7 @@ SS\ :sub:`subjects` from SS\ :sub:`w` to provide a
 smaller SS\ :sub:`error` term:
 
 | Independent ANOVA:       SS\ :sub:`error` = SS\ :sub:`w`
-| Repeated Measures ANOVA: SS\ :sub:`error` = SS\ :sub:`w - SS\ :sub:`subjects`
+| Repeated Measures ANOVA: SS\ :sub:`error` = SS\ :sub:`w` - SS\ :sub:`subjects`
 
 This change in SS\ :sub:`error` term often leads to a more powerful
 statistical test, but this does depend on whether the reduction in the

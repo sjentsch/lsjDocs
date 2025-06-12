@@ -98,7 +98,7 @@ we’re after.
 Okay, so let’s let µ\ :sub:`1` denote the true population mean for group 1
 (e.g., Anastasia’s students), and µ\ :sub:`2` will be the true population
 mean for group 2 (e.g., Bernadette’s students),\ [#]_ and as usual we’ll let
-*X̄*\ :sub:`1`and *X̄*\ :sub:`2` denote the observed sample means for both of
+*X̄*\ :sub:`1` and *X̄*\ :sub:`2` denote the observed sample means for both of
 these groups. Our null hypothesis states that the two population means are
 identical (µ\ :sub:`1` = µ\ :sub:`1`) and the alternative to this is that
 they are not (µ\ :sub:`1` ≠ µ\ :sub:`1`). Written in mathematical-ese,
