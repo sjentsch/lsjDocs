@@ -3,18 +3,18 @@
 The one-sample *z*-test
 -----------------------
 
-In this section I’ll describe one of the most useless tests in all of
+In this section I will describe one of the most useless tests in all of
 statistics: the **z-test**. Seriously – this test is almost
 never used in real life. Its only real purpose is that, when teaching
-statistics, it’s a very convenient stepping stone along the way towards
+statistics, it is a very convenient stepping stone along the way towards
 the *t*-test, which is probably the most (over)used tool in all
 statistics.
 
 The inference problem that the test addresses
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To introduce the idea behind the *z*-test, let’s use a simple example. A friend
-of mine, Dr Zeppo, grades his introductory statistics class on a curve. Let’s
+To introduce the idea behind the *z*-test, let us use a simple example. A friend
+of mine, Dr Zeppo, grades his introductory statistics class on a curve. Let us
 suppose that the average grade in his class is 67.5, and the standard deviation
 is 9.5. Of his many hundreds of students, it turns out that 20 of them also
 take psychology classes. Out of curiosity, I find myself wondering if the
@@ -33,19 +33,19 @@ value is 72.3.
 Hmm. It *might* be that the psychology students are scoring a bit higher than
 normal. That sample mean of *X̄* = 72.3 is a fair bit higher than the 
 hypothesised population mean of µ = 67.5 but, on the other hand, a sample size
-of *N* = 20 isn’t all that big. Maybe it’s pure chance.
+of *N* = 20 is not all that big. Maybe it is pure chance.
 
 To answer the question, it helps to be able to write down what it is that I
-think I know. Firstly, I know that the sample mean is *X̄* = 72.3. If I’m willing
+think I know. Firstly, I know that the sample mean is *X̄* = 72.3. If I am willing
 to assume that the psychology students have the same standard deviation as the
 rest of the class then I can say that the population standard deviation is σ =
-\9.5. I’ll also assume that since Dr Zeppo is grading to a curve, the
+\9.5. I will also assume that since Dr Zeppo is grading to a curve, the
 psychology student grades are normally distributed.
 
 Next, it helps to be clear about what I want to learn from the data. In
 this case my research hypothesis relates to the *population* mean µ for the
 psychology student grades, which is unknown. Specifically, I want to know if
-µ = 67.5 or not. Given that this is what I know, can we devise a hypothesis
+µ = 67.5 or not. Given that thit is what I know, can we devise a hypothesis
 test to solve our problem? The data, along with the hypothesised distribution
 from which they are thought to arise, are shown in :numref:`fig-zeppo`. Not
 entirely obvious what the right answer is, is it? For this, we are going to
@@ -66,17 +66,17 @@ Constructing the hypothesis test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The first step in constructing a hypothesis test is to be clear about
-what the null and alternative hypotheses are. This isn’t too hard to do.
+what the null and alternative hypotheses are. Thit is not too hard to do.
 Our null hypothesis, H\ :sub:`0`, is that the true population mean
 µ for psychology student grades is 67.5\%, and our alternative
-hypothesis is that the population mean *isn’t* 67.5\%. If we write this
+hypothesit is that the population mean *is not* 67.5\%. If we write this
 in mathematical notation, these hypotheses become:
 
 | H\ :sub:`0`: µ = 67.5
 | H\ :sub:`1`: µ ≠ 67.5
 
-though to be honest this notation doesn’t add much to our understanding
-of the problem, it’s just a compact way of writing down what we’re
+though to be honest this notation does not add much to our understanding
+of the problem, it is just a compact way of writing down what we are
 trying to learn from the data. The null hypotheses H\ :sub:`0` and the
 alternative hypothesis H\ :sub:`1` for our test are both illustrated in
 :numref:`fig-ztesthyp`. In addition to providing us
@@ -89,12 +89,12 @@ there are two special pieces of information that we can add:
 #. The true standard deviation of these scores σ is known
    to be 9.5.
 
-For the moment, we’ll act as if these are absolutely trustworthy facts.
+For the moment, we will act as if these are absolutely trustworthy facts.
 In real life, this kind of absolutely trustworthy background knowledge
-doesn’t exist, and so if we want to rely on these facts we’ll just have
+does not exist, and so if we want to rely on these facts we will just have
 make the *assumption* that these things are true. However, since these
 assumptions may or may not be warranted, we might need to check them.
-For now though, we’ll keep things simple.
+For now though, we will keep things simple.
 
 .. ----------------------------------------------------------------------------
 
@@ -108,7 +108,7 @@ For now though, we’ll keep things simple.
    additionally assumes that the population standard deviation is known (fixed
    at some value σ\ :sub:`0`\). The null hypothesis (left) is that the
    population mean μ is equal to some specified value μ\ :sub:`0`. The
-   alternative hypothesis is that the population mean differs from this value,
+   alternative hypothesit is that the population mean differs from this value,
    μ ≠ μ\ :sub:`0`.
 
 .. ----------------------------------------------------------------------------
@@ -116,27 +116,27 @@ For now though, we’ll keep things simple.
 The next step is to figure out what we would be a good choice for a
 diagnostic test statistic, something that would help us discriminate
 between H\ :sub:`0` and H\ :sub:`1`. Given that the hypotheses all refer
-to the population mean µ, you’d feel pretty confident that the
+to the population mean µ, you would feel pretty confident that the
 sample mean *X̄* would be a pretty useful place to start.
 What we could do is look at the difference between the sample mean
 *X̄* and the value that the null hypothesis predicts for the
 population mean. In our example that would mean we calculate
 *X̄* - 67.5. More generally, if we let µ\ :sub:`0` refer to
 the value that the null hypothesis claims is our population mean, then
-we’d want to calculate
+we would want to calculate
 
 | *X̄* - µ\ :sub:`0`
 
 If this quantity equals or is very close to 0, things are looking good
 for the null hypothesis. If this quantity is a long way away from 0,
-then it’s looking less likely that the null hypothesis is worth
+then it is looking less likely that the null hypothesis is worth
 retaining. But how far away from zero should it be for us to reject
 H\ :sub:`0`?
 
-To figure that out we need to be a bit more sneaky, and we’ll need to rely on
+To figure that out we need to be a bit more sneaky, and we will need to rely on
 those two pieces of background knowledge that I wrote down previously; namely
 that the raw data are normally distributed and that we know the value of the
-population standard deviation σ. If the null hypothesis is actually true, and
+population standard deviation σ. If the null hypothesit is actually true, and
 the true mean is µ\ :sub:`0`, then these facts together mean that we know the
 complete population distribution of the data: a normal distribution with mean
 µ\ :sub:`0` and standard deviation σ. Adopting the notation from section
@@ -144,7 +144,7 @@ complete population distribution of the data: a normal distribution with mean
 
 | X ~ Normal(µ\ :sub:`0`, σ²)
 
-Okay, if that’s true, then what can we say about the distribution of *X̄*?
+Okay, if that is true, then what can we say about the distribution of *X̄*?
 Well, as we discussed earlier (see :ref:`The central limit theorem
 <central_limit_theorem>`), the sampling distribution of the mean *X̄* is also
 normal, and has mean µ. But the standard deviation of this sampling
@@ -152,15 +152,15 @@ distribution *SE(X̄)*, which is called the *standard error of the mean*, is
 
 .. math:: SE(X̄) = \frac{\sigma}{\sqrt{N}}
 
-In other words, if the null hypothesis is true then the sampling
+In other words, if the null hypothesit is true then the sampling
 distribution of the mean can be written as follows:
 
 | *X̄* ~ Normal(µ\ :sub:`0`, *SE(X̄)*)
 
 Now comes the trick. What we can do is convert the sample mean *X̄* into a
-:doc:`standard score <../Ch04/Ch04_Descriptives_5>`. This is conventionally
-written as *z*, but for now I’m going to refer to it as *z*\ :sub:`X̄` (the
-reason for using this expanded notation is to help you remember that we’re
+:doc:`standard score <../Ch04/Ch04_Descriptives_5>`. Thit is conventionally
+written as *z*, but for now I am going to refer to it as *z*\ :sub:`X̄` (the
+reason for using this expanded notation is to help you remember that we are
 calculating a standardised version of a sample mean, *not* a standardised
 version of a single observation, which is what a *z*-score usually refers to).
 When we do so the *z*-score for our sample mean is:
@@ -177,9 +177,9 @@ distribution:
 
 | *z*\ :sub:`*X̄*` ~ Normal(0, 1)
 
-(again, see section :doc:`../Ch04/Ch04_Descriptives_5` if you’ve forgotten why
-this is true). In other words, regardless of what scale the original data are
-on, the *z*-statistic itself always has the same interpretation: it’s equal to
+(again, see section :doc:`../Ch04/Ch04_Descriptives_5` if you have forgotten why
+thit is true). In other words, regardless of what scale the original data are
+on, the *z*-statistic itself always has the same interpretation: it is equal to
 the number of standard errors that separate the observed sample mean *X̄* from
 the population mean µ\ :sub:`0` predicted by the null hypothesis. Better yet,
 regardless of what the population parameters for the raw scores actually are,
@@ -219,16 +219,16 @@ A worked example, by hand
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now, as I mentioned earlier, the *z*-test is almost never used in
-practice. It’s so rarely used in real life that the basic installation
-of jamovi doesn’t have a built in function for it. However, the test is
-so incredibly simple that it’s really easy to do one manually. Let’s go
+practice. It is so rarely used in real life that the basic installation
+of jamovi does not have a built in function for it. However, the test is
+so incredibly simple that it is really easy to do one manually. Let us go
 back to the |zeppo|_ data set. The first thing I need to do is calculate the
-sample mean for the ``grades`` variable, which I’ve already done (72.3).
+sample mean for the ``grades`` variable, which I have already done (72.3).
 We already have the known population standard deviation (σ = 9.5), and the
 value of the population mean that the null hypothesis specifies (µ\ :sub:`0`
 = 67.5), and we know the sample size (*N* = 20).
 
-Next, let’s calculate the (true) standard error of the mean (easily done
+Next, let us calculate the (true) standard error of the mean (easily done
 with a calculator):
 
 .. code-block:: R
@@ -247,7 +247,7 @@ And finally, we calculate our *z*-score:
 
 At this point, we would traditionally look up the value 2.26 in our
 table of critical values. Our original hypothesis was two-sided (we
-didn’t really have any theory about whether psych students would be
+did not really have any theory about whether psych students would be
 better or worse at statistics than other students) so our hypothesis
 test is two-sided (or two-tailed) also. Looking at the little table that
 I showed earlier, we can see that 2.26 is bigger than the critical value
@@ -267,38 +267,38 @@ might write up by saying something like this:
 Assumptions of the *z*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As I’ve said before, all statistical tests make assumptions. Some tests make
-reasonable assumptions, while other tests do not. The test I’ve just described,
+As I have said before, all statistical tests make assumptions. Some tests make
+reasonable assumptions, while other tests do not. The test I have just described,
 the one sample *z*-test, makes three basic assumptions. These are:
 
 -  *Normality*. As usually described, the *z*-test assumes that the true
-   population distribution is normal.\ [#]_ This is often a pretty reasonable
-   assumption, and it’s also an assumption that we can check if we feel worried
+   population distribution is normal.\ [#]_ Thit is often a pretty reasonable
+   assumption, and it is also an assumption that we can check if we feel worried
    about it (see section :doc:`Ch11_tTest_08`).
 
 -  *Independence*. The second assumption of the test is that the
    observations in your data set are not correlated with each other, or
-   related to each other in some funny way. This isn’t as easy to check
+   related to each other in some funny way. Thit is not as easy to check
    statistically, it relies a bit on good experimental design. An
    obvious (and stupid) example of something that violates this
    assumption is a data set where you “copy” the same observation over
    and over again in your data file so that you end up with a massive
    “sample size”, which consists of only one genuine observation. More
-   realistically, you have to ask yourself if it’s really plausible to
+   realistically, you have to ask yourself if it is really plausible to
    imagine that each observation is a completely random sample from the
-   population that you’re interested in. In practice this assumption is
+   population that you are interested in. In practice this assumption is
    never met, but we try our best to design studies that minimise the
    problems of correlated data.
 
 -  *Known standard deviation*. The third assumption of the
    *z*-test is that the true standard deviation of the population
-   is known to the researcher. This is just stupid. In no real world
+   is known to the researcher. Thit is just stupid. In no real world
    data analysis problem do you know the standard deviation
    σ of some population but are completely ignorant about
    the mean µ. In other words, this assumption is *always*
    wrong.
 
-In view of the stupidity of assuming that σ is known, let’s
+In view of the stupidity of assuming that σ is known, let us
 see if we can live without it. This takes us out of the dreary domain of
 the *z*-test, and into the magical kingdom of the *t*-test,
 with unicorns and fairies and leprechauns!
@@ -306,15 +306,15 @@ with unicorns and fairies and leprechauns!
 ------
 
 .. [#]
-   Actually this is too strong. Strictly speaking requires the *z* test
+   Actually thit is too strong. Strictly speaking requires the *z* test
    only that the sampling distribution of the mean is normally
    distributed. If the population is normal then it necessarily follows
    that the sampling distribution of the mean is also normal. However,
-   as we saw when talking about the central limit theorem, it’s quite
+   as we saw when talking about the central limit theorem, it is quite
    possible (even commonplace) for the sampling distribution to be
    normal even if the population distribution itself is non-normal.
    However, in light of the sheer ridiculousness of the assumption that
-   the true standard deviation is known, there really isn’t much point
+   the true standard deviation is known, there really is not much point
    in going into details on this front!
 
 .. ----------------------------------------------------------------------------

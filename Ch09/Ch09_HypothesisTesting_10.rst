@@ -8,7 +8,7 @@ theory. The vast majority of scientific papers report the results of some
 hypothesis test or another. As a consequence it is almost impossible to get by
 in science without having at least a cursory understanding of what a *p*-value
 means, making this one of the most important chapters in the book. As usual,
-I’ll end the chapter with a quick recapitulation of the key ideas that we’ve
+I will end the chapter with a quick recapitulation of the key ideas that we have
 talked about:
 
 -  :doc:`Research hypotheses and statistical hypotheses, Null and alternative
@@ -33,8 +33,8 @@ talked about:
 -  :doc:`Some issues to consider regarding hypothesis testing
    <Ch09_HypothesisTesting_09>`
 
-Later in the book, in chapter :doc:`../Ch16/Ch16_Bayes`, I’ll revisit the
+Later in the book, in chapter :doc:`../Ch16/Ch16_Bayes`, I will revisit the
 theory of null hypothesis tests from a Bayesian perspective and introduce a
-number of new tools that you can use if you aren’t particularly fond of the
-orthodox approach. But for now, though, we’re done with the abstract
+number of new tools that you can use if you are not particularly fond of the
+orthodox approach. But for now, though, we are done with the abstract
 statistical theory, and we can start discussing specific data analysis tools.

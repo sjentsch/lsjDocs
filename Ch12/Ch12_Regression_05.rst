@@ -3,10 +3,10 @@
 Multiple linear regression
 --------------------------
 
-The simple linear regression model that we’ve discussed up to this point
-assumes that there’s a single predictor variable that you’re interested
+The simple linear regression model that we have discussed up to this point
+assumes that there is a single predictor variable that you are interested
 in, in this case ``dani.sleep``. In fact, up to this point *every*
-statistical tool that we’ve talked about has assumed that your analysis
+statistical tool that we have talked about has assumed that your analysis
 uses one predictor variable and one outcome variable. However, in many
 (perhaps most) research projects you actually have multiple predictors
 that you want to examine. If so, it would be nice to be able to extend
@@ -15,13 +15,13 @@ predictors. Perhaps some kind of **multiple regression** model would be
 in order?
 
 Multiple regression is conceptually very simple. All we do is add more
-terms to our regression equation. Let’s suppose that we’ve got two
-variables that we’re interested in; perhaps we want to use both
+terms to our regression equation. Let us suppose that we have got two
+variables that we are interested in; perhaps we want to use both
 ``dani.sleep`` and ``baby.sleep`` to predict the ``dani.grump`` variable.
 As before, we let *Y*\ :sub:`i` refer to my grumpiness on the i-th
 day. But now we have two *X* variables: the first corresponding to
 the amount of sleep I got and the second corresponding to the amount of
-sleep my son got. So we’ll let *X*\ :sub:`i1` refer to the hours I slept
+sleep my son got. So we will let *X*\ :sub:`i1` refer to the hours I slept
 on the i-th day and *X*\ :sub:`i2` refers to the hours that the
 baby slept on that day. If so, then we can write our regression model
 like this:
@@ -44,7 +44,7 @@ Doing it in jamovi
 Multiple regression in jamovi is no different to simple regression. All
 we have to do is add additional variables to the ``Covariates`` box in
 jamovi. For example, if we want to use both ``dani.sleep`` and
-``baby.sleep`` as predictors in our attempt to explain why I’m so
+``baby.sleep`` as predictors in our attempt to explain why I am so
 grumpy, then move ``baby.sleep`` across into the ``Covariates`` box
 alongside ``dani.sleep``. By default, jamovi assumes that the model
 should include an intercept. The coefficients we get this time are:
@@ -65,7 +65,7 @@ should include an intercept. The coefficients we get this time are:
 
 The coefficient associated with ``dani.sleep`` is quite large, suggesting
 that every hour of sleep I lose makes me a lot grumpier. However, the
-coefficient for ``baby.sleep`` is very small, suggesting that it doesn’t
+coefficient for ``baby.sleep`` is very small, suggesting that it does not
 really matter how much sleep my son gets. What matters as far as my
 grumpiness goes is how much sleep *I* get. To get a sense of what this
 multiple regression model looks like, :numref:`fig-scatter3d_1` shows a 3D
@@ -84,7 +84,7 @@ itself.
    observation (dot) is a point in this space. In much the same way that a
    simple linear regression model forms a line in 2D space, this multiple
    regression model forms a plane in 3D space. When we estimate the regression
-   coefficients what we’re trying to do is find a plane that is as close to all
+   coefficients what we are trying to do is find a plane that is as close to all
    the blue dots as possible.
    
 .. ----------------------------------------------------------------------------

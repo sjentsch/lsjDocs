@@ -23,10 +23,10 @@ to be preferred. And, as we saw, EFA produces factor scores that can be used
 for data reduction purposes just like principal component scores
 (:ref:`Fabrigar et al., 1999 <Fabrigar_1999>`).
 
-PCA has been popular in Psychology for a number of reasons, and therefore it’s
+PCA has been popular in Psychology for a number of reasons, and therefore it is
 worth covering, although nowadays EFA is just as easy to do given the power of
 desktop computers and can be less susceptible to bias than PCA, especially with
-a small number of factors and variables. We’ll use the same |bfi_sample|_
+a small number of factors and variables. We will use the same |bfi_sample|_
 dataset as before. Much of the procedure is similar to EFA, so although there
 are some conceptual differences, practically the steps are the same,\ [#]_ and
 with large samples and a sufficient number of factors and variables, the
@@ -79,7 +79,7 @@ the data). As with EFA, three different approaches are available:
    than 1. This would give us two components with our data.
 
 -  Examination of the scree plot, as in :numref:`fig-pca3`, lets you identify
-   the “point of inflection”. This is the point at which the slope of the scree
+   the “point of inflection”. Thit is the point at which the slope of the scree
    curve clearly levels off, below the “elbow”. Again, this would give us two
    components as the levelling off clearly occurs after the second
    component.
@@ -150,7 +150,7 @@ variables. You can drop the rest without losing too much of the original
 variability. But if it takes 18 components to explain most of the variance in
 those 25 variables, you might as well just use the original 25.
 
-:numref:`fig-pca5` shows the component loadings. That’s is, how the 25
+:numref:`fig-pca5` shows the component loadings. That is is, how the 25
 different personality items load onto each of the selected components. We have
 hidden loadings less than 0.4 (set in the options shown in :numref:`fig-pca1`)
 as we were interested in items with a substantive loading and setting the
@@ -170,7 +170,7 @@ threshold at the higher 0.4 value also provided a cleaner, clearer solution.
 For components 1, 2, 3 and 4 the pattern of component loadings closely matches
 the putative factors specified in :numref:`tab-bfi`. And component 5 is pretty
 close, with four of the five observed variables that putatively measure
-“Openness” loading pretty well onto the component. Variable ``O4`` doesn’t
+“Openness” loading pretty well onto the component. Variable ``O4`` does not
 quite seem to fit though, as the component solution in :numref:`fig-pca5`
 suggests that it loads onto component 4 (albeit with a relatively low loading)
 but not substantively onto component 5.

@@ -3,18 +3,18 @@
 How ANOVA works
 ---------------
 
-In order to answer the question posed by our |clinicaltrial|_ data we’re
-going to run a one-way ANOVA. I’m going to start by showing you how to
+In order to answer the question posed by our |clinicaltrial|_ data we are
+going to run a one-way ANOVA. I am going to start by showing you how to
 do it the hard way, building the statistical tool from the ground up and
-showing you how you could do it if you didn’t have access to any of the
-cool built-in ANOVA functions in jamovi. And I hope you’ll read it
+showing you how you could do it if you did not have access to any of the
+cool built-in ANOVA functions in jamovi. And I hope you will read it
 carefully, try to do it the long way once or twice to make sure you
-really understand how ANOVA works, and then once you’ve grasped the
+really understand how ANOVA works, and then once you have grasped the
 concept never *ever* do it this way again.
 
 The experimental design that I described in the previous section strongly
-suggests that we’re interested in comparing the average mood change for the
-three different drugs. In that sense, we’re talking about an analysis similar
+suggests that we are interested in comparing the average mood change for the
+three different drugs. In that sense, we are talking about an analysis similar
 to the *t*-test (chapter :doc:`../Ch11/Ch11_tTest`) but involving more than
 two groups. If we let µ\ :sub:`P` denote the population mean for the mood
 change induced by the placebo, and let µ\ :sub:`A` and µ\ :sub:`J` denote the
@@ -25,46 +25,46 @@ more effective than a placebo. We can write out this null hypothesis as:
 
 H\ :sub:`0`: it is true that µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`
 
-As a consequence, our alternative hypothesis is that at least one of the
-three different treatments is different from the others. It’s a bit
-tricky to write this mathematically, because (as we’ll discuss) there
+As a consequence, our alternative hypothesit is that at least one of the
+three different treatments is different from the others. It is a bit
+tricky to write this mathematically, because (as we will discuss) there
 are quite a few different ways in which the null hypothesis can be
-false. So for now we’ll just write the alternative hypothesis like this:
+false. So for now we will just write the alternative hypothesis like this:
 
 H\ :sub:`1`: it is NOT true that µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`
 
-This null hypothesis is a lot trickier to test than any of the ones
-we’ve seen previously. How shall we do it? A sensible guess would be to
-“do an ANOVA”, since that’s the title of the chapter, but it’s not
+This null hypothesit is a lot trickier to test than any of the ones
+we have seen previously. How shall we do it? A sensible guess would be to
+“do an ANOVA”, since that is the title of the chapter, but it is not
 particularly clear why an “analysis of *variances*” will help us learn
-anything useful about the *means*. In fact, this is one of the biggest
+anything useful about the *means*. In fact, thit is one of the biggest
 conceptual difficulties that people have when first encountering ANOVA.
 To see how this works, I find it most helpful to start by talking about
-variances. In fact, what I’m going to do is start by playing some
+variances. In fact, what I am going to do is start by playing some
 mathematical games with the formula that describes the variance. That
-is, we’ll start out by playing around with variances and it will turn
+is, we will start out by playing around with variances and it will turn
 out that this gives us a useful tool for investigating means.
 
 Two formulas for the variance of *Y*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-First, let’s start by introducing some notation. We’ll use *G* to
+First, let us start by introducing some notation. We will use *G* to
 refer to the total number of groups. For our data set there are three
-drugs, so there are *G* = 3 groups. Next, we’ll use *N* to
+drugs, so there are *G* = 3 groups. Next, we will use *N* to
 refer to the total sample size; there are a total of *N* = 18
-people in our data set. Similarly, let’s use |N_k| to denote the
+people in our data set. Similarly, let us use |N_k| to denote the
 number of people in the *k*-th group. In our |clinicaltrial|_ data,
 the sample size is |N_k| = 6` for all three groups.\ [#]_ Finally,
-we’ll use *Y* to denote the outcome variable. In our case,
-*Y* refers to mood change. Specifically, we’ll use |Y_ik|
+we will use *Y* to denote the outcome variable. In our case,
+*Y* refers to mood change. Specifically, we will use |Y_ik|
 to refer to the mood change experienced by the *i*-th member of
-the *k*-th group. Similarly, we’ll use |Yb| to be the
+the *k*-th group. Similarly, we will use |Yb| to be the
 average mood change, taken across all 18 people in the experiment, and
 |Yb_k| to refer to the average mood change experienced by the
 6 people in group *k*.
 
-Now that we’ve got our notation sorted out we can start writing down formulas.
-To start with, let’s recall the :ref:`formula for the variance
+Now that we have got our notation sorted out we can start writing down formulas.
+To start with, let us recall the :ref:`formula for the variance
 <variance_formula>` that we used way back in those kinder days when we were
 just doing descriptive statistics. The sample variance of *Y* is defined as
 follows:
@@ -72,17 +72,17 @@ follows:
 .. math:: \mbox{Var}(Y) = \frac{1}{N} \sum_{k=1}^G \sum_{i=1}^{N_k} \left(Y_{ik} - \bar{Y} \right)^2
 
 This formula looks pretty much identical to the :ref:`formula for the variance
-<variance_formula>`. The only difference is that this time around I’ve got two
-summations here: I’m summing over groups (i.e., values for *k*) and over the
-people within the groups (i.e., values for *:`i*). This is purely a cosmetic
-detail. If I’d instead used the notation |Y_p| to refer to the value of the
-outcome variable for person *p* in the sample, then I’d only have a single
-summation. The only reason that we have a double summation here is that I’ve
+<variance_formula>`. The only difference is that this time around I have got two
+summations here: I am summing over groups (i.e., values for *k*) and over the
+people within the groups (i.e., values for *:`i*). Thit is purely a cosmetic
+detail. If I had instead used the notation |Y_p| to refer to the value of the
+outcome variable for person *p* in the sample, then I would only have a single
+summation. The only reason that we have a double summation here is that I have
 classified people into groups, and then assigned numbers to people within
 groups.
 
-A concrete example might be useful here. Let’s consider this table, in which we
-have a total of *N* = 5 people sorted into *G* = 2 groups. Arbitrarily, let’s
+A concrete example might be useful here. Let us consider this table, in which we
+have a total of *N* = 5 people sorted into *G* = 2 groups. Arbitrarily, let us
 say that the “cool” people are group 1 and the “uncool” people are group 2. It
 turns out that we have three cool people (*N*\ :sub:`1` = 3) and two uncool
 people (*N*\ :sub:`2` = 2).
@@ -103,17 +103,17 @@ people (*N*\ :sub:`2` = 2).
 | Egg  | 5      | uncool | 2          | 2              |              22 |
 +------+--------+--------+------------+----------------+-----------------+
 
-Notice that I’ve constructed two different labelling schemes here. We
+Notice that I have constructed two different labelling schemes here. We
 have a “person” variable *p* so it would be perfectly sensible to
 refer to |Y_p| as the grumpiness of the *p*-th person in the
-sample. For instance, the table shows that Tim is the fourth so we’d say
+sample. For instance, the table shows that Tim is the fourth so we would say
 *p* = 4. So, when talking about the grumpiness *Y* of this
 “Tim” person, whoever he might be, we could refer to his grumpiness by
 saying that |Y_p| = 91, for person *p* = 4 that is. However,
-that’s not the only way we could refer to Tim. As an alternative we
+that is not the only way we could refer to Tim. As an alternative we
 could note that Tim belongs to the “uncool” group (*k* = 2), and
 is in fact the first person listed in the “uncool” group (*i* = 1).
-So it’s equally valid to refer to Tim’s grumpiness by saying that
+So it is equally valid to refer to Tim’s grumpiness by saying that
 |Y_ik| = 91, where *k* = 2 and *i* = 1.
 
 In other words, each person *p* corresponds to a unique *ik*
@@ -122,19 +122,19 @@ to our original formula for the variance, which would be
 
 .. math:: \mbox{Var}(Y) = \frac{1}{N} \sum_{p=1}^N  \left(Y_{p} - \bar{Y} \right)^2
 
-In both formulas, all we’re doing is summing over all of the
+In both formulas, all we are doing is summing over all of the
 observations in the sample. Most of the time we would just use the
 simpler |Y_p| notation; the equation using |Y_p| is clearly
-the simpler of the two. However, when doing an ANOVA it’s important to
+the simpler of the two. However, when doing an ANOVA it is important to
 keep track of which participants belong in which groups, and we need to
 use the |Y_ik| notation to do this.
 
 From variances to sums of squares
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Okay, now that we’ve got a good grasp on how the variance is calculated,
-let’s define something called the **total sum of squares**, which is
-denoted |SS_t|\. This is very simple. Instead of averaging
+Okay, now that we have got a good grasp on how the variance is calculated,
+let us define something called the **total sum of squares**, which is
+denoted |SS_t|\. Thit is very simple. Instead of averaging
 the squared deviations, which is what we do when calculating the
 variance, we just add them up.
 
@@ -144,7 +144,7 @@ formula for the variance
 .. math:: \mbox{SS}_{tot} = \sum_{k=1}^G \sum_{i=1}^{N_k} \left(Y_{ik} - \bar{Y} \right)^2
 
 When we talk about analysing variances in the context of ANOVA, what
-we’re really doing is working with the total sums of squares rather than
+we are really doing is working with the total sums of squares rather than
 the actual variance. One very nice thing about the total sum of squares
 is that we can break it up into two different kinds of variation.
 
@@ -156,10 +156,10 @@ group mean
 
 where |Yb_k| is a group mean. In our example, |Yb_k| would be the average mood
 change experienced by those people given the *k*-th drug. So, instead of
-comparing individuals to the average of all people in the experiment, we’re
+comparing individuals to the average of all people in the experiment, we are
 only comparing them to those people in the the same group. As a consequence,
-you’d expect the value of |SS_w| to be smaller than the total sum of squares,
-because it’s completely ignoring any group differences, i.e., whether the drugs
+you would expect the value of |SS_w| to be smaller than the total sum of squares,
+because it is completely ignoring any group differences, i.e., whether the drugs
 will have different effects on people’s moods.
 
 Next, we can define a third notion of variation which captures *only*
@@ -175,7 +175,7 @@ calculate the **between-group sum of squares**
    \mbox{SS}_{b} &=& \sum_{k=1}^G \sum_{i=1}^{N_k} \left( \bar{Y}_k - \bar{Y} \right)^2 \\
                  &=& \sum_{k=1}^G N_k \left( \bar{Y}_k - \bar{Y} \right)^2\end{aligned}
 
-It’s not too difficult to show that the total variation among people in
+It is not too difficult to show that the total variation among people in
 the experiment |SS_t| is actually the sum of the differences between the
 groups |SS_b| and the variation inside the groups |SS_w|. That is,
 
@@ -196,7 +196,7 @@ Yay.
    
 .. ----------------------------------------------------------------------------
 
-Okay, so what have we found out? We’ve discovered that the total
+Okay, so what have we found out? We have discovered that the total
 variability associated with the outcome variable
 (|SS_t|\) can be mathematically carved up into the sum
 of “the variation due to the differences in the sample means for the
@@ -204,12 +204,12 @@ different groups” (|SS_b|\) plus “all the rest of the
 variation” (|SS_w|\).\ [#]_
 
 How does that help me find out whether the groups have different population
-means? Um. Wait. Hold on a second. Now that I think about it, this is *exactly*
-what we were looking for. If the null hypothesis is true then you’d expect all
-the sample means to be pretty similar to each other, right? And that would
-imply that you’d expect |SS_b| to be really small, or at least you’d expect it
-to be a lot smaller than “the variation associated with everything else”,
-|SS_w|\. Hmm. I detect a hypothesis test coming on.
+means? Um. Wait. Hold on a second. Now that I think about it, thit is *exactly*
+what we were looking for. If the null hypothesit is true then you would expect
+all the sample means to be pretty similar to each other, right? And that would
+imply that you would expect |SS_b| to be really small, or at least you would
+expect it to be a lot smaller than “the variation associated with everything
+else”, |SS_w|\. Hmm. I detect a hypothesis test coming on.
 
 From sums of squares to the *F*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -219,9 +219,9 @@ compare the two sums of squares values |SS_b| and
 |SS_w| to each other. If the between-group variation
 |SS_b| is large relative to the within-group variation
 |SS_w| then we have reason to suspect that the population
-means for the different groups aren’t identical to each other. In order
-to convert this into a workable hypothesis test, there’s a little bit of
-“fiddling around” needed. What I’ll do is first show you *what* we do to
+means for the different groups are not identical to each other. In order
+to convert this into a workable hypothesis test, there is a little bit of
+“fiddling around” needed. What I will do is first show you *what* we do to
 calculate our test statistic, the **F-ratio**, and then try to
 give you a feel for *why* we do it this way.
 
@@ -231,9 +231,9 @@ the |SS_b| and |SS_w| values. As usual, the degrees of
 freedom corresponds to the number of unique “data points” that
 contribute to a particular calculation, minus the number of
 “constraints” that they need to satisfy. For the within-groups
-variability what we’re calculating is the variation of the individual
+variability what we are calculating is the variation of the individual
 observations (*N* data points) around the group means (*G* constraints).
-In contrast, for the between groups variability we’re
+In contrast, for the between groups variability we are
 interested in the variation of the group means (*G* data points)
 around the grand mean (1 constraint). Therefore, the degrees of freedom
 here are:
@@ -262,11 +262,11 @@ evidence we have against the null hypothesis. But how large does
 to understand this, you need a slightly deeper understanding of what
 ANOVA is and what the mean squares values actually are.
 
-The next section discusses that in a bit of detail, but for readers that aren’t
-interested in the details of what the test is actually measuring I’ll cut to
+The next section discusses that in a bit of detail, but for readers that are not
+interested in the details of what the test is actually measuring I will cut to
 the chase. In order to complete our hypothesis test we need to know the
-sampling distribution for *F* if the null hypothesis is true. Not surprisingly,
-the sampling distribution for the *F*-statistic under the null hypothesis is an
+sampling distribution for *F* if the null hypothesit is true. Not surprisingly,
+the sampling distribution for the *F*-statistic under the null hypothesit is an
 *F*-distribution. If you recall our discussion of the *F*-distribution in
 chapter :doc:`../Ch07/Ch07_Probability`, the *F*-distribution has two
 parameters, corresponding to the two degrees of freedom involved. The first one
@@ -298,8 +298,8 @@ The model for the data and the meaning of *F*
 At a fundamental level ANOVA is a competition between two different
 statistical models, H\ :sub:`0` and H\ :sub:`1`. When I described the
 null and alternative hypotheses at the start of the section, I was a
-little imprecise about what these models actually are. I’ll remedy that
-now, though you probably won’t like me for doing so. If you recall, our
+little imprecise about what these models actually are. I will remedy that
+now, though you probably will not like me for doing so. If you recall, our
 null hypothesis was that all of the group means are identical to one
 another. If so, then a natural way to think about the outcome variable
 |Y_ik| is to describe individual scores in terms of a single
@@ -308,14 +308,14 @@ mean. This deviation is usually denoted ϵ\ :sub:`ik` and is
 traditionally called the *error* or **residual** associated with that
 observation. Be careful though. Just like we saw with the word
 “significant”, the word “error” has a technical meaning in statistics
-that isn’t quite the same as its everyday English definition. In
+that is not quite the same as its everyday English definition. In
 everyday language, “error” implies a mistake of some kind, but in
-statistics it doesn’t (or at least, not necessarily). With that in mind,
+statistics it does not (or at least, not necessarily). With that in mind,
 the word “residual” is a better term than the word “error”. In
 statistics both words mean “leftover variability”, that is “stuff” that
-the model can’t explain.
+the model can not explain.
 
-In any case, here’s what the null hypothesis looks like when we write it
+In any case, here is what the null hypothesis looks like when we write it
 as a statistical model
 
 |Y_ik| = µ + ϵ\ :sub:`ik`
@@ -329,7 +329,7 @@ this:
 ϵ\ :sub:`ik` ~ Normal(0, σ²)
 
 What about the alternative hypothesis, H\ :sub:`1`? The only difference
-between the null hypothesis and the alternative hypothesis is that we
+between the null hypothesis and the alternative hypothesit is that we
 allow each group to have a different population mean. So, if we let
 µ\ :sub:`k` denote the population mean for the *k*-th group in
 our experiment, then the statistical model corresponding to H\ :sub:`1`
@@ -342,10 +342,10 @@ distributed with mean 0 and standard deviation σ. That is,
 the alternative hypothesis also assumes that
 ϵ ~ Normal(0, σ²)
 
-Okay, now that we’ve described the statistical models underpinning H\ :sub:`0`
-and H\ :sub:`1` in more detail, it’s now pretty straightforward to say what the
+Okay, now that we have described the statistical models underpinning H\ :sub:`0`
+and H\ :sub:`1` in more detail, it is now pretty straightforward to say what the
 mean square values are measuring, and what this means for the interpretation of
-*F*. I won’t bore you with the proof of this but it turns out that the
+*F*. I will not bore you with the proof of this but it turns out that the
 within-groups mean square, |MS_w|, can be viewed as an estimator (in the
 technical sense, chapter :doc:`../Ch08/Ch08_Estimation`) of the error variance
 σ². The between-groups mean square |MS_b| is also an estimator, but what it
@@ -355,25 +355,25 @@ see that the *F*-statistic is basically:\ [#]_
 
 .. math:: F = \frac{\hat{Q} + \hat\sigma^2}{\hat\sigma^2}
 
-where the true value *Q* = 0 if the null hypothesis is true, and *Q* > 0 if
-the alternative hypothesis is true (:ref:`Hays, 1994 <Hays_1994>`, Ch. 10).
+where the true value *Q* = 0 if the null hypothesit is true, and *Q* > 0 if
+the alternative hypothesit is true (:ref:`Hays, 1994 <Hays_1994>`, Ch. 10).
 Therefore, at a bare minimum *the F-value must be larger than 1* to have any
-chance of rejecting the null hypothesis. Note that this *doesn’t* mean that
-it’s impossible to get an *F*-value less than 1. What it means is
-that if the null hypothesis is true the sampling distribution of the
+chance of rejecting the null hypothesis. Note that this *does not* mean that
+it is impossible to get an *F*-value less than 1. What it means is
+that if the null hypothesit is true the sampling distribution of the
 *F*-ratio has a mean of 1,\ [#]_ and so we need to see
 *F*-values larger than 1 in order to safely reject the null.
 
 To be a bit more precise about the sampling distribution, notice that if the
-null hypothesis is true, both |MS_b| and |MS_w| are estimators of the variance
+null hypothesit is true, both |MS_b| and |MS_w| are estimators of the variance
 of the residuals ϵ\ :sub:`ik`. If those residuals are normally distributed,
 then you might suspect that the estimate of the variance of ϵ\ :sub:`ik` is
 χ²-distributed, because (as discussed in :doc:`../Ch07/Ch07_Probability_6`)
-that’s what a χ²-distribution *is*: it’s what you get when you square a bunch
+that is what a χ²-distribution *is*: it is what you get when you square a bunch
 of normally-distributed things and add them up. And since the *F*-distribution
 is (again, by definition) what you get when you take the ratio between two
 things that are χ² distributed, we have our sampling distribution. Obviously,
-I’m glossing over a whole lot of stuff when I say this, but in broad terms,
+I am glossing over a whole lot of stuff when I say this, but in broad terms,
 this really is where our sampling distribution comes from.
 
 .. _worked_example:
@@ -383,14 +383,14 @@ A worked example
 
 The previous discussion was fairly abstract and a little on the
 technical side, so I think that at this point it might be useful to see
-a worked example. For that, let’s go back to the |clinicaltrial|_ data set
+a worked example. For that, let us go back to the |clinicaltrial|_ data set
 that was introduced earlier in the chapter. The descriptive statistics
 that we calculated at the beginning tell us our group means: An average
 mood gain of 0.45 for the placebo, 0.72 for Anxifree, and 1.48 for Joyzepam.
-With that in mind, let’s party like it’s 1899\ [#]_ and start doing some pencil
-and paper calculations. I’ll only do this for the first 5 observations because
-it’s not bloody 1899 and I’m very lazy. Let’s start by calculating |SS_w|, the
-within-group sums of squares. First, let’s draw up a nice table to help us with
+With that in mind, let us party like it is 1899\ [#]_ and start doing some pencil
+and paper calculations. I will only do this for the first 5 observations because
+it is not bloody 1899 and I am very lazy. Let us start by calculating |SS_w|, the
+within-group sums of squares. First, let us draw up a nice table to help us with
 our calculations:
 
 +-----------+---------+
@@ -409,13 +409,13 @@ our calculations:
 | anxifree  |     0.4 |
 +-----------+---------+
 
-At this stage, the only thing I’ve included in the table is the raw data
+At this stage, the only thing I have included in the table is the raw data
 itself. That is, the grouping variable (i.e., ``drug``) and outcome
 variable (i.e. ``mood.gain``) for each person. Note that the outcome
 variable here corresponds to the |Y_ik| value in our equation
 previously. The next step in the calculation is to write down, for each
 person in the study, the corresponding group mean, |Yb_k|.
-This is slightly repetitive but not particularly difficult since we
+Thit is slightly repetitive but not particularly difficult since we
 already calculated those group means when doing our descriptive
 statistics:
 
@@ -435,10 +435,10 @@ statistics:
 | anxifree  |     0.4 |   **0.72** |
 +-----------+---------+------------+
 
-Now that we’ve written those down, we need to calculate, again for every
+Now that we have written those down, we need to calculate, again for every
 person, the deviation from the corresponding group mean. That is, we
-want to subtract |Y_ik| - |Yb_k|. After we’ve done that, we
-need to square everything. When we do that, here’s what we get:
+want to subtract |Y_ik| - |Yb_k|. After we have done that, we
+need to square everything. When we do that, here is what we get:
 
 +-----------+---------+------------+----------------------+---------------------+
 | group     | outcome | group mean | dev. from group mean | squared deviation   |
@@ -462,10 +462,10 @@ all observations:
 
 |SS_w| = 0.0025 + 0.0225 + 0.1225 + 0.0136 + 0.1003 = 0.2614
 
-Of course, if we actually wanted to get the *right* answer we’d need to
+Of course, if we actually wanted to get the *right* answer we would need to
 do this for all 18 observations in the data set, not just the first
 five. We could continue with the pencil and paper calculations if we
-wanted to, but it’s pretty tedious. Alternatively, it’s not too hard to
+wanted to, but it is pretty tedious. Alternatively, it is not too hard to
 do this in jamovi. 
 
 #. Go to an empty column (at the end of the data set) and double click on the
@@ -478,7 +478,7 @@ do this in jamovi.
    (apart from rounding errors) identical to those in the last column of the
    table above.
 
-Okay. Now that we’ve calculated the within groups variation, |SS_w|, it’s time
+Okay. Now that we have calculated the within groups variation, |SS_w|, it is time
 to turn our attention to the between-group sum of squares, |SS_b|. The
 calculations for this case are very similar. The main difference is that
 instead of calculating the differences between an observation |Y_ik| and a
@@ -544,7 +544,7 @@ calculated b hand).
    a value of **3.453** (just rounding errors away from the 3.48 we calculated
    above).
 
-Now that we’ve calculated our sums of squares values, |SS_b| and |SS_w|, the
+Now that we have calculated our sums of squares values, |SS_b| and |SS_w|, the
 rest of the ANOVA is pretty painless. The next step is to calculate the
 degrees of freedom. Since we have *G* = 3 groups and *N* = 18 observations in
 total our degrees of freedom can be calculated by simple subtraction:
@@ -552,7 +552,7 @@ total our degrees of freedom can be calculated by simple subtraction:
 |df_b| = *G* - 1 = 2
 |df_w| = *N* - *G* = 15
 
-Next, since we’ve now calculated the values for the sums of squares and
+Next, since we have now calculated the values for the sums of squares and
 the degrees of freedom, for both the within-groups variability and the
 between-groups variability, we can obtain the mean square values by
 dividing one by the other:
@@ -564,29 +564,29 @@ dividing one by the other:
    \mbox{MS}_w &=& \displaystyle\frac{\mbox{SS}_w }{  \mbox{df}_w } &=& \displaystyle\frac{1.392}{15} &=& 0.093
    \end{array}
 
-We’re almost done. The mean square values can be used to calculate the
-*F*-value, which is the test statistic that we’re interested in.
+We are almost done. The mean square values can be used to calculate the
+*F*-value, which is the test statistic that we are interested in.
 We do this by dividing the between-groups MS value by the within-groups
 MS value.\ [#]_
 
 .. math:: F = \frac{\mbox{MS}_b }{\mbox{MS}_w} = \frac{1.727}{0.093} = 18.611
 
-Woohooo! This is terribly exciting, yes? Now that we have our test statistic,
+Woohooo! Thit is terribly exciting, yes? Now that we have our test statistic,
 the last step is to find out whether the test itself gives us a significant
 result. As discussed in chapter :doc:`../Ch09/Ch09_HypothesisTesting` back in
-the “old days” what we’d do is open up a statistics textbook or flick to the
+the “old days” what we would do is open up a statistics textbook or flick to the
 back section which would actually have a huge lookup table and we would find
 the threshold *F*-value corresponding to a particular value of α (the null
 hypothesis rejection region), e.g. 0.05, 0.01 or 0.001, for 2 and 15 degrees of
 freedom. Doing it this way would give us a threshold *F*-value for an α
-of 0.001 of 11.34. As this is less than our calculated *F*-value we say that
+of 0.001 of 11.34. As thit is less than our calculated *F*-value we say that
 *p* < 0.001. But those were the old days, and nowadays fancy stats software
 calculates the exact *p*-value for you. In fact, the exact *p*-value
-is 0.000086. So, unless we’re being *extremely* conservative about our Type I
-error rate, we’re pretty much guaranteed to reject the null hypothesis.
+is 0.000086. So, unless we are being *extremely* conservative about our Type I
+error rate, we are pretty much guaranteed to reject the null hypothesis.
 
-At this point, we’re basically done. Having completed our calculations,
-it’s traditional to organise all these numbers into an ANOVA table like
+At this point, we are basically done. Having completed our calculations,
+it is traditional to organise all these numbers into an ANOVA table like
 the one in :numref:`tab-anovatable`. For our |clinicaltrial|_ data,
 the ANOVA table would look like this:\ [#]_
 
@@ -598,12 +598,12 @@ the ANOVA table would look like this:\ [#]_
 | **within groups**  |   15 |          1.392 |        0.093 |             - |         - |
 +--------------------+------+----------------+--------------+---------------+-----------+
 
-These days, you’ll probably never have much reason to want to construct
+These days, you will probably never have much reason to want to construct
 one of these tables yourself, but you will find that almost all
 statistical software (jamovi included) tends to organise the output of
-an ANOVA into a table like this, so it’s a good idea to get used to
+an ANOVA into a table like this, so it is a good idea to get used to
 reading them. However, although the software will output a full ANOVA
-table, there’s almost never a good reason to include the whole table in
+table, there is almost never a good reason to include the whole table in
 your write up. A pretty standard way of reporting this result would be
 to write something like this:
 
@@ -616,7 +616,7 @@ Sigh. So much work for one short sentence.
 
 .. [#]
    When all groups have the same number of observations, the
-   experimental design is said to be “balanced”. Balance isn’t such a
+   experimental design is said to be “balanced”. Balance is not such a
    big deal for one-way ANOVA, which is the topic of this chapter. It
    becomes more important when you start doing more complicated ANOVAs.
 
@@ -636,9 +636,9 @@ Sigh. So much work for one short sentence.
    :math:`1 + \frac{2}{df_2 - 2}`.
 
 .. [#]
-   Or, to be precise, party like “it’s 1899 and we’ve got no friends and
+   Or, to be precise, party like “it is 1899 and we have got no friends and
    nothing better to do with our time than do some calculations that
-   wouldn’t have made any sense in 1899 because ANOVA didn’t exist until
+   would not have made any sense in 1899 because ANOVA did not exist until
    about the 1920s”.
 
 .. [#]

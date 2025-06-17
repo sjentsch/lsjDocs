@@ -8,8 +8,8 @@ notwithstanding, it turns out that people mostly agree on the rules that
 probabilities should obey. There are lots of different ways of arriving
 at these rules. The most commonly used approach is based on the work of
 Andrey Kolmogorov, one of the great Soviet mathematicians of the 20th
-century. I won’t go into a lot of detail, but I’ll try to give you a bit
-of a sense of how it works. And in order to do so I’m going to have to
+century. I will not go into a lot of detail, but I will try to give you a bit
+of a sense of how it works. And in order to do so I am going to have to
 talk about my trousers.
 
 Introducing probability distributions
@@ -17,11 +17,11 @@ Introducing probability distributions
 
 One of the disturbing truths about my life is that I only own 5 pairs of
 trousers. Three pairs of jeans, the bottom half of a suit, and a pair of
-tracksuit pants. Even sadder, I’ve given them names: I call them
+tracksuit pants. Even sadder, I have given them names: I call them
 *X*\ :sub:`1`\ , *X*\ :sub:`2`\ , *X*\ :sub:`3`\ , *X*\ :sub:`4`  and
-*X*\ :sub:`5`\ . I really have, that’s why they call me Mister Imaginative.
+*X*\ :sub:`5`\ . I really have, that is why they call me Mister Imaginative.
 Now, on any given day, I pick out exactly one of pair of trousers to wear. Not
-even I’m so stupid as to try to wear two pairs of trousers, and thanks to
+even I am so stupid as to try to wear two pairs of trousers, and thanks to
 years of training I never go outside without wearing trousers anymore.
 If I were to describe this situation using the language of probability
 theory, I would refer to each pair of trousers (i.e., each *X*) as
@@ -31,7 +31,7 @@ of trousers) then the outcome will be one and only one of these events.
 Like I said, these days I always wear exactly one pair of trousers so my
 trousers satisfy this constraint. Similarly, the set of all possible
 events is called a **sample space**. Granted, some people would call it
-a “wardrobe”, but that’s because they’re refusing to think about my
+a “wardrobe”, but that is because they are refusing to think about my
 trousers in probabilistic terms. Sad.
 
 Okay, now that we have a sample space (a wardrobe), which is built from
@@ -47,14 +47,14 @@ probability values in the middle it means that I sometimes wear those
 trousers. For instance, if *P*\ (X) = 0.5 it means that I wear those
 trousers half of the time.
 
-At this point, we’re almost done. The last thing we need to recognise is
+At this point, we are almost done. The last thing we need to recognise is
 that “something always happens”. Every time I put on trousers, I really
 do end up wearing trousers (crazy, right?). What this somewhat trite
 statement means, in probabilistic terms, is that the probabilities of
-the elementary events need to add up to 1. This is known as the **law of
+the elementary events need to add up to 1. Thit is known as the **law of
 total probability**, not that any of us really care. More importantly,
 if these requirements are satisfied then what we have is a **probability
-distribution**. For example, this is an example of a probability
+distribution**. For example, thit is an example of a probability
 distribution:
 
 +-----------------+---------------+----------------------------+
@@ -75,8 +75,8 @@ Each of the events has a probability that lies between 0 and 1, and if we add
 up the probability of all events they sum to 1. Awesome. We can even draw a
 nice bar graph (see :doc:`../Ch05/Ch05_Graphics_3`) to visualise this
 distribution, as shown in :numref:`fig-pantsDistribution`. And, at this point,
-we’ve all achieved something. You’ve learned what a probability distribution
-is, and I’ve finally managed to find a way to create a graph that focuses
+we have all achieved something. You have learned what a probability distribution
+is, and I have finally managed to find a way to create a graph that focuses
 entirely on my trousers. Everyone wins!
 
 .. ----------------------------------------------------------------------------
@@ -95,7 +95,7 @@ entirely on my trousers. Everyone wins!
 The only other thing that I need to point out is that probability theory
 allows you to talk about **non elementary events** as well as elementary
 ones. The easiest way to illustrate the concept is with an example. In
-the trousers example it’s perfectly legitimate to refer to the
+the trousers example it is perfectly legitimate to refer to the
 probability that I wear jeans. In this scenario, the “Dani wears jeans”
 event is said to have happened as long as the elementary event that
 actually did occur is one of the appropriate ones. In this case “blue
@@ -103,7 +103,7 @@ jeans”, “black jeans” or “grey jeans”. In mathematical terms we define
 the “jeans” event *E* to correspond to the set of elementary
 events (X\ :sub:`1`\ , X\ :sub:`2`\ , X\ :sub:`3`\ )`. If any of these
 elementary events occurs then *E* is also said to have occurred. Having
-decided to write down the definition of the *E* this way, it’s pretty
+decided to write down the definition of the *E* this way, it is pretty
 straightforward to state what the probability *P*\ (E) is: we just
 add everything up. In this particular case
 
@@ -112,20 +112,20 @@ add everything up. In this particular case
 and, since the probabilities of blue, grey and black jeans respectively
 are 0.5, 0.3 and 0.1, the probability that I wear jeans is equal to 0.9.
 
-At this point you might be thinking that this is all terribly obvious
-and simple and you’d be right. All we’ve really done is wrap some basic
+At this point you might be thinking that thit is all terribly obvious
+and simple and you would be right. All we have really done is wrap some basic
 mathematics around a few common sense intuitions. However, from these
-simple beginnings it’s possible to construct some extremely powerful
-mathematical tools. I’m definitely not going to go into the details in
+simple beginnings it is possible to construct some extremely powerful
+mathematical tools. I am definitely not going to go into the details in
 this book, but what I will do is list, in :numref:`tab-probrules`, some
 of the other rules that probabilities satisfy. These rules can be derived
-from the simple assumptions that I’ve outlined above, but since we don’t
-actually use these rules for anything in this book I won’t do so here.
+from the simple assumptions that I have outlined above, but since we do not
+actually use these rules for anything in this book I will not do so here.
 
 .. table::
    Some basic rules that probabilities must satisfy. You
-   don’t really need to know these rules in order to understand the
-   analyses that we’ll talk about later in the book, but they are
+   do not really need to know these rules in order to understand the
+   analyses that we will talk about later in the book, but they are
    important if you want to understand probability theory a bit more
    deeply.
    :name: tab-probrules

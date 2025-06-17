@@ -3,44 +3,44 @@
 Assessing the reliability of a measurement
 ------------------------------------------
 
-At this point we’ve thought a little bit about how to operationalise a
-theoretical construct and thereby create a psychological measure. And we’ve
+At this point we have thought a little bit about how to operationalise a
+theoretical construct and thereby create a psychological measure. And we have
 seen that by applying psychological measures we end up with variables, which
 can come in many different types. At this point, we should start discussing the
-obvious question: is the measurement any good? We’ll do this in terms of two
+obvious question: is the measurement any good? We will do this in terms of two
 related ideas: *reliability* and *validity*. Put simply, the **reliability** of
 a measure tells you how *precisely* you are measuring something, whereas the
 validity of a measure tells you how *accurate* the measure is. In this section
-I’ll talk about reliability; we’ll talk about validity in section
+I will talk about reliability; we will talk about validity in section
 :doc:`Ch02_StudyDesign_5`.
 
 Reliability is actually a very simple concept. It refers to the
 repeatability or consistency of your measurement. The measurement of my
 weight by means of a “bathroom scale” is very reliable. If I step on and
-off the scales over and over again, it’ll keep giving me the same
+off the scales over and over again, it will keep giving me the same
 answer. Measuring my intelligence by means of “asking my mum” is very
-unreliable. Some days she tells me I’m a bit thick, and other days she
-tells me I’m a complete idiot. Notice that this concept of reliability
+unreliable. Some days she tells me I am a bit thick, and other days she
+tells me I am a complete idiot. Notice that this concept of reliability
 is different to the question of whether the measurements are correct
-(the correctness of a measurement relates to it’s validity). If I’m
+(the correctness of a measurement relates to it is validity). If I am
 holding a sack of potatos when I step on and off the bathroom scales the
 measurement will still be reliable: it will always give me the same
-answer. However, this highly reliable answer doesn’t match up to my true
-weight at all, therefore it’s wrong. In technical terms, this is a
+answer. However, this highly reliable answer does not match up to my true
+weight at all, therefore it is wrong. In technical terms, this is a
 *reliable but invalid* measurement. Similarly, whilst my mum’s estimate
-of my intelligence is a bit unreliable, she might be right. Maybe I’m
+of my intelligence is a bit unreliable, she might be right. Maybe I am
 just not too bright, and so while her estimate of my intelligence
-fluctuates pretty wildly from day to day, it’s basically right. That
+fluctuates pretty wildly from day-to-day, it is basically right. That
 would be an *unreliable but valid* measure. Of course, if my mum’s
-estimates are too unreliable it’s going to be very hard to figure out
+estimates are too unreliable it is going to be very hard to figure out
 which one of her many claims about my intelligence is actually the right
 one. To some extent, then, a very unreliable measure tends to end up
 being invalid for practical purposes; so much so that many people would
 say that reliability is necessary (but not sufficient) to ensure
 validity.
 
-Okay, now that we’re clear on the distinction between reliability and
-validity, let’s have a think about the different ways in which we might
+Okay, now that we are clear on the distinction between reliability and
+validity, let us have a think about the different ways in which we might
 measure reliability:
 
 -  **Test-retest reliability**. This relates to consistency over time.
@@ -58,7 +58,7 @@ measure reliability:
 -  **Internal consistency reliability**. If a measurement is constructed from
    lots of different parts that perform similar functions (e.g., a personality
    questionnaire result is added up across several questions) do the individual
-   parts tend to give similar answers. We’ll look at this particular form of
+   parts tend to give similar answers. We will look at this particular form of
    reliability later in the book, in section
    :doc:`../Ch15/Ch15_FactorAnalysis_4`.
 

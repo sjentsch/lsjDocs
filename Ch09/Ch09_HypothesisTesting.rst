@@ -32,18 +32,18 @@ Hypothesis testing
    -- Ludwig Wittgenstein\ [#]_
 
 In the last chapter I discussed the ideas behind estimation, which is
-one of the two “big ideas” in inferential statistics. It’s now time to
+one of the two “big ideas” in inferential statistics. It is now time to
 turn our attention to the other big idea, which is *hypothesis testing*.
 In its most abstract form, hypothesis testing is really a very simple
 idea. The researcher has some theory about the world and wants to
 determine whether or not the data actually support that theory. However,
 the details are messy and most people find the theory of hypothesis
 testing to be the most frustrating part of statistics. The structure of
-the chapter is as follows. First, I’ll describe how hypothesis testing
+the chapter is as follows. First, I will describe how hypothesis testing
 works in a fair amount of detail, using a simple running example to show
-you how a hypothesis test is “built”. I’ll try to avoid being too
+you how a hypothesis test is “built”. I will try to avoid being too
 dogmatic while doing so, and focus instead on the underlying logic of
-the testing procedure.\ [#]_ Afterwards, I’ll spend a bit of time talking
+the testing procedure.\ [#]_ Afterwards, I will spend a bit of time talking
 about the various dogmas, rules and heresies that surround the theory of
 hypothesis testing.
 

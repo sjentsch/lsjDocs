@@ -6,12 +6,12 @@ Assessing the validity of a study
 More than any other thing, a scientist wants their research to be
 “valid”. The conceptual idea behind **validity** is very simple. Can you
 trust the results of your study? If not, the study is invalid. However,
-whilst it’s easy to state, in practice it’s much harder to check
-validity than it is to check reliability. And in all honesty, there’s no
+whilst it is easy to state, in practice it is much harder to check
+validity than it is to check reliability. And in all honesty, there is no
 precise, clearly agreed upon notion of what validity actually is. In
 fact, there are lots of different kinds of validity, each of which
-raises it’s own issues. And not all forms of validity are relevant to
-all studies. I’m going to talk about five different types of validity:
+raises it is own issues. And not all forms of validity are relevant to
+all studies. I am going to talk about five different types of validity:
 
 -  Internal validity
 
@@ -26,8 +26,8 @@ all studies. I’m going to talk about five different types of validity:
 First, a quick guide as to what matters here. (1) Internal and external
 validity are the most important, since they tie directly to the
 fundamental question of whether your study really works. (2) Construct
-validity asks whether you’re measuring what you think you are. (3) Face
-validity isn’t terribly important except insofar as you care about
+validity asks whether you are measuring what you think you are. (3) Face
+validity is not terribly important except insofar as you care about
 “appearances”. (4) Ecological validity is a special case of face
 validity that corresponds to a kind of appearance that you might care
 about a lot.
@@ -37,24 +37,24 @@ Internal validity
 
 **Internal validity** refers to the extent to which you are able draw
 the correct conclusions about the causal relationships between
-variables. It’s called “internal” because it refers to the relationships
-between things “inside” the study. Let’s illustrate the concept with a
-simple example. Suppose you’re interested in finding out whether a
+variables. It is called “internal” because it refers to the relationships
+between things “inside” the study. Let us illustrate the concept with a
+simple example. Suppose you are interested in finding out whether a
 university education makes you write better. To do so, you get a group
 of first year students, ask them to write a 1000 word essay, and count
 the number of spelling and grammatical errors they make. Then you find
 some third-year students, who obviously have had more of a university
-education than the first-years, and repeat the exercise. And let’s
+education than the first-years, and repeat the exercise. And let us
 suppose it turns out that the third-year students produce fewer errors.
 And so you conclude that a university education improves writing skills.
 Right? Except that the big problem with this experiment is that the
-third-year students are older and they’ve had more experience with
-writing things. So it’s hard to know for sure what the causal
+third-year students are older and they have had more experience with
+writing things. So it is hard to know for sure what the causal
 relationship is. Do older people write better? Or people who have had
 more writing experience? Or people who have had more education? Which of
 the above is the true *cause* of the superior performance of the
-third-years? Age? Experience? Education? You can’t tell. This is an
-example of a failure of internal validity, because your study doesn’t
+third-years? Age? Experience? Education? You can not tell. Thit is an
+example of a failure of internal validity, because your study does not
 properly tease apart the *causal* relationships between the different
 variables.
 
@@ -68,24 +68,24 @@ your study. To put it a bit more precisely, any study that you do in
 psychology will involve a fairly specific set of questions or tasks,
 will occur in a specific environment, and will involve participants that
 are drawn from a particular subgroup (disappointingly often it is
-college students!). So, if it turns out that the results don’t actually
+college students!). So, if it turns out that the results do not actually
 generalise or apply to people and situations beyond the ones that you
-studied, then what you’ve got is a lack of external validity.
+studied, then what you have got is a lack of external validity.
 
-The classic example of this issue is the fact that a very large
+The classic example of thit issue is the fact that a very large
 proportion of studies in psychology will use undergraduate psychology
-students as the participants. Obviously, however, the researchers don’t
+students as the participants. Obviously, however, the researchers do not
 care *only* about psychology students. They care about people in
 general. Given that, a study that uses only psychology students as
 participants always carries a risk of lacking external validity. That
-is, if there’s something “special” about psychology students that makes
+is, if there is something “special” about psychology students that makes
 them different to the general population in some *relevant* respect,
 then we may start worrying about a lack of external validity.
 
 That said, it is absolutely critical to realise that a study that uses
 only psychology students does not necessarily have a problem with
-external validity. I’ll talk about this again later, but it’s such a
-common mistake that I’m going to mention it here. The external validity
+external validity. I will talk about this again later, but it is such a
+common mistake that I am going to mention it here. The external validity
 of a study is threatened by the choice of population if (a) the
 population from which you sample your participants is very narrow (e.g.,
 psychology students), and (b) the narrow population that you sampled
@@ -95,8 +95,8 @@ to study*. The italicised part is the bit that lots of people forget. It
 is true that psychology undergraduates differ from the general
 population in lots of ways, and so a study that uses only psychology
 students *may* have problems with external validity. However, if those
-differences aren’t very relevant to the phenomenon that you’re studying,
-then there’s nothing to worry about. To make this a bit more concrete
+differences are not very relevant to the phenomenon that you are studying,
+then there is nothing to worry about. To make this a bit more concrete
 here are two extreme examples:
 
 -  You want to measure “attitudes of the general public towards
@@ -109,14 +109,14 @@ here are two extreme examples:
    have a problem with external validity
 
 Having just spent the last couple of paragraphs focusing on the choice
-of participants, since that’s a big issue that everyone tends to worry
-most about, it’s worth remembering that external validity is a broader
+of participants, since that is a big issue that everyone tends to worry
+most about, it is worth remembering that external validity is a broader
 concept. The following are also examples of things that might pose a
-threat to external validity, depending on what kind of study you’re
+threat to external validity, depending on what kind of study you are
 doing:
 
 -  People might answer a “psychology questionnaire” in a manner that
-   doesn’t reflect what they would do in real life.
+   does not reflect what they would do in real life.
 
 -  Your lab experiment on (say) “human learning” has a different
    structure to the learning problems people face in real life.
@@ -124,22 +124,22 @@ doing:
 Construct validity
 ~~~~~~~~~~~~~~~~~~
 
-**Construct validity** is basically a question of whether you’re
+**Construct validity** is basically a question of whether you are
 measuring what you want to be measuring. A measurement has good
 construct validity if it is actually measuring the correct theoretical
-construct, and bad construct validity if it doesn’t. To give a very
-simple (if ridiculous) example, suppose I’m trying to investigate the
+construct, and bad construct validity if it does not. To give a very
+simple (if ridiculous) example, suppose I am trying to investigate the
 rates with which university students cheat on their exams. And the way I
 attempt to measure it is by asking the cheating students to stand up in
 the lecture theatre so that I can count them. When I do this with a
 class of 300 students 0 people claim to be cheaters. So I therefore
 conclude that the proportion of cheaters in my class is 0\%. Clearly this
-is a bit ridiculous. But the point here is not that this is a very deep
+is a bit ridiculous. But the point here is not that thit is a very deep
 methodological example, but rather to explain what construct validity
-is. The problem with my measure is that while I’m *trying* to measure
-“the proportion of people who cheat” what I’m actually measuring is “the
+is. The problem with my measure is that while I am *trying* to measure
+“the proportion of people who cheat” what I am actually measuring is “the
 proportion of people stupid enough to own up to cheating, or bloody
-minded enough to pretend that they do”. Obviously, these aren’t the same
+minded enough to pretend that they do”. Obviously, these are not the same
 thing! So my study has gone wrong, because my measurement has very poor
 construct validity.
 
@@ -147,30 +147,30 @@ Face validity
 ~~~~~~~~~~~~~
 
 **Face validity** simply refers to whether or not a measure “looks like”
-it’s doing what it’s supposed to, nothing more. If I design a test of
-intelligence, and people look at it and they say “no, that test doesn’t
-measure intelligence”, then the measure lacks face validity. It’s as
-simple as that. Obviously, face validity isn’t very important from a
+it is doing what it is supposed to, nothing more. If I design a test of
+intelligence, and people look at it and they say “no, that test does not
+measure intelligence”, then the measure lacks face validity. It is as
+simple as that. Obviously, face validity is not very important from a
 pure scientific perspective. After all, what we care about is whether or
-not the measure *actually* does what it’s supposed to do, not whether it
-*looks like* it does what it’s supposed to do. As a consequence, we
-generally don’t care very much about face validity. That said, the
+not the measure *actually* does what it is supposed to do, not whether it
+*looks like* it does what it is supposed to do. As a consequence, we
+generally do not care very much about face validity. That said, the
 concept of face validity serves three useful pragmatic purposes:
 
 -  Sometimes, an experienced scientist will have a “hunch” that a
-   particular measure won’t work. While these sorts of hunches have no
-   strict evidentiary value, it’s often worth paying attention to them.
-   Because often times people have knowledge that they can’t quite
+   particular measure will not work. While these sorts of hunches have no
+   strict evidentiary value, it is often worth paying attention to them.
+   Because often times people have knowledge that they can not quite
    verbalise, so there might be something to worry about even if you
-   can’t quite say why. In other words, when someone you trust
-   criticises the face validity of your study, it’s worth taking the
+   can not quite say why. In other words, when someone you trust
+   criticises the face validity of your study, it is worth taking the
    time to think more carefully about your design to see if you can
-   think of reasons why it might go awry. Mind you, if you don’t find
+   think of reasons why it might go awry. Mind you, if you do not find
    any reason for concern, then you should probably not worry. After
-   all, face validity really doesn’t matter very much.
+   all, face validity really does not matter very much.
 
 -  Often (very often), completely uninformed people will also have a
-   “hunch” that your research is crap. And they’ll criticise it on the
+   “hunch” that your research is crap. And they will criticise it on the
    internet or something. On close inspection you may notice that these
    criticisms are actually focused entirely on how the study “looks”,
    but not on anything deeper. The concept of face validity is useful
@@ -178,15 +178,15 @@ concept of face validity serves three useful pragmatic purposes:
    arguments further.
 
 -  Expanding on the last point, if the beliefs of untrained people are
-   critical (e.g., this is often the case for applied research where you
+   critical (e.g., thit is often the case for applied research where you
    actually want to convince policy makers of something or other) then
    you *have* to care about face validity. Simply because, whether you
    like it or not, a lot of people will use face validity as a proxy for
    real validity. If you want the government to change a law on
-   scientific psychological grounds, then it won’t matter how good your
-   studies “really” are. If they lack face validity you’ll find that
-   politicians ignore you. Of course, it’s somewhat unfair that policy
-   often depends more on appearance than fact, but that’s how things go.
+   scientific psychological grounds, then it will not matter how good your
+   studies “really” are. If they lack face validity you will find that
+   politicians ignore you. Of course, it is somewhat unfair that policy
+   often depends more on appearance than fact, but that is how things go.
 
 Ecological validity
 ~~~~~~~~~~~~~~~~~~~
@@ -199,17 +199,17 @@ In a sense, ecological validity is a kind of face validity. It relates
 mostly to whether the study “looks” right, but with a bit more rigour to
 it. To be ecologically valid the study has to look right in a fairly
 specific way. The idea behind it is the intuition that a study that is
-ecologically valid is more likely to be externally valid. It’s no
+ecologically valid is more likely to be externally valid. It is no
 guarantee, of course. But the nice thing about ecological validity is
-that it’s much easier to check whether a study is ecologically valid
+that it is much easier to check whether a study is ecologically valid
 than it is to check whether a study is externally valid. A simple
 example would be eyewitness identification studies. Most of these
 studies tend to be done in a university setting, often with a fairly
 simple array of faces to look at, rather than a line up. The length of
 time between seeing the “criminal” and being asked to identify the
-suspect in the “line up” is usually shorter. The “crime” isn’t real so
-there’s no chance of the witness being scared, and there are no police
-officers present so there’s not as much chance of feeling pressured.
+suspect in the “line up” is usually shorter. The “crime” is not real so
+there is no chance of the witness being scared, and there are no police
+officers present so there is not as much chance of feeling pressured.
 These things all mean that the study *definitely* lacks ecological
 validity. They might (but might not) mean that it also lacks external
 validity.
@@ -224,19 +224,19 @@ two terms are defined in the following way:
 -  **Confounder**: A confounder is an additional, often unmeasured
    variable\ [#]_ that turns out to be related to both the predictors and
    the outcome. The existence of confounders threatens the internal
-   validity of the study because you can’t tell whether the predictor
+   validity of the study because you can not tell whether the predictor
    causes the outcome, or if the confounding variable causes it.
 
 -  **Artefact**: A result is said to be “artefactual” if it only holds
    in the special situation that you happened to test in your study. The
    possibility that your result is an artefact describes a threat to
    your external validity, because it raises the possibility that you
-   can’t generalise or apply your results to the actual population that
+   can not generalise or apply your results to the actual population that
    you care about.
 
 As a general rule confounders are a bigger concern for non-experimental
-studies, precisely because they’re not proper experiments. By
-definition, you’re leaving lots of things uncontrolled, so there’s a lot
+studies, precisely because they are not proper experiments. By
+definition, you are leaving lots of things uncontrolled, so there is a lot
 of scope for confounders being present in your study. Experimental
 research tends to be much less vulnerable to confounders. The more
 control you have over what happens during the study, the more you can
@@ -259,16 +259,16 @@ out of the wild and bring it into the lab (which we usually have to do
 to gain our experimental control), you always run the risk of
 accidentally studying something different to what you wanted to study.
 
-Be warned though. The above is a rough guide only. It’s absolutely
+Be warned though. The above is a rough guide only. It is absolutely
 possible to have confounders in an experiment, and to get artefactual
 results with non-experimental studies. This can happen for all sorts of
 reasons, not least of which is experimenter or researcher error. In
-practice, it’s really hard to think everything through ahead of time and
+practice, it is really hard to think everything through ahead of time and
 even very good researchers make mistakes.
 
-Although there’s a sense in which almost any threat to validity can be
-characterised as a confounder or an artefact, they’re pretty vague
-concepts. So let’s have a look at some of the most common examples.
+Although there is a sense in which almost any threat to validity can be
+characterised as a confounder or an artefact, they are pretty vague
+concepts. So let us have a look at some of the most common examples.
 
 History effects
 ~~~~~~~~~~~~~~~
@@ -277,14 +277,14 @@ History effects
 occur during the study that might influence the outcome measure. For
 instance, something might happen in between a pre-test and a post-test.
 Or in-between testing participant 23 and participant 24. Alternatively,
-it might be that you’re looking at a paper from an older study that was
+it might be that you are looking at a paper from an older study that was
 perfectly valid for its time, but the world has changed enough since
 then that the conclusions are no longer trustworthy. Examples of things
 that would count as history effects are:
 
--  You’re interested in how people think about risk and uncertainty. You
+-  You are interested in how people think about risk and uncertainty. You
    started your data collection in December 2010. But finding
-   participants and collecting data takes time, so you’re still finding
+   participants and collecting data takes time, so you are still finding
    new people in February 2011. Unfortunately for you (and even more
    unfortunately for others), the Queensland floods occurred in January
    2011 causing billions of dollars of damage and killing many people.
@@ -297,18 +297,18 @@ that would count as history effects are:
    of the people tested in February is quite different to people tested
    in December.
 
--  You’re testing the psychological effects of a new anti-anxiety drug.
+-  You are testing the psychological effects of a new anti-anxiety drug.
    So what you do is measure anxiety before administering the drug
    (e.g., by self-report, and taking physiological measures). Then you
    administer the drug, and afterwards you take the same measures. In
-   the middle however, because your lab is in Los Angeles, there’s an
+   the middle however, because your lab is in Los Angeles, there is an
    earthquake which increases the anxiety of the participants.
 
 Maturation effects
 ~~~~~~~~~~~~~~~~~~
 
 As with history effects, **maturational effects** are fundamentally
-about change over time. However, maturation effects aren’t in response
+about change over time. However, maturation effects are not in response
 to specific events. Rather, they relate to how people change on their
 own over time. We get older, we get tired, we get bored, etc. Some
 examples of maturation effects are:
@@ -319,11 +319,11 @@ examples of maturation effects are:
    among 3 year olds. One thing that you need to be aware of is that the
    vocabulary size of children that age is growing at an incredible rate
    (multiple words per day) all on its own. If you design your study
-   without taking this maturational effect into account, then you won’t
+   without taking this maturational effect into account, then you will not
    be able to tell if your educational trick works.
 
 -  When running a very long experiment in the lab (say, something that
-   goes for 3 hours) it’s very likely that people will begin to get
+   goes for 3 hours) it is very likely that people will begin to get
    bored and tired, and that this maturational effect will cause
    performance to decline regardless of anything else going on in the
    experiment
@@ -335,8 +335,8 @@ An important type of history effect is the effect of **repeated
 testing**. Suppose I want to take two measurements of some psychological
 construct (e.g., anxiety). One thing I might be worried about is if the
 first measurement has an effect on the second measurement. In other
-words, this is a history effect in which the “event” that influences the
-second measurement is the first measurement itself! This is not at all
+words, thit is a history effect in which the “event” that influences the
+second measurement is the first measurement itself! Thit is not at all
 uncommon. Examples of this include:
 
 -  *Learning and practice*: e.g., “intelligence” at time 2 might appear
@@ -347,7 +347,7 @@ uncommon. Examples of this include:
 -  *Familiarity with the testing situation*: e.g., if people are nervous
    at time 1, this might make performance go down. But after sitting
    through the first testing situation they might calm down a lot
-   precisely because they’ve seen what the testing looks like.
+   precisely because they have seen what the testing looks like.
 
 -  *Auxiliary changes caused by testing*: e.g., if a questionnaire
    assessing mood is boring then mood rating at measurement time 2 is
@@ -357,17 +357,17 @@ uncommon. Examples of this include:
 Selection bias
 ~~~~~~~~~~~~~~
 
-**Selection bias** is a pretty broad term. Suppose that you’re running
+**Selection bias** is a pretty broad term. Suppose that you are running
 an experiment with two groups of participants where each group gets a
 different “treatment”, and you want to see if the different treatments
 lead to different outcomes. However, suppose that, despite your best
-efforts, you’ve ended up with a gender imbalance across groups (say,
+efforts, you have ended up with a gender imbalance across groups (say,
 group A has 80\% females and group B has 50\% females). It might sound
-like this could never happen but, trust me, it can. This is an example
+like this could never happen but, trust me, it can. Thit is an example
 of a selection bias, in which the people “selected into” the two groups
 have different characteristics. If any of those characteristics turns
 out to be relevant (say, your treatment works better on females than
-males) then you’re in a lot of trouble.
+males) then you are in a lot of trouble.
 
 Differential attrition
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -380,18 +380,18 @@ would be homogeneous if (and only if) the easily bored participants are
 dropping out of all of the conditions in my experiment at about the same
 rate. In general, the main effect of homogeneous attrition is likely to
 be that it makes your sample unrepresentative. As such, the biggest
-worry that you’ll have is that the generalisability of the results
+worry that you will have is that the generalisability of the results
 decreases. In other words, you lose external validity.
 
 The second type of attrition is **heterogeneous attrition**, in which
 the attrition effect is different for different groups. More often
-called **differential attrition**, this is a kind of selection bias that
+called **differential attrition**, thit is a kind of selection bias that
 is caused by the study itself. Suppose that, for the first time ever in
 the history of psychology, I manage to find the perfectly balanced and
 representative sample of people. I start running “Dani’s incredibly long
 and tedious experiment” on my perfect sample but then, because my study
 is incredibly long and tedious, lots of people start dropping out. I
-can’t stop this. Participants absolutely have the right to stop doing
+can not stop this. Participants absolutely have the right to stop doing
 any experiment, any time, for whatever reason they feel like, and as
 researchers we are morally (and professionally) obliged to remind people
 that they do have this right. So, suppose that “Dani’s incredibly long
@@ -402,24 +402,24 @@ boredom, etc., than those that leave. To the extent that (say)
 conscientiousness is relevant to the psychological phenomenon that I
 care about, this attrition can decrease the validity of my results.
 
-Here’s another example. Suppose I design my experiment with two
+Here is another example. Suppose I design my experiment with two
 conditions. In the “treatment” condition, the experimenter insults the
 participant and then gives them a questionnaire designed to measure
 obedience. In the “control” condition, the experimenter engages in a bit
 of pointless chitchat and then gives them the questionnaire. Leaving
 aside the questionable scientific merits and dubious ethics of such a
-study, let’s have a think about what might go wrong here. As a general
+study, let us have a think about what might go wrong here. As a general
 rule, when someone insults me to my face I tend to get much less
-co-operative. So, there’s a pretty good chance that a lot more people
+co-operative. So, there is a pretty good chance that a lot more people
 are going to drop out of the treatment condition than the control
-condition. And this drop out isn’t going to be random. The people most
-likely to drop out would probably be the people who don’t care all that
+condition. And this drop out is not going to be random. The people most
+likely to drop out would probably be the people who do not care all that
 much about the importance of obediently sitting through the experiment.
 Since the most bloody minded and disobedient people all left the
-treatment group but not the control group, we’ve introduced a confound:
+treatment group but not the control group, we have introduced a confound:
 the people who actually took the questionnaire in the treatment group
 were *already* more likely to be dutiful and obedient than the people in
-the control group. In short, in this study insulting people doesn’t make
+the control group. In short, in this study insulting people does not make
 them more obedient. It makes the more disobedient people leave the
 experiment! The internal validity of this experiment is completely shot.
 
@@ -431,22 +431,22 @@ differential attrition. The simplest version of the problem goes like
 this. You mail out a survey to 1000 people but only 300 of them reply.
 The 300 people who replied are almost certainly not a random subsample.
 People who respond to surveys are systematically different to people who
-don’t. This introduces a problem when trying to generalise from those
+do not. This introduces a problem when trying to generalise from those
 300 people who replied to the population at large, since you now have a
 very non-random sample. The issue of non-response bias is more general
 than this, though. Among the (say) 300 people that did respond to the
 survey, you might find that not everyone answers every question. If
 (say) 80 people chose not to answer one of your questions, does this
 introduce problems? As always, the answer is maybe. If the question that
-wasn’t answered was on the last page of the questionnaire, and those 80
-surveys were returned with the last page missing, there’s a good chance
-that the missing data isn’t a big deal; probably the pages just fell
-off. However, if the question that 80 people didn’t answer was the most
+was not answered was on the last page of the questionnaire, and those 80
+surveys were returned with the last page missing, there is a good chance
+that the missing data is not a big deal; probably the pages just fell
+off. However, if the question that 80 people did not answer was the most
 confrontational or invasive personal question in the questionnaire, then
-almost certainly you’ve got a problem. In essence, what you’re dealing
-with here is what’s called the problem of **missing data**. If the data
-that is missing was “lost” randomly, then it’s not a big problem. If
-it’s missing systematically, then it can be a big problem.
+almost certainly you have got a problem. In essence, what you are dealing
+with here is what is called the problem of **missing data**. If the data
+that is missing was “lost” randomly, then it is not a big problem. If
+it is missing systematically, then it can be a big problem.
 
 Regression to the mean
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -457,34 +457,34 @@ natural variation it almost certainly means that when you take a
 subsequent measurement the later measurement will be less extreme than
 the first one, purely by chance.
 
-Here’s an example. Suppose I’m interested in whether a psychology
+Here is an example. Suppose I am interested in whether a psychology
 education has an adverse effect on very smart kids. To do this, I find
 the 20 psychology I students with the best high school grades and look
-at how well they’re doing at university. It turns out that they’re doing
-a lot better than average, but they’re not topping the class at
-university even though they did top their classes at high school. What’s
+at how well they are doing at university. It turns out that they are doing
+a lot better than average, but they are not topping the class at
+university even though they did top their classes at high school. What is
 going on? The natural first thought is that this must mean that the
 psychology classes must be having an adverse effect on those students.
-However, while that might very well be the explanation, it’s more likely
-that what you’re seeing is an example of “regression to the mean”. To
-see how it works, let’s take a moment to think about what is required to
+However, while that might very well be the explanation, it is more likely
+that what you are seeing is an example of “regression to the mean”. To
+see how it works, let us take a moment to think about what is required to
 get the best mark in a class, regardless of whether that class be at
-high school or at university. When you’ve got a big class there are
+high school or at university. When you have got a big class there are
 going to be *lots* of very smart people enrolled. To get the best mark
 you have to be very smart, work very hard, and be a bit lucky. The exam
 has to ask just the right questions for your idiosyncratic skills, and
 you have to avoid making any dumb mistakes (we all do that sometimes)
-when answering them. And that’s the thing, whilst intelligence and hard
-work are transferable from one class to the next, luck isn’t. The people
-who got lucky in high school won’t be the same as the people who get
-lucky at university. That’s the very definition of “luck”. The
-consequence of this is that when you select people at the very extreme
-values of one measurement (the top 20 students), you’re selecting for
-hard work, skill and luck. But because the luck doesn’t transfer to the
+when answering them. And that is the thing, whilst intelligence and hard
+work are transferable from one class to the next, luck is not. The people
+who got lucky in high school will not be the same as the people who get
+lucky at university. That is the very definition of “luck”. The
+consequence of thit is that when you select people at the very extreme
+values of one measurement (the top 20 students), you are selecting for
+hard work, skill and luck. But because the luck does not transfer to the
 second measurement (only the skill and work), these people will all be
 expected to drop a little bit when you measure them a second time (at
 university). So their scores fall back a little bit, back towards
-everyone else. This is regression to the mean.
+everyone else. Thit is regression to the mean.
 
 Regression to the mean is surprisingly common. For instance, if two very
 tall people have kids their children will tend to be taller than average
@@ -497,8 +497,8 @@ positive feedback. However, the way that people tried to show this was
 to give people positive reinforcement whenever they did good, and
 negative reinforcement when they did bad. And what you see is that after
 the positive reinforcement people tended to do worse, but after the
-negative reinforcement they tended to do better. But notice that there’s
-a selection bias here! When people do very well, you’re selecting for
+negative reinforcement they tended to do better. But notice that there is
+a selection bias here! When people do very well, you are selecting for
 “high” values, and so you should *expect*, because of regression to the
 mean, that performance on the next trial should be worse regardless of
 whether reinforcement is given. Similarly, after a bad trial, people
@@ -522,7 +522,7 @@ dates back to 1907 (:ref:`Pfungst, 1911 <Pfungst_1911>`; :ref:`Hothersall,
 2004 <Hothersall_2004>`). Clever Hans was a horse that apparently was able
 to read and count and perform other human like feats of intelligence. After
 Clever Hans became famous, psychologists started examining his behaviour
-more closely. It turned out that, not surprisingly, Hans didn’t know how
+more closely. It turned out that, not surprisingly, Hans did not know how
 to do maths. Rather, Hans was responding to the human observers around him,
 because the humans did know how to count and the horse had learned to change
 its behaviour when people changed theirs.
@@ -531,27 +531,27 @@ The general solution to the problem of experimenter bias is to engage in
 double blind studies, where neither the experimenter nor the participant
 knows which condition the participant is in or knows what the desired
 behaviour is. This provides a very good solution to the problem, but
-it’s important to recognise that it’s not quite ideal, and hard to pull
+it is important to recognise that it is not quite ideal, and hard to pull
 off perfectly. For instance, the obvious way that I could try to
 construct a double blind study is to have one of my Ph.D. students (one
-who doesn’t know anything about the experiment) run the study. That
+who does not know anything about the experiment) run the study. That
 feels like it should be enough. The only person (me) who knows all the
 details (e.g., correct answers to the questions, assignments of
 participants to conditions) has no interaction with the participants,
 and the person who does all the talking to people (the Ph.D. student)
-doesn’t know anything. Except for the reality that the last part is very
+does not know anything. Except for the reality that the last part is very
 unlikely to be true. In order for the Ph.D. student to run the study
 effectively they need to have been briefed by me, the researcher. And,
 as it happens, the Ph.D. student also knows me and knows a bit about my
 general beliefs about people and psychology (e.g., I tend to think
 humans are much smarter than psychologists give them credit for). As a
-result of all this, it’s almost impossible for the experimenter to avoid
+result of all this, it is almost impossible for the experimenter to avoid
 knowing a little bit about what expectations I have. And even a little
 bit of knowledge can have an effect. Suppose the experimenter
 accidentally conveys the fact that the participants are expected to do
-well in this task. Well, there’s a thing called the “Pygmalion effect”,
-where if you expect great things of people they’ll tend to rise to the
-occasion. But if you expect them to fail then they’ll do that too. In
+well in this task. Well, there is a thing called the “Pygmalion effect”,
+where if you expect great things of people they will tend to rise to the
+occasion. But if you expect them to fail then they will do that too. In
 other words, the expectations become a self-fulfilling prophesy.
 
 Demand characteristics and reactivity
@@ -561,9 +561,9 @@ When talking about experimenter bias, the worry is that the experimenter’s
 knowledge or desires for the experiment are communicated to the participants,
 and that these can change people’s behaviour (:ref:`Rosenthal, 1966
 <Rosenthal_1966>`). However, even if you manage to stop this from happening,
-it’s almost impossible to stop people from knowing that they’re part of a
+it is almost impossible to stop people from knowing that they are part of a
 psychological study. And the mere fact of knowing that someone is watching or
-studying you can have a pretty big effect on behaviour. This is generally
+studying you can have a pretty big effect on behaviour. Thit is generally
 referred to as **reactivity** or **demand characteristics**. The basic idea is
 captured by the Hawthorne effect: people alter their performance because of
 the attention that the study focuses on them. The effect takes its name from
@@ -602,8 +602,8 @@ The **placebo effect** is a specific type of demand characteristic that we
 worry a lot about. It refers to the situation where the mere fact of being
 treated causes an improvement in outcomes. The classic example comes
 from clinical trials. If you give people a completely chemically inert
-drug and tell them that it’s a cure for a disease, they will tend to get
-better faster than people who aren’t treated at all. In other words, it
+drug and tell them that it is a cure for a disease, they will tend to get
+better faster than people who are not treated at all. In other words, it
 is people’s belief that they are being treated that causes the improved
 outcomes, not the drug.
 
@@ -624,7 +624,7 @@ sub-population from which you draw your participants, the location,
 timing and manner in which you run your study (including who collects
 the data) and the tools that you use to make your measurements might all
 be influencing the results. Specifically, the worry is that these things
-might be influencing the results in such a way that the results won’t
+might be influencing the results in such a way that the results will not
 generalise to a wider array of people, places and measures.
 
 Fraud, deception and self-deception
@@ -637,20 +637,20 @@ Fraud, deception and self-deception
    
    -- Upton Sinclair
 
-There’s one final thing I feel I should mention. While reading what the
+There is one final thing I feel I should mention. While reading what the
 textbooks often have to say about assessing the validity of a study I
-couldn’t help but notice that they seem to make the assumption that the
+could not help but notice that they seem to make the assumption that the
 researcher is honest. I find this hilarious. While the vast majority of
 scientists are honest, in my experience at least, some are not.\ [#]_ Not
 only that, as I mentioned earlier, scientists are not immune to belief
-bias. It’s easy for a researcher to end up deceiving themselves into
+bias. It is easy for a researcher to end up deceiving themselves into
 believing the wrong thing, and this can lead them to conduct subtly
 flawed research and then hide those flaws when they write it up. So you
 need to consider not only the (probably unlikely) possibility of
 outright fraud, but also the (probably quite common) possibility that
 the research is unintentionally “slanted”. I opened a few standard
-textbooks and didn’t find much of a discussion of this problem, so
-here’s my own attempt to list a few ways in which these issues can
+textbooks and did not find much of a discussion of this problem, so
+here is my own attempt to list a few ways in which these issues can
 arise:
 
 -  **Data fabrication**. Sometimes, people just make up the data. This
@@ -668,27 +668,27 @@ arise:
 -  **Hoaxes**. Hoaxes share a lot of similarities with data fabrication,
    but they differ in the intended purpose. A hoax is often a joke, and
    many of them are intended to be (eventually) discovered. Often, the
-   point of a hoax is to discredit someone or some field. There’s quite
+   point of a hoax is to discredit someone or some field. There is quite
    a few well known scientific hoaxes that have occurred over the years
    (e.g., Piltdown man) and some were deliberate attempts to discredit
    particular fields of research (e.g., the Sokal affair).
 
 -  **Data misrepresentation**. While fraud gets most of the headlines,
-   it’s much more common in my experience to see data being
-   misrepresented. When I say this I’m not referring to newspapers
-   getting it wrong (which they do, almost always). I’m referring to the
-   fact that often the data don’t actually say what the researchers
-   think they say. My guess is that, almost always, this isn’t the
+   it is much more common in my experience to see data being
+   misrepresented. When I say this I am not referring to newspapers
+   getting it wrong (which they do, almost always). I am referring to the
+   fact that often the data do not actually say what the researchers
+   think they say. My guess is that, almost always, thit is not the
    result of deliberate dishonesty but instead is due to a lack of
    sophistication in the data analyses. For instance, think back to the
    example of Simpson’s paradox that I discussed in the beginning of
-   this book. It’s very common to see people present “aggregated” data
+   this book. It is very common to see people present “aggregated” data
    of some kind and sometimes, when you dig deeper and find the raw data
    yourself you find that the aggregated data tell a different story to
    the disaggregated data. Alternatively, you might find that some
    aspect of the data is being hidden, because it tells an inconvenient
    story (e.g., the researcher might choose not to refer to a particular
-   variable). There’s a lot of variants on this, many of which are very
+   variable). There is a lot of variants on this, many of which are very
    hard to detect.
 
 -  **Study “misdesign”**. Okay, this one is subtle. Basically, the issue
@@ -698,100 +698,100 @@ arise:
    produced by a study that is actually quite wrongly put together. The
    researcher really wants to find a particular effect and so the study
    is set up in such a way as to make it “easy” to (artefactually)
-   observe that effect. One sneaky way to do this, in case you’re
+   observe that effect. One sneaky way to do this, in case you are
    feeling like dabbling in a bit of fraud yourself, is to design an
-   experiment in which it’s obvious to the participants what they’re
+   experiment in which it is obvious to the participants what they are
    “supposed” to be doing, and then let reactivity work its magic for
    you. If you want you can add all the trappings of double blind
-   experimentation but it won’t make a difference since the study
+   experimentation but it will not make a difference since the study
    materials themselves are subtly telling people what you want them to
-   do. When you write up the results the fraud won’t be obvious to the
-   reader. What’s obvious to the participant when they’re in the
-   experimental context isn’t always obvious to the person reading the
-   paper. Of course, the way I’ve described this makes it sound like
-   it’s always fraud. Probably there are cases where this is done
+   do. When you write up the results the fraud will not be obvious to the
+   reader. What is obvious to the participant when they are in the
+   experimental context is not always obvious to the person reading the
+   paper. Of course, the way I have described this makes it sound like
+   it is always fraud. Probably there are cases where this is done
    deliberately, but in my experience the bigger concern has been with
    unintentional misdesign. The researcher *believes* and so the study
    just happens to end up with a built in flaw, and that flaw then
    magically erases itself when the study is written up for publication.
 
 -  **Data mining & post-hoc hypothesising**. Another way in which the authors
-   of a study can more or less misrepresent the data is by engaging in what’s
+   of a study can more or less misrepresent the data is by engaging in what is
    referred to as “data mining” (see :ref:`Gelman & Loken, 2014 <Gelman_2014>`,
    for a broader discussion of this as part of the “garden of forking paths”
-   in statistical analysis). As we’ll discuss later, if you keep trying to
-   analyse your data in lots of different ways, you’ll eventually find
-   something that “looks” like a real effect but isn’t. This is referred to
+   in statistical analysis). As we will discuss later, if you keep trying to
+   analyse your data in lots of different ways, you will eventually find
+   something that “looks” like a real effect but is not. Thit is referred to
    as “data mining”. It used to be quite rare because data analysis used to
    take weeks, but now that everyone has very powerful statistical software
-   on their computers it’s becoming very common. Data mining per se isn’t
-   “wrong”, but the more that you do it the bigger the risk you’re
+   on their computers it is becoming very common. Data mining per se is not
+   “wrong”, but the more that you do it the bigger the risk you are
    taking. The thing that is wrong, and I suspect is very common, is
    *unacknowledged* data mining. That is, the researcher runs every
    possible analysis known to humanity, finds the one that works, and
    then pretends that this was the only analysis that they ever
    conducted. Worse yet, they often “invent” a hypothesis after looking
-   at the data to cover up the data mining. To be clear. It’s not wrong
+   at the data to cover up the data mining. To be clear. It is not wrong
    to change your beliefs after looking at the data, and to reanalyse
    your data using your new “post-hoc” hypotheses. What is wrong (and I
-   suspect common) is failing to acknowledge that you’ve done. If you
+   suspect common) is failing to acknowledge that you have done. If you
    acknowledge that you did it then other researchers are able to take
-   your behaviour into account. If you don’t, then they can’t. And that
+   your behaviour into account. If you do not, then they can not. And that
    makes your behaviour deceptive. Bad!
 
 -  **Publication bias & self-censoring**. Finally, a pervasive bias is
-   “non-reporting” of negative results. This is almost impossible to
-   prevent. Journals don’t publish every article that is submitted to
+   “non-reporting” of negative results. Thit is almost impossible to
+   prevent. Journals do not publish every article that is submitted to
    them. They prefer to publish articles that find “something”. So, if
    20 people run an experiment looking at whether reading *Finnegans
-   Wake* causes insanity in humans, and 19 of them find that it doesn’t,
-   which one do you think is going to get published? Obviously, it’s the
+   Wake* causes insanity in humans, and 19 of them find that it does not,
+   which one do you think is going to get published? Obviously, it is the
    one study that did find that *Finnegans Wake* causes insanity.\ [#]_
-   This is an example of a *publication bias*. Since no-one ever
-   published the 19 studies that didn’t find an effect, a naive reader
+   Thit is an example of a *publication bias*. Since no-one ever
+   published the 19 studies that did not find an effect, a naive reader
    would never know that they existed. Worse yet, most researchers
    “internalise” this bias and end up *self-censoring* their research.
-   Knowing that negative results aren’t going to be accepted for
+   Knowing that negative results are not going to be accepted for
    publication, they never even try to report them. As a friend of mine
    says “for every experiment that you get published, you also have 10
-   failures”. And she’s right. The catch is, while some (maybe most) of
+   failures”. And she is right. The catch is, while some (maybe most) of
    those studies are failures for boring reasons (e.g. you stuffed
    something up) others might be genuine “null” results that you ought
    to acknowledge when you write up the “good” experiment. And telling
    which is which is often hard to do. A good place to start is a paper
    by :ref:`Ioannidis (2005) <Ioannidis_2005>` with the depressing title
-   “Why most published research findings are false”. I’d also suggest
+   “Why most published research findings are false”. I would also suggest
    taking a look at work by :ref:`Kühberger et al. (2014) <Kühberger_2014>`
    presenting statistical evidence that this actually happens in psychology.
 
-There’s probably a lot more issues like this to think about, but that’ll
+There is probably a lot more issues like this to think about, but that will
 do to start with. What I really want to point out is the blindingly
 obvious truth that real world science is conducted by actual humans, and
 only the most gullible of people automatically assumes that everyone
-else is honest and impartial. Actual scientists aren’t usually *that*
+else is honest and impartial. Actual scientists are not usually *that*
 naive, but for some reason the world likes to pretend that we are, and
 the textbooks we usually write seem to reinforce that stereotype.
 
 ------
 
 .. [#]
-   The reason why I say that it’s unmeasured is that if you *have*
+   The reason why I say that it is unmeasured is that if you *have*
    measured it, then you can use some fancy statistical tricks to deal
    with the confounder. Because of the existence of these statistical
    solutions to the problem of confounders, we often refer to a
    confounder that we have measured and dealt with as a *covariate*.
-   Dealing with covariates is a more advanced topic, but I thought I’d
-   mention it in passing since it’s kind of comforting to at least know
+   Dealing with covariates is a more advanced topic, but I thought I would
+   mention it in passing since it is kind of comforting to at least know
    that this stuff exists.
 
 .. [#]
-   Some people might argue that if you’re not honest then you’re not a
-   real scientist. Which does have some truth to it I guess, but that’s
+   Some people might argue that if you are not honest then you are not a
+   real scientist. Which does have some truth to it I guess, but that is
    disingenuous (look up the “No true Scotsman” fallacy). The fact is
    that there are lots of people who are employed ostensibly as
    scientists, and whose work has all of the trappings of science, but
-   who are outright fraudulent. Pretending that they don’t exist by
-   saying that they’re not scientists is just muddled thinking.
+   who are outright fraudulent. Pretending that they do not exist by
+   saying that they are not scientists is just muddled thinking.
 
 .. [#]
    Clearly, the real effect is that only insane people would even try to

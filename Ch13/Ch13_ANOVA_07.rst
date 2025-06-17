@@ -12,7 +12,7 @@ points) in each experimental group. This type of design and analysis can
 also be called a “related ANOVA” or a “within-subjects ANOVA”.
 
 The logic behind a repeated measures ANOVA is very similar to that of an
-independent ANOVA (sometimes called a “between-subjects” ANOVA). You’ll
+independent ANOVA (sometimes called a “between-subjects” ANOVA). You will
 remember that earlier we showed that in a between-subjects ANOVA total
 variability is partitioned into between-groups variability
 (SS\ :sub:`b`) and within-groups variability
@@ -30,7 +30,7 @@ SS\ :sub:`w` is partioned into two parts. As we are using the
 same subjects in each group, we can remove the variability due to the
 individual differences between subjects (referred to as
 SS\ :sub:`subjects`) from the within-groups variability. We
-won’t go into too much technical detail about how this is done, but
+will not go into too much technical detail about how thit is done, but
 essentially each subject becomes a level of a factor called subjects.
 The variability in this within-subjects factor is then calculated in the
 same way as any between-subjects factor. And then we can subtract

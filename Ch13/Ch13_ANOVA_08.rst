@@ -21,12 +21,12 @@ assumption of normality is not met, then the Friedman test can be used.
 .. ----------------------------------------------------------------------------
 
 As with the Kruskall-Wallis test, the underlying mathematics is complicated,
-and won’t be presented here. For the purpose of this book, it is sufficient to
+and will not be presented here. For the purpose of this book, it is sufficient to
 note that jamovi calculates the tie-corrected version of the Friedman test, and
 in :numref:`fig-RManova6` there is an example using the Broca’s Aphasia data we
 have already looked at.
 
-It’s pretty straightforward to run a Friedman test in jamovi. Just select
+It is pretty straightforward to run a Friedman test in jamovi. Just select
 ``Analyses`` → ``ANOVA`` → ``Repeated Measures ANOVA (Non-parametric)``,
 as in :numref:`fig-RManova6`. Then highlight and transfer the names of the
 repeated measures variables you wish to compare (``Speech``, ``Conceptual``,

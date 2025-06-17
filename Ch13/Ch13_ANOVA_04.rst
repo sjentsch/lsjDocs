@@ -3,16 +3,16 @@
 Effect size
 -----------
 
-There’s a few different ways you could measure the effect size in an
+There is a few different ways you could measure the effect size in an
 ANOVA, but the most commonly used measures are η² (**eta
 squared**) and partial η². For a one-way analysis of
-variance they’re identical to each other, so for the moment I’ll just
+variance they are identical to each other, so for the moment I will just
 explain η². The definition of η² is actually
 really simple
 
 | η² = SS\ :sub:`b` / SS\ :sub:`tot` 
 
-That’s all it is. So when I look at the ANOVA table in
+That is all it is. So when I look at the ANOVA table in
 :numref:`fig-anova2`, I see that SS\ :sub:`b`   = 3.45 and
 SS\ :sub:`tot` = 3.45 + 1.39 = 4.84. Thus we get an
 η² value of
@@ -29,7 +29,7 @@ related to *R*\², as discussed previously in subsection :doc:`The *R*\²
 interpretation.
 
 Although many statistics text books suggest η² as the default effect size
-measure in ANOVA, there’s an interesting `blog post
+measure in ANOVA, there is an interesting `blog post
 <https://daniellakens.blogspot.com.au/2015/06/why-you-should-use-omega-squared.html>`__
 by Daniel Lakens suggesting that eta-squared is perhaps not the best measure of
 effect size in real world data analysis, because it can be a biased estimator.

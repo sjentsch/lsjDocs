@@ -6,7 +6,7 @@ Installating and starting jamovi
 Installation
 ~~~~~~~~~~~~
 
-Let’s get started. Just as with any piece of software, jamovi needs to be
+Let us get started. Just as with any piece of software, jamovi needs to be
 installed on a “computer”, which is a magical box that does cool things and
 delivers free ponies. Or something along those lines; I may be confusing
 computers with the iPad marketing campaigns. Anyway, jamovi is freely
@@ -15,14 +15,14 @@ distributed online and you can download it from the jamovi homepage, which is:
    `https://www.jamovi.org <https://www.jamovi.org>`__
 
 At the top of the page, under the heading `“Download”
-<https://www.jamovi.org/download.html>`__, you’ll see separate links for
+<https://www.jamovi.org/download.html>`__, you will see separate links for
 Windows users, Mac users, and Linux users. If you follow the relevant link
-you’ll see that the online instructions are pretty self-explanatory.\ [#]_
+you will see that the online instructions are pretty self-explanatory.\ [#]_
 
 ..
    (removed)
    At the time of writing, the current version of jamovi is 2.6, but they
-   usually issue updates every few months, so you’ll probably have a newer
+   usually issue updates every few months, so you will probably have a newer
    version.
 
 Whereas this text book was one of the first resources available to support
@@ -33,8 +33,8 @@ jamovi homepage.
 The jamovi window
 ~~~~~~~~~~~~~~~~~
 
-One way or another, regardless of what operating system you’re using,
-it’s time to open jamovi and get started. When first starting jamovi you
+One way or another, regardless of what operating system you are using,
+it is time to open jamovi and get started. When first starting jamovi you
 will be presented with a user interface which looks something like
 :numref:`fig-startjamovi`.
 
@@ -79,9 +79,9 @@ your analyses as PDF, HTML or as LaTeX-document.
 ------
 
 .. [#]
-   Although jamovi is updated frequently it doesn’t usually make much of
-   a difference for the sort of work we’ll do in this book. In fact,
-   during the writing of the book I upgraded several times and it didn’t
+   Although jamovi is updated frequently it does not usually make much of
+   a difference for the sort of work we will do in this book. In fact,
+   during the writing of the book I upgraded several times and it did not
    make much difference at all to what is in this book.
 
 .. [#]

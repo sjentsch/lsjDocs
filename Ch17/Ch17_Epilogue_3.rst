@@ -9,44 +9,44 @@ should be done. In chapter :doc:`../Ch08/Ch08_Estimation` I talked a little
 bit about the idea of unbiased estimators, sampling distributions and so on.
 In chapter :doc:`../Ch09/Ch09_HypothesisTesting` I talked about the theory of
 null hypothesis significance testing and *p*-values. These ideas have been
-around since the early 20th century, and the tools that I’ve talked about in
-the book rely very heavily on the theoretical ideas from that time. I’ve felt
+around since the early 20th century, and the tools that I have talked about in
+the book rely very heavily on the theoretical ideas from that time. I have felt
 obligated to stick to those topics because the vast majority of data analysis
 in science is also reliant on those ideas. However, the theory of statistics
 is not restricted to those topics and, whilst everyone should know about them
 because of their practical importance, in many respects those ideas do not
 represent best practice for contemporary data analysis. One of the things that
-I’m especially happy with is that I’ve been able to go a little beyond this.
+I am especially happy with is that I have been able to go a little beyond this.
 Chapter :doc:`../Ch16/Ch16_Bayes` now presents the Bayesian perspective in a
 reasonable amount of detail, but the book overall is still pretty heavily
 weighted towards the frequentist orthodoxy. Additionally, there are a number
 of other approaches to inference that are worth mentioning:
 
--  **Bootstrapping.** Throughout the book, whenever I’ve introduced a
-   hypothesis test, I’ve had a strong tendency just to make assertions like
+-  **Bootstrapping.** Throughout the book, whenever I have introduced a
+   hypothesis test, I have had a strong tendency just to make assertions like
    “the sampling distribution for BLAH is a *t*-distribution” or something like
-   that. In some cases, I’ve actually attempted to justify this assertion. For
+   that. In some cases, I have actually attempted to justify this assertion. For
    example, when talking about χ²-tests in chapter
    :doc:`../Ch10/Ch10_ChiSquare`, I made reference to the known relationship
    between normal distributions and χ²-distributions (see chapter
    :doc:`../Ch07/Ch07_Probability` to explain how we end up assuming that the
-   sampling distribution of the goodness-of-fit statistic is χ². However, it’s
+   sampling distribution of the goodness-of-fit statistic is χ². However, it is
    also the case that a lot of these sampling distributions are, well, wrong.
    The χ²-test is a good example. It is based on an assumption about the
    distribution of your data, an assumption which is known to be wrong for
-   small sample sizes! Back in the early 20th century, there wasn’t much you
+   small sample sizes! Back in the early 20th century, there was not much you
    could do about this situation. Statisticians had developed mathematical
    results that said that “under assumptions BLAH about the data, the
    sampling distribution is approximately BLAH”, and that was about the best
-   you could do. A lot of times they didn’t even have that. There are lots of
+   you could do. A lot of times they did not even have that. There are lots of
    data analysis situations for which no-one has found a mathematical solution
    for the sampling distributions that you need. And so up until the late
-   20th century, the corresponding tests didn’t exist or didn’t work. However,
+   20th century, the corresponding tests did not exist or did not work. However,
    computers have changed all that now. There are lots of fancy tricks, and
    some not-so-fancy, that you can use to get around it. The simplest of these
-   is bootstrapping, and in it’s simplest form it’s incredibly simple. What
+   is bootstrapping, and in it is simplest form it is incredibly simple. What
    you do is simulate the results of your experiment lots and lots of times,
-   under the twin assumptions that (a) the null hypothesis is true and (b)
+   under the twin assumptions that (a) the null hypothesit is true and (b)
    the unknown population distribution actually looks pretty similar to your
    raw data. In other words, instead of assuming that the data are (for
    instance) normally distributed, just assume that the population looks the
@@ -66,35 +66,35 @@ of other approaches to inference that are worth mentioning:
    make predictions about data we might observe in the future”. A lot of
    the issues in statistical inference arise because of the fact that we
    always expect the future to be similar to but a bit different from
-   the past. Or, more generally, new data won’t be quite the same as old
+   the past. Or, more generally, new data will not be quite the same as old
    data. What we do, in a lot of situations, is try to derive
    mathematical rules that help us to draw the inferences that are most
    likely to be correct for new data, rather than to pick the statements
    that best describe old data. For instance, given two models A and B,
    and a data set X you collected today, try to pick the model that will
-   best describe a new data set Y that you’re going to collect tomorrow.
-   Sometimes it’s convenient to simulate the process, and that’s what
+   best describe a new data set Y that you are going to collect tomorrow.
+   Sometimes it is convenient to simulate the process, and that is what
    cross-validation does. What you do is divide your data set into two
    subsets, X1 and X2. Use the subset X1 to train the model (e.g.,
-   estimate regression coefficients, let’s say), but then assess the
+   estimate regression coefficients, let us say), but then assess the
    model performance on the other one X2. This gives you a measure of
    how well the model *generalises* from an old data set to a new one,
    and is often a better measure of how good your model is than if you
    just fit it to the full data set X.
 
 -  **Robust statistics.** Life is messy, and nothing really works the
-   way it’s supposed to. This is just as true for statistics as it is
-   for anything else, and when trying to analyse data we’re often stuck
+   way it is supposed to. This is just as true for statistics as it is
+   for anything else, and when trying to analyse data we are often stuck
    with all sorts of problems in which the data are just messier than
-   they’re supposed to be. Variables that are supposed to be normally
+   they are supposed to be. Variables that are supposed to be normally
    distributed are not *actually* normally distributed, relationships
    that are supposed to be linear are not *actually* linear, and some of
    the observations in your data set are almost certainly junk (i.e.,
-   not measuring what they’re supposed to). All of this messiness is
+   not measuring what they are supposed to). All of this messiness is
    ignored in most of the statistical theory I developed in this book.
-   However, ignoring a problem doesn’t always solve it. Sometimes, it’s
+   However, ignoring a problem does not always solve it. Sometimes, it is
    actually okay to ignore the mess, because some types of statistical
-   tools are “robust”, i.e., if the data don’t satisfy your theoretical
+   tools are “robust”, i.e., if the data do not satisfy your theoretical
    assumptions they nevertheless still work pretty well. Other types of
    statistical tools are not robust, and even minor deviations from the
    theoretical assumptions cause them to break. Robust statistics is a
@@ -109,15 +109,15 @@ of other approaches to inference that are worth mentioning:
    as your estimator of the population mean, you get an answer of 830
    years. If you use the sample median as the estimator of the
    population mean, you get an answer of 39 years. Notice that, even
-   though you’re “technically” doing the wrong thing in the second case
-   (using the median to estimate the mean!) you’re actually getting a
+   though you are “technically” doing the wrong thing in the second case
+   (using the median to estimate the mean!) you are actually getting a
    better answer. The problem here is that one of the observations is
-   clearly, obviously, a lie. I don’t have a friend aged 4003 years.
-   It’s probably a typo, I probably meant to type 43. But what if I had
+   clearly, obviously, a lie. I do not have a friend aged 4003 years.
+   It is probably a typo, I probably meant to type 43. But what if I had
    typed 53 instead of 43, or 34 instead of 43? Could you be sure if
    this was a typo or not? Sometimes the errors in the data are subtle,
-   so you can’t detect them just by eyeballing the sample, but they’re
+   so you can not detect them just by eyeballing the sample, but they are
    still errors that contaminate your data, and they still affect your
    conclusions. Robust statistics is concerned with how you can make
-   *safe* inferences even when faced with contamination that you don’t
-   know about. It’s pretty cool stuff.
+   *safe* inferences even when faced with contamination that you do not
+   know about. It is pretty cool stuff.

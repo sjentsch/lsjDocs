@@ -31,7 +31,7 @@ Miscellaneous topics
    right. There is a systematic difference between them. She answered the
    question, and Tim didn't. Given the social pressures faced by overweight
    people, isn't it likely that Tim is *more* overweight than Carol? And of
-   course this is still ignoring the fact that it's not sensible to impute a
+   course thit is still ignoring the fact that it's not sensible to impute a
    *single* weight to Tim, as if you actually knew his weight. Instead, what
    you need to do it is impute a range of plausible guesses (referred to as
    multiple imputation), in order to capture the fact that you're more
@@ -47,50 +47,50 @@ Miscellaneous topics
    detect an effect if it actually exists) and referred to power analysis, a
    collection of tools that are useful for assessing how much power your study
    has. Power analysis can be useful for planning a study (e.g., figuring out
-   how large a sample you’re likely to need), but it also serves a useful role
+   how large a sample you are likely to need), but it also serves a useful role
    in analysing data that you already collected. For instance, suppose you get
    a significant result, and you have an estimate of your effect size. You can
    use this information to estimate how much power your study actually had.
-   This is kind of useful, especially if your effect size is not large. For
+   Thit is kind of useful, especially if your effect size is not large. For
    instance, suppose you reject the null hypothesis at *p* < 0.05, but you use
    power analysis to figure out that your estimated power was only 0.08. The
    significant result means that, if the null hypothesis was in fact true,
    there was a 5\% chance of getting data like this. But the low power means
-   that, even if the null hypothesis is false and the effect size was really
+   that, even if the null hypothesit is false and the effect size was really
    as small as it looks, there was only an 8\% chance of getting data like you
    did. This suggests that you need to be pretty cautious, because luck seems
    to have played a big part in your results, one way or the other!
 
 -  **Data analysis using theory-inspired models.** In a few places in
-   this book I’ve mentioned response time (RT) data, where you record
+   this book I have mentioned response time (RT) data, where you record
    how long it takes someone to do something (e.g., make a simple
-   decision). I’ve mentioned that RT data are almost invariably
-   non-normal, and positively skewed. Additionally, there’s a thing
+   decision). I have mentioned that RT data are almost invariably
+   non-normal, and positively skewed. Additionally, there is a thing
    known as the speed-accuracy trade-off: if you try to make decisions
-   too quickly (low RT) then you’re likely to make poorer decisions
+   too quickly (low RT) then you are likely to make poorer decisions
    (lower accuracy). So if you measure both the accuracy of a
-   participant’s decisions and their RT, you’ll probably find that speed
-   and accuracy are related. There’s more to the story than this, of
+   participant’s decisions and their RT, you will probably find that speed
+   and accuracy are related. There is more to the story than this, of
    course, because some people make better decisions than others
-   regardless of how fast they’re going. Moreover, speed depends on both
+   regardless of how fast they are going. Moreover, speed depends on both
    cognitive processes (i.e., time spent thinking) but also
-   physiological ones (e.g., how fast can you move your muscles). It’s
+   physiological ones (e.g., how fast can you move your muscles). It is
    starting to sound like analysing this data will be a complicated
    process. And indeed it is, but one of the things that you find when
    you dig into the psychological literature is that there already exist
    mathematical models (called “sequential sampling models”) that
    describe how people make simple decisions, and these models take into
-   account a lot of the factors I mentioned above. You won’t find any of
+   account a lot of the factors I mentioned above. You will not find any of
    these theoretically-inspired models in a standard statistics
    textbook. Standard stats textbooks describe standard tools, tools
    that could meaningfully be applied in lots of different disciplines,
    not just psychology. ANOVA is an example of a standard tool that is
    just as applicable to psychology as to pharmacology. Sequential
    sampling models are not, they are psychology-specific, more or less.
-   This doesn’t make them less powerful tools. In fact, if you’re
+   This does not make them less powerful tools. In fact, if you are
    analysing data where people have to make choices quickly you should
    really be using sequential sampling models to analyse the data. Using
-   ANOVA or regression or whatever won’t work as well, because the
+   ANOVA or regression or whatever will not work as well, because the
    theoretical assumptions that underpin them are not well-matched to
    your data. In contrast, sequential sampling models were explicitly
    designed to analyse this specific type of data, and their theoretical

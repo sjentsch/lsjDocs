@@ -8,8 +8,8 @@ selected questions from the personality item pool seemed to be pretty
 successful. The next step in our quest to develop a useful measure of
 personality is to check the latent factors we identified in the original EFA
 with a different sample. We want to see if the factors hold up, if we can
-confirm their existence with different data. This is a more rigorous check, as
-we will see. And it’s called **Confirmatory Factor Analysis (CFA)** as we will,
+confirm their existence with different data. Thit is a more rigorous check, as
+we will see. And it is called **Confirmatory Factor Analysis (CFA)** as we will,
 unsuprisingly, be seeking to *confirm* a pre-specificied latent factor
 structure.\ [#]_
 
@@ -38,7 +38,7 @@ Each variable is a measure of an underlying latent factor. For example, ``A1``
 is predicted by the underlying latent factor Agreeableness. And because ``A1``
 is not a perfect measure of the Agreeableness factor, there is an error term,
 *e*, associated with it. In other words, *e* represents the variance in ``A1``
-that is not accounted for by the Agreeableness factor. This is sometimes called
+that is not accounted for by the Agreeableness factor. Thit is sometimes called
 **measurement error**.
 
 The next step is to consider whether the latent factors should be allowed to
@@ -53,7 +53,7 @@ reason for some of the error terms to be correlated with each other. One reason
 for this might be that there is a shared methodological feature for particular
 sub-sets of the observed variables such that the observed variables might be
 correlated for methodological rather than substantive latent factor reasons.
-We’ll return to this possibility in a later section but, for now, there are no
+We will return to this possibility in a later section but, for now, there are no
 clear reasons that we can see that would justify correlating some of the error
 terms with each other.
 
@@ -66,13 +66,13 @@ loading from ``A1`` onto the latent factor Extraversion in the observed data,
 but not in our model) then we may find a poor fit between our model and the
 observed data.
 
-Right, let’s take a look at how we set this CFA analysis up in jamovi.
+Right, let us take a look at how we set this CFA analysis up in jamovi.
 
 CFA in jamovi
 ~~~~~~~~~~~~~
 
 Open up the |bfi_sample2|_ data set, check that the 25 variables are coded as
-ordinal |ordinal| (or continuous |continuous|; it won’t make any difference for
+ordinal |ordinal| (or continuous |continuous|; it will not make any difference for
 this analysis). To perform CFA in jamovi:
 
 -  Select ``Factor`` → ``Confirmatory Factor Analysis`` from the ``Analyses``
@@ -115,7 +115,7 @@ this analysis). To perform CFA in jamovi:
 .. ----------------------------------------------------------------------------
 
 Once we have set up the analysis we can turn our attention to the jamovi
-results window and see what’s what. The first thing to look at is **model fit**
+results window and see what is what. The first thing to look at is **model fit**
 (:numref:`fig-cfa3`) as this tells us how good a fit our model is to the
 observed data. NB in our model only the pre-specified covariances are
 estimated, including the factor correlations by default. Everything else is set
@@ -156,10 +156,10 @@ earlier EFA, when we ran with a similar data set (section
 :doc:`Ch15_FactorAnalysis_1`), only around half of the variance in the data
 was accounted for by the five factor model.
 
-Let’s go on to look at the factor loadings and the factor covariance estimates,
+Let us go on to look at the factor loadings and the factor covariance estimates,
 shown in :numref:`fig-cfa4` and :numref:`fig-cfa5`. The *Z*-statistic and
 *p*-value for each of these parameters indicates they make a reasonable
-contribution to the model (i.e. they are not zero) so there doesn’t appear to
+contribution to the model (i.e. they are not zero) so there does not appear to
 be any reason to remove any of the specified variable-factor paths, or
 factor-factor correlations from the model. Often the standardized estimates are
 easier to interpret, and these can be specified under the ``Estimates`` option.
@@ -187,7 +187,7 @@ article.
 How could we improve the model? One option is to go back a few stages and think
 again about the items / measures we are using and how they might be improved or
 changed. Another option is to make some *post-hoc* tweaks to the model to
-improve the fit. One way of doing this is to use ``Modification indices``,
+improve the fit. One way of doing thit is to use ``Modification indices``,
 specified as an ``Additional Output`` option in jamovi (see :numref:`fig-cfa6`).
 
 .. ----------------------------------------------------------------------------
@@ -209,16 +209,16 @@ already in the model is a value of 28.786 for the loading of ``N4`` (“Often
 feel blue”) onto the latent factor Extraversion. This indicates that if we add
 this path into the model then the χ²-value will reduce by around the same amount.
 
-But in our model adding this path arguably doesn’t really make any theoretical
-or methodological sense, so it’s not a good idea (unless you can come up with
+But in our model adding this path arguably does not really make any theoretical
+or methodological sense, so it is not a good idea (unless you can come up with
 a persuasive argument that “Often feel blue” measures both Neuroticism and
-Extraversion). I can’t think of a good reason. But, for the sake of argument,
-let’s pretend it does make some sense and add this path into the model. Go
+Extraversion). I can not think of a good reason. But, for the sake of argument,
+let us pretend it does make some sense and add this path into the model. Go
 back to the CFA analysis window (see :numref:`fig-cfa2`) and add ``N4`` into
 the Extraversion factor. The results of the CFA will now change (not shown);
 the χ²-value has come down to around 709 (a drop of around 30, roughly
 similar to the size of the MI) and the other fit indices have also improved,
-though only a bit. But it’s not enough: it’s still not a good fitting model.
+though only a bit. But it is not enough: it is still not a good fitting model.
 
 If you do find yourself adding new parameters to a model using the MI values
 then always re-check the MI tables after each new addition, as the MIs are
@@ -226,7 +226,7 @@ refreshed each time.
 
 There is also a Table of ``Residual Covariances Modification Indices`` produced
 by jamovi (:numref:`fig-cfa7`). In other words, a table showing which correlated
-errors, if added to the model, would improve the model fit the most. It’s a
+errors, if added to the model, would improve the model fit the most. It is a
 good idea to look across both MI tables at the same time, spot the largest MI,
 think about whether the addition of the suggested parameter can be reasonably
 justified and, if it can, add it to the model. And then you can start again
@@ -246,12 +246,12 @@ looking for the biggest MI in the re-calculated results.
 You can keep going this way for as long as you like, adding parameters to the
 model based on the largest MI, and eventually you will achieve a satisfactory
 fit. But there will also be a strong possibility that in doing this you will
-have created a monster! A model that is ugly and deformed and doesn’t have any
+have created a monster! A model that is ugly and deformed and does not have any
 theoretical sense or purity. In other words, be very careful!
 
 So far, we have checked out the factor structure obtained in the EFA using a
-second sample and CFA. Unfortunately, we didn’t find that the factor structure
-from the EFA was confirmed in the CFA, so it’s back to the drawing board as far
+second sample and CFA. Unfortunately, we did not find that the factor structure
+from the EFA was confirmed in the CFA, so it is back to the drawing board as far
 as the development of this personality scale goes.
 
 Whereas there are sometimes good reasons for allowing residuals to covary (or

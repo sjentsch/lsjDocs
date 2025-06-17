@@ -25,8 +25,8 @@ the problem of statistical inference. What kinds of things would we like to
 learn about? And how do we learn them? These are the questions that lie at the
 heart of inferential statistics, and they are traditionally divided into two
 “big ideas”: estimation and hypothesis testing. The goal in this chapter is
-to introduce the first of these big ideas, estimation theory, but I’m going
-to witter on about sampling theory first because estimation theory doesn’t
+to introduce the first of these big ideas, estimation theory, but I am going
+to witter on about sampling theory first because estimation theory does not
 make sense until you understand sampling. As a consequence, this chapter
 divides naturally into two parts :doc:`Ch08_Estimation_1` through
 :doc:`Ch08_Estimation_3` are focused on sampling theory, and

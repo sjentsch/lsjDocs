@@ -3,7 +3,7 @@
 Hypothesis tests for regression models
 --------------------------------------
 
-So far we’ve talked about what a regression model is, how the
+So far we have talked about what a regression model is, how the
 coefficients of a regression model are estimated, and how we quantify
 the performance of the model (the last of these, incidentally, is
 basically our measure of effect size). The next thing we need to talk
@@ -16,7 +16,7 @@ particular regression coefficient is significantly different from zero.
 Testing the model as a whole
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Okay, suppose you’ve estimated your regression model. The first
+Okay, suppose you have estimated your regression model. The first
 hypothesis test you might try is the null hypothesis that there is *no
 relationship* between the predictors and the outcome, and the
 alternative hypothesis that *the data are distributed in exactly the way
@@ -35,9 +35,9 @@ model:
 | H\ :sub:`1`: *Y*\ :sub:`i` = b\ :sub:`0` + math:`\left( \sum_{k=1}^K b_{k} X_{ik} \right)` + ε\ :sub:`i`
 
 How can we test these two hypotheses against each other? The trick is to
-understand that it’s possible to divide up the total variance SS\ :sub:`tot`
+understand that it is possible to divide up the total variance SS\ :sub:`tot`
 into the sum of the residual variance SS\ :sub:`res` and the regression model
-variance SS\ :sub:`mod`. I’ll skip over the technicalities, since we’ll get
+variance SS\ :sub:`mod`. I will skip over the technicalities, since we will get
 to that later when we look at ANOVA in chapter :doc:`../Ch13/Ch13_ANOVA`.
 But just note that
 
@@ -51,11 +51,11 @@ the degrees of freedom.
 
 So, how many degrees of freedom do we have? As you might expect the
 *df* associated with the model is closely tied to the number of
-predictors that we’ve included. In fact, it turns out that
+predictors that we have included. In fact, it turns out that
 *df*\ :sub:`mod` = *K*. For the residuals the total degrees of freedom is
 *df*\ :sub:`res` = *N* - *K* - 1.
 
-Now that we’ve got our mean square values we can calculate an
+Now that we have got our mean square values we can calculate an
 *F*-statistic like this:
 
 | F = MS\ :sub:`mod` / SS\ :sub:`res`
@@ -63,38 +63,38 @@ Now that we’ve got our mean square values we can calculate an
 and the degrees of freedom associated with this are *K* and
 *N* - *K* - 1.
 
-We’ll see much more of the *F*-statistic in chapter :doc:`../Ch13/Ch13_ANOVA`,
+We will see much more of the *F*-statistic in chapter :doc:`../Ch13/Ch13_ANOVA`,
 but for now just know that we can interpret large *F*-values as indicating
-that the null hypothesis is performing poorly in comparison to the alternative
-hypothesis. In a moment I’ll show you how to do the test in jamovi the easy
-way, but first let’s have a look at the tests for the individual regression
+that the null hypothesit is performing poorly in comparison to the alternative
+hypothesis. In a moment I will show you how to do the test in jamovi the easy
+way, but first let us have a look at the tests for the individual regression
 coefficients.
 
 Tests for individual coefficients
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The *F*-test that we’ve just introduced is useful for checking that the model
-as a whole is performing better than chance. If your regression model doesn’t
-produce a significant result for the *F*-test then you probably don’t have a
-very good regression model (or, quite possibly, you don’t have very good data).
+The *F*-test that we have just introduced is useful for checking that the model
+as a whole is performing better than chance. If your regression model does not
+produce a significant result for the *F*-test then you probably do not have a
+very good regression model (or, quite possibly, you do not have very good data).
 However, while failing this test is a pretty strong indicator that the model
-has problems, *passing* the test (i.e., rejecting the null) doesn’t imply that
+has problems, *passing* the test (i.e., rejecting the null) does not imply that
 the model is good! Why is that, you might be wondering? The answer to that can
 be found by looking at the coefficients for the multiple regression model we
 have already looked at :numref:`tab-parent_coeff` in section
 :doc:`Ch12_Regression_05` above, where the coefficients we got were 125.966
 (for the intercept), -8.950 (for ``dani.sleep``) and 0.011 (for
-``baby.sleep``). I can’t help but notice that the estimated regression
+``baby.sleep``). I can not help but notice that the estimated regression
 coefficient for the ``baby.sleep`` variable is tiny, relative to the value that
 we get for ``dani.sleep``. Given that these two variables are absolutely on the
-same scale (they’re both measured in “hours slept”), I find this illuminating.
-In fact, I’m beginning to suspect that it’s really only the amount of sleep
+same scale (they are both measured in “hours slept”), I find this illuminating.
+In fact, I am beginning to suspect that it is really only the amount of sleep
 that *I* get that matters in order to predict my grumpiness.
 
 We can re-use a hypothesis test that we discussed earlier, the
-*t*-test. The test that we’re interested in has a null hypothesis
+*t*-test. The test that we are interested in has a null hypothesis
 that the true regression coefficient is zero (*b* = 0), which is
-to be tested against the alternative hypothesis that it isn’t
+to be tested against the alternative hypothesis that it is not
 (*b* ≠ 0). That is:
 
 | H\ :sub:`0`: *b* = 0
@@ -106,27 +106,27 @@ estimated regression coefficient, is a normal distribution with mean centred on
 *b*. What that would mean is that if the null hypothesis were true, then the
 sampling distribution of :math:`\hat{b}` has mean zero and unknown standard
 deviation. Assuming that we can come up with a good estimate for the standard
-error of the regression coefficient, :math:`SE(\hat{b})`, then we’re in luck.
-That’s *exactly* the situation for which we introduced the one-sample *t*-test
-way back in chapter :doc:`../Ch11/Ch11_tTest`. So let’s define a *t*-statistic
+error of the regression coefficient, :math:`SE(\hat{b})`, then we are in luck.
+That is *exactly* the situation for which we introduced the one-sample *t*-test
+way back in chapter :doc:`../Ch11/Ch11_tTest`. So let us define a *t*-statistic
 like this:
 
 .. math:: t = \frac{\hat{b}}{SE(\hat{b})}
 
-I’ll skip over the reasons why, but our degrees of freedom in this case are
+I will skip over the reasons why, but our degrees of freedom in this case are
 *df* = *N* - *K* - 1. Irritatingly, the estimate of the standard error of the
 regression coefficient, :math:`SE(\hat{b})`, is not as easy to calculate as the
 standard error of the mean that we used for the simpler *t*-tests in chapter
 :doc:`../Ch11/Ch11_tTest`. In fact, the formula is somewhat ugly, and not
-terribly helpful to look at.\ [#]_ For our purposes it’s sufficient to point
+terribly helpful to look at.\ [#]_ For our purposes it is sufficient to point
 out that the standard error of the estimated regression coefficient depends on
 both the predictor and outcome variables, and it is somewhat sensitive to
 violations of the homogeneity of variance assumption (discussed shortly).
 
 In any case, this *t*-statistic can be interpreted in the same way as the
 *t*-statistics that we discussed in chapter :doc:`../Ch11/Ch11_tTest`.
-Assuming that you have a two-sided alternative (i.e., you don’t really care if
-*b* > 0 or *b* < 0), then it’s the extreme values of *t* (i.e., a lot less
+Assuming that you have a two-sided alternative (i.e., you do not really care if
+*b* > 0 or *b* < 0), then it is the extreme values of *t* (i.e., a lot less
 than zero or a lot greater than zero) that suggest that you should reject the
 null hypothesis.
 
@@ -161,16 +161,16 @@ column is the actual estimate of *b* (e.g., 125.97 for the intercept, and
 error estimate :math:`\hat\sigma_b`. The third and fourth columns provide the
 lower and upper values for the 95\% confidence interval around the *b*
 estimate (more on this later). The fifth column gives you the *t*-statistic,
-and it’s worth noticing that in this table :math:`t= \hat{b} / SE(\hat{b})`
+and it is worth noticing that in this table :math:`t= \hat{b} / SE(\hat{b})`
 every time. Finally, the last column gives you the actual *p*-value for each
 of these tests.\ [#]_
 
-The only thing that the coefficients table itself doesn’t list is the
+The only thing that the coefficients table itself does not list is the
 degrees of freedom used in the *t*-test, which is always
 *N* - *K* - 1 and is listed in the table at the top of the output,
 labelled ``Model Fit Measures``. We can see from this table that the model
-performs significantly better than you’d expect by chance
-(*F*\(2,97) = 215.24, *p* < 0.001), which isn’t all that
+performs significantly better than you would expect by chance
+(*F*\(2,97) = 215.24, *p* < 0.001), which is not all that
 surprising: the *R*\² = 0.81 value indicate that the regression
 model accounts for 81\% of the variability in the outcome measure (and
 82\% for the adjusted *R*\²). However, when we look back up at the
@@ -178,7 +178,7 @@ model accounts for 81\% of the variability in the outcome measure (and
 strong evidence that the ``baby.sleep`` variable has no significant
 effect. All the work in this model is being done by the ``dani.sleep``
 variable. Taken together, these results suggest that this regression
-model is actually the wrong model for the data. You’d probably be better
+model is actually the wrong model for the data. You would probably be better
 off dropping the ``baby.sleep`` predictor entirely. In other words, the
 simple regression model that we started with is the better model.
 
@@ -195,7 +195,7 @@ simple regression model that we started with is the better model.
    estimated standard errors.
 
 .. [#]
-   Note that, although jamovi has done multiple tests here, it hasn’t
+   Note that, although jamovi has done multiple tests here, it has not
    done a Bonferroni correction or anything. These are standard
    one-sample *t*-tests with a two-sided alternative. If you want
    to make corrections for multiple tests, you need to do that yourself.

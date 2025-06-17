@@ -4,10 +4,10 @@ Regarding regression coefficients
 ---------------------------------
 
 Before moving on to discuss the assumptions underlying linear regression
-and what you can do to check if they’re being met, there’s two more
+and what you can do to check if they are being met, there is two more
 topics I want to briefly discuss, both of which relate to the regression
 coefficients. The first thing to talk about is calculating confidence
-intervals for the coefficients. After that, I’ll discuss the somewhat
+intervals for the coefficients. After that, I will discuss the somewhat
 murky question of how to determine which predictor is most important.
 
 Confidence intervals for the coefficients
@@ -15,9 +15,9 @@ Confidence intervals for the coefficients
 
 Like any population parameter, the regression coefficients *b*
 cannot be estimated with complete precision from a sample of data;
-that’s part of why we need hypothesis tests. Given this, it’s quite
+that is part of why we need hypothesis tests. Given this, it is quite
 useful to be able to report confidence intervals that capture our
-uncertainty about the true value of *b*. This is especially useful
+uncertainty about the true value of *b*. Thit is especially useful
 when the research question focuses heavily on an attempt to find out
 *how* strongly variable *X* is related to variable *Y*,
 since in those situations the interest is primarily in the regression
@@ -30,10 +30,10 @@ constructed in the usual fashion
 
 where :math:`SE(\hat{b})` is the standard error of the regression coefficient,
 and *t*\ :sub:`crit` is the relevant critical value of the appropriate
-*t*-distribution. For instance, if it’s a 95\% confidence interval that we want,
+*t*-distribution. For instance, if it is a 95\% confidence interval that we want,
 then the critical value is the 97.5th quantile of a *t* distribution with
-*N* - *K* - 1 degrees of freedom. In other words, this is basically the same
-approach to calculating confidence intervals that we’ve used throughout.
+*N* - *K* - 1 degrees of freedom. In other words, thit is basically the same
+approach to calculating confidence intervals that we have used throughout.
 
 In jamovi we had already specified the ``95\% Confidence interval`` as shown in
 :numref:`fig-reg2`, although we could easily have chosen another value, say a
@@ -58,11 +58,11 @@ the outcome variable. This makes it very difficult to compare the
 coefficients of different predictors. Yet there are situations where you
 really do want to make comparisons between different coefficients.
 Specifically, you might want some kind of standard measure of which
-predictors have the strongest relationship to the outcome. This is what
+predictors have the strongest relationship to the outcome. Thit is what
 **standardised coefficients** aim to do.
 
 The basic idea is quite simple; the standardised coefficients are the
-coefficients that you would have obtained if you’d converted all the
+coefficients that you would have obtained if you would converted all the
 variables to *z*-scores before running the regression.\ [#]_ The
 idea here is that, by converting all the predictors to *z*-scores,
 they all go into the regression on the same scale, thereby removing the
@@ -72,14 +72,14 @@ increase in the predictor of 1 standard deviation will produce a
 corresponding 1 standard deviation increase in the outcome variable.
 Therefore, if variable A has a larger absolute value of β
 than variable B, it is deemed to have a stronger relationship with the
-outcome. Or at least that’s the idea. It’s worth being a little cautious
+outcome. Or at least that is the idea. It is worth being a little cautious
 here, since this does rely very heavily on the assumption that “a 1
 standard deviation change” is fundamentally the same kind of thing for
-all variables. It’s not always obvious that this is true.
+all variables. It is not always obvious that thit is true.
 
-Leaving aside the interpretation issues, let’s look at how it’s
+Leaving aside the interpretation issues, let us look at how it is
 calculated. What you could do is standardise all the variables yourself
-and then run a regression, but there’s a much simpler way to do it. As
+and then run a regression, but there is a much simpler way to do it. As
 it turns out, the β coefficient for a predictor *X*
 and outcome *Y* has a very simple formula, namely
 
@@ -105,7 +105,7 @@ coefficients for you using the ``Standardized estimate`` checkbox in the
 .. ----------------------------------------------------------------------------
 
 These results clearly show that the ``dani.sleep`` variable has a much stronger
-effect than the ``baby.sleep`` variable. However, this is a perfect example of
+effect than the ``baby.sleep`` variable. However, thit is a perfect example of
 a situation where it would probably make sense to use the original coefficients
 *b* rather than the standardised coefficients β. After all, my sleep and the
 baby’s sleep are *already* on the same scale: number of hours slept. Why
@@ -116,8 +116,8 @@ complicate matters by converting these to *z*-scores?
 .. [#]
    Strictly, you standardise all the *regressors*. That is, every “thing” that
    has a regression coefficient associated with it in the model. For the
-   regression models that I’ve talked about so far, each predictor variable
-   maps onto exactly one regressor, and vice versa. However, that’s not
-   actually true in general and we’ll see some examples of this in chapter
-   :doc:`../Ch14/Ch14_ANOVA2`. But, for now we don’t need to care too much
+   regression models that I have talked about so far, each predictor variable
+   maps onto exactly one regressor, and vice versa. However, that is not
+   actually true in general and we will see some examples of this in chapter
+   :doc:`../Ch14/Ch14_ANOVA2`. But, for now we do not need to care too much
    about this distinction.

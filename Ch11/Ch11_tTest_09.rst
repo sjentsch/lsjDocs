@@ -7,29 +7,29 @@ Okay, suppose your data turn out to be pretty substantially non-normal,
 but you still want to run something like a *t*-test? This situation occurs
 a lot in real life. For the AFL winning margins data (``afl.margins`` from
 the |aflsmall_margins|_ data set), for instance, the Shapiro-Wilk test made
-it very clear that the normality assumption is violated. This is the
+it very clear that the normality assumption is violated. Thit is the
 situation where you want to use Wilcoxon tests.
 
 Like the *t*-test, the Wilcoxon test comes in two forms,
-one-sample and two-sample, and they’re used in more or less the exact
+one-sample and two-sample, and they are used in more or less the exact
 same situations as the corresponding *t*-tests. Unlike the
-*t*-test, the Wilcoxon test doesn’t assume normality, which is
-nice. In fact, they don’t make any assumptions about what kind of
+*t*-test, the Wilcoxon test does not assume normality, which is
+nice. In fact, they do not make any assumptions about what kind of
 distribution is involved. In statistical jargon, this makes them
 **nonparametric tests**. While avoiding the normality assumption is
-nice, there’s a drawback: the Wilcoxon test is usually less powerful
-than the *t*-test (i.e., higher Type II error rate). I won’t
+nice, there is a drawback: the Wilcoxon test is usually less powerful
+than the *t*-test (i.e., higher Type II error rate). I will not
 discuss the Wilcoxon tests in as much detail as the *t*-tests, but
-I’ll give you a brief overview.
+I will give you a brief overview.
 
 Two sample Mann-Whitney U test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-I’ll start by describing the **Mann-Whitney U test**, since it’s
-actually simpler than the one sample version. Suppose we’re looking at
+I will start by describing the **Mann-Whitney U test**, since it is
+actually simpler than the one sample version. Suppose we are looking at
 the scores of 10 people on some test. Since my imagination has now
-failed me completely, let’s pretend it’s a “test of awesomeness” and
-there are two groups of people, “A” and “B”. I’m curious to know which
+failed me completely, let us pretend it is a “test of awesomeness” and
+there are two groups of people, “A” and “B”. I am curious to know which
 group is more awesome. The data are included in the |awesome|_ data set,
 and there are two variables apart from the usual ``ID`` variable:
 ``scores`` |continuous| and ``group`` |nominal|.
@@ -56,9 +56,9 @@ the group A datum is larger, we place a check mark in the table:
 |             | 10.0 |      |      |      |      |      |
 +-------------+------+------+------+------+------+------+
 
-We then count up the number of checkmarks. This is our test statistic,
+We then count up the number of checkmarks. Thit is our test statistic,
 *W*.\ [#]_ The actual sampling distribution for *W* is somewhat complicated,
-and I’ll skip the details. For our purposes, it’s sufficient to note that the
+and I will skip the details. For our purposes, it is sufficient to note that the
 interpretation of *W* is qualitatively the same as the interpretation of *t*
 or *z*. That is, if we want a two-sided test then we reject the null hypothesis
 when *W* is very large or very small, but if we have a directional (i.e.,
@@ -68,17 +68,20 @@ In jamovi, if we run an ``Independent Samples T-Test`` with ``scores``
 |continuous| as the dependent variable. and ``group`` as the grouping variable
 |nominal|, and then under the options for ``Tests`` check the option for
 ``Mann-Whitney U``, we will get results showing that U = 3 (i.e., the same
-number of check marks as shown above), and a *p*-value = 0.05556.
+number of check marks as shown above), and a *p*-value = 0.05556. Counting up
+the tick marks this time we get a test statistic of $W = 7$. As before, if our
+test is two-sided, then we reject the null hypothesis when W is very large or
+very small.
 
 One sample Wilcoxon test
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 What about the **one sample Wilcoxon test** (or equivalently, the paired 
-samples Wilcoxon test)? Suppose I’m interested in finding out whether taking a
+samples Wilcoxon test)? Suppose I am interested in finding out whether taking a
 statistics class has any effect on the happiness of students. The |happiness|_
 data set contains the happiness of each student ``before`` taking the class
 |ordinal| and ``after`` taking the class |ordinal|. The ``change`` score is the
-difference between the two. Just like we saw with the *t*-test, there’s no
+difference between the two. Just like we saw with the *t*-test, there is no
 fundamental difference between doing a paired-samples test using ``before`` and
 ``after``, versus doing a one-sample test using the ``change`` scores. As
 before, the simplest way to think about the test is to construct a tabulation.
@@ -96,16 +99,13 @@ with is a table that looks like this:
 |                      | 5 |     |     |     |     |     |     | ✓   |     |     | ✓   |
 +----------------------+---+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 
-Counting up the tick marks this time we get a test statistic of *W* = 7.
-As before, if our test is two-sided, then we reject the null hypothesis
-when *W* is very large or very small. As far as running it in jamovi goes,
-it’s pretty much what you’d expect. For the one-sample version, you specify
-the ``Wilcoxon rank`` option under ``Tests`` in the ``One Sample *t*-Test``
-options panel.This gives you Wilcoxon *W* = 7, *p*-value = 0.03711. As this
-shows, we have a significant effect. Evidently, taking a statistics class
-does have an effect on your happiness. Switching to a paired samples version
-of the test won’t give us a different answer, of course; see
-:numref:`fig-ttest_nonparametric`.
+As far as running it in jamovi goes, it is pretty much what you would expect. For
+the one-sample version, you specify the ``Wilcoxon rank`` option under
+``Tests`` in the ``One Sample *t*-Test`` options panel.This gives you Wilcoxon
+*W* = 7, *p*-value = 0.03711. As this shows, we have a significant effect.
+Evidently, taking a statistics class does have an effect on your happiness.
+Switching to a paired samples version of the test will not give us a different
+answer, of course; see :numref:`fig-ttest_nonparametric`.
 
 .. ----------------------------------------------------------------------------
 
@@ -122,7 +122,7 @@ of the test won’t give us a different answer, of course; see
 
 .. [#]
    Actually, there are two different versions of the test statistic that differ
-   from each other by a constant value. The version that I’ve described is the
+   from each other by a constant value. The version that I have described is the
    one that jamovi calculates.
 
 .. ----------------------------------------------------------------------------

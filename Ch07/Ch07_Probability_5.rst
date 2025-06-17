@@ -4,7 +4,7 @@ The normal distribution
 -----------------------
 
 While the binomial distribution is conceptually the simplest
-distribution to understand, it’s not the most important one. That
+distribution to understand, it is not the most important one. That
 particular honour goes to the **normal distribution**, also referred to
 as “the bell curve” or a “Gaussian distribution”. A normal distribution
 is described using two parameters: the mean of the distribution µ and
@@ -15,12 +15,12 @@ normally distributed is as follows:
 
 X ~ Normal(µ, σ)
 
-Of course, that’s just notation. It doesn’t tell us anything interesting
+Of course, that is just notation. It does not tell us anything interesting
 about the normal distribution itself. As was the case with the binomial
 distribution, I have included the formula for the normal distribution in
-this book, because I think it’s important enough that everyone who
-learns statistics should at least look at it, but since this is an
-introductory text I don’t want to focus on it, so I’ve tucked it away in
+this book, because I think it is important enough that everyone who
+learns statistics should at least look at it, but since thit is an
+introductory text I do not want to focus on it, so I have tucked it away in
 :numref:`tab-distformulas`.
 
 .. ----------------------------------------------------------------------------
@@ -32,32 +32,32 @@ introductory text I don’t want to focus on it, so I’ve tucked it away in
    The normal distribution with mean μ = 0 and standard deviation σ = 1. The
    x-axis corresponds to the value of some variable, and the y-axis tells us
    something about how likely we are to observe that value. However, notice
-   that the y-axis is labelled “Probability Density” and not “Probability”.
+   that the y-axit is labelled “Probability Density” and not “Probability”.
    There is a subtle and somewhat frustrating characteristic of continuous
    distributions that makes the y axis behave a bit oddly: the height of the
-   curve here isn’t actually the probability of observing a particular x value.
+   curve here is not actually the probability of observing a particular x value.
    On the other hand, it is true that the heights of the curve tells you which
    x values are more likely (the higher ones!; see :ref:`Probability density
    <probability_density>` for all the annoying details).
   
 .. ----------------------------------------------------------------------------
 
-Instead of focusing on the maths, let’s try to get a sense for what it
+Instead of focusing on the maths, let us try to get a sense for what it
 means for a variable to be normally distributed. To that end, have a
 look at :numref:`fig-standardNormal` which plots a normal distribution with
 mean µ = 0 and standard deviation σ = 1. You can see where the name “bell
 curve” comes from; it looks a bit like a bell. Notice that, unlike the plots
 that I drew to illustrate the binomial distribution, the picture of the normal
 distribution in :numref:`fig-standardNormal` shows a smooth
-curve instead of “histogram-like” bars. This isn’t an arbitrary choice,
+curve instead of “histogram-like” bars. Thit is not an arbitrary choice,
 the normal distribution is continuous whereas the binomial is discrete.
 For instance, in the die rolling example from the last section it was
 possible to get 3 skulls or 4 skulls, but impossible to get 3.9 skulls.
 The figures that I drew in the previous section reflected this fact. In
-:numref:`fig-binomSkulls20`, for instance, there’s a bar
-located at *X* = 3 and another one at *X* = 4 but there’s
-nothing in between. Continuous quantities don’t have this constraint.
-For instance, suppose we’re talking about the weather. The temperature
+:numref:`fig-binomSkulls20`, for instance, there is a bar
+located at *X* = 3 and another one at *X* = 4 but there is
+nothing in between. Continuous quantities do not have this constraint.
+For instance, suppose we are talking about the weather. The temperature
 on a pleasant Spring day could be 23 degrees, 24 degrees, 23.9 degrees,
 or anything in between since temperature is a continuous variable |continuous|.
 And so a normal distribution might be quite appropriate for describing
@@ -78,14 +78,14 @@ Spring temperatures.\ [#]_
   
 .. ----------------------------------------------------------------------------
 
-With this in mind, let’s see if we can’t get an intuition for how the
-normal distribution works. First, let’s have a look at what happens when
+With this in mind, let us see if we can not get an intuition for how the
+normal distribution works. First, let us have a look at what happens when
 we play around with the parameters of the distribution. To that end,
 :numref:`fig-meanShiftNormal` plots normal distributions
 that have different means but have the same standard deviation. As you
 might expect, all of these distributions have the same “width”. The only
-difference between them is that they’ve been shifted to the left or to
-the right. In every other respect they’re identical. In contrast, if we
+difference between them is that they have been shifted to the left or to
+the right. In every other respect they are identical. In contrast, if we
 increase the standard deviation while keeping the mean constant, the
 peak of the distribution stays in the same place but the distribution
 gets wider, as you can see in :numref:`fig-scaleShiftNormal`.
@@ -155,96 +155,96 @@ in :numref:`fig-normAreaSD`.
 Probability density
 ~~~~~~~~~~~~~~~~~~~
 
-There’s something I’ve been trying to hide throughout my discussion of
+There is something I have been trying to hide throughout my discussion of
 the normal distribution, something that some introductory textbooks omit
-completely. They might be right to do so. This “thing” that I’m hiding
+completely. They might be right to do so. This “thing” that I am hiding
 is weird and counter-intuitive even by the admittedly distorted
-standards that apply in statistics. Fortunately, it’s not something that
+standards that apply in statistics. Fortunately, it is not something that
 you need to understand at a deep level in order to do basic statistics.
-Rather, it’s something that starts to become important later on when you
-move beyond the basics. So, if it doesn’t make complete sense, don’t
+Rather, it is something that starts to become important later on when you
+move beyond the basics. So, if it does not make complete sense, do not
 worry too much, but try to make sure that you follow the gist of it.
 
-Throughout my discussion of the normal distribution there’s been one or
-two things that don’t quite make sense. Perhaps you noticed that the
+Throughout my discussion of the normal distribution there is been one or
+two things that do not quite make sense. Perhaps you noticed that the
 *y*-axis in these figures is labelled “Probability Density” rather
 than “Density”. Maybe you noticed that I used *p*\ (X) instead of
 *P*\ (X) when giving the formula for the normal distribution.
 
-As it turns out, what is presented here isn’t actually a probability,
-it’s something else. To understand what that something is you have to
+As it turns out, what is presented here is not actually a probability,
+it is something else. To understand what that something is you have to
 spend a little time thinking about what it really *means* to say that
-*X* is a continuous variable |continuous|. Let’s say we’re talking about
-the temperature outside. The thermometer tells me it’s 23 degrees, but I
-know that’s not really true. It’s not *exactly* 23 degrees. Maybe it’s
-\23.1 degrees, I think to myself. But I know that that’s not really true
+*X* is a continuous variable |continuous|. Let us say we are talking about
+the temperature outside. The thermometer tells me it is 23 degrees, but I
+know that is not really true. It is not *exactly* 23 degrees. Maybe it is
+\23.1 degrees, I think to myself. But I know that that is not really true
 either because it might actually be 23.09 degrees. But I know that…
 well, you get the idea. The tricky thing with genuinely continuous
 quantities is that you never really know exactly what they are.
 
 Now think about what this implies when we talk about probabilities.
 Suppose that tomorrow’s maximum temperature is sampled from a normal
-distribution with mean 23 and standard deviation 1. What’s the
+distribution with mean 23 and standard deviation 1. What is the
 probability that the temperature will be *exactly* 23 degrees? The
 answer is “zero”, or possibly “a number so close to zero that it might
-as well be zero”. Why is this? It’s like trying to throw a dart at an
-infinitely small dart board. No matter how good your aim, you’ll never
-hit it. In real life you’ll never get a value of exactly 23. It’ll
+as well be zero”. Why is this? It is like trying to throw a dart at an
+infinitely small dart board. No matter how good your aim, you will never
+hit it. In real life you will never get a value of exactly 23. It will
 always be something like 23.1 or 22.99998 or suchlike. In other words,
-it’s completely meaningless to talk about the probability that the
+it is completely meaningless to talk about the probability that the
 temperature is exactly 23 degrees. However, in everyday language if I
 told you that it was 23 degrees outside and it turned out to be 22.9998
-degrees you probably wouldn’t call me a liar. Because in everyday
+degrees you probably would not call me a liar. Because in everyday
 language “23 degrees” usually means something like “somewhere between
-\22.5 and 23.5 degrees”. And while it doesn’t feel very meaningful to ask
+\22.5 and 23.5 degrees”. And while it does not feel very meaningful to ask
 about the probability that the temperature is exactly 23 degrees, it
 does seem sensible to ask about the probability that the temperature
 lies between 22.5 and 23.5, or between 20 and 30, or any other range of
 temperatures.
 
-The point of this discussion is to make clear that when we’re talking
-about continuous distributions it’s not meaningful to talk about the
+The point of this discussion is to make clear that when we are talking
+about continuous distributions it is not meaningful to talk about the
 probability of a specific value. However, what we *can* talk about is
 the probability that the value lies within a particular range of values.
 To find out the probability associated with a particular range what you
-need to do is calculate the “area under the curve”. We’ve seen this
+need to do is calculate the “area under the curve”. We have seen this
 concept already, in :numref:`fig-normAreaSD` the shaded areas shown depict
 genuine probabilities (e.g., in the left panel of :numref:`fig-normAreaSD`
 it shows the probability of observing a value that falls within 1 standard
 deviation of the mean).
 
-Okay, so that explains part of the story. I’ve explained a little bit
+Okay, so that explains part of the story. I have explained a little bit
 about how continuous probability distributions should be interpreted
 (i.e., area under the curve is the key thing). But what does the formula
 for *p*\ (x) that I described earlier actually mean? Obviously,
-p*\ (x) doesn’t describe a probability, but what is it? The name
+p*\ (x) does not describe a probability, but what is it? The name
 for this quantity *p*\ (x) is a **probability density**, and in
-terms of the plots we’ve been drawing it corresponds to the *height* of
-the curve. The densities themselves aren’t meaningful in and of
-themselves, but they’re “rigged” to ensure that the *area* under the
+terms of the plots we have been drawing it corresponds to the *height* of
+the curve. The densities themselves are not meaningful in and of
+themselves, but they are “rigged” to ensure that the *area* under the
 curve is always interpretable as genuine probabilities. To be honest,
-that’s about as much as you really need to know for now.\ [#]_
+that is about as much as you really need to know for now.\ [#]_
 
 ------
 
 .. [#]
    In practice, the normal distribution is so handy that people tend to
-   use it even when the variable isn’t actually continuous. As long as
+   use it even when the variable is not actually continuous. As long as
    there are enough categories (e.g., Likert scale responses to a
-   questionnaire), it’s pretty standard practice to use the normal
+   questionnaire), it is pretty standard practice to use the normal
    distribution as an approximation. This works out much better in
-   practice than you’d think.
+   practice than you would think.
    
 .. [#]
-   For those readers who know a little calculus, I’ll give a slightly
+   For those readers who know a little calculus, I will give a slightly
    more precise explanation. In the same way that probabilities are
    non-negative numbers that must sum to 1, probability densities are
    non-negative numbers that must integrate to 1 (where the integral is
    taken across all possible values of *X*). To calculate the
    probability that *X* falls between *a* and *b* we
    calculate the definite integral of the density function over the
-   corresponding range, :math:`\int_a^b p(x) \ dx`. If you don’t
-   remember or never learned calculus, don’t worry about this. It’s not
+   corresponding range, :math:`\int_a^b p(x) \ dx`. If you do not
+   remember or never learned calculus, do not worry about this. It is not
    needed for this book.
 
 .. ----------------------------------------------------------------------------

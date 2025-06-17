@@ -23,8 +23,8 @@ Bayesian statistics
      
    -- `David Hume <https://en.wikiquote.org/wiki/David_Hume>`__
 
-The ideas I’ve presented to you in this book describe inferential
-statistics from the frequentist perspective. I’m not alone in doing
+The ideas I have presented to you in this book describe inferential
+statistics from the frequentist perspective. I am not alone in doing
 this. In fact, almost every textbook given to undergraduate psychology
 students presents the opinions of the frequentist statistician as *the*
 theory of inferential statistics, the one true way to do things. I have

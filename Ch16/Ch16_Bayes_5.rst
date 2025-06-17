@@ -6,7 +6,7 @@ Bayesian *t*-tests
 An important type of statistical inference problem discussed in this book is
 the comparison between two means, discussed in some detail in the chapter on
 *t*-tests (chapter :doc:`../Ch11/Ch11_tTest`). If you can remember back that
-far, you’ll recall that there are several versions of the *t*-test. I’ll talk
+far, you will recall that there are several versions of the *t*-test. I will talk
 a little about Bayesian versions of the independent samples *t*-tests and the
 paired samples *t*-test in this section.
 
@@ -18,7 +18,7 @@ arises when you have data as in the |harpo|_ data set that we used in the
 earlier chapter on *t*-tests (chapter :doc:`../Ch11/Ch11_tTest`). In this data
 set, we have two groups of students, those who received lessons from Anastasia
 and those who took their classes with Bernadette. The question we want to
-answer is whether there’s any difference in the grades received by these two
+answer is whether there is any difference in the grades received by these two
 groups of students. Back in that chapter, I suggested you could analyse this
 kind of data using the Independent Samples *t*-test in jamovi, which gave us
 the results in :numref:`fig-bayes1`. As we obtain a *p*-value less than 0.05,
@@ -51,13 +51,13 @@ data are about 1.8:1 in favour of the alternative hypothesis.
    
 .. ----------------------------------------------------------------------------
 
-Before moving on, it’s worth highlighting the difference between the orthodox
+Before moving on, it is worth highlighting the difference between the orthodox
 test results and the Bayesian one. According to the orthodox test, we obtained
 a significant result, though only barely. Nevertheless, many people would
 happily accept *p* = 0.043 as reasonably strong evidence for an effect. In
-contrast, notice that the Bayesian test doesn’t even reach 2:1 odds in favour
+contrast, notice that the Bayesian test does not even reach 2:1 odds in favour
 of an effect, and would be considered very weak evidence at best. In my
-experience that’s a pretty typical outcome. Bayesian methods usually require
+experience that is a pretty typical outcome. Bayesian methods usually require
 more evidence before rejecting the null.
 
 Paired samples *t*-test

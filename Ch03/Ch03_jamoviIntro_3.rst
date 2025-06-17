@@ -21,7 +21,7 @@ say, a colleague) created earlier.
 If you decide you no longer need a particular analysis, you can remove
 it with the results context menu. Right-clicking on the analysis results
 will bring up a menu and by selecting ``Analysis`` and then ``Remove`` the
-analysis can be removed. But more on this later. First, let’s take a
+analysis can be removed. But more on this later. First, let us take a
 more detailed look at the spreadsheet view.
 
 Copy and Paste
@@ -75,7 +75,7 @@ of the jamovi window, select ``jamovi library`` and then browse through
 the various add-on modules that are available. Choose the one(s) you
 want, and then install them (as shown in :numref:`fig-modules`).
 
-It’s that easy. The newly installed modules can then be accessed from the
+It is that easy. The newly installed modules can then be accessed from the
 ``Analyses`` ribbon or by clicking on the the large ``+`` and the selecting
 the analyses you need from the menu that opens.\ [#]_ Try it… useful add-on
 modules to install include ``scatr`` (added under ``Descriptives``) and |Rj|_.

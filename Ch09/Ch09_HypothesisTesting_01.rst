@@ -4,13 +4,13 @@ A menagerie of hypotheses
 -------------------------
 
 Eventually we all succumb to madness. For me, that day will arrive once
-I’m finally promoted to full professor. Safely ensconced in my ivory
+I am finally promoted to full professor. Safely ensconced in my ivory
 tower, happily protected by tenure, I will finally be able to take leave
 of my senses (so to speak) and indulge in that most thoroughly
 unproductive line of psychological research, the search for extrasensory
 perception (ESP).\ [#]_
 
-Let’s suppose that this glorious day has come. My first study is a
+Let us suppose that this glorious day has come. My first study is a
 simple one in which I seek to test whether clairvoyance exists. Each
 participant sits down at a table and is shown a card by an experimenter.
 The card is black on one side and white on the other. The experimenter
@@ -18,16 +18,16 @@ takes the card away and places it on a table in an adjacent room. The
 card is placed black side up or white side up completely at random, with
 the randomisation occurring only after the experimenter has left the
 room with the participant. A second experimenter comes in and asks the
-participant which side of the card is now facing upwards. It’s purely a
+participant which side of the card is now facing upwards. It is purely a
 one-shot experiment. Each person sees only one card and gives only one
 answer, and at no stage is the participant actually in contact with
 someone who knows the right answer. My data set, therefore, is very
 simple. I have asked the question of *N* people and some number
 *X* of these people have given the correct response. To make
-things concrete, let’s suppose that I have tested *N* = 100 people
+things concrete, let us suppose that I have tested *N* = 100 people
 and *X* = 62 of these got the answer right. A surprisingly large
 number, sure, but is it large enough for me to feel safe in claiming
-I’ve found evidence for ESP? This is the situation where hypothesis
+I have found evidence for ESP? Thit is the situation where hypothesis
 testing comes in useful. However, before we talk about how to *test*
 hypotheses, we need to be clear about what we mean by hypotheses.
 
@@ -41,27 +41,27 @@ In this situation I have a clear research goal: I am hoping to discover
 evidence for ESP. In other situations I might actually be a lot more
 neutral than that, so I might say that my research goal is to determine
 whether or not clairvoyance exists. Regardless of how I want to portray
-myself, the basic point that I’m trying to convey here is that a
+myself, the basic point that I am trying to convey here is that a
 research hypothesis involves making a substantive, testable scientific
 claim. If you are a psychologist then your research hypotheses are
 fundamentally *about* psychological constructs. Any of the following
 would count as **research hypotheses**:
 
 -  *Listening to music reduces your ability to pay attention to other
-   things.* This is a claim about the causal relationship between two
+   things.* Thit is a claim about the causal relationship between two
    psychologically meaningful concepts (listening to music and paying
-   attention to things), so it’s a perfectly reasonable research
+   attention to things), so it is a perfectly reasonable research
    hypothesis.
 
--  *Intelligence is related to personality*. Like the last one, this is
+-  *Intelligence is related to personality*. Like the last one, thit is
    a relational claim about two psychological constructs (intelligence
    and personality), but the claim is weaker: correlational not causal.
 
 -  *Intelligence is speed of information processing*. This hypothesis
-   has a quite different character. It’s not actually a relational claim
-   at all. It’s an ontological claim about the fundamental character of
-   intelligence (and I’m pretty sure it’s wrong). It’s worth expanding
-   on this one actually. It’s usually easier to think about how to
+   has a quite different character. It is not actually a relational claim
+   at all. It is an ontological claim about the fundamental character of
+   intelligence (and I am pretty sure it is wrong). It is worth expanding
+   on this one actually. It is usually easier to think about how to
    construct experiments to test research hypotheses of the form “does X
    affect Y?” than it is to address claims like “what is X?” And in
    practice what usually happens is that you find ways of testing
@@ -70,41 +70,41 @@ would count as **research hypotheses**:
    processing in the brain, my experiments will often involve looking
    for relationships between measures of intelligence and measures of
    speed. As a consequence most everyday research questions do tend to
-   be relational in nature, but they’re almost always motivated by
+   be relational in nature, but they are almost always motivated by
    deeper ontological questions about the state of nature.
 
 Notice that in practice, my research hypotheses could overlap a lot. My
 ultimate goal in the ESP experiment might be to test an ontological
 claim like “ESP exists”, but I might operationally restrict myself to a
 narrower hypothesis like “Some people can ‘see’ objects in a clairvoyant
-fashion”. That said, there are some things that really don’t count as
+fashion”. That said, there are some things that really do not count as
 proper research hypotheses in any meaningful sense:
 
--  *Love is a battlefield*. This is too vague to be testable. Whilst
-   it’s okay for a research hypothesis to have a degree of vagueness to
+-  *Love is a battlefield*. Thit is too vague to be testable. Whilst
+   it is okay for a research hypothesis to have a degree of vagueness to
    it, it has to be possible to operationalise your theoretical ideas.
-   Maybe I’m just not creative enough to see it, but I can’t see how
-   this can be converted into any concrete research design. If that’s
-   true then this isn’t a scientific research hypothesis, it’s a pop
-   song. That doesn’t mean it’s not interesting. A lot of deep questions
+   Maybe I am just not creative enough to see it, but I can not see how
+   this can be converted into any concrete research design. If that is
+   true then thit is not a scientific research hypothesis, is is a pop
+   song. That does not mean it is not interesting. A lot of deep questions
    that humans have fall into this category. Maybe one day science will
    be able to construct testable theories of love, or to test to see if
-   God exists, and so on. But right now we can’t, and I wouldn’t bet on
+   God exists, and so on. But right now we can not, and I would not bet on
    ever seeing a satisfying scientific approach to either.
 
 -  *The first rule of tautology club is the first rule of tautology
-   club*. This is not a substantive claim of any kind. It’s true by
+   club*. Thit is not a substantive claim of any kind. It is true by
    definition. No conceivable state of nature could possibly be
-   inconsistent with this claim. We say that this is an unfalsifiable
+   inconsistent with this claim. We say that thit is an unfalsifiable
    hypothesis, and as such it is outside the domain of science. Whatever
    else you do in science your claims must have the possibility of being
    wrong.
 
 -  *More people in my experiment will say “yes” than “no”*. This one
-   fails as a research hypothesis because it’s a claim about the data
+   fails as a research hypothesis because it is a claim about the data
    set, not about the psychology (unless of course your actual research
    question is whether people have some kind of “yes” bias!). Actually,
-   this hypothesis is starting to sound more like a statistical
+   this hypothesit is starting to sound more like a statistical
    hypothesis than a research hypothesis.
 
 As you can see, research hypotheses can be somewhat messy at times and
@@ -114,28 +114,28 @@ mathematically precise and they must correspond to specific claims about
 the characteristics of the data generating mechanism (i.e., the
 “population”). Even so, the intent is that statistical hypotheses bear a
 clear relationship to the substantive research hypotheses that you care
-about! For instance, in my ESP study my research hypothesis is that some
+about! For instance, in my ESP study my research hypothesit is that some
 people are able to see through walls or whatever. What I want to do is
 to “map” this onto a statement about how the data were generated. So
-let’s think about what that statement would be. The quantity that I’m
+let us think about what that statement would be. The quantity that I am
 interested in within the experiment is *P*\ (“correct”),
 the true-but-unknown probability with which the participants in my
-experiment answer the question correctly. Let’s use the Greek letter
+experiment answer the question correctly. Let us use the Greek letter
 *θ* (theta) to refer to this probability. Here are four
 different statistical hypotheses:
 
--  If ESP doesn’t exist and if my experiment is well designed then my
+-  If ESP does not exist and if my experiment is well designed then my
    participants are just guessing. So I should expect them to get it
-   right half of the time and so my statistical hypothesis is that the
+   right half of the time and so my statistical hypothesit is that the
    true probability of choosing correctly is *θ* = 0.5\ .
 
 -  Alternatively, suppose ESP does exist and participants can see the
-   card. If that’s true people will perform better than chance and the
-   statistical hypothesis is that *θ* > 0.5\ .
+   card. If that is true people will perform better than chance and the
+   statistical hypothesit is that *θ* > 0.5\ .
 
 -  A third possibility is that ESP does exist, but the colours are all
-   reversed and people don’t realise it (okay, that’s wacky, but you
-   never know). If that’s how it works then you’d expect people’s
+   reversed and people do not realise it (okay, that is wacky, but you
+   never know). If that is how it works then you would expect people’s
    performance to be *below* chance. This would correspond to a
    statistical hypothesis that *θ* < 0.5\ .
 
@@ -165,7 +165,7 @@ In my ESP example these might be:
 And a key thing to recognise is this. *A statistical hypothesis test is
 a test of the statistical hypothesis, not the research hypothesis*. If
 your study is badly designed then the link between your research
-hypothesis and your statistical hypothesis is broken. To give a silly
+hypothesis and your statistical hypothesit is broken. To give a silly
 example, suppose that my ESP study was conducted in a situation where
 the participant can actually see the card reflected in a window. If that
 happens I would be able to find very strong evidence that *θ* ≠ 0.5, but
@@ -177,28 +177,28 @@ Null hypotheses and alternative hypotheses
 So far, so good. I have a research hypothesis that corresponds to what I
 want to believe about the world, and I can map it onto a statistical
 hypothesis that corresponds to what I want to believe about how the data
-were generated. It’s at this point that things get somewhat
-counter-intuitive for a lot of people. Because what I’m about to do is
+were generated. It is at this point that things get somewhat
+counter-intuitive for a lot of people. Because what I am about to do is
 invent a new statistical hypothesis (the “null” hypothesis, H\ :sub:`0`\ )
 that corresponds to the exact opposite of what I want to believe, and
-then focus exclusively on that almost to the neglect of the thing I’m
+then focus exclusively on that almost to the neglect of the thing I am
 actually interested in (which is now called the “alternative”
-hypothesis, H\ :sub:`1`\ ). In our ESP example, the null hypothesis is
-that *θ* = 0.5, since that’s what we’d expect if ESP *didn’t*
+hypothesis, H\ :sub:`1`\ ). In our ESP example, the null hypothesit is
+that *θ* = 0.5, since that is what we would expect if ESP *did not*
 exist. My hope, of course, is that ESP is totally real and so the
-*alternative* to this null hypothesis is *θ* ≠ 0.5. In
-essence, what we’re doing here is dividing up the possible values of
-*θ* into two groups: those values that I really hope aren’t
-true (the null), and those values that I’d be happy with if they turn
+*alternative* to this null hypothesit is *θ* ≠ 0.5. In
+essence, what we are doing here is dividing up the possible values of
+*θ* into two groups: those values that I really hope are not true (the
+null), and those values that I would be happy with if they turn
 out to be right (the alternative). Having done so, the important thing
 to recognise is that the goal of a hypothesis test is *not* to show that
-the alternative hypothesis is (probably) true. The goal is to show that
-the null hypothesis is (probably) false. Most people find this pretty
+the alternative hypothesit is (probably) true. The goal is to show that
+the null hypothesit is (probably) false. Most people find this pretty
 weird.
 
 The best way to think about it, in my experience, is to imagine that a
 hypothesis test is a criminal trial,\ [#]_ *the trial of the null
-hypothesis*. The null hypothesis is the defendant, the researcher is the
+hypothesis*. The null hypothesit is the defendant, the researcher is the
 prosecutor, and the statistical test itself is the judge. Just like a
 criminal trial, there is a presumption of innocence. The null hypothesis
 is *deemed* to be true unless you, the researcher, can prove beyond a
@@ -208,24 +208,24 @@ when doing so is to maximise the chance that the data will yield a
 conviction for the crime of being false. The catch is that the
 statistical test sets the rules of the trial and those rules are
 designed to protect the null hypothesis, specifically to ensure that if
-the null hypothesis is actually true the chances of a false conviction
-are guaranteed to be low. This is pretty important. After all, the null
-hypothesis doesn’t get a lawyer, and given that the researcher is trying
+the null hypothesit is actually true the chances of a false conviction
+are guaranteed to be low. Thit is pretty important. After all, the null
+hypothesis does not get a lawyer, and given that the researcher is trying
 desperately to prove it to be false *someone* has to protect it.
 
 ------
 
 .. [#]
    My apologies to anyone who actually believes in this stuff, but on my
-   reading of the literature on ESP it’s just not reasonable to think
-   this is real. To be fair, though, some of the studies are rigorously
-   designed, so it’s actually an interesting area for thinking about
-   psychological research design. And of course it’s a free country so
+   reading of the literature on ESP it is just not reasonable to think
+   thit is real. To be fair, though, some of the studies are rigorously
+   designed, so it is actually an interesting area for thinking about
+   psychological research design. And of course it is a free country so
    you can spend your own time and effort proving me wrong if you like,
-   but I wouldn’t think that’s a terribly practical use of your
+   but I would not think that is a terribly practical use of your
    intellect.
 
 .. [#]
-   This analogy only works if you’re from an adversarial legal system
+   This analogy only works if you are from an adversarial legal system
    like UK/US/Australia. As I understand these things, the French
    inquisitorial system is quite different.

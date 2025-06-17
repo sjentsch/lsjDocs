@@ -5,14 +5,14 @@ Tabulating and cross-tabulating data
 
 A very common task when analysing data is the construction of frequency
 tables, or cross-tabulation of one variable against another. These tasks
-can be achieved in jamovi and I’ll show you how in this section.
+can be achieved in jamovi and I will show you how in this section.
 
 Creating tables for single variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Let’s start with a simple example. As a parent of a small child I naturally
+Let us start with a simple example. As a parent of a small child I naturally
 spend a lot of time watching TV shows like *In the Night Garden*. In the
-|nightgarden|_ data set, I’ve transcribed a short section of the dialogue. The
+|nightgarden|_ data set, I have transcribed a short section of the dialogue. The
 file contains two variables of interest, ``speaker`` and ``utterance``. Open up
 this data set in jamovi and take a look at the data in the ``Data`` view. You
 will see that the data looks something like this:
@@ -46,10 +46,10 @@ just this, see :numref:`fig-freqtable`.
    
 .. ----------------------------------------------------------------------------
 
-The output here tells us on the first line that what we’re looking at is a
+The output here tells us on the first line that what we are looking at is a
 tabulation of the ``speaker`` variable. In the ``Levels`` column it lists all
 the different speakers that exist in the data, and in the ``Counts`` column it
-tells you how many times that speaker appears in the data. In other words, it’s
+tells you how many times that speaker appears in the data. In other words, it is
 a frequency table.
 
 In jamovi, the ``Frequency tables`` check box will only produce a table for
@@ -72,7 +72,7 @@ in :numref:`fig-contingencytable`.
    
 .. ----------------------------------------------------------------------------
 
-Don’t worry about the ``χ² Tests`` table that is produced. We are going to
+Do not worry about the ``χ² Tests`` table that is produced. We are going to
 cover this later on in chapter :doc:`../Ch10/Ch10_ChiSquare`. When interpreting
 the contingency table remember that these are counts, so the fact that the
 first row and second column of numbers corresponds to a value of 2 indicates
@@ -101,14 +101,14 @@ Contingency Table in the output window will change to the one in
    
 .. ----------------------------------------------------------------------------
 
-What we’re looking at here is the percentage of utterances made by each 
+What we are looking at here is the percentage of utterances made by each 
 character. In other words, 50\% of ``makka-pakka``’s utterances are ``pip``,
-and the other 50\% are ``onk``. Let’s contrast this with the table we get when
+and the other 50\% are ``onk``. Let us contrast this with the table we get when
 we calculate column percentages (uncheck ``Row`` and check ``Column`` in the
 ``Cells`` options window), see :numref:`fig-contingencycol`. In this version,
-what we’re seeing is the percentage of characters associated with each
+what we are seeing is the percentage of characters associated with each
 utterance. For instance, whenever the utterance ``ee`` is made (in this data
-set), 100\% of the time it’s a Tombliboo saying it.
+set), 100\% of the time it is a Tombliboo saying it.
 
 .. ----------------------------------------------------------------------------
 

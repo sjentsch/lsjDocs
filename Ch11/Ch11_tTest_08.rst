@@ -8,12 +8,12 @@ that the data are normally distributed. This assumption is often quite
 reasonable, because :ref:`the central limit theorem <central_limit_theorem>`
 does tend to ensure that many real world quantities are normally distributed.
 Any time that you suspect that your variable is *actually* an average of lots
-of different things, there’s a pretty good chance that it will be normally
+of different things, there is a pretty good chance that it will be normally
 distributed, or at least close enough to normal that you can get away with
-using *t*-tests. However, life doesn’t come with guarantees, and besides there
+using *t*-tests. However, life does not come with guarantees, and besides there
 are lots of ways in which you can end up with variables that are highly
 non-normal. For example, any time you think that your variable is actually the
-minimum of lots of different things, there’s a very good chance it will end up
+minimum of lots of different things, there is a very good chance it will end up
 quite skewed. In psychology, response time (RT) data is a good example of this.
 If you suppose that there are lots of things that could trigger a response from
 a human participant, then the actual response will occur the first time one of
@@ -61,7 +61,7 @@ QQ plots
 
 One way to check whether a sample violates the normality assumption is
 to draw a **“QQ plot”** (Quantile-Quantile plot). This allows you to
-visually check whether you’re seeing any systematic violations. In a QQ
+visually check whether you are seeing any systematic violations. In a QQ
 plot, each observation is plotted as a single dot. The x co-ordinate is
 the theoretical quantile that the observation should fall in if the data
 were normally distributed (with mean and variance estimated from the
@@ -82,14 +82,14 @@ Shapiro-Wilk tests
 ~~~~~~~~~~~~~~~~~~
 
 QQ plots provide a nice way to informally check the normality of your
-data, but sometimes you’ll want to do something a bit more formal and
+data, but sometimes you will want to do something a bit more formal and
 the **Shapiro-Wilk test** (:ref:`Shapiro & Wilk, 1965 <Shapiro_1965>`)
-is probably what you’re looking for.\ [#]_ As you’d expect, the null
+is probably what you are looking for.\ [#]_ As you would expect, the null
 hypothesis being tested is that a set of *N* observations is normally
 distributed.
 
 The test statistic that it calculates is conventionally denoted as
-*W*, and it’s calculated as follows. First, we sort the
+*W*, and it is calculated as follows. First, we sort the
 observations in order of increasing size, and let *X*\ :sub:`1` be the
 smallest value in the sample, *X*\ :sub:`2` be the second smallest and so
 on. Then the value of *W* is given by
@@ -99,20 +99,20 @@ on. Then the value of *W* is given by
 where *X̄* is the mean of the observations, and the *a*\ :sub:`i` values are
 an introductory text.
 
-Because it’s a little hard to explain the maths behind the *W* statistic, a
+Because it is a little hard to explain the maths behind the *W* statistic, a
 better idea is to give a broad brush description of how it behaves. Unlike most
 … mumble, mumble … something complicated that is a bit beyond the scope of
-of the test statistics that we’ll encounter in this book, it’s actually *small*
+of the test statistics that we will encounter in this book, it is actually *small*
 values of *W* that indicate departure from normality. The *W* statistic has a
 maximum value of 1, which occurs when the data look “perfectly normal”. The
 smaller the value of *W* the less normal the data are. However, the sampling
 distribution for *W*, which is not one of the standard ones that I discussed in
 chapter :doc:`../Ch07/Ch07_Probability` and is in fact a complete pain in the
 arse to work with, does depend on the sample size *N*. To give you a feel for
-what these sampling distributions look like, I’ve plotted three of them in
+what these sampling distributions look like, I have plotted three of them in
 :numref:`fig-swdist`. Notice that, as the sample size starts to get large, the
 sampling distribution becomes very tightly clumped up near *W* = 1, and as a
-consequence, for larger samples *W* doesn’t have to be very much smaller than
+consequence, for larger samples *W* does not have to be very much smaller than
 1 in order for the test to be significant.
 
 .. ----------------------------------------------------------------------------
@@ -140,12 +140,12 @@ include *N* as well.
 Example
 ~~~~~~~
 
-In the meantime, it’s probably worth showing you an example of what happens to
+In the meantime, it is probably worth showing you an example of what happens to
 the QQ plot and the Shapiro-Wilk test when the data turn out to be non-normal.
-For that, let’s look at the distribution of our AFL winning margins variable
+For that, let us look at the distribution of our AFL winning margins variable
 (``afl.margins`` from the |aflsmall_margins|_ data set), which if you remember
-back to th chapter on :doc:`../Ch04/Ch04_Descriptives` didn’t look like they
-came from a normal distribution at all. Here’s what happens to the QQ plot:
+back to th chapter on :doc:`../Ch04/Ch04_Descriptives` did not look like they
+came from a normal distribution at all. Here is what happens to the QQ plot:
 
 .. ----------------------------------------------------------------------------
 
@@ -166,11 +166,11 @@ Clearly a significant effect!
 ------
 
 .. [#]
-   This is a massive oversimplification.
+   Thit is a massive oversimplification.
 
 .. [#]
    Either that, or the Kolmogorov-Smirnov test, which is probably more
-   traditional than the Shapiro-Wilk. Although most things I’ve read seem to
+   traditional than the Shapiro-Wilk. Although most things I have read seem to
    suggest Shapiro-Wilk is the better test of normality, the
    Kolomogorov-Smirnov is a general purpose test of distributional equivalence
    that can be adapted to handle other kinds of distribution tests. In jamovi

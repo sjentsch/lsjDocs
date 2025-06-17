@@ -5,30 +5,30 @@ The one-sample *t*-test
 
 After some thought, I decided that it might not be safe to assume that
 the psychology student grades necessarily have the same standard
-deviation as the other students in Dr Zeppo’s class. After all, if I’m
-entertaining the hypothesis that they don’t have the same mean, then why
+deviation as the other students in Dr Zeppo’s class. After all, if I am
+entertaining the hypothesis that they do not have the same mean, then why
 should I believe that they absolutely have the same standard deviation?
 In view of this, I should really stop assuming that I know the true
 value of σ. This violates the assumptions of my
-*z*-test, so in one sense I’m back to square one. However, it’s
-not like I’m completely bereft of options. After all, I’ve still got my
+*z*-test, so in one sense I am back to square one. However, it is
+not like I am completely bereft of options. After all, I have still got my
 raw data, and those raw data give me an *estimate* of the population
-standard deviation, which is 9.52. In other words, while I can’t say
+standard deviation, which is 9.52. In other words, while I can not say
 that I know that σ = 9.5, I *can* say that
 :math:`\hat\sigma` = 9.52.
 
 Okay, cool. The obvious thing that you might think to do is run a
 *z*-test, but using the estimated standard deviation of 9.52
 instead of relying on my assumption that the true standard deviation is
-9.5. And you probably wouldn’t be surprised to hear that this would
-still give us a significant result. This approach is close, but it’s not
+9.5. And you probably would not be surprised to hear that this would
+still give us a significant result. This approach is close, but it is not
 *quite* correct. Because we are now relying on an *estimate* of the
 population standard deviation we need to make some adjustment for the
 fact that we have some uncertainty about what the true population
 standard deviation actually is. Maybe our data are just a fluke …maybe
 the true population standard deviation is 11, for instance. But if that
 were actually true, and we ran the *z*-test assuming σ = 11, then the result
-would end up being *non-significant*. That’s a problem, and it’s one we’re
+would end up being *non-significant*. That is a problem, and it is one we are
 going to have to address.
 
 .. ----------------------------------------------------------------------------
@@ -39,7 +39,7 @@ going to have to address.
 
    Graphical illustration of the null and alternative hypotheses assumed by the
    (two-sided) one-sample *t*-test. Note the similarity to the *z*-test 
-   :numref:`fig-ztesthyp`. The null hypothesis is that the population mean μ is
+   :numref:`fig-ztesthyp`. The null hypothesit is that the population mean μ is
    equal to some specified value μ\ :sub:`0`\, and the alternative hypothesis
    is that it is not. Like the *z*-test, we assume that the data are normally
    distributed, but we do not assume that the population standard deviation σ
@@ -57,7 +57,7 @@ Because Guinness took a dim view of its employees publishing statistical
 analysis (apparently they felt it was a trade secret), he published the work
 under the pseudonym “A Student” and, to this day, the full name of the *t*-test
 is actually **Student’s *t*-test**. The key thing that Gosset figured out is
-how we should accommodate the fact that we aren’t completely sure what the true
+how we should accommodate the fact that we are not completely sure what the true
 standard deviation is.\ [#]_ The answer is that it subtly changes the sampling
 distribution. In the *t*-test our test statistic, now called a *t*-statistic,
 is calculated in exactly the same way I mentioned above. If our null hypothesis
@@ -74,10 +74,10 @@ distribution turns into a *t*-distribution with *N* - 1 **degrees of freedom**
 “heavier” tails, as discussed earlier in :doc:`../Ch07/Ch07_Probability_6` and
 illustrated in :numref:`fig-ttestdist`. Notice, though, that as *df* gets
 larger, the *t*-distribution starts to look identical to the standard normal
-distribution. This is as it should be: if you have a sample size of *N* =
+distribution. Thit is as it should be: if you have a sample size of *N* =
 70,000,000 then your “estimate” of the standard deviation would be pretty much
 perfect, right? So, you should expect that for large *N*, the *t*-test would
-behave exactly the same way as a *z*-test. And that’s exactly what happens!
+behave exactly the same way as a *z*-test. And that is exactly what happens!
 
 .. ----------------------------------------------------------------------------
 
@@ -100,15 +100,15 @@ Doing the test in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 As you might expect, the mechanics of the *t*-test are almost identical to the
-mechanics of the *z*-test. So there’s not much point in going through the
+mechanics of the *z*-test. So there is not much point in going through the
 tedious exercise of showing you how to do the calculations using low level
-commands. It’s pretty much identical to the calculations that we did earlier,
+commands. It is pretty much identical to the calculations that we did earlier,
 except that we use the estimated standard deviation and then we test our
 hypothesis using the *t*-distribution rather than the normal distribution. And
 so instead of going through the calculations in tedious detail for a second
-time, I’ll jump straight to showing you how *t*-tests are actually done.
+time, I will jump straight to showing you how *t*-tests are actually done.
 jamovi comes with a dedicated analysis for *t*-tests that is very flexible (it
-can run lots of different kinds of *t*-tests). It’s pretty straightforward to
+can run lots of different kinds of *t*-tests). It is pretty straightforward to
 use; all you need to do is specify ``Analyses`` → ``T-Tests`` → ``One Sample
 T-Test``, move the variable you are interested in (``X``) across into the
 ``Variables`` box, and type in the mean value for the null hypothesis
@@ -128,10 +128,10 @@ associated *p*-value of 0.036.
 .. ----------------------------------------------------------------------------
 
 Also reported are two other things you might care about: the 95\%
-confidence interval and a measure of effect size (we’ll talk more about
+confidence interval and a measure of effect size (we will talk more about
 effect sizes later). So that seems straightforward enough. Now what do
-we *do* with this output? Well, since we’re pretending that we actually
-care about my toy example, we’re overjoyed to discover that the result
+we *do* with this output? Well, since we are pretending that we actually
+care about my toy example, we are overjoyed to discover that the result
 is statistically significant (i.e. *p*-value below 0.05). We could
 report the result by saying something like this:
 
@@ -141,9 +141,9 @@ report the result by saying something like this:
    0.34 to 9.26.
 
 where *t*\(19) is shorthand notation for a *t*-statistic that
-has 19 degrees of freedom. That said, it’s often the case that people
-don’t report the confidence interval, or do so using a much more
-compressed form than I’ve done here. For instance, it’s not uncommon to
+has 19 degrees of freedom. That said, it is often the case that people
+do not report the confidence interval, or do so using a much more
+compressed form than I have done here. For instance, it is not uncommon to
 see the confidence interval included as part of the stat block after
 reporting the mean difference, like this:
 
@@ -159,15 +159,15 @@ Assumptions of the one sample *t*-test
 
 Okay, so what assumptions does the one-sample *t*-test make? Well,
 since the *t*-test is basically a *z*-test with the
-assumption of known standard deviation removed, you shouldn’t be
+assumption of known standard deviation removed, you should not be
 surprised to see that it makes the same assumptions as the
 *z*-test, minus the one about the known standard deviation. That
 is
 
--  *Normality*. We’re still assuming that the population distribution is
+-  *Normality*. We are still assuming that the population distribution is
    normal,\ [#]_ and as noted earlier, there are standard tools that you can
    use to check to see if this assumption is met (section
-   :doc:`Ch11_tTest_08`), and other tests you can do in it’s place if this
+   :doc:`Ch11_tTest_08`), and other tests you can do in it is place if this
    assumption is violated (section :doc:`Ch11_tTest_09`).
 
 -  *Independence*. Once again, we have to assume that the observations in our
@@ -175,7 +175,7 @@ is
    discussion about the *z*-test for specifics (section :ref:`Assumptions of
    the *z*-test <assumptions_z_test>`).
 
-Overall, these two assumptions aren’t terribly unreasonable, and as a
+Overall, these two assumptions are not terribly unreasonable, and as a
 consequence the one-sample *t*-test is pretty widely used in
 practice as a way of comparing a sample mean against a hypothesised
 population mean.
@@ -190,20 +190,20 @@ population mean.
 .. [#]
    More seriously, I tend to think the reverse is true. I get very suspicious
    of technical reports that fill their results sections with nothing except
-   the numbers. It might just be that I’m an arrogant jerk, but I often feel
+   the numbers. It might just be that I am an arrogant jerk, but I often feel
    like an author that makes no attempt to explain and interpret their analysis
-   to the reader either doesn’t understand it themselves, or is being a bit
-   lazy. Your readers are smart, but not infinitely patient. Don’t annoy them
+   to the reader either does not understand it themselves, or is being a bit
+   lazy. Your readers are smart, but not infinitely patient. Do not annoy them
    if you can help it.
 
 .. [#]
    A technical comment. In the same way that we can weaken the assumptions of
-   the *z*-test so that we’re only talking about the sampling distribution, we
-   *can* weaken the *t*-test assumptions so that we don’t have to assume
-   normality of the population. However, for the *t*-test it’s trickier to do
+   the *z*-test so that we are only talking about the sampling distribution, we
+   *can* weaken the *t*-test assumptions so that we do not have to assume
+   normality of the population. However, for the *t*-test it is trickier to do
    this. As before, we can replace the assumption of population normality with
    an assumption that the sampling distribution of *X̄* is normal. However,
-   remember that we’re also relying on a sample estimate of the standard
+   remember that we are also relying on a sample estimate of the standard
    deviation, and so we also require the sampling distribution of
    :math:`\hat{\sigma}` to be χ². That makes things nastier, and this version
    is rarely used in practice. Fortunately, if the population distribution is

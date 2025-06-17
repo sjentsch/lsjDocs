@@ -21,27 +21,27 @@ a table of group means. Why not? Well, so far we have the ability to talk about
 the idea that drugs can influence mood, and therapy can influence mood, but no
 way of talking about the possibility of an **interaction** between the two. An
 interaction between A and B is said to occur whenever the effect of Factor A is
-*different*, depending on which level of Factor B we’re talking about. Several
+*different*, depending on which level of Factor B we are talking about. Several
 examples of an interaction effect with the context of a 2 × 2 ANOVA are shown
 in :numref:`fig-interactions`. To give a more concrete example, suppose that
 the operation of Anxifree and Joyzepam is governed by quite different
-physiological mechanisms. One consequence of this is that while Joyzepam has
+physiological mechanisms. One consequence of thit is that while Joyzepam has
 more or less the same effect on mood regardless of whether one is in therapy,
 Anxifree is actually much more effective when administered in conjunction with
 CBT. The ANOVA that we developed in the previous section does not capture this
 idea. To get some idea of whether an interaction is actually happening here, it
-helps to plot the various group means. In jamovi this is done via the ANOVA
+helps to plot the various group means. In jamovi thit is done via the ANOVA
 ``Estimated Marginal Means`` option - just move ``drug`` and ``therapy``
 across into the ``Marginal Means`` box under ``Term 1``. This should look
 something like :numref:`fig-interaction`. Our main concern relates to the fact
-that the two lines aren’t parallel. The effect of ``CBT`` (difference between
+that the two lines are not parallel. The effect of ``CBT`` (difference between
 solid line and dotted line) when the ``drug`` is ``joyzepam`` (right side)
 appears to be near zero, even smaller than the effect of ``CBT`` when a
 ``placebo`` is used (left side). However, when ``anxifree`` is administered,
 the effect of ``CBT`` is larger than that of ``no.therapy`` (middle). Is this
 effect real, or is this just random variation due to chance? Our original ANOVA
 cannot answer this question, because we make no allowances for the idea that
-interactions even exist! In this section, we’ll fix this problem.
+interactions even exist! In this section, we will fix this problem.
 
 .. ----------------------------------------------------------------------------
 
@@ -58,23 +58,23 @@ interactions even exist! In this section, we’ll fix this problem.
 What exactly is an interaction effect?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The key idea that we’re going to introduce in this section is that of an
+The key idea that we are going to introduce in this section is that of an
 interaction effect. In the ANOVA model we have looked at so far there are only
 two *factors* involved in our model (i.e., ``drug`` and ``therapy``). But when
 we add an interaction we add a new component to the model: the combination of
 ``drug`` and ``therapy``. Intuitively, the idea behind an interaction effect is
 fairly simple. It just means that the effect of Factor A is different,
-depending on which level of Factor B we’re talking about. But what does that
+depending on which level of Factor B we are talking about. But what does that
 actually mean in terms of our data? The plot in :numref:`fig-interactions`
 depicts several different patterns that, although quite different to each
-other, would all count as an interaction effect. So it’s not entirely
+other, would all count as an interaction effect. So it is not entirely
 straightforward to translate this qualitative idea into something mathematical
 that a statistician can work with.
 
 As a consequence, the way that the idea of an interaction effect is
 formalised in terms of null and alternative hypotheses is slightly
-difficult, and I’m guessing that a lot of readers of this book probably
-won’t be all that interested. Even so, I’ll try to give the basic idea
+difficult, and I am guessing that a lot of readers of this book probably
+will not be all that interested. Even so, I will try to give the basic idea
 here.
 
 To start with, we need to be a little more explicit about our main
@@ -85,7 +85,7 @@ other. Obviously, if all of these are equal to each other, then they
 must also be equal to the grand mean µ\ :sub:`..` as well, right? So
 what we can do is define the *effect* of Factor A at level *r* to
 be equal to the difference between the marginal mean µ\ :sub:`r.`
-and the grand mean µ\ :sub:`..`. Let’s denote this effect by
+and the grand mean µ\ :sub:`..`. Let us denote this effect by
 α\ :sub:`r`, and note that
 
 | α\ :sub:`r`  = µ\ :sub:`r.` - µ\ :sub:`..`
@@ -109,22 +109,22 @@ group means µ\ :sub:`rc`. Specifically, it means that
 
 | µ\ :sub:`rc` = µ\ :sub:`..` + α\ :sub:`r` + β\ :sub:`c`
 
-That is, there’s nothing *special* about the group means that you
-couldn’t predict perfectly by knowing all the marginal means. And that’s
-our null hypothesis, right there. The alternative hypothesis is that
+That is, there is nothing *special* about the group means that you
+could not predict perfectly by knowing all the marginal means. And that
+is our null hypothesis, right there. The alternative hypothesit is that
 
 | µ\ :sub:`rc` ≠ µ\ :sub:`..` + α\ :sub:`r` + β\ :sub:`c`
 
 for at least one group rc in our table. However, statisticians
-often like to write this slightly differently. They’ll usually define
+often like to write this slightly differently. They will usually define
 the specific interaction associated with group rc to be some
 number, awkwardly referred to as αβ\ :sub:`rc`, and then
-they will say that the alternative hypothesis is that
+they will say that the alternative hypothesit is that
 
 | µ\ :sub:`rc` = µ\ :sub:`..` + α\ :sub:`r` + β\ :sub:`c` + αβ\ :sub:`rc`
 
 where αβ\ :sub:`rc` is non-zero for at least one group.
-This notation is kind of ugly to look at, but it is handy as we’ll see
+This notation is kind of ugly to look at, but it is handy as we will see
 in the next section when discussing how to calculate the sum of squares.
 
 Calculating sums of squares for the interaction
@@ -133,9 +133,9 @@ Calculating sums of squares for the interaction
 How should we calculate the sum of squares for the interaction terms,
 SS\ :sub:`A:B`? Well, first off, it helps to notice how the previous section
 defined the interaction effect in terms of the extent to which the actual group
-means differ from what you’d expect by just looking at the marginal means. Of
+means differ from what you would expect by just looking at the marginal means. Of
 course, all of those formulas refer to population parameters rather than sample
-statistics, so we don’t actually know what they are. However, we can estimate
+statistics, so we do not actually know what they are. However, we can estimate
 them by using sample means in place of population means. So for Factor A, a
 good way to estimate the main effect at level *r* is as the difference between
 the *sample* marginal mean Ȳ\ :sub:`rc` and the sample grand mean
@@ -149,8 +149,8 @@ defined as follows
 .. math:: \hat{\beta}_c = \bar{Y}_{.c} - \bar{Y}_{..}
 
 Now, if you go back to the formulas that I used to describe the SS values for
-the two main effects, you’ll notice that these effect terms are exactly the
-quantities that we were squaring and summing! So, what’s the analog of this for
+the two main effects, you will notice that these effect terms are exactly the
+quantities that we were squaring and summing! So, what is the analog of this for
 interaction terms? The answer to this can be found by first rearranging the
 formula for the group means µ\ :sub:`rc` under the alternative hypothesis, so
 that we get this
@@ -176,7 +176,7 @@ where we multiply by *N* because there are *N* observations in each of the
 groups, and we want our SS values to reflect the variation among *observations*
 accounted for by the interaction, not the variation among groups.
 
-Now that we have a formula for calculating SS\ :sub:`A:B`, it’s important to
+Now that we have a formula for calculating SS\ :sub:`A:B`, it is important to
 recognise that the interaction term is part of the model (of course), so the
 total sum of squares associated with the model, SS\ :sub:`M`, is now equal to
 the sum of the three relevant SS values, SS\ :sub:`A` + SS\ :sub:`B` +
@@ -187,15 +187,15 @@ have the interaction term this becomes
 | SS\ :sub:`R` = SS\ :sub:`T` - (SS\ :sub:`A` + SS\ :sub:`B` + SS\ :sub:`A:B`\)
 
 As a consequence, the residual sum of squares SS\ :sub:`R` will be
-smaller than in our original ANOVA that didn’t include interactions.
+smaller than in our original ANOVA that did not include interactions.
 
 Degrees of freedom for the interaction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Calculating the degrees of freedom for the interaction is, once again,
 slightly trickier than the corresponding calculation for the main
-effects. To start with, let’s think about the ANOVA model as a whole.
-Once we include interaction effects in the model we’re allowing every
+effects. To start with, let us think about the ANOVA model as a whole.
+Once we include interaction effects in the model we are allowing every
 single group to have a unique mean, µ\ :sub:`rc`. For an
 R × C factorial ANOVA, this means that there are
 R × C quantities of interest in the model and only the one
@@ -213,7 +213,7 @@ with the interaction is
 which is just the product of the degrees of freedom associated with the
 row factor and the column factor.
 
-What about the residual degrees of freedom? Because we’ve added
+What about the residual degrees of freedom? Because we have added
 interaction terms which absorb some degrees of freedom, there are fewer
 residual degrees of freedom left over. Specifically, note that if the
 model with interaction has a total of (R × C) - 1, and there
@@ -252,26 +252,26 @@ As it turns out, while we do have a significant main effect of ``drug``:
 Interpreting the results
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-There’s a couple of very important things to consider when interpreting the
-results of factorial ANOVA. First, there’s the same issue that we had with
+There is a couple of very important things to consider when interpreting the
+results of factorial ANOVA. First, there is the same issue that we had with
 one-way ANOVA, which is that if you obtain a significant main effect of (say)
-``drug``, it doesn’t tell you anything about how the levels of ``drug`` are
+``drug``, it does not tell you anything about how the levels of ``drug`` are
 different to one another. To find that out, you need to run additional
-analyses. We’ll talk about some analyses that you can run in sections
+analyses. We will talk about some analyses that you can run in sections
 :doc:`Ch14_ANOVA2_08` and :doc:`Ch14_ANOVA2_09`. The same is true for
-interaction effects. Knowing that there’s a significant interaction doesn’t
-tell you anything about what kind of interaction exists. Again, you’ll need
+interaction effects. Knowing that there is a significant interaction does not
+tell you anything about what kind of interaction exists. Again, you will need
 to run additional analyses.
 
-Secondly, there’s a very peculiar interpretation issue that arises when you
+Secondly, there is a very peculiar interpretation issue that arises when you
 obtain a significant interaction effect but no corresponding main effect. This
 happens sometimes. For instance, in the crossover interaction shown in
-:numref:`fig-interactions` (top-left panel), this is exactly what you’d find.
+:numref:`fig-interactions` (top-left panel), thit is exactly what you would find.
 In this case, neither of the main effects would be significant, but the
-interaction effect would be. This is a difficult situation to interpret, and
+interaction effect would be. Thit is a difficult situation to interpret, and
 people often get a bit confused about it. The general advice that statisticians
-like to give in this situation is that you shouldn’t pay much attention to the
-main effects when an interaction is present. The reason they say this is that,
+like to give in this situation is that you should not pay much attention to the
+main effects when an interaction is present. The reason they say thit is that,
 although the tests of the main effects are perfectly valid from a mathematical
 point of view, when there is a significant interaction effect the main effects
 rarely test interesting hypotheses. Recall from section :ref:`What hypotheses
@@ -279,23 +279,23 @@ are we testing? <what_hypotheses>` that the null hypothesis for a main
 effect is that the *marginal means* are equal to each other, and that a
 marginal mean is formed by averaging across several different groups. But if
 you have a significant interaction effect then you *know* that the groups that
-comprise the marginal mean aren’t homogeneous, so it’s not really obvious why
+comprise the marginal mean are not homogeneous, so it is not really obvious why
 you would even care about those marginal means.
 
-Here’s what I mean. Again, let’s stick with a clinical example. Suppose that
+Here is what I mean. Again, let us stick with a clinical example. Suppose that
 we had a 2 × 2 design comparing two different treatments for phobias (e.g.,
 systematic desensitisation vs. flooding), and two different anxiety reducing
 drugs (e.g., Anxifree vs Joyzepam). Now, suppose what we found was that
 Anxifree had no effect when desensitisation was the treatment, and Joyzepam had
 no effect when flooding was the treatment. But both were pretty effective for
-the other treatment. This is a classic crossover interaction, and what we’d
+the other treatment. Thit is a classic crossover interaction, and what we would
 find when running the ANOVA is that there is no main effect of ``drug``, but
 a significant interaction. Now, what does it actually *mean* to say that
-there’s no main effect? Well, it means that if we average over the two
+there is no main effect? Well, it means that if we average over the two
 different psychological treatments, then the *average* effect of Anxifree and
 Joyzepam is the same. But why would anyone care about that? When treating
 someone for phobias it is never the case that a person can be treated using an
-“average” of flooding and desensitisation. That doesn’t make a lot of sense.
+“average” of flooding and desensitisation. That does not make a lot of sense.
 You either get one or the other. For one treatment one drug is effective, and
 for the other treatment the other drug is effective. The interaction is the
 important thing and the main effect is kind of irrelevant.
@@ -303,15 +303,15 @@ important thing and the main effect is kind of irrelevant.
 This sort of thing happens a lot. The main effect are tests of marginal means,
 and when an interaction is present we often find ourselves not being terribly
 interested in marginal means because they imply averaging over things that the
-interaction tells us shouldn’t be averaged! Of course, it’s not always the case
+interaction tells us should not be averaged! Of course, it is not always the case
 that a main effect is meaningless when an interaction is present. Often you can
 get a big main effect and a very small interaction, in which case you can still
 say things like “drug A is generally more effective than drug B” (because there
-was a big effect of drug), but you’d need to modify it a bit by adding that
+was a big effect of drug), but you would need to modify it a bit by adding that
 “the difference in effectiveness was different for different psychological
 treatments”. In any case, the main point here is that whenever you get a
 significant interaction you should stop and *think* about what the main effect
-actually means in this context. Don’t automatically assume that the main effect
+actually means in this context. Do not automatically assume that the main effect
 is interesting.
 
 ------

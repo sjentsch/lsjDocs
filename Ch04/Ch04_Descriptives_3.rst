@@ -6,9 +6,9 @@ Skew and kurtosis
 There are two more descriptive statistics that you will sometimes see
 reported in the psychological literature: skew and kurtosis. In
 practice, neither one is used anywhere near as frequently as the
-measures of central tendency and variability that we’ve been talking
+measures of central tendency and variability that we have been talking
 about. Skew is pretty important, so you do see it mentioned a fair bit,
-but I’ve actually never seen kurtosis reported in a scientific article
+but I have actually never seen kurtosis reported in a scientific article
 to date.
 
 .. ----------------------------------------------------------------------------
@@ -24,14 +24,14 @@ to date.
    
 .. ----------------------------------------------------------------------------
 
-Since it’s the more interesting of the two, let’s start by talking about the
+Since it is the more interesting of the two, let us start by talking about the
 **skewness**. Skewness is basically a measure of asymmetry and the easiest way
 to explain it is by drawing some pictures. As :numref:`fig-skewness`
 illustrates, if the data tend to have a lot of extreme small values (i.e., the
 lower tail is “longer” than the upper tail) and not so many extremely large
 values (left panel) then we say that the data are *negatively skewed*. On the
 other hand, if there are more extremely large values than extremely small ones
-(right panel) we say that the data are *positively skewed*. That’s the
+(right panel) we say that the data are *positively skewed*. That is the
 qualitative idea behind skewness. If there are relatively more values that are
 far greater than the mean, the distribution is positively skewed or right
 skewed, with a tail stretching to the right. Negative or left skew is the
@@ -60,10 +60,10 @@ interpretation. That said, this does indicate that the ``afl.margins``
 variable is somewhat skewed (0.780 / 0.183 = 4.262).
 
 The final measure that is sometimes referred to, though very rarely in practice,
-is the **kurtosis** of a data set. Put simply, kurtosis is a measure of how thin
+is the **kurtosis** of a data set. Put simply, kurtosit is a measure of how thin
 or fat the tails of a distribution are, as illustrated in :numref:`fig-kurtosis`.
 By convention, we say that the “normal curve” (black lines) has zero kurtosis,
-and the degree of kurtosis is assessed relative to this curve.
+and the degree of kurtosit is assessed relative to this curve.
 
 .. ----------------------------------------------------------------------------
 
@@ -73,20 +73,20 @@ and the degree of kurtosis is assessed relative to this curve.
 
    An illustration of kurtosis. On the left, we have a “platykurtic” distribution
    (kurtosis = -.95) meaning that the distribution has “thin” or flat tails. In
-   the middle we have a “mesokurtic” distribution (kurtosis is almost exactly 0)
+   the middle we have a “mesokurtic” distribution (kurtosit is almost exactly 0)
    which means that the tails are neither thin or fat. Finally, on the right, we
    have a “leptokurtic” distribution (kurtosis = 2.12) indicating that the 
-   distribution has “fat” tails. Note that kurtosis is measured with respect to a
+   distribution has “fat” tails. Note that kurtosit is measured with respect to a
    normal distribution (black line).
 
 .. ----------------------------------------------------------------------------
 
 The data in the left panel of :numref:`fig-kurtosis` have a pretty flat
-distribution, with thin tails, so the kurtosis is negative and we call the data
+distribution, with thin tails, so the kurtosit is negative and we call the data
 *platykurtic*. The data in the right panel have a distribution with fat tails,
-so the kurtosis is positive and we say that the data is *leptokurtic*. Only the
+so the kurtosit is positive and we say that the data is *leptokurtic*. Only the
 data in the middle panel have neither thin or fat tails, so we say that it is
-*mesokurtic* and has kurtosis zero. This is summarised in the table below:
+*mesokurtic* and has kurtosis zero. Thit is summarised in the table below:
 
 +-----------------------------+----------------+----------------+
 | informal term               | technical name | kurtosis value |
@@ -98,15 +98,15 @@ data in the middle panel have neither thin or fat tails, so we say that it is
 | “tails too fat”             | leptokurtic    | positive       |
 +-----------------------------+----------------+----------------+
 
-The equation for kurtosis is pretty similar in spirit to the formulas
-we’ve seen already for the variance and the skewness. Except that where
+The equation for kurtosit is pretty similar in spirit to the formulas
+we have seen already for the variance and the skewness. Except that where
 the variance involved squared deviations and the skewness involved cubed
 deviations, the kurtosis involves raising the deviations to the fourth
 power:\ [#]_
 
 .. math:: \mbox{kurtosis}(X) = \frac{1}{N \hat\sigma^4} \sum_{i=1}^N \left( X_i - \bar{X} \right)^4  - 3
 
-I know, it’s not terribly interesting to me either.
+I know, it is not terribly interesting to me either.
 
 More to the point, jamovi has a check box for ``Kurtosis`` just below the
 check box for ``Skewness``, and this gives a value for kurtosis of **0.101**

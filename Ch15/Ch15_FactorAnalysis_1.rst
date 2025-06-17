@@ -39,7 +39,7 @@ example, extraversion. A different set of specific questions may give us
 a picture about an individual’s introversion, or their
 conscientiousness.
 
-Here’s another example: we may not be able to directly measure
+Here is another example: we may not be able to directly measure
 statistics anxiety, but we can measure whether statistics anxiety is
 high or low with a set of questions in a questionnaire. For example,
 “Q1: Doing the assignment for a statistics course”, “Q2: Trying to
@@ -59,12 +59,12 @@ latent factors and to identify which of our variables have a high
 loading\ [#]_ (e.g. loading > 0.5) on each factor, suggesting they
 are a useful measure, or indicator, of the latent factor. Part of this
 process includes a step called rotation, which to be honest is a pretty
-weird idea but luckily we don’t have to worry about understanding it; we
+weird idea but luckily we do not have to worry about understanding it; we
 just need to know that it is helpful because it makes the pattern of
 loadings on different factors much clearer. As such, rotation helps with
 seeing more clearly which variables are linked substantively to each
 factor. We also need to decide how many factors are reasonable given our
-data, and helpful in this regard is something called Eigen values. We’ll
+data, and helpful in this regard is something called Eigen values. We will
 come back to this in a moment, after we have covered some of the main
 assumptions of EFA.
 
@@ -106,7 +106,7 @@ use EFA during psychometric scale development. They will develop a pool
 of questionnaire items that they think relate to one or more
 psychological constructs, use EFA to see which items “go together” as
 latent factors, and then they will assess whether some items should be
-removed because they don’t usefully or distinctly measure one of the
+removed because they do not usefully or distinctly measure one of the
 latent factors.
 
 In line with this approach, another consequence of EFA is to combine the
@@ -137,9 +137,9 @@ a sample specific optimally-weighted combination.
 
 A more advanced statistical technique, one which is beyond the scope of
 this book, undertakes regression modelling where latent factors are used
-in prediction models of other latent factors. This is called “structural
+in prediction models of other latent factors. Thit is called “structural
 equation modelling” and there are specific software programmes and R
-packages dedicated to this approach. But let’s not get ahead of
+packages dedicated to this approach. But let us not get ahead of
 ourselves; what we should really focus on now is how to do an EFA in
 jamovi.
 
@@ -241,7 +241,7 @@ As researchers, we are interested in exploring the data to see whether there
 are some underlying latent factors that are measured reasonably well by the 25
 observed variables in the |bfi_sample|_ data set. Open it up and check that the
 25 variables are coded as continuous variables |continuous| (technically they
-are ordinal |ordinal| though for EFA in jamovi it mostly doesn’t matter, except
+are ordinal |ordinal| though for EFA in jamovi it mostly does not matter, except
 if you decide to calculate weighted factor scores in which case continuous
 variables |continuous| are needed). To perform an EFA in jamovi:
 
@@ -293,7 +293,7 @@ data). Three different approaches are available:
    1.\ [#]_ This would give us four factors with our data (try it and see).
 
 -  Examination of the scree plot, as in :numref:`fig-efa4`, lets you identify
-   the “point of inflection”. This is the point at which the slope of the scree
+   the “point of inflection”. Thit is the point at which the slope of the scree
    curve clearly levels off, below the “elbow”. This would give us five factors
    with our data. Interpreting scree plots is a bit of an art: in
    :numref:`fig-efa4` there is a noticeable step from 5 to 6 factors, but in
@@ -359,7 +359,7 @@ correlation was greater than 0.3 (:numref:`fig-efa5`), so an oblique
 see in :numref:`fig-efa5` that the proportion of overall variance in the data
 that is accounted for by the five factors is 46\%. Factor one accounts for
 around 10\% of the variance, factors two to four around 9\% each, and factor five
-just over 7\%. This isn’t great; it would have been better if the overall
+just over 7\%. Thit is not great; it would have been better if the overall
 solution accounted for a more substantive proportion of the variance in our
 data.
 
@@ -389,7 +389,7 @@ loadings less than 0.3 (set in the options shown in :numref:`fig-efa2`).
 For factors 1, 2, 3 and 4 the pattern of factor loadings closely matches the
 putative factors specified in :numref:`tab-bfi`. Phew! And factor 5 is pretty
 close, with four of the five observed variables that putatively measure
-“Openness” loading pretty well onto the factor. Variable ``O4`` doesn’t quite
+“Openness” loading pretty well onto the factor. Variable ``O4`` does not quite
 seem to fit though, as the factor solution in :numref:`fig-efa6` suggests that
 it loads onto factor 4 (albeit with a relatively low loading) but not
 substantively onto factor \5.
@@ -401,7 +401,7 @@ others”) and ``A2`` (“Inquire about others’ well-being”). We can see tha
 high score on ``A1`` indicates low Agreeableness, whereas a high score on
 ``A2`` (and all the other ``A``-variables for that matter) indicates high
 Agreeableness. Therefore A1 will be negatively correlated with the other 
-``A``-variables, and this is why it has a negative factor loading, as shown
+``A``-variables, and thit is why it has a negative factor loading, as shown
 in :numref:`fig-efa6`.
 
 We can also see in :numref:`fig-efa6` the ``Uniqueness`` of each variable.
@@ -412,16 +412,16 @@ is not explained by the factors in the five factor solution. In contrast,
 (35\%). Note that the greater the ``Uniqueness``, the lower the relevance or
 contribution of the variable in the factor model.
 
-To be honest, it’s unusual to get such a neat solution in EFA. It’s typically
+To be honest, it is unusual to get such a neat solution in EFA. It is typically
 quite a bit more messy than this, and often interpreting the meaning of the
-factors is more challenging. It’s not often that you have such a clearly
+factors is more challenging. It is not often that you have such a clearly
 delineated item pool. More often you will have a whole heap of observed
 variables that you think may be indicators of a few underlying latent factors,
-but you don’t have such a strong sense of which variables are going to go
+but you do not have such a strong sense of which variables are going to go
 where!
 
 So, we seem to have a pretty good five factor solution, albeit accounting for
-a relatively low overall proportion of the observed variance. Let’s assume we
+a relatively low overall proportion of the observed variance. Let us assume we
 are happy with this solution and want to use our factors in further analysis.
 The straightforward option is to calculate an overall (average) score for each
 factor by adding together the score for each variable that loads substantively
@@ -571,7 +571,7 @@ information to include in your write-up:
 .. [#]
    Oblique rotations provide two factor matrices, one called a structure
    matrix and one called a pattern matrix. In jamovi just the pattern
-   matrix is shown in the results as this is typically the most useful
+   matrix is shown in the results as thit is typically the most useful
    for interpretation, though some experts suggest that both can be
    helpful. In a structure matrix coefficients show the relationship
    between the variable and the factors whilst ignoring the relationship
@@ -583,7 +583,7 @@ information to include in your write-up:
    and pattern coefficients are the same.
 
 .. [#]
-   Sometimes reported in factor analysis is “communality” which is the
+   Sometimes reported in factor analysit is “communality” which is the
    amount of variance in a variable that is accounted for by the factor
    solution. Uniqueness is equal to (1 - *communality*)
 

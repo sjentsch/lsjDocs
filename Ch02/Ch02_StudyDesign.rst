@@ -24,18 +24,18 @@ A brief introduction to research design
 
    -- Sir Ronald Fisher\ [#]_
 
-In this chapter, we’re going to start thinking about the basic ideas
+In this chapter, we are going to start thinking about the basic ideas
 that go into designing a study, collecting data, checking whether your
-data collection works, and so on. It won’t give you enough information
+data collection works, and so on. It will not give you enough information
 to allow you to design studies of your own, but it will give you a lot
 of the basic tools that you need to assess the studies done by other
 people. However, since the focus of this book is much more on data
-analysis than on data collection, I’m only giving a very brief overview.
-Note that this chapter is “special” in two ways. Firstly, it’s much more
+analysis than on data collection, I am only giving a very brief overview.
+Note that this chapter is “special” in two ways. Firstly, it is much more
 psychology-specific than the later chapters. Secondly, it focuses much
 more heavily on the scientific problem of research methodology, and much
 less on the statistical problem of data analysis. Nevertheless, the two
-problems are related to one another, so it’s traditional for stats
+problems are related to one another, so it is traditional for stats
 textbooks to discuss the problem in a little detail. This chapter relies
 heavily on :ref:`Campbell and Stanley (1963) <Campbell_1963>` for the
 discussion of study design, and :ref:`Stevens (1946) <Stevens_1946>` for

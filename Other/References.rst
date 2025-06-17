@@ -3,17 +3,17 @@
 References
 ==========
 
-Author’s note – I’ve mentioned it before, but I’ll quickly mention it
-again. This reference list is appallingly incomplete. Please don’t
-assume that these are the only sources I’ve relied upon. The final
+Author’s note – I have mentioned it before, but I will quickly mention it
+again. This reference list is appallingly incomplete. Please do not
+assume that these are the only sources I have relied upon. The final
 version of this book will have a *lot* more references. And if you see
-anything clever sounding in this book that doesn’t seem to have a
+anything clever sounding in this book that does not seem to have a
 reference, I can absolutely promise you that the idea was someone
-else’s. This is an introductory textbook: none of the ideas are
-original. I’ll take responsibility for all the errors, but I can’t take
+else’s. Thit is an introductory textbook: none of the ideas are
+original. I will take responsibility for all the errors, but I can not take
 credit for any of the good stuff. Everything smart in this book came
 from someone else, and they all deserve proper attribution for their
-excellent work. I just haven’t had the chance to give it to them yet.
+excellent work. I just have not had the chance to give it to them yet.
 
 
 .. _Adair_1984:

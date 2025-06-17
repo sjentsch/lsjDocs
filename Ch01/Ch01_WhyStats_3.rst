@@ -1,167 +1,93 @@
 .. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_ and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_
 
-The cautionary tale of Simpson’s paradox
-----------------------------------------
+Statistics in psychology
+------------------------
 
-The following is a true story (I think!). In 1973, the University of
-California, Berkeley had some worries about the admissions of students
-into their postgraduate courses. Specifically, the thing that caused the
-problem was that the gender breakdown of their admissions, which looked
-like this:
+I hope that the discussion above helped explain why science in general
+is so focused on statistics. But I am guessing that you have a lot more
+questions about what role statistics plays in psychology, and
+specifically why psychology classes always devote so many lectures to
+stats. So here is my attempt to answer a few of them…
 
-.. tabularcolumns:: |l|r|r|
+-  **Why does psychology have so much statistics?**
 
-+-------------+----------------------+------------------+
-|             | Number of applicants | Percent admitted |
-+=============+======================+==================+
-| **Males**   |                 8442 |             44\% |
-+-------------+----------------------+------------------+
-| **Females** |                 4321 |             35\% |
-+-------------+----------------------+------------------+
+   To be perfectly honest, there is a few different reasons, some of
+   which are better than others. The most important reason is that
+   psychology is a statistical science. What I mean by that is that the
+   “things” that we study are *people*. Real, complicated, gloriously
+   messy, infuriatingly perverse people. The “things” of physics include
+   objects like electrons, and while there are all sorts of complexities
+   that arise in physics, electrons do not have minds of their own. They
+   do not have opinions, they do not differ from each other in weird and
+   arbitrary ways, they do not get bored in the middle of an experiment,
+   and they do not get angry at the experimenter and then deliberately
+   try to sabotage the data set (not that I have ever done that!). At a
+   fundamental level psychology is harder than physics.\ [#]_
 
-Given this, they were worried about being sued!\ [#]_ Given that there
-were nearly 13,000 applicants, a difference of 9\% in admission rates
-between males and females is just way too big to be a coincidence.
-Pretty compelling data, right? And if I were to say to you that these
-data *actually* reflect a weak bias in favour of women (sort of!), you’d
-probably think that I was either crazy or sexist.
+   Basically, we teach statistics to you as psychologists because you
+   need to be better at stats than physicists. There is actually a saying
+   used sometimes in physics, to the effect that “if your experiment
+   needs statistics, you should have done a better experiment”. They
+   have the luxury of being able to say that because their objects of
+   study are pathetically simple in comparison to the vast mess that
+   confronts social scientists. And it is not just psychology. Most
+   social sciences are desperately reliant on statistics. Not because
+   we are bad experimenters, but because we have picked a harder problem to
+   solve. We teach you stats because you really, really need it.
 
-Oddly, it’s actually sort of true. When people started looking more
-carefully at the they told a rather different story (:ref:`Bickel et al., 1975
-<Bickel_1975>`). Specifically, when they looked at
-it on a department by department basis, it turned out that most of the
-departments actually had a slightly *higher* success rate for female
-applicants than for male applicants. The table below shows the admission
-figures for the six largest departments (with the names of the
-departments removed for privacy reasons):
+-  **Can not someone else do the statistics?**
 
-.. tabularcolumns:: |l|r|r|r|r|
+   To some extent, but not completely. It is true that you do not need to
+   become a fully trained statistician just to do psychology, but you do
+   need to reach a certain level of statistical competence. In my view,
+   there is three reasons that every psychological researcher ought to be
+   able to do basic statistics:
 
-+------------+-------------------------------+-------------------------------+
-|            | Males                         | Females                       |
-+------------+------------+------------------+------------+------------------+
-| Department | Applicants | Percent admitted | Applicants | Percent admitted |
-+============+============+==================+============+==================+
-| **A**      |        825 |             62\% |        108 |             82\% |
-+------------+------------+------------------+------------+------------------+
-| **B**      |        560 |             63\% |         25 |             68\% |
-+------------+------------+------------------+------------+------------------+
-| **C**      |        325 |             37\% |        593 |             34\% |
-+------------+------------+------------------+------------+------------------+
-| **D**      |        417 |             33\% |        375 |             35\% |
-+------------+------------+------------------+------------+------------------+
-| **E**      |        191 |             28\% |        393 |             24\% |
-+------------+------------+------------------+------------+------------------+
-| **F**      |        272 |              6\% |        341 |              7\% |
-+------------+------------+------------------+------------+------------------+
+   -  Firstly, there is the fundamental reason: statistics is deeply
+      intertwined with research design. If you want to be good at
+      designing psychological studies, you need to at the very least
+      understand the basics of stats.
 
-Remarkably, most departments had a *higher* rate of admissions for
-females than for males! Yet the overall rate of admission across the
-university for females was *lower* than for males. How can this be? How
-can both of these statements be true at the same time?
+   -  Secondly, if you want to be good at the psychological side of the
+      research, then you need to be able to understand the psychological
+      literature, right? But almost every paper in the psychological
+      literature reports the results of statistical analyses. So if you
+      really want to understand the psychology, you need to be able to
+      understand what other people did with their data. And that means
+      understanding a certain amount of statistics.
 
-Here’s what’s going on. Firstly, notice that the departments are *not*
-equal to one another in terms of their admission percentages: some
-departments (e.g., A, B) tended to admit a high percentage of the
-qualified applicants, whereas others (e.g., F) tended to reject most of
-the candidates, even if they were high quality. So, among the six
-departments shown above, notice that department A is the most generous,
-followed by B, C, D, E and F in that order. Next, notice that males and
-females tended to apply to different departments. If we rank the
-departments in terms of the total number of male applicants, we get
-**A** > **B** > D > C > F > E (the “easy” departments are in bold). On the
-whole, males tended to apply to the departments that had high admission rates.
-Now compare this to how the female applicants distributed themselves. Ranking
-the departments in terms of the total number of female applicants produces a
-quite different ordering C > E > D > F > **A** > **B**.
-In other words, what these data seem to be suggesting is that the female
-applicants tended to apply to “harder” departments. And in fact, if we
-look at :numref:`fig-berkeley` we see that this trend is systematic, and
-quite striking. This effect is known as **Simpson’s paradox**. It’s not common,
-but it does happen in real life, and most people are very surprised by it when
-they first encounter it, and many people refuse to even believe that it’s real.
-It is very real. And while there are lots of very subtle statistical lessons
-buried in there, I want to use it to make a much more important point: doing
-research is hard, and there are *lots* of subtle, counter-intuitive traps lying
-in wait for the unwary. That’s reason #2 why scientists love statistics,
-and why we teach research methods. Because science is hard, and the
-truth is sometimes cunningly hidden in the nooks and crannies of
-complicated data.
+   -  Thirdly, there is a big practical problem with being dependent on
+      other people to do all your statistics: statistical analysit is
+      *expensive*. If you ever get bored and want to look up how much
+      the Australian government charges for university fees, you will
+      notice something interesting: statistics is designated as a
+      “national priority” category, and so the fees are much, much lower
+      than for any other area of study. Thit is because there is a
+      massive shortage of statisticians out there. So, from your
+      perspective as a psychological researcher, the laws of supply and
+      demand are not exactly on your side here! As a result, in almost
+      any real life situation where you want to do psychological
+      research, the cruel facts will be that you do not have enough money
+      to afford a statistician. So the economics of the situation mean
+      that you have to be pretty self-sufficient.
 
-.. ----------------------------------------------------------------------------
+   Note that a lot of these reasons generalise beyond researchers. If
+   you want to be a practicing psychologist and stay on top of the
+   field, it helps to be able to read the scientific literature, which
+   relies pretty heavily on statistics.
 
-.. figure:: ../_images/lsj_berkeleyadmissions.*
-   :alt: Berkeley 1973 college admissions data
-   :name: fig-berkeley
+-  **I do not care about jobs, research, or clinical work. Do I need
+   statistics?**
 
-   The Berkeley 1973 college admissions data. This figure plots the admission
-   rate for the 85 departments that had at least one female applicant, as a
-   function of the percentage of applicants that were female. The plot is a
-   redrawing of Figure 1 from :ref:`Bickel et al. (1975) <Bickel_1975>`.
-   Circles plot departments with more than 40 applicants; the area of the
-   circle is proportional to the total number of applicants. The crosses plot
-   departments with fewer than 40 applicants.
-   
-.. ----------------------------------------------------------------------------
-
-Before leaving this topic entirely, I want to point out something else
-really critical that is often overlooked in a research methods class.
-Statistics only solves *part* of the problem. Remember that we started
-all this with the concern that Berkeley’s admissions processes might be
-unfairly biased against female applicants. When we looked at the
-“aggregated” data, it did seem like the university was discriminating
-against women, but when we “disaggregate” and looked at the individual
-behaviour of all the departments, it turned out that the actual
-departments were, if anything, slightly biased in favour of women. The
-gender bias in total admissions was caused by the fact that women tended
-to self-select for harder departments. From a legal perspective, that
-would probably put the university in the clear. Postgraduate admissions
-are determined at the level of the individual department, and there are
-good reasons to do that. At the level of individual departments the
-decisions are more or less unbiased (the weak bias in favour of females
-at that level is small, and not consistent across departments). Since
-the university can’t dictate which departments people choose to apply
-to, and the decision making takes place at the level of the department
-it can hardly be held accountable for any biases that those choices
-produce.
-
-That was the basis for my somewhat glib remarks earlier, but that’s not
-exactly the whole story, is it? After all, if we’re interested in this
-from a more sociological and psychological perspective, we might want to
-ask *why* there are such strong gender differences in applications. Why
-do males tend to apply to engineering more often than females, and why
-is this reversed for the English department? And why is it the case that
-the departments that tend to have a female-application bias tend to have
-lower overall admission rates than those departments that have a
-male-application bias? Might this not still reflect a gender bias, even
-though every single department is itself unbiased? It might. Suppose,
-hypothetically, that males preferred to apply to “hard sciences” and
-females prefer “humanities”. And suppose further that the reason for why
-the humanities departments have low admission rates is because the
-government doesn’t want to fund the humanities (Ph.D. places, for
-instance, are often tied to government funded research projects). Does
-that constitute a gender bias? Or just an unenlightened view of the
-value of the humanities? What if someone at a high level in the
-government cut the humanities funds because they felt that the
-humanities are “useless chick stuff”. That seems pretty *blatantly*
-gender biased. None of this falls within the purview of statistics, but
-it matters to the research project. If you’re interested in the overall
-structural effects of subtle gender biases, then you probably want to
-look at *both* the aggregated and disaggregated data. If you’re
-interested in the decision making process at Berkeley itself then you’re
-probably only interested in the disaggregated data.
-
-In short there are a lot of critical questions that you can’t answer
-with statistics, but the answers to those questions will have a huge
-impact on how you analyse and interpret data. And this is the reason why
-you should always think of statistics as a *tool* to help you learn
-about your data. No more and no less. It’s a powerful tool to that end,
-but there’s no substitute for careful thought.
+   Okay, now you are just messing with me. Still, I think it should
+   matter to you too. Statistics should matter to you in the same way
+   that statistics should matter to *everyone*. We live in the 21st
+   century, and data are *everywhere*. Frankly, given the world in which
+   we live these days, a basic knowledge of statistics is pretty damn
+   close to a survival tool! Which is the topic of the next section.
 
 ------
 
 .. [#]
-   Earlier versions of these notes incorrectly suggested that they actually
-   were sued. But that’s `not true
-   <https://www.refsmmat.com/posts/2016-05-08-simpsons-paradox-berkeley.html>`__.
-   A big thank you to Wilfried Van Hirtum for pointing this out to me.
+   Which might explain why physics is just a teensy bit further advanced
+   as a science than we are.

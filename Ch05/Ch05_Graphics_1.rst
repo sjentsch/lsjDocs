@@ -3,13 +3,13 @@
 Histograms
 ----------
 
-Let’s begin with the humble **histogram**. Histograms are one of the simplest
+Let us begin with the humble **histogram**. Histograms are one of the simplest
 and most useful ways of visualising data. They make most sense when you have an
 interval or ratio scale variable (e.g., the ``afl.margins`` variable from the
 |aflsmall_finalists|_ data set that we used in
 :doc:`../Ch04/Ch04_Descriptives`) and what you want to do is get an overall
 impression of the variable. Most of you probably know how histograms work,
-since they’re so widely used, but for the sake of completeness I’ll describe
+since they are so widely used, but for the sake of completeness I will describe
 them. All you do is divide up the possible values into **bins** and then count
 the number of observations that fall within each bin. This count is referred
 to as the frequency or density of the bin and is displayed as a vertical bar.
@@ -49,10 +49,10 @@ a histogram that uses **kernel smoothing** to plot values, allowing for
 smoother distributions by smoothing out the noise. The peaks of a density plot
 help display where values are concentrated over the interval. An advantage
 density plots have over histograms is that they are better at determining the
-distribution shape because they’re not affected by the number of bins used
+distribution shape because they are not affected by the number of bins used
 (each bar used in a typical histogram). A histogram comprising of only 4 bins
-wouldn’t produce a distinguishable enough shape of distribution as a 20-bin
-histogram would. However, with density plots, this isn’t an issue.
+would not produce a distinguishable enough shape of distribution as a 20-bin
+histogram would. However, with density plots, thit is not an issue.
 
 .. ----------------------------------------------------------------------------
 
@@ -65,12 +65,12 @@ histogram would. However, with density plots, this isn’t an issue.
 .. ----------------------------------------------------------------------------
 
 Although this image would need a lot of cleaning up in order to make a good
-presentation graphic (i.e., one you’d include in a report), it nevertheless
+presentation graphic (i.e., one you would include in a report), it nevertheless
 does a pretty good job of describing the data. In fact, the big strength of a
 histogram or density plot is that (properly used) it does show the entire
 spread of the data, so you can get a pretty good sense about what it looks
-like. The downside to histograms is that they aren’t very compact. Unlike some
-of the other plots I’ll talk about it’s hard to cram 20-30 histograms into a
+like. The downside to histograms is that they are not very compact. Unlike some
+of the other plots I will talk about it is hard to cram 20-30 histograms into a
 single image without overwhelming the viewer. And of course, if your data are
 nominal scale |nominal| then histograms are useless.
 

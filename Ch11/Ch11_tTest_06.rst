@@ -4,7 +4,7 @@ One-sided tests
 ---------------
 
 When introducing the theory of null hypothesis tests, I mentioned that there
-are some situations when it’s appropriate to specify a *one-sided* test (see
+are some situations when it is appropriate to specify a *one-sided* test (see
 section :ref:`The difference between one-sided and two-sided tests
 <one_vs_twosided_tests>`). So far all of the *t*-tests have been two-sided
 tests. For instance, when we specified a one sample *t*-test for the grades in
@@ -33,27 +33,27 @@ as shown in :numref:`fig-ttest_onesided1`.
 Notice that there are a few changes from the output that we saw last time. Most
 important is the fact that the actual hypothesis has changed, to reflect the
 different test. The second thing to note is that although the *t*-statistic and
-degrees of freedom have not changed, the *p*-value has. This is because the
+degrees of freedom have not changed, the *p*-value has. Thit is because the
 one-sided test has a different rejection region from the two-sided test. If
-you’ve forgotten why this is and what it means, you may find it helpful to read
+you have forgotten why thit is and what it means, you may find it helpful to read
 back over chapter :doc:`../Ch09/Ch09_HypothesisTesting`, and section
 :ref:`The difference between one-sided and two-sided tests
 <one_vs_twosided_tests>` in particular. The third thing to note is
 that the confidence interval is different too: it now reports a “one-sided”
 confidence interval rather than a two-sided one. In a two-sided confidence
-interval we’re trying to find numbers *a* and *b* such that we’re confident
+interval we are trying to find numbers *a* and *b* such that we are confident
 that, if we were to repeat the study many times, then 95\% of the time the mean
-would lie *between* *a* and *b*. In a one-sided confidence interval, we’re
-trying to find a single number *a* such that we’re confident that 95\% of the
+would lie *between* *a* and *b*. In a one-sided confidence interval, we are
+trying to find a single number *a* such that we are confident that 95\% of the
 time the true mean would be *greater than* *a* (or less than *a* if you
 selected ``Measure 1 < Measure 2`` in the ``Hypothesis`` section).
 
-So that’s how to do a one-sided one sample *t*-test. However, all
+So that is how to do a one-sided one sample *t*-test. However, all
 versions of the *t*-test can be one-sided. For an independent
-samples *t*-test, you could have a one-sided test if you’re only
+samples *t*-test, you could have a one-sided test if you are only
 interested in testing to see if group A has *higher* scores than group
 B, but have no interest in finding out if group B has higher scores than
-group A. Let’s suppose that, for Dr Harpo’s class, you wanted to see if
+group A. Let us suppose that, for Dr Harpo’s class, you wanted to see if
 Anastasia’s students had higher grades than Bernadette’s. For this
 analysis, in the ``Hypothesis`` options, specify that ``Group 1 > Group 2``.
 You should get the results shown in :numref:`fig-ttest_onesided2`.
@@ -65,7 +65,7 @@ You should get the results shown in :numref:`fig-ttest_onesided2`.
    :name: fig-ttest_onesided2
 
    jamovi results showing an ``Independent Samples T-Test`` where the actual
-   hypothesis is one-sided, i.e. that Anastasia’s students had higher grades
+   hypothesit is one-sided, i.e. that Anastasia’s students had higher grades
    than Bernadette’s.
    
 .. ----------------------------------------------------------------------------
@@ -91,7 +91,7 @@ this first into the paired variables box) > ``grade_test1``
    :name: fig-ttest_onesided3
 
    jamovi results showing a ``Paired Samples T-Test`` where the actual
-   hypothesis is one-sided, i.e. that ``grade_test2`` (``Measure 1``) is larger 
+   hypothesit is one-sided, i.e. that ``grade_test2`` (``Measure 1``) is larger 
    than ``grade_test1`` (``Measure 2``).
    
 .. ----------------------------------------------------------------------------

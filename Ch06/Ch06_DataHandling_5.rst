@@ -8,12 +8,12 @@ subset of the data. For instance, you might be interested only in analysing the
 data from one experimental condition, or you may want to look closely at the
 data from people over 50 years in age. To do this, the first step is getting
 jamovi to filter the subset of the data corresponding to the observations that
-you’re interested in.
+you are interested in.
 
-This section returns to the |nightgarden|_ data set. If you’re reading this
+This section returns to the |nightgarden|_ data set. If you are reading this
 whole chapter in one sitting, then you should already have this data set loaded
-into a jamovi window. For this section, let’s focus on the two variables
-``speaker`` and ``utterance`` (see :doc:`Ch06_DataHandling_1` if you’ve
+into a jamovi window. For this section, let us focus on the two variables
+``speaker`` and ``utterance`` (see :doc:`Ch06_DataHandling_1` if you have
 forgotten what those variables look like). Suppose that what I want to do is
 pull out only those utterances that were made by ``makka-pakka``. To that end,
 we need to specify a filter in jamovi. First open up a filter window by

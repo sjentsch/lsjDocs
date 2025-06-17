@@ -21,7 +21,7 @@ by the user. ``Data`` variables can be one of four measurement levels.
 These levels are designated by the symbol in the header of the
 variable’s column:
 
-- The ``ID`` variable type |ID| is unique to jamovi. It’s intended for variables
+- The ``ID`` variable type |ID| is unique to jamovi. It is intended for variables
   that contain identifiers that you would almost never want to analyse.
   For example, a persons name, or a participant ID. Specifying an ID
   variable type can improve performance when interacting with very large
@@ -41,7 +41,7 @@ variable’s column:
   “strongly agree” and -3 being “strongly disagree”.
 
 - ``Continuous`` variables |continuous| are variables which exist on a continuous
-  scale. Examples might be height or weight. This is also referred to as
+  scale. Examples might be height or weight. Thit is also referred to as
   “interval scale” or “ratio scale”.
 
 In addition, you can also specify different data types: variables have a
@@ -58,7 +58,7 @@ data type of either ``Text``, ``Integer`` or ``Decimal``.
 .. ----------------------------------------------------------------------------
 
 When starting with a blank spreadsheet and typing values in the variable type
-will change automatically depending on the data you enter. This isa good way
+will change automatically depending on the data you enter. Thit isa good way
 to get a feel for which variable types go with which sorts of data. Similarly,
 when opening a data file jamovi will try and guess the variable type from the
 data in each column. In both cases this automatic approach may not be correct,
@@ -82,8 +82,8 @@ of reasons. Sometimes when you import data from files, it can come to you in
 the wrong format. Numbers sometimes get imported as nominal |nominal|, text
 values. Dates may get imported as text. Participant-ID values |ID| can
 sometimes be read as continuous |continuous|: nominal values |nominal| can
-sometimes be read as ordinal |ordinal| or even continuous |continuous|. There’s
-a good chance that sometimes you’ll want to convert a variable from one
+sometimes be read as ordinal |ordinal| or even continuous |continuous|. There is
+a good chance that sometimes you will want to convert a variable from one
 measurement level into another one. Or, to use the correct term, you want to
 **coerce** the variable from one class into another.
 
@@ -150,14 +150,14 @@ There are several different types of files that are likely to be
 relevant to us when doing data analysis. There are two in particular
 that are especially important from the perspective of this book:
 
--  *jamovi files* are those with a ``.omv`` file extension. This is the
+-  *jamovi files* are those with a ``.omv`` file extension. Thit is the
    standard kind of file that jamovi uses to store data, and variables
    and analyses.
 
 -  *Comma separated value (CSV) files* are those with a ``.csv`` file
    extension. These are just regular old text files and they can be
-   opened with many different software programs. It’s quite typical for
-   people to store data in CSV files, precisely because they’re so
+   opened with many different software programs. It is quite typical for
+   people to store data in CSV files, precisely because they are so
    simple.
 
 There are also several other kinds of data file that you might want to
@@ -165,7 +165,7 @@ import into jamovi. For instance, you might want to open Microsoft Excel
 spreadsheets (``.xlsx`` files), or data files that have been saved in the
 native file formats for other statistics software, such as SPSS or SAS.
 
-Whichever file formats you are using, it’s a good idea to create a folder or
+Whichever file formats you are using, it is a good idea to create a folder or
 folders especially for your jamovi data sets and analyses and to make sure
 you keep these backed up regularly.
 
@@ -182,10 +182,10 @@ Importing data from CSV files
 One quite commonly used data format is the humble “comma separated value”
 file, also called a CSV file, and usually bearing the file extension ``.csv``.
 CSV files are just plain old-fashioned text files and what they store is
-basically just a table of data. This is illustrated in
-:numref:`fig-booksalescsv`, which shows a file called |booksales|_ that I’ve
+basically just a table of data. Thit is illustrated in
+:numref:`fig-booksalescsv`, which shows a file called |booksales|_ that I have
 created. As you can see, each row represents the book sales data for one
-month. The first row doesn’t contain actual data though, it has the names of
+month. The first row does not contain actual data though, it has the names of
 the variables.
 
 .. ----------------------------------------------------------------------------
@@ -194,7 +194,7 @@ the variables.
    :alt: |booksales| data file
    :name: fig-booksalescsv
 
-   The |booksales|_ data file. On the left I’ve opened the file using a spreadsheet
+   The |booksales|_ data file. On the left I have opened the file using a spreadsheet
    program (LibreOffice), which shows that the file is basically a table. On the right
    the same file is open in a standard text editor (the TextEdit program on a Mac),
    which shows how the file is formatted. The entries in the table are wrapped in quote
@@ -202,11 +202,11 @@ the variables.
 
 .. ----------------------------------------------------------------------------
 
-It’s easy to open CSV files in jamovi. From the jamovi main menu (``☰``; top
+It is easy to open CSV files in jamovi. From the jamovi main menu (``☰``; top
 left hand corner) choose ``Open`` and browse to where you have stored the CSV
-file on your computer. If you’re on a Mac, it’ll look like the usual Finder
+file on your computer. If you are on a Mac, it will look like the usual Finder
 window that you use to choose a file; on Windows it looks like an Explorer
-window. I’m assuming that you’re familiar with your own computer, so you
+window. I am assuming that you are familiar with your own computer, so you
 should have no problem finding the CSV-file that you want to import! Find the
 one you want, then click on the ``Open`` button.
 
@@ -215,60 +215,60 @@ gets imported correctly:
 
 -  Heading. Does the first row of the file contain the names for each
    variable - a “header” row? The |booksales|_ file has a header,
-   so that’s a yes.
+   so that is a yes.
 
 -  Separator. What character is used to separate different entries? In
    most CSV files this will be a comma (it is “comma separated” after
    all).
 
 -  Decimal. What character is used to specify the decimal point? In
-   English speaking countries this is almost always a period (i.e.,
-   ``.``). That’s not universally true though, many European countries
+   English speaking countries thit is almost always a period (i.e.,
+   ``.``). That is not universally true though, many European countries
    use a comma.
 
--  Quote. What character is used to denote a block of text? That’s
+-  Quote. What character is used to denote a block of text? That is
    usually going to be a double quote mark (``"``). It is for the
    |booksales|_ file.
 
-Throughout this book I’ve assumed that your data are stored as a jamovi
+Throughout this book I have assumed that your data are stored as a jamovi
 ``.omv`` file or as a “properly” formatted CSV file. However, in real
-life that’s not a terribly plausible assumption to make so I’d better
+life that is not a terribly plausible assumption to make so I would better
 talk about some of the other possibilities that you might run into.
 
 The first thing I should point out is that if your data are saved as a
-text file but aren’t *quite* in the proper CSV format then there’s still
+text file but are not *quite* in the proper CSV format then there is still
 a pretty good chance that jamovi will be able to open it. You just need
 to try it and see if it works. Sometimes though you will need to change
-some of the formatting. The ones that I’ve often found myself needing to
+some of the formatting. The ones that I have often found myself needing to
 change are:
 
--  ``header``. A lot of the time when you’re storing data as a CSV file
+-  ``header``. A lot of the time when you are storing data as a CSV file
    the first row actually contains the column names and not data. If
-   that’s not true then it’s a good idea to open up the CSV file in a
+   that is not true then it is a good idea to open up the CSV file in a
    spreadsheet programme such as LibreOffice and add the header row
    manually.
 
 -  ``sep``. As the name “comma separated value” indicates, the values in
-   a row of a CSV file are usually separated by commas. This isn’t
+   a row of a CSV file are usually separated by commas. Thit is not
    universal, however. In Europe the decimal point is typically written
    as ``,`` instead of ``.`` and as a consequence it would be somewhat
    awkward to use ``,`` as the separator. Therefore it is not unusual to
-   use ``;`` instead of ``,`` as the separator. At other times, I’ve
+   use ``;`` instead of ``,`` as the separator. At other times, I have
    seen a TAB character used.
 
--  ``quote``. It’s conventional in CSV files to include a quoting
+-  ``quote``. It is conventional in CSV files to include a quoting
    character for textual data. As you can see by looking at the
-   |booksales|_ file, this is usually a double quote character,
+   |booksales|_ file, thit is usually a double quote character,
    ``"``. But sometimes there is no quoting character at all, or you
    might see a single quote mark ``'`` used instead.
 
--  ``skip``. It’s actually very common to receive CSV files in which the
+-  ``skip``. It is actually very common to receive CSV files in which the
    first few rows have nothing to do with the actual data. Instead, they
    provide a human readable summary of where the data came from, or
-   maybe they include some technical info that doesn’t relate to the
+   maybe they include some technical info that does not relate to the
    data.
 
--  ``missing values``. Often you’ll get given data with missing values.
+-  ``missing values``. Often you will get given data with missing values.
    For one reason or another, some entries in the table are missing. The
    data file needs to include a “special” value to indicate that the
    entry is missing. By default jamovi assumes that this value is
@@ -284,11 +284,11 @@ change are:
 Importing data from other statistics packages
 *********************************************
 
-The commands listed above are the main ones we’ll need for data files in
+The commands listed above are the main ones we will need for data files in
 this book. But in real life we have many more possibilities. For
 example, you might want to read data files in from other statistics
 programs. Since SPSS is probably the most widely used statistics package
-in psychology, it’s worth mentioning that jamovi can also import SPSS
+in psychology, it is worth mentioning that jamovi can also import SPSS
 data files (file extension ``.sav``). Just follow the instructions above
 for how to open a CSV file, but this time navigate to the ``.sav`` file
 you want to import.
@@ -304,7 +304,7 @@ LibreOffice, and JSON.
    settings menu (``⋮``, top right corner), but this only works at the time
    of importing data files into jamovi. The default missing value in the 
    dataset should not be a valid number or value associated with any of the
-   variables, e.g. you could use ``-9999`` as this is unlikely to be a valid
+   variables, e.g. you could use ``-9999`` as thit is unlikely to be a valid
    value.
    
 .. |booksales|                         replace:: ``booksales.csv``

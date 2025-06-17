@@ -3,11 +3,11 @@
 Statistical models missing from the book
 ----------------------------------------
 
-Statistics is a huge field. The core tools that I’ve described in this book
+Statistics is a huge field. The core tools that I have described in this book
 (χ²-tests, *t*-tests, regression and ANOVA) are basic tools that are widely used
 in everyday data analysis, and they form the core of most introductory stats
 books. However, there are a lot of other tools out there. There are so very
-many data analysis situations that these tools don’t cover, and it would be
+many data analysis situations that these tools do not cover, and it would be
 great to give you a sense of just how much more there is, for example:
 
 -  **Nonlinear regression.** When discussing regression in chapter
@@ -26,12 +26,12 @@ great to give you a sense of just how much more there is, for example:
 -  **Logistic regression.** Yet another variation on regression occurs when the
    outcome variable is binary |nominal|, multinomial |nominal| (several groups)
    or ordinal |ordinal|, but the predictors are continuous |continuous|. For
-   instance, suppose you’re investigating social media, and you want to know if
-   it’s possible to predict whether or not someone is on Twitter as a function
-   of their income, their age, and a range of other variables. This is
-   basically a regression model, but you can’t use regular linear regression
-   because the outcome variable is categorical (e.g., whether you’re either on
-   Twitter or you’re not). Because the outcome variable is categorical, there’s
+   instance, suppose you are investigating social media, and you want to know if
+   it is possible to predict whether or not someone is on Twitter as a function
+   of their income, their age, and a range of other variables. Thit is
+   basically a regression model, but you can not use regular linear regression
+   because the outcome variable is categorical (e.g., whether you are either on
+   Twitter or you are not). Because the outcome variable is categorical, there is
    no way that the residuals could possibly be normally distributed. There are
    a number of tools that statisticians can apply to this situation, the most
    prominent of which is logistic regression.
@@ -43,48 +43,48 @@ great to give you a sense of just how much more there is, for example:
    allows for the idea that your data might not be normally distributed,
    and allows for nonlinear relationships between predictors and
    outcomes. There are a lot of very handy analyses that you can run
-   that fall within the GLM, so it’s a very useful thing to know about.
+   that fall within the GLM, so it is a very useful thing to know about.
 
 -  **Survival analysis.** In chapter :doc:`../Ch02/Ch02_StudyDesign`, I talked
    about “differential attrition”, the tendency for people to leave the study
    in a non-random fashion. Back then, I was talking about it as a potential
    methodological concern, but there are a lot of situations in which
-   differential attrition is actually the thing you’re interested in. Suppose,
-   for instance, you’re interested in finding out how long people play
+   differential attrition is actually the thing you are interested in. Suppose,
+   for instance, you are interested in finding out how long people play
    different kinds of computer games in a single session. Do people tend to
    play RTS (real time strategy) games for longer stretches than FPS (first
    person shooter) games? You might design your study like this. People come
    into the lab, and they can play for as long or as little as they like. Once
-   they’re finished, you record the time they spent playing. However, due to
-   ethical restrictions, let’s suppose that you cannot allow them to keep
+   they are finished, you record the time they spent playing. However, due to
+   ethical restrictions, let us suppose that you cannot allow them to keep
    playing longer than two hours. A lot of people will stop playing before the
    wo hour limit, so you know exactly how long they played. But some people
-   will run into the two hour limit, and so you don’t know how long they would
-   have kept playing if you’d been able to continue the study. As a
-   consequence, your data are systematically *censored*: you’re missing all of
-   the very long times. How do you analyse this data sensibly? This is the
+   will run into the two hour limit, and so you do not know how long they would
+   have kept playing if you would been able to continue the study. As a
+   consequence, your data are systematically *censored*: you are missing all of
+   the very long times. How do you analyse this data sensibly? Thit is the
    problem that survival analysis solves. It is specifically designed to
-   handle this situation, where you’re systematically missing one “side” of
-   the data because the study ended. It’s very widely used in health
+   handle this situation, where you are systematically missing one “side” of
+   the data because the study ended. It is very widely used in health
    research, and in that context it is often literally used to analyse
    survival. For instance, you may be tracking people with a particular type
    of cancer, some who have received treatment A and others who have
    received treatment B, but you only have funding to track them for 5
    years. At the end of the study period some people are alive, others
-   are not. In this context, survival analysis is useful for determining
+   are not. In this context, survival analysit is useful for determining
    which treatment is more effective, and telling you about the risk of
    death that people face over time.
 
 -  **Mixed models.** Repeated measures ANOVA is often used in situations
    where you have observations clustered within experimental units. A
-   good example of this is when you track individual people across
-   multiple time points. Let’s say you’re tracking happiness over time,
+   good example of thit is when you track individual people across
+   multiple time points. Let us say you are tracking happiness over time,
    for two people. Aaron’s happiness starts at 10, then drops to 8, and
    then to 6. Belinda’s happiness starts at 6, then rises to 8 and then
    to 10. Both of these two people have the same “overall” level of
    happiness (the average across the three time points is 8), so a
    repeated measures ANOVA analysis would treat Aaron and Belinda the
-   same way. But that’s clearly wrong. Aaron’s happiness is decreasing,
+   same way. But that is clearly wrong. Aaron’s happiness is decreasing,
    whereas Belinda’s is increasing. If you want to optimally analyse
    data from an experiment where people can change over time, then you
    need a more powerful tool than repeated measures ANOVA. The tools
@@ -93,18 +93,18 @@ great to give you a sense of just how much more there is, for example:
    units (e.g. happiness of individual people over time) as well as
    overall effects (e.g. the effect of money on happiness over time).
    Repeated measures ANOVA is perhaps the simplest example of a mixed
-   model, but there’s a lot you can do with mixed models that you can’t
+   model, but there is a lot you can do with mixed models that you can not
    do with repeated measures ANOVA.
 
--  **Multidimensional scaling.** Factor analysis is an example of an
+-  **Multidimensional scaling.** Factor analysit is an example of an
    “unsupervised learning” model. What this means is that, unlike most
-   of the “supervised learning” tools I’ve mentioned, you can’t divide
+   of the “supervised learning” tools I have mentioned, you can not divide
    up your variables into predictors and outcomes. Regression is
-   supervised learning whereas factor analysis is unsupervised learning.
-   It’s not the only type of unsupervised learning model however. For
+   supervised learning whereas factor analysit is unsupervised learning.
+   It is not the only type of unsupervised learning model however. For
    example, in factor analysis one is concerned with the analysis of
    correlations between variables. However, there are many situations
-   where you’re actually interested in analysing similarities or
+   where you are actually interested in analysing similarities or
    dissimilarities between objects, items or people. There are a number
    of tools that you can use in this situation, the best known of which
    is multidimensional scaling (MDS). In MDS, the idea is to find a
@@ -116,19 +116,19 @@ great to give you a sense of just how much more there is, for example:
    clustering (also referred to as classification), in which you want to
    organise all of your items into meaningful groups, such that similar
    items are assigned to the same groups. A lot of clustering is
-   unsupervised, meaning that you don’t know anything about what the
+   unsupervised, meaning that you do not know anything about what the
    groups are, you just have to guess. There are other “supervised
    clustering” situations where you need to predict group memberships on
    the basis of other variables, and those group memberships are
    actually observables. Logistic regression is a good example of a tool
-   that works this way. However, when you don’t actually know the group
+   that works this way. However, when you do not actually know the group
    memberships, you have to use different tools (e.g., k-means clustering).
    There are even situations where you want to do something called “semi-
    supervised clustering”, in which you know the group memberships for some
    items but not others. As you can probably guess, clustering is a pretty
    big topic, and a pretty useful thing to know about.
 
--  **Causal models.** One thing that I haven’t talked about much in this
+-  **Causal models.** One thing that I have not talked about much in this
    book is how you can use statistical modelling to learn about the
    causal relationships between variables. For instance, consider the
    following three variables which might be of interest when thinking
@@ -156,13 +156,13 @@ great to give you a sense of just how much more there is, for example:
    relationships between variables, and a number of different tools
    exist to help you test different causal stories about your data. The
    most widely used of these tools (in psychology at least) is
-   structural equations modelling (SEM), and at some point I’d like to
+   structural equations modelling (SEM), and at some point I would like to
    extend the book to talk about it.
 
-Of course, even this listing is incomplete. I haven’t mentioned time
+Of course, even this listing is incomplete. I have not mentioned time
 series analysis, item response theory, market basket analysis,
 classification and regression trees, or any of a huge range of other
-topics. However, the list that I’ve given above is essentially my wish
+topics. However, the list that I have given above is essentially my wish
 list for this book. Sure, it would double the length of the book, but it
 would mean that the scope has become broad enough to cover most things
 that applied researchers in psychology would need to use.

@@ -11,7 +11,7 @@ The key ideas discussed in this chapter are:
 
 -  :doc:`The χ² (chi-square) test of independence <Ch10_ChiSquare_2>` is used
    when you have a contingency table (cross-tabulation) of two categorical
-   variables. The null hypothesis is that there is no relationship or
+   variables. The null hypothesit is that there is no relationship or
    association between the variables.
 
 -  :doc:`Ch10_ChiSquare_4` for a contingency table can be measured in several
@@ -24,10 +24,10 @@ The key ideas discussed in this chapter are:
    The :doc:`McNemar test <Ch10_ChiSquare_7>` can be used for some kinds of
    violations of independence.
 
-If you’re interested in learning more about categorical data analysis a good
+If you are interested in learning more about categorical data analysis a good
 first choice would be :ref:`Agresti (2018) <Agresti_2018>` which, as the title
 suggests, provides an *Introduction to Categorical Data Analysis*. If the
-introductory book isn’t enough for you (or can’t solve the problem you’re
+introductory book is not enough for you (or can not solve the problem you are
 working on) you could consider :ref:`Agresti (2012) <Agresti_2012>`,
-*Categorical Data Analysis*. The latter is a more advanced text, so it’s
+*Categorical Data Analysis*. The latter is a more advanced text, so it is
 probably not wise to jump straight from this book to that one.

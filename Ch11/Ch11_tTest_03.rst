@@ -3,28 +3,28 @@
 The independent samples *t*-test (Student test)
 -----------------------------------------------
 
-Although the one sample *t*-test has its uses, it’s not the most
+Although the one sample *t*-test has its uses, it is not the most
 typical example of a *t*-test.\ [#]_ A much more common situation
-arises when you’ve got two different groups of observations. In
+arises when you have got two different groups of observations. In
 psychology, this tends to correspond to two different groups of
 participants, where each group corresponds to a different condition in
 your study. For each person in the study you measure some outcome
-variable of interest, and the research question that you’re asking is
-whether or not the two groups have the same population mean. This is the
+variable of interest, and the research question that you are asking is
+whether or not the two groups have the same population mean. Thit is the
 situation that the independent samples *t*-test is designed for.
 
 The data
 ~~~~~~~~
 
 Suppose we have 33 students taking Dr Harpo’s statistics lectures, and Dr Harpo
-doesn’t grade to a curve. Actually, Dr Harpo’s grading is a bit of a mystery,
-so we don’t really know anything about what the average grade is for the class
+does not grade to a curve. Actually, Dr Harpo’s grading is a bit of a mystery,
+so we do not really know anything about what the average grade is for the class
 as a whole. There are two tutors for the class, Anastasia and Bernadette. There
 are *N*\ :sub:`1` = 15 students in Anastasia’s tutorials, and *N*\ :sub:`2` =
-18 in Bernadette’s tutorials. The research question I’m interested in is
-whether Anastasia or Bernadette is a better tutor, or if it doesn’t make much
+18 in Bernadette’s tutorials. The research question I am interested in is
+whether Anastasia or Bernadette is a better tutor, or if it does not make much
 of a difference. Dr Harpo sends me the |harpo|_ data set with the course
-grades. file. As usual, I’ll load the file into jamovi and have a look at what
+grades. file. As usual, I will load the file into jamovi and have a look at what
 variables it contains - there are three variables, ``ID``, ``grade`` and
 ``tutor``. The ``grade`` variable contains each student’s grade, but it is not
 imported into jamovi with the correct measurement level attribute, so I need
@@ -34,7 +34,7 @@ is a factor |nominal| that indicates who each student’s tutor was - either
 Anastasia or Bernadette.
 
 We can calculate means and standard deviations, using the ``Exploration`` →
-``Descriptives`` analysis, and here’s a nice little summary table:
+``Descriptives`` analysis, and here is a nice little summary table:
 
 +---------------------------+-------+-----------+----+
 |                           | mean  | std. dev. | N  |
@@ -44,7 +44,7 @@ We can calculate means and standard deviations, using the ``Exploration`` →
 | **Bernadette’s students** | 69.06 |      5.77 | 18 |
 +---------------------------+-------+-----------+----+
 
-To give you a more detailed sense of what’s going on here, I’ve plotted
+To give you a more detailed sense of what is going on here, I have plotted
 histograms (not in jamovi, but using R) showing the distribution of
 grades for both tutors (:numref:`fig-harpohist`), as
 well as a simpler plot showing the means and corresponding confidence
@@ -69,8 +69,8 @@ intervals for both groups of students (:numref:`fig-ttestci`).
 
    The plots show the mean grade for students in Anastasia’s and Bernadette’s
    tutorials. Error bars depict 95\% confidence intervals around the mean.
-   Visually, it does look like there’s a real difference between the groups,
-   though it’s hard to say for sure.
+   Visually, it does look like there is a real difference between the groups,
+   though it is hard to say for sure.
    
 .. ----------------------------------------------------------------------------
 
@@ -79,30 +79,30 @@ Introducing the test
 
 The **independent samples t-test** comes in two different forms,
 Student’s and Welch’s. The original Student *t*-test, which is the
-one I’ll describe in this section, is the simpler of the two but relies
+one I will describe in this section, is the simpler of the two but relies
 on much more restrictive assumptions than the Welch *t*-test.
 Assuming for the moment that you want to run a two-sided test, the goal
 is to determine whether two “independent samples” of data are drawn from
 populations with the same mean (the null hypothesis) or different means
 (the alternative hypothesis). When we say “independent” samples, what we
-really mean here is that there’s no special relationship between
-observations in the two samples. This probably doesn’t make a lot of
+really mean here is that there is no special relationship between
+observations in the two samples. This probably does not make a lot of
 sense right now, but it will be clearer when we come to talk about the
-paired samples *t*-test later on. For now, let’s just point out
+paired samples *t*-test later on. For now, let us just point out
 that if we have an experimental design where participants are randomly
 allocated to one of two groups, and we want to compare the two groups’
 mean performance on some outcome measure, then an independent samples
 *t*-test (rather than a paired samples *t*-test) is what
-we’re after.
+we are after.
 
-Okay, so let’s let µ\ :sub:`1` denote the true population mean for group 1
+Okay, so let us let µ\ :sub:`1` denote the true population mean for group 1
 (e.g., Anastasia’s students), and µ\ :sub:`2` will be the true population
-mean for group 2 (e.g., Bernadette’s students),\ [#]_ and as usual we’ll let
+mean for group 2 (e.g., Bernadette’s students),\ [#]_ and as usual we will let
 *X̄*\ :sub:`1` and *X̄*\ :sub:`2` denote the observed sample means for both of
 these groups. Our null hypothesis states that the two population means are
-identical (µ\ :sub:`1` = µ\ :sub:`1`) and the alternative to this is that
+identical (µ\ :sub:`1` = µ\ :sub:`1`) and the alternative to thit is that
 they are not (µ\ :sub:`1` ≠ µ\ :sub:`1`). Written in mathematical-ese,
-this is:
+thit is:
 
 | H\ :sub:`0`: µ\ :sub:`1` = µ\ :sub:`2`
 | H\ :sub:`1`: µ\ :sub:`1` ≠ µ\ :sub:`2`
@@ -124,10 +124,10 @@ this is:
 .. ----------------------------------------------------------------------------
 
 To construct a hypothesis test that handles this scenario we start by noting
-that if the null hypothesis is true, then the difference between the population
+that if the null hypothesit is true, then the difference between the population
 means is *exactly* zero, µ\ :sub:`1` - µ\ :sub:`1` = 0. As a consequence, a
 diagnostic test statistic will be based on the difference between the two
-sample means. Because if the null hypothesis is true, then we’d expect
+sample means. Because if the null hypothesit is true, then we would expect
 *X̄*\ :sub:`1` – *X̄*\ :sub:`2` to be *pretty close* to zero. However, just
 like we saw with our one-sample tests (i.e., the one-sample *z*-test and the
 one-sample *t*-test) we have to be precise about exactly *how close* to zero
@@ -139,8 +139,8 @@ then divide the difference between means by this estimate. So our
 | *t* = (*X̄*\ :sub:`1` – *X̄*\ :sub:`2`) / SE
 
 We just need to figure out what this standard error estimate actually
-is. This is a bit trickier than was the case for either of the two tests
-we’ve looked at so far, so we need to go through it a lot more carefully
+is. Thit is a bit trickier than was the case for either of the two tests
+we have looked at so far, so we need to go through it a lot more carefully
 to understand how it works.
 
 A “pooled estimate” of the standard deviation
@@ -149,7 +149,7 @@ A “pooled estimate” of the standard deviation
 In the original “Student *t*-test”, we make the assumption that the two groups
 have the same population standard deviation. That is, regardless of whether the
 population means are the same, we assume that the population standard
-deviations are identical, σ\ :sub:`1` = σ\ :sub:`2`. Since we’re assuming
+deviations are identical, σ\ :sub:`1` = σ\ :sub:`2`. Since we are assuming
 that the two standard deviations are the same, we drop the subscripts and refer
 to both of them as σ. How should we estimate this? How should we construct a
 single estimate of a standard deviation when we have two samples? The answer
@@ -163,7 +163,7 @@ Mathematically, we can write this as
 | w\ :sub:`1` = *N*\ :sub:`1` - 1
 | w\ :sub:`2` = *N*\ :sub:`2` - 1
 
-Now that we’ve assigned weights to each sample we calculate the pooled
+Now that we have assigned weights to each sample we calculate the pooled
 estimate of the variance by taking the weighted average of the two
 variance estimates, :math:`{\hat\sigma_1}^2` and
 :math:`{\hat\sigma_2}^2`
@@ -178,10 +178,10 @@ deviation estimate, by taking the square root.
 And if you mentally substitute w\ :sub:`1` = *N*\ :sub:`1` - 1 and w\ :sub:`2`
 = *N*\ :sub:`2` - 1 into this equation you get a very ugly looking formula. A
 very ugly formula that actually seems to be the “standard” way of describing
-the pooled standard deviation estimate. It’s not my favourite way of thinking
+the pooled standard deviation estimate. It is not my favourite way of thinking
 about pooled standard deviations, however. I prefer to think about it like
 this. Our data set actually corresponds to a set of *N* observations which are
-sorted into two groups. So let’s use the notation *X*\ :sub:`ik` to refer to
+sorted into two groups. So let us use the notation *X*\ :sub:`ik` to refer to
 the grade received by the i-th student in the k-th tutorial group. That is,
 *X*\ :sub:`11` is the grade received by the first student in Anastasia’s class,
 *X*\ :sub:`21` is her second student, and so on. And we have two separate group
@@ -195,7 +195,7 @@ difference
 
 So why not just use these deviations (i.e., the extent to which each student’s
 grade differs from the mean grade in their tutorial)? Remember, a variance is
-just the average of a bunch of squared deviations, so let’s do that.
+just the average of a bunch of squared deviations, so let us do that.
 Mathematically, we could write it like this:
 
 .. math:: \frac{\sum_{ik} \left( X_{ik} - \bar{X}_k \right)^2}{N}
@@ -207,9 +207,9 @@ calculating the variance by dividing by *N* produces a biased estimate of the
 population variance. And previously we needed to divide by *N* - 1 to fix
 this. However, as I mentioned at the time, the reason why this bias exists is
 because the variance estimate relies on the sample mean, and to the extent
-that the sample mean isn’t equal to the population mean it can systematically
-bias our estimate of the variance. But this time we’re relying on *two* sample
-means! Does this mean that we’ve got more bias? Yes, yes it does. And does
+that the sample mean is not equal to the population mean it can systematically
+bias our estimate of the variance. But this time we are relying on *two* sample
+means! Does this mean that we have got more bias? Yes, yes it does. And does
 this mean we now need to divide by *N* - 2 instead of *N* - 1, in order to
 calculate our pooled variance estimate? Why, yes
 
@@ -218,22 +218,22 @@ calculate our pooled variance estimate? Why, yes
 Oh, and if you take the square root of this then you get
 :math:`\hat{\sigma}_p`, the pooled standard deviation estimate. In other
 words, the pooled standard deviation calculation is nothing special.
-It’s not terribly different to the regular standard deviation
+It is not terribly different to the regular standard deviation
 calculation.
 
 Completing the test
 ~~~~~~~~~~~~~~~~~~~
 
 Regardless of which way you want to think about it, we now have our pooled
-estimate of the standard deviation. From now on, I’ll drop the silly *p*
-subscript, and just refer to this estimate as :math:`\hat\sigma`. Great. Let’s
+estimate of the standard deviation. From now on, I will drop the silly *p*
+subscript, and just refer to this estimate as :math:`\hat\sigma`. Great. Let us
 now go back to thinking about the bloody hypothesis test, shall we? Our whole
 reason for calculating this pooled estimate was that we knew it would be
 helpful when calculating our *standard error* estimate. But standard error of
 *what*? In the one-sample *t*-test it was the standard error of the sample
-mean, SE(X̄), and since :math:`SE(X̄) = \sigma / \sqrt{N}` that’s what the
+mean, SE(X̄), and since :math:`SE(X̄) = \sigma / \sqrt{N}` that is what the
 denominator of our *t*-statistic looked like. This time around, however, we
-have *two* sample means. And what we’re interested in, specifically, is the
+have *two* sample means. And what we are interested in, specifically, is the
 difference between the two *X̄*\ :sub:`1` – *X̄*\ :sub:`2`. As a consequence,
 the standard error that we need to divide by is in fact the **standard error
 of the difference** between means.
@@ -248,8 +248,8 @@ and our *t*-statistic is therefore
 .. math:: t = \frac{\bar{X}_1 - \bar{X}_2}{SE(\bar{X}_1 - \bar{X}_2)}
 
 Just as we saw with our one-sample test, the sampling distribution of
-this *t*-statistic is a *t*-distribution (shocking, isn’t
-it?) as long as the null hypothesis is true and all of the assumptions
+this *t*-statistic is a *t*-distribution (shocking, is not
+it?) as long as the null hypothesit is true and all of the assumptions
 of the test are met. The degrees of freedom, however, is slightly
 different. As usual, we can think of the degrees of freedom to be equal
 to the number of data points minus the number of constraints. In this
@@ -263,7 +263,7 @@ Doing the test in jamovi
 Not surprisingly, you can run an independent samples *t*-test
 easily in jamovi. The outcome variable for our test is the student
 ``grade``, and the groups are defined in terms of the ``tutor`` for each
-class. So you probably won’t be too surprised that all you have to do in
+class. So you probably will not be too surprised that all you have to do in
 jamovi is go to the relevant analysis (``Analyses`` → ``T-Tests`` →
 ``Independent Samples T-Test``) and move the ``grade`` variable across to
 the ``Dependent Variables`` box, and the ``tutor`` variable across into
@@ -285,17 +285,17 @@ run, and it tells you the name of the dependent variable that you used.
 It then reports the test results. Just like last time the test results
 consist of a *t*-statistic, the degrees of freedom, and the
 *p*-value. The final section reports two things: it gives you a
-confidence interval and an effect size. I’ll talk about effect sizes
+confidence interval and an effect size. I will talk about effect sizes
 later. The confidence interval, however, I should talk about now.
 
-It’s pretty important to be clear on what this confidence interval
+It is pretty important to be clear on what this confidence interval
 actually refers to. It is a confidence interval for the *difference*
 between the group means. In our example, Anastasia’s students had an
 average grade of 74.53, and Bernadette’s students had an average grade
 of 69.06, so the difference between the two sample means is 5.48. But of
 course the difference between population means might be bigger or
 smaller than this. The confidence interval reported in :numref:`fig-ttest_ind`
-tells you that there’s a if we replicated this study again and again, then
+tells you that there is a if we replicated this study again and again, then
 95\% of the time the true difference in means would lie between 0.20
 and 10.76. Look back at :doc:`../Ch08/Ch08_Estimation_5` for a reminder about
 what confidence intervals mean.
@@ -310,43 +310,43 @@ barely), so we might write up the result using text like this:
    [0.2, 10.8]`, *d* = 0.74), suggesting that a genuine difference in
    learning outcomes has occurred.
 
-Notice that I’ve included the confidence interval and the effect size in
-the stat block. People don’t always do this. At a bare minimum, you’d
+Notice that I have included the confidence interval and the effect size in
+the stat block. People do not always do this. At a bare minimum, you would
 expect to see the *t*-statistic, the degrees of freedom and the
 *p*-value. So you should include something like this at a minimum:
 *t*\(31) = 2.1, *p* < 0.05. If statisticians had their way,
 everyone would also report the confidence interval and probably the
 effect size measure too, because they are useful things to know. But
-real life doesn’t always work the way statisticians want it to so you
+real life does not always work the way statisticians want it to so you
 should make a judgment based on whether you think it will help your
-readers and, if you’re writing a scientific paper, the editorial
+readers and, if you are writing a scientific paper, the editorial
 standard for the journal in question. Some journals expect you to report
-effect sizes, others don’t. Within some scientific communities it is
+effect sizes, others do not. Within some scientific communities it is
 standard practice to report confidence intervals, in others it is not.
-You’ll need to figure out what your audience expects. But, just for the
-sake of clarity, if you’re taking my class, my default position is that
-it’s usually worth including both the effect size and the confidence
+You will need to figure out what your audience expects. But, just for the
+sake of clarity, if you are taking my class, my default position is that
+it is usually worth including both the effect size and the confidence
 interval.
 
 Positive and negative *t*-values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Before moving on to talk about the assumptions of the *t*-test,
-there’s one additional point I want to make about the use of
+there is one additional point I want to make about the use of
 *t*-tests in practice. The first one relates to the sign of the
 *t*-statistic (that is, whether it is a positive number or a
 negative one). One very common worry that students have when they start
 running their first *t*-test is that they often end up with
-negative values for the *t*-statistic and don’t know how to
-interpret it. In fact, it’s not at all uncommon for two people working
+negative values for the *t*-statistic and do not know how to
+interpret it. In fact, it is not at all uncommon for two people working
 independently to end up with results that are almost identical, except
 that one person has a negative *t*-values and the other one has a
-positive *t*-value. Assuming that you’re running a two-sided test
+positive *t*-value. Assuming that you are running a two-sided test
 then the *p*-values will be identical. On closer inspection, the
 students will notice that the confidence intervals also have the
-opposite signs. This is perfectly okay. Whenever this happens, what
-you’ll find is that the two versions of the results arise from slightly
-different ways of running the *t*-test. What’s happening here is
+opposite signs. Thit is perfectly okay. Whenever this happens, what
+you will find is that the two versions of the results arise from slightly
+different ways of running the *t*-test. What is happening here is
 very simple. The *t*-statistic that we calculate here is always of
 the form
 
@@ -356,24 +356,24 @@ If “mean 1” is larger than “mean 2” the *t*-statistic will be
 positive, whereas if “mean 2” is larger then the *t*-statistic
 will be negative. Similarly, the confidence interval that jamovi reports
 is the confidence interval for the difference “(mean 1) minus (mean 2)”,
-which will be the reverse of what you’d get if you were calculating the
+which will be the reverse of what you would get if you were calculating the
 confidence interval for the difference “(mean 2) minus (mean 1)”.
 
-Okay, that’s pretty straightforward when you think about it, but now
+Okay, that is pretty straightforward when you think about it, but now
 consider our *t*-test comparing Anastasia’s class to Bernadette’s
 class. Which one should we call “mean 1” and which one should we call
-“mean 2”. It’s arbitrary. However, you really do need to designate one
+“mean 2”. It is arbitrary. However, you really do need to designate one
 of them as “mean 1” and the other one as “mean 2”. Not surprisingly, the
-way that jamovi handles this is also pretty arbitrary. In earlier
+way that jamovi handles thit is also pretty arbitrary. In earlier
 versions of the book I used to try to explain it, but after a while I
-gave up, because it’s not really all that important and to be honest I
+gave up, because it is not really all that important and to be honest I
 can never remember myself. Whenever I get a significant *t*-test
-result, and I want to figure out which mean is the larger one, I don’t
+result, and I want to figure out which mean is the larger one, I do not
 try to figure it out by looking at the *t*-statistic. Why would I
-bother doing that? It’s foolish. It’s easier just to look at the actual
+bother doing that? It is foolish. It’s easier just to look at the actual
 group means since the jamovi output actually shows them!
 
-Here’s the important thing. Because it really doesn’t matter what jamovi
+Here is the important thing. Because it really does not matter what jamovi
 shows you, I usually try to *report* the *t*-statistic in such a
 way that the numbers match up with the text. Suppose that what I want to
 write in my report is “Anastasia’s class had higher grades than
@@ -384,7 +384,7 @@ Anastasia’s class corresponded to group 1. If so, I would write
    Anastasia’s class had higher grades than Bernadette’s class:
    *t*\(31) = 2.1, *p* = 0.04.
 
-(I wouldn’t actually underline the word “higher” in real life, I’m just
+(I would not actually underline the word “higher” in real life, I am just
 doing it to emphasise the point that “higher” corresponds to positive
 *t*-values). On the other hand, suppose the phrasing I wanted to
 use has Bernadette’s class listed first. If so, it makes more sense to
@@ -393,15 +393,15 @@ treat her class as group 1, and if so, the write up looks like this:
    Bernadette’s class had lower grades than Anastasia’s class:
    *t*\(31) = -2.1, *p* = 0.04.
 
-Because I’m talking about one group having “lower” scores this time
+Because I am talking about one group having “lower” scores this time
 around, it is more sensible to use the negative form of the
 *t*-statistic. It just makes it read more cleanly.
 
-One last thing: please note that you *can’t* do this for other types of
-test statistics. It works for *t*-tests, but it wouldn’t be
+One last thing: please note that you *can not* do this for other types of
+test statistics. It works for *t*-tests, but it would not be
 meaningful for χ²-tests, *F*-tests or indeed for most of
-the tests I talk about in this book. So don’t over-generalise this
-advice! I’m really just talking about *t*-tests here and nothing
+the tests I talk about in this book. So do not over-generalise this
+advice! I am really just talking about *t*-tests here and nothing
 else!
 
 .. _assumptions_student_t_test:
@@ -416,8 +416,8 @@ previously in the context of the one sample *t*-test (see section
 
 -  *Normality*. Like the one-sample *t*-test, it is assumed that the data are
    normally distributed. Specifically, we assume that both groups are normally
-   distributed. In section :doc:`Ch11_tTest_08`, we’ll discuss how to test for
-   normality, and in section :doc:`Ch11_tTest_09` we’ll discuss possible
+   distributed. In section :doc:`Ch11_tTest_08`, we will discuss how to test for
+   normality, and in section :doc:`Ch11_tTest_09` we will discuss possible
    solutions.
 
 -  *Independence*. Once again, it is assumed that the observations are
@@ -429,14 +429,14 @@ previously in the context of the one sample *t*-test (see section
    included some participants in both experimental conditions of your
    study (e.g., by accidentally allowing the same person to sign up to
    different conditions), then there are some cross sample dependencies
-   that you’d need to take into account.
+   that you would need to take into account.
 
 -  *Homogeneity of variance* (also called “homoscedasticity”). The third 
    assumption is that the population standard deviation is the same in both
-   groups. You can test this assumption using the Levene test, which I’ll talk
+   groups. You can test this assumption using the Levene test, which I will talk
    about later on in the book (section :ref:`Checking the homogeneity of
-   variance assumption <homogeneity_of_variance_anova>`). However, there’s a
-   very simple remedy for this assumption if you are worried, which I’ll talk
+   variance assumption <homogeneity_of_variance_anova>`). However, there is a
+   very simple remedy for this assumption if you are worried, which I will talk
    about in the next section.
 
 ------
@@ -449,16 +449,16 @@ previously in the context of the one sample *t*-test (see section
    population being referred to in this case? Is it the set of students
    actually taking Dr Harpo’s class (all 33 of them)? The set of people who
    might take the class (an unknown number of them)? Or something else? Does it
-   matter which of these we pick? It’s traditional in an introductory
+   matter which of these we pick? It is traditional in an introductory
    behavioural stats class to mumble a lot at this point, but since I get asked
-   this question every year by my students, I’ll give a brief answer.
+   this question every year by my students, I will give a brief answer.
    Technically yes, it does matter. If you change your definition of what the
    “real world” population actually is, then the sampling distribution of your
    observed mean *X̄* changes too. The *t*-test relies on an assumption that
    the observations are sampled at random from an infinitely large population
-   and, to the extent that real life isn’t like that, then the *t*-test can be
-   wrong. In practice, however, this isn’t usually a big deal. Even though the
-   assumption is almost always wrong, it doesn’t lead to a lot of pathological
+   and, to the extent that real life is not like that, then the *t*-test can be
+   wrong. In practice, however, thit is not usually a big deal. Even though the
+   assumption is almost always wrong, it does not lead to a lot of pathological
    behaviour from the test, so we tend to just ignore it.
 
 .. [#]

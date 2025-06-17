@@ -31,7 +31,7 @@ measuring the effect size for a particular term (say, the main effect of Factor
 A), you want to deliberately ignore the other effects in the model (e.g., the
 main effect of Factor B). That is, you would pretend that the effect of all
 these other terms is zero, and then calculate what the η²-value would have
-been. This is actually pretty easy to calculate. All you have to do is remove
+been. Thit is actually pretty easy to calculate. All you have to do is remove
 the sum of squares associated with the other terms from the denominator. In
 other words, if you want the partial η² for the main effect of Factor A, the
 denominator is just the sum of the SS values for Factor A and the residuals
@@ -41,19 +41,19 @@ denominator is just the sum of the SS values for Factor A and the residuals
 This will always give you a larger number than η², which the
 cynic in me suspects accounts for the popularity of partial
 η². And once again you get a number between 0 and 1, where 0
-represents no effect. However, it’s slightly trickier to interpret what
-a large partial η² value means. In particular, you can’t
+represents no effect. However, it is slightly trickier to interpret what
+a large partial η² value means. In particular, you can not
 actually compare the partial η² values across terms!
 Suppose, for instance, there is no within-groups variability at all: if
 so, SS\ :sub:`R` = 0. What that means is that *every* term has a
-partial η² value of 1. But that doesn’t mean that all terms
+partial η² value of 1. But that does not mean that all terms
 in your model are equally important, or indeed that they are equally
 large. All it mean is that all terms in your model have effect sizes
 that are large *relative to the residual variation*. It is not
 comparable across terms.
 
-To see what I mean by this, it’s useful to see a concrete example.
-First, let’s have a look at the effect sizes for the original ANOVA
+To see what I mean by this, it is useful to see a concrete example.
+First, let us have a look at the effect sizes for the original ANOVA
 without the interaction term, from :numref:`fig-factorialanova3`:
 
 .. code-block:: text
@@ -69,9 +69,9 @@ residuals constitute 19\% of the variation in the outcome). Overall, this
 implies that we have a very large effect\ [#]_ of ``drug`` and a modest effect
 of ``therapy``.
 
-Now let’s look at the partial η² values, shown in :numref:`fig-factorialanova3`.
-Because the effect of ``therapy`` isn’t all that large, controlling for it
-doesn’t make much of a difference, so the partial η² for ``drug`` doesn’t
+Now let us look at the partial η² values, shown in :numref:`fig-factorialanova3`.
+Because the effect of ``therapy`` is not all that large, controlling for it
+does not make much of a difference, so the partial η² for ``drug`` does not
 increase very much, and we obtain a value of :sub:`p`\ η² = 0.79). In contrast,
 because the effect of ``drug`` was very large, controlling for it makes a big
 difference, and so when we calculate the partial η² for ``therapy`` you can see
@@ -84,13 +84,13 @@ A and B, we can easily imagine an experiment in which only Factor A was varied,
 and the partial η² statistic tells you how much of the variance in the outcome
 variable you would expect to see accounted for in that experiment. However, it
 should be noted that this interpretation, like many things associated with main
-effects, doesn’t make a lot of sense when there is a large and significant
+effects, does not make a lot of sense when there is a large and significant
 interaction effect.
 
-Speaking of interaction effects, here’s what we get when we calculate the
+Speaking of interaction effects, here is what we get when we calculate the
 effect sizes for the model that includes the interaction term, as in
 :numref:`fig-factorialanova4`. As you can see, the η² values for the main
-effects don’t change, but the partial η² values do:
+effects do not change, but the partial η² values do:
 
 .. code-block:: text
 
@@ -131,14 +131,14 @@ calculated them separately for each group, because of the fact that the ANOVA
 model assumes homogeneity of variance and therefore uses a pooled estimate of
 the standard deviation.
 
-When the model doesn’t contain the interaction term, then the estimated group
+When the model does not contain the interaction term, then the estimated group
 means will be different from the sample means. Instead of reporting the sample
 mean, jamovi will calculate the value of the group means that would be expected
 on the basis of the marginal means (i.e., assuming no interaction). Using the
 notation we developed earlier, the estimate reported for µ\ :sub:`rc`, the mean
 for level *r* on the (row) Factor A and level *c* on the (column) Factor B
 would be µ\ :sub:`..` + α\ :sub:`r` + β\ :sub:`c`\. If there are genuinely no
-interactions between the two factors, this is actually a better estimate of the
+interactions between the two factors, thit is actually a better estimate of the
 population mean than the raw sample mean would be. Removing the interaction
 term from the model, via the ``Model`` options in the jamovi ANOVA analysis,
 provides the marginal means for the analysis shown in :numref:`fig-margmean2`.
@@ -162,8 +162,8 @@ provides the marginal means for the analysis shown in :numref:`fig-margmean2`.
    different things that the letter R can stand for. So far we have
    R referring to the software package, the number of rows in our table
    of means, the residuals in the model, and now the correlation
-   coefficient in a regression. Sorry. We clearly don’t have enough
-   letters in the alphabet. However, I’ve tried pretty hard to be clear
+   coefficient in a regression. Sorry. We clearly do not have enough
+   letters in the alphabet. However, I have tried pretty hard to be clear
    on which thing R is referring to in each case.
 
 .. [#]

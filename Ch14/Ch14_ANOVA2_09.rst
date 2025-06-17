@@ -4,31 +4,31 @@ Post-hoc tests
 --------------
  
 Time to switch to a different topic. Rather than pre-planned comparisons that
-you have tested using contrasts, let’s suppose you’ve done your ANOVA and it
+you have tested using contrasts, let us suppose you have done your ANOVA and it
 turns out that you obtained some significant effects. Because of the fact that
 the *F*-tests are “omnibus” tests that only really test the null hypothesis
 that there are no differences among groups, obtaining a significant effect
-doesn’t tell you which groups are different to which other ones. We discussed
-this issue back in chapter :doc:`../Ch13/Ch13_ANOVA`, and in that chapter our
+does not tell you which groups are different to which other ones. We discussed
+thit issue back in chapter :doc:`../Ch13/Ch13_ANOVA`, and in that chapter our
 solution was to run *t*-tests for all possible pairs of groups, making
 corrections for multiple comparisons (e.g., Bonferroni, Holm) to control the
 Type I error rate across all comparisons. The methods that we used back there
 have the advantage of being relatively simple and being the kind of tools that
-you can use in a lot of different situations where you’re testing multiple
-hypotheses, but they’re not necessarily the best choices if you’re interested
+you can use in a lot of different situations where you are testing multiple
+hypotheses, but they are not necessarily the best choices if you are interested
 in doing efficient post-hoc testing in an ANOVA context. There are actually
 quite a lot of different methods for performing multiple comparisons in the
 statistics literature (:ref:`Hsu, 1996 <Hsu_1996>`), and it would be beyond
 the scope of an introductory text like this one to discuss all of them in any
 detail.
 
-That being said, there’s one tool that I do want to draw your attention
+That being said, there is one tool that I do want to draw your attention
 to, namely Tukey’s “Honestly Significant Difference”, or **Tukey’s HSD**
-for short. For once, I’ll spare you the formulas and just stick to the
+for short. For once, I will spare you the formulas and just stick to the
 qualitative ideas. The basic idea in Tukey’s HSD is to examine all
-relevant pairwise comparisons between groups, and it’s only really
+relevant pairwise comparisons between groups, and it is only really
 appropriate to use Tukey’s HSD if it is *pairwise* differences that
-you’re interested in.\ [#]_ For instance, earlier we conducted a
+you are interested in.\ [#]_ For instance, earlier we conducted a
 factorial ANOVA using the |clinicaltrial|_ data set, and where we
 specified a main effect for ``drug`` and a main effect of ``therapy`` we
 would be interested in the following four comparisons:
@@ -45,7 +45,7 @@ would be interested in the following four comparisons:
 -  The difference in ``mood.gain`` for people treated with ``CBT`` and people
    given ``no.therapy``.
 
-For any one of these comparisons, we’re interested in the true
+For any one of these comparisons, we are interested in the true
 difference between (population) group means. Tukey’s HSD constructs
 **simultaneous confidence intervals** for all four of these comparisons.
 What we mean by 95\% “simultaneous” confidence interval is that, if we
@@ -90,7 +90,7 @@ placebo is 1.03, and this result is significant (*p* < 0.001).
 So far, so good. What about the situation where your model includes
 interaction terms? For instance, the default option in jamovi is to
 allow for the possibility that there is an interaction between ``drug`` and
-``therapy``. If that’s the case, the number of pairwise comparisons that we
+``therapy``. If that is the case, the number of pairwise comparisons that we
 need to consider starts to increase. As before, we need to consider the
 three comparisons that are relevant to the main effect of ``drug`` and
 the one comparison that is relevant to the main effect of ``therapy``.

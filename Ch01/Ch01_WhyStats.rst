@@ -21,11 +21,11 @@ Why do we learn statistics?
    | *Take any test. Thou shalt not sit*
    | *With statisticians nor commit*
    | *A social science”*
-   
+
    -- W.H. Auden\ [#]_
 
 -----
-   
+
 .. [#]
    The quote comes from Auden’s 1946 poem *Under Which Lyre: A Reactionary
    Tract for the Times*, delivered as part of a commencement address at Harvard

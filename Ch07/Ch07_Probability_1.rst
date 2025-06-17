@@ -3,10 +3,10 @@
 How are probability and statistics different?
 ---------------------------------------------
 
-Before we start talking about probability theory, it’s helpful to spend
+Before we start talking about probability theory, it is helpful to spend
 a moment thinking about the relationship between probability and
-statistics. The two disciplines are closely related but they’re not
-identical. Probability theory is “the doctrine of chances”. It’s a
+statistics. The two disciplines are closely related but they are not
+identical. Probability theory is “the doctrine of chances”. It is a
 branch of mathematics that tells you how often different kinds of events
 will happen. For example, all of these questions are things you can
 answer using probability theory:
@@ -14,18 +14,18 @@ answer using probability theory:
 -  What are the chances of a fair coin coming up heads 10 times in a
    row?
 
--  If I roll a six sided dice twice, how likely is it that I’ll roll two
+-  If I roll a six sided dice twice, how likely is it that I will roll two
    sixes?
 
 -  How likely is it that five cards drawn from a perfectly shuffled deck
    will all be hearts?
 
--  What are the chances that I’ll win the lottery?
+-  What are the chances that I will win the lottery?
 
 Notice that all of these questions have something in common. In each
 case the “truth of the world” is known and my question relates to the
 “what kind of events” will happen. In the first question I *know* that
-the coin is fair so there’s a 50\% chance that any individual coin flip
+the coin is fair so there is a 50\% chance that any individual coin flip
 will come up heads. In the second question I *know* that the chance of
 rolling a 6 on a single die is 1 in 6. In the third question I *know*
 that the deck is shuffled properly. And in the fourth question I *know*
@@ -37,16 +37,16 @@ can write down the model like this:
 
 *P*\ (heads) = *0.5*
 
-which you can read as “the probability of heads is 0.5”. As we’ll see
+which you can read as “the probability of heads is 0.5”. As we will see
 later, in the same way that percentages are numbers that range from 0\%
 to 100\%, probabilities are just numbers that range from 0 to 1. When
-using this probability model to answer the first question I don’t
-actually know exactly what’s going to happen. Maybe I’ll get 10 heads,
-like the question says. But maybe I’ll get three heads. That’s the key
+using this probability model to answer the first question I do not
+actually know exactly what is going to happen. Maybe I will get 10 heads,
+like the question says. But maybe I will get three heads. That is the key
 thing. In probability theory the *model* is known but the *data* are
 not.
 
-So that’s probability. What about statistics? Statistical questions work
+So that is probability. What about statistics? Statistical questions work
 the other way around. In statistics we do not know the truth about the
 world. All we have is the data and it is from the data that we want to
 *learn* the truth about the world. Statistical questions tend to look
@@ -72,14 +72,14 @@ me. The data I have look like this:
 
    H H H H H H H H H H H
 
-and what I’m trying to do is work out which “model of the world” I
+and what I am trying to do is work out which “model of the world” I
 should put my trust in. If the coin is fair then the model I should
 adopt is one that says that the probability of heads is 0.5, that is
 *P*\ (heads) = *0.5*. If the coin is not fair then I should
 conclude that the probability of heads is *not* 0.5, which we would
 write as *P*\ (heads) ≠ *0.5*. In other words, the statistical inference problem
 is to figure out which of these
-probability models is right. Clearly, the statistical question isn’t the
-same as the probability question, but they’re deeply connected to one
+probability models is right. Clearly, the statistical question is not the
+same as the probability question, but they are deeply connected to one
 another. Because of this, a good introduction to statistical theory will
 start with a discussion of what probability is and how it works.

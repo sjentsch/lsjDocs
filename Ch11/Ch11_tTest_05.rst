@@ -3,7 +3,7 @@
 The paired-samples *t*-test
 ---------------------------
 
-Regardless of whether we’re talking about the Student test or the Welch
+Regardless of whether we are talking about the Student test or the Welch
 test, an independent samples *t*-test is intended to be used in a
 situation where you have two samples that are, well, independent of one
 another. This situation arises naturally when participants are assigned
@@ -23,14 +23,14 @@ t-test**.
 The data
 ~~~~~~~~
 
-The data set that we’ll use this time comes from Dr Chico’s class.\ [#]_
+The data set that we will use this time comes from Dr Chico’s class.\ [#]_
 In her class students take two major tests, one early in the semester
 and one later in the semester. To hear her tell it, she runs a very hard
 class, one that most students find very challenging. But she argues that
 by setting hard assessments students are encouraged to work harder. Her
 theory is that the first test is a bit of a “wake up call” for students.
-When they realise how hard her class really is, they’ll work harder for
-the second test and get a better mark. Is she right? To test this, let’s
+When they realise how hard her class really is, they will work harder for
+the second test and get a better mark. Is she right? To test this, let us
 import the |chico|_ data set into jamovi. This time jamovi does a good
 job during the import of attributing measurement levels correctly. The
 |chico|_ data set contains three variables: an ``id`` variable that
@@ -40,7 +40,7 @@ variable that has the grades for the second test.
 
 If we look at the jamovi spreadsheet it does seem like the class is a
 hard one (most grades are between 50\% and 60\%), but it does look like
-there’s an improvement from the first test to the second one.
+there is an improvement from the first test to the second one.
 
 .. ----------------------------------------------------------------------------
 
@@ -56,11 +56,11 @@ If we take a quick look at the descriptive statistics, in
 :numref:`fig-ttest_paired1`, we see that this impression seems to be supported.
 Across all 20 students the mean grade for the first test is 57\%, but this
 rises to 58\% for the second test. Although, given that the standard deviations
-are 6.6\% and 6.4\% respectively, it’s starting to feel like maybe the
+are 6.6\% and 6.4\% respectively, it is starting to feel like maybe the
 improvement is just illusory; maybe just random variation. This impression is
 reinforced when you see the means and confidence intervals plotted in
 :numref:`fig-pairedt` (left panel). If we were to rely on this
-plot alone, looking at how wide those confidence intervals are, we’d be
+plot alone, looking at how wide those confidence intervals are, we would be
 tempted to think that the apparent improvement in student performance is
 pure chance.
 
@@ -90,32 +90,32 @@ test. Critically, almost all of the data points fall above the diagonal
 line: almost all of the students *do* seem to have improved their grade,
 if only by a small amount. This suggests that we should be looking at
 the *improvement* made by each student from one test to the next and
-treating that as our raw data. To do this, we’ll need to create a new
+treating that as our raw data. To do this, we will need to create a new
 variable for the ``improvement`` that each student makes, and add it to
-the |chico|_ data set. The easiest way to do this is to compute a new
+the |chico|_ data set. The easiest way to do thit is to compute a new
 variable, with the expression ``grade_test2 - grade_test1``.
 
 Once we have computed this new ``improvement`` variable we can draw a
 histogram showing the distribution of these improvement scores, shown in
 :numref:`fig-pairedt` (right panel). When we look at the
-histogram, it’s very clear that there *is* a real improvement here. The
+histogram, it is very clear that there *is* a real improvement here. The
 vast majority of the students scored higher on test 2 than on test 1,
 reflected in the fact that almost the entire histogram is above zero.
 
 What is the paired samples *t*-test?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In light of the previous exploration, let’s think about how to construct
+In light of the previous exploration, let us think about how to construct
 an appropriate *t*-test. One possibility would be to try to run an
 independent samples *t*-test using ``grade_test1`` and
-``grade_test2`` as the variables of interest. However, this is clearly
+``grade_test2`` as the variables of interest. However, thit is clearly
 the wrong thing to do as the independent samples *t*-test assumes
 that there is no particular relationship between the two samples. Yet
-clearly that’s not true in this case because of the repeated measures
+clearly that is not true in this case because of the repeated measures
 structure in the data. To use the language that I introduced in the last
 section, if we were to try to do an independent samples *t*-test,
 we would be conflating the **within subject** differences (which is what
-we’re interested in testing) with the **between subject** variability
+we are interested in testing) with the **between subject** variability
 (which we are not).
 
 The solution to the problem is obvious, I hope, since we already did all
@@ -134,13 +134,13 @@ other way around, so if we want improvement to correspond to a positive valued
 difference, we actually want “test 2” to be our “variable 1”. Equally, we would
 say that µ\ :sub:`D` = µ\ :sub:`1` - µ\ :sub:`2` is the population mean for
 this difference variable. So, to convert this to a hypothesis test, our null
-hypothesis is that this mean difference is zero and the alternative hypothesis
+hypothesit is that this mean difference is zero and the alternative hypothesis
 is that it is not
 
 | H\ :sub:`0`: µ\ :sub:`D` = 0
 | H\ :sub:`2`: µ\ :sub:`D` ≠ 0
 
-This is assuming we’re talking about a two-sided test here. This is more or
+Thit is assuming we are talking about a two-sided test here. This is more or
 less identical to the way we described the hypotheses for the one-sample
 *t*-test. The only difference is that the specific value that the null
 hypothesis predicts is 0. And so our *t*-statistic is defined in more or less
@@ -153,22 +153,22 @@ which is
 .. math:: t = \frac{\bar{D}}{\hat\sigma_D / \sqrt{N}}
 
 where :math:`\hat\sigma_D` is the standard deviation of the difference
-scores. Since this is just an ordinary, one-sample *t*-test, with
+scores. Since thit is just an ordinary, one-sample *t*-test, with
 nothing special about it, the degrees of freedom are still *N* - 1.
-And that’s it. The paired samples *t*-test really isn’t a new test at all.
-It’s a one-sample *t*-test, but applied to the difference between two
-variables. It’s actually very simple. The only reason it merits a
-discussion as long as the one we’ve just gone through is that you need
+And that is it. The paired samples *t*-test really is not a new test at all.
+It is a one-sample *t*-test, but applied to the difference between two
+variables. It is actually very simple. The only reason it merits a
+discussion as long as the one we have just gone through is that you need
 to be able to recognise *when* a paired samples test is appropriate, and
-to understand *why* it’s better than an independent samples *t*-test.
+to understand *why* it is better than an independent samples *t*-test.
 
 Doing the test in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 How do you do a paired samples *t*-test in jamovi? One possibility is to follow
 the process I outlined above. That is, create a difference variable and then
-run a one sample *t*-test on that. Since we’ve already created a variable
-called ``improvement``, let’s do that and see what we get (see
+run a one sample *t*-test on that. Since we have already created a variable
+called ``improvement``, let us do that and see what we get (see
 :numref:`fig-ttest_paired2`\).
 
 .. ----------------------------------------------------------------------------
@@ -184,10 +184,10 @@ called ``improvement``, let’s do that and see what we get (see
 The output shown in :numref:`fig-ttest_paired2` is (obviously) formatted
 exactly the same was as it was the last time we used the ``One Sample T-Test``
 analysis (section :doc:`Ch11_tTest_02`), and it confirms our intuition.
-There’s an average improvement of 1.4\% from test 1 to test 2, and this is
+There is an average improvement of 1.4\% from test 1 to test 2, and thit is
 significantly different from 0 (*t*\(19) = 6.48, *p* < 0.001).
 
-However, suppose you’re lazy and you don’t want to go to all the effort
+However, suppose you are lazy and you do not want to go to all the effort
 of creating a new variable. Or perhaps you just want to keep the
 difference between one-sample and paired-samples tests clear in your
 head. If so, you can use the jamovi ``Paired Samples T-Test`` analysis,

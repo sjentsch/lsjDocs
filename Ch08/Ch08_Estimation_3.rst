@@ -3,7 +3,7 @@
 Sampling distributions and the central limit theorem
 ----------------------------------------------------
 
-The law of large numbers is a very powerful tool but it’s not going to
+The law of large numbers is a very powerful tool but it is not going to
 be good enough to answer all our questions. Among other things, all it
 gives us is a “long run guarantee”. In the long run, if we were somehow
 able to collect an infinite amount of data, then the law of large
@@ -30,9 +30,9 @@ it is calculated from a more modest data set!
 Sampling distribution of the mean
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-With this in mind, let’s abandon the idea that our studies will have
+With this in mind, let us abandon the idea that our studies will have
 sample sizes of 10,000 and consider instead a very modest experiment
-indeed. This time around we’ll sample *N* = 5 people and measure
+indeed. This time around we will sample *N* = 5 people and measure
 their IQ scores. As before, I can simulate this experiment in jamovi
 ``= NORM(100,15)`` function, but I only need 5 participant IDs this
 time, not 10,000. These are the five numbers that jamovi generated:
@@ -42,7 +42,7 @@ time, not 10,000. These are the five numbers that jamovi generated:
    90 82 94 99 110
 
 The mean IQ in this sample turns out to be exactly 95. Not surprisingly,
-this is much less accurate than the previous experiment. Now imagine
+thit is much less accurate than the previous experiment. Now imagine
 that I decided to **replicate** the experiment. That is, I repeat the
 procedure as closely as possible and I randomly sample 5 new people and
 measure their IQ. Again, jamovi allows me to simulate the results of
@@ -85,8 +85,8 @@ and as you can see the sample mean varies from one replication to the next.
 
 Now suppose that I decided to keep going in this fashion, replicating
 this “five IQ scores” experiment over and over again. Every time I
-replicate the experiment I write down the sample mean. Over time, I’d be
-amassing a new data set, in which every experiment generates a single
+replicate the experiment I write down the sample mean. Over time, I would
+be amassing a new data set, in which every experiment generates a single
 data point. The first 10 observations from my data set are the sample
 means listed in :numref:`tab-replications`, so my data set starts
 out like this:
@@ -96,12 +96,12 @@ out like this:
    95.0 101.0 101.6 103.8 104.4 …
 
 What if I continued like this for 10,000 replications, and then drew a
-histogram. Well that’s exactly what I did, and you can see the results
+histogram. Well that is exactly what I did, and you can see the results
 in :numref:`fig-samplingDist4`. As this picture illustrates, the average
 of 5 IQ scores is usually between 90 and 110. But more importantly, what
 it highlights is that if we replicate an experiment over and over again,
 what we end up with is a *distribution* of sample means! This distribution
-has a special name in statistics, it’s called the **sampling distribution
+has a special name in statistics, it is called the **sampling distribution
 of the mean**.
 
 .. ----------------------------------------------------------------------------
@@ -111,7 +111,7 @@ of the mean**.
    :name: fig-samplingDist4
 
    The sampling distribution of the mean for the “five IQ scores experiment”:
-   If you sample 5 people at random and calculate their average IQ you’ll
+   If you sample 5 people at random and calculate their average IQ you will
    almost certainly get a number between 80 and 120, even though there are
    quite a lot of individuals who have IQs above 120 or below 80. For
    comparison, the black line plots the population distribution of IQ scores.
@@ -119,7 +119,7 @@ of the mean**.
 .. ----------------------------------------------------------------------------
 
 Sampling distributions are another important theoretical idea in statistics,
-and they’re crucial for understanding the behaviour of small samples. For
+and they are crucial for understanding the behaviour of small samples. For
 instance, when I ran the very first “five IQ scores” experiment, the sample
 mean turned out to be 95. What the sampling distribution in 
 :numref:`fig-samplingDist4` tells us, though, is that the “five IQ scores”
@@ -144,8 +144,8 @@ Doing this over and over again would give me a very different sampling
 distribution, namely the *sampling distribution of the maximum*. The sampling
 distribution of the maximum of 5 IQ scores is shown in
 :numref:`fig-samplingDistMax`. Not surprisingly, if you pick 5 people at random
-and then find the person with the highest IQ score, they’re going to have an
-above average IQ. Most of the time you’ll end up with someone whose IQ is
+and then find the person with the highest IQ score, they are going to have an
+above average IQ. Most of the time you will end up with someone whose IQ is
 measured in the 100 to 140 range.
 
 .. ----------------------------------------------------------------------------
@@ -156,7 +156,7 @@ measured in the 100 to 140 range.
 
    The sampling distribution of the maximum for the “five IQ scores
    experiment”: If you sample 5 people at random and select the one with the
-   highest IQ score you’ll probably see someone with an IQ between 100 and 140.
+   highest IQ score you will probably see someone with an IQ between 100 and 140.
    
 .. ----------------------------------------------------------------------------
 
@@ -171,16 +171,16 @@ the mean is. In this section I want to talk about how the sampling
 distribution of the mean changes as a function of sample size.
 Intuitively, you already know part of the answer. If you only have a few
 observations, the sample mean is likely to be quite inaccurate. If you
-replicate a small experiment and recalculate the mean you’ll get a very
+replicate a small experiment and recalculate the mean you will get a very
 different answer. In other words, the sampling distribution is quite
 wide. If you replicate a large experiment and recalculate the sample
-mean you’ll probably get the same answer you got last time, so the
+mean you will probably get the same answer you got last time, so the
 sampling distribution will be very narrow. You can see this visually in
 :numref:`fig-samplingDistDiffN`, showing that the bigger the
 sample size, the narrower the sampling distribution gets. We can
 quantify this effect by calculating the standard deviation of the
 sampling distribution, which is referred to as the **standard error**.
-The standard error of a statistic is often denoted SE, and since we’re
+The standard error of a statistic is often denoted SE, and since we are
 usually interested in the standard error of the sample *mean*, we often
 use the acronym SEM. As you can see just by looking at the picture, as
 the sample size *N* increases, the SEM decreases.
@@ -210,11 +210,11 @@ the sample size *N* increases, the SEM decreases.
    
 .. ----------------------------------------------------------------------------
 
-Okay, so that’s one part of the story. However, there’s something I’ve
+Okay, so that is one part of the story. However, there is something I have
 been glossing over so far. All my examples up to this point have been
 based on the “IQ scores” experiments, and because IQ scores are roughly
-normally distributed I’ve assumed that the population distribution is
-normal. What if it isn’t normal? What happens to the sampling
+normally distributed I have assumed that the population distribution is
+normal. What if it is not normal? What happens to the sampling
 distribution of the mean? The remarkable thing is this, no matter what
 shape your population distribution is, as *N* increases the
 sampling distribution of the mean starts to look more like a normal
@@ -222,19 +222,19 @@ distribution. To give you a sense of this I ran some simulations. To do
 this, I started with the “ramped” distribution shown in the histogram in
 :numref:`fig-cltDemo` (top-left panel). As you can see by comparing the
 triangular shaped histogram to the bell curve plotted by the black line,
-the population distribution doesn’t look very much like a normal distribution
+the population distribution does not look very much like a normal distribution
 at all. Next, I simulated the results of a large number of experiments. In
 each experiment I took *N* = 2 samples from this distribution, and then
 calculated the sample mean. :numref:`fig-cltDemo` (top-right panel) plots
 the histogram of these sample means (i.e., the sampling distribution of the
 mean for *N* = 2). This time, the histogram produces a ∩-shaped distribution.
-It’s still not normal, but it’s a lot closer to the black line than the
+It is still not normal, but it is a lot closer to the black line than the
 population distribution in :numref:`fig-cltDemo` (top-left panel). When I
 increase the sample size to *N* = 4, the sampling distribution of the mean
 is very close to normal (:numref:`fig-cltDemo`, bottom-left panel), and by
 the time we reach a sample size of *N* = 8 (:numref:`fig-cltDemo`; bottom-
-right panel) it’s almost perfectly normal. In other words, as long as your
-sample size isn’t tiny, the sampling distribution of the mean will be
+right panel) it is almost perfectly normal. In other words, as long as your
+sample size is not tiny, the sampling distribution of the mean will be
 approximately normal no matter what your population distribution looks like!
 
 .. ----------------------------------------------------------------------------
@@ -295,13 +295,13 @@ again in real data.
 ------
 
 .. [#]
-   As usual, I’m being a bit sloppy here. The central limit theorem is a
+   As usual, I am being a bit sloppy here. The central limit theorem is a
    bit more general than this section implies. Like most introductory
-   stats texts I’ve discussed one situation where the central limit
-   theorem holds: when you’re taking an average across lots of
+   stats texts I have discussed one situation where the central limit
+   theorem holds: when you are taking an average across lots of
    independent events drawn from the same distribution. However, the
-   central limit theorem is much broader than this. There’s a whole
+   central limit theorem is much broader than this. There is a whole
    class of things called “*U*-statistics” for instance, all of
    which satisfy the central limit theorem and therefore become normally
    distributed for large sample sizes. The mean is one such statistic,
-   but it’s not the only one.
+   but it is not the only one.

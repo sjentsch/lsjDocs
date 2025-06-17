@@ -22,15 +22,15 @@ corresponds to one of the contrasts. This table, which always has one more row
 than columns, has a special name. It is called a **contrast matrix**. However,
 there are lots of different ways to specify a contrast matrix. In this section
 I discuss a few of the standard contrast matrices that statisticians use and
-how you can use them in jamovi. If you’re planning to read the section on
-unbalanced ANOVA later on (section :doc:`Ch14_ANOVA2_11`), it’s worth reading
+how you can use them in jamovi. If you are planning to read the section on
+unbalanced ANOVA later on (section :doc:`Ch14_ANOVA2_11`), it is worth reading
 this section carefully. If not, you can get away with skimming it, because
-the choice of contrasts doesn’t matter much for balanced designs.
+the choice of contrasts does not matter much for balanced designs.
 
 Treatment contrasts
 ~~~~~~~~~~~~~~~~~~~
 
-In the particular kind of contrasts that I’ve described above, one level
+In the particular kind of contrasts that I have described above, one level
 of the factor is special, and acts as a kind of “baseline” category
 (i.e., ``placebo`` in our example), against which the other two are
 defined. The name for these kinds of contrasts is **treatment
@@ -42,7 +42,7 @@ The name reflects the fact that these contrasts are quite natural and
 sensible when one of the categories in your factor really is special
 because it actually does represent a baseline. That makes sense in our
 |clinicaltrial|_ data. The ``placebo`` condition corresponds to the
-situation where you don’t give people any real drugs, and so it’s
+situation where you do not give people any real drugs, and so it is
 special. The other two conditions are defined in relation to the
 placebo. In one case you replace the placebo with Anxifree, and in the
 other case your replace it with Joyzepam.
@@ -63,7 +63,7 @@ for a factor with 5 levels? You would set this out like this:
 In this example, the first contrast is level 2 compared with level 1,
 the second contrast is level 3 compared with level 1, and so on. Notice
 that, by default, the *first* level of the factor is always treated as
-the baseline category (i.e., it’s the one that has all zeros and doesn’t
+the baseline category (i.e., it is the one that has all zeros and does not
 have an explicit contrast associated with it). In jamovi you can change
 which category is the first level of the factor by manipulating the
 order of the levels of the variable shown in the ``Data Variable`` window
@@ -78,7 +78,7 @@ make most sense in the situation when there really is a baseline
 category, and you want to assess all the other groups in relation to
 that one. In other situations, however, no such baseline category
 exists, and it may make more sense to compare each group to the mean of
-the other groups. This is where we meet **Helmert contrasts**, generated
+the other groups. Thit is where we meet **Helmert contrasts**, generated
 by the ``Helmert`` option in the jamovi ``ANOVA`` - ``Contrasts`` selection
 box. The idea behind Helmert contrasts is to compare each group to the
 mean of the “previous” ones. That is, the first contrast represents the
@@ -101,10 +101,10 @@ interpret the ANOVA as a regression, the intercept term corresponds to the
 grand mean µ\ :sub:`..` if we are using Helmert contrasts. Compare this to
 treatment contrasts, in which the intercept term corresponds to the group mean
 for the baseline category. This property can be very useful in some situations.
-It doesn’t matter very much if you have a balanced design, which we’ve been
+It does not matter very much if you have a balanced design, which we have been
 assuming so far, but it will turn out to be important later when we consider
 unbalanced designs in section :doc:`Ch14_ANOVA2_11`. In fact, the main reason
-why I’ve even bothered to include this section is that contrasts become
+why I have even bothered to include this section is that contrasts become
 important if you want to understand unbalanced ANOVA.
 
 Sum to zero contrasts
@@ -176,7 +176,7 @@ types are listed:
 ------
 
 .. [#]
-   What’s the difference between treatment and simple contrasts, I hear
+   What is the difference between treatment and simple contrasts, I hear
    you ask? Well, as a basic example consider a gender main effect, with
    m = 0 and f = 1. The coefficient corresponding to the treatment contrast
    will measure the difference in mean between females and males, and

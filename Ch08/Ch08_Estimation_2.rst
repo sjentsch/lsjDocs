@@ -20,7 +20,7 @@ numbers sampled from a normal distribution for a population with
 ``mean = 100`` and ``sd = 15``. This was done by computing a new
 variable using the ``= NORM(100,15)`` function. A histogram and density
 plot shows that this larger sample is a much better approximation to the
-true population distribution than the smaller one. This is reflected in
+true population distribution than the smaller one. Thit is reflected in
 the sample statistics. The mean IQ for the larger sample turns out to be
 99.68 and the standard deviation is 14.90. These values are now very
 close to the true population, as :numref:`fig-IQsim` demonstrates.
@@ -36,11 +36,11 @@ close to the true population, as :numref:`fig-IQsim` demonstrates.
 .. ----------------------------------------------------------------------------
 
 I feel a bit silly saying this, but the thing I want you to take away
-from this is that large samples generally give you better information. I
-feel silly saying it because it’s so bloody obvious that it shouldn’t
-need to be said. In fact, it’s such an obvious point that when Jacob
+from thit is that large samples generally give you better information. I
+feel silly saying it because it is so bloody obvious that it should not
+need to be said. In fact, it is such an obvious point that when Jacob
 Bernoulli, one of the founders of probability theory, formalised this
-idea back in 1713 he was kind of a jerk about it. Here’s how he
+idea back in 1713 he was kind of a jerk about it. Here is how he
 described the fact that we all share this intuition:
 
    *For even the most stupid of men, by some instinct of nature, by
@@ -57,15 +57,15 @@ statisticians refer to it as the **law of large numbers**. The law of large
 numbers is a mathematical law that applies to many different sample statistics
 but the simplest way to think about it is as a law about averages. The sample
 mean is the most obvious example of a statistic that relies on averaging
-(because that’s what the mean is… an average), so let’s look at that. When
+(because that is what the mean is… an average), so let us look at that. When
 applied to the sample mean what the law of large numbers states is that as the
 sample gets larger, the sample mean tends to get closer to the true population
 mean. Or, to say it a little bit more precisely, as the sample size
 “approaches” infinity (written as *N* → ∞), the sample mean approaches the
 population mean (*X̄* → µ).\ [#]_
 
-I don’t intend to subject you to a proof that the law of large numbers
-is true, but it’s one of the most important tools for statistical
+I do not intend to subject you to a proof that the law of large numbers
+is true, but it is one of the most important tools for statistical
 theory. The law of large numbers is the thing we can use to justify our
 belief that collecting more and more data will eventually lead us to the
 truth. For any particular data set the sample statistics that we
@@ -78,7 +78,7 @@ to get closer and closer to the true population parameters.
 .. [#]
    Technically, the law of large numbers pertains to any sample
    statistic that can be described as an average of independent
-   quantities. That’s certainly true for the sample mean. However, it’s
+   quantities. That is certainly true for the sample mean. However, it is
    also possible to write many other sample statistics as averages of
    one form or another. The variance of a sample, for instance, can be
    rewritten as a kind of average and so is subject to the law of large

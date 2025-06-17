@@ -3,8 +3,8 @@
 Summary
 -------
 
-There’s a fair bit covered in this chapter, but there’s still a lot missing.
-Most obviously, I haven’t discussed how to run an ANOVA when you are
+There is a fair bit covered in this chapter, but there is still a lot missing.
+Most obviously, I have not discussed how to run an ANOVA when you are
 interested in more than one grouping variable, but that will be discussed in
 a lot of detail in chapter :doc:`../Ch14/Ch14_ANOVA2`. In terms of what we
 have discussed, the key topics were:
@@ -24,7 +24,7 @@ have discussed, the key topics were:
    equivalent, the :doc:`Friedman test <Ch13_ANOVA_08>`.
 
 As with all of the chapters in this book, there are quite a few different
-sources that I’ve relied upon, but the one stand-out text that I’ve been most
-heavily influenced by is :ref:`Sahai and Ageel (2000) <Sahai_2000>`. It’s not
-a good book for beginners, but it’s an excellent book for more advanced
+sources that I have relied upon, but the one stand-out text that I have been most
+heavily influenced by is :ref:`Sahai and Ageel (2000) <Sahai_2000>`. It is not
+a good book for beginners, but it is an excellent book for more advanced
 readers who are interested in understanding the mathematics behind ANOVA.

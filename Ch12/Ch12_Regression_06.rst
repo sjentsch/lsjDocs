@@ -4,7 +4,7 @@ Quantifying the fit of the regression model
 -------------------------------------------
 
 So we now know how to estimate the coefficients of a linear regression
-model. The problem is, we don’t yet know if this regression model is any
+model. The problem is, we do not yet know if this regression model is any
 good. For example, the ``regression.1`` model *claims* that every hour
 of sleep will improve my mood by quite a lot, but it might just be
 rubbish. Remember, the regression model only produces a prediction
@@ -15,19 +15,19 @@ done a good job. If they are very different, then it has done a bad job.
 The *R*\² (R-squared) value
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once again, let’s wrap a little bit of mathematics around this. Firstly,
-we’ve got the sum of the squared residuals
+Once again, let us wrap a little bit of mathematics around this. Firstly,
+we have got the sum of the squared residuals
 
 .. math:: \mbox{SS}_{res} = \sum_i (Y_i - \hat{Y}_i)^2
 
-which we would hope to be pretty small. Specifically, what we’d like is
+which we would hope to be pretty small. Specifically, what we would like is
 for it to be very small in comparison to the total variability in the
 outcome variable
 
 .. math:: \mbox{SS}_{tot} = \sum_i (Y_i - \bar{Y})^2
 
-While we’re here, let’s calculate these values ourselves, not by hand though.
-Let’s use jamovi instead. Open up the |parenthood|_ data set in so that we can
+While we are here, let us calculate these values ourselves, not by hand though.
+Let us use jamovi instead. Open up the |parenthood|_ data set in so that we can
 work in it. The first thing to do is calculate the *Ŷ* values, and for the
 simple model that uses only a single predictor we would do the following:
 
@@ -36,8 +36,8 @@ simple model that uses only a single predictor we would do the following:
    first line and the formula ``125.97 + (-8.94 * dani.sleep)`` in the line
    starting with ``=`` (next to the *f*\ :sub:`x`).
 
-Okay, now that we’ve got a variable which stores the regression model
-predictions for how grumpy I will be on any given day, let’s calculate
+Okay, now that we have got a variable which stores the regression model
+predictions for how grumpy I will be on any given day, let us calculate
 our sum of squared residuals. We would do that using the following
 formula:
 
@@ -52,27 +52,27 @@ formula:
 
 To calculate the sum of these values, click ``Descriptives`` → ``Descriptive
 Statistics`` and move ``sq_resid`` and ``sq_total`` to the ``Variables`` box.
-You’ll then need to select ``Sum`` from the ``Statistics`` drop-down menu
-below. The sum of ``sq_resid`` has a value of **1838.722**. This is a big
-number, however, that doesn’t mean very much. The sum of ``sq_total`` has a
-value of **9998.590**. Well, it’s a much (about five times) bigger number
+You will then need to select ``Sum`` from the ``Statistics`` drop-down menu
+below. The sum of ``sq_resid`` has a value of **1838.722**. Thit is a big
+number, however, that does not mean very much. The sum of ``sq_total`` has a
+value of **9998.590**. Well, it is a much (about five times) bigger number
 than the last one, so this does suggest that our regression model was making
 good predictions (that is, it has greatly reduced the residual error compared
-to the model that uses the mean as a single predictor). But it’s not very
+to the model that uses the mean as a single predictor). But it is not very
 interpretable.
 
-To can fix this, we’d like to convert these two fairly meaningless numbers
+To can fix this, we would like to convert these two fairly meaningless numbers
 into one number. A nice, interpretable number, which for no particular reason
-we’ll call *R*\². What we would like is for the value of *R*\² to be equal to 1
+we will call *R*\². What we would like is for the value of *R*\² to be equal to 1
 if the regression model makes no errors in predicting the data. In other words,
 if it turns out that the residual errors are zero. That is, if SS\ :sub:`res`
 = 0 then we expect *R*\² = 1. Similarly, if the model is completely useless, we
 would like *R*\² to be equal to 0. What do I mean by “useless”? Tempting as it
 is to demand that the regression model move out of the house, cut its hair and
-get a real job, I’m probably going to have to pick a more practical
+get a real job, I am probably going to have to pick a more practical
 definition. In this case, all I mean is that the residual sum of squares is no
 smaller than the total sum of squares, SS\ :sub:`res` = SS\ :sub:`tot`. Wait,
-why don’t we do exactly that? The formula that provides us with our *R*\² value
+why do not we do exactly that? The formula that provides us with our *R*\² value
 is pretty simple to write down, and equally simple to calculate by hand:\ [#]_
 
 | *R*\² = 1 - (SS\ :sub:`res` / SS\ :sub:`tot`)
@@ -86,18 +86,18 @@ by the predictor. So, in this case the fact that we have obtained *R*\² = 0.816
 means that the predictor (``dani.sleep``) explains 81.6\% of the variance in the
 outcome (``dani.grump``).\ [#]_
 
-Naturally, you don’t actually need to do all these calculations yourself if you
-want to obtain the *R*\² value for your regression model. As we’ll see later on
+Naturally, you do not actually need to do all these calculations yourself if you
+want to obtain the *R*\² value for your regression model. As we will see later on
 in :ref:`Running the hypothesis tests in jamovi <coefficients_in_jamovi>`, all
-you need to do is specify this as an option in jamovi. However, let’s put that
-to one side for the moment. There’s another property of *R*\² that I want to
+you need to do is specify this as an option in jamovi. However, let us put that
+to one side for the moment. There is another property of *R*\² that I want to
 point out.
 
 The relationship between regression and correlation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 At this point we can revisit my earlier claim that regression, in this very
-simple form that I’ve discussed so far, is basically the same thing as a
+simple form that I have discussed so far, is basically the same thing as a
 correlation. Previously, we used the symbol *r* to denote a Pearson
 correlation. Might there be some relationship between the value of the
 correlation coefficient *r* and the *R*\² value from linear regression? Of
@@ -109,7 +109,7 @@ model that uses only one predictor variable.
 The adjusted *R*\² (R-squared) value
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-One final thing to point out before moving on. It’s quite common for
+One final thing to point out before moving on. It is quite common for
 people to report a slightly different measure of model performance,
 known as “adjusted *R*\²”. The motivation behind calculating the
 adjusted *R*\² value is the observation that adding more
@@ -127,22 +127,22 @@ This adjustment is an attempt to take the degrees of freedom into
 account. The big advantage of the adjusted *R*\² value is that
 when you add more predictors to the model, the adjusted *R*\²
 value will only increase if the new variables improve the model
-performance more than you’d expect by chance. The big disadvantage is
-that the adjusted *R*\² value *can’t* be interpreted in the
+performance more than you would expect by chance. The big disadvantage is
+that the adjusted *R*\² value *can not* be interpreted in the
 elegant way that *R*\² can. *R*\² has a simple
 interpretation as the proportion of variance in the outcome variable
 that is explained by the regression model. To my knowledge, no
 equivalent interpretation exists for adjusted *R*\².
 
 An obvious question then is whether you should report *R*\² or adjusted *R*\².
-This is probably a matter of personal preference. If you care more about
+Thit is probably a matter of personal preference. If you care more about
 interpretability, then *R*\² is better. If you care more about correcting for
 bias, then adjusted *R*\² is probably better. Speaking just for myself, I
-prefer *R*\². My feeling is that it’s more important to be able to interpret
-your measure of model performance. Besides, as we’ll see in section
-:doc:`Ch12_Regression_07`, if you’re worried that the improvement in *R*\²
-that you get by adding a predictor is just due to chance and not because it’s
-a better model, well we’ve got hypothesis tests for that.
+prefer *R*\². My feeling is that it is more important to be able to interpret
+your measure of model performance. Besides, as we will see in section
+:doc:`Ch12_Regression_07`, if you are worried that the improvement in *R*\²
+that you get by adding a predictor is just due to chance and not because it is
+a better model, well we have got hypothesis tests for that.
 
 ------
 

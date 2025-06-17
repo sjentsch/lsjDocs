@@ -38,7 +38,7 @@ reading comprehension test to measure student achievements in three different
 schools, and we suspect that girls and boys are developing at different rates
 (and so would be expected to have different performance on average). Each
 student is classified in two different ways: on the basis of their gender and
-on the basis of their school. What we’d like to do is analyse the reading
+on the basis of their school. What we would like to do is analyse the reading
 comprehension scores in terms of *both* of these grouping variables |nominal|.
 The tool for doing so is generically referred to as **factorial ANOVA**.
 However, since we have two grouping variables |nominal|, we sometimes refer to

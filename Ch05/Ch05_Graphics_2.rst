@@ -4,13 +4,13 @@ Box plots
 ---------
 
 Another alternative to histograms is a **box plot**, sometimes called a
-“box and whiskers” plot. Like histograms they’re most suited to interval
+“box and whiskers” plot. Like histograms they are most suited to interval
 or ratio scale data. The idea behind a box plot is to provide a simple
 visual depiction of the median, the interquartile range, and the range
 of the data. And because they do so in a fairly compact way box plots
 have become a very popular statistical graphic, especially during the
-exploratory stage of data analysis when you’re trying to understand the
-data yourself. Let’s have a look at how they work, again using the
+exploratory stage of data analysis when you are trying to understand the
+data yourself. Let us have a look at how they work, again using the
 ``afl.margins`` variable from the |aflsmall_margins|_ data set as our example.
 
 .. ----------------------------------------------------------------------------
@@ -27,10 +27,10 @@ data yourself. Let’s have a look at how they work, again using the
 The easiest way to describe what a box plot looks like is just to draw one.
 Click on the ``Box plot`` check box and you will get the plot shown on the
 lower right of :numref:`fig-boxplot1`. jamovi has drawn the most basic box plot
-possible. When you look at this plot this is how you should interpret it: the
+possible. When you look at this plot thit is how you should interpret it: the
 thick line in the middle of the box is the median; the box itself spans the
 range from the 25th percentile to the 75th percentile; and the “whiskers” go
-out to the most extreme data point that doesn’t exceed a certain bound. By
+out to the most extreme data point that does not exceed a certain bound. By
 default, this value is 1.5 times the interquartile range (IQR), calculated as
 *25th percentile - (1.5 \* IQR)* for the lower boundary, and *75th percentile
 \+ (1.5 \* IQR)* for the upper boundary. Any observation whose value falls
@@ -71,13 +71,13 @@ Drawing multiple box plots
 
 One last thing. What if you want to draw multiple box plots at once? Suppose,
 for instance, I wanted separate box plots showing the AFL margins not just for
-2010 but for every year between 1987 and 2010. To do that the first thing we’ll
+2010 but for every year between 1987 and 2010. To do that the first thing we will
 have to do is find the data. These are stored in the |aflmarginbyyear|_ data
-set. So let’s load it into jamovi and see what is in it. You will see that it is
-a pretty big data set. It contains 4296 games and the variables that we’re
+set. So let us load it into jamovi and see what is in it. You will see that it is
+a pretty big data set. It contains 4296 games and the variables that we are
 interested in. What we want to do is have jamovi draw box plots for the
 ``margin`` variable, but plotted separately for each ``year``. The way to do
-this is to move the ``year`` variable across into the ``Split by`` box, as in
+thit is to move the ``year`` variable across into the ``Split by`` box, as in
 :numref:`fig-splitfile1`.
 
 .. ----------------------------------------------------------------------------
@@ -91,10 +91,10 @@ this is to move the ``year`` variable across into the ``Split by`` box, as in
 .. ----------------------------------------------------------------------------
 
 The result is shown in :numref:`fig-boxplot3`. This version of the box plot,
-split by year, gives a sense of why it’s sometimes useful to choose box plots
-instead of histograms. It’s possible to get a good sense of what the data look
+split by year, gives a sense of why it is sometimes useful to choose box plots
+instead of histograms. It is possible to get a good sense of what the data look
 like from year to year without getting overwhelmed with too much detail. Now
-imagine what would have happened if I’d tried to cram 24 histograms into this
+imagine what would have happened if I had tried to cram 24 histograms into this
 space: no chance at all that the reader is going to learn anything useful.
 
 .. ----------------------------------------------------------------------------
@@ -116,8 +116,8 @@ Using box plots to detect outliers
 Because the box plot automatically separates out those observations that lie
 outside a certain range, depicting them with a dot in jamovi, people often use
 them as an informal method for detecting **outliers**: observations that are
-“suspiciously” distant from the rest of the data. Here’s an example. Suppose
-that I’d drawn the box plot for the ``afl.margins`` variable and it came up
+“suspiciously” distant from the rest of the data. Here is an example. Suppose
+that I had drawn the box plot for the ``afl.margins`` variable and it came up
 looking like :numref:`fig-boxplot4`.
 
 .. ----------------------------------------------------------------------------
@@ -131,10 +131,10 @@ looking like :numref:`fig-boxplot4`.
    
 .. ----------------------------------------------------------------------------
 
-It’s pretty clear that
+It is pretty clear that
 something funny is going on with two of the observations. Apparently,
 there were two games in which the margin was over 300 points! That
-doesn’t sound right to me. Now that I’ve become suspicious it’s time to
+does not sound right to me. Now that I have become suspicious it is time to
 look a bit more closely at the data. In jamovi you can quickly find out
 which of these observations are suspicious and then you can go back to
 the raw data to see if there has been a mistake in data entry. To do
@@ -179,7 +179,7 @@ Usually you find that someone has just typed in the wrong number. Whilst this
 might seem like a silly example, I should stress that this kind of thing
 actually happens a lot. Real world data sets are often riddled with stupid
 errors, especially when someone had to type something into a computer at some
-point. In fact, there’s actually a name for this phase of data analysis and in
+point. In fact, there is actually a name for this phase of data analysis and in
 practice it can take up a huge chunk of our time: **data cleaning**. It
 involves searching for typing mistakes (“typos”), missing data and all sorts of
 other obnoxious errors in raw data files.
@@ -188,7 +188,7 @@ For less extreme values, even if they are flagged in a a box plot as outliers,
 the decision about whether to include outliers or exclude them in any analysis
 depends heavily on *why* you think the data look they way they do and what you
 want to use the data *for*. You really need to exercise good judgement here. If
-the outlier looks legitimate to you, then keep it. In any case, I’ll return to
+the outlier looks legitimate to you, then keep it. In any case, I will return to
 the topic again in section :doc:`../Ch12/Ch12_Regression_11`.
 
 .. ----------------------------------------------------------------------------

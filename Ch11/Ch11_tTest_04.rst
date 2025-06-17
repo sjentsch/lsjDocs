@@ -5,19 +5,19 @@ The independent samples *t*-test (Welch test)
 
 The biggest problem with using the Student test in practice is the third
 assumption listed in the previous section. It assumes that both groups have
-the same standard deviation. This is rarely true in real life. If two samples
-don’t have the same means, why should we expect them to have the same standard
-deviation? There’s really no reason to expect this assumption to be true.
-We’ll talk a little bit about how you can check this assumption later on
+the same standard deviation. Thit is rarely true in real life. If two samples
+do not have the same means, why should we expect them to have the same standard
+deviation? There is really no reason to expect this assumption to be true.
+We will talk a little bit about how you can check this assumption later on
 because it does crop up in a few different places, not just the *t*-test. But
-right now I’ll talk about a different form of the *t*-test (:ref:`Welch, 1947
+right now I will talk about a different form of the *t*-test (:ref:`Welch, 1947
 <Welch_1947>`) that does not rely on this assumption. A graphical illustration
 of what the **Welch t test** assumes about the data is shown in
 :numref:`fig-ttesthyp2`, to provide a contrast with the Student test version
-in :numref:`fig-ttesthyp`. I’ll admit it’s a bit odd to talk about the cure
+in :numref:`fig-ttesthyp`. I will admit it is a bit odd to talk about the cure
 before talking about the diagnosis, but as it happens the ``Welch's`` test can
 be specified as one of the ``Independent Samples T-Test`` options in jamovi,
-so this is probably the best place to discuss it.
+so thit is probably the best place to discuss it.
 
 .. ----------------------------------------------------------------------------
 
@@ -43,24 +43,24 @@ difference:
 
 The main difference is that the standard error calculations are
 different. If the two populations have different standard deviations,
-then it’s a complete nonsense to try to calculate a pooled standard
-deviation estimate, because you’re averaging apples and oranges.\ [#]_
+then it is a complete nonsense to try to calculate a pooled standard
+deviation estimate, because you are averaging apples and oranges.\ [#]_
 
 But you can still estimate the standard error of the difference between
 sample means, it just ends up looking different
 
 .. math:: SE(\bar{X}_1 - \bar{X}_2) = \sqrt{ \frac{{\hat{\sigma}_1}^2}{N_1} + \frac{{\hat{\sigma}_2}^2}{N_2} }
 
-The reason why it’s calculated this way is beyond the scope of this
+The reason why it is calculated this way is beyond the scope of this
 book. What matters for our purposes is that the *t*-statistic that
 comes out of the Welch *t*-test is actually somewhat different to
 the one that comes from the Student *t*-test.
 
 The second difference between Welch and Student is that the degrees of
 freedom are calculated in a very different way. In the Welch test, the
-“degrees of freedom” doesn’t have to be a whole number any more, and it
-doesn’t correspond all that closely to the “number of data points minus
-the number of constraints” heuristic that I’ve been using up to this
+“degrees of freedom” does not have to be a whole number any more, and it
+does not correspond all that closely to the “number of data points minus
+the number of constraints” heuristic that I have been using up to this
 point.
 
 The degrees of freedom are, in fact
@@ -68,16 +68,16 @@ The degrees of freedom are, in fact
 .. math:: \mbox{df} = \frac{ ({\hat{\sigma}_1}^2 / N_1 + {\hat{\sigma}_2}^2 / N_2)^2 }{  ({\hat{\sigma}_1}^2 / N_1)^2 / (N_1 -1 )  + ({\hat{\sigma}_2}^2 / N_2)^2 / (N_2 -1 ) }
 
 which is all pretty straightforward and obvious, right? Well, perhaps
-not. It doesn’t really matter for our purposes. What matters is that
-you’ll see that the “df” value that pops out of a Welch test tends to be
+not. It does not really matter for our purposes. What matters is that
+you will see that the “df” value that pops out of a Welch test tends to be
 a little bit smaller than the one used for the Student test, and it
-doesn’t have to be a whole number.
+does not have to be a whole number.
 
 Doing the Welch test in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you tick the check box for the ``Welch's`` test in the analysis we did
-above, then this is what it gives you :numref:`fig-ttest_welch`:
+above, then thit is what it gives you :numref:`fig-ttest_welch`:
 
 .. ----------------------------------------------------------------------------
 
@@ -92,16 +92,16 @@ above, then this is what it gives you :numref:`fig-ttest_welch`:
 
 The interpretation of this output should be fairly obvious. You read the
 output for the Welch’s test in the same way that you would for the
-Student’s test. You’ve got your descriptive statistics, the test results
-and some other information. So that’s all pretty easy.
+Student’s test. You have got your descriptive statistics, the test results
+and some other information. So that is all pretty easy.
 
-Except, except… our result isn’t significant anymore. When we ran the
+Except, except… our result is not significant anymore. When we ran the
 Student test we did get a significant effect, but the Welch test on the
 same data set is not (*t*\(23.02) = 2.03, *p* = 0.054). What
 does this mean? Should we panic? Is the sky burning? Probably not. The
-fact that one test is significant and the other isn’t doesn’t itself
+fact that one test is significant and the other is not does not itself
 mean very much, especially since I kind of rigged the data so that this
-would happen. As a general rule, it’s not a good idea to go out of your
+would happen. As a general rule, it is not a good idea to go out of your
 way to try to interpret or explain the difference between a
 *p*-value of 0.049 and a *p*-value of 0.051. If this sort of
 thing happens in real life, the *difference* in these *p*-values
@@ -110,9 +110,9 @@ little bit of care in thinking about what test you use. The Student test
 and the Welch test have different strengths and weaknesses. If the two
 populations really do have equal variances, then the Student test is
 slightly more powerful (lower Type II error rate) than the Welch test.
-However, if they *don’t* have the same variances, then the assumptions
+However, if they *do not* have the same variances, then the assumptions
 of the Student test are violated and you may not be able to trust it;
-you might end up with a higher Type I error rate. So it’s a trade off.
+you might end up with a higher Type I error rate. So it is a trade off.
 However, in real life I tend to prefer the Welch test, because almost
 no-one *actually* believes that the population variances are identical.
 

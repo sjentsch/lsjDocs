@@ -3,18 +3,18 @@
 On the relationship between ANOVA and the Student *t*-test
 ----------------------------------------------------------
 
-There’s one last thing I want to point out before finishing. It’s
-something that a lot of people find kind of surprising, but it’s worth
+There is one last thing I want to point out before finishing. It is
+something that a lot of people find kind of surprising, but it is worth
 knowing about. An ANOVA with two groups is identical to the Student
-*t*-test. No, really. It’s not just that they are similar, but
-they are actually equivalent in every meaningful way. I won’t try to
-prove that this is always true, but I will show you a single concrete
+*t*-test. No, really. It is not just that they are similar, but
+they are actually equivalent in every meaningful way. I will not try to
+prove that thit is always true, but I will show you a single concrete
 demonstration. Suppose that, instead of running an ANOVA on our
-``mood.gain ~ drug`` model, let’s instead do it using ``therapy`` as the
+``mood.gain ~ drug`` model, let us instead do it using ``therapy`` as the
 predictor. If we run this ANOVA we get an *F*-statistic of
 F(1,16) = 1.71, and a *p*-value = 0.210. Since we only have
-two groups, I didn’t actually need to resort to an ANOVA, I could have
-just decided to run a Student *t*-test. So let’s see what happens
+two groups, I did not actually need to resort to an ANOVA, I could have
+just decided to run a Student *t*-test. So let us see what happens
 when I do that: I get a *t*-statistic of t(16) = -1.3068
 and a *p*-value = 0.21. Curiously, the *p*-values are
 identical. Once again we obtain a value of *p* = 0.210. But what

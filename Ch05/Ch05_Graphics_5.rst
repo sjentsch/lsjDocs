@@ -3,16 +3,16 @@
 Summary
 -------
 
-Perhaps I’m a simple minded person, but I love pictures. Every time I
+Perhaps I am a simple minded person, but I love pictures. Every time I
 write a new scientific paper one of the first things I do is sit down
 and think about what the pictures will be. In my head an article is
 really just a sequence of pictures linked together by a story. All the
-rest of it is just window dressing. What I’m really trying to say here
+rest of it is just window dressing. What I am really trying to say here
 is that the human visual system is a very powerful data analysis tool.
 Give it the right kind of information and it will supply a human reader
 with a massive amount of knowledge very quickly. Not for nothing do we
 have the saying “a picture is worth a thousand words”. With that in
-mind, I think that this is one of the most important chapters in the
+mind, I think that thit is one of the most important chapters in the
 book. The topics covered were:
 
 -  *Common plots*. Much of the chapter was focused on standard graphs that
@@ -29,7 +29,7 @@ graphics and plotting capability the packages available in R are much more
 powerful. One of the most popular graphics systems is provided by the
 ``ggplot2`` `R package <https://ggplot2.tidyverse.org>`__, which is loosely
 based on “The grammar of graphics” (:ref:`Wilkinson, 2006 <Wilkinson_2006>`).
-It’s not for novices. You need to have a pretty good grasp of R before you can
+It is not for novices. You need to have a pretty good grasp of R before you can
 start using it, and even then it takes a while to really get the hang of it.
-But when you’re ready it’s worth taking the time to teach yourself, because
-it’s a much more powerful and cleaner system.
+But when you are ready it is worth taking the time to teach yourself, because
+it is a much more powerful and cleaner system.

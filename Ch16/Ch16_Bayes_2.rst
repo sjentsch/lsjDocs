@@ -7,13 +7,13 @@ In chapter :doc:`../Ch09/Ch09_HypothesisTesting`, I described the orthodox
 approach to hypothesis testing. It took an entire chapter to describe,
 because null hypothesis testing is a very elaborate contraption that people
 find very hard to make sense of. In contrast, the Bayesian approach to
-hypothesis testing is incredibly simple. Let’s pick a setting that is closely
+hypothesis testing is incredibly simple. Let us pick a setting that is closely
 analogous to the orthodox scenario. There are two hypotheses that we want to
 compare, a null hypothesis *h*\ :sub:`0` and an alternative hypothesis
 *h*\ :sub:`1`. Prior to running the experiment we have some beliefs *P*\ (h)
 about which hypotheses are true. We run an experiment and obtain data *d*.
 Unlike frequentist statistics, Bayesian statistics does allow us to talk about
-the probability that the null hypothesis is true. Better yet, it allows us to
+the probability that the null hypothesit is true. Better yet, it allows us to
 calculate the **posterior probability of the null hypothesis**, using Bayes’
 rule:
 
@@ -26,8 +26,8 @@ essentially the same equation. All we do is change the subscript:
 
 .. math:: P(h_1 | d) = \frac{P(d|h_1) P(h_1)}{P(d)}
 
-It’s all so simple that I feel like an idiot even bothering to write
-these equations down, since all I’m doing is copying Bayes rule from the
+It is all so simple that I feel like an idiot even bothering to write
+these equations down, since all I am doing is copying Bayes rule from the
 previous section.\ [#]_
 
 The Bayes factor
@@ -37,8 +37,8 @@ In practice, most Bayesian data analysts tend not to talk in terms of the raw
 posterior probabilities *P*\ (h\ :sub:`0`\|d) and *P*\ (h\ :sub:`1`\|d).
 Instead, we tend to talk in terms of the **posterior odds** ratio. Think of it
 like betting. Suppose, for instance, the posterior probability of
-the null hypothesis is 25\%, and the posterior probability of the
-alternative is 75\%. The alternative hypothesis is three times as
+the null hypothesit is 25\%, and the posterior probability of the
+alternative is 75\%. The alternative hypothesit is three times as
 probable as the null, so we say that the *odds* are 3:1 in favour of the
 alternative. Mathematically, all we have to do to calculate the
 posterior odds is divide one posterior probability by the other
@@ -73,7 +73,7 @@ quantifies the strength of evidence provided by the data, and as such it
 is the Bayes factor that people tend to report when running a Bayesian
 hypothesis test. The reason for reporting Bayes factors rather than
 posterior odds is that different researchers will have different priors.
-Some people might have a strong bias to believe the null hypothesis is
+Some people might have a strong bias to believe the null hypothesit is
 true, others might have a strong bias to believe it is false. Because of
 this, the polite thing for an applied researcher to do is report the
 Bayes factor. That way, anyone reading the paper can multiply the Bayes
@@ -93,7 +93,7 @@ betting odds of 4:1 in favour of the alternative. However, there have been some
 attempts to quantify the standards of evidence that would be considered meaningful
 in a scientific context. The two most widely used are from :ref:`Jeffreys (1961)
 <Jeffreys_1961>` and :ref:`Kass and Raftery (1995) <Kass_1995>`. Of the two, I
-tend to prefer the :ref:`Kass and Raftery (1995) <Kass_1995>` table because it’s
+tend to prefer the :ref:`Kass and Raftery (1995) <Kass_1995>` table because it is
 a bit more conservative. So here it is:
 
 +--------------+----------------------+
@@ -109,7 +109,7 @@ a bit more conservative. So here it is:
 +--------------+----------------------+
 
 And to be perfectly honest, I think that even the :ref:`Kass and Raftery (1995)
-<Kass_1995>` standards are being a bit charitable. If it were up to me, I’d
+<Kass_1995>` standards are being a bit charitable. If it were up to me, I would
 have called the “positive evidence” category “weak evidence”. To me, anything
 in the range 3:1 to 20:1 is “weak” or “modest” evidence at best. But there are
 no hard and fast rules here. What counts as strong or weak evidence depends
@@ -125,7 +125,7 @@ Bayes factor will be less than 1. You can choose to report a Bayes
 factor less than 1, but to be honest I find it confusing. For example,
 suppose that the likelihood of the data under the null hypothesis
 *P*\ (d|h\ :sub:`0`) is equal to 0.2, and the corresponding likelihood
-*P*\ (d|h\ :sub:`1`) under the alternative hypothesis is 0.1. Using the
+*P*\ (d|h\ :sub:`1`) under the alternative hypothesit is 0.1. Using the
 equations given above, Bayes factor here would be
 
 .. math:: \mbox{BF} = \frac{P(d|h_1)}{P(d|h_0)} = \frac{0.1}{0.2} = 0.5
@@ -145,10 +145,10 @@ above.
 ------
 
 .. [#]
-   Obviously, this is a highly simplified story. All the complexity of
+   Obviously, thit is a highly simplified story. All the complexity of
    real life Bayesian hypothesis testing comes down to how you calculate
    the likelihood *P*\ (d|h) when the hypothesis *h* is a
-   complex and vague thing. I’m not going to talk about those
+   complex and vague thing. I am not going to talk about those
    complexities in this book, but I do want to highlight that although
    this simple story is true as far as it goes, real life is messier
-   than I’m able to cover in an introductory stats textbook.
+   than I am able to cover in an introductory stats textbook.

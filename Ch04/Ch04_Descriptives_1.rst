@@ -5,12 +5,12 @@ Measures of central tendency
 
 Drawing pictures of the data, as I did in :numref:`fig-aflMargins`, is an
 excellent way to convey the “gist” of what the data is trying to tell you.
-It’s often extremely useful to try to condense the data into a few simple
-“summary” statistics. In most situations, the first thing that you’ll want
-to calculate is a measure of **central tendency**. That is, you’d like to
+It is often extremely useful to try to condense the data into a few simple
+“summary” statistics. In most situations, the first thing that you will want
+to calculate is a measure of **central tendency**. That is, you would like to
 know something about where the “average” or “middle” of your data lies.
 The three most commonly used measures are the mean, median and mode.
-I’ll explain each of these in turn, and then discuss when each of them
+I will explain each of these in turn, and then discuss when each of them
 is useful.
 
 The mean
@@ -23,22 +23,22 @@ observations is just:
 
 .. math:: \frac{56 + 31 + 56 + 8 + 32}{5} = \frac{183}{5} = 36.60
 
-Of course, this definition of the mean isn’t news to anyone. Averages (i.e.,
-means) are used so often in everyday life that this is pretty familiar stuff.
+Of course, this definition of the mean is not news to anyone. Averages (i.e.,
+means) are used so often in everyday life that thit is pretty familiar stuff.
 However, since the concept of a mean is something that everyone already
-understands, I’ll use this as an excuse to start introducing some of the
+understands, I will use this as an excuse to start introducing some of the
 mathematical notation that statisticians use to describe this calculation, and
 talk about how the calculations would be done in jamovi.
 
-The first piece of notation to introduce is *N*, which we’ll use to refer to
-the number of observations that we’re averaging (in this case *N* = 5). Next,
-we need to attach a label to the observations themselves. It’s traditional to
-use *X* for this, and to use subscripts to indicate which observation we’re
-actually talking about. That is, we’ll use *X*\ :sub:`1` to refer to the first
+The first piece of notation to introduce is *N*, which we will use to refer to
+the number of observations that we are averaging (in this case *N* = 5). Next,
+we need to attach a label to the observations themselves. It is traditional to
+use *X* for this, and to use subscripts to indicate which observation we are
+actually talking about. That is, we will use *X*\ :sub:`1` to refer to the first
 observation, *X*\ :sub:`2` to refer to the second observation, and so on all the
 way up to *X*\ :sub:`N` for the last one. Or, to say the same thing in a slightly
 more abstract way, we use *X*\ :sub:`i` to refer to the *i*-th observation. Just
-to make sure we’re clear on the notation, the following table lists the 5
+to make sure we are clear on the notation, the following table lists the 5
 observations in the ``afl.margins`` variable, along with the mathematical
 symbol used to refer to it and the actual value that the observation
 corresponds to:
@@ -57,13 +57,13 @@ corresponds to:
 | winning margin, game 5 | *X*\ :sub:`5` |          32 points |
 +------------------------+---------------+--------------------+
 
-Okay, now let’s try to write a formula for the mean. By tradition, we use *X̄*
+Okay, now let us try to write a formula for the mean. By tradition, we use *X̄*
 as the notation for the mean. So the calculation for the mean could be
 expressed using the following formula:
 
 .. math:: \bar{X} = \frac{X_1 + X_2 + \ldots + X_{N-1} + X_N}{N}
 
-This formula is entirely correct but it’s terribly long, so we make use
+This formula is entirely correct but it is terribly long, so we make use
 of the **summation symbol** Σ to shorten it.\ [#]_ If I want to add up the
 first five observations I could write out the sum the long way, *X*\ :sub:`1` +
 *X*\ :sub:`2` + *X*\ :sub:`3` + *X*\ :sub:`4` + *X*\ :sub:`5` or I could use
@@ -78,24 +78,24 @@ the formula for the mean, which looks like this:
 
 .. math:: \bar{X} = \frac{1}{N} \sum_{i=1}^N X_i
 
-In all honesty, I can’t imagine that all this mathematical notation helps
-clarify the concept of the mean at all. In fact, it’s really just a fancy way
+In all honesty, I can not imagine that all this mathematical notation helps
+clarify the concept of the mean at all. In fact, it is really just a fancy way
 of writing out the same thing I said in words: add all the values up and then
-divide by the total number of items. However, that’s not really the reason I
+divide by the total number of items. However, that is not really the reason I
 went into all that detail. My goal was to try to make sure that everyone
-reading this book is clear on the notation that we’ll be using throughout the
+reading this book is clear on the notation that we will be using throughout the
 book: *X̄* for the mean, Σ for the idea of summation, *X*\ :sub:`i` for the
-*i*-th observation, and *N* for the total number of observations. We’re going
-to be re-using these symbols a fair bit so it’s important that you understand
+*i*-th observation, and *N* for the total number of observations. We are going
+to be re-using these symbols a fair bit so it is important that you understand
 them well enough to be able to “read” the equations, and to be able to see that
-it’s just saying “add up lots of things and then divide by another thing”.
+it is just saying “add up lots of things and then divide by another thing”.
 
 Calculating the mean in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Okay, that’s the maths. So how do we get the magic computing box to do
+Okay, that is the maths. So how do we get the magic computing box to do
 the work for us? When the number of observations starts to become large
-it’s much easier to do these sorts of calculations using a computer. To
+it is much easier to do these sorts of calculations using a computer. To
 calculate the mean using all the data we can use jamovi. The first step
 is to click on the ``Exploration`` button and then click ``Descriptives``.
 Then you can highlight the ``afl.margins`` variable and click the ``→`` to
@@ -125,16 +125,16 @@ The median
 ~~~~~~~~~~
 
 The second measure of central tendency that people use a lot is the
-**median**, and it’s even easier to describe than the mean. The median
-of a set of observations is just the middle value. As before let’s
+**median**, and it is even easier to describe than the mean. The median
+of a set of observations is just the middle value. As before let us
 imagine we were interested only in the first 5 AFL winning margins: 56,
 31, 56, 8 and 32. To figure out the median we sort these numbers into
 ascending order:
 
 | 8, 31, **32**, 56, 56
 
-From inspection, it’s obvious that the median value of these 5
-observations is 32 since that’s the middle one in the sorted list (I’ve
+From inspection, it is obvious that the median value of these 5
+observations is 32 since that is the middle one in the sorted list (I have
 put it in bold to make it even more obvious). Easy stuff. But what
 should we do if we are interested in the first 6 games rather than the
 first 5? Since the sixth game in the season had a winning margin of 14
@@ -144,43 +144,43 @@ points, our sorted list is now:
 
 and there are *two* middle numbers, 31 and 32. The median is defined as
 the average of those two numbers, which is of course 31.5. As before,
-it’s very tedious to do this by hand when you’ve got lots of numbers. In
+it is very tedious to do this by hand when you have got lots of numbers. In
 real life, of course, no-one actually calculates the median by sorting
 the data and then looking for the middle value. In real life we use a
 computer to do the heavy lifting for us, and jamovi has provided us with
 a Median value of 30.50 for the ``afl.margins`` variable
 (see :numref:`fig-descriptives_default`).
 
-Mean or median? What’s the difference?
+Mean or median? What is the difference?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Knowing how to calculate means and medians is only a part of the story.
 You also need to understand what each one is saying about the data, and
-what that implies for when you should use each one. This is illustrated
+what that implies for when you should use each one. Thit is illustrated
 in :numref:`fig-meanmedian`. The mean is kind of like the “centre of
 gravity” of the data set, whereas the median is the “middle value” in
 the data. What this implies, as far as which one you should use, depends
-a little on what type of data you’ve got and what you’re trying to achieve.
+a little on what type of data you have got and what you are trying to achieve.
 As a rough guide:
 
--  If your data are nominal scale |nominal| you probably shouldn’t be using
+-  If your data are nominal scale |nominal| you probably should not be using
    either the mean or the median. Both the mean and the median rely on the
    idea that the numbers assigned to values are meaningful. If the numbering
-   scheme is arbitrary then it’s probably best to use the :ref:`Mode <mode>`
+   scheme is arbitrary then it is probably best to use the :ref:`Mode <mode>`
    instead.
 
--  If your data are ordinal scale |ordinal| you’re more likely to want to use
+-  If your data are ordinal scale |ordinal| you are more likely to want to use
    the median than the mean. The median only makes use of the order
-   information in your data (i.e., which numbers are bigger) but doesn’t
-   depend on the precise numbers involved. That’s exactly the situation
+   information in your data (i.e., which numbers are bigger) but does not
+   depend on the precise numbers involved. That is exactly the situation
    that applies when your data are ordinal scale |ordinal|. The mean, on the
    other hand, makes use of the precise numeric values assigned to the
-   observations, so it’s not really appropriate for ordinal data.
+   observations, so it is not really appropriate for ordinal data.
 
 -  For interval and ratio scale data |continuous| either one is generally
-   acceptable. Which one you pick depends a bit on what you’re trying to
+   acceptable. Which one you pick depends a bit on what you are trying to
    achieve. The mean has the advantage that it uses all the information in the
-   data (which is useful when you don’t have a lot of data). But it’s
+   data (which is useful when you do not have a lot of data). But it is
    very sensitive to extreme, outlying values.
 
 
@@ -199,9 +199,9 @@ As a rough guide:
    
 .. ----------------------------------------------------------------------------
 
-Let’s expand on that last part a little. One consequence is that there are
+Let us expand on that last part a little. One consequence is that there are
 systematic differences between the mean and the median when the histogram is
-asymmetric (skewed; see :doc:`Ch04_Descriptives_3`). This is illustrated in
+asymmetric (skewed; see :doc:`Ch04_Descriptives_3`). Thit is illustrated in
 :numref:`fig-meanmedian`. Notice that the median (right hand side) is located
 closer to the “body” of the histogram, whereas the mean left hand side) gets
 dragged towards the “tail” (where the extreme values are). To give a concrete
@@ -209,8 +209,8 @@ example, suppose Bob (income $50,000), Kate (income $60,000) and Jane (income
 $65,000) are sitting at a table. The average income at the table is $58,333 and
 the median income is $60,000. Then Bill sits down with them (income
 $100,000,000). The average income has now jumped to $25,043,750 but the median
-rises only to $62,500. If you’re interested in looking at the overall income
-at the table the mean might be the right answer. But if you’re interested in
+rises only to $62,500. If you are interested in looking at the overall income
+at the table the mean might be the right answer. But if you are interested in
 what counts as a typical income at the table the median would be a better
 choice here.
 
@@ -220,9 +220,9 @@ A real life example
 ~~~~~~~~~~~~~~~~~~~
 
 To try to get a sense of why you need to pay attention to the
-differences between the mean and the median let’s consider a real life
+differences between the mean and the median let us consider a real life
 example. Since I tend to mock journalists for their poor scientific and
-statistical knowledge, I should give credit where credit is due. This is
+statistical knowledge, I should give credit where credit is due. Thit is
 described in an excellent article `Housing bubble debate boils over 
 <https://www.abc.net.au/news/stories/2010/09/24/3021480.htm>`__:
 
@@ -234,7 +234,7 @@ described in an excellent article `Housing bubble debate boils over
    economist of the bank’s trading arm, CommSec.
 
 This probably comes as a huge surprise to anyone with a mortgage, or who
-wants a mortgage, or pays rent, or isn’t completely oblivious to what’s
+wants a mortgage, or pays rent, or is not completely oblivious to what is
 been going on in the Australian housing market over the last several
 years. Back to the article:
 
@@ -259,9 +259,9 @@ that:
    ratio, it would have come up with a figure closer to 9 rather than
    5.6 or 4.3
 
-That’s, um, a rather serious discrepancy. One group of people say 9,
+That is, um, a rather serious discrepancy. One group of people say 9,
 another says 4-5. Should we just split the difference and say the truth
-lies somewhere in between? Absolutely not! This is a situation where
+lies somewhere in between? Absolutely not! Thit is a situation where
 there is a right answer and a wrong answer. Demographia is correct, and
 the Commonwealth Bank is wrong. As the article points out:
 
@@ -277,11 +277,11 @@ the Commonwealth Bank is wrong. As the article points out:
    house in the property price figures, thus understating the house
    price to income ratio for middle-income Australians.
 
-Couldn’t have put it better myself. The way that Demographia calculated
+I could not have put it better myself. The way that Demographia calculated
 the ratio is the right thing to do. The way that the Bank did it is
 incorrect. As for why an extremely quantitatively sophisticated
 organisation such as a major bank made such an elementary mistake,
-well… I can’t say for sure since I have no special insight into their
+well… I can not say for sure since I have no special insight into their
 thinking. But the article itself does happen to mention the following
 facts, which may or may not be relevant:
 
@@ -331,7 +331,7 @@ What we *could* do is read through all 400 entries and count the number
 of occasions on which each team name appears in our list of finalists,
 thereby producing a **frequency table**. However, that would be mindless
 and boring: exactly the sort of task that computers are great at. So
-let’s use jamovi to do this for us. Under ``Exploration`` → ``Descriptives``
+let us use jamovi to do this for us. Under ``Exploration`` → ``Descriptives``
 click the small check box labelled ``Frequency tables`` and you should get
 something like :numref:`fig-aflsmall_finalists_mode`.
 
@@ -339,9 +339,9 @@ Now that we have our frequency table we can just look at it and see
 that, over the 24 years for which we have data, Geelong has played in
 more finals than any other team. Thus, the mode of the ``afl.finalists``
 data is “Geelong”. We can see that Geelong (39 finals) played in
-more finals than any other team during the 1987 to 2010 period. It’s also
+more finals than any other team during the 1987 to 2010 period. It is also
 worth noting that in the ``Descriptives`` Table no results are calculated
-for Mean, Median, Minimum or Maximum. This is because the
+for Mean, Median, Minimum or Maximum. Thit is because the
 ``afl.finalists`` variable is a nominal text variable so it makes no
 sense to calculate these values.
 
@@ -349,13 +349,13 @@ One last point to make regarding the mode. Whilst the mode is most often
 calculated when you have nominal data, because means and medians are useless
 for those sorts of variables, there are some situations in which you really do
 want to know the mode of an ordinal, interval or ratio scale variable. For
-instance, let’s go back to our ``afl.margins`` variable. This variable is
-clearly ratio scale (if it’s not clear to you, it may help to re-read section
+instance, let us go back to our ``afl.margins`` variable. This variable is
+clearly ratio scale (if it is not clear to you, it may help to re-read section
 :doc:`Scales of measurement <../Ch02/Ch02_StudyDesign_2>`), and so in most situations
 the mean or the median is the measure of central tendency that you want. But
 consider this scenario: a friend of yours is offering a bet and they pick a
 football game at random. Without knowing who is playing you have to guess the
-*exact* winning margin. If you guess correctly you win $50. If you don’t you
+*exact* winning margin. If you guess correctly you win $50. If you do not you
 lose $1. There are no consolation prizes for “almost” getting the right answer.
 You have to guess exactly the right margin. For this bet, the mean and the
 median are completely useless to you. It is the mode that you should bet on. To
@@ -380,9 +380,9 @@ should bet on a 3 point margin.
 ------
 
 .. [#]
-   The choice to use *Σ* to denote summation isn’t arbitrary. It’s the Greek
+   The choice to use *Σ* to denote summation is not arbitrary. It is the Greek
    upper case letter sigma, which is the analogue of the letter S in that
-   alphabet. Similarly, there’s an equivalent symbol used to denote the
+   alphabet. Similarly, there is an equivalent symbol used to denote the
    multiplication of lots of numbers, because multiplications are also called
    “products” we use the *Π* symbol for this (the Greek upper case pi, which is
    the analogue of the letter P).
