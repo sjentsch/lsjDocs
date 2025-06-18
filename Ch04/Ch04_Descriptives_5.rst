@@ -32,8 +32,8 @@ do exactly what I just did and describe everything in terms of
 percentiles. However, the problem with doing this is that “is is lonely
 at the top”. Suppose that my friend had only collected a sample of 1000
 people (still a pretty big sample for the purposes of testing a new
-questionnaire, I would like to add), and this time gotten, let us say, a mean
-of 16 out of 50 with a standard deviation of 5. The problem is that
+questionnaire, I would like to add), and this time had gotten, let us say,
+a mean of 16 out of 50 with a standard deviation of 5. The problem is that
 almost certainly not a single person in that sample would be as grumpy
 as me.
 
@@ -50,7 +50,7 @@ In actual maths, the equation for the *z*-score is
 .. math:: z_i = \frac{X_i - \bar{X}}{\hat\sigma}
 
 So, going back to the grumpiness data, we can now transform Dani’s raw
-grumpiness into a standardised grumpiness score.
+grumpiness into a standardised grumpiness score:
 
 .. math:: z = \frac{35 - 17}{5} = 3.6
 

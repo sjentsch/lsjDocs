@@ -59,7 +59,7 @@ the ``Exploration`` → ``Descriptives`` → ``Statistics`` screen.
 And not surprisingly, in :numref:`fig-aflsmall_margins_iqr` the 50th
 percentile is the same as the median value. And, by noting that
 \50.50 - 12.75 = 37.75, we can see that the interquartile range
-for the 2010 AFL winning margins data is 37.75. While it is obvious how
+for the ``afl.margins`` variable is 37.75. While it is obvious how
 to interpret the range it is a little less obvious how to interpret the
 IQR. The simplest way to think about it is like this: the interquartile
 range is the range spanned by the “middle half” of the data. That is,
@@ -90,7 +90,7 @@ I will come back to talk about the second one later.
 Since the previous paragraph might sound a little abstract, let us go through
 the **mean absolute deviation** from the mean a little more slowly. One useful
 thing about this measure is that the name actually tells you exactly how to
-calculate it. Let us think about our AFL winning margins data, and once again
+calculate it. Let us think about our ``afl.margins`` variable, and once again
 we will start by pretending that there are only five games in total, with winning
 margins of 56, 31, 56, 8 and 32. Since our calculations rely on an examination
 of the deviation from some reference point (in this case the mean), the first
@@ -252,7 +252,7 @@ the variable type to ``Continuous`` and under ``Descriptives`` click the
 ``Variance`` check box, and you get the same values for variance as the one we
 calculated by hand (**324.64**). No, wait, you get a completely *different*
 answer (**405.80**) - see :numref:`fig-aflsmall_margins_variance1`.
-That is just weird. Is jamovi broken? Is this a typo? Am I an idiot?
+That is just weird – is jamovi broken?
 
 .. ----------------------------------------------------------------------------
 
@@ -288,7 +288,7 @@ chapter :doc:`../Ch08/Ch08_Estimation`, there is a subtle distinction between
 sample came”. Up to this point, it is been a distinction without a difference.
 Regardless of whether you are describing a sample or drawing inferences about
 the population, the mean is calculated exactly the same way. Not so for the
-variance, or the standard deviation, or for many other measures besides. What
+variance, or the standard deviation, or for many other measures. What
 I outlined to you initially (i.e., take the actual average, and thus divide
 by *N*) assumes that you literally intend to calculate the variance of the
 sample. Most of the time, however, you are not terribly interested in the
@@ -352,8 +352,8 @@ the standard deviation.
 
 However, as you might have guessed from our discussion of the variance,
 what jamovi actually calculates is slightly different to the formula
-given above. Just like the we saw with the variance, what jamovi
-calculates is a version that divides by *N - 1* rather than *N*.
+given above. Just like we saw with the variance, what jamovi calculates
+is a version that divides by *N - 1* rather than *N*.
 
 For reasons that will make sense when we return to this topic in chapter
 :doc:`../Ch08/Ch08_Estimation` I will refer to this new quantity as
@@ -372,10 +372,11 @@ mean, and 99.7\% of the data to fall within three standard deviations of
 the mean. This rule tends to work pretty well most of the time, but it is
 not exact. It is actually calculated based on an *assumption* that the
 histogram is symmetric and “bell shaped”.\ [#]_ As you can tell from
-looking at the AFL winning margins histogram in :numref:`fig-aflMargins`,
-this is not exactly true of our data! Even so, the rule is approximately
-correct. As it turns out, 65.3\% of the AFL margins data fall within one
-standard deviation of the mean. This is shown visually in :numref:`fig-aflSD`.
+looking at the histogram for the ``afl.margins`` variable in
+:numref:`fig-aflMargins`, this is not exactly true of our data! Even so, the
+rule is approximately correct. As it turns out, 65.3\% of the data in the
+``afl.margins`` variable fall within one standard deviation of the mean. This
+is shown visually in :numref:`fig-aflSD`.
 
 .. ----------------------------------------------------------------------------
 
@@ -384,7 +385,7 @@ standard deviation of the mean. This is shown visually in :numref:`fig-aflSD`.
          variable
    :name: fig-aflSD
 
-   Illustration of the standard deviation from the AFL winning margins data.
+   Illustration of the standard deviation of the ``afl.margins`` variable.
    The shaded bars in the histogram show how much of the data fall within one
    standard deviation of the mean. In this case, 65.3\% of the data set lies
    within this range, which is pretty consistent with the “approximately 68\%

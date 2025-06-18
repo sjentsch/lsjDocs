@@ -39,7 +39,7 @@ makes sense, but it hides the practical everyday importance of choosing
 good descriptives. With that in mind…
 
 Epilogue: Good descriptive statistics are descriptive!
-------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. epigraph::
 

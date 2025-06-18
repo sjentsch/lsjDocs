@@ -100,7 +100,7 @@ calculate the mean using all the data we can use jamovi. The first step
 is to click on the ``Exploration`` button and then click ``Descriptives``.
 Then you can highlight the ``afl.margins`` variable and click the ``→`` to
 move it across into the ``Variables`` box. As soon as you do that a Table
-appears on the right hand side of the screen containing default
+appears on the right-hand side of the screen containing default
 ``Descriptives`` information; see :numref:`fig-descriptives_default`.
 
 .. ----------------------------------------------------------------------------
@@ -118,7 +118,7 @@ appears on the right hand side of the screen containing default
 As you can see in :numref:`fig-descriptives_default`, the mean
 value for the ``afl.margins`` variable is **35.30**. Other information
 presented includes the total number of observations (*N* = 176), the number
-of missing values (none), and the Median, Minimum and Maximum values for
+of missing values (none), and the median, minimum and maximum values for
 the variable.
 
 The median
@@ -146,9 +146,9 @@ and there are *two* middle numbers, 31 and 32. The median is defined as
 the average of those two numbers, which is of course 31.5. As before,
 it is very tedious to do this by hand when you have got lots of numbers. In
 real life, of course, no-one actually calculates the median by sorting
-the data and then looking for the middle value. In real life we use a
+the data and then looking for the middle value. In real life, we use a
 computer to do the heavy lifting for us, and jamovi has provided us with
-a Median value of 30.50 for the ``afl.margins`` variable
+a median value of 30.50 for the ``afl.margins`` variable
 (see :numref:`fig-descriptives_default`).
 
 Mean or median? What is the difference?
@@ -202,7 +202,7 @@ As a rough guide:
 Let us expand on that last part a little. One consequence is that there are
 systematic differences between the mean and the median when the histogram is
 asymmetric (skewed; see :doc:`Ch04_Descriptives_3`). This is illustrated in
-:numref:`fig-meanmedian`. Notice that the median (right hand side) is located
+:numref:`fig-meanmedian`. Notice that the median (right-hand side) is located
 closer to the “body” of the histogram, whereas the mean left hand side) gets
 dragged towards the “tail” (where the extreme values are). To give a concrete
 example, suppose Bob (income $50,000), Kate (income $60,000) and Jane (income
@@ -216,14 +216,15 @@ choice here.
 
 .. _a_real_life_example:
 
-A real life example
+A real-life example
 ~~~~~~~~~~~~~~~~~~~
 
 To try to get a sense of why you need to pay attention to the
-differences between the mean and the median let us consider a real life
+differences between the mean and the median let us consider a real-life
 example. Since I tend to mock journalists for their poor scientific and
 statistical knowledge, I should give credit where credit is due. This is
-described in an excellent article `Housing bubble debate boils over 
+described in an excellent article by Michael Janda: `Housing bubble
+debate boils over
 <https://www.abc.net.au/news/stories/2010/09/24/3021480.htm>`__:
 
    Senior Commonwealth Bank executives have travelled the world in the
@@ -257,7 +258,7 @@ that:
    comparison – Demographia. However, if the Commonwealth Bank had also
    used Demographia’s analysis of Australia’s house price to income
    ratio, it would have come up with a figure closer to 9 rather than
-   5.6 or 4.3
+   5.6 or 4.3.
 
 That is, um, a rather serious discrepancy. One group of people say 9,
 another says 4-5. Should we just split the difference and say the truth
@@ -278,7 +279,7 @@ the Commonwealth Bank is wrong. As the article points out:
    price to income ratio for middle-income Australians.
 
 I could not have put it better myself. The way that Demographia calculated
-the ratio is the right thing to do. The way that the Bank did it is
+the ratio is correct. The way that the Bank did it is
 incorrect. As for why an extremely quantitatively sophisticated
 organisation such as a major bank made such an elementary mistake,
 well… I can not say for sure since I have no special insight into their
@@ -289,8 +290,6 @@ facts, which may or may not be relevant:
    of the biggest vested interests in house prices rising. It
    effectively owns a massive swathe of Australian housing as security
    for its home loans as well as many small business loans.
-
-My, my.
 
 .. _mode:
 
@@ -341,7 +340,7 @@ more finals than any other team. Thus, the mode of the ``afl.finalists``
 data is “Geelong”. We can see that Geelong (39 finals) played in
 more finals than any other team during the 1987 to 2010 period. It is also
 worth noting that in the ``Descriptives`` Table no results are calculated
-for Mean, Median, Minimum or Maximum. This is because the
+for mean, median, minimum or maximum. This is because the
 ``afl.finalists`` variable is a nominal text variable so it makes no
 sense to calculate these values.
 
@@ -350,7 +349,7 @@ calculated when you have nominal data, because means and medians are useless
 for those sorts of variables, there are some situations in which you really do
 want to know the mode of an ordinal, interval or ratio scale variable. For
 instance, let us go back to our ``afl.margins`` variable. This variable is
-clearly ratio scale (if it is not clear to you, it may help to re-read section
+clearly ratio scale (if it is not clear to you, it may help to reread section
 :doc:`Scales of measurement <../Ch02/Ch02_StudyDesign_2>`), and so in most situations
 the mean or the median is the measure of central tendency that you want. But
 consider this scenario: a friend of yours is offering a bet and they pick a
