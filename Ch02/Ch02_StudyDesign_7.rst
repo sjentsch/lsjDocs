@@ -553,7 +553,7 @@ arise:
 There is probably a lot more issues like this to think about, but that will
 do to start with. What I really want to point out is the blindingly
 obvious truth that real-world science is conducted by actual humans, and
-only the most gullible of people automatically assumes that everyone
+only the most gullible of people automatically assume that everyone
 else is honest and impartial. Actual scientists are not usually *that*
 naive, but for some reason the world likes to pretend that we are, and
 the textbooks we usually write seem to reinforce that stereotype.
