@@ -59,7 +59,7 @@ the left we have a term that increases as the model predictions get
 worse; on the right we have a term that increases as the model
 complexity increases. The best model is the one that fits the data well
 (low residuals, left hand side) using as few predictors as possible (low
-K, right hand side). In short, this is a simple implementation
+K, right-hand side). In short, this is a simple implementation
 of Ockham’s razor.
 
 AIC can be added to the ``Model Fit Measures`` output Table when the ``AIC``

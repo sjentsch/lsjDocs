@@ -112,7 +112,7 @@ following “experiment”: you shake up the bag, close your eyes, and pull out 
 chips without putting any of them back into the bag. First out comes the *a*
 chip (black), then the *c* chip (white), then *j* (white) and then finally *b*
 (black). If you wanted you could then put all the chips back in the bag and
-repeat the experiment, as depicted on the right hand side of
+repeat the experiment, as depicted on the right-hand side of
 :numref:`fig-srs1`. Each time you get different results but the procedure is
 identical in each case. The fact that the same procedure can lead to different
 results each time we refer to as a *random* process.\ [#]_ However, because we

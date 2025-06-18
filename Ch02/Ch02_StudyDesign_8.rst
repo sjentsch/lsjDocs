@@ -5,7 +5,7 @@ Summary
 
 This chapter is not really meant to provide a comprehensive discussion of
 psychological research methods. It would require another volume just as
-long as this one to do justice to the topic. However, in real life
+long as this one to do justice to the topic. However, in real-life
 statistics and study design are so tightly intertwined that it is very
 handy to discuss some of the key topics. In this chapter, I have briefly
 discussed the following topics:

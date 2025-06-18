@@ -113,7 +113,7 @@ slightly more powerful (lower Type II error rate) than the Welch test.
 However, if they *do not* have the same variances, then the assumptions
 of the Student test are violated and you may not be able to trust it;
 you might end up with a higher Type I error rate. So it is a trade off.
-However, in real life I tend to prefer the Welch test, because almost
+However, in real life, I tend to prefer the Welch test, because almost
 no-one *actually* believes that the population variances are identical.
 
 Assumptions of the test

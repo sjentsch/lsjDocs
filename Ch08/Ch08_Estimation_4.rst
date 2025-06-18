@@ -182,7 +182,7 @@ situation where *N* = 2, let us repeat the exercise for sample sizes
 from 1 to 10. If we plot the average sample mean and average sample
 standard deviation as a function of sample size, you get the results
 shown in :numref:`fig-biasMeanSD`. On the left hand side I have plotted the
-average sample mean and on the right hand side I have plotted the average
+average sample mean and on the right-hand side I have plotted the average
 standard deviation. The two plots are quite different: *on average*, the
 average sample mean is equal to the population mean. It is an **unbiased
 estimator**, which is essentially the reason why your best estimate for the
@@ -245,7 +245,7 @@ as the *sample* standard deviation. Technically, this is incorrect. The
 *sample* standard deviation should be equal to *s* (i.e., the formula where
 we divide by *N*). These are not the same thing, either conceptually or
 numerically. One is a property of the sample, the other is an estimated
-characteristic of the population. However, in almost every real life
+characteristic of the population. However, in almost every real-life
 application what we actually care about is the estimate of the population
 parameter, and so people always report :math:`\hat\sigma` rather than *s*.
 This is the right number to report, of course. It is just that people tend to

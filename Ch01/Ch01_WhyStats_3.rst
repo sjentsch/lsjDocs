@@ -66,7 +66,7 @@ stats. So here is my attempt to answer a few of them…
       massive shortage of statisticians out there. So, from your
       perspective as a psychological researcher, the laws of supply and
       demand are not exactly on your side here! As a result, in almost
-      any real life situation where you want to do psychological
+      any real-life situation where you want to do psychological
       research, the cruel facts will be that you do not have enough money
       to afford a statistician. So the economics of the situation mean
       that you have to be pretty self-sufficient.

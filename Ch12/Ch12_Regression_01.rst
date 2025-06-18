@@ -93,7 +93,7 @@ scatterplot of ``baby.sleep`` vs. ``dani.grump`` (left) to the
 scatterplot of ``baby.sleep`` vs. ``dani.sleep`` (right), the overall
 strength of the relationship is the same, but the direction is
 different. That is, if my son sleeps more, I get *more* sleep (positive
-relationship, right hand side), but if he sleeps more then I get *less*
+relationship, right-hand side), but if he sleeps more then I get *less*
 grumpy (negative relationship, left hand side).
 
 .. ----------------------------------------------------------------------------
@@ -129,7 +129,7 @@ you can see several plots showing what different correlations look like.
 
    Illustration of the effect of varying the strength and direction of a
    correlation. In the left hand column, the correlations are 0.00, 0.33, 0.67
-   and 1.00 In the right hand column, the correlations are 0.00, -0.33, -0.67
+   and 1.00 In the right-hand column, the correlations are 0.00, -0.33, -0.67
    and -1.00.
    
 .. ----------------------------------------------------------------------------

@@ -53,7 +53,7 @@ Actually, this equation is worth expanding on. There are three different
 terms here that you should know. On the left hand side, we have the
 posterior odds, which tells you what you believe about the relative
 plausibilty of the null hypothesis and the alternative hypothesis
-*after* seeing the data. On the right hand side, we have the **prior
+*after* seeing the data. On the right-hand side, we have the **prior
 odds**, which indicates what you thought *before* seeing the data. In
 the middle, we have the **Bayes factor**, which describes the amount of
 evidence provided by the data
@@ -146,7 +146,7 @@ above.
 
 .. [#]
    Obviously, this is a highly simplified story. All the complexity of
-   real life Bayesian hypothesis testing comes down to how you calculate
+   real-life Bayesian hypothesis testing comes down to how you calculate
    the likelihood *P*\ (d|h) when the hypothesis *h* is a
    complex and vague thing. I am not going to talk about those
    complexities in this book, but I do want to highlight that although

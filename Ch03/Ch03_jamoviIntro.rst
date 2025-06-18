@@ -52,7 +52,7 @@ so I am really talking about why I use it.
    Excel) is generally a bad idea in the long run. Although many people
    likely feel more familiar with them, spreadsheets are very limited in
    terms of what analyses they allow you do. If you get into the habit
-   of trying to do your real life data analysis using spreadsheets then
+   of trying to do your real-life data analysis using spreadsheets then
    you have dug yourself into a very deep hole.
 
 -  Avoiding proprietary software is a very good idea. There are a lot of
