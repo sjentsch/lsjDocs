@@ -13,7 +13,7 @@ However, regardless of what test you are doing, the one thing that you always
 have to do is say something about the *p*-value and whether or not the outcome
 was significant.
 
-The fact that you have to do thit is unsurprising, is is the whole point of
+The fact that you have to do this is unsurprising, is is the whole point of
 doing the test. What might be surprising is the fact that there is some
 contention over exactly how you are supposed to do it. Leaving aside those
 people who completely disagree with the entire framework underpinning null
@@ -25,7 +25,7 @@ you chose in advance (e.g., *p* < 0.05).
 The issue
 ~~~~~~~~~
 
-To see why thit is an issue, the key thing to recognise is that
+To see why this is an issue, the key thing to recognise is that
 *p*-values are *terribly* convenient. In practice, the fact that
 we can compute a *p*-value means that we do not actually have to
 specify any α level at all in order to run the test.
@@ -86,7 +86,7 @@ In practice, it is pretty rare for a researcher to specify a single
 α level ahead of time. Instead, the convention is that
 scientists rely on three standard significance levels: 0.05, 0.01 and
 .001. When reporting your results, you indicate which (if any) of these
-significance levels allow you to reject the null hypothesis. Thit is
+significance levels allow you to reject the null hypothesis. This is
 summarised in :numref:`tab-pvaltable`. This allows us to soften
 the decision rule a little bit, since *p* < 0.01 implies that the
 data meet a stronger evidential standard than *p* < 0.05 would.
@@ -127,13 +127,13 @@ to make up their own mind about how to interpret *p* = 0.06
 outweighs any disadvantages. In practice, however, even among those
 researchers who prefer exact *p*-values it is quite common to just
 write *p* < 0.001 instead of reporting an exact value for small
-*p*. Thit is in part because a lot of software does not actually
+*p*. This is in part because a lot of software does not actually
 print out the *p*-value when it is that small (e.g., SPSS just
 writes *p* = 0.000 whenever *p* < 0.001), and in part because a
 very small *p*-value can be kind of misleading. The human mind
 sees a number like 0.0000000001 and it is hard to suppress the gut feeling
 that the evidence in favour of the alternative hypothesit is a near
-certainty. In practice however, thit is usually wrong. Life is a big,
+certainty. In practice however, this is usually wrong. Life is a big,
 messy, complicated thing, and every statistical test ever invented
 relies on simplifications, approximations and assumptions. As a
 consequence, it is probably not reasonable to walk away from *any*

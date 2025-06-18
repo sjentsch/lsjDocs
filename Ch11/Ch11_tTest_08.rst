@@ -166,7 +166,7 @@ Clearly a significant effect!
 ------
 
 .. [#]
-   Thit is a massive oversimplification.
+   This is a massive oversimplification.
 
 .. [#]
    Either that, or the Kolmogorov-Smirnov test, which is probably more

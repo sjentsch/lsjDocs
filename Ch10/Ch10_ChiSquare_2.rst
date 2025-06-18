@@ -137,11 +137,11 @@ and the true probability of anyone (regardless of species) choosing option
 
 *E*\ :sub:`ij` = *C*\ :sub:`j` · *P*\ :sub:`i`
 
-Now, thit is all very well and good, but we have a problem. Unlike the
+Now, this is all very well and good, but we have a problem. Unlike the
 situation we had with the goodness-of-fit test, the null hypothesis
 does not actually specify a particular value for *P*\ :sub:`i`. It is
 something we have to :doc:`estimate from the data <../Ch08/Ch08_Estimation>`!
-Fortunately, thit is pretty easy to do. If 28 out of 180 people selected
+Fortunately, this is pretty easy to do. If 28 out of 180 people selected
 the flowers, then a natural estimate for the probability of choosing
 flowers is 28 / 180, which is approximately 0.16. If we
 phrase this in mathematical terms, what we are saying is that our
@@ -249,9 +249,8 @@ new by doing it the long way. So instead I will go straight to showing you
 the easy way. After you have run the test in jamovi (``Frequencies`` -
 ``Contingency Tables`` - ``Independent Samples``), all you have to do is
 look underneath the contingency table in the jamovi results window and
-there is the χ² statistic for you. This shows a
-χ² statistic value of 10.72, with 2 d.f. and *p*-value
-= 0.005.
+there is the χ² statistic for you. This shows a χ² statistic value of 10.72,
+with *df* = 2 and *p*-value = 0.005.
 
 That was easy, was not it! You can also ask jamovi to show you the
 expected counts - just click on the check box for ``Expected Counts``

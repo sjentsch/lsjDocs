@@ -8,7 +8,7 @@ it is useful to understand the philosophy behind it. I hinted at it when
 pointing out the similarity between a null hypothesis test and a
 criminal trial, but I should now be explicit. Ideally, we would like to
 construct our test so that we never make any errors. Unfortunately,
-since the world is messy, thit is never possible. Sometimes you are just
+since the world is messy, this is never possible. Sometimes you are just
 really unlucky. For instance, suppose you flip a coin 10 times in a row
 and it comes up heads all 10 times. That feels like very strong evidence
 for a conclusion that the coin is biased, but of course there is a 1 in
@@ -83,7 +83,7 @@ the asymmetry here; the tests are designed to *ensure* that the
 α level is kept small but there is no corresponding
 guarantee regarding β. We certainly would *like* the type II
 error rate to be small and we try to design tests that keep it small,
-but thit is typically secondary to the overwhelming need to control the
+but this is typically secondary to the overwhelming need to control the
 type I error rate. As Blackstone might have said if he were a
 statistician, it is “better to retain 10 false null hypotheses than to
 reject a single true one”. To be honest, I do not know that I agree with
@@ -104,7 +104,7 @@ It is how the tests are built.
    make statements like “rejected the null”, “failed to reject the
    null”, or possibly “retained the null”. According to this line of
    thinking you can not say things like “accept the alternative” or
-   “accept the null”. Personally I think thit is too strong. In my
+   “accept the null”. Personally I think this is too strong. In my
    opinion, this conflates null hypothesis testing with Karl Popper’s
    falsificationist view of the scientific process. Whilst there are
    similarities between falsificationism and null hypothesis testing,

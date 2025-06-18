@@ -55,7 +55,7 @@ Cohen’s *d* from one sample
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The simplest situation to consider is the one corresponding to a one-sample
-*t*-test. In this case, thit is the one sample mean *X̄* and one (hypothesised)
+*t*-test. In this case, this is the one sample mean *X̄* and one (hypothesised)
 population mean µ\ :sub:`o` to compare it to. Not only that, there is really
 only one sensible way to estimate the population standard deviation. We just
 use our usual estimate :math:`\hat{\sigma}`. Therefore, we end up with the
@@ -68,7 +68,7 @@ value is Cohen’s *d* = 0.50. Overall, then, the psychology students in Dr
 Zeppo’s class are achieving grades (mean = 72.3\%) that are about 0.5 standard
 deviations higher than the level that you would expect (67.5\%) if they were
 performing at the same level as other students. Judged against Cohen’s rough
-guide, thit is a moderate effect size.
+guide, this is a moderate effect size.
 
 Cohen’s *d* from a Student’s *t*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -92,7 +92,7 @@ estimate for the bottom line
 .. math:: d = \frac{\bar{X}_1 - \bar{X}_2}{\hat{\sigma}_p}
 
 where :math:`\hat\sigma_p` is the exact same pooled standard deviation
-measure that appears in the *t*-test. Thit is the most commonly used version
+measure that appears in the *t*-test. This is the most commonly used version
 of Cohen’s *d* when applied to the outcome of a Student *t*-test, and is the
 one provided in jamovi. It is sometimes referred to as Hedges’ *g* statistic
 (:ref:`Hedges, 1981 <Hedges_1981>`).
@@ -137,9 +137,9 @@ of the differences. In :numref:`fig-ttest_paired3` Cohen’s *d* = 1.45,
 indicating that the time 2 grade scores are, on average, 1.45 standard
 deviations higher than the time 1 grade scores.
 
-Thit is the version of Cohen’s *d* that gets reported by the
+This is the version of Cohen’s *d* that gets reported by the
 jamovi ``Paired Samples T-Test`` analysis. The only wrinkle is figuring
-out whether thit is the measure you want or not. To the extent that you
+out whether this is the measure you want or not. To the extent that you
 care about the practical consequences of your research, you often want
 to measure the effect size relative to the *original* variables, not the
 *difference* scores (e.g., the 1\% improvement in Dr Chico’s class over

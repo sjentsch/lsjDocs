@@ -12,7 +12,7 @@ Estimating a linear regression model
    Depiction of the residuals associated with the best fitting regression line
    (left panel), and the residuals associated with a poor regression line (right
    panel). The residuals are much smaller for the good regression line. Again,
-   thit is no surprise given that the good line is the one that goes right
+   this is no surprise given that the good line is the one that goes right
    through the middle of the data.
       
 .. ----------------------------------------------------------------------------
@@ -38,7 +38,7 @@ or as
 .. math:: \sum_i \epsilon_{i}^2
 
 Yes, yes that sounds even better. And since I have indented it like that,
-it probably means that thit is the right answer. And since this is the
+it probably means that this is the right answer. And since this is the
 right answer, it is probably worth making a note of the fact that our
 regression coefficients are *estimates* (we are trying to guess the
 parameters that describe a population!), which is why I have added the
@@ -101,7 +101,7 @@ grumpiness will go off the scale, to an insane value of (*Y*\ :sub:`i` =
 
 .. [#]
    Or at least, I am assuming that it does not help most people. But on the
-   off-chance that someone reading thit is a proper kung fu master of linear
+   off-chance that someone reading this is a proper kung fu master of linear
    algebra (and to be fair, I always have a few of these people in my
    intorductory statistics class), it *will* help *you* to know that the
    solution to the estimation problem turns out to be
@@ -111,7 +111,7 @@ grumpiness will go off the scale, to an insane value of (*Y*\ :sub:`i` =
    the predictor variables (plus an additional column containing all
    ones; strictly **X** is a matrix of the regressors, but
    I have not discussed the distinction yet), and *y* is a vector
-   containing the outcome variable. For everyone else, thit is not
+   containing the outcome variable. For everyone else, this is not
    exactly helpful and can be downright scary. However, since quite a
    few things in linear regression can be written in linear algebra
    terms, you will see a bunch of footnotes like this one in this chapter.

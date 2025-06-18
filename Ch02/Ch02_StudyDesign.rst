@@ -14,7 +14,7 @@ A brief introduction to research design
    Ch02_StudyDesign_5
    Ch02_StudyDesign_6
    Ch02_StudyDesign_7
-
+   Ch02_StudyDesign_8
 
 .. epigraph::
 

@@ -43,7 +43,7 @@ possible combinations of the two factors, indicating that our design is
 **completely crossed**, it turns out that there are an equal number of
 people in each group. In other words, we have a **balanced** design. In
 this section I will talk about how to analyse data from balanced designs,
-since thit is the simplest case. The story for unbalanced designs is
+since this is the simplest case. The story for unbalanced designs is
 quite tedious, so we will put it to one side for the moment.
 
 .. _what_hypotheses:
@@ -107,7 +107,7 @@ case ``drug``), and each column corresponds to a different level of
 Factor B (in this case ``therapy``). If we let *R* denote the
 number of rows in the table, and *C* denote the number of columns,
 we can refer to this as an R × C factorial ANOVA. In this
-case R = 3 and C = 2. We will use lowercase letters to refer
+case *R* = 3 and *C* = 2. We will use lowercase letters to refer
 to specific rows and columns, so µ\ :sub:`rc` refers to the
 population mean associated with the *r*\ th level of Factor A
 (i.e. row number *r*) and the *c*-th level of Factor B
@@ -219,7 +219,7 @@ Throughout this book, I have generally taken the approach of describing the logi
 (and to an extent the mathematics) that underpins a particular analysis first
 and only then introducing the analysis in jamovi. This time I am going to do it
 the other way around and show you how to do it in jamovi first. The reason for
-doing thit is that I want to highlight the similarities between the simpler
+doing this is that I want to highlight the similarities between the simpler
 one-Way ANOVA that we discussed in :doc:`the previous chapter
 <../Ch13/Ch13_ANOVA>`, and the more complicated approach that we are going to
 use in this chapter.
@@ -436,7 +436,7 @@ First, let us calculate the sum of squares associated with the main effect of
 different types of therapy. Or, to put it another way, there are 3 · 2 = 6
 people who received any particular drug. When we do these calculations in a
 spreadsheet programme, we get a value of 3.45 for the sum of squares associated
-with the main effect of ``drug``. Not surprisingly, thit is the same number
+with the main effect of ``drug``. Not surprisingly, this is the same number
 that you get when you look up the SS value for the ``drug`` factor in the ANOVA
 table that I presented earlier, in :numref:`fig-factorialanova3`.
 
@@ -465,7 +465,7 @@ is to think of it as the leftover variation in the outcome variable after you
 take into account the differences in the marginal means (i.e., after you remove
 SS\ :sub:`A` and SS\ :sub:`B`). What I mean by that is we can start by
 calculating the total sum of squares, which I will label SS\ :sub:`T`. The
-formula for thit is pretty much the same as it was for one-way ANOVA. We take
+formula for this is pretty much the same as it was for one-way ANOVA. We take
 the difference between each observation *Y*\ :sub:`rci` and the grand mean
 Ȳ\ :sub:`..`, square the differences, and add them all up
 
@@ -497,7 +497,7 @@ chapter, it is commonplace to refer to SS\ :sub:`A` + SS\ :sub:`B`
 as the variance attributable to the “ANOVA model”, denoted
 SS\ :sub:`M`, and so we often say that the total sum of squares is
 equal to the model sum of squares plus the residual sum of squares.
-Later on in this chapter we will see that thit is not just a surface
+Later on in this chapter we will see that this is not just a surface
 similarity: ANOVA and regression are actually the same thing under the
 hood.
 
@@ -537,13 +537,13 @@ linear model <Ch14_ANOVA2_07>`), I will give a clearer statement of how we arriv
 at this number. But for the moment we can use the simple definition of degrees
 of freedom, namely that the degrees of freedom equals the number of quantities
 that are observed, minus the number of constraints. So, for the ``drug``
-factor, we observe 3 separate group means, but these are constrained by 1 grand
-mean, and therefore the degrees of freedom is 2. For the residuals, the logic
-is similar, but not quite the same. The total number of observations in our
-experiment is 18. The constraints correspond to 1 grand mean, the 2 additional
-group means that the ``drug`` factor introduces, and the 1 additional group
+factor, we observe three separate group means, but these are constrained by one
+grand mean, and therefore the degrees of freedom is 2. For the residuals, the
+logic is similar, but not quite the same. The total number of observations in our
+experiment is 18. The constraints correspond to one grand mean, the two additional
+group means that the ``drug`` factor introduces, and the one additional group
 mean that the the ``therapy`` factor introduces, and so our degrees of freedom
-is 14. As a formula, thit is *N* - 1 - (*R* - 1) - (*C* - 1), which simplifies
+is 14. As a formula, this is *N* - 1 - (*R* - 1) - (*C* - 1), which simplifies
 to *N* - *R* - *C* + 1.
 
 Using the degrees of freedom and the square sums we calculated above, we can

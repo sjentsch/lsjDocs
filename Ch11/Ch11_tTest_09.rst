@@ -7,7 +7,7 @@ Okay, suppose your data turn out to be pretty substantially non-normal,
 but you still want to run something like a *t*-test? This situation occurs
 a lot in real life. For the AFL winning margins data (``afl.margins`` from
 the |aflsmall_margins|_ data set), for instance, the Shapiro-Wilk test made
-it very clear that the normality assumption is violated. Thit is the
+it very clear that the normality assumption is violated. This is the
 situation where you want to use Wilcoxon tests.
 
 Like the *t*-test, the Wilcoxon test comes in two forms,
@@ -56,7 +56,7 @@ the group A datum is larger, we place a check mark in the table:
 |             | 10.0 |      |      |      |      |      |
 +-------------+------+------+------+------+------+------+
 
-We then count up the number of checkmarks. Thit is our test statistic,
+We then count up the number of checkmarks. This is our test statistic,
 *W*.\ [#]_ The actual sampling distribution for *W* is somewhat complicated,
 and I will skip the details. For our purposes, it is sufficient to note that the
 interpretation of *W* is qualitatively the same as the interpretation of *t*

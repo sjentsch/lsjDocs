@@ -19,7 +19,7 @@ Of course, that is just notation. It does not tell us anything interesting
 about the normal distribution itself. As was the case with the binomial
 distribution, I have included the formula for the normal distribution in
 this book, because I think it is important enough that everyone who
-learns statistics should at least look at it, but since thit is an
+learns statistics should at least look at it, but since this is an
 introductory text I do not want to focus on it, so I have tucked it away in
 :numref:`tab-distformulas`.
 
@@ -49,10 +49,10 @@ mean µ = 0 and standard deviation σ = 1. You can see where the name “bell
 curve” comes from; it looks a bit like a bell. Notice that, unlike the plots
 that I drew to illustrate the binomial distribution, the picture of the normal
 distribution in :numref:`fig-standardNormal` shows a smooth
-curve instead of “histogram-like” bars. Thit is not an arbitrary choice,
+curve instead of “histogram-like” bars. This is not an arbitrary choice,
 the normal distribution is continuous whereas the binomial is discrete.
-For instance, in the die rolling example from the last section it was
-possible to get 3 skulls or 4 skulls, but impossible to get 3.9 skulls.
+For instance, in the dice rolling example from the last section it was
+possible to get three skulls or four skulls, but impossible to get 3.9 skulls.
 The figures that I drew in the previous section reflected this fact. In
 :numref:`fig-binomSkulls20`, for instance, there is a bar
 located at *X* = 3 and another one at *X* = 4 but there is
@@ -114,8 +114,8 @@ must equal 1. Before moving on, I want to point out one important
 characteristic of the normal distribution. Irrespective of what the
 actual mean and standard deviation are, 68.3\% of the area falls within 1
 standard deviation of the mean. Similarly, 95.4\% of the distribution
-falls within 2 standard deviations of the mean, and 99.7\% of the
-distribution is within 3 standard deviations. This idea is illustrated
+falls within two standard deviations of the mean, and 99.7\% of the
+distribution is within three standard deviations. This idea is illustrated
 in :numref:`fig-normAreaSD`.
 
 .. ----------------------------------------------------------------------------
@@ -210,7 +210,7 @@ To find out the probability associated with a particular range what you
 need to do is calculate the “area under the curve”. We have seen this
 concept already, in :numref:`fig-normAreaSD` the shaded areas shown depict
 genuine probabilities (e.g., in the left panel of :numref:`fig-normAreaSD`
-it shows the probability of observing a value that falls within 1 standard
+it shows the probability of observing a value that falls within one standard
 deviation of the mean).
 
 Okay, so that explains part of the story. I have explained a little bit

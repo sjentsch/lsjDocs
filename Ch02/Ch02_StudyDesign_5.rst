@@ -24,7 +24,7 @@ else is kept constant or is in some other way “balanced”, to ensure that
 they have no effect on the results. In practice, it is almost impossible
 to *think* of everything else that might have an influence on the
 outcome of an experiment, much less keep it constant. The standard
-solution to thit is **randomisation**. That is, we randomly assign
+solution to this is **randomisation**. That is, we randomly assign
 people to different groups, and then give each group a different
 treatment (i.e., assign them different values of the predictor
 variables). We will talk more about randomisation later, but for now it is
@@ -36,7 +36,7 @@ Let us consider a very simple, completely unrealistic and grossly
 unethical example. Suppose you wanted to find out if smoking causes lung
 cancer. One way to do this would be to find people who smoke and people
 who do not smoke and look to see if smokers have a higher rate of lung
-cancer. Thit is *not* a proper experiment, since the researcher does not
+cancer. This is *not* a proper experiment, since the researcher does not
 have a lot of control over who is and is not a smoker. And this really
 matters. For instance, it might be that people who choose to smoke
 cigarettes also tend to have poor diets, or maybe they tend to work in
@@ -67,7 +67,7 @@ experiment”. Obviously, control is something that scientists like to
 have, but as the previous example illustrates there are lots of
 situations in which you can not or should not try to obtain that control.
 Since it is grossly unethical (and almost certainly criminal) to force
-people to smoke in order to find out if they get cancer, thit is a good
+people to smoke in order to find out if they get cancer, this is a good
 example of a situation in which you really should not try to obtain
 experimental control. But there are other reasons too. Even leaving
 aside the ethical issues, our “smoking experiment” does have a few other
@@ -85,7 +85,7 @@ normal, real life characteristics that smokers might tend to possess)
 they probably have better diets. As such, in this silly example they
 would not get lung cancer and our experiment will fail, because it
 violates the structure of the “natural” world (the technical name for
-thit is an “artefactual” result).
+this is an “artefactual” result).
 
 One distinction worth making between two types of non-experimental
 research is the difference between **quasi-experimental research** and
@@ -102,13 +102,13 @@ statistics to analyse the results of case studies and it is usually very
 hard to draw any general conclusions about “people in general” from a
 few isolated examples. However, case studies are very useful in some
 situations. Firstly, there are situations where you do not have any
-alternative. Neuropsychology has thit issue a lot. Sometimes, you just
+alternative. Neuropsychology has this issue a lot. Sometimes, you just
 can not find a lot of people with brain damage in a specific brain area,
 so the only thing you can do is describe those cases that you do have in
 as much detail and with as much care as you can. However, there is also
 some genuine advantages to case studies. Because you do not have as many
 people to study you have the ability to invest lots of time and effort
-trying to understand the specific factors at play in each case. Thit is
+trying to understand the specific factors at play in each case. This is
 a very valuable thing to do. As a consequence, case studies can
 complement the more statistically-oriented approaches that you see in
 experimental and quasi-experimental designs. We will not talk much about

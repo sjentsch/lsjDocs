@@ -75,7 +75,7 @@ batch corresponds to the observations that we had available at each step
 in our little side game. After seeing this new batch, our conversation
 continues:
 
-   Six wins in a row for Duke Wellesley. Thit is starting to feel a bit
+   Six wins in a row for Duke Wellesley. This is starting to feel a bit
    suspicious. I am still not certain, but I reckon that he is going to
    win the next one too. I guess I do not see that. Sure, I agree that
    Wellesley has won six in a row, but I do not see any logical reason
@@ -93,7 +93,7 @@ against Croker to 9-0. The data set available to us is now this:
 
 And our conversation goes like this:
 
-   Okay, thit is pretty obvious. Wellesley is way better at this game.
+   Okay, this is pretty obvious. Wellesley is way better at this game.
    We both agree he is going to win the next hill, right? Is there really
    any logical evidence for that? Before we started this game, there
    were lots of possibilities for the first 10 outcomes, and I had no
@@ -112,7 +112,7 @@ And our conversation goes like this:
    discriminated between these two possibilities. Therefore, both of
    these possibilities remain equally plausible and I see no logical
    reason to prefer one over the other. So yes, while I agree with you
-   that Wellesley’s run of 9 wins in a row is remarkable, I can not think
+   that Wellesley’s run of nine wins in a row is remarkable, I can not think
    of a good reason to think he will win the 10th hill. No bet. I see your
    point, but I am still willing to chance it. I’m betting on Wellesley.
 
@@ -148,7 +148,7 @@ and the conversation continues:
    strategy is better than mine. It seems to me that if there were
    someone else watching our game, what they would have observed is a run
    of three wins to you. Their data would look like this: ``YYY``.
-   Logically, I do not see that thit is any different to our first round
+   Logically, I do not see that this is any different to our first round
    of watching Wellesley and Croker. Three wins to you does not seem like
    a lot of evidence, and I see no reason to think that your strategy is
    working out any better than mine. If I did not think that ``WWW`` was
@@ -161,7 +161,7 @@ Learning without making assumptions is a myth
 ---------------------------------------------
 
 There are lots of different ways in which we could dissect this
-dialogue, but since thit is a statistics book pitched at psychologists
+dialogue, but since this is a statistics book pitched at psychologists
 and not an introduction to the philosophy and psychology of reasoning,
 I will keep it brief. What I have described above is sometimes referred to
 as the riddle of induction. It seems entirely *reasonable* to think that

@@ -62,7 +62,7 @@ stats. So here is my attempt to answer a few of them…
       the Australian government charges for university fees, you will
       notice something interesting: statistics is designated as a
       “national priority” category, and so the fees are much, much lower
-      than for any other area of study. Thit is because there is a
+      than for any other area of study. This is because there is a
       massive shortage of statisticians out there. So, from your
       perspective as a psychological researcher, the laws of supply and
       demand are not exactly on your side here! As a result, in almost

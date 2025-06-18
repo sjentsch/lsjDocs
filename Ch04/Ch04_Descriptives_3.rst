@@ -86,7 +86,7 @@ distribution, with thin tails, so the kurtosit is negative and we call the data
 *platykurtic*. The data in the right panel have a distribution with fat tails,
 so the kurtosit is positive and we say that the data is *leptokurtic*. Only the
 data in the middle panel have neither thin or fat tails, so we say that it is
-*mesokurtic* and has kurtosis zero. Thit is summarised in the table below:
+*mesokurtic* and has kurtosis zero. This is summarised in the table below:
 
 +-----------------------------+----------------+----------------+
 | informal term               | technical name | kurtosis value |

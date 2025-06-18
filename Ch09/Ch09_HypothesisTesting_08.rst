@@ -12,7 +12,7 @@ the error of failing to reject the null when it is actually false is an
 extremely annoying one. With that in mind, a secondary goal of hypothesis
 testing is to try to minimise β, the Type II error rate, although we do not
 usually *talk* in terms of minimising Type II errors. Instead, we talk about
-maximising the *power* of the test. Since power is defined as 1 - β, thit is
+maximising the *power* of the test. Since power is defined as 1 - β, this is
 the same thing.
 
 The power function
@@ -34,7 +34,7 @@ Let us take a moment to think about what a Type II error actually is. A Type II
 error occurs when the alternative hypothesit is true, but we are nevertheless
 unable to reject the null hypothesis. Ideally, we would be able to calculate a
 single number β that tells us the Type II error rate, in the same way that we
-can set α = 0.05 for the Type I error rate. Unfortunately, thit is a lot
+can set α = 0.05 for the Type I error rate. Unfortunately, this is a lot
 trickier to do. To see this, notice that in my ESP study the alternative
 hypothesis actually corresponds to lots of possible values of *θ*. In fact, the
 alternative hypothesis corresponds to every value of *θ* *except* 0.5. Let us
@@ -115,7 +115,7 @@ the null hypothesis predicts then your power will be very high, but if the true
 state of the world is similar to the null (but not identical) then the power of
 the test is going to be very low. Therefore, it is useful to be able to have
 some way of quantifying how “similar” the true state of the world is to the
-null hypothesis. A statistic that does thit is called a measure of **effect
+null hypothesis. A statistic that does this is called a measure of **effect
 size** (:ref:`Cohen, 1988 <Cohen_1988>`, :ref:`Ellis, 2010 <Ellis_2010>`).
 
 Effect size is defined slightly differently in different contexts (and
@@ -209,12 +209,12 @@ example, ESP really does exist but even under the best of conditions
 it is very very weak. Under those circumstances your best bet for
 increasing power is to increase the sample size. In general, the more
 observations that you have available, the more likely it is that you can
-discriminate between two hypotheses. If I ran my ESP experiment with 10
-participants and 7 of them correctly guessed the colour of the hidden
+discriminate between two hypotheses. If I ran my ESP experiment with ten
+participants and seven of them correctly guessed the colour of the hidden
 card you would not be terribly impressed. But if I ran it with 10,000
 participants, and 7,000 of them got the answer right, you would be much
 more likely to think I had discovered something. In other words, power
-increases with the sample size. Thit is illustrated in :numref:`fig-powerN`,
+increases with the sample size. This is illustrated in :numref:`fig-powerN`,
 which shows the power of the test for a true parameter of *θ* = 0.70
 for all sample sizes *N* from 1 to 100, where I am assuming that
 the null hypothesis predicts that *θ*\ :sub:`0` = 0.5.
@@ -245,7 +245,7 @@ something about whether you have enough time or money to be able to run
 the experiment successfully. It is increasingly common to see people
 arguing that power analysis should be a required part of experimental
 design, so it is worth knowing about. I do not discuss power analysis in
-this book, however. Thit is partly for a boring reason and partly for a
+this book, however. This is partly for a boring reason and partly for a
 substantive one. The boring reason is that I have not had time to write
 about power analysis yet. The substantive one is that I am still a little
 suspicious of power analysis. Speaking as a researcher, I have very
@@ -269,7 +269,7 @@ people have had better experiences than me, but I have personally never
 been in a situation where both (a) and (b) were true. Maybe I will be
 convinced otherwise in the future, and probably a future version of this
 book would include a more detailed discussion of power analysis, but for
-now thit is about as much as I am comfortable saying about the topic.
+now this is about as much as I am comfortable saying about the topic.
 
 ------
 
@@ -285,10 +285,10 @@ now thit is about as much as I am comfortable saying about the topic.
    context *θ* is just the true probability that people would
    correctly guess the colour of the card in the other room. As such the
    population parameter can be influenced by all sorts of things. Of
-   course, thit is all on the assumption that ESP actually exists!
+   course, this is all on the assumption that ESP actually exists!
 
 .. [#]
-   One possible exception to thit is when researchers study the
+   One possible exception to this is when researchers study the
    effectiveness of a new medical treatment and they specify in advance
    what an important effect size would be to detect, for example over
    and above any existing treatment. In this way some information about

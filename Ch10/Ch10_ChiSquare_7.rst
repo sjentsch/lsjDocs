@@ -27,15 +27,15 @@ contingency table:
 At first pass, you might think that this situation lends itself to the Pearson
 :doc:`χ² test of independence <Ch10_ChiSquare_2>`. However, a little bit of
 thought reveals that we have got a problem. We have 100 participants but 200
-observations. Thit is because each person has provided us with an answer in
+observations. This is because each person has provided us with an answer in
 *both* the before column and the after column. What this means is that the 200
 observations are not independent of each other. If voter A says “yes” the first
 time and voter B says “no”, then you would expect that voter A is more likely to
-say “yes” the second time than voter B! The consequence of thit is that the
+say “yes” the second time than voter B! The consequence of this is that the
 usual χ² test will not give trustworthy answers due to the violation of the
 independence assumption. Now, if this were a really uncommon situation, I
 would not be bothering to waste your time talking about it. But it is not
-uncommon at all. Thit is a *standard* repeated measures design, and none of
+uncommon at all. This is a *standard* repeated measures design, and none of
 the tests we have considered so far can handle it. Eek.
 
 The solution to the problem was published by :ref:`McNemar (1947)
@@ -52,9 +52,9 @@ different way:
 | **Total**      |          30 |         70 |   100 |
 +----------------+-------------+------------+-------+
 
-Thit is exactly the same data, but is is been rewritten so that each of our 100
+This is exactly the same data, but is is been rewritten so that each of our 100
 participants appears in only one cell. Because we have written our data this way
-the independence assumption is now satisfied, and thit is a contingency table
+the independence assumption is now satisfied, and this is a contingency table
 that we *can* use to construct a χ²-goodness-of-fit statistic. However, as
 we will see, we need to do it in a slightly non-standard way. To see what is going
 on, it helps to label the entries in our table a little differently:
@@ -148,7 +148,7 @@ against the second choice.
      spades      18       13     15      4
 
 Suppose I wanted to know whether the choice you make the second time is
-dependent on the choice you made the first time. Thit is where a test of
+dependent on the choice you made the first time. This is where a test of
 independence is useful, and what we are trying to do is see if there is some
 relationship between the rows and columns of this table.
 

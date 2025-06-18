@@ -67,7 +67,7 @@ of the sampling distribution of our test statistic.
 
 As it turns out those three things uniquely solve the problem. Our critical
 region consists of the most *extreme values*, known as the **tails** of the
-distribution. Thit is illustrated in :numref:`fig-rejectionRegion1`. If we
+distribution. This is illustrated in :numref:`fig-rejectionRegion1`. If we
 want α = 0.05 then our critical regions correspond to *X* ≤ 40` and
 *X* ≥ 60.\ [#]_ That is, if the number of people saying “true” is between 41
 and 59, then we should retain the null hypothesis. If the number is between 0
@@ -140,7 +140,7 @@ we notice that the alternative hypothesis covers *both* the possibility
 that *θ* < 0.5 and the possibility that *θ* > 0.5.
 This makes sense if I really think that ESP could produce either
 better-than-chance performance *or* worse-than-chance performance (and
-there are some people who think that). In statistical language thit is
+there are some people who think that). In statistical language this is
 an example of a **two-sided test**. It is called this because the
 alternative hypothesis covers the area on both “sides” of the null
 hypothesis, and as a consequence the critical region of the test covers

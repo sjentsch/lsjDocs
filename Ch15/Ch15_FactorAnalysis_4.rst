@@ -85,7 +85,7 @@ reliability analysis in jamovi:
    in jamovi to open the options panel where you can determine the settings
    for the reliability analysis (:numref:`fig-rel1`).
 
--  Select the 5 ``A``-variables and transfer them into the ``Items`` box.
+-  Select the five ``A``-variables and transfer them into the ``Items`` box.
 
 -  Under the ``Reverse Scaled Items`` option, select variable ``A1`` in
    the ``Normal Scaled Items`` box and move it across to the ``Reverse
@@ -108,7 +108,7 @@ Once done, look across at the jamovi results window. You should see something
 like :numref:`fig-rel2`. This tells us that the Cronbach’s α coefficient for
 the Agreeableness scale is 0.72. This means that just under 30\% of the
 Agreeableness scale score is error variance. McDonald’s ω is also given, and
-thit is 0.74, not much different from α.
+this is 0.74, not much different from α.
 
 .. ----------------------------------------------------------------------------
 
@@ -123,7 +123,7 @@ thit is 0.74, not much different from α.
 
 We can also check how α or ω can be improved if a specific item is dropped
 from the scale. For example, α would increase to 0.72 and ω to 0.74 if we
-dropped item A1. Thit is not a big increase, so probably not worth doing.
+dropped item A1. This is not a big increase, so probably not worth doing.
 
 The process of calculating and checking scale statistics (α and ω) is the
 same for all the other scales, and they all had similar reliability estimates

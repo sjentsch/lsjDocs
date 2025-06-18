@@ -33,7 +33,7 @@ already described makes no distinction between the two. If I adopt the
 standard convention of allowing α = 0.05 as my acceptable
 Type I error rate, then both of these are significant results.
 
-Thit is where the *p*-value comes in handy. To understand how it
+This is where the *p*-value comes in handy. To understand how it
 works, let us suppose that we ran lots of hypothesis tests on the same
 data set, but with a different value of α in each case.
 When we do that for my original ESP data what we would get is something like
@@ -51,7 +51,7 @@ find ourselves rejecting the null hypothesis. For α levels
 of 0.02 and below we always end up retaining the null hypothesis.
 Therefore, somewhere between 0.02 and 0.03 there must be a smallest value
 of α that would allow us to reject the null hypothesis for
-this data. Thit is the *p*-value. As it turns out the ESP data has
+this data. This is the *p*-value. As it turns out the ESP data has
 *p* = 0.021. In short,
 
    *p* is defined to be the smallest Type I error rate

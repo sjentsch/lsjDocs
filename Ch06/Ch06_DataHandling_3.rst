@@ -34,7 +34,7 @@ question:
 
 Now let us load and look at the data. The |likert|_ data set contains a single
 variable that contains raw Likert-scale responses for these 10 people. However,
-if you think about it, thit is not the best way to represent these responses.
+if you think about it, this is not the best way to represent these responses.
 Because of the fairly symmetric way that we set up the response scale, there is
 a sense in which the midpoint of the scale should have been coded as 0 (no
 opinion), and the two endpoints should be **+3** (strongly agree) and **-3**
@@ -132,7 +132,7 @@ distribution of people at a social gathering:
 In some situations it can be quite helpful to group these into a
 smallish number of categories. For example, we could group the data into
 three broad categories: young (0-20), adult (21-40) and older (41-60).
-Thit is a quite coarse-grained classification, and the labels that I have
+This is a quite coarse-grained classification, and the labels that I have
 attached only make sense in the context of this data set (e.g., viewed
 more generally, a 42 year old would not consider themselves as “older”).
 We can slice this variable up quite easily using the jamovi ``IF``
@@ -171,7 +171,7 @@ as meaningless. More generally, in practice I have noticed that people
 have a very strong desire to carve their (continuous and messy) data
 into a few (discrete and simple) categories, and then run analyses using
 the categorised data instead of the original data.\ [#]_ I would not go so
-far as to say that thit is an inherently bad idea, but it does have some
+far as to say that this is an inherently bad idea, but it does have some
 fairly serious drawbacks at times, so I would advise some caution if you
 are thinking about doing it.
 
@@ -189,7 +189,7 @@ Likert-scale responses for 10 people. To create a transformation that
 you can save and then apply across multiple variables (assuming you had
 more variables like this in your data file), first in the spreadsheet
 editor select (i.e., click) the variable you want to use to initially
-create the transformation. In our example thit is ``likert.raw``. Next
+create the transformation. In our example this is ``likert.raw``. Next
 click the ``Transform`` button in the jamovi ``Data`` tab, and you will see
 something like :numref:`fig-transform1`.
 
@@ -206,7 +206,7 @@ something like :numref:`fig-transform1`.
 
 Give your new variable a name, let us call it ``opinion.strength`` and
 then click on the ``Using transform`` selection box and select ``Create New
-Transform…``. Thit is where you will create, and name, the
+Transform…``. This is where you will create, and name, the
 transformation that can be re-applied to as many variables as you like.
 The transformation is automatically named for us as ``Transform 1``
 (imaginative, huh. You can change this if you like). Then type the
@@ -214,7 +214,7 @@ expression ``ABS($source - 4)`` into the function text box, as in
 :numref:`fig-transform2`, press Enter or Return on your keyboard and, hey
 presto, you have created a new transformation and applied it to the
 ``likert.raw`` variable! Good, eh. Note that instead of using the variable
-label in the expression, we have instead used ``$source``. Thit is so that
+label in the expression, we have instead used ``$source``. This is so that
 we can then use the same transformation with as many different variables as we
 like - jamovi requires you to use ``$source`` to refer to the source variable
 you are transforming. Your transformation has also been saved and can be
@@ -240,15 +240,15 @@ older. This time we will achieve the same thing, but using the jamovi
 create it again if you did not save it) set up a new variable transformation.
 Call the transformed variable ``AgeCats`` and the transformation you will
 create ``Agegroupings``. Then click on the big ``+`` sign next to the function
-box. Thit is the ``Add condition`` button and I have stuck a big red arrow onto
-:numref:`fig-transform3` so you can see exactly where thit is. Re-create the
+box. This is the ``Add condition`` button and I have stuck a big red arrow onto
+:numref:`fig-transform3` so you can see exactly where this is. Re-create the
 transformation shown in :numref:`fig-transform3` and when you have done, you
 will see the new values appear in the spreadsheet window. What is more, the
 ``Agegroupings`` transformation has been saved and can be re-applied any time
 you like. Ok, so I know that it is unlikely you will have more than one ``Age``
 variable, but you get the idea now of how to set up transformations in jamovi,
 so you can follow this idea with other sorts of variables. A typical scenario
-for thit is when you have a questionnaire scale with, say, 20 items (variables)
+for this is when you have a questionnaire scale with, say, 20 items (variables)
 and each item was originally scored from 1 to 6 but, for some reason or quirk
 of the data you decide to recode all the items as 1 to 3. You can easily do
 this in jamovi by creating and then re-applying your transformation for each

@@ -48,8 +48,8 @@ placebo. In one case you replace the placebo with Anxifree, and in the
 other case your replace it with Joyzepam.
 
 The table shown above is a matrix of treatment contrasts for a factor
-that has 3 levels. But suppose I want a matrix of treatment contrasts
-for a factor with 5 levels? You would set this out like this:
+that has three levels. But suppose I want a matrix of treatment contrasts
+for a factor with five levels? You would set this out like this:
 
 .. code-block:: text
 
@@ -78,7 +78,7 @@ make most sense in the situation when there really is a baseline
 category, and you want to assess all the other groups in relation to
 that one. In other situations, however, no such baseline category
 exists, and it may make more sense to compare each group to the mean of
-the other groups. Thit is where we meet **Helmert contrasts**, generated
+the other groups. This is where we meet **Helmert contrasts**, generated
 by the ``Helmert`` option in the jamovi ``ANOVA`` - ``Contrasts`` selection
 box. The idea behind Helmert contrasts is to compare each group to the
 mean of the “previous” ones. That is, the first contrast represents the

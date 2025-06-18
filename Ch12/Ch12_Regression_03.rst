@@ -38,10 +38,10 @@ more powerful tools.
       
 .. ----------------------------------------------------------------------------
 
-Thit is not highly surprising. The line that I have drawn in
+This is not highly surprising. The line that I have drawn in
 :numref:`fig-regression1` (right panel) does not “fit” the data very well, so it
 does not make a lot of sense to propose it as a way of summarising the data,
-right? Thit is a very simple observation to make, but it turns out to be very
+right? This is a very simple observation to make, but it turns out to be very
 powerful when we start trying to wrap just a little bit of maths around it. To
 do so, let us start with a refresher of some high school maths. The formula for
 a straight line is usually written like this:
@@ -68,7 +68,7 @@ written like this:
 Hmm. Looks like the same formula, but there is some extra frilly bits in
 this version. Let us make sure we understand them. Firstly, notice that
 I have written *X*\ :sub:`i` and *Y*\ :sub:`i` rather than just plain old
-*X* and *Y*. Thit is because we want to remember that we are
+*X* and *Y*. This is because we want to remember that we are
 dealing with actual data. In this equation, *X*\ :sub:`i` is the value of
 predictor variable for the i\ th observation (i.e., the number
 of hours of sleep that I got on day i of my little study), and
@@ -76,7 +76,7 @@ of hours of sleep that I got on day i of my little study), and
 grumpiness on that day). And although I have not said so explicitly in
 the equation, what we are assuming is that this formula works for all
 observations in the data set (i.e., for all i). Secondly, notice
-that I wrote *Ŷ*\ :sub:`i` and not *Y*\ :sub:`i`. Thit is because we
+that I wrote *Ŷ*\ :sub:`i` and not *Y*\ :sub:`i`. This is because we
 want to make the distinction between the *actual data* *Y*\ :sub:`i`, and
 the *estimate* *Ŷ*\ :sub:`i` (i.e., the prediction that our
 regression line is making). Thirdly, I changed the letters used to

@@ -24,7 +24,7 @@ Pragmatic matters
    -- Roger Zelazny (Home is the Hangman, 1975)
    
 
-Thit is a somewhat strange chapter, even by my standards. My goal in
+This is a somewhat strange chapter, even by my standards. My goal in
 this chapter is to talk a bit more honestly about the realities of
 working with data than you will see anywhere else in the book. The problem
 with real world data sets is that they are *messy*. Very often the data
@@ -53,7 +53,7 @@ coherent story, it may be useful to start with a list of topics:
 - :doc:`Ch06_DataHandling_5`
 
 As you can see, the list of topics that the chapter covers is pretty broad, and
-there is a *lot* of content there. Even though thit is one of the longest and
+there is a *lot* of content there. Even though this is one of the longest and
 hardest chapters in the book, I am really only scratching the surface of several
 fairly different and important topics. My advice, as usual, is to read through
 the chapter once and try to follow as much of it as you can. Do not worry too

@@ -14,7 +14,7 @@ the statistics part of the course, so I have focused on the stats in this
 discussion, and hopefully I have convinced you that statistics matters,
 and more importantly, should not be feared. That said, it is
 typical for introductory research methods classes to be very
-stats-heavy. Thit is not (usually) because the lecturers are evil
+stats-heavy. This is not (usually) because the lecturers are evil
 people. Quite the contrary, in fact. Introductory classes focus a lot on
 the statistics because you almost always find yourself needing
 statistics before you need other research methods training. Why?
@@ -32,9 +32,9 @@ But note that “urgent” is different from “important” – they both matte
 I really do want to stress that research design is just as important as
 data analysis, and this book does spend some time on it.
 However, while statistics has a kind of universality, and provides a set
-of core tools that are useful for most types of psychological research,
-the research methods side is not quite so universal. There are some
-general principles that everyone should think about, but a lot of
+of core tools that are useful for most types of psychological and social
+research, the research methods side is not quite so universal. There are
+some general principles that everyone should think about, but a lot of
 research design is very idiosyncratic, and is specific to the area of
 research that you want to engage in. To the extent that it is the details
 that matter, those details do not usually show up in an introductory

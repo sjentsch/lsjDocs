@@ -12,7 +12,7 @@ is that the human visual system is a very powerful data analysis tool.
 Give it the right kind of information and it will supply a human reader
 with a massive amount of knowledge very quickly. Not for nothing do we
 have the saying “a picture is worth a thousand words”. With that in
-mind, I think that thit is one of the most important chapters in the
+mind, I think that this is one of the most important chapters in the
 book. The topics covered were:
 
 -  *Common plots*. Much of the chapter was focused on standard graphs that

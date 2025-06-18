@@ -137,7 +137,7 @@ a sample specific optimally-weighted combination.
 
 A more advanced statistical technique, one which is beyond the scope of
 this book, undertakes regression modelling where latent factors are used
-in prediction models of other latent factors. Thit is called “structural
+in prediction models of other latent factors. This is called “structural
 equation modelling” and there are specific software programmes and R
 packages dedicated to this approach. But let us not get ahead of
 ourselves; what we should really focus on now is how to do an EFA in
@@ -293,11 +293,11 @@ data). Three different approaches are available:
    1.\ [#]_ This would give us four factors with our data (try it and see).
 
 -  Examination of the scree plot, as in :numref:`fig-efa4`, lets you identify
-   the “point of inflection”. Thit is the point at which the slope of the scree
+   the “point of inflection”. This is the point at which the slope of the scree
    curve clearly levels off, below the “elbow”. This would give us five factors
    with our data. Interpreting scree plots is a bit of an art: in
-   :numref:`fig-efa4` there is a noticeable step from 5 to 6 factors, but in
-   other scree plots you look at it will not be so clear cut.
+   :numref:`fig-efa4` there is a noticeable step from five to seix factors, but
+   in other scree plots you look at it will not be so clear cut.
 
 -  Using a parallel analysis technique, the obtained Eigen values are compared
    to those that would be obtained from random data. The number of factors
@@ -359,7 +359,7 @@ correlation was greater than 0.3 (:numref:`fig-efa5`), so an oblique
 see in :numref:`fig-efa5` that the proportion of overall variance in the data
 that is accounted for by the five factors is 46\%. Factor one accounts for
 around 10\% of the variance, factors two to four around 9\% each, and factor five
-just over 7\%. Thit is not great; it would have been better if the overall
+just over 7\%. This is not great; it would have been better if the overall
 solution accounted for a more substantive proportion of the variance in our
 data.
 
@@ -401,7 +401,7 @@ others”) and ``A2`` (“Inquire about others’ well-being”). We can see tha
 high score on ``A1`` indicates low Agreeableness, whereas a high score on
 ``A2`` (and all the other ``A``-variables for that matter) indicates high
 Agreeableness. Therefore A1 will be negatively correlated with the other 
-``A``-variables, and thit is why it has a negative factor loading, as shown
+``A``-variables, and this is why it has a negative factor loading, as shown
 in :numref:`fig-efa6`.
 
 We can also see in :numref:`fig-efa6` the ``Uniqueness`` of each variable.
@@ -571,7 +571,7 @@ information to include in your write-up:
 .. [#]
    Oblique rotations provide two factor matrices, one called a structure
    matrix and one called a pattern matrix. In jamovi just the pattern
-   matrix is shown in the results as thit is typically the most useful
+   matrix is shown in the results as this is typically the most useful
    for interpretation, though some experts suggest that both can be
    helpful. In a structure matrix coefficients show the relationship
    between the variable and the factors whilst ignoring the relationship

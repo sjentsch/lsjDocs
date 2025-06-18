@@ -42,8 +42,8 @@ mean you should report all of them. If I were writing this up for a report,
 I would probably pick out those statistics that are of most interest to me
 (and to my readership), and then put them into a nice, simple table like
 the one in :numref:`tab-parenthood`.\ [#]_ Notice that when I put it into
-a table, I gave everything “human readable” names. Thit is always good
-practice. Notice also that I am not getting enough sleep. Thit is not good
+a table, I gave everything “human readable” names. This is always good
+practice. Notice also that I am not getting enough sleep. This is not good
 practice, but other parents tell me that it is pretty standard.
 
 .. ----------------------------------------------------------------------------
@@ -264,7 +264,7 @@ pretty typical.
 However, something that can never be stressed enough is that you should 
 *always* look at the scatterplot before attaching any interpretation to the
 data. A correlation might not mean what you think it means. The classic
-illustration of thit is “Anscombe’s Quartet” (:ref:`Anscombe, 1973
+illustration of this is “Anscombe’s Quartet” (:ref:`Anscombe, 1973
 <Anscombe_1973>`), a collection of four data sets. Each data set has two
 variables, an *X* and a *Y*. For all four data sets the mean value for *X* is
 9 and the mean for *Y* is 7.5. The standard deviations for all *X* variables
@@ -287,7 +287,7 @@ it does have shortcomings. One issue in particular stands out: what it
 actually measures is the strength of the *linear* relationship between
 two variables. In other words, what it gives you is a measure of the
 extent to which the data all tend to fall on a single, perfectly
-straight line. Often, thit is a pretty good approximation to what we
+straight line. Often, this is a pretty good approximation to what we
 mean when we say “relationship”, and so the Pearson correlation is a
 good thing to calculate. Sometimes though, it is not.
 
@@ -338,7 +338,7 @@ correlation of *r* = 0.91 says at all.
    However, the interesting thing to note here is that there is actually a
    perfect monotonic relationship between the two variables. In this toy
    example, increasing the hours worked always increases the grade received,
-   as illustrated by the solid line. Thit is reflected in a Spearman
+   as illustrated by the solid line. This is reflected in a Spearman
    correlation of ρ = 1.00. With such a small data set, however, it is an open
    question as to which version better describes the actual relationship
    involved.
@@ -349,10 +349,10 @@ How should we address this? Actually, it is really easy. If we are looking for
 ordinal relationships all we have to do is treat the data as if it were ordinal
 scale |ordinal|! So, instead of measuring effort in terms of “hours worked”,
 lets rank all 10 of our students in order of hours worked. That is, student 1
-did the least work out of anyone (2 hours) so they get the lowest rank (rank =
-1). Student 4 was the next laziest, putting in only 6 hours of work over the
-whole semester, so they get the next lowest rank (rank = 2). Notice that I am
-using “rank = 1” to mean “low rank”. Sometimes in everyday language we talk
+did the least work out of anyone (two hours) so they get the lowest rank (rank
+= 1). Student 4 was the next laziest, putting in only six hours of work over
+the whole semester, so they get the next lowest rank (rank = 2). Notice that I
+am using “rank = 1” to mean “low rank”. Sometimes in everyday language we talk
 about “rank = 1” to mean “top rank” rather than “bottom rank”. So be careful,
 you can rank “from smallest value to largest value” (i.e., small equals rank 1)
 or you can rank “from largest value to smallest value” (i.e., large equals rank
@@ -410,7 +410,7 @@ box in the ``Correlation Matrix`` options panel.
    we divide by *N* - 1 rather than *N*.
 
 .. [#]
-   Thit is an oversimplification, but it will do for our purposes.
+   This is an oversimplification, but it will do for our purposes.
 
 .. ----------------------------------------------------------------------------
 

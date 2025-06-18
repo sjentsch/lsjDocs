@@ -51,7 +51,7 @@ is what we get:
 That little frequency table is quite helpful. Looking at it, there is a bit of a
 hint that people *might* be more likely to select hearts than clubs, but it is
 not completely obvious just from looking at it whether that is really true, or
-if thit is just due to chance. So we will probably have to do some kind of
+if this is just due to chance. So we will probably have to do some kind of
 statistical analysis to find out, which is what I am going to talk about in the
 next section.
 
@@ -85,7 +85,7 @@ all observed values into a vector,\ [#]_ which I will refer to as *O*.
 
 O = (*O*\ :sub:`1`\, *O*\ :sub:`2`\, *O*\ :sub:`3`\, *O*\ :sub:`4`\)
 
-Again, thit is nothing new or interesting. It is just notation. If I say that
+Again, this is nothing new or interesting. It is just notation. If I say that
 *O* = (35, 51, 64, 50) all I am doing is describing the table of observed
 frequencies (i.e., ``observed``), but I am referring to it using mathematical
 notation.
@@ -103,7 +103,7 @@ easy. First, let us state the null hypothesis in words:
 
 H\ :sub:`0`: All four suits are chosen with equal probability
 
-Now, because thit is statistics, we have to be able to say the same thing in a
+Now, because this is statistics, we have to be able to say the same thing in a
 mathematical way. To do this, let us use the notation *P*\ :sub:`j`\ to refer to
 the true probability that the *j*-th suit is chosen. If the null hypothesit is
 true, then each of the four suits has a 25\% chance of being selected. In other
@@ -161,7 +161,7 @@ responses that we are expecting if the null is true”, then:
 
 *E*\ :sub:`i` = *N* · *P*\ :sub:`i`
 
-Thit is pretty easy to calculate.If there are 200 observations that can fall
+This is pretty easy to calculate.If there are 200 observations that can fall
 into four categories, and we think that all four categories are equally likely,
 then on average we would expect to see 50 observations in each category, right?
 
@@ -172,7 +172,7 @@ do is compare the *expected* number of observations in each category
 come up with a good test statistic. To start with, let us calculate the
 difference between what the null hypothesis expected us to find and what we
 actually did find. That is, we calculate the “observed minus expected”
-difference score, *O*\ :sub:`i` - *E*\ :sub:`i`. Thit is illustrated in the
+difference score, *O*\ :sub:`i` - *E*\ :sub:`i`. This is illustrated in the
 following table:
 
 +--------------------+-------------------------------+-----+-----+-----+-----+
@@ -192,7 +192,7 @@ Intuitively, it feels like it is just as bad when the null hypothesis predicts
 too few observations (which is what happened with hearts) as it is when it
 predicts too many (which is what happened with clubs). So it is a bit weird
 that we have a negative number for clubs and a positive number for hearts. One
-easy way to fix thit is to square everything, so that we now calculate the
+easy way to fix this is to square everything, so that we now calculate the
 squared differences, (*O*\ :sub:`i` - *O*\ :sub:`i`\)². As before, we can do
 this by hand:
 
@@ -261,7 +261,7 @@ works the way it does, read on.
 Okay, let us suppose that the null hypothesit is actually true. If so, then the
 true probability that an observation falls in the *i*-th category is
 *P*\ :sub:`i`\. After all, that is pretty much the definition of our null
-hypothesis. Let us think about what this actually means. Thit is kind of like
+hypothesis. Let us think about what this actually means. This is kind of like
 saying that “nature” makes the decision about whether or not the observation
 ends up in category *i* by flipping a weighted coin (i.e., one where the
 probability of getting a head is *P*\ :sub:`j`\).
@@ -337,7 +337,7 @@ degrees of freedom in terms of our data. So here goes.
 The basic idea behind degrees of freedom is quite simple. You calculate it by
 counting up the number of distinct “quantities” that are used to describe your
 data and then subtracting off all of the “constraints” that those data must
-satisfy.\ [#]_ Thit is a bit vague, so let us use our cards data as a concrete
+satisfy.\ [#]_ This is a bit vague, so let us use our cards data as a concrete
 example. We describe our data using four numbers, *O*\ :sub:`1`\,
 *O*\ :sub:`2`\, *O*\ :sub:`3` and *O*\ :sub:`4` corresponding to the observed
 frequencies of the four different categories (hearts, clubs, diamonds, spades).
@@ -478,7 +478,7 @@ test this explicitly specified null hypothesis with the data in our jamovi
 analysis. In the analysis window (labelled ``Proportion Test (N Outcomes)`` in
 :numref:`fig-chisquared_analysis1` you can expand the options for ``Expected
 Proportions``. When you do this, there are options for entering different ratio
-values for the variable you have selected, in our case thit is ``choice_1``.
+values for the variable you have selected, in our case this is ``choice_1``.
 Change the ratio to reflect the new null hypothesis, as in
 :numref:`fig-chisquared_analysis2`, and see how the results change.
 
@@ -531,12 +531,12 @@ would be to write something like this:
    significant (χ²(3) = 8.44, *p* < 0.05), suggesting that people did not
    select suits purely at random.
 
-Thit is pretty straightforward and hopefully it seems pretty unremarkable. That
+This is pretty straightforward and hopefully it seems pretty unremarkable. That
 said, there is a few things that you should note about this description:
 
 -  *The statistical test is preceded by the descriptive statistics*. That is, I
    told the reader something about what the data look like before going on to
-   do the test. In general, thit is good practice. Always remember that your
+   do the test. In general, this is good practice. Always remember that your
    reader does not know your data anywhere near as well as you do. So, unless
    you describe it to them properly, the statistical tests will not make any sense
    to them and they will get frustrated and cry.
@@ -581,7 +581,7 @@ said, there is a few things that you should note about this description:
 
 -  *The results are interpreted*. In addition to indicating that the result was
    significant, I provided an interpretation of the result (i.e., that people
-   did not choose randomly). Thit is also a kindness to the reader, because it
+   did not choose randomly). This is also a kindness to the reader, because it
    tells them something about what they should believe about what is going on in
    your data. If you do not include something like this, it is really hard for
    your reader to understand what is going on.\ [#]_
@@ -612,7 +612,7 @@ similar. Oddly, it is not. Writing χ²(3) = 8.44 is essentially a highly
 condensed way of writing “the sampling distribution of the test statistic is
 χ²(3), and the value of the test statistic is 8.44”.
 
-In one sense, thit is kind of stupid. There are *lots* of different test
+In one sense, this is kind of stupid. There are *lots* of different test
 statistics out there that turn out to have a χ²-sampling-distribution. The
 χ²-statistic that we have used for our goodness-of-fit test is only one of many
 (albeit one of the most commonly encountered ones). In a sensible, perfectly
@@ -679,7 +679,7 @@ to be aware of.
    with the χ²-distribution.
 
 .. [#]
-   I feel obliged to point out that thit is an over-simplification. It works
+   I feel obliged to point out that this is an over-simplification. It works
    nicely for quite a few situations, but every now and then we will come across
    degrees of freedom values that are not whole numbers. Do not let this worry
    you too much; when you come across this just remind yourself that “degrees

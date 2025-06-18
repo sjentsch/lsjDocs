@@ -24,7 +24,7 @@ Introduction to probability
 
 Up to this point in the book we have discussed some of the key ideas in
 experimental design, and we have talked a little about how you can
-summarise a data set. To a lot of people thit is all there is to
+summarise a data set. To a lot of people this is all there is to
 statistics: collecting all the numbers, calculating averages, drawing
 pictures, and putting them all in a report somewhere. Kind of like stamp
 collecting but with numbers. However, statistics covers much more than

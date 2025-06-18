@@ -10,8 +10,8 @@ can come in many different types. At this point, we should start discussing the
 obvious question: is the measurement any good? We will do this in terms of two
 related ideas: *reliability* and *validity*. Put simply, the **reliability** of
 a measure tells you how *precisely* you are measuring something, whereas the
-validity of a measure tells you how *accurate* the measure is. In this section
-I will talk about reliability; we will talk about validity in section
+validity of a measure tells you how *accurate* the measure is. In this section,
+we will talk about reliability; we will talk about validity in section
 :doc:`Ch02_StudyDesign_5`.
 
 Reliability is actually a very simple concept. It refers to the
@@ -23,7 +23,7 @@ unreliable. Some days she tells me I am a bit thick, and other days she
 tells me I am a complete idiot. Notice that this concept of reliability
 is different to the question of whether the measurements are correct
 (the correctness of a measurement relates to it is validity). If I am
-holding a sack of potatos when I step on and off the bathroom scales the
+holding a sack of potatoes when I step on and off the bathroom scales the
 measurement will still be reliable: it will always give me the same
 answer. However, this highly reliable answer does not match up to my true
 weight at all, therefore it is wrong. In technical terms, this is a

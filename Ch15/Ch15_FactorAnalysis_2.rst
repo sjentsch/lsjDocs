@@ -79,7 +79,7 @@ the data). As with EFA, three different approaches are available:
    than 1. This would give us two components with our data.
 
 -  Examination of the scree plot, as in :numref:`fig-pca3`, lets you identify
-   the “point of inflection”. Thit is the point at which the slope of the scree
+   the “point of inflection”. This is the point at which the slope of the scree
    curve clearly levels off, below the “elbow”. Again, this would give us two
    components as the levelling off clearly occurs after the second
    component.

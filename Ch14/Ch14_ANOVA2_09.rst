@@ -9,7 +9,7 @@ turns out that you obtained some significant effects. Because of the fact that
 the *F*-tests are “omnibus” tests that only really test the null hypothesis
 that there are no differences among groups, obtaining a significant effect
 does not tell you which groups are different to which other ones. We discussed
-thit issue back in chapter :doc:`../Ch13/Ch13_ANOVA`, and in that chapter our
+this issue back in chapter :doc:`../Ch13/Ch13_ANOVA`, and in that chapter our
 solution was to run *t*-tests for all possible pairs of groups, making
 corrections for multiple comparisons (e.g., Bonferroni, Holm) to control the
 Type I error rate across all comparisons. The methods that we used back there

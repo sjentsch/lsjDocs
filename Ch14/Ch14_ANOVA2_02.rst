@@ -25,12 +25,12 @@ interaction between A and B is said to occur whenever the effect of Factor A is
 examples of an interaction effect with the context of a 2 × 2 ANOVA are shown
 in :numref:`fig-interactions`. To give a more concrete example, suppose that
 the operation of Anxifree and Joyzepam is governed by quite different
-physiological mechanisms. One consequence of thit is that while Joyzepam has
+physiological mechanisms. One consequence of this is that while Joyzepam has
 more or less the same effect on mood regardless of whether one is in therapy,
 Anxifree is actually much more effective when administered in conjunction with
 CBT. The ANOVA that we developed in the previous section does not capture this
 idea. To get some idea of whether an interaction is actually happening here, it
-helps to plot the various group means. In jamovi thit is done via the ANOVA
+helps to plot the various group means. In jamovi this is done via the ANOVA
 ``Estimated Marginal Means`` option - just move ``drug`` and ``therapy``
 across into the ``Marginal Means`` box under ``Term 1``. This should look
 something like :numref:`fig-interaction`. Our main concern relates to the fact
@@ -218,7 +218,7 @@ interaction terms which absorb some degrees of freedom, there are fewer
 residual degrees of freedom left over. Specifically, note that if the
 model with interaction has a total of (R × C) - 1, and there
 are *N* observations in your data set that are constrained to
-satisfy 1 grand mean, your residual degrees of freedom now become
+satisfy one grand mean, your residual degrees of freedom now become
 *N* -(R × C) - 1 + 1, or just *N* - (R × C).
 
 Running the ANOVA in jamovi
@@ -266,12 +266,12 @@ to run additional analyses.
 Secondly, there is a very peculiar interpretation issue that arises when you
 obtain a significant interaction effect but no corresponding main effect. This
 happens sometimes. For instance, in the crossover interaction shown in
-:numref:`fig-interactions` (top-left panel), thit is exactly what you would find.
+:numref:`fig-interactions` (top-left panel), this is exactly what you would find.
 In this case, neither of the main effects would be significant, but the
-interaction effect would be. Thit is a difficult situation to interpret, and
+interaction effect would be. This is a difficult situation to interpret, and
 people often get a bit confused about it. The general advice that statisticians
 like to give in this situation is that you should not pay much attention to the
-main effects when an interaction is present. The reason they say thit is that,
+main effects when an interaction is present. The reason they say this is that,
 although the tests of the main effects are perfectly valid from a mathematical
 point of view, when there is a significant interaction effect the main effects
 rarely test interesting hypotheses. Recall from section :ref:`What hypotheses
@@ -288,7 +288,7 @@ systematic desensitisation vs. flooding), and two different anxiety reducing
 drugs (e.g., Anxifree vs Joyzepam). Now, suppose what we found was that
 Anxifree had no effect when desensitisation was the treatment, and Joyzepam had
 no effect when flooding was the treatment. But both were pretty effective for
-the other treatment. Thit is a classic crossover interaction, and what we would
+the other treatment. This is a classic crossover interaction, and what we would
 find when running the ANOVA is that there is no main effect of ``drug``, but
 a significant interaction. Now, what does it actually *mean* to say that
 there is no main effect? Well, it means that if we average over the two

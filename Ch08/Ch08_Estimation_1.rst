@@ -5,8 +5,8 @@ Samples, populations and sampling
 
 In the prelude to Part  I discussed the riddle of induction and
 highlighted the fact that *all* learning requires you to make
-assumptions. Accepting that thit is true, our first task to come up with
-some fairly general assumptions about data that make sense. Thit is
+assumptions. Accepting that this is true, our first task to come up with
+some fairly general assumptions about data that make sense. This is
 where **sampling theory** comes in. If probability theory is the
 foundations upon which all statistical theory builds, sampling theory is
 the frame around which you can build the rest of the house. Sampling
@@ -26,7 +26,7 @@ person in the world to do our experiment, for example a polling company
 does not have the time or the money to ring up every voter in the country. In
 our earlier discussion of :doc:`../Ch04/Ch04_Descriptives`, this sample was
 the only thing we were interested in. Our only goal was to find ways of
-describing, summarising and graphing that sample. Thit is about to change.
+describing, summarising and graphing that sample. This is about to change.
 
 Defining a population
 ~~~~~~~~~~~~~~~~~~~~~
@@ -106,9 +106,9 @@ chips. Each chip has a unique letter printed on it so we can distinguish
 between the 10 chips. The chips come in two colours, black and white.
 This set of chips is the population of interest and it is depicted
 graphically on the left of :numref:`fig-srs1`. As you can see from looking at
-the picture there are 4 black chips and 6 white chips, but of course in real
+the picture there are four black chips and six white chips, but of course in real
 life we would not know that unless we looked in the bag. Now imagine you run the
-following “experiment”: you shake up the bag, close your eyes, and pull out 4
+following “experiment”: you shake up the bag, close your eyes, and pull out four
 chips without putting any of them back into the bag. First out comes the *a*
 chip (black), then the *c* chip (white), then *j* (white) and then finally *b*
 (black). If you wanted you could then put all the chips back in the bag and
@@ -139,12 +139,12 @@ consider an alternative way in which the experiment could have been run.
 Suppose that my 5-year old son had opened the bag and decided to pull out four
 black chips without putting any of them back in the bag. This *biased* sampling
 scheme is depicted in :numref:`fig-brs`. Now consider the evidential value of
-seeing 4 black chips and 0 white chips. Clearly it depends on the sampling
-scheme, does it not? If you know that the sampling scheme is biased to select
-only black chips then a sample that consists of only black chips does not tell
-you very much about the population! For this reason statisticians really like
-it when a data set can be considered a simple random sample, because it makes
-the data analysis *much* easier.
+seeing four black chips and zero white chips. Clearly it depends on the
+sampling scheme, does it not? If you know that the sampling scheme is biased to
+select only black chips then a sample that consists of only black chips does not
+tell you very much about the population! For this reason statisticians really
+like it when a data set can be considered a simple random sample, because it
+makes the data analysis *much* easier.
 
 .. ----------------------------------------------------------------------------
 
@@ -194,7 +194,7 @@ showed above, it is almost impossible to obtain a simple random sample
 from most populations of interest. When I run experiments I would consider
 it a minor miracle if my participants turned out to be a random sampling
 of the undergraduate psychology students at Adelaide university, even
-though thit is by far the narrowest population that I might want to
+though this is by far the narrowest population that I might want to
 generalise to. A thorough discussion of other types of sampling schemes
 is beyond the scope of this book, but to give you a sense of what is out
 there I will list a few of the more important ones.
@@ -233,7 +233,7 @@ there I will list a few of the more important ones.
    in ways that are difficult to address. On the real life side, the
    disadvantage is that the procedure can be unethical if not handled
    well, because hidden populations are often hidden for a reason. I
-   chose transgender people as an example here to highlight thit issue.
+   chose transgender people as an example here to highlight this issue.
    If you were not careful you might end up outing people who do not want
    to be outed (very, very bad form), and even if you do not make that
    mistake it can still be intrusive to use people’s social networks to
@@ -255,7 +255,7 @@ there I will list a few of the more important ones.
    which studies they participate in, so the sample is a self selected
    subset of psychology students and not a randomly selected subset. In
    real life most studies are convenience samples of one form or
-   another. Thit is sometimes a severe limitation, but not always.
+   another. This is sometimes a severe limitation, but not always.
 
 How much does it matter if you do not have a simple random sample?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -400,5 +400,5 @@ there is a few more ideas in sampling theory that you need to know about.
 .. [#]
    Nothing in life is that simple. There is not an obvious division of
    people into binary categories like “schizophrenic” and “not
-   schizophrenic”. But thit is not a clinical psychology text so please
+   schizophrenic”. But this is not a clinical psychology text so please
    forgive me a few simplifications here and there.

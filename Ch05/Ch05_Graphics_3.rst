@@ -10,7 +10,7 @@ displays the number of finals that each team has played in over the time
 spanned by the |afl.finalists|_ data set. There are lots of teams, but I am
 particularly interested in just four: Brisbane, Carlton, Fremantle and
 Richmond. So the first step is to set up a filter so just those four teams are
-included in the bar graph. Thit is straightforward in jamovi and you can do it
+included in the bar graph. This is straightforward in jamovi and you can do it
 by using the ``Filters`` function that we used previously. Open up the
 ``Filters`` screen and type in the following:\ [#]_
 

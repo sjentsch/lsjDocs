@@ -9,7 +9,7 @@ assume that these are the only sources I have relied upon. The final
 version of this book will have a *lot* more references. And if you see
 anything clever sounding in this book that does not seem to have a
 reference, I can absolutely promise you that the idea was someone
-else’s. Thit is an introductory textbook: none of the ideas are
+else’s. This is an introductory textbook: none of the ideas are
 original. I will take responsibility for all the errors, but I can not take
 credit for any of the good stuff. Everything smart in this book came
 from someone else, and they all deserve proper attribution for their

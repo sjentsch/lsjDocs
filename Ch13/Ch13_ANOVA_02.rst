@@ -37,7 +37,7 @@ This null hypothesit is a lot trickier to test than any of the ones
 we have seen previously. How shall we do it? A sensible guess would be to
 “do an ANOVA”, since that is the title of the chapter, but it is not
 particularly clear why an “analysis of *variances*” will help us learn
-anything useful about the *means*. In fact, thit is one of the biggest
+anything useful about the *means*. In fact, this is one of the biggest
 conceptual difficulties that people have when first encountering ANOVA.
 To see how this works, I find it most helpful to start by talking about
 variances. In fact, what I am going to do is start by playing some
@@ -74,7 +74,7 @@ follows:
 This formula looks pretty much identical to the :ref:`formula for the variance
 <variance_formula>`. The only difference is that this time around I have got two
 summations here: I am summing over groups (i.e., values for *k*) and over the
-people within the groups (i.e., values for *:`i*). Thit is purely a cosmetic
+people within the groups (i.e., values for *:`i*). This is purely a cosmetic
 detail. If I had instead used the notation |Y_p| to refer to the value of the
 outcome variable for person *p* in the sample, then I would only have a single
 summation. The only reason that we have a double summation here is that I have
@@ -134,7 +134,7 @@ From variances to sums of squares
 
 Okay, now that we have got a good grasp on how the variance is calculated,
 let us define something called the **total sum of squares**, which is
-denoted |SS_t|\. Thit is very simple. Instead of averaging
+denoted |SS_t|\. This is very simple. Instead of averaging
 the squared deviations, which is what we do when calculating the
 variance, we just add them up.
 
@@ -204,7 +204,7 @@ different groups” (|SS_b|\) plus “all the rest of the
 variation” (|SS_w|\).\ [#]_
 
 How does that help me find out whether the groups have different population
-means? Um. Wait. Hold on a second. Now that I think about it, thit is *exactly*
+means? Um. Wait. Hold on a second. Now that I think about it, this is *exactly*
 what we were looking for. If the null hypothesit is true then you would expect
 all the sample means to be pretty similar to each other, right? And that would
 imply that you would expect |SS_b| to be really small, or at least you would
@@ -387,11 +387,11 @@ a worked example. For that, let us go back to the |clinicaltrial|_ data set
 that was introduced earlier in the chapter. The descriptive statistics
 that we calculated at the beginning tell us our group means: An average
 mood gain of 0.45 for the placebo, 0.72 for Anxifree, and 1.48 for Joyzepam.
-With that in mind, let us party like it is 1899\ [#]_ and start doing some pencil
-and paper calculations. I will only do this for the first 5 observations because
-it is not bloody 1899 and I am very lazy. Let us start by calculating |SS_w|, the
-within-group sums of squares. First, let us draw up a nice table to help us with
-our calculations:
+With that in mind, let us party like it is 1899\ [#]_ and start doing some
+pencil and paper calculations. I will only do this for the first five
+observations because it is not bloody 1899 and I am very lazy. Let us start
+by calculating |SS_w|, the within-group sums of squares. First, let us draw
+up a nice table to help us with our calculations:
 
 +-----------+---------+
 | group     | outcome |
@@ -415,7 +415,7 @@ variable (i.e. ``mood.gain``) for each person. Note that the outcome
 variable here corresponds to the |Y_ik| value in our equation
 previously. The next step in the calculation is to write down, for each
 person in the study, the corresponding group mean, |Yb_k|.
-Thit is slightly repetitive but not particularly difficult since we
+This is slightly repetitive but not particularly difficult since we
 already calculated those group means when doing our descriptive
 statistics:
 
@@ -571,7 +571,7 @@ MS value.\ [#]_
 
 .. math:: F = \frac{\mbox{MS}_b }{\mbox{MS}_w} = \frac{1.727}{0.093} = 18.611
 
-Woohooo! Thit is terribly exciting, yes? Now that we have our test statistic,
+Woohooo! This is terribly exciting, yes? Now that we have our test statistic,
 the last step is to find out whether the test itself gives us a significant
 result. As discussed in chapter :doc:`../Ch09/Ch09_HypothesisTesting` back in
 the “old days” what we would do is open up a statistics textbook or flick to the
@@ -579,7 +579,7 @@ back section which would actually have a huge lookup table and we would find
 the threshold *F*-value corresponding to a particular value of α (the null
 hypothesis rejection region), e.g. 0.05, 0.01 or 0.001, for 2 and 15 degrees of
 freedom. Doing it this way would give us a threshold *F*-value for an α
-of 0.001 of 11.34. As thit is less than our calculated *F*-value we say that
+of 0.001 of 11.34. As this is less than our calculated *F*-value we say that
 *p* < 0.001. But those were the old days, and nowadays fancy stats software
 calculates the exact *p*-value for you. In fact, the exact *p*-value
 is 0.000086. So, unless we are being *extremely* conservative about our Type I

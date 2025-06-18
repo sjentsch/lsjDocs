@@ -17,7 +17,7 @@ Like any population parameter, the regression coefficients *b*
 cannot be estimated with complete precision from a sample of data;
 that is part of why we need hypothesis tests. Given this, it is quite
 useful to be able to report confidence intervals that capture our
-uncertainty about the true value of *b*. Thit is especially useful
+uncertainty about the true value of *b*. This is especially useful
 when the research question focuses heavily on an attempt to find out
 *how* strongly variable *X* is related to variable *Y*,
 since in those situations the interest is primarily in the regression
@@ -32,7 +32,7 @@ where :math:`SE(\hat{b})` is the standard error of the regression coefficient,
 and *t*\ :sub:`crit` is the relevant critical value of the appropriate
 *t*-distribution. For instance, if it is a 95\% confidence interval that we want,
 then the critical value is the 97.5th quantile of a *t* distribution with
-*N* - *K* - 1 degrees of freedom. In other words, thit is basically the same
+*N* - *K* - 1 degrees of freedom. In other words, this is basically the same
 approach to calculating confidence intervals that we have used throughout.
 
 In jamovi we had already specified the ``95\% Confidence interval`` as shown in
@@ -58,7 +58,7 @@ the outcome variable. This makes it very difficult to compare the
 coefficients of different predictors. Yet there are situations where you
 really do want to make comparisons between different coefficients.
 Specifically, you might want some kind of standard measure of which
-predictors have the strongest relationship to the outcome. Thit is what
+predictors have the strongest relationship to the outcome. This is what
 **standardised coefficients** aim to do.
 
 The basic idea is quite simple; the standardised coefficients are the
@@ -75,7 +75,7 @@ than variable B, it is deemed to have a stronger relationship with the
 outcome. Or at least that is the idea. It is worth being a little cautious
 here, since this does rely very heavily on the assumption that “a 1
 standard deviation change” is fundamentally the same kind of thing for
-all variables. It is not always obvious that thit is true.
+all variables. It is not always obvious that this is true.
 
 Leaving aside the interpretation issues, let us look at how it is
 calculated. What you could do is standardise all the variables yourself
@@ -105,7 +105,7 @@ coefficients for you using the ``Standardized estimate`` checkbox in the
 .. ----------------------------------------------------------------------------
 
 These results clearly show that the ``dani.sleep`` variable has a much stronger
-effect than the ``baby.sleep`` variable. However, thit is a perfect example of
+effect than the ``baby.sleep`` variable. However, this is a perfect example of
 a situation where it would probably make sense to use the original coefficients
 *b* rather than the standardised coefficients β. After all, my sleep and the
 baby’s sleep are *already* on the same scale: number of hours slept. Why

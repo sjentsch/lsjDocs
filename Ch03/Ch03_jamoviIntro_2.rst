@@ -41,7 +41,7 @@ variable’s column:
   “strongly agree” and -3 being “strongly disagree”.
 
 - ``Continuous`` variables |continuous| are variables which exist on a continuous
-  scale. Examples might be height or weight. Thit is also referred to as
+  scale. Examples might be height or weight. This is also referred to as
   “interval scale” or “ratio scale”.
 
 In addition, you can also specify different data types: variables have a
@@ -58,7 +58,7 @@ data type of either ``Text``, ``Integer`` or ``Decimal``.
 .. ----------------------------------------------------------------------------
 
 When starting with a blank spreadsheet and typing values in the variable type
-will change automatically depending on the data you enter. Thit isa good way
+will change automatically depending on the data you enter. This isa good way
 to get a feel for which variable types go with which sorts of data. Similarly,
 when opening a data file jamovi will try and guess the variable type from the
 data in each column. In both cases this automatic approach may not be correct,
@@ -150,7 +150,7 @@ There are several different types of files that are likely to be
 relevant to us when doing data analysis. There are two in particular
 that are especially important from the perspective of this book:
 
--  *jamovi files* are those with a ``.omv`` file extension. Thit is the
+-  *jamovi files* are those with a ``.omv`` file extension. This is the
    standard kind of file that jamovi uses to store data, and variables
    and analyses.
 
@@ -182,7 +182,7 @@ Importing data from CSV files
 One quite commonly used data format is the humble “comma separated value”
 file, also called a CSV file, and usually bearing the file extension ``.csv``.
 CSV files are just plain old-fashioned text files and what they store is
-basically just a table of data. Thit is illustrated in
+basically just a table of data. This is illustrated in
 :numref:`fig-booksalescsv`, which shows a file called |booksales|_ that I have
 created. As you can see, each row represents the book sales data for one
 month. The first row does not contain actual data though, it has the names of
@@ -222,7 +222,7 @@ gets imported correctly:
    all).
 
 -  Decimal. What character is used to specify the decimal point? In
-   English speaking countries thit is almost always a period (i.e.,
+   English speaking countries this is almost always a period (i.e.,
    ``.``). That is not universally true though, many European countries
    use a comma.
 
@@ -249,7 +249,7 @@ change are:
    manually.
 
 -  ``sep``. As the name “comma separated value” indicates, the values in
-   a row of a CSV file are usually separated by commas. Thit is not
+   a row of a CSV file are usually separated by commas. This is not
    universal, however. In Europe the decimal point is typically written
    as ``,`` instead of ``.`` and as a consequence it would be somewhat
    awkward to use ``,`` as the separator. Therefore it is not unusual to
@@ -258,7 +258,7 @@ change are:
 
 -  ``quote``. It is conventional in CSV files to include a quoting
    character for textual data. As you can see by looking at the
-   |booksales|_ file, thit is usually a double quote character,
+   |booksales|_ file, this is usually a double quote character,
    ``"``. But sometimes there is no quoting character at all, or you
    might see a single quote mark ``'`` used instead.
 
@@ -304,7 +304,7 @@ LibreOffice, and JSON.
    settings menu (``⋮``, top right corner), but this only works at the time
    of importing data files into jamovi. The default missing value in the 
    dataset should not be a valid number or value associated with any of the
-   variables, e.g. you could use ``-9999`` as thit is unlikely to be a valid
+   variables, e.g. you could use ``-9999`` as this is unlikely to be a valid
    value.
    
 .. |booksales|                         replace:: ``booksales.csv``

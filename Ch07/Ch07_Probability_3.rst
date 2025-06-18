@@ -15,14 +15,14 @@ talk about my trousers.
 Introducing probability distributions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-One of the disturbing truths about my life is that I only own 5 pairs of
+One of the disturbing truths about my life is that I only own five pairs of
 trousers. Three pairs of jeans, the bottom half of a suit, and a pair of
 tracksuit pants. Even sadder, I have given them names: I call them
 *X*\ :sub:`1`\ , *X*\ :sub:`2`\ , *X*\ :sub:`3`\ , *X*\ :sub:`4`  and
 *X*\ :sub:`5`\ . I really have, that is why they call me Mister Imaginative.
-Now, on any given day, I pick out exactly one of pair of trousers to wear. Not
-even I am so stupid as to try to wear two pairs of trousers, and thanks to
-years of training I never go outside without wearing trousers anymore.
+Now, on any given day, I pick out exactly one of pair of trousers to wear.
+Not even I am so stupid as to try to wear two pairs of trousers, and thanks
+to years of training I never go outside without wearing trousers anymore.
 If I were to describe this situation using the language of probability
 theory, I would refer to each pair of trousers (i.e., each *X*) as
 an **elementary event**. The key characteristic of elementary events is
@@ -51,10 +51,10 @@ At this point, we are almost done. The last thing we need to recognise is
 that “something always happens”. Every time I put on trousers, I really
 do end up wearing trousers (crazy, right?). What this somewhat trite
 statement means, in probabilistic terms, is that the probabilities of
-the elementary events need to add up to 1. Thit is known as the **law of
+the elementary events need to add up to 1. This is known as the **law of
 total probability**, not that any of us really care. More importantly,
 if these requirements are satisfied then what we have is a **probability
-distribution**. For example, thit is an example of a probability
+distribution**. For example, this is an example of a probability
 distribution:
 
 +-----------------+---------------+----------------------------+
@@ -112,7 +112,7 @@ add everything up. In this particular case
 and, since the probabilities of blue, grey and black jeans respectively
 are 0.5, 0.3 and 0.1, the probability that I wear jeans is equal to 0.9.
 
-At this point you might be thinking that thit is all terribly obvious
+At this point you might be thinking that this is all terribly obvious
 and simple and you would be right. All we have really done is wrap some basic
 mathematics around a few common sense intuitions. However, from these
 simple beginnings it is possible to construct some extremely powerful

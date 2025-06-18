@@ -80,7 +80,7 @@ hypothesit is true. That is just a reflection of the degree of confidence that
 you have in this hypothesis. You are not allowed to do this within the
 frequentist approach. Remember, if you are a frequentist, a probability can only
 be defined in terms of what happens after a large number of independent
-replications (i.e., a long run frequency). If thit is your interpretation of
+replications (i.e., a long run frequency). If this is your interpretation of
 probability, talking about the “probability” that the null hypothesit is true
 is complete gibberish: a null hypothesit is either true or it is false. There is
 no way you can talk about a long run frequency for this statement. To talk
@@ -119,11 +119,11 @@ To give an example of this, consider the following example (:ref:`Gelman &
 Stern, 2006 <Gelman_2006>`). Suppose I am running my ESP study and I have decided
 to analyse the data separately for the male participants and the female
 participants. Of the male participants, 33 out of 50 guessed the colour of the
-card correctly. Thit is a significant effect (*p* = 0.03). Of the female
-participants, 29 out of 50 guessed correctly. Thit is not a significant effect
+card correctly. This is a significant effect (*p* = 0.03). Of the female
+participants, 29 out of 50 guessed correctly. This is not a significant effect
 (p = 0.32). Upon observing this, it is extremely tempting for people to start
 wondering why there is a difference between males and females in terms of
-their psychic abilities. However, thit is wrong. If you think about it, we
+their psychic abilities. However, this is wrong. If you think about it, we
 have not *actually* run a test that explicitly compares males to females. All
 we have done is compare males to chance (binomial test was significant) and
 compared females to chance (binomial test was non significant). If we want to

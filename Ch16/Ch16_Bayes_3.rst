@@ -68,7 +68,7 @@ explaining how to interpret their (frequentist) data analysis:
 Nope! That is *not* what *p* < 0.05 means. That is *not* what 95\%
 confidence means to a frequentist statistician. The bolded section is
 just plain wrong. Orthodox methods cannot tell you that “there is a 95\%
-chance that a real change has occurred”, because thit is not the kind of
+chance that a real change has occurred”, because this is not the kind of
 event to which frequentist probabilities may be assigned. To an
 ideological frequentist, this sentence should be meaningless. Even if
 you are a more pragmatic frequentist, it is still the wrong definition of
@@ -91,7 +91,7 @@ have to wrap your head around counter-intuitive definitions of
 that you are 95\% confident that the true mean lies within some interval.
 All you have to do is be honest about what you believed before you ran
 the study and then report what you learned from doing it. Sounds nice,
-does not it? To me, thit is the big promise of the Bayesian approach. You
+does not it? To me, this is the big promise of the Bayesian approach. You
 do the analysis you really want to do, and express what you really
 believe the data are telling you.
 
@@ -229,7 +229,7 @@ results were not conclusive, so now what you want to do is collect more
 data until the the results *are* conclusive. What is wrong with that?
 
 Honestly, there is nothing wrong with it. It is a reasonable, sensible and
-rational thing to do. In real life, thit is exactly what every researcher
+rational thing to do. In real life, this is exactly what every researcher
 does. Unfortunately, the theory of null hypothesis testing as I described it
 in chapter :doc:`../Ch09/Ch09_HypothesisTesting` *forbids* you from doing
 this.\ [#]_ The reason is that the theory assumes that the experiment is
@@ -326,7 +326,7 @@ line in :numref:`fig-adapt`. It turns out that the Type I error rate is much
 much lower than the 49\% rate that we were getting by using the orthodox
 *t*-test.
 
-In some ways, thit is remarkable. The entire *point* of orthodox null
+In some ways, this is remarkable. The entire *point* of orthodox null
 hypothesis testing is to control the Type I error rate. Bayesian methods
 are not actually designed to do this at all. Yet, as it turns out, when
 faced with a “trigger happy” researcher who keeps running hypothesis

@@ -92,7 +92,7 @@ if only by a small amount. This suggests that we should be looking at
 the *improvement* made by each student from one test to the next and
 treating that as our raw data. To do this, we will need to create a new
 variable for the ``improvement`` that each student makes, and add it to
-the |chico|_ data set. The easiest way to do thit is to compute a new
+the |chico|_ data set. The easiest way to do this is to compute a new
 variable, with the expression ``grade_test2 - grade_test1``.
 
 Once we have computed this new ``improvement`` variable we can draw a
@@ -108,7 +108,7 @@ What is the paired samples *t*-test?
 In light of the previous exploration, let us think about how to construct
 an appropriate *t*-test. One possibility would be to try to run an
 independent samples *t*-test using ``grade_test1`` and
-``grade_test2`` as the variables of interest. However, thit is clearly
+``grade_test2`` as the variables of interest. However, this is clearly
 the wrong thing to do as the independent samples *t*-test assumes
 that there is no particular relationship between the two samples. Yet
 clearly that is not true in this case because of the repeated measures
@@ -140,7 +140,7 @@ is that it is not
 | H\ :sub:`0`: µ\ :sub:`D` = 0
 | H\ :sub:`2`: µ\ :sub:`D` ≠ 0
 
-Thit is assuming we are talking about a two-sided test here. This is more or
+This is assuming we are talking about a two-sided test here. This is more or
 less identical to the way we described the hypotheses for the one-sample
 *t*-test. The only difference is that the specific value that the null
 hypothesis predicts is 0. And so our *t*-statistic is defined in more or less
@@ -153,7 +153,7 @@ which is
 .. math:: t = \frac{\bar{D}}{\hat\sigma_D / \sqrt{N}}
 
 where :math:`\hat\sigma_D` is the standard deviation of the difference
-scores. Since thit is just an ordinary, one-sample *t*-test, with
+scores. Since this is just an ordinary, one-sample *t*-test, with
 nothing special about it, the degrees of freedom are still *N* - 1.
 And that is it. The paired samples *t*-test really is not a new test at all.
 It is a one-sample *t*-test, but applied to the difference between two
@@ -184,7 +184,7 @@ called ``improvement``, let us do that and see what we get (see
 The output shown in :numref:`fig-ttest_paired2` is (obviously) formatted
 exactly the same was as it was the last time we used the ``One Sample T-Test``
 analysis (section :doc:`Ch11_tTest_02`), and it confirms our intuition.
-There is an average improvement of 1.4\% from test 1 to test 2, and thit is
+There is an average improvement of 1.4\% from test 1 to test 2, and this is
 significantly different from 0 (*t*\(19) = 6.48, *p* < 0.001).
 
 However, suppose you are lazy and you do not want to go to all the effort

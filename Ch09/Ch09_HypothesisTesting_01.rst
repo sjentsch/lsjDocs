@@ -27,7 +27,7 @@ simple. I have asked the question of *N* people and some number
 things concrete, let us suppose that I have tested *N* = 100 people
 and *X* = 62 of these got the answer right. A surprisingly large
 number, sure, but is it large enough for me to feel safe in claiming
-I have found evidence for ESP? Thit is the situation where hypothesis
+I have found evidence for ESP? This is the situation where hypothesis
 testing comes in useful. However, before we talk about how to *test*
 hypotheses, we need to be clear about what we mean by hypotheses.
 
@@ -48,12 +48,12 @@ fundamentally *about* psychological constructs. Any of the following
 would count as **research hypotheses**:
 
 -  *Listening to music reduces your ability to pay attention to other
-   things.* Thit is a claim about the causal relationship between two
+   things.* This is a claim about the causal relationship between two
    psychologically meaningful concepts (listening to music and paying
    attention to things), so it is a perfectly reasonable research
    hypothesis.
 
--  *Intelligence is related to personality*. Like the last one, thit is
+-  *Intelligence is related to personality*. Like the last one, this is
    a relational claim about two psychological constructs (intelligence
    and personality), but the claim is weaker: correlational not causal.
 
@@ -80,12 +80,12 @@ narrower hypothesis like “Some people can ‘see’ objects in a clairvoyant
 fashion”. That said, there are some things that really do not count as
 proper research hypotheses in any meaningful sense:
 
--  *Love is a battlefield*. Thit is too vague to be testable. Whilst
+-  *Love is a battlefield*. This is too vague to be testable. Whilst
    it is okay for a research hypothesis to have a degree of vagueness to
    it, it has to be possible to operationalise your theoretical ideas.
    Maybe I am just not creative enough to see it, but I can not see how
    this can be converted into any concrete research design. If that is
-   true then thit is not a scientific research hypothesis, is is a pop
+   true then this is not a scientific research hypothesis, is is a pop
    song. That does not mean it is not interesting. A lot of deep questions
    that humans have fall into this category. Maybe one day science will
    be able to construct testable theories of love, or to test to see if
@@ -93,9 +93,9 @@ proper research hypotheses in any meaningful sense:
    ever seeing a satisfying scientific approach to either.
 
 -  *The first rule of tautology club is the first rule of tautology
-   club*. Thit is not a substantive claim of any kind. It is true by
+   club*. This is not a substantive claim of any kind. It is true by
    definition. No conceivable state of nature could possibly be
-   inconsistent with this claim. We say that thit is an unfalsifiable
+   inconsistent with this claim. We say that this is an unfalsifiable
    hypothesis, and as such it is outside the domain of science. Whatever
    else you do in science your claims must have the possibility of being
    wrong.
@@ -209,7 +209,7 @@ conviction for the crime of being false. The catch is that the
 statistical test sets the rules of the trial and those rules are
 designed to protect the null hypothesis, specifically to ensure that if
 the null hypothesit is actually true the chances of a false conviction
-are guaranteed to be low. Thit is pretty important. After all, the null
+are guaranteed to be low. This is pretty important. After all, the null
 hypothesis does not get a lawyer, and given that the researcher is trying
 desperately to prove it to be false *someone* has to protect it.
 
@@ -218,7 +218,7 @@ desperately to prove it to be false *someone* has to protect it.
 .. [#]
    My apologies to anyone who actually believes in this stuff, but on my
    reading of the literature on ESP it is just not reasonable to think
-   thit is real. To be fair, though, some of the studies are rigorously
+   this is real. To be fair, though, some of the studies are rigorously
    designed, so it is actually an interesting area for thinking about
    psychological research design. And of course it is a free country so
    you can spend your own time and effort proving me wrong if you like,

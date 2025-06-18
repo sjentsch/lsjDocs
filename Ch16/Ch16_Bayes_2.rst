@@ -145,7 +145,7 @@ above.
 ------
 
 .. [#]
-   Obviously, thit is a highly simplified story. All the complexity of
+   Obviously, this is a highly simplified story. All the complexity of
    real life Bayesian hypothesis testing comes down to how you calculate
    the likelihood *P*\ (d|h) when the hypothesis *h* is a
    complex and vague thing. I am not going to talk about those

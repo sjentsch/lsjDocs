@@ -31,13 +31,13 @@ at each of them.
 
 -  *Uncorrelated predictors*. The idea here is that, in a multiple
    regression model, you do not want your predictors to be too strongly
-   correlated with each other. Thit is not “technically” an assumption of
+   correlated with each other. This is not “technically” an assumption of
    the regression model, but in practice it is required. Predictors that
    are too strongly correlated with each other (referred to as
    “collinearity”) can cause problems when evaluating the model. See
    section :ref:`Checking for collinearity <checking_collinearity>`.
 
--  *Residuals are independent of each other*. Thit is really just a
+-  *Residuals are independent of each other*. This is really just a
    “catch all” assumption, to the effect that “there is nothing else
    funny going on in the residuals”. If there is something weird (e.g.,
    the residuals all depend heavily on some other unmeasured variable)

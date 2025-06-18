@@ -14,7 +14,7 @@ statistics in it. In view of this, I thought that the right place to
 start might be to answer some of the more common questions that people
 have about stats.
 
-A big part of thit issue at hand relates to the very idea of statistics.
+A big part of this issue at hand relates to the very idea of statistics.
 What is it? What is it there for? And why are scientists so bloody
 obsessed with it? These are all good questions, when you think about it.
 So let us start with the last one. As a group, scientists seem to be
@@ -69,7 +69,7 @@ of the most incredible feats of thought and reason. That does not make us
 perfect though. And among the many things that psychologists have shown
 over the years is that we really do find it hard to be neutral, to
 evaluate evidence impartially and without being swayed by pre-existing
-biases. A good example of thit is the **belief bias effect** in logical
+biases. A good example of this is the **belief bias effect** in logical
 reasoning: if you ask people to decide whether a particular argument is
 logically valid (i.e., the conclusion would be true if the premises were
 true), we tend to be influenced by the believability of the conclusion,
@@ -128,7 +128,7 @@ to this), we might feel safe in just trusting our gut instincts. That
 is, it would be perfectly okay just to let scientists evaluate data based on
 their common sense, and not bother with all this murky statistics stuff.
 However, you guys have taken psych classes, and by now you probably know
-where thit is going.
+where this is going.
 
 In a classic study, :ref:`Evans et al. (1983) <Evans_1983>` ran an experiment
 looking at exactly this. What they found is that when pre-existing biases

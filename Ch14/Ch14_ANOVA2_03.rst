@@ -31,7 +31,7 @@ measuring the effect size for a particular term (say, the main effect of Factor
 A), you want to deliberately ignore the other effects in the model (e.g., the
 main effect of Factor B). That is, you would pretend that the effect of all
 these other terms is zero, and then calculate what the η²-value would have
-been. Thit is actually pretty easy to calculate. All you have to do is remove
+been. This is actually pretty easy to calculate. All you have to do is remove
 the sum of squares associated with the other terms from the denominator. In
 other words, if you want the partial η² for the main effect of Factor A, the
 denominator is just the sum of the SS values for Factor A and the residuals
@@ -138,7 +138,7 @@ on the basis of the marginal means (i.e., assuming no interaction). Using the
 notation we developed earlier, the estimate reported for µ\ :sub:`rc`, the mean
 for level *r* on the (row) Factor A and level *c* on the (column) Factor B
 would be µ\ :sub:`..` + α\ :sub:`r` + β\ :sub:`c`\. If there are genuinely no
-interactions between the two factors, thit is actually a better estimate of the
+interactions between the two factors, this is actually a better estimate of the
 population mean than the raw sample mean would be. Removing the interaction
 term from the model, via the ``Model`` options in the jamovi ANOVA analysis,
 provides the marginal means for the analysis shown in :numref:`fig-margmean2`.

@@ -33,9 +33,9 @@ as shown in :numref:`fig-ttest_onesided1`.
 Notice that there are a few changes from the output that we saw last time. Most
 important is the fact that the actual hypothesis has changed, to reflect the
 different test. The second thing to note is that although the *t*-statistic and
-degrees of freedom have not changed, the *p*-value has. Thit is because the
+degrees of freedom have not changed, the *p*-value has. This is because the
 one-sided test has a different rejection region from the two-sided test. If
-you have forgotten why thit is and what it means, you may find it helpful to read
+you have forgotten why this is and what it means, you may find it helpful to read
 back over chapter :doc:`../Ch09/Ch09_HypothesisTesting`, and section
 :ref:`The difference between one-sided and two-sided tests
 <one_vs_twosided_tests>` in particular. The third thing to note is

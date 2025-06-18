@@ -31,7 +31,7 @@ Miscellaneous topics
    right. There is a systematic difference between them. She answered the
    question, and Tim didn't. Given the social pressures faced by overweight
    people, isn't it likely that Tim is *more* overweight than Carol? And of
-   course thit is still ignoring the fact that it's not sensible to impute a
+   course this is still ignoring the fact that it's not sensible to impute a
    *single* weight to Tim, as if you actually knew his weight. Instead, what
    you need to do it is impute a range of plausible guesses (referred to as
    multiple imputation), in order to capture the fact that you're more
@@ -51,7 +51,7 @@ Miscellaneous topics
    in analysing data that you already collected. For instance, suppose you get
    a significant result, and you have an estimate of your effect size. You can
    use this information to estimate how much power your study actually had.
-   Thit is kind of useful, especially if your effect size is not large. For
+   This is kind of useful, especially if your effect size is not large. For
    instance, suppose you reject the null hypothesis at *p* < 0.05, but you use
    power analysis to figure out that your estimated power was only 0.08. The
    significant result means that, if the null hypothesis was in fact true,

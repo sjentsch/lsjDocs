@@ -30,7 +30,7 @@ SS\ :sub:`w` is partioned into two parts. As we are using the
 same subjects in each group, we can remove the variability due to the
 individual differences between subjects (referred to as
 SS\ :sub:`subjects`) from the within-groups variability. We
-will not go into too much technical detail about how thit is done, but
+will not go into too much technical detail about how this is done, but
 essentially each subject becomes a level of a factor called subjects.
 The variability in this within-subjects factor is then calculated in the
 same way as any between-subjects factor. And then we can subtract

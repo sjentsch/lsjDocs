@@ -45,7 +45,7 @@ psychology student grades are normally distributed.
 Next, it helps to be clear about what I want to learn from the data. In
 this case my research hypothesis relates to the *population* mean µ for the
 psychology student grades, which is unknown. Specifically, I want to know if
-µ = 67.5 or not. Given that thit is what I know, can we devise a hypothesis
+µ = 67.5 or not. Given that this is what I know, can we devise a hypothesis
 test to solve our problem? The data, along with the hypothesised distribution
 from which they are thought to arise, are shown in :numref:`fig-zeppo`. Not
 entirely obvious what the right answer is, is it? For this, we are going to
@@ -66,7 +66,7 @@ Constructing the hypothesis test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The first step in constructing a hypothesis test is to be clear about
-what the null and alternative hypotheses are. Thit is not too hard to do.
+what the null and alternative hypotheses are. This is not too hard to do.
 Our null hypothesis, H\ :sub:`0`, is that the true population mean
 µ for psychology student grades is 67.5\%, and our alternative
 hypothesit is that the population mean *is not* 67.5\%. If we write this
@@ -158,7 +158,7 @@ distribution of the mean can be written as follows:
 | *X̄* ~ Normal(µ\ :sub:`0`, *SE(X̄)*)
 
 Now comes the trick. What we can do is convert the sample mean *X̄* into a
-:doc:`standard score <../Ch04/Ch04_Descriptives_5>`. Thit is conventionally
+:doc:`standard score <../Ch04/Ch04_Descriptives_5>`. This is conventionally
 written as *z*, but for now I am going to refer to it as *z*\ :sub:`X̄` (the
 reason for using this expanded notation is to help you remember that we are
 calculating a standardised version of a sample mean, *not* a standardised
@@ -178,7 +178,7 @@ distribution:
 | *z*\ :sub:`*X̄*` ~ Normal(0, 1)
 
 (again, see section :doc:`../Ch04/Ch04_Descriptives_5` if you have forgotten why
-thit is true). In other words, regardless of what scale the original data are
+this is true). In other words, regardless of what scale the original data are
 on, the *z*-statistic itself always has the same interpretation: it is equal to
 the number of standard errors that separate the observed sample mean *X̄* from
 the population mean µ\ :sub:`0` predicted by the null hypothesis. Better yet,
@@ -272,13 +272,13 @@ reasonable assumptions, while other tests do not. The test I have just described
 the one sample *z*-test, makes three basic assumptions. These are:
 
 -  *Normality*. As usually described, the *z*-test assumes that the true
-   population distribution is normal.\ [#]_ Thit is often a pretty reasonable
+   population distribution is normal.\ [#]_ This is often a pretty reasonable
    assumption, and it is also an assumption that we can check if we feel worried
    about it (see section :doc:`Ch11_tTest_08`).
 
 -  *Independence*. The second assumption of the test is that the
    observations in your data set are not correlated with each other, or
-   related to each other in some funny way. Thit is not as easy to check
+   related to each other in some funny way. This is not as easy to check
    statistically, it relies a bit on good experimental design. An
    obvious (and stupid) example of something that violates this
    assumption is a data set where you “copy” the same observation over
@@ -292,7 +292,7 @@ the one sample *z*-test, makes three basic assumptions. These are:
 
 -  *Known standard deviation*. The third assumption of the
    *z*-test is that the true standard deviation of the population
-   is known to the researcher. Thit is just stupid. In no real world
+   is known to the researcher. This is just stupid. In no real world
    data analysis problem do you know the standard deviation
    σ of some population but are completely ignorant about
    the mean µ. In other words, this assumption is *always*
@@ -306,7 +306,7 @@ with unicorns and fairies and leprechauns!
 ------
 
 .. [#]
-   Actually thit is too strong. Strictly speaking requires the *z* test
+   Actually this is too strong. Strictly speaking requires the *z* test
    only that the sampling distribution of the mean is normally
    distributed. If the population is normal then it necessarily follows
    that the sampling distribution of the mean is also normal. However,

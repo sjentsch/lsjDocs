@@ -28,7 +28,7 @@ Priors: what you believed before
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The first thing you need to do is ignore what I told you about the
-umbrella, and write down your pre-existing beliefs about rain. Thit is
+umbrella, and write down your pre-existing beliefs about rain. This is
 important. If you want to be honest about how your beliefs have been
 revised in the light of new evidence (data) then you *must* say
 something about what you believed before those data appeared! So, what
@@ -42,7 +42,7 @@ discovered that Adelaide gets an `average of 4.6 days of rain across the
 31 days of January <https://en.wikipedia.org/wiki/Climate_of_Adelaide>`__.
 Without knowing anything else, you might conclude that the probability of
 January rain in Adelaide is about 15\%, and the probability of a dry day
-is 85\%. If thit is really what you believe about Adelaide rainfall (and now
+is 85\%. If this is really what you believe about Adelaide rainfall (and now
 that I have told it to you I am betting that this really *is* what you believe)
 then what I have written here is your **prior distribution**, written *P*\ (h):
 
@@ -79,7 +79,7 @@ It is important to remember that each cell in this table describes your
 beliefs about what data *d* will be observed, *given* the truth of
 a particular hypothesis *h*. This “conditional probability” is
 written *P*\ (d|h), which you can read as “the probability of
-*d* given *h*”. In Bayesian statistics, thit is referred to
+*d* given *h*”. In Bayesian statistics, this is referred to
 as the **likelihood** of the data *d* given the hypothesis
 *h*.\ [#]_
 
@@ -148,7 +148,7 @@ helps to add the row totals and column totals. That gives us this table:
 | **Total** |   0.0875 |      0.9125 |  1.00 |
 +-----------+----------+-------------+-------+
 
-Thit is a very useful table, so is is worth taking a moment to think
+This is a very useful table, so is is worth taking a moment to think
 about what all these numbers are telling us. First, notice that the row
 sums are not telling us anything new at all. For example, the first row
 tells us that if we ignore all this umbrella business, the chance that
@@ -205,7 +205,7 @@ solving the rainy day problem, because it considers all four logical
 possibilities and states exactly how confident you are in each of them
 before being given any data. It is now time to consider what happens to
 our beliefs when we are actually given the data. In the rainy day
-problem, you are told that I really *am* carrying an umbrella. Thit is
+problem, you are told that I really *am* carrying an umbrella. This is
 something of a surprising event. According to our table, the probability
 of me carrying an umbrella is only 8.75\%. But that makes sense, right? A
 guy carrying an umbrella on a summer day in a hot dry city is pretty
@@ -273,7 +273,7 @@ relative plausibility of the two events that are actually consistent
 with the data. To say the same thing using fancy statistical jargon,
 what I have done here is divide the joint probability of the hypothesis
 and the data *P*\ (d, h) by the **marginal probability** of the data
-*P*\ (d), and thit is what gives us the posterior probability of the
+*P*\ (d), and this is what gives us the posterior probability of the
 hypothesis *given* the data that have been observed. To write this as an
 equation:\ [#]_
 
@@ -308,7 +308,7 @@ flows from this one simple rule.
    name for the likelihood, and so it became common practice for people
    to use the frequentist terminology. This would not have been a problem
    except for the fact that the way that Bayesians use the word turns
-   out to be quite different to the way frequentists do. Thit is not the
+   out to be quite different to the way frequentists do. This is not the
    place for yet another lengthy history lesson but, to put it crudely,
    when a Bayesian says “*a* likelihood function” they are usually
    referring one of the *rows* of the table. When a frequentist says the

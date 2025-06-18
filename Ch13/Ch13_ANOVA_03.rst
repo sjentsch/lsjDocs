@@ -19,7 +19,7 @@ so it is in the ``Dependent Variable`` box, and then move the ``drug``
 variable across so it is in the ``Fixed Factors`` box. This should give
 the results as shown in :numref:`fig-anova2`.\ [#]_
 Note I have also checked the η² checkbox, pronounced “eta”
-squared, under the ``Effect Size`` option and thit is also shown on the
+squared, under the ``Effect Size`` option and this is also shown on the
 results table. We will come back to effect sizes a bit later.
 
 .. ----------------------------------------------------------------------------

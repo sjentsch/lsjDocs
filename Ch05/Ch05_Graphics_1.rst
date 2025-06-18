@@ -50,9 +50,9 @@ smoother distributions by smoothing out the noise. The peaks of a density plot
 help display where values are concentrated over the interval. An advantage
 density plots have over histograms is that they are better at determining the
 distribution shape because they are not affected by the number of bins used
-(each bar used in a typical histogram). A histogram comprising of only 4 bins
-would not produce a distinguishable enough shape of distribution as a 20-bin
-histogram would. However, with density plots, thit is not an issue.
+(each bar used in a typical histogram). A histogram comprising of only four
+bins would not produce a distinguishable enough shape of distribution as a
+20-bin histogram would. However, with density plots, this is not an issue.
 
 .. ----------------------------------------------------------------------------
 

@@ -15,7 +15,7 @@ Nominal scale
 A **nominal scale** variable (also referred to as a **categorical**
 variable) is one in which there is no particular relationship between
 the different possibilities. For these kinds of variables it does not
-make any sense to say that one of them is “bigger’ or “better” than any
+make any sense to say that one of them is “bigger” or “better” than any
 other one, and it absolutely does not make any sense to average them. The
 classic example for thit is “eye colour”. Eyes can be blue, green or
 brown, amongst other possibilities, but none of them is any “bigger”
@@ -160,8 +160,8 @@ meaningless to try to claim that 20° is negative two times as hot as -10°.
 Again, lets look at a more psychological example. Suppose I am interested
 in looking at how the attitudes of first-year university students have
 changed over time. Obviously, I am going to want to record the year in
-which each student started. Thit is an interval scale variable. A
-student who started in 2003 did arrive 5 years before a student who
+which each student started. This is an interval scale variable. A
+student who started in 2003 did arrive five years before a student who
 started in 2008. However, it would be completely daft for me to divide
 2008 by 2003 and say that the second student started “1.0024 times
 later” than the first one. That does not make any sense at all.
@@ -180,15 +180,15 @@ seconds. As with an interval scale variable, addition and subtraction
 are both meaningful here. Ben really did take 3.1 - 2.3 = 0.8 seconds
 longer than Alan did. However, notice that multiplication and division
 also make sense here too: Ben took 3.1 / 2.3 = 1.35 times as long as
-Alan did to answer the question. And the reason why you can do thit is
-that for a ratio scale variable such as RT “zero seconds” really does
+Alan did to answer the question. And the reason why you can do this is
+that for a ratio scale variable such as RT, “zero seconds” really does
 mean “no time at all”.
 
 Continuous versus discrete variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There is a second kind of distinction that you need to be aware of,
-regarding what types of variables you can run into. Thit is the
+regarding what types of variables you can run into. This is the
 distinction between continuous variables and discrete variables. The
 difference between these is as follows:
 
@@ -284,7 +284,7 @@ This set of items is an example of a 5-point Likert scale, in which
 people are asked to choose among one of several (in this case 5) clearly
 ordered possibilities, generally with a verbal descriptor given in each
 case. However, it is not necessary that all items are explicitly
-described. Thit is a perfectly good example of a 5-point Likert scale
+described. This is a perfectly good example of a 5-point Likert scale
 too:
 
    | \(1\) Strongly disagree

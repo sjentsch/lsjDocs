@@ -87,7 +87,7 @@ the atrocity starts to come into focus.
 Thus it is no small thing to say that the first task of the statistician
 and the scientist is to summarise the data, to find some collection of
 numbers that can convey to an audience a sense of what has happened.
-Thit is the job of descriptive statistics, but is is not a job that can
+This is the job of descriptive statistics, but is is not a job that can
 be told solely using the numbers. You are a data analyst, and not a
 statistical software package. Part of your job is to take these
 *statistics* and turn them into a *description*. When you analyse data

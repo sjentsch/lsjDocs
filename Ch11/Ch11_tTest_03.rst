@@ -10,7 +10,7 @@ psychology, this tends to correspond to two different groups of
 participants, where each group corresponds to a different condition in
 your study. For each person in the study you measure some outcome
 variable of interest, and the research question that you are asking is
-whether or not the two groups have the same population mean. Thit is the
+whether or not the two groups have the same population mean. This is the
 situation that the independent samples *t*-test is designed for.
 
 The data
@@ -100,9 +100,9 @@ Okay, so let us let µ\ :sub:`1` denote the true population mean for group 1
 mean for group 2 (e.g., Bernadette’s students),\ [#]_ and as usual we will let
 *X̄*\ :sub:`1` and *X̄*\ :sub:`2` denote the observed sample means for both of
 these groups. Our null hypothesis states that the two population means are
-identical (µ\ :sub:`1` = µ\ :sub:`1`) and the alternative to thit is that
+identical (µ\ :sub:`1` = µ\ :sub:`1`) and the alternative to this is that
 they are not (µ\ :sub:`1` ≠ µ\ :sub:`1`). Written in mathematical-ese,
-thit is:
+this is:
 
 | H\ :sub:`0`: µ\ :sub:`1` = µ\ :sub:`2`
 | H\ :sub:`1`: µ\ :sub:`1` ≠ µ\ :sub:`2`
@@ -139,7 +139,7 @@ then divide the difference between means by this estimate. So our
 | *t* = (*X̄*\ :sub:`1` – *X̄*\ :sub:`2`) / SE
 
 We just need to figure out what this standard error estimate actually
-is. Thit is a bit trickier than was the case for either of the two tests
+is. This is a bit trickier than was the case for either of the two tests
 we have looked at so far, so we need to go through it a lot more carefully
 to understand how it works.
 
@@ -254,8 +254,8 @@ of the test are met. The degrees of freedom, however, is slightly
 different. As usual, we can think of the degrees of freedom to be equal
 to the number of data points minus the number of constraints. In this
 case, we have *N* observations (*N*\ :sub:`1` in sample 1, and
-*N*\ :sub:`2` in sample 2), and 2 constraints (the sample means). So the
-total degrees of freedom for this test are *N* - 2.
+*N*\ :sub:`2` in sample 2), and two constraints (the sample means). So
+the total degrees of freedom for this test are *N* - 2.
 
 Doing the test in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -344,7 +344,7 @@ that one person has a negative *t*-values and the other one has a
 positive *t*-value. Assuming that you are running a two-sided test
 then the *p*-values will be identical. On closer inspection, the
 students will notice that the confidence intervals also have the
-opposite signs. Thit is perfectly okay. Whenever this happens, what
+opposite signs. This is perfectly okay. Whenever this happens, what
 you will find is that the two versions of the results arise from slightly
 different ways of running the *t*-test. What is happening here is
 very simple. The *t*-statistic that we calculate here is always of
@@ -364,7 +364,7 @@ consider our *t*-test comparing Anastasia’s class to Bernadette’s
 class. Which one should we call “mean 1” and which one should we call
 “mean 2”. It is arbitrary. However, you really do need to designate one
 of them as “mean 1” and the other one as “mean 2”. Not surprisingly, the
-way that jamovi handles thit is also pretty arbitrary. In earlier
+way that jamovi handles this is also pretty arbitrary. In earlier
 versions of the book I used to try to explain it, but after a while I
 gave up, because it is not really all that important and to be honest I
 can never remember myself. Whenever I get a significant *t*-test
@@ -457,7 +457,7 @@ previously in the context of the one sample *t*-test (see section
    observed mean *X̄* changes too. The *t*-test relies on an assumption that
    the observations are sampled at random from an infinitely large population
    and, to the extent that real life is not like that, then the *t*-test can be
-   wrong. In practice, however, thit is not usually a big deal. Even though the
+   wrong. In practice, however, this is not usually a big deal. Even though the
    assumption is almost always wrong, it does not lead to a lot of pathological
    behaviour from the test, so we tend to just ignore it.
 

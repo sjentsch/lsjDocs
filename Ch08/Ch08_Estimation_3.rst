@@ -34,7 +34,7 @@ With this in mind, let us abandon the idea that our studies will have
 sample sizes of 10,000 and consider instead a very modest experiment
 indeed. This time around we will sample *N* = 5 people and measure
 their IQ scores. As before, I can simulate this experiment in jamovi
-``= NORM(100,15)`` function, but I only need 5 participant IDs this
+``= NORM(100,15)`` function, but I only need five participant IDs this
 time, not 10,000. These are the five numbers that jamovi generated:
 
 .. code-block:: text
@@ -42,9 +42,9 @@ time, not 10,000. These are the five numbers that jamovi generated:
    90 82 94 99 110
 
 The mean IQ in this sample turns out to be exactly 95. Not surprisingly,
-thit is much less accurate than the previous experiment. Now imagine
+this is much less accurate than the previous experiment. Now imagine
 that I decided to **replicate** the experiment. That is, I repeat the
-procedure as closely as possible and I randomly sample 5 new people and
+procedure as closely as possible and I randomly sample five new people and
 measure their IQ. Again, jamovi allows me to simulate the results of
 this procedure, and generates these five numbers:
 
@@ -111,7 +111,7 @@ of the mean**.
    :name: fig-samplingDist4
 
    The sampling distribution of the mean for the “five IQ scores experiment”:
-   If you sample 5 people at random and calculate their average IQ you will
+   If you sample five people at random and calculate their average IQ you will
    almost certainly get a number between 80 and 120, even though there are
    quite a lot of individuals who have IQs above 120 or below 80. For
    comparison, the black line plots the population distribution of IQ scores.
@@ -143,10 +143,10 @@ experiment. This would give me a data set that started out like this:
 Doing this over and over again would give me a very different sampling
 distribution, namely the *sampling distribution of the maximum*. The sampling
 distribution of the maximum of 5 IQ scores is shown in
-:numref:`fig-samplingDistMax`. Not surprisingly, if you pick 5 people at random
-and then find the person with the highest IQ score, they are going to have an
-above average IQ. Most of the time you will end up with someone whose IQ is
-measured in the 100 to 140 range.
+:numref:`fig-samplingDistMax`. Not surprisingly, if you pick five people at
+random and then find the person with the highest IQ score, they are going to
+have an above average IQ. Most of the time you will end up with someone whose
+IQ is measured in the 100 to 140 range.
 
 .. ----------------------------------------------------------------------------
 
@@ -155,8 +155,9 @@ measured in the 100 to 140 range.
    :name: fig-samplingDistMax
 
    The sampling distribution of the maximum for the “five IQ scores
-   experiment”: If you sample 5 people at random and select the one with the
-   highest IQ score you will probably see someone with an IQ between 100 and 140.
+   experiment”: If you sample five people at random and select the one with
+   the highest IQ score you will probably see someone with an IQ between 100
+   and 140.
    
 .. ----------------------------------------------------------------------------
 
@@ -249,7 +250,8 @@ approximately normal no matter what your population distribution looks like!
    (bottom-left) and 8 (bottom-right) for data drawn from the distribution in
    the top-left panel. As you can see, even though the original population
    distribution is non-normal the sampling distribution of the mean becomes
-   pretty close to normal by the time you have a sample of even 4 observations.
+   pretty close to normal by the time you have a sample of even four
+   observations.
    
 .. ----------------------------------------------------------------------------
 

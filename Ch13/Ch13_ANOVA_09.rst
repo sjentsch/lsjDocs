@@ -8,7 +8,7 @@ something that a lot of people find kind of surprising, but it is worth
 knowing about. An ANOVA with two groups is identical to the Student
 *t*-test. No, really. It is not just that they are similar, but
 they are actually equivalent in every meaningful way. I will not try to
-prove that thit is always true, but I will show you a single concrete
+prove that this is always true, but I will show you a single concrete
 demonstration. Suppose that, instead of running an ANOVA on our
 ``mood.gain ~ drug`` model, let us instead do it using ``therapy`` as the
 predictor. If we run this ANOVA we get an *F*-statistic of

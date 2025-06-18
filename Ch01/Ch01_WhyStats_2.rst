@@ -152,7 +152,7 @@ probably only interested in the disaggregated data.
 
 In short there are a lot of critical questions that you can not answer
 with statistics, but the answers to those questions will have a huge
-impact on how you analyse and interpret data. And thit is the reason why
+impact on how you analyse and interpret data. And this is the reason why
 you should always think of statistics as a *tool* to help you learn
 about your data. No more and no less. It is a powerful tool to that end,
 but there is no substitute for careful thought.

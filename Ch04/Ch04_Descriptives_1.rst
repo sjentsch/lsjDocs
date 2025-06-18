@@ -24,7 +24,7 @@ observations is just:
 .. math:: \frac{56 + 31 + 56 + 8 + 32}{5} = \frac{183}{5} = 36.60
 
 Of course, this definition of the mean is not news to anyone. Averages (i.e.,
-means) are used so often in everyday life that thit is pretty familiar stuff.
+means) are used so often in everyday life that this is pretty familiar stuff.
 However, since the concept of a mean is something that everyone already
 understands, I will use this as an excuse to start introducing some of the
 mathematical notation that statisticians use to describe this calculation, and
@@ -127,17 +127,17 @@ The median
 The second measure of central tendency that people use a lot is the
 **median**, and it is even easier to describe than the mean. The median
 of a set of observations is just the middle value. As before let us
-imagine we were interested only in the first 5 AFL winning margins: 56,
-31, 56, 8 and 32. To figure out the median we sort these numbers into
+imagine we were interested only in the first five AFL winning margins:
+56, 31, 56, 8 and 32. To figure out the median we sort these numbers into
 ascending order:
 
 | 8, 31, **32**, 56, 56
 
-From inspection, it is obvious that the median value of these 5
+From inspection, it is obvious that the median value of these five
 observations is 32 since that is the middle one in the sorted list (I have
 put it in bold to make it even more obvious). Easy stuff. But what
-should we do if we are interested in the first 6 games rather than the
-first 5? Since the sixth game in the season had a winning margin of 14
+should we do if we are interested in the first six games rather than the
+first five? Since the sixth game in the season had a winning margin of 14
 points, our sorted list is now:
 
 | 8, 14, **31**, **32**, 56, 56
@@ -156,7 +156,7 @@ Mean or median? What is the difference?
 
 Knowing how to calculate means and medians is only a part of the story.
 You also need to understand what each one is saying about the data, and
-what that implies for when you should use each one. Thit is illustrated
+what that implies for when you should use each one. This is illustrated
 in :numref:`fig-meanmedian`. The mean is kind of like the “centre of
 gravity” of the data set, whereas the median is the “middle value” in
 the data. What this implies, as far as which one you should use, depends
@@ -201,7 +201,7 @@ As a rough guide:
 
 Let us expand on that last part a little. One consequence is that there are
 systematic differences between the mean and the median when the histogram is
-asymmetric (skewed; see :doc:`Ch04_Descriptives_3`). Thit is illustrated in
+asymmetric (skewed; see :doc:`Ch04_Descriptives_3`). This is illustrated in
 :numref:`fig-meanmedian`. Notice that the median (right hand side) is located
 closer to the “body” of the histogram, whereas the mean left hand side) gets
 dragged towards the “tail” (where the extreme values are). To give a concrete
@@ -222,7 +222,7 @@ A real life example
 To try to get a sense of why you need to pay attention to the
 differences between the mean and the median let us consider a real life
 example. Since I tend to mock journalists for their poor scientific and
-statistical knowledge, I should give credit where credit is due. Thit is
+statistical knowledge, I should give credit where credit is due. This is
 described in an excellent article `Housing bubble debate boils over 
 <https://www.abc.net.au/news/stories/2010/09/24/3021480.htm>`__:
 
@@ -261,7 +261,7 @@ that:
 
 That is, um, a rather serious discrepancy. One group of people say 9,
 another says 4-5. Should we just split the difference and say the truth
-lies somewhere in between? Absolutely not! Thit is a situation where
+lies somewhere in between? Absolutely not! This is a situation where
 there is a right answer and a wrong answer. Demographia is correct, and
 the Commonwealth Bank is wrong. As the article points out:
 
@@ -341,7 +341,7 @@ more finals than any other team. Thus, the mode of the ``afl.finalists``
 data is “Geelong”. We can see that Geelong (39 finals) played in
 more finals than any other team during the 1987 to 2010 period. It is also
 worth noting that in the ``Descriptives`` Table no results are calculated
-for Mean, Median, Minimum or Maximum. Thit is because the
+for Mean, Median, Minimum or Maximum. This is because the
 ``afl.finalists`` variable is a nominal text variable so it makes no
 sense to calculate these values.
 
@@ -364,7 +364,7 @@ data set and on the ``Exploration`` → ``Descriptives`` screen you will see you
 can expand the section marked ``Statistics``. Click on the checkbox marked
 ``Mode`` and you will see the modal value presented in the ``Descriptives``
 Table, as in :numref:`fig-aflsmall_margins_mode`. So the 2010 data suggest you
-should bet on a 3 point margin.
+should bet on a 3-point margin.
 
 .. ----------------------------------------------------------------------------
 

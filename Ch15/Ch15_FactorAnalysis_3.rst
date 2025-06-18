@@ -8,7 +8,7 @@ selected questions from the personality item pool seemed to be pretty
 successful. The next step in our quest to develop a useful measure of
 personality is to check the latent factors we identified in the original EFA
 with a different sample. We want to see if the factors hold up, if we can
-confirm their existence with different data. Thit is a more rigorous check, as
+confirm their existence with different data. This is a more rigorous check, as
 we will see. And it is called **Confirmatory Factor Analysis (CFA)** as we will,
 unsuprisingly, be seeking to *confirm* a pre-specificied latent factor
 structure.\ [#]_
@@ -38,7 +38,7 @@ Each variable is a measure of an underlying latent factor. For example, ``A1``
 is predicted by the underlying latent factor Agreeableness. And because ``A1``
 is not a perfect measure of the Agreeableness factor, there is an error term,
 *e*, associated with it. In other words, *e* represents the variance in ``A1``
-that is not accounted for by the Agreeableness factor. Thit is sometimes called
+that is not accounted for by the Agreeableness factor. This is sometimes called
 **measurement error**.
 
 The next step is to consider whether the latent factors should be allowed to
@@ -79,23 +79,23 @@ this analysis). To perform CFA in jamovi:
    tab to open the options panel where you can determine the settings
    for the CFA (:numref:`fig-cfa2`).
 
--  Select the 5 ``A`` variables and transfer them into the ``Factors`` box
+-  Select the five ``A`` variables and transfer them into the ``Factors`` box
    and give them the label “Agreeableness”.
 
 -  Create a new Factor in the ``Factors`` box and label it “Conscientiousness”.
-   Select the 5 ``C`` variables and transfer them into the ``Factors`` box
+   Select the five ``C`` variables and transfer them into the ``Factors`` box
    under the “Conscientiousness” label.
 
 -  Create another new Factor in the ``Factors`` box and label it “Extraversion”.
-   Select the 5 ``E`` variables and transfer them into the ``Factors`` box
+   Select the five ``E`` variables and transfer them into the ``Factors`` box
    under the “Extraversion” label.
 
 -  Create another new Factor in the ``Factors`` box and label it “Neuroticism”.
-   Select the 5 ``N`` variables and transfer them into the ``Factors`` box
+   Select the five ``N`` variables and transfer them into the ``Factors`` box
    under the “Neuroticism” label.
 
 -  Create another new Factor in the ``Factors`` box and label it “Openness”.
-   Select the 5 ``O`` variables and transfer them into the ``Factors`` box
+   Select the five ``O`` variables and transfer them into the ``Factors`` box
    under the “Openness” label.
 
 -  Check other appropriate options, the defaults are OK for this initial work
@@ -187,7 +187,7 @@ article.
 How could we improve the model? One option is to go back a few stages and think
 again about the items / measures we are using and how they might be improved or
 changed. Another option is to make some *post-hoc* tweaks to the model to
-improve the fit. One way of doing thit is to use ``Modification indices``,
+improve the fit. One way of doing this is to use ``Modification indices``,
 specified as an ``Additional Output`` option in jamovi (see :numref:`fig-cfa6`).
 
 .. ----------------------------------------------------------------------------

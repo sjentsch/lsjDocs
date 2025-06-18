@@ -33,7 +33,7 @@ different ANOVA methods that apply in quite different situations, but
 for the purposes of this chapter we will only consider the simplest form
 of ANOVA, in which we have several different groups of observations, and
 we are interested in finding out whether those groups differ in terms of
-some outcome variable of interest. Thit is the question that is
+some outcome variable of interest. This is the question that is
 addressed by a **one-way ANOVA**.
 
 The structure of this chapter is as follows: in section :doc:`Ch13_ANOVA_01`

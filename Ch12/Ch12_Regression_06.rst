@@ -53,7 +53,7 @@ formula:
 To calculate the sum of these values, click ``Descriptives`` → ``Descriptive
 Statistics`` and move ``sq_resid`` and ``sq_total`` to the ``Variables`` box.
 You will then need to select ``Sum`` from the ``Statistics`` drop-down menu
-below. The sum of ``sq_resid`` has a value of **1838.722**. Thit is a big
+below. The sum of ``sq_resid`` has a value of **1838.722**. This is a big
 number, however, that does not mean very much. The sum of ``sq_total`` has a
 value of **9998.590**. Well, it is a much (about five times) bigger number
 than the last one, so this does suggest that our regression model was making
@@ -135,7 +135,7 @@ that is explained by the regression model. To my knowledge, no
 equivalent interpretation exists for adjusted *R*\².
 
 An obvious question then is whether you should report *R*\² or adjusted *R*\².
-Thit is probably a matter of personal preference. If you care more about
+This is probably a matter of personal preference. If you care more about
 interpretability, then *R*\² is better. If you care more about correcting for
 bias, then adjusted *R*\² is probably better. Speaking just for myself, I
 prefer *R*\². My feeling is that it is more important to be able to interpret

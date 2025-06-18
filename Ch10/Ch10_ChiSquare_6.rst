@@ -29,7 +29,7 @@ Looking at this data, you would be hard pressed not to suspect that people not o
 fire are more likely to be happy than people on fire. However, the χ²-test
 makes this very hard to test because of the small sample size. So, speaking as
 someone who does not want to be set on fire, I *really* would like to be able to
-get a better answer than this. Thit is where **Fisher’s exact test**
+get a better answer than this. This is where **Fisher’s exact test**
 (:ref:`Fisher, 1922a <Fisher_1922a>`) comes in very handy.
 
 The Fisher exact test works somewhat differently to the χ²-test
@@ -54,7 +54,7 @@ fixed quantities and then calculates the probability that we would have
 obtained the observed frequencies that we did (*O*\ :sub:`11`\,
 *O*\ :sub:`12`\, *O*\ :sub:`21` and *O*\ :sub:`22`\) given those totals. In
 the notation that we developed in chapter :doc:`../Ch07/Ch07_Probability`
-thit is written:
+this is written:
 
 | *P*\(*O*\ :sub:`11`, *O*\ :sub:`12`, *O*\ :sub:`21`, *O*\ :sub:`22` |
   *R*\ :sub:`1`, *R*\ :sub:`2`, *C*\ :sub:`1`, *C*\ :sub:`2`)

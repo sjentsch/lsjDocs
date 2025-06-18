@@ -11,19 +11,19 @@ is an existing antidepressant / anti-anxiety drug called *Anxifree*. A
 collection of 18 participants with moderate to severe depression are
 recruited for your initial testing. Because the drugs are sometimes
 administered in conjunction with psychological therapy, your study
-includes 9 people undergoing cognitive behavioural therapy (CBT) and 9
-who are not. Participants are randomly assigned (doubly blinded, of
-course) a treatment, such that there are 3 CBT people and 3 no-therapy
-people assigned to each of the 3 drugs. A psychologist assesses the mood
-of each person after a 3 month run with each drug, and the overall
-*improvement* in each person’s mood is assessed on a scale ranging from
--5 to +5. With that as the study design, let us now load |clinicaltrial|_
-data set. It contains the three variables ``drug`` |nominal|, ``therapy``
-|nominal| and ``mood.gain`` |continuous|.
+includes nine people undergoing cognitive behavioural therapy (CBT) and
+nine who are not. Participants are randomly assigned (doubly blinded, of
+course) a treatment, such that there are three CBT people and three
+no-therapy people assigned to each of the three drugs. A psychologist
+assesses the mood of each person after a three-month run with each drug,
+and the overall *improvement* in each person’s mood is assessed on a scale
+ranging from -5 to +5. With that as the study design, let us now load
+|clinicaltrial|_ data set. It contains the three variables ``drug``
+|nominal|, ``therapy`` |nominal| and ``mood.gain`` |continuous|.
 
 For the purposes of this chapter, what we are really interested in is the
-effect of ``drug`` on ``mood.gain``. The first thing to do is calculate some
-descriptive statistics and draw some graphs. In
+effect of ``drug`` on ``mood.gain``. The first thing to do is calculate
+some descriptive statistics and draw some graphs. In
 :doc:`../Ch04/Ch04_Descriptives` we showed you how to do this, and some of the
 descriptive statistics we can calculate in jamovi are shown in
 :numref:`fig-anova1`.

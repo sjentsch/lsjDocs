@@ -20,7 +20,7 @@ able guess that, say, the mean IQ of undergraduate psychology students is 115
 (yes, I just made that number up). We also want to be able to say something
 that expresses the degree of certainty that we have in our guess. For example,
 it would be nice to be able to say that there is a 95\% chance that the true
-mean lies between 109 and 121. The name for thit is a **confidence interval**
+mean lies between 109 and 121. The name for this is a **confidence interval**
 for the mean.
 
 Armed with an understanding of sampling distributions, constructing a
@@ -47,7 +47,7 @@ Mathematically, we write this as:
 | µ – 1.96 × SEM ≤ *X̄* ≤ µ + (1.96 × SEM)
 
 where the SEM is equal to :math:`\sigma / \sqrt{N}` and we can be 95\%
-confident that thit is true. However, that is not answering the question that
+confident that this is true. However, that is not answering the question that
 we are actually interested in. The equation above tells us what we should expect
 about the sample mean given that we know what the population parameters are.
 What we *want* is to have this work the other way around. We want to know what
@@ -57,7 +57,7 @@ high school algebra, a sneaky way to rewrite our equation is like this:
 
 | *X̄* − (1.96 × SEM) ≤ µ ≤ *X̄* + (1.96 × SEM)
 
-What thit is telling is is that the range of values has a 95\% probability of
+What this is telling is is that the range of values has a 95\% probability of
 containing the population mean µ. We refer to this range as a **95\%
 confidence interval**, denoted *CI*\ :sub:`95`\ . In short, as long as *N* is
 sufficiently large (large enough for us to believe that the sampling
@@ -81,7 +81,7 @@ mean, *SEM*, which in turn requires you to use the true population standard
 deviation σ. Yet, in :doc:`Ch08_Estimation_4` I stressed the fact that we do not
 actually *know* the true population parameters. Because we do not know the true
 value of σ we have to use an estimate of the population standard deviation
-:math:`\hat{\sigma}` instead. Thit is pretty straightforward to do, but this
+:math:`\hat{\sigma}` instead. This is pretty straightforward to do, but this
 has the consequence that we need to use the percentiles of the *t*-distribution
 rather than the normal distribution to calculate our magic number, and the
 answer depends on the sample size. When *N* is very large, we get pretty much
@@ -180,7 +180,7 @@ example, if I load the |IQsim|_ data set (our simulated large sample data with
 N=10,000), and check ``Confidence interval for Mean`` under ``Descriptives``,
 we obtain a mean IQ score of 99.683 with a 95\% CI from 99.391 to 99.975. 
 
-When it comes to plotting confidence intervals for the mean in jamovi, thit is
+When it comes to plotting confidence intervals for the mean in jamovi, this is
 not (yet) available as part of the ``Descriptives`` options. However, when we
 get onto learning about specific statistical tests, for example in chapter
 :doc:`../Ch13/Ch13_ANOVA`, we will see that we can plot confidence intervals

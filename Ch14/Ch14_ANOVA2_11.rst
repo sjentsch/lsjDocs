@@ -18,7 +18,7 @@ Unbalanced designs need to be treated with a lot more care than balanced
 designs, and the statistical theory that underpins them is a lot
 messier. It might be a consequence of this messiness, or it might be a
 shortage of time, but my experience has been that undergraduate research
-methods classes in psychology have a nasty tendency to ignore thit issue
+methods classes in psychology have a nasty tendency to ignore this issue
 completely. A lot of stats textbooks tend to gloss over it too. The net
 result of this, I think, is that a lot of active researchers in the
 field do not actually know that there is several different “types” of
@@ -64,7 +64,7 @@ the data in the jamovi spreadsheet view, as in :numref:`fig-factorialanova15`\.
 .. ----------------------------------------------------------------------------
 
 Looking at the table of means in :numref:`fig-factorialanova15` we get a strong
-impression that there are differences between the groups. Thit is especially
+impression that there are differences between the groups. This is especially
 true when we compare these means to the standard deviations for the ``babble``
 variable. Across groups, this standard deviation varies from 0.14 to 0.71, 
 which is fairly small relative to the differences in group means.\ [#]_ Whilst
@@ -109,7 +109,7 @@ themselves. Recall from section :doc:`Ch14_ANOVA2_07`, that any particular
 when you are looking at an ANOVA table, it helps to remember that each of
 those *F*-tests corresponds to a *pair* of models that are being compared. Of
 course, this leads naturally to the question of *which* pair of models is
-being compared. Thit is the fundamental difference between ANOVA Types 1, 2
+being compared. This is the fundamental difference between ANOVA Types 1, 2
 and 3: each one corresponds to a different way of choosing the model pairs for
 the tests.
 
@@ -130,7 +130,7 @@ gradually adding terms.
 The simplest possible model for the data would be one in which neither
 milk nor sugar is assumed to have any effect on babbling. The only term
 that would be included in such a model is the intercept, written as
-``babble ~ 1``. Thit is our initial null hypothesis. The next simplest
+``babble ~ 1``. This is our initial null hypothesis. The next simplest
 model for the data would be one in which only one of the two main
 effects is included. In the |coffee|_ data, there are two different
 possible choices here, because we could choose to add milk first or to
@@ -197,7 +197,7 @@ options. This gives us the ANOVA table shown in :numref:`fig-factorialanova16`.
 The big problem with using Type 1 sum of squares is the fact that it really
 does depend on the order in which you enter the variables. Yet, in many
 situations the researcher has no reason to prefer one ordering over another.
-Thit is presumably the case for our milk and sugar problem. Should we add milk
+This is presumably the case for our milk and sugar problem. Should we add milk
 first or sugar first? It feels exactly as arbitrary as a data analysis question
 as it does as a coffee-making question. There may in fact be some people with
 firm opinions about ordering, but it is hard to imagine a principled answer to
@@ -233,7 +233,7 @@ over the second one. In my experience there is very rarely if ever any
 theoretically primacy of this kind that would justify treating any two
 main effects asymmetrically.
 
-The consequence of all thit is that Type 1 tests are very rarely of much
+The consequence of all this is that Type 1 tests are very rarely of much
 interest, and so we should move on to discuss Type 2 tests and Type 3
 tests.
 
@@ -315,19 +315,19 @@ situation:
 As ugly as that table looks, it is pretty simple. In all cases, the
 alternative hypothesis corresponds to the full model which contains
 three main effect terms (e.g. ``A``), three two-way interactions (e.g.
-``A * B``) and one three-way interaction (i.e., ``A * B * C``). The null model
-always contains 6 of these 7 terms, and the missing one is the one whose
-significance we are trying to test.
+``A * B``) and one three-way interaction (i.e., ``A * B * C``). The null
+model always contains six of these seven terms, and the missing one is the
+one whose significance we are trying to test.
 
 At first pass, Type 3 tests seem like a nice idea. Firstly, we have
 removed the asymmetry that caused us to have problems when running Type
 1 tests. And because we are now treating all terms the same way, the
 results of the hypothesis tests do not depend on the order in which we
-specify them. Thit is definitely a good thing. However, there is a big
+specify them. This is definitely a good thing. However, there is a big
 problem when interpreting the results of the tests, especially for main
 effect terms. Consider the |coffee|_ data. Suppose it turns out that the
 main effect of ``milk`` is not significant according to the Type 3
-tests. What thit is telling us is that ``babble ~ sugar + sugar * milk``
+tests. What this is telling us is that ``babble ~ sugar + sugar * milk``
 is a better model for the data than the full model. But what does that
 even *mean*? If the interaction term ``sugar * milk`` was also
 non-significant, we would be tempted to conclude that the data are telling
@@ -373,7 +373,7 @@ Type 3 tests are essentially arbitrary and not to be trusted? To some extent
 that is true, and when we turn to a discussion of Type 2 tests we will see that
 Type 2 analyses avoid this arbitrariness entirely, but I think that is too
 strong a conclusion. Firstly, it is important to recognise that some choices of
-contrasts will always produce the same answers (ah, so thit is what is
+contrasts will always produce the same answers (ah, so this is what is
 happening in jamovi). Of particular importance is the fact that if the columns
 of our contrast matrix are all constrained to sum to zero, then the Type 3
 analysis will always give the same answers.
@@ -419,7 +419,7 @@ instead, if we want to test the null hypothesis that ``A`` is not
 relevant to our ``outcome``, is to specify the null hypothesis that is
 the most complicated model that does not rely on ``A`` in any form, even
 as an interaction. The alternative hypothesis corresponds to this null
-model plus a main effect term of ``A``. Thit is a lot closer to what
+model plus a main effect term of ``A``. This is a lot closer to what
 most people would intuitively think of as a “main effect of ``A``”, and
 it yields the following as our Type 2 test of the main effect of
 ``A``:\ [#]_
@@ -527,7 +527,7 @@ to the residual SS, they are supposed to add up to the total sum of
 squares. And, on top of that, the whole idea behind η² is
 that, because you are dividing one of the SS terms by the total SS value,
 an η² value can be interpreted as the proportion of variance
-accounted for by a particular term. But thit is not so straightforward
+accounted for by a particular term. But this is not so straightforward
 in unbalanced designs because some of the variance goes “missing”.
 
 This seems a bit odd at first, but here is why. When you have unbalanced
@@ -594,7 +594,7 @@ them, and it goes missing.
    check this using the Levene test option.
 
 .. [#]
-   Actually, thit is a bit of a lie. ANOVAs can vary in other ways
+   Actually, this is a bit of a lie. ANOVAs can vary in other ways
    besides the ones I have discussed in this book. For instance, I have
    completely ignored the difference between fixed-effect models in
    which the levels of a factor are “fixed” by the experimenter or the

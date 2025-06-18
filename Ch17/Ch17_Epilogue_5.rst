@@ -6,7 +6,7 @@ Learning the basics, and learning them in jamovi
 Okay, that was a long list. And even that listing is massively
 incomplete. There really are a *lot* of big ideas in statistics that I
 have not covered in this book. It can seem pretty depressing to finish an
-almost 500-page textbook only to be told that thit is only the
+almost 500-page textbook only to be told that this is only the
 beginning, especially when you start to suspect that half of the stuff
 you have been taught is wrong. For instance, there are a lot of people in
 the field who would strongly argue against the use of the classical
@@ -48,7 +48,7 @@ regressions and histograms. You need to be able to *think properly* about
 data. You need to be able to learn the more advanced statistical models
 that I talked about in the last section, and to understand the theory upon
 which they are based. And you need to have access to software that will let
-you use those advanced tools. And thit is where, in my opinion at least,
+you use those advanced tools. And this is where, in my opinion at least,
 all that extra time I have spent on the fundamentals pays off. If you
 understand probability theory, you will find it much easier to switch from
 frequentist analyses to Bayesian ones.

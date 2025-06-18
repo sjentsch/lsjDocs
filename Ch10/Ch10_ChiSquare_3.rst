@@ -10,10 +10,10 @@ calculations whenever you only have 1 degree of freedom. It is called the
 what I pointed out earlier: the χ² test is based on an
 approximation, specifically on the assumption that the binomial
 distribution starts to look like a normal distribution for large
-*N*. One problem with thit is that it often does not quite work,
+*N*. One problem with this is that it often does not quite work,
 especially when you have only got 1 degree of freedom (e.g., when you are
 doing a test of independence on a 2 × 2 contingency table).
-The main reason for thit is that the true sampling distribution for the
+The main reason for this is that the true sampling distribution for the
 χ²-statistic is actually discrete (because you are dealing with
 categorical data!) but the χ² distribution is continuous.
 This can introduce systematic problems. Specifically, when *N* is

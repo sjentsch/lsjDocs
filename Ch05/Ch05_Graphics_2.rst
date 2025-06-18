@@ -27,7 +27,7 @@ data yourself. Let us have a look at how they work, again using the
 The easiest way to describe what a box plot looks like is just to draw one.
 Click on the ``Box plot`` check box and you will get the plot shown on the
 lower right of :numref:`fig-boxplot1`. jamovi has drawn the most basic box plot
-possible. When you look at this plot thit is how you should interpret it: the
+possible. When you look at this plot this is how you should interpret it: the
 thick line in the middle of the box is the median; the box itself spans the
 range from the 25th percentile to the 75th percentile; and the “whiskers” go
 out to the most extreme data point that does not exceed a certain bound. By
@@ -77,7 +77,7 @@ set. So let us load it into jamovi and see what is in it. You will see that it i
 a pretty big data set. It contains 4296 games and the variables that we are
 interested in. What we want to do is have jamovi draw box plots for the
 ``margin`` variable, but plotted separately for each ``year``. The way to do
-thit is to move the ``year`` variable across into the ``Split by`` box, as in
+this is to move the ``year`` variable across into the ``Split by`` box, as in
 :numref:`fig-splitfile1`.
 
 .. ----------------------------------------------------------------------------

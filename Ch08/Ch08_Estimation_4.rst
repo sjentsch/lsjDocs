@@ -7,7 +7,7 @@ In all the IQ examples in the previous sections we actually knew the
 population parameters ahead of time. As every undergraduate gets taught
 in their very first lecture on the measurement of intelligence, IQ
 scores are *defined* to have mean 100 and standard deviation 15.
-However, thit is a bit of a lie. How do we know that IQ scores have a
+However, this is a bit of a lie. How do we know that IQ scores have a
 true population mean of 100? Well, we know this because the people who
 designed the tests have administered them to very large samples, and
 have then “rigged” the scoring rules so that their sample has mean 100.
@@ -19,7 +19,7 @@ actually go to some lengths to provide “test norms” that can apply to
 lots of different populations (e.g., different age groups, nationalities
 etc).
 
-Thit is very handy, but of course almost every research project of
+This is very handy, but of course almost every research project of
 interest involves looking at a different population of people to those
 used in the test norms. For instance, suppose you wanted to measure the
 effect of low level lead poisoning on cognitive functioning in Port
@@ -101,7 +101,7 @@ So here is my sample:
 
 ``20``
 
-Thit is a perfectly legitimate sample, even if it does have a sample
+This is a perfectly legitimate sample, even if it does have a sample
 size of *N* = 1. It has a sample mean of 20 and because every
 observation in this sample is equal to the sample mean (obviously!) it
 has a sample standard deviation of 0. As a description of the *sample*
@@ -135,7 +135,7 @@ for any variability to be observed! For our new data set, the sample mean is
 have about the population? Again, as far as the population mean goes, the best
 guess we can possibly make is the sample mean. If forced to guess we would probably
 guess that the population mean cromulence is 21. What about the standard
-deviation? Thit is a little more complicated. The sample standard deviation is
+deviation? This is a little more complicated. The sample standard deviation is
 only based on two observations, and if you are at all like me you probably have
 the intuition that, with only two observations we have not given the population
 “enough of a chance” to reveal its true variability to us. It is not just that
@@ -156,7 +156,7 @@ deviations, what I have is the *sampling distribution of the standard
 deviation*. I have plotted this distribution in 
 :numref:`fig-samplingDistSampleSD`. Even though the true population standard
 deviation is 15 the average of the *sample* standard deviations is only 8.5.
-Notice that thit is a very different result to what we found in 
+Notice that this is a very different result to what we found in 
 :numref:`fig-samplingDistDiffN` (middle panel) when we plotted the sampling
 distribution of the mean, where the population mean is 100 and the average of
 the sample means is also 100.
@@ -202,9 +202,9 @@ little bit larger than the sample standard deviation *s*.
    Illustration of the fact that the sample mean is an unbiased estimator of
    the population mean (left panel), but the sample standard deviation is a
    biased estimator of the population standard deviation (right panel). For
-   the figure, I generated 10,000 simulated data sets with 1 observation each,
-   10,000 more with 2 observations, and so on up to a sample size of 10.
-   Each data set consisted of fake IQ data, that is the data were normally
+   the figure, I generated 10,000 simulated data sets with one observation
+   each, 10,000 more with two observations, and so on up to a sample size of
+   \10. Each data set consisted of fake IQ data, that is the data were normally
    distributed with a true population mean of 100 and standard deviation 15.
    On average, the sample means turn out to be 100, regardless of sample size
    (left panel). However, the sample standard deviations turn out to be
@@ -227,7 +227,7 @@ by *N*. If we do that, we obtain the following formula:
 
 .. math:: \hat\sigma^2 = \frac{1}{N-1} \sum_{i=1}^N (X_i - \bar{X})^2
 
-Thit is an unbiased estimator of the population variance σ². Moreover, this
+This is an unbiased estimator of the population variance σ². Moreover, this
 finally answers the question we raised in :doc:`../Ch04/Ch04_Descriptives_2`.
 Why did jamovi give us slightly different answers for variance? It is because
 jamovi calculates :math:`\hat\sigma^2` not *s*\², that is why. A similar story
@@ -241,14 +241,14 @@ doing is calculating :math:`\hat\sigma`, not *s*.\ [#]_
 
 One final point. In practice, a lot of people tend to refer to
 :math:`\hat{\sigma}` (i.e., the formula where we divide by *N* - 1)
-as the *sample* standard deviation. Technically, thit is incorrect. The
+as the *sample* standard deviation. Technically, this is incorrect. The
 *sample* standard deviation should be equal to *s* (i.e., the formula where
 we divide by *N*). These are not the same thing, either conceptually or
 numerically. One is a property of the sample, the other is an estimated
 characteristic of the population. However, in almost every real life
 application what we actually care about is the estimate of the population
 parameter, and so people always report :math:`\hat\sigma` rather than *s*.
-Thit is the right number to report, of course. It is just that people tend to
+This is the right number to report, of course. It is just that people tend to
 get a little bit imprecise about terminology when they write it up, because
 “sample standard deviation” is shorter than “estimated population standard
 deviation”. It is no big deal, and in practice I do the same thing
@@ -322,7 +322,7 @@ things clear.
    twist, since :math:`\hat\sigma^2` is an unbiased estimator of σ², you would
    assume that taking the square root would be fine and :math:`\hat\sigma`
    would be an unbiased estimator of σ. Right? Weirdly, it is not. There is
-   actually a subtle, tiny bias in :math:`\hat\sigma`. Thit is just bizarre:
+   actually a subtle, tiny bias in :math:`\hat\sigma`. This is just bizarre:
    :math:`\hat\sigma^2` is an unbiased estimate of the population variance
    σ², but when you take the square root, it turns out that :math:`\hat\sigma`
    is a biased estimator of the population standard deviation σ. Weird, weird,

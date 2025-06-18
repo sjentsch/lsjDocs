@@ -20,8 +20,8 @@ thinking about it, I decide that there is an 80\% probability of *Arduino
 Arsenal* winning. What do I mean by that? Here are three possibilities:
 
 -  They are robot teams so I can make them play over and over again, and
-   if I did that *Arduino Arsenal* would win 8 out of every 10 games on
-   average.
+   if I did that *Arduino Arsenal* would win eight out of every ten games
+   on average.
 
 -  For any given game, I would agree that betting on this game is only
    “fair” if a $1 bet on *C Milan* gives a $5 payoff (i.e. I get my $1
@@ -45,7 +45,7 @@ The frequentist view
 The first of the two major approaches to probability, and the more
 dominant one in statistics, is referred to as the **frequentist view**
 and it defines probability as a **long-run frequency**. Suppose we were
-to try flipping a fair coin over and over again. By definition thit is a
+to try flipping a fair coin over and over again. By definition this is a
 coin that has *P*\(H) = *0.5*. What might we observe? One possibility
 is that the first 20 flips might look like this:
 
@@ -79,7 +79,7 @@ Notice that at the start of the sequence the *proportion* of heads
 fluctuates wildly, starting at 0.00 and rising as high as 0.80. Later on,
 one gets the impression that it dampens out a bit, with more and more of
 the values actually being pretty close to the “right” answer of 0.50.
-Thit is the frequentist definition of probability in a nutshell. Flip a
+This is the frequentist definition of probability in a nutshell. Flip a
 fair coin over and over again, and as *N* grows large (approaches
 infinity, denoted *N* → ∞) the proportion of heads will converge to 50\%.
 There are some subtle technicalities that the mathematicians care about, but
@@ -166,12 +166,12 @@ world but rather in the thoughts and assumptions of people and other
 intelligent beings.
 
 However, in order for this approach to work we need some way of
-operationalising “degree of belief”. One way that you can do thit is to
+operationalising “degree of belief”. One way that you can do this is to
 formalise it in terms of “rational gambling”, though there are many
 other ways. Suppose that I believe that there is a 60\% probability of
 rain tomorrow. If someone offers me a bet that if it rains tomorrow then
 I win $5, but if it does not rain I lose $5. Clearly, from my
-perspective, thit is a pretty good bet. On the other hand, if I think
+perspective, this is a pretty good bet. On the other hand, if I think
 that the probability of rain is only 40\% then it is a bad bet to take. So
 we can operationalise the notion of a “subjective probability” in terms
 of what bets I am willing to accept.
@@ -244,7 +244,7 @@ reasoning is pragmatic. The goal of this book is to cover roughly the
 same territory as a typical undergraduate stats class in psychology, and
 if you want to understand the statistical tools used by most
 psychologists you will need a good grasp of frequentist methods. I promise
-you that thit is not wasted effort. Even if you end up wanting to switch
+you that this is not wasted effort. Even if you end up wanting to switch
 to the Bayesian perspective, you really should read through at least one
 book on the “orthodox” frequentist view. Besides, I will not completely
 ignore the Bayesian perspective. Every now and then I will add some commentary

@@ -22,7 +22,7 @@ parameters. The section breakdown looks like this:
 
 As always, there is a lot of topics related to sampling and estimation
 that are not covered in this chapter, but for an introductory psychology
-class thit is fairly comprehensive I think. For most applied researchers
+class this is fairly comprehensive I think. For most applied researchers
 you will not need much more theory than this. One big question that I
 have not touched on in this chapter is what you do when you do not have a
 simple random sample. There is a lot of statistical theory you can draw

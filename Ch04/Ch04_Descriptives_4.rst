@@ -4,10 +4,10 @@ Descriptive statistics separately for each group
 ------------------------------------------------
 
 It is very commonly the case that you find yourself needing to look at 
-descriptive statistics broken down by some grouping variable |nominal|. Thit is
+descriptive statistics broken down by some grouping variable |nominal|. This is
 pretty easy to do in jamovi. For instance, let us say I want to look at the
 descriptive statistics for some clinical trial data, broken down separately by
-``therapy`` type. Thit is a new data set, one that you have never seen before.
+``therapy`` type. This is a new data set, one that you have never seen before.
 The data is stored in the |clinicaltrial|_ data set and we will use it a lot in
 chapter :doc:`../Ch13/Ch13_ANOVA` (you can find a complete description of the
 data at the start of that chapter). Let us load it and see what we have got:
@@ -24,9 +24,9 @@ data at the start of that chapter). Let us load it and see what we have got:
 .. ----------------------------------------------------------------------------
 
 Evidently there were three drugs: a ``placebo``, something called ``anxifree``
-and something called ``joyzepam``, and there were 6 people administered each
-drug. There were 9 people treated using cognitive behavioural therapy (``CBT``)
-and 9 people who received no psychological treatment (``no.therapy``). And we
+and something called ``joyzepam``, and there were six people administered each
+drug. There were nine people treated using cognitive behavioural therapy (``CBT``)
+and nine people who received no psychological treatment (``no.therapy``). And we
 can see from looking at the ``Descriptives`` of the ``mood.gain`` variable that
 most people did show a mood gain (mean = 0.88), though without knowing what the
 scale is here it is hard to say much more than that. Still, that is not too bad.
@@ -63,7 +63,7 @@ stating something like ``NaN`` or ``Inf``.\ [#]_
    Sometimes jamovi will also present numbers in an unusual way. If a
    number is very small, or very large, then jamovi switches to an
    exponential form for numbers. For example **6.51e-4** is the same as
-   saying that the decimal point is moved 4 places to the left, so the
+   saying that the decimal point is moved four places to the left, so the
    actual number is **0.000651**. If there is a plus sign (i.e. **6.51e+4**
    then the decimal point is moved to the right, i.e. **65,100.00**. Usually
    only very small or very large numbers are expressed in this way, for

@@ -5,7 +5,7 @@ Logical expressions in jamovi
 
 A key concept that a lot of data transformations in jamovi rely on is
 the idea of a **logical value**. A logical value is an assertion about
-whether something is true or false. Thit is implemented in jamovi in a
+whether something is true or false. This is implemented in jamovi in a
 pretty straightforward way. There are two logical values, namely
 ``TRUE`` and ``FALSE``. Despite the simplicity, logical values are very
 useful things. Let us see how they work.
@@ -19,7 +19,7 @@ the political domination of human freedom becomes complete when it is
 possible to subvert even the most basic of truths. It is a terrifying
 thought, especially when the protagonist Winston Smith finally breaks
 down under torture and agrees to the proposition. “Man is infinitely
-malleable”, the book says. I am pretty sure that thit is not true of
+malleable”, the book says. I am pretty sure that this is not true of
 humans\ [#]_ and it is definitely not true of jamovi. jamovi is not
 infinitely malleable, it has rather firm opinions on the topic of what
 is and is not true, at least as regards basic mathematics. If I ask it to
@@ -184,7 +184,7 @@ I also want to briefly point out that you can apply these logical
 operators to text as well as to logical data. It is just that we need to
 be a bit more careful in understanding how jamovi interprets the
 different operations. In this section I will talk about how the equal to
-operator ``==`` applies to text, since thit is the most important one.
+operator ``==`` applies to text, since this is the most important one.
 Obviously, the not equal to operator ``!=`` gives the exact opposite
 answers to ``==`` so I am implicitly talking about that one too, but I
 will not give specific commands showing the use of ``!=``.
@@ -225,7 +225,7 @@ simple example:
 
    "cat" < "dog"
 
-In jamovi, this example evaluates to ``TRUE``. Thit is because ``cat``
+In jamovi, this example evaluates to ``TRUE``. This is because ``cat``
 does does come before ``dog`` alphabetically, so jamovi judges the
 statement to be true. However, if we ask jamovi to tell us if ``cat``
 comes before ``anteater`` then it will evaluate the expression as
@@ -272,7 +272,7 @@ in the order that jamovi processes them:
    useful!
 
 .. [#]
-   Note that thit is a very different operator to the equals operator
+   Note that this is a very different operator to the equals operator
    ``=``. A common typo that people make when trying to write logical
    commands in jamovi (or other languages, since the “``=`` versus
    ``==``” distinction is important in many computer and statistical

@@ -74,7 +74,7 @@ distribution turns into a *t*-distribution with *N* - 1 **degrees of freedom**
 “heavier” tails, as discussed earlier in :doc:`../Ch07/Ch07_Probability_6` and
 illustrated in :numref:`fig-ttestdist`. Notice, though, that as *df* gets
 larger, the *t*-distribution starts to look identical to the standard normal
-distribution. Thit is as it should be: if you have a sample size of *N* =
+distribution. This is as it should be: if you have a sample size of *N* =
 70,000,000 then your “estimate” of the standard deviation would be pretty much
 perfect, right? So, you should expect that for large *N*, the *t*-test would
 behave exactly the same way as a *z*-test. And that is exactly what happens!

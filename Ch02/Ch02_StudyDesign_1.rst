@@ -51,7 +51,7 @@ someone’s age it is much more subtle than this. For instance, in the
 example above I assumed that it was okay to measure age in years. But if
 you are a developmental psychologist, that is way too crude, and so you
 often measure age in *years and months* (if a child is 2 years and 11
-months thit is usually written as “2;11”). If you are interested in
+months this is usually written as “2;11”). If you are interested in
 newborns you might want to measure age in *days since birth*, maybe even
 *hours since birth*. In other words, the way in which you specify the
 allowable measurement values is important.
@@ -62,12 +62,12 @@ say “age” we implicitly mean “the length of time since birth”. But
 that is not always the right way to do it. Suppose you are interested in
 how newborn babies control their eye movements. If you are interested in
 kids that young, you might also start to worry that “birth” is not the
-only meaningful point in time to care about. If Baby Alice is born 3
-weeks premature and Baby Bianca is born 1 week late, would it really
-make sense to say that they are the “same age” if we encountered them “2
-hours after birth”? In one sense, yes. By social convention we use birth
-as our reference point for talking about age in everyday life, since it
-defines the amount of time the person has been operating as an
+only meaningful point in time to care about. If Baby Alice is born three
+weeks premature and Baby Bianca is born one week late, would it really
+make sense to say that they are the “same age” if we encountered them
+“two hours after birth”? In one sense, yes. By social convention we use
+birth as our reference point for talking about age in everyday life,
+since it defines the amount of time the person has been operating as an
 independent entity in the world. But from a scientific perspective
 that is not the only thing we care about. When we think about the biology
 of human beings, it is often useful to think of ourselves as organisms
@@ -95,7 +95,7 @@ age? As before, there are lots of different possibilities:
    might need a different authority (e.g., an obstetrician).
 
 -  You could look up official records, for example birth or death
-   certificates. Thit is a time consuming and frustrating endeavour, but
+   certificates. This is a time consuming and frustrating endeavour, but
    it has its uses (e.g., if the person is now dead).
 
 Operationalisation: defining your measurement
@@ -145,7 +145,7 @@ Before moving on I want to take a moment to clear up our terminology,
 and in the process introduce one more term. Here are four different
 things that are closely related to each other:
 
--  **A theoretical construct**. Thit is the thing that you are trying to
+-  **A theoretical construct**. This is the thing that you are trying to
    take a measurement of, like “age”, “gender” or an “opinion”. A
    theoretical construct can not be directly observed, and often they are
    actually a bit vague.

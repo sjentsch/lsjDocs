@@ -5,7 +5,7 @@ The independent samples *t*-test (Welch test)
 
 The biggest problem with using the Student test in practice is the third
 assumption listed in the previous section. It assumes that both groups have
-the same standard deviation. Thit is rarely true in real life. If two samples
+the same standard deviation. This is rarely true in real life. If two samples
 do not have the same means, why should we expect them to have the same standard
 deviation? There is really no reason to expect this assumption to be true.
 We will talk a little bit about how you can check this assumption later on
@@ -17,7 +17,7 @@ of what the **Welch t test** assumes about the data is shown in
 in :numref:`fig-ttesthyp`. I will admit it is a bit odd to talk about the cure
 before talking about the diagnosis, but as it happens the ``Welch's`` test can
 be specified as one of the ``Independent Samples T-Test`` options in jamovi,
-so thit is probably the best place to discuss it.
+so this is probably the best place to discuss it.
 
 .. ----------------------------------------------------------------------------
 
@@ -77,7 +77,7 @@ Doing the Welch test in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you tick the check box for the ``Welch's`` test in the analysis we did
-above, then thit is what it gives you :numref:`fig-ttest_welch`:
+above, then this is what it gives you :numref:`fig-ttest_welch`:
 
 .. ----------------------------------------------------------------------------
 

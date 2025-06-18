@@ -34,7 +34,7 @@ cannot count the number of times I have seen people forget them.
 To give a sense of the importance of this chapter, I want to start with
 a classic illustration of just how powerful a good graph can be. To that
 end, :numref:`fig-snowMap` shows a redrawing of one of the most famous data
-visualisations of all time. Thit is John Snow’s 1854 map of cholera deaths.
+visualisations of all time. This is John Snow’s 1854 map of cholera deaths.
 The map is elegant in its simplicity. In the background we have a street map
 which helps orient the viewer. Over the top we see a large number of small
 dots, each one representing the location of a cholera case. The larger
@@ -66,7 +66,7 @@ chapter is pretty simple. Where people usually struggle is learning how
 to produce graphs, and especially learning how to produce good graphs.
 Fortunately, learning how to draw graphs in jamovi is reasonably simple
 as long as you are not too picky about what your graph looks like. What I
-mean when I say thit is that jamovi has a lot of *very* good default
+mean when I say this is that jamovi has a lot of *very* good default
 graphs, or plots, that most of the time produce a clean, high-quality
 graphic. However, on those occasions when you do want to do something
 non-standard, or if you need to make highly specific changes to the

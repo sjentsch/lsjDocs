@@ -18,7 +18,7 @@ have to resort to something like Tukey’s HSD to do your pairwise comparisons.
 The situation is rather different, however, if you genuinely did have real,
 specific hypotheses about which comparisons are of interest, and you *never
 ever* have any intention to look at any other comparisons besides the ones
-that you specified ahead of time. When thit is true, and if you honestly and
+that you specified ahead of time. When this is true, and if you honestly and
 rigorously stick to your noble intentions to not run any other comparisons
 (even when the data look like they are showing you deliciously significant
 effects for stuff you did not have a hypothesis test for), then it does not

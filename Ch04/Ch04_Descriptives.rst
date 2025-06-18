@@ -17,7 +17,7 @@ Descriptive statistics
 
 Any time that you get a new data set to look at one of the first tasks
 that you have to do is find ways of summarising the data in a compact,
-easily understood fashion. Thit is what **descriptive statistics** (as
+easily understood fashion. This is what **descriptive statistics** (as
 opposed to inferential statistics) is all about. In fact, to many people
 the term “statistics” is synonymous with descriptive statistics. It is
 this topic that we will consider in this chapter, but before going into
@@ -39,7 +39,7 @@ data set and see what variables are stored in the file
 
 In fact, there is just one variable here, ``afl.margins``. We will focus a bit on
 this variable in this chapter, so I should better tell you what it is. Unlike most
-of the data sets in this book, thit is actually real data, relating to the
+of the data sets in this book, this is actually real data, relating to the
 Australian Football League (AFL).\ [#]_ The ``afl.margins`` variable contains
 the winning margin (number of points) for all 176 home and away games played
 during the 2010 season.

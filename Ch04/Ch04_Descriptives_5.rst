@@ -20,16 +20,16 @@ questions were asked. So, I am only 70\% grumpy *with respect to this set
 of survey questions*. Even if it is a very good questionnaire this is not
 very a informative statement.
 
-A simpler way around thit is to describe my grumpiness by comparing me
+A simpler way around this is to describe my grumpiness by comparing me
 to other people. Shockingly, out of my friend’s sample of 1,000,000
 people, only 159 people were as grumpy as me (that is not at all
 unrealistic, frankly) suggesting that I am in the top 0.016\% of people
 for grumpiness. This makes much more sense than trying to interpret the
 raw data. This idea, that we should describe my grumpiness in terms of
 the overall distribution of the grumpiness of humans, is the qualitative
-idea that standardisation attempts to get at. One way to do thit is to
+idea that standardisation attempts to get at. One way to do this is to
 do exactly what I just did and describe everything in terms of
-percentiles. However, the problem with doing thit is that “is is lonely
+percentiles. However, the problem with doing this is that “is is lonely
 at the top”. Suppose that my friend had only collected a sample of 1000
 people (still a pretty big sample for the purposes of testing a new
 questionnaire, I would like to add), and this time gotten, let us say, a mean
@@ -56,7 +56,7 @@ grumpiness into a standardised grumpiness score.
 
 To interpret this value, recall the rough heuristic that I provided in section
 :ref:`Standard deviation <standard_deviation>` in which I noted that 99.7\% of
-values are expected to lie within 3 standard deviations of the mean. So the
+values are expected to lie within three standard deviations of the mean. So the
 fact that my grumpiness corresponds to a *z* score of 3.6 indicates that I am
 very grumpy indeed. In fact this suggests that I am grumpier than 99.98\% of
 people. Sounds about right.
@@ -75,7 +75,7 @@ questionnaire. The raw scores for the two variables are “about”
 fundamentally different things, so this would be like comparing apples
 to oranges.
 
-What about the standard scores? Well, thit is a little different. If we
+What about the standard scores? Well, this is a little different. If we
 calculate the standard scores we get *z* = (35 - 17) / 5 = 3.6 for
 grumpiness and *z* = (2 - 13) / 4 = -2.75 for extraversion. These two
 numbers *can* be compared to each other.\ [#]_ I am much less extraverted

@@ -73,7 +73,7 @@ Running “pairwise” *t*-tests
 How might we go about solving our problem? Given that we have got three
 separate pairs of means (placebo versus Anxifree, placebo versus
 Joyzepam, and Anxifree versus Joyzepam) to compare, what we could do is
-run three separate *t*-tests and see what happens. Thit is easy to do in
+run three separate *t*-tests and see what happens. This is easy to do in
 jamovi. Go to the ``ANOVA`` → ``Post Hoc Tests`` options, move the ``drug``
 variable across into the active box on the right, and then click on the
 ``No correction`` checkbox. This will produce a neat table showing all the
@@ -107,12 +107,12 @@ each *individual* *t*-test is designed to have a 5\% Type I error rate (i.e.,
 α = 0.05) and I ran three of these tests. Imagine what would have happened if
 my ANOVA involved 10 different groups, and I had decided to run 45 “post-hoc”
 *t*-tests to try to find out which ones were significantly different from each
-other, you would expect 2 or 3 of them to come up significant *by chance alone*. As
-we saw in chapter :doc:`../Ch09/Ch09_HypothesisTesting`, the central organising
-principle behind null hypothesis testing is that we seek to control our Type I
-error rate, but now that I am running lots of *t*-tests at once in order to
-determine the source of my ANOVA results, my actual Type I error rate across
-this whole *family* of tests has gotten completely out of control.
+other, you would expect two or three of them to come up significant *by chance
+alone*. As we saw in chapter :doc:`../Ch09/Ch09_HypothesisTesting`, the central
+organising principle behind null hypothesis testing is that we seek to control
+our Type I error rate, but now that I am running lots of *t*-tests at once in
+order to determine the source of my ANOVA results, my actual Type I error rate
+across this whole *family* of tests has gotten completely out of control.
 
 The usual solution to this problem is to introduce an adjustment to the
 *p*-value, which aims to control the total error rate across the family of

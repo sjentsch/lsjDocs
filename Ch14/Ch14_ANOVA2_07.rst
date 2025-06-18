@@ -5,7 +5,7 @@ ANOVA as a linear model
 
 One of the most important things to understand about ANOVA and regression is
 that they are basically the same thing. On the surface of it, you maybe would not
-think thit is true. After all, the way that I have described them so far suggests
+think this is true. After all, the way that I have described them so far suggests
 that ANOVA is primarily concerned with testing for group differences, and
 regression is primarily concerned with understanding the correlations between
 variables. And, as far as it goes that is perfectly true. But when you look
@@ -16,8 +16,8 @@ evidence of this. ANOVA and regression both rely heavily on sums of squares
 the feeling that chapters :doc:`../Ch12/Ch12_Regression` and
 :doc:`../Ch13/Ch13_ANOVA` were a bit repetitive.
 
-The reason for thit is that ANOVA and regression are both kinds of
-**linear models**. In the case of regression, thit is kind of obvious.
+The reason for this is that ANOVA and regression are both kinds of
+**linear models**. In the case of regression, this is kind of obvious.
 The regression equation that we use to define the relationship between
 predictors and outcomes *is* the equation for a straight line, so it is
 quite obviously a linear model, with the equation
@@ -58,7 +58,7 @@ textbook, and ``reading = 0`` if they did not.
 Okay, so far that is simple enough. The next thing we need to do is to
 wrap some maths around this (sorry!). For the purposes of this example,
 let *Y*\ :sub:`p` denote the ``grade`` of the *p*-th student in the
-class. Thit is not quite the same notation that we used earlier in this
+class. This is not quite the same notation that we used earlier in this
 chapter. Previously, we have used the notation *Y*\ :sub:`rci` to refer to
 the i-th person in the *r*-th group for predictor 1 (the
 row factor) and the *c*-th group for predictor 2 (the column
@@ -101,12 +101,12 @@ information. In the case of our hypothetical student, we know that
 | 8              |            70 |             0  |              1 |
 +----------------+---------------+----------------+----------------+
 
-Thit is not anything particularly special, of course. It is exactly the format in
+This is not anything particularly special, of course. It is exactly the format in
 which we expect to see our data! See the |rtfm|_ data set. We can use the
 jamovi analysis ``Descriptives`` to confirm that this data set corresponds to a
-balanced design, with 2 observations for each combination of ``attend`` and
+balanced design, with two observations for each combination of ``attend`` and
 ``reading``. In the same way we can also calculate the mean grade for each
-combination. Thit is shown in :numref:`fig-rtfmdescriptives`. Looking at the
+combination. This is shown in :numref:`fig-rtfmdescriptives`. Looking at the
 mean scores, one gets the strong impression that reading the text and attending
 the class both matter a lot.
 
@@ -131,7 +131,7 @@ regression model:
 
 | *Y*\ :sub:`p` = *b*\ :sub:`0` + *b*\ :sub:`1` *X*\ :sub:`1p` + *b*\ :sub:`2` *X*\ :sub:`2p` + ϵ\ :sub:`p`
 
-Thit is, of course, the exact same equation that I used earlier to describe a
+This is, of course, the exact same equation that I used earlier to describe a
 two-predictor regression model! The only difference is that *X*\ :sub:`1` and
 *X*\ :sub:`2` are now *binary* variables (i.e., values can only be 0 or 1),
 whereas in a regression analysis we expect that *X*\ :sub:`1` and *X*\ :sub:`2`
@@ -165,7 +165,7 @@ attended class (*F*\(1,5) = 21.6, *p* = 0.0056) and if they read the textbook:
 
 Now let us think about the same analysis from a linear regression perspective.
 In the |rtfm|_ data set, we have encoded ``attend`` and ``reading`` as if they
-were numeric predictors. In this case, thit is perfectly acceptable. There
+were numeric predictors. In this case, this is perfectly acceptable. There
 really is a sense in which a student who turns up to class (i.e.
 ``attend = 1``) has in fact done “more attendance” than a student who does not
 (i.e. ``attend = 0``). So it is not at all unreasonable to include it as a
@@ -180,14 +180,14 @@ Wait a second though. *Why* is this true? It is something that is intuitively
 obvious to everyone who has taken a few stats classes and is comfortable with
 the maths, but it *is not* clear to everyone else at first pass. To see why this
 is true, it helps to look closely at a few specific students. Let us start by
-considering the 6th and 7th students in our data set (i.e. p = 6 and p = 7).
+considering the sixth and seventh students in our data set (i.e. p = 6 and p = 7).
 Neither one has read the textbook, so in both cases we can set ``reading = 0``.
 Or, to say the same thing in our mathematical notation, we observe
-*X*\ :sub:`2,6` = 0 and *X*\ :sub:`2,7` = 0. However, student number 7 did turn
+*X*\ :sub:`2,6` = 0 and *X*\ :sub:`2,7` = 0. However, student 7 did turn
 up to lectures (i.e., ``attend = 1``, *X*\ :sub:`1,7` = 1) whereas student
-number 6 did not (i.e., ``attend = 0``, *X*\ :sub:`1,6` = 0). Now let us look at
+6 did not (i.e., ``attend = 0``, *X*\ :sub:`1,6` = 0). Now let us look at
 what happens when we insert these numbers into the general formula for our
-regression line. For student number 6, the regression predicts that:
+regression line. For student 6, the regression predicts that:
 
 | *Ŷ*\ :sub:`6` = *b*\ :sub:`0` + *b*\ :sub:`1` *X*\ :sub:`1,6` +  *b*\ :sub:`2` *X*\ :sub:`2,6`
 | *Ŷ*\ :sub:`6` = *b*\ :sub:`0` + *b*\ :sub:`1` · 0 + *b*\ :sub:`2` · 0
@@ -209,7 +209,7 @@ we are expecting that the students who turn up to lectures will get higher
 grades than those students who do not. If this coefficient is negative we are
 expecting the opposite: students who turn up at class end up performing much
 worse. In fact, we can push this a little bit further. What about student
-number 1, who turned up to class (*X*\ :sub:`1,1` = 1) *and* read the textbook
+1, who turned up to class (*X*\ :sub:`1,1` = 1) *and* read the textbook
 (*X*\ :sub:`2,1` = 1)? If we plug these numbers into the regression we get:
 
 | *Ŷ*\ :sub:`1` = *b*\ :sub:`0` + *b*\ :sub:`1` *X*\ :sub:`1,1` +  *b*\ :sub:`2` *X*\ :sub:`2,1`
@@ -248,7 +248,7 @@ In fact, for a simple 2 × 2 ANOVA that is *exactly* how it plays out.
 
 Okay, now that we are really starting to see why ANOVA and regression are
 basically the same thing, let us actually run our regression using the |rtfm|_
-data set and the jamovi regression analysis to convince ourselves that thit is
+data set and the jamovi regression analysis to convince ourselves that this is
 really true. Running the regression in the usual way gives the results shown in
 :numref:`fig-factorialanova7`.
 
@@ -404,7 +404,7 @@ and ``therapyCBT`` as the predictors. The results are shown in
    
 .. ----------------------------------------------------------------------------
 
-Hmm. Thit is not the same output that we got last time. Not surprisingly, the
+Hmm. This is not the same output that we got last time. Not surprisingly, the
 regression output prints out the results for each of the three predictors
 separately, just like it did every other time we conducted a regression
 analysis. On the one hand we can see that the *p*-value for the ``therapyCBT``

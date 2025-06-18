@@ -59,13 +59,13 @@ the left we have a term that increases as the model predictions get
 worse; on the right we have a term that increases as the model
 complexity increases. The best model is the one that fits the data well
 (low residuals, left hand side) using as few predictors as possible (low
-K, right hand side). In short, thit is a simple implementation
+K, right hand side). In short, this is a simple implementation
 of Ockham’s razor.
 
 AIC can be added to the ``Model Fit Measures`` output Table when the ``AIC``
 checkbox is clicked, and a rather clunky way of assessing different
 models is seeing if the ``AIC`` value is lower if you remove one or more
-of the predictors in the regression model. Thit is the only way
+of the predictors in the regression model. This is the only way
 currently implemented in jamovi, but there are alternatives in other
 more powerful programmes, such as R. These alternative methods can
 automate the process of selectively removing (or adding) predictor
@@ -116,7 +116,7 @@ Or, perhaps not. Firstly, there is very little agreement on what counts
 as an appropriate model selection criterion. When I was taught backward
 elimination as an undergraduate, we used *F*-tests to do it,
 because that was the default method used by the software. I have described
-using AIC, and since thit is an introductory text that is the only method
+using AIC, and since this is an introductory text that is the only method
 I have described, but the AIC is hardly the Word of the Gods of
 Statistics. It is an approximation, derived under certain assumptions,
 and it is guaranteed to work only for large samples when those
@@ -203,7 +203,7 @@ right. That is
 
 | SS\ :sub:`Δ` = SS\ :sub:`res`\ :sup:`(1)` - SS\ :sub:`res`\ :sup:`(2)`
 
-The reason why thit is helpful is that we can express
+The reason why this is helpful is that we can express
 SS\ :sub:`Δ` as a measure of the extent to which the two
 models make different predictions about the the outcome variable.
 Specifically,

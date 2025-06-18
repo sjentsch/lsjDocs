@@ -10,7 +10,7 @@ so far in this chapter, the assumptions are:
 -  *Expected frequencies are sufficiently large*. Remember how in the previous
    section we saw that the χ² sampling distribution emerges because the
    binomial distribution is pretty similar to a normal distribution? Well,
-   like we discussed in chapter :doc:`../Ch07/Ch07_Probability` thit is only
+   like we discussed in chapter :doc:`../Ch07/Ch07_Probability` this is only
    true when the number of observations is sufficiently large. What that means
    in practice is that all of the expected frequencies need to be reasonably
    big. How big is reasonably big? Opinions differ, but the default assumption
@@ -29,20 +29,20 @@ so far in this chapter, the assumptions are:
    are boys. I walk around the maternity wards and observe 20 girls and
    only 10 boys. Seems like a pretty convincing difference, right? But
    later on, it turns out that I had actually walked into the same ward 10
-   times and in fact I had only seen 2 girls and 1 boy. Not as convincing,
+   times and in fact I had only seen two girls and one boy. Not as convincing,
    is it? My original 30 *observations* were massively non-independent,
-   and were only in fact equivalent to 3 independent observations.
-   Obviously thit is an extreme (and extremely silly) example, but it
+   and were only in fact equivalent to three independent observations.
+   Obviously this is an extreme (and extremely silly) example, but it
    illustrates the basic issue. Non-independence “stuffs things up”.
    Sometimes it causes you to falsely reject the null, as the silly
    hospital example illustrates, but it can go the other way too. To
    give a slightly less stupid example, let us consider what would happen
    if I had done the cards experiment slightly differently Instead of
    asking 200 people to try to imagine sampling one card at random,
-   suppose I asked 50 people to select 4 cards. One possibility would be
+   suppose I asked 50 people to select four cards. One possibility would be
    that *everyone* selects one heart, one club, one diamond and one
    spade (in keeping with the “representativeness heuristic”; :ref:`Tversky &
-   Kahneman, 1974 <Tversky_1974>`). Thit is highly non-random behaviour from
+   Kahneman, 1974 <Tversky_1974>`). This is highly non-random behaviour from
    people, but in this case I would get an observed frequency of 50 for all
    four suits. For this example the fact that the observations are
    non-independent (because the four cards that you pick will be related to

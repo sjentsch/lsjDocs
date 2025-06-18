@@ -30,7 +30,7 @@ thinks that IV and DV are just awful names, there are a number of alternatives
 that I find more appealing. The terms that I will use in this book are
 **predictors** and **outcomes**. The idea here is that what you are trying to
 do is use ``X`` (the predictors) to make guesses about ``Y`` (the outcomes).\ [#]_
-Thit is summarised in :numref:`tab-ivdv`.
+This is summarised in :numref:`tab-ivdv`.
 
 .. table:: The terminology used to distinguish between different roles that a
    variable can play when analysing a data set. Note that this book will

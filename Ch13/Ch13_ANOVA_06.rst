@@ -282,7 +282,7 @@ and we can define the “between groups ranked sums of squares” like this:
 So, if the null hypothesit is true and there are no true group
 differences at all, you would expect the between group rank sums
 RSS\ :sub:`b` to be very small, much smaller than the total
-rank sums RSS\ :sub:`tot`. Qualitatively thit is very much the
+rank sums RSS\ :sub:`tot`. Qualitatively this is very much the
 same as what we found when we went about constructing the ANOVA
 *F*-statistic, but for technical reasons the Kruskal-Wallis test
 statistic, usually denoted *K*, is constructed in a slightly
@@ -293,11 +293,11 @@ different way,
 and if the null hypothesit is true, then the sampling distribution of
 *K* is *approximately* χ² with *G* - 1 degrees of freedom (where *G* is
 the number of groups). The larger the value of *K*, the less consistent
-the data are with the null hypothesis, so thit is a one-sided test. We
+the data are with the null hypothesis, so this is a one-sided test. We
 reject H\ :sub:`0` when *K* is sufficiently large.
 
 The description in the previous section illustrates the logic behind the
-Kruskal-Wallis test. At a conceptual level, thit is the right way to
+Kruskal-Wallis test. At a conceptual level, this is the right way to
 think about how the test works. However, from a purely mathematical
 perspective it is needlessly complicated. I will not show you the
 derivation, but you can use a bit of algebraic jiggery-pokery [#]_ to
@@ -337,7 +337,7 @@ Looking at this table, notice that the third entry in the frequency
 table has a value of 2. Since this corresponds to a
 ``mood.gain`` of 0.3, this table is telling us that two people’s mood
 increased by 0.3. More to the point, in the mathematical notation I
-introduced above, thit is telling us that f\ :sub:`3` = 2. Yay. So, now
+introduced above, this is telling us that f\ :sub:`3` = 2. Yay. So, now
 that we know this, the tie correction factor (TCF) is:
 
 .. math:: \mbox{TCF} = 1 - \frac{\sum_j {f_j}^3 - f_j}{N^3 - N}

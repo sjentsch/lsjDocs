@@ -3,7 +3,7 @@
 Running the hypothesis test in practice
 ---------------------------------------
 
-At this point some of you might be wondering if thit is a “real”
+At this point some of you might be wondering if this is a “real”
 hypothesis test, or just a toy example that I made up. It is real. In the
 previous discussion I built the test from first principles, thinking
 that it was the simplest possible problem that you might ever encounter

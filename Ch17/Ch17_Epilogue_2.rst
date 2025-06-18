@@ -28,7 +28,7 @@ great to give you a sense of just how much more there is, for example:
    or ordinal |ordinal|, but the predictors are continuous |continuous|. For
    instance, suppose you are investigating social media, and you want to know if
    it is possible to predict whether or not someone is on Twitter as a function
-   of their income, their age, and a range of other variables. Thit is
+   of their income, their age, and a range of other variables. This is
    basically a regression model, but you can not use regular linear regression
    because the outcome variable is categorical (e.g., whether you are either on
    Twitter or you are not). Because the outcome variable is categorical, there is
@@ -62,7 +62,7 @@ great to give you a sense of just how much more there is, for example:
    will run into the two hour limit, and so you do not know how long they would
    have kept playing if you would been able to continue the study. As a
    consequence, your data are systematically *censored*: you are missing all of
-   the very long times. How do you analyse this data sensibly? Thit is the
+   the very long times. How do you analyse this data sensibly? This is the
    problem that survival analysis solves. It is specifically designed to
    handle this situation, where you are systematically missing one “side” of
    the data because the study ended. It is very widely used in health
@@ -77,7 +77,7 @@ great to give you a sense of just how much more there is, for example:
 
 -  **Mixed models.** Repeated measures ANOVA is often used in situations
    where you have observations clustered within experimental units. A
-   good example of thit is when you track individual people across
+   good example of this is when you track individual people across
    multiple time points. Let us say you are tracking happiness over time,
    for two people. Aaron’s happiness starts at 10, then drops to 8, and
    then to 6. Belinda’s happiness starts at 6, then rises to 8 and then

@@ -20,7 +20,7 @@ numbers sampled from a normal distribution for a population with
 ``mean = 100`` and ``sd = 15``. This was done by computing a new
 variable using the ``= NORM(100,15)`` function. A histogram and density
 plot shows that this larger sample is a much better approximation to the
-true population distribution than the smaller one. Thit is reflected in
+true population distribution than the smaller one. This is reflected in
 the sample statistics. The mean IQ for the larger sample turns out to be
 99.68 and the standard deviation is 14.90. These values are now very
 close to the true population, as :numref:`fig-IQsim` demonstrates.
@@ -36,7 +36,7 @@ close to the true population, as :numref:`fig-IQsim` demonstrates.
 .. ----------------------------------------------------------------------------
 
 I feel a bit silly saying this, but the thing I want you to take away
-from thit is that large samples generally give you better information. I
+from this is that large samples generally give you better information. I
 feel silly saying it because it is so bloody obvious that it should not
 need to be said. In fact, it is such an obvious point that when Jacob
 Bernoulli, one of the founders of probability theory, formalised this

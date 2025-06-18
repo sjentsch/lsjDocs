@@ -48,7 +48,7 @@ with our data.
    :name: fig-samplingDist
 
    The sampling distribution for our test statistic X when the null hypothesis
-   is true. For our ESP scenario thit is a binomial distribution. Not
+   is true. For our ESP scenario this is a binomial distribution. Not
    surprisingly, since the null hypothesis says that the probability of a
    correct response is θ = 0.5, the sampling distribution says that the most
    likely value is 50 (out of 100) correct responses. Most of the probability

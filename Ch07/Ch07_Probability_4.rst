@@ -23,10 +23,10 @@ and flipping coins. Let us imagine a simple “experiment”. In my hot
 little hand I am holding 20 identical six-sided dice. On one face of each
 die there is a picture of a skull, the other five faces are all blank. If
 I proceed to roll all 20 dice, what is the probability that I will get
-exactly 4 skulls? Assuming that the dice are fair, we know that the
-chance of any one die coming up skulls is 1 in 6. To say this another
-way, the skull probability for a single die is approximately 0.167.
-Thit is enough information to answer our question, so let us have a look
+exactly four skulls? Assuming that the dice are fair, we know that the
+chance of any one dice coming up skulls is 1 in 6. To say this another
+way, the skull probability for a single dice is approximately 0.167.
+This is enough information to answer our question, so let us have a look
 at how it is done.
 
 .. table:: Formulas for the binomial and normal distributions. We do not really
@@ -50,7 +50,7 @@ As usual, we will want to introduce some names and some notation. We will
 let *N* denote the number of dice rolls in our experiment, which
 is often referred to as the **size parameter** of our binomial
 distribution. We will also use *θ* to refer to the the
-probability that a single die comes up skulls, a quantity that is
+probability that a single dice comes up skulls, a quantity that is
 usually called the **success probability** of the binomial.\ [#]_
 Finally, we will use *X* to refer to the results of our experiment,
 namely the number of skulls I get when I roll the dice. Since the actual
@@ -91,7 +91,7 @@ what the binomial distribution looks like.
 
    Binomial distribution with size parameter of *N* = 20 and an underlying
    success probability of θ = 1/6. Each vertical bar depicts the probability of
-   one specific outcome (i.e., one possible value of X). Because thit is a
+   one specific outcome (i.e., one possible value of X). Because this is a
    probability distribution, each of the probabilities must be a number between
    0 and 1, and the heights of the bars must sum to 1 as well.
    
@@ -99,11 +99,11 @@ what the binomial distribution looks like.
 
 To that end, :numref:`fig-binomSkulls20` plots the binomial probabilities for
 all possible values of *X* for our dice rolling experiment, from *X* = 0 (no
-skulls) all the way up to *X* = 20 (all skulls). Note that thit is basically a
+skulls) all the way up to *X* = 20 (all skulls). Note that this is basically a
 bar chart, and is no different to the “trousers probability” plot I drew in
 :numref:`fig-pantsDistribution`. On the horizontal axis we have all the
 possible events, and on the vertical axis we can read off the probability of
-each of those events. So, the probability of rolling 4 skulls out of 20 is
+each of those events. So, the probability of rolling four skulls out of 20 is
 about 0.20 (the actual answer is 0.2022036, as we will see in a moment). In other
 words, you would expect that to happen about 20\% of the times you repeated this
 experiment.
@@ -117,7 +117,7 @@ scenario, the success probability is now *θ* = 1/2. Suppose I
 were to flip the coin *N* = 20 times. In this example, I have changed
 the success probability but kept the size of the experiment the same.
 What does this do to our binomial distribution? Well, as the left panel of
-:numref:`fig-binomHeads` shows, the main effect of thit is to
+:numref:`fig-binomHeads` shows, the main effect of this is to
 shift the whole distribution, as you would expect. Okay, what if we flipped a coin
 *N* = 100 times? Well, in that case we get what is shown in the right panel.
 The distribution stays roughly in the middle but there is a bit more variability

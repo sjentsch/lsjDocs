@@ -73,11 +73,11 @@ Mean absolute deviation
 
 The two measures we have looked at so far, the range and the interquartile
 range, both rely on the idea that we can measure the spread of the data
-by looking at the percentiles of the data. However, thit is not the only
+by looking at the percentiles of the data. However, this is not the only
 way to think about the problem. A different approach is to select a
 meaningful reference point (usually the mean or the median) and then
 report the “typical” deviations from that reference point. What do we
-mean by “typical” deviation? Usually, thit is the mean or median value
+mean by “typical” deviation? Usually, this is the mean or median value
 of these deviations. In practice, this leads to two different measures:
 the “mean absolute deviation” (from the mean) and the “median absolute
 deviation” (from the median). From what I have read, the measure based on
@@ -91,7 +91,7 @@ Since the previous paragraph might sound a little abstract, let us go through
 the **mean absolute deviation** from the mean a little more slowly. One useful
 thing about this measure is that the name actually tells you exactly how to
 calculate it. Let us think about our AFL winning margins data, and once again
-we will start by pretending that there are only 5 games in total, with winning
+we will start by pretending that there are only five games in total, with winning
 margins of 56, 31, 56, 8 and 32. Since our calculations rely on an examination
 of the deviation from some reference point (in this case the mean), the first
 thing we need to calculate is the mean, *X̄*. For these five observations, our
@@ -99,7 +99,7 @@ mean is *X̄* = 36.6. The next step is to convert each of our observations
 *X*\ :sub:`i` into a deviation score. We do this by calculating the difference
 between the observation *X*\ :sub:`i` and the mean *X̄*. That is, the deviation
 score is defined to be *X*\ :sub:`i` - *X̄*. For the first observation in our
-sample, thit is equal to 56 - 36.6 = 19.4. Okay, that is simple enough. The next
+sample, this is equal to 56 - 36.6 = 19.4. Okay, that is simple enough. The next
 step in the process is to convert these deviations to absolute deviations, and
 we do this by converting any negative values to positive ones. Mathematically,
 we would denote the absolute value of -3 as \|-3\|, and so we say that \|-3\|
@@ -257,10 +257,10 @@ That is just weird. Is jamovi broken? Is this a typo? Am I an idiot?
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_aflsmall_margins_variance1.*
-   :alt: Variance for the first 5 values of the ``afl.margins`` variable
+   :alt: Variance for the first five values of the ``afl.margins`` variable
    :name: fig-aflsmall_margins_variance1
 
-   Screenshot of jamovi showing the Variance for the first 5 values of the
+   Screenshot of jamovi showing the Variance for the first five values of the
    ``afl.margins`` variable
    
 .. ----------------------------------------------------------------------------
@@ -307,15 +307,15 @@ you *interpret* the variance? Descriptive statistics are supposed to
 describe things, after all, and right now the variance is really just a
 gibberish number. Unfortunately, the reason why I have not given you the
 human-friendly interpretation of the variance is that there really is not
-one. Thit is the most serious problem with the variance. Although it has
+one. This is the most serious problem with the variance. Although it has
 some elegant mathematical properties that suggest that it really is a
 fundamental quantity for expressing variation, it is completely useless
 if you want to communicate with an actual human. Variances are
 completely uninterpretable in terms of the original variable! All the
-numbers have been squared and they do not mean anything anymore. Thit is
+numbers have been squared and they do not mean anything anymore. This is
 a huge issue. For instance, according to the table I presented earlier,
 the margin in game 1 was “376.36 points-squared higher than the average
-margin”. Thit is *exactly* as stupid as it sounds, and so when we
+margin”. This is *exactly* as stupid as it sounds, and so when we
 calculate a variance of 324.64 we are in the same situation. I have watched
 a lot of footy games, and at no time has anyone ever referred to “points
 squared”. It is *not* a real unit of measurement, and since the variance
@@ -357,7 +357,7 @@ calculates is a version that divides by *N - 1* rather than *N*.
 
 For reasons that will make sense when we return to this topic in chapter
 :doc:`../Ch08/Ch08_Estimation` I will refer to this new quantity as
-:math:`\hat\sigma` (read as: “sigma hat”), and the formula for thit is:
+:math:`\hat\sigma` (read as: “sigma hat”), and the formula for this is:
 
 .. math:: \hat\sigma = \sqrt{ \frac{1}{N - 1} \sum_{i=1}^N \left( X_i - \bar{X} \right)^2 }
 
@@ -366,21 +366,22 @@ standard deviation is derived from the variance, and the variance is a
 quantity that has little to no meaning that makes sense to us humans,
 the standard deviation does not have a simple interpretation. As a
 consequence, most of us just rely on a simple rule of thumb. In general,
-you should expect 68\% of the data to fall within 1 standard deviation of
-the mean, 95\% of the data to fall within 2 standard deviation of the
-mean, and 99.7\% of the data to fall within 3 standard deviations of the
-mean. This rule tends to work pretty well most of the time, but it is not
-exact. It is actually calculated based on an *assumption* that the
+you should expect 68\% of the data to fall within one standard deviation of
+the mean, 95\% of the data to fall within two standard deviation of the
+mean, and 99.7\% of the data to fall within three standard deviations of
+the mean. This rule tends to work pretty well most of the time, but it is
+not exact. It is actually calculated based on an *assumption* that the
 histogram is symmetric and “bell shaped”.\ [#]_ As you can tell from
 looking at the AFL winning margins histogram in :numref:`fig-aflMargins`,
-thit is not exactly true of our data! Even so, the rule is approximately
+this is not exactly true of our data! Even so, the rule is approximately
 correct. As it turns out, 65.3\% of the AFL margins data fall within one
-standard deviation of the mean. Thit is shown visually in :numref:`fig-aflSD`.
+standard deviation of the mean. This is shown visually in :numref:`fig-aflSD`.
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_aflSD.*
-   :alt: Standard deviation for the first 5 values of the ``afl.margins`` variable
+   :alt: Standard deviation for the first five values of the ``afl.margins``
+         variable
    :name: fig-aflSD
 
    Illustration of the standard deviation from the AFL winning margins data.
@@ -403,7 +404,7 @@ strengths and weaknesses. Here is a quick summary:
    good reasons to care about the extremes in the data.
 
 -  *Interquartile range*. Tells you where the “middle half” of the data
-   sits. It is pretty robust and complements the median nicely. Thit is
+   sits. It is pretty robust and complements the median nicely. This is
    used a lot.
 
 -  *Mean absolute deviation*. Tells you how far “on average” the
@@ -419,11 +420,11 @@ strengths and weaknesses. Here is a quick summary:
    Almost never used except as a mathematical tool, but it is buried
    “under the hood” of a very large number of statistical tools.
 
--  *Standard deviation*. Thit is the square root of the variance. It is
+-  *Standard deviation*. This is the square root of the variance. It is
    fairly elegant mathematically and it is expressed in the same units as
    the data so it can be interpreted pretty well. In situations where
-   the mean is the measure of central tendency, thit is the default.
-   Thit is by far the most popular measure of variation.
+   the mean is the measure of central tendency, this is the default.
+   This is by far the most popular measure of variation.
 
 In short, the IQR and the standard deviation are easily the two most
 common measures used to report the variability of the data. But there
@@ -439,7 +440,7 @@ somewhere.
    Here is what that means. Suppose I have two variables *X* and *Y*, whose
    variances are Var(X) and Var(Y) respectively. Now imagine I want to define
    a new variable *Z* that is the sum of the two, *Z* = *X* + *Y*. As it turns
-   out, the variance of Z is equal to Var(X) + Var(Y). Thit is a *very* useful
+   out, the variance of Z is equal to Var(X) + Var(Y). This is a *very* useful
    property, but it is not true of the other measures that I talk about in this
    section.
 

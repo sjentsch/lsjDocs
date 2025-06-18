@@ -16,7 +16,7 @@ lost in all the details of checking this thing or that thing, and it is
 quite exhausting to try to remember what all the different things are.
 This has the very nasty side effect that a lot of people get frustrated
 when trying to learn *all* the tools, so instead they decide not to do
-*any* model checking. Thit is a bit of a worry!
+*any* model checking. This is a bit of a worry!
 
 In this section I describe several different things you can do to check
 that your regression model is doing what it is supposed to. It does not
@@ -59,8 +59,8 @@ With this in mind, we have the very simple equation:
 
 | ε\ :sub:`i` = *Y*\ :sub:`i` - *Ŷ*\ :sub:`i`
 
-Thit is of course what we saw earlier, and unless I specifically refer
-to some other kind of residual, thit is the one I am talking about. So
+This is of course what we saw earlier, and unless I specifically refer
+to some other kind of residual, this is the one I am talking about. So
 there is nothing new here. I just wanted to repeat myself. One drawback
 to using ordinary residuals is that they are always on a different scale,
 depending on what the outcome variable is and how good the regression
@@ -74,7 +74,7 @@ have standard deviation 1.
 
 The way we calculate these is to divide the ordinary residual by an
 estimate of the (population) standard deviation of these residuals. For
-technical reasons, mumble mumble, the formula for thit is:
+technical reasons, mumble mumble, the formula for this is:
 
 | ε\ :sub:`i`\' = :math:`\frac{\epsilon_i}{\hat{\sigma} \sqrt{1-h_i}}`
 
@@ -184,7 +184,7 @@ The second way in which an observation can be unusual is if it has high
 other observations. This does not necessarily have to correspond to a large
 residual. If the observation happens to be unusual on all variables in
 precisely the same way, it can actually lie very close to the regression line.
-An example of thit is shown in :numref:`fig-leverage`. The leverage of an
+An example of this is shown in :numref:`fig-leverage`. The leverage of an
 observation is operationalised in terms of its *hat value*, usually written
 h\ :sub:`i`. The formula for the hat value is rather complicated,\ [#]_ but it
 interpretation is not: h\ :sub:`i` is a measure of the extent to which the
@@ -192,10 +192,10 @@ interpretation is not: h\ :sub:`i` is a measure of the extent to which the
 
 In general, if an observation lies far away from the other ones in terms of the
 predictor variables, it will have a large hat value (as a rough guide, high
-leverage is when the hat value is more than 2 - 3 times the average; and note
-that the sum of the hat values is constrained to be equal to *K* + 1). High
-leverage points are also worth looking at in more detail, but they are much less
-likely to be a cause for concern unless they are also outliers.
+leverage is when the hat value is more than two to three times the average; and
+note that the sum of the hat values is constrained to be equal to *K* + 1).
+High leverage points are also worth looking at in more detail, but they are
+much less likely to be a cause for concern unless they are also outliers.
 
 .. ----------------------------------------------------------------------------
 
@@ -214,7 +214,7 @@ likely to be a cause for concern unless they are also outliers.
 This brings us to our third measure of unusualness, the **influence** of an
 observation. A high influence observation is an outlier that has high leverage.
 That is, it is an observation that is very different to all the other ones in
-some respect, and also lies a long way from the regression line. Thit is
+some respect, and also lies a long way from the regression line. This is
 illustrated in :numref:`fig-influence`. Notice the contrast to the previous two
 figures. Outliers do not move the regression line much and neither do high
 leverage points. But something that is both an outlier and has high leverage,
@@ -224,7 +224,7 @@ operationalise influence in terms of a measure known as **Cook’s distance**.
 
 .. math:: D_i = \frac{{\epsilon_i^*}^2 }{K+1} \times \frac{h_i}{1-h_i}
 
-Notice that thit is a multiplication of something that measures the
+Notice that this is a multiplication of something that measures the
 outlier-ness of the observation (the bit on the left), and something that
 measures the leverage of the observation (the bit on the right).
 
@@ -250,7 +250,7 @@ in :numref:`fig-reg4`\.
 .. ----------------------------------------------------------------------------
 
 You can see that, in this example, the mean Cook’s distance value is 0.01, and
-the range is from 0.00000262 to 0.11, so thit is some way off the rule of thumb
+the range is from 0.00000262 to 0.11, so this is some way off the rule of thumb
 figure mentioned above that a Cook’s distance greater than 1 is considered
 large.
 
@@ -405,7 +405,7 @@ that, yep, that is some mighty fine collinearity there.
    Again, for the linear algebra fanatics: the “hat matrix” is defined to be
    that matrix **H** that converts the vector of observed values *y* into a
    vector of fitted values ŷ, such that ŷ = **H**\ *y*. The name comes from
-   the fact that thit is the matrix that “puts a hat on *y*”. The hat *value*
+   the fact that this is the matrix that “puts a hat on *y*”. The hat *value*
    of the i-th observation is the i-th diagonal element of this matrix (so
    technically I should be writing it as h\ :sub:`ii` rather than h\ :sub:`i`).
    Oh, and in case you care, here is how it is calculated:
