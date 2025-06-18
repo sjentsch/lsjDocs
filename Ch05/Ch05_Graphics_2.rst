@@ -113,12 +113,12 @@ space: no chance at all that the reader is going to learn anything useful.
 Using box plots to detect outliers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Because the box plot automatically separates out those observations that lie
-outside a certain range, depicting them with a dot in jamovi, people often use
-them as an informal method for detecting **outliers**: observations that are
-“suspiciously” distant from the rest of the data. Here is an example. Suppose
-that I had drawn the box plot for the ``afl.margins`` variable and it came up
-looking like :numref:`fig-boxplot4`.
+As the box plot automatically separates out observations that lie outside a
+certain range, depicting them with a dot in jamovi, people often use them as an
+informal method for detecting **outliers**: observations that are “suspiciously”
+distant from the rest of the data. Here is an example. Suppose that I had drawn
+the box plot for the ``afl.margins`` variable and it came up looking like
+:numref:`fig-boxplot4`.
 
 .. ----------------------------------------------------------------------------
 
@@ -131,13 +131,12 @@ looking like :numref:`fig-boxplot4`.
    
 .. ----------------------------------------------------------------------------
 
-It is pretty clear that
-something funny is going on with two of the observations. Apparently,
-there were two games in which the margin was over 300 points! That
-does not sound right to me. Now that I have become suspicious it is time to
-look a bit more closely at the data. In jamovi you can quickly find out
-which of these observations are suspicious and then you can go back to
-the raw data to see if there has been a mistake in data entry. To do
+It is pretty clear that something funny is going on with two of the
+observations. Apparently, there were two games in which the margin was over
+300 points! That does not sound right to me. Now that I have become suspicious
+it is time to look a bit more closely at the data. In jamovi you can quickly
+find out which of these observations are suspicious and then you can go back
+to the raw data to see if there has been a mistake in data entry. To do
 this you need to set up a filter so that only those observations with
 values over a certain threshold are included. In our example, the
 threshold is over 300, so that is the filter we will create. First,

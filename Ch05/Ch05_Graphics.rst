@@ -21,29 +21,26 @@ Drawing graphs
    -- Edward Tufte\ [#]_
 
 Visualising data is one of the most important tasks facing the data
-analyst. It is important for two distinct but closely related reasons.
-Firstly, there is the matter of drawing “presentation graphics”,
-displaying your data in a clean, visually appealing fashion makes it
-easier for your reader to understand what you are trying to tell them.
-Equally important, perhaps even more important, is the fact that drawing
-graphs helps *you* to understand the data. To that end, it is important
-to draw “exploratory graphics” that help you learn about the data as you
-go about analysing it. These points might seem pretty obvious but I
-cannot count the number of times I have seen people forget them.
+analyst. It is important for two reasons. First, for drawing “presentation
+graphics” – displaying your data in a clean, visually appealing way makes
+it easier for your readers to understand what you are trying to tell them.
+Second, and perhaps more important, is the fact that drawing graphs helps
+*you* to understand the data. To that end, it is important to draw
+“exploratory graphics” that help you learn about the data as part of your
+analysis.
 
 To give a sense of the importance of this chapter, I want to start with
-a classic illustration of just how powerful a good graph can be. To that
-end, :numref:`fig-snowMap` shows a redrawing of one of the most famous data
-visualisations of all time. This is John Snow’s 1854 map of cholera deaths.
-The map is elegant in its simplicity. In the background we have a street map
-which helps orient the viewer. Over the top we see a large number of small
-dots, each one representing the location of a cholera case. The larger
-symbols show the location of water pumps, labelled by name. Even the most
-casual inspection of the graph makes it very clear that the source of the
-outbreak is almost certainly the Broad Street pump. Upon viewing this graph
-Dr Snow arranged to have the handle removed from the pump and ended the
-outbreak that had killed over 500 people. Such is the power of a good data
-visualisation.
+a classic illustration of just how powerful a good graph can be.
+:numref:`fig-snowMap` is a redrawing of one of the most famous data
+visualisations of all time – John Snow’s 1854 map of cholera deaths.
+The map is elegant in its simplicity. A street map helps orient the viewer,
+overlayed with a large number of small squares, each one representing the
+location of a cholera case. The larger dots show the location of water pumps,
+labelled by name. Even the most casual inspection of the graph makes it very
+clear that the source of the outbreak is almost certainly the Broad Street
+pump. Upon viewing this graph Dr Snow arranged to have the handle removed
+from the pump, thus ending the outbreak that had killed over 500 people.
+Such is the power of a good data visualisation.
 
 .. ----------------------------------------------------------------------------
 
@@ -58,7 +55,7 @@ visualisation.
    
 .. ----------------------------------------------------------------------------
 
-The goals in this chapter are twofold. First, to discuss several fairly
+There are two goals in this chapter. First, to discuss several fairly
 standard graphs that we use a lot when analysing and presenting data,
 and second to show you how to create these graphs in jamovi. The graphs
 themselves tend to be pretty straightforward, so in one respect this

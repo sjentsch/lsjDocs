@@ -3,7 +3,7 @@
 Summary
 -------
 
-Perhaps I am a simple minded person, but I love pictures. Every time I
+Perhaps I am a simple-minded person, but I love pictures. Every time I
 write a new scientific paper one of the first things I do is sit down
 and think about what the pictures will be. In my head an article is
 really just a sequence of pictures linked together by a story. All the

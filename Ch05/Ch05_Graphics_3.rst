@@ -12,7 +12,8 @@ particularly interested in just four: Brisbane, Carlton, Fremantle and
 Richmond. So the first step is to set up a filter so just those four teams are
 included in the bar graph. This is straightforward in jamovi and you can do it
 by using the ``Filters`` function that we used previously. Open up the
-``Filters`` screen and type in the following:\ [#]_
+``Filters`` screen and type in the following exactly as written – including
+the single quote marks:\ [#]_
 
 .. code-block:: text
 
