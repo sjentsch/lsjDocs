@@ -27,7 +27,7 @@ Pragmatic matters
 This is a somewhat strange chapter, even by my standards. My goal in
 this chapter is to talk a bit more honestly about the realities of
 working with data than you will see anywhere else in the book. The problem
-with real world data sets is that they are *messy*. Very often the data
+with real-world data sets is that they are *messy*. Very often the data
 file that you start out with does not have the variables stored in the
 right format for the analysis you want to do. Sometimes there might be a
 lot of missing values in your data set. Sometimes you only want to

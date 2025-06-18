@@ -20,7 +20,7 @@ Comparing two means
 
 In chapter :doc:`../Ch10/Ch10_ChiSquare` we covered the situation when your
 outcome variable is nominal scale |nominal| and your predictor variable is
-also nominal scale |nominal|. Lots of real world situations have that
+also nominal scale |nominal|. Lots of real-world situations have that
 character, and so you will find that χ²-tests in particular are quite widely
 used. However, you are much more likely to find yourself in a situation where
 your outcome variable is interval scale or higher |continuous|, and what

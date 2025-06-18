@@ -8,7 +8,7 @@ and showed that a lot of the transformations that you might want to apply to
 your data are based on fairly simple mathematical functions and operations. In
 this section I want to return to that discussion and mention several other
 mathematical functions and arithmetic operations that are actually quite useful
-for a lot of real world data analysis. :numref:`tab-mathfunc` gives a brief
+for a lot of real-world data analysis. :numref:`tab-mathfunc` gives a brief
 overview of the various mathematical functions I want to talk about here, or
 later.\ [#]_ Obviously this does not even come close to cataloguing the range of
 possibilities available, but it does cover a range of functions that are used

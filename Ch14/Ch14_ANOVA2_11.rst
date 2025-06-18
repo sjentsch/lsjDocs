@@ -314,7 +314,7 @@ situation:
 
 As ugly as that table looks, it is pretty simple. In all cases, the
 alternative hypothesis corresponds to the full model which contains
-three main effect terms (e.g. ``A``), three two-way interactions (e.g.
+three main effect terms (e.g., ``A``), three two-way interactions (e.g.,
 ``A * B``) and one three-way interaction (i.e., ``A * B * C``). The null
 model always contains six of these seven terms, and the missing one is the
 one whose significance we are trying to test.

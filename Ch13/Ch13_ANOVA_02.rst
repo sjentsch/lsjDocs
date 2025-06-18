@@ -577,7 +577,7 @@ result. As discussed in chapter :doc:`../Ch09/Ch09_HypothesisTesting` back in
 the “old days” what we would do is open up a statistics textbook or flick to the
 back section which would actually have a huge lookup table and we would find
 the threshold *F*-value corresponding to a particular value of α (the null
-hypothesis rejection region), e.g. 0.05, 0.01 or 0.001, for 2 and 15 degrees of
+hypothesis rejection region), e.g., 0.05, 0.01 or 0.001, for 2 and 15 degrees of
 freedom. Doing it this way would give us a threshold *F*-value for an α
 of 0.001 of 11.34. As this is less than our calculated *F*-value we say that
 *p* < 0.001. But those were the old days, and nowadays fancy stats software

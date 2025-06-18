@@ -184,7 +184,7 @@ that they do have this right. So, suppose that “Dani’s incredibly long
 and tedious experiment” has a very high drop out rate. What do you
 suppose the odds are that this drop out is random? Answer: zero. Almost
 certainly the people who remain are more conscientious, more tolerant of
-boredom, etc., than those that leave. To the extent that (say)
+boredom, etc., than those who leave. To the extent that (say)
 conscientiousness is relevant to the psychological phenomenon that I
 care about, this attrition can decrease the validity of my results.
 
@@ -202,7 +202,7 @@ condition. And this drop out is not going to be random. The people most
 likely to drop out would probably be the people who do not care all that
 much about the importance of obediently sitting through the experiment.
 Since the most bloody minded and disobedient people all left the
-treatment group but not the control group, we have introduced a confound:
+treatment group but not the control group, we have introduced a confounder:
 the people who actually took the questionnaire in the treatment group
 were *already* more likely to be dutiful and obedient than the people in
 the control group. In short, in this study insulting people does not make
@@ -338,7 +338,7 @@ accidentally conveys the fact that the participants are expected to do
 well in this task. Well, there is a thing called the “Pygmalion effect”,
 where if you expect great things of people they will tend to rise to the
 occasion. But if you expect them to fail then they will do that too. In
-other words, the expectations become a self-fulfilling prophesy.
+other words, the expectations become a self-fulfilling prophecy.
 
 Demand characteristics and reactivity
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -496,12 +496,12 @@ arise:
    experimental context is not always obvious to the person reading the
    paper. Of course, the way I have described this makes it sound like
    it is always fraud. Probably there are cases where this is done
-   deliberately, but in my experience the bigger concern has been with
+   deliberately, but in my experience the bigger concern is with
    unintentional misdesign. The researcher *believes* and so the study
-   just happens to end up with a built in flaw, and that flaw then
+   just happens to end up with a built-in flaw, and that flaw then
    magically erases itself when the study is written up for publication.
 
--  **Data mining & post-hoc hypothesising**. Another way in which the authors
+-  **Data mining and post-hoc hypothesising**. Another way in which the authors
    of a study can more or less misrepresent the data is by engaging in what is
    referred to as “data mining” (see :ref:`Gelman & Loken, 2014 <Gelman_2014>`,
    for a broader discussion of this as part of the “garden of forking paths”
@@ -520,12 +520,12 @@ arise:
    at the data to cover up the data mining. To be clear. It is not wrong
    to change your beliefs after looking at the data, and to reanalyse
    your data using your new “post-hoc” hypotheses. What is wrong (and I
-   suspect common) is failing to acknowledge that you have done. If you
+   suspect common) is failing to acknowledge what you have done. If you
    acknowledge that you did it then other researchers are able to take
    your behaviour into account. If you do not, then they can not. And that
    makes your behaviour deceptive. Bad!
 
--  **Publication bias & self-censoring**. Finally, a pervasive bias is
+-  **Publication bias and self-censoring**. Finally, a pervasive bias is
    “non-reporting” of negative results. This is almost impossible to
    prevent. Journals do not publish every article that is submitted to
    them. They prefer to publish articles that find “something”. So, if
@@ -541,7 +541,7 @@ arise:
    publication, they never even try to report them. As a friend of mine
    says “for every experiment that you get published, you also have 10
    failures”. And she is right. The catch is, while some (maybe most) of
-   those studies are failures for boring reasons (e.g. you stuffed
+   those studies are failures for boring reasons (e.g., you stuffed
    something up) others might be genuine “null” results that you ought
    to acknowledge when you write up the “good” experiment. And telling
    which is which is often hard to do. A good place to start is a paper
@@ -552,7 +552,7 @@ arise:
 
 There is probably a lot more issues like this to think about, but that will
 do to start with. What I really want to point out is the blindingly
-obvious truth that real world science is conducted by actual humans, and
+obvious truth that real-world science is conducted by actual humans, and
 only the most gullible of people automatically assumes that everyone
 else is honest and impartial. Actual scientists are not usually *that*
 naive, but for some reason the world likes to pretend that we are, and

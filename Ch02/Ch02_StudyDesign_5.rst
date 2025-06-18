@@ -44,7 +44,7 @@ asbestos mines, or whatever. The point here is that the groups (smokers
 and non-smokers) actually differ on lots of things, not *just* smoking.
 So it might be that the higher incidence of lung cancer among smokers is
 caused by something else, and not by smoking per se. In technical terms
-these other things (e.g. diet) are called “confounders”, and we will talk
+these other things (e.g., diet) are called “confounders”, and we will talk
 about those in just a moment.
 
 In the meantime, let us consider what a proper experiment might look
@@ -81,7 +81,7 @@ causes lung cancer when people have poor diets, and suppose also that
 people who normally smoke do tend to have poor diets. However, since the
 “smokers” in our experiment are not “natural” smokers (i.e., we forced
 non-smokers to become smokers, but they did not take on all of the other
-normal, real life characteristics that smokers might tend to possess)
+normal, real-life characteristics that smokers might tend to possess)
 they probably have better diets. As such, in this silly example they
 would not get lung cancer and our experiment will fail, because it
 violates the structure of the “natural” world (the technical name for

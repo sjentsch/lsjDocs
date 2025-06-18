@@ -230,7 +230,7 @@ there I will list a few of the more important ones.
    sampling is that it gets you data in situations that might otherwise
    be impossible to get any. On the statistical side, the main
    disadvantage is that the sample is highly non-random, and non-random
-   in ways that are difficult to address. On the real life side, the
+   in ways that are difficult to address. On the real-life side, the
    disadvantage is that the procedure can be unethical if not handled
    well, because hidden populations are often hidden for a reason. I
    chose transgender people as an example here to highlight this issue.
@@ -260,7 +260,7 @@ there I will list a few of the more important ones.
 How much does it matter if you do not have a simple random sample?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Okay, so real world data collection tends not to involve nice simple
+Okay, so real-world data collection tends not to involve nice simple
 random samples. Does that matter? A little thought should make it clear
 to you that it *can* matter if your data are not a simple random sample.
 Just think about the difference between :numref:`fig-srs1` and 
@@ -327,7 +327,7 @@ psychologist a population might be a group of people. To an ecologist a
 population might be a group of bears. In most cases the populations that
 scientists care about are concrete things that actually exist in the real
 world. Statisticians, however, are a funny lot. On the one hand, they *are*
-interested in real world data and real science in the same way that scientists
+interested in real-world data and real science in the same way that scientists
 are. On the other hand, they also operate in the realm of pure abstraction in
 the way that mathematicians do. As a consequence, statistical theory tends to
 be a bit abstract in how a population is defined. In much the same way that

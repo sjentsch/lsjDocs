@@ -22,8 +22,8 @@ Factorial ANOVA
 
 Over the course of the last few chapters we have done quite a lot. We have
 looked at statistical tests you can use when you have one nominal predictor
-variable |nominal| with two groups (e.g. the *t*-test, chapter
-:doc:`../Ch11/Ch11_tTest`) or with three or more groups (e.g. in chapter
+variable |nominal| with two groups (e.g., the *t*-test, chapter
+:doc:`../Ch11/Ch11_tTest`) or with three or more groups (e.g., in chapter
 :doc:`../Ch13/Ch13_ANOVA`). The chapter on :doc:`../Ch12/Ch12_Regression`
 introduced a powerful new idea, that is building statistical models with
 *multiple* continuous predictor variables |continuous| used to explain a single

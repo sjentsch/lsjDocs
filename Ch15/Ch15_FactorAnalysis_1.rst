@@ -56,7 +56,7 @@ correlations between observed variables to uncover any interesting,
 important underlying (latent) factors that are identified when observed
 variables co-vary. We can use statistical software to estimate any
 latent factors and to identify which of our variables have a high
-loading\ [#]_ (e.g. loading > 0.5) on each factor, suggesting they
+loading\ [#]_ (e.g., loading > 0.5) on each factor, suggesting they
 are a useful measure, or indicator, of the latent factor. Part of this
 process includes a step called rotation, which to be honest is a pretty
 weird idea but luckily we do not have to worry about understanding it; we
@@ -324,9 +324,9 @@ the approaches above, solutions with one or two more or fewer factors. They then
 adopt the solution which makes the most sense to them.
 
 At the same time, we should also consider the best way to rotate the final
-solution. There are two main approaches to rotation: orthogonal (e.g.
+solution. There are two main approaches to rotation: orthogonal (e.g.,
 ``Varimax``) rotation forces the selected factors to be uncorrelated, whereas
-oblique (e.g. ``Oblimin``) rotation allows the selected factors to be
+oblique (e.g., ``Oblimin``) rotation allows the selected factors to be
 correlated. Dimensions of interest to psychologists and behavioural scientists
 are not often dimensions we would expect to be orthogonal, so oblique solutions
 are arguably more sensible.\ [#]_
@@ -528,7 +528,7 @@ information to include in your write-up:
    specifically for the constructs that you are interested in uncovering
    through EFA?
 
-#. A description of the sample (e.g. demographic information, sample size,
+#. A description of the sample (e.g., demographic information, sample size,
    sampling method).
 
 #. A description of the type of data used (e.g., nominal |nominal|, continuous
@@ -538,7 +538,7 @@ information to include in your write-up:
    regarding sphericity checks and measures of sampling adequacy should be
    reported.
 
-#. Explain what FA extraction method (e.g. maximum likelihood) was used.
+#. Explain what FA extraction method (e.g., maximum likelihood) was used.
 
 #. Explain the criteria and process used for deciding how many factors were
    extracted in the final solution, and which items were selected. Clearly

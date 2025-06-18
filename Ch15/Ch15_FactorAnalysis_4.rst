@@ -28,7 +28,7 @@ ways a set of items could be split, but if all possible splits are made then it
 is possible to produce a statistic that reflects the overall pattern of
 split-half coefficients. Cronbach’s α is such a statistic: a function
 of all the split-half coefficients for a scale. If a set of items that measure
-a construct (e.g. an Extraversion scale) has an α of 0.80, then the
+a construct (e.g., an Extraversion scale) has an α of 0.80, then the
 proportion of error variance in the scale is 0.20. In other words, a scale with
 an α of 0.80 includes approximately 20\% error.
 

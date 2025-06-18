@@ -64,7 +64,7 @@ say, I do not think that is your goal. *I* think you want to learn how to
 do data analysis. And if that really is your goal, you want to make sure
 that the skills you learn in your introductory stats class are naturally
 and cleanly extensible to the more complicated models that you need in
-real world data analysis. You want to make sure that you learn to use
+real-world data analysis. You want to make sure that you learn to use
 the same tools that real data analysts use, so that you can learn to do
 what they do. And so yeah, okay, you are a beginner right now (or you
 were when you started this book), but that does not mean you should be
@@ -73,7 +73,7 @@ probability density, or a story where I do not tell you about the
 nightmare that is factorial ANOVA with unbalanced designs. And it
 does not mean that you should be given baby toys instead of proper data
 analysis tools. Beginners are not dumb, they just lack knowledge. What
-you need is *not* to have the complexities of real world data analysis
+you need is *not* to have the complexities of real-world data analysis
 hidden from from you. What you need are the skills and tools that will
 let you handle those complexities when they inevitably ambush you in the
 real world.

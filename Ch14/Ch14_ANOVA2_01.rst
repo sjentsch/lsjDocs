@@ -350,7 +350,7 @@ a second factor. Secondly, I wanted to show you what the ANOVA table
 looks like in this case, so that you can see from the outset that the
 basic logic and structure behind factorial ANOVA is the same as that
 which underpins One-Way ANOVA. Try to hold onto that feeling. It is
-genuinely true, insofar as factorial ANOVA is built in more or less the
+genuinely true, insofar as factorial ANOVA is built-in more or less the
 same way as the simpler one-way ANOVA model. It is just that this feeling
 of familiarity starts to evaporate once you start digging into the
 details. Traditionally, this comforting sensation is replaced by an urge

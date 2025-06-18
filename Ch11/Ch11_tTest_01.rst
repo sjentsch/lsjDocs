@@ -220,7 +220,7 @@ A worked example, by hand
 
 Now, as I mentioned earlier, the *z*-test is almost never used in
 practice. It is so rarely used in real life that the basic installation
-of jamovi does not have a built in function for it. However, the test is
+of jamovi does not have a built-in function for it. However, the test is
 so incredibly simple that it is really easy to do one manually. Let us go
 back to the |zeppo|_ data set. The first thing I need to do is calculate the
 sample mean for the ``grades`` variable, which I have already done (72.3).
@@ -292,7 +292,7 @@ the one sample *z*-test, makes three basic assumptions. These are:
 
 -  *Known standard deviation*. The third assumption of the
    *z*-test is that the true standard deviation of the population
-   is known to the researcher. This is just stupid. In no real world
+   is known to the researcher. This is just stupid. In no real-world
    data analysis problem do you know the standard deviation
    σ of some population but are completely ignorant about
    the mean µ. In other words, this assumption is *always*

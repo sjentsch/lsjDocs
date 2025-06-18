@@ -6,7 +6,7 @@ Checking the normality of a sample
 All of the tests that we have discussed so far in this chapter have assumed
 that the data are normally distributed. This assumption is often quite
 reasonable, because :ref:`the central limit theorem <central_limit_theorem>`
-does tend to ensure that many real world quantities are normally distributed.
+does tend to ensure that many real-world quantities are normally distributed.
 Any time that you suspect that your variable is *actually* an average of lots
 of different things, there is a pretty good chance that it will be normally
 distributed, or at least close enough to normal that you can get away with
@@ -19,7 +19,7 @@ If you suppose that there are lots of things that could trigger a response from
 a human participant, then the actual response will occur the first time one of
 these trigger events occurs.\ [#]_ This means that RT data are systematically
 non-normal. Okay, so if normality is assumed by all the tests, and is mostly
-but not always satisfied (at least approximately) by real world data, how can
+but not always satisfied (at least approximately) by real-world data, how can
 we check the normality of a sample? In this section I discuss two methods:
 QQ plots and the Shapiro-Wilk test.
 

@@ -453,7 +453,7 @@ previously in the context of the one sample *t*-test (see section
    behavioural stats class to mumble a lot at this point, but since I get asked
    this question every year by my students, I will give a brief answer.
    Technically yes, it does matter. If you change your definition of what the
-   “real world” population actually is, then the sampling distribution of your
+   “real-world” population actually is, then the sampling distribution of your
    observed mean *X̄* changes too. The *t*-test relies on an assumption that
    the observations are sampled at random from an infinitely large population
    and, to the extent that real life is not like that, then the *t*-test can be

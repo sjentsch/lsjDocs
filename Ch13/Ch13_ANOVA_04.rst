@@ -32,6 +32,6 @@ Although many statistics text books suggest η² as the default effect size
 measure in ANOVA, there is an interesting `blog post
 <https://daniellakens.blogspot.com.au/2015/06/why-you-should-use-omega-squared.html>`__
 by Daniel Lakens suggesting that eta-squared is perhaps not the best measure of
-effect size in real world data analysis, because it can be a biased estimator.
+effect size in real-world data analysis, because it can be a biased estimator.
 Usefully, there is also an option in jamovi to specify omega-squared (ω²), which
 is less biased, alongside eta-squared.

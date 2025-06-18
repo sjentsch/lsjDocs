@@ -3,7 +3,7 @@
 Transforming and recoding a variable
 ------------------------------------
 
-It is not uncommon in real world data analysis to find that one of your
+It is not uncommon in real-world data analysis to find that one of your
 variables is not quite equivalent to the variable that you really want. For
 instance, it is often convenient to take a continuous variable |continuous|
 (e.g., age) and break it up into a smallish number of categories (e.g.,

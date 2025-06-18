@@ -236,7 +236,7 @@ our estimate of the population standard deviation becomes:
 
 .. math:: \hat\sigma = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (X_i - \bar{X})^2}
 
-and when we use jamovi’s built in standard deviation function, what it is
+and when we use jamovi’s built-in standard deviation function, what it is
 doing is calculating :math:`\hat\sigma`, not *s*.\ [#]_
 
 One final point. In practice, a lot of people tend to refer to

@@ -304,7 +304,7 @@ LibreOffice, and JSON.
    settings menu (``⋮``, top right corner), but this only works at the time
    of importing data files into jamovi. The default missing value in the 
    dataset should not be a valid number or value associated with any of the
-   variables, e.g. you could use ``-9999`` as this is unlikely to be a valid
+   variables, e.g., you could use ``-9999`` as this is unlikely to be a valid
    value.
    
 .. |booksales|                         replace:: ``booksales.csv``

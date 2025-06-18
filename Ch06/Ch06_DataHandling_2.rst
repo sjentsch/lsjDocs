@@ -284,7 +284,7 @@ in the order that jamovi processes them:
 
 .. [#]
    Now, here is a quirk in jamovi. When you have simple logical
-   expressions like the ones we have already met, e.g. ``2 + 2 == 5``
+   expressions like the ones we have already met, e.g., ``2 + 2 == 5``
    then jamovi neatly states ``FALSE`` (or ``TRUE``) in the corresponding
    spreadsheet column. Underneath the hood, jamovi stores ``FALSE`` as
    ``0`` and ``TRUE`` as ``1``. When we have more complex logical

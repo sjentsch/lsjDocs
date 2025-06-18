@@ -269,12 +269,12 @@ of information to include in your write-up:
 
 #. A theoretical and empirical justification for the hypothesized model.
 
-#. A complete description of how the model was specified (e.g. the indicator
+#. A complete description of how the model was specified (e.g., the indicator
    variables for each latent factor, covariances between latent variables, and
    any correlations between error terms). A path diagram, like the one in
    :numref:`fig-cfa3` would be good to include.
 
-#. A description of the sample (e.g. demographic information, sample size,
+#. A description of the sample (e.g., demographic information, sample size,
    sampling method).
 
 #. A description of the type of data used (e.g., nominal |nominal|, continuous

@@ -60,7 +60,7 @@ pictures.
 -  The **F-distribution** looks a bit like a χ²-distribution, and it arises
    whenever you need to compare two χ²-distributions to one another. 
    Admittedly, this does not exactly sound like something that any sane person
-   would want to do, but it turns out to be very important in real world data
+   would want to do, but it turns out to be very important in real-world data
    analysis. Remember when I said that χ² turns out to be the key distribution
    when we are taking a “sum of squares”? Well, what that means is if you want
    to compare two different “sums of squares”, you are probably talking about

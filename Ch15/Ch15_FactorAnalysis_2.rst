@@ -110,8 +110,8 @@ components. They then adopt the solution which makes the most sense to them.
 
 At the same time, we should also consider the best way to rotate the final
 solution. Again, as with EFA, there are two main approaches to rotation:
-orthogonal (e.g. ``Varimax``) rotation forces the selected components to be
-uncorrelated; whereas oblique (e.g. ``Oblimin``) rotation allows the selected
+orthogonal (e.g., ``Varimax``) rotation forces the selected components to be
+uncorrelated; whereas oblique (e.g., ``Oblimin``) rotation allows the selected
 components to be correlated. Dimensions of interest to psychologists and
 behavioural scientists are not often dimensions we would expect to be
 orthogonal, so oblique solutions are arguably more sensible. Practically, if in

@@ -90,8 +90,8 @@ great to give you a sense of just how much more there is, for example:
    need a more powerful tool than repeated measures ANOVA. The tools
    that people use to solve this problem are called “mixed” models,
    because they are designed to learn about individual experimental
-   units (e.g. happiness of individual people over time) as well as
-   overall effects (e.g. the effect of money on happiness over time).
+   units (e.g., happiness of individual people over time) as well as
+   overall effects (e.g., the effect of money on happiness over time).
    Repeated measures ANOVA is perhaps the simplest example of a mixed
    model, but there is a lot you can do with mixed models that you can not
    do with repeated measures ANOVA.
