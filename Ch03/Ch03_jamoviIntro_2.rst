@@ -1,323 +1,92 @@
 .. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_ and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_
 
-The spreadsheet
----------------
+Analyses
+--------
 
-It is possible to simply begin typing values into the jamovi spreadsheet as
-you would in any other spreadsheet software. Alternatively, existing data
-sets can be opened in jamovi (see the section “Loading data in jamovi”
-further down on the page).
+Analyses can be selected from the ``Analyses`` ribbon (activate it by clicking
+the ``Analyses``-tab at the top of the jamovi window). Here, individual
+analyses can be chosen from their respective category (e.g., ``T-Tests``,
+``ANOVA`` or ``Regression``). Selecting an analysis will present an **options
+panel** for that particular analysis, allowing you to assign different
+variables to different parts of the analysis, and select different options.
 
-In jamovi data is represented in a spreadsheet with each column representing
-a “variable” and each row representing a “case” or “participant”.
+At the same time, the results for the analysis will appear in the right
+**results panel** and will update in real-time as you make changes to the
+options. When you have the analysis set up correctly you can dismiss the
+analysis options by clicking the arrow to the top right of the options panel.
+If you wish to return to these options, you can click on the results that
+were produced. In this way, you can return to any analysis that you (or
+say, a colleague) created earlier.
 
+If you decide you no longer need a particular analysis, you can remove
+it with the results context menu. Right-clicking on the analysis results
+will bring up a menu and by selecting ``Analysis`` and then ``Remove`` the
+analysis can be removed. But more on this later. First, let us take a
+more detailed look at the spreadsheet view.
 
-Data Variables
-~~~~~~~~~~~~~~
+Installing add-on modules into jamovi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The most commonly used variables in jamovi are ``Data`` variables, these
-variables simply contain data either loaded from a data file, or “typed in”
-by the user. ``Data`` variables can be one of four measurement levels.
-These levels are designated by the symbol in the header of the
-variable’s column:
+A really great feature of jamovi is the ability to install add-on modules from
+the jamovi library. These add-on modules have been developed by the jamovi
+community, i.e., jamovi users and developers who have created special software
+add-ons that do other, usually more advanced, analyses that go beyond the
+capabilities of that come included with jamovi (although these analyses
+already cover the perhaps 95\% of analyses you would run within psychology).
 
-- The ``ID`` variable type |ID| is unique to jamovi. It is intended for variables
-  that contain identifiers that you would almost never want to analyse.
-  For example, a persons name, or a participant ID. Specifying an ID
-  variable type can improve performance when interacting with very large
-  data sets.
+To install add-on modules, just click on the large ``+`` in the top right
+of the jamovi window, select ``jamovi library`` and then browse through
+the various add-on modules that are available. Choose the one(s) you
+want, and then install them (as shown in :numref:`fig-modules`).
 
-- ``Nominal`` variables |nominal| are for categorical variables which are text
-  labels, for example a column called Gender with the values ``Male`` and
-  ``Female`` would be nominal. So would a person’s name. Nominal variable
-  values can also have a numeric value. These variables are used most often
-  when importing data which codes values with numbers rather than text. For
-  example, a column in a dataset may contain the values 1 for ``Male``, and 2
-  for ``Female``. It is possible to add nice “human-readable” labels to these
-  values with the variable editor (more on this later).
-
-- ``Ordinal`` variables |ordinal| are like ``Nominal`` variables, except the
-  values have a specific order. An example is a Likert scale with 3 being
-  “strongly agree” and -3 being “strongly disagree”.
-
-- ``Continuous`` variables |continuous| are variables which exist on a continuous
-  scale. Examples might be height or weight. This is also referred to as
-  “interval scale” or “ratio scale”.
-
-In addition, you can also specify different data types: variables have a
-data type of either ``Text``, ``Integer`` or ``Decimal``.
+It is that easy. The newly installed modules can then be accessed from the
+``Analyses`` ribbon or by clicking on the the large ``+`` and the selecting
+the analyses you need from the menu that opens.\ [#]_ Try it… useful add-on
+modules to install include ``scatr`` (added under ``Descriptives``) and |Rj|_.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_measurementlevels.*
-   :alt: Measurement levels and data types in jamovi
-   :name: fig-measurementlevels
+.. figure:: ../_images/lsj_modules.*
+   :alt: jamovi modules in the jamovi library
+   :name: fig-modules
 
-   Window to set measurement levels and data types in jamovi.
+   Installing add-on modules in jamovi
    
 .. ----------------------------------------------------------------------------
 
-When starting with a blank spreadsheet and typing values in the variable type
-will change automatically depending on the data you enter. This isa good way
-to get a feel for which variable types go with which sorts of data. Similarly,
-when opening a data file jamovi will try and guess the variable type from the
-data in each column. In both cases this automatic approach may not be correct,
-and it may be necessary to manually specify the variable type with the variable
-editor.
+Syntax mode
+~~~~~~~~~~~
 
-.. _variable_editor:
+jamovi also provides an syntax mode. In this mode jamovi produces
+equivalent R code for each analysis. To change to syntax mode, select
+the settings menu (``⋮``; top right corner in jamovi) and click the
+``Syntax mode`` checkbox there. You can turn off syntax mode by clicking
+this a second time.
 
-The variable editor can be opened by selecting ``Setup`` from the ``Data``
-ribbon or by double-clicking on the variable column header. The variable
-editor allows you to change the name of the variable and, for data variables,
-the measure type, the order of the value levels, and the label displayed for
-each level. The variable editor can be dismissed by clicking ``↑``.
+In syntax mode analyses continue to operate as before but now they
+produce R syntax. Like all results objects in jamovi, you can right click
+on these items (including the R syntax) and copy and paste them, for example
+into an R session. To import jamovi-files within an R session, you can use
+the function ``read_omv`` from the R-package ``jmvReadWrite`` (which can be
+installed using ``install.packages("jmvReadWrite")`` in an R-session. The
+package also contains further functions for handling jamovi-files in R (e.g.,
+``write_omv`` for writing jamovi-files, ``convert_omv`` for converting other
+file formats to a jamovi-file, or ``merge_cols_omv`` for adding columns from
+a second dataset while matching the two datasets by an index variable). Help
+how to use these functions can be obtained by preceding the function name by
+a ``?`` (e.g., ``?jmvReadWrite::read_omv``).
 
-New variables can be inserted or appended to the data set using the ``Add``
-button from the ``Data`` tab. The ``Add`` button also allows the addition
-of computed variables.
-
-Sometimes you want to change the variable level. This can happen for all sorts
-of reasons. Sometimes when you import data from files, it can come to you in
-the wrong format. Numbers sometimes get imported as nominal |nominal|, text
-values. Dates may get imported as text. Participant-ID values |ID| can
-sometimes be read as continuous |continuous|: nominal values |nominal| can
-sometimes be read as ordinal |ordinal| or even continuous |continuous|. There is
-a good chance that sometimes you will want to convert a variable from one
-measurement level into another one. Or, to use the correct term, you want to
-**coerce** the variable from one class into another.
-
-If you want to change a variable’s measurement level then you can do this in
-the jamovi ``Data`` view. Click on the variable name in the top row of the data
-table and then select the desired measurement level under ``Measure Type`` –
-``continuous`` |continuous|, ``ordinal`` |ordinal| or ``nominal`` |nominal|.
-
-
-Computed variables
-~~~~~~~~~~~~~~~~~~
-
-Computed Variables are those which take their value by performing a
-computation on other variables. Computed Variables can be used for a range of
-purposes, including log transforms, *z*-scores, sum-scores, negative scoring
-and means. There is another variable type, Transformed variables, that can be
-used to “recode” variables (e.g., when inverting items). This variable type is
-briefly described at the end of the subsection :ref:`EFA_in_jamovi` and in
-:numref:`fig-efa7`.
-
-Computed variables can be added to the data set with the ``Add`` button
-available on the ``Data`` tab. This will produce a formula box where you can
-specify the formula. The usual arithmetic operators are available. Some
-examples of formulas are:
-
-.. code-block:: text
-
-   A + B
-   LOG10(len)
-   MEAN(A, B)
-   (dose - VMEAN(dose)) / VSTDEV(dose)
-
-In order, these are the sum of ``A`` and ``B``, a log (base 10) transform
-of ``len``, the mean of ``A`` and ``B``, and the *z*-score of the variable
-``dose``. :numref:`fig-computedvariable` shows the jamovi screen for the
-new variable computed as the *z*-score of ``dose`` (from the ``Tooth Growth``
-example data set).
-
-.. ----------------------------------------------------------------------------
-
-.. figure:: ../_images/lsj_computedvariable.*
-   :alt: Computed variable: *z*-score of ``dose``
-   :name: fig-computedvariable
-
-   A newly computed variable, the *z*-score of ``dose``.
-   
-.. ----------------------------------------------------------------------------
-
-*V-functions*
-
-Several functions are already available in jamovi and available from the
-drop down box labelled *f*\ :sub:`x`. A number of functions appear in pairs,
-one prefixed with a V and the other not. V functions perform their
-calculation on a variable as a whole, where as non-V functions perform
-their calculation row by row. For example, ``MEAN(A, B)`` will produce the
-mean of ``A`` and ``B`` for each row. Where as ``VMEAN(A)`` gives the mean of
-all the values in ``A``.
-
-
-Loading data in jamovi
-~~~~~~~~~~~~~~~~~~~~~~
-
-There are several different types of files that are likely to be
-relevant to us when doing data analysis. There are two in particular
-that are especially important from the perspective of this book:
-
--  *jamovi files* are those with a ``.omv`` file extension. This is the
-   standard kind of file that jamovi uses to store data, and variables
-   and analyses.
-
--  *Comma separated value (CSV) files* are those with a ``.csv`` file
-   extension. These are just regular old text files and they can be
-   opened with many different software programs. It is quite typical for
-   people to store data in CSV files, precisely because they are so
-   simple.
-
-There are also several other kinds of data file that you might want to
-import into jamovi. For instance, you might want to open Microsoft Excel
-spreadsheets (``.xlsx`` files), or data files that have been saved in the
-native file formats for other statistics software, such as SPSS or SAS.
-
-Whichever file formats you are using, it is a good idea to create a folder or
-folders especially for your jamovi data sets and analyses and to make sure
-you keep these backed up regularly.
-
-To open a file select the main jamovi menu (``☰``; top left hand corner),
-select ``Open`` and then choose from the files listed under ``This PC`` if you
-want to open an file stored on your computer or select an example data set by
-choosing ``Data Library``. The example files in this book can be found within
-the ``Data Library`` → ``learning statistics with jamovi`` (or ``lsj-data``).
-
-
-Importing data from CSV files
-*****************************
-
-One quite commonly used data format is the humble “comma separated value”
-file, also called a CSV file, and usually bearing the file extension ``.csv``.
-CSV files are just plain old-fashioned text files and what they store is
-basically just a table of data. This is illustrated in
-:numref:`fig-booksalescsv`, which shows a file called |booksales|_ that I have
-created. As you can see, each row represents the book sales data for one
-month. The first row does not contain actual data though, it has the names of
-the variables.
-
-.. ----------------------------------------------------------------------------
-
-.. figure:: ../_images/lsj_booksalescsv.*
-   :alt: |booksales| data file
-   :name: fig-booksalescsv
-
-   The |booksales|_ data file. On the left I have opened the file using a spreadsheet
-   program (LibreOffice), which shows that the file is basically a table. On the right
-   the same file is open in a standard text editor (the TextEdit program on a Mac),
-   which shows how the file is formatted. The entries in the table are wrapped in quote
-   marks and separated by commas.
-
-.. ----------------------------------------------------------------------------
-
-It is easy to open CSV files in jamovi. From the jamovi main menu (``☰``; top
-left hand corner) choose ``Open`` and browse to where you have stored the CSV
-file on your computer. If you are on a Mac, it will look like the usual Finder
-window that you use to choose a file; on Windows it looks like an Explorer
-window. I am assuming that you are familiar with your own computer, so you
-should have no problem finding the CSV-file that you want to import! Find the
-one you want, then click on the ``Open`` button.
-
-There are a few things that you can check to make sure that the data
-gets imported correctly:
-
--  Heading. Does the first row of the file contain the names for each
-   variable - a “header” row? The |booksales|_ file has a header,
-   so that is a yes.
-
--  Separator. What character is used to separate different entries? In
-   most CSV files this will be a comma (it is “comma separated” after
-   all).
-
--  Decimal. What character is used to specify the decimal point? In
-   English speaking countries this is almost always a period (i.e.,
-   ``.``). That is not universally true though, many European countries
-   use a comma.
-
--  Quote. What character is used to denote a block of text? That is
-   usually going to be a double quote mark (``"``). It is for the
-   |booksales|_ file.
-
-Throughout this book I have assumed that your data are stored as a jamovi
-``.omv`` file or as a “properly” formatted CSV file. However, in real
-life that is not a terribly plausible assumption to make so I would better
-talk about some of the other possibilities that you might run into.
-
-The first thing I should point out is that if your data are saved as a
-text file but are not *quite* in the proper CSV format then there is still
-a pretty good chance that jamovi will be able to open it. You just need
-to try it and see if it works. Sometimes though you will need to change
-some of the formatting. The ones that I have often found myself needing to
-change are:
-
--  ``header``. A lot of the time when you are storing data as a CSV file
-   the first row actually contains the column names and not data. If
-   that is not true then it is a good idea to open up the CSV file in a
-   spreadsheet programme such as LibreOffice and add the header row
-   manually.
-
--  ``sep``. As the name “comma separated value” indicates, the values in
-   a row of a CSV file are usually separated by commas. This is not
-   universal, however. In Europe the decimal point is typically written
-   as ``,`` instead of ``.`` and as a consequence it would be somewhat
-   awkward to use ``,`` as the separator. Therefore it is not unusual to
-   use ``;`` instead of ``,`` as the separator. At other times, I have
-   seen a TAB character used.
-
--  ``quote``. It is conventional in CSV files to include a quoting
-   character for textual data. As you can see by looking at the
-   |booksales|_ file, this is usually a double quote character,
-   ``"``. But sometimes there is no quoting character at all, or you
-   might see a single quote mark ``'`` used instead.
-
--  ``skip``. It is actually very common to receive CSV files in which the
-   first few rows have nothing to do with the actual data. Instead, they
-   provide a human readable summary of where the data came from, or
-   maybe they include some technical info that does not relate to the
-   data.
-
--  ``missing values``. Often you will get given data with missing values.
-   For one reason or another, some entries in the table are missing. The
-   data file needs to include a “special” value to indicate that the
-   entry is missing. By default jamovi assumes that this value is
-   ``NA``,\ [#]_ for both numeric and text data, so you should make
-   sure that, where necessary, all missing values in the CSV file are
-   replaced with ``99`` (or ``-9999``; whichever you choose) before
-   opening / importing the file into jamovi. Once you have opened /
-   imported the file into jamovi all the missing values are converted to
-   blank or greyed out cells in the jamovi spreadsheet view. You can
-   also change the missing value for each variable as an option in the
-   ``Data`` → ``Setup`` view.
-
-Importing data from other statistics packages
-*********************************************
-
-The commands listed above are the main ones we will need for data files in
-this book. But in real life we have many more possibilities. For
-example, you might want to read data files in from other statistics
-programs. Since SPSS is probably the most widely used statistics package
-in psychology, it is worth mentioning that jamovi can also import SPSS
-data files (file extension ``.sav``). Just follow the instructions above
-for how to open a CSV file, but this time navigate to the ``.sav`` file
-you want to import.
-
-As far as other statistical software goes, jamovi can also directly open
-/ import a wealth of other formats such as R, SAS, STATA, Excel,
-LibreOffice, and JSON.
-
-------
+--------
 
 .. [#]
-   You can change the default value for missing values in jamovi from the
-   settings menu (``⋮``, top right corner), but this only works at the time
-   of importing data files into jamovi. The default missing value in the 
-   dataset should not be a valid number or value associated with any of the
-   variables, e.g., you could use ``-9999`` as this is unlikely to be a valid
-   value.
-   
-.. |booksales|                         replace:: ``booksales.csv``
-.. _booksales:                         ../../_statics/data/booksales.csv
+   Especially if you install many modules, your ``Analyses`` ribbon may get
+   cluttered. You can avoid that by “hiding” modules that you don't use that
+   often. In order to do this, go to the large ``+``, and then on ``Manage
+   installed`` where you then can ``Hide`` modules from the ``Analyses``
+   ribbon. You can still access them via the large ``+``. Once you open it,
+   a menu appears, listing all your modules and giving you access to the
+   analyes within the module if you hover over (then the analyses are shown)
+   or click on it (then you can access the analyes).
 
-.. |ID|                                image:: ../_images/variable-id.*
-   :width: 16px
-
-.. |continuous|                        image:: ../_images/variable-continuous.*
-   :width: 16px
-
-.. |nominal|                           image:: ../_images/variable-nominal.*
-   :width: 16px
-
-.. |ordinal|                           image:: ../_images/variable-ordinal.*
-   :width: 16px
+.. |Rj|                                replace:: ``Rj``
+.. _Rj:                                https://docs.jamovi.org/_pages/Rj_overview.html   

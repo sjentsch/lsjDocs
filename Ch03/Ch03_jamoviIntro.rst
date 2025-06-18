@@ -10,7 +10,7 @@ Getting started with jamovi
    Ch03_jamoviIntro_1
    Ch03_jamoviIntro_2
    Ch03_jamoviIntro_3
-
+   Ch03_jamoviIntro_4
 
 .. epigraph::
 
@@ -22,11 +22,11 @@ Getting started with jamovi
 In this chapter I will discuss how to get started in jamovi. I will briefly
 talk about how to download and install jamovi, but most of the chapter
 will be focused on getting you started with finding your way around the
-jamovi GUI. Our goal in this chapter is not to learn any statistical
-concepts: we are just trying to learn the basics of how jamovi works and
-get comfortable interacting with the system. To do this we will spend a
-bit of time looking at datasets and variables. In doing so, you will get a
-bit of a feel for what it is like to work in jamovi.
+jamovi graphical user interface (GUI). Our goal in this chapter is not to
+learn any statistical concepts: we are just trying to learn the basics of
+how jamovi works and get comfortable interacting with the system. To do this
+we will spend a bit of time looking at datasets and variables. In doing so,
+you will get something of a feel for what it is like to work in jamovi.
 
 Why using jamovi?
 -----------------
