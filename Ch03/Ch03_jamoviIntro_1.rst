@@ -61,6 +61,9 @@ figures and (since version 2.3 of jamovi) the language of your jamovi user
 interface. On most operating systems (OS), the language defaults to the
 language you have set for your OS.\ [#]_
 
+Quitting jamovi
+~~~~~~~~~~~~~~~
+
 To quit jamovi, just close the program the same way you would any other
 program. However, what you might want to do before you quit is save your
 work! There are two parts to this: saving any changes to the data set, and

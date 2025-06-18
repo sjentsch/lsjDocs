@@ -11,6 +11,7 @@ Getting started with jamovi
    Ch03_jamoviIntro_2
    Ch03_jamoviIntro_3
    Ch03_jamoviIntro_4
+   Ch03_jamoviIntro_5
 
 .. epigraph::
 
@@ -27,9 +28,6 @@ learn any statistical concepts: we are just trying to learn the basics of
 how jamovi works and get comfortable interacting with the system. To do this
 we will spend a bit of time looking at datasets and variables. In doing so,
 you will get something of a feel for what it is like to work in jamovi.
-
-Why using jamovi?
------------------
 
 However, before going into any of the specifics, it is worth talking a
 little about why you might want to use jamovi at all. Given that you are

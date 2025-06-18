@@ -1,7 +1,7 @@
 .. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_ and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_
 
 Loading data in jamovi
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 There are several different types of files that are likely to be
 relevant to us when doing data analysis. There are two in particular
@@ -34,7 +34,7 @@ the ``Data Library`` → ``learning statistics with jamovi`` (or ``lsj-data``).
 
 
 Importing data from CSV files
-*****************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 One quite commonly used data format is the humble “comma separated value”
 file, also called a CSV file, and usually bearing the file extension ``.csv``.
@@ -139,7 +139,7 @@ change are:
    ``Data`` → ``Setup`` view.
 
 Importing data from other statistics packages
-*********************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The commands listed above are the main ones we will need for data files in
 this book. But in real life we have many more possibilities. For
@@ -151,10 +151,14 @@ for how to open a CSV file, but this time navigate to the ``.sav`` file
 you want to import.
 
 As far as other statistical software goes, jamovi can also directly open
-/ import a wealth of other formats such as R, SAS, STATA, Excel,
+/ import a wealth of other formats such as R, SAS, Stata, Excel,
 LibreOffice, and JSON.
 
+
 --------
+
+.. |booksales|                         replace:: ``booksales.csv``
+.. _booksales:                         ../../_statics/data/booksales.csv
 
 .. |ID|                                image:: ../_images/variable-id.*
    :width: 16px

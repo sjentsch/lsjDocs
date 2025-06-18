@@ -21,8 +21,21 @@ say, a colleague) created earlier.
 If you decide you no longer need a particular analysis, you can remove
 it with the results context menu. Right-clicking on the analysis results
 will bring up a menu and by selecting ``Analysis`` and then ``Remove`` the
-analysis can be removed. But more on this later. First, let us take a
-more detailed look at the spreadsheet view.
+analysis can be removed.
+
+Copy and Paste
+~~~~~~~~~~~~~~
+
+jamovi produces nice tables and attractive plots that are formatted in
+accordance with the American Psychological Association (APA) Publication
+Manual. A very useful feature of jamovi is the opportunity to be able to
+directly copy and paste these, perhaps into a document, or into an email
+to a colleague. To copy results right click on the object of interest and
+from the menu select exactly what you want to copy. The menu allows you
+to choose to copy only the image or the entire analysis. Selecting
+``Copy`` copies the content to the clipboard and this can be pasted into
+other programs in the usual way. You can practice this later on when we
+do some analyses.
 
 Installing add-on modules into jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -75,6 +88,10 @@ file formats to a jamovi-file, or ``merge_cols_omv`` for adding columns from
 a second dataset while matching the two datasets by an index variable). Help
 how to use these functions can be obtained by preceding the function name by
 a ``?`` (e.g., ``?jmvReadWrite::read_omv``).
+
+But more on analyses later. First, let us take a more detailed look at the
+spreadsheet view.
+
 
 --------
 

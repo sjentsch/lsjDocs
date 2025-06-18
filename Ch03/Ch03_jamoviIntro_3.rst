@@ -77,6 +77,9 @@ New variables can be inserted or appended to the data set using the ``Add``
 button from the ``Data`` tab. The ``Add`` button also allows the addition
 of computed variables.
 
+Changing data from one level to another
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Sometimes you want to change the variable level. This can happen for all sorts
 of reasons. Sometimes when you import data from files, it can come to you in
 the wrong format. Numbers sometimes get imported as nominal |nominal|, text
@@ -142,24 +145,8 @@ their calculation row by row. For example, ``MEAN(A, B)`` will produce the
 mean of ``A`` and ``B`` for each row. Where as ``VMEAN(A)`` gives the mean of
 all the values in ``A``.
 
-Copy and Paste
-~~~~~~~~~~~~~~
-
-jamovi produces nice tables and attractive plots that are formatted in
-accordance with the American Psychological Association (APA) Publication
-Manual. A very useful feature of jamovi is the opportunity to be able to
-directly copy and paste these, perhaps into a Word document, or into an email
-to a colleague. To copy results right click on the object of interest and
-from the menu select exactly what you want to copy. The menu allows you
-to choose to copy only the image or the entire analysis. Selecting
-``Copy`` copies the content to the clipboard and this can be pasted into
-other programs in the usual way. You can practice this later on when we
-do some analyses.
 
 ------
-
-.. |booksales|                         replace:: ``booksales.csv``
-.. _booksales:                         ../../_statics/data/booksales.csv
 
 .. |ID|                                image:: ../_images/variable-id.*
    :width: 16px
