@@ -32,7 +32,7 @@ variable’s column:
   ``female`` would be nominal. So would a person’s name. Nominal variable
   values can also have a numeric value. These variables are used most often
   when importing data which codes values with numbers rather than text. For
-  example, a column in a dataset may contain the values 1 for ``male``, and 2
+  example, a column in a data set may contain the values 1 for ``male``, and 2
   for ``female``. It is possible to add nice “human-readable” labels to these
   values with the variable editor (more on this later).
 
@@ -95,17 +95,15 @@ the jamovi ``Data`` view. Click on the variable name in the top row of the data
 table and then select the desired measurement level under ``Measure Type`` –
 ``continuous`` |continuous|, ``ordinal`` |ordinal| or ``nominal`` |nominal|.
 
+.. _computed_variables:
 
-Computed variables
+Computed Variables
 ~~~~~~~~~~~~~~~~~~
 
-Computed Variables are those which take their value by performing a
-computation on other variables. Computed Variables can be used for a range of
+Computed variables are those which take their value by performing a
+computation on other variables. Computed variables can be used for a range of
 purposes, including log transforms, *z*-scores, sum-scores, negative scoring
-and means. There is another variable type, Transformed variables, that can be
-used to “recode” variables (e.g., when inverting items). This variable type is
-briefly described at the end of the subsection :ref:`EFA_in_jamovi` and in
-:numref:`fig-efa7`.
+and means.
 
 Computed variables can be added to the data set with the ``Add`` button
 available on the ``Data`` tab. This will produce a formula box where you can
@@ -124,6 +122,30 @@ of ``len``, the mean of ``A`` and ``B``, and the *z*-score of the variable
 ``dose``. :numref:`fig-computedvariable` shows the jamovi screen for the
 new variable computed as the *z*-score of ``dose`` (from the ``Tooth Growth``
 example data set).
+
+.. _transformed_variables:
+
+Transformed Variables
+~~~~~~~~~~~~~~~~~~~~~
+
+The transformation that is used when creating this type of variable, relies on
+a “receipe” that is :ref:`created once and can then be applied to multiple
+variables <_create_transformation>`. This section describes in more detail how
+to generate such a “receipe”. Transformed variables are often used to “recode”
+variables (e.g., when inverting items), a typical transformation which
+described in more detail at the end of the subsection :ref:`EFA_in_jamovi` and
+in :numref:`fig-efa7`. When transforming or recoding variables in jamovi, a new
+“transformed variable” is created from an original “source variable”. This
+permits you to have access to both the original, untransformed data, and the
+transformed data.
+
+After :ref:`having created a transformation <_create_transformation>`, you can
+apply this transformation using the transform editor. It lets you define the
+name and the description of the transformed variable to be created, which source
+variable should be used and which transformation should be applied (all
+transformations that already were defined are available from a drop-down menu in
+the editor).
+
 
 .. ----------------------------------------------------------------------------
 

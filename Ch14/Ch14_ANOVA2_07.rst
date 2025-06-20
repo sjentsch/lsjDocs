@@ -116,7 +116,7 @@ the class both matter a lot.
    :alt: jamovi descriptives for the |rtfm|_ data set
    :name: fig-rtfmdescriptives
 
-   jamovi descriptives for the |rtfm|_ dataset
+   jamovi descriptives for the |rtfm|_ data set
    
 .. ----------------------------------------------------------------------------
 
@@ -255,7 +255,7 @@ really true. Running the regression in the usual way gives the results shown in
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova7.*
-   :alt: Regression analysis for the rtfm dataset, unsaturated
+   :alt: Regression analysis for the rtfm data set, unsaturated
    :name: fig-factorialanova7
 
    Regression analysis for the |rtfm|_ data set in jamovi: Model with two
@@ -304,7 +304,7 @@ this will give you the table shown in :numref:`fig-factorialanova8`.
    :name: fig-factorialanova8
 
    Results table showing the Omnibus ANOVA Test from the jamovi regression
-   analysis using the |rtfm|_ dataset
+   analysis using the |rtfm|_ data set
    
 .. ----------------------------------------------------------------------------
 
@@ -379,10 +379,10 @@ the ANOVA, with results shown in :numref:`fig-factorialanova9`.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova9.*
-   :alt: ANOVA results for the |clinicaltrial| dataset: Unsaturated model
+   :alt: ANOVA results for the |clinicaltrial| data set: Unsaturated model
    :name: fig-factorialanova9
 
-   jamovi ANOVA results for the |clinicaltrial|_ dataset: Unsaturated model
+   jamovi ANOVA results for the |clinicaltrial|_ data set: Unsaturated model
    with the two main effects for ``drug`` and ``therapy`` but without an
    interaction component for these two factors
    
@@ -396,7 +396,7 @@ and ``therapyCBT`` as the predictors. The results are shown in
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova10.*
-   :alt: Regression: clinicaltrial dataset, generated contrast-variables
+   :alt: Regression: clinicaltrial data set, generated contrast-variables
    :name: fig-factorialanova10
 
    jamovi regression results for the |clinicaltrial|_ data set: Model with the

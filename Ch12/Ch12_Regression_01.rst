@@ -24,6 +24,8 @@ The data
    | **Dani’s son’s hours slept** |  3.25 | 12.07 |  8.05 |   7.95 |     2.07 |  3.21 |
    +------------------------------+-------+-------+-------+--------+----------+-------+
 
+.. _parenthood:
+
 Let us turn to a topic close to every parent’s heart: sleep. The data set
 we will use is fictitious, but based on real events. Suppose I am curious
 to find out how much my infant son’s sleeping habits affect my mood.
@@ -270,7 +272,7 @@ variables, an *X* and a *Y*. For all four data sets the mean value for *X* is
 9 and the mean for *Y* is 7.5. The standard deviations for all *X* variables
 are almost identical, as are those for the *Y* variables. And in each case the
 correlation between *X* and *Y* is *r* = 0.816`. You can verify this yourself,
-since I happen to have saved it as a dataset called |anscombe|_.
+since I happen to have saved it as a data set called |anscombe|_.
 
 You would think that these four data sets would look pretty similar to one another.
 They do not. If we draw scatterplots of *X* against *Y* for all four variables,

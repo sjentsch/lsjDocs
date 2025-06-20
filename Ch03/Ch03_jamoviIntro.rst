@@ -26,7 +26,7 @@ will be focused on getting you started with finding your way around the
 jamovi graphical user interface (GUI). Our goal in this chapter is not to
 learn any statistical concepts: we are just trying to learn the basics of
 how jamovi works and get comfortable interacting with the system. To do this
-we will spend a bit of time looking at datasets and variables. In doing so,
+we will spend a bit of time looking at data sets and variables. In doing so,
 you will get something of a feel for what it is like to work in jamovi.
 
 However, before going into any of the specifics, it is worth talking a

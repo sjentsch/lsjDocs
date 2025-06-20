@@ -151,7 +151,7 @@ came from a normal distribution at all. Here is what happens to the QQ plot:
 
 .. figure:: ../_images/lsj_qq_2b.*
    :alt: QQ plot for the data (skewed) data in the ``afl.margins`` variable
-         of the |aflsmall_margins| dataset
+         of the |aflsmall_margins| data set
    :name: fig-qq_2b
 
    QQ plot for the (skewed) data in the ``afl.margins`` variable of the

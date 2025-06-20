@@ -156,7 +156,7 @@ original variables.
 
 .. [#]
    If you are interested, you can look at how this was done in the |chico2|_
-   dataset
+   data set
 
 .. ----------------------------------------------------------------------------
 

@@ -120,7 +120,7 @@ than use a separate one for each group.
 
    jamovi screenshot showing the estimated marginal means for the saturated
    model, i.e. including the interaction component, with the |clinicaltrial|_
-   dataset
+   data set
    
 .. ----------------------------------------------------------------------------
 
@@ -151,7 +151,7 @@ provides the marginal means for the analysis shown in :numref:`fig-margmean2`.
 
    jamovi screenshot showing the estimated marginal means for the unsaturated
    model, i.e. without the interaction component, with the |clinicaltrial|_
-   dataset
+   data set
    
 .. ----------------------------------------------------------------------------
 

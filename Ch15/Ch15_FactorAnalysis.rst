@@ -21,7 +21,7 @@ related to each other and whether the patterns of relatedness suggest
 anything interesting and meaningful. For example, we are often
 interested in exploring whether there are any underlying unobserved
 **latent factors** that are represented by the observed, directly
-measured, variables in our dataset. In statistics, latent factors are
+measured, variables in our data set. In statistics, latent factors are
 initially hidden variables that are not directly observed but are rather
 inferred (through statistical analysis) from other variables that are
 observed (directly measured).

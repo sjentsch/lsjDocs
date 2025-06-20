@@ -37,6 +37,8 @@ to choose to copy only the image or the entire analysis. Selecting
 other programs in the usual way. You can practice this later on when we
 do some analyses.
 
+.. _modules:
+
 Installing add-on modules into jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -67,6 +69,8 @@ modules to install include ``scatr`` (added under ``Descriptives``) and |Rj|_.
    
 .. ----------------------------------------------------------------------------
 
+.. _syntax_mode:
+
 Syntax mode
 ~~~~~~~~~~~
 
@@ -85,7 +89,7 @@ installed using ``install.packages("jmvReadWrite")`` in an R-session. The
 package also contains further functions for handling jamovi-files in R (e.g.,
 ``write_omv`` for writing jamovi-files, ``convert_omv`` for converting other
 file formats to a jamovi-file, or ``merge_cols_omv`` for adding columns from
-a second dataset while matching the two datasets by an index variable). Help
+a second data set while matching the two data sets by an index variable). Help
 how to use these functions can be obtained by preceding the function name by
 a ``?`` (e.g., ``?jmvReadWrite::read_omv``).
 

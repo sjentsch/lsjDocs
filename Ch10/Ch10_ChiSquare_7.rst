@@ -100,7 +100,7 @@ Doing the McNemar test in jamovi
 Now that you know what the McNemar test is all about, lets actually run one.
 The |agpp|_ data set contains the raw data that I discussed previously. It
 contains three variables, an ``id`` variable that labels each participant in
-the dataset (we will see why that is useful in a moment), a ``response_before``
+the data set (we will see why that is useful in a moment), a ``response_before``
 variable that records the person’s answer when they were asked the question the
 first time, and a ``response_after`` variable that shows the answer that they
 gave when asked the same question a second time. Notice that each participant

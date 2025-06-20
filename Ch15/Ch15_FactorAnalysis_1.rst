@@ -73,7 +73,7 @@ Checking assumptions
 
 There are a couple of assumptions that need to be checked as part of the
 analysis. The first assumption is **sphericity**, which essentially
-checks that the variables in your dataset are correlated with each other
+checks that the variables in your data set are correlated with each other
 to the extent that they can potentially be summarised with a smaller set
 of factors. Bartlett’s test for sphericity checks whether the observed
 correlation matrix diverges significantly from a zero (or null)
@@ -426,7 +426,7 @@ are happy with this solution and want to use our factors in further analysis.
 The straightforward option is to calculate an overall (average) score for each
 factor by adding together the score for each variable that loads substantively
 onto the factor and then dividing by the number of variables. For each person
-in our dataset that would mean, for example for the Agreeableness factor,
+in our data set that would mean, for example for the Agreeableness factor,
 adding together ``A1 + A2 + A3 + A4 + A5``, and then dividing by ``5``.\ [#]_
 In essence, this means that the factor score we have calculated is based on
 equally weighted scores from each of the included variables. We can do this in
@@ -464,7 +464,7 @@ steps:
 
 #. Use the |Rj|_ editor to run the EFA in ``R`` to the same specification as
    the one in jamovi (i.e., five factors and Oblimin rotation) and compute
-   optimally weighted factor scores. Save the new dataset, with the factor
+   optimally weighted factor scores. Save the new data set, with the factor
    scores, to a file (see :numref:`fig-efa9`).
 
 #. Open up the new file in jamovi (see :numref:`fig-efa10`) and check that

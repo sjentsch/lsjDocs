@@ -27,7 +27,7 @@ PCA has been popular in Psychology for a number of reasons, and therefore it is
 worth covering, although nowadays EFA is just as easy to do given the power of
 desktop computers and can be less susceptible to bias than PCA, especially with
 a small number of factors and variables. We will use the same |bfi_sample|_
-dataset as before. Much of the procedure is similar to EFA, so although there
+data set as before. Much of the procedure is similar to EFA, so although there
 are some conceptual differences, practically the steps are the same,\ [#]_ and
 with large samples and a sufficient number of factors and variables, the
 results from PCA and EFA should be fairly similar.
