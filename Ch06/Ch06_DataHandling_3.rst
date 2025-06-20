@@ -1,7 +1,7 @@
 .. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_ and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_
 
-Transforming and recoding a variable
-------------------------------------
+Transforming variables
+----------------------
 
 It is not uncommon in real-world data analysis to find that one of your
 variables is not quite equivalent to the variable that you really want. For
@@ -12,18 +12,25 @@ numeric variable into a different numeric variable (e.g., you may want
 to analyse at the absolute value of the original variable). In this
 section I will describe a few key ways you can do these things in jamovi.
 
-Creating a transformed variable
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Almost *anything* you do to a variable is a transformation. In jamovi, there
+are two kinds of such **variable transformations**. In one case, you create
+a new variable based upon a (often mathematical) function. This type of
+transformed variable is called a :ref:`Computed Variable
+<computed_variables>`. In the other case, you create a new variable based upon
+some rule set, determining how each value in the original variable shall be
+transformed into a value in the new variable. This type of variable is called a 
+:ref:`Transformed Variable <transformed_variables>`.
 
-The first trick to discuss is the idea of **transforming** a variable.
-Taken literally, *anything* you do to a variable is a transformation,
-but in practice what it usually means is that you apply a relatively
-simple mathematical function to the original variable in order to create
-a new variable that either (a) provides a better way of describing the
-thing you are actually interested in, or (b) is more closely in agreement
-with the assumptions of the statistical tests you want to do. Since, at
-this stage, I have not talked about statistical tests or their
-assumptions, I will show you an example based on the first case.
+Creating a computed variable
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When creating a computed variable, you apply a relatively simple function to
+the original variable in order to create a new variable that either (a)
+provides a better way of describing the thing you are actually interested in,
+or (b) is more closely in agreement with the assumptions of the statistical
+tests you want to do. Since, at this stage, I have not talked about
+statistical tests or their assumptions, I will show you an example based on
+the first case.
 
 Suppose I have run a short study in which I ask 10 people a single
 question:
@@ -38,8 +45,8 @@ if you think about it, this is not the best way to represent these responses.
 Because of the fairly symmetric way that we set up the response scale, there is
 a sense in which the midpoint of the scale should have been coded as 0 (no
 opinion), and the two endpoints should be **+3** (strongly agree) and **-3**
-(strongly disagree). By recoding the data in this way it is a bit more
-reflective of how we really think about the responses. The recoding here is
+(strongly disagree). By transforming the data in this way it is a bit more
+reflective of how we really think about the responses. The transformation is
 pretty straightforward, we just subtract 4 from the raw scores. In jamovi you
 can do this by computing a new variable: click on the ``Compute`` button
 in the ``Data`` tab and you will see that a new variable has been added to the
@@ -117,9 +124,6 @@ depending of the sign of the original value in ``likert.centred``.\ [#]_
 And we are done. We now have three shiny new variables, all of which are
 useful transformations of the original ``likert.raw`` variable.
 
-Collapsing a variable into a smaller number of discrete levels or categories
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 One pragmatic task that comes up quite often is the problem of
 collapsing a variable into a smaller number of discrete levels or
 categories. For instance, suppose I am interested in looking at the age
@@ -129,28 +133,26 @@ distribution of people at a social gathering:
 
    60, 58, 24, 26, 34, 42, 31, 30, 33, 2, 9
 
-In some situations it can be quite helpful to group these into a
-smallish number of categories. For example, we could group the data into
-three broad categories: young (0-20), adult (21-40) and older (41-60).
-This is a quite coarse-grained classification, and the labels that I have
-attached only make sense in the context of this data set (e.g., viewed
-more generally, a 42 year old would not consider themselves as “older”).
-We can slice this variable up quite easily using the jamovi ``IF``
-function that we have already used. This time we have to specify nested
-``IF`` statements, meaning simply that ``IF`` the first logical expression is
-``TRUE``, insert a first value, but ``IF`` a second logical expression is ``TRUE``,
-insert a second value, but ``IF`` a third logical expression is ``TRUE``, then
+In some situations it can be quite helpful to group these into a smaller
+number of categories. For example, we could group the data into three broad
+categories: young (0-20), adult (21-40) and older (41-60). This is a quite
+coarse-grained classification, and the labels that I have attached only make
+sense in the context of this data set (e.g., viewed more generally, a 42 year
+old would not consider themselves as “older”). We can slice this variable up
+quite easily using the jamovi ``IF`` function that we have already used. This
+time we have to specify nested ``IF`` statements, meaning simply that ``IF``
+the first logical expression is ``TRUE``, insert a first value, but ``IF`` a
+second logical expression is ``TRUE``, insert a second value, and otherwise
 insert a third value. This can be written as:
 
 .. code-block:: text
 
-   IF(Age >= 0 and Age <= 20, 1, IF(Age >= 21 and Age <= 40, 2, IF(Age >= 41 and Age <= 60, 3 )))
+   IF(Age <= 20, 1, IF(Age >= 21 and Age <= 40, 2, 3))
 
-Note that there are three left parentheses used during the nesting, so
-the whole statement has to end with three right parentheses otherwise
-you will get an error message. The jamovi screen shot for this data
-manipulation, along with an accompanying frequency table, is shown in
-:numref:`fig-agecats`:
+Note that there are two left parentheses used during the nesting, so the whole
+statement has to end with two right parentheses otherwise you will get an error
+message. The jamovi screen shot for this data manipulation, along with an
+accompanying frequency table, is shown in :numref:`fig-agecats`:
 
 .. ----------------------------------------------------------------------------
 
@@ -163,35 +165,35 @@ manipulation, along with an accompanying frequency table, is shown in
    
 .. ----------------------------------------------------------------------------
 
-It is important to take the time to figure out whether or not the
-resulting categories make any sense at all in terms of your research
-project. If they do not make any sense to you as meaningful categories,
-then any data analysis that uses those categories is likely to be just
-as meaningless. More generally, in practice I have noticed that people
-have a very strong desire to carve their (continuous and messy) data
-into a few (discrete and simple) categories, and then run analyses using
-the categorised data instead of the original data.\ [#]_ I would not go so
-far as to say that this is an inherently bad idea, but it does have some
-fairly serious drawbacks at times, so I would advise some caution if you
-are thinking about doing it.
+It is important to take the time to figure out whether or not the resulting
+categories make any sense at all in terms of your research project. If they
+do not make any sense to you as meaningful categories, then any data analysis
+that uses those categories is likely to be just as meaningless. More
+generally, in practice I have noticed that people have a very strong desire
+to carve their (continuous and messy) data into a few (discrete and simple)
+categories, and then run analyses using the categorised data instead of the
+original data.\ [#]_ I would not go so far as to say that this is an
+inherently bad idea, but it does have some fairly serious drawbacks at times,
+so I would advise some caution if you are thinking about doing it.
+
+.. _create_transformation:
 
 Creating a transformation that can be applied to multiple variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sometimes you want to apply the same transformation to more than one
-variable, for example when you have multiple questionnaire items that
-all need to be recalculated or recoded in the same way. And one of the
-neat features in jamovi is that you can create a transformation, using
-the ``Transform`` button in the ``Data`` tab, that can then be saved and
-applied to multiple variables. Let us go back to the first example above, using
-the |likert|_ data set that contains a single variable with raw
-Likert-scale responses for 10 people. To create a transformation that
-you can save and then apply across multiple variables (assuming you had
-more variables like this in your data file), first in the spreadsheet
-editor select (i.e., click) the variable you want to use to initially
-create the transformation. In our example this is ``likert.raw``. Next
-click the ``Transform`` button in the jamovi ``Data`` tab, and you will see
-something like :numref:`fig-transform1`.
+Sometimes you want to apply the same transformation to more than one variable,
+for example when you have multiple questionnaire items that all need to be
+recalculated or recoded in the same way. And one of the neat features in
+jamovi is that you can create a transformation, using the ``Transform`` button
+in the ``Data`` tab, that can then be saved and applied to multiple variables.
+Let us go back to the first example above, using the |likert|_ data set that
+contains a single variable with raw Likert-scale responses for 10 people. To
+create a transformation that you can save and then apply across multiple
+variables (assuming you had more variables like this in your data file), first
+in the spreadsheet editor select (i.e., click) the variable you want to use to
+initially create the transformation. In our example this is ``likert.raw``.
+Next click the ``Transform`` button in the jamovi ``Data`` tab, and you will
+see something like :numref:`fig-transform1`.
 
 .. ----------------------------------------------------------------------------
 
@@ -265,6 +267,7 @@ variable that you want to recode.
    
 .. ----------------------------------------------------------------------------
 
+
 ------
 
 .. [#]
@@ -294,6 +297,9 @@ variable that you want to recode.
 
 .. |likert|                            replace:: ``likert``
 .. _likert:                            ../../_statics/data/likert.omv
+
+.. |nightgarden|                       replace:: ``nightgarden``
+.. _nightgarden:                       ../../_statics/data/nightgarden.omv
 
 .. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px

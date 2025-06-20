@@ -13,6 +13,8 @@ Pragmatic matters
    Ch06_DataHandling_3
    Ch06_DataHandling_4
    Ch06_DataHandling_5
+   Ch06_DataHandling_6
+   Ch06_DataHandling_7
 
 
 .. epigraph::
@@ -37,8 +39,8 @@ in your data set into the format that you need it. The purpose of this
 chapter is to provide a basic introduction to these pragmatic topics.
 Although the chapter is motivated by the kinds of practical issues that
 arise when manipulating real data, I will stick with the practice that
-I have adopted through most of the book and rely on very small, toy data
-sets that illustrate the underlying issue. Because this chapter is
+I have adopted throughout most of the book and rely on very small, toy
+data sets that illustrate the underlying issue. Because this chapter is
 essentially a collection of techniques and does not tell a single
 coherent story, it may be useful to start with a list of topics:
 
@@ -51,6 +53,10 @@ coherent story, it may be useful to start with a list of topics:
 - :doc:`Ch06_DataHandling_4`
 
 - :doc:`Ch06_DataHandling_5`
+
+- :doc:`Ch06_DataHandling_6`
+
+- :doc:`Ch06_DataHandling_7`
 
 As you can see, the list of topics that the chapter covers is pretty broad, and
 there is a *lot* of content there. Even though this is one of the longest and

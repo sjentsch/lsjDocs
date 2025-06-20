@@ -24,7 +24,7 @@ humans\ [#]_ and it is definitely not true of jamovi. jamovi is not
 infinitely malleable, it has rather firm opinions on the topic of what
 is and is not true, at least as regards basic mathematics. If I ask it to
 calculate ``2 + 2``,\ [#]_ it always gives the same answer, and it is
-not bloody 5!
+not 5!
 
 Of course, so far jamovi is just doing the calculations. I have not asked
 it to explicitly assert that ``2 + 2 = 4`` is a true statement. If I
@@ -41,12 +41,12 @@ thinks of the Party slogan, so type this into the compute new variable
    2 + 2 == 5
 
 And what do you get? It should be a whole set of ``FALSE`` values in the
-spreadsheet column for your newly computed variable. Booyah! Freedom and ponies
-for all! Or something like that. Anyway, it was worth having a look at what
-happens if I try to *force* jamovi to believe that two plus two is five by
-making a statement like ``2 + 2 = 5``. I know that if I do this in another
-program, say ``R``, then it throws up an error message. But wait, if you do
-this in jamovi you get a whole set of ``FALSE`` values. So what is going on?
+spreadsheet column for your newly computed variable. It was worth having a
+look at what happens if I try to *force* jamovi to believe that two plus two
+is five by making a statement like ``2 + 2 = 5``. I know that if I do this in
+another program, say ``R``, then it throws up an error message. But wait, if
+you do this in jamovi you get a whole set of ``FALSE`` values. So what is
+going on?
 Well, it seems that jamovi is being pretty smart and realises that you are
 testing whether it is ``TRUE`` or ``FALSE`` that ``2 + 2 = 5``, regardless of
 whether you use the correct **equality operator**, ``==``, or the equals sign
@@ -259,6 +259,7 @@ in the order that jamovi processes them:
    ! " # $ % & ' ( ) * + , - . /  0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ 
    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ]  ^ _ ` 
    a b c d e f g h i j k l m n o p q r s t u v w x y z } | {
+
 
 ------
 
