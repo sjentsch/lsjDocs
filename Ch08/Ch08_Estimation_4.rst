@@ -52,9 +52,9 @@ statistical justification for this intuitive answer. However, for the moment
 what I want to do is make sure you recognise that the sample statistic and the
 estimate of the population parameter are conceptually different things. A
 sample statistic is a description of your data, whereas the estimate is a guess
-about the population. With that in mind, statisticians often different notation
-to refer to them. For instance, if the true population mean is denoted µ,
-then we would use :math:`\hat\mu` to refer to our estimate of the population
+about the population. With that in mind, statisticians often use different
+notation to refer to them. For instance, if the true population mean is denoted
+µ, then we would use :math:`\hat\mu` to refer to our estimate of the population
 mean. In contrast, the sample mean is denoted *X̄* or sometimes *m* or *M*.
 However, in simple random samples the estimate of the population mean is
 identical to the sample mean. If I observe a sample mean of *X̄* = 98.5 then my
@@ -122,9 +122,8 @@ that the population mean is 20. Sure, you probably would not feel very
 confident in that guess because you have only the one observation to
 work with, but it is still the best guess you can make.
 
-Let us extend this example a little. Suppose I now make a second
-observation. My data set now has *N* = 2 observations of the
-cromulence of shoes, and the complete sample now looks like this:
+Let us extend this example a little. My data set now has *N* = 2 observations
+of the cromulence of shoes, and the complete sample now looks like this:
 
 ``20, 22``
 
@@ -155,11 +154,13 @@ If I do this over and over again, and plot a histogram of these sample standard
 deviations, what I have is the *sampling distribution of the standard
 deviation*. I have plotted this distribution in 
 :numref:`fig-samplingDistSampleSD`. Even though the true population standard
-deviation is 15 the average of the *sample* standard deviations is only 8.5.
-Notice that this is a very different result to what we found in 
-:numref:`fig-samplingDistDiffN` (middle panel) when we plotted the sampling
-distribution of the mean, where the population mean is 100 and the average of
-the sample means is also 100.
+deviation is 15 this experiment would, on average, produce an estimated
+standard deviation of only 8.5 – well below the true value! In other words,
+the sample standard deviation is a biased estimate of the population standard
+deviation. Notice that this is a very different result to what we found in 
+:numref:`fig-samplingDistDiffN` (b) when we plotted the sampling distribution
+of the mean, where the population mean is 100 and the average of the sample
+means is also 100.
 
 .. ----------------------------------------------------------------------------
 
@@ -181,17 +182,20 @@ Now let us extend the simulation. Instead of restricting ourselves to the
 situation where *N* = 2, let us repeat the exercise for sample sizes
 from 1 to 10. If we plot the average sample mean and average sample
 standard deviation as a function of sample size, you get the results
-shown in :numref:`fig-biasMeanSD`. On the left hand side I have plotted the
-average sample mean and on the right-hand side I have plotted the average
-standard deviation. The two plots are quite different: *on average*, the
-average sample mean is equal to the population mean. It is an **unbiased
-estimator**, which is essentially the reason why your best estimate for the
-population mean is the sample mean.\ [#]_ The plot on the right is quite
-different: on average, the sample standard deviation *s* is *smaller* than
-the population standard deviation σ. It is a **biased estimator**. In other
-words, if we want to make a “best guess” :math:`\hat\sigma` about the value
-of the population standard deviation σ we should make sure our guess is a
-little bit larger than the sample standard deviation *s*.
+shown in :numref:`fig-biasMeanSD`. For the figure I generated 10 000 simulated
+data sets with 1 observation each, 10 000 more with 2 observations, and so on
+up to a sample size of 10. Each data set consisted of fake IQ data, that is
+the data were normally distributed with a true population mean of 100 and
+standard deviation 15. On average, the sample means turn out to be 100,
+regardless of sample size (panel a), and is equal to the population mean. It
+is an **unbiased estimator**, which is essentially the reason why your best
+estimate for the population mean is the sample mean.\ [#]_ The plot on the
+right (panel b) is quite different: on average, the sample standard deviation
+*s* is *smaller* than the population standard deviation σ, especially for
+small sample sizes. It is a **biased estimator**. In other words, if we want
+to make a “best guess” :math:`\hat\sigma` about the value of the population
+standard deviation σ we should make sure our guess is a little bit larger than
+the sample standard deviation *s*.
 
 .. ----------------------------------------------------------------------------
 
@@ -202,8 +206,8 @@ little bit larger than the sample standard deviation *s*.
    Illustration of the fact that the sample mean is an unbiased estimator of
    the population mean (left panel), but the sample standard deviation is a
    biased estimator of the population standard deviation (right panel). For
-   the figure, I generated 10,000 simulated data sets with one observation
-   each, 10,000 more with two observations, and so on up to a sample size of
+   the figure, I generated 10 000 simulated data sets with one observation
+   each, 10 000 more with two observations, and so on up to a sample size of
    \10. Each data set consisted of fake IQ data, that is the data were normally
    distributed with a true population mean of 100 and standard deviation 15.
    On average, the sample means turn out to be 100, regardless of sample size

@@ -12,8 +12,8 @@ Estimating a confidence interval
 Up to this point in this chapter, I have outlined the basics of sampling theory
 which statisticians rely on to make guesses about population parameters on the
 basis of a sample of data. As this discussion illustrates, one of the reasons
-we need all this sampling theory is that every data set leaves us with a some
-of uncertainty, so our estimates are never going to be perfectly accurate. The
+we need all this sampling theory is that every data set leaves us with some
+uncertainty, so our estimates are never going to be perfectly accurate. The
 thing that has been missing from this discussion is an attempt to *quantify*
 the amount of uncertainty that attaches to our estimate. It is not enough to be
 able guess that, say, the mean IQ of undergraduate psychology students is 115
@@ -177,8 +177,9 @@ part of the functionality of ``Descriptives``. Just set the check box
 
 95\% confidence intervals are the de facto standard in psychology. So, for
 example, if I load the |IQsim|_ data set (our simulated large sample data with
-N=10,000), and check ``Confidence interval for Mean`` under ``Descriptives``,
-we obtain a mean IQ score of 99.683 with a 95\% CI from 99.391 to 99.975. 
+*N* = 10 000), and check ``Confidence interval for Mean`` under
+``Descriptives``, we obtain a mean IQ score of 99.683 with a 95\% CI from
+99.391 to 99.975. 
 
 When it comes to plotting confidence intervals for the mean in jamovi, this is
 not (yet) available as part of the ``Descriptives`` options. However, when we

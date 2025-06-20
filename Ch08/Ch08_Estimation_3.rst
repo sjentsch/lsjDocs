@@ -31,11 +31,11 @@ Sampling distribution of the mean
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 With this in mind, let us abandon the idea that our studies will have
-sample sizes of 10,000 and consider instead a very modest experiment
+sample sizes of 10 000 and consider instead a very modest experiment
 indeed. This time around we will sample *N* = 5 people and measure
 their IQ scores. As before, I can simulate this experiment in jamovi
-``= NORM(100,15)`` function, but I only need five participant IDs this
-time, not 10,000. These are the five numbers that jamovi generated:
+``= NORM(100, 15)`` function, but I only need five participant IDs this
+time, not 10 000. These are the five numbers that jamovi generated:
 
 .. code-block:: text
 
@@ -95,7 +95,7 @@ out like this:
 
    95.0 101.0 101.6 103.8 104.4 …
 
-What if I continued like this for 10,000 replications, and then drew a
+What if I continued like this for 10 000 replications, and then drew a
 histogram. Well that is exactly what I did, and you can see the results
 in :numref:`fig-samplingDist4`. As this picture illustrates, the average
 of 5 IQ scores is usually between 90 and 110. But more importantly, what
@@ -169,22 +169,31 @@ The central limit theorem
 At this point I hope you have a pretty good sense of what sampling
 distributions are, and in particular what the sampling distribution of
 the mean is. In this section I want to talk about how the sampling
-distribution of the mean changes as a function of sample size.
-Intuitively, you already know part of the answer. If you only have a few
-observations, the sample mean is likely to be quite inaccurate. If you
-replicate a small experiment and recalculate the mean you will get a very
-different answer. In other words, the sampling distribution is quite
-wide. If you replicate a large experiment and recalculate the sample
-mean you will probably get the same answer you got last time, so the
-sampling distribution will be very narrow. You can see this visually in
-:numref:`fig-samplingDistDiffN`, showing that the bigger the
-sample size, the narrower the sampling distribution gets. We can
-quantify this effect by calculating the standard deviation of the
-sampling distribution, which is referred to as the **standard error**.
-The standard error of a statistic is often denoted SE, and since we are
-usually interested in the standard error of the sample *mean*, we often
-use the acronym SEM. As you can see just by looking at the picture, as
-the sample size *N* increases, the SEM decreases.
+distribution of the mean changes as a function of sample size. Intuitively,
+you already know part of the answer. If you only have a few observations, the
+sample mean is likely to be quite inaccurate. If you replicate a small
+experiment and recalculate the mean you will get a very different answer. In
+other words, the sampling distribution is quite wide. If you replicate a large
+experiment and recalculate the sample mean you will probably get the same
+answer you got last time, so the sampling distribution will be very narrow.
+You can see this visually in :numref:`fig-samplingDistDiffN`, showing that the
+bigger the sample size, the narrower the sampling distribution gets: In panel
+(a), each data set contained only a single observation, so the mean of each
+sample is just one person’s IQ score. As a consequence, the sampling
+distribution of the mean is of course identical to the population distribution
+of IQ scores. In panel (b), we raise the sample size to 2, and the mean of any
+one sample tends to be closer to the population mean than a one person’s IQ
+score, and so the histogram (i.e., the sampling distribution) is a bit
+narrower than the population distribution. In panel (c), we raise the sample
+size to 10 (right panel), and we can see that the distribution of sample means
+tend to be fairly tightly clustered around the true population mean.
+
+We can quantify this effect by calculating the standard deviation of the
+sampling distribution, which is referred to as the **standard error**. The
+standard error of a statistic is often denoted SE, and since we are usually
+interested in the standard error of the sample *mean*, we often use the
+acronym SEM. As you can see just by looking at the picture, as the sample size
+*N* increases, the SEM decreases.
 
 .. ----------------------------------------------------------------------------
 
@@ -193,50 +202,40 @@ the sample size *N* increases, the SEM decreases.
    :name: fig-samplingDistDiffN
 
    Illustration of the how sampling distribution of the mean depends on sample
-   size. In each panel I generated 10,000 samples of IQ data and calculated the
+   size. In each panel I generated 10 000 samples of IQ data and calculated the
    mean IQ observed within each of these data sets. The histograms in these
    plots show the distribution of these means (i.e., the sampling distribution
    of the mean). Each individual IQ score was drawn from a normal distribution
    with mean 100 and standard deviation 15, which is shown as the solid black
-   line. In the left panel, each data set contained only a single observation,
-   so the mean of each sample is just one person’s IQ score. As a consequence,
-   the sampling distribution of the mean is of course identical to the
-   population distribution of IQ scores. However, when we raise the sample size
-   to 2 (middle panel) the mean of any one sample tends to be closer to the
-   population mean than a one person’s IQ score, and so the histogram (i.e.,
-   the sampling distribution) is a bit narrower than the population
-   distribution. By the time we raise the sample size to 10 (right panel), we
-   can see that the distribution of sample means tend to be fairly tightly
-   clustered around the true population mean.
+   line.
    
 .. ----------------------------------------------------------------------------
 
 Okay, so that is one part of the story. However, there is something I have
-been glossing over so far. All my examples up to this point have been
-based on the “IQ scores” experiments, and because IQ scores are roughly
-normally distributed I have assumed that the population distribution is
-normal. What if it is not normal? What happens to the sampling
-distribution of the mean? The remarkable thing is this, no matter what
-shape your population distribution is, as *N* increases the
-sampling distribution of the mean starts to look more like a normal
-distribution. To give you a sense of this I ran some simulations. To do
-this, I started with the “ramped” distribution shown in the histogram in
-:numref:`fig-cltDemo` (top-left panel). As you can see by comparing the
-triangular shaped histogram to the bell curve plotted by the black line,
-the population distribution does not look very much like a normal distribution
-at all. Next, I simulated the results of a large number of experiments. In
-each experiment I took *N* = 2 samples from this distribution, and then
-calculated the sample mean. :numref:`fig-cltDemo` (top-right panel) plots
-the histogram of these sample means (i.e., the sampling distribution of the
-mean for *N* = 2). This time, the histogram produces a ∩-shaped distribution.
-It is still not normal, but it is a lot closer to the black line than the
-population distribution in :numref:`fig-cltDemo` (top-left panel). When I
-increase the sample size to *N* = 4, the sampling distribution of the mean
-is very close to normal (:numref:`fig-cltDemo`, bottom-left panel), and by
-the time we reach a sample size of *N* = 8 (:numref:`fig-cltDemo`; bottom-
-right panel) it is almost perfectly normal. In other words, as long as your
-sample size is not tiny, the sampling distribution of the mean will be
-approximately normal no matter what your population distribution looks like!
+been glossing over so far. All my examples up to this point have been based on
+the “IQ scores” experiments, and because IQ scores are roughly normally
+distributed I have assumed that the population distribution is normal. What if
+it is not normal? What happens to the sampling distribution of the mean? The
+remarkable thing is this, no matter what shape your population distribution
+is, as *N* increases the sampling distribution of the mean starts to look more
+like a normal distribution. To give you a sense of this I ran some
+simulations. To do this, I started with the “ramped” distribution shown in the
+histogram in :numref:`fig-cltDemo`a. As you can see by comparing the
+triangular shaped histogram to the bell curve plotted by the black line, the
+population distribution does not look very much like a normal distribution at
+all. Next, I simulated the results of a large number of experiments. In each
+experiment I took *N* = 2 samples from this distribution, and then calculated
+the sample mean. :numref:`fig-cltDemo`b plots the histogram of these sample
+means (i.e., the sampling distribution of the mean for *N* = 2). This time,
+the histogram produces a ∩-shaped distribution. It is still not normal, but it
+is a lot closer to the black line than the population distribution in
+:numref:`fig-cltDemo`a. When I increase the sample size to *N* = 4, the
+sampling distribution of the mean is very close to normal
+(:numref:`fig-cltDemo`c), and by the time we reach a sample size of *N* = 8
+(:numref:`fig-cltDemo`d) it is almost perfectly normal. In other words, as
+long as your sample size is not tiny, the sampling distribution of the mean
+will be approximately normal no matter what your population distribution looks
+like!
 
 .. ----------------------------------------------------------------------------
 
@@ -244,11 +243,11 @@ approximately normal no matter what your population distribution looks like!
    :alt: Demonstration of the central limit theorem 
    :name: fig-cltDemo
 
-   Demonstration of the central limit theorem: In the top-left panel, we have a
+   Demonstration of the central limit theorem: In the panel (a), we have a
    non-normal population distribution, and the remaining panels show the
-   sampling distribution of the mean for samples of size 2 (top-right), 4 
-   (bottom-left) and 8 (bottom-right) for data drawn from the distribution in
-   the top-left panel. As you can see, even though the original population
+   sampling distribution of the mean for samples of size 2 (panel b), 4 
+   (panel c) and 8 (panel d) for data drawn from the distribution in the
+   top-left panel. As you can see, even though the original population
    distribution is non-normal the sampling distribution of the mean becomes
    pretty close to normal by the time you have a sample of even four
    observations.
@@ -273,7 +272,7 @@ as the **central limit theorem**. Among other things, the central limit
 theorem tells us that if the population distribution has mean
 µ and standard deviation σ, then the sampling
 distribution of the mean also has mean µ and the standard
-error of the mean is
+error of the mean is:
 
 .. math:: \mbox{SEM} = \frac{\sigma}{ \sqrt{N} }
 

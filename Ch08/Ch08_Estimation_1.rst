@@ -3,26 +3,25 @@
 Samples, populations and sampling
 ---------------------------------
 
-In the prelude to Part  I discussed the riddle of induction and
-highlighted the fact that *all* learning requires you to make
-assumptions. Accepting that this is true, our first task to come up with
-some fairly general assumptions about data that make sense. This is
-where **sampling theory** comes in. If probability theory is the
-foundations upon which all statistical theory builds, sampling theory is
-the frame around which you can build the rest of the house. Sampling
-theory plays a huge role in specifying the assumptions upon which your
-statistical inferences rely. And in order to talk about “making
-inferences” the way statisticians think about it we need to be a bit
+In the prelude to part IV, I discussed the riddle of induction and highlighted
+the fact that *all* learning requires you to make assumptions. Accepting that
+this is true, our first task to come up with some fairly general assumptions
+about data that make sense. This is where **sampling theory** comes in. If
+probability theory is the foundations upon which all statistical theory
+builds, sampling theory is the frame around which you can build the rest of
+the house. Sampling theory plays a huge role in specifying the assumptions
+upon which your statistical inferences rely. And in order to talk about
+“making inferences” the way statisticians think about it we need to be a bit
 more explicit about what it is that we are drawing inferences *from* (the
 sample) and what it is that we are drawing inferences *about* (the
 population).
 
 In almost every situation of interest what we have available to us as 
-researchers is a **sample** of data. We might have run experiment with some
+researchers is a **sample** of data. We might have run an experiment with some
 number of participants, a polling company might have phoned some number of
 people to ask questions about voting intentions, and so on. In this way the
-data set available to us is finite and incomplete. We can not possibly get every
-person in the world to do our experiment, for example a polling company
+data set available to us is finite and incomplete. We can not possibly get
+every person in the world to do our experiment, for example a polling company
 does not have the time or the money to ring up every voter in the country. In
 our earlier discussion of :doc:`../Ch04/Ch04_Descriptives`, this sample was
 the only thing we were interested in. Our only goal was to find ways of
@@ -65,9 +64,6 @@ which of the following would count as “the population”:
 
 -  Any human being, past, present or future?
 
--  Any biological organism with a sufficient degree of intelligence
-   operating in a terrestrial environment?
-
 -  Any intelligent being?
 
 Each of these defines a real group of mind-possessing entities, all of
@@ -101,28 +97,28 @@ population. The relationship between the two depends on the *procedure*
 by which the sample was selected. This procedure is referred to as a
 **sampling method** and it is important to understand why it matters.
 
-To keep things simple, let us imagine that we have a bag containing 10
-chips. Each chip has a unique letter printed on it so we can distinguish
-between the 10 chips. The chips come in two colours, black and white.
-This set of chips is the population of interest and it is depicted
-graphically on the left of :numref:`fig-srs1`. As you can see from looking at
-the picture there are four black chips and six white chips, but of course in real
-life we would not know that unless we looked in the bag. Now imagine you run the
-following “experiment”: you shake up the bag, close your eyes, and pull out four
-chips without putting any of them back into the bag. First out comes the *a*
-chip (black), then the *c* chip (white), then *j* (white) and then finally *b*
+To keep things simple, let us imagine that we have a bag containing 10 chips.
+Each chip has a unique letter printed on it so we can distinguish between the
+10 chips. The chips come in two colours, black and white. This set of chips is
+the population of interest and it is depicted graphically on the left of
+:numref:`fig-srs1`. As you can see from looking at the picture there are four
+black chips and six white chips, but of course in real life we would not know
+that unless we looked in the bag. Now imagine you run the following
+“experiment”: you shake up the bag, close your eyes, and pull out four chips
+without putting any of them back into the bag. First out comes the *a* chip
+(black), then the *c* chip (white), then *j* (white) and then finally *b*
 (black). If you wanted you could then put all the chips back in the bag and
 repeat the experiment, as depicted on the right-hand side of
 :numref:`fig-srs1`. Each time you get different results but the procedure is
 identical in each case. The fact that the same procedure can lead to different
-results each time we refer to as a *random* process.\ [#]_ However, because we
-shook the bag before pulling any chips out, it seems reasonable to think that
-every chip has the same chance of being selected. A procedure in which every
-member of the population has the same chance of being selected is called a
-**simple random sample**. The fact that we did *not* put the chips back in the
-bag after pulling them out means that you can not observe the same thing twice,
-and in such cases the observations are said to have been sampled **without
-replacement**.
+results each time is what we refer to as a *random* process.\ [#]_ However,
+because we shook the bag before pulling any chips out, it seems reasonable to
+think that every chip has the same chance of being selected. A procedure in
+which every member of the population has the same chance of being selected is
+called a **simple random sample**. The fact that we did *not* put the chips
+back in the bag after pulling them out means that you can not observe the same
+thing twice, and in such cases the observations are said to have been sampled
+**without replacement**.
 
 .. ----------------------------------------------------------------------------
 
@@ -176,15 +172,15 @@ population member multiple times, as illustrated in numref:`fig-srs2`.
    
 .. ----------------------------------------------------------------------------
 
-In my experience, most psychology experiments tend to be sampling
-without replacement, because the same person is not allowed to
-participate in the experiment twice. However, most statistical theory is
-based on the assumption that the data arise from a simple random sample
-*with* replacement. In real life this very rarely matters. If the
-population of interest is large (e.g., has more than 10 entities!) the
-difference between sampling with- and without- replacement is too small
-to be concerned with. The difference between simple random samples and
-biased samples, on the other hand, is not such an easy thing to dismiss.
+In my experience, most psychology experiments tend to be sampling without
+replacement, because the same person is not allowed to participate in the
+experiment twice. However, most statistical theory is based on the assumption
+that the data arise from a simple random sample *with* replacement. In real
+life this very rarely matters. If the population of interest is large (e.g.,
+has more than 10 entities!) the difference between sampling with and without
+replacement is too small to be concerned with. The difference between simple
+random samples and biased samples, on the other hand, is not such an easy
+thing to dismiss.
 
 Most samples are not simple random samples
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -320,9 +316,9 @@ results.
 Population parameters and sample statistics
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Okay. Setting aside the thorny methodological issues associated with obtaining
-a random sample, let us consider a slightly different issue. Up to this point we
-have been talking about populations the way a scientist might. To a
+Setting aside the thorny methodological issues associated with obtaining a
+random sample, let us consider a slightly different issue. Up to this point
+we have been talking about populations the way a scientist might. To a
 psychologist a population might be a group of people. To an ecologist a
 population might be a group of bears. In most cases the populations that
 scientists care about are concrete things that actually exist in the real
@@ -352,12 +348,13 @@ and the population standard deviation σ is 15.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_IQ_Pop_Smp.*
-   :alt: Population distribution of IQ and two samples with N=100 and N=10,000 
+   :alt: Population distribution of IQ and two samples with *N*=100 and
+         *N*=10 000
    :name: fig-IQ_Pop_Smp
 
    The population distribution of IQ scores (left panel) and two samples drawn
    randomly from it: In the middle panel, we have a sample of 100 observations,
-   and in the right panel, we have a sample of 10,000 observations.
+   and in the right panel, we have a sample of 10 000 observations.
    
 .. ----------------------------------------------------------------------------
 
