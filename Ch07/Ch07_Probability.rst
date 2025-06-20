@@ -49,16 +49,16 @@ can afford it. I am too lazy to track down the original survey so let us
 just imagine that they called 1000 New South Wales (NSW) voters at
 random, and 230 (23\%) of those claimed that they intended to vote for
 the Australian Labor Party (ALP). For the 2010 Federal election the
-Australian Electoral Commission reported 4,610,795 enrolled voters in
-NSW, so the opinions of the remaining 4,609,795 voters (about 99.98\% of
-voters) remain unknown to us. Even assuming that no-one lied to the
+Australian Electoral Commission reported 4 610 795 enrolled voters in
+NSW, so the opinions of the remaining 4 609 795 voters (about 99.98\%
+of voters) remain unknown to us. Even assuming that no-one lied to the
 polling company the only thing we can say with 100\% confidence is that
-the true ALP primary vote is somewhere between 230/4610795 (about
-\0.005\%) and 4610025/4610795 (about 99.83\%). So, on what basit is it
-legitimate for the polling company, the newspaper, and the readership to
-conclude that the ALP primary vote is only about 23\%?
+the true ALP primary vote is somewhere between 230 / 4 610 795 (about
+\0.005\%) and 4 610 025 / 4 610 795 (about 99.83\%). So, on what basis
+is it legitimate for the polling company, the newspaper, and the
+readership to conclude that the ALP primary vote is only about 23\%?
 
-The answer to the question is pretty obvious. If I call 1000 people at
+The answer to the question is pretty obvious. If I call 1 000 people at
 random, and 230 of them say they intend to vote for the ALP, then it
 seems very unlikely that these are the *only* 230 people out of the
 entire voting public who actually intend to vote ALP. In other words, we

@@ -22,18 +22,17 @@ answer using probability theory:
 
 -  What are the chances that I will win the lottery?
 
-Notice that all of these questions have something in common. In each
-case the “truth of the world” is known and my question relates to the
-“what kind of events” will happen. In the first question I *know* that
-the coin is fair so there is a 50\% chance that any individual coin flip
-will come up heads. In the second question I *know* that the chance of
-rolling a 6 on a single dice is 1 in 6. In the third question I *know*
-that the deck is shuffled properly. And in the fourth question I *know*
-that the lottery follows specific rules. You get the idea. The critical
-point is that probabilistic questions start with a known **model** of
-the world, and we use that model to do some calculations. The underlying
-model can be quite simple. For instance, in the coin flipping example we
-can write down the model like this:
+Notice that all of these questions have something in common. In each case the
+truth of the world” is known and my question relates to “what kind of events”
+will happen. In the first question I *know* that the coin is fair so there is
+a 50\% chance that any individual coin flip will come up heads. In the second
+question I *know* that the chance of rolling a 6 on a single dice is 1 in 6.
+In the third question I *know* that the deck is shuffled properly. And in the
+fourth question I *know* that the lottery follows specific rules. You get the
+idea. The critical point is that probabilistic questions start with a known
+**model** of the world, and we use that model to do some calculations. The
+underlying model can be quite simple. For instance, in the coin flipping
+example we can write down the model like this:
 
 *P*\ (heads) = *0.5*
 

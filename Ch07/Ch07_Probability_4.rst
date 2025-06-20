@@ -46,41 +46,37 @@ at how it is done.
    | |binomial| | |normal| |
    +------------+----------+
 
-As usual, we will want to introduce some names and some notation. We will
-let *N* denote the number of dice rolls in our experiment, which
-is often referred to as the **size parameter** of our binomial
-distribution. We will also use *θ* to refer to the the
-probability that a single dice comes up skulls, a quantity that is
-usually called the **success probability** of the binomial.\ [#]_
-Finally, we will use *X* to refer to the results of our experiment,
-namely the number of skulls I get when I roll the dice. Since the actual
-value of *X* is due to chance we refer to it as a **random
-variable**. In any case, now that we have all this terminology and
-notation we can use it to state the problem a little more precisely. The
-quantity that we want to calculate is the probability that *X* = 4
-given that we know that *θ* = 0.167 and *N* = 20. The
-general “form” of the thing I am interested in calculating could be
-written as
+As usual, we will want to introduce some names and some notation. We will let
+*N* denote the number of dice rolls in our experiment, which is often referred
+to as the **size parameter** of our binomial distribution. We will also use
+*θ* to refer to the the probability that a single dice comes up skulls, a
+quantity that is usually called the **success probability** of the
+binomial.\ [#]_ Finally, we will use *X* to refer to the results of our
+experiment, namely the number of skulls I get when I roll the dice. Since the
+actual value of *X* is due to chance we refer to it as a **random variable**.
+In any case, now that we have all this terminology and notation we can use it
+to state the problem a little more precisely. The quantity that we want to
+calculate is the probability that *X* = 4 given that we know that *θ* = 0.167
+and *N* = 20. The general “form” of the thing I am interested in calculating
+could be written as:
 
 *P*\ (X | θ, N)
 
-and we are interested in the special case where *X* = 4,
-*θ* = 0.167 and *N* = 20. There is only one more piece of
-notation I want to refer to before moving on to discuss the solution to
-the problem. If I want to say that *X* is generated randomly from
-a binomial distribution with parameters *θ* and *N*,
-the notation I would use is as follows:
+and we are interested in the special case where *X* = 4, *θ* = 0.167 and
+*N* = 20. There is only one more piece of notation I want to refer to before
+moving on to discuss the solution to the problem. If I want to say that *X*
+is generated randomly from a binomial distribution with parameters *θ* and
+*N*, the notation I would use is as follows:
 
 *X* ~ Binomial(θ, N)
 
-Yeah, yeah. I know what you are thinking: notation, notation, notation.
-Really, who cares? Very few readers of this book are here for the
-notation, so I should probably move on and talk about how to use the
-binomial distribution. I have included the formula for the binomial
-distribution in :numref:`tab-distformulas`, since some readers
-may want to play with it themselves, but since most people probably
-do not care that much and because we do not need the formula in this book,
-I will not talk about it in any detail. Instead, I just want to show you
+I know what you are thinking: notation, notation, notation. Really, who cares?
+Very few readers of this book are here for the notation, so I should probably
+move on and talk about how to use the binomial distribution. I have included
+the formula for the binomial distribution in :numref:`tab-distformulas`, since
+some readers may want to play with it themselves, but since most people
+probably do not care that much and because we do not need the formula in this
+book, I will not talk about it in any detail. Instead, I just want to show you
 what the binomial distribution looks like.
 
 .. ----------------------------------------------------------------------------
@@ -108,25 +104,25 @@ about 0.20 (the actual answer is 0.2022036, as we will see in a moment). In othe
 words, you would expect that to happen about 20\% of the times you repeated this
 experiment.
 
-To give you a feel for how the binomial distribution changes when we
-alter the values of *θ* and *N*, let us suppose that
-instead of rolling dice I am actually flipping coins. This time around,
-my experiment involves flipping a fair coin repeatedly and the outcome
-that I am interested in is the number of heads that I observe. In this
-scenario, the success probability is now *θ* = 1/2. Suppose I
-were to flip the coin *N* = 20 times. In this example, I have changed
-the success probability but kept the size of the experiment the same.
+To give you a feel for how the binomial distribution changes when we alter the
+values of *θ* and *N*, let us suppose that instead of rolling dice I am
+actually flipping coins. This time around, my experiment involves flipping a
+fair coin repeatedly and the outcome that I am interested in is the number of
+heads that I observe. In this scenario, the success probability is now *θ* =
+1/2. Suppose I were to flip the coin *N* = 20 times. In this example, I have
+changed the success probability but kept the size of the experiment the same.
 What does this do to our binomial distribution? Well, as the left panel of
-:numref:`fig-binomHeads` shows, the main effect of this is to
-shift the whole distribution, as you would expect. Okay, what if we flipped a coin
-*N* = 100 times? Well, in that case we get what is shown in the right panel.
-The distribution stays roughly in the middle but there is a bit more variability
+:numref:`fig-binomHeads` shows, the main effect of this is to shift the whole
+distribution, as you would expect. Okay, what if we flipped a coin *N* = 100
+times? Well, in that case we get what is shown in the right panel. The
+distribution stays roughly in the middle but there is a bit more variability
 in the possible outcomes.
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_binomHeads.*
-   :alt: Binomial distribution: θ = 1/2 and *N* = 20 (left) or *N* = 100 (right) 
+   :alt: Binomial distribution: θ = 1/2 and *N* = 20 (left) or *N* = 100
+         (right)
    :name: fig-binomHeads
 
    Two binomial distributions, involving a scenario in which I am flipping a

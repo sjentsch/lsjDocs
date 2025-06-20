@@ -121,23 +121,22 @@ Any two people watching the same sequence of events unfold, trying to
 calculate the probability of an event, must inevitably come up with the
 same answer.
 
-However, it also has undesirable characteristics. First, infinite
-sequences do not exist in the physical world. Suppose you picked up a
-coin from your pocket and started to flip it. Every time it lands it
-impacts on the ground. Each impact wears the coin down a bit. Eventually
-the coin will be destroyed. So, one might ask whether it really makes
-sense to pretend that an “infinite” sequence of coin flips is even a
-meaningful concept, or an objective one. We can not say that an “infinite
-sequence” of events is a real thing in the physical universe, because
-the physical universe does not allow infinite anything. More seriously,
-the frequentist definition has a narrow scope. There are lots of things
-out there that human beings are happy to assign probability to in
-everyday language, but cannot (even in theory) be mapped onto a
-hypothetical sequence of events. For instance, if a meteorologist comes
-on TV and says “the probability of rain in Adelaide on 2 November 2048
-is 60\%” we humans are happy to accept this. But it is not clear how to
-define this in frequentist terms. There is only one city of Adelaide, and
-only one 2 November 2048. There is no infinite sequence of events here,
+However, it also has undesirable characteristics. Infinite sequences do not
+really exist in the physical world. Suppose you picked up a coin from your
+pocket and started to flip it. Every time it lands it impacts on the ground,
+and each impact wears the coin down a bit. Eventually the coin will be
+destroyed. So, one might ask whether it really makes sense to pretend that an
+“infinite” sequence of coin flips is even a meaningful concept, or an
+objective one. We can not say that an “infinite sequence” of events is a real
+thing in the physical universe, because the physical universe does not allow
+infinite anything. More seriously, the frequentist definition has a narrow
+scope. There are lots of things out there that human beings are happy to
+assign probability to in everyday language, but cannot (even in theory) be
+mapped onto a hypothetical sequence of events. For instance, if a
+meteorologist comes on TV and says “the probability of rain in Adelaide on 2
+November 2048 is 60\%” we humans are happy to accept this. But it is not clear
+how to define this in frequentist terms. There is only one city of Adelaide,
+and only one 2 November 2048. There is no infinite sequence of events here,
 just a one-off thing. Frequentist probability genuinely *forbids* us
 from making probability statements about a single event. From the
 frequentist perspective it will either rain tomorrow or it will not.

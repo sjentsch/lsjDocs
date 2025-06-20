@@ -8,7 +8,7 @@ probability means and why statisticians can not agree on what it means. We
 talked about the rules that probabilities have to obey. And we
 introduced the idea of a probability distribution and spent a good chunk
 of the chapter talking about some of the more important probability
-distributions that statisticians work with. The section by section
+distributions that statisticians work with. The section-by-section
 breakdown looks like this:
 
 -  :doc:`Probability theory versus statistics <Ch07_Probability_1>`

@@ -3,15 +3,13 @@
 The normal distribution
 -----------------------
 
-While the binomial distribution is conceptually the simplest
-distribution to understand, it is not the most important one. That
-particular honour goes to the **normal distribution**, also referred to
-as “the bell curve” or a “Gaussian distribution”. A normal distribution
-is described using two parameters: the mean of the distribution µ and
-the standard deviation of the distribution σ.
-
-The notation that we sometimes use to say that a variable *X* is
-normally distributed is as follows:
+While the binomial distribution is conceptually the simplest distribution to
+understand, it is not the most important one. That particular honour goes to
+the **normal distribution**, also referred to as “the bell curve” or a
+“Gaussian distribution”. A normal distribution is described using two
+parameters: the mean of the distribution µ and the standard deviation of the
+distribution σ. The notation that we sometimes use to say that a variable *X*
+is normally distributed is as follows:
 
 X ~ Normal(µ, σ)
 
@@ -32,13 +30,7 @@ introductory text I do not want to focus on it, so I have tucked it away in
    The normal distribution with mean μ = 0 and standard deviation σ = 1. The
    x-axis corresponds to the value of some variable, and the y-axis tells us
    something about how likely we are to observe that value. However, notice
-   that the y-axit is labelled “Probability Density” and not “Probability”.
-   There is a subtle and somewhat frustrating characteristic of continuous
-   distributions that makes the y axis behave a bit oddly: the height of the
-   curve here is not actually the probability of observing a particular x value.
-   On the other hand, it is true that the heights of the curve tells you which
-   x values are more likely (the higher ones!; see :ref:`Probability density
-   <probability_density>` for all the annoying details).
+   that the y-axis is labelled “Probability Density” and not “Probability”.
   
 .. ----------------------------------------------------------------------------
 
@@ -50,7 +42,7 @@ curve” comes from; it looks a bit like a bell. Notice that, unlike the plots
 that I drew to illustrate the binomial distribution, the picture of the normal
 distribution in :numref:`fig-standardNormal` shows a smooth
 curve instead of “histogram-like” bars. This is not an arbitrary choice,
-the normal distribution is continuous whereas the binomial is discrete.
+the normal distribution is continuous whereas the binomial is discrete.\ [#]_
 For instance, in the dice rolling example from the last section it was
 possible to get three skulls or four skulls, but impossible to get 3.9 skulls.
 The figures that I drew in the previous section reflected this fact. In
@@ -226,6 +218,15 @@ curve is always interpretable as genuine probabilities. To be honest,
 that is about as much as you really need to know for now.\ [#]_
 
 ------
+
+.. [#]
+   There is a subtle and somewhat frustrating characteristic of continuous
+   distributions that makes the y-axis behave a bit oddly – the height of the
+   curve here is not actually the probability of observing a particular x
+   value. On the other hand, it is true that the heights of the curve tells
+   you which x values are more likely (the higher ones!; see the section
+   ref:` Probability density <probability_density>` for all the annoying
+   details).
 
 .. [#]
    In practice, the normal distribution is so handy that people tend to
