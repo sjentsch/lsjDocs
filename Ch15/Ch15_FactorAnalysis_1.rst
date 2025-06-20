@@ -583,7 +583,7 @@ information to include in your write-up:
    and pattern coefficients are the same.
 
 .. [#]
-   Sometimes reported in factor analysit is “communality” which is the
+   Sometimes reported in factor analysis is “communality” which is the
    amount of variance in a variable that is accounted for by the factor
    solution. Uniqueness is equal to (1 - *communality*)
 

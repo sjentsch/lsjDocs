@@ -60,10 +60,10 @@ interpretation. That said, this does indicate that the ``afl.margins``
 variable is somewhat skewed (0.780 / 0.183 = 4.262).
 
 The final measure that is sometimes referred to, though very rarely in practice,
-is the **kurtosis** of a data set. Put simply, kurtosit is a measure of how thin
+is the **kurtosis** of a data set. Put simply, kurtosis is a measure of how thin
 or fat the tails of a distribution are, as illustrated in :numref:`fig-kurtosis`.
 By convention, we say that the “normal curve” (black lines) has zero kurtosis,
-and the degree of kurtosit is assessed relative to this curve.
+and the degree of kurtosis is assessed relative to this curve.
 
 .. ----------------------------------------------------------------------------
 
@@ -73,18 +73,18 @@ and the degree of kurtosit is assessed relative to this curve.
 
    An illustration of kurtosis. On the left, we have a “platykurtic” distribution
    (kurtosis = -.95) meaning that the distribution has “thin” or flat tails. In
-   the middle we have a “mesokurtic” distribution (kurtosit is almost exactly 0)
+   the middle we have a “mesokurtic” distribution (kurtosis is almost exactly 0)
    which means that the tails are neither thin or fat. Finally, on the right, we
    have a “leptokurtic” distribution (kurtosis = 2.12) indicating that the 
-   distribution has “fat” tails. Note that kurtosit is measured with respect to a
+   distribution has “fat” tails. Note that kurtosis is measured with respect to a
    normal distribution (black line).
 
 .. ----------------------------------------------------------------------------
 
 The data in the left panel of :numref:`fig-kurtosis` have a pretty flat
-distribution, with thin tails, so the kurtosit is negative and we call the data
+distribution, with thin tails, so the kurtosis is negative and we call the data
 *platykurtic*. The data in the right panel have a distribution with fat tails,
-so the kurtosit is positive and we say that the data is *leptokurtic*. Only the
+so the kurtosis is positive and we say that the data is *leptokurtic*. Only the
 data in the middle panel have neither thin or fat tails, so we say that it is
 *mesokurtic* and has kurtosis zero. This is summarised in the table below:
 
@@ -98,7 +98,7 @@ data in the middle panel have neither thin or fat tails, so we say that it is
 | “tails too fat”             | leptokurtic    | positive       |
 +-----------------------------+----------------+----------------+
 
-The equation for kurtosit is pretty similar in spirit to the formulas
+The equation for kurtosis is pretty similar in spirit to the formulas
 we have seen already for the variance and the skewness. Except that where
 the variance involved squared deviations and the skewness involved cubed
 deviations, the kurtosis involves raising the deviations to the fourth

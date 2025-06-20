@@ -65,7 +65,7 @@ You should get the results shown in :numref:`fig-ttest_onesided2`.
    :name: fig-ttest_onesided2
 
    jamovi results showing an ``Independent Samples T-Test`` where the actual
-   hypothesit is one-sided, i.e. that Anastasia’s students had higher grades
+   hypothesis is one-sided, i.e. that Anastasia’s students had higher grades
    than Bernadette’s.
    
 .. ----------------------------------------------------------------------------
@@ -91,7 +91,7 @@ this first into the paired variables box) > ``grade_test1``
    :name: fig-ttest_onesided3
 
    jamovi results showing a ``Paired Samples T-Test`` where the actual
-   hypothesit is one-sided, i.e. that ``grade_test2`` (``Measure 1``) is larger 
+   hypothesis is one-sided, i.e. that ``grade_test2`` (``Measure 1``) is larger 
    than ``grade_test1`` (``Measure 2``).
    
 .. ----------------------------------------------------------------------------

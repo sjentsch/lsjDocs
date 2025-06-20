@@ -46,7 +46,7 @@ of other approaches to inference that are worth mentioning:
    some not-so-fancy, that you can use to get around it. The simplest of these
    is bootstrapping, and in it is simplest form it is incredibly simple. What
    you do is simulate the results of your experiment lots and lots of times,
-   under the twin assumptions that (a) the null hypothesit is true and (b)
+   under the twin assumptions that (a) the null hypothesis is true and (b)
    the unknown population distribution actually looks pretty similar to your
    raw data. In other words, instead of assuming that the data are (for
    instance) normally distributed, just assume that the population looks the

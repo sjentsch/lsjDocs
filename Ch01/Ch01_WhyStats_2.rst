@@ -19,7 +19,7 @@ problem was the gender breakdown of their admissions:
 +-------------+----------------------+------------------+
 
 Given this, they were worried about being sued!\ [#]_ Given that there
-were nearly 13,000 applicants, a difference of 9\% in admission rates
+were nearly 13 000 applicants, a difference of 9\% in admission rates
 between males and females is just way too big to be a coincidence.
 Pretty compelling data, right? And if I were to say to you that these
 data *actually* reflect a weak bias in favour of women (sort of!), you would

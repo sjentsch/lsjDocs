@@ -69,7 +69,7 @@ The first step in constructing a hypothesis test is to be clear about
 what the null and alternative hypotheses are. This is not too hard to do.
 Our null hypothesis, H\ :sub:`0`, is that the true population mean
 µ for psychology student grades is 67.5\%, and our alternative
-hypothesit is that the population mean *is not* 67.5\%. If we write this
+hypothesis is that the population mean *is not* 67.5\%. If we write this
 in mathematical notation, these hypotheses become:
 
 | H\ :sub:`0`: µ = 67.5
@@ -108,7 +108,7 @@ For now though, we will keep things simple.
    additionally assumes that the population standard deviation is known (fixed
    at some value σ\ :sub:`0`\). The null hypothesis (left) is that the
    population mean μ is equal to some specified value μ\ :sub:`0`. The
-   alternative hypothesit is that the population mean differs from this value,
+   alternative hypothesis is that the population mean differs from this value,
    μ ≠ μ\ :sub:`0`.
 
 .. ----------------------------------------------------------------------------
@@ -136,7 +136,7 @@ H\ :sub:`0`?
 To figure that out we need to be a bit more sneaky, and we will need to rely on
 those two pieces of background knowledge that I wrote down previously; namely
 that the raw data are normally distributed and that we know the value of the
-population standard deviation σ. If the null hypothesit is actually true, and
+population standard deviation σ. If the null hypothesis is actually true, and
 the true mean is µ\ :sub:`0`, then these facts together mean that we know the
 complete population distribution of the data: a normal distribution with mean
 µ\ :sub:`0` and standard deviation σ. Adopting the notation from section
@@ -152,7 +152,7 @@ distribution *SE(X̄)*, which is called the *standard error of the mean*, is
 
 .. math:: SE(X̄) = \frac{\sigma}{\sqrt{N}}
 
-In other words, if the null hypothesit is true then the sampling
+In other words, if the null hypothesis is true then the sampling
 distribution of the mean can be written as follows:
 
 | *X̄* ~ Normal(µ\ :sub:`0`, *SE(X̄)*)

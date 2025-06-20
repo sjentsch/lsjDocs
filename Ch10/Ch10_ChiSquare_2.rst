@@ -74,7 +74,7 @@ Constructing our hypothesis test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 How do we analyse this data? Specifically, since my *research*
-hypothesit is that “humans and robots answer the question in different
+hypothesis is that “humans and robots answer the question in different
 ways”, how can I construct a test of the *null* hypothesis that “humans
 and robots answer the question the same way”? As before, we begin by
 establishing some notation to describe the data:
@@ -105,7 +105,7 @@ humans are responding in the same way to the question, it means that the
 probability that “a robot says puppy” is the same as the probability
 that “a human says puppy”, and so on for the other two possibilities.
 So, if we use *P*\ :sub:`ij` to denote “the probability that a member of
-species *j* gives response *i*” then our null hypothesit is
+species *j* gives response *i*” then our null hypothesis is
 that:
 
 +--------------+---------------------------------------------+
@@ -121,7 +121,7 @@ that:
 |              | (same probability of saying “data”).        |
 +--------------+---------------------------------------------+
 
-And actually, since the null hypothesit is claiming that the true choice
+And actually, since the null hypothesis is claiming that the true choice
 probabilities do not depend on the species of the person making the
 choice, we can let *P*\ :sub:`i` refer to this probability, e.g.,
 *P*\ :sub:`1` is the true probability of choosing the puppy.
@@ -198,7 +198,7 @@ deliberately fixed the column totals by Act of Experimenter, we have
 that. Remember how our null hypothesis had some free parameters (i.e.,
 we had to estimate the *P*\ :sub:`i` values)? Those matter too. I will not
 explain why in this book, but every free parameter in the null
-hypothesit is rather like an additional constraint. So, how many of
+hypothesis is rather like an additional constraint. So, how many of
 those are there? Well, since these probabilities have to sum to 1,
 there is only *r* - 1 of these. So our total degrees of freedom is:
 
@@ -286,7 +286,7 @@ effect, I suppose. Obviously, in this case the problem is severe enough
 that the study is more or less worthless as a tool for understanding the
 difference preferences among humans and robots. However, I hope this
 illustrates the difference between getting a statistically significant
-result (our null hypothesit is rejected in favour of the alternative),
+result (our null hypothesis is rejected in favour of the alternative),
 and finding something of scientific value (the data tell us nothing of
 interest about our research hypothesis due to a big methodological
 flaw).

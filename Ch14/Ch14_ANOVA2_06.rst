@@ -104,10 +104,10 @@ probability of *p* < 0.001. The *F*-value for the main effect ``commute`` (42.33
 has an associated probability of *p* < 0.001. Since both of these are less than
 the probability that is typically used to decide if a statistical result is
 significant (*p* < 0.05) we can conclude that there was a significant main
-effect of stress (*F*\(1,15) = 52.61, *p* < 0.001) and a significant main
-effect of commuting method (*F*\(1,15) = 42.33, *p* < 0.001). A significant
-interaction between stress and commuting method was also found (*F*\(1,15) =
-\14.15, *p* = 0.002).
+effect of stress: *F*\(1,15) = 52.61, *p* < 0.001, and a significant main
+effect of commuting method: *F*\(1,15) = 42.33, *p* < 0.001. A significant
+interaction between stress and commuting method was also found: *F*\(1,15) =
+\14.15, *p* = 0.002.
 
 In :numref:`fig-ancova4` we can see the adjusted, marginal, mean happiness
 scores when age is a covariate in an ANCOVA. In this analysis there is a

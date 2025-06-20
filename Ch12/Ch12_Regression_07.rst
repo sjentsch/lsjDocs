@@ -65,7 +65,7 @@ and the degrees of freedom associated with this are *K* and
 
 We will see much more of the *F*-statistic in chapter :doc:`../Ch13/Ch13_ANOVA`,
 but for now just know that we can interpret large *F*-values as indicating
-that the null hypothesit is performing poorly in comparison to the alternative
+that the null hypothesis is performing poorly in comparison to the alternative
 hypothesis. In a moment I will show you how to do the test in jamovi the easy
 way, but first let us have a look at the tests for the individual regression
 coefficients.

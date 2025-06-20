@@ -50,7 +50,7 @@ example, my regression model aims to predict people’s IQ scores using
 their educational attainment (number of years of education) and their
 income as predictors. Obviously, educational attainment and income are
 not on the same scales. The number of years of schooling might only vary
-by 10s of years, whereas income can vary by 10,000s of dollars (or
+by 10s of years, whereas income can vary by 10 000s of dollars (or
 more). The units of measurement have a big influence on the regression
 coefficients. The *b* coefficients only make sense when
 interpreted in light of the units, both of the predictor variables and

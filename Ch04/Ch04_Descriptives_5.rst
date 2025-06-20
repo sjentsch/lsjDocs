@@ -21,7 +21,7 @@ of survey questions*. Even if it is a very good questionnaire this is not
 very a informative statement.
 
 A simpler way around this is to describe my grumpiness by comparing me
-to other people. Shockingly, out of my friend’s sample of 1,000,000
+to other people. Shockingly, out of my friend’s sample of 1 000 000
 people, only 159 people were as grumpy as me (that is not at all
 unrealistic, frankly) suggesting that I am in the top 0.016\% of people
 for grumpiness. This makes much more sense than trying to interpret the

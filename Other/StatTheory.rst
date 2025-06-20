@@ -18,7 +18,7 @@ pop up over and over again throughout the book: statistical inference relies
 on *assumptions*. This sounds like a bad thing. In everyday life people say
 things like “you should never make assumptions”, and psychology classes often
 talk about assumptions and biases as bad things that we should try to avoid.
-From bitter personal experience I have learned never to say such things around
+From personal experience I have learned never to say such things around
 philosophers!
 
 On the limits of logical reasoning
@@ -32,14 +32,14 @@ On the limits of logical reasoning
      
    -- Arthur Wellesley, 1st Duke of Wellington
 
-I am told that `quote above <https://www.bartleby.com/344/400.html>`__ came
-about as a consequence of a carriage ride across the countryside. He and his
-companion, J. W. Croker, were playing a guessing game, each trying to predict
-what would be on the other side of each hill. In every case it turned out that
-Wellesley was right and Croker was wrong. Many years later when Wellesley was
-asked about the game he explained that “the whole art of war consists in
-getting at what is on the other side of the hill”. Indeed, war is not
-special in this respect. All of life is a guessing game of one form or
+This `quote <https://www.bartleby.com/lit-hub/samuel-arthur-bent/duke-ofwellington/quote>`_
+came about as a consequence of a carriage ride across the countryside.
+Wellesley and his companion, J. W. Croker, were playing a guessing game, each
+trying to predict what would be on the other side of each hill. In every case
+it turned out that Wellesley was right and Croker was wrong. Many years later
+when Wellesley was asked about the game he explained that “the whole art of
+war consists in getting at what is on the other side of the hill”. Indeed, war
+is not special in this respect. All of life is a guessing game of one form or
 another, and getting by on a day-to-day basis requires us to make good
 guesses. So let us play a guessing game of our own.
 
@@ -125,7 +125,7 @@ this:
 
    WWW WWW WWW WWW
 
-and the conversation continues:
+And the conversation continues:
 
    Oh yeah! Three more wins for Wellesley and another victory for me.
    Admit it, I was right about him! I guess we are both betting on

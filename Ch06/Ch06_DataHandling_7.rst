@@ -17,9 +17,9 @@ times (RT). We recruit 10 participants, and measure their WMC and RT under
 three different conditions: a ``no drug`` condition, in which they are not
 under the influence of either caffeine or alcohol, a ``caffeine`` condition,
 in which they are under the inflence of caffeine, and an ``alcohol``
-condition, in which... well, you can probably guess. Ideally, I suppose,
-there would be a fourth condition in which both drugs are administered, but
-for the sake of simplicity let us ignore that. The |drugs|_ data set in
+condition, in which… well, you can probably guess. Ideally, I suppose, there
+would be a fourth condition in which both drugs are administered, but for the
+sake of simplicity let us ignore that. The |drugs|_ data set in
 :numref:`fig-jtransform-long` gives you a sense of what kind of data you might
 observe in an experiment like this.
 

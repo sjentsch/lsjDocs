@@ -69,7 +69,7 @@ on, it helps to label the entries in our table a little differently:
 | **Total**      | *a* + *c*   | *b* + *d*  | *n*       |
 +----------------+-------------+------------+-----------+
 
-Next, let us think about what our null hypothesit is: is is that the “before”
+Next, let us think about what our null hypothesis is: is is that the “before”
 test and the “after” test have the same proportion of people saying “Yes, I
 will vote for AGPP”. Because of the way that we have rewritten the data, it
 means that we are now testing the hypothesis that the *row totals* and *column

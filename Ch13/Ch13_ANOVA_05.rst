@@ -8,7 +8,7 @@ a significant effect, the first thing you will probably want to ask is
 which groups are actually different from one another. In our drugs
 example, our null hypothesis was that all three drugs (placebo, Anxifree
 and Joyzepam) have the exact same effect on mood. But if you think about
-it, the null hypothesit is actually claiming *three* different things
+it, the null hypothesis is actually claiming *three* different things
 all at once here. Specifically, it claims that:
 
 -  Your competitor’s drug (Anxifree) is no better than a placebo (i.e.,
@@ -20,7 +20,7 @@ all at once here. Specifically, it claims that:
 -  Anxifree and Joyzepam are equally effective (i.e.,
    µ\ :sub:`J` = µ\ :sub:`A`)
 
-If any one of those three claims is false, then the null hypothesit is
+If any one of those three claims is false, then the null hypothesis is
 also false. So, now that we have rejected our null hypothesis, we are
 thinking that *at least* one of those things is not true. But which ones?
 All three of these propositions are of interest. Since you certainly

@@ -56,7 +56,7 @@ Miscellaneous topics
    power analysis to figure out that your estimated power was only 0.08. The
    significant result means that, if the null hypothesis was in fact true,
    there was a 5\% chance of getting data like this. But the low power means
-   that, even if the null hypothesit is false and the effect size was really
+   that, even if the null hypothesis is false and the effect size was really
    as small as it looks, there was only an 8\% chance of getting data like you
    did. This suggests that you need to be pretty cautious, because luck seems
    to have played a big part in your results, one way or the other!

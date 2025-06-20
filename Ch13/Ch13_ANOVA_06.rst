@@ -105,7 +105,7 @@ Okay, what good does this do us? Well, let us take a moment to think
 about what Z\ :sub:`ik` actually is and what we are trying to test. The
 value of Z\ :sub:`ik` is a measure of how the *i*-th observation
 in the *k*-th group deviates from its group mean. And our null
-hypothesit is that all groups have the same variance, i.e., the same
+hypothesis is that all groups have the same variance, i.e., the same
 overall deviations from the group means! So the null hypothesis in a
 Levene test is that the population means of Z are identical for
 all groups. Hmm. So what we need now is a statistical test of the null
@@ -129,7 +129,7 @@ Running the Levene-test in jamovi
 Okay, so how do we run the Levene test? Simple really - under the ``ANOVA`` →
 ``Assumption Checks`` option, just click on the ``Homogeneity tests``
 checkbox. If we look at the output, shown in :numref:`fig-anova4`, we see that
-the test is non-significant (*F*\{2,15} = 1.45, *p* = 0.266), so it looks like
+the test is non-significant: *F*\(2,15) = 1.45, *p* = 0.266. So it looks like
 the homogeneity of variance assumption is fine. However, looks can be
 deceptive! If your sample size is pretty big, then the Levene test could show
 up a significant effect (i.e., *p* < 0.05) even when the homogeneity of
@@ -279,7 +279,7 @@ and we can define the “between groups ranked sums of squares” like this:
                   &=& \sum_k N_k ( \bar{R}_k  - \bar{R} )^2 
    \end{array}
 
-So, if the null hypothesit is true and there are no true group
+So, if the null hypothesis is true and there are no true group
 differences at all, you would expect the between group rank sums
 RSS\ :sub:`b` to be very small, much smaller than the total
 rank sums RSS\ :sub:`tot`. Qualitatively this is very much the
@@ -290,7 +290,7 @@ different way,
 
 .. math:: K = (N - 1) \times \frac{\mbox{RSS}_b}{\mbox{RSS}_{tot}}
 
-and if the null hypothesit is true, then the sampling distribution of
+and if the null hypothesis is true, then the sampling distribution of
 *K* is *approximately* χ² with *G* - 1 degrees of freedom (where *G* is
 the number of groups). The larger the value of *K*, the less consistent
 the data are with the null hypothesis, so this is a one-sided test. We

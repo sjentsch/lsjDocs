@@ -30,7 +30,7 @@ Statistics that mean what you think they mean
 To me, one of the biggest advantages to the Bayesian approach is that it
 answers the right questions. Within the Bayesian framework, it is
 perfectly sensible and allowable to refer to “the probability that a
-hypothesit is true”. You can even try to calculate this probability.
+hypothesis is true”. You can even try to calculate this probability.
 Ultimately, is not that what you *want* your statistical tests to tell
 you? To an actual human being, this would seem to be the whole *point*
 of doing statistics, i.e., to determine what is true and what is not. Any
@@ -45,12 +45,12 @@ orthodox framework. To a frequentist, such statements are a nonsense because
 and no probabilistic statements are allowed, no matter how much you might want
 to make them. There is a reason why, back in section
 :doc:`../Ch09/Ch09_HypothesisTesting_05`, I repeatedly warned you *not* to
-interpret the *p*-value as the probability that the null hypothesit is true.
+interpret the *p*-value as the probability that the null hypothesis is true.
 There is a reason why almost every textbook on statstics is forced to repeat
 that warning. It is because people desperately *want* that to be the correct
 interpretation. Frequentist dogma notwithstanding, a lifetime of experience of
 teaching undergraduates and of doing data analysis on a daily basis suggests to
-me that most actual humans think that “the probability that the hypothesit is
+me that most actual humans think that “the probability that the hypothesis is
 true” is not only meaningful, it is the thing we care *most* about. It is such an
 appealing idea that even trained statisticians fall prey to the mistake of
 trying to interpret a *p*-value this way. For example, here is a quote from an
@@ -78,7 +78,7 @@ if you want to rely on orthodox statistical tools.
 On the other hand, let us suppose you are a Bayesian. Although the bolded
 passage is the wrong definition of a *p*-value, it is pretty much
 exactly what a Bayesian means when they say that the posterior
-probability of the alternative hypothesit is greater than 95\%. And
+probability of the alternative hypothesis is greater than 95\%. And
 here is the thing. If the Bayesian posterior is actually the thing you
 *want* to report, why are you even trying to use orthodox methods? If
 you want to make Bayesian claims, all you have to do is be a Bayesian
@@ -130,7 +130,7 @@ the two, and it is somewhat surprising. For example, :ref:`Johnson (2013)
 least) the *p* < 0.05 threshold corresponds roughly to a Bayes factor of
 somewhere between 3:1 and 5:1 in favour of the alternative. If that is right,
 then Fisher’s claim is a bit of a stretch. Let us suppose that the null
-hypothesit is true about half the time (i.e., the prior probability of
+hypothesis is true about half the time (i.e., the prior probability of
 H\ :sub:`0` is 0.5), and we use those numbers to work out the posterior
 probability of the null hypothesis given that it has been rejected at *p*
 < 0.05. Using the data from :ref:`Johnson (2013) <Johnson_2013>`, we see that
@@ -285,7 +285,7 @@ the experiment and report a significant result. If not, you keep
 collecting data. You keep doing this until you reach your pre-defined
 spending limit for this experiment. Let us say that limit kicks in at
 *N* = 1000 observations. As it turns out, the truth of the matter is
-that there is no real effect to be found: the null hypothesit is true.
+that there is no real effect to be found: the null hypothesis is true.
 So, what is the chance that you will make it to the end of the experiment
 and (correctly) conclude that there is no effect? In an ideal world, the
 answer here should be 95\%. After all, the whole *point* of the
@@ -320,7 +320,7 @@ our trigger happy researcher uses the following procedure. If the Bayes factor
 is 3:1 or more in favour of the null, stop the experiment and retain the null.
 If it is 3:1 or more in favour of the alternative, stop the experiment and
 reject the null. Otherwise continue testing. Now, just like last time, let us
-assume that the null hypothesit is true. What happens? As it happens, I ran
+assume that the null hypothesis is true. What happens? As it happens, I ran
 the simulations for this scenario too, and the results are shown as the dashed
 line in :numref:`fig-adapt`. It turns out that the Type I error rate is much
 much lower than the 49\% rate that we were getting by using the orthodox

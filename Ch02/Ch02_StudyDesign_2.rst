@@ -17,7 +17,7 @@ variable) is one in which there is no particular relationship between
 the different possibilities. For these kinds of variables it does not
 make any sense to say that one of them is “bigger” or “better” than any
 other one, and it absolutely does not make any sense to average them. The
-classic example for thit is “eye colour”. Eyes can be blue, green or
+classic example for this is “eye colour”. Eyes can be blue, green or
 brown, amongst other possibilities, but none of them is any “bigger”
 than any other one. As a result, it would feel really weird to talk
 about an “average eye colour”. Similarly, gender is nominal too: male

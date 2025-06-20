@@ -39,7 +39,7 @@ going to have to address.
 
    Graphical illustration of the null and alternative hypotheses assumed by the
    (two-sided) one-sample *t*-test. Note the similarity to the *z*-test 
-   :numref:`fig-ztesthyp`. The null hypothesit is that the population mean μ is
+   :numref:`fig-ztesthyp`. The null hypothesis is that the population mean μ is
    equal to some specified value μ\ :sub:`0`\, and the alternative hypothesis
    is that it is not. Like the *z*-test, we assume that the data are normally
    distributed, but we do not assume that the population standard deviation σ
@@ -75,7 +75,7 @@ distribution turns into a *t*-distribution with *N* - 1 **degrees of freedom**
 illustrated in :numref:`fig-ttestdist`. Notice, though, that as *df* gets
 larger, the *t*-distribution starts to look identical to the standard normal
 distribution. This is as it should be: if you have a sample size of *N* =
-70,000,000 then your “estimate” of the standard deviation would be pretty much
+70 000 000 then your “estimate” of the standard deviation would be pretty much
 perfect, right? So, you should expect that for large *N*, the *t*-test would
 behave exactly the same way as a *z*-test. And that is exactly what happens!
 

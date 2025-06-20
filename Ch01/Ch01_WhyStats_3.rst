@@ -57,7 +57,7 @@ stats. So here is my attempt to answer a few of them…
       understanding a certain amount of statistics.
 
    -  Thirdly, there is a big practical problem with being dependent on
-      other people to do all your statistics: statistical analysit is
+      other people to do all your statistics: statistical analysis is
       *expensive*. If you ever get bored and want to look up how much
       the Australian government charges for university fees, you will
       notice something interesting: statistics is designated as a

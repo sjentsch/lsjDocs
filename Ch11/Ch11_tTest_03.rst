@@ -124,10 +124,10 @@ this is:
 .. ----------------------------------------------------------------------------
 
 To construct a hypothesis test that handles this scenario we start by noting
-that if the null hypothesit is true, then the difference between the population
+that if the null hypothesis is true, then the difference between the population
 means is *exactly* zero, µ\ :sub:`1` - µ\ :sub:`1` = 0. As a consequence, a
 diagnostic test statistic will be based on the difference between the two
-sample means. Because if the null hypothesit is true, then we would expect
+sample means. Because if the null hypothesis is true, then we would expect
 *X̄*\ :sub:`1` – *X̄*\ :sub:`2` to be *pretty close* to zero. However, just
 like we saw with our one-sample tests (i.e., the one-sample *z*-test and the
 one-sample *t*-test) we have to be precise about exactly *how close* to zero
@@ -249,7 +249,7 @@ and our *t*-statistic is therefore
 
 Just as we saw with our one-sample test, the sampling distribution of
 this *t*-statistic is a *t*-distribution (shocking, is not
-it?) as long as the null hypothesit is true and all of the assumptions
+it?) as long as the null hypothesis is true and all of the assumptions
 of the test are met. The degrees of freedom, however, is slightly
 different. As usual, we can think of the degrees of freedom to be equal
 to the number of data points minus the number of constraints. In this

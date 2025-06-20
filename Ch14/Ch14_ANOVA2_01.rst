@@ -185,7 +185,7 @@ we are actually talking about the same hypothesis, it is just that the more
 complicated ANOVA requires more careful notation due to the presence of
 multiple grouping variables, so we are now referring to this hypothesis as
 µ\ :sub:`1.` = µ\ :sub:`2.` = µ\ :sub:`3.`. However, as we will see shortly,
-although the hypothesit is identical the test of that hypothesis is subtly
+although the hypothesis is identical the test of that hypothesis is subtly
 different due to the fact that we are now acknowledging the existence of the
 second grouping variable.
 

@@ -9,8 +9,8 @@ about the world. I do not know which of these hypotheses is true, but do
 I have some beliefs about which hypotheses are plausible and which are
 not. When I observe the data, *d*, I have to revise those beliefs.
 If the data are consistent with a hypothesis, my belief in that
-hypothesit is strengthened. If the data are inconsistent with the
-hypothesis, my belief in that hypothesit is weakened. That is it! At the
+hypothesis is strengthened. If the data are inconsistent with the
+hypothesis, my belief in that hypothesis is weakened. That is it! At the
 end of this section I will give a precise description of how Bayesian
 reasoning works, but first I want to work through a simple example in
 order to introduce the key ideas. Consider the following reasoning

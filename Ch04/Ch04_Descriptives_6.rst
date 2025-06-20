@@ -50,7 +50,7 @@ Epilogue: Good descriptive statistics are descriptive!
 
 .. epigraph::
 
-   | *950,000 – 1,200,000*
+   | *950 000 – 1 200 000*
    
    -- Estimate of Soviet repression deaths, 1937-1938 (:ref:`Ellman, 2002
       <Ellman_2002>`)

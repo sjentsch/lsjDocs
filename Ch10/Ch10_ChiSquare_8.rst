@@ -11,7 +11,7 @@ The key ideas discussed in this chapter are:
 
 -  :doc:`The χ² (chi-square) test of independence <Ch10_ChiSquare_2>` is used
    when you have a contingency table (cross-tabulation) of two categorical
-   variables. The null hypothesit is that there is no relationship or
+   variables. The null hypothesis is that there is no relationship or
    association between the variables.
 
 -  :doc:`Ch10_ChiSquare_4` for a contingency table can be measured in several

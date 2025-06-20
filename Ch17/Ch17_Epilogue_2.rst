@@ -71,7 +71,7 @@ great to give you a sense of just how much more there is, for example:
    of cancer, some who have received treatment A and others who have
    received treatment B, but you only have funding to track them for 5
    years. At the end of the study period some people are alive, others
-   are not. In this context, survival analysit is useful for determining
+   are not. In this context, survival analysis is useful for determining
    which treatment is more effective, and telling you about the risk of
    death that people face over time.
 
@@ -96,11 +96,11 @@ great to give you a sense of just how much more there is, for example:
    model, but there is a lot you can do with mixed models that you can not
    do with repeated measures ANOVA.
 
--  **Multidimensional scaling.** Factor analysit is an example of an
+-  **Multidimensional scaling.** Factor analysis is an example of an
    “unsupervised learning” model. What this means is that, unlike most
    of the “supervised learning” tools I have mentioned, you can not divide
    up your variables into predictors and outcomes. Regression is
-   supervised learning whereas factor analysit is unsupervised learning.
+   supervised learning whereas factor analysis is unsupervised learning.
    It is not the only type of unsupervised learning model however. For
    example, in factor analysis one is concerned with the analysis of
    correlations between variables. However, there are many situations

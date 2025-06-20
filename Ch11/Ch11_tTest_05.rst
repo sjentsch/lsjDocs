@@ -134,7 +134,7 @@ other way around, so if we want improvement to correspond to a positive valued
 difference, we actually want “test 2” to be our “variable 1”. Equally, we would
 say that µ\ :sub:`D` = µ\ :sub:`1` - µ\ :sub:`2` is the population mean for
 this difference variable. So, to convert this to a hypothesis test, our null
-hypothesit is that this mean difference is zero and the alternative hypothesis
+hypothesis is that this mean difference is zero and the alternative hypothesis
 is that it is not
 
 | H\ :sub:`0`: µ\ :sub:`D` = 0

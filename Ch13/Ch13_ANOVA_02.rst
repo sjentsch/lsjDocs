@@ -25,7 +25,7 @@ more effective than a placebo. We can write out this null hypothesis as:
 
 H\ :sub:`0`: it is true that µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`
 
-As a consequence, our alternative hypothesit is that at least one of the
+As a consequence, our alternative hypothesis is that at least one of the
 three different treatments is different from the others. It is a bit
 tricky to write this mathematically, because (as we will discuss) there
 are quite a few different ways in which the null hypothesis can be
@@ -33,7 +33,7 @@ false. So for now we will just write the alternative hypothesis like this:
 
 H\ :sub:`1`: it is NOT true that µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`
 
-This null hypothesit is a lot trickier to test than any of the ones
+This null hypothesis is a lot trickier to test than any of the ones
 we have seen previously. How shall we do it? A sensible guess would be to
 “do an ANOVA”, since that is the title of the chapter, but it is not
 particularly clear why an “analysis of *variances*” will help us learn
@@ -205,7 +205,7 @@ variation” (|SS_w|\).\ [#]_
 
 How does that help me find out whether the groups have different population
 means? Um. Wait. Hold on a second. Now that I think about it, this is *exactly*
-what we were looking for. If the null hypothesit is true then you would expect
+what we were looking for. If the null hypothesis is true then you would expect
 all the sample means to be pretty similar to each other, right? And that would
 imply that you would expect |SS_b| to be really small, or at least you would
 expect it to be a lot smaller than “the variation associated with everything
@@ -265,8 +265,8 @@ ANOVA is and what the mean squares values actually are.
 The next section discusses that in a bit of detail, but for readers that are not
 interested in the details of what the test is actually measuring I will cut to
 the chase. In order to complete our hypothesis test we need to know the
-sampling distribution for *F* if the null hypothesit is true. Not surprisingly,
-the sampling distribution for the *F*-statistic under the null hypothesit is an
+sampling distribution for *F* if the null hypothesis is true. Not surprisingly,
+the sampling distribution for the *F*-statistic under the null hypothesis is an
 *F*-distribution. If you recall our discussion of the *F*-distribution in
 chapter :doc:`../Ch07/Ch07_Probability`, the *F*-distribution has two
 parameters, corresponding to the two degrees of freedom involved. The first one
@@ -329,7 +329,7 @@ this:
 ϵ\ :sub:`ik` ~ Normal(0, σ²)
 
 What about the alternative hypothesis, H\ :sub:`1`? The only difference
-between the null hypothesis and the alternative hypothesit is that we
+between the null hypothesis and the alternative hypothesis is that we
 allow each group to have a different population mean. So, if we let
 µ\ :sub:`k` denote the population mean for the *k*-th group in
 our experiment, then the statistical model corresponding to H\ :sub:`1`
@@ -355,17 +355,17 @@ see that the *F*-statistic is basically:\ [#]_
 
 .. math:: F = \frac{\hat{Q} + \hat\sigma^2}{\hat\sigma^2}
 
-where the true value *Q* = 0 if the null hypothesit is true, and *Q* > 0 if
-the alternative hypothesit is true (:ref:`Hays, 1994 <Hays_1994>`, Ch. 10).
+where the true value *Q* = 0 if the null hypothesis is true, and *Q* > 0 if
+the alternative hypothesis is true (:ref:`Hays, 1994 <Hays_1994>`, Ch. 10).
 Therefore, at a bare minimum *the F-value must be larger than 1* to have any
 chance of rejecting the null hypothesis. Note that this *does not* mean that
 it is impossible to get an *F*-value less than 1. What it means is
-that if the null hypothesit is true the sampling distribution of the
+that if the null hypothesis is true the sampling distribution of the
 *F*-ratio has a mean of 1,\ [#]_ and so we need to see
 *F*-values larger than 1 in order to safely reject the null.
 
 To be a bit more precise about the sampling distribution, notice that if the
-null hypothesit is true, both |MS_b| and |MS_w| are estimators of the variance
+null hypothesis is true, both |MS_b| and |MS_w| are estimators of the variance
 of the residuals ϵ\ :sub:`ik`. If those residuals are normally distributed,
 then you might suspect that the estimate of the variance of ϵ\ :sub:`ik` is
 χ²-distributed, because (as discussed in :doc:`../Ch07/Ch07_Probability_6`)

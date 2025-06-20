@@ -205,11 +205,11 @@ asymmetric (skewed; see :doc:`Ch04_Descriptives_3`). This is illustrated in
 :numref:`fig-meanmedian`. Notice that the median (right-hand side) is located
 closer to the “body” of the histogram, whereas the mean left hand side) gets
 dragged towards the “tail” (where the extreme values are). To give a concrete
-example, suppose Bob (income $50,000), Kate (income $60,000) and Jane (income
-$65,000) are sitting at a table. The average income at the table is $58,333 and
-the median income is $60,000. Then Bill sits down with them (income
-$100,000,000). The average income has now jumped to $25,043,750 but the median
-rises only to $62,500. If you are interested in looking at the overall income
+example, suppose Bob (income $50 000), Kate (income $60 000) and Jane (income
+$65 000) are sitting at a table. The average income at the table is $58 333
+and the median income is $60 000. Then Bill sits down with them (income
+$100 000 000). The average income has now jumped to $25 043 750 but the median
+rises only to $62 500. If you are interested in looking at the overall income
 at the table the mean might be the right answer. But if you are interested in
 what counts as a typical income at the table the median would be a better
 choice here.

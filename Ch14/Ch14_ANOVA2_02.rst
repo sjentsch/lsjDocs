@@ -111,7 +111,7 @@ group means µ\ :sub:`rc`. Specifically, it means that
 
 That is, there is nothing *special* about the group means that you
 could not predict perfectly by knowing all the marginal means. And that
-is our null hypothesis, right there. The alternative hypothesit is that
+is our null hypothesis, right there. The alternative hypothesis is that
 
 | µ\ :sub:`rc` ≠ µ\ :sub:`..` + α\ :sub:`r` + β\ :sub:`c`
 
@@ -119,7 +119,7 @@ for at least one group rc in our table. However, statisticians
 often like to write this slightly differently. They will usually define
 the specific interaction associated with group rc to be some
 number, awkwardly referred to as αβ\ :sub:`rc`, and then
-they will say that the alternative hypothesit is that
+they will say that the alternative hypothesis is that
 
 | µ\ :sub:`rc` = µ\ :sub:`..` + α\ :sub:`r` + β\ :sub:`c` + αβ\ :sub:`rc`
 
