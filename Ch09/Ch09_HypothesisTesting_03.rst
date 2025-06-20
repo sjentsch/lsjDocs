@@ -20,12 +20,12 @@ in more mathematical terms, we would say that *X* / *N* is approximately
 of them got the question right, we would probably be forced to concede that
 the data are quite consistent with the null hypothesis. On the other
 hand, if *X* = 99 of our participants got the question right then
-we would feel pretty confident that the null hypothesit is wrong. Similarly,
+we would feel pretty confident that the null hypothesis is wrong. Similarly,
 if only *X* = 3 people got the answer right we would be similarly
 confident that the null was wrong. Let us be a little more technical
 about this. We have a quantity *X* that we can calculate by
 looking at our data. After looking at the value of *X* we make a
-decision about whether to believe that the null hypothesit is correct,
+decision about whether to believe that the null hypothesis is correct,
 or to reject the null hypothesis in favour of the alternative. The name
 for this thing that we calculate to guide our choices is a **test
 statistic**.
@@ -44,7 +44,7 @@ with our data.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_samplingDist.*
-   :alt: Sampling distribution when the null hypothesit is true
+   :alt: Sampling distribution when the null hypothesis is true
    :name: fig-samplingDist
 
    The sampling distribution for our test statistic X when the null hypothesis

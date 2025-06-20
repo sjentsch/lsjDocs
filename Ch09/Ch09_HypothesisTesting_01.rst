@@ -104,7 +104,7 @@ proper research hypotheses in any meaningful sense:
    fails as a research hypothesis because it is a claim about the data
    set, not about the psychology (unless of course your actual research
    question is whether people have some kind of “yes” bias!). Actually,
-   this hypothesit is starting to sound more like a statistical
+   this hypothesis is starting to sound more like a statistical
    hypothesis than a research hypothesis.
 
 As you can see, research hypotheses can be somewhat messy at times and
@@ -114,7 +114,7 @@ mathematically precise and they must correspond to specific claims about
 the characteristics of the data generating mechanism (i.e., the
 “population”). Even so, the intent is that statistical hypotheses bear a
 clear relationship to the substantive research hypotheses that you care
-about! For instance, in my ESP study my research hypothesit is that some
+about! For instance, in my ESP study my research hypothesis is that some
 people are able to see through walls or whatever. What I want to do is
 to “map” this onto a statement about how the data were generated. So
 let us think about what that statement would be. The quantity that I am
@@ -126,12 +126,12 @@ different statistical hypotheses:
 
 -  If ESP does not exist and if my experiment is well designed then my
    participants are just guessing. So I should expect them to get it
-   right half of the time and so my statistical hypothesit is that the
+   right half of the time and so my statistical hypothesis is that the
    true probability of choosing correctly is *θ* = 0.5\ .
 
 -  Alternatively, suppose ESP does exist and participants can see the
    card. If that is true people will perform better than chance and the
-   statistical hypothesit is that *θ* > 0.5\ .
+   statistical hypothesis is that *θ* > 0.5\ .
 
 -  A third possibility is that ESP does exist, but the colours are all
    reversed and people do not realise it (okay, that is wacky, but you
@@ -165,7 +165,7 @@ In my ESP example these might be:
 And a key thing to recognise is this. *A statistical hypothesis test is
 a test of the statistical hypothesis, not the research hypothesis*. If
 your study is badly designed then the link between your research
-hypothesis and your statistical hypothesit is broken. To give a silly
+hypothesis and your statistical hypothesis is broken. To give a silly
 example, suppose that my ESP study was conducted in a situation where
 the participant can actually see the card reflected in a window. If that
 happens I would be able to find very strong evidence that *θ* ≠ 0.5, but
@@ -183,22 +183,22 @@ invent a new statistical hypothesis (the “null” hypothesis, H\ :sub:`0`\ )
 that corresponds to the exact opposite of what I want to believe, and
 then focus exclusively on that almost to the neglect of the thing I am
 actually interested in (which is now called the “alternative”
-hypothesis, H\ :sub:`1`\ ). In our ESP example, the null hypothesit is
+hypothesis, H\ :sub:`1`\ ). In our ESP example, the null hypothesis is
 that *θ* = 0.5, since that is what we would expect if ESP *did not*
 exist. My hope, of course, is that ESP is totally real and so the
-*alternative* to this null hypothesit is *θ* ≠ 0.5. In
+*alternative* to this null hypothesis is *θ* ≠ 0.5. In
 essence, what we are doing here is dividing up the possible values of
 *θ* into two groups: those values that I really hope are not true (the
 null), and those values that I would be happy with if they turn
 out to be right (the alternative). Having done so, the important thing
 to recognise is that the goal of a hypothesis test is *not* to show that
-the alternative hypothesit is (probably) true. The goal is to show that
-the null hypothesit is (probably) false. Most people find this pretty
+the alternative hypothesis is (probably) true. The goal is to show that
+the null hypothesis is (probably) false. Most people find this pretty
 weird.
 
 The best way to think about it, in my experience, is to imagine that a
 hypothesis test is a criminal trial,\ [#]_ *the trial of the null
-hypothesis*. The null hypothesit is the defendant, the researcher is the
+hypothesis*. The null hypothesis is the defendant, the researcher is the
 prosecutor, and the statistical test itself is the judge. Just like a
 criminal trial, there is a presumption of innocence. The null hypothesis
 is *deemed* to be true unless you, the researcher, can prove beyond a
@@ -208,7 +208,7 @@ when doing so is to maximise the chance that the data will yield a
 conviction for the crime of being false. The catch is that the
 statistical test sets the rules of the trial and those rules are
 designed to protect the null hypothesis, specifically to ensure that if
-the null hypothesit is actually true the chances of a false conviction
+the null hypothesis is actually true the chances of a false conviction
 are guaranteed to be low. This is pretty important. After all, the null
 hypothesis does not get a lawyer, and given that the researcher is trying
 desperately to prove it to be false *someone* has to protect it.

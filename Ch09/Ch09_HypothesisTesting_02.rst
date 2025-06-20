@@ -20,7 +20,7 @@ statistical hypothesis testing is not to *eliminate* errors, but to
 
 At this point, we need to be a bit more precise about what we mean by
 “errors”. First, let us state the obvious. It is either the case that the
-null hypothesit is true or that it is false, and our test will either
+null hypothesis is true or that it is false, and our test will either
 retain the null hypothesis or reject it.\ [#]_ So, as the table below
 illustrates, after we run the test and make our choice one of four
 things might have happened:

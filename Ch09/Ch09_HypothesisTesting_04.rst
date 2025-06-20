@@ -27,7 +27,7 @@ region? Well, let us consider what we know:
 -  *X* should be very big or very small in order to reject the
    null hypothesis.
 
--  If the null hypothesit is true, the sampling distribution of
+-  If the null hypothesis is true, the sampling distribution of
    *X* is Binomial(0.5, N).
 
 -  If α = 0.05, the critical region must cover 5\% of this
@@ -39,7 +39,7 @@ reject the null hypothesis, and the sampling distribution in question
 describes the probability that we would obtain a particular value of
 *X* if the null hypothesis were actually true. Now, let us suppose
 that we chose a critical region that covers 20\% of the sampling
-distribution, and suppose that the null hypothesit is actually true.
+distribution, and suppose that the null hypothesis is actually true.
 What would be the probability of incorrectly rejecting the null? The
 answer is of course 20\%. And, therefore, we would have built a test that
 had an α level of 0.2. If we want
@@ -58,7 +58,7 @@ of the sampling distribution of our test statistic.
    :numref:`fig-samplingDist`). The grey bars correspond to those values of X
    for which we would retain the null hypothesis. The blue (darker shaded) bars
    show the critical region, those values of X for which we would reject the
-   null. Because the alternative hypothesit is two-sided (i.e., allows both
+   null. Because the alternative hypothesis is two-sided (i.e., allows both
    θ < 0.5 and θ > 0.5), the critical region covers both tails of the
    distribution. To ensure an α level of 0.05, we need to ensure that each of
    the two regions encompasses 2.5\% of the sampling distribution.
@@ -84,7 +84,7 @@ At this point, our hypothesis test is essentially complete:
    H\ :sub:`1`;
 
 #. (3) figure out the sampling distribution of the test statistic on the
-   assumption that the null hypothesit is true (in this case, binomial);
+   assumption that the null hypothesis is true (in this case, binomial);
    and then
 
 #. (4) calculate the critical region that produces an appropriate
@@ -150,11 +150,9 @@ both tails of the sampling distribution (2.5\% on either side if
 However, that is not the only possibility. I might only be willing to
 believe in ESP if it produces better than chance performance. If so,
 then my alternative hypothesis would only covers the possibility that
-*θ* > 0.5, and as a consequence the null hypothesis now
-becomes *θ* ≤ 0.5
+*θ* > 0.5, and as a consequence the null hypothesis now becomes:
 
-H\ :sub:`1`: *θ* ≤ 0.5
-
+H\ :sub:`0`: *θ* ≤ 0.5
 H\ :sub:`1`: *θ* > 0.5 
 
 When this happens, we have what is called a **one-sided test** and the
@@ -168,7 +166,7 @@ is illustrated in :numref:`fig-rejectionRegion2`.
    :name: fig-rejectionRegion2
 
    The critical region for a one-sided test. In this case, the alternative
-   hypothesit is that θ = 0.5 so we would only reject the null hypothesis for
+   hypothesis is that θ = 0.5 so we would only reject the null hypothesis for
    large values of X. As a consequence, the critical region only covers the
    upper tail of the sampling distribution, specifically the upper 5\% of the
    distribution. Contrast this to the two-sided version in

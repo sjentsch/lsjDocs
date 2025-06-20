@@ -31,7 +31,7 @@ The power function
 .. ----------------------------------------------------------------------------
 
 Let us take a moment to think about what a Type II error actually is. A Type II
-error occurs when the alternative hypothesit is true, but we are nevertheless
+error occurs when the alternative hypothesis is true, but we are nevertheless
 unable to reject the null hypothesis. Ideally, we would be able to calculate a
 single number β that tells us the Type II error rate, in the same way that we
 can set α = 0.05 for the Type I error rate. Unfortunately, this is a lot
@@ -44,16 +44,15 @@ not the same one that the null hypothesis predicts, as the most likely value
 for *X* is now 55 out of 100. Not only that, the whole sampling distribution
 has now shifted, as shown in :numref:`fig-rejectionRegion3`. The critical
 regions, of course, do not change. By definition the critical regions are based
-on what the null hypothesis predicts. What we are seeing in this figure is the
-fact that when the null hypothesit is wrong, a much larger proportion of the
-sampling distribution distribution falls in the critical region. And of
-course that is what should happen. The probability of rejecting the null
-hypothesit is larger when the null hypothesis is actually false! However
-*θ* = 0.55 is not the only possibility consistent with the
-alternative hypothesis. Let us instead suppose that the true value of
-*θ* is actually 0.70. What happens to the sampling distribution when this
-occurs? The answer, shown in :numref:`fig-rejectionRegion4`, is that almost the
-entirety of the sampling distribution has now moved into the critical region.
+on what the null hypothesis predicts, but when the null hypothesis is wrong, a
+much larger proportion of the sampling distribution distribution falls in the 
+ritical region. And of course that is what should happen. The probability of
+rejecting the null hypothesis is larger when the null hypothesis is actually
+false! However *θ* = 0.55 is not the only possibility consistent with the
+alternative hypothesis. Let us instead suppose that the true value of *θ* is
+actually 0.70. What happens to the sampling distribution when this occurs? The
+answer, shown in :numref:`fig-rejectionRegion4`, is that almost the entirety
+of the sampling distribution has now moved into the critical region.
 Therefore, if *θ* = 0.70, the probability of us correctly rejecting the null
 hypothesis (i.e., the power of the test) is much larger than if *θ* = 0.55. In
 short, while *θ* = 0.55 and *θ* = 0.70 are both part of the alternative
@@ -93,7 +92,7 @@ power is large.
    (greater chance of correct rejection) if the true value of θ is very
    different from the value that the null hypothesis specifies (i.e., θ = 0.5).
    Notice that when θ actually is equal to 0.5 (plotted as a black dot), the
-   null hypothesit is in fact true and rejecting the null hypothesis in this
+   null hypothesis is in fact true and rejecting the null hypothesis in this
    instance would be a Type I error.
       
 .. ----------------------------------------------------------------------------
@@ -135,10 +134,9 @@ magnitude of this difference, abs(*θ* - *θ*\ :sub:`0`).
    you do not have any evidence that it is even real. On the other hand, if
    you do have a significant effect but your effect size is small then
    there is a pretty good chance that your result (although real) is not all
-   that interesting. However, this guide is very crude. It depends a lot on
-   what exactly you are studying. Small effects can be of massive practical
-   importance in some situations. So do not take this table too seriously.
-   It is a rough guide at best.
+   that interesting. It does depend a lot on what exactly you are studying;
+   small effects can be of massive practical importance in some situations.
+   So do not take this table too seriously – it is a rough guide at best.
 
    +------------------------+-------------------------+--------------------------+
    |                        | big effect size         | small effect size        |
@@ -154,17 +152,17 @@ collected the data, and gotten a significant effect when you ran your
 hypothesis test. Is it not enough just to say that you have gotten a
 significant effect? Surely that is the *point* of hypothesis testing?
 Well, sort of. Yes, the point of doing a hypothesis test is to try to
-demonstrate that the null hypothesit is wrong, but that is hardly the
+demonstrate that the null hypothesis is wrong, but that is hardly the
 only thing we are interested in. If the null hypothesis claimed that
 *θ* = 0.50 and we show that it is wrong, we have only really told
 half of the story. Rejecting the null hypothesis implies that we believe
 that *θ* ≠ 0.50, but there is a big difference between
 *θ* = 0.51 and *θ* = 0.80. If we find that
 *θ* = 0.80, then not only have we found that the null
-hypothesit is wrong, it appears to be *very* wrong. On the other hand,
+hypothesis is wrong, it appears to be *very* wrong. On the other hand,
 suppose we have successfully rejected the null hypothesis, but it looks
 like the true value of *θ* is only 0.51 (this would only be
-possible with a very large study). Sure, the null hypothesit is wrong
+possible with a very large study). Sure, the null hypothesis is wrong
 but it is not at all clear that we actually *care* because the effect
 size is so small. In the context of my ESP study we might still care
 since any demonstration of real psychic powers would actually be pretty
@@ -174,10 +172,10 @@ we are looking at differences in high school exam scores between males
 and females and it turns out that the female scores are 1\% higher on
 average than the males. If I have got data from thousands of students then
 this difference will almost certainly be *statistically significant*,
-but regardless of how small the *p*-value it is is just not very
+but regardless of how small the *p*-value is, it is just not very
 interesting. You would hardly want to go around proclaiming a crisis in boys
 education on the basis of such a tiny difference would you? It is for
-this reason that it is becoming more standard (slowly, but surely) to
+this reason that it is becoming more common (slowly, but surely) to
 report some kind of standard measure of effect size along with the the
 results of the hypothesis test. The hypothesis test itself tells you
 whether you should believe that the effect you have observed is real
@@ -187,19 +185,17 @@ whether or not you should care.
 Increasing the power of your study
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Not surprisingly, scientists are fairly obsessed with maximising the
-power of their experiments. We want our experiments to work and so we
-want to maximise the chance of rejecting the null hypothesis if it is
-false (and of course we usually want to believe that it is false!). As
-we have seen, one factor that influences power is the effect size. So the
-first thing you can do to increase your power is to increase the effect
-size. In practice, what this means is that you want to design your study
-in such a way that the effect size gets magnified. For instance, in my
-ESP study I might believe that psychic powers work best in a quiet,
-darkened room with fewer distractions to cloud the mind. Therefore I
-would try to conduct my experiments in just such an environment. If I
-can strengthen people’s ESP abilities somehow then the true value of
-*θ* will go up\ [#]_ and therefore my effect size will be
+Not surprisingly, scientists are fairly obsessed with maximising the power of
+their experiments. We want our experiments to work and so we want to maximise
+the chance of rejecting the null hypothesis if it is false. As we have seen,
+one factor that influences power is the effect size. So the first thing you
+can do to increase your power is to increase the effect size. In practice,
+what this means is that you want to design your study in such a way that the
+effect size gets magnified. For instance, in my ESP study I might believe that
+psychic powers work best in a quiet, darkened room with fewer distractions to
+cloud the mind. Therefore, I would try to conduct my experiments in just such
+an environment. If I can strengthen people’s ESP abilities somehow then the
+true value of *θ* will go up\ [#]_ and therefore my effect size will be
 larger. In short, clever experimental design is one way to boost power,
 because it can alter the effect size.
 
@@ -211,8 +207,8 @@ increasing power is to increase the sample size. In general, the more
 observations that you have available, the more likely it is that you can
 discriminate between two hypotheses. If I ran my ESP experiment with ten
 participants and seven of them correctly guessed the colour of the hidden
-card you would not be terribly impressed. But if I ran it with 10,000
-participants, and 7,000 of them got the answer right, you would be much
+card you would not be terribly impressed. But if I ran it with 10 000
+participants, and 7 000 of them got the answer right, you would be much
 more likely to think I had discovered something. In other words, power
 increases with the sample size. This is illustrated in :numref:`fig-powerN`,
 which shows the power of the test for a true parameter of *θ* = 0.70
@@ -226,7 +222,7 @@ the null hypothesis predicts that *θ*\ :sub:`0` = 0.5.
    :name: fig-powerN
 
    The power of our test plotted as a function of the sample size N. In this
-   case, the true value of θ is 0.7 but the null hypothesit is that θ = 0.5.
+   case, the true value of θ is 0.7 but the null hypothesis is that θ = 0.5.
    Overall, larger *N* means greater power (the small zig-zags in this function
    occur because of some odd interactions between θ, α and the fact that the
    binomial distribution is discrete, it does not matter for any serious
@@ -256,7 +252,7 @@ about what the effect size will be that I would not know how to interpret
 the answers. Not only that, after extensive conversations with someone
 who does stats consulting for a living (my wife, as it happens), I can not
 help but notice that in practice the *only* time anyone ever asks her
-for a power analysit is when she is helping someone write a grant
+for a power analysis is when she is helping someone write a grant
 application. In other words, the only time any scientist ever seems to
 want a power analysis in real life is when they are being forced to do it
 by bureaucratic process. It is not part of anyone’s day-to-day work. In

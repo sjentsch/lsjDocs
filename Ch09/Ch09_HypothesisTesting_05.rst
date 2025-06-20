@@ -21,23 +21,21 @@ A softer view of decision making
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 One problem with the hypothesis testing procedure that I have described is
-that it makes no distinction at all between a result that is “barely
-significant” and those that are “highly significant”. For instance, in
-my ESP study the data I obtained only just fell inside the critical
-region, so I did get a significant effect but it was a pretty near
-thing. In contrast, suppose that I would run a study in which *X* = 97
-out of my *N* = 100 participants got the answer right. This would
-obviously be significant too but by a much larger margin, such that
-there is really no ambiguity about this at all. The procedure that I have
-already described makes no distinction between the two. If I adopt the
-standard convention of allowing α = 0.05 as my acceptable
-Type I error rate, then both of these are significant results.
+that it makes no distinction at all between a result that is “barely 
+significant” and those that are “highly significant”. For instance, in my ESP
+study the data I obtained only just fell inside the critical region, so I did
+get a significant effect but it was a pretty near thing. In contrast, suppose
+that I would run a study in which *X* = 97 out of my *N* = 100 participants
+got the answer right. This would obviously be significant too but by a much
+larger margin, such that there is really no ambiguity about this at all. The
+procedure that I have already described makes no distinction between the two.
+If I adopt the standard convention of allowing α = 0.05 as my acceptable Type
+I error rate, then both of these are significant results.
 
-This is where the *p*-value comes in handy. To understand how it
-works, let us suppose that we ran lots of hypothesis tests on the same
-data set, but with a different value of α in each case.
-When we do that for my original ESP data what we would get is something like
-this:
+This is where the *p*-value comes in handy. To understand how it works, let us
+suppose that we ran lots of hypothesis tests on the same data set, but with a
+different value of α in each case. When we do that for my original ESP data
+what we would get is something like this:
 
 +------------------+------+------+------+------+------+
 | Value of α       | 0.05 | 0.04 | 0.03 | 0.02 | 0.01 |
@@ -45,14 +43,13 @@ this:
 | Reject the null? | Yes  | Yes  | Yes  | No   | No   |
 +------------------+------+------+------+------+------+
 
-When we test the ESP data (*X* = 62 successes out of *N* = 100
-observations), using α levels of 0.03 and above, we would always
-find ourselves rejecting the null hypothesis. For α levels
-of 0.02 and below we always end up retaining the null hypothesis.
-Therefore, somewhere between 0.02 and 0.03 there must be a smallest value
-of α that would allow us to reject the null hypothesis for
-this data. This is the *p*-value. As it turns out the ESP data has
-*p* = 0.021. In short,
+When we test the ESP data (*X* = 62 successes out of *N* = 100 observations),
+using α levels of 0.03 and above, we would always find ourselves rejecting the
+null hypothesis. For α levels of 0.02 and below we always end up retaining the
+null hypothesis. Therefore, somewhere between 0.02 and 0.03 there must be a
+smallest value of α that would allow us to reject the null hypothesis for this
+data. This is the *p*-value. As it turns out the ESP data has *p* = 0.021. In
+short,
 
    *p* is defined to be the smallest Type I error rate
    (α) that you have to be willing to tolerate if you want
@@ -91,11 +88,11 @@ of the sampling distribution? That is not a coincidence, almost all
 our type II error rate, β). The reason for that is that a
 good critical region almost always corresponds to those values of the
 test statistic that are least likely to be observed if the null
-hypothesit is true. If this rule is true, then we can define the
+hypothesis is true. If this rule is true, then we can define the
 *p*-value as the probability that we would have observed a test
 statistic that is at least as extreme as the one we actually did get. In
 other words, if the data are extremely implausible according to the null
-hypothesis, then the null hypothesit is probably wrong.
+hypothesis, then the null hypothesis is probably wrong.
 
 A common mistake
 ~~~~~~~~~~~~~~~~
@@ -106,7 +103,7 @@ hypothesis testing and the other based on Fisher’s. Unfortunately, there
 is a third explanation that people sometimes give, especially when
 they are first learning statistics, and it is *absolutely and completely
 wrong*. This mistaken approach is to refer to the *p*-value as
-“the probability that the null hypothesit is true”. It is an intuitively
+“the probability that the null hypothesis is true”. It is an intuitively
 appealing way to think, but it is wrong in two key respects. First, null
 hypothesis testing is a frequentist tool and the frequentist approach to
 probability does *not* allow you to assign probabilities to the null

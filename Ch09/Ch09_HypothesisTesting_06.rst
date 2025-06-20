@@ -132,7 +132,7 @@ print out the *p*-value when it is that small (e.g., SPSS just
 writes *p* = 0.000 whenever *p* < 0.001), and in part because a
 very small *p*-value can be kind of misleading. The human mind
 sees a number like 0.0000000001 and it is hard to suppress the gut feeling
-that the evidence in favour of the alternative hypothesit is a near
+that the evidence in favour of the alternative hypothesis is a near
 certainty. In practice however, this is usually wrong. Life is a big,
 messy, complicated thing, and every statistical test ever invented
 relies on simplifications, approximations and assumptions. As a

@@ -30,7 +30,7 @@ quick summary of what I take these two approaches to be.
 
 First, let us talk about Fisher’s approach. As far as I can tell, Fisher
 assumed that you only had the one hypothesis (the null) and that what
-you want to do is find out if the null hypothesit is inconsistent with
+you want to do is find out if the null hypothesis is inconsistent with
 the data. From his perspective, what you should do is check to see if
 the data are “sufficiently unlikely” according to the null. In fact, if
 you remember back to our earlier discussion, that is how Fisher defines
@@ -47,7 +47,7 @@ Fisher’s. His view was that there are multiple things that you could
 *do* (accept the null or accept the alternative) and the point of the
 test was to tell you which one the data support. From this perspective,
 it is critical to specify your alternative hypothesis properly. If you
-do not know what the alternative hypothesit is, then you do not know how
+do not know what the alternative hypothesis is, then you do not know how
 powerful the test is, or even which action makes sense. His framework
 genuinely requires a competition between different hypotheses. For
 Neyman, the *p*-value did not directly measure the probability of
@@ -70,19 +70,19 @@ Bayesians versus frequentists
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Earlier on in this chapter I was quite emphatic about the fact that you
-*cannot* interpret the *p*-value as the probability that the null hypothesit is
+*cannot* interpret the *p*-value as the probability that the null hypothesis is
 true. NHST is fundamentally a frequentist tool (see chapter
 :doc:`../Ch07/Ch07_Probability`) and as such it does not allow you to assign
-probabilities to hypotheses. The null hypothesit is either true or it is not.
+probabilities to hypotheses. The null hypothesis is either true or it is not.
 The Bayesian approach to statistics interprets probability as a degree of
 belief, so it is totally okay to say that there is a 10\% chance that the null
-hypothesit is true. That is just a reflection of the degree of confidence that
+hypothesis is true. That is just a reflection of the degree of confidence that
 you have in this hypothesis. You are not allowed to do this within the
 frequentist approach. Remember, if you are a frequentist, a probability can only
 be defined in terms of what happens after a large number of independent
 replications (i.e., a long run frequency). If this is your interpretation of
-probability, talking about the “probability” that the null hypothesit is true
-is complete gibberish: a null hypothesit is either true or it is false. There is
+probability, talking about the “probability” that the null hypothesis is true
+is complete gibberish: a null hypothesis is either true or it is false. There is
 no way you can talk about a long run frequency for this statement. To talk
 about “the probability of the null hypothesis” is as meaningless as “the
 colour of freedom”. It does not have one!
@@ -116,10 +116,10 @@ checking whether that is consistent with how you have interpreted it.
 That is where the biggest trap lies.
 
 To give an example of this, consider the following example (:ref:`Gelman &
-Stern, 2006 <Gelman_2006>`). Suppose I am running my ESP study and I have decided
-to analyse the data separately for the male participants and the female
-participants. Of the male participants, 33 out of 50 guessed the colour of the
-card correctly. This is a significant effect (*p* = 0.03). Of the female
+Stern, 2006 <Gelman_2006>`). Suppose I am running my ESP study and I have
+decided to analyse the data separately for the male participants and the
+female participants. Of the male participants, 33 out of 50 guessed the colour
+of the card correctly. This is a significant effect (*p* = 0.03). Of the female
 participants, 29 out of 50 guessed correctly. This is not a significant effect
 (p = 0.32). Upon observing this, it is extremely tempting for people to start
 wondering why there is a difference between males and females in terms of
