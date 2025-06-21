@@ -14,7 +14,7 @@ Using jamovi to specify your ANOVA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To make life easier for you, jamovi can do ANOVA… hurrah! Go to the
-``ANOVA`` - ``ANOVA`` analysis, and move the ``mood.gain`` variable across
+``ANOVA`` → ``ANOVA`` analysis, and move the ``mood.gain`` variable across
 so it is in the ``Dependent Variable`` box, and then move the ``drug``
 variable across so it is in the ``Fixed Factors`` box. This should give
 the results as shown in :numref:`fig-anova2`.\ [#]_

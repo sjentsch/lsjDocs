@@ -31,7 +31,7 @@ Anxifree is actually much more effective when administered in conjunction with
 CBT. The ANOVA that we developed in the previous section does not capture this
 idea. To get some idea of whether an interaction is actually happening here, it
 helps to plot the various group means. In jamovi this is done via the ANOVA
-``Estimated Marginal Means`` option - just move ``drug`` and ``therapy``
+``Estimated Marginal Means`` option – just move ``drug`` and ``therapy``
 across into the ``Marginal Means`` box under ``Term 1``. This should look
 something like :numref:`fig-interaction`. Our main concern relates to the fact
 that the two lines are not parallel. The effect of ``CBT`` (difference between
@@ -228,7 +228,7 @@ Adding interaction terms to the ANOVA model in jamovi is
 straightforward. In fact it is more than straightforward because it is
 the default option for ANOVA. This means that when you specify an ANOVA
 with two factors, e.g., ``drug`` and ``therapy`` then the interaction
-component - ``drug`` × ``therapy`` (shown as ``drug * therapy``) - is
+component – ``drug`` × ``therapy`` (shown as ``drug * therapy``) – is
 added automatically to the model.\ [#]_ When we run the ANOVA with the
 interaction term included, then we get the results shown in
 :numref:`fig-factorialanova4`.

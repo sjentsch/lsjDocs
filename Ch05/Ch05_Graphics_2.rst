@@ -32,7 +32,7 @@ thick line in the middle of the box is the median; the box itself spans the
 range from the 25th percentile to the 75th percentile; and the “whiskers” go
 out to the most extreme data point that does not exceed a certain bound. By
 default, this value is 1.5 times the interquartile range (IQR), calculated as
-*25th percentile - (1.5 \* IQR)* for the lower boundary, and *75th percentile
+*25th percentile – (1.5 \* IQR)* for the lower boundary, and *75th percentile
 \+ (1.5 \* IQR)* for the upper boundary. Any observation whose value falls
 outside this range is plotted as a circle or dot instead of being covered by
 the whiskers, and is commonly referred to as an **outlier**. For the

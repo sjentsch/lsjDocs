@@ -70,20 +70,20 @@ one you want, then click on the ``Open`` button.
 There are a few things that you can check to make sure that the data
 gets imported correctly:
 
--  Heading. Does the first row of the file contain the names for each
-   variable - a “header” row? The |booksales|_ file has a header,
+-  Heading: Does the first row of the file contain the names for each
+   variable – a “header” row? The |booksales|_ file has a header,
    so that is a yes.
 
--  Separator. What character is used to separate different entries? In
+-  Separator: What character is used to separate different entries? In
    most CSV files this will be a comma (it is “comma separated” after
    all).
 
--  Decimal. What character is used to specify the decimal point? In
+-  Decimal: What character is used to specify the decimal point? In
    English speaking countries this is almost always a period (i.e.,
    ``.``). That is not universally true though, many European countries
    use a comma.
 
--  Quote. What character is used to denote a block of text? That is
+-  Quote: What character is used to denote a block of text? That is
    usually going to be a double quote mark (``"``). It is for the
    |booksales|_ file.
 
@@ -99,13 +99,13 @@ to try it and see if it works. Sometimes though you will need to change
 some of the formatting. The ones that I have often found myself needing to
 change are:
 
--  ``header``. A lot of the time when you are storing data as a CSV file
+-  ``header``: A lot of the time when you are storing data as a CSV file
    the first row actually contains the column names and not data. If
    that is not true then it is a good idea to open up the CSV file in a
    spreadsheet programme such as LibreOffice and add the header row
    manually.
 
--  ``sep``. As the name “comma separated value” indicates, the values in
+-  ``sep``: As the name “comma separated value” indicates, the values in
    a row of a CSV file are usually separated by commas. This is not
    universal, however. In Europe the decimal point is typically written
    as ``,`` instead of ``.`` and as a consequence it would be somewhat
@@ -113,19 +113,19 @@ change are:
    use ``;`` instead of ``,`` as the separator. At other times, I have
    seen a TAB character used.
 
--  ``quote``. It is conventional in CSV files to include a quoting
+-  ``quote``: It is conventional in CSV files to include a quoting
    character for textual data. As you can see by looking at the
    |booksales|_ file, this is usually a double quote character,
    ``"``. But sometimes there is no quoting character at all, or you
    might see a single quote mark ``'`` used instead.
 
--  ``skip``. It is actually very common to receive CSV files in which the
+-  ``skip``: It is actually very common to receive CSV files in which the
    first few rows have nothing to do with the actual data. Instead, they
    provide a human readable summary of where the data came from, or
    maybe they include some technical info that does not relate to the
    data.
 
--  ``missing values``. Often you will get given data with missing values.
+-  ``missing values``: Often you will get given data with missing values.
    For one reason or another, some entries in the table are missing. The
    data file needs to include a “special” value to indicate that the
    entry is missing. By default jamovi assumes that this value is

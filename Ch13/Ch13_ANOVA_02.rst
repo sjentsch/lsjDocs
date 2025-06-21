@@ -287,7 +287,7 @@ formulas showing how they are calculated, is shown in :numref:`tab-anovatable`.
    +====================+====================+===================+==========================+=====================+===============+
    | **between groups** | |df_b| = *G* - 1   | |SS_b| = |f_SS_b| | |MS_b| = |SS_b| / |df_b| | F = |MS_b| / |MS_w| | [complicated] |
    +--------------------+--------------------+-------------------+--------------------------+---------------------+---------------+
-   | **within groups**  | |df_w| = *N* - *G* | |SS_w| = |f_SS_w| | |MS_w| = |SS_w| / |df_w| |                   - |             - |
+   | **within groups**  | |df_w| = *N* - *G* | |SS_w| = |f_SS_w| | |MS_w| = |SS_w| / |df_w| |                   – |             – |
    +--------------------+--------------------+-------------------+--------------------------+---------------------+---------------+
 
 .. _meaning_of_F:
@@ -499,13 +499,13 @@ all of the groups.
 +-----------+-------------+-------------+---------------+--------------------+
 
 #. We create another computed variable with the name ``sq_res_btw`` and
-   ``(VMEAN(mood.gain, group_by = drug) - VMEAN(mood.gain) - ) ^ 2`` as
-   formula. The term ``VMEAN(mood.gain, group_by = drug)`` represents the
-   group mean |Yb_k|, and ``VMEAN(mood.gain)`` the grand mean |Yb|. Again,
-   we find that the values for that variable are the same as in the last
-   column of the table above: the first three rows represent ``placebo``,
-   followed by three lines with ``anxifree`` and three lines with ``joyzepam``;
-   the next nine lines are a repetition of the first nine ones.
+   ``(VMEAN(mood.gain, group_by = drug) - VMEAN(mood.gain)) ^ 2`` as formula.
+   The term ``VMEAN(mood.gain, group_by = drug)`` represents the group mean
+   |Yb_k|, and ``VMEAN(mood.gain)`` the grand mean |Yb|. Again, we find that
+   the values for that variable are the same as in the last column of the
+   table above: the first three rows represent ``placebo``, followed by three
+   lines with ``anxifree`` and three lines with ``joyzepam``; the next nine
+   lines are a repetition of the first nine ones.
 
 However, for the between group calculations we need to multiply each of
 these squared deviations by |N_k|, the number of observations in
@@ -595,7 +595,7 @@ the ANOVA table would look like this:\ [#]_
 +====================+======+================+==============+===============+===========+
 | **between groups** |    2 |          3.453 |        1.727 |        18.611 |  0.000086 |
 +--------------------+------+----------------+--------------+---------------+-----------+
-| **within groups**  |   15 |          1.392 |        0.093 |             - |         - |
+| **within groups**  |   15 |          1.392 |        0.093 |             – |         – |
 +--------------------+------+----------------+--------------+---------------+-----------+
 
 These days, you will probably never have much reason to want to construct
@@ -675,8 +675,6 @@ Sigh. So much work for one short sentence.
 
 .. |f_SS_b|                            replace:: :math:`\displaystyle\sum_{k=1}^G N_k(\bar{Y}_k - \bar{Y})^2`
 .. |f_SS_w|                            replace:: :math:`\displaystyle\sum_{k=1}^G \displaystyle\sum_{i = 1}^{N_k} ({Y}_{ik} - \bar{Y}_k)^2`
-
-.. `\displaystyle\frac{\mbox{SS}_w}{\mbox{df}_w}`
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
 .. _clinicaltrial:                     ../../_statics/data/clinicaltrial.omv

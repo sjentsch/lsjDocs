@@ -34,7 +34,7 @@ a data reduction technique which, strictly speaking, does not identify
 underlying latent factors. Instead, PCA simply produces a linear combination
 of observed variables. Following this, the section
 :doc:`Ch15_FactorAnalysis_3` (CFA) shows that, unlike EFA, with CFA you start
-with an idea - a model - of how the variables in your data are related to each
+with an idea – a model – of how the variables in your data are related to each
 other. You then test your model against the observed data and assess how good a
 fit the model is. Finally, we introduce :doc:`Ch15_FactorAnalysis_4` which
 tests how consistently a scale measures a psychological construct.

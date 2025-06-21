@@ -72,7 +72,7 @@ Linear regression in jamovi
    
 .. ----------------------------------------------------------------------------
 
-To run my linear regression, open up the ``Regression`` - ``Linear Regression``
+To run my linear regression, open up the ``Regression`` → ``Linear Regression``
 analysis in jamovi, using the |parenthood|_ data set. Then specify
 ``dani.grump`` as the ``Dependent Variable`` and ``dani.sleep`` as the variable
 entered in the ``Covariates`` box. This gives the results shown in

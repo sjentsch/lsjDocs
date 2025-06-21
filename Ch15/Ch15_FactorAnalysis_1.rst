@@ -592,7 +592,7 @@ information to include in your write-up:
 
 .. [#]
    In the latest versions of jamovi you can now save factor scores directly
-   from within jamovi - it's an option. But this explanation is helpful as it's
+   from within jamovi – it's an option. But this explanation is helpful as it's
    a good insight into using R directly from jamovi.
 
 .. ----------------------------------------------------------------------------

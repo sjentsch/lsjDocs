@@ -25,12 +25,12 @@ are *N*\ :sub:`1` = 15 students in Anastasia’s tutorials, and *N*\ :sub:`2` =
 whether Anastasia or Bernadette is a better tutor, or if it does not make much
 of a difference. Dr Harpo sends me the |harpo|_ data set with the course
 grades. file. As usual, I will load the file into jamovi and have a look at what
-variables it contains - there are three variables, ``ID``, ``grade`` and
+variables it contains – there are three variables, ``ID``, ``grade`` and
 ``tutor``. The ``grade`` variable contains each student’s grade, but it is not
 imported into jamovi with the correct measurement level attribute, so I need
 to change this so it is regarded as a continuous variable |continuous| (see
 :ref:`Changing measurement levels <variable_editor>`). The ``tutor`` variable
-is a factor |nominal| that indicates who each student’s tutor was - either
+is a factor |nominal| that indicates who each student’s tutor was – either
 Anastasia or Bernadette.
 
 We can calculate means and standard deviations, using the ``Exploration`` →

@@ -294,7 +294,7 @@ with 21.6, which matches the corresponding *F*-statistic in our ANOVA.
 Finally, one last thing you should know. Because jamovi understands the fact
 that ANOVA and regression are both examples of linear models, it lets you
 extract the classic ANOVA table from your regression model using the ``Linear
-Regression`` - ``Model Coefficients`` - ``Omnibus Test`` - ``ANOVA test``, and
+Regression`` → ``Model Coefficients`` → ``Omnibus Test`` → ``ANOVA test``, and
 this will give you the table shown in :numref:`fig-factorialanova8`.
 
 .. ----------------------------------------------------------------------------
@@ -498,7 +498,7 @@ with the *difference* between these two models is *df*\ :sub:`1` = 4 - 2 = 2.
 
 What about the case when there does not seem to *be* a null model? For
 instance, you might be thinking of the *F*-test that shows up when 
-you select ``F Test`` under the ``Linear Regression`` - ``Model
+you select ``F Test`` under the ``Linear Regression`` → ``Model
 Fit`` options. I originally described that as a test of the regression
 model as a whole. However, that is still a comparison between two
 models. The null model is the trivial model that only includes 1

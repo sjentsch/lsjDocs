@@ -66,7 +66,7 @@ More elaborate options
 
 Often you will want to look at the relationships between several
 variables at once, using a **scatterplot matrix** (in jamovi via the
-``Correlation Matrix`` - ``Plot`` command). Just add another variable, for
+``Correlation Matrix`` → ``Plot`` command). Just add another variable, for
 example ``baby.sleep`` to the list of variables to be correlated, and
 jamovi will create a scatterplot matrix for you, just like the one in
 :numref:`fig-scatterplot3`.

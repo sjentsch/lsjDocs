@@ -251,7 +251,7 @@ from the |aflsmall_margins|_ data set in column A (56, 31, 56, 8, 32). Change
 the variable type to ``Continuous`` and under ``Descriptives`` click the
 ``Variance`` check box, and you get the same values for variance as the one we
 calculated by hand (**324.64**). No, wait, you get a completely *different*
-answer (**405.80**) - see :numref:`fig-aflsmall_margins_variance1`.
+answer (**405.80**) – see :numref:`fig-aflsmall_margins_variance1`.
 That is just weird – is jamovi broken?
 
 .. ----------------------------------------------------------------------------

@@ -126,22 +126,21 @@ where median\ :sub:`k(Y)` is the median for group *k*.
 Running the Levene-test in jamovi
 #################################
 
-Okay, so how do we run the Levene test? Simple really - under the ``ANOVA`` →
-``Assumption Checks`` option, just click on the ``Homogeneity tests``
-checkbox. If we look at the output, shown in :numref:`fig-anova4`, we see that
-the test is non-significant: *F*\(2,15) = 1.45, *p* = 0.266. So it looks like
-the homogeneity of variance assumption is fine. However, looks can be
-deceptive! If your sample size is pretty big, then the Levene test could show
-up a significant effect (i.e., *p* < 0.05) even when the homogeneity of
-variance assumption is not violated to an extent which troubles the
-robustness of ANOVA. This was the point George Box was making in the
-quote above. Similarly, if your sample size is quite small, then the
-homogeneity of variance assumption might not be satisfied and yet a
-Levene test could be non-significant (i.e. *p* > 0.05). What this
-means is that, alongside any statistical test of the assumption being
-met, you should always plot the standard deviation around the means for
-each group / category in the analysis… just to see if they look fairly
-similar (i.e. homogeneity of variance) or not.
+Okay, so how do we run the Levene test? Under the ``ANOVA`` → ``Assumption
+Checks`` option, just click on the ``Homogeneity tests`` checkbox. If we look
+at the output, shown in :numref:`fig-anova4`, we see that the test is
+non-significant: *F*\(2,15) = 1.45, *p* = 0.266. So it looks like the
+homogeneity of variance assumption is fine. However, looks can be deceptive!
+If your sample size is pretty big, then the Levene test could show up a
+significant effect (i.e., *p* < 0.05) even when the homogeneity of variance
+assumption is not violated to an extent which troubles the robustness of
+ANOVA. This was the point George Box was making in the quote above.
+Similarly, if your sample size is quite small, then the homogeneity of
+variance assumption might not be satisfied and yet a Levene test could be
+non-significant (i.e. *p* > 0.05). What this means is that, alongside any
+statistical test of the assumption being met, you should always plot the
+standard deviation around the means for each group / category in the analysis…
+just to see if they look fairly similar (i.e. homogeneity of variance) or not.
 
 .. ----------------------------------------------------------------------------
 
@@ -357,7 +356,7 @@ How to run the Kruskal-Wallis test in jamovi
 Despite the horror that we have gone through in trying to understand what the
 Kruskal-Wallis test actually does, it turns out that running the test is pretty
 painless, since jamovi has an analysis as part of the ``ANOVA`` analysis set called
-``Non-Parametric`` - ``One-Way ANOVA (Kruskall-Wallis)``. Most of the time
+``Non-Parametric`` → ``One-Way ANOVA (Kruskall-Wallis)``. Most of the time
 you will have data like the |clinicaltrial|_ data set, in which you have your
 outcome variable ``mood.gain`` and a grouping variable ``drug``. If so, you can
 just go ahead and run the analysis in jamovi. What this gives us is a

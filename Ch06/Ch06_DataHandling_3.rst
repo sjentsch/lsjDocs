@@ -218,7 +218,7 @@ presto, you have created a new transformation and applied it to the
 ``likert.raw`` variable! Good, eh. Note that instead of using the variable
 label in the expression, we have instead used ``$source``. This is so that
 we can then use the same transformation with as many different variables as we
-like - jamovi requires you to use ``$source`` to refer to the source variable
+like – jamovi requires you to use ``$source`` to refer to the source variable
 you are transforming. Your transformation has also been saved and can be
 re-used any time you like (providing you save the dataset as an ``.omv`` file,
 otherwise you will lose it!).

@@ -92,7 +92,7 @@ load the |broca|_ data set).
 
 To perform a one-way related ANOVA in jamovi, open the one-way repeated
 measures ANOVA dialogue box, as in :numref:`fig-RManova1`, via
-``ANOVA - Repeated Measures ANOVA``. Then:
+``ANOVA → Repeated Measures ANOVA``. Then:
 
 -  Enter a name for the ``Repeated Measures Factors`` (orginally:
    ``RM Factor …``). This should be a label that you choose to describe the

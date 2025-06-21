@@ -19,7 +19,7 @@ of relationships in a data set. Specifically, we have covered:
    PCA simply produces a linear combination of observed variables.
 
 -  :doc:`Ch15_FactorAnalysis_3` (CFA). Unlike EFA, with CFA you start with an
-   idea - a model - of how the variables in your data are related to each
+   idea – a model – of how the variables in your data are related to each
    other. You then test your model against the observed data and assess how
    good a fit the model is to the data.
 
