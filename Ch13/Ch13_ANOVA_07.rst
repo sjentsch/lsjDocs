@@ -3,22 +3,21 @@
 Repeated measures one-way ANOVA
 -------------------------------
 
-The one-way repeated measures ANOVA test is a statistical method of
-testing for significant differences between three or more groups where
-the same participants are used in each group (or each participant is
-closely matched with participants in other experimental groups). For
-this reason, there should always be an equal number of scores (data
-points) in each experimental group. This type of design and analysis can
-also be called a “related ANOVA” or a “within-subjects ANOVA”.
+The one-way repeated measures ANOVA test is a statistical method of testing for
+significant differences between three or more groups where the same
+participants are used in each group (or each participant is closely matched
+with participants in other experimental groups). For this reason, there should
+always be an equal number of scores (data points) in each experimental group.
+This type of design and analysis can also be called a “related ANOVA” or a
+“within-subjects ANOVA”.
 
 The logic behind a repeated measures ANOVA is very similar to that of an
 independent ANOVA (sometimes called a “between-subjects” ANOVA). You will
 remember that earlier we showed that in a between-subjects ANOVA total
-variability is partitioned into between-groups variability
-(SS\ :sub:`b`) and within-groups variability
-(SS\ :sub:`w`), and after each is divided by the respective
+variability is partitioned into between-groups variability (SS\ :sub:`b`) and
+within-groups variability (SS\ :sub:`w`), then divided by their respective
 degrees of freedom to give MS\ :sub:`b` and MS\ :sub:`w`
-(see :numref:`tab-anovatable`) the *F*-ratio is calculated as:
+(see :numref:`tab-anovatable`), whereupon the *F*-ratio is calculated as:
 
 | *F* = MS\ :sub:`b` / MS\ :sub:`w`
 
@@ -94,19 +93,19 @@ To perform a one-way related ANOVA in jamovi, open the one-way repeated
 measures ANOVA dialogue box, as in :numref:`fig-RManova1`, via
 ``ANOVA → Repeated Measures ANOVA``. Then:
 
--  Enter a name for the ``Repeated Measures Factors`` (orginally:
-   ``RM Factor …``). This should be a label that you choose to describe the
-   conditions repeated by all participants. For example, to describe the
-   speech, conceptual and syntax tasks completed by all participants a
-   suitable label would be ``Task``. Note that this new factor name
-   represents the independent variable in the analysis.
+-  Enter a name for the ``Repeated Measures Factors`` (orginally: ``RM Factor
+   …``). This should be a label that you choose to describe the conditions
+   repeated by all participants. For example, to describe the speech,
+   conceptual and syntax tasks completed by all participants a suitable label
+   would be ``Task``. Note that this new factor name represents the independent
+   variable in the analysis.
 
 -  Add a third level in the ``Repeated Measures Factors`` variable box, as
    there are three levels representing the three tasks: ``Speech``,
    ``Conceptual`` and ``Syntax``. Change the labels of the levels accordingly.
 
--  Then move each of the levels variables across to the ``Repeated
-   Measures Cells`` text box.
+-  Then move each of the levels variables across to the ``Repeated Measures
+   Cells`` text box.
 
 -  Finally, under the ``Assumption Checks`` option, tick the ``Sphericity
    checks`` check box.
@@ -149,11 +148,11 @@ of sphericity has not been met. In this case, we should apply a
 correction to the *F*-value obtained in the one-way related ANOVA
 analysis:
 
--  If the ``Greenhouse-Geisser`` value in the ``Tests of Sphericity`` table is
-   > 0.75 then you should use the Huynh-Feldt correction.
+-  If the ``Greenhouse-Geisser ε`` value in the ``Tests of Sphericity`` table
+   is > 0.75 then you should use the Huynh-Feldt correction.
 
--  But if the ``Greenhouse-Geisser`` value is < 0.75, then you should
-   use the Greenhouse-Geisser correction.
+-  But if the ``Greenhouse-Geisser ε`` value is < 0.75, then you should use the
+   Greenhouse-Geisser correction.
 
 Both these corrected *F*-values can be specified in the ``Sphericity
 Corrections`` check boxes under the ``Assumption Checks`` options, and the
@@ -191,20 +190,19 @@ the task was speech, comprehension or syntax based (*F*\(2,10) = 6.93,
    
 .. ----------------------------------------------------------------------------
 
-Post-hoc tests can also be specified in jamovi for repeated measures
-ANOVA in the same way as for independent ANOVA. The results are shown in
-:numref:`fig-RManova4`. These indicate that there is
-a significant difference between ``Speech`` and ``Syntax``, but not between
-other levels.
+Post-hoc tests can also be specified in jamovi for repeated measures ANOVA in
+the same way as for independent ANOVA. The results are shown in
+:numref:`fig-RManova4`. These indicate that there is a significant difference
+between ``Speech`` and ``Syntax``, but not between other levels.
 
 Descriptive statistics (marginal means) can be reviewed to help interpret the
-results, produced in the jamovi output as in :numref:`fig-RManova5`.
-Comparison of the mean number of trials successfully completed by participants
-shows that Broca’s Aphasics perform reasonably well on speech production
-(mean = 7.17) and language comprehension (mean = 6.17)
-tasks. However, their performance was considerably worse on the syntax
-task (mean = 4.33), with a significant difference in post-hoc
-tests between ``Speech`` and ``Syntax`` task performance.
+results, produced in the jamovi output as in :numref:`fig-RManova5`. Comparison
+of the mean number of trials successfully completed by participants shows that
+Broca’s Aphasics perform reasonably well on speech production (mean = 7.17) and
+language comprehension (mean = 6.17) tasks. However, their performance was 
+considerably worse on the syntax task (mean = 4.33), with a significant
+difference in post-hoc tests between ``Speech`` and ``Syntax`` task
+performance.
 
 .. ----------------------------------------------------------------------------
 

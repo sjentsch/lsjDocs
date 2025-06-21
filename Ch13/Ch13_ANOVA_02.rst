@@ -9,8 +9,7 @@ do it the hard way, building the statistical tool from the ground up and
 showing you how you could do it if you did not have access to any of the
 cool built-in ANOVA functions in jamovi. And I hope you will read it
 carefully, try to do it the long way once or twice to make sure you
-really understand how ANOVA works, and then once you have grasped the
-concept never *ever* do it this way again.
+really understand how ANOVA works.
 
 The experimental design that I described in the previous section strongly
 suggests that we are interested in comparing the average mood change for the
@@ -34,37 +33,34 @@ false. So for now we will just write the alternative hypothesis like this:
 H\ :sub:`1`: it is NOT true that µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`
 
 This null hypothesis is a lot trickier to test than any of the ones
-we have seen previously. How shall we do it? A sensible guess would be to
-“do an ANOVA”, since that is the title of the chapter, but it is not
-particularly clear why an “analysis of *variances*” will help us learn
-anything useful about the *means*. In fact, this is one of the biggest
-conceptual difficulties that people have when first encountering ANOVA.
-To see how this works, I find it most helpful to start by talking about
-variances. In fact, what I am going to do is start by playing some
-mathematical games with the formula that describes the variance. That
-is, we will start out by playing around with variances and it will turn
-out that this gives us a useful tool for investigating means.
+we have seen previously. Given the title of this chapter, a sensible guess
+would be to “do an ANOVA”, but it is not particularly clear why an “analysis
+of *variances*” will help us learn anything useful about the *means*. In fact,
+this is one of the biggest conceptual difficulties that people have when first
+encountering ANOVA. To see how this works, let us start by talking about
+variances. In fact, what I am going to do is start by playing some mathematical
+games with the formula that describes the variance. That is, we will start out
+by playing around with variances and it will turn out that this gives us a
+useful tool for investigating means.
 
 Two formulas for the variance of *Y*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-First, let us start by introducing some notation. We will use *G* to
-refer to the total number of groups. For our data set there are three
-drugs, so there are *G* = 3 groups. Next, we will use *N* to
-refer to the total sample size; there are a total of *N* = 18
-people in our data set. Similarly, let us use |N_k| to denote the
-number of people in the *k*-th group. In our |clinicaltrial|_ data,
-the sample size is |N_k| = 6` for all three groups.\ [#]_ Finally,
-we will use *Y* to denote the outcome variable. In our case,
-*Y* refers to mood change. Specifically, we will use |Y_ik|
-to refer to the mood change experienced by the *i*-th member of
-the *k*-th group. Similarly, we will use |Yb| to be the
-average mood change, taken across all 18 people in the experiment, and
-|Yb_k| to refer to the average mood change experienced by the
-6 people in group *k*.
+First, let us start by introducing some notation. We will use *G* to refer to
+the total number of groups. For our data set there are three drugs, so there
+are *G* = 3 groups. Next, we will use *N* to refer to the total sample size;
+there are a total of *N* = 18 people in our data set. Similarly, let us use
+|N_k| to denote the number of people in the *k*-th group. In our
+|clinicaltrial|_ data set, the sample size is |N_k| = 6` for all three
+groups.\ [#]_ Finally, we will use *Y* to denote the outcome variable. In our
+case, *Y* refers to mood change. Specifically, we will use |Y_ik| to refer to
+the mood change experienced by the *i*-th member of the *k*-th group.
+Similarly, we will use |Yb| to be the average mood change, taken across all 18
+people in the experiment, and |Yb_k| to refer to the average mood change
+experienced by the 6 people in group *k*.
 
-Now that we have got our notation sorted out we can start writing down formulas.
-To start with, let us recall the :ref:`formula for the variance
+Now that we have got our notation sorted out we can start writing down
+formulas. To start with, let us recall the :ref:`formula for the variance
 <variance_formula>` that we used way back in those kinder days when we were
 just doing descriptive statistics. The sample variance of *Y* is defined as
 follows:
@@ -103,50 +99,46 @@ people (*N*\ :sub:`2` = 2).
 | Egg  | 5      | uncool | 2          | 2              |              22 |
 +------+--------+--------+------------+----------------+-----------------+
 
-Notice that I have constructed two different labelling schemes here. We
-have a “person” variable *p* so it would be perfectly sensible to
-refer to |Y_p| as the grumpiness of the *p*-th person in the
-sample. For instance, the table shows that Tim is the fourth so we would say
-*p* = 4. So, when talking about the grumpiness *Y* of this
-“Tim” person, whoever he might be, we could refer to his grumpiness by
-saying that |Y_p| = 91, for person *p* = 4 that is. However,
-that is not the only way we could refer to Tim. As an alternative we
-could note that Tim belongs to the “uncool” group (*k* = 2), and
-is in fact the first person listed in the “uncool” group (*i* = 1).
-So it is equally valid to refer to Tim’s grumpiness by saying that
-|Y_ik| = 91, where *k* = 2 and *i* = 1.
+Notice that I have constructed two different labelling schemes here. We have a
+“person” variable *p* so it would be perfectly sensible to refer to |Y_p| as
+the grumpiness of the *p*-th person in the sample. For instance, the table
+shows that Tim is the fourth so we would say *p* = 4. So, when talking about
+the grumpiness *Y* of this “Tim” person, whoever he might be, we could refer to
+his grumpiness by saying that |Y_p| = 91, for person *p* = 4. However, that is
+not the only way we could refer to Tim. As an alternative we could note that
+Tim belongs to the “uncool” group (*k* = 2), and is in fact the first person
+listed in the “uncool” group (*i* = 1). So it is equally valid to refer to
+Tim’s grumpiness by saying that |Y_ik| = 91, where *k* = 2 and *i* = 1.
 
-In other words, each person *p* corresponds to a unique *ik*
-combination, and so the formula that I gave above is actually identical
-to our original formula for the variance, which would be
+In other words, each person *p* corresponds to a unique *ik* combination, and
+so the formula that I gave above is actually identical to our original formula
+for the variance, which would be:
 
 .. math:: \mbox{Var}(Y) = \frac{1}{N} \sum_{p = 1} ^ N  \left(Y_{p} - \bar{Y} \right) ^ 2
 
-In both formulas, all we are doing is summing over all of the
-observations in the sample. Most of the time we would just use the
-simpler |Y_p| notation; the equation using |Y_p| is clearly
-the simpler of the two. However, when doing an ANOVA it is important to
-keep track of which participants belong in which groups, and we need to
-use the |Y_ik| notation to do this.
+In both formulas, all we are doing is summing over all of the observations in
+the sample. Most of the time we would just use the simpler |Y_p| notation; the
+equation using |Y_p| is clearly the simpler of the two. However, when doing an
+ANOVA it is important to keep track of which participants belong in which
+groups, and we need to use the |Y_ik| notation to do this.
 
 From variances to sums of squares
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Okay, now that we have got a good grasp on how the variance is calculated,
-let us define something called the **total sum of squares**, which is
-denoted |SS_t|\. This is very simple. Instead of averaging
-the squared deviations, which is what we do when calculating the
-variance, we just add them up.
+Okay, now that we have got a good grasp on how the variance is calculated, let
+us define something called the **total sum of squares**, which is denoted
+|SS_t|\. This is very simple. Instead of averaging the squared deviations,
+which is what we do when calculating the variance, we just add them up.
 
 So the formula for the total sum of squares is almost identical to the
 formula for the variance:
 
 .. math:: \mbox{SS}_{tot} = \sum_{k = 1} ^ G \sum_{i = 1} ^ {N_k} \left(Y_{ik} - \bar{Y} \right) ^ 2
 
-When we talk about analysing variances in the context of ANOVA, what
-we are really doing is working with the total sums of squares rather than
-the actual variance. One very nice thing about the total sum of squares
-is that we can break it up into two different kinds of variation.
+When we talk about analysing variances in the context of ANOVA, what we are
+really doing is working with the total sums of squares rather than the actual
+variance. One very nice thing about the total sum of squares is that we can
+break it up into two different kinds of variation.
 
 First, we can talk about the **within-group sum of squares**, in which
 we look to see how different each individual person is from their own
@@ -158,16 +150,16 @@ where |Yb_k| is a group mean. In our example, |Yb_k| would be the average mood
 change experienced by those people given the *k*-th drug. So, instead of
 comparing individuals to the average of all people in the experiment, we are
 only comparing them to those people in the the same group. As a consequence,
-you would expect the value of |SS_w| to be smaller than the total sum of squares,
-because it is completely ignoring any group differences, i.e., whether the drugs
-will have different effects on people’s moods.
+you would expect the value of |SS_w| to be smaller than the total sum of
+squares, because it is completely ignoring any group differences, i.e., whether
+the drugs will have different effects on people’s moods.
 
 Next, we can define a third notion of variation which captures *only*
-the differences between groups. We do this by looking at the differences
-between the group means |Yb_k| and grand mean |Yb|.
+the between-groups differences. We do this by looking at the differences
+between-groups means |Yb_k| and grand mean |Yb|.
 
 In order to quantify the extent of this variation, what we do is
-calculate the **between-group sum of squares**
+calculate the **between-group sum of squares**:
 
 .. math::
 
@@ -177,32 +169,28 @@ calculate the **between-group sum of squares**
    \end{aligned}
 
 It is not too difficult to show that the total variation among people in
-the experiment |SS_t| is actually the sum of the differences between the
-groups |SS_b| and the variation inside the groups |SS_w|. That is,
+the experiment |SS_t| is actually the sum of the between-groups differences
+|SS_b| and the variation inside the groups |SS_w|. That is:
 
 |SS_w| + |SS_b| = |SS_t|
-
-Yay.
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_anovaWthBtw.*
-   :alt: Illustration of between and within groups variation
+   :alt: Illustration of between- and within-groups variation
    :name: fig-anovaWthBtw
 
-   Graphical illustration of “between groups” variation (left panel) and
-   “within groups” variation (right panel). In the left panel, the arrows show
-   the differences in the group means. In the right panel, the arrows highlight
-   the variability within each group.
+   Graphical illustration of “between-groups” (left panel) and “within-groups”
+   variation (right panel). In the left panel, the arrows show the differences
+   in the group means. In the right panel, the arrows highlight the variability
+   within each group.
    
 .. ----------------------------------------------------------------------------
 
-Okay, so what have we found out? We have discovered that the total
-variability associated with the outcome variable
-(|SS_t|\) can be mathematically carved up into the sum
-of “the variation due to the differences in the sample means for the
-different groups” (|SS_b|\) plus “all the rest of the
-variation” (|SS_w|\).\ [#]_
+We have discovered that the total variability associated with the outcome
+variable (|SS_t|\) can be mathematically carved up into the sum of “the
+variation due to the differences in the sample means for the different groups”
+(|SS_b|\) plus “all the rest of the variation” (|SS_w|\).\ [#]_
 
 How does that help me find out whether the groups have different population
 means? Um. Wait. Hold on a second. Now that I think about it, this is *exactly*
@@ -216,28 +204,24 @@ From sums of squares to the *F*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As we saw in the last section, the *qualitative* idea behind ANOVA is to
-compare the two sums of squares values |SS_b| and
-|SS_w| to each other. If the between-group variation
-|SS_b| is large relative to the within-group variation
-|SS_w| then we have reason to suspect that the population
-means for the different groups are not identical to each other. In order
-to convert this into a workable hypothesis test, there is a little bit of
-“fiddling around” needed. What I will do is first show you *what* we do to
-calculate our test statistic, the **F-ratio**, and then try to
-give you a feel for *why* we do it this way.
+compare the two sums of squares values |SS_b| and |SS_w| to each other. If the
+between-group variation |SS_b| is large relative to the within-group variation
+|SS_w| then we have reason to suspect that the population means for the
+different groups are not identical to each other. In order to convert this into
+a workable hypothesis test, there is a little bit of “fiddling around” needed.
+What I will do is first show you *what* we do to calculate our test statistic,
+the **F-ratio**, and then try to give you a feel for *why* we do it this way.
 
-In order to convert our SS values into an *F*-ratio the first
-thing we need to calculate is the **degrees of freedom** associated with
-the |SS_b| and |SS_w| values. As usual, the degrees of
-freedom corresponds to the number of unique “data points” that
-contribute to a particular calculation, minus the number of
-“constraints” that they need to satisfy. For the within-groups
-variability what we are calculating is the variation of the individual
-observations (*N* data points) around the group means (*G* constraints).
-In contrast, for the between groups variability we are
-interested in the variation of the group means (*G* data points)
-around the grand mean (1 constraint). Therefore, the degrees of freedom
-here are:
+In order to convert our SS values into an *F*-ratio the first thing we need to
+calculate is the **degrees of freedom** associated with the |SS_b| and |SS_w|
+values. As usual, the degrees of freedom corresponds to the number of unique
+“data points” that contribute to a particular calculation, minus the number of
+“constraints” that they need to satisfy. For the within-groups variability what
+we are calculating is the variation of the individual observations (*N* data
+points) around the group means (*G* constraints). In contrast, for the between
+groups variability we are interested in the variation of the group means (*G*
+data points) around the grand mean (1 constraint). Therefore, the degrees of
+freedom here are:
 
 | |df_b| = *G* - 1
 | |df_w| = *N* - *G*
@@ -271,8 +255,8 @@ the sampling distribution for the *F*-statistic under the null hypothesis is an
 *F*-distribution. If you recall our discussion of the *F*-distribution in
 chapter :doc:`../Ch07/Ch07_Probability`, the *F*-distribution has two
 parameters, corresponding to the two degrees of freedom involved. The first one
-*df*\ :sub:`1` is the between groups degrees of freedom |df_b|, and the second
-one *df*\ :sub:`2` is the within groups degrees of freedom |df_w|\.
+*df*\ :sub:`1` is the between-groups degrees of freedom |df_b|, and the second
+one *df*\ :sub:`2` is the within-groups degrees of freedom |df_w|\.
 
 A summary of all the key quantities involved in a one-way ANOVA, including the
 formulas showing how they are calculated, is shown in :numref:`tab-anovatable`.
@@ -479,13 +463,13 @@ do this in jamovi.
    (apart from rounding errors) identical to those in the last column of the
    table above.
 
-Okay. Now that we have calculated the within groups variation, |SS_w|, it is time
+Okay. Now that we have calculated the within-groups variation, |SS_w|, it is time
 to turn our attention to the between-group sum of squares, |SS_b|. The
 calculations for this case are very similar. The main difference is that
 instead of calculating the differences between an observation |Y_ik| and a
 group mean |Yb_k| for all of the observations, we calculate the differences
-between the group means |Yb_k| and the grand mean |Yb| (in this case 0.88) for
-all of the groups.
+between-group means |Yb_k| and the grand mean |Yb| (in this case 0.88) for all
+of the groups.
 
 +-----------+-------------+-------------+---------------+--------------------+
 | group     | group mean  | grand mean  | deviation     | squared deviations |
@@ -508,12 +492,12 @@ all of the groups.
    lines with ``anxifree`` and three lines with ``joyzepam``; the next nine
    lines are a repetition of the first nine ones.
 
-However, for the between group calculations we need to multiply each of
+However, for the between-group calculations we need to multiply each of
 these squared deviations by |N_k|, the number of observations in
 the group. We do this because every *observation* in the group (all
-|N_k| of them) is associated with a between group difference. So
+|N_k| of them) is associated with a between-group difference. So
 if there are six people in the placebo group and the placebo group mean
-differs from the grand mean by 0.19, then the *total* between group
+differs from the grand mean by 0.19, then the *total* between-group
 variation associated with these six people is 6 · 0.19 = 1.14. So we
 have to extend our little table of calculations:
 
@@ -529,12 +513,12 @@ have to extend our little table of calculations:
 | joyzepam  | … |               0.36 |           6 |                     2.16 |
 +-----------+---+--------------------+-------------+--------------------------+
 
-And so now our between group sum of squares is obtained by summing these
+And so now our between-group sum of squares is obtained by summing these
 “weighted squared deviations” over all three groups in the study:
 
 |SS_b| = 1.14 + 0.18 + 2.16 = 3.48
 
-As you can see, the between group calculations are a lot shorter (when
+As you can see, the between-group calculations are a lot shorter (when
 calculated b hand).
 
 #. In jamovi, we can calculate these sums, i.e., the values for |SS_b| and
@@ -572,19 +556,18 @@ MS value.\ [#]_
 
 .. math:: F = \frac{\mbox{MS}_b }{\mbox{MS}_w} = \frac{1.727}{0.093} = 18.611
 
-Woohooo! This is terribly exciting, yes? Now that we have our test statistic,
-the last step is to find out whether the test itself gives us a significant
-result. As discussed in chapter :doc:`../Ch09/Ch09_HypothesisTesting` back in
-the “old days” what we would do is open up a statistics textbook or flick to the
-back section which would actually have a huge lookup table and we would find
-the threshold *F*-value corresponding to a particular value of α (the null
-hypothesis rejection region), e.g., 0.05, 0.01 or 0.001, for 2 and 15 degrees of
-freedom. Doing it this way would give us a threshold *F*-value for an α
-of 0.001 of 11.34. As this is less than our calculated *F*-value we say that
-*p* < 0.001. But those were the old days, and nowadays fancy stats software
-calculates the exact *p*-value for you. In fact, the exact *p*-value
-is 0.000086. So, unless we are being *extremely* conservative about our Type I
-error rate, we are pretty much guaranteed to reject the null hypothesis.
+Now that we have our test statistic, the last step is to find out whether the
+test itself gives us a significant result. As discussed in chapter
+:doc:`../Ch09/Ch09_HypothesisTesting` back in the “old days” what we would do
+is open up a statistics textbook or flick to the back section which would
+actually have a huge lookup table and we would find the threshold *F*-value
+corresponding to a particular value of α (the null hypothesis rejection
+region), e.g., 0.05, 0.01 or 0.001, for 2 and 15 degrees of freedom. Doing it
+this way would give us a threshold *F*-value for an α of 0.001 of 11.34. As
+this is less than our calculated *F*-value we say that *p* < 0.001. Nowadays
+fancy stats software calculates the exact *p*-value for you, which is 0.000086.
+So, unless we are being *extremely* conservative about our Type I error rate,
+we are pretty much guaranteed to reject the null hypothesis.
 
 At this point, we are basically done. Having completed our calculations,
 it is traditional to organise all these numbers into an ANOVA table like

@@ -213,9 +213,8 @@ plot is important.
 
 Alongside inspecting the QQ plot for any deviations from normality, the
 Shapiro-Wilk test for our data does show a non-significant effect, with
-*p* = 0.6053 (see :numref:`fig-anova4a`). This
-therefore supports the QQ plot assessment; both checks find no
-indication that normality is violated.
+*p* = 0.6053 (see :numref:`fig-anova4a`). This therefore supports the QQ plot
+assessment; both checks find no indication that normality is violated.
 
 .. ----------------------------------------------------------------------------
 
@@ -333,34 +332,32 @@ frequency table of ``mood.gain`` from the |clinicaltrial|_ data set:
 |   1 |   1 |   2 |   1 |   1 |   2 |   1 |   1 |   1 |   1 |   2 |   2 |   1 |   1 |
 +-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 
-Looking at this table, notice that the third entry in the frequency
-table has a value of 2. Since this corresponds to a
-``mood.gain`` of 0.3, this table is telling us that two people’s mood
-increased by 0.3. More to the point, in the mathematical notation I
-introduced above, this is telling us that f\ :sub:`3` = 2. Yay. So, now
-that we know this, the tie correction factor (TCF) is:
+Looking at this table, notice that the third entry in the frequency table has a
+value of 2. Since this corresponds to a ``mood.gain`` of 0.3, this table is
+telling us that two people’s mood increased by 0.3. More to the point, in the
+mathematical notation I introduced above, this is telling us that f\ :sub:`3` =
+\2. So, now that we know this, the tie correction factor (TCF) is:
 
 .. math:: \mbox{TCF} = 1 - \frac{\sum_j {f_j}^3 - f_j}{N^3 - N}
 
 The tie-corrected value of the Kruskal-Wallis statistic is obtained by
-dividing the value of *K* by this quantity. It is this
-tie-corrected version that jamovi calculates. And at long last, we are
-actually finished with the theory of the Kruskal-Wallis test. I am sure
-you are all terribly relieved that I have cured you of the existential
-anxiety that naturally arises when you realise that you *do not* know how
-to calculate the tie-correction factor for the Kruskal-Wallis test.
-Right?
+dividing the value of *K* by this quantity. It is this tie-corrected version
+that jamovi calculates. And at long last, we are actually finished with the
+theory of the Kruskal-Wallis test. I am sure you are all terribly relieved that
+I have cured you of the existential anxiety that naturally arises when you
+realise that you *do not* know how to calculate the tie-correction factor for
+the Kruskal-Wallis test.
 
 How to run the Kruskal-Wallis test in jamovi
 ############################################
 
 Despite the horror that we have gone through in trying to understand what the
 Kruskal-Wallis test actually does, it turns out that running the test is pretty
-painless, since jamovi has an analysis as part of the ``ANOVA`` analysis set called
-``Non-Parametric`` → ``One-Way ANOVA (Kruskall-Wallis)``. Most of the time
-you will have data like the |clinicaltrial|_ data set, in which you have your
-outcome variable ``mood.gain`` and a grouping variable ``drug``. If so, you can
-just go ahead and run the analysis in jamovi. What this gives us is a
+painless, since jamovi has an analysis as part of the ``ANOVA`` analysis set
+called ``Non-Parametric`` → ``One-Way ANOVA (Kruskall-Wallis)``. Most of the
+time, you will have data like the |clinicaltrial|_ data set, in which you have
+your outcome variable ``mood.gain`` and a grouping variable ``drug``. If so,
+you can just go ahead and run the analysis in jamovi. What this gives us is a
 Kruskal-Wallis χ² = 12.076, *df* = 2, *p*-value = 0.00239, as in
 :numref:`fig-anova6`.
 

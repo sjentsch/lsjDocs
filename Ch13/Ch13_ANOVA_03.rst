@@ -3,24 +3,23 @@
 Running an ANOVA in jamovi
 --------------------------
 
-I am pretty sure I know what you are thinking after reading the last
-section, *especially* if you followed my advice and did all of that by
-pencil and paper (i.e., in a spreadsheet) yourself. Doing the ANOVA
-calculations yourself *sucks*. There is quite a lot of calculations that
-we needed to do along the way, and it would be tedious to have to do
-this over and over again every time you wanted to do an ANOVA.
+I am pretty sure I know what you are thinking after reading the last section,
+*especially* if you followed my advice and did all of that by pencil and paper
+(i.e., in a spreadsheet) yourself. Doing the ANOVA calculations yourself
+*sucks*. There is quite a lot of calculations that we needed to do along the
+way, and it would be tedious to have to do this over and over again every time
+you wanted to do an ANOVA.
 
 Using jamovi to specify your ANOVA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To make life easier for you, jamovi can do ANOVA… hurrah! Go to the
-``ANOVA`` → ``ANOVA`` analysis, and move the ``mood.gain`` variable across
-so it is in the ``Dependent Variable`` box, and then move the ``drug``
-variable across so it is in the ``Fixed Factors`` box. This should give
-the results as shown in :numref:`fig-anova2`.\ [#]_
-Note I have also checked the η² checkbox, pronounced “eta”
-squared, under the ``Effect Size`` option and this is also shown on the
-results table. We will come back to effect sizes a bit later.
+To make life easier for you, jamovi can do ANOVA… hurrah! Go to the ``ANOVA``
+→ ``ANOVA`` analysis, and move the ``mood.gain`` variable across so it is in
+the ``Dependent Variable`` box, and then move the ``drug`` variable across so
+it is in the ``Fixed Factors`` box. This should give the results as shown in
+:numref:`fig-anova2`.\ [#]_ Note I have also checked the η² checkbox,
+pronounced “eta” squared, under the ``Effect Size`` option and this is also
+shown on the results table. We will come back to effect sizes a bit later.
 
 .. ----------------------------------------------------------------------------
 

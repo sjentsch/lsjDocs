@@ -14,7 +14,8 @@ have discussed, the key topics were:
 
 -  How to compute an :doc:`effect size <Ch13_ANOVA_04>` for an ANOVA.
 
--  :doc:`Post-hoc analysis and corrections for multiple testing <Ch13_ANOVA_05>`.
+-  :doc:`Post-hoc analysis and corrections for multiple testing
+   <Ch13_ANOVA_05>`.
 
 -  The :doc:`assumptions made by the ANOVA <Ch13_ANOVA_06>`: How to check the
    homogeneity of variance assumption and what to do if it is violated; as well
@@ -24,7 +25,7 @@ have discussed, the key topics were:
    equivalent, the :doc:`Friedman test <Ch13_ANOVA_08>`.
 
 As with all of the chapters in this book, there are quite a few different
-sources that I have relied upon, but the one stand-out text that I have been most
-heavily influenced by is :ref:`Sahai and Ageel (2000) <Sahai_2000>`. It is not
-a good book for beginners, but it is an excellent book for more advanced
+sources that I have relied upon, but the one stand-out text that I have been
+most heavily influenced by is :ref:`Sahai and Ageel (2000) <Sahai_2000>`. It is
+not a good book for beginners, but it is an excellent book for more advanced
 readers who are interested in understanding the mathematics behind ANOVA.

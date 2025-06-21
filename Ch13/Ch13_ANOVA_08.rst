@@ -21,10 +21,10 @@ assumption of normality is not met, then the Friedman test can be used.
 .. ----------------------------------------------------------------------------
 
 As with the Kruskall-Wallis test, the underlying mathematics is complicated,
-and will not be presented here. For the purpose of this book, it is sufficient to
-note that jamovi calculates the tie-corrected version of the Friedman test, and
-in :numref:`fig-RManova6` there is an example using the Broca’s Aphasia data we
-have already looked at.
+and will not be presented here. For the purpose of this book, it is sufficient
+to note that jamovi calculates the tie-corrected version of the Friedman test,
+and in :numref:`fig-RManova6` there is an example using the Broca’s Aphasia
+data we have already looked at.
 
 It is pretty straightforward to run a Friedman test in jamovi. Just select
 ``Analyses`` → ``ANOVA`` → ``Repeated Measures ANOVA (Non-parametric)``,
@@ -38,9 +38,9 @@ The jamovi results show descriptive statistics, χ²-value, degrees of freedom,
 and the *p*-value (:numref:`fig-RManova6`). Since the *p*-value is less than
 the level conventionally used to determine significance (*p* < 0.05), we can
 conclude that Broca’s Aphasics perform reasonably well on speech production
-(median = 7.5) and language comprehension (median = 6.5) tasks. However, their
-performance was considerably worse on the syntax task (median = 4.5), with a
-significant difference in post-hoc tests between Speech and Syntax task
+(*Md* [median] = 7.5) and language comprehension (*Md* = 6.5) tasks. However,
+their performance was considerably worse on the syntax task (*Md* = 4.5), with
+a significant difference in post-hoc tests between Speech and Syntax task
 performance.
 
 .. ----------------------------------------------------------------------------
