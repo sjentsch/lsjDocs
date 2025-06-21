@@ -138,15 +138,14 @@ and the true probability of anyone (regardless of species) choosing option
 *E*\ :sub:`ij` = *C*\ :sub:`j` · *P*\ :sub:`i`
 
 Now, this is all very well and good, but we have a problem. Unlike the
-situation we had with the goodness-of-fit test, the null hypothesis
-does not actually specify a particular value for *P*\ :sub:`i`. It is
-something we have to :doc:`estimate from the data <../Ch08/Ch08_Estimation>`!
-Fortunately, this is pretty easy to do. If 28 out of 180 people selected
-the flowers, then a natural estimate for the probability of choosing
-flowers is 28 / 180, which is approximately 0.16. If we
-phrase this in mathematical terms, what we are saying is that our
-estimate for the probability of choosing option *i* is just the
-row total divided by the total sample size:
+situation we had with the goodness-of-fit test, the null hypothesis does not
+actually specify a particular value for *P*\ :sub:`i`. It is something we have
+to :doc:`estimate from the data <../Ch08/Ch08_Estimation>`! Fortunately, this
+is pretty easy to do. If 28 out of 180 people selected the flowers, then a
+natural estimate for the probability of choosing flowers is 28 / 180, which is
+approximately 0.16. If we phrase this in mathematical terms, what we are
+saying is that our estimate for the probability of choosing option *i* is just
+the row total divided by the total sample size:
 
 .. math:: \hat{P}_i = \frac{R_i}{N}
 
@@ -162,9 +161,9 @@ same strategy that we used in the goodness-of-fit test. In fact, it is
 pretty much the *same* statistic.
 
 For a contingency table with *r* rows and *c* columns, the
-equation that defines our χ² statistic is
+equation that defines our χ² statistic is:
 
-.. math:: \chi^2 = \sum_{i=1}^r\sum_{j=1}^c \frac{({E}_{ij} - O_{ij})^2}{{E}_{ij}}
+.. math:: \chi ^ 2 = \sum_{i = 1} ^ r \sum_{j = 1} ^ c \frac{({E}_{ij} - O_{ij}) ^ 2}{{E}_{ij}}
 
 The only difference is that I have to include two summation signs (i.e., Σ) to
 indicate that we are summing over both rows and columns.
@@ -183,24 +182,23 @@ that you are analysing, minus the number of constraints. A contingency
 table with *r* rows and *c* columns contains a total of
 *r* · *c* observed frequencies, so that is the total number of
 observations. What about the constraints? Here, it is slightly trickier.
-The answer is always the same
+The answer is always the same:
 
 *df* = (*r* - 1)(*c* - 1)
 
-but the explanation for *why* the degrees of freedom takes this value is
-different depending on the experimental design. For the sake of
-argument, let us suppose that we had honestly intended to survey exactly
-87 robots and 93 humans (column totals fixed by the experimenter), but
-left the row totals free to vary (row totals are random variables).
-Let us think about the constraints that apply here. Well, since we
-deliberately fixed the column totals by Act of Experimenter, we have
-*c* constraints right there. But, there is actually more to it than
-that. Remember how our null hypothesis had some free parameters (i.e.,
-we had to estimate the *P*\ :sub:`i` values)? Those matter too. I will not
-explain why in this book, but every free parameter in the null
-hypothesis is rather like an additional constraint. So, how many of
-those are there? Well, since these probabilities have to sum to 1,
-there is only *r* - 1 of these. So our total degrees of freedom is:
+However, the explanation for *why* the degrees of freedom takes this value is
+different depending on the experimental design. For the sake of argument, let
+us suppose that we had honestly intended to survey exactly 87 robots and 93
+humans (column totals fixed by the experimenter), but left the row totals free
+to vary (row totals are random variables). Let us think about the constraints
+that apply here. Well, since we deliberately fixed the column totals by Act of
+Experimenter, we have *c* constraints right there. But, there is actually more
+to it than that. Remember how our null hypothesis had some free parameters
+(i.e., we had to estimate the *P*\ :sub:`i` values)? Those matter too. I will
+not explain why in this book, but every free parameter in the null hypothesis
+is rather like an additional constraint. So, how many of those are there?
+Well, since these probabilities have to sum to 1, there is only *r* - 1 of
+these. So our total degrees of freedom is:
 
 .. math::
 
@@ -211,19 +209,17 @@ there is only *r* - 1 of these. So our total degrees of freedom is:
    &=& (r - 1)(c - 1)
    \end{array}
 
-Alternatively, suppose that the only thing that the experimenter fixed
-was the total sample size *N*. That is, we quizzed the first 180
-people that we saw and it just turned out that 87 were robots and 93
-were humans. This time around our reasoning would be slightly different,
-but would still lead us to the same answer. Our null hypothesis still
-has *r* - 1 free parameters corresponding to the choice
-probabilities, but it now *also* has *c* - 1 free parameters
-corresponding to the species probabilities, because we would also have to
-estimate the probability that a randomly sampled person turns out to be
-a robot.\ [#]_ Finally, since we did actually fix the total number of
-observations *N*, that is one more constraint. So, now we have
-*rc* observations, and (*c* - 1) + (*r* - 1) + 1 constraints. What
-does that give?
+Alternatively, suppose that the only thing that the experimenter fixed was the
+total sample size *N*. That is, we quizzed the first 180 people that we saw
+and it just turned out that 87 were robots and 93 were humans. This time
+around our reasoning would be slightly different, but would still lead us to
+the same answer. Our null hypothesis still has *r* - 1 free parameters
+corresponding to the choice probabilities, but it now *also* has *c* - 1 free
+parameters corresponding to the species probabilities, because we would also
+have to estimate the probability that a randomly sampled person turns out to
+be a robot.\ [#]_ Finally, since we did actually fix the total number of
+observations *N*, that is one more constraint. So, now we have *rc*
+observations, and (*c* - 1) + (*r* - 1) + 1 constraints. What does that give?
 
 .. math::
 
@@ -246,14 +242,14 @@ there is no point. I already showed you how to do it the long way for the
 goodness-of-fit test in the last section, and since the test of
 independence is not conceptually any different, you will not learn anything
 new by doing it the long way. So instead I will go straight to showing you
-the easy way. After you have run the test in jamovi (``Frequencies`` -
-``Contingency Tables`` - ``Independent Samples``), all you have to do is
+the easy way. After you have run the test in jamovi (``Frequencies`` →
+``Contingency Tables`` → ``Independent Samples``), all you have to do is
 look underneath the contingency table in the jamovi results window and
 there is the χ² statistic for you. This shows a χ² statistic value of 10.72,
-with *df* = 2 and *p*-value = 0.005.
+with *df* = 2 and a *p*-value = 0.005.
 
 That was easy, was not it! You can also ask jamovi to show you the
-expected counts - just click on the check box for ``Expected Counts``
+expected counts – just click on the check box for ``Expected Counts``
 in the ``Cells`` options and the expected counts will appear in the
 contingency table. And whilst you are doing that, an effect size measure
 would be helpful. We will choose ``Phi and Cramer’s V``, and you can specify

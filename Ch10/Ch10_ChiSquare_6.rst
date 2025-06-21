@@ -18,12 +18,13 @@ find people in the process of being set on fire, so the cell counts are
 awfully small in some cases. A contingency table of the |salem|_ data set
 illustrates the point:
 
-.. code-block:: R
-
-              on.fire
-   happy    FALSE TRUE
-     FALSE      3    3
-     TRUE      10    0
++---------------------+-------+-----+
+|                     | Happy | Sad |
++=====================+=======+=====+
+| **Set on fire**     |     0 |   3 |
++---------------------+-------+-----+
+| **Not set on fire** |    10 |   3 |
++---------------------+-------+-----+
 
 Looking at this data, you would be hard pressed not to suspect that people not on
 fire are more likely to be happy than people on fire. However, the χ²-test
@@ -86,8 +87,7 @@ hypothesis that people on fire are just as happy as people not on fire
    :alt: ``Fisher's exact test`` output in jamovi
    :name: fig-Fisher
 
-   ``Fisher's exact test`` output in jamovi. Ignore the ``Value`` and just
-   refer to the *p*-value
+   ``Fisher's exact test`` output in jamovi
    
 .. ----------------------------------------------------------------------------
 

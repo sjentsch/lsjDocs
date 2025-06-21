@@ -11,7 +11,7 @@ tests whether an observed frequency distribution of a nominal variable
 group of patients has been undergoing an experimental treatment and have had
 their health assessed to see whether their condition has improved, stayed the
 same or worsened. A goodness-of-fit test could be used to determine whether
-the numbers in each category - improved, no change, worsened - match the
+the numbers in each category – improved, no change, worsened – match the
 numbers that would be expected given the standard treatment option. Let us
 think about this some more, with some psychology.
 
@@ -30,8 +30,8 @@ to imagine a shuffled deck of cards, and mentally pick one card from this
 imaginary deck “at random”. After they have chosen one card I ask them to
 mentally select a second one. For both choices what we are going to look at is
 the suit (hearts, clubs, spades or diamonds) that people chose. After asking,
-say, *N* =200 people to do this, I would like to look at the data and figure out
-whether or not the cards that people pretended to select were really random.
+say, *N* = 200 people to do this, I would like to look at the data and figure
+out whether or not the cards that people pretended to select were really random.
 The data are contained in the |randomness|_ data set in which, when you open
 it up in jamovi and take a look at the spreadsheet view, you will see three
 variables. These are: an ``id`` variable that assigns a unique identifier to
@@ -103,37 +103,36 @@ easy. First, let us state the null hypothesis in words:
 
 H\ :sub:`0`: All four suits are chosen with equal probability
 
-Now, because this is statistics, we have to be able to say the same thing in a
-mathematical way. To do this, let us use the notation *P*\ :sub:`j`\ to refer to
-the true probability that the *j*-th suit is chosen. If the null hypothesis is
-true, then each of the four suits has a 25\% chance of being selected. In other
-words, our null hypothesis claims that *P*\ :sub:`1` = 0.25, 
-*P*\ :sub:`2` = 0.25, *P*\ :sub:`3` = 0.25 and finally that *P*\ :sub:`4` = 0.25.
-However, in the same way that we can group our observed frequencies into a
-vector *O* that summarises the entire data set, we can use *P* to refer to the
-probabilities that correspond to our null hypothesis. So if I let the vector
-P = (*P*\ :sub:`1`\, *P*\ :sub:`2`\, *P*\ :sub:`3`\, *P*\ :sub:`4`\)
-refer to the collection of probabilities that describe our null hypothesis,
-then we have:
+Now, let us say this in a mathematical way. To do this, let us use the
+notation *P*\ :sub:`j`\ to refer to the true probability that the *j*-th suit
+is chosen. If the null hypothesis is true, then each of the four suits has a
+25\% chance of being selected. In other words, our null hypothesis claims that
+*P*\ :sub:`1` = 0.25, *P*\ :sub:`2` = 0.25, *P*\ :sub:`3` = 0.25 and finally
+that *P*\ :sub:`4` = 0.25. However, in the same way that we can group our
+observed frequencies into a vector *O* that summarises the entire data set, we
+can use *P* to refer to the probabilities that correspond to our null
+hypothesis. So if I let the vector P = (*P*\ :sub:`1`\, *P*\ :sub:`2`\,
+*P*\ :sub:`3`\, *P*\ :sub:`4`\) refer to the collection of probabilities that
+describe our null hypothesis, then we have:
 
 H\ :sub:`0`: *P* = (0.25, 0.25, 0.25, 0.25)
 
 In this instance, our null hypothesis corresponds to a vector of probabilities
 *P* in which all of the probabilities are equal to one another. But this
-does not have to be the case: If the experimental task was for people to imagine
-they were drawing from a deck that had twice as many clubs as any other suit,
-then the null hypothesis would be *P* = (0.4, 0.2, 0.2, 0.2). As long as the
-probabilities are all positive numbers, and they all sum to 1, then it is a
-perfectly legitimate choice for the null hypothesis. However, the typical use
-of the goodness-of-fit test is to test a null hypothesis that all of the
-categories are equally likely, so we will stick to that for our example.
+does not have to be the case: If the experimental task was for people to
+imagine they were drawing from a deck that had twice as many clubs as any
+other suit, then the null hypothesis would be *P* = (0.4, 0.2, 0.2, 0.2). As
+long as the probabilities are all positive numbers, and they all sum to 1,
+then it is a perfectly legitimate choice for the null hypothesis. However, the
+typical use of the goodness-of-fit test is with a null hypothesis that all of
+the categories are equally likely, so we will stick to that for our example.
 
-What about our alternative hypothesis, H\ :sub:`1`? All we are really interested
-in is demonstrating that the probabilities involved are not all identical (that
-is, people’s choices were not completely random). As a consequence, the “human
-friendly” versions of our hypotheses look like this:
+What about our alternative hypothesis, H\ :sub:`1`? All we are really
+interested in is demonstrating that the probabilities involved are not all
+identical (that is, people’s choices were not completely random). As a
+consequence, the “human friendly” versions of our hypotheses look like this:
 
-| H\ :sub:`0`: All four suits are chosen with equal probability
+| H\ :sub:`0`: All four suits are chosen with equal probability (0.25)
 | H\ :sub:`1`: At least one of the suit-choice probabilities *is not* 0.25
 
 and the “mathematician friendly” version is:
@@ -233,7 +232,7 @@ This gives us a value of ``8.44``.
 If we let *k* refer to the total number of categories (i.e., *k* = 4  for our
 cards data), then the χ² statistic is given by:
 
-.. math:: \chi^2 = \sum_{i=1}^k \frac{(O_i - E_i)^2}{E_i}
+.. math:: \chi ^ 2 = \sum_{i = 1} ^ k \frac{(O_i - E_i) ^ 2}{E_i}
 
 Intuitively, it is clear that if χ² is small, then the observed data
 *O*\ :sub:`i` are very close to what the null hypothesis predicted
@@ -287,15 +286,15 @@ frequency *E*\ :sub:`i` is large enough then the theoretical distribution of
 normally distributed, then so is :math:`(O_i - E_i)/\sqrt{E_i}`. Since
 *E*\ :sub:`i` is a fixed value, subtracting off *E*\ :sub:`i` and dividing by
 :math:`\sqrt{E_i}` changes the mean and standard deviation of the normal
-distribution but that is all it does. Okay, so now let us have a look at what our
-goodness-of-fit statistic actually *is*. What we are doing is taking a bunch of
-things that are normally-distributed, squaring them, and adding them up. Wait.
-We have seen that before too! As we discussed in
+distribution but that is all it does. Okay, so now let us have a look at what
+our goodness-of-fit statistic actually *is*. What we are doing is taking a
+bunch of things that are normally-distributed, squaring them, and adding them
+up. Wait. We have seen that before too! As we discussed in
 :doc:`../Ch07/Ch07_Probability_6`, when you take a bunch of things that have a
 standard normal distribution (i.e., mean 0 and standard deviation 1), square
-them and then add them up, the resulting quantity has a χ²-distribution. So now
-we know that the null hypothesis predicts that the sampling distribution of the
-goodness-of-fit statistic is a χ²-distribution. Cool.
+them and then add them up, the resulting quantity has a χ²-distribution. So
+now we know that the null hypothesis predicts that the sampling distribution
+of the goodness-of-fit statistic is a χ²-distribution.
 
 There is one last detail to talk about, namely the degrees of freedom. If you
 remember back to :doc:`../Ch07/Ch07_Probability_6`, I said that if the number
@@ -446,7 +445,7 @@ these are shown on the results table. When you have done all this, you should
 see the analysis results in jamovi as in :numref:`fig-chisquared_analysis1`.
 No surprise then that jamovi provides the same expected counts and statistics
 that we calculated by hand above, with a χ² value of 8.44 with *df* = 3 and
-*p* =0.038. Note that we do not need to look up a critical *p*-value threshold
+*p* = 0.038. Note that we do not need to look up a critical *p*-value threshold
 value any more, as jamovi gives us the actual *p*-value of the calculated χ²
 for *df* = 3.
 

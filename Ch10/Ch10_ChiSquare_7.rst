@@ -36,21 +36,21 @@ usual χ² test will not give trustworthy answers due to the violation of the
 independence assumption. Now, if this were a really uncommon situation, I
 would not be bothering to waste your time talking about it. But it is not
 uncommon at all. This is a *standard* repeated measures design, and none of
-the tests we have considered so far can handle it. Eek.
+the tests we have considered so far can handle it.
 
 The solution to the problem was published by :ref:`McNemar (1947)
 <McNemar_1947>`. The trick is to start by tabulating your data in a slightly
 different way:
 
-+----------------+-------------+------------+-------+
-|                | Before: Yes | Before: No | Total |
-+================+=============+============+=======+
-| **After: Yes** |           5 |          5 |    10 |
-+----------------+-------------+------------+-------+
-| **After: No**  |          25 |         65 |    90 |
-+----------------+-------------+------------+-------+
-| **Total**      |          30 |         70 |   100 |
-+----------------+-------------+------------+-------+
++-----------------+------------+-----------+-------+
+|                 | After: Yes | After: No | Total |
++=================+============+===========+=======+
+| **Before: Yes** |          5 |        25 |    30 |
++-----------------+------------+-----------+-------+
+| **Before: No**  |          5 |        65 |    70 |
++-----------------+------------+-----------+-------+
+| **Total**       |         10 |        90 |   100 |
++-----------------+------------+-----------+-------+
 
 This is exactly the same data, but is is been rewritten so that each of our 100
 participants appears in only one cell. Because we have written our data this way
@@ -59,15 +59,15 @@ that we *can* use to construct a χ²-goodness-of-fit statistic. However, as
 we will see, we need to do it in a slightly non-standard way. To see what is going
 on, it helps to label the entries in our table a little differently:
 
-+----------------+-------------+------------+-----------+
-|                | Before: Yes | Before: No | Total     |
-+================+=============+============+===========+
-| **After: Yes** | *a*         | *b*        | *a* + *b* |
-+----------------+-------------+------------+-----------+
-| **After: No**  | *c*         | *d*        | *c* + *d* |
-+----------------+-------------+------------+-----------+
-| **Total**      | *a* + *c*   | *b* + *d*  | *n*       |
-+----------------+-------------+------------+-----------+
++-----------------+------------+-----------+-----------+
+|                 | After: Yes | After: No | Total     |
++=================+============+===========+===========+
+| **Before: Yes** | *a*        | *b*       | *a* + *b* |
++-----------------+------------+-----------+-----------+
+| **Before: No**  | *c*        | *d*       | *c* + *d* |
++-----------------+------------+-----------+-----------+
+| **Total**       | *a* + *c*  | *b* + *d* | *n*       |
++-----------------+------------+-----------+-----------+
 
 Next, let us think about what our null hypothesis is: is is that the “before”
 test and the “after” test have the same proportion of people saying “Yes, I
@@ -84,11 +84,11 @@ table (i.e., *b* and *c*) that matter! After noticing this, the **McNemar test
 of marginal homogeneity** is no different to a usual χ² test. After applying
 the Yates correction, our test statistic becomes:
 
-.. math:: \chi^2 = \frac{(|b-c| - 0.5)^2}{b+c}
+.. math:: \chi ^ 2 = \frac{(|b - c| - 0.5) ^ 2}{b + c}
 
 or, to revert to the notation that we used earlier in this chapter:
 
-.. math:: \chi^2 = \frac{(|O_{12}-O_{21}| - 0.5)^2}{O_{12} + O_{21}}
+.. math:: \chi ^ 2 = \frac{(|O_{12}-O_{21}| - 0.5) ^ 2}{O_{12} + O_{21}}
 
 and this statistic has a χ² distribution (approximately) with *df* = 1.
 However, remember that just like the other χ² tests it is only an approximation,
@@ -123,7 +123,7 @@ with the statistic for the McNemar test just below it (see
 
 And we are done. We have just run a McNemar’s test to determine if people were
 just as likely to vote AGPP after the ads as they were before hand. The test
-was significant (χ²(1) = 12.03, *p* < 0.001), suggesting that they were not.
+was significant (χ²(1) = 13.33, *p* < 0.001), suggesting that they were not.
 And, in fact it looks like the ads had a negative effect: people were less
 likely to vote AGPP after seeing the ads. Which makes a lot of sense when you
 consider the quality of a typical political advertisement.
@@ -138,14 +138,21 @@ about the first choice and the second choice that everyone made, we can
 construct the following contingency table that cross-tabulates the first choice
 against the second choice.
 
-.. code-block:: R
-
-             choice_2
-   choice_1   clubs diamonds hearts spades
-     clubs       10        9     10      6
-     diamonds    20        4     13     14
-     hearts      20       18      3     23
-     spades      18       13     15      4
++-----------+---------------------------------------+
+|           | Choice 2                              |
++           +------+------+------+------+-----------+
+|  Choice 1 |    ♣ |    ♦ |    ♥ |    ♠ | **Total** |
++-----------+------+------+------+------+-----------+
+|         ♣ |   10 |    9 |   10 |    6 |      *35* |
++-----------+------+------+------+------+-----------+
+|         ♦ |   20 |    4 |   13 |   14 |      *51* |
++-----------+------+------+------+------+-----------+
+|         ♥ |   20 |   18 |    3 |   23 |      *64* |
++-----------+------+------+------+------+-----------+
+|         ♠ |   18 |   13 |   15 |    4 |      *50* |
++-----------+------+------+------+------+-----------+
+| **Total** | *68* | *44* | *41* | *47* |     *200* |
++-----------+------+------+------+------+-----------+
 
 Suppose I wanted to know whether the choice you make the second time is
 dependent on the choice you made the first time. This is where a test of

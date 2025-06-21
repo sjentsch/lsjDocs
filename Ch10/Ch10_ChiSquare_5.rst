@@ -18,7 +18,7 @@ so far in this chapter, the assumptions are:
    frequencies larger than about 5, though for larger tables you would
    probably be okay if at least 80\% of the the expected frequencies are above
    5 and none of them are below 1. However, from what I have been able to
-   discover (:ref:`Cochran, 1954 <Cochran_1954>`), these seem to have been
+   discover (e.g., :ref:`Cochran, 1954 <Cochran_1954>`), these seem to have been
    proposed as rough guidelines, not hard and fast rules, and they seem to be
    somewhat conservative (:ref:`Larntz, 1978 <Larntz_1978>`).
 
