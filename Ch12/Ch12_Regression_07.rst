@@ -37,9 +37,8 @@ model:
 How can we test these two hypotheses against each other? The trick is to
 understand that it is possible to divide up the total variance SS\ :sub:`tot`
 into the sum of the residual variance SS\ :sub:`res` and the regression model
-variance SS\ :sub:`mod`. I will skip over the technicalities, since we will get
-to that later when we look at ANOVA in chapter :doc:`../Ch13/Ch13_ANOVA`.
-But just note that
+variance SS\ :sub:`mod`. We will get to the technicalities later when we look
+at ANOVA in chapter :doc:`../Ch13/Ch13_ANOVA`. But just note that:
 
 | SS\ :sub:`mod` = SS\ :sub:`tot` - SS\ :sub:`res`
 
@@ -66,9 +65,8 @@ and the degrees of freedom associated with this are *K* and
 We will see much more of the *F*-statistic in chapter :doc:`../Ch13/Ch13_ANOVA`,
 but for now just know that we can interpret large *F*-values as indicating
 that the null hypothesis is performing poorly in comparison to the alternative
-hypothesis. In a moment I will show you how to do the test in jamovi the easy
-way, but first let us have a look at the tests for the individual regression
-coefficients.
+hypothesis. Before I show you how to do the test in jamovi the easy way, let us
+first have a look at the tests for the individual regression coefficients.
 
 Tests for individual coefficients
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -91,11 +89,10 @@ same scale (they are both measured in “hours slept”), I find this illuminati
 In fact, I am beginning to suspect that it is really only the amount of sleep
 that *I* get that matters in order to predict my grumpiness.
 
-We can re-use a hypothesis test that we discussed earlier, the
-*t*-test. The test that we are interested in has a null hypothesis
-that the true regression coefficient is zero (*b* = 0), which is
-to be tested against the alternative hypothesis that it is not
-(*b* ≠ 0). That is:
+We can re-use a hypothesis test that we discussed earlier, the *t*-test. The
+test that we are interested in has a null hypothesis that the true regression
+coefficient is zero (*b* = 0), which is to be tested against the alternative
+hypothesis that it is not (*b* ≠ 0). That is:
 
 | H\ :sub:`0`: *b* = 0
 | H\ :sub:`1`: *b* ≠ 0 

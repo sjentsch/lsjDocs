@@ -15,14 +15,14 @@ done a good job. If they are very different, then it has done a bad job.
 The *R*\² (R-squared) value
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once again, let us wrap a little bit of mathematics around this. Firstly,
-we have got the sum of the squared residuals
+Once again, let us wrap a little bit of mathematics around this. Firstly, we
+have got the sum of the squared residuals:
 
 .. math:: \mbox{SS}_{res} = \sum_i (Y_i - \hat{Y}_i)^2
 
 which we would hope to be pretty small. Specifically, what we would like is
-for it to be very small in comparison to the total variability in the
-outcome variable
+for it to be very small in comparison to the total variability in the outcome
+variable:
 
 .. math:: \mbox{SS}_{tot} = \sum_i (Y_i - \bar{Y})^2
 
@@ -61,9 +61,9 @@ good predictions (that is, it has greatly reduced the residual error compared
 to the model that uses the mean as a single predictor). But it is not very
 interpretable.
 
-To can fix this, we would like to convert these two fairly meaningless numbers
-into one number. A nice, interpretable number, which for no particular reason
-we will call *R*\². What we would like is for the value of *R*\² to be equal to 1
+To fix this, we would like to convert these two fairly meaningless numbers into
+one number. A nice, interpretable number, which for no particular reason we
+will call *R*\². What we would like is for the value of *R*\² to be equal to 1
 if the regression model makes no errors in predicting the data. In other words,
 if it turns out that the residual errors are zero. That is, if SS\ :sub:`res`
 = 0 then we expect *R*\² = 1. Similarly, if the model is completely useless, we
@@ -86,12 +86,12 @@ by the predictor. So, in this case the fact that we have obtained *R*\² = 0.816
 means that the predictor (``dani.sleep``) explains 81.6\% of the variance in the
 outcome (``dani.grump``).\ [#]_
 
-Naturally, you do not actually need to do all these calculations yourself if you
-want to obtain the *R*\² value for your regression model. As we will see later on
-in :ref:`Running the hypothesis tests in jamovi <coefficients_in_jamovi>`, all
-you need to do is specify this as an option in jamovi. However, let us put that
-to one side for the moment. There is another property of *R*\² that I want to
-point out.
+Naturally, you do not actually need to do all these calculations yourself if
+you want to obtain the *R*\² value for your regression model. As we will see
+later in :ref:`Running the hypothesis tests in jamovi <coefficients_in_jamovi>`,
+all you need to do is specify this as an option in jamovi. However, let us put
+that to one side for the moment. There is another property of *R*\² that I want
+to point out.
 
 The relationship between regression and correlation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -109,30 +109,26 @@ model that uses only one predictor variable.
 The adjusted *R*\² (R-squared) value
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-One final thing to point out before moving on. It is quite common for
-people to report a slightly different measure of model performance,
-known as “adjusted *R*\²”. The motivation behind calculating the
-adjusted *R*\² value is the observation that adding more
-predictors into the model will *always* cause the *R*\² value to
-increase (or at least not decrease).
+One final thing to point out before moving on. It is quite common for people
+to report a slightly different measure of model performance, known a
+“adjusted *R*\²”. The motivation behind calculating the adjusted *R*\² value
+is the observation that adding more predictors into the model will *always*
+cause the *R*\² value to increase (or at least not decrease).
 
-The adjusted *R*\² value introduces a slight change to the
-calculation, as follows. For a regression model with *K*
-predictors, fit to a data set containing *N* observations, the
-adjusted *R*\² is:
+The adjusted *R*\² value introduces a slight change to the calculation, as
+follows. For a regression model with *K* predictors, fit to a data set
+containing *N* observations, the adjusted *R*\² is:
 
 .. math:: \mbox{adj. } R^2 = 1 - \left(\frac{\mbox{SS}_{res}}{\mbox{SS}_{tot}} \times \frac{N - 1}{N - K - 1} \right)
 
-This adjustment is an attempt to take the degrees of freedom into
-account. The big advantage of the adjusted *R*\² value is that
-when you add more predictors to the model, the adjusted *R*\²
-value will only increase if the new variables improve the model
-performance more than you would expect by chance. The big disadvantage is
-that the adjusted *R*\² value *can not* be interpreted in the
-elegant way that *R*\² can. *R*\² has a simple
-interpretation as the proportion of variance in the outcome variable
-that is explained by the regression model. To my knowledge, no
-equivalent interpretation exists for adjusted *R*\².
+This adjustment is an attempt to take the degrees of freedom into account. The
+big advantage of the adjusted *R*\² value is that when you add more predictors
+to the model, the adjusted *R*\² value will only increase if the new variables
+improve the model performance more than you would expect by chance. The big
+disadvantage is that the adjusted *R*\² value *can not* be interpreted in the
+elegant way that *R*\² can. *R*\² has a simple interpretation as the proportion
+of variance in the outcome variable that is explained by the regression model.
+To my knowledge, no equivalent interpretation exists for adjusted *R*\².
 
 An obvious question then is whether you should report *R*\² or adjusted *R*\².
 This is probably a matter of personal preference. If you care more about

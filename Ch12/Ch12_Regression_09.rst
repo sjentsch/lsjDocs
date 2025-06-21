@@ -1,123 +1,51 @@
 .. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_ and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_
 
-Regarding regression coefficients
----------------------------------
+Assumptions of regression
+-------------------------
 
-Before moving on to discuss the assumptions underlying linear regression
-and what you can do to check if they are being met, there is two more
-topics I want to briefly discuss, both of which relate to the regression
-coefficients. The first thing to talk about is calculating confidence
-intervals for the coefficients. After that, I will discuss the somewhat
-murky question of how to determine which predictor is most important.
+The linear regression model that I have been discussing relies on several
+assumptions. In section :doc:`Ch12_Regression_11` we will talk a lot more about
+how to check that these assumptions are being met, but first let us have a look
+at each of them.
 
-Confidence intervals for the coefficients
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-  *Normality*: Like many of the models in statistics, basic simple or multiple
+   linear regression relies on an assumption of normality. Specifically, it
+   assumes that the *residuals* are normally distributed. It is actually okay if
+   the predictors *X* and the outcome *Y* are non-normal, so long as the
+   residuals ε are normal. See section :ref:`Checking the normality of the
+   residuals <checking_normality_residuals>`.
 
-Like any population parameter, the regression coefficients *b*
-cannot be estimated with complete precision from a sample of data;
-that is part of why we need hypothesis tests. Given this, it is quite
-useful to be able to report confidence intervals that capture our
-uncertainty about the true value of *b*. This is especially useful
-when the research question focuses heavily on an attempt to find out
-*how* strongly variable *X* is related to variable *Y*,
-since in those situations the interest is primarily in the regression
-weight *b*.
+-  *Linearity*: A pretty fundamental assumption of the linear regression model
+   is that the relationship between *X* and *Y* actually is linear! Regardless
+   of whether it is a simple regression or a multiple regression, we assume that
+   the relationships involved are linear.
 
-Fortunately, confidence intervals for the regression weights can be
-constructed in the usual fashion
+-  *Homogeneity of variance*: Strictly speaking, the regression model assumes
+   that each residual ε\ :sub:`i` is generated from a normal distribution with
+   mean 0, and (more importantly for the current purposes) with a standard
+   deviation σ that is the same for every single residual. In practice, it is
+   impossible to test the assumption that every residual is identically
+   distributed. Instead, what we care about is that the standard deviation of
+   the residual is the same for all values of *Ŷ*, and (if we are being
+   especially paranoid) all values of every predictor *X* in the model.
 
-.. math:: \mbox{CI}(b) = \hat{b} \pm \left( t_{crit} \times SE(\hat{b})  \right)
+-  *Uncorrelated predictors*: The idea here is that, in a multiple
+   regression model, you do not want your predictors to be too strongly
+   correlated with each other. This is not “technically” an assumption of
+   the regression model, but in practice it is required. Predictors that
+   are too strongly correlated with each other (referred to as
+   “collinearity”) can cause problems when evaluating the model. See
+   section :ref:`Checking for collinearity <checking_collinearity>`.
 
-where :math:`SE(\hat{b})` is the standard error of the regression coefficient,
-and *t*\ :sub:`crit` is the relevant critical value of the appropriate
-*t*-distribution. For instance, if it is a 95\% confidence interval that we want,
-then the critical value is the 97.5th quantile of a *t* distribution with
-*N* - *K* - 1 degrees of freedom. In other words, this is basically the same
-approach to calculating confidence intervals that we have used throughout.
+-  *Residuals are independent of each other*: This is really just a
+   “catch all” assumption, to the effect that “there is nothing else
+   funny going on in the residuals”. If there is something weird (e.g.,
+   the residuals all depend heavily on some other unmeasured variable)
+   going on, it might screw things up.
 
-In jamovi we had already specified the ``95\% Confidence interval`` as shown in
-:numref:`fig-reg2`, although we could easily have chosen another value, say a
-``99\% Confidence interval`` if that is what we decided on.
-
-Calculating standardised regression coefficients
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-One more thing that you might want to do is to calculate “standardised”
-regression coefficients, often denoted β. The rationale behind standardised
-coefficients goes like this. In a lot of situations,
-your variables are on fundamentally different scales. Suppose, for
-example, my regression model aims to predict people’s IQ scores using
-their educational attainment (number of years of education) and their
-income as predictors. Obviously, educational attainment and income are
-not on the same scales. The number of years of schooling might only vary
-by 10s of years, whereas income can vary by 10 000s of dollars (or
-more). The units of measurement have a big influence on the regression
-coefficients. The *b* coefficients only make sense when
-interpreted in light of the units, both of the predictor variables and
-the outcome variable. This makes it very difficult to compare the
-coefficients of different predictors. Yet there are situations where you
-really do want to make comparisons between different coefficients.
-Specifically, you might want some kind of standard measure of which
-predictors have the strongest relationship to the outcome. This is what
-**standardised coefficients** aim to do.
-
-The basic idea is quite simple; the standardised coefficients are the
-coefficients that you would have obtained if you would converted all the
-variables to *z*-scores before running the regression.\ [#]_ The
-idea here is that, by converting all the predictors to *z*-scores,
-they all go into the regression on the same scale, thereby removing the
-problem of having variables on different scales. Regardless of what the
-original variables were, a β value of 1 means that an
-increase in the predictor of 1 standard deviation will produce a
-corresponding 1 standard deviation increase in the outcome variable.
-Therefore, if variable A has a larger absolute value of β
-than variable B, it is deemed to have a stronger relationship with the
-outcome. Or at least that is the idea. It is worth being a little cautious
-here, since this does rely very heavily on the assumption that “a 1
-standard deviation change” is fundamentally the same kind of thing for
-all variables. It is not always obvious that this is true.
-
-Leaving aside the interpretation issues, let us look at how it is
-calculated. What you could do is standardise all the variables yourself
-and then run a regression, but there is a much simpler way to do it. As
-it turns out, the β coefficient for a predictor *X*
-and outcome *Y* has a very simple formula, namely
-
-| β\ :sub:`X` = *b*\ :sub:`X` × (σ\ :sub:`X` / σ\ :sub:`Y`)
-
-where σ\ :sub:`X` is the standard deviation of the predictor, and σ\ :sub:`Y`
-is the standard deviation of the outcome variable *Y*. This makes matters a lot
-simpler.
-
-To make things even simpler, jamovi has an option that computes the β
-coefficients for you using the ``Standardized estimate`` checkbox in the
-``Model Coefficients`` options, see results in :numref:`fig-reg3`.
-
-.. ----------------------------------------------------------------------------
-
-.. figure:: ../_images/lsj_reg3.*
-   :alt: Standardised coefficients with 95\% confidence intervals
-   :name: fig-reg3
-
-   Standardised coefficients, with 95\% confidence intervals, for multiple
-   linear regression
-   
-.. ----------------------------------------------------------------------------
-
-These results clearly show that the ``dani.sleep`` variable has a much stronger
-effect than the ``baby.sleep`` variable. However, this is a perfect example of
-a situation where it would probably make sense to use the original coefficients
-*b* rather than the standardised coefficients β. After all, my sleep and the
-baby’s sleep are *already* on the same scale: number of hours slept. Why
-complicate matters by converting these to *z*-scores?
-
-------
-
-.. [#]
-   Strictly, you standardise all the *regressors*. That is, every “thing” that
-   has a regression coefficient associated with it in the model. For the
-   regression models that I have talked about so far, each predictor variable
-   maps onto exactly one regressor, and vice versa. However, that is not
-   actually true in general and we will see some examples of this in chapter
-   :doc:`../Ch14/Ch14_ANOVA2`. But, for now we do not need to care too much
-   about this distinction.
+-  *No “bad” outliers*: Again, not actually a technical assumption of the model
+   (or rather, it is sort of implied by all the others), but there is an
+   implicit assumption that your regression model is not being too strongly
+   influenced by one or two anomalous data points because this raises questions
+   about the adequacy of the model and the trustworthiness of the data in some
+   cases. See section :ref:`Three kinds of anomalous data <anomalous_data>`.

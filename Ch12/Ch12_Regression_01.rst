@@ -137,19 +137,19 @@ you can see several plots showing what different correlations look like.
 .. ----------------------------------------------------------------------------
 
 The formula for the Pearson’s correlation coefficient can be written in
-several different ways. I think the simplest way to write down the
-formula is to break it into two steps. Firstly, let us introduce the idea
-of a **covariance**. The covariance between two variables *X* and
-*Y* is a generalisation of the notion of the variance amd is a
-mathematically simple way of describing the relationship between two
-variables that is not terribly informative to humans
+several different ways. I think the simplest way to write down the formula is
+to break it into two steps. Firstly, let us introduce the idea of a
+**covariance**. The covariance between two variables *X* and *Y* is a
+generalisation of the notion of the variance amd is a mathematically simple
+way of describing the relationship between two variables that is not terribly
+informative to humans:
 
 .. math:: \mbox{Cov}(X,Y) = \frac{1}{N-1} \sum_{i = 1} ^ N \left(X_i - \bar{X} \right) \left(Y_i - \bar{Y} \right)
 
-Because we are multiplying (i.e., taking the “product” of) a quantity
-that depends on *X* by a quantity that depends on *Y* and
-then averaging,\ [#]_ you can think of the formula for the covariance as
-an “average cross product” between *X* and *Y*.
+Because we are multiplying (i.e., taking the “product” of) a quantity that
+depends on *X* by a quantity that depends on *Y* and then averaging,\ [#]_ you
+can think of the formula for the covariance as an “average cross product”
+between *X* and *Y*.
 
 The covariance has the nice property that, if *X* and *Y* are entirely
 unrelated, then the covariance is exactly zero. If the relationship between
@@ -284,14 +284,13 @@ people seem to forget in real life, is *always graph your raw data* (chapter
 Spearman’s rank correlations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The Pearson correlation coefficient is useful for a lot of things, but
-it does have shortcomings. One issue in particular stands out: what it
-actually measures is the strength of the *linear* relationship between
-two variables. In other words, what it gives you is a measure of the
-extent to which the data all tend to fall on a single, perfectly
-straight line. Often, this is a pretty good approximation to what we
-mean when we say “relationship”, and so the Pearson correlation is a
-good thing to calculate. Sometimes though, it is not.
+The Pearson correlation coefficient is useful, but it does have shortcomings.
+One issue stands out: what it actually measures is the strength of the
+*linear* relationship between two variables. In other words, what it gives you
+is a measure of the extent to which the data all tend to fall on a single,
+perfectly straight line. Often, this is a pretty good approximation to what we
+mean when we say “relationship”, and so the Pearson correlation is a good
+thing to calculate. Sometimes though, it is not.
 
 One very common situation where the Pearson correlation is not quite the
 right thing to use arises when an increase in one variable *X*

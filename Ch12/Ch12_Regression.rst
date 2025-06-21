@@ -14,11 +14,11 @@ Correlation and linear regression
    Ch12_Regression_05
    Ch12_Regression_06
    Ch12_Regression_07
+   Ch12_Regression_08
    Ch12_Regression_09
    Ch12_Regression_10
    Ch12_Regression_11
    Ch12_Regression_12
-   Ch12_Regression_13
 
 
 The goal in this chapter is to introduce **correlation** and **linear
