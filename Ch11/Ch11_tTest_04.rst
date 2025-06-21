@@ -47,31 +47,29 @@ then it is a complete nonsense to try to calculate a pooled standard
 deviation estimate, because you are averaging apples and oranges.\ [#]_
 
 But you can still estimate the standard error of the difference between
-sample means, it just ends up looking different
+sample means, it just ends up looking different:
 
 .. math:: SE(\bar{X}_1 - \bar{X}_2) = \sqrt{ \frac{{\hat{\sigma}_1}^2}{N_1} + \frac{{\hat{\sigma}_2}^2}{N_2} }
 
-The reason why it is calculated this way is beyond the scope of this
-book. What matters for our purposes is that the *t*-statistic that
-comes out of the Welch *t*-test is actually somewhat different to
-the one that comes from the Student *t*-test.
+The reason why it is calculated this way is beyond the scope of this book.
+What matters for our purposes is that the *t*-statistic that comes out of the
+Welch *t*-test is actually somewhat different to the one that comes from the
+Student *t*-test. Another difference between Welch and Student is that the
+degrees of freedom are calculated in a very different way. In the Welch test,
+the “degrees of freedom” does not have to be a whole number any more, and it
+does not correspond all that closely to the “number of data points minus the
+number of constraints” heuristic that I have been using up to this point.
 
-The second difference between Welch and Student is that the degrees of
-freedom are calculated in a very different way. In the Welch test, the
-“degrees of freedom” does not have to be a whole number any more, and it
-does not correspond all that closely to the “number of data points minus
-the number of constraints” heuristic that I have been using up to this
-point.
+The degrees of freedom are, in fact:
 
-The degrees of freedom are, in fact
+.. math:: \mbox{df} = \frac{ ({\hat{\sigma}_1} ^ 2 / N_1 + {\hat{\sigma}_2} ^ 2 / N_2) ^ 2 } \\
+                           { ({\hat{\sigma}_1} ^ 2 / N_1) ^ 2 / (N_1 - 1 ) + ({\hat{\sigma}_2} ^ 2 / N_2) ^ 2 / (N_2 - 1 ) }
 
-.. math:: \mbox{df} = \frac{ ({\hat{\sigma}_1}^2 / N_1 + {\hat{\sigma}_2}^2 / N_2)^2 }{  ({\hat{\sigma}_1}^2 / N_1)^2 / (N_1 -1 )  + ({\hat{\sigma}_2}^2 / N_2)^2 / (N_2 -1 ) }
-
-which is all pretty straightforward and obvious, right? Well, perhaps
-not. It does not really matter for our purposes. What matters is that
-you will see that the “df” value that pops out of a Welch test tends to be
-a little bit smaller than the one used for the Student test, and it
-does not have to be a whole number.
+which is all pretty straightforward and obvious, right? Well, perhaps not. It
+does not really matter for our purposes. What matters is that you will see
+that the “df” value that pops out of a Welch test tends to be a little bit
+smaller than the one used for the Student test, and it does not have to be a
+whole number.
 
 Doing the Welch test in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

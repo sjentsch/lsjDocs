@@ -52,7 +52,7 @@ size for all the different flavours of *t*-test it provides.
    +-----------+----------------------+
 
 Cohen’s *d* from one sample
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The simplest situation to consider is the one corresponding to a one-sample
 *t*-test. In this case, this is the one sample mean *X̄* and one (hypothesised)
@@ -71,7 +71,7 @@ performing at the same level as other students. Judged against Cohen’s rough
 guide, this is a moderate effect size.
 
 Cohen’s *d* from a Student’s *t*-test
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The majority of discussions of Cohen’s *d* focus on a situation that is
 analogous to Student’s independent samples *t*-test, and it is in this context
@@ -79,15 +79,15 @@ that the story becomes messier, since there are several different versions of
 *d* that you might want to use in this situation. To understand why there are
 multiple versions of *d*, it helps to take the time to write down a formula
 that corresponds to the true population effect size δ. It is pretty
-straightforward, δ = (µ\ :sub:`1` - µ\ :sub:`2`) / σ.
+straightforward:
 
-where, as usual, µ\ :sub:`1` and µ\ :sub:`2` are the population
-means corresponding to group 1 and group 2 respectively, and
-σ is the standard deviation (the same for both
-populations). The obvious way to estimate δ is to do
-exactly the same thing that we did in the *t*-test itself, i.e.,
-use the sample means as the top line and a pooled standard deviation
-estimate for the bottom line
+| δ = (µ\ :sub:`1` - µ\ :sub:`2`) / σ.
+
+As usual, µ\ :sub:`1` and µ\ :sub:`2` are the population means corresponding
+to group 1 and group 2 respectively, and σ is the standard deviation (the same
+for both populations). The obvious way to estimate δ is to do exactly the same
+thing that we did in the *t*-test itself, i.e., use the sample means as the
+top line and a pooled standard deviation estimate for the bottom line:
 
 .. math:: d = \frac{\bar{X}_1 - \bar{X}_2}{\hat{\sigma}_p}
 

@@ -103,7 +103,7 @@ vast majority of the students scored higher on test 2 than on test 1,
 reflected in the fact that almost the entire histogram is above zero.
 
 What is the paired samples *t*-test?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In light of the previous exploration, let us think about how to construct
 an appropriate *t*-test. One possibility would be to try to run an
@@ -135,7 +135,7 @@ difference, we actually want “test 2” to be our “variable 1”. Equally, w
 say that µ\ :sub:`D` = µ\ :sub:`1` - µ\ :sub:`2` is the population mean for
 this difference variable. So, to convert this to a hypothesis test, our null
 hypothesis is that this mean difference is zero and the alternative hypothesis
-is that it is not
+is that it is not:
 
 | H\ :sub:`0`: µ\ :sub:`D` = 0
 | H\ :sub:`2`: µ\ :sub:`D` ≠ 0
@@ -144,11 +144,11 @@ This is assuming we are talking about a two-sided test here. This is more or
 less identical to the way we described the hypotheses for the one-sample
 *t*-test. The only difference is that the specific value that the null
 hypothesis predicts is 0. And so our *t*-statistic is defined in more or less
-the same way too. If we let D̄ denote the mean of the difference scores, then
+the same way too. If we let D̄ denote the mean of the difference scores, then:
 
 .. math:: t = \frac{\bar{D}}{SE(\bar{D})}
 
-which is
+which is:
 
 .. math:: t = \frac{\bar{D}}{\hat\sigma_D / \sqrt{N}}
 

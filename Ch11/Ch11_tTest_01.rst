@@ -30,10 +30,10 @@ spreadsheet view,
 and then calculate the mean in ``Exploration`` → ``Descriptives``. The mean
 value is 72.3.
 
-Hmm. It *might* be that the psychology students are scoring a bit higher than
-normal. That sample mean of *X̄* = 72.3 is a fair bit higher than the 
+It *appears* as if the psychology students were scoring a bit higher than
+normal. That sample mean of *X̄* = 72.3 is a fair bit higher than the
 hypothesised population mean of µ = 67.5 but, on the other hand, a sample size
-of *N* = 20 is not all that big. Maybe it is pure chance.
+of *N* = 20 is not that big. Maybe it is pure chance.
 
 To answer the question, it helps to be able to write down what it is that I
 think I know. Firstly, I know that the sample mean is *X̄* = 72.3. If I am willing
@@ -113,17 +113,15 @@ For now though, we will keep things simple.
 
 .. ----------------------------------------------------------------------------
 
-The next step is to figure out what we would be a good choice for a
-diagnostic test statistic, something that would help us discriminate
-between H\ :sub:`0` and H\ :sub:`1`. Given that the hypotheses all refer
-to the population mean µ, you would feel pretty confident that the
-sample mean *X̄* would be a pretty useful place to start.
-What we could do is look at the difference between the sample mean
-*X̄* and the value that the null hypothesis predicts for the
-population mean. In our example that would mean we calculate
-*X̄* - 67.5. More generally, if we let µ\ :sub:`0` refer to
-the value that the null hypothesis claims is our population mean, then
-we would want to calculate
+The next step is to figure out what would be a good choice for a diagnostic
+test statistic, something that would help us discriminate between H\ :sub:`0`
+and H\ :sub:`1`. Given that the hypotheses all refer to the population mean µ,
+you would feel pretty confident that the sample mean *X̄* would be a pretty
+useful place to start. What we could do is look at the difference between the
+sample mean *X̄* and the value that the null hypothesis predicts for the
+population mean. In our example that would mean we calculate *X̄* - 67.5. More
+generally, if we let µ\ :sub:`0` refer to the value that the null hypothesis
+claims is our population mean, then we would want to calculate:
 
 | *X̄* - µ\ :sub:`0`
 
@@ -148,7 +146,7 @@ Okay, if that is true, then what can we say about the distribution of *X̄*?
 Well, as we discussed earlier (see :ref:`The central limit theorem
 <central_limit_theorem>`), the sampling distribution of the mean *X̄* is also
 normal, and has mean µ. But the standard deviation of this sampling
-distribution *SE(X̄)*, which is called the *standard error of the mean*, is
+distribution *SE(X̄)*, which is called the *standard error of the mean*, is:
 
 .. math:: SE(X̄) = \frac{\sigma}{\sqrt{N}}
 
@@ -159,10 +157,10 @@ distribution of the mean can be written as follows:
 
 Now comes the trick. What we can do is convert the sample mean *X̄* into a
 :doc:`standard score <../Ch04/Ch04_Descriptives_5>`. This is conventionally
-written as *z*, but for now I am going to refer to it as *z*\ :sub:`X̄` (the
+written as *z*, but for now I am going to refer to it as *z*\ :sub:`X̄`. The
 reason for using this expanded notation is to help you remember that we are
 calculating a standardised version of a sample mean, *not* a standardised
-version of a single observation, which is what a *z*-score usually refers to).
+version of a single observation, which is what a *z*-score usually refers to.
 When we do so the *z*-score for our sample mean is:
 
 .. math:: z_{\bar{X}} = \frac{\bar{X} - \mu_0}{SE(X̄)}
@@ -245,17 +243,16 @@ And finally, we calculate our *z*-score:
             = (72.3 - 67.5) / 2.124265 
             = 2.259606
 
-At this point, we would traditionally look up the value 2.26 in our
-table of critical values. Our original hypothesis was two-sided (we
-did not really have any theory about whether psych students would be
-better or worse at statistics than other students) so our hypothesis
-test is two-sided (or two-tailed) also. Looking at the little table that
-I showed earlier, we can see that 2.26 is bigger than the critical value
-of 1.96 that would be required to be significant at
-α = 0.05, but smaller than the value of 2.58 that would be
-required to be significant at a level of α = 0.01.
-Therefore, we can conclude that we have a significant effect, which we
-might write up by saying something like this:
+At this point, we would traditionally look up the value 2.26 in our table of
+critical values. Our original hypothesis was two-sided (we did not really have
+any theory about whether psych students would be better or worse at statistics
+than other students) so our hypothesis test is two-sided (or two-tailed) also.
+Looking at the little table that I showed earlier, we can see that 2.26 is
+bigger than the critical value of 1.96 that would be required to be
+significant at α = 0.05, but smaller than the value of 2.58 that would be
+required to be significant at a level of α = 0.01. Therefore, we can conclude
+that we have a significant effect, which we might write up by saying something
+like this:
 
    With a mean grade of 72.3 in the sample of psychology students, and
    assuming a true population standard deviation of 9.5, we can conclude
@@ -300,8 +297,7 @@ the one sample *z*-test, makes three basic assumptions. These are:
 
 In view of the stupidity of assuming that σ is known, let us
 see if we can live without it. This takes us out of the dreary domain of
-the *z*-test, and into the magical kingdom of the *t*-test,
-with unicorns and fairies and leprechauns!
+the *z*-test, and into the magical kingdom of the *t*-test!
 
 ------
 

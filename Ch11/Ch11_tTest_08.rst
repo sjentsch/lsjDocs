@@ -150,18 +150,18 @@ came from a normal distribution at all. Here is what happens to the QQ plot:
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_qq_2b.*
-   :alt: QQ plot for the data (skewed) data in the ``afl.margins`` variable
-         of the |aflsmall_margins| data set
+   :alt: jamovi QQ plot for the data (skewed) data in the ``afl.margins``
+         variable of the |aflsmall_margins| data set
    :name: fig-qq_2b
 
-   QQ plot for the (skewed) data in the ``afl.margins`` variable of the
+   jamovi QQ plot for the (skewed) data in the ``afl.margins`` variable of the
    |aflsmall_margins|_ data set
    
 .. ----------------------------------------------------------------------------
 
-And when we run the Shapiro-Wilk test with ``afl.margins``, we get a value for
-the Shapiro-Wilk normality test statistic of W = 0.94, and *p*-value = 9.481e-07.
-Clearly a significant effect!
+And when we run the Shapiro-Wilk test with the ``afl.margins`` variable, we get
+a value for the Shapiro-Wilk normality test statistic of W = 0.94, and
+*p*-value = 9.481e-07. Clearly a significant effect!
 
 ------
 

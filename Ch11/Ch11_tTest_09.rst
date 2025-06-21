@@ -3,24 +3,23 @@
 Testing non-normal data with Wilcoxon tests
 -------------------------------------------
 
-Okay, suppose your data turn out to be pretty substantially non-normal,
-but you still want to run something like a *t*-test? This situation occurs
-a lot in real life. For the AFL winning margins data (``afl.margins`` from
-the |aflsmall_margins|_ data set), for instance, the Shapiro-Wilk test made
-it very clear that the normality assumption is violated. This is the
-situation where you want to use Wilcoxon tests.
+Suppose your data turn out to be pretty substantially non-normal, but you
+still want to run something like a *t*-test? This situation occurs a lot in
+real life. For the AFL winning margins data (``afl.margins`` from the
+|aflsmall_margins|_ data set), for instance, the Shapiro-Wilk test made it
+very clear that the normality assumption is violated. This is the situation
+where you want to use Wilcoxon tests.
 
-Like the *t*-test, the Wilcoxon test comes in two forms,
-one-sample and two-sample, and they are used in more or less the exact
-same situations as the corresponding *t*-tests. Unlike the
-*t*-test, the Wilcoxon test does not assume normality, which is
-nice. In fact, they do not make any assumptions about what kind of
-distribution is involved. In statistical jargon, this makes them
-**nonparametric tests**. While avoiding the normality assumption is
-nice, there is a drawback: the Wilcoxon test is usually less powerful
-than the *t*-test (i.e., higher Type II error rate). I will not
-discuss the Wilcoxon tests in as much detail as the *t*-tests, but
-I will give you a brief overview.
+Like the *t*-test, the Wilcoxon test comes in two forms, one-sample and
+two-sample, and they are used in more or less the exact same situations as the
+corresponding *t*-tests. Unlike the *t*-test, the Wilcoxon test does not
+assume normality, which is nice. In fact, they do not make any assumptions
+about what kind of distribution is involved. In statistical jargon, this makes
+them **nonparametric tests**. While avoiding the normality assumption is nice,
+there is a drawback: the Wilcoxon test is usually less powerful than the
+*t*-test (i.e., higher Type II error rate). I will not discuss the Wilcoxon
+tests in as much detail as the *t*-tests, but I will give you a brief
+overview.
 
 Two sample Mann-Whitney U test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,21 +56,18 @@ the group A datum is larger, we place a check mark in the table:
 +-------------+------+------+------+------+------+------+
 
 We then count up the number of checkmarks. This is our test statistic,
-*W*.\ [#]_ The actual sampling distribution for *W* is somewhat complicated,
+*U*.\ [#]_ The actual sampling distribution for *U* is somewhat complicated,
 and I will skip the details. For our purposes, it is sufficient to note that the
-interpretation of *W* is qualitatively the same as the interpretation of *t*
+interpretation of *U* is qualitatively the same as the interpretation of *t*
 or *z*. That is, if we want a two-sided test then we reject the null hypothesis
-when *W* is very large or very small, but if we have a directional (i.e.,
+when *U* is very large or very small, but if we have a directional (i.e.,
 one-sided) hypothesis then we only use one or the other.
 
 In jamovi, if we run an ``Independent Samples T-Test`` with ``scores``
 |continuous| as the dependent variable. and ``group`` as the grouping variable
 |nominal|, and then under the options for ``Tests`` check the option for
-``Mann-Whitney U``, we will get results showing that U = 3 (i.e., the same
-number of check marks as shown above), and a *p*-value = 0.05556. Counting up
-the tick marks this time we get a test statistic of $W = 7$. As before, if our
-test is two-sided, then we reject the null hypothesis when W is very large or
-very small.
+``Mann-Whitney U``, we will get results showing that *U* = 3 (i.e., the same
+number of check marks as shown above), and a *p*-value = 0.05556.
 
 One sample Wilcoxon test
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -99,13 +95,13 @@ with is a table that looks like this:
 |                      | 5 |     |     |     |     |     |     | ✓   |     |     | ✓   |
 +----------------------+---+-----+-----+-----+-----+-----+-----+-----+-----+-----+-----+
 
-As far as running it in jamovi goes, it is pretty much what you would expect. For
-the one-sample version, you specify the ``Wilcoxon rank`` option under
-``Tests`` in the ``One Sample *t*-Test`` options panel.This gives you Wilcoxon
-*W* = 7, *p*-value = 0.03711. As this shows, we have a significant effect.
+As far as running it in jamovi goes, it is pretty much what you would expect.
+For the one-sample version, you specify the ``Wilcoxon rank`` option under
+``Tests`` in the ``One Sample *t*-Test`` options panel. This gives you Wilcoxon
+*W* = 7, *p*-value = 0.0371. As this shows, we have a significant effect.
 Evidently, taking a statistics class does have an effect on your happiness.
 Switching to a paired samples version of the test will not give us a different
-answer, of course; see :numref:`fig-ttest_nonparametric`.
+answer, of course; see :numref:`fig-ttest_nonparametric`.\ [#]
 
 .. ----------------------------------------------------------------------------
 
@@ -122,8 +118,18 @@ answer, of course; see :numref:`fig-ttest_nonparametric`.
 
 .. [#]
    Actually, there are two different versions of the test statistic that differ
-   from each other by a constant value. The version that I have described is the
-   one that jamovi calculates.
+   from each other by a constant value. The version that I have described is
+   the one that jamovi calculates.
+
+.. [#]
+   The *p*-value = 0.0371 will be the same regardless of how we arrange the
+   variables. However, the value for *W* depends on the order in which the
+   variables are arranged in the variable pairs. It is also *W* = 7 if
+   ``after`` is put in as the first variable in the pair, but it is *W* = 48
+   if ``before`` is put in as the first variable in the pair. Adding up 7 and
+   48 gives us 55 which is the sum of ranks for *N* = 10 (1 + 2 … + 10). This
+   indicates that the distance from the mean rank = 27.5 is decisive, which is
+   20.5 in either case (27.5 - 7 or 48 - 27.5).
 
 .. ----------------------------------------------------------------------------
 

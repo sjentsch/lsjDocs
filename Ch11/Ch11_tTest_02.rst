@@ -3,30 +3,27 @@
 The one-sample *t*-test
 -----------------------
 
-After some thought, I decided that it might not be safe to assume that
-the psychology student grades necessarily have the same standard
-deviation as the other students in Dr Zeppo’s class. After all, if I am
-entertaining the hypothesis that they do not have the same mean, then why
-should I believe that they absolutely have the same standard deviation?
-In view of this, I should really stop assuming that I know the true
-value of σ. This violates the assumptions of my
-*z*-test, so in one sense I am back to square one. However, it is
-not like I am completely bereft of options. After all, I have still got my
-raw data, and those raw data give me an *estimate* of the population
-standard deviation, which is 9.52. In other words, while I can not say
-that I know that σ = 9.5, I *can* say that
-:math:`\hat\sigma` = 9.52.
+After some thought, I decided that it might not be safe to assume that the
+psychology student grades necessarily have the same standard deviation as the
+other students in Dr Zeppo’s class. After all, if I am entertaining the
+hypothesis that they do not have the same mean, then why should I believe that
+they absolutely have the same standard deviation? In view of this, I should
+really stop assuming that I know the true value of σ. This violates the
+assumptions of my *z*-test, so in one sense I am back to square one. However,
+it is not like I am completely bereft of options. After all, I have still got
+my raw data, and those raw data give me an *estimate* of the population
+standard deviation, which is 9.52. In other words, while I can not say that I
+know that σ = 9.5, I *can* say that :math:`\hat\sigma` = 9.52.
 
-Okay, cool. The obvious thing that you might think to do is run a
-*z*-test, but using the estimated standard deviation of 9.52
-instead of relying on my assumption that the true standard deviation is
-9.5. And you probably would not be surprised to hear that this would
-still give us a significant result. This approach is close, but it is not
-*quite* correct. Because we are now relying on an *estimate* of the
-population standard deviation we need to make some adjustment for the
-fact that we have some uncertainty about what the true population
-standard deviation actually is. Maybe our data are just a fluke …maybe
-the true population standard deviation is 11, for instance. But if that
+The obvious thing that you might think to do is run a *z*-test, but using the
+estimated standard deviation of 9.52 instead of relying on my assumption that
+the true standard deviation is 9.5. And you probably would not be surprised to
+hear that this would still give us a significant result. This approach is
+close, but it is not *quite* correct. Because we are now relying on an
+*estimate* of the population standard deviation we need to make some
+adjustment for the fact that we have some uncertainty about what the true
+population standard deviation actually is. Maybe our data are just a fluke…
+maybe the true population standard deviation is 11, for instance. But if that
 were actually true, and we ran the *z*-test assuming σ = 11, then the result
 would end up being *non-significant*. That is a problem, and it is one we are
 going to have to address.
@@ -48,7 +45,7 @@ going to have to address.
 .. ----------------------------------------------------------------------------
 
 Introducing the *t*-test
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 This ambiguity is annoying, and it was resolved in 1908 by a guy called William
 Sealy Gosset (:ref:`Student, 1908 <Student_1908>`), who was working as a
@@ -127,46 +124,44 @@ associated *p*-value of 0.036.
    
 .. ----------------------------------------------------------------------------
 
-Also reported are two other things you might care about: the 95\%
-confidence interval and a measure of effect size (we will talk more about
-effect sizes later). So that seems straightforward enough. Now what do
-we *do* with this output? Well, since we are pretending that we actually
-care about my toy example, we are overjoyed to discover that the result
-is statistically significant (i.e. *p*-value below 0.05). We could
-report the result by saying something like this:
+Also reported are two other things you might care about: the 95\% confidence
+interval and a measure of effect size (we will talk more about effect sizes
+later). So that seems straightforward enough. Now what do we *do* with this
+output? Well, since we are pretending that we actually care about my toy
+example, we are overjoyed to discover that the result is statistically
+significant (i.e., a *p*-value below 0.05). We could report the result by
+saying something like this:
 
-   With a mean grade of 72.3, the psychology students scored slightly
-   higher than the average grade of 67.5 (*t*\(19) = 2.25, *p* < 0.05);
-   the mean difference was 4.80 and the 95\% confidence interval was from
-   0.34 to 9.26.
+   With a mean grade of 72.3, the psychology students scored slightly higher
+   than the average grade of 67.5 (*t*\(19) = 2.25, *p* < 0.05); the mean
+   difference was 4.80 and the 95\% confidence interval was from 0.34 to 9.26.
 
-where *t*\(19) is shorthand notation for a *t*-statistic that
-has 19 degrees of freedom. That said, it is often the case that people
-do not report the confidence interval, or do so using a much more
-compressed form than I have done here. For instance, it is not uncommon to
-see the confidence interval included as part of the stat block after
-reporting the mean difference, like this:
+where *t*\(19) is shorthand notation for a *t*-statistic that has 19 degrees
+of freedom. That said, it is often the case that people do not report the
+confidence interval, or do so using a much more compressed form than I have
+done here. For instance, it is not uncommon to see the confidence interval
+included as part of the stat block after reporting the mean difference, like
+this:
 
 |  *t*\(19) = 2.25, *p* = 0.036, CI\ :sub:`95` = [0.34, 9.26]
 
-With that much jargon crammed into half a line, you know it must be
-really smart.\ [#]_
+With that much jargon crammed into half a line, you know it must be really
+smart.\ [#]_
 
 .. _assumptions_one_sample_t_test:
 
 Assumptions of the one sample *t*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Okay, so what assumptions does the one-sample *t*-test make? Well,
-since the *t*-test is basically a *z*-test with the
-assumption of known standard deviation removed, you should not be
-surprised to see that it makes the same assumptions as the
-*z*-test, minus the one about the known standard deviation. That
-is
+Okay, so what assumptions does the one-sample *t*-test make? Well, since the
+*t*-test is basically a *z*-test with the assumption of known standard
+deviation removed, you should not be surprised to see that it makes the same
+assumptions as the *z*-test, minus the one about the known standard deviation.
+That is:
 
 -  *Normality*. We are still assuming that the population distribution is
    normal,\ [#]_ and as noted earlier, there are standard tools that you can
-   use to check to see if this assumption is met (section
+   use to check to see if this assumption is met (section 
    :doc:`Ch11_tTest_08`), and other tests you can do in it is place if this
    assumption is violated (section :doc:`Ch11_tTest_09`).
 
@@ -176,9 +171,8 @@ is
    the *z*-test <assumptions_z_test>`).
 
 Overall, these two assumptions are not terribly unreasonable, and as a
-consequence the one-sample *t*-test is pretty widely used in
-practice as a way of comparing a sample mean against a hypothesised
-population mean.
+consequence the one-sample *t*-test is pretty widely used in practice as a way
+of comparing a sample mean against a hypothesised population mean.
 
 ------
 

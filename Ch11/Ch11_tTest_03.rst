@@ -3,15 +3,15 @@
 The independent samples *t*-test (Student test)
 -----------------------------------------------
 
-Although the one sample *t*-test has its uses, it is not the most
-typical example of a *t*-test.\ [#]_ A much more common situation
-arises when you have got two different groups of observations. In
-psychology, this tends to correspond to two different groups of
-participants, where each group corresponds to a different condition in
-your study. For each person in the study you measure some outcome
-variable of interest, and the research question that you are asking is
-whether or not the two groups have the same population mean. This is the
-situation that the independent samples *t*-test is designed for.
+Although the one sample *t*-test has its uses, it is not the most typical
+example of a *t*-test.\ [#]_ A much more common situation arises when you have
+got two different groups of observations. In psychology, this tends to
+correspond to two different groups of participants, where each group
+corresponds to a different condition in your study. For each person in the
+study you measure some outcome variable of interest, and the research question
+that you are asking is whether or not the two groups have the same population
+mean. This is the situation that the independent samples *t*-test is designed
+for.
 
 The data
 ~~~~~~~~
@@ -95,14 +95,14 @@ mean performance on some outcome measure, then an independent samples
 *t*-test (rather than a paired samples *t*-test) is what
 we are after.
 
-Okay, so let us let µ\ :sub:`1` denote the true population mean for group 1
-(e.g., Anastasia’s students), and µ\ :sub:`2` will be the true population
-mean for group 2 (e.g., Bernadette’s students),\ [#]_ and as usual we will let
+Let us let µ\ :sub:`1` denote the true population mean for group 1 (e.g.,
+Anastasia’s students), and µ\ :sub:`2` will be the true population mean for
+group 2 (e.g., Bernadette’s students),\ [#]_ and as usual we will let
 *X̄*\ :sub:`1` and *X̄*\ :sub:`2` denote the observed sample means for both of
 these groups. Our null hypothesis states that the two population means are
 identical (µ\ :sub:`1` = µ\ :sub:`1`) and the alternative to this is that
-they are not (µ\ :sub:`1` ≠ µ\ :sub:`1`). Written in mathematical-ese,
-this is:
+they are not (µ\ :sub:`1` ≠ µ\ :sub:`1`). Written in mathematical-ese, this
+is:
 
 | H\ :sub:`0`: µ\ :sub:`1` = µ\ :sub:`2`
 | H\ :sub:`1`: µ\ :sub:`1` ≠ µ\ :sub:`2`
@@ -280,25 +280,24 @@ the ``Grouping Variable`` box, as shown in :numref:`fig-ttest_ind`.
    
 .. ----------------------------------------------------------------------------
 
-The output has a very familiar form. First, it tells you what test was
-run, and it tells you the name of the dependent variable that you used.
-It then reports the test results. Just like last time the test results
-consist of a *t*-statistic, the degrees of freedom, and the
-*p*-value. The final section reports two things: it gives you a
-confidence interval and an effect size. I will talk about effect sizes
-later. The confidence interval, however, I should talk about now.
+The output has a very familiar form. First, it tells you what test was run,
+and it tells you the name of the dependent variable that you used. It then
+reports the test results. Just like last time the test results consist of a
+*t*-statistic, the degrees of freedom, and the *p*-value. The final section
+reports two things: it gives you a confidence interval and an effect size. I
+will talk about effect sizes later. The confidence interval, however, I should
+talk about now.
 
-It is pretty important to be clear on what this confidence interval
-actually refers to. It is a confidence interval for the *difference*
-between the group means. In our example, Anastasia’s students had an
-average grade of 74.53, and Bernadette’s students had an average grade
-of 69.06, so the difference between the two sample means is 5.48. But of
-course the difference between population means might be bigger or
-smaller than this. The confidence interval reported in :numref:`fig-ttest_ind`
-tells you that there is a if we replicated this study again and again, then
-95\% of the time the true difference in means would lie between 0.20
-and 10.76. Look back at :doc:`../Ch08/Ch08_Estimation_5` for a reminder about
-what confidence intervals mean.
+It is pretty important to be clear on what this confidence interval actually
+refers to. It is a confidence interval for the *difference* between the group
+means. In our example, Anastasia’s students had an average grade of 74.53, and
+Bernadette’s students had an average grade of 69.06, so the difference between
+the two sample means is 5.48. But of course the difference between population
+means might be bigger or smaller than this. The confidence interval reported
+in :numref:`fig-ttest_ind` tells you that if we replicated this study again
+and again, then 95\% of the time the true difference in means would lie
+between 0.20 and 10.76. Look back at :doc:`../Ch08/Ch08_Estimation_5` for a
+reminder about what confidence intervals mean.
 
 In any case, the difference between the two groups is significant (just
 barely), so we might write up the result using text like this:
@@ -348,7 +347,7 @@ opposite signs. This is perfectly okay. Whenever this happens, what
 you will find is that the two versions of the results arise from slightly
 different ways of running the *t*-test. What is happening here is
 very simple. The *t*-statistic that we calculate here is always of
-the form
+the form:
 
 | *t* = (mean 1 - mean 2) / SE
 
@@ -359,50 +358,43 @@ is the confidence interval for the difference “(mean 1) minus (mean 2)”,
 which will be the reverse of what you would get if you were calculating the
 confidence interval for the difference “(mean 2) minus (mean 1)”.
 
-Okay, that is pretty straightforward when you think about it, but now
-consider our *t*-test comparing Anastasia’s class to Bernadette’s
-class. Which one should we call “mean 1” and which one should we call
-“mean 2”. It is arbitrary. However, you really do need to designate one
-of them as “mean 1” and the other one as “mean 2”. Not surprisingly, the
-way that jamovi handles this is also pretty arbitrary. In earlier
-versions of the book I used to try to explain it, but after a while I
-gave up, because it is not really all that important and to be honest I
-can never remember myself. Whenever I get a significant *t*-test
-result, and I want to figure out which mean is the larger one, I do not
-try to figure it out by looking at the *t*-statistic. Why would I
-bother doing that? It is foolish. It’s easier just to look at the actual
-group means since the jamovi output actually shows them!
+That is pretty straightforward when you think about it, but now consider our
+*t*-test comparing Anastasia’s class to Bernadette’s class. Which one should
+we call “mean 1” and which one should we call “mean 2”. It is arbitrary.
+However, you really do need to designate one of them as “mean 1” and the other
+one as “mean 2”. Not surprisingly, the way that jamovi handles this is also
+pretty arbitrary. Whenever I get a significant *t*-test result, and I want to
+figure out which mean is the larger one, I do not try to figure it out by
+looking at the *t*-statistic. It’s easier just to look at the actual group
+means since the jamovi output actually shows them!
 
 Here is the important thing. Because it really does not matter what jamovi
-shows you, I usually try to *report* the *t*-statistic in such a
-way that the numbers match up with the text. Suppose that what I want to
-write in my report is “Anastasia’s class had higher grades than
-Bernadette’s class”. The phrasing here implies that Anastasia’s group
-comes first, so it makes sense to report the *t*-statistic as if
-Anastasia’s class corresponded to group 1. If so, I would write
+shows you, I usually try to *report* the *t*-statistic in such a way that the
+numbers match up with the text. Suppose that what I want to write in my report
+is “Anastasia’s class had higher grades than Bernadette’s class”. The phrasing
+here implies that Anastasia’s group comes first, so it makes sense to report
+the *t*-statistic as if Anastasia’s class corresponded to group 1. If so, I
+would write:
 
    Anastasia’s class had higher grades than Bernadette’s class:
    *t*\(31) = 2.1, *p* = 0.04.
 
-(I would not actually underline the word “higher” in real life, I am just
-doing it to emphasise the point that “higher” corresponds to positive
-*t*-values). On the other hand, suppose the phrasing I wanted to
-use has Bernadette’s class listed first. If so, it makes more sense to
-treat her class as group 1, and if so, the write up looks like this:
+On the other hand, suppose the phrasing I wanted to use has Bernadette’s class
+listed first. If so, it makes more sense to treat her class as group 1, and if
+so, the write up looks like this:
 
    Bernadette’s class had lower grades than Anastasia’s class:
    *t*\(31) = -2.1, *p* = 0.04.
 
-Because I am talking about one group having “lower” scores this time
-around, it is more sensible to use the negative form of the
-*t*-statistic. It just makes it read more cleanly.
+Because I am talking about one group having “lower” scores this time around,
+it is more sensible to use the negative form of the *t*-statistic. It just
+makes it read more cleanly.
 
-One last thing: please note that you *can not* do this for other types of
-test statistics. It works for *t*-tests, but it would not be
-meaningful for χ²-tests, *F*-tests or indeed for most of
-the tests I talk about in this book. So do not over-generalise this
-advice! I am really just talking about *t*-tests here and nothing
-else!
+One last thing: please note that you *can not* do this for other types of test
+statistics. It works for *t*-tests, but it would not be meaningful for
+χ²-tests, *F*-tests or indeed for most of the tests I talk about in this book.
+So do not over-generalise this advice! I am really just talking about
+*t*-tests here and nothing else!
 
 .. _assumptions_student_t_test:
 
@@ -421,15 +413,14 @@ previously in the context of the one sample *t*-test (see section
    solutions.
 
 -  *Independence*. Once again, it is assumed that the observations are
-   independently sampled. In the context of the Student test this has
-   two aspects to it. Firstly, we assume that the observations within
-   each sample are independent of one another (exactly the same as for
-   the one-sample test). However, we also assume that there are no
-   cross-sample dependencies. If, for instance, it turns out that you
-   included some participants in both experimental conditions of your
-   study (e.g., by accidentally allowing the same person to sign up to
-   different conditions), then there are some cross sample dependencies
-   that you would need to take into account.
+   independently sampled. In the context of the Student test this has two
+   aspects to it. Firstly, we assume that the observations within each sample
+   are independent of one another (exactly the same as for the one-sample
+   test). However, we also assume that there are no cross-sample dependencies.
+   If, for instance, it turns out that you included some participants in both
+   experimental conditions of your study (e.g., by accidentally allowing the
+   same person to sign up to different conditions), then there are some cross
+   sample dependencies that you would need to take into account.
 
 -  *Homogeneity of variance* (also called “homoscedasticity”). The third 
    assumption is that the population standard deviation is the same in both
