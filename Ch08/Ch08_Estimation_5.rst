@@ -136,7 +136,8 @@ I simulated, it turned out that exactly 95 of them contained the true mean.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_confIntSmp.*
-   :alt: Confidence intervals for IQ-samples with N=10 (top) and N=25 (bottom)
+   :alt: Confidence intervals for IQ-samples with *N* = 10 (top) and *N* = 25
+         (bottom)
    :name: fig-confIntSmp
 
    95\% confidence intervals. The top panel shows 50 simulated replications of

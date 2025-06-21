@@ -409,7 +409,7 @@ for one-way ANOVA: calculate the sum of squared difference between the
 Specifically, if there are *N* people in each group, then we
 calculate this
 
-.. math:: \mbox{SS}_{A} = (N \times C)  \sum_{r=1}^R  \left( \bar{Y}_{r.} - \bar{Y}_{..} \right)^2
+.. math:: \mbox{SS}_{A} = (N \times C)  \sum_{r = 1} ^ R  \left( \bar{Y}_{r.} - \bar{Y}_{..} \right) ^ 2
 
 As with one-way ANOVA, the most interesting\ [#]_ part of this formula is the
 (Ȳ\ :sub:`r.` – Ȳ\ :sub:`..`)² bit, which corresponds to the squared deviation
@@ -426,7 +426,7 @@ between-groups sum of squares on a “per observation” basis, we have to multi
 by *N* × *C*. The formula for factor B is of course the same thing, just with
 some subscripts shuffled around
 
-.. math:: \mbox{SS}_{B} = (N \times R) \sum_{c=1}^C \left( \bar{Y}_{.c} - \bar{Y}_{..} \right)^2
+.. math:: \mbox{SS}_{B} = (N \times R) \sum_{c = 1} ^ C \left( \bar{Y}_{.c} - \bar{Y}_{..} \right) ^ 2
 
 Now that we have these formulas we can check them against the jamovi
 output from the earlier section.
@@ -469,7 +469,7 @@ formula for this is pretty much the same as it was for one-way ANOVA. We take
 the difference between each observation *Y*\ :sub:`rci` and the grand mean
 Ȳ\ :sub:`..`, square the differences, and add them all up
 
-.. math:: \mbox{SS}_T = \sum_{r=1}^R \sum_{c=1}^C \sum_{i=1}^N \left( Y_{rci} - \bar{Y}_{..}\right)^2
+.. math:: \mbox{SS}_T = \sum_{r = 1} ^ R \sum_{c = 1} ^ C \sum_{i = 1} ^ N \left( Y_{rci} - \bar{Y}_{..}\right) ^ 2
 
 The “triple summation” here looks more complicated than it is. In the first two
 summations, we are summing across all levels of Factor A (i.e., over all

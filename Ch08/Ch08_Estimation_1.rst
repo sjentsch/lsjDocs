@@ -348,8 +348,8 @@ and the population standard deviation σ is 15.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_IQ_Pop_Smp.*
-   :alt: Population distribution of IQ and two samples with *N*=100 and
-         *N*=10 000
+   :alt: Population distribution of IQ and two samples with *N* = 100 and
+         *N* = 10 000
    :name: fig-IQ_Pop_Smp
 
    The population distribution of IQ scores (left panel) and two samples drawn

@@ -69,7 +69,7 @@ To start with, let us recall the :ref:`formula for the variance
 just doing descriptive statistics. The sample variance of *Y* is defined as
 follows:
 
-.. math:: \mbox{Var}(Y) = \frac{1}{N} \sum_{k=1}^G \sum_{i=1}^{N_k} \left(Y_{ik} - \bar{Y} \right)^2
+.. math:: \mbox{Var}(Y) = \frac{1}{N} \sum_{k = 1} ^ G \sum_{i = 1} ^ {N_k} \left(Y_{ik} - \bar{Y} \right) ^ 2
 
 This formula looks pretty much identical to the :ref:`formula for the variance
 <variance_formula>`. The only difference is that this time around I have got two
@@ -120,7 +120,7 @@ In other words, each person *p* corresponds to a unique *ik*
 combination, and so the formula that I gave above is actually identical
 to our original formula for the variance, which would be
 
-.. math:: \mbox{Var}(Y) = \frac{1}{N} \sum_{p=1}^N  \left(Y_{p} - \bar{Y} \right)^2
+.. math:: \mbox{Var}(Y) = \frac{1}{N} \sum_{p = 1} ^ N  \left(Y_{p} - \bar{Y} \right) ^ 2
 
 In both formulas, all we are doing is summing over all of the
 observations in the sample. Most of the time we would just use the
@@ -139,9 +139,9 @@ the squared deviations, which is what we do when calculating the
 variance, we just add them up.
 
 So the formula for the total sum of squares is almost identical to the
-formula for the variance
+formula for the variance:
 
-.. math:: \mbox{SS}_{tot} = \sum_{k=1}^G \sum_{i=1}^{N_k} \left(Y_{ik} - \bar{Y} \right)^2
+.. math:: \mbox{SS}_{tot} = \sum_{k = 1} ^ G \sum_{i = 1} ^ {N_k} \left(Y_{ik} - \bar{Y} \right) ^ 2
 
 When we talk about analysing variances in the context of ANOVA, what
 we are really doing is working with the total sums of squares rather than
@@ -150,9 +150,9 @@ is that we can break it up into two different kinds of variation.
 
 First, we can talk about the **within-group sum of squares**, in which
 we look to see how different each individual person is from their own
-group mean
+group mean:
 
-.. math:: \mbox{SS}_w = \sum_{k=1}^G \sum_{i=1}^{N_k} \left( Y_{ik} - \bar{Y}_k \right)^2
+.. math:: \mbox{SS}_w = \sum_{k = 1}^G \sum_{i = 1} ^ {N_k} \left( Y_{ik} - \bar{Y}_k \right) ^ 2
 
 where |Yb_k| is a group mean. In our example, |Yb_k| would be the average mood
 change experienced by those people given the *k*-th drug. So, instead of
@@ -172,8 +172,9 @@ calculate the **between-group sum of squares**
 .. math::
 
    \begin{aligned}
-   \mbox{SS}_{b} &=& \sum_{k=1}^G \sum_{i=1}^{N_k} \left( \bar{Y}_k - \bar{Y} \right)^2 \\
-                 &=& \sum_{k=1}^G N_k \left( \bar{Y}_k - \bar{Y} \right)^2\end{aligned}
+   \mbox{SS}_{b} & = & \sum_{k = 1} ^ G \sum_{i = 1} ^ {N_k} \left( \bar{Y}_k - \bar{Y} \right) ^ 2 \\
+                 & = & \sum_{k = 1} ^ G N_k \left( \bar{Y}_k - \bar{Y} \right) ^ 2
+   \end{aligned}
 
 It is not too difficult to show that the total variation among people in
 the experiment |SS_t| is actually the sum of the differences between the
@@ -560,8 +561,8 @@ dividing one by the other:
 .. math::
 
    \begin{array}{lclclcl}
-   \mbox{MS}_b &=& \displaystyle\frac{\mbox{SS}_b }{  \mbox{df}_b } &=& \displaystyle\frac{3.453}{ 2} &=& 1.727 \\ 
-   \mbox{MS}_w &=& \displaystyle\frac{\mbox{SS}_w }{  \mbox{df}_w } &=& \displaystyle\frac{1.392}{15} &=& 0.093
+   \mbox{MS}_b & = & \displaystyle\frac{\mbox{SS}_b }{  \mbox{df}_b } & = & \displaystyle\frac{3.453}{ 2} & = & 1.727 \\ 
+   \mbox{MS}_w & = & \displaystyle\frac{\mbox{SS}_w }{  \mbox{df}_w } & = & \displaystyle\frac{1.392}{15} & = & 0.093
    \end{array}
 
 We are almost done. The mean square values can be used to calculate the
@@ -629,7 +630,7 @@ Sigh. So much work for one short sentence.
    “treatment effect” at level *k* of a factor is defined in terms of the
    α\ :sub:`k` values (see section :doc:`../Ch14/Ch14_ANOVA2_02`), it turns
    out that *Q* refers to a weighted mean of the squared treatment effects,
-   :math:`Q = (\sum_{k=1}^G N_k \alpha_k^2)/(G-1)`.
+   :math:`Q = (\sum_{k = 1} ^ G N_k \alpha_k ^ 2) / (G - 1)`.
 
 .. [#]
    Or, if we want to be sticklers for accuracy,
@@ -673,8 +674,8 @@ Sigh. So much work for one short sentence.
 .. |MS_b|                              replace:: MS\ :sub:`b`
 .. |MS_w|                              replace:: MS\ :sub:`w`
 
-.. |f_SS_b|                            replace:: :math:`\displaystyle\sum_{k=1}^G N_k(\bar{Y}_k - \bar{Y})^2`
-.. |f_SS_w|                            replace:: :math:`\displaystyle\sum_{k=1}^G \displaystyle\sum_{i = 1}^{N_k} ({Y}_{ik} - \bar{Y}_k)^2`
+.. |f_SS_b|                            replace:: :math:`\displaystyle\sum_{k = 1} ^ G N_k(\bar{Y}_k - \bar{Y}) ^ 2`
+.. |f_SS_w|                            replace:: :math:`\displaystyle\sum_{k = 1} ^ G \displaystyle\sum_{i = 1} ^ {N_k} ({Y}_{ik} - \bar{Y}_k) ^ 2`
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
 .. _clinicaltrial:                     ../../_statics/data/clinicaltrial.omv

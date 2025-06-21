@@ -56,7 +56,7 @@ This time around, the mean IQ in my sample is 101. If I repeat the
 experiment 10 times I obtain the results shown in :numref:`tab-replications`,
 and as you can see the sample mean varies from one replication to the next.
 
-.. table:: Ten replications of the IQ experiment, each with a sample size of *N* =5
+.. table:: Ten replications of the IQ experiment, each with a sample size of *N* = 5
    :name: tab-replications
 
    +----------------+----------+----------+----------+----------+----------+-------------+

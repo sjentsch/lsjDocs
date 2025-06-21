@@ -88,7 +88,7 @@ be equal to the difference between the marginal mean µ\ :sub:`r.`
 and the grand mean µ\ :sub:`..`. Let us denote this effect by
 α\ :sub:`r`, and note that
 
-| α\ :sub:`r`  = µ\ :sub:`r.` - µ\ :sub:`..`
+| α\ :sub:`r` = µ\ :sub:`r.` - µ\ :sub:`..`
 
 Now, by definition all of the α\ :sub:`r` values must sum to zero,
 for the same reason that the average of the marginal means
@@ -97,7 +97,7 @@ similarly define the effect of Factor B at level i to be the
 difference between the column marginal mean µ\ :sub:`.c` and the
 grand mean µ\ :sub:`..`
 
-| β\ :sub:`c` = µ\ :sub:`..` - µ\ :sub:`..`
+| β\ :sub:`c` = µ\ :sub:`.c` - µ\ :sub:`..`
 
 and once again, these β\ :sub:`c` values must sum to zero. The
 reason that statisticians sometimes like to talk about the main effects
@@ -170,7 +170,7 @@ levels of Factor A and all *C* levels of Factor B, and we obtain
 the following formula for the sum of squares associated with the
 interaction as a whole
 
-.. math:: \mbox{SS}_{A:B} = N \sum_{r=1}^R \sum_{c=1}^C \left( \bar{Y}_{rc} - \bar{Y}_{r.} - \bar{Y}_{.c} + \bar{Y}_{..} \right)^2
+.. math:: \mbox{SS}_{A:B} = N \sum_{r = 1} ^ R \sum_{c = 1} ^ C \left( \bar{Y}_{rc} - \bar{Y}_{r.} - \bar{Y}_{.c} + \bar{Y}_{..} \right) ^ 2
 
 where we multiply by *N* because there are *N* observations in each of the
 groups, and we want our SS values to reflect the variation among *observations*

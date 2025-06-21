@@ -69,14 +69,14 @@ first five observations I could write out the sum the long way, *X*\ :sub:`1` +
 *X*\ :sub:`2` + *X*\ :sub:`3` + *X*\ :sub:`4` + *X*\ :sub:`5` or I could use
 the summation symbol to shorten it to this:
 
-.. math:: \sum_{i=1}^5 X_i
+.. math:: \sum_{i = 1}^5 X_i
 
 Taken literally, this could be read as “the sum, taken over all *i* values from
 1 to 5, of the value *X*\ :sub:`i`”. But basically what it means is “add up the
 first five observations”. In any case, we can use this notation to write out
 the formula for the mean, which looks like this:
 
-.. math:: \bar{X} = \frac{1}{N} \sum_{i=1}^N X_i
+.. math:: \bar{X} = \frac{1}{N} \sum_{i = 1}^N X_i
 
 In all honesty, I can not imagine that all this mathematical notation helps
 clarify the concept of the mean at all. In fact, it is really just a fancy way

@@ -186,7 +186,7 @@ denoted *s*\ ² (the reason for this will become clearer shortly).
 The formula that we use to calculate the variance of a set of
 observations is as follows:
 
-.. math:: \mbox{Var}(X) = \frac{1}{N} \sum_{i=1}^N \left( X_i - \bar{X} \right)^2
+.. math:: \mbox{Var}(X) = \frac{1}{N} \sum_{i = 1} ^ N \left( X_i - \bar{X} \right) ^ 2
 
 As you can see, it is basically the same formula that we used to
 calculate the average absolute deviation, except that instead of using
@@ -277,7 +277,7 @@ jamovi has chosen to divide by *N - 1*.
 
 In other words, the formula that jamovi is using is this one:
 
-.. math:: \frac{1}{N - 1} \sum_{i=1}^N \left( X_i - \bar{X} \right)^2
+.. math:: \frac{1}{N - 1} \sum_{i = 1} ^ N \left( X_i - \bar{X} \right) ^ 2
 
 So that is the *what*. The real question is *why* jamovi is dividing by *N - 1*
 and not by *N*. After all, the variance is supposed to be the *mean* squared
@@ -344,7 +344,7 @@ are also used at times.
 Because the standard deviation is equal to the square root of the
 variance, you probably will not be surprised to see that the formula is:
 
-.. math:: s = \sqrt{ \frac{1}{N} \sum_{i=1}^N \left( X_i - \bar{X} \right)^2 }
+.. math:: s = \sqrt{ \frac{1}{N} \sum_{i = 1} ^ N \left( X_i - \bar{X} \right) ^ 2 }
 
 and in jamovi there is a check box for ``Std. deviation`` right above the
 check box for ``Variance``. Selecting this gives a value of **26.07** for
@@ -359,7 +359,7 @@ For reasons that will make sense when we return to this topic in chapter
 :doc:`../Ch08/Ch08_Estimation` I will refer to this new quantity as
 :math:`\hat\sigma` (read as: “sigma hat”), and the formula for this is:
 
-.. math:: \hat\sigma = \sqrt{ \frac{1}{N - 1} \sum_{i=1}^N \left( X_i - \bar{X} \right)^2 }
+.. math:: \hat\sigma = \sqrt{ \frac{1}{N - 1} \sum_{i = 1 } ^ N \left( X_i - \bar{X} \right) ^ 2 }
 
 Interpreting standard deviations is slightly more complex. Because the
 standard deviation is derived from the variance, and the variance is a

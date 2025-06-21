@@ -32,7 +32,7 @@ If our regression model has *K* predictors, the “alternative
 model” is described using the usual formula for a multiple regression
 model:
 
-| H\ :sub:`1`: *Y*\ :sub:`i` = b\ :sub:`0` + math:`\left( \sum_{k=1}^K b_{k} X_{ik} \right)` + ε\ :sub:`i`
+| H\ :sub:`1`: *Y*\ :sub:`i` = b\ :sub:`0` + math:`\left( \sum_{k = 1} ^ K b_{k} X_{ik} \right)` + ε\ :sub:`i`
 
 How can we test these two hypotheses against each other? The trick is to
 understand that it is possible to divide up the total variance SS\ :sub:`tot`
@@ -161,7 +161,7 @@ column is the actual estimate of *b* (e.g., 125.97 for the intercept, and
 error estimate :math:`\hat\sigma_b`. The third and fourth columns provide the
 lower and upper values for the 95\% confidence interval around the *b*
 estimate (more on this later). The fifth column gives you the *t*-statistic,
-and it is worth noticing that in this table :math:`t= \hat{b} / SE(\hat{b})`
+and it is worth noticing that in this table :math:`t = \hat{b} / SE(\hat{b})`
 every time. Finally, the last column gives you the actual *p*-value for each
 of these tests.\ [#]_
 
@@ -188,11 +188,10 @@ simple regression model that we started with is the better model.
    For advanced readers only. The vector of residuals is
    :math:`\epsilon = y - X \hat{b}`. For *K* predictors plus the
    intercept, the estimated residual variance is
-   :math:`\hat\sigma^2 = \epsilon^\prime\epsilon / (N - K - 1)`. The
+   :math:`\hat\sigma ^ 2 = \epsilon^\prime\epsilon / (N - K - 1)`. The
    estimated covariance matrix of the coefficients is
-   :math:`\hat\sigma^2(\mathbf{X}^\prime\mathbf{X})^{-1}`, the main
-   diagonal of which is :math:`SE(\hat{b})`, our
-   estimated standard errors.
+   :math:`\hat\sigma ^ 2 (\mathbf{X} ^ \prime\mathbf{X}) ^ {-1}`, the main
+   diagonal of which is :math:`SE(\hat{b})`, our estimated standard errors.
 
 .. [#]
    Note that, although jamovi has done multiple tests here, it has not

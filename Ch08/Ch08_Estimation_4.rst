@@ -222,14 +222,14 @@ you recall from :doc:`../Ch04/Ch04_Descriptives_2`, the sample variance is
 defined to be the average of the squared deviations from the sample mean. That
 is:
 
-.. math:: s^2 = \frac{1}{N} \sum_{i=1}^N (X_i - \bar{X})^2
+.. math:: s^2 = \frac{1}{N} \sum_{i = 1} ^ N (X_i - \bar{X}) ^ 2
 
 The sample variance *s*\² is a biased estimator of the population variance 
 σ². But as it turns out, we only need to make a tiny tweak to transform this
 into an unbiased estimator. All we have to do is divide by *N* - 1 rather than
 by *N*. If we do that, we obtain the following formula:
 
-.. math:: \hat\sigma^2 = \frac{1}{N-1} \sum_{i=1}^N (X_i - \bar{X})^2
+.. math:: \hat\sigma^2 = \frac{1}{N-1} \sum_{i = 1} ^ N (X_i - \bar{X}) ^ 2
 
 This is an unbiased estimator of the population variance σ². Moreover, this
 finally answers the question we raised in :doc:`../Ch04/Ch04_Descriptives_2`.
@@ -238,7 +238,7 @@ jamovi calculates :math:`\hat\sigma^2` not *s*\², that is why. A similar story
 applies for the standard deviation. If we divide by *N* - 1 rather than *N*
 our estimate of the population standard deviation becomes:
 
-.. math:: \hat\sigma = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (X_i - \bar{X})^2}
+.. math:: \hat\sigma = \sqrt{\frac{1}{N-1} \sum_{i = 1} ^ N (X_i - \bar{X}) ^ 2}
 
 and when we use jamovi’s built-in standard deviation function, what it is
 doing is calculating :math:`\hat\sigma`, not *s*.\ [#]_
