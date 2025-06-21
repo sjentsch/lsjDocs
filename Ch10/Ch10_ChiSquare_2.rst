@@ -203,10 +203,10 @@ these. So our total degrees of freedom is:
 .. math::
 
    \begin{array}{rcl}
-   df &=& \mbox{(number of observations)} - \mbox{(number of constraints)} \\
-   &=& (rc) - (c + (r-1)) \\
-   &=& rc - c - r + 1 \\
-   &=& (r - 1)(c - 1)
+   df & = & \mbox{(number of observations)} - \mbox{(number of constraints)} \\
+      & = & (rc) - (c + (r-1)) \\
+      & = & rc - c - r + 1 \\
+      & = & (r - 1)(c - 1)
    \end{array}
 
 Alternatively, suppose that the only thing that the experimenter fixed was the
@@ -224,10 +224,10 @@ observations, and (*c* - 1) + (*r* - 1) + 1 constraints. What does that give?
 .. math::
 
    \begin{array}{rcl}
-   df &=& \mbox{(number of observations)} - \mbox{(number of constraints)} \\
-   &=& rc - ( (c-1) + (r-1) + 1) \\
-   &=& rc - c - r + 1 \\
-   &=& (r - 1)(c - 1)
+   df & = & \mbox{(number of observations)} - \mbox{(number of constraints)} \\
+      & = & rc - ( (c-1) + (r-1) + 1) \\
+      & = & rc - c - r + 1 \\
+      & = & (r - 1)(c - 1)
    \end{array}
 
 Amazing.

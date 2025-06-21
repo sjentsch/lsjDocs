@@ -64,8 +64,8 @@ stating something like ``NaN`` or ``Inf``.\ [#]_
    number is very small, or very large, then jamovi switches to an
    exponential form for numbers. For example **6.51e-4** is the same as
    saying that the decimal point is moved four places to the left, so the
-   actual number is **0.000651**. If there is a plus sign (i.e. **6.51e+4**
-   then the decimal point is moved to the right, i.e. **65 100.00**. Usually
+   actual number is **0.000651**. If there is a plus sign, i.e., **6.51e+4**
+   then the decimal point is moved to the right, i.e., **65 100.00**. Usually
    only very small or very large numbers are expressed in this way, for
    example **6.51e-16**, which would be quite unwieldy to write out in
    the normal way.

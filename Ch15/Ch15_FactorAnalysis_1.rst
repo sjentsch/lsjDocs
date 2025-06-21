@@ -100,7 +100,7 @@ excellent.
 What is EFA good for?
 ~~~~~~~~~~~~~~~~~~~~~
 
-If the EFA has provided a good solution (i.e. factor model), then we
+If the EFA has provided a good solution (i.e., a good factor model), then we
 need to decide what to do with our shiny new factors. Researchers often
 use EFA during psychometric scale development. They will develop a pool
 of questionnaire items that they think relate to one or more
@@ -433,7 +433,7 @@ equally weighted scores from each of the included variables. We can do this in
 jamovi in two steps:
 
 #. Recode ``A1`` into ``A1R`` by reverse scoring the values in the variable
-   (i.e. 6 = 1; 5 = 2; 4 = 3; 3 = 4; 2 = 5; 1 = 6) using the jamovi
+   (i.e., 6 = 1; 5 = 2; 4 = 3; 3 = 4; 2 = 5; 1 = 6) using the jamovi
    transform variable command (see :numref:`fig-efa7`).
 
 #. Compute a new variable, called ``Agreeableness``, by calculating the mean of
@@ -575,7 +575,7 @@ information to include in your write-up:
    for interpretation, though some experts suggest that both can be
    helpful. In a structure matrix coefficients show the relationship
    between the variable and the factors whilst ignoring the relationship
-   of that factor with all the other factors (i.e. a zero-order
+   of that factor with all the other factors (i.e., a zero-order
    correlation). Pattern matrix coefficients show the unique
    contribution of a factor to a variable whilst controlling for the
    effects of other factors on that variable (akin to standardized

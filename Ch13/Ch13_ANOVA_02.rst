@@ -412,7 +412,7 @@ up a nice table to help us with our calculations:
 
 At this stage, the only thing I have included in the table is the raw data
 itself. That is, the grouping variable (i.e., ``drug``) and outcome
-variable (i.e. ``mood.gain``) for each person. Note that the outcome
+variable (i.e., ``mood.gain``) for each person. Note that the outcome
 variable here corresponds to the |Y_ik| value in our equation
 previously. The next step in the calculation is to write down, for each
 person in the study, the corresponding group mean, |Yb_k|.

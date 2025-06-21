@@ -11,7 +11,7 @@ of relationships in a data set. Specifically, we have covered:
    identifying underlying latent factors in a data set. Each observed variable
    is conceptualised as representing the latent factor to some extent,
    indicated by a factor loading. Researchers also use EFA as a way of data
-   reduction, i.e. identifying observed variables than can be combined into
+   reduction, i.e., identifying observed variables than can be combined into
    new factor variables for subsequent analysis.
 
 -  :doc:`Ch15_FactorAnalysis_2` (PCA) is a data reduction technique which,

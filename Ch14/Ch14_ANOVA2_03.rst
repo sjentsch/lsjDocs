@@ -63,7 +63,7 @@ without the interaction term, from :numref:`fig-factorialanova3`:
    therapy        0.10        0.34
 
 Looking at the η² values first, we see that ``drug`` accounts for 71\% of the
-variance (i.e. η² = 0.71) in ``mood.gain``, whereas ``therapy`` only accounts
+variance (i.e., η² = 0.71) in ``mood.gain``, whereas ``therapy`` only accounts
 for 10\%. This leaves a total of 19\% of the variation unaccounted for (i.e., the
 residuals constitute 19\% of the variation in the outcome). Overall, this
 implies that we have a very large effect\ [#]_ of ``drug`` and a modest effect
@@ -119,7 +119,7 @@ than use a separate one for each group.
    :name: fig-margmean1
 
    jamovi screenshot showing the estimated marginal means for the saturated
-   model, i.e. including the interaction component, with the |clinicaltrial|_
+   model, i.e., including the interaction component, with the |clinicaltrial|_
    data set
    
 .. ----------------------------------------------------------------------------
@@ -150,7 +150,7 @@ provides the marginal means for the analysis shown in :numref:`fig-margmean2`.
    :name: fig-margmean2
 
    jamovi screenshot showing the estimated marginal means for the unsaturated
-   model, i.e. without the interaction component, with the |clinicaltrial|_
+   model, i.e., without the interaction component, with the |clinicaltrial|_
    data set
    
 .. ----------------------------------------------------------------------------

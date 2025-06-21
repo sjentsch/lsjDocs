@@ -15,21 +15,21 @@ did not quite get it right, and that (like many everyday concepts) it
 turns out that you do not *really* know what it is all about.
 
 So I will have a go at it. Let us suppose I want to bet on a soccer game
-between two teams of robots, *Arduino Arsenal* and *C Milan*. After
-thinking about it, I decide that there is an 80\% probability of *Arduino
-Arsenal* winning. What do I mean by that? Here are three possibilities:
+between two teams of robots, *Arsenal Arduino* and *RC Milan*. After
+thinking about it, I decide that there is an 80\% probability of *Arsenal
+Arduino* winning. What do I mean by that? Here are three possibilities:
 
 -  They are robot teams so I can make them play over and over again, and
    if I did that *Arduino Arsenal* would win eight out of every ten games
    on average.
 
 -  For any given game, I would agree that betting on this game is only
-   “fair” if a $1 bet on *C Milan* gives a $5 payoff (i.e. I get my $1
-   back plus a $4 reward for being correct), as would a $4 bet on
-   *Arduino Arsenal* (i.e., my $4 bet plus a $1 reward).
+   “fair” if a 1 € bet on *RC Milan* gives a 5 € payoff (i.e., I get my 1 €
+   back plus a 4 € reward for being correct), as would a 4 € bet on
+   *Arsenal Arduino* (i.e., my 4 € bet plus a 1 € reward).
 
--  My subjective “belief” or “confidence” in an *Arduino Arsenal*
-   victory is four times as strong as my belief in a *C Milan* victory.
+-  My subjective “belief” or “confidence” in an *Arsenal Arduino*
+   victory is four times as strong as my belief in a *RC Milan* victory.
 
 Each of these seems sensible. However, they are not identical and not
 every statistician would endorse all of them. The reason is that there
@@ -169,7 +169,7 @@ operationalising “degree of belief”. One way that you can do this is to
 formalise it in terms of “rational gambling”, though there are many
 other ways. Suppose that I believe that there is a 60\% probability of
 rain tomorrow. If someone offers me a bet that if it rains tomorrow then
-I win $5, but if it does not rain I lose $5. Clearly, from my
+I win 5 €, but if it does not rain I lose 5 €. Clearly, from my
 perspective, this is a pretty good bet. On the other hand, if I think
 that the probability of rain is only 40\% then it is a bad bet to take. So
 we can operationalise the notion of a “subjective probability” in terms

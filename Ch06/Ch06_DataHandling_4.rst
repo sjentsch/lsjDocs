@@ -81,14 +81,14 @@ Since we are on the topic of simple calculations, there are two other
 arithmetic operations that I should mention, since they can come in handy when
 working with real data. These operations are calculating a modulus and doing
 integer division. First, let's consider **integer division**. Suppose I have
-\$42 in my wallet, and want to buy some sandwiches, which are selling for \$10
+42 € in my wallet, and want to buy some sandwiches, which are selling for 10 €
 each. How many sandwiches can I afford to buy? The answer is 4.\ [#]_ Note
 that it is not 4.2, since no shop will sell me one-fifth of a sandwich.
 Integer division is performed by using the ``INT()`` operator. The **modulus**
 is the remainder after integer division, and it is calculated using the ``%``
-operator. For the sake of argument, let us suppose I buy four overpriced \$10
-sandwiches. If I started out with \$42, how much money do I have left? The
-answer, as both jamovi and common sense tells us, is \$2. It is possible to
+operator. For the sake of argument, let us suppose I buy four overpriced 10 €
+sandwiches. If I started out with 42 €, how much money do I have left? The
+answer, as both jamovi and common sense tells us, is 2 €. It is possible to
 calculate just one value using the functions below (then this value would be
 shown in every row), but most often it is more useful to apply these functions
 to a variable (where the calculation is performed on the value of the variable
@@ -105,9 +105,9 @@ in that row).
 
 There is, however, one subtlety (demonstrated in the last line) that I need to
 mention, and this relates to how negative numbers are handled by the modulus
-operator. Suppose I *owe* the sandwich shop \$42, but I do not have any money.
+operator. Suppose I *owe* the sandwich shop 42 €, but I do not have any money.
 To pay my debts, I would have to hand over five sandwiches to the shop in
-order to pay off my debt of \$42, then *they* now owe me \$8.
+order to pay off my debt of 42 €, then *they* now owe me 8 €.
 
 Logarithms and exponentials
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -190,7 +190,7 @@ logarithms for this book!
 ------
 
 .. [#]
-   The real answer is 0: \$10 for a sandwich is a total ripoff so I
+   The real answer is 0: 10 € for a sandwich is a total ripoff so I
    should go next door and buy noodles.
 
 .. [#]

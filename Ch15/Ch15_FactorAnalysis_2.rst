@@ -116,15 +116,15 @@ components to be correlated. Dimensions of interest to psychologists and
 behavioural scientists are not often dimensions we would expect to be
 orthogonal, so oblique solutions are arguably more sensible. Practically, if in
 an oblique rotation the components are found to be substantially correlated
-(i.e. > 0.3) then this would confirm our intuition to prefer oblique rotation.
-If the components are, in fact, correlated, then an oblique rotation will
-produce a better estimate of the true components and a better simple structure
-than will an orthogonal rotation. And, if the oblique rotation indicates that
-the components have close to zero correlations between one another, then the
-researcher can go ahead and conduct an orthogonal rotation (which should then
-give about the same solution as the oblique rotation). In :numref:`fig-pca4`
-we see that none of the correlations is > 0.3 so it is appropriate to switch to
-orthogonal (``Varimax``) rotation.
+(i.e., *r* > 0.3 or *r* < -0.3) then this would confirm our intuition to prefer
+oblique rotation. If the components are, in fact, correlated, then an oblique
+rotation will produce a better estimate of the true components and a better
+simple structure than will an orthogonal rotation. And, if the oblique rotation
+indicates that the components have close to zero correlations between one
+another, then the researcher can go ahead and conduct an orthogonal rotation
+(which should then give about the same solution as the oblique rotation). In
+:numref:`fig-pca4` we see that none of the correlations is > 0.3 so it is
+appropriate to switch to orthogonal (``Varimax``) rotation.
 
 .. ----------------------------------------------------------------------------
 

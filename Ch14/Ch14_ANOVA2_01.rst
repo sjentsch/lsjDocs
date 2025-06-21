@@ -101,18 +101,16 @@ notation to do so. As usual, I will use the symbol µ to denote a
 population mean. However, because there are lots of different means,
 I will need to use subscripts to distinguish between them.
 
-Here is how the notation works. Our table is defined in terms of two
-factors. Each row corresponds to a different level of Factor A (in this
-case ``drug``), and each column corresponds to a different level of
-Factor B (in this case ``therapy``). If we let *R* denote the
-number of rows in the table, and *C* denote the number of columns,
-we can refer to this as an R × C factorial ANOVA. In this
-case *R* = 3 and *C* = 2. We will use lowercase letters to refer
-to specific rows and columns, so µ\ :sub:`rc` refers to the
-population mean associated with the *r*\ th level of Factor A
-(i.e. row number *r*) and the *c*-th level of Factor B
-(column number *c*).\ [#]_ So the population means are now written
-like this:
+Here is how the notation works. Our table is defined in terms of two factors.
+Each row corresponds to a different level of Factor A (in this case ``drug``),
+and each column corresponds to a different level of Factor B (in this case
+``therapy``). If we let *R* denote the number of rows in the table, and *C*
+denote the number of columns, we can refer to this as an R × C factorial
+ANOVA. In this case *R* = 3 and *C* = 2. We will use lowercase letters to
+refer to specific rows and columns, so µ\ :sub:`rc` refers to the population
+mean associated with the *r*\ th level of Factor A (i.e., row number *r*) and
+the *c*-th level of Factor B (i.e., column number *c*).\ [#]_ So the
+population means are now written like this:
 
 +--------------+--------------+--------------+--------------+
 |              | no therapy   | CBT          | total        |
@@ -126,21 +124,19 @@ like this:
 | **total**    |              |              |              |
 +--------------+--------------+--------------+--------------+
 
-Okay, what about the remaining entries? For instance, how should we
-describe the average mood gain across the entire (hypothetical)
-population of people who might be given Joyzepam in an experiment like
-this, regardless of whether they were in CBT? We use the “dot” notation
-to express this. In the case of Joyzepam, notice that we are talking
-about the mean associated with the third row in the table. That is,
-we are averaging across two cell means (i.e., µ\ :sub:`31` and
-µ\ :sub:`32`). The result of this averaging is referred to as a
-**marginal mean**, and would be denoted µ\ :sub:`3.` in this case.
-The marginal mean for CBT corresponds to the population mean associated
-with the second column in the table, so we use the notation
-µ\ :sub:`.2` to describe it. The grand mean is denoted
-µ\ :sub:`..` because it is the mean obtained by averaging
-(marginalising\ [#]_) over both. So our full table of population means
-can be written down like this:
+What about the remaining entries? For instance, how should we describe the
+average mood gain across the entire (hypothetical) population of people who
+might be given Joyzepam in an experiment like this, regardless of whether they
+were in CBT? We use the “dot” notation to express this. In the case of
+Joyzepam, notice that we are talking about the mean associated with the third
+row in the table. That is, we are averaging across two cell means (i.e.,
+µ\ :sub:`31` and µ\ :sub:`32`). The result of this averaging is referred to as
+a **marginal mean**, and would be denoted µ\ :sub:`3.` in this case. The
+marginal mean for CBT corresponds to the population mean associated with the
+second column in the table, so we use the notation µ\ :sub:`.2` to describe
+it. The grand mean is denoted µ\ :sub:`..` because it is the mean obtained by
+averaging (marginalising\ [#]_) over both. So our full table of population
+means can be written down like this:
 
 +--------------+--------------+--------------+--------------+
 |              | no therapy   | CBT          | total        |

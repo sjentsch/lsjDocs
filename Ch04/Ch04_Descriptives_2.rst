@@ -240,7 +240,7 @@ following table:
 
 
 That last column contains all of our squared deviations, so all we have to do
-is average them. If we do that by hand, i.e. using a calculator, we end up with
+is average them. If we do that by hand, i.e., using a calculator, we end up with
 a variance of 324.64. Exciting, is not it? For the moment, let us ignore the
 burning question that you are all probably thinking (i.e., what the heck does a
 variance of 324.64 actually mean?) and instead talk a bit more about how to do

@@ -33,7 +33,7 @@ proportion of error variance in the scale is 0.20. In other words, a scale with
 an α of 0.80 includes approximately 20\% error.
 
 BUT, (and that is a BIG “BUT”), Cronbach’s α is not a measure of 
-unidimensionality (i.e. an indicator that a scale is measuring a single factor
+unidimensionality (i.e., an indicator that a scale is measuring a single factor
 or construct rather than multiple related constructs). Scales that are
 multidimensional will cause α to be under-estimated if not assessed
 separately for each dimension, but high values for α are not necessarily

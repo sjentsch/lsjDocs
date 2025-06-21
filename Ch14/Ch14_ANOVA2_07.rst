@@ -168,7 +168,7 @@ In the |rtfm|_ data set, we have encoded ``attend`` and ``reading`` as if they
 were numeric predictors. In this case, this is perfectly acceptable. There
 really is a sense in which a student who turns up to class (i.e.
 ``attend = 1``) has in fact done “more attendance” than a student who does not
-(i.e. ``attend = 0``). So it is not at all unreasonable to include it as a
+(i.e., ``attend = 0``). So it is not at all unreasonable to include it as a
 predictor in a regression model. It is a little unusual, because the predictor
 only takes on two possible values, but it does not violate any of the
 assumptions of linear regression. And it is easy to interpret. If the regression
@@ -178,15 +178,15 @@ lectures get lower grades. The same is true for our ``reading`` variable.
 
 Wait a second though. *Why* is this true? It is something that is intuitively
 obvious to everyone who has taken a few stats classes and is comfortable with
-the maths, but it *is not* clear to everyone else at first pass. To see why this
-is true, it helps to look closely at a few specific students. Let us start by
-considering the sixth and seventh students in our data set (i.e. p = 6 and p = 7).
-Neither one has read the textbook, so in both cases we can set ``reading = 0``.
-Or, to say the same thing in our mathematical notation, we observe
-*X*\ :sub:`2,6` = 0 and *X*\ :sub:`2,7` = 0. However, student 7 did turn
-up to lectures (i.e., ``attend = 1``, *X*\ :sub:`1,7` = 1) whereas student
-6 did not (i.e., ``attend = 0``, *X*\ :sub:`1,6` = 0). Now let us look at
-what happens when we insert these numbers into the general formula for our
+the maths, but it *is not* clear to everyone else at first pass. To see why
+this is true, it helps to look closely at a few specific students. Let us
+start by considering the sixth and seventh students in our data set (i.e.,
+p = 6 and p = 7). Neither one has read the textbook, so in both cases we can
+set ``reading = 0``. Or, to say the same thing in our mathematical notation,
+we observe *X*\ :sub:`2,6` = 0 and *X*\ :sub:`2,7` = 0. However, student 7 did
+turn up to lectures (i.e., ``attend = 1``, *X*\ :sub:`1,7` = 1) whereas
+student 6 did not (i.e., ``attend = 0``, *X*\ :sub:`1,6` = 0). Now let us look
+at what happens when we insert these numbers into the general formula for our
 regression line. For student 6, the regression predicts that:
 
 | *Ŷ*\ :sub:`6` = *b*\ :sub:`0` + *b*\ :sub:`1` *X*\ :sub:`1,6` +  *b*\ :sub:`2` *X*\ :sub:`2,6`
@@ -480,21 +480,20 @@ used in regression.
 Degrees of freedom as parameter counting!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-At long last, I can finally give a definition of degrees of freedom that
-I am happy with. Degrees of freedom are defined in terms of the number
-of parameters that have to be estimated in a model. For a regression
-model or an ANOVA, the number of parameters corresponds to the number of
-regression coefficients (i.e. *b*-values), including the
-intercept. Keeping in mind that any *F*-test is always a
-comparison between two models and the first *df* is the difference
-in the number of parameters. For example, in the model comparison above,
-the null model (``mood.gain ~ therapyCBT``) has two parameters: there is
-one regression coefficient for the ``therapyCBT`` variable, and a second
-one for the intercept. The alternative model
+At long last, I can finally give a definition of degrees of freedom that I am
+happy with. Degrees of freedom are defined in terms of the number of
+parameters that have to be estimated in a model. For a regression model or an
+ANOVA, the number of parameters corresponds to the number of regression
+coefficients (i.e., the *b*-values), including the intercept. Keeping in mind
+that any *F*-test is always a comparison between two models and the first *df*
+is the difference in the number of parameters. For example, in the model
+comparison above, the null model (``mood.gain ~ therapyCBT``) has two
+parameters: there is one regression coefficient for the ``therapyCBT``
+variable, and a second one for the intercept. The alternative model
 (``mood.gain ~ druganxifree + drugjoyzepam + therapyCBT``) has four
-parameters: one regression coefficient for each of the three contrasts,
-and one more for the intercept. So the degrees of freedom associated
-with the *difference* between these two models is *df*\ :sub:`1` = 4 - 2 = 2.
+parameters: one regression coefficient for each of the three contrasts, and
+one more for the intercept. So the degrees of freedom associated with the
+*difference* between these two models is *df*\ :sub:`1` = 4 - 2 = 2.
 
 What about the case when there does not seem to *be* a null model? For
 instance, you might be thinking of the *F*-test that shows up when 
@@ -526,7 +525,7 @@ right. In principle you can imagine an absurdly complicated regression model
 that includes a parameter for every single data point, and it would of course
 provide a perfect description of the data. This model would contain *N*
 parameters in total, but we are interested in the difference between the number
-of parameters required to describe this full model (i.e. *N*) and the number
+of parameters required to describe this full model (i.e., *N*) and the number
 of parameters used by the simpler regression model that you are actually
 interested in (i.e., *K* + 1), and so the second degrees of freedom in the
 *F*-test is *df*\ :sub:`2` = *N* - *K* - 1, where *K* is the number of

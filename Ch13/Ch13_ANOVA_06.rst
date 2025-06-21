@@ -137,10 +137,11 @@ assumption is not violated to an extent which troubles the robustness of
 ANOVA. This was the point George Box was making in the quote above.
 Similarly, if your sample size is quite small, then the homogeneity of
 variance assumption might not be satisfied and yet a Levene test could be
-non-significant (i.e. *p* > 0.05). What this means is that, alongside any
+non-significant (i.e., *p* > 0.05). What this means is that, alongside any
 statistical test of the assumption being met, you should always plot the
 standard deviation around the means for each group / category in the analysis…
-just to see if they look fairly similar (i.e. homogeneity of variance) or not.
+just to see if they look fairly similar (i.e., homogeneity of variance) or
+not.
 
 .. ----------------------------------------------------------------------------
 
@@ -202,7 +203,7 @@ most of what you need to know in section :doc:`../Ch11/Ch11_tTest_08`. The
 only thing we really need to do is draw a QQ plot and, in addition if it is
 available, run the Shapiro-Wilk test. The QQ plot is shown in
 :numref:`fig-anova5` and it looks pretty normal to me. If the Shapiro-Wilk
-test is not significant (i.e. *p* > 0.05) then this indicates that the
+test is not significant (i.e., *p* > 0.05) then this indicates that the
 assumption of normality is not violated. However, as with Levene’s test, if
 the sample size is large then a significant Shapiro-Wilk test may in fact be
 a false positive, where the assumption of normality is not violated in any

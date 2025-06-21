@@ -159,7 +159,7 @@ was accounted for by the five factor model.
 Let us go on to look at the factor loadings and the factor covariance estimates,
 shown in :numref:`fig-cfa4` and :numref:`fig-cfa5`. The *Z*-statistic and
 *p*-value for each of these parameters indicates they make a reasonable
-contribution to the model (i.e. they are not zero) so there does not appear to
+contribution to the model (i.e., they are not zero) so there does not appear to
 be any reason to remove any of the specified variable-factor paths, or
 factor-factor correlations from the model. Often the standardized estimates are
 easier to interpret, and these can be specified under the ``Estimates`` option.

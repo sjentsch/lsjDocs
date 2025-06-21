@@ -127,11 +127,10 @@ should look at is ``Mauchly’s Test of Sphericity``, which tests the hypothesis
 that the variances of the differences between the conditions are equal (meaning
 that the spread of difference scores between the study conditions is
 approximately the same). In :numref:`fig-RManova2`, Mauchly’s test significance
-level is *p* = 0.720. If Mauchly’s test
-is non-significant (i.e. *p* > 0.05, as is the case in this
-analysis) then it is reasonable to conclude that the variances of the
-differences are not significantly different (i.e. they are roughly equal
-and sphericity can be assumed.).
+level is *p* = 0.720. If Mauchly’s test is non-significant (i.e., *p* > 0.05,
+as is the case in this analysis) then it is reasonable to conclude that the
+variances of the differences are not significantly different (i.e., they are
+roughly equal and sphericity can be assumed.).
 
 .. ----------------------------------------------------------------------------
 
@@ -173,7 +172,7 @@ corrected *F*-values are then shown in the results table, as in
 
 
 In our analysis, we saw that the significance of Mauchly’s Test of Sphericity
-was *p* = 0.720 (i.e. *p* > 0.05). So, this means we can assume that the
+was *p* = 0.720 (i.e., *p* > 0.05). So, this means we can assume that the
 requirement of sphericity has been met so no correction to the *F*-value is
 needed. Therefore, we can use the ``None`` Sphericity Correction output values
 for the repeated measure ``Task``: *F* = 6.93, *df1* = 2, *df2* = 10,

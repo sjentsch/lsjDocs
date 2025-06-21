@@ -81,20 +81,20 @@ the notation clear, here is a handy table:
 Estimating the population standard deviation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-So far, estimation seems pretty simple, and you might be wondering why I forced
-you to read through all that stuff about sampling theory. In the case of the
-mean our estimate of the population parameter (i.e. :math:`\hat\mu`) turned out
-to be identical to the corresponding sample statistic (i.e. *X̄*). However,
-that is not always true. To see this, let us have a think about how to construct
-an **estimate of the population standard deviation**, which we will denote
-:math:`\hat\sigma`. What shall we use as our estimate in this case? Your first
-thought might be that we could do the same thing we did when estimating the
-mean, and just use the sample statistic as our estimate. That is almost the
-right thing to do, but not quite.
+So far, estimation seems pretty simple, and you might be wondering why I
+forced you to read through all that stuff about sampling theory. In the case
+of the mean our estimate of the population parameter (i.e., :math:`\hat\mu`)
+turned out to be identical to the corresponding sample statistic (i.e., *X̄*).
+However, that is not always true. To see this, let us have a think about how
+to construct an **estimate of the population standard deviation**, which we
+will denote :math:`\hat\sigma`. What shall we use as our estimate in this
+case? Your first thought might be that we could do the same thing we did when
+estimating the mean, and just use the sample statistic as our estimate. That
+is almost the right thing to do, but not quite.
 
 Here is why. Suppose I have a sample that contains a single observation. For
-this example, it helps to consider a sample where you have no intuitions at all
-about what the true population values might be, so let us use something
+this example, it helps to consider a sample where you have no intuitions at
+all about what the true population values might be, so let us use something
 completely fictitious. Suppose the observation in question measures the
 *cromulence* of my shoes. It turns out that my shoes have a cromulence of 20.
 So here is my sample:
