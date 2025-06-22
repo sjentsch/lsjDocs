@@ -9,8 +9,8 @@ successful. The next step in our quest to develop a useful measure of
 personality is to check the latent factors we identified in the original EFA
 with a different sample. We want to see if the factors hold up, if we can
 confirm their existence with different data. This is a more rigorous check, as
-we will see. And it is called **Confirmatory Factor Analysis (CFA)** as we will,
-unsuprisingly, be seeking to *confirm* a pre-specificied latent factor
+we will see. And it is called **Confirmatory Factor Analysis (CFA)** as we
+will, unsuprisingly, be seeking to *confirm* a pre-specificied latent factor
 structure.\ [#]_
 
 In CFA, instead of doing an analysis where we see how the data goes together in
@@ -45,7 +45,7 @@ The next step is to consider whether the latent factors should be allowed to
 correlate in our model. As mentioned earlier, in the psychological and
 behavioural sciences constructs are often related to each other, and we also
 think that some of our personality factors may be correlated with each other.
-So, in our model, we should allow these latent factors to co-vary, as shown by
+So, in our model, we should allow these latent factors to covary, as shown by
 the double-headed arrows in :numref:`fig-cfa1`.
 
 At the same time, we should consider whether there is any good, systematic,
@@ -53,9 +53,9 @@ reason for some of the error terms to be correlated with each other. One reason
 for this might be that there is a shared methodological feature for particular
 sub-sets of the observed variables such that the observed variables might be
 correlated for methodological rather than substantive latent factor reasons.
-We will return to this possibility in a later section but, for now, there are no
-clear reasons that we can see that would justify correlating some of the error
-terms with each other.
+We will return to this possibility in a later section but, for now, there are
+no clear reasons that we can see that would justify correlating some of the
+error terms with each other.
 
 Without any correlated error terms, the model we are testing to see how well it
 fits with our observed data is just as specified in :numref:`fig-cfa1`. Only
@@ -66,14 +66,13 @@ loading from ``A1`` onto the latent factor Extraversion in the observed data,
 but not in our model) then we may find a poor fit between our model and the
 observed data.
 
-Right, let us take a look at how we set this CFA analysis up in jamovi.
-
 CFA in jamovi
 ~~~~~~~~~~~~~
 
-Open up the |bfi_sample2|_ data set, check that the 25 variables are coded as
-ordinal |ordinal| (or continuous |continuous|; it will not make any difference for
-this analysis). To perform CFA in jamovi:
+To set this CFA analysis up in jamovi, we open up the |bfi_sample2|_ data set,
+check that the 25 variables are coded as ordinal |ordinal| (or continuous
+|continuous|; it will not make any difference for this analysis), and perform a
+CFA using the following steps:
 
 -  Select ``Factor`` → ``Confirmatory Factor Analysis`` from the ``Analyses``
    tab to open the options panel where you can determine the settings
@@ -115,7 +114,7 @@ this analysis). To perform CFA in jamovi:
 .. ----------------------------------------------------------------------------
 
 Once we have set up the analysis we can turn our attention to the jamovi
-results window and see what is what. The first thing to look at is **model fit**
+results panel and see what is what. The first thing to look at is **model fit**
 (:numref:`fig-cfa3`) as this tells us how good a fit our model is to the
 observed data. NB in our model only the pre-specified covariances are
 estimated, including the factor correlations by default. Everything else is set
@@ -207,7 +206,8 @@ using a *post-hoc* rationalisation. For example, we can see in
 :numref:`fig-cfa6` that the largest MI for the factor loadings that are not
 already in the model is a value of 28.786 for the loading of ``N4`` (“Often
 feel blue”) onto the latent factor Extraversion. This indicates that if we add
-this path into the model then the χ²-value will reduce by around the same amount.
+this path into the model then the χ²-value will reduce by around the same
+amount.
 
 But in our model adding this path arguably does not really make any theoretical
 or methodological sense, so it is not a good idea (unless you can come up with
@@ -225,12 +225,12 @@ then always re-check the MI tables after each new addition, as the MIs are
 refreshed each time.
 
 There is also a Table of ``Residual Covariances Modification Indices`` produced
-by jamovi (:numref:`fig-cfa7`). In other words, a table showing which correlated
-errors, if added to the model, would improve the model fit the most. It is a
-good idea to look across both MI tables at the same time, spot the largest MI,
-think about whether the addition of the suggested parameter can be reasonably
-justified and, if it can, add it to the model. And then you can start again
-looking for the biggest MI in the re-calculated results.
+by jamovi (:numref:`fig-cfa7`). In other words, a table showing which
+correlated errors, if added to the model, would improve the model fit the most.
+It is a good idea to look across both MI tables at the same time, spot the
+largest MI, think about whether the addition of the suggested parameter can be
+reasonably justified and, if it can, add it to the model. And then you can
+start again looking for the biggest MI in the re-calculated results.
 
 .. ----------------------------------------------------------------------------
 
@@ -251,8 +251,8 @@ theoretical sense or purity. In other words, be very careful!
 
 So far, we have checked out the factor structure obtained in the EFA using a
 second sample and CFA. Unfortunately, we did not find that the factor structure
-from the EFA was confirmed in the CFA, so it is back to the drawing board as far
-as the development of this personality scale goes.
+from the EFA was confirmed in the CFA, so it is back to the drawing board as
+far as the development of this personality scale goes.
 
 Whereas there are sometimes good reasons for allowing residuals to covary (or
 correlate), there were no such reasons to “optimize” the CFA for the model that
@@ -298,15 +298,14 @@ of information to include in your write-up:
 
 .. [#]
    As an aside, given that we had a pretty firm idea from our initial
-   “putative” factors, we could just have gone straight to CFA and
-   skipped the EFA step. Whether you use EFA and then go on to CFA, or
-   go straight to CFA, is a matter of judgement and how confident you
-   are initially that you have the model about right (in terms of number
-   of factors and variables). Earlier on in the development of scales,
-   or the identification of underlying latent constructs, researchers
-   tend to use EFA. Later on, as they get closer to a final scale, or if
-   they want to check an established scale in a new sample, then CFA is
-   a good option.
+   “putative” factors, we could just have gone straight to CFA and skipped the
+   EFA step. Whether you use EFA and then go on to CFA, or go straight to CFA,
+   is a matter of judgement and how confident you are initially that you have
+   the model about right (in terms of number of factors and variables). Earlier
+   on in the development of scales, or the identification of underlying latent
+   constructs, researchers tend to use EFA. Later on, as they get closer to a
+   final scale, or if they want to check an established scale in a new sample,
+   then CFA is a good option.
 
 .. ----------------------------------------------------------------------------
 
