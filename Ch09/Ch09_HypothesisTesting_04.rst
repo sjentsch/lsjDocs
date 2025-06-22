@@ -77,18 +77,16 @@ define the edges of the critical region.
 
 At this point, our hypothesis test is essentially complete:
 
-#. (1) we choose an α level (e.g., α = 0.05;
+#. we choose an α level (e.g., α = 0.05;
 
-#. (2) come up with some test statistic (e.g., *X*) that does a
-   good job (in some meaningful sense) of comparing H\ :sub:`0` to
-   H\ :sub:`1`;
+#. come up with some test statistic (e.g., *X*) that does a good job (in some
+   meaningful sense) of comparing *H*\ :sub:`0` to *H*\ :sub:`1`;
 
-#. (3) figure out the sampling distribution of the test statistic on the
-   assumption that the null hypothesis is true (in this case, binomial);
-   and then
+#. figure out the sampling distribution of the test statistic on the assumption
+   that the null hypothesis is true (in this case, binomial); *and then*
 
-#. (4) calculate the critical region that produces an appropriate
-   α level (0-40 and 60-100).
+#. calculate the critical region that produces an appropriate α level (0 - 40
+   and 60 - 100).
 
 All that we have to do now is calculate the value of the test statistic
 for the real data (e.g., *X* = 62) and then compare it to the
@@ -132,12 +130,11 @@ There is one more thing I want to point out about the hypothesis test
 that I have just constructed. If we take a moment to think about the
 statistical hypotheses I have been using,
 
-H\ :sub:`0`: *θ* = 0.5
-
-H\ :sub:`1`: *θ* ≠ 0.5 
+*H*\ :sub:`0`: θ = 0.5
+*H*\ :sub:`1`: θ ≠ 0.5
 
 we notice that the alternative hypothesis covers *both* the possibility
-that *θ* < 0.5 and the possibility that *θ* > 0.5.
+that θ < 0.5 and the possibility that θ > 0.5.
 This makes sense if I really think that ESP could produce either
 better-than-chance performance *or* worse-than-chance performance (and
 there are some people who think that). In statistical language this is
@@ -150,10 +147,10 @@ both tails of the sampling distribution (2.5\% on either side if
 However, that is not the only possibility. I might only be willing to
 believe in ESP if it produces better than chance performance. If so,
 then my alternative hypothesis would only covers the possibility that
-*θ* > 0.5, and as a consequence the null hypothesis now becomes:
+θ > 0.5, and as a consequence the null hypothesis now becomes:
 
-H\ :sub:`0`: *θ* ≤ 0.5
-H\ :sub:`1`: *θ* > 0.5 
+*H*\ :sub:`0`: θ ≤ 0.5
+*H*\ :sub:`1`: θ > 0.5 
 
 When this happens, we have what is called a **one-sided test** and the
 critical region only covers one tail of the sampling distribution. This

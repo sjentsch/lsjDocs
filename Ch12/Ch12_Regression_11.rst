@@ -184,10 +184,10 @@ as an alternative hypothesis. And in fact we can construct an *F*
 test for this in a fairly straightforward fashion.
 
 We can fit both models to the data and obtain a residual sum of squares
-for both models. I will denote these as SS\ :sub:`res`\ :sup:`(1)` and
-SS\ :sub:`res`\ :sup:`(2)` respectively. The superscripting here just
+for both models. I will denote these as *SS*\ :sub:`res`\ :sup:`(1)` and
+*SS*\ :sub:`res`\ :sup:`(2)` respectively. The superscripting here just
 indicates which model we are talking about. Then our *F*-statistic
-is
+is:
 
 .. math:: F = \frac{(\mbox{SS}_{res}^{(1)} - \mbox{SS}_{res}^{(1)})/k}{(\mbox{SS}_{res}^{(2)})/(N-p-1)}
 
@@ -196,21 +196,20 @@ of predictors in the full model (not including the intercept), and
 *k* is the difference in the number of parameters between the two
 models.\ [#]_ The degrees of freedom here are *k* and
 *N* - *p* - 1. Note that it is often more convenient to think about the
-difference between those two SS values as a sum of squares in its own
-right. That is
+difference between those two *SS* values as a sum of squares in its own
+right. That is:
 
-| SS\ :sub:`Δ` = SS\ :sub:`res`\ :sup:`(1)` - SS\ :sub:`res`\ :sup:`(2)`
+| *SS*\ :sub:`Δ` = *SS*\ :sub:`res`\ :sup:`(1)` - *SS*\ :sub:`res`\ :sup:`(2)`
 
-The reason why this is helpful is that we can express
-SS\ :sub:`Δ` as a measure of the extent to which the two
-models make different predictions about the the outcome variable.
-Specifically,
+The reason why this is helpful is that we can express *SS*\ :sub:`Δ` as a
+measure of the extent to which the two models make different predictions about
+the the outcome variable:
 
-| SS\ :sub:`Δ` = :math:`\sum_{i} \left(\hat{y}_i^{(2)} - \hat{y}_i^{(1)} \right)^2`
+| *SS*\ :sub:`Δ` = :math:`\sum_{i} \left(\hat{y}_i^{(2)} - \hat{y}_i^{(1)} \right)^2`
 
-where *ŷ*\ :sub:`i`\ :sup:`(1)` is the fitted value for *y*\ :sub:`i`
-according to model M\ :sub:`1` and *ŷ*\ :sub:`i`\ :sup:`(2)` is the fitted
-value for *y*\ :sub:`i` according to model M\ :sub:`2`.
+Here, *ŷ*\ :sub:`i`\ :sup:`(1)` is the fitted value for *y*\ :sub:`i` according
+to model *M*\ :sub:`1` and *ŷ*\ :sub:`i`\ :sup:`(2)` is the fitted value for
+*y*\ :sub:`i` according to model *M*\ :sub:`2`.
 
 .. ----------------------------------------------------------------------------
 

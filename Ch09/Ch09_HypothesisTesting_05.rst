@@ -60,62 +60,55 @@ intolerable, then you must retain the null. If you are comfortable with
 an error rate equal to *p*, then it is okay to reject the null
 hypothesis in favour of your preferred alternative.
 
-In effect, *p* is a summary of all the possible hypothesis tests
-that you could have run, taken across all possible α
-values. And as a consequence it has the effect of “softening” our
-decision process. For those tests in which *p* ≤ α you
-would have rejected the null hypothesis, whereas for those tests in
-which *p* > α you would have retained the null. In my ESP
-study I obtained *X* = 62 and as a consequence I have ended up with
-*p* = 0.021. So the error rate I have to tolerate is 2.1\%. In
-contrast, suppose my experiment had yielded *X* = 97. What happens
-to my *p*-value now? This time it is shrunk to *p* = 1.36 · 10\ :sup:`25`,
-which is a tiny, tiny\ [#]_ Type I
-error rate. For this second case I would be able to reject the null
-hypothesis with a lot more confidence, because I only have to be
-“willing” to tolerate a type I error rate of about 1 in 10 trillion
-trillion in order to justify my decision to reject.
+In effect, *p* is a summary of all the possible hypothesis tests that you could
+have run, taken across all possible α values. And as a consequence it has the
+effect of “softening” our decision process. For those tests in which *p* ≤ α
+you would have rejected the null hypothesis, whereas for those tests in which
+*p* > α you would have retained the null hypothesis. In my ESP study, I
+obtained *X* = 62 and as a consequence I have ended up with *p* = 0.021. So the
+error rate I have to tolerate is 2.1\%. In contrast, suppose my experiment had
+yielded *X* = 97. What happens to my *p*-value now? This time it is shrunk to
+*p* = 1.36 · 10\ :sup:`25`, which is a tiny, tiny\ [#]_ Type I error rate. For
+this second case I would be able to reject the null hypothesis with a lot more
+confidence, because I only have to be “willing” to tolerate a type I error rate
+of about 1 in 10 trillion trillion in order to justify my decision to reject.
 
 The probability of extreme data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The second definition of the *p*-value comes from Sir Ronald
-Fisher, and it is actually this one that you tend to see in most
-introductory statistics textbooks. Notice how, when I constructed the
-critical region, it corresponded to the *tails* (i.e., extreme values)
-of the sampling distribution? That is not a coincidence, almost all
-“good” tests have this characteristic (good in the sense of minimising
-our type II error rate, β). The reason for that is that a
-good critical region almost always corresponds to those values of the
-test statistic that are least likely to be observed if the null
-hypothesis is true. If this rule is true, then we can define the
-*p*-value as the probability that we would have observed a test
-statistic that is at least as extreme as the one we actually did get. In
-other words, if the data are extremely implausible according to the null
-hypothesis, then the null hypothesis is probably wrong.
+The second definition of the *p*-value comes from Sir Ronald Fisher, and it is
+actually this one that you tend to see in most introductory statistics
+textbooks. Notice how, when I constructed the critical region, it corresponded
+to the *tails* (i.e., extreme values) of the sampling distribution? That is not
+a coincidence, almost all “good” tests have this characteristic (good in the
+sense of minimising our type II error rate, β). The reason for that is that a
+good critical region almost always corresponds to those values of the test
+statistic that are least likely to be observed if the null hypothesis is true.
+If this rule is true, then we can define the *p*-value as the probability that
+we would have observed a test statistic that is at least as extreme as the one 
+we actually did get. In other words, if the data are extremely implausible
+according to the null hypothesis, then the null hypothesis is probably wrong.
 
 A common mistake
 ~~~~~~~~~~~~~~~~
 
-Okay, so you can see that there are two rather different but legitimate
-ways to interpret the *p*-value, one based on Neyman’s approach to
-hypothesis testing and the other based on Fisher’s. Unfortunately, there
-is a third explanation that people sometimes give, especially when
-they are first learning statistics, and it is *absolutely and completely
-wrong*. This mistaken approach is to refer to the *p*-value as
-“the probability that the null hypothesis is true”. It is an intuitively
-appealing way to think, but it is wrong in two key respects. First, null
-hypothesis testing is a frequentist tool and the frequentist approach to
-probability does *not* allow you to assign probabilities to the null
-hypothesis. According to this view of probability, the null hypothesis
-is either true or it is not, it cannot have a “5\% chance” of being true.
-Second, even within the Bayesian approach, which does let you assign
-probabilities to hypotheses, the *p*-value would not correspond to
-the probability that the null is true. This interpretation is entirely
-inconsistent with the mathematics of how the *p*-value is
-calculated. Put bluntly, despite the intuitive appeal of thinking this
-way, there is no justification for interpreting a *p*-value this
-way. Never do it.
+Okay, so you can see that there are two rather different but legitimate ways to
+interpret the *p*-value, one based on Neyman’s approach to hypothesis testing
+and the other based on Fisher’s. Unfortunately, there is a third explanation
+that people sometimes give, especially when they are first learning statistics,
+and it is *absolutely and completely wrong*. This mistaken approach is to refer
+to the *p*-value as “the probability that the null hypothesis is true”. It is
+an intuitively appealing way to think, but it is wrong in two key respects.
+First, null hypothesis testing is a frequentist tool and the frequentist
+approach to probability does *not* allow you to assign probabilities to the
+null hypothesis. According to this view of probability, the null hypothesis is
+either true or it is not, it cannot have a “5\% chance” of being true. Second,
+even within the Bayesian approach, which does let you assign probabilities to
+hypotheses, the *p*-value would not correspond to the probability that the null
+hypothesis is true. This interpretation is entirely inconsistent with the
+mathematics of how the *p*-value is calculated. Put bluntly, despite the
+intuitive appeal of thinking this way, there is no justification for
+interpreting a *p*-value this way. Never do it.
 
 ------
 

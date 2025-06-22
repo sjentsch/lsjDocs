@@ -190,10 +190,10 @@ tend to be fairly tightly clustered around the true population mean.
 
 We can quantify this effect by calculating the standard deviation of the
 sampling distribution, which is referred to as the **standard error**. The
-standard error of a statistic is often denoted SE, and since we are usually
+standard error of a statistic is often denoted *SE*, and since we are usually
 interested in the standard error of the sample *mean*, we often use the
-acronym SEM. As you can see just by looking at the picture, as the sample size
-*N* increases, the SEM decreases.
+acronym *SEM*. As you can see just by looking at the picture, as the sample
+size *N* increases, the *SEM* decreases.
 
 .. ----------------------------------------------------------------------------
 
@@ -274,10 +274,10 @@ theorem tells us that if the population distribution has mean
 distribution of the mean also has mean µ and the standard
 error of the mean is:
 
-.. math:: \mbox{SEM} = \frac{\sigma}{ \sqrt{N} }
+.. math:: \mbox{$SEM$} = \frac{\sigma}{ \sqrt{$N$} }
 
 Because we divide the population standard deviation σ by
-the square root of the sample size *N*, the SEM gets smaller as
+the square root of the sample size *N*, the *SEM* gets smaller as
 the sample size increases. It also tells us that the shape of the
 sampling distribution becomes normal.\ [#]_
 

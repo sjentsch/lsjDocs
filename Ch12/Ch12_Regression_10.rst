@@ -77,12 +77,12 @@ technical reasons, mumble mumble, the formula for this is:
 | ε\ :sub:`i`\' = :math:`\frac{\epsilon_i}{\hat{\sigma} \sqrt{1-h_i}}`
 
 where :math:`\hat\sigma` in this context is the estimated population standard
-deviation of the ordinary residuals, and h\ :sub:`i` is the “hat value” of the
-*i*-th observation. I have not explained hat values to you yet (but have no
-fear,\ [#]_ it is coming shortly), so this will not make a lot of sense. For now,
-it is enough to interpret the standardised residuals as if we would converted the
-ordinary residuals to *z*-scores. In fact, that is more or less the truth, it is
-just that we are being a bit fancier.
+deviation of the ordinary residuals, and *h*\ :sub:`i` is the “hat value” of
+the *i*-th observation. I have not explained hat values to you yet (but have no
+fear,\ [#]_ it is coming shortly), so this will not make a lot of sense. For
+now, it is enough to interpret the standardised residuals as if we would
+converted the ordinary residuals to *z*-scores. In fact, that is more or less
+the truth, it is just that we are being a bit fancier.
 
 The third kind of residuals are **Studentised residuals** (also called
 “jackknifed residuals”) and they are even fancier than standardised residuals.
@@ -271,15 +271,15 @@ Checking for collinearity
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The last kind of regression diagnostic that I am going to discuss in this
-chapter is the use of **variance inflation factors** (VIFs), which are
+chapter is the use of **variance inflation factors** (*VIF*s), which are
 useful for determining whether or not the predictors in your regression
 model are too highly correlated with each other. There is a variance
 inflation factor associated with each predictor *X*\ :sub:`k` in the
 model.
 
-The formula for the k-th VIF is:
+The formula for the k-th *VIF* is:
 
-| VIF\ :sub:`k` = 1 / (1 - *R*\²\ :sub:`(-k)`\)
+| *VIF*\ :sub:`k` = 1 / (1 - *R*\²\ :sub:`(-k)`\)
 
 Here, *R*\²\ :sub:`(-k)` refers to *R*-squared value you would get if you ran
 a regression using *X*\ :sub:`k` as the outcome variable, and all the other
@@ -287,15 +287,15 @@ a regression using *X*\ :sub:`k` as the outcome variable, and all the other
 a very good measure of the extent to which *X*\ :sub:`k` is correlated with
 all the other variables in the model.
 
-The square root of the VIF is pretty interpretable. It tells you how
+The square root of the *VIF* is pretty interpretable. It tells you how
 much wider the confidence interval for the corresponding coefficient
 *b*\ :sub:`k` is, relative to what you would have expected if the
 predictors are all nice and uncorrelated with one another. 
 
-If you have only got two predictors, the VIF values are always going to be the
+If you have only got two predictors, the *VIF* values are always going to be the
 same, as we can see if we click on the ``Collinearity`` checkbox in the
 ``Regression`` → ``Assumption Checks`` options in jamovi. For both ``dani.sleep``
-and ``baby.sleep`` the VIF is 1.65. And since the square root of 1.65 is
+and ``baby.sleep`` the *VIF* is 1.65. And since the square root of 1.65 is
 1.28, we see that the correlation between our two predictors is not
 causing much of a problem.
 
@@ -317,9 +317,9 @@ at the correlation matrix for all four variables (:numref:`fig12-22`).
 .. ----------------------------------------------------------------------------
 
 We have some fairly large correlations between some of our predictor variables!
-When we run the regression model and look at the VIF values, we see that the
+When we run the regression model and look at the *VIF* values, we see that the
 collinearity is causing a lot of uncertainty about the coefficients. First, run
-the regression, as in :numref:`fig-reg7` and you can see from the VIF values
+the regression, as in :numref:`fig-reg7` and you can see from the *VIF* values
 that, yep, that is some mighty fine collinearity there.
 
 .. ----------------------------------------------------------------------------
@@ -398,8 +398,8 @@ residual. If the observation happens to be unusual on all variables in
 precisely the same way, it can actually lie very close to the regression line.
 An example of this is shown in :numref:`fig-leverage`. The leverage of an
 observation is operationalised in terms of its *hat value*, usually written
-h\ :sub:`i`. The formula for the hat value is rather complicated,\ [#]_ but it
-interpretation is not: h\ :sub:`i` is a measure of the extent to which the
+*h*\ :sub:`i`. The formula for the hat value is rather complicated,\ [#]_ but
+it interpretation is not: *h*\ :sub:`i` is a measure of the extent to which the
 *i*-th observation is “in control” of where the regression line ends up going.
 
 In general, if an observation lies far away from the other ones in terms of the
@@ -508,8 +508,8 @@ therefore deserves to be handled separately.
    vector of fitted values ŷ, such that ŷ = **H**\ *y*. The name comes from
    the fact that this is the matrix that “puts a hat on *y*”. The hat *value*
    of the i-th observation is the i-th diagonal element of this matrix (so
-   technically I should be writing it as h\ :sub:`ii` rather than h\ :sub:`i`).
-   Oh, and in case you care, here is how it is calculated:
+   technically I should be writing it as *h*\ :sub:`ii` rather than
+   *h*\ :sub:`i`). Oh, and in case you care, here is how it is calculated:
    **H** = **X**\(**X**'**X**\)\ :sup:`-1` **X**'\. Pretty, is not it?
 
 .. [#]

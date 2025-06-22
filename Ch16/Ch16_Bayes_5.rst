@@ -58,20 +58,20 @@ happily accept *p* = 0.043 as reasonably strong evidence for an effect. In
 contrast, notice that the Bayesian test does not even reach 2:1 odds in favour
 of an effect, and would be considered very weak evidence at best. In my
 experience that is a pretty typical outcome. Bayesian methods usually require
-more evidence before rejecting the null.
+more evidence before rejecting the null hypothesis.
 
 Paired samples *t*-test
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Back in section :doc:`../Ch11/Ch11_tTest_05` I discussed the |chico|_ data set
 in which student grades were measured on two tests, and we were interested in
-finding out whether grades went up from test 1 to test 2. Because every
-student did both tests, the tool we used to analyse the data was a paired
-samples *t*-test. :numref:`fig-bayes3` shows the jamovi results table for the
-conventional ``Paired Samples T-Test`` alongside the ``Bayes Factor``
-analysis. At this point, I hope you can read this output without any
-difficulty. The data provide evidence of about 6000:1 in favour of the
-alternative. We could probably reject the null with some confidence!
+finding out whether grades went up from test 1 to test 2. Because every student
+did both tests, the tool we used to analyse the data was a paired samples
+*t*-test. :numref:`fig-bayes3` shows the jamovi results table for the
+conventional ``Paired Samples T-Test`` alongside the ``Bayes Factor`` analysis.
+At this point, I hope you can read this output without any difficulty. The data
+provide evidence of about 6000:1 in favour of the alternative. We could
+probably reject the null hypothesis with some confidence!
 
 .. ----------------------------------------------------------------------------
 

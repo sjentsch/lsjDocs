@@ -101,7 +101,7 @@ hypotheses. The test that I am going to describe to you is **Pearson’s χ²
 begin by carefully constructing our null hypothesis. In this case, it is pretty
 easy. First, let us state the null hypothesis in words:
 
-H\ :sub:`0`: All four suits are chosen with equal probability
+*H*\ :sub:`0`: All four suits are chosen with equal probability
 
 Now, let us say this in a mathematical way. To do this, let us use the
 notation *P*\ :sub:`j`\ to refer to the true probability that the *j*-th suit
@@ -115,7 +115,7 @@ hypothesis. So if I let the vector P = (*P*\ :sub:`1`\, *P*\ :sub:`2`\,
 *P*\ :sub:`3`\, *P*\ :sub:`4`\) refer to the collection of probabilities that
 describe our null hypothesis, then we have:
 
-H\ :sub:`0`: *P* = (0.25, 0.25, 0.25, 0.25)
+*H*\ :sub:`0`: *P* = (0.25, 0.25, 0.25, 0.25)
 
 In this instance, our null hypothesis corresponds to a vector of probabilities
 *P* in which all of the probabilities are equal to one another. But this
@@ -127,18 +127,18 @@ then it is a perfectly legitimate choice for the null hypothesis. However, the
 typical use of the goodness-of-fit test is with a null hypothesis that all of
 the categories are equally likely, so we will stick to that for our example.
 
-What about our alternative hypothesis, H\ :sub:`1`? All we are really
+What about our alternative hypothesis, *H*\ :sub:`1`? All we are really
 interested in is demonstrating that the probabilities involved are not all
 identical (that is, people’s choices were not completely random). As a
 consequence, the “human friendly” versions of our hypotheses look like this:
 
-| H\ :sub:`0`: All four suits are chosen with equal probability (0.25)
-| H\ :sub:`1`: At least one of the suit-choice probabilities *is not* 0.25
+| *H*\ :sub:`0`: All four suits are chosen with equal probability (0.25)
+| *H*\ :sub:`1`: At least one of the suit-choice probabilities *is not* 0.25
 
 and the “mathematician friendly” version is:
 
-| H\ :sub:`0`: *P* = (0.25, 0.25, 0.25, 0.25)
-| H\ :sub:`1`: *P* ≠ (0.25, 0.25, 0.25, 0.25)
+| *H*\ :sub:`0`: *P* = (0.25, 0.25, 0.25, 0.25)
+| *H*\ :sub:`1`: *P* ≠ (0.25, 0.25, 0.25, 0.25)
 
 The “goodness-of-fit” test statistic
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -146,17 +146,18 @@ The “goodness-of-fit” test statistic
 At this point, we have our observed frequencies *O* and a collection of
 probabilities *P* corresponding to the null hypothesis that we want to test.
 What we now want to do is construct a test of the null hypothesis. As always,
-if we want to test H\ :sub:`0` against H\ :sub:`1`, we are going to need a test
-statistic. The basic trick that a goodness-of-fit test uses is to construct a
-test statistic that measures how “close” the data are to the null hypothesis.
-If the data do not resemble what you would “expect” to see if the null hypothesis
-were true, then it probably is not true. Okay, if the null hypothesis were true,
-what would we expect to see? Or, to use the correct terminology, what are the
-**expected frequencies**. There are *N* = 200 observations, and (if the null is
-true) the probability of any one of them choosing a heart is *P*\ :sub:`3` =
-\0.25, so I guess we are expecting 200 · 0.25 = 50 hearts, right? Or, more
-specifically, if we let *E*\ :sub:`i` refer to “the number of category *i*
-responses that we are expecting if the null is true”, then:
+if we want to test *H*\ :sub:`0` against *H*\ :sub:`1`, we are going to need a
+test statistic. The basic trick that a goodness-of-fit test uses is to
+construct a test statistic that measures how “close” the data are to the null
+hypothesis. If the data do not resemble what you would “expect” to see if the
+null hypothesis were true, then it probably is not true. Okay, if the null
+hypothesis were true, what would we expect to see? Or, to use the correct
+terminology, what are the **expected frequencies**. There are *N* = 200
+observations, and (if *H*\ :sub:`0` is true) the probability of any one of them
+choosing a heart is *P*\ :sub:`3` = \0.25, so I guess we are expecting 200 ·
+0.25 = 50 hearts, right? Or, more specifically, if we let *E*\ :sub:`i` refer
+to “the number of category *i* responses that we are expecting if *H*\ :sub:`0`
+is true”, then:
 
 *E*\ :sub:`i` = *N* · *P*\ :sub:`i`
 
@@ -237,11 +238,11 @@ cards data), then the χ² statistic is given by:
 Intuitively, it is clear that if χ² is small, then the observed data
 *O*\ :sub:`i` are very close to what the null hypothesis predicted
 *E*\ :sub:`i`\, so we are going to need a large χ² statistic in order to reject
-the null.
+*H*\ :sub:`0`.
 
 As we have seen from our calculations, in our cards data set we have got a value
 of χ² = 8.44. So now the question becomes is this a big enough value to reject
-the null?
+*H*\ :sub:`0`?
 
 The sampling distribution of the GOF statistic 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -365,8 +366,8 @@ the null hypothesis has done a poor job of predicting the data from our
 experiment, whereas small values of χ² imply that it is actually done pretty
 well. Therefore, a pretty sensible strategy would be to say there is some
 critical value such that if χ² is bigger than the critical value we reject the
-null, but if χ² is smaller than this value we retain the null. In other words,
-to use the language we introduced in chapter
+null, but if χ² is smaller than this value we retain *H*\ :sub:`0`. In other
+words, to use the language we introduced in chapter
 :doc:`../Ch09/Ch09_HypothesisTesting` the χ²-goodness-of-fit test is always a
 **one-sided test**. Right, so all we have to do is figure out what this
 critical value is. And it is pretty straightforward. If we want our test to
@@ -398,37 +399,37 @@ freedom, and *p* = 0.05 is 7.815.
 .. table:: Table of critical values for the χ² (chi-square) distribution
    :name: tab-chisquared_critvalues
 
-   +----+----------------------------------------------------------------------------+
-   |    | Probability                                                                |
-   |    +-------------------------------------------------+--------------------------+
-   |    | non-significant                                 | significant              |
-   |    +-------+-------+-------+-------+--------+--------+--------+--------+--------+
-   | df |  0.95 |  0.90 |  0.70 |  0.50 |   0.30 |   0.10 |   0.05 |   0.01 |  0.001 |
-   +====+=======+=======+=======+=======+========+========+========+========+========+
-   |  1 | 0.004 | 0.016 | 0.148 | 0.455 |  1.074 |  2.706 |  3.841 |  6.635 | 10.828 |
-   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
-   |  2 | 0.103 | 0.211 | 0.713 | 1.386 |  2.408 |  4.605 |  5.991 |  9.210 | 13.816 |
-   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
-   |  3 | 0.352 | 0.584 | 1.424 | 2.366 |  3.665 |  6.251 |  7.815 | 11.345 | 16.266 |
-   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
-   |  4 | 0.711 | 1.064 | 2.195 | 3.357 |  4.878 |  7.779 |  9.488 | 13.277 | 18.467 |
-   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
-   |  5 | 1.145 | 1.610 | 3.000 | 4.351 |  6.064 |  9.236 | 11.070 | 15.086 | 20.515 |
-   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
-   |  6 | 1.635 | 2.204 | 3.828 | 5.348 |  7.231 | 10.645 | 12.592 | 16.812 | 22.458 |
-   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
-   |  7 | 2.167 | 2.833 | 4.671 | 6.346 |  8.383 | 12.017 | 14.067 | 18.475 | 24.322 |
-   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
-   |  8 | 2.733 | 3.490 | 5.527 | 7.344 |  9.524 | 13.362 | 15.507 | 20.090 | 26.124 |
-   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
-   |  9 | 3.325 | 4.168 | 6.393 | 8.343 | 10.656 | 14.684 | 16.919 | 21.666 | 27.877 |
-   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
-   | 10 | 3.940 | 4.865 | 7.267 | 9.342 | 11.781 | 15.987 | 18.307 | 23.209 | 29.588 |
-   +----+-------+-------+-------+-------+--------+--------+--------+--------+--------+
-   
+   +------+----------------------------------------------------------------------------+
+   |      | Probability                                                                |
+   |      +-------------------------------------------------+--------------------------+
+   |      | non-significant                                 | significant              |
+   |      +-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   | *df* |  0.95 |  0.90 |  0.70 |  0.50 |   0.30 |   0.10 |   0.05 |   0.01 |  0.001 |
+   +======+=======+=======+=======+=======+========+========+========+========+========+
+   |    1 | 0.004 | 0.016 | 0.148 | 0.455 |  1.074 |  2.706 |  3.841 |  6.635 | 10.828 |
+   +------+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |    2 | 0.103 | 0.211 | 0.713 | 1.386 |  2.408 |  4.605 |  5.991 |  9.210 | 13.816 |
+   +------+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |    3 | 0.352 | 0.584 | 1.424 | 2.366 |  3.665 |  6.251 |  7.815 | 11.345 | 16.266 |
+   +------+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |    4 | 0.711 | 1.064 | 2.195 | 3.357 |  4.878 |  7.779 |  9.488 | 13.277 | 18.467 |
+   +------+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |    5 | 1.145 | 1.610 | 3.000 | 4.351 |  6.064 |  9.236 | 11.070 | 15.086 | 20.515 |
+   +------+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |    6 | 1.635 | 2.204 | 3.828 | 5.348 |  7.231 | 10.645 | 12.592 | 16.812 | 22.458 |
+   +------+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |    7 | 2.167 | 2.833 | 4.671 | 6.346 |  8.383 | 12.017 | 14.067 | 18.475 | 24.322 |
+   +------+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |    8 | 2.733 | 3.490 | 5.527 | 7.344 |  9.524 | 13.362 | 15.507 | 20.090 | 26.124 |
+   +------+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |    9 | 3.325 | 4.168 | 6.393 | 8.343 | 10.656 | 14.684 | 16.919 | 21.666 | 27.877 |
+   +------+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+   |   10 | 3.940 | 4.865 | 7.267 | 9.342 | 11.781 | 15.987 | 18.307 | 23.209 | 29.588 |
+   +------+-------+-------+-------+-------+--------+--------+--------+--------+--------+
+
 So, if our calculated χ² statistic is bigger than the critical value of 7.815,
 then we can reject the null hypothesis (remember that the null hypothesis,
-H\ :sub:`0`, is that all four suits are chosen with equal probability). Since
+*H*\ :sub:`0`, is that all four suits are chosen with equal probability). Since
 we actually already calculated that before (i.e., χ² = 8.44) we can reject the
 null hypothesis. And that is it, basically. You now know “Pearson’s χ² test for
 the goodness-of-fit”. Lucky you.
@@ -560,8 +561,8 @@ said, there is a few things that you should note about this description:
    what your null hypothesis was. Also, notice that I described the null
    hypothesis in words, not in maths. That is perfectly acceptable. You can
    describe it in maths if you like, but since most readers find words easier
-   to read than symbols, most writers tend to describe the null using words if
-   they can.
+   to read than symbols, most writers tend to describe the null hypotesis using
+   words if they can.
 
 -  *A “stat block” is included*. When reporting the results of the test itself,
    I did not just say that the result was significant, I included a “stat block”

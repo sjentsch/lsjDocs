@@ -31,7 +31,8 @@ going to have to address.
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_oneSampleTTestHyp.*
-   :alt: Illustration: Null and alternative hypotheses by the one-sample *t*-test
+   :alt: Illustration: Null and alternative hypotheses by the one-sample
+         *t*-test
    :name: fig-ttesthyp_onesample
 
    Graphical illustration of the null and alternative hypotheses assumed by the
@@ -54,18 +55,19 @@ Because Guinness took a dim view of its employees publishing statistical
 analysis (apparently they felt it was a trade secret), he published the work
 under the pseudonym “A Student” and, to this day, the full name of the *t*-test
 is actually **Student’s *t*-test**. The key thing that Gosset figured out is
-how we should accommodate the fact that we are not completely sure what the true
-standard deviation is.\ [#]_ The answer is that it subtly changes the sampling
-distribution. In the *t*-test our test statistic, now called a *t*-statistic,
-is calculated in exactly the same way I mentioned above. If our null hypothesis
-is that the true mean is µ, but our sample has mean *X̄* and our estimate of the
-population standard deviation is :math:`\hat{\sigma}`, then our *t*-statistic is:
+how we should accommodate the fact that we are not completely sure what the
+true standard deviation is.\ [#]_ The answer is that it subtly changes the
+sampling distribution. In the *t*-test our test statistic, now called a
+*t*-statistic, is calculated in exactly the same way I mentioned above. If our
+null hypothesis is that the true mean is µ, but our sample has mean *X̄* and our
+estimate of the population standard deviation is :math:`\hat{\sigma}`, then our
+*t*-statistic is:
 
 .. math:: t = \frac{\bar{X} - \mu}{\hat{\sigma}/\sqrt{N} }
 
 The only thing that has changed in the equation is that instead of using the
 known true value σ, we use the estimate :math:`\hat{\sigma}`. And if this
-estimate has been constructed from *N* observations, then the sampling 
+estimate has been constructed from *N* observations, then the sampling
 distribution turns into a *t*-distribution with *N* - 1 **degrees of freedom**
 (df). The *t*-distribution is very similar to the normal distribution, but has
 “heavier” tails, as discussed earlier in :doc:`../Ch07/Ch07_Probability_6` and
@@ -88,8 +90,8 @@ behave exactly the same way as a *z*-test. And that is exactly what happens!
    that the *t*-distribution has heavier tails (leptokurtic: higher kurtosis)
    than the normal distribution; this effect is quite exaggerated when the
    degrees of freedom are very small, but negligible for larger values. In
-   other words, for large *df* the *t*-distribution is essentially identical to a
-   normal distribution.
+   other words, for large *df* the *t*-distribution is essentially identical to
+   a normal distribution.
    
 .. ----------------------------------------------------------------------------
 
@@ -143,7 +145,7 @@ done here. For instance, it is not uncommon to see the confidence interval
 included as part of the stat block after reporting the mean difference, like
 this:
 
-|  *t*\(19) = 2.25, *p* = 0.036, CI\ :sub:`95` = [0.34, 9.26]
+|  *t*\(19) = 2.25, *p* = 0.036, *CI*\ :sub:`95` = [0.34, 9.26]
 
 With that much jargon crammed into half a line, you know it must be really
 smart.\ [#]_

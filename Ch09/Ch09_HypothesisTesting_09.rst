@@ -29,42 +29,39 @@ how we should interpret their work many decades later. That said, here is a
 quick summary of what I take these two approaches to be.
 
 First, let us talk about Fisher’s approach. As far as I can tell, Fisher
-assumed that you only had the one hypothesis (the null) and that what
-you want to do is find out if the null hypothesis is inconsistent with
+assumed that you only had the one hypothesis (the null hypothesis) and that
+what you want to do is find out if the null hypothesis is inconsistent with
 the data. From his perspective, what you should do is check to see if
-the data are “sufficiently unlikely” according to the null. In fact, if
-you remember back to our earlier discussion, that is how Fisher defines
-the *p*-value. According to Fisher, if the null hypothesis
-provided a very poor account of the data then you could safely reject
-it. But, since you do not have any other hypotheses to compare it to,
-there is no way of “accepting the alternative” because you do not
-necessarily have an explicitly stated alternative. That is more or less
-all there is to it.
+the data are “sufficiently unlikely” according to the null hypothesis. In fact,
+if you remember back to our earlier discussion, that is how Fisher defines the
+*p*-value. According to Fisher, if the null hypothesis provided a very poor
+account of the data then you could safely reject it. But, since you do not have
+any other hypotheses to compare it to, there is no way of “accepting the
+alternative hypothesis” because you do not necessarily have an explicitly
+stated alternative hypothesis. That is more or less all there is to it.
 
-In contrast, Neyman thought that the point of hypothesis testing was as
-a guide to action and his approach was somewhat more formal than
-Fisher’s. His view was that there are multiple things that you could
-*do* (accept the null or accept the alternative) and the point of the
-test was to tell you which one the data support. From this perspective,
-it is critical to specify your alternative hypothesis properly. If you
-do not know what the alternative hypothesis is, then you do not know how
-powerful the test is, or even which action makes sense. His framework
-genuinely requires a competition between different hypotheses. For
-Neyman, the *p*-value did not directly measure the probability of
-the data (or data more extreme) under the null, it was more of an
-abstract description about which “possible tests” were telling you to
-accept the null, and which “possible tests” were telling you to accept
-the alternative.
+In contrast, Neyman thought that the point of hypothesis testing was as a guide
+to action and his approach was somewhat more formal than Fisher’s. His view was
+that there are multiple things that you could *do* (accept the null hypothesis
+or accept the alternative hypothesis) and the point of the test was to tell you
+which one the data support. From this perspective, it is critical to specify
+your alternative hypothesis properly. If you do not know what the alternative
+hypothesis is, then you do not know how powerful the test is, or even which
+action makes sense. His framework genuinely requires a competition between
+different hypotheses. For Neyman, the *p*-value did not directly measure the
+probability of the data (or data more extreme) under the null hypothesis, it
+was more of an abstract description about which “possible tests” were telling
+you to accept the null hypothesis, and which “possible tests” were telling you
+to accept the alternative hypothesis.
 
-As you can see, what we have today is an odd mishmash of the two. We
-talk about having both a null hypothesis and an alternative (Neyman),
-but usually\ [#]_ define the *p*-value in terms of extreme data
-(Fisher), but we still have α values (Neyman). Some of the
-statistical tests have explicitly specified alternatives (Neyman) but
-others are quite vague about it (Fisher). And, according to some people
-at least, we are not allowed to talk about accepting the alternative
-(Fisher). It is a mess, but I hope this at least explains why it is a
-mess.
+As you can see, what we have today is an odd mishmash of the two. We talk about
+having both a null hypothesis and an alternative hypothesis (Neyman), but
+usually\ [#]_ define the *p*-value in terms of extreme data (Fisher), but we
+still have α values (Neyman). Some of the statistical tests have explicitly
+specified alternatives (Neyman) but others are quite vague about it (Fisher).
+And, according to some people at least, we are not allowed to talk about
+accepting the alternative hypothesis (Fisher). It is a mess, but I hope this at
+least explains why it is a mess.
 
 Bayesians versus frequentists
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -92,9 +89,9 @@ you are a Bayesian and that you are okay with making probability statements
 about hypotheses, you have to follow the Bayesian rules for calculating those
 probabilities. I will talk more about this in chapter :doc:`../Ch16/Ch16_Bayes`,
 but for now what I want to point out to you is the *p*-value is a *terrible*
-approximation to the probability that H\ :sub:`0` is true. If what you want to
-know is the probability of the null, then the *p*-value is not what you are
-looking for!
+approximation to the probability that *H*\ :sub:`0` is true. If what you want
+to know is the probability of the null hypothesis, then the *p*-value is not
+what you are looking for!
 
 Traps
 ~~~~~

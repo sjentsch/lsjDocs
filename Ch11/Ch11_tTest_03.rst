@@ -77,23 +77,21 @@ intervals for both groups of students (:numref:`fig-ttestci`).
 Introducing the test
 ~~~~~~~~~~~~~~~~~~~~
 
-The **independent samples t-test** comes in two different forms,
-Student’s and Welch’s. The original Student *t*-test, which is the
-one I will describe in this section, is the simpler of the two but relies
-on much more restrictive assumptions than the Welch *t*-test.
-Assuming for the moment that you want to run a two-sided test, the goal
-is to determine whether two “independent samples” of data are drawn from
-populations with the same mean (the null hypothesis) or different means
-(the alternative hypothesis). When we say “independent” samples, what we
-really mean here is that there is no special relationship between
-observations in the two samples. This probably does not make a lot of
-sense right now, but it will be clearer when we come to talk about the
-paired samples *t*-test later on. For now, let us just point out
-that if we have an experimental design where participants are randomly
-allocated to one of two groups, and we want to compare the two groups’
-mean performance on some outcome measure, then an independent samples
-*t*-test (rather than a paired samples *t*-test) is what
-we are after.
+The **independent samples t-test** comes in two different forms, Student’s and
+Welch’s. The original Student *t*-test, which is the one I will describe in
+this section, is the simpler of the two but relies on much more restrictive
+assumptions than the Welch *t*-test. Assuming for the moment that you want to
+run a two-sided test, the goal is to determine whether two “independent
+samples” of data are drawn from populations with the same mean (the null
+hypothesis) or different means (the alternative hypothesis). When we say
+“independent” samples, what we really mean here is that there is no special
+relationship between observations in the two samples. This probably does not
+make a lot of sense right now, but it will be clearer when we come to talk
+about the paired samples *t*-test later on. For now, let us just point out that
+if we have an experimental design where participants are randomly allocated to
+one of two groups, and we want to compare the two groups’ mean performance on
+some outcome measure, then an independent samples *t*-test (rather than a
+paired samples *t*-test) is what we are after.
 
 Let us let µ\ :sub:`1` denote the true population mean for group 1 (e.g.,
 Anastasia’s students), and µ\ :sub:`2` will be the true population mean for
@@ -104,8 +102,8 @@ identical (µ\ :sub:`1` = µ\ :sub:`1`) and the alternative to this is that
 they are not (µ\ :sub:`1` ≠ µ\ :sub:`1`). Written in mathematical-ese, this
 is:
 
-| H\ :sub:`0`: µ\ :sub:`1` = µ\ :sub:`2`
-| H\ :sub:`1`: µ\ :sub:`1` ≠ µ\ :sub:`2`
+| *H*\ :sub:`0`: µ\ :sub:`1` = µ\ :sub:`2`
+| *H*\ :sub:`1`: µ\ :sub:`1` ≠ µ\ :sub:`2`
 
 .. ----------------------------------------------------------------------------
 
@@ -136,7 +134,7 @@ same one. We calculate a standard error estimate (SE), just like last time, and
 then divide the difference between means by this estimate. So our
 **t-statistic** will be of the form:
 
-| *t* = (*X̄*\ :sub:`1` – *X̄*\ :sub:`2`) / SE
+| *t* = (*X̄*\ :sub:`1` – *X̄*\ :sub:`2`) / *SE*
 
 We just need to figure out what this standard error estimate actually
 is. This is a bit trickier than was the case for either of the two tests
@@ -160,8 +158,8 @@ number of observations in that sample, minus 1.
 
 Mathematically, we can write this as
 
-| w\ :sub:`1` = *N*\ :sub:`1` - 1
-| w\ :sub:`2` = *N*\ :sub:`2` - 1
+| *w*\ :sub:`1` = *N*\ :sub:`1` - 1
+| *w*\ :sub:`2` = *N*\ :sub:`2` - 1
 
 Now that we have assigned weights to each sample we calculate the pooled
 estimate of the variance by taking the weighted average of the two
@@ -175,21 +173,21 @@ deviation estimate, by taking the square root.
 
 .. math:: \hat\sigma_p = \sqrt{\frac{w_1 {\hat\sigma_1}^2 + w_2 {\hat\sigma_2}^2}{w_1 + w_2}}
 
-And if you mentally substitute w\ :sub:`1` = *N*\ :sub:`1` - 1 and w\ :sub:`2`
-= *N*\ :sub:`2` - 1 into this equation you get a very ugly looking formula. A
-very ugly formula that actually seems to be the “standard” way of describing
-the pooled standard deviation estimate. It is not my favourite way of thinking
-about pooled standard deviations, however. I prefer to think about it like
-this. Our data set actually corresponds to a set of *N* observations which are
-sorted into two groups. So let us use the notation *X*\ :sub:`ik` to refer to
-the grade received by the i-th student in the k-th tutorial group. That is,
-*X*\ :sub:`11` is the grade received by the first student in Anastasia’s class,
-*X*\ :sub:`21` is her second student, and so on. And we have two separate group
-means *X̄*\ :sub:`1` and *X̄*\ :sub:`2`, which we could “generically” refer to
-using the notation *X̄*\ :sub:`k`, i.e., the mean grade for the k-th tutorial
-group. So far, so good. Now, since every single student falls into one of the
-two tutorials, we can describe their deviation from the group mean as the
-difference
+And if you mentally substitute *w*\ :sub:`1` = *N*\ :sub:`1` - 1 and
+*w*\ :sub:`2` = *N*\ :sub:`2` - 1 into this equation you get a very ugly
+looking formula. A very ugly formula that actually seems to be the “standard”
+way of describing the pooled standard deviation estimate. It is not my
+favourite way of thinking about pooled standard deviations, however. I prefer
+to think about it like this. Our data set actually corresponds to a set of *N*
+observations which are sorted into two groups. So let us use the notation 
+X*\ :sub:`ik` to refer to the grade received by the i-th student in the k-th
+tutorial group. That is, *X*\ :sub:`11` is the grade received by the first
+student in Anastasia’s class, *X*\ :sub:`21` is her second student, and so on.
+And we have two separate group means *X̄*\ :sub:`1` and *X̄*\ :sub:`2`, which we
+could “generically” refer to using the notation *X̄*\ :sub:`k`, i.e., the mean
+grade for the k-th tutorial group. So far, so good. Now, since every single
+student falls into one of the two tutorials, we can describe their deviation
+from the group mean as the difference
 
 | *X*\ :sub:`ik` - *X̄*\ :sub:`k`
 
@@ -247,27 +245,26 @@ and our *t*-statistic is therefore
 
 .. math:: t = \frac{\bar{X}_1 - \bar{X}_2}{SE(\bar{X}_1 - \bar{X}_2)}
 
-Just as we saw with our one-sample test, the sampling distribution of
-this *t*-statistic is a *t*-distribution (shocking, is not
-it?) as long as the null hypothesis is true and all of the assumptions
-of the test are met. The degrees of freedom, however, is slightly
-different. As usual, we can think of the degrees of freedom to be equal
-to the number of data points minus the number of constraints. In this
-case, we have *N* observations (*N*\ :sub:`1` in sample 1, and
-*N*\ :sub:`2` in sample 2), and two constraints (the sample means). So
-the total degrees of freedom for this test are *N* - 2.
+Just as we saw with our one-sample test, the sampling distribution of this
+*t*-statistic is a *t*-distribution (shocking, is not it?) as long as the null
+hypothesis is true and all of the assumptions of the test are met. The degrees
+of freedom, however, is slightly different. As usual, we can think of the
+degrees of freedom to be equal to the number of data points minus the number of
+constraints. In this case, we have *N* observations (*N*\ :sub:`1` in sample 1,
+and *N*\ :sub:`2` in sample 2), and two constraints (the sample means). So the
+total degrees of freedom for this test are *N* - 2.
 
 Doing the test in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Not surprisingly, you can run an independent samples *t*-test
-easily in jamovi. The outcome variable for our test is the student
-``grade``, and the groups are defined in terms of the ``tutor`` for each
-class. So you probably will not be too surprised that all you have to do in
-jamovi is go to the relevant analysis (``Analyses`` → ``T-Tests`` →
-``Independent Samples T-Test``) and move the ``grade`` variable across to
-the ``Dependent Variables`` box, and the ``tutor`` variable across into
-the ``Grouping Variable`` box, as shown in :numref:`fig-ttest_ind`.
+Not surprisingly, you can run an independent samples *t*-test easily in jamovi.
+The outcome variable for our test is the student ``grade``, and the groups are
+defined in terms of the ``tutor`` for each class. So you probably will not be
+too surprised that all you have to do in jamovi is go to the relevant analysis
+(``Analyses`` → ``T-Tests`` → ``Independent Samples T-Test``) and move the
+``grade`` variable across to the ``Dependent Variables`` box, and the ``tutor``
+variable across into the ``Grouping Variable`` box, as shown in
+:numref:`fig-ttest_ind`.
 
 .. ----------------------------------------------------------------------------
 
@@ -305,7 +302,7 @@ barely), so we might write up the result using text like this:
    The mean grade in Anastasia’s class was 74.5\% (std dev = 9.0),
    whereas the mean in Bernadette’s class was 69.1\% (std dev = 5.8). A
    Student’s independent samples *t*-test showed that this 5.4\%
-   difference was significant (*t*\(31) = 2.1, *p* < 0.05, CI\ :sub:`95` =
+   difference was significant (*t*\(31) = 2.1, *p* < 0.05, *CI*\ :sub:`95` =
    [0.2, 10.8]`, *d* = 0.74), suggesting that a genuine difference in
    learning outcomes has occurred.
 

@@ -222,7 +222,7 @@ assign all original variables of this category in the variable box underneath
 ``Name`` and ``N Levels`` for each index variable ``Index Variable (Can Be
 Nested)`` (each class of conditions would be represented by one index
 variable), for the current data set we may choose ``condition`` as name, and
-3 as the number of levels. For the |choice|_ data set, the target variables
+``3`` as the number of levels. For the |choice|_ data set, the target variables
 would be ``MRT`` and ``PC``, and we would have to index variables, ``block``
 and ``day`` with 2 levels each.
 

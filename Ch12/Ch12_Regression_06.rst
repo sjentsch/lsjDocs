@@ -43,12 +43,12 @@ formula:
 
 #. Calculate the squared residuals by creating a new column called
    ``sq_resid`` using the formula ``(dani.grump - Y_pred) ^ 2``. The values
-   in this column are later summed up to obtain SS\ :sub:`res`.
+   in this column are later summed up to obtain *SS*\ :sub:`res`.
 
 #. Calculate the squared deviation from the mean by creating yet another
    column called ``sq_total`` using the formula
    ``(dani.grump - VMEAN(dani.grump)) ^ 2``. The values in this column are
-   later summed up to obtain SS\ :sub:`tot`.
+   later summed up to obtain *SS*\ :sub:`tot`.
 
 To calculate the sum of these values, click ``Descriptives`` → ``Descriptive
 Statistics`` and move ``sq_resid`` and ``sq_total`` to the ``Variables`` box.
@@ -65,17 +65,18 @@ To fix this, we would like to convert these two fairly meaningless numbers into
 one number. A nice, interpretable number, which for no particular reason we
 will call *R*\². What we would like is for the value of *R*\² to be equal to 1
 if the regression model makes no errors in predicting the data. In other words,
-if it turns out that the residual errors are zero. That is, if SS\ :sub:`res`
+if it turns out that the residual errors are zero. That is, if *SS*\ :sub:`res`
 = 0 then we expect *R*\² = 1. Similarly, if the model is completely useless, we
 would like *R*\² to be equal to 0. What do I mean by “useless”? Tempting as it
 is to demand that the regression model move out of the house, cut its hair and
 get a real job, I am probably going to have to pick a more practical
 definition. In this case, all I mean is that the residual sum of squares is no
-smaller than the total sum of squares, SS\ :sub:`res` = SS\ :sub:`tot`. Wait,
-why do not we do exactly that? The formula that provides us with our *R*\² value
-is pretty simple to write down, and equally simple to calculate by hand:\ [#]_
+smaller than the total sum of squares, *SS*\ :sub:`res` = *SS*\ :sub:`tot`.
+Wait, why do not we do exactly that? The formula that provides us with our
+*R*\² value is pretty simple to write down, and equally simple to calculate by
+hand:\ [#]_
 
-| *R*\² = 1 - (SS\ :sub:`res` / SS\ :sub:`tot`)
+| *R*\² = 1 - (*SS*\ :sub:`res` / *SS*\ :sub:`tot`)
 | *R*\² = 1 - (1838.722 / 9998.590)
 | *R*\² = 1 - 0.184
              

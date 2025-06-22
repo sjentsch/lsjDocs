@@ -34,7 +34,7 @@ The Bayes factor
 ~~~~~~~~~~~~~~~~
 
 In practice, most Bayesian data analysts tend not to talk in terms of the raw
-posterior probabilities *P*\ (h\ :sub:`0`\|d) and *P*\ (h\ :sub:`1`\|d).
+posterior probabilities *P*\ (*h*\ :sub:`0`\|*d*) and *P*\ (*h*\ :sub:`1`\|*d*).
 Instead, we tend to talk in terms of the **posterior odds** ratio. Think of it
 like betting. Suppose, for instance, the posterior probability of
 the null hypothesis is 25\%, and the posterior probability of the
@@ -116,31 +116,28 @@ no hard and fast rules here. What counts as strong or weak evidence depends
 entirely on how conservative you are and upon the standards that your community
 insists upon before it is willing to label a finding as “true”.
 
-In any case, note that all the numbers listed above make sense if the
-Bayes factor is greater than 1 (i.e., the evidence favours the
-alternative hypothesis). However, one big practical advantage of the
-Bayesian approach relative to the orthodox approach is that it also
-allows you to quantify evidence *for* the null. When that happens, the
-Bayes factor will be less than 1. You can choose to report a Bayes
-factor less than 1, but to be honest I find it confusing. For example,
-suppose that the likelihood of the data under the null hypothesis
-*P*\ (d|h\ :sub:`0`) is equal to 0.2, and the corresponding likelihood
-*P*\ (d|h\ :sub:`1`) under the alternative hypothesis is 0.1. Using the
-equations given above, Bayes factor here would be
+In any case, note that all the numbers listed above make sense if the Bayes
+factor is greater than 1 (i.e., the evidence favours the alternative
+hypothesis). However, one big practical advantage of the Bayesian approach
+relative to the orthodox approach is that it also allows you to quantify
+evidence *for* the null. When that happens, the Bayes factor will be less than
+\1. You can choose to report a Bayes factor less than 1, but to be honest I
+find it confusing. For example, suppose that the likelihood of the data under
+the null hypothesis *P*\ (*d*|*h*\ :sub:`0`) is equal to 0.2, and the
+corresponding likelihood *P*\ (*d*|*h*\ :sub:`1`) under the alternative
+hypothesis is 0.1. Using the equations given above, Bayes factor here would be:
 
 .. math:: \mbox{BF} = \frac{P(d|h_1)}{P(d|h_0)} = \frac{0.1}{0.2} = 0.5
 
 Read literally, this result tells is that the evidence in favour of the
-alternative is 0.5 to 1. I find this hard to understand. To me, it makes
-a lot more sense to turn the equation “upside down”, and report the
-amount op evidence in favour of the *null*. In other words, what we
-calculate is this
+alternative is 0.5 to 1. I find this hard to understand. To me, it makes a lot
+more sense to turn the equation “upside down”, and report the amount of
+evidence in favour of the *null*. In other words, what we calculate is this:
 
 .. math:: \mbox{BF}^\prime = \frac{P(d|h_0)}{P(d|h_1)} = \frac{0.2}{0.1} = 2
 
-And what we would report is a Bayes factor of 2:1 in favour of the null.
-Much easier to understand, and you can interpret this using the table
-above.
+And what we would report is a Bayes factor of 2:1 in favour of the null. Much
+easier to understand, and you can interpret this using the table above.
 
 ------
 

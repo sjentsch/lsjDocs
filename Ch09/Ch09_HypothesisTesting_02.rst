@@ -25,13 +25,13 @@ retain the null hypothesis or reject it.\ [#]_ So, as the table below
 illustrates, after we run the test and make our choice one of four
 things might have happened:
 
-+--------------------------+--------------------+--------------------+
-|                          | retain H\ :sub:`0` | reject H\ :sub:`0` |
-+==========================+====================+====================+
-| **H\ :sub:`0` is true**  | correct decision   | error (type I)     |
-+--------------------------+--------------------+--------------------+
-| **H\ :sub:`0` is false** | error (type II)    | correct decision   |
-+--------------------------+--------------------+--------------------+
++--------------------------+----------------------+----------------------+
+|                          | retain *H*\ :sub:`0` | reject *H*\ :sub:`0` |
++==========================+======================+======================+
+| **H\ :sub:`0` is true**  | correct decision     | error (type I)       |
++--------------------------+----------------------+----------------------+
+| **H\ :sub:`0` is false** | error (type II)      | correct decision     |
++--------------------------+----------------------+----------------------+
 
 As a consequence there are actually *two* different types of error here.
 If we reject a null hypothesis that is actually true then we have made a
@@ -65,15 +65,15 @@ hypothesis when it really is false, which is 1 - β. To help
 keep this straight, here is the same table again but with the relevant
 numbers added:
 
-+--------------------------+--------------------------------------+-----------------------+
-|                          | retain H\ :sub:`0`                   | reject H\ :sub:`0`    |
-+==========================+======================================+=======================+
-| **H\ :sub:`0` is true**  | | 1 - α                              | | α                   |
-|                          | | (probability of correct retention) | | (type I error rate) |
-+--------------------------+--------------------------------------+-----------------------+
-| **H\ :sub:`0` is false** | | β                                  | | 1 - β               |
-|                          | | (type II error rate)               | | (power of the test) |
-+--------------------------+--------------------------------------+-----------------------+
++--------------------------+----------------------------------------+-------------------------+
+|                          | retain *H*\ :sub:`0`                   | reject *H*\ :sub:`0`    |
++==========================+========================================+=========================+
+| **H\ :sub:`0` is true**  | | 1 - α                                | | α                     |
+|                          | | (probability of correct retention)   | | (type I error rate)   |
++--------------------------+----------------------------------------+-------------------------+
+| **H\ :sub:`0` is false** | | β                                    | | 1 - β                 |
+|                          | | (type II error rate)                 | | (power of the test)   |
++--------------------------+----------------------------------------+-------------------------+
 
 A “powerful” hypothesis test is one that has a small value of
 β, while still keeping α fixed at some (small)

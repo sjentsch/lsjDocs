@@ -38,15 +38,15 @@ To be more precise, the more correct answer is that there is a 95\% chance that
 a normally-distributed quantity will fall within 1.96 standard deviations of
 the true mean. Next, recall that the standard deviation of the sampling
 distribution is referred to as the standard error, and the standard error of
-the mean is written as SEM. When we put all these pieces together, we learn
+the mean is written as *SEM*. When we put all these pieces together, we learn
 that there is a 95\% probability that the sample mean *X̄* that we have actually
 observed lies within 1.96 standard errors of the population mean.
 
 Mathematically, we write this as:
 
-| µ – 1.96 × SEM ≤ *X̄* ≤ µ + (1.96 × SEM)
+| µ – 1.96 × *SEM* ≤ *X̄* ≤ µ + (1.96 × *SEM*)
 
-where the SEM is equal to :math:`\sigma / \sqrt{N}` and we can be 95\%
+where the *SEM* is equal to :math:`\sigma / \sqrt{$N$}` and we can be 95\%
 confident that this is true. However, that is not answering the question that
 we are actually interested in. The equation above tells us what we should expect
 about the sample mean given that we know what the population parameters are.
@@ -55,7 +55,7 @@ we should believe about the population parameters, given that we have observed
 a particular sample. However, it is not too difficult to do this. Using a little
 high school algebra, a sneaky way to rewrite our equation is like this:
 
-| *X̄* − (1.96 × SEM) ≤ µ ≤ *X̄* + (1.96 × SEM)
+| *X̄* − (1.96 × *SEM*) ≤ µ ≤ *X̄* + (1.96 × *SEM*)
 
 What this is telling is is that the range of values has a 95\% probability of
 containing the population mean µ. We refer to this range as a **95\%

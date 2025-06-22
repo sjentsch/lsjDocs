@@ -147,30 +147,29 @@ Mathematically, we write this as:
 
 | log\ :sub:`10`\(1000) = 3
 
-Okay, since the ``LOG10()`` function is related to the powers of 10, you
-might expect that there are other logarithms (in bases other than 10)
-that are related to other powers too. And of course that is true: there is
-not really anything mathematically special about the number 10. You and
-I happen to find it useful because decimal numbers are built around the
-number 10, but the big bad world of mathematics scoffs at our decimal
-numbers. Sadly, the universe does not actually care how we write down
-numbers. Anyway, the consequence of this cosmic indifference is that
-there is nothing particularly special about calculating logarithms in
-base 10. You could, for instance, calculate your logarithms in base 2.
-Alternatively, a third type of logarithm, and one we see a lot more of
-in statistics than either base 10 or base 2, is called the **natural
-logarithm**, and corresponds to the logarithm in base *e*. Since you might one
-day run into it, I should better explain what *e* is. The number *e*, known as
-**Euler’s number**, is one of those annoying “irrational” numbers whose decimal
-expansion is infinitely long, and is considered one of the most important
-numbers in mathematics. The first few digits of *e* are:
+Okay, since the ``LOG10()`` function is related to the powers of 10, you might
+expect that there are other logarithms (in bases other than 10) that are
+related to other powers too. And of course that is true: there is not really
+anything mathematically special about the number 10. You and I happen to find
+it useful because decimal numbers are built around the number 10, but the big
+bad world of mathematics scoffs at our decimal numbers. Sadly, the universe
+does not actually care how we write down numbers. Anyway, the consequence of
+this cosmic indifference is that there is nothing particularly special about
+calculating logarithms in base 10. You could, for instance, calculate your
+logarithms in base 2. Alternatively, a third type of logarithm, and one we see
+a lot more of in statistics than either base 10 or base 2, is called the
+**natural logarithm**, and corresponds to the logarithm in base *e*. Since you
+might one day run into it, I should better explain what *e* is. The number *e*,
+known as **Euler’s number**, is one of those annoying “irrational” numbers
+whose decimal expansion is infinitely long, and is considered one of the most
+important numbers in mathematics. The first few digits of *e* are:
 
 *e* = 2.718282
 
 There are quite a few situations in statistics that require us to
 calculate powers of *e*, though none of them appear in this book.
 Raising *e* to the power *x* is called the **exponential**
-of *x*, and so it is very common to see e\ :sup:`x` written as
+of *x*, and so it is very common to see *e*\ :sup:`x` written as
 *exp(x)*. And so it is no surprise that jamovi has a function that
 calculates exponentials, called ``EXP()``. Because the number *e*
 crops up so often in statistics, the natural logarithm (i.e., logarithm

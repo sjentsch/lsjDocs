@@ -8,11 +8,11 @@ but the most commonly used measures are η² (**eta squared**) and partial η².
 For a one-way analysis of variance they are identical to each other, so for the
 moment I will just explain η². The definition of η² is actually really simple:
 
-| η² = SS\ :sub:`b` / SS\ :sub:`tot` 
+| η² = *SS*\ :sub:`b` / *SS*\ :sub:`tot` 
 
 That is all it is. So when I look at the ANOVA table in :numref:`fig-anova2`,
-I see that SS\ :sub:`b`   = 3.45 and SS\ :sub:`tot` = 3.45 + 1.39 = 4.84. Thus,
-we get an η² value of:
+I see that *SS*\ :sub:`b`   = 3.45 and *SS*\ :sub:`tot` = 3.45 + 1.39 = 4.84.
+Thus, we get an η² value of:
 
 | η² = 3.45 / 4.84 = 0.71 
 

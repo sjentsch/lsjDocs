@@ -26,41 +26,37 @@ Formally, our “null model” corresponds to the fairly trivial
 “regression” model in which we include 0 predictors and only include the
 intercept term *b*\ :sub:`0`:
 
-| H\ :sub:`0`: *Y*\ :sub:`i` = b\ :sub:`0` + ε\ :sub:`i`
+| *H*\ :sub:`0`: *Y*\ :sub:`i` = b\ :sub:`0` + ε\ :sub:`i`
 
 If our regression model has *K* predictors, the “alternative
 model” is described using the usual formula for a multiple regression
 model:
 
-| H\ :sub:`1`: *Y*\ :sub:`i` = b\ :sub:`0` + math:`\left( \sum_{k = 1} ^ K b_{k} X_{ik} \right)` + ε\ :sub:`i`
+| *H*\ :sub:`1`: *Y*\ :sub:`i` = b\ :sub:`0` + math:`\left( \sum_{k = 1} ^ K b_{k} X_{ik} \right)` + ε\ :sub:`i`
 
 How can we test these two hypotheses against each other? The trick is to
-understand that it is possible to divide up the total variance SS\ :sub:`tot`
-into the sum of the residual variance SS\ :sub:`res` and the regression model
-variance SS\ :sub:`mod`. We will get to the technicalities later when we look
+understand that it is possible to divide up the total variance *SS*\ :sub:`tot`
+into the sum of the residual variance *SS*\ :sub:`res` and the regression model
+variance *SS*\ :sub:`mod`. We will get to the technicalities later when we look
 at ANOVA in chapter :doc:`../Ch13/Ch13_ANOVA`. But just note that:
 
-| SS\ :sub:`mod` = SS\ :sub:`tot` - SS\ :sub:`res`
+| *SS*\ :sub:`mod` = *SS*\ :sub:`tot` - *SS*\ :sub:`res`
 
 And we can convert the sums of squares into mean squares by dividing by
 the degrees of freedom.
 
-| MS\ :sub:`mod` = SS\ :sub:`mod` / *df*\ :sub:`mod`
-| SS\ :sub:`res` = SS\ :sub:`res` / *df*\ :sub:`res` 
+| *MS*\ :sub:`mod` = *SS*\ :sub:`mod` / *df*\ :sub:`mod`
+| *MS*\ :sub:`res` = *SS*\ :sub:`res` / *df*\ :sub:`res` 
 
-So, how many degrees of freedom do we have? As you might expect the
-*df* associated with the model is closely tied to the number of
-predictors that we have included. In fact, it turns out that
-*df*\ :sub:`mod` = *K*. For the residuals the total degrees of freedom is
-*df*\ :sub:`res` = *N* - *K* - 1.
+So, how many degrees of freedom do we have? As you might expect the *df*
+associated with the model is closely tied to the number of predictors that we
+have included. In fact, it turns out that *df*\ :sub:`mod` = *K*. For the
+residuals the total degrees of freedom is *df*\ :sub:`res` = *N* - *K* - 1.
 
-Now that we have got our mean square values we can calculate an
-*F*-statistic like this:
+Now that we have got our mean square values we can calculate an *F*-statistic
+like this (with *K* and *N* - *K* - 1 as associated *df*):
 
-| F = MS\ :sub:`mod` / SS\ :sub:`res`
-
-and the degrees of freedom associated with this are *K* and
-*N* - *K* - 1.
+| *F* = *MS*\ :sub:`mod` / *MS*\ :sub:`res`
 
 We will see much more of the *F*-statistic in chapter :doc:`../Ch13/Ch13_ANOVA`,
 but for now just know that we can interpret large *F*-values as indicating
@@ -76,10 +72,10 @@ as a whole is performing better than chance. If your regression model does not
 produce a significant result for the *F*-test then you probably do not have a
 very good regression model (or, quite possibly, you do not have very good data).
 However, while failing this test is a pretty strong indicator that the model
-has problems, *passing* the test (i.e., rejecting the null) does not imply that
-the model is good! Why is that, you might be wondering? The answer to that can
-be found by looking at the coefficients for the multiple regression model we
-have already looked at :numref:`tab-parent_coeff` in section
+has problems, *passing* the test (i.e., rejecting the null hypothesis) does not
+imply that the model is good! Why is that, you might be wondering? The answer
+to that can be found by looking at the coefficients for the multiple regression
+model we have already looked at :numref:`tab-parent_coeff` in section
 :doc:`Ch12_Regression_05` above, where the coefficients we got were 125.966
 (for the intercept), -8.950 (for ``dani.sleep``) and 0.011 (for
 ``baby.sleep``). I can not help but notice that the estimated regression
@@ -94,8 +90,8 @@ test that we are interested in has a null hypothesis that the true regression
 coefficient is zero (*b* = 0), which is to be tested against the alternative
 hypothesis that it is not (*b* ≠ 0). That is:
 
-| H\ :sub:`0`: *b* = 0
-| H\ :sub:`1`: *b* ≠ 0 
+| *H*\ :sub:`0`: *b* = 0
+| *H*\ :sub:`1`: *b* ≠ 0 
 
 How can we test this? Well, if the central limit theorem is kind to us we might
 be able to guess that the sampling distribution of :math:`\hat{b}`, the

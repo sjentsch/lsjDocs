@@ -22,7 +22,7 @@ corresponding means for our two drugs, Anxifree and Joyzepam, then the
 population means are identical. That is, *neither* of the two drugs is any
 more effective than a placebo. We can write out this null hypothesis as:
 
-H\ :sub:`0`: it is true that µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`
+*H*\ :sub:`0`: it is true that µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`
 
 As a consequence, our alternative hypothesis is that at least one of the
 three different treatments is different from the others. It is a bit
@@ -30,7 +30,7 @@ tricky to write this mathematically, because (as we will discuss) there
 are quite a few different ways in which the null hypothesis can be
 false. So for now we will just write the alternative hypothesis like this:
 
-H\ :sub:`1`: it is NOT true that µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`
+*H*\ :sub:`1`: it is NOT true that µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`
 
 This null hypothesis is a lot trickier to test than any of the ones
 we have seen previously. Given the title of this chapter, a sensible guess
@@ -77,10 +77,10 @@ summation. The only reason that we have a double summation here is that I have
 classified people into groups, and then assigned numbers to people within
 groups.
 
-A concrete example might be useful here. Let us consider this table, in which we
-have a total of *N* = 5 people sorted into *G* = 2 groups. Arbitrarily, let us
-say that the “cool” people are group 1 and the “uncool” people are group 2. It
-turns out that we have three cool people (*N*\ :sub:`1` = 3) and two uncool
+A concrete example might be useful here. Let us consider this table, in which
+we have a total of *N* = 5 people sorted into *G* = 2 groups. Arbitrarily, let
+us say that the “cool” people are group 1 and the “uncool” people are group 2.
+It turns out that we have three cool people (*N*\ :sub:`1` = 3) and two uncool
 people (*N*\ :sub:`2` = 2).
 
 +------+--------+--------+------------+----------------+-----------------+
@@ -212,7 +212,7 @@ a workable hypothesis test, there is a little bit of “fiddling around” neede
 What I will do is first show you *what* we do to calculate our test statistic,
 the **F-ratio**, and then try to give you a feel for *why* we do it this way.
 
-In order to convert our SS values into an *F*-ratio the first thing we need to
+In order to convert our *SS* values into an *F*-ratio the first thing we need to
 calculate is the **degrees of freedom** associated with the |SS_b| and |SS_w|
 values. As usual, the degrees of freedom corresponds to the number of unique
 “data points” that contribute to a particular calculation, minus the number of
@@ -233,19 +233,18 @@ the degrees of freedom:
 | |MS_b| = |SS_b| / |df_b|
 | |MS_w| = |SS_w| / |df_w|
 
-Finally, we calculate the *F*-ratio by dividing the between-groups
-MS by the within-groups MS:
+Finally, we calculate the *F*-ratio by dividing the between-groups *MS* by the
+within-groups *MS*:
 
 | F = |MS_b| / |MS_w|
 
 At a very general level, the intuition behind the *F*-statistic is
-straightforward. Bigger values of *F* means that the
-between-groups variation is large relative to the within-groups
-variation. As a consequence, the larger the value of *F* the more
-evidence we have against the null hypothesis. But how large does
-*F* have to be in order to actually *reject* H\ :sub:`0`? In order
-to understand this, you need a slightly deeper understanding of what
-ANOVA is and what the mean squares values actually are.
+straightforward. Bigger values of *F* means that the between-groups variation
+is large relative to the within-groups variation. As a consequence, the larger
+the value of *F* the more evidence we have against the null hypothesis. But how
+large does *F* have to be in order to actually *reject* *H*\ :sub:`0`? In order
+to understand this, you need a slightly deeper understanding of what ANOVA is
+and what the mean squares values actually are.
 
 The next section discusses that in a bit of detail, but for readers that are not
 interested in the details of what the test is actually measuring I will cut to
@@ -281,27 +280,25 @@ The model for the data and the meaning of *F*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 At a fundamental level ANOVA is a competition between two different
-statistical models, H\ :sub:`0` and H\ :sub:`1`. When I described the
-null and alternative hypotheses at the start of the section, I was a
-little imprecise about what these models actually are. I will remedy that
-now, though you probably will not like me for doing so. If you recall, our
-null hypothesis was that all of the group means are identical to one
-another. If so, then a natural way to think about the outcome variable
-|Y_ik| is to describe individual scores in terms of a single
-population mean µ, plus the deviation from that population
-mean. This deviation is usually denoted ϵ\ :sub:`ik` and is
-traditionally called the *error* or **residual** associated with that
-observation. Be careful though. Just like we saw with the word
-“significant”, the word “error” has a technical meaning in statistics
-that is not quite the same as its everyday English definition. In
-everyday language, “error” implies a mistake of some kind, but in
-statistics it does not (or at least, not necessarily). With that in mind,
-the word “residual” is a better term than the word “error”. In
-statistics both words mean “leftover variability”, that is “stuff” that
-the model can not explain.
+statistical models, *H*\ :sub:`0` and *H*\ :sub:`1`. When I described the null
+and alternative hypotheses at the start of the section, I was a little
+imprecise about what these models actually are. I will remedy that now, though
+you probably will not like me for doing so. If you recall, our null hypothesis
+was that all of the group means are identical to one another. If so, then a
+natural way to think about the outcome variable |Y_ik| is to describe
+individual scores in terms of a single population mean µ, plus the deviation
+from that population mean. This deviation is usually denoted ϵ\ :sub:`ik` and
+is traditionally called the *error* or **residual** associated with that
+observation. Be careful though. Just like we saw with the word “significant”,
+the word “error” has a technical meaning in statistics that is not quite the
+same as its everyday English definition. In everyday language, “error” implies
+a mistake of some kind, but in statistics it does not (or at least, not
+necessarily). With that in mind, the word “residual” is a better term than the
+word “error”. In statistics both words mean “leftover variability”, that is
+“stuff” that the model can not explain.
 
-In any case, here is what the null hypothesis looks like when we write it
-as a statistical model
+In any case, here is what the null hypothesis looks like when we write it as a
+statistical model:
 
 |Y_ik| = µ + ϵ\ :sub:`ik`
 
@@ -313,41 +310,41 @@ this:
 
 ϵ\ :sub:`ik` ~ Normal(0, σ²)
 
-What about the alternative hypothesis, H\ :sub:`1`? The only difference
-between the null hypothesis and the alternative hypothesis is that we
-allow each group to have a different population mean. So, if we let
-µ\ :sub:`k` denote the population mean for the *k*-th group in
-our experiment, then the statistical model corresponding to H\ :sub:`1`
-is
+What about the alternative hypothesis, *H*\ :sub:`1`? The only difference
+between the null hypothesis and the alternative hypothesis is that we allow
+each group to have a different population mean. So, if we let µ\ :sub:`k`
+denote the population mean for the *k*-th group in our experiment, then the
+statistical model corresponding to *H*\ :sub:`1` is:
 
 |Y_ik| = µ\ :sub:`k` + ϵ\ :sub:`ik`
 
 where, once again, we assume that the error terms are normally
 distributed with mean 0 and standard deviation σ. That is,
-the alternative hypothesis also assumes that
+the alternative hypothesis also assumes that:
+
 ϵ ~ Normal(0, σ²)
 
-Okay, now that we have described the statistical models underpinning H\ :sub:`0`
-and H\ :sub:`1` in more detail, it is now pretty straightforward to say what the
-mean square values are measuring, and what this means for the interpretation of
-*F*. I will not bore you with the proof of this but it turns out that the
-within-groups mean square, |MS_w|, can be viewed as an estimator (in the
-technical sense, chapter :doc:`../Ch08/Ch08_Estimation`) of the error variance
-σ². The between-groups mean square |MS_b| is also an estimator, but what it
-estimates is the error variance *plus* a quantity that depends on the true
-differences among the group means. If we call this quantity *Q*, then we can
-see that the *F*-statistic is basically:\ [#]_
+Okay, now that we have described the statistical models underpinning
+*H*\ :sub:`0` and *H*\ :sub:`1` in more detail, it is now pretty straightforward
+to say what the mean square values are measuring, and what this means for the
+interpretation of *F*. I will not bore you with the proof of this but it turns
+out that the within-groups mean square, |MS_w|, can be viewed as an estimator
+(in the technical sense, chapter :doc:`../Ch08/Ch08_Estimation`) of the error
+variance σ². The between-groups mean square |MS_b| is also an estimator, but
+what it estimates is the error variance *plus* a quantity that depends on the
+true differences among the group means. If we call this quantity *Q*, then we
+can see that the *F*-statistic is basically:\ [#]_
 
 .. math:: F = \frac{\hat{Q} + \hat\sigma^2}{\hat\sigma^2}
 
-where the true value *Q* = 0 if the null hypothesis is true, and *Q* > 0 if
-the alternative hypothesis is true (:ref:`Hays, 1994 <Hays_1994>`, Ch. 10).
+where the true value *Q* = 0 if the null hypothesis is true, and *Q* > 0 if the
+alternative hypothesis is true (:ref:`Hays, 1994 <Hays_1994>`, Ch. 10).
 Therefore, at a bare minimum *the F-value must be larger than 1* to have any
 chance of rejecting the null hypothesis. Note that this *does not* mean that
-it is impossible to get an *F*-value less than 1. What it means is
-that if the null hypothesis is true the sampling distribution of the
-*F*-ratio has a mean of 1,\ [#]_ and so we need to see
-*F*-values larger than 1 in order to safely reject the null.
+it is impossible to get an *F*-value less than 1. What it means is that if the
+null hypothesis is true the sampling distribution of the *F*-ratio has a mean
+of 1,\ [#]_ and so we need to see *F*-values larger than 1 in order to safely
+reject the null hypothesis.
 
 To be a bit more precise about the sampling distribution, notice that if the
 null hypothesis is true, both |MS_b| and |MS_w| are estimators of the variance
@@ -463,8 +460,8 @@ do this in jamovi.
    (apart from rounding errors) identical to those in the last column of the
    table above.
 
-Okay. Now that we have calculated the within-groups variation, |SS_w|, it is time
-to turn our attention to the between-group sum of squares, |SS_b|. The
+Okay. Now that we have calculated the within-groups variation, |SS_w|, it is
+time to turn our attention to the between-group sum of squares, |SS_b|. The
 calculations for this case are very similar. The main difference is that
 instead of calculating the differences between an observation |Y_ik| and a
 group mean |Yb_k| for all of the observations, we calculate the differences
@@ -550,9 +547,8 @@ dividing one by the other:
    \end{array}
 
 We are almost done. The mean square values can be used to calculate the
-*F*-value, which is the test statistic that we are interested in.
-We do this by dividing the between-groups MS value by the within-groups
-MS value.\ [#]_
+*F*-value, which is the test statistic that we are interested in. We do this by
+dividing the between-groups *MS* value by the within-groups *MS* value.\ [#]_
 
 .. math:: F = \frac{\mbox{MS}_b }{\mbox{MS}_w} = \frac{1.727}{0.093} = 18.611
 
@@ -606,7 +602,7 @@ Sigh. So much work for one short sentence.
 
 .. [#]
    |SS_w| is also referred to in an independent ANOVA as
-   the error variance, or SS\ :sub:`error`
+   the error variance, or *SS*\ :sub:`error`
 
 .. [#]
    If you read ahead to chapter :doc:`../Ch14/Ch14_ANOVA2` and look at how the
@@ -647,15 +643,15 @@ Sigh. So much work for one short sentence.
 .. |Yb_k|                              replace:: *Ȳ*\ :sub:`k`
 .. |Yb|                                replace:: *Ȳ*
 
-.. |SS_b|                              replace:: SS\ :sub:`b`
-.. |SS_w|                              replace:: SS\ :sub:`w`
-.. |SS_t|                              replace:: SS\ :sub:`tot`
+.. |SS_b|                              replace:: *SS*\ :sub:`b`
+.. |SS_w|                              replace:: *SS*\ :sub:`w`
+.. |SS_t|                              replace:: *SS*\ :sub:`tot`
 
 .. |df_b|                              replace:: *df*\ :sub:`b`
 .. |df_w|                              replace:: *df*\ :sub:`w`
 
-.. |MS_b|                              replace:: MS\ :sub:`b`
-.. |MS_w|                              replace:: MS\ :sub:`w`
+.. |MS_b|                              replace:: *MS*\ :sub:`b`
+.. |MS_w|                              replace:: *MS*\ :sub:`w`
 
 .. |f_SS_b|                            replace:: :math:`\displaystyle\sum_{k = 1} ^ G N_k(\bar{Y}_k - \bar{Y}) ^ 2`
 .. |f_SS_w|                            replace:: :math:`\displaystyle\sum_{k = 1} ^ G \displaystyle\sum_{i = 1} ^ {N_k} ({Y}_{ik} - \bar{Y}_k) ^ 2`

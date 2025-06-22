@@ -22,7 +22,7 @@ the data are quite consistent with the null hypothesis. On the other
 hand, if *X* = 99 of our participants got the question right then
 we would feel pretty confident that the null hypothesis is wrong. Similarly,
 if only *X* = 3 people got the answer right we would be similarly
-confident that the null was wrong. Let us be a little more technical
+confident that the null hypothesis was wrong. Let us be a little more technical
 about this. We have a quantity *X* that we can calculate by
 looking at our data. After looking at the value of *X* we make a
 decision about whether to believe that the null hypothesis is correct,
@@ -72,9 +72,8 @@ introduced in that section, we would say that the null hypothesis predicts that
 
 *X* ~ Binomial(θ, N)
 
-Since the null hypothesis states that *θ* = 0.5 and our
-experiment has *N* = 100 people, we have the sampling distribution
-we need. This sampling distribution is plotted in :numref:`fig-samplingDist`.
-No surprises really, the null hypothesis says that *X* = 50 is the most likely
-outcome, and it says that we are almost certain to see somewhere between 40 and
-60 correct responses.
+Since the null hypothesis states that *θ* = 0.5 and our experiment has *N* =
+100 people, we have the sampling distribution we need. This sampling
+distribution is plotted in :numref:`fig-samplingDist`. No surprises really, the
+null hypothesis says that *X* = 50 is the most likely outcome, and it says that
+we are almost certain to see somewhere between 40 and 60 correct responses.

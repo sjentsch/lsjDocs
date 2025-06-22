@@ -67,18 +67,18 @@ Constructing the hypothesis test
 
 The first step in constructing a hypothesis test is to be clear about
 what the null and alternative hypotheses are. This is not too hard to do.
-Our null hypothesis, H\ :sub:`0`, is that the true population mean
+Our null hypothesis, *H*\ :sub:`0`, is that the true population mean
 µ for psychology student grades is 67.5\%, and our alternative
 hypothesis is that the population mean *is not* 67.5\%. If we write this
 in mathematical notation, these hypotheses become:
 
-| H\ :sub:`0`: µ = 67.5
-| H\ :sub:`1`: µ ≠ 67.5
+| *H*\ :sub:`0`: µ = 67.5
+| *H*\ :sub:`1`: µ ≠ 67.5
 
 though to be honest this notation does not add much to our understanding
 of the problem, it is just a compact way of writing down what we are
-trying to learn from the data. The null hypotheses H\ :sub:`0` and the
-alternative hypothesis H\ :sub:`1` for our test are both illustrated in
+trying to learn from the data. The null hypotheses *H*\ :sub:`0` and the
+alternative hypothesis *H*\ :sub:`1` for our test are both illustrated in
 :numref:`fig-ztesthyp`. In addition to providing us
 with these hypotheses, the scenario outlined above provides us with a
 fair amount of background knowledge that might be useful. Specifically,
@@ -103,19 +103,19 @@ For now though, we will keep things simple.
    :name: fig-ztesthyp
 
    Graphical illustration of the null and alternative hypotheses assumed by the
-   one sample *z*-test (the two sided version, that is). The null and alternative
-   hypotheses both assume that the population distribution is normal, and
-   additionally assumes that the population standard deviation is known (fixed
-   at some value σ\ :sub:`0`\). The null hypothesis (left) is that the
-   population mean μ is equal to some specified value μ\ :sub:`0`. The
+   one sample *z*-test (the two sided version, that is). The null and
+   alternative hypotheses both assume that the population distribution is
+   normal, and additionally assumes that the population standard deviation is
+   known (fixed at some value σ\ :sub:`0`\). The null hypothesis (left) is that
+   the population mean μ is equal to some specified value μ\ :sub:`0`. The
    alternative hypothesis is that the population mean differs from this value,
    μ ≠ μ\ :sub:`0`.
 
 .. ----------------------------------------------------------------------------
 
 The next step is to figure out what would be a good choice for a diagnostic
-test statistic, something that would help us discriminate between H\ :sub:`0`
-and H\ :sub:`1`. Given that the hypotheses all refer to the population mean µ,
+test statistic, something that would help us discriminate between *H*\ :sub:`0`
+and *H*\ :sub:`1`. Given that the hypotheses all refer to the population mean µ,
 you would feel pretty confident that the sample mean *X̄* would be a pretty
 useful place to start. What we could do is look at the difference between the
 sample mean *X̄* and the value that the null hypothesis predicts for the
@@ -129,7 +129,7 @@ If this quantity equals or is very close to 0, things are looking good
 for the null hypothesis. If this quantity is a long way away from 0,
 then it is looking less likely that the null hypothesis is worth
 retaining. But how far away from zero should it be for us to reject
-H\ :sub:`0`?
+*H*\ :sub:`0`?
 
 To figure that out we need to be a bit more sneaky, and we will need to rely on
 those two pieces of background knowledge that I wrote down previously; namely
@@ -140,7 +140,7 @@ complete population distribution of the data: a normal distribution with mean
 µ\ :sub:`0` and standard deviation σ. Adopting the notation from section
 :doc:`../Ch07/Ch07_Probability_5`, a statistician might write this as:
 
-| X ~ Normal(µ\ :sub:`0`, σ²)
+| *X* ~ Normal(µ\ :sub:`0`, σ²)
 
 Okay, if that is true, then what can we say about the distribution of *X̄*?
 Well, as we discussed earlier (see :ref:`The central limit theorem

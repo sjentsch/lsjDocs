@@ -110,4 +110,4 @@ spreadsheet view.
    or click on it (then you can access the analyes).
 
 .. |Rj|                                replace:: ``Rj``
-.. _Rj:                                https://docs.jamovi.org/_pages/Rj_overview.html   
+.. _Rj:                                https://docs.jamovi.org/_pages/Rj_overview.html

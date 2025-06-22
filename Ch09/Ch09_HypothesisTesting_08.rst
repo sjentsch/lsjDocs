@@ -8,8 +8,8 @@ behind statistical hypothesis testing is that we try to control our Type I
 error rate. When we fix α = 0.05 we are attempting to ensure that only 5\% of
 true null hypotheses are incorrectly rejected. However, this does not mean that
 we do not care about Type II errors. In fact, from the researcher’s perspective,
-the error of failing to reject the null when it is actually false is an
-extremely annoying one. With that in mind, a secondary goal of hypothesis
+the error of failing to reject the null hypothesis when it is actually false is
+an extremely annoying one. With that in mind, a secondary goal of hypothesis
 testing is to try to minimise β, the Type II error rate, although we do not
 usually *talk* in terms of minimising Type II errors. Instead, we talk about
 maximising the *power* of the test. Since power is defined as 1 - β, this is
@@ -111,32 +111,32 @@ Effect size
 The plot shown in :numref:`fig-powerTheta` captures a fairly basic point about
 hypothesis testing. If the true state of the world is very different from what
 the null hypothesis predicts then your power will be very high, but if the true
-state of the world is similar to the null (but not identical) then the power of
-the test is going to be very low. Therefore, it is useful to be able to have
-some way of quantifying how “similar” the true state of the world is to the
-null hypothesis. A statistic that does this is called a measure of **effect
-size** (:ref:`Cohen, 1988 <Cohen_1988>`, :ref:`Ellis, 2010 <Ellis_2010>`).
+state of the world is similar to the null hypothesis (but not identical) then
+the power of the test is going to be very low. Therefore, it is useful to be
+able to have some way of quantifying how “similar” the true state of the world
+is to the null hypothesis. A statistic that does this is called a measure of
+**effect size** (:ref:`Cohen, 1988 <Cohen_1988>`,
+:ref:`Ellis, 2010 <Ellis_2010>`).
 
-Effect size is defined slightly differently in different contexts (and
-so this section just talks in general terms) but the qualitative idea
-that it tries to capture is always the same. How big is the difference
-between the *true* population parameters and the parameter values that
-are assumed by the null hypothesis? In our ESP example, if we let
-*θ*\ :sub:`0` = 0.5 denote the value assumed by the null hypothesis
-and let *θ* denote the true value, then a simple measure of
-effect size could be something like the difference between the true
-value and null (i.e., *θ* - *θ*\ :sub:`0`), or possibly just the
-magnitude of this difference, abs(*θ* - *θ*\ :sub:`0`).
+Effect size is defined slightly differently in different contexts (and so this
+section just talks in general terms) but the qualitative idea that it tries to
+capture is always the same. How big is the difference between the *true*
+population parameters and the parameter values that are assumed by the null
+hypothesis? In our ESP example, if we let *θ*\ :sub:`0` = 0.5 denote the value
+assumed by the null hypothesis and let *θ* denote the true value, then a simple
+measure of effect size could be something like the difference between the true
+value and value assumed by the null hypothesis (i.e., *θ* - *θ*\ :sub:`0`), or
+possibly just the magnitude of this difference, abs(*θ* - *θ*\ :sub:`0`).
 
-.. table:: A crude guide to understanding the relationship between
-   statistical significance and effect sizes. Basically, if you do not have
-   a significant result then the effect size is pretty meaningless because
-   you do not have any evidence that it is even real. On the other hand, if
-   you do have a significant effect but your effect size is small then
-   there is a pretty good chance that your result (although real) is not all
-   that interesting. It does depend a lot on what exactly you are studying;
-   small effects can be of massive practical importance in some situations.
-   So do not take this table too seriously – it is a rough guide at best.
+.. table:: A crude guide to understanding the relationship between statistical
+   significance and effect sizes. Basically, if you do not have a significant
+   result then the effect size is pretty meaningless because you do not have
+   any evidence that it is even real. On the other hand, if you do have a
+   significant effect but your effect size is small then there is a pretty good
+   chance that your result (although real) is not all that interesting. It does
+   depend a lot on what exactly you are studying; small effects can be of
+   massive practical importance in some situations. So do not take this table
+   too seriously – it is merely a rough guide.
 
    +------------------------+-------------------------+--------------------------+
    |                        | big effect size         | small effect size        |

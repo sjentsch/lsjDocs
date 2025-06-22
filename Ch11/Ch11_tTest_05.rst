@@ -137,8 +137,8 @@ this difference variable. So, to convert this to a hypothesis test, our null
 hypothesis is that this mean difference is zero and the alternative hypothesis
 is that it is not:
 
-| H\ :sub:`0`: µ\ :sub:`D` = 0
-| H\ :sub:`2`: µ\ :sub:`D` ≠ 0
+| *H*\ :sub:`0`: µ\ :sub:`D` = 0
+| *H*\ :sub:`2`: µ\ :sub:`D` ≠ 0
 
 This is assuming we are talking about a two-sided test here. This is more or
 less identical to the way we described the hypotheses for the one-sample

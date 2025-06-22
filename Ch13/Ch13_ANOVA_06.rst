@@ -13,8 +13,8 @@ meaning of *F* <meaning_of_F>` which I hope you at least skimmed even if you
 did not read the whole thing, I described the statistical models underpinning
 ANOVA in this way:
 
-| H\ :sub:`0`: Y\ :sub:`ik` = µ           + ϵ\ :sub:`ik`
-| H\ :sub:`1`: Y\ :sub:`ik` = µ\ :sub:`k` + ϵ\ :sub:`ik` 
+| *H*\ :sub:`0`: *Y*\ :sub:`ik` = µ           + ϵ\ :sub:`ik`
+| *H*\ :sub:`1`: *Y*\ :sub:`ik` = µ\ :sub:`k` + ϵ\ :sub:`ik` 
 
 In these equations µ refers to a single grand population mean
 which is the same for all groups, and µ\ :sub:`k` is the population
@@ -79,31 +79,28 @@ Checking the homogeneity of variance assumption
      
    -- :ref:`George Box (1961) <Box_1961>`
 
-There is more than one way to skin a cat, as the saying goes, and more
-than one way to test the homogeneity of variance assumption, too (though
-for some reason no-one made a saying out of that). The most commonly
-used test for this that I have seen in the literature is the **Levene
-test** (:ref:`Levene, 1960 <Levene_1960>`), and the closely related
-**Brown-Forsythe test** (:ref:`Brown & Forsythe, 1974 <Brown_1974>`).
+There is more than one way to test the homogeneity of variance assumption, too
+(though for some reason no-one made a saying out of that). The most commonly
+used test for this that I have seen in the literature is the **Levene test**
+(:ref:`Levene, 1960 <Levene_1960>`), and the closely related **Brown-Forsythe
+test** (:ref:`Brown & Forsythe, 1974 <Brown_1974>`).
 
 Regardless of whether you are doing the standard Levene test or the
-Brown-Forsythe test, the test statistic, which is sometimes denoted
-*F* but also sometimes written as *W*, is calculated in
-exactly the same way that the *F*-statistic for the regular ANOVA
-is calculated, just using a Z\ :sub:`ik` rather than Y\ :sub:`ik`.
-With that in mind, we can go on to look at how to run the test in
-jamovi.
+Brown-Forsythe test, the test statistic, which is sometimes denoted *F* but
+also sometimes written as *W*, is calculated in exactly the same way that the
+*F*-statistic for the regular ANOVA is calculated, just using a *Z*\ :sub:`ik`
+rather than *Y*\ :sub:`ik`. With that in mind, we can go on to look at how to
+run the test in jamovi.
 
-The Levene test is shockingly simple. Suppose we have our outcome
-variable Y\ :sub:`ik`. All we do is define a new variable, which I will
-call Z\ :sub:`ik`, corresponding to the absolute deviation from the
-group mean
+The Levene test is shockingly simple. Suppose we have our outcome variable
+*Y*\ :sub:`ik`. All we do is define a new variable, which I will call
+*Z*\ :sub:`ik`, corresponding to the absolute deviation from the group mean:
 
-| Z\ :sub:`ik` = Y\ :sub:`ik` - Ȳ\ :sub:`k`
+| *Z*\ :sub:`ik` = *Y*\ :sub:`ik` - *Ȳ*\ :sub:`k`
 
 Okay, what good does this do us? Well, let us take a moment to think
-about what Z\ :sub:`ik` actually is and what we are trying to test. The
-value of Z\ :sub:`ik` is a measure of how the *i*-th observation
+about what *Z*\ :sub:`ik` actually is and what we are trying to test. The
+value of *Z*\ :sub:`ik` is a measure of how the *i*-th observation
 in the *k*-th group deviates from its group mean. And our null
 hypothesis is that all groups have the same variance, i.e., the same
 overall deviations from the group means! So the null hypothesis in a
@@ -111,17 +108,16 @@ Levene test is that the population means of Z are identical for
 all groups. Hmm. So what we need now is a statistical test of the null
 hypothesis that all group means are identical. Where have we seen that
 before? Oh right, that is what ANOVA is, and so all that the Levene test
-does is run an ANOVA on the new variable Z\ :sub:`ik`.
+does is run an ANOVA on the new variable *Z*\ :sub:`ik`.
 
 What about the Brown-Forsythe test? Does that do anything particularly
-different? Nope. The only change from the Levene test is that it
-constructs the transformed variable *Z* in a slightly different
-way, using deviations from the group *medians* rather than deviations
-from the group *means*. That is, for the Brown-Forsythe test
+different? Nope. The only change from the Levene test is that it constructs the
+transformed variable *Z* in a slightly different way, using deviations from the
+group *medians* (*Md*) rather than deviations from the group *means*. That is,
+for the Brown-Forsythe test (where *Md*\ :sub:`k(Y)` is the median for group
+*k*):
 
-| Z\ :sub:`ik` = Y\ :sub:`ik` - median\ :sub:`k(Y)`
-
-where median\ :sub:`k(Y)` is the median for group *k*.
+| *Z*\ :sub:`ik` = *Y*\ :sub:`ik` - *Md*\ :sub:`k(Y)`
 
 Running the Levene-test in jamovi
 #################################
@@ -240,14 +236,14 @@ When you have got three or more groups, you can use the **Kruskal-Wallis rank
 sum test** (:ref:`Kruskal & Wallis, 1952 <Kruskal_1952>`). So that is the test
 we will talk about next.
 
-The Kruskal-Wallis test is surprisingly similar to ANOVA, in some ways.
-In ANOVA we started with Y\ :sub:`ik`, the value of the outcome
-variable for the *i*-th person in the *k*-th group. For
-the Kruskal-Wallis test what we will do is rank order all of these
-Y\ :sub:`ik` values and conduct our analysis on the ranked data.
+The Kruskal-Wallis test is surprisingly similar to ANOVA, in some ways. In
+ANOVA we started with *Y*\ :sub:`ik`, the value of the outcome variable for the
+*i*-th person in the *k*-th group. For the Kruskal-Wallis test what we will do
+is rank order all of these *Y*\ :sub:`ik` values and conduct our analysis on
+the ranked data.
 
-So let us let R\ :sub:`ik` refer to the ranking given to the *i*-th member of
-the *k*-th group. Now, let us calculate R̄\ :sub:`k`, the average rank given to
+So let us let *R*\ :sub:`ik` refer to the ranking given to the *i*-th member of
+the *k*-th group. Now, let us calculate *R̄*\ :sub:`k`, the average rank given to
 observations in the *k*-th group:
 
 .. math:: \bar{R}_k = \frac{1}{N_K} \sum_{i} R_{ik}
@@ -258,10 +254,10 @@ and let us also calculate R̄, the grand mean rank
 
 Now that we have done this, we can calculate the squared deviations from the
 grand mean rank R̄. When we do this for the individual scores, i.e., if we
-calculate (R\ :sub:`ik` – R̄)², what we have is a “nonparametric” measure of
+calculate (*R*\ :sub:`ik` – R̄)², what we have is a “nonparametric” measure of
 how far the *ik*-th observation deviates from the grand mean rank. When we
 calculate the squared deviation of the group means from the grand means, i.e.,
-if we calculate (R̄\ :sub:`k` – R̄)², then what we have is a nonparametric
+if we calculate (*R̄*\ :sub:`k` – R̄)², then what we have is a nonparametric
 measure of how much the *group* deviates from the grand mean rank. With
 this in mind, we will follow the same logic that we did with ANOVA and
 define our *ranked* sums of squares measures, much like we did earlier.
@@ -280,8 +276,8 @@ and we can define the “between groups ranked sums of squares” like this:
 
 So, if the null hypothesis is true and there are no true group
 differences at all, you would expect the between group rank sums
-RSS\ :sub:`b` to be very small, much smaller than the total
-rank sums RSS\ :sub:`tot`. Qualitatively this is very much the
+*RSS*\ :sub:`b` to be very small, much smaller than the total
+rank sums *RSS*\ :sub:`tot`. Qualitatively this is very much the
 same as what we found when we went about constructing the ANOVA
 *F*-statistic, but for technical reasons the Kruskal-Wallis test
 statistic, usually denoted *K*, is constructed in a slightly
@@ -293,7 +289,7 @@ and if the null hypothesis is true, then the sampling distribution of
 *K* is *approximately* χ² with *G* - 1 degrees of freedom (where *G* is
 the number of groups). The larger the value of *K*, the less consistent
 the data are with the null hypothesis, so this is a one-sided test. We
-reject H\ :sub:`0` when *K* is sufficiently large.
+reject *H*\ :sub:`0` when *K* is sufficiently large.
 
 The description in the previous section illustrates the logic behind the
 Kruskal-Wallis test. At a conceptual level, this is the right way to
@@ -321,7 +317,7 @@ most diligent reader has stopped caring (or at least formed the opinion
 that the tie-correction factor is something that does not require their
 immediate attention). So I will very quickly tell you how it is calculated,
 and omit the tedious details about *why* it is done this way. Suppose we
-construct a frequency table for the raw data, and let f\ :sub:`j` be the
+construct a frequency table for the raw data, and let *f*\ :sub:`j` be the
 number of observations that have the *j*-th unique value. This
 might sound a bit abstract, so here is a concrete example from the
 frequency table of ``mood.gain`` from the |clinicaltrial|_ data set:
@@ -335,8 +331,8 @@ frequency table of ``mood.gain`` from the |clinicaltrial|_ data set:
 Looking at this table, notice that the third entry in the frequency table has a
 value of 2. Since this corresponds to a ``mood.gain`` of 0.3, this table is
 telling us that two people’s mood increased by 0.3. More to the point, in the
-mathematical notation I introduced above, this is telling us that f\ :sub:`3` =
-\2. So, now that we know this, the tie correction factor (TCF) is:
+mathematical notation I introduced above, this is telling us that *f*\ :sub:`3`
+= 2. So, now that we know this, the tie correction factor (TCF) is:
 
 .. math:: \mbox{TCF} = 1 - \frac{\sum_j {f_j}^3 - f_j}{N^3 - N}
 

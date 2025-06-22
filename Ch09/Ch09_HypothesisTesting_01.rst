@@ -179,11 +179,11 @@ want to believe about the world, and I can map it onto a statistical
 hypothesis that corresponds to what I want to believe about how the data
 were generated. It is at this point that things get somewhat
 counter-intuitive for a lot of people. Because what I am about to do is
-invent a new statistical hypothesis (the “null” hypothesis, H\ :sub:`0`\ )
+invent a new statistical hypothesis (the “null” hypothesis, *H*\ :sub:`0`\ )
 that corresponds to the exact opposite of what I want to believe, and
 then focus exclusively on that almost to the neglect of the thing I am
 actually interested in (which is now called the “alternative”
-hypothesis, H\ :sub:`1`\ ). In our ESP example, the null hypothesis is
+hypothesis, *H*\ :sub:`1`\ ). In our ESP example, the null hypothesis is
 that *θ* = 0.5, since that is what we would expect if ESP *did not*
 exist. My hope, of course, is that ESP is totally real and so the
 *alternative* to this null hypothesis is *θ* ≠ 0.5. In

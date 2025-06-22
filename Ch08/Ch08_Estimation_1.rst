@@ -156,9 +156,9 @@ A third procedure is worth mentioning. This time around we close our eyes,
 shake the bag, and pull out a chip. This time, however, we record the
 observation and then put the chip back in the bag. Again we close our eyes,
 shake the bag, and pull out a chip. We then repeat this procedure until we have
-4 chips. Data sets generated in this way are still simple random samples, but
-because we put the chips back in the bag immediately after drawing them it is
-referred to as a sample **with replacement**. The difference between this
+four chips. Data sets generated in this way are still simple random samples,
+but because we put the chips back in the bag immediately after drawing them it
+is referred to as a sample **with replacement**. The difference between this
 situation and the first one is that it is possible to observe the same
 population member multiple times, as illustrated in numref:`fig-srs2`.
 

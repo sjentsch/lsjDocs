@@ -116,12 +116,13 @@ The correlation coefficient
 We can make these ideas a bit more explicit by introducing the idea of a
 **correlation coefficient** (or, more specifically, Pearson’s correlation
 coefficient), which is traditionally denoted as *r*. The correlation
-coefficient between two variables *X* and *Y* (sometimes denoted r\ :sub:`XY`),
-which we will define more precisely in the next section, is a measure that varies
-from -1 to 1. When *r* = -1 it means that we have a perfect negative
-relationship, and when *r* = 1 it means we have a perfect positive relationship.
-When *r* = 0, there is no relationship at all. If you look at :numref:`fig-corr`,
-you can see several plots showing what different correlations look like.
+coefficient between two variables *X* and *Y* (sometimes denoted
+*r*\ :sub:`XY`), which we will define more precisely in the next section, is a
+measure that varies from -1 to 1. When *r* = -1 it means that we have a perfect
+negative relationship, and when *r* = 1 it means we have a perfect positive
+relationship. When *r* = 0, there is no relationship at all. If you look at
+:numref:`fig-corr`, you can see several plots showing what different
+correlations look like.
 
 .. ----------------------------------------------------------------------------
 

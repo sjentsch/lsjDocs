@@ -108,18 +108,18 @@ So, if we use *P*\ :sub:`ij` to denote “the probability that a member of
 species *j* gives response *i*” then our null hypothesis is
 that:
 
-+--------------+---------------------------------------------+
-| H\ :sub:`0`: | All of the following are true:              |
-+--------------+---------------------------------------------+
-|              | *P*\ :sub:`11` = *P*\ :sub:`12`             |
-|              | (same probability of saying “puppy”),       |
-+--------------+---------------------------------------------+
-|              | *P*\ :sub:`21` = *P*\ :sub:`22`             |
-|              | (same probability of saying “flower”), and  |
-+--------------+---------------------------------------------+
-|              | *P*\ :sub:`31` = *P*\ :sub:`32`             |
-|              | (same probability of saying “data”).        |
-+--------------+---------------------------------------------+
++----------------+---------------------------------------------+
+| *H*\ :sub:`0`: | All of the following are true:              |
++----------------+---------------------------------------------+
+|                | *P*\ :sub:`11` = *P*\ :sub:`12`             |
+|                | (same probability of saying “puppy”),       |
++----------------+---------------------------------------------+
+|                | *P*\ :sub:`21` = *P*\ :sub:`22`             |
+|                | (same probability of saying “flower”), and  |
++----------------+---------------------------------------------+
+|                | *P*\ :sub:`31` = *P*\ :sub:`32`             |
+|                | (same probability of saying “data”).        |
++----------------+---------------------------------------------+
 
 And actually, since the null hypothesis is claiming that the true choice
 probabilities do not depend on the species of the person making the
@@ -153,7 +153,7 @@ Therefore, our expected frequency can be written as the product (i.e.
 multiplication) of the row total and the column total, divided by the
 total number of observations:\ [#]_
 
-| Ê\ :sub:`ij` = (R\ :sub:`i` · C\ :sub:`j`) / *N*
+| *Ê*\ :sub:`ij` = (*R*\ :sub:`i` · *C*\ :sub:`j`) / *N*
 
 Now that we have figured out how to calculate the expected frequencies,
 it is straightforward to define a test statistic, following the exact
@@ -203,10 +203,10 @@ these. So our total degrees of freedom is:
 .. math::
 
    \begin{array}{rcl}
-   df & = & \mbox{(number of observations)} - \mbox{(number of constraints)} \\
-      & = & (rc) - (c + (r-1)) \\
-      & = & rc - c - r + 1 \\
-      & = & (r - 1)(c - 1)
+   $df$ & = & \mbox{(number of observations)} - \mbox{(number of constraints)} \\
+        & = & (rc) - (c + (r-1)) \\
+        & = &  rc - c - r + 1 \\
+        & = & (r - 1)(c - 1)
    \end{array}
 
 Alternatively, suppose that the only thing that the experimenter fixed was the
@@ -224,10 +224,10 @@ observations, and (*c* - 1) + (*r* - 1) + 1 constraints. What does that give?
 .. math::
 
    \begin{array}{rcl}
-   df & = & \mbox{(number of observations)} - \mbox{(number of constraints)} \\
-      & = & rc - ( (c-1) + (r-1) + 1) \\
-      & = & rc - c - r + 1 \\
-      & = & (r - 1)(c - 1)
+   $df$ & = & \mbox{(number of observations)} - \mbox{(number of constraints)} \\
+        & = &  rc - ( (c-1) + (r-1) + 1) \\
+        & = &  rc - c - r + 1 \\
+        & = & (r - 1)(c - 1)
    \end{array}
 
 Amazing.

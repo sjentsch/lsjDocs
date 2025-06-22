@@ -51,8 +51,8 @@ that warning. It is because people desperately *want* that to be the correct
 interpretation. Frequentist dogma notwithstanding, a lifetime of experience of
 teaching undergraduates and of doing data analysis on a daily basis suggests to
 me that most actual humans think that “the probability that the hypothesis is
-true” is not only meaningful, it is the thing we care *most* about. It is such an
-appealing idea that even trained statisticians fall prey to the mistake of
+true” is not only meaningful, it is the thing we care *most* about. It is such
+an appealing idea that even trained statisticians fall prey to the mistake of
 trying to interpret a *p*-value this way. For example, here is a quote from an
 `official Newspoll report in 2013
 <https://about.abc.net.au/reports-publications/appreciation-survey-summary-report-2013>`__,
@@ -108,41 +108,39 @@ Evidentiary standards you can believe
      
    -- :ref:`Sir Ronald Fisher (1925) <Fisher_1925>`
 
-Consider the quote above by Sir Ronald Fisher, one of the founders of
-what has become the orthodox approach to statistics. If anyone has ever
-been entitled to express an opinion about the intended function of
-*p*-values, it is Fisher. In this passage, taken from his classic
-guide *Statistical Methods for Research Workers*, he is pretty clear
-about what it means to reject a null hypothesis at *p* < 0.05. In his
-opinion, if we take *p* < 0.05 to mean there is “a real effect”, then
-“we shall not often be astray”. This view is hardly unusual. In my
-experience, most practitioners express views very similar to Fisher’s.
-In essence, the *p* < 0.05 convention is assumed to represent a
-fairly stringent evidential standard.
+Consider the quote above by Sir Ronald Fisher, one of the founders of what has
+become the orthodox approach to statistics. If anyone has ever been entitled to
+express an opinion about the intended function of *p*-values, it is Fisher. In
+this passage, taken from his classic guide *Statistical Methods for Research
+Workers*, he is pretty clear about what it means to reject a null hypothesis at
+*p* < 0.05. In his opinion, if we take *p* < 0.05 to mean there is “a real
+effect”, then “we shall not often be astray”. This view is hardly unusual. In
+my experience, most practitioners express views very similar to Fisher’s. In
+essence, the *p* < 0.05 convention is assumed to represent a fairly stringent
+evidential standard.
 
-Well, how true is that? One way to approach this question is to try to
-convert *p*-values to Bayes factors, and see how the two compare.
-It is not an easy thing to do because a *p*-value is a fundamentally different
-kind of calculation to a Bayes factor, and they do not measure the same thing.
-However, there have been some attempts to work out the relationship between
-the two, and it is somewhat surprising. For example, :ref:`Johnson (2013)
-<Johnson_2013>` presents a pretty compelling case that (for *t*-tests at
-least) the *p* < 0.05 threshold corresponds roughly to a Bayes factor of
-somewhere between 3:1 and 5:1 in favour of the alternative. If that is right,
-then Fisher’s claim is a bit of a stretch. Let us suppose that the null
-hypothesis is true about half the time (i.e., the prior probability of
-H\ :sub:`0` is 0.5), and we use those numbers to work out the posterior
-probability of the null hypothesis given that it has been rejected at *p*
-< 0.05. Using the data from :ref:`Johnson (2013) <Johnson_2013>`, we see that
-if you reject the null at *p* < 0.05, you will be correct about 80\% of the
-time. I do not know about you but, in my opinion, an evidential standard that
-ensures you will be wrong on 20\% of your decisions is not good enough. The fact
-remains that, quite contrary to Fisher’s claim, if you reject at *p* < 0.05
-you shall quite often go astray. It is not a very stringent evidential
-threshold at all.
+Well, how true is that? One way to approach this question is to try to convert
+*p*-values to Bayes factors, and see how the two compare. It is not an easy
+thing to do because a *p*-value is a fundamentally different kind of
+calculation to a Bayes factor, and they do not measure the same thing. However,
+there have been some attempts to work out the relationship between the two, and
+it is somewhat surprising. For example, :ref:`Johnson (2013) <Johnson_2013>`
+presents a pretty compelling case that (for *t*-tests at least) the *p* < 0.05
+threshold corresponds roughly to a Bayes factor of somewhere between 3:1 and
+5:1 in favour of the alternative. If that is right, then Fisher’s claim is a
+bit of a stretch. Let us suppose that the null hypothesis is true about half
+the time (i.e., the prior probability of *H*\ :sub:`0` is 0.5), and we use
+those numbers to work out the posterior probability of the null hypothesis
+given that it has been rejected at *p* < 0.05. Using the data from
+:ref:`Johnson (2013) <Johnson_2013>`, we see that if you reject the null
+hypothesis at *p* < 0.05, you will be correct about 80\% of the time. I do not
+know about you but, in my opinion, an evidential standard that ensures you will
+be wrong on 20\% of your decisions is not good enough. The fact remains that,
+quite contrary to Fisher’s claim, if you reject at *p* < 0.05 you shall quite
+often go astray. It is not a very stringent evidential threshold at all.
 
 The *p*-value is a lie.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. epigraph::
 
@@ -174,16 +172,16 @@ study. You run your hypothesis test and out pops a *p*-value of
 
 What should you do? Here are some possibilities:
 
-#. You conclude that there is no effect and try to publish it as a null
-   result
+#. You conclude that there is no effect and try to publish it as a result
+   where the null hypothesis had to be retained
 
 #. You guess that there might be an effect and try to publish it as a
    “borderline significant” result
 
 #. You give up and try a new study
 
-#. You collect some more data to see if the *p*-value goes up or
-   (preferably!) drops below the “magic” criterion of *p* < 0.05
+#. You collect some more data to see if the *p*-value goes up or (preferably!)
+   drops below the “magic” criterion of *p* < 0.05
 
 Which would *you* choose? Before reading any further, I urge you to take
 some time to think about it. Be honest with yourself. But do not stress
@@ -191,75 +189,75 @@ about it too much, because you are screwed no matter what you choose.
 Based on my own experiences as an author, reviewer and editor, as well
 as stories I have heard from others, here is what will happen in each case:
 
--  Let us start with option 1. If you try to publish it as a null result,
-   the paper will struggle to be published. Some reviewers will think
-   that *p* = 0.072 is not really a null result. They will argue it is
-   borderline significant. Other reviewers will agree it is a null result
-   but will claim that even though some null results *are* publishable,
-   yours is not. One or two reviewers might even be on your side, but
-   you will be fighting an uphill battle to get it through.
+-  Let us start with option 1. If you try to publish it as a result where the
+   null hypothesis had to be retained, the paper will struggle to be published.
+   Some reviewers will think that *p* = 0.072 is not really a result where the
+   null hypothesis had to be retained. They will argue it is borderline
+   significant. Other reviewers will agree it is a result where the null
+   hypothesis had to be retained, but will claim that even though some results
+   where the null hypothesis had to be retained *are* publishable, yours is
+   not. One or two reviewers might even be on your side, but you will be
+   fighting an uphill battle to get it through.
 
--  Okay, let us think about option number 2. Suppose you try to publish
-   it as a borderline significant result. Some reviewers will claim that
-   it is a null result and should not be published. Others will claim
-   that the evidence is ambiguous, and that you should collect more data
-   until you get a clear significant result. Again, the publication
-   process does not favour you.
+-  Okay, let us think about option number 2. Suppose you try to publish it as a
+   borderline significant result. Some reviewers will claim that it is a result
+   where null hypothesis should have been retained and that should not be
+   published. Others will claim that the evidence is ambiguous, and that you
+   should collect more data until you get a clear significant result. Again,
+   the publication process does not favour you.
 
--  Given the difficulties in publishing an “ambiguous” result like
-   *p* = 0.072, option number 3 might seem tempting: give up and do
-   something else. But that is a recipe for career suicide. If you give
-   up and try a new project every time you find yourself faced with
-   ambiguity, your work will never be published. And if you are in
-   academia without a publication record you can lose your job. So that
-   option is out.
+-  Given the difficulties in publishing an “ambiguous” result like *p* = 0.072,
+   option number 3 might seem tempting: give up and do something else. But that
+   is a recipe for career suicide. If you give up and try a new project every
+   time you find yourself faced with ambiguity, your work will never be
+   published. And if you are in academia without a publication record you can
+   lose your job. So that option is out.
 
 -  It looks like you are stuck with option 4. You do not have conclusive
-   results, so you decide to collect some more data and re-run the
-   analysis. Seems sensible, but unfortunately for you, if you do this
-   all of your *p*-values are now incorrect. *All* of them. Not
-   just the *p*-values that you calculated for *this* study. All
-   of them. All the *p*-values you calculated in the past and all
-   the *p*-values you will calculate in the future. Fortunately,
-   no-one will notice. You will get published, and you will have lied.
+   results, so you decide to collect some more data and re-run the analysis.
+   Seems sensible, but unfortunately for you, if you do this all of your
+   *p*-values are now incorrect. *All* of them. Not just the *p*-values that
+   you calculated for *this* study. All of them. All the *p*-values you
+   calculated in the past and all the *p*-values you will calculate in the
+   future. Fortunately, nobody will notice. You will get published, and you
+   will have lied.
 
-Wait, what? How can that last part be true? I mean, it sounds like a
-perfectly reasonable strategy does not it? You collected some data, the
-results were not conclusive, so now what you want to do is collect more
-data until the the results *are* conclusive. What is wrong with that?
+Wait, what? How can that last part be true? I mean, it sounds like a perfectly
+reasonable strategy does not it? You collected some data, the results were not
+conclusive, so now what you want to do is collect more data until the the
+results *are* conclusive. What is wrong with that?
 
 Honestly, there is nothing wrong with it. It is a reasonable, sensible and
-rational thing to do. In real life, this is exactly what every researcher
-does. Unfortunately, the theory of null hypothesis testing as I described it
-in chapter :doc:`../Ch09/Ch09_HypothesisTesting` *forbids* you from doing
+rational thing to do. In real life, this is exactly what every researcher does.
+Unfortunately, the theory of null hypothesis testing as I described it in
+chapter :doc:`../Ch09/Ch09_HypothesisTesting` *forbids* you from doing
 this.\ [#]_ The reason is that the theory assumes that the experiment is
 finished and all the data are in. And because it assumes the experiment is
 over, it only considers *two* possible decisions. If you are using the
 conventional *p* < 0.05 threshold, those decisions are:
 
-+-----------------------+-----------------+
-| Outcome               | Action          |
-+=======================+=================+
-| *p* less than 0.05    | Reject the null |
-+-----------------------+-----------------+
-| *p* greater than 0.05 | Retain the null |
-+-----------------------+-----------------+
++-----------------------+----------------------------+
+| Outcome               | Action                     |
++=======================+============================+
+| *p* less than 0.05    | Reject the null hypothesis |
++-----------------------+----------------------------+
+| *p* greater than 0.05 | Retain the null hypothesis |
++-----------------------+----------------------------+
 
-What *you are* doing is adding a third possible action to the decision
-making problem. Specifically, what you are doing is using the
-*p*-value itself as a reason to justify continuing the experiment.
-And as a consequence you have transformed the decision-making procedure
-into one that looks more like this:
+What *you are* doing is adding a third possible action to the decision making
+problem. Specifically, what you are doing is using the *p*-value itself as a
+reason to justify continuing the experiment. And as a consequence you have
+transformed the decision-making procedure into one that looks more like this:
 
-+--------------------------+-----------------------------------------+
-| Outcome                  | Action                                  |
-+==========================+=========================================+
-| *p* less than 0.05       | Stop the experiment and reject the null |
-+--------------------------+-----------------------------------------+
-| *p* between 0.05 and 0.1 | Continue the experiment                 |
-+--------------------------+-----------------------------------------+
-| *p* greater than 0.1     | Stop the experiment and retain the null |
-+--------------------------+-----------------------------------------+
++--------------------------+----------------------------------------------------+
+| Outcome                  | Action                                             |
++==========================+====================================================+
+| *p* less than 0.05       | Stop the experiment and reject the null hypothesis |
++--------------------------+----------------------------------------------------+
+| *p* between 0.05 and 0.1 | Continue the experiment                            |
++--------------------------+----------------------------------------------------+
+| *p* greater than 0.1     | Stop the experiment and retain the null hypothesis |
++--------------------------+----------------------------------------------------+
 
 The “basic” theory of null hypothesis testing is not built to handle this sort
 of thing, not in the form I described back in chapter
@@ -271,30 +269,27 @@ are not following the decision *process* it implies, and it is this failure to
 follow the process that is causing the problem (a `related problem
 <https://xkcd.com/1478>`__). Your *p*-values are a lie.
 
-Worse yet, they are a lie in a dangerous way, because they are all *too
-small*. To give you a sense of just how bad it can be, consider the
-following (worst case) scenario. Imagine you are a really
-super-enthusiastic researcher on a tight budget who did not pay any
-attention to my warnings above. You design a study comparing two groups.
-You desperately want to see a significant result at the *p* < 0.05
-level, but you really do not want to collect any more data than you have
-to (because it is expensive). In order to cut costs you start collecting
-data but every time a new observation arrives you run a *t*-test
-on your data. If the *t*-tests says *p* < 0.05 then you stop
-the experiment and report a significant result. If not, you keep
-collecting data. You keep doing this until you reach your pre-defined
-spending limit for this experiment. Let us say that limit kicks in at
-*N* = 1000 observations. As it turns out, the truth of the matter is
-that there is no real effect to be found: the null hypothesis is true.
-So, what is the chance that you will make it to the end of the experiment
-and (correctly) conclude that there is no effect? In an ideal world, the
-answer here should be 95\%. After all, the whole *point* of the
-*p* < 0.05 criterion is to control the Type I error rate at 5\%, so
-what we would hope is that there is only a 5\% chance of falsely rejecting the
-null hypothesis in this situation. However, there is no guarantee that
-will be true. You are breaking the rules. Because you are running tests
-repeatedly, “peeking” at your data to see if you have gotten a significant
-result, all bets are off.
+Worse yet, they are a lie in a dangerous way, because they are all *too small*.
+To give you a sense of just how bad it can be, consider the following (worst
+case) scenario. Imagine you are a really super-enthusiastic researcher on a
+tight budget who did not pay any attention to my warnings above. You design a
+study comparing two groups. You desperately want to see a significant result at
+the *p* < 0.05 level, but you really do not want to collect any more data than
+you have to (because it is expensive). In order to cut costs you start
+collecting data but every time a new observation arrives you run a *t*-test on
+your data. If the *t*-tests says *p* < 0.05 then you stop the experiment and
+report a significant result. If not, you keep collecting data. You keep doing
+this until you reach your pre-defined spending limit for this experiment. Let
+us say that limit kicks in at *N* = 1000 observations. As it turns out, the
+truth of the matter is that there is no real effect to be found: the null
+hypothesis is true. So, what is the chance that you will make it to the end of
+the experiment and (correctly) conclude that there is no effect? In an ideal
+world, the answer here should be 95\%. After all, the whole *point* of the
+*p* < 0.05 criterion is to control the Type I error rate at 5\%, so what we
+would hope is that there is only a 5\% chance of falsely rejecting the null
+hypothesis in this situation. However, there is no guarantee that will be true.
+You are breaking the rules. Because you are running tests repeatedly, “peeking”
+at your data to see if you have gotten a significant result, all bets are off.
 
 .. ----------------------------------------------------------------------------
 
@@ -317,55 +312,52 @@ Start collecting data. Every single time an observation arrives, run a
 :ref:`Johnson (2013) <Johnson_2013>` is right, and I will treat a Bayes factor
 of 3:1 as roughly equivalent to a *p*-value of 0.05.\ [#]_ This time around,
 our trigger happy researcher uses the following procedure. If the Bayes factor
-is 3:1 or more in favour of the null, stop the experiment and retain the null.
-If it is 3:1 or more in favour of the alternative, stop the experiment and
-reject the null. Otherwise continue testing. Now, just like last time, let us
-assume that the null hypothesis is true. What happens? As it happens, I ran
-the simulations for this scenario too, and the results are shown as the dashed
-line in :numref:`fig-adapt`. It turns out that the Type I error rate is much
-much lower than the 49\% rate that we were getting by using the orthodox
-*t*-test.
+is 3:1 or more in favour of the null hypothesis, stop the experiment and retain
+the null hypothesis. If it is 3:1 or more in favour of the alternative, stop
+the experiment and reject the null hypothesis. Otherwise continue testing. Now,
+just like last time, let us assume that the null hypothesis is true. What
+happens? As it happens, I ran the simulations for this scenario too, and the
+results are shown as the dashed line in :numref:`fig-adapt`. It turns out that
+the Type I error rate is much much lower than the 49\% rate that we were
+getting by using the orthodox *t*-test.
 
 In some ways, this is remarkable. The entire *point* of orthodox null
-hypothesis testing is to control the Type I error rate. Bayesian methods
-are not actually designed to do this at all. Yet, as it turns out, when
-faced with a “trigger happy” researcher who keeps running hypothesis
-tests as the data come in, the Bayesian approach is much more effective.
-Even the 3:1 standard, which most Bayesians would consider unacceptably
-lax, is much safer than the *p* < 0.05 rule.
+hypothesis testing is to control the Type I error rate. Bayesian methods are
+not actually designed to do this at all. Yet, as it turns out, when faced with
+a “trigger happy” researcher who keeps running hypothesis tests as the data
+come in, the Bayesian approach is much more effective. Even the 3:1 standard,
+which most Bayesians would consider unacceptably lax, is much safer than the
+*p* < 0.05 rule.
 
 Is it really this bad?
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The example I gave in the previous section is a pretty extreme
-situation. In real life, people do not run hypothesis tests every time a
-new observation arrives. So it is not fair to say that the *p* < 0.05
-threshold “really” corresponds to a 49\% Type I error rate (i.e.,
-*p* = 0.49). But the fact remains that if you want your
-*p*-values to be honest then you either have to switch to a
-completely different way of doing hypothesis tests or enforce a strict
-rule of *no peeking*. You are *not* allowed to use the data to decide
+The example I gave in the previous section is a pretty extreme situation. In
+real life, people do not run hypothesis tests every time a new observation
+arrives. So it is not fair to say that the *p* < 0.05 threshold “really”
+corresponds to a 49\% Type I error rate (i.e., *p* = 0.49). But the fact
+remains that if you want your *p*-values to be honest then you either have to
+switch to a completely different way of doing hypothesis tests or enforce a
+strict rule of *no peeking*. You are *not* allowed to use the data to decide
 when to terminate the experiment. You are *not* allowed to look at a
-“borderline” *p*-value and decide to collect more data. You are not
-even allowed to change your data analysis strategy after looking at data.
-You are strictly required to follow these rules, otherwise the
-*p*-values you calculate will be nonsense.
+“borderline” *p*-value and decide to collect more data. You are not even
+allowed to change your data analysis strategy after looking at data. You are
+strictly required to follow these rules, otherwise the *p*-values you calculate
+will be nonsense.
 
-And yes, these rules are surprisingly strict. As a class exercise a
-couple of years back, I asked students to think about this scenario.
-Suppose you started running your study with the intention of collecting
-*N* = 80 people. When the study starts out you follow the rules,
-refusing to look at the data or run any tests. But when you reach
-*N* = 50 your willpower gives in… and you take a peek. Guess what?
-You have got a significant result! Now, sure, you know you *said* that
-you would keep running the study out to a sample size of *N* = 80, but
-it seems sort of pointless now, right? The result is significant with a
-sample size of *N* = 50, so would not it be wasteful and inefficient
-to keep collecting data? Are you not tempted to stop? Just a little?
-Well, keep in mind that if you do, your Type I error rate at
-*p* < 0.05 just ballooned out to 8\%. When you report *p* < 0.05 in
-your paper, what you are *really* saying is *p* < 0.08. That is how bad
-the consequences of “just one peek” can be.
+And yes, these rules are surprisingly strict. As a class exercise a couple of
+years back, I asked students to think about this scenario. Suppose you started
+running your study with the intention of collecting *N* = 80 people. When the
+study starts out you follow the rules, refusing to look at the data or run any
+tests. But when you reach *N* = 50 your willpower gives in… and you take a
+peek. Guess what? You have got a significant result! Now, sure, you know you
+*said* that you would keep running the study out to a sample size of *N* = 80,
+but it seems sort of pointless now, right? The result is significant with a
+sample size of *N* = 50, so would not it be wasteful and inefficient to keep
+collecting data? Are you not tempted to stop? Just a little? Well, keep in mind
+that if you do, your Type I error rate at *p* < 0.05 just ballooned out to 8\%.
+When you report *p* < 0.05 in your paper, what you are *really* saying is
+*p* < 0.08. That is how bad the consequences of “just one peek” can be.
 
 Now consider this. The scientific literature is filled with *t*-tests, ANOVAs,
 regressions and χ²-tests. When I wrote this book I did not pick these tests
@@ -379,9 +371,9 @@ what the data looked like? Except when the sampling procedure is fixed by an
 external constraint, I am guessing the answer is “most people have done it”. If
 that has happened, you can infer that the reported *p*-values are wrong. Worse
 yet, because we do not know what decision process they actually followed, we
-have no way to know what the *p*-values *should* have been. You can not compute a
-*p*-value when you do not know the decision making procedure that the researcher
-used. And so the reported *p*-value remains a lie.
+have no way to know what the *p*-values *should* have been. You can not compute
+a *p*-value when you do not know the decision making procedure that the
+researcher used. And so the reported *p*-value remains a lie.
 
 Given all of the above, what is the take home message? It is not that Bayesian
 methods are foolproof. If a researcher is determined to cheat, they can always
@@ -429,8 +421,8 @@ Orthodox null hypothesis testing does not.\ [#]_
    constructed in a very different fashion to the “standard” version of null
    hypothesis testing. They do not make it into any introductory textbooks, and
    they are not very widely used in the psychological literature. The concern
-   I am raising here is valid for every single orthodox test I have presented so
-   far and for almost every test I have seen reported in the papers I read.
+   I am raising here is valid for every single orthodox test I have presented
+   so far and for almost every test I have seen reported in the papers I read.
 
 .. [#]
    Some readers might wonder why I picked 3:1 rather than 5:1, given that

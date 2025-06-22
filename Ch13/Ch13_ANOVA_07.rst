@@ -14,37 +14,35 @@ This type of design and analysis can also be called a “related ANOVA” or a
 The logic behind a repeated measures ANOVA is very similar to that of an
 independent ANOVA (sometimes called a “between-subjects” ANOVA). You will
 remember that earlier we showed that in a between-subjects ANOVA total
-variability is partitioned into between-groups variability (SS\ :sub:`b`) and
-within-groups variability (SS\ :sub:`w`), then divided by their respective
-degrees of freedom to give MS\ :sub:`b` and MS\ :sub:`w`
-(see :numref:`tab-anovatable`), whereupon the *F*-ratio is calculated as:
+variability is partitioned into between-groups variability (*SS*\ :sub:`b`) and
+within-groups variability (*SS*\ :sub:`w`), then divided by their respective
+degrees of freedom to give *MS*\ :sub:`b` and *MS*\ :sub:`w` (see
+:numref:`tab-anovatable`), whereupon the *F*-ratio is calculated as:
 
-| *F* = MS\ :sub:`b` / MS\ :sub:`w`
+| *F* = *MS*\ :sub:`b` / *MS*\ :sub:`w`
 
-In a repeated measures ANOVA, the *F*-ratio is calculated
-in a similar way, but whereas in an independent ANOVA the within-group
-variability (SS\ :sub:`w`) is used as the basis for the
-MS\ :sub:`w` denominator, in a repeated measures ANOVA the
-SS\ :sub:`w` is partioned into two parts. As we are using the
-same subjects in each group, we can remove the variability due to the
-individual differences between subjects (referred to as
-SS\ :sub:`subjects`) from the within-groups variability. We
-will not go into too much technical detail about how this is done, but
-essentially each subject becomes a level of a factor called subjects.
-The variability in this within-subjects factor is then calculated in the
-same way as any between-subjects factor. And then we can subtract
-SS\ :sub:`subjects` from SS\ :sub:`w` to provide a
-smaller SS\ :sub:`error` term:
+In a repeated measures ANOVA, the *F*-ratio is calculated in a similar way, but
+whereas in an independent ANOVA the within-group variability (*SS*\ :sub:`w`)
+is used as the basis for the *MS*\ :sub:`w` denominator, in a repeated measures
+ANOVA the *SS*\ :sub:`w` is partioned into two parts. As we are using the same
+subjects in each group, we can remove the variability due to the individual
+differences between subjects (referred to as *SS*\ :sub:`subjects`) from the
+within-groups variability. We will not go into too much technical detail about
+how this is done, but essentially each subject becomes a level of a factor
+called subjects. The variability in this within-subjects factor is then
+calculated in the same way as any between-subjects factor. And then we can
+subtract *SS*\ :sub:`subjects` from *SS*\ :sub:`w` to provide a smaller
+*SS*\ :sub:`error` term:
 
-| Independent ANOVA:       SS\ :sub:`error` = SS\ :sub:`w`
-| Repeated Measures ANOVA: SS\ :sub:`error` = SS\ :sub:`w` - SS\ :sub:`subjects`
+| Independent ANOVA:       *SS*\ :sub:`error` = *SS*\ :sub:`w`
+| Repeated Measures ANOVA: *SS*\ :sub:`error` = *SS*\ :sub:`w` - *SS*\ :sub:`subjects`
 
-This change in SS\ :sub:`error` term often leads to a more powerful
+This change in *SS*\ :sub:`error` term often leads to a more powerful
 statistical test, but this does depend on whether the reduction in the
-SS\ :sub:`error` more than compensates for the reduction in degrees of
-freedom for the error term: the degrees of freedom go from
-(*n* - *k*)\ [#]_ to (*n* - 1)(*k* - 1) remembering that there are more
-subjects in the independent ANOVA design.
+*SS*\ :sub:`error` more than compensates for the reduction in degrees of
+freedom for the error term: the degrees of freedom go from (*n* - *k*)\ [#]_ to
+(*n* - 1)(*k* - 1) remembering that there are more subjects in the independent
+ANOVA design.
 
 Repeated measures ANOVA in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -191,7 +189,7 @@ the task was speech, comprehension or syntax based (*F*\(2,10) = 6.93,
 .. ----------------------------------------------------------------------------
 
 Post-hoc tests can also be specified in jamovi for repeated measures ANOVA in
-the same way as for independent ANOVA. The results are shown in
+the same way as for an independent ANOVA. The results are shown in
 :numref:`fig-RManova4`. These indicate that there is a significant difference
 between ``Speech`` and ``Syntax``, but not between other levels.
 

@@ -41,8 +41,8 @@ corresponds to the “leftover” variability so it calls that the *residuals*. 
 we compare these numbers to the numbers that I calculated by hand in section
 :ref:`A worked example <worked_example>`, you can see that they are more
 or less the same, apart from rounding errors. The between groups sums of
-squares is SS\ :sub:`b` = 3.45, the within groups sums of squares is
-SS\ :sub:`w` = 1.39, and the degrees of freedom are 2 and 15 respectively. We
+squares is *SS*\ :sub:`b` = 3.45, the within groups sums of squares is
+*SS*\ :sub:`w` = 1.39, and the degrees of freedom are 2 and 15 respectively. We
 also get the *F*-value and the *p*-value and, again, these are more or less the
 same, give or take rounding errors, to the numbers that we calculated ourselves
 when doing it the long and tedious way.
