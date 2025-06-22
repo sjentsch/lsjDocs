@@ -39,6 +39,14 @@ means that, providing it is consistent with a visual inspection of the plot of
 standard deviations, we can safely assume that the homogeneity of variance
 assumption is not violated.
 
+Normality of residuals
+~~~~~~~~~~~~~~~~~~~~~~
+
+As with one-way ANOVA we can test for the normality of residuals in a
+straightforward fashion (see :ref:`Checking the normality assumption
+<normality_anova>`). It is generally a good idea to examine the residuals
+graphically using a QQ-plot (see :numref:`fig-factorialanova5`).
+
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova5.*
@@ -48,11 +56,3 @@ assumption is not violated.
    Checking assumptions in an ANOVA model
    
 .. ----------------------------------------------------------------------------
-
-Normality of residuals
-~~~~~~~~~~~~~~~~~~~~~~
-
-As with one-way ANOVA we can test for the normality of residuals in a
-straightforward fashion (see :ref:`Checking the normality assumption
-<normality_anova>`). Primarily though, it is generally a good idea to examine
-the residuals graphically using a QQ-plot. See :numref:`fig-factorialanova5`.

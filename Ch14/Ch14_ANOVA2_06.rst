@@ -6,28 +6,25 @@ Analysis of Covariance (ANCOVA)
 A variation in ANOVA is when you have an additional continuous variable
 |continuous| that you think might be related to the dependent variable. This
 additional variable can be added to the analysis as a covariate, in the aptly
-named analysis of covariance (ANCOVA).
-
-In ANCOVA the values of the dependent variable are “adjusted” for the influence
-of the covariate, and then the “adjusted” score means are tested between groups
-|nominal| in the usual way. This technique can increase the precision of an
-experiment, and therefore provide a more “powerful” test of the equality of
-group means in the dependent variable. How does ANCOVA do this? Well, although
-the covariate itself is typically not of any experimental interest, adjustment
-for the covariate can decrease the estimate of experimental error and thus, by
-reducing error variance, precision is increased. This means that an inappropriate
-failure to reject the null hypothesis (false negative or type II error) is less
-likely.
+named analysis of covariance (ANCOVA). In ANCOVA the values of the dependent
+variable are “adjusted” for the influence of the covariate, and then the
+“adjusted” score means are tested between groups |nominal| in the usual way.
+This technique can increase the precision of an experiment, and therefore
+provide a more “powerful” test of the equality of group means in the dependent
+variable. Although the covariate itself is typically not of any experimental
+interest, adjusting for the covariate can reduce the error variance, and
+thereby increase precision. This means that a failure to inappropriately reject
+the null hypothesis (Type II error) becomes less likely.
 
 Despite this advantage, ANCOVA runs the risk of undoing real differences
 between groups |nominal|, and this should be avoided. Look at
 :numref:`fig-ancova_groups`, for example, which shows a plot of Statistics
 anxiety against age and shows two distinct groups – students who have either
-an Arts or Science background or preference. ANCOVA with age as a covariate
-might lead to the conclusion that statistics anxiety does not differ in the two
-groups. Would this conclusion be reasonable – probably not because the ages of
-the two groups do not overlap and analysis of variance has essentially
-“extrapolated into a region with no data” (:ref:`Everitt, 1996 <Everitt_1996>`).
+an Arts or Science background. ANCOVA with age as a covariate might lead to the
+conclusion that statistics anxiety does not differ in the two groups. Would
+this conclusion be reasonable – probably not because the ages of the two groups
+do not overlap and analysis of variance has essentially “extrapolated into a
+region with no data” (:ref:`Everitt, 1996 <Everitt_1996>`).
 
 .. ----------------------------------------------------------------------------
 
@@ -39,9 +36,9 @@ the two groups do not overlap and analysis of variance has essentially
    
 .. ----------------------------------------------------------------------------
 
-Clearly, careful thought needs to be given to an analysis of covariance
-with distinct groups. This applies to both one-way and factorial
-designs, as ANCOVA can be used with both.
+Clearly, careful thought needs to be given to an analysis of covariance with
+distinct groups. This applies to both one-way and factorial designs, as ANCOVA
+can be used with both.
 
 Running ANCOVA in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -113,10 +110,11 @@ In :numref:`fig-ancova4` we can see the adjusted, marginal, mean happiness
 scores when age is a covariate in an ANCOVA. In this analysis there is a
 significant interaction effect, whereby people with low stress who cycle to
 work are happier than people with low stress who drive and people with high
-stress whether they cycle or drive to work. There is also a significant main
-effect of stress – people with low stress are happier than those with high
-stress. And there is also a significant main effect of commuting behaviour –
-people who cycle are happier, on average, than those who drive to work.
+stress regardless of whether they cycle or drive to work. There is also a
+significant main effect of stress – people with low stress are happier than
+those with high stress. And there is also a significant main effect of
+commuting behaviour – people who cycle are happier, on average, than those who
+drive to work.
 
 .. ----------------------------------------------------------------------------
 

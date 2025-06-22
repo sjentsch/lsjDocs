@@ -41,9 +41,9 @@ student is classified in two different ways: on the basis of their gender and
 on the basis of their school. What we would like to do is analyse the reading
 comprehension scores in terms of *both* of these grouping variables |nominal|.
 The tool for doing so is generically referred to as **factorial ANOVA**.
-However, since we have two grouping variables |nominal|, we sometimes refer to
-the analysis as a two-way ANOVA, in contrast to the one-way ANOVAs that we ran
-in chapter :doc:`../Ch13/Ch13_ANOVA`.
+However, since we have two grouping variables |nominal|, we often refer to the
+analysis as a two-way ANOVA, in contrast to the one-way ANOVAs that we ran in
+chapter :doc:`../Ch13/Ch13_ANOVA`.
 
 .. ----------------------------------------------------------------------------
 

@@ -77,7 +77,7 @@ Now, this output shows a list of the group means for all possible
 combinations of the two factors (e.g., people who received the placebo
 and no therapy, people who received the placebo while getting CBT,
 etc.). It is helpful to organise all these numbers, plus the marginal
-and grand means, into a single table which looks like this:
+and grand means, into a single table:
 
 +--------------+--------------+--------------+--------------+
 |              |   no therapy |          CBT |        total |
@@ -102,14 +102,14 @@ population mean. However, because there are lots of different means,
 I will need to use subscripts to distinguish between them.
 
 Here is how the notation works. Our table is defined in terms of two factors.
-Each row corresponds to a different level of Factor A (in this case ``drug``),
-and each column corresponds to a different level of Factor B (in this case
+Each row corresponds to a different level of factor A (in this case ``drug``),
+and each column corresponds to a different level of factor B (in this case
 ``therapy``). If we let *R* denote the number of rows in the table, and *C*
 denote the number of columns, we can refer to this as an R × C factorial
 ANOVA. In this case *R* = 3 and *C* = 2. We will use lowercase letters to
 refer to specific rows and columns, so µ\ :sub:`rc` refers to the population
-mean associated with the *r*\ th level of Factor A (i.e., row number *r*) and
-the *c*-th level of Factor B (i.e., column number *c*).\ [#]_ So the
+mean associated with the *r*\ th level of factor A (i.e., row number *r*) and
+the *c*-th level of factor B (i.e., column number *c*).\ [#]_ So the
 population means are now written like this:
 
 +--------------+--------------+--------------+--------------+
@@ -163,13 +163,13 @@ matter then we should expect these row means to be different. Formally, we
 write down our null and alternative hypotheses in terms of the *equality of
 marginal means*:
 
-+----------------------------------+---------------------------------------------+
-| Null hypothesis, H\ :sub:`0`:    | row means are the same, i.e., µ\ :sub:`1.`  |
-|                                  | = µ\ :sub:`2.` = µ\ :sub:`3.`               | 
-+----------------------------------+---------------------------------------------+
-| Alternative hypothesis,          | at least one row mean is                    |
-| H\ :sub:`1`:                     | different.                                  |
-+----------------------------------+---------------------------------------------+
++-------------------------+---------------------------------------------+
+| Null hypothesis,        | row means are the same, i.e., µ\ :sub:`1.`  |
+| *H*\ :sub:`0`:          | = µ\ :sub:`2.` = µ\ :sub:`3.`               | 
++-------------------------+---------------------------------------------+
+| Alternative hypothesis, | at least one row mean is different          |
+| *H*\ :sub:`1`:          |                                             |
++-------------------------+---------------------------------------------+
 
 It is worth noting that these are *exactly* the same statistical hypotheses
 that we formed when we ran a one-way ANOVA on these data back in :doc:`the
@@ -192,11 +192,11 @@ drugs our null hypothesis now corresponds to the equality of the column
 means:
 
 +----------------------------------+-----------------------------------+
-| Null hypothesis, H\ :sub:`0`:    | column means are the same, i.e.,  |
+| Null hypothesis, *H*\ :sub:`0`:  | column means are the same, i.e.,  |
 |                                  | µ\ :sub:`.1` = µ\ :sub:`.2`       |
 +----------------------------------+-----------------------------------+
 | Alternative hypothesis,          | column means are different, i.e., |
-| H\ :sub:`1`:                     | µ\ :sub:`.1` ≠ µ\ :sub:`.2`       |
+| *H*\ :sub:`1`:                   | µ\ :sub:`.1` ≠ µ\ :sub:`.2`       |
 +----------------------------------+-----------------------------------+
 
 Running the analysis in jamovi
@@ -204,28 +204,28 @@ Running the analysis in jamovi
 
 The null and alternative hypotheses that I described in the last section should
 seem awfully familiar. They are basically the same as the hypotheses that we
-were testing in our simpler :doc:`one-way ANOVAs <../Ch13/Ch13_ANOVA>`. So you are
-probably expecting that the hypothesis *tests* that are used in factorial ANOVA
-will be essentially the same as the *F*-test from :doc:`the previous chapter
-<../Ch13/Ch13_ANOVA>`. You are expecting to see references to sums of squares
-(SS), mean squares (MS), degrees of freedom (df), and finally an *F*-statistic
-that we can convert into a *p*-value, right? Well, you are absolutely and
-completely right. So much so that I am going to depart from my usual approach.
-Throughout this book, I have generally taken the approach of describing the logic
-(and to an extent the mathematics) that underpins a particular analysis first
-and only then introducing the analysis in jamovi. This time I am going to do it
-the other way around and show you how to do it in jamovi first. The reason for
-doing this is that I want to highlight the similarities between the simpler
-one-Way ANOVA that we discussed in :doc:`the previous chapter
-<../Ch13/Ch13_ANOVA>`, and the more complicated approach that we are going to
-use in this chapter.
+were testing in our simpler :doc:`one-way ANOVAs <../Ch13/Ch13_ANOVA>`. So you
+are probably expecting that the hypothesis *tests* that are used in factorial
+ANOVA will be essentially the same as the *F*-test from :doc:`the previous
+chapter <../Ch13/Ch13_ANOVA>`. You are expecting to see references to sums of
+squares (*SS*), mean squares (*MS*), degrees of freedom (*df*), and finally an
+*F*-statistic that we can convert into a *p*-value, right? Well, you are
+absolutely and completely right. So much so that I am going to depart from my
+usual approach. Throughout this book, I have generally taken the approach of
+describing the logic (and to an extent the mathematics) that underpins a
+particular analysis first and only then introducing the analysis in jamovi.
+This time I am going to do it the other way around and show you how to do it in
+jamovi first. The reason for doing this is that I want to highlight the
+similarities between the simpler one-Way ANOVA that we discussed in :doc:`the
+previous chapter <../Ch13/Ch13_ANOVA>`, and the more complicated approach that
+we are going to use in this chapter.
 
 If the data you are trying to analyse correspond to a balanced factorial design
 then running your analysis of variance is easy. To see how easy it is, let us
 start by reproducing the original analysis from chapter
-:doc:`../Ch13/Ch13_ANOVA`. In case you have forgotten, for that analysis we were
-using only a single factor (i.e., ``drug``) to predict our outcome variable
-(i.e., ``mood.gain``), and we got the results shown in
+:doc:`../Ch13/Ch13_ANOVA`. In case you have forgotten, for that analysis we
+were using only a single factor (i.e., ``drug``) to predict our outcome
+variable (i.e., ``mood.gain``), and we got the results shown in
 :numref:`fig-factorialanova2`.
 
 .. ----------------------------------------------------------------------------
@@ -247,7 +247,8 @@ surprised that all we have to do is add ``therapy`` as a second
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_factorialanova3.*
-   :alt: jamovi factorial ANOVA for ``mood.gain`` with the factors ``drug`` and ``therapy``
+   :alt: jamovi factorial ANOVA for ``mood.gain`` with the factors ``drug`` and
+         ``therapy``
    :name: fig-factorialanova3
 
    jamovi factorial ANOVA for ``mood.gain`` with the two factors ``drug`` and
@@ -256,47 +257,46 @@ surprised that all we have to do is add ``therapy`` as a second
 .. ----------------------------------------------------------------------------
 
 This output is pretty simple to read too. The first row of the table reports a
-between-group sum of squares (SS) value associated with the ``drug`` factor,
+between-group sum of squares (*SS*) value associated with the ``drug`` factor,
 along with a corresponding between-group *df*-value. It also calculates a mean
-square value (MS), an *F*-statistic and a *p*-value. There is also a row
+square value (*MS*), an *F*-statistic and a *p*-value. There is also a row
 corresponding to the ``therapy`` factor and a row corresponding to the
 residuals (i.e., the within groups variation).
 
 Not only are all of the individual quantities pretty familiar, the
 relationships between these different quantities has remained unchanged, just
 like we saw with the original one-way ANOVA. Note that the mean square value
-is calculated by dividing SS by the corresponding *df*. That is, it is still
+is calculated by dividing *SS* by the corresponding *df*. That is, it is still
 true that:
 
-| MS = SS / df
+| *MS* = *SS* / *df*
 
 regardless of whether we are talking about ``drug``, ``therapy`` or the
 residuals. To see this, let us not worry about how the sums of squares values
 are calculated. Instead, let us take it on faith that jamovi has calculated the
-SS values correctly, and try to verify that all the rest of the numbers make
+*SS* values correctly, and try to verify that all the rest of the numbers make
 sense. First, note that for the ``drug`` factor, we divide 3.45 by 2 and end up
 with a mean square value of 1.73. For the ``therapy`` factor, there is only 1
-degree of freedom, so our calculations are even simpler: dividing 0.47 (the SS
-value) by 1 gives us an answer of 0.47 (the MS value).
+degree of freedom, so our calculations are even simpler: dividing 0.47 (the
+*SS* value) by 1 gives us an answer of 0.47 (the *MS* value).
 
-Turning to the *F*-statistics and the *p*-values, notice
-that we have two of each; one corresponding to the ``drug`` factor and
-the other corresponding to the ``therapy`` factor. Regardless of which
-one we are talking about, the *F*-statistic is calculated by
-dividing the mean square value associated with the factor by the mean
-square value associated with the residuals. If we use “A” as shorthand
-notation to refer to the first factor (factor A; in this case ``drug``)
-and “R” as shorthand notation to refer to the residuals, then the
-*F*-statistic associated with factor A is denoted *F*\ :sub:`A`, and
-is calculated as follows:
+Turning to the *F*-statistics and the *p*-values, notice that we have two of
+each; one corresponding to the ``drug`` factor and the other corresponding to
+the ``therapy`` factor. Regardless of which one we are talking about, the
+*F*-statistic is calculated by dividing the mean square value associated with
+the factor by the mean square value associated with the residuals. If we use
+“A” as shorthand notation to refer to the first factor (factor A; in this case
+``drug``) and “R” as shorthand notation to refer to the residuals, then the
+*F*-statistic associated with factor A is denoted *F*\ :sub:`A`, and is
+calculated as follows:
 
-| *F*\ :sub:`A` = MS\ :sub:`A` / MS\ :sub:`R`
+| *F*\ :sub:`A` = *MS*\ :sub:`A` / *MS*\ :sub:`R`
 
 and an equivalent formula exists for factor B (i.e., ``therapy``). Note
 that this use of “R” to refer to residuals is a bit awkward, since we
 also used the letter R to refer to the number of rows in the table, but
 I am only going to use “R” to mean residuals in the context of
-SS\ :sub:`R` and MS\ :sub:`R`, so hopefully this should not be
+*SS*\ :sub:`R` and *MS*\ :sub:`R`, so hopefully this should not be
 confusing. Anyway, to apply this formula to the ``drug`` factor we take
 the mean square of 1.73 and divide it by the residual mean
 square value of 0.07, which gives us an *F*-statistic of 26.15. The
@@ -352,75 +352,70 @@ of familiarity starts to evaporate once you start digging into the
 details. Traditionally, this comforting sensation is replaced by an urge
 to hurl abuse at the authors of statistics textbooks.
 
-Okay, let us start by looking at some of those details. The explanation
-that I gave in the last section illustrates the fact that the hypothesis
-tests for the main effects (of ``drug`` and ``therapy`` in this case) are
-*F*-tests, but what it does not do is show you how the sum of
-squares (SS) values are calculated. Nor does it tell you explicitly how
-to calculate degrees of freedom (*df*-values) though that is a
-simple thing by comparison. Let us assume for now that we have only two
-predictor variables, Factor A and Factor B. If we use *Y* to refer
-to the outcome variable, then we would use *Y*\ :sub:`rci` to refer to
-the outcome associated with the i-th member of group rc
-(i.e., level/row *r* for Factor A and level/column *c* for
-Factor B). Thus, if we use Ȳ to refer to a sample mean, we
-can use the same notation as before to refer to group means, marginal
-means and grand means. That is, Ȳ\ :sub:`rc` is the sample mean
-associated with the *r*\ th level of Factor A and the
-*c*\ th level of Factor B, Ȳ\ :sub:`r.` would be the
-marginal mean for the *r*\ th level of Factor A, Ȳ\ :sub:`.c`
-would be the marginal mean for the *c*\ th
-level of Factor B, and Ȳ\ :sub:`..` is the grand mean. In other
-words, our sample means can be organised into the same table as the
-population means. For our |clinicaltrial|_ data, that table looks like
-this:
+Okay, let us start by looking at some of those details. The explanation that I
+gave in the last section illustrates the fact that the hypothesis tests for the
+main effects (of ``drug`` and ``therapy`` in this case) are *F*-tests, but what
+it does not do is show you how the sum of squares (*SS*) values are calculated.
+Nor does it tell you explicitly how to calculate degrees of freedom
+(*df*-values) though that is a simple thing by comparison. Let us assume for
+now that we have only two predictor variables, factor A and factor B. If we use
+*Y* to refer to the outcome variable, then we would use *Y*\ :sub:`rci` to
+refer to the outcome associated with the i-th member of group rc (i.e., level /
+row *r* for factor A and level / column *c* for factor B). Thus, if we use *Ȳ*
+to refer to a sample mean, we can use the same notation as before to refer to
+group means, marginal means and grand means. That is, *Ȳ*\ :sub:`rc` is the
+sample mean associated with the *r*\ th level of factor A and the *c*\ th level
+of factor B, *Ȳ*\ :sub:`r.` would be the marginal mean for the *r*\ th level of
+factor A, *Ȳ*\ :sub:`.c` would be the marginal mean for the *c*\ th level of
+factor B, and *Ȳ*\ :sub:`..` is the grand mean. In other words, our sample
+means can be organised into the same table as the population means. For our
+|clinicaltrial|_ data, that table looks like this:
 
-+--------------+--------------+--------------+--------------+
-|              | no therapy   | CBT          | total        |
-+==============+==============+==============+==============+
-| **placebo**  | Ȳ\ :sub:`11` | Ȳ\ :sub:`12` | Ȳ\ :sub:`1.` |
-+--------------+--------------+--------------+--------------+
-| **anxifree** | Ȳ\ :sub:`21` | Ȳ\ :sub:`22` | Ȳ\ :sub:`2.` |
-+--------------+--------------+--------------+--------------+
-| **joyzepam** | Ȳ\ :sub:`31` | Ȳ\ :sub:`32` | Ȳ\ :sub:`3.` |
-+--------------+--------------+--------------+--------------+
-| **total**    | Ȳ\ :sub:`.1` | Ȳ\ :sub:`.2` | Ȳ\ :sub:`..` |
-+--------------+--------------+--------------+--------------+
++--------------+----------------+----------------+----------------+
+|              | no therapy     | CBT            | total          |
++==============+================+================+================+
+| **placebo**  | *Ȳ*\ :sub:`11` | *Ȳ*\ :sub:`12` | *Ȳ*\ :sub:`1.` |
++--------------+----------------+----------------+----------------+
+| **anxifree** | *Ȳ*\ :sub:`21` | *Ȳ*\ :sub:`22` | *Ȳ*\ :sub:`2.` |
++--------------+----------------+----------------+----------------+
+| **joyzepam** | *Ȳ*\ :sub:`31` | *Ȳ*\ :sub:`32` | *Ȳ*\ :sub:`3.` |
++--------------+----------------+----------------+----------------+
+| **total**    | *Ȳ*\ :sub:`.1` | *Ȳ*\ :sub:`.2` | *Ȳ*\ :sub:`..` |
++--------------+----------------+----------------+----------------+
 
-And if we look at the sample means that I showed earlier, we have
-Ȳ\ :sub:`11` = 0.30, Ȳ\ :sub:`12` = 0.60 etc. In our |clinicaltrial|_
-data, the ``drug`` factor has 3 levels and the ``therapy`` factor has
-2 levels, and so what we are trying to run is a 3 × 2 factorial ANOVA.
-However, we will be a little more general and say that Factor A (the row
-factor) has *R* levels and Factor B (the column factor) has *C* levels,
-and so what we are runnning here is an R × C factorial ANOVA.
+And if we look at the sample means that I showed earlier, we have 
+*Ȳ*\ :sub:`11` = 0.30, *Ȳ*\ :sub:`12` = 0.60 etc. In our |clinicaltrial|_ data,
+the ``drug`` factor has 3 levels and the ``therapy`` factor has 2 levels, and
+so what we are trying to run is a 3 × 2 factorial ANOVA. However, we will be a
+little more general and say that factor A (the row factor) has *r* levels and
+factor B (the column factor) has *c* levels, and so what we are runnning here
+is an r × c factorial ANOVA.
 
-Now that we have got our notation straight, we can compute the sum of
-squares values for each of the two factors in a relatively familiar way.
-For Factor A, our between group sum of squares is calculated by
-assessing the extent to which the (row) marginal means Ȳ\ :sub:`1.`, Ȳ\ :sub:`2.` etc, are different from the
-grand mean Ȳ\ :sub:`..`\. We do this in the same way that we did
-for one-way ANOVA: calculate the sum of squared difference between the
-Ȳ\ :sub:`i.` values and the Ȳ\ :sub:`..` values.
-Specifically, if there are *N* people in each group, then we
-calculate this
+Now that we have got our notation straight, we can compute the sum of squares
+values for each of the two factors in a relatively familiar way. For factor A,
+our between group sum of squares is calculated by assessing the extent to which
+the (row) marginal means *Ȳ*\ :sub:`1.`, *Ȳ*\ :sub:`2.` etc, are different from
+the grand mean *Ȳ*\ :sub:`..`\. We do this in the same way that we did for
+one-way ANOVA: calculate the sum of squared difference between the
+*Ȳ*\ :sub:`i.` values and the *Ȳ*\ :sub:`..` values. Specifically, if there are
+*N* people in each group, then we calculate this:
 
 .. math:: \mbox{SS}_{A} = (N \times C)  \sum_{r = 1} ^ R  \left( \bar{Y}_{r.} - \bar{Y}_{..} \right) ^ 2
 
 As with one-way ANOVA, the most interesting\ [#]_ part of this formula is the
-(Ȳ\ :sub:`r.` – Ȳ\ :sub:`..`)² bit, which corresponds to the squared deviation
-associated with level *r*. All that this formula does is calculate this squared
-deviation for all *R* levels of the factor, add them up, and then multiply the
-result by *N* × *C*. The reason for this last part is that there are multiple
-cells in our design that have level *r* on Factor A. In fact, there are *C* of
-them, one corresponding to each possible level of Factor B! For instance, in
-our example there are *two* different cells in the design corresponding to the
-``anxifree`` drug: one for people with ``no.therapy`` and one for the ``CBT``
-group. Not only that, within each of these cells there are *N* observations.
-So, if we want to convert our SS value into a quantity that calculates the
-between-groups sum of squares on a “per observation” basis, we have to multiply
-by *N* × *C*. The formula for factor B is of course the same thing, just with
-some subscripts shuffled around
+(*Ȳ*\ :sub:`r.` – *Ȳ*\ :sub:`..`)² bit, which corresponds to the squared
+deviation associated with level *r*. All that this formula does is calculate
+this squared deviation for all *R* levels of the factor, add them up, and then
+multiply the result by *N* × *C*. The reason for this last part is that there
+are multiple cells in our design that have level *r* on factor A. In fact,
+there are *C* of them, one corresponding to each possible level of factor B!
+For instance, in our example there are *two* different cells in the design
+corresponding to the ``anxifree`` drug: one for people with ``no.therapy`` and
+one for the ``CBT`` group. Not only that, within each of these cells there are
+*N* observations. So, if we want to convert our *SS* value into a quantity that
+calculates the between-groups sum of squares on a “per observation” basis, we
+have to multiply by *N* × *C*. The formula for factor B is of course the same
+thing, just with some subscripts shuffled around:
 
 .. math:: \mbox{SS}_{B} = (N \times R) \sum_{c = 1} ^ C \left( \bar{Y}_{.c} - \bar{Y}_{..} \right) ^ 2
 
@@ -433,7 +428,7 @@ different types of therapy. Or, to put it another way, there are 3 · 2 = 6
 people who received any particular drug. When we do these calculations in a
 spreadsheet programme, we get a value of 3.45 for the sum of squares associated
 with the main effect of ``drug``. Not surprisingly, this is the same number
-that you get when you look up the SS value for the ``drug`` factor in the ANOVA
+that you get when you look up the *SS* value for the ``drug`` factor in the ANOVA
 table that I presented earlier, in :numref:`fig-factorialanova3`.
 
 We can repeat the same kind of calculation for the effect of ``therapy``. Again,
@@ -444,61 +439,61 @@ in this case gives us a value of 0.47 for the sum of squares associated with the
 main effect of ``therapy``. Once again, we are not surprised to see that our
 calculations are identical to the ANOVA output in :numref:`fig-factorialanova3`.
 
-So that is how you calculate the SS values for the two main effects. These SS
-values are analogous to the between-group sum of squares values that we
+So that is how you calculate the *SS* values for the two main effects. These
+*SS* values are analogous to the between-group sum of squares values that we
 calculated when doing the one-way ANOVA in :doc:`the previous chapter
 <../Ch13/Ch13_ANOVA>`. However, it is not a good idea to think of them
-as between-groups SS values anymore, just because we have two different
+as between-groups *SS* values anymore, just because we have two different
 grouping variables and it is easy to get confused. In order to construct an
 *F*-test, however, we also need to calculate the within-groups sum of squares.
 In keeping with the terminology that we used in chapter
 :doc:`../Ch12/Ch12_Regression` and the terminology that jamovi uses when
-printing out the ANOVA table, I will start referring to the within-groups SS
-value as the *residual* sum of squares SS\ :sub:`R`.
+printing out the ANOVA table, I will start referring to the within-groups *SS*
+value as the *residual* sum of squares *SS*\ :sub:`R`.
 
-The easiest way to think about the residual SS values in this context, I think,
+The easiest way to think about the residual *SS* values in this context, I think,
 is to think of it as the leftover variation in the outcome variable after you
 take into account the differences in the marginal means (i.e., after you remove
-SS\ :sub:`A` and SS\ :sub:`B`). What I mean by that is we can start by
-calculating the total sum of squares, which I will label SS\ :sub:`T`. The
+*SS*\ :sub:`A` and *SS*\ :sub:`B`). What I mean by that is we can start by
+calculating the total sum of squares, which I will label *SS*\ :sub:`T`. The
 formula for this is pretty much the same as it was for one-way ANOVA. We take
 the difference between each observation *Y*\ :sub:`rci` and the grand mean
-Ȳ\ :sub:`..`, square the differences, and add them all up
+*Ȳ*\ :sub:`..`, square the differences, and add them all up
 
 .. math:: \mbox{SS}_T = \sum_{r = 1} ^ R \sum_{c = 1} ^ C \sum_{i = 1} ^ N \left( Y_{rci} - \bar{Y}_{..}\right) ^ 2
 
 The “triple summation” here looks more complicated than it is. In the first two
-summations, we are summing across all levels of Factor A (i.e., over all
-possible rows *r* in our table) and across all levels of Factor B (i.e., all
+summations, we are summing across all levels of factor A (i.e., over all
+possible rows *r* in our table) and across all levels of factor B (i.e., all
 possible columns *c*). Each rc-combination corresponds to a single group and
 each group contains *N* people, so we have to sum across all those people (i.e.,
 all i values) too. In other words, all we are doing here is summing across all
 observations in the data set (i.e., all possible rci-combinations).
 
 At this point, we know the total variability of the outcome variable
-SS\ :sub:`T`, and we know how much of that variability can be attributed to
-Factor A (SS\ :sub:`A`) and how much of it can be attributed to Factor B
-(SS\ :sub:`B`). The residual sum of squares is thus defined to be the
+*SS*\ :sub:`T`, and we know how much of that variability can be attributed to
+factor A (*SS*\ :sub:`A`) and how much of it can be attributed to factor B
+(*SS*\ :sub:`B`). The residual sum of squares is thus defined to be the
 variability in *Y* that *can not* be attributed to either of our two factors.
 In other words 
 
-| SS\ :sub:`R` = SS\ :sub:`T` - (SS\ :sub:`A` + SS\ :sub:`B`)
+| *SS*\ :sub:`R` = *SS*\ :sub:`T` - (*SS*\ :sub:`A` + *SS*\ :sub:`B`)
 
 Of course, there is a formula that you can use to calculate the residual
-SS (SS\ :sub:`R`) directly, but I think that it makes more conceptual sense
+*SS* (*SS*\ :sub:`R`) directly, but I think that it makes more conceptual sense
 to think of it like this. The whole point of calling it a residual is that
 it is the leftover variation, and the formula above makes that clear. I should
 also note that, in keeping with the terminology used in the regression
-chapter, it is commonplace to refer to SS\ :sub:`A` + SS\ :sub:`B`
+chapter, it is commonplace to refer to *SS*\ :sub:`A` + *SS*\ :sub:`B`
 as the variance attributable to the “ANOVA model”, denoted
-SS\ :sub:`M`, and so we often say that the total sum of squares is
+*SS*\ :sub:`M`, and so we often say that the total sum of squares is
 equal to the model sum of squares plus the residual sum of squares.
 Later on in this chapter we will see that this is not just a surface
 similarity: ANOVA and regression are actually the same thing under the
 hood.
 
 In any case, it is probably worth taking a moment to check that we can
-calculate SS\ :sub:`R` using this formula and verify that we do obtain
+calculate *SS*\ :sub:`R` using this formula and verify that we do obtain
 the same answer that jamovi produces in its ANOVA table. The calculations
 are pretty straightforward when done using computed variables in jamovi.
 We download and open the |clinicaltrial|_ data set and define three
@@ -509,24 +504,24 @@ group_by = drug)) ^ 2`` as formula, and (3) ``sq_res_B`` with
 Once we created those three variables, we calculate the sum of squares using
 ``Descriptives`` → ``Descriptive Statistics``, then moving ``sq_res_T``, 
 ``sq_res_A`` and ``sq_res_B`` to the ``Variables`` box, and finally selecting
-``Sum`` from the ``Statistics`` drop-down menu. SS\ :sub:`T` (``sq_res_T``)
-has a value of **4.845**, SS\ :sub:`A` (``sq_res_A``) a value of **3.453**,
-and SS\ :sub:`B` (``sq_res_B``) a value of **0.467**. Using these three values,
-we can calculate SS\ :sub:`R` using the formula above.
+``Sum`` from the ``Statistics`` drop-down menu. *SS*\ :sub:`T` (``sq_res_T``)
+has a value of **4.845**, *SS*\ :sub:`A` (``sq_res_A``) a value of **3.453**,
+and *SS*\ :sub:`B` (``sq_res_B``) a value of **0.467**. Using these three values,
+we can calculate *SS*\ :sub:`R` using the formula above.
 
-| SS\ :sub:`R` = 4.845 - (3.453 + 0.467)
-| SS\ :sub:`R` = 0.924
+| *SS*\ :sub:`R` = 4.845 - (3.453 + 0.467)
+| *SS*\ :sub:`R` = 0.924
 
-Alternatively, we can create another computed variable with the name ``SS_R`` and
-the formula ``VSUM(sq_res_T) - (VSUM(sq_res_A) + VSUM(sq_res_B))``.
+Alternatively, we can create another computed variable with the name ``SS_R``
+and the formula ``VSUM(sq_res_T) - (VSUM(sq_res_A) + VSUM(sq_res_B))``.
 
 What are our degrees of freedom?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The degrees of freedom are calculated in much the same way as for one-way
 ANOVA. For any given factor, the degrees of freedom is equal to the number of
-levels minus 1 (i.e., R - 1 for the row variable Factor A, and C - 1 for the
-column variable Factor B). So, for the ``drug`` factor we obtain *df* = 2, and
+levels minus 1 (i.e., R - 1 for the row variable factor A, and C - 1 for the
+column variable factor B). So, for the ``drug`` factor we obtain *df* = 2, and
 for the ``therapy`` factor we obtain *df* = 1. Later on, when we discuss the
 interpretation of ANOVA as a regression model (see section :doc:`ANOVA as a
 linear model <Ch14_ANOVA2_07>`), I will give a clearer statement of how we arrive
@@ -545,15 +540,15 @@ to *N* - *R* - *C* + 1.
 Using the degrees of freedom and the square sums we calculated above, we can
 calculate the following *F*-values for the factors A and B.
 
-| F\ :sub:`A` = (SS\ :sub:`A` / SS\ :sub:`A`) / (SS\ :sub:`R` / SS\ :sub:`R`)
-| F\ :sub:`A` = (3.453 / 2) / (0.924 / 14)
-| F\ :sub:`A` = 1.727 / 0.066
-| F\ :sub:`A` = 26.149
+| *F*\ :sub:`A` = (*SS*\ :sub:`A` / *df*\ :sub:`A`) / (*SS*\ :sub:`R` / *df*\ :sub:`R`)
+| *F*\ :sub:`A` = (3.453 / 2) / (0.924 / 14)
+| *F*\ :sub:`A` = 1.727 / 0.066
+| *F*\ :sub:`A` = 26.149
 
-| F\ :sub:`B` = (SS\ :sub:`B` / SS\ :sub:`B`) / (SS\ :sub:`R` / SS\ :sub:`R`)
-| F\ :sub:`B` = (0.467 / 1) / (0.924 / 14)
-| F\ :sub:`B` = 0.467 / 0.066
-| F\ :sub:`B` = 7.076
+| *F*\ :sub:`B` = (*SS*\ :sub:`B` / *df*\ :sub:`B`) / (*SS*\ :sub:`R` / *df*\ :sub:`R`)
+| *F*\ :sub:`B` = (0.467 / 1) / (0.924 / 14)
+| *F*\ :sub:`B` = 0.467 / 0.066
+| *F*\ :sub:`B` = 7.076
 
 Again, we can also create two new computed variables, the first with the name
 ``F_A`` and the formula ``(VSUM(sq_res_A) / 2) / (SS_R / 14)``, and the second
@@ -610,10 +605,10 @@ that actually make a difference!
    :name: fig-maineffects
 
    The four different outcomes for a 2 × 2 ANOVA when no interactions are
-   present. In the top-left panel, we see a main effect of Factor A and no
-   effect of Factor B. The top-right panel shows a main effect of Factor B but
-   no effect of Factor A. The bottom-left panel shows main effects of both
-   Factor A and Factor B. Finally, the bottom-right panel shows if neither
+   present. In the top-left panel, we see a main effect of factor A and no
+   effect of factor B. The top-right panel shows a main effect of factor B but
+   no effect of factor A. The bottom-left panel shows main effects of both
+   factor A and factor B. Finally, the bottom-right panel shows if neither
    factor has an effect.
    
 .. ----------------------------------------------------------------------------
@@ -624,8 +619,8 @@ What kinds of outcomes does this analysis capture?
 The ANOVA model that we have been talking about so far covers a range of
 different patterns that we might observe in our data. For instance, in a
 two-way ANOVA design there are four possibilities. An example of each of these
-four possibilities is plotted in :numref:`fig-maineffects`: (1) only Factor A
-matters (top-left), (2) only Factor B matters (top-right), (3) both A and B
+four possibilities is plotted in :numref:`fig-maineffects`: (1) only factor A
+matters (top-left), (2) only factor B matters (top-right), (3) both A and B
 matter (bottom-left), and (4) neither A nor B matters (bottom-right).
 
 ------
