@@ -3,41 +3,38 @@
 Why be a Bayesian?
 ------------------
 
-Up to this point I have focused exclusively on the logic underpinning
-Bayesian statistics. We have talked about the idea of “probability as a
-degree of belief”, and what it implies about how a rational agent should
-reason about the world. The question that you have to answer for
-yourself is this: how do *you* want to do your statistics? Do you want
-to be an orthodox statistician, relying on sampling distributions and
-*p*-values to guide your decisions? Or do you want to be a
-Bayesian, relying on things like prior beliefs, Bayes factors and the
-rules for rational belief revision? And to be perfectly honest, I can not
-answer this question for you. Ultimately it depends on what you think is
-right. It is your call and your call alone. That being said, I can talk a
-little about why *I* prefer the Bayesian approach.
+Up to this point I have focused exclusively on the logic underpinning Bayesian
+statistics. We have talked about the idea of “probability as a degree of
+belief”, and what it implies about how a rational agent should reason about the
+world. The question that you have to answer for yourself is this: how do *you*
+want to do your statistics? Do you want to be an orthodox statistician, relying
+on sampling distributions and *p*-values to guide your decisions? Or do you
+want to be a Bayesian, relying on things like prior beliefs, Bayes factors and
+the rules for rational belief revision? And to be perfectly honest, I can not
+answer this question for you. Ultimately it depends on what you think is right.
+It is your call and your call alone. That being said, I can talk a little about
+why *I* prefer the Bayesian approach.
 
 Statistics that mean what you think they mean
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. epigraph::
 
-   | *You keep using that word. I do not think it means what you think
-     it means*
+   | *You keep using that word. I do not think it means what you think it
+     means*
      
-   -- `Inigo Montoya, The Princess Bride
-   <https://www.imdb.com/title/tt0093779/quotes>`__\ [#]_
+   -- Inigo Montoya, The Princess Bride\ [#]_
 
 To me, one of the biggest advantages to the Bayesian approach is that it
-answers the right questions. Within the Bayesian framework, it is
-perfectly sensible and allowable to refer to “the probability that a
-hypothesis is true”. You can even try to calculate this probability.
-Ultimately, is not that what you *want* your statistical tests to tell
-you? To an actual human being, this would seem to be the whole *point*
-of doing statistics, i.e., to determine what is true and what is not. Any
-time that you are not exactly sure about what the truth is, you should
-use the language of probability theory to say things like “there is an
-80\% chance that Theory A is true, but a 20\% chance that Theory B is true
-instead”.
+answers the right questions. Within the Bayesian framework, it is perfectly
+sensible and allowable to refer to “the probability that a hypothesis is true”.
+You can even try to calculate this probability. Ultimately, is not that what
+you *want* your statistical tests to tell you? To an actual human being, this
+would seem to be the whole *point* of doing statistics, i.e., to determine what
+is true and what is not. Any time that you are not exactly sure about what the
+truth is, you should use the language of probability theory to say things like
+“there is an 80\% chance that Theory A is true, but a 20\% chance that Theory B
+is true instead”.
 
 This seems so obvious to a human, yet it is explicitly forbidden within the
 orthodox framework. To a frequentist, such statements are a nonsense because
@@ -54,59 +51,54 @@ me that most actual humans think that “the probability that the hypothesis is
 true” is not only meaningful, it is the thing we care *most* about. It is such
 an appealing idea that even trained statisticians fall prey to the mistake of
 trying to interpret a *p*-value this way. For example, here is a quote from an
-`official Newspoll report in 2013
-<https://about.abc.net.au/reports-publications/appreciation-survey-summary-report-2013>`__,
-explaining how to interpret their (frequentist) data analysis:
+official Newspoll report in 2013,\ [#]_ explaining how to interpret their
+(frequentist) data analysis:
 
-   Throughout the report, where relevant, statistically significant
-   changes have been noted. All significance tests have been based on
-   the 95 percent level of confidence. **This means that if a change is
-   noted as being statistically significant, there is a 95 percent
-   probability that a real change has occurred**, and is not simply due
-   to chance variation. (emphasis added)
+   Throughout the report, where relevant, statistically significant changes
+   have been noted. All significance tests have been based on the 95 percent
+   level of confidence. **This means that if a change is noted as being 
+   statistically significant, there is a 95 percent probability that a real 
+   change has occurred**, and is not simply due to chance variation. (emphasis 
+   added)
 
-Nope! That is *not* what *p* < 0.05 means. That is *not* what 95\%
-confidence means to a frequentist statistician. The bolded section is
-just plain wrong. Orthodox methods cannot tell you that “there is a 95\%
-chance that a real change has occurred”, because this is not the kind of
-event to which frequentist probabilities may be assigned. To an
-ideological frequentist, this sentence should be meaningless. Even if
-you are a more pragmatic frequentist, it is still the wrong definition of
-a *p*-value. It is simply not an allowed or correct thing to say
-if you want to rely on orthodox statistical tools.
+Nope! That is *not* what *p* < 0.05 means. That is *not* what 95\% confidence
+means to a frequentist statistician. The bolded section is just plain wrong.
+Orthodox methods cannot tell you that “there is a 95\% chance that a real
+change has occurred”, because this is not the kind of event to which
+frequentist probabilities may be assigned. To an ideological frequentist, this
+sentence should be meaningless. Even if you are a more pragmatic frequentist,
+it is still the wrong definition of a *p*-value. It is simply not an allowed or
+correct thing to say if you want to rely on orthodox statistical tools.
 
 On the other hand, let us suppose you are a Bayesian. Although the bolded
-passage is the wrong definition of a *p*-value, it is pretty much
-exactly what a Bayesian means when they say that the posterior
-probability of the alternative hypothesis is greater than 95\%. And
-here is the thing. If the Bayesian posterior is actually the thing you
-*want* to report, why are you even trying to use orthodox methods? If
-you want to make Bayesian claims, all you have to do is be a Bayesian
-and use Bayesian tools.
+passage is the wrong definition of a *p*-value, it is pretty much exactly what
+a Bayesian means when they say that the posterior probability of the
+alternative hypothesis is greater than 95\%. And here is the thing. If the
+Bayesian posterior is actually the thing you *want* to report, why are you even
+trying to use orthodox methods? If you want to make Bayesian claims, all you
+have to do is be a Bayesian and use Bayesian tools.
 
 Speaking for myself, I found this to be the most liberating thing about
-switching to the Bayesian view. Once you have made the jump, you no longer
-have to wrap your head around counter-intuitive definitions of
-*p*-values. You do not have to bother remembering why you can not say
-that you are 95\% confident that the true mean lies within some interval.
-All you have to do is be honest about what you believed before you ran
-the study and then report what you learned from doing it. Sounds nice,
-does not it? To me, this is the big promise of the Bayesian approach. You
-do the analysis you really want to do, and express what you really
-believe the data are telling you.
+switching to the Bayesian view. Once you have made the jump, you no longer have
+to wrap your head around counter-intuitive definitions of *p*-values. You do
+not have to bother remembering why you can not say that you are 95\% confident
+that the true mean lies within some interval. All you have to do is be honest
+about what you believed before you ran the study and then report what you
+learned from doing it. Sounds nice, does it not? To me, this is the big promise
+of the Bayesian approach. You do the analysis you really want to do, and
+express what you really believe the data are telling you.
 
 Evidentiary standards you can believe
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. epigraph::
 
-   | If [*p*] is below 0.02 it is strongly indicated that the
-     [null] hypothesis fails to account for the whole of the facts. We
-     shall not often be astray if we draw a conventional line at 0.05 and
-     consider that [smaller values of *p*] indicate a real
-     discrepancy.
+   | If [*p*] is below 0.02 it is strongly indicated that the [null] hypothesis
+     fails to account for the whole of the facts. We shall not often be astray 
+     if we draw a conventional line at 0.05 and consider that [smaller values 
+     of *p*] indicate a real discrepancy.
      
-   -- :ref:`Sir Ronald Fisher (1925) <Fisher_1925>`
+   -- :ref:`Sir Ronald Fisher (1925, p. 79) <Fisher_1925>`
 
 Consider the quote above by Sir Ronald Fisher, one of the founders of what has
 become the orthodox approach to statistics. If anyone has ever been entitled to
@@ -153,41 +145,40 @@ The *p*-value is a lie.
 
 
 Okay, at this point you might be thinking that the real problem is not with
-orthodox statistics, just the *p* < 0.05 standard. In one sense, that is
-true. The recommendation that :ref:`Johnson (2013) <Johnson_2013>` gives is
-not that “everyone must be a Bayesian now”. Instead, the suggestion is that
-it would be wiser to shift the conventional standard to something like a *p*
-< 0.01 level. That is not an unreasonable view to take, but in my view the
-problem is a little more severe than that. In my opinion, there is a fairly big
-problem built into the way most (but not all) orthodox hypothesis tests are
+orthodox statistics, just the *p* < 0.05 standard. In one sense, that is true.
+The recommendation that :ref:`Johnson (2013) <Johnson_2013>` gives is not that
+“everyone must be a Bayesian now”. Instead, the suggestion is that it would be
+wiser to shift the conventional standard to something like a *p* < 0.01 level.
+That is not an unreasonable view to take, but in my view the problem is a
+little more severe than that. In my opinion, there is a fairly big problem
+built into the way most (but not all) orthodox hypothesis tests are
 constructed. They are grossly naive about how humans actually do research, and
 because of this most *p*-values are wrong.
 
-Sounds like an absurd claim, right? Well, consider the following
-scenario. You have come up with a really exciting research hypothesis and
-you design a study to test it. You are very diligent, so you run a power
-analysis to work out what your sample size should be, and you run the
-study. You run your hypothesis test and out pops a *p*-value of
-0.072. Really bloody annoying, right?
+Sounds like an absurd claim, right? Well, consider the following scenario. You
+have come up with a really exciting research hypothesis and you design a study
+to test it. You are very diligent, so you run a power analysis to work out what
+your sample size should be, and you run the study. You run your hypothesis test
+and out pops a *p*-value of 0.072. Really bloody annoying, right?
 
 What should you do? Here are some possibilities:
 
-#. You conclude that there is no effect and try to publish it as a result
-   where the null hypothesis had to be retained
+#. You conclude that there is no effect and try to publish it as a result where
+   the null hypothesis had to be retained.
 
 #. You guess that there might be an effect and try to publish it as a
-   “borderline significant” result
+   “borderline significant” result.
 
-#. You give up and try a new study
+#. You give up and try a new study.
 
 #. You collect some more data to see if the *p*-value goes up or (preferably!)
-   drops below the “magic” criterion of *p* < 0.05
+   drops below the “magic” criterion of *p* < 0.05.
 
-Which would *you* choose? Before reading any further, I urge you to take
-some time to think about it. Be honest with yourself. But do not stress
-about it too much, because you are screwed no matter what you choose.
-Based on my own experiences as an author, reviewer and editor, as well
-as stories I have heard from others, here is what will happen in each case:
+Which would *you* choose? Before reading any further, I urge you to take some
+time to think about it. Be honest with yourself. But do not stress about it too
+much, because you are screwed no matter what you choose. Based on my own
+experiences as an author, reviewer and editor, as well as stories I have heard
+from others, here is what will happen in each case:
 
 -  Let us start with option 1. If you try to publish it as a result where the
    null hypothesis had to be retained, the paper will struggle to be published.
@@ -199,7 +190,7 @@ as stories I have heard from others, here is what will happen in each case:
    not. One or two reviewers might even be on your side, but you will be
    fighting an uphill battle to get it through.
 
--  Okay, let us think about option number 2. Suppose you try to publish it as a
+-  Now, let us think about option number 2. Suppose you try to publish it as a
    borderline significant result. Some reviewers will claim that it is a result
    where null hypothesis should have been retained and that should not be
    published. Others will claim that the evidence is ambiguous, and that you
@@ -223,7 +214,7 @@ as stories I have heard from others, here is what will happen in each case:
    will have lied.
 
 Wait, what? How can that last part be true? I mean, it sounds like a perfectly
-reasonable strategy does not it? You collected some data, the results were not
+reasonable strategy does it not? You collected some data, the results were not
 conclusive, so now what you want to do is collect more data until the the
 results *are* conclusive. What is wrong with that?
 
@@ -264,8 +255,8 @@ of thing, not in the form I described back in chapter
 :doc:`../Ch09/Ch09_HypothesisTesting`. If you are the kind of person who would
 choose to “collect more data” in real life, it implies that you are *not*
 making decisions in accordance with the rules of null hypothesis testing. Even
-if you happen to arrive at the same decision as the hypothesis test, you
-are not following the decision *process* it implies, and it is this failure to
+if you happen to arrive at the same decision as the hypothesis test, you are
+not following the decision *process* it implies, and it is this failure to
 follow the process that is causing the problem (a `related problem
 <https://xkcd.com/1478>`__). Your *p*-values are a lie.
 
@@ -302,24 +293,23 @@ at your data to see if you have gotten a significant result, all bets are off.
    
 .. ----------------------------------------------------------------------------
 
-So how bad is it? The answer is shown as the solid black line in
-:numref:`fig-adapt`, and it is *astoundingly* bad. If you peek at your data
-after every single observation, there is a 49\% chance that you will make a
-Type I error. That is, um, quite a bit bigger than the 5\% that it is supposed
-to be. By way of comparison, imagine that you had used the following strategy.
-Start collecting data. Every single time an observation arrives, run a
-:doc:`Ch16_Bayes_5` and look at the Bayes factor. I will assume that
-:ref:`Johnson (2013) <Johnson_2013>` is right, and I will treat a Bayes factor
-of 3:1 as roughly equivalent to a *p*-value of 0.05.\ [#]_ This time around,
-our trigger happy researcher uses the following procedure. If the Bayes factor
-is 3:1 or more in favour of the null hypothesis, stop the experiment and retain
-the null hypothesis. If it is 3:1 or more in favour of the alternative, stop
-the experiment and reject the null hypothesis. Otherwise continue testing. Now,
-just like last time, let us assume that the null hypothesis is true. What
-happens? As it happens, I ran the simulations for this scenario too, and the
-results are shown as the dashed line in :numref:`fig-adapt`. It turns out that
-the Type I error rate is much much lower than the 49\% rate that we were
-getting by using the orthodox *t*-test.
+So how bad is it? The answer is shown as the solid line in :numref:`fig-adapt`,
+and it is *astoundingly* bad. If you peek at your data after every single
+observation, there is a 52\% chance that you will make a Type I error. That is,
+much bit bigger than the 5\% that it is supposed to be. By way of comparison,
+imagine that you had used the following strategy. Start collecting data. Every
+single time an observation arrives, run a :doc:`Ch16_Bayes_5` and look at the
+Bayes factor. I will assume that :ref:`Johnson (2013) <Johnson_2013>` is right,
+and I will treat a Bayes factor of 3:1 as roughly equivalent to a *p*-value of
+0.05.\ [#]_ This time around, our trigger happy researcher uses the following
+procedure. If the Bayes factor is 3:1 or more in favour of the null hypothesis,
+stop the experiment and retain the null hypothesis. If it is 3:1 or more in
+favour of the alternative, stop the experiment and reject the null hypothesis.
+Otherwise continue testing. Now, just like last time, let us assume that the
+null hypothesis is true. What happens? As it happens, I ran the simulations for
+this scenario too, and the results are shown as the dashed line in
+:numref:`fig-adapt`. It turns out that the Type I error rate is much much lower
+than the 52\% rate that we were getting by using the orthodox *t*-test.
 
 In some ways, this is remarkable. The entire *point* of orthodox null
 hypothesis testing is to control the Type I error rate. Bayesian methods are
@@ -335,7 +325,7 @@ Is it really this bad?
 The example I gave in the previous section is a pretty extreme situation. In
 real life, people do not run hypothesis tests every time a new observation
 arrives. So it is not fair to say that the *p* < 0.05 threshold “really”
-corresponds to a 49\% Type I error rate (i.e., *p* = 0.49). But the fact
+corresponds to a 52\% Type I error rate (i.e., *p* = 0.52). But the fact
 remains that if you want your *p*-values to be honest then you either have to
 switch to a completely different way of doing hypothesis tests or enforce a
 strict rule of *no peeking*. You are *not* allowed to use the data to decide
@@ -356,8 +346,8 @@ but it seems sort of pointless now, right? The result is significant with a
 sample size of *N* = 50, so would not it be wasteful and inefficient to keep
 collecting data? Are you not tempted to stop? Just a little? Well, keep in mind
 that if you do, your Type I error rate at *p* < 0.05 just ballooned out to 8\%.
-When you report *p* < 0.05 in your paper, what you are *really* saying is
-*p* < 0.08. That is how bad the consequences of “just one peek” can be.
+When you report *p* < 0.05 in your paper, what you are *really* saying is *p* <
+\0.08. That is how bad the consequences of “just one peek” can be.
 
 Now consider this. The scientific literature is filled with *t*-tests, ANOVAs,
 regressions and χ²-tests. When I wrote this book I did not pick these tests
@@ -394,7 +384,7 @@ is not a theory worth having. In essence, my point is this:
 
    | *Good laws have their origins in bad morals.*
    
-   -- `Ambrosius Macrobius <https://www.quotes.net/quote/20857>`__
+   -- `Ambrosius Macrobius\ [#]_
 
 
 Good rules for statistical testing have to acknowledge human frailty. None of
@@ -408,8 +398,12 @@ Orthodox null hypothesis testing does not.\ [#]_
    I should note in passing that I am not the first person to use this quote to
    complain about frequentist methods. Rich Morey and colleagues had the idea
    first. I am shamelessly stealing it because it is such an awesome pull quote
-   to use in this context and I refuse to miss any opportunity to quote *The
-   Princess Bride*.
+   to use in this context and I refuse to miss any opportunity to quote `The
+   Princess Bride <https://www.imdb.com/title/tt0093779/quotes>`__.
+
+.. [#]
+   `https://about.abc.net.au/reports-publications/appreciation-survey-summary-report-2013
+   <https://about.abc.net.au/reports-publications/appreciation-survey-summary-report-2013>`__
 
 .. [#]
    In the interests of being completely honest, I should acknowledge that not
@@ -430,6 +424,9 @@ Orthodox null hypothesis testing does not.\ [#]_
    in that range. I did so in order to be charitable to the *p*-value. If I had
    chosen a 5:1 Bayes factor instead, the results would look even better for
    the Bayesian approach.
+
+.. [#]
+   `https://www.quotes.net/quote/20857 <https://www.quotes.net/quote/20857>`__
 
 .. [#]
    Okay, I just *know* that some knowledgeable frequentists will read this and

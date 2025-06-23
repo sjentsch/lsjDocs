@@ -4,31 +4,30 @@ Bayesian hypothesis tests
 -------------------------
 
 In chapter :doc:`../Ch09/Ch09_HypothesisTesting`, I described the orthodox
-approach to hypothesis testing. It took an entire chapter to describe,
-because null hypothesis testing is a very elaborate contraption that people
-find very hard to make sense of. In contrast, the Bayesian approach to
-hypothesis testing is incredibly simple. Let us pick a setting that is closely
-analogous to the orthodox scenario. There are two hypotheses that we want to
-compare, a null hypothesis *h*\ :sub:`0` and an alternative hypothesis
-*h*\ :sub:`1`. Prior to running the experiment we have some beliefs *P*\ (h)
-about which hypotheses are true. We run an experiment and obtain data *d*.
-Unlike frequentist statistics, Bayesian statistics does allow us to talk about
-the probability that the null hypothesis is true. Better yet, it allows us to
-calculate the **posterior probability of the null hypothesis**, using Bayes’
-rule:
+approach to hypothesis testing. It took an entire chapter to describe, because
+null hypothesis testing is a very elaborate contraption that people find very
+hard to make sense of. In contrast, the Bayesian approach to hypothesis testing
+is incredibly simple. Let us pick a setting that is closely analogous to the
+orthodox scenario. There are two hypotheses that we want to compare, a null
+hypothesis *h*\ :sub:`0` and an alternative hypothesis *h*\ :sub:`1`. Prior to
+running the experiment we have some beliefs *P*\ (h) about which hypotheses are
+true. We run an experiment and obtain data *d*. Unlike frequentist statistics,
+Bayesian statistics does allow us to talk about the probability that the null
+hypothesis is true. Better yet, it allows us to calculate the **posterior
+probability of the null hypothesis**, using Bayes’ rule:
 
 .. math:: P(h_0 | d) = \frac{P(d|h_0) P(h_0)}{P(d)}
 
 This formula tells us exactly how much belief we should have in the null
-hypothesis after having observed the data *d*. Similarly, we can
-work out how much belief to place in the alternative hypothesis using
-essentially the same equation. All we do is change the subscript:
+hypothesis after having observed the data *d*. Similarly, we can work out how
+much belief to place in the alternative hypothesis using essentially the same
+equation. All we do is change the subscript:
 
 .. math:: P(h_1 | d) = \frac{P(d|h_1) P(h_1)}{P(d)}
 
-It is all so simple that I feel like an idiot even bothering to write
-these equations down, since all I am doing is copying Bayes rule from the
-previous section.\ [#]_
+It is all so simple that I feel like an idiot even bothering to write these
+equations down, since all I am doing is copying Bayes rule from the previous
+section.\ [#]_
 
 The Bayes factor
 ~~~~~~~~~~~~~~~~
@@ -36,27 +35,26 @@ The Bayes factor
 In practice, most Bayesian data analysts tend not to talk in terms of the raw
 posterior probabilities *P*\ (*h*\ :sub:`0`\|*d*) and *P*\ (*h*\ :sub:`1`\|*d*).
 Instead, we tend to talk in terms of the **posterior odds** ratio. Think of it
-like betting. Suppose, for instance, the posterior probability of
-the null hypothesis is 25\%, and the posterior probability of the
-alternative is 75\%. The alternative hypothesis is three times as
-probable as the null, so we say that the *odds* are 3:1 in favour of the
-alternative. Mathematically, all we have to do to calculate the
-posterior odds is divide one posterior probability by the other
+like betting. Suppose, for instance, the posterior probability of the null
+hypothesis is 25\%, and the posterior probability of the alternative is 75\%.
+The alternative hypothesis is three times as probable as the null, so we say
+that the *odds* are 3:1 in favour of the alternative. Mathematically, all we
+have to do to calculate the posterior odds is divide one posterior probability
+by the other:
 
 .. math:: \frac{P(h_1 | d)}{P(h_0 | d)} = \frac{0.75}{0.25} = 3
 
-Or, to write the same thing in terms of the equations above
+Or, to write the same thing in terms of the equations above:
 
 .. math:: \frac{P(h_1 | d)}{P(h_0 | d)} = \frac{P(d|h_1)}{P(d|h_0)} \times \frac{P(h_1)}{P(h_0)}
 
-Actually, this equation is worth expanding on. There are three different
-terms here that you should know. On the left hand side, we have the
-posterior odds, which tells you what you believe about the relative
-plausibilty of the null hypothesis and the alternative hypothesis
-*after* seeing the data. On the right-hand side, we have the **prior
-odds**, which indicates what you thought *before* seeing the data. In
-the middle, we have the **Bayes factor**, which describes the amount of
-evidence provided by the data
+Actually, this equation is worth expanding on. There are three different terms
+here that you should know. On the left-hand side, we have the posterior odds,
+which tells you what you believe about the relative plausibilty of the null
+hypothesis and the alternative hypothesis *after* seeing the data. On the
+right-hand side, we have the **prior odds**, which indicates what you thought
+*before* seeing the data. In the middle, we have the **Bayes factor**, which
+describes the amount of evidence provided by the data:
 
 .. math::
 
@@ -66,22 +64,21 @@ evidence provided by the data
    \mbox{Posterior odds}         & ~ & \mbox{Bayes factor}                    & ~      & \mbox{Prior odds}                  \\
    \end{array}
 
-The Bayes factor (sometimes abbreviated as **BF**) has a special place
-in Bayesian hypothesis testing, because it serves a similar role to the
-*p*-value in orthodox hypothesis testing. The Bayes factor
-quantifies the strength of evidence provided by the data, and as such it
-is the Bayes factor that people tend to report when running a Bayesian
-hypothesis test. The reason for reporting Bayes factors rather than
-posterior odds is that different researchers will have different priors.
-Some people might have a strong bias to believe the null hypothesis is
-true, others might have a strong bias to believe it is false. Because of
-this, the polite thing for an applied researcher to do is report the
-Bayes factor. That way, anyone reading the paper can multiply the Bayes
-factor by their own *personal* prior odds, and they can work out for
-themselves what the posterior odds would be. In any case, by convention
-we like to pretend that we give equal consideration to both the null
-hypothesis and the alternative, in which case the prior odds equals 1,
-and the posterior odds becomes the same as the Bayes factor.
+The Bayes factor (sometimes abbreviated as **BF**) has a special place in
+Bayesian hypothesis testing, because it serves a similar role to the *p*-value
+in orthodox hypothesis testing. The Bayes factor quantifies the strength of
+evidence provided by the data, and as such it is the Bayes factor that people
+tend to report when running a Bayesian hypothesis test. The reason for
+reporting Bayes factors rather than posterior odds is that different
+researchers will have different priors. Some people might have a strong bias to
+believe the null hypothesis is true, others might have a strong bias to believe
+it is false. Because of this, the polite thing for an applied researcher to do
+is report the Bayes factor. That way, anyone reading the paper can multiply the
+Bayes factor by their own *personal* prior odds, and they can work out for
+themselves what the posterior odds would be. In any case, by convention we like
+to pretend that we give equal consideration to both the null hypothesis and the
+alternative, in which case the prior odds equals 1, and the posterior odds
+becomes the same as the Bayes factor.
 
 Interpreting Bayes factors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -90,11 +87,11 @@ One of the really nice things about the Bayes factor is the numbers are
 inherently meaningful. If you run an experiment and you compute a Bayes
 factor of 4, it means that the evidence provided by your data corresponds to
 betting odds of 4:1 in favour of the alternative. However, there have been some
-attempts to quantify the standards of evidence that would be considered meaningful
-in a scientific context. The two most widely used are from :ref:`Jeffreys (1961)
-<Jeffreys_1961>` and :ref:`Kass and Raftery (1995) <Kass_1995>`. Of the two, I
-tend to prefer the :ref:`Kass and Raftery (1995) <Kass_1995>` table because it is
-a bit more conservative. So here it is:
+attempts to quantify the standards of evidence that would be considered
+meaningful in a scientific context. The two most widely used are from
+:ref:`Jeffreys (1961) <Jeffreys_1961>` and :ref:`Kass and Raftery (1995)
+<Kass_1995>`. Of the two, I tend to prefer the :ref:`Kass and Raftery (1995)
+<Kass_1995>` table because it is a bit more conservative. So here it is:
 
 +--------------+----------------------+
 | Bayes factor | Interpretation       |
