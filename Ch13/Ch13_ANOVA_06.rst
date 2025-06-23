@@ -124,7 +124,7 @@ Running the Levene-test in jamovi
 
 Okay, so how do we run the Levene test? Under the ``ANOVA`` → ``Assumption
 Checks`` option, just click on the ``Homogeneity tests`` checkbox. If we look
-at the output, shown in :numref:`fig-anova4`, we see that the test is
+at the output, shown in :numref:`fig13-5`, we see that the test is
 non-significant: *F*\(2,15) = 1.45, *p* = 0.266. So it looks like the
 homogeneity of variance assumption is fine. However, looks can be deceptive!
 If your sample size is pretty big, then the Levene test could show up a
@@ -141,9 +141,9 @@ not.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_anova4.*
+.. figure:: ../_images/fig13-5.*
    :alt: ``Levene test`` output for ``One-Way ANOVA`` in jamovi
-   :name: fig-anova4
+   :name: fig13-5
 
    ``Levene test`` output for ``One-Way ANOVA`` in jamovi
    
@@ -165,13 +165,13 @@ test**). It is implemented in jamovi using the ``One-Way ANOVA`` analysis. This
 is a specific analysis approach just for one-way ANOVA, and to run the Welch
 one-way ANOVA for our example, we would re-run the analysis as previously, but
 this time use the jamovi ``ANOVA`` → ``One Way ANOVA`` analysis command, and
-check the option ``Don't assume equal (Welch’s)`` (see :numref:`fig-anova4a`).
+check the option ``Don't assume equal (Welch’s)`` (see :numref:`fig13-6`).
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_anova4a.*
+.. figure:: ../_images/fig13-6.*
    :alt: Welch’s test as part of the One-Way ANOVA analysis in jamovi
-   :name: fig-anova4a
+   :name: fig13-6
 
    Welch’s test as part of the One-Way ANOVA analysis in jamovi
    
@@ -179,15 +179,14 @@ check the option ``Don't assume equal (Welch’s)`` (see :numref:`fig-anova4a`).
 
 To understand what is happening here, let us compare these numbers with those
 obtained earlier in section :doc:`Ch13_ANOVA_03`, namely: *F*\(2,15) = 18.611,
-*p* = 0.00009. As shown in :numref:`fig-anova4a`, these values are also
-displayed in the ``One-Way ANOVA`` table (in the row starting with
-``Fisher's``) if the option ``Assume equal (Fisher's)`` was chosen.
+*p* = 0.00009. As shown in :numref:`fig13-6`, these values are also displayed
+in the ``One-Way ANOVA`` table (in the row starting with ``Fisher's``) if the
+option ``Assume equal (Fisher's)`` was chosen.
 
-Okay, so originally our ANOVA gave us the result *F*\(2,15) = 18.6,
-whereas the Welch one-way test gave us *F*\(2,9.49) = 26.32. In
-other words, the Welch test has reduced the within-groups degrees of
-freedom from 15 to 9.49, and the *F*-value has
-increased from 18.6 to 26.32.
+Okay, so originally our ANOVA gave us the result *F*\(2,15) = 18.6, whereas the
+Welch one-way test gave us *F*\(2,9.49) = 26.32. In other words, the Welch test
+has reduced the within-groups degrees of freedom from 15 to 9.49, and the
+*F*-value has increased from 18.6 to 26.32.
 
 .. _normality_anova:
 
@@ -197,26 +196,25 @@ Checking the normality assumption
 Testing the normality assumption is relatively straightforward. We covered
 most of what you need to know in section :doc:`../Ch11/Ch11_tTest_08`. The
 only thing we really need to do is draw a QQ plot and, in addition if it is
-available, run the Shapiro-Wilk test. The QQ plot is shown in
-:numref:`fig-anova5` and it looks pretty normal to me. If the Shapiro-Wilk
-test is not significant (i.e., *p* > 0.05) then this indicates that the
-assumption of normality is not violated. However, as with Levene’s test, if
-the sample size is large then a significant Shapiro-Wilk test may in fact be
-a false positive, where the assumption of normality is not violated in any
-substantive problematic sense for the analysis. And, similarly, a very small
-sample can produce false negatives. That is why a visual inspection of the QQ
-plot is important.
+available, run the Shapiro-Wilk test. The QQ plot is shown in :numref:`fig13-7`
+and it looks pretty normal to me. If the Shapiro-Wilk test is not significant
+(i.e., *p* > 0.05) then this indicates that the assumption of normality is not
+violated. However, as with Levene’s test, if the sample size is large then a
+significant Shapiro-Wilk test may in fact be a false positive, where the
+assumption of normality is not violated in any substantive problematic sense
+for the analysis. And, similarly, a very small sample can produce false
+negatives. That is why a visual inspection of the QQ plot is important.
 
 Alongside inspecting the QQ plot for any deviations from normality, the
-Shapiro-Wilk test for our data does show a non-significant effect, with
-*p* = 0.6053 (see :numref:`fig-anova4a`). This therefore supports the QQ plot
-assessment; both checks find no indication that normality is violated.
+Shapiro-Wilk test for our data does show a non-significant effect, with *p* =
+\0.6053 (see :numref:`fig13-6`). This therefore supports the QQ plot assessment;
+both checks find no indication that normality is violated.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_anova5.*
+.. figure:: ../_images/fig13-7.*
    :alt: QQ-plot produced from jamovi One-Way ANOVA options
-   :name: fig-anova5
+   :name: fig13-7
 
    QQ-plot produced from jamovi One-Way ANOVA options
    
@@ -355,13 +353,13 @@ time, you will have data like the |clinicaltrial|_ data set, in which you have
 your outcome variable ``mood.gain`` and a grouping variable ``drug``. If so,
 you can just go ahead and run the analysis in jamovi. What this gives us is a
 Kruskal-Wallis χ² = 12.076, *df* = 2, *p*-value = 0.00239, as in
-:numref:`fig-anova6`.
+:numref:`fig13-8`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_anova6.*
+.. figure:: ../_images/fig13-8.*
    :alt: non-parametric ``One-Way ANOVA (Kruskal-Wallis)`` in jamovi
-   :name: fig-anova6
+   :name: fig13-8
 
    Non-parametric ``One-Way ANOVA (Kruskal-Wallis)`` in jamovi
    

@@ -284,16 +284,16 @@ at your data to see if you have gotten a significant result, all bets are off.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_adapt.*
+.. figure:: ../_images/fig16-1.*
    :alt: Effect of re-running your tests every time new data arrive
-   :name: fig-adapt
+   :name: fig16-1
 
    How badly can things go wrong if you re-run your tests every time
    new data arrive? If you are a frequentist, the answer is “very wrong”.
    
 .. ----------------------------------------------------------------------------
 
-So how bad is it? The answer is shown as the solid line in :numref:`fig-adapt`,
+So how bad is it? The answer is shown as the solid line in :numref:`fig16-1`,
 and it is *astoundingly* bad. If you peek at your data after every single
 observation, there is a 52\% chance that you will make a Type I error. That is,
 much bit bigger than the 5\% that it is supposed to be. By way of comparison,
@@ -308,7 +308,7 @@ favour of the alternative, stop the experiment and reject the null hypothesis.
 Otherwise continue testing. Now, just like last time, let us assume that the
 null hypothesis is true. What happens? As it happens, I ran the simulations for
 this scenario too, and the results are shown as the dashed line in
-:numref:`fig-adapt`. It turns out that the Type I error rate is much much lower
+:numref:`fig16-1`. It turns out that the Type I error rate is much much lower
 than the 52\% rate that we were getting by using the orthodox *t*-test.
 
 In some ways, this is remarkable. The entire *point* of orthodox null

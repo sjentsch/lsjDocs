@@ -22,15 +22,14 @@ statistics literature (:ref:`Hsu, 1996 <Hsu_1996>`), and it would be beyond
 the scope of an introductory text like this one to discuss all of them in any
 detail.
 
-That being said, there is one tool that I do want to draw your attention
-to, namely Tukey’s “Honestly Significant Difference”, or **Tukey’s HSD**
-for short. For once, I will spare you the formulas and just stick to the
-qualitative ideas. The basic idea in Tukey’s HSD is to examine all
-relevant pairwise comparisons between groups, and it is only really
-appropriate to use Tukey’s HSD if it is *pairwise* differences that
-you are interested in.\ [#]_ For instance, earlier we conducted a
-factorial ANOVA using the |clinicaltrial|_ data set, and where we
-specified a main effect for ``drug`` and a main effect of ``therapy`` we
+That being said, there is one tool that I do want to draw your attention to,
+namely Tukey’s “Honestly Significant Difference”, or **Tukey’s HSD** for short.
+For once, I will spare you the formulas and just stick to the qualitative ideas.
+The basic idea in Tukey’s HSD is to examine all relevant pairwise comparisons
+between groups, and it is only really appropriate to use Tukey’s HSD if it is
+*pairwise* differences that you are interested in.\ [#]_ For instance, earlier
+we conducted a factorial ANOVA using the |clinicaltrial|_ data set, and where
+we specified a main effect for ``drug`` and a main effect of ``therapy`` we
 would be interested in the following four comparisons:
 
 -  The difference in ``mood.gain`` for people given ``anxifree`` versus people
@@ -45,30 +44,28 @@ would be interested in the following four comparisons:
 -  The difference in ``mood.gain`` for people treated with ``CBT`` and people
    given ``no.therapy``.
 
-For any one of these comparisons, we are interested in the true
-difference between (population) group means. Tukey’s HSD constructs
-**simultaneous confidence intervals** for all four of these comparisons.
-What we mean by 95\% “simultaneous” confidence interval is that, if we
-were to repeat this study many times, then in 95\% of the study results
-the confidence intervals would contain the relevant true value.
-Moreover, we can use these confidence intervals to calculate an adjusted
-*p*-value for any specific comparison.
+For any one of these comparisons, we are interested in the true difference
+between (population) group means. Tukey’s HSD constructs **simultaneous
+confidence intervals** for all four of these comparisons. What we mean by 95\%
+“simultaneous” confidence interval is that, if we were to repeat this study
+many times, then in 95\% of the study results the confidence intervals would
+contain the relevant true value. Moreover, we can use these confidence intervals
+to calculate an adjusted *p*-value for any specific comparison.
 
-The ``TukeyHSD`` function in jamovi is pretty easy to use. You simply
-specify the ANOVA model term that you want to run the post-hoc tests
-for. For example, if we were looking to run post-hoc tests for the main
-effects but not the interaction, we would open up the ``Post Hoc Tests``
-option in the ANOVA analysis screen, move the ``drug`` and ``therapy``
-variables across to the box on the right, and then select the ``Tukey``
-checkbox in the list of possible post-hoc corrections that could be
-applied. This, along with the corresponding results table, is shown in
-:numref:`fig-factorialanova13`.
+The ``TukeyHSD`` function in jamovi is pretty easy to use. You simply specify
+the ANOVA model term that you want to run the post-hoc tests for. For example,
+if we were looking to run post-hoc tests for the main effects but not the
+interaction, we would open up the drop-down menu ``Post Hoc Tests`` in the ANOVA
+option panel, move the ``drug`` and ``therapy`` variables across to the box on
+the right, and then select the ``Tukey`` checkbox in the list of possible
+post-hoc corrections that could be applied. This, along with the corresponding
+results table, is shown in :numref:`fig14-24`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova13.*
+.. figure:: ../_images/fig14-24.*
    :alt: Options panel to set up post hoc tests
-   :name: fig-factorialanova13
+   :name: fig14-24
 
    Options panel for setting up post-hoc test within jamovi's factorial ANOVA
    procedure (the current settings request a Tukey HSD statistic): Unsaturated
@@ -110,14 +107,14 @@ interaction), we need to include comparisons such as the following:
 There are quite a lot of these comparisons that you need to consider.
 So, when we run the Tukey post-hoc analysis for this ANOVA model, we see
 that it has made a *lot* of pairwise comparisons (19 in total), as shown
-in :numref:`fig-factorialanova14`. You can see that it looks pretty similar
+in :numref:`fig14-25`. You can see that it looks pretty similar
 to before, but with a lot more comparisons made.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova14.*
+.. figure:: ../_images/fig14-25.*
    :alt: Results table for a Tukey HSD post-hoc test
-   :name: fig-factorialanova14
+   :name: fig14-25
 
    Results table for a Tukey HSD post-hoc test within jamovi's factorial ANOVA
    procedure: Unsaturated model with the factors ``drug`` and ``therapy`` but
@@ -128,12 +125,12 @@ to before, but with a lot more comparisons made.
 ------
 
 .. [#]
-   If, for instance, you actually find yourself interested to know if
-   Group A is significantly different from the mean of Group B and Group
-   C, then you need to use a different tool (e.g., Scheffe’s method,
-   which is more conservative, and beyond the scope of this book).
-   However, in most cases you probably are interested in pairwise group
-   differences, so Tukey’s HSD is a pretty useful thing to know about.
+   If, for instance, you actually find yourself interested to know if Group A 
+   is significantly different from the mean of Group B and Group C, then you 
+   need to use a different tool (e.g., Scheffe’s method, which is more 
+   conservative, and beyond the scope of this book). However, in most cases you 
+   probably are interested in pairwise group differences, so Tukey’s HSD is a 
+   pretty useful thing to know about.
 
 .. ----------------------------------------------------------------------------
 

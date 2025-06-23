@@ -21,14 +21,14 @@ and those who took their classes with Bernadette. The question we want to
 answer is whether there is any difference in the grades received by these two
 groups of students. Back in that chapter, I suggested you could analyse this
 kind of data using the Independent Samples *t*-test in jamovi, which gave us
-the results in :numref:`fig-bayes1`. As we obtain a *p*-value less than 0.05,
+the results in :numref:`fig16-2`. As we obtain a *p*-value less than 0.05,
 we reject the null hypothesis.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_bayes1.*
+.. figure:: ../_images/fig16-2.*
    :alt: ``Independent Samples T-Test`` result in jamovi
-   :name: fig-bayes1
+   :name: fig16-2
 
    ``Independent Samples T-Test`` result in jamovi
    
@@ -37,15 +37,15 @@ we reject the null hypothesis.
 What does the Bayesian version of the *t*-test look like? We can get the Bayes
 factor by selecting the ``Bayes Factor`` checkbox under the ``Tests`` option,
 and accepting the suggested default value for the ``Prior``. This gives the
-results shown in the table in :numref:`fig-bayes2`. What we get in this table
-is a Bayes factor statistic of 1.75, meaning that the evidence provided by
-these data are about 1.8:1 in favour of the alternative hypothesis.
+results shown in the table in :numref:`fig16-3`. What we get in this table is a
+Bayes factor statistic of 1.75, meaning that the evidence provided by these
+data are about 1.8:1 in favour of the alternative hypothesis.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_bayes2.*
+.. figure:: ../_images/fig16-3.*
    :alt: ``Bayes Factor`` analysis alongside ``Independent Samples T-Test``
-   :name: fig-bayes2
+   :name: fig16-3
 
    ``Bayes Factor`` analysis alongside ``Independent Samples T-Test``
    
@@ -67,17 +67,17 @@ Back in section :doc:`../Ch11/Ch11_tTest_05` I discussed the |chico|_ data set
 in which student grades were measured on two tests, and we were interested in
 finding out whether grades went up from test 1 to test 2. Because every student
 did both tests, the tool we used to analyse the data was a paired samples
-*t*-test. :numref:`fig-bayes3` shows the jamovi results table for the
-conventional ``Paired Samples T-Test`` alongside the ``Bayes Factor`` analysis.
-At this point, I hope you can read this output without any difficulty. The data
-provide evidence of about 6000:1 in favour of the alternative. We could
-probably reject the null hypothesis with some confidence!
+*t*-test. :numref:`fig16-4` shows the jamovi results table for the conventional
+``Paired Samples T-Test`` alongside the ``Bayes Factor`` analysis. At this
+point, I hope you can read this output without any difficulty. The data provide
+evidence of about 6000:1 in favour of the alternative. We could probably reject
+the null hypothesis with some confidence!
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_bayes3.*
+.. figure:: ../_images/fig16-4.*
    :alt: ``Paired Samples T-Test`` and ``Bayes Factor`` result in jamovi
-   :name: fig-bayes3
+   :name: fig16-4
 
    ``Paired Samples T-Test`` and ``Bayes Factor`` result in jamovi
    

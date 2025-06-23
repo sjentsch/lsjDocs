@@ -29,7 +29,7 @@ a sense of why we need descriptive statistics. To do this, let us open the
 
 .. figure:: ../_images/fig4-1.*
    :alt: Variables stored in ``aflsmall margins``
-   :name: fig-aflsmall_margins
+   :name: fig4-1
 
    Screenshot of jamovi showing the variables in the |aflsmall_margins|_
    data set
@@ -61,7 +61,7 @@ interpretable representation of the ``afl.margins`` variable.
 .. figure:: ../_images/fig4-2.*
    :alt: Histogram of AFL 2010 winning margin data (the ``afl.margins`` 
          variable)
-   :name: fig-aflMargins
+   :name: fig4-2
 
    Histogram of the AFL 2010 winning margin data (the ``afl.margins``
    variable). As you might expect, the larger the winning margin the less

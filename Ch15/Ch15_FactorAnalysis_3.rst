@@ -14,17 +14,16 @@ will, unsuprisingly, be seeking to *confirm* a pre-specificied latent factor
 structure.\ [#]_
 
 In CFA, instead of doing an analysis where we see how the data goes together in
-an exploratory sense, we instead impose a structure, like in
-:numref:`fig-cfa1`, on the data and see how well the data fits our
-pre-specified structure. In this sense, we are undertaking a confirmatory
-analysis, to see how well a pre-specified **model** is confirmed by the
-observed data.
+an exploratory sense, we instead impose a structure, like in :numref:`fig15-12`,
+on the data and see how well the data fits our pre-specified structure. In this
+sense, we are undertaking a confirmatory analysis, to see how well a
+pre-specified **model** is confirmed by the observed data.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_cfa1.*
+.. figure:: ../_images/fig15-12.*
    :alt: Initial pre-specification of latent factor structure
-   :name: fig-cfa1
+   :name: fig15-12
 
    Initial pre-specification of latent factor structure for the five factor
    personality scales, for use in CFA
@@ -32,21 +31,20 @@ observed data.
 .. ----------------------------------------------------------------------------
 
 A straightforward confirmatory factor analysis (CFA) of the personality items
-would therefore specify five latent factors as shown in :numref:`fig-cfa1`,
-each measured by five observed variables.
-Each variable is a measure of an underlying latent factor. For example, ``A1``
-is predicted by the underlying latent factor Agreeableness. And because ``A1``
-is not a perfect measure of the Agreeableness factor, there is an error term,
-*e*, associated with it. In other words, *e* represents the variance in ``A1``
-that is not accounted for by the Agreeableness factor. This is sometimes called
-**measurement error**.
+would therefore specify five latent factors as shown in :numref:`fig15-12`,
+each measured by five observed variables. Each variable is a measure of an
+underlying latent factor. For example, ``A1`` is predicted by the underlying
+latent factor Agreeableness. And because ``A1`` is not a perfect measure of the
+Agreeableness factor, there is an error term, *e*, associated with it. In other
+words, *e* represents the variance in ``A1`` that is not accounted for by the
+Agreeableness factor. This is sometimes called **measurement error**.
 
 The next step is to consider whether the latent factors should be allowed to
 correlate in our model. As mentioned earlier, in the psychological and
 behavioural sciences constructs are often related to each other, and we also
 think that some of our personality factors may be correlated with each other.
 So, in our model, we should allow these latent factors to covary, as shown by
-the double-headed arrows in :numref:`fig-cfa1`.
+the double-headed arrows in :numref:`fig15-12`.
 
 At the same time, we should consider whether there is any good, systematic,
 reason for some of the error terms to be correlated with each other. One reason
@@ -58,7 +56,7 @@ no clear reasons that we can see that would justify correlating some of the
 error terms with each other.
 
 Without any correlated error terms, the model we are testing to see how well it
-fits with our observed data is just as specified in :numref:`fig-cfa1`. Only
+fits with our observed data is just as specified in :numref:`fig15-12`. Only
 parameters that are included in the model are expected to be found in the data,
 so in CFA all other possible parameters (coefficients) are set to zero. So,
 if these other parameters are not zero (for example there may be a substantial
@@ -76,7 +74,7 @@ CFA using the following steps:
 
 -  Select ``Factor`` → ``Confirmatory Factor Analysis`` from the ``Analyses``
    tab to open the options panel where you can determine the settings
-   for the CFA (:numref:`fig-cfa2`).
+   for the CFA (:numref:`fig15-13`).
 
 -  Select the five ``A`` variables and transfer them into the ``Factors`` box
    and give them the label “Agreeableness”.
@@ -100,13 +98,13 @@ CFA using the following steps:
 -  Check other appropriate options, the defaults are OK for this initial work
    through, though you might want to check the ``Path diagram`` option under
    ``Plots`` to see jamovi produce a (fairly) similar diagram to our
-   :numref:`fig-cfa1`.
+   :numref:`fig15-12`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_cfa2.*
+.. figure:: ../_images/fig15-13.*
    :alt: Settings for conducting a Confirmatory Factor Analysis
-   :name: fig-cfa2
+   :name: fig15-13
 
    Options panel with the settings for conducting a Confirmatory Factor
    Analysis (CFA) in jamovi
@@ -115,16 +113,16 @@ CFA using the following steps:
 
 Once we have set up the analysis we can turn our attention to the jamovi
 results panel and see what is what. The first thing to look at is **model fit**
-(:numref:`fig-cfa3`) as this tells us how good a fit our model is to the
+(:numref:`fig15-14`) as this tells us how good a fit our model is to the
 observed data. NB in our model only the pre-specified covariances are
 estimated, including the factor correlations by default. Everything else is set
 to zero.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_cfa3.*
+.. figure:: ../_images/fig15-14.*
    :alt: ``Model Fit`` results for the specified CFA model in jamovi
-   :name: fig-cfa3
+   :name: fig15-14
 
    Table with ``Model Fit`` results for the specified CFA model in jamovi
       
@@ -144,11 +142,11 @@ satisfactory fit is indicated by CFI > 0.9, TLI > 0.9, and RMSEA of about 0.05
 to 0.08. A good fit is CFI > 0.95, TLI > 0.95, and RMSEA and upper CI for RMSEA
 < 0.05.
 
-So, looking at :numref:`fig-cfa3`, we can see that the χ²-value is large and
-highly significant. Our sample size is not too large, so this possibly
-indicates a poor fit. The CFI is 0.762 and the TLI is 0.731, indicating poor
-fit between the model and the data. The RMSEA is 0.085 with a 90\% confidence
-interval from 0.077 to 0.092, again this does not indicate a good fit.
+So, looking at :numref:`fig15-14`, we can see that the χ²-value is large and
+highly significant. Our sample size is not too large, so this possibly indicates
+a poor fit. The CFI is 0.762 and the TLI is 0.731, indicating poor fit between
+the model and the data. The RMSEA is 0.085 with a 90\% confidence interval
+from 0.077 to 0.092, again this does not indicate a good fit.
 
 Pretty disappointing, huh? But perhaps not too surprising given that in the
 earlier EFA, when we ran with a similar data set (section
@@ -156,7 +154,7 @@ earlier EFA, when we ran with a similar data set (section
 was accounted for by the five factor model.
 
 Let us go on to look at the factor loadings and the factor covariance estimates,
-shown in :numref:`fig-cfa4` and :numref:`fig-cfa5`. The *Z*-statistic and
+shown in :numref:`fig15-15` and :numref:`fig15-16`. The *Z*-statistic and
 *p*-value for each of these parameters indicates they make a reasonable
 contribution to the model (i.e., they are not zero) so there does not appear to
 be any reason to remove any of the specified variable-factor paths, or
@@ -167,17 +165,17 @@ article.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_cfa4.*
+.. figure:: ../_images/fig15-15.*
    :alt: Table with ``Factor Loadings`` for the specified CFA model in jamovi
-   :name: fig-cfa4
+   :name: fig15-15
 
    Table with ``Factor Loadings`` for the specified CFA model in jamovi
       
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_cfa5.*
+.. figure:: ../_images/fig15-16.*
    :alt: Table with ``Factor Covariances`` for the specified CFA model in jamovi
-   :name: fig-cfa5
+   :name: fig15-16
 
    Table with ``Factor Covariances`` for the specified CFA model in jamovi
       
@@ -187,13 +185,13 @@ How could we improve the model? One option is to go back a few stages and think
 again about the items / measures we are using and how they might be improved or
 changed. Another option is to make some *post-hoc* tweaks to the model to
 improve the fit. One way of doing this is to use ``Modification indices``,
-specified as an ``Additional Output`` option in jamovi (see :numref:`fig-cfa6`).
+specified as an ``Additional Output`` option in jamovi (see :numref:`fig15-17`).
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_cfa6.*
+.. figure:: ../_images/fig15-17.*
    :alt: Table with ``Factor Loadings Modification Indices``
-   :name: fig-cfa6
+   :name: fig15-17
 
    Table with ``Factor Loadings Modification Indices`` for the specified CFA
    model in jamovi
@@ -203,7 +201,7 @@ specified as an ``Additional Output`` option in jamovi (see :numref:`fig-cfa6`).
 What we are looking for is the highest modification index (MI) value. We would
 then judge whether it makes sense to add that additional term into the model,
 using a *post-hoc* rationalisation. For example, we can see in
-:numref:`fig-cfa6` that the largest MI for the factor loadings that are not
+:numref:`fig15-17` that the largest MI for the factor loadings that are not
 already in the model is a value of 28.786 for the loading of ``N4`` (“Often
 feel blue”) onto the latent factor Extraversion. This indicates that if we add
 this path into the model then the χ²-value will reduce by around the same
@@ -214,18 +212,18 @@ or methodological sense, so it is not a good idea (unless you can come up with
 a persuasive argument that “Often feel blue” measures both Neuroticism and
 Extraversion). I can not think of a good reason. But, for the sake of argument,
 let us pretend it does make some sense and add this path into the model. Go
-back to the CFA analysis window (see :numref:`fig-cfa2`) and add ``N4`` into
+back to the CFA analysis window (see :numref:`fig15-13`) and add ``N4`` into
 the Extraversion factor. The results of the CFA will now change (not shown);
-the χ²-value has come down to around 709 (a drop of around 30, roughly
-similar to the size of the MI) and the other fit indices have also improved,
-though only a bit. But it is not enough: it is still not a good fitting model.
+the χ²-value has come down to around 709 (a drop of around 30, roughly similar
+to the size of the MI) and the other fit indices have also improved, though
+only a bit. But it is not enough: it is still not a good fitting model.
 
 If you do find yourself adding new parameters to a model using the MI values
 then always re-check the MI tables after each new addition, as the MIs are
 refreshed each time.
 
 There is also a Table of ``Residual Covariances Modification Indices`` produced
-by jamovi (:numref:`fig-cfa7`). In other words, a table showing which
+by jamovi (:numref:`fig15-18`). In other words, a table showing which
 correlated errors, if added to the model, would improve the model fit the most.
 It is a good idea to look across both MI tables at the same time, spot the
 largest MI, think about whether the addition of the suggested parameter can be
@@ -234,9 +232,9 @@ start again looking for the biggest MI in the re-calculated results.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_cfa7.*
+.. figure:: ../_images/fig15-18.*
    :alt: Table with ``Residual Covariances Modification Indices``
-   :name: fig-cfa7
+   :name: fig15-18
 
    Table with ``Residual Covariances Modification Indices`` for the specified
    CFA model in jamovi
@@ -272,7 +270,7 @@ of information to include in your write-up:
 #. A complete description of how the model was specified (e.g., the indicator
    variables for each latent factor, covariances between latent variables, and
    any correlations between error terms). A path diagram, like the one in
-   :numref:`fig-cfa3` would be good to include.
+   :numref:`fig15-12` would be good to include.
 
 #. A description of the sample (e.g., demographic information, sample size,
    sampling method).

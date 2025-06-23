@@ -18,19 +18,19 @@ the null hypothesis (Type II error) becomes less likely.
 
 Despite this advantage, ANCOVA runs the risk of undoing real differences
 between groups |nominal|, and this should be avoided. Look at
-:numref:`fig-ancova_groups`, for example, which shows a plot of Statistics
-anxiety against age and shows two distinct groups – students who have either
-an Arts or Science background. ANCOVA with age as a covariate might lead to the
-conclusion that statistics anxiety does not differ in the two groups. Would
-this conclusion be reasonable – probably not because the ages of the two groups
-do not overlap and analysis of variance has essentially “extrapolated into a
-region with no data” (:ref:`Everitt, 1996 <Everitt_1996>`).
+:numref:`fig14-11`, for example, which shows a plot of Statistics anxiety
+against age and shows two distinct groups – students who have either an Arts or
+Science background. ANCOVA with age as a covariate might lead to the conclusion
+that statistics anxiety does not differ in the two groups. Would this conclusion
+be reasonable – probably not because the ages of the two groups do not overlap
+and analysis of variance has essentially “extrapolated into a region with no
+data” (:ref:`Everitt, 1996 <Everitt_1996>`).
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_ancova_groups.*
+.. figure:: ../_images/fig14-11.*
    :alt: Plot of Statistics anxiety against age for two distinct groups
-   :name: fig-ancova_groups
+   :name: fig14-11
 
    Plot of Statistics anxiety against age for two distinct groups
    
@@ -46,7 +46,7 @@ Running ANCOVA in jamovi
 A health psychologist was interested in the effect of routine cycling and
 stress on happiness levels, with age as a covariate. Open the |ancova|_ data set
 in jamovi and then, to undertake an ANCOVA, select ``Analyses`` → ``ANOVA`` →
-``ANCOVA`` to open the ANCOVA analysis window (:numref:`fig-ancova1`). Highlight
+``ANCOVA`` to open the ANCOVA analysis window (:numref:`fig14-12`). Highlight
 the dependent variable ``happiness`` |continuous| and transfer it into the
 ``Dependent Variable`` text box. Highlight the independent variables ``stress``
 |nominal| and ``commute`` |nominal| and transfer them into the ``Fixed Factors``
@@ -56,9 +56,9 @@ up the plots and tables options.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_ancova1.*
+.. figure:: ../_images/fig14-12.*
    :alt: The jamovi ANCOVA options panel
-   :name: fig-ancova1
+   :name: fig14-12
 
    Options panel showing the variable boxes to assign the ``Dependent
    Variable``, ``Fixed Factors`` and the ``Covariates`` for the ANCOVA in
@@ -67,28 +67,28 @@ up the plots and tables options.
 .. ----------------------------------------------------------------------------
 
 An ANCOVA table showing Tests of Between-Subjects Effects is produced in the
-jamovi results panel (:numref:`fig-ancova2`). The *F*-value for the covariate
+jamovi results panel (:numref:`fig14-13`). The *F*-value for the covariate
 ``age`` is significant at *p* = 0.023, suggesting that age is an important
 predictor of the dependent variable, happiness. When we look at the estimated
-marginal mean scores (:numref:`fig-ancova3`), adjustments have been made
-(compared to an analysis without the covariate) because of the inclusion of the
-covariate ``age`` in this ANCOVA. A plot (:numref:`fig-ancova4`) is a good way of
-visualising and interpreting the significant effects.
+marginal mean scores (:numref:`fig14-14`), adjustments have been made (compared
+to an analysis without the covariate) because of the inclusion of the covariate
+``age`` in this ANCOVA. A plot (:numref:`fig14-15`) is a good way of visualising
+and interpreting the significant effects.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_ancova2.*
+.. figure:: ../_images/fig14-13.*
    :alt: jamovi ANCOVA output
-   :name: fig-ancova2
+   :name: fig14-13
 
    jamovi ANCOVA output for happiness as a function of stress and commuting
    method, with age as a covariate
    
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_ancova3.*
+.. figure:: ../_images/fig14-14.*
    :alt: Estimated Marginal means within the ANCOVA
-   :name: fig-ancova3
+   :name: fig14-14
 
    Table with the Estimated Marginal means within the ANCOVA: Shown are the 
    mean happiness level as a function of stress and commuting method
@@ -97,30 +97,29 @@ visualising and interpreting the significant effects.
 .. ----------------------------------------------------------------------------
 
 The *F*-value for the main effect ``stress`` (52.61) has an associated
-probability of *p* < 0.001. The *F*-value for the main effect ``commute`` (42.33)
-has an associated probability of *p* < 0.001. Since both of these are less than
-the probability that is typically used to decide if a statistical result is
-significant (*p* < 0.05) we can conclude that there was a significant main
-effect of stress: *F*\(1,15) = 52.61, *p* < 0.001, and a significant main
+probability of *p* < 0.001. The *F*-value for the main effect ``commute``
+(42.33) has an associated probability of *p* < 0.001. Since both of these are
+less than the probability that is typically used to decide if a statistical
+result is significant (*p* < 0.05) we can conclude that there was a significant
+main effect of stress: *F*\(1,15) = 52.61, *p* < 0.001, and a significant main
 effect of commuting method: *F*\(1,15) = 42.33, *p* < 0.001. A significant
 interaction between stress and commuting method was also found: *F*\(1,15) =
 \14.15, *p* = 0.002.
 
-In :numref:`fig-ancova4` we can see the adjusted, marginal, mean happiness
-scores when age is a covariate in an ANCOVA. In this analysis there is a
-significant interaction effect, whereby people with low stress who cycle to
-work are happier than people with low stress who drive and people with high
-stress regardless of whether they cycle or drive to work. There is also a
-significant main effect of stress – people with low stress are happier than
-those with high stress. And there is also a significant main effect of
-commuting behaviour – people who cycle are happier, on average, than those who
-drive to work.
+In :numref:`fig14-15` we can see the adjusted, marginal, mean happiness scores
+when age is a covariate in an ANCOVA. In this analysis there is a significant
+interaction effect, whereby people with low stress who cycle to work are happier
+than people with low stress who drive and people with high stress regardless of
+whether they cycle or drive to work. There is also a significant main effect of
+stress – people with low stress are happier than those with high stress. And
+there is also a significant main effect of commuting behaviour – people who
+cycle are happier, on average, than those who drive to work.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_ancova4.*
+.. figure:: ../_images/fig14-15.*
    :alt: Plot with the Estimated Marginal means within the ANCOVA
-   :name: fig-ancova4
+   :name: fig14-15
 
    Plot with the Estimated Marginal means within the ANCOVA: Shown are the 
    mean happiness level as a function of stress and commuting method

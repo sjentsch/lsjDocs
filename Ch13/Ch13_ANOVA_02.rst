@@ -32,16 +32,27 @@ false. So for now we will just write the alternative hypothesis like this:
 
 *H*\ :sub:`1`: it is NOT true that µ\ :sub:`P` = µ\ :sub:`A` = µ\ :sub:`J`
 
-This null hypothesis is a lot trickier to test than any of the ones
-we have seen previously. Given the title of this chapter, a sensible guess
-would be to “do an ANOVA”, but it is not particularly clear why an “analysis
-of *variances*” will help us learn anything useful about the *means*. In fact,
-this is one of the biggest conceptual difficulties that people have when first
-encountering ANOVA. To see how this works, let us start by talking about
-variances. In fact, what I am going to do is start by playing some mathematical
-games with the formula that describes the variance. That is, we will start out
-by playing around with variances and it will turn out that this gives us a
-useful tool for investigating means.
+This null hypothesis is a lot trickier to test than any of the ones we have
+seen previously. Given the title of this chapter, a sensible guess would be to
+“do an ANOVA”, but it is not particularly clear why an “analysis of *variances*”
+will help us learn anything useful about the *means*. In fact, this is one of
+the biggest conceptual difficulties that people have when first encountering
+ANOVA. To see how this works, let us start by talking about variances,
+specifically between group variability and within-group variability
+(:numref:`fig13-2`).
+
+.. ----------------------------------------------------------------------------
+
+.. figure:: ../_images/fig13-2.*
+   :alt: Illustration of between- and within-groups variation
+   :name: fig13-2
+
+   Graphical illustration of “between-groups” (left panel) and “within-groups”
+   variation (right panel). In the left panel, the arrows show the differences
+   in the group means. In the right panel, the arrows highlight the variability
+   within each group.
+   
+.. ----------------------------------------------------------------------------
 
 Two formulas for the variance of *Y*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -173,19 +184,6 @@ the experiment |SS_t| is actually the sum of the between-groups differences
 |SS_b| and the variation inside the groups |SS_w|. That is:
 
 |SS_w| + |SS_b| = |SS_t|
-
-.. ----------------------------------------------------------------------------
-
-.. figure:: ../_images/lsj_anovaWthBtw.*
-   :alt: Illustration of between- and within-groups variation
-   :name: fig-anovaWthBtw
-
-   Graphical illustration of “between-groups” (left panel) and “within-groups”
-   variation (right panel). In the left panel, the arrows show the differences
-   in the group means. In the right panel, the arrows highlight the variability
-   within each group.
-   
-.. ----------------------------------------------------------------------------
 
 We have discovered that the total variability associated with the outcome
 variable (|SS_t|\) can be mathematically carved up into the sum of “the

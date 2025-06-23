@@ -136,7 +136,7 @@ variables <_create_transformation>`. This section describes in more detail how
 to generate such a “receipe”. Transformed variables are often used to “recode”
 variables (e.g., when inverting items), a typical transformation which
 described in more detail at the end of the subsection :ref:`EFA_in_jamovi` and
-in :numref:`fig-efa7`. When transforming or recoding variables in jamovi, a new
+in :numref:`fig15-7`. When transforming or recoding variables in jamovi, a new
 “transformed variable” is created from an original “source variable”. This
 permits you to have access to both the original, untransformed data, and the
 transformed data.

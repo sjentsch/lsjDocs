@@ -88,8 +88,8 @@ Enter these data into jamovi ready for analysis (or take a short-cut and
 load the |broca|_ data set).
 
 To perform a one-way related ANOVA in jamovi, open the one-way repeated
-measures ANOVA dialogue box, as in :numref:`fig-RManova1`, via
-``ANOVA → Repeated Measures ANOVA``. Then:
+measures ANOVA dialogue box, as in :numref:`fig13-9`, via ``ANOVA → Repeated
+Measures ANOVA``. Then:
 
 -  Enter a name for the ``Repeated Measures Factors`` (orginally: ``RM Factor
    …``). This should be a label that you choose to describe the conditions
@@ -110,41 +110,40 @@ measures ANOVA dialogue box, as in :numref:`fig-RManova1`, via
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_RManova1.*
+.. figure:: ../_images/fig13-9.*
    :alt: Repeated measures ANOVA dialogue box in jamovi
-   :name: fig-RManova1
+   :name: fig13-9
 
    Repeated measures ANOVA dialogue box in jamovi
    
 .. ----------------------------------------------------------------------------
 
 jamovi output for a one-way ``Repeated Measures ANOVA`` is produced as shown
-in the :numref:`fig-RManova2` to :numref:`fig-RManova5`. The first output we
-should look at is ``Mauchly’s Test of Sphericity``, which tests the hypothesis
-that the variances of the differences between the conditions are equal (meaning
-that the spread of difference scores between the study conditions is
-approximately the same). In :numref:`fig-RManova2`, Mauchly’s test significance
-level is *p* = 0.720. If Mauchly’s test is non-significant (i.e., *p* > 0.05,
-as is the case in this analysis) then it is reasonable to conclude that the
-variances of the differences are not significantly different (i.e., they are
-roughly equal and sphericity can be assumed.).
+in the :numref:`fig13-10` to :numref:`fig13-13`. The first output we should
+look at is ``Mauchly’s Test of Sphericity``, which tests the hypothesis that
+the variances of the differences between the conditions are equal (meaning that
+the spread of difference scores between the study conditions is approximately
+the same). In :numref:`fig13-10`, Mauchly’s test significance level is *p* =
+\0.720. If Mauchly’s test is non-significant (i.e., *p* > 0.05, as is the case
+in this analysis) then it is reasonable to conclude that the variances of the
+differences are not significantly different (i.e., they are roughly equal and
+sphericity can be assumed).
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_RManova2.*
+.. figure:: ../_images/fig13-10.*
    :alt: One-way repeated measures ANOVA output: Mauchly’s Test of Sphericity
-   :name: fig-RManova2
+   :name: fig13-10
 
    One-way repeated measures ANOVA output: Mauchly’s Test of Sphericity
    
 .. ----------------------------------------------------------------------------
 
-If, on the other hand, Mauchly’s test had been significant
-(*p* < 0.05) then we would conclude that there are significant
-differences between the variance of the differences, and the requirement
-of sphericity has not been met. In this case, we should apply a
-correction to the *F*-value obtained in the one-way related ANOVA
-analysis:
+If, on the other hand, Mauchly’s test had been significant (*p* < 0.05) then we
+would conclude that there are significant differences between the variance of
+the differences, and the requirement of sphericity has not been met. In this
+case, we should apply a correction to the *F*-value obtained in the one-way
+related ANOVA analysis:
 
 -  If the ``Greenhouse-Geisser ε`` value in the ``Tests of Sphericity`` table
    is > 0.75 then you should use the Huynh-Feldt correction.
@@ -155,13 +154,13 @@ analysis:
 Both these corrected *F*-values can be specified in the ``Sphericity
 Corrections`` check boxes under the ``Assumption Checks`` options, and the
 corrected *F*-values are then shown in the results table, as in
-:numref:`fig-RManova3`.
+:numref:`fig13-11`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_RManova3.*
+.. figure:: ../_images/fig13-11.*
    :alt: Repeated measures ANOVA output: Tests of Within-Subjects Effects
-   :name: fig-RManova3
+   :name: fig13-11
 
    One-way repeated measures ANOVA output: Tests of Within-Subjects Effects
    
@@ -180,9 +179,9 @@ the task was speech, comprehension or syntax based (*F*\(2,10) = 6.93,
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_RManova4.*
+.. figure:: ../_images/fig13-12.*
    :alt: Post-hoc tests in repeated measures ANOVA in jamovi
-   :name: fig-RManova4
+   :name: fig13-12
 
    Post-hoc tests in repeated measures ANOVA in jamovi
    
@@ -190,12 +189,12 @@ the task was speech, comprehension or syntax based (*F*\(2,10) = 6.93,
 
 Post-hoc tests can also be specified in jamovi for repeated measures ANOVA in
 the same way as for an independent ANOVA. The results are shown in
-:numref:`fig-RManova4`. These indicate that there is a significant difference
+:numref:`fig13-12`. These indicate that there is a significant difference
 between ``Speech`` and ``Syntax``, but not between other levels.
 
 Descriptive statistics (marginal means) can be reviewed to help interpret the
-results, produced in the jamovi output as in :numref:`fig-RManova5`. Comparison
-of the mean number of trials successfully completed by participants shows that
+results, produced in the jamovi output as in :numref:`fig13-13`. Comparison of
+the mean number of trials successfully completed by participants shows that
 Broca’s Aphasics perform reasonably well on speech production (mean = 7.17) and
 language comprehension (mean = 6.17) tasks. However, their performance was 
 considerably worse on the syntax task (mean = 4.33), with a significant
@@ -204,9 +203,9 @@ performance.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_RManova5.*
+.. figure:: ../_images/fig13-13.*
    :alt: One-way repeated measures ANOVA output: Descriptive Statistics
-   :name: fig-RManova5
+   :name: fig13-13
 
    One-way repeated measures ANOVA output: Descriptive Statistics
    

@@ -83,7 +83,7 @@ reliability analysis in jamovi:
 
 -  Select ``Factor`` → ``Reliability Analysis`` from the ``Analyses`` tab
    in jamovi to open the options panel where you can determine the settings
-   for the reliability analysis (:numref:`fig-rel1`).
+   for the reliability analysis (:numref:`fig15-25`).
 
 -  Select the five ``A``-variables and transfer them into the ``Items`` box.
 
@@ -91,13 +91,13 @@ reliability analysis in jamovi:
    the ``Normal Scaled Items`` box and move it across to the ``Reverse
    Scaled Items`` variable box.
 
--  Check other appropriate options, as in :numref:`fig-rel1`.
+-  Check other appropriate options, as in :numref:`fig15-25`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_rel1.*
+.. figure:: ../_images/fig15-25.*
    :alt: Settings for conducting a Reliability Analysis
-   :name: fig-rel1
+   :name: fig15-25
 
    Options panel with the settings for conducting a Reliability Analysis
    in jamovi
@@ -105,16 +105,16 @@ reliability analysis in jamovi:
 .. ----------------------------------------------------------------------------
 
 Once done, look across at the jamovi results window. You should see something
-like :numref:`fig-rel2`. This tells us that the Cronbach’s α coefficient for
+like :numref:`fig15-26`. This tells us that the Cronbach’s α coefficient for
 the Agreeableness scale is 0.72. This means that just under 30\% of the
 Agreeableness scale score is error variance. McDonald’s ω is also given, and
 this is 0.74, not much different from α.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_rel2.*
+.. figure:: ../_images/fig15-26.*
    :alt: Results of the Reliability Analysis for Agreeableness
-   :name: fig-rel2
+   :name: fig15-26
 
    Tables with the results of the Reliability Analysis for the Agreeableness
    factor from the |bfi_sample3|_ data set 

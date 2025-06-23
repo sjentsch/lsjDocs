@@ -50,30 +50,29 @@ The coffee might contain ``real`` sugar or it might contain ``fake`` sugar
 ``babble`` is a continuous variable |continuous| that presumably refers to
 some psychologically sensible measure of the extent to which someone is
 “babbling”. The details do not really matter for our purpose. Take a look at
-the data in the jamovi spreadsheet view, as in :numref:`fig-factorialanova15`\.
+the data in the jamovi spreadsheet view, as in :numref:`fig14-26`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova15.*
+.. figure:: ../_images/fig14-26.*
    :alt: Descriptive statistics for the different levels of sugar and milk
-   :name: fig-factorialanova15
+   :name: fig14-26
 
    The |coffee|_ data set in jamovi, showing descriptive statistics aggregated
    by the different levels of the factors ``sugar`` and ``milk``
    
 .. ----------------------------------------------------------------------------
 
-Looking at the table of means in :numref:`fig-factorialanova15` we get a strong
-impression that there are differences between the groups. This is especially
-true when we compare these means to the standard deviations for the ``babble``
-variable. Across groups, this standard deviation varies from 0.14 to 0.71, 
-which is fairly small relative to the differences in group means.\ [#]_ Whilst
-this at first may seem like a straightforward factorial ANOVA, a problem arises
-when we look at how many observations we have in each group. See the different
-*N*\s for different groups shown in :numref:`fig-factorialanova15`. This
-violates one of our original assumptions, namely that the number of people in
-each group is the same. We have not really discussed how to handle this
-situation.
+Looking at the table of means in :numref:`fig14-26` we get a strong impression
+that there are differences between the groups. This is especially true when we
+compare these means to the standard deviations for the ``babble`` variable.
+Across groups, this standard deviation varies from 0.14 to 0.71, which is
+fairly small relative to the differences in group means.\ [#]_ Whilst this at
+first may seem like a straightforward factorial ANOVA, a problem arises when we
+look at how many observations we have in each group. See the different *N*\s
+for different groups shown in :numref:`fig14-26`. This violates one of our
+original assumptions, namely that the number of people in each group is the
+same. We have not really discussed how to handle this situation.
 
 “Standard ANOVA” does not exist for unbalanced designs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -183,14 +182,14 @@ test is:
 Type 3 sum of squares is the default hypothesis testing method used by jamovi
 ANOVA, so to run a Type 1 sum of squares analysis we have to select ``Type 1``
 in the ``Sum of squares`` selection box in the jamovi ``ANOVA`` → ``Model``
-options. This gives us the ANOVA table shown in :numref:`fig-factorialanova16`.
+options. This gives us the ANOVA table shown in :numref:`fig14-27`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova16.*
+.. figure:: ../_images/fig14-27.*
    :alt: Results table using Type 1 sum of squares, factor ``sugar`` entered
          first
-   :name: fig-factorialanova16
+   :name: fig14-27
 
    ANOVA results table using Type 1 sum of squares in jamovi using the
    |coffee|_ data set and a saturated model with the factors ``sugar``,
@@ -206,13 +205,13 @@ first or sugar first? It feels exactly as arbitrary as a data analysis question
 as it does as a coffee-making question. There may in fact be some people with
 firm opinions about ordering, but it is hard to imagine a principled answer to
 the question. Yet, look what happens when we change the ordering, as in
-:numref:`fig-factorialanova17`.
+:numref:`fig14-28`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova17.*
+.. figure:: ../_images/fig14-28.*
    :alt: Results table using Type 1 sum of squares, factor milk entered first
-   :name: fig-factorialanova17
+   :name: fig14-28
 
    ANOVA results table using Type 1 sum of squares in jamovi (with the
    |coffee|_ data set and a saturated model with the factors ``milk``,
@@ -345,13 +344,13 @@ much sense at all.
 
 Later on, we will see that Type 3 tests can be redeemed in some contexts, but
 first let us take a look at the ANOVA results table using Type 3 sum of
-squares, see :numref:`fig-factorialanova18`.
+squares, see :numref:`fig14-29`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova18.*
+.. figure:: ../_images/fig14-29.*
    :alt: Results table using Type 3 sum of squares
-   :name: fig-factorialanova18
+   :name: fig14-29
 
    ANOVA results table using Type 3 sum of squares in jamovi (with the
    |coffee|_ data set and a saturated model with the factors ``sugar``,
@@ -479,13 +478,13 @@ Finally, the test for the interaction ``sugar * milk`` is:
 
 Running the tests are again straightforward. Just select ``Type 2`` in the
 ``Sum of squares`` selection box in the jamovi ``ANOVA`` → ``Model`` options,
-This gives us the ANOVA table shown in :numref:`fig-factorialanova19`.
+This gives us the ANOVA table shown in :numref:`fig14-30`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova19.*
+.. figure:: ../_images/fig14-30.*
    :alt: Results table using Type 2 sum of squares
-   :name: fig-factorialanova19
+   :name: fig14-30
 
    ANOVA results table using Type 2 sum of squares in jamovi (with the
    |coffee|_ data set and a saturated model with the factors ``sugar``,
@@ -510,8 +509,8 @@ Effect sizes (and non-additive sums of squares)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 jamovi also provides the effect sizes η² and partial η² when you select these
-options, as in :numref:`fig-factorialanova19`. However, when you have got an
-unbalanced design there is a bit of extra complexity involved.
+options, as in :numref:`fig14-30`. However, when you have got an unbalanced
+design there is a bit of extra complexity involved.
 
 If you remember back to our very early discussions of ANOVA, one of the key
 ideas behind the sums of squares calculations is that if we add up all the *SS*

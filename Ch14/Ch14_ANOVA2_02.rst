@@ -5,55 +5,56 @@ Factorial ANOVA 2: balanced designs, interactions allowed
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_interactions.*
+.. figure:: ../_images/fig14-5.*
    :alt: Qualitatively different interactions for a 2 × 2 ANOVA
-   :name: fig-interactions
+   :name: fig14-5
 
    Qualitatively different interactions for a 2 × 2 ANOVA
    
 .. ----------------------------------------------------------------------------
 
-The four patterns of data shown in :numref:`fig-maineffects` are all quite
-realistic. There are many data sets that produce exactly those patterns.
-However, they are not the whole story and the ANOVA model that we have been
-talking about up to this point is not sufficient to fully account for a table
-of group means. Why not? Well, so far we have the ability to talk about the
-idea that drugs can influence mood, and therapy can influence mood, but no way
-of talking about the possibility of an **interaction** between the two. An
-interaction between A and B is said to occur whenever the effect of factor A is
-*different*, depending on which level of factor B we are talking about. Several
-examples of an interaction effect with the context of a 2 × 2 ANOVA are shown
-in :numref:`fig-interactions`. To give a more concrete example, suppose that
-the operation of Anxifree and Joyzepam is governed by quite different
-physiological mechanisms. One consequence of this is that while Joyzepam has
-more or less the same effect on mood regardless of whether one is in therapy,
-Anxifree is actually much more effective when administered in conjunction with
-CBT. The ANOVA that we developed in the previous section does not capture this
-idea. To get some idea of whether there actually is an interaction, it helps to
-plot the various group means. In jamovi this is done via the ANOVA ``Estimated
-Marginal Means`` option – just move ``drug`` and ``therapy`` across into the
-``Marginal Means`` box under ``Term 1``. This should look something like
-:numref:`fig-interaction`. Our main concern relates to the fact that the two
-lines are not parallel. The effect of ``CBT`` (difference between solid line
-and dotted line) when the ``drug`` is ``joyzepam`` (right side) appears to be
-near zero, even smaller than the effect of ``CBT`` when a ``placebo`` is used
-(left side). However, when ``anxifree`` is administered, the effect of ``CBT``
-is larger than that of ``no.therapy`` (middle). Is this effect real, or is this
-just random variation due to chance? Our original ANOVA cannot answer this
-question, because we make no allowances for the idea that interactions even
-exist! In this section, we will fix this problem.
+The four patterns of data shown in :numref:`fig14-4` are all quite realistic.
+There are many data sets that produce exactly those patterns. However, they are
+not the whole story and the ANOVA model that we have been talking about up to
+this point is not sufficient to fully account for a table of group means. Why
+not? Well, so far we have the ability to talk about the idea that drugs can
+influence mood, and therapy can influence mood, but no way of talking about the
+possibility of an **interaction** between the two. An interaction between A and
+B is said to occur whenever the effect of factor A is *different*, depending on
+which level of factor B we are talking about. Several examples of an interaction
+effect with the context of a 2 × 2 ANOVA are shown in :numref:`fig14-5`. To give
+a more concrete example, suppose that the operation of Anxifree and Joyzepam is
+governed by quite different physiological mechanisms. One consequence of this
+is that while Joyzepam has more or less the same effect on mood regardless of
+whether one is in therapy, Anxifree is actually much more effective when
+administered in conjunction with CBT. The ANOVA that we developed in the
+previous section does not capture this idea. To get some idea of whether there
+actually is an interaction, it helps to plot the various group means. In jamovi
+this is done via the ANOVA ``Estimated Marginal Means`` option – just move
+``drug`` and ``therapy`` across into the ``Marginal Means`` box under
+``Term 1``. This should look something like :numref:`fig14-6`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_interaction.*
+.. figure:: ../_images/fig14-6.*
    :alt: Descriptive interaction plot in jamovi
-   :name: fig-interaction
+   :name: fig14-6
 
    jamovi screen shot showing how to generate a descriptive interaction plot
    within the ANOVA (using ``Estimated Marginal Means``) for the
    |clinicaltrial|_ data set 
 
 .. ----------------------------------------------------------------------------
+
+Our main concern relates to the fact that the two lines are not parallel. The
+effect of ``CBT`` (difference between solid line and dotted line) when the
+``drug`` is ``joyzepam`` (right side) appears to be near zero, even smaller
+than the effect of ``CBT`` when a ``placebo`` is used (left side). However,
+when ``anxifree`` is administered, the effect of ``CBT`` is larger than that of
+``no.therapy`` (middle). Is this effect real, or is this just random variation
+due to chance? Our original ANOVA cannot answer this question, because we make
+no allowances for the idea that interactions even exist! In this section, we
+will fix this problem.
 
 What exactly is an interaction effect?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -65,11 +66,11 @@ we add an interaction we add a new component to the model: the combination of
 ``drug`` and ``therapy``. Intuitively, the idea behind an interaction effect is
 fairly simple. It just means that the effect of factor A is different,
 depending on which level of factor B we are talking about. But what does that
-actually mean in terms of our data? The plot in :numref:`fig-interactions`
-depicts several different patterns that, although quite different to each
-other, would all count as an interaction effect. So it is not entirely
-straightforward to translate this qualitative idea into something mathematical
-that a statistician can work with.
+actually mean in terms of our data? The plot in :numref:`fig14-5` depicts
+several different patterns that, although quite different to each other, would
+all count as an interaction effect. So it is not entirely straightforward to
+translate this qualitative idea into something mathematical that a statistician
+can work with.
 
 As a consequence, the way that the idea of an interaction effect is formalised
 in terms of null and alternative hypotheses is slightly difficult, and I am
@@ -218,13 +219,13 @@ ANOVA. This means that when you specify an ANOVA with two factors, e.g.,
 ``drug`` and ``therapy`` then the interaction component – ``drug`` ×
 ``therapy`` (shown as ``drug * therapy``) – is added automatically to the
 model.\ [#]_ When we run the ANOVA with the interaction term included, then we
-get the results shown in :numref:`fig-factorialanova4`.
+get the results shown in :numref:`fig14-7`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova4.*
+.. figure:: ../_images/fig14-7.*
    :alt: Results for the full factorial model
-   :name: fig-factorialanova4
+   :name: fig14-7
 
    Results for the full factorial model, including the interaction component
    ``drug`` × ``therapy``
@@ -253,11 +254,11 @@ to run additional analyses.
 Secondly, there is a very peculiar interpretation issue that arises when you
 obtain a significant interaction effect but no corresponding main effect. This
 happens sometimes. For instance, in the crossover interaction shown in
-:numref:`fig-interactions` (a), this is exactly what you would find. In this
-case, neither of the main effects would be significant, but the interaction
-effect would be. This is a difficult situation to interpret, and people often
-get a bit confused about it. The general advice that statisticians like to give
-in this situation is that you should not pay much attention to the main effects
+:numref:`fig14-5` (a), this is exactly what you would find. In this case,
+neither of the main effects would be significant, but the interaction effect
+would be. This is a difficult situation to interpret, and people often get a
+bit confused about it. The general advice that statisticians like to give in
+this situation is that you should not pay much attention to the main effects
 when an interaction is present. The reason they say this is that, although the
 tests of the main effects are perfectly valid from a mathematical point of
 view, when there is a significant interaction effect the main effects rarely

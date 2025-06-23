@@ -52,7 +52,7 @@ comparable across terms.
 
 To see what I mean by this, it is useful to see a concrete example. First, let
 us have a look at the effect sizes for the original ANOVA without the
-interaction term, from :numref:`fig-factorialanova3`:
+interaction term, from :numref:`fig14-3`:
 
 .. code-block:: text
 
@@ -67,11 +67,11 @@ the residuals constitute 19\% of the variation in the outcome). Overall, this
 implies that we have a very large effect\ [#]_ of ``drug`` and a modest effect
 of ``therapy``.
 
-Now let us look at the partial η² values, shown in :numref:`fig-factorialanova3`.
-Because the effect of ``therapy`` is not all that large, controlling for it
-does not make much of a difference, so the partial η² for ``drug`` does not
-increase very much, and we obtain a value of :sub:`p`\ η² = 0.79). In contrast,
-because the effect of ``drug`` was very large, controlling for it makes a big
+Now let us look at the partial η² values, shown in :numref:`fig14-3`. Because
+the effect of ``therapy`` is not all that large, controlling for it does not
+make much of a difference, so the partial η² for ``drug`` does not increase
+very much, and we obtain a value of :sub:`p`\ η² = 0.79). In contrast, because
+the effect of ``drug`` was very large, controlling for it makes a big
 difference, and so when we calculate the partial η² for ``therapy`` you can see
 that it rises to :sub:`p`\ η² = 0.34. The question that we have to ask
 ourselves is, what do these partial η² values actually *mean*? The way I
@@ -87,8 +87,8 @@ interaction effect.
 
 Speaking of interaction effects, here is what we get when we calculate the
 effect sizes for the model that includes the interaction term, as in
-:numref:`fig-factorialanova4`. As you can see, the η² values for the main
-effects do not change, but the partial η² values do:
+:numref:`fig14-7`. As you can see, the η² values for the main effects do not
+change, but the partial η² values do:
 
 .. code-block:: text
 
@@ -103,17 +103,17 @@ Estimated group means
 In many situations you want to report estimates of all the group means from the
 results of your ANOVA, as well as confidence intervals. You can use the
 ``Estimated Marginal Means`` option in the jamovi ANOVA analysis to do this, as
-in :numref:`fig-margmean1`. If the ANOVA that you have run is a **saturated
-model** (i.e., contains all possible main effects and all possible interaction
-effects) then the estimates of the group means are actually identical to the
-sample means, though the confidence intervals will use a pooled estimate of the
+in :numref:`fig14-8`. If the ANOVA that you have run is a **saturated model**
+(i.e., contains all possible main effects and all possible interaction effects)
+then the estimates of the group means are actually identical to the sample
+means, though the confidence intervals will use a pooled estimate of the
 standard errors rather than use a separate one for each group.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_margmean1.*
+.. figure:: ../_images/fig14-8.*
    :alt: Estimated marginal means for the saturated model
-   :name: fig-margmean1
+   :name: fig14-8
 
    jamovi screenshot showing the estimated marginal means for the saturated
    model, i.e., including the interaction component, with the |clinicaltrial|_
@@ -138,13 +138,13 @@ level *r* on the (row) factor A and level *c* on the (column) factor B would be
 interactions between the two factors, this is actually a better estimate of the
 population mean than the raw sample mean would be. Removing the interaction
 term from the model, via the ``Model`` options in the jamovi ANOVA analysis,
-provides the marginal means for the analysis shown in :numref:`fig-margmean2`.
+provides the marginal means for the analysis shown in :numref:`fig14-9`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_margmean2.*
+.. figure:: ../_images/fig14-9.*
    :alt: Estimated marginal means for the unsaturated model
-   :name: fig-margmean2
+   :name: fig14-9
 
    jamovi screenshot showing the estimated marginal means for the unsaturated
    model, i.e., without the interaction component, with the |clinicaltrial|_

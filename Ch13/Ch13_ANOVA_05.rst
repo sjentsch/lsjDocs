@@ -60,7 +60,7 @@ By rejecting the null hypothesis, we have decided that we *do not* believe that
 #1 is the true state of the world. The next question to ask is, which of the
 other seven possibilities *do* we think is right? When faced with this
 situation, its usually helps to look at the data. For instance, if we look at
-the plots in :numref:`fig-anova1`, it is tempting to conclude that Joyzepam is
+the plots in :numref:`fig13-1`, it is tempting to conclude that Joyzepam is
 better than the placebo and better than Anxifree, but there is no real
 difference between Anxifree and the placebo. However, if we want to get a
 clearer answer about this, it might help to run some tests.
@@ -75,13 +75,13 @@ Anxifree versus Joyzepam) to compare, what we could do is run three separate
 ``ANOVA`` → ``Post Hoc Tests`` options, move the ``drug`` variable across into
 the active box on the right, and then click on the ``No correction`` checkbox.
 This will produce a neat table showing all the pairwise *t*-test comparisons
-amongst the three levels of the ``drug`` variable, as in :numref:`fig-anova3`.
+amongst the three levels of the ``drug`` variable, as in :numref:`fig13-4`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_anova3.*
+.. figure:: ../_images/fig13-4.*
    :alt: Uncorrected pairwise *t*-tests as post-hoc comparisons in jamovi
-   :name: fig-anova3
+   :name: fig13-4
 
    Uncorrected pairwise *t*-tests as post-hoc comparisons in jamovi
    
@@ -153,10 +153,9 @@ pretty simple, so much so that in the original paper, the author writes,
 To use the Bonferroni correction in jamovi, just click on the
 ``Bonferroni`` checkbox in the ``Correction`` options, and you will see
 another column added to the ``ANOVA`` results table showing the adjusted
-*p*-values for the Bonferroni correction (:numref:`fig-anova3`). If
-we compare these three *p*-values to those for the uncorrected, pairwise
-*t*-tests, it is clear that the only thing that jamovi has done is multiply
-them by 3.
+*p*-values for the Bonferroni correction (:numref:`fig13-4`). If we compare
+these three *p*-values to those for the uncorrected, pairwise *t*-tests, it is
+clear that the only thing that jamovi has done is multiply them by 3.
 
 Holm corrections
 ~~~~~~~~~~~~~~~~
@@ -209,12 +208,12 @@ II error rate) but, counter-intuitive as it might seem, it has the *same* Type
 I error rate. As a consequence, in practice there is never any reason to use
 the simpler Bonferroni correction since it is always outperformed by the
 slightly more elaborate Holm correction. Because of this, the Holm correction
-should be your *go to* multiple comparison correction. :numref:`fig-anova3`
-also shows the Holm corrected *p*-values and, as you can see, the biggest
-*p*-value (corresponding to the comparison between Anxifree and the placebo) is
-unaltered. At a value of 0.15, it is exactly the same as the value we got
-originally when we applied no correction at all. In contrast, the smallest
-*p*-value (Joyzepam versus placebo) has been multiplied by three.
+should be your *go to* multiple comparison correction. :numref:`fig13-4` also
+shows the Holm corrected *p*-values and, as you can see, the biggest *p*-value
+(corresponding to the comparison between Anxifree and the placebo) is unaltered.
+At a value of 0.15, it is exactly the same as the value we got originally when
+we applied no correction at all. In contrast, the smallest *p*-value (Joyzepam
+versus placebo) has been multiplied by three.
 
 Writing up the post-hoc test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

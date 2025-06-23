@@ -98,15 +98,15 @@ in which we expect to see our data! See the |rtfm|_ data set. We can use the
 jamovi analysis ``Descriptives`` to confirm that this data set corresponds to a
 balanced design, with two observations for each combination of ``attend`` and
 ``reading``. In the same way we can also calculate the mean grade for each
-combination. This is shown in :numref:`fig-rtfmdescriptives`. Looking at the
-mean scores, one gets the strong impression that reading the text and attending
-the class both matter a lot.
+combination. This is shown in :numref:`fig14-16`. Looking at the mean scores,
+one gets the strong impression that reading the text and attending the class
+both matter a lot.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_rtfmdescriptives.*
+.. figure:: ../_images/fig14-16.*
    :alt: jamovi descriptives for the |rtfm|_ data set
-   :name: fig-rtfmdescriptives
+   :name: fig14-16
 
    jamovi descriptives for the |rtfm|_ data set
    
@@ -134,15 +134,14 @@ that most of the readership of this book will find that annoying rather than
 helpful. Instead, I will explain the basic ideas and then rely on jamovi to show
 that ANOVA analyses and regression analyses are not just similar, they are
 identical for all intents and purposes. Let us start by running this as an
-ANOVA. To do this, we will use the |rtfm|_ data set, and
-:numref:`fig-factorialanova6` shows what we get when we run the analysis in
-jamovi.
+ANOVA. To do this, we will use the |rtfm|_ data set, and :numref:`fig14-17`
+shows what we get when we run the analysis in jamovi.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova6.*
+.. figure:: ../_images/fig14-17.*
    :alt: ANOVA with two factors (only main effects, without their interaction) 
-   :name: fig-factorialanova6
+   :name: fig14-17
 
    ANOVA of the |rtfm|_ data set in jamovi: Model with two factors ``attend``
    and ``reading`` but without the interaction term for these two factors
@@ -237,13 +236,13 @@ In fact, for a simple 2 × 2 ANOVA that is *exactly* how it plays out.
 
 We are really starting to see why ANOVA and regression are basically the same
 thing. When using the |rtfm|_ data set with the jamovi regression analysis, we
-obtain the results shown in :numref:`fig-factorialanova7`.
+obtain the results shown in :numref:`fig14-18`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova7.*
+.. figure:: ../_images/fig14-18.*
    :alt: Regression analysis for the rtfm data set, unsaturated
-   :name: fig-factorialanova7
+   :name: fig14-18
 
    Regression analysis for the |rtfm|_ data set in jamovi: Model with two
    factors ``attend`` and ``reading`` but without the interaction term for
@@ -282,13 +281,13 @@ Finally, one last thing you should know. Because jamovi understands the fact
 that ANOVA and regression are both examples of linear models, it lets you
 extract the classic ANOVA table from your regression model using the ``Linear
 Regression`` → ``Model Coefficients`` → ``Omnibus Test`` → ``ANOVA test``, and
-this will give you the table shown in :numref:`fig-factorialanova8`.
+this will give you the table shown in :numref:`fig14-19`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova8.*
+.. figure:: ../_images/fig14-19.*
    :alt: Omnibus ANOVA Test
-   :name: fig-factorialanova8
+   :name: fig14-19
 
    Results table showing the Omnibus ANOVA Test from the jamovi regression
    analysis using the |rtfm|_ data set
@@ -361,13 +360,13 @@ a single three-level factor, and the |clinicaltrial2|_ data set in which it is
 expanded into two binary contrasts. Once again, the thing that we want to
 demonstrate is that our original 3 × 2 factorial ANOVA is equivalent to a
 regression model applied to the contrast variables. Let us start by re-running
-the ANOVA, with results shown in :numref:`fig-factorialanova9`.
+the ANOVA, with results shown in :numref:`fig14-20`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova9.*
+.. figure:: ../_images/fig14-20.*
    :alt: ANOVA results for the |clinicaltrial| data set: Unsaturated model
-   :name: fig-factorialanova9
+   :name: fig14-20
 
    jamovi ANOVA results for the |clinicaltrial|_ data set: Unsaturated model
    with the two main effects for ``drug`` and ``therapy`` but without an
@@ -378,13 +377,13 @@ the ANOVA, with results shown in :numref:`fig-factorialanova9`.
 Obviously, there are no surprises here. That is the exact same ANOVA that we
 ran earlier. Next, let us run a regression using ``druganxifree``,
 ``drugjoyzepam`` and ``therapyCBT`` as the predictors. The results are shown
-in :numref:`fig-factorialanova10`.
+in :numref:`fig14-21`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova10.*
+.. figure:: ../_images/fig14-21.*
    :alt: Regression: clinicaltrial data set, generated contrast-variables
-   :name: fig-factorialanova10
+   :name: fig14-21
 
    jamovi regression results for the |clinicaltrial|_ data set: Model with the
    generated contrast variables ``druganxifree`` and ``drugjoyzepam``
@@ -411,13 +410,13 @@ want jamovi to do is to run some kind of “model comparison” test, one in whi
 the two “drug-related” contrasts are lumped together for the purpose of the
 test. All we need to do is specify our null model, which in this case would
 include the ``therapyCBT`` predictor, and omit both of the drug-related
-variables, as in :numref:`fig-factorialanova11`\.
+variables, as in :numref:`fig14-22`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova11.*
+.. figure:: ../_images/fig14-22.*
    :alt: Model comparison: Null model 1 vs. contrasts model 2
-   :name: fig-factorialanova11
+   :name: fig14-22
 
    Model comparison in jamovi regression: Null model (Model 1) vs. model using
    the generated contrast variables (Model 2)
@@ -436,7 +435,7 @@ Although we went through all the faff of computing new variables in jamovi for
 the contrasts ``druganxifree`` and ``drugjoyzepam``, just to show that ANOVA
 and regression are essentially the same, in the jamovi linear regression
 analysis there is actually a nifty shortcut to get these contrasts, see
-:numref:`fig-regfactors`. What jamovi is doing here is allowing you to enter
+:numref:`fig14-23`. What jamovi is doing here is allowing you to enter
 categorical predictor variables as factors! You can also specify which group to
 use as the reference level, via the ``Reference Levels`` option. We have
 changed this to ``placebo`` and ``no.therapy``, respectively, because this
@@ -444,9 +443,9 @@ makes most sense.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_regfactors.*
+.. figure:: ../_images/fig14-23.*
    :alt: Regression analysis with factors and contrasts
-   :name: fig-regfactors
+   :name: fig14-23
 
    Regression analysis with factors and contrasts in jamovi, including omnibus
    ANOVA test results
@@ -455,11 +454,11 @@ makes most sense.
 
 If you also set the ``ANOVA test`` checkbox under the ``Model Coefficients`` →
 ``Omnibus Test`` option, we see that the *F*-statistic is 26.15, the degrees of
-freedom are 2 and 14, and the *p*-value is 0.00002 (see
-:numref:`fig-regfactors`). The numbers are identical to the ones we obtained
-for the main effect of ``drug`` in our original ANOVA. Once again, we see that
-ANOVA and regression are essentially the same. They are both linear models, and
-the underlying statistical machinery for ANOVA and for regression is identical.
+freedom are 2 and 14, and the *p*-value is 0.00002 (see :numref:`fig14-23`).
+The numbers are identical to the ones we obtained for the main effect of
+``drug`` in our original ANOVA. Once again, we see that ANOVA and regression
+are essentially the same. They are both linear models, and the underlying
+statistical machinery for ANOVA and for regression is identical.
 
 Degrees of freedom as parameter counting!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

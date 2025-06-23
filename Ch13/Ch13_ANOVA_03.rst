@@ -17,15 +17,15 @@ To make life easier for you, jamovi can do ANOVA… hurrah! Go to the ``ANOVA``
 → ``ANOVA`` analysis, and move the ``mood.gain`` variable across so it is in
 the ``Dependent Variable`` box, and then move the ``drug`` variable across so
 it is in the ``Fixed Factors`` box. This should give the results as shown in
-:numref:`fig-anova2`.\ [#]_ Note I have also checked the η² checkbox,
-pronounced “eta” squared, under the ``Effect Size`` option and this is also
-shown on the results table. We will come back to effect sizes a bit later.
+:numref:`fig13-3`.\ [#]_ Note I have also checked the η² checkbox, pronounced
+“eta” squared, under the ``Effect Size`` option and this is also shown on the
+results table. We will come back to effect sizes a bit later.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_anova2.*
+.. figure:: ../_images/fig13-3.*
    :alt: ``ANOVA`` results table for ``mood.gain`` by ``drug`` administered
-   :name: fig-anova2
+   :name: fig13-3
 
    jamovi ``ANOVA`` results table for ``mood.gain`` by ``drug`` administered
    

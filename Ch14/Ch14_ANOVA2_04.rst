@@ -34,8 +34,8 @@ concerned with the within-group variance, and it does not really make a lot of
 sense to calculate this any way other than with respect to the full model. The
 Levene test can be specified under the ANOVA ``Assumption Checks`` →
 ``Homogeneity Tests`` option in jamovi, with the result shown as in
-:numref:`fig-factorialanova5`. The fact that the Levene test is non-significant
-means that, providing it is consistent with a visual inspection of the plot of
+:numref:`fig14-10`. The fact that the Levene test is non-significant means
+that, providing it is consistent with a visual inspection of the plot of
 standard deviations, we can safely assume that the homogeneity of variance
 assumption is not violated.
 
@@ -45,13 +45,13 @@ Normality of residuals
 As with one-way ANOVA we can test for the normality of residuals in a
 straightforward fashion (see :ref:`Checking the normality assumption
 <normality_anova>`). It is generally a good idea to examine the residuals
-graphically using a QQ-plot (see :numref:`fig-factorialanova5`).
+graphically using a QQ-plot (see :numref:`fig14-10`).
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova5.*
+.. figure:: ../_images/fig14-10.*
    :alt: Checking assumptions in an ANOVA model
-   :name: fig-factorialanova5
+   :name: fig14-10
 
    Checking assumptions in an ANOVA model
    

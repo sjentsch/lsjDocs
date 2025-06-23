@@ -26,13 +26,13 @@ with 2 levels). We refer to this as a 3 × 2 factorial design.
 If we cross-tabulate ``drug`` by ``therapy``, using the ``Frequencies`` →
 ``Contingency Tables`` analysis in jamovi (see
 :doc:`../Ch06/Ch06_DataHandling_1`), we get the table shown in
-:numref:`fig-factorialanova1`.
+:numref:`fig14-1`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova1.*
+.. figure:: ../_images/fig14-1.*
    :alt: jamovi contingency table for ``drug`` by ``therapy``
-   :name: fig-factorialanova1
+   :name: fig14-1
 
    jamovi contingency table for ``drug`` by ``therapy``
    
@@ -226,13 +226,13 @@ start by reproducing the original analysis from chapter
 :doc:`../Ch13/Ch13_ANOVA`. In case you have forgotten, for that analysis we
 were using only a single factor (i.e., ``drug``) to predict our outcome
 variable (i.e., ``mood.gain``), and we got the results shown in
-:numref:`fig-factorialanova2`.
+:numref:`fig14-2`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova2.*
+.. figure:: ../_images/fig14-2.*
    :alt: jamovi One-way ANOVA of ``mood.gain`` by ``drug``
-   :name: fig-factorialanova2
+   :name: fig14-2
 
    jamovi One-way ANOVA of ``mood.gain`` by ``drug``
    
@@ -242,14 +242,14 @@ Now, suppose I am also curious to find out if ``therapy`` has a relationship to
 ``mood.gain``. In light of what we have seen from our discussion of multiple
 regression in chapter :doc:`../Ch12/Ch12_Regression`, you probably will not be
 surprised that all we have to do is add ``therapy`` as a second
-``Fixed Factor`` in the analysis, see :numref:`fig-factorialanova3`.
+``Fixed Factor`` in the analysis, see :numref:`fig14-3`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_factorialanova3.*
+.. figure:: ../_images/fig14-3.*
    :alt: jamovi factorial ANOVA for ``mood.gain`` with the factors ``drug`` and
          ``therapy``
-   :name: fig-factorialanova3
+   :name: fig14-3
 
    jamovi factorial ANOVA for ``mood.gain`` with the two factors ``drug`` and
    ``therapy``
@@ -429,7 +429,7 @@ people who received any particular drug. When we do these calculations in a
 spreadsheet programme, we get a value of 3.45 for the sum of squares associated
 with the main effect of ``drug``. Not surprisingly, this is the same number
 that you get when you look up the *SS* value for the ``drug`` factor in the ANOVA
-table that I presented earlier, in :numref:`fig-factorialanova3`.
+table that I presented earlier, in :numref:`fig14-3`.
 
 We can repeat the same kind of calculation for the effect of ``therapy``. Again,
 there are *N* = 3 people in each group, but since there are R = 3 different values
@@ -437,7 +437,7 @@ in ``drug``, this time around we note that there are 3 · 3 = 9 people who recei
 ``CBT`` and an additional 9 people who received ``no.therapy``. So our calculation
 in this case gives us a value of 0.47 for the sum of squares associated with the
 main effect of ``therapy``. Once again, we are not surprised to see that our
-calculations are identical to the ANOVA output in :numref:`fig-factorialanova3`.
+calculations are identical to the ANOVA output in :numref:`fig14-3`.
 
 So that is how you calculate the *SS* values for the two main effects. These
 *SS* values are analogous to the between-group sum of squares values that we
@@ -600,9 +600,9 @@ that actually make a difference!
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_maineffects.*
+.. figure:: ../_images/fig14-4.*
    :alt: Four different outcomes for a 2 × 2 ANOVA
-   :name: fig-maineffects
+   :name: fig14-4
 
    The four different outcomes for a 2 × 2 ANOVA when no interactions are
    present. In the top-left panel, we see a main effect of factor A and no
@@ -619,9 +619,9 @@ What kinds of outcomes does this analysis capture?
 The ANOVA model that we have been talking about so far covers a range of
 different patterns that we might observe in our data. For instance, in a
 two-way ANOVA design there are four possibilities. An example of each of these
-four possibilities is plotted in :numref:`fig-maineffects`: (1) only factor A
-matters (top-left), (2) only factor B matters (top-right), (3) both A and B
-matter (bottom-left), and (4) neither A nor B matters (bottom-right).
+four possibilities is plotted in :numref:`fig14-4`: (1) only factor A matters
+(top-left), (2) only factor B matters (top-right), (3) both A and B matter
+(bottom-left), and (4) neither A nor B matters (bottom-right).
 
 ------
 

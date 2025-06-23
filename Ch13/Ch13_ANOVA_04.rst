@@ -10,8 +10,8 @@ moment I will just explain η². The definition of η² is actually really simpl
 
 | η² = *SS*\ :sub:`b` / *SS*\ :sub:`tot` 
 
-That is all it is. So when I look at the ANOVA table in :numref:`fig-anova2`,
-I see that *SS*\ :sub:`b`   = 3.45 and *SS*\ :sub:`tot` = 3.45 + 1.39 = 4.84.
+That is all it is. So when I look at the ANOVA table in :numref:`fig13-3`, I
+see that *SS*\ :sub:`b`   = 3.45 and *SS*\ :sub:`tot` = 3.45 + 1.39 = 4.84.
 Thus, we get an η² value of:
 
 | η² = 3.45 / 4.84 = 0.71 

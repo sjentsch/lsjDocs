@@ -22,22 +22,21 @@ ranging from -5 to +5. With that as the study design, let us now load
 |nominal|, ``therapy`` |nominal| and ``mood.gain`` |continuous|.
 
 For the purposes of this chapter, what we are really interested in is the
-effect of ``drug`` on ``mood.gain``. The first thing to do is calculate
-some descriptive statistics and draw some graphs. In
-:doc:`../Ch04/Ch04_Descriptives` we showed you how to do this, and some of the
-descriptive statistics we can calculate in jamovi are shown in
-:numref:`fig-anova1`. As the plot makes clear, there is a larger improvement
-in mood for participants in the ``joyzepam`` group than for either the
-``anxifree`` group or the ``placebo`` group. The ``anxifree`` group shows a
-larger mood gain than the ``placebo`` group, but the difference is not as
-large. The question that we want to answer is are these difference “real”, or
-are they just due to chance?
+effect of ``drug`` on ``mood.gain``. The first thing to do is calculate some
+descriptive statistics and draw some graphs. In :doc:`../Ch04/Ch04_Descriptives`
+we showed you how to do this, and some of the descriptive statistics we can
+calculate in jamovi are shown in :numref:`fig13-1`. As the plot makes clear,
+there is a larger improvement in mood for participants in the ``joyzepam``
+group than for either the ``anxifree`` group or the ``placebo`` group. The
+``anxifree`` group shows a larger mood gain than the ``placebo`` group, but the
+difference is not as large. The question that we want to answer is are these
+difference “real”, or are they just due to chance?
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_anova1.*
+.. figure:: ../_images/fig13-1.*
    :alt: Descriptives for ``mood.gain``, and box plots by ``drug`` administered
-   :name: fig-anova1
+   :name: fig13-1
 
    Descriptives for ``mood.gain``, and box plots by ``drug`` administered
    
