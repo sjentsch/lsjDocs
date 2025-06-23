@@ -3,29 +3,29 @@
 The spreadsheet
 ---------------
 
-It is possible to simply begin typing values into the jamovi spreadsheet as
-you would in any other spreadsheet software. Alternatively, existing data
-sets can be opened in jamovi (see the section “Loading data in jamovi”
-further down on the page).
+It is possible to simply begin typing values into the jamovi spreadsheet as you
+would in any other spreadsheet software. Alternatively, existing data sets can
+be opened in jamovi (see the section “Loading data in jamovi” further down on
+the page).
 
-In jamovi data is represented in a spreadsheet with each column representing
-a “variable” and each row representing a “case” or “participant”.
+In jamovi data is represented in a spreadsheet with each column representing a
+“variable” and each row representing a “case” or “participant”.
 
 
 Data Variables
 ~~~~~~~~~~~~~~
 
 The most commonly used variables in jamovi are ``Data`` variables, these
-variables simply contain data either loaded from a data file, or “typed in”
-by the user. ``Data`` variables can be one of four measurement levels.
-These levels are designated by the symbol in the header of the
-variable’s column:
+variables simply contain data either loaded from a data file, or “typed in” by
+the user. ``Data`` variables can be one of four measurement levels
+(:numref:`fig3-2`). These levels are designated by the symbol in the header of
+the variable’s column:
 
-- The ``ID`` variable type |ID| is unique to jamovi. It is intended for variables
-  that contain identifiers that you would almost never want to analyse.
-  For example, a persons name, or a participant ID. Specifying an ID
-  variable type can improve performance when interacting with very large
-  data sets.
+- The ``ID`` variable type |ID| is unique to jamovi. It is intended for
+  variables  that contain identifiers that you would almost never want to 
+  analyse. For example, a persons name, or a participant ID. Specifying an ID
+  variable type can improve performance when interacting with very large data 
+  sets.
 
 - ``Nominal`` variables |nominal| are for categorical variables which are text
   labels, for example a column called ``gender`` with the values ``male`` and
@@ -40,18 +40,20 @@ variable’s column:
   values have a specific order. An example is a Likert scale with 3 being
   “strongly agree” and -3 being “strongly disagree”.
 
-- ``Continuous`` variables |continuous| are variables which exist on a continuous
-  scale. Examples might be height or weight. This is also referred to as
-  “interval scale” or “ratio scale”.
+- ``Continuous`` variables |continuous| are variables which exist on a
+  continuous scale. Examples might be height or weight. This is also referred 
+  to as “interval scale” or “ratio scale”.
 
-In addition, you can also specify different data types: variables have a
-data type of either ``Text``, ``Integer`` or ``Decimal``.
+In addition, you can also specify different data types: variables have a data
+type of either ``Text``, ``Integer`` or ``Decimal``. They determine how these
+data are stored. Typically, it is neither required nor recommended to change
+the data type.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_measurementlevels.*
+.. figure:: ../_images/fig3-2.*
    :alt: Measurement levels and data types in jamovi
-   :name: fig-measurementlevels
+   :name: fig3-2
 
    Window to set measurement levels and data types in jamovi.
    
@@ -117,11 +119,11 @@ examples of formulas are:
    MEAN(A, B)
    (dose - VMEAN(dose)) / VSTDEV(dose)
 
-In order, these are the sum of ``A`` and ``B``, a log (base 10) transform
-of ``len``, the mean of ``A`` and ``B``, and the *z*-score of the variable
-``dose``. :numref:`fig-computedvariable` shows the jamovi screen for the
-new variable computed as the *z*-score of ``dose`` (from the ``Tooth Growth``
-example data set).
+In order, these are the sum of ``A`` and ``B``, a log (base 10) transform of
+``len``, the mean of ``A`` and ``B``, and the *z*-score of the variable
+``dose``. :numref:`fig3-3` shows the jamovi screen for the new variable
+computed as the *z*-score of ``dose`` (from the ``Tooth Growth`` example data
+set).
 
 .. _transformed_variables:
 
@@ -149,9 +151,9 @@ the editor).
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_computedvariable.*
+.. figure:: ../_images/fig3-3.*
    :alt: Computed variable: *z*-score of ``dose``
-   :name: fig-computedvariable
+   :name: fig3-3
 
    A newly computed variable, the *z*-score of ``dose``.
    

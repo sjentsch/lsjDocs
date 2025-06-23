@@ -26,7 +26,7 @@ Whichever file formats you are using, it is a good idea to create a folder or
 folders especially for your jamovi data sets and analyses and to make sure
 you keep these backed up regularly.
 
-To open a file select the main jamovi menu (``☰``; top left-hand corner),
+To open a file select the jamovi file menu (``☰``; top left-hand corner),
 select ``Open`` and then choose from the files listed under ``This PC`` if you
 want to open an file stored on your computer or select an example data set by
 choosing ``Data Library``. The example files in this book can be found within
@@ -36,26 +36,25 @@ the ``Data Library`` → ``learning statistics with jamovi`` (or ``lsj-data``).
 Importing data from CSV files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-One quite commonly used data format is the humble “comma separated value”
-file, also called a CSV file, and usually bearing the file extension ``.csv``.
-CSV files are just plain old-fashioned text files and what they store is
-basically just a table of data. This is illustrated in
-:numref:`fig-booksalescsv`, which shows a file called |booksales|_ that I have
-created. As you can see, each row represents the book sales data for one
-month. The first row does not contain actual data though, it has the names of
-the variables.
+One quite commonly used data format is the humble “comma separated value” file,
+also called a CSV file, and usually bearing the file extension ``.csv``. CSV
+files are just plain old-fashioned text files and what they store is basically
+just a table of data. This is illustrated in :numref:`fig3-4`, which shows a
+file called |booksales|_ that I have created. As you can see, each row
+represents the book sales data for one month. The first row does not contain
+actual data though, it has the names of the variables.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_booksalescsv.*
+.. figure:: ../_images/fig3-4.*
    :alt: |booksales| data file
-   :name: fig-booksalescsv
+   :name: fig3-4
 
-   The |booksales|_ data file. On the left I have opened the file using a spreadsheet
-   program (LibreOffice), which shows that the file is basically a table. On the right
-   the same file is open in a standard text editor (the TextEdit program on a Mac),
-   which shows how the file is formatted. The entries in the table are wrapped in quote
-   marks and separated by commas.
+   The |booksales|_ data file. On the left I have opened the file using a 
+   spreadsheet, which shows that the file is basically a table. On the right,
+   the same file is open in a text editor, which shows how the file is 
+   formatted. The entries in the table are wrapped in quote marks and separated 
+   by commas.
 
 .. ----------------------------------------------------------------------------
 
@@ -65,7 +64,23 @@ file on your computer. If you are on a Mac, it will look like the usual Finder
 window that you use to choose a file; on Windows it looks like an Explorer
 window. I am assuming that you are familiar with your own computer, so you
 should have no problem finding the CSV-file that you want to import! Find the
-one you want, then click on the ``Open`` button.
+one you want, then click on the ``Open`` button. An example of what it looks
+like on a Mac is shown in :numref:`fig3-5`. I am assuming that you should have
+no problem finding the csv file that you want to import! 
+
+.. ----------------------------------------------------------------------------
+
+.. figure:: ../_images/fig3-5.*
+   :alt: CSV file in on MacOS
+   :name: fig3-5
+
+   A dialog box on a Mac asking you to select the CSV file jamovi should try to 
+   import. Mac users will recognise this immediately, as it is the usual way in 
+   which a Mac asks you to find a file. Windows users will not see this,
+   instead they will see the usual explorer window that Windows always gives 
+   you when it wants you to select a file.
+   
+.. ----------------------------------------------------------------------------
 
 There are a few things that you can check to make sure that the data
 gets imported correctly:

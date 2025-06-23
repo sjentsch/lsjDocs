@@ -20,14 +20,14 @@ in which they are under the inflence of caffeine, and an ``alcohol``
 condition, in which… well, you can probably guess. Ideally, I suppose, there
 would be a fourth condition in which both drugs are administered, but for the
 sake of simplicity let us ignore that. The |drugs|_ data set in
-:numref:`fig-jtransform-long` gives you a sense of what kind of data you might
-observe in an experiment like this.
+:numref:`fig6-17` gives you a sense of what kind of data you might observe in
+an experiment like this.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_jTransform_DataWide.*
+.. figure:: ../_images/fig6-17.*
    :alt: Data table of the |drugs|_ data set in wide format
-   :name: fig-jtransform-data_wide
+   :name: fig6-17
 
    Data table of the |drugs|_ data set in wide format
    
@@ -56,23 +56,23 @@ data.
 
 It is not too difficult to switch between wide and long format. We use the
 |drugs|_ data set, in connection with the function ``Wide to Long`` from
-``jTransform``. In the analysis panel, we will find three different options
-regarding how the transformation can be carried out, shown as different tabs
-under the heading ``Mode`` at the top of the analysis panel. Quite often, the
-names of the original variables to be transformed (in our case, e.g.,
-``RT_caffeine`` or ``WMC_alcohol``) have a separator in the variable name (in
-our case the ``_`` between ``WMC`` or ``RT`` and the conditions ``caffeine``,
-etc.), and follow a very clear scheme. Whenever you have a variable with a
-name like ``WMC_caffeine`` you know that the variable being measured is “WMC”,
-and that the specific condition in which it is being measured is the
-“caffeine” condition. Similarly, you know that ``RT_no.drug`` refers to the
-“RT“ variable measured in the “no drug” condition. The measured variable comes
-first (e.g., ``WMC``), followed by a separator character (in this case the
-separator is an underscore, ``_``), and then the name of the condition in
-which it is being measured (e.g., ``caffeine``). There are two different
-prefixes (i.e, the strings before the separator, ``WMC``, ``RT``) which means
-that there are two separate variables being measured. There are three
-different suffixes (i.e., the strings after the separtator, ``caffeine``,
+``jTransform``. In the analysis panel (:numref:`fig6-18`), we will find three
+different options regarding how the transformation can be carried out, shown as
+different tabs under the heading ``Mode`` at the top of the analysis panel.
+Quite often, the names of the original variables to be transformed (in our
+case, e.g., ``RT_caffeine`` or ``WMC_alcohol``) have a separator in the
+variable name (in our case the ``_`` between ``WMC`` or ``RT`` and the
+conditions ``caffeine``, etc.), and follow a very clear scheme. Whenever you
+have a variable with a name like ``WMC_caffeine`` you know that the variable
+being measured is “WMC”, and that the specific condition in which it is being
+measured is the “caffeine” condition. Similarly, you know that ``RT_no.drug``
+refers to the “RT“ variable measured in the “no drug” condition. The measured
+variable comes first (e.g., ``WMC``), followed by a separator character (in
+this case the separator is an underscore, ``_``), and then the name of the
+condition in which it is being measured (e.g., ``caffeine``). There are two
+different prefixes (i.e, the strings before the separator, ``WMC``, ``RT``)
+which means that there are two separate variables being measured. There are
+three different suffixes (i.e., the strings after the separtator, ``caffeine``,
 ``alcohol``, ``no.drug``) meaning that there are three different levels of the
 within-subject factor. Finally, notice that the separator string (i.e., ``_``)
 does not appear anywhere in two of the variables (``id``, ``gender``),
@@ -87,53 +87,54 @@ present in the input box ``Separator``. If we had another separotor (e.g.,
 Afterwards, we assign the within-subject factors (i.e., all ``WMC_…`` and
 ``RT_…`` variables) to ``Variables To Be Transformed``, the between-subjects
 factor (i.e., ``gender``) to  ``Variables NOT To Be Transformed``, and the
-``id`` variable to ``Variables To Identify the Same Unit``. To have such an
-ID variable is not mandatory though. If no such variable is given, the
-function automatically generates such an ID variable (named ``ID`` and
-appearing as the first column of the data set). Remember that in long format,
-we have several entries for each participant, therefore such ID variable is
-required. When checking the ``Data Preview``, we realize that ``RT`` and
-``WMC`` appear as ``cond1`` in the preview, whereas we would like to keep them
-as separate variables. We can achieve this by entering ``1`` into the input
-box ``Exclude Level`` (if we take the original variable names, e.g.,
-``WMC_alcohol`` and split it using the separator ``_``, then ``WMC`` and
-``RT`` are the first part / level of the split variable). Now, the ``Data
-Preview`` looks like we intended. In addition, ``Repeated Measures Levels``
-provides further information about how the variables are to be transformed.
-After checking both of them, we know whether the transformation will lead to
-the result we intended, and, if so, we can use the ``Create``-button to open
-the data set transformed into long format in a new jamovi window.
+``id`` variable to ``Variables To Identify the Same Unit`` (see
+:numref:`fig6-18`). To have such an ID variable is not mandatory though. If no
+such variable is given, the function automatically generates such an ID
+variable (named ``ID`` and appearing as the first column of the data set).
+Remember that in long format, we have several entries for each participant,
+therefore such ID variable is required. When checking the ``Data Preview``, we
+realize that ``RT`` and ``WMC`` appear as ``cond1`` in the preview, whereas we
+would like to keep them as separate variables. We can achieve this by entering
+``1`` into the input box ``Exclude Level`` (if we take the original variable
+names, e.g., ``WMC_alcohol`` and split it using the separator ``_``, then
+``WMC`` and ``RT`` are the first part / level of the split variable). Now, the
+``Data Preview`` looks like we intended. In addition, ``Repeated Measures
+Levels`` provides further information about how the variables are to be
+transformed. After checking both of them, we know whether the transformation
+will lead to the result we intended, and, if so, we can use the
+``Create``-button to open the data set transformed into long format in a new
+jamovi window.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_jTransform_Wide2Long.*
+.. figure:: ../_images/fig6-18.*
    :alt: Option and results panels for the ``Wide to Long``-function from
          ``jTransform`` using the |drugs|_ data set
-   :name: fig-jtransform-wide2long
+   :name: fig6-18
 
    Option and results panels for the ``Wide to Long``-function from
    ``jTransform`` using the |drugs|_ data set
 
 .. ----------------------------------------------------------------------------
 
-In :numref:`fig-jtransform-data_long`, the data set that we have transformed
-to long format is shown. It has 30 rows: Each of the ten participants appears
-in three separate rows, one corresponding to each of the three conditions. And
-instead of having a variable like ``WMC_caffeine`` that indicates that we were
-measuring “WMC” in the “caffeine” condition, this information is now recorded
-in two separate variables, one called ``cond1`` (that you easily could change
-into a more descriptive name like ``drug``) and another called ``WMC``.
-Obviously, the long and wide format of the data contain the same information,
-but they represent quite different ways of organising that information.
-Sometimes you find yourself needing to analyse data in wide form, and
-sometimes you find that you need long format. So it is really useful to know
-how to switch between the two.
+In :numref:`fig6-19`, the data set that we have transformed to long format is
+shown. It has 30 rows: Each of the ten participants appears in three separate
+rows, one corresponding to each of the three conditions. And instead of having
+a variable like ``WMC_caffeine`` that indicates that we were measuring “WMC” in
+the “caffeine” condition, this information is now recorded in two separate
+variables, one called ``cond1`` (that you easily could change into a more
+descriptive name like ``drug``) and another called ``WMC``. Obviously, the long
+and wide format of the data contain the same information, but they represent
+quite different ways of organising that information. Sometimes you will find
+that you would like to analyse data in wide form, and sometimes you find that
+you need long format. So it is really useful to know how to switch between the
+two.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_jTransform_DataLong.*
+.. figure:: ../_images/fig6-19.*
    :alt: Data table of the |drugs_long|_ data set in long format
-   :name: fig-jtransform-data_long
+   :name: fig6-19
 
    Data table of the |drugs_long|_ data set in long format
    
@@ -160,21 +161,21 @@ we have two measured variables for each condition (i.e., ``PC`` and ``MRT``).
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_jTransform_DataWide2.*
+.. figure:: ../_images/fig6-20.*
    :alt: Data table of the |choice|_ data set in wide format
-   :name: fig-jtransform-data_wide2
+   :name: fig6-20
 
    Data table of the |choice|_ data set in wide format
    
 .. ----------------------------------------------------------------------------
 
-The |choice|_ data set shows what the wide form of this kind of data might
-look like. Notice that this time around we have variable names of the form
-``MRT/block1/day2``. As before, the first part of the name refers to the
-measured variable (response time), but there are now two suffixes, one
-indicating that the testing took place in block 1, and the other indicating
-that it took place on day 2. To complicate matters, it uses ``/`` as the
-separator character rather than ``_``. Even so, reshaping this data set is
+The |choice|_ data set in :numref:`fig6-20` shows what the wide form of this
+kind of data might look like. Notice that this time around we have variable
+names of the form ``MRT/block1/day2``. As before, the first part of the name
+refers to the measured variable (response time), but there are now two
+suffixes, one indicating that the testing took place in block 1, and the other
+indicating that it took place on day 2. To complicate matters, it uses ``/`` as
+the separator character rather than ``_``. Even so, reshaping this data set is
 pretty easy.
 
 Once again, we use the ``Wide to Long``-function, assign ``/`` to the input
@@ -189,19 +190,19 @@ jamovi window.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_jTransform_DataLong2.*
+.. figure:: ../_images/fig6-21.*
    :alt: Data table of the |choice_long|_ data set in long format
-   :name: fig-jtransform-data_long2
+   :name: fig6-21
 
    Data table of the |choice_long|_ data set in long format
    
 .. ----------------------------------------------------------------------------
 
-The resulting data set contains two between-subject variables (``id`` and
-``gender``), two variables that define our within-subject manipulations
-(``cond1`` and ``cond2``), and two more contain the measurements we took
-(``MRT`` and ``PC``). For clarity, it is recommended to rename ``cond1`` into
-``block`` and ``cond2`` into ``day`` in the resulting data set.
+The resulting data set (:numref:`fig6-21`) contains two between-subject
+variables (``id`` and ``gender``), two variables that define our within-subject
+manipulations (``cond1`` and ``cond2``), and two more contain the measurements
+we took (``MRT`` and ``PC``). For clarity, it is recommended to rename
+``cond1`` into ``block`` and ``cond2`` into ``day`` in the resulting data set.
 
 When using the ``Wide to Long`` function, the two other modes, ``Non-Sep.
 (Simple)`` and ``Non-Sep. (Complex)`` provide additional flexibility for cases
@@ -214,25 +215,25 @@ two measurements here (``WMC`` and ``RT``) this is not a very useful
 transformation for this particular data set, but there may be other data sets
 where this transformation is useful.
 
-``Non-Sep. (Complex)`` permits several within-subject measures (you will have
-to define each measurement or target variable by replacing ``long_y`` with the
-name of that variable, i.e., ``WMC`` and ``RT`` to each of which you then
-assign all original variables of this category in the variable box underneath
-(e.g., are all ``WMC_…`` assigned to ``WMC``). Afterwards, you need to define
-``Name`` and ``N Levels`` for each index variable ``Index Variable (Can Be
-Nested)`` (each class of conditions would be represented by one index
-variable), for the current data set we may choose ``condition`` as name, and
-``3`` as the number of levels. For the |choice|_ data set, the target variables
-would be ``MRT`` and ``PC``, and we would have to index variables, ``block``
-and ``day`` with 2 levels each.
+``Non-Sep. (Complex)`` permits several within-subject measures, and is used as
+shown in :numref:`fig6-22`. You will have to define each measurement or target
+variable by replacing ``long_y`` with the name of that variable, i.e., ``WMC``
+and ``RT`` to each of which you then assign all original variables of this
+category in the variable box underneath (e.g., are all ``WMC_…`` assigned to
+``WMC``). Afterwards, you need to define ``Name`` and ``N Levels`` for each
+index variable ``Index Variable (Can Be Nested)`` (each class of conditions
+would be represented by one index variable), for the current data set we may
+choose ``condition`` as name, and ``3`` as the number of levels. For the
+|choice|_ data set, the target variables would be ``MRT`` and ``PC``, and we
+would have to index variables, ``block`` and ``day`` with 2 levels each.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_jTransform_Wide2Long2.*
+.. figure:: ../_images/fig6-22.*
    :alt: Option and results panels for the ``Wide to Long``-function from
          ``jTransform`` using the |choice|_ data set and the mode ``Non-Sep
          (Advanced)``
-   :name: fig-jtransform-wide2long
+   :name: fig6-22
 
    Option and results panels for the ``Wide to Long``-function from
    ``jTransform`` using the |choice|_ data set and the mode ``Non-Sep
@@ -245,29 +246,30 @@ Reshaping the data set from long to wide format
 
 To convert data from long form to wide format, we can use the ``Long to Wide``
 function from the ``jTransform`` module. We can use the data set that we just
-transformed (the same data set is available as |drugs_long|_). Recall from
-earlier that this data set in long format contains variables named ``id``,
-``gender``, ``drug`` (or ``cond``, if we did not change the name), ``WMC``
-and ``RT``. In order to convert from long form to wide form, all you need to
-do is indicate which of these variables are measured separately for each
-condition (i.e., ``WMC`` and ``RT``), these variables are assigned to
+transformed (:numref:`fig6-19`; the same data set is available as
+|drugs_long|_). Recall from earlier that this data set in long format contains
+variables named ``id``, ``gender``, ``drug`` (or ``cond``, if we did not change
+the name), ``WMC`` and ``RT``. In order to convert from long form to wide form
+you will need the following setup in your options panel (:numref:`fig6-23`).
+Here, you need to indicate which of these variables are measured separately for
+each condition (i.e., ``WMC`` and ``RT``), these variables are assigned to
 ``Variables To Be Transformed``; and which variable is the within-subject
-factor that specifies the condition (i.e., ``drug`` or ``cond``), this
-variable is assigned to ``Variables That Differentiate Within a Unit``. It
-was mentioned earlier, that in data sets with long format it is mandatory
-to have an ID variable (here ``id``) which is assigned to ``Variables That
-Identify the Same Unit``. Finally, if we have a between-subjects factor (in
-our case ``gender``), we assign this variable to ``Variables Not To Be
-Transformed``. Again, we check the ``Data Preview`` and the ``Repeated
-Measures Levels``, and use the ``Create``-button once these two outputs
-indicate that the transformation gives us the intended result.
+factor that specifies the condition (i.e., ``drug`` or ``cond``), this variable
+is assigned to ``Variables That Differentiate Within a Unit``. It was mentioned
+earlier, that in data sets with long format it is mandatory to have an ID
+variable (here ``id``) which is assigned to ``Variables That Identify the Same
+Unit``. Finally, if we have a between-subjects factor (in our case ``gender``),
+we assign this variable to ``Variables Not To Be Transformed``. Again, we check
+the ``Data Preview`` and the ``Repeated Measures Levels``, and use the
+``Create``-button once these two outputs indicate that the transformation gives
+us the intended result.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_jTransform_Long2Wide.*
+.. figure:: ../_images/fig6-23.*
    :alt: Option and results panels for the ``Long to Wide``-function from
          ``jTransform`` using the |drugs_long|_ data set
-   :name: fig-jtransform-long2wide
+   :name: fig6-23
 
    Option and results panels for the ``Long to Wide``-function from
    ``jTransform``  using the |drugs_long|_ data set
@@ -290,25 +292,25 @@ original |choice|_ data set.
 Finally, the ``Long to Wide`` function implements an option to accumulate
 data over conditions. Let us assume that we after all decide that we are only
 interested in the long-term effects (``day1`` vs. ``day2``). We would then
-use the ``Long to Wide`` function, assigning the measures (i.e., ``PC`` and
-``MRT``) to ``Variables To Be Transformed``, the within-subject factor that
-specifies the condition we would like to keep (i.e., ``cond2``  or ``day``)
-to ``Variables That Differentiate Within a Unit``, the ID variable (``id``)
-to ``Variables That Identify the Same Unit``, and the between-subjects factor
-(``gender``) to ``Variables Not To Be Transformed``. The function would then
-calculate the mean (or take the first value, depending on what setting we
-choose for ``How to Accumulate``) over the occurences of ``cond1`` or
-``block``. You can get an impression of the difference when you compare the
-``Data Preview`` while adding and removing the ``cond1`` or ``block``
-variable to ``Variables To Be Transformed``.
+use the ``Long to Wide`` function (:numref:`fig6-24`), assign the measures
+(i.e., ``PC`` and ``MRT``) to ``Variables To Be Transformed``, the
+within-subject factor that specifies the condition we would like to keep (i.e.,
+``cond2``  or ``day``) to ``Variables That Differentiate Within a Unit``, the
+ID variable (``id``) to ``Variables That Identify the Same Unit``, and the
+between-subjects factor (``gender``) to ``Variables Not To Be Transformed``.
+The function would then calculate the mean (or take the first value, depending
+on what setting we choose for ``How to Accumulate``) over the occurences of
+``cond1`` or ``block``. You can get an impression of the difference when you
+compare the ``Data Preview`` while adding and removing the ``cond1`` or
+``block`` variable to ``Variables To Be Transformed``.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_jTransform_Long2Wide2.*
+.. figure:: ../_images/fig6-24.*
    :alt: Option and results panels for the ``Long to Wide``-function from
          ``jTransform`` using the |choice_long|_ data set and accumulating
          over the condition ``block``
-   :name: fig-jtransform-long2wide
+   :name: fig6-24
 
    Option and results panels for the ``Long to Wide``-function from
    ``jTransform`` using the |choice_long|_ data set and accumulating

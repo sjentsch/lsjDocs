@@ -17,21 +17,21 @@ the single quote marks:\ [#]_
 
 .. code-block:: text
 
-   afl.finalists == "Brisbane" or afl.finalists == 'Carlton' or afl.finalists ==
-   'Fremantle' or afl.finalists == 'Richmond'
+   afl.finalists == "Brisbane" or afl.finalists == "Carlton" or
+   afl.finalists == "Fremantle" or afl.finalists == "Richmond"
 
 When you have done this you will see, in the ``Data`` view, that jamovi has
 filtered out all values apart from those we have specified. Next, open up the
 ``Exploration`` → ``Descriptives`` window and click on the ``Bar plot`` check
 box (remember to move the ``afl.finalists`` variable across into the
 ``Variables`` box so that jamovi knows which variable to use). You should then
-get a bar graph, something like that shown in :numref:`fig-bar1`.
+get a bar graph, something like that shown in :numref:`fig5-11`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_bar1.*
+.. figure:: ../_images/fig5-11.*
    :alt: Bar plot in jamovi, showing just four AFL teams
-   :name: fig-bar1
+   :name: fig5-11
 
    Filtering to include just four AFL teams, and drawing a bar plot in jamovi
    

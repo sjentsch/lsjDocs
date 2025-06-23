@@ -35,18 +35,18 @@ following, including the single quote marks:
    speaker == "makka-pakka"
 
 When you have done this, you will see that a new column has been added to the
-spreadsheet window (see :numref:`fig-subset1`), labelled ``Filter 1``, with the
+spreadsheet window (see :numref:`fig6-10`), labelled ``Filter 1``, with the
 cases where ``speaker`` is not ``makka-pakka`` greyed-out (i.e., filtered out)
 and, conversely, the cases where ``speaker`` is ``makka-pakka`` have a green
 check mark indicating they are filtered in. You can test this by running
 ``Exploration`` → ``Descriptives``, assigning ``speaker`` to the ``Variables``-
-box and checking ``Frequency tables``. Go on, try it, and see what that shows!
+box and checking ``Frequency tables``. Go on, try it!
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_subset1.*
+.. figure:: ../_images/fig6-10.*
    :alt: Creating a subset using ``Filters``
-   :name: fig-subset1
+   :name: fig6-10
 
    Creating a subset of the |nightgarden|_ data set using the jamovi
    ``Filters`` option
@@ -85,33 +85,34 @@ above) for selecting a particular subgroup:
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_compute_filtered.*
+.. figure:: ../_images/fig6-11.*
    :alt: Using a computed variable for creating a filtered variable
-   :name: fig-compute_filtered
+   :name: fig6-11
 
    Using a computed variable for creating a filtered variable
    
 .. ----------------------------------------------------------------------------
 
-Ideally, one would name those variables using a combination of the variable
-that was split (``utterance``) with an indicator of which subgroup was selected
-(e.g., ``utterance_upsy-daisy``).
+How a computed variable can be used to create a filtered variable is shown in
+:numref:`fig6-11`. Ideally, one would name those variables using a combination
+of the variable that was split (``utterance``) with an indicator of which
+subgroup was selected (e.g., ``utterance_upsy-daisy``).
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_data_filtered.*
+.. figure:: ../_images/fig6-12.*
    :alt: Filtered variables in the spreadsheet created using the functions
          above
-   :name: fig-data_filtered
+   :name: fig6-12
 
    Filtered variables in the spreadsheet created using the functions above
 
 .. ----------------------------------------------------------------------------
 
-Once these variables have been created, one can use them to run separate
-analyses for each of the subgroups. However, the |nightgarden|_ dataset that
-we used here was merely a demonstration and it is perhaps not the most useful
-data set for this purpose.
+Once these variables have been created (see :numref:`fig6-12`), one can use
+them to run separate analyses for each of the subgroups. However, the
+|nightgarden|_ dataset that we used here was merely a demonstration. It is
+perhaps not the most useful data set for this purpose…
 
    
 .. ----------------------------------------------------------------------------

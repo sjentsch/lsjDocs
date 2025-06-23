@@ -3,16 +3,15 @@
 The McNemar test
 ----------------
 
-Suppose you have been hired to work for the *Australian Generic Political
-Party* (AGPP), and part of your job is to find out how effective the
-AGPP political advertisements are. So you decide to put together a
-sample of *N* = 100 people and ask them to watch the AGPP ads. Before they
-see anything, you ask them if they intend to vote for the AGPP, and then
-after showing the ads you ask them again to see if anyone has changed
-their minds. Obviously, if you are any good at your job, you would also do a
-whole lot of other things too, but let us consider just this one simple
-experiment. One way to describe your data is via the following
-contingency table:
+Suppose you have been hired to work for the *Australian Generic Political Party*
+(AGPP), and part of your job is to find out how effective the AGPP political
+advertisements are. So you decide to put together a sample of *N* = 100 people
+and ask them to watch the AGPP ads. Before they see anything, you ask them if
+they intend to vote for the AGPP, and then after showing the ads you ask them
+again to see if anyone has changed their minds. Obviously, if you are any good
+at your job, you would also do a whole lot of other things too, but let us
+consider just this one simple experiment. One way to describe your data is via
+the following contingency table:
 
 +-----------+--------+-------+-------+
 |           | Before | After | Total |
@@ -33,10 +32,10 @@ observations are not independent of each other. If voter A says “yes” the fi
 time and voter B says “no”, then you would expect that voter A is more likely to
 say “yes” the second time than voter B! The consequence of this is that the
 usual χ² test will not give trustworthy answers due to the violation of the
-independence assumption. Now, if this were a really uncommon situation, I
-would not be bothering to waste your time talking about it. But it is not
-uncommon at all. This is a *standard* repeated measures design, and none of
-the tests we have considered so far can handle it.
+independence assumption. Now, if this were a really uncommon situation, I would
+not be bothering to waste your time talking about it. But it is not uncommon at
+all. This is a *standard* repeated measures design, and none of the tests we
+have considered so far can handle it.
 
 The solution to the problem was published by :ref:`McNemar (1947)
 <McNemar_1947>`. The trick is to start by tabulating your data in a slightly
@@ -53,11 +52,11 @@ different way:
 +-----------------+------------+-----------+-------+
 
 This is exactly the same data, but is is been rewritten so that each of our 100
-participants appears in only one cell. Because we have written our data this way
-the independence assumption is now satisfied, and this is a contingency table
-that we *can* use to construct a χ²-goodness-of-fit statistic. However, as
-we will see, we need to do it in a slightly non-standard way. To see what is going
-on, it helps to label the entries in our table a little differently:
+participants appears in only one cell. Because we have written our data this
+way the independence assumption is now satisfied, and this is a contingency
+table that we *can* use to construct a χ²-goodness-of-fit statistic. However,
+as we will see, we need to do it in a slightly non-standard way. To see what is
+going on, it helps to label the entries in our table a little differently:
 
 +-----------------+------------+-----------+-----------+
 |                 | After: Yes | After: No | Total     |
@@ -108,14 +107,13 @@ appears only once in this data set. Go to ``Analyses`` → ``Frequencies``
 → ``Contingency Tables`` → ``Paired Samples`` in jamovi, and move
 ``response_before`` into the ``Rows`` box, and ``response_after`` into the
 ``Columns`` box. You will then get a contingency table in the results panel,
-with the statistic for the McNemar test just below it (see
-:numref:`fig-McNemar`):
+with the statistic for the McNemar test just below it (see :numref:`fig10-7`):
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_McNemar.*
+.. figure:: ../_images/fig10-7.*
    :alt: McNemar test output in jamovi
-   :name: fig-McNemar
+   :name: fig10-7
 
    McNemar test output in jamovi
    
@@ -165,14 +163,14 @@ situation, what I am really trying to see is if the row totals are different
 from the column totals. That is when you use the McNemar test.
 
 The different statistics produced by these different analyses are shown in
-:numref:`fig-ind_paired`. Notice that the results are different! These are not
-the same test.
+:numref:`fig10-8`. Notice that the results are different! These are not the
+same test.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_ind_paired.*
+.. figure:: ../_images/fig10-8.*
    :alt: Independent vs. Paired (McNemar) test output in jamovi
-   :name: fig-ind_paired
+   :name: fig10-8
 
    Independent vs. Paired (McNemar) test output in jamovi
    

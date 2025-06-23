@@ -13,7 +13,7 @@ of these, or talk about them in too much detail, but I will show you some
 pictures.
 
 -  The **t-distribution** is a continuous distribution that looks very similar
-   to a normal distribution, see :numref:`fig-tdist`. Note that the “tails” of
+   to a normal distribution, see :numref:`fig7-10`. Note that the “tails” of
    the *t*-distribution are “heavier” (i.e., extend further outwards) than the
    tails of the normal distribution). That is the important difference between
    the two. This distribution tends to arise in situations where you think that
@@ -23,9 +23,9 @@ pictures.
    
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_tDist.*
+.. figure:: ../_images/fig7-10.*
    :alt: *t*-distribution with *df* = 3 in comparison to a normal distribution
-   :name: fig-tDist
+   :name: fig7-10
 
    *t*-distribution with 3 degrees of freedom (solid line). It looks similar to
    a normal distribution, but it is not quite the same. For comparison purposes
@@ -42,18 +42,18 @@ pictures.
    are normally distributed, square their values and then add them up (a
    procedure referred to as taking a “sum of squares”), this sum has a
    χ²-distribution. You would be amazed how often this fact turns out to be
-   useful. Anyway, :numref:`fig-chiSqDist` illustrates what a
-   χ²-distribution looks like.
+   useful. Anyway, :numref:`fig7-11` illustrates what a χ²-distribution looks 
+   like.
    
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_chiSqDist.*
+.. figure:: ../_images/fig7-11.*
    :alt: χ²-distribution with *df* = 3
-   :name: fig-chiSqDist
+   :name: fig7-11
 
-   χ²-distribution with 3 degrees of freedom. Notice that the observed
-   values must always be greater than zero, and that the distribution is
-   pretty skewed. These are the key features of a χ²-distribution.
+   χ²-distribution with 3 degrees of freedom. Notice that the observed values 
+   must always be greater than zero, and that the distribution is pretty 
+   skewed. These are the key features of a χ²-distribution.
 
 .. ----------------------------------------------------------------------------
 
@@ -67,13 +67,13 @@ pictures.
    something that has an *F*-distribution. Of course, as yet I still have not
    given you an example of anything that involves a sum of squares, but I will
    in chapter :doc:`../Ch13/Ch13_ANOVA`. And that is where we will run into the
-   *F*-distribution. Oh, and there is a picture in :numref:`fig-Fdist`.
+   *F*-distribution. Oh, and there is a picture in :numref:`fig7-12`.
    
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_FDist.*
+.. figure:: ../_images/fig7-12.*
    :alt: *F*-distribution with *df* = 3 and *df* = 5
-   :name: fig-FDist
+   :name: fig7-12
 
    *F*-distribution with 3 and 5 degrees of freedom. Qualitatively speaking, it
    looks pretty similar to a χ²-distribution, but they are not quite the

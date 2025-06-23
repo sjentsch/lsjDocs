@@ -81,9 +81,9 @@ what the binomial distribution looks like.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_binomSkulls20.*
+.. figure:: ../_images/fig7-3.*
    :alt: Binomial distribution for *N* = 20 and θ = 1/6
-   :name: fig-binomSkulls20
+   :name: fig7-3
 
    Binomial distribution with size parameter of *N* = 20 and an underlying
    success probability of θ = 1/6. Each vertical bar depicts the probability of
@@ -93,26 +93,25 @@ what the binomial distribution looks like.
    
 .. ----------------------------------------------------------------------------
 
-To that end, :numref:`fig-binomSkulls20` plots the binomial probabilities for
-all possible values of *X* for our dice rolling experiment, from *X* = 0 (no
-skulls) all the way up to *X* = 20 (all skulls). Note that this is basically a
-bar chart, and is no different to the “trousers probability” plot I drew in
-:numref:`fig-pantsDistribution`. On the horizontal axis we have all the
-possible events, and on the vertical axis we can read off the probability of
-each of those events. So, the probability of rolling four skulls out of 20 is
-about 0.20 (the actual answer is 0.2022036, as we will see in a moment). In other
-words, you would expect that to happen about 20\% of the times you repeated this
-experiment.
+To that end, :numref:`fig7-3` plots the binomial probabilities for all possible
+values of *X* for our dice rolling experiment, from *X* = 0 (no skulls) all the
+way up to *X* = 20 (all skulls). Note that this is basically a bar chart, and
+is no different to the “trousers probability” plot I drew in :numref:`fig7-2`.
+On the horizontal axis we have all the possible events, and on the vertical
+axis we can read off the probability of each of those events. So, the
+probability of rolling four skulls out of 20 is about 0.20 (the actual answer
+is 0.2022036, as we will see in a moment). In other words, you would expect
+that to happen about 20\% of the times you repeated this experiment.
 
 To give you a feel for how the binomial distribution changes when we alter the
-values of *θ* and *N*, let us suppose that instead of rolling dice I am
+values of *θ* and *N*, let us suppose that instead of rolling dice I am 
 actually flipping coins. This time around, my experiment involves flipping a
 fair coin repeatedly and the outcome that I am interested in is the number of
 heads that I observe. In this scenario, the success probability is now *θ* =
 1/2. Suppose I were to flip the coin *N* = 20 times. In this example, I have
 changed the success probability but kept the size of the experiment the same.
 What does this do to our binomial distribution? Well, as the left panel of
-:numref:`fig-binomHeads` shows, the main effect of this is to shift the whole
+:numref:`fig7-4` shows, the main effect of this is to shift the whole
 distribution, as you would expect. Okay, what if we flipped a coin *N* = 100
 times? Well, in that case we get what is shown in the right panel. The
 distribution stays roughly in the middle but there is a bit more variability
@@ -120,10 +119,10 @@ in the possible outcomes.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_binomHeads.*
+.. figure:: ../_images/fig7-4.*
    :alt: Binomial distribution: θ = 1/2 and *N* = 20 (left) or *N* = 100
          (right)
-   :name: fig-binomHeads
+   :name: fig7-4
 
    Two binomial distributions, involving a scenario in which I am flipping a
    fair coin, so the underlying success probability is θ = 1/2. In the left

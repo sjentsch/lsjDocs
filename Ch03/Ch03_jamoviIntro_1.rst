@@ -33,16 +33,15 @@ jamovi homepage.
 The jamovi window
 ~~~~~~~~~~~~~~~~~
 
-One way or another, regardless of what operating system you are using,
-it is time to open jamovi and get started. When first starting jamovi you
-will be presented with a user interface which looks something like
-:numref:`fig-startjamovi`.
+One way or another, regardless of what operating system you are using, it is
+time to open jamovi and get started. When first starting jamovi you will be
+presented with a user interface which looks something like :numref:`fig3-1`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_startingjamovi.*
+.. figure:: ../_images/fig3-1.*
    :alt: jamovi start window
-   :name: fig-startjamovi
+   :name: fig3-1
 
    jamovi looks like this when you start it.
 

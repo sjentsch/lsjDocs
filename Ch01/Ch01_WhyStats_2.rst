@@ -74,24 +74,23 @@ Now compare this to how the female applicants distributed themselves. Ranking
 the departments in terms of the total number of female applicants produces a
 quite different ordering C > E > D > F > **A** > **B**.
 In other words, what these data seem to be suggesting is that the female
-applicants tended to apply to “harder” departments. And in fact, if we
-look at :numref:`fig-berkeley` we see that this trend is systematic, and
-quite striking. This effect is known as **Simpson’s paradox**. It is not common,
-but it does happen in real life, and most people are very surprised by it when
-they first encounter it, and many people refuse to even believe that it is real.
-It is very real. And while there are lots of very subtle statistical lessons
-buried in there, I want to use it to make a much more important point: doing
-research is hard, and there are *lots* of subtle, counter-intuitive traps lying
-in wait for the unwary. That is reason #2 why scientists love statistics,
-and why we teach research methods. Because science is hard, and the
-truth is sometimes cunningly hidden in the nooks and crannies of
-complicated data.
+applicants tended to apply to “harder” departments. And in fact, if we look at
+:numref:`fig1-1` we see that this trend is systematic, and quite striking. This
+effect is known as **Simpson’s paradox**. It is not common, but it does happen
+in real life, and most people are very surprised by it when they first
+encounter it, and many people refuse to even believe that it is real. It is
+very real. And while there are lots of very subtle statistical lessons buried
+in there, I want to use it to make a much more important point: doing research
+is hard, and there are *lots* of subtle, counter-intuitive traps lying in wait
+for the unwary. That is reason #2 why scientists love statistics, and why we
+teach research methods. Because science is hard, and the truth is sometimes
+cunningly hidden in the nooks and crannies of complicated data.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_berkeleyadmissions.*
+.. figure:: ../_images/fig1-1.*
    :alt: Berkeley 1973 college admissions data
-   :name: fig-berkeley
+   :name: fig1-1
 
    The Berkeley 1973 college admissions data. This figure plots the admission
    rate for the 85 departments that had at least one female applicant, as a

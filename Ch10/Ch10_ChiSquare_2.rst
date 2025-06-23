@@ -254,7 +254,18 @@ in the ``Cells`` options and the expected counts will appear in the
 contingency table. And whilst you are doing that, an effect size measure
 would be helpful. We will choose ``Phi and Cramer’s V``, and you can specify
 this from a check box in the ``Statistics`` options, and it gives a value
-for Cramer’s V of 0.24. We will talk about this some more in just a moment.
+for Cramer’s V of 0.24 (see :numref:`fig10-5`). We will talk about this some
+more in just a moment.
+
+.. ----------------------------------------------------------------------------
+
+.. figure:: ../_images/fig10-5.*
+   :alt: Independent samples χ² test in jamovi using the |chapek9|_ data set
+   :name: fig10-5
+
+   Independent samples χ² test in jamovi using the |chapek9|_ data set
+   
+.. ----------------------------------------------------------------------------
 
 This output gives us enough information to write up the result:
 

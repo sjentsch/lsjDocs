@@ -313,21 +313,21 @@ Degrees of freedom
 ~~~~~~~~~~~~~~~~~~
 
 When I introduced the χ²-distribution in :doc:`../Ch07/Ch07_Probability_6`, I
-was a bit vague about what “**degrees of freedom**” actually *means*.
-Obviously, it matters. Looking at :numref:`fig-chiSqDists`,  you can see that
-if we change the degrees of freedom then the χ²-distribution changes shape
-quite substantially. But what exactly *is* it? Again, when I introduced the
-distribution and explained its relationship to the normal distribution, I did
-offer an answer: it is the number of “normally distributed variables” that I am
-squaring and adding together. But, for most people, that is kind of abstract
-and not entirely helpful. What we really need to do is try to understand
-degrees of freedom in terms of our data. So here goes.
+was a bit vague about what “**degrees of freedom**” actually *means*. Obviously,
+it matters. Looking at :numref:`fig10-1`,  you can see that if we change the
+degrees of freedom then the χ²-distribution changes shape quite substantially.
+But what exactly *is* it? Again, when I introduced the distribution and
+explained its relationship to the normal distribution, I did offer an answer:
+it is the number of “normally distributed variables” that I am squaring and
+adding together. But, for most people, that is kind of abstract and not
+entirely helpful. What we really need to do is try to understand degrees of
+freedom in terms of our data. So here goes.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_chiSqDists.*
+.. figure:: ../_images/fig10-1.*
    :alt: χ² distributions with different degrees of freedom
-   :name: fig-chiSqDists
+   :name: fig10-1
 
    χ² (chi-square) distributions with different values for the “degrees of
    freedom”
@@ -344,9 +344,9 @@ frequencies of the four different categories (hearts, clubs, diamonds, spades).
 These four numbers are the *random outcomes* of our experiment. But my
 experiment actually has a fixed constraint built into it: the sample size
 *N*.\ [#]_ That is, if we know how many people chose hearts, how many chose
-diamonds and how many chose clubs, then we would be able to figure out exactly how
-many chose spades. In other words, although our data are described using four
-numbers, they only actually correspond to 4 - 1 = 3 degrees of freedom. A
+diamonds and how many chose clubs, then we would be able to figure out exactly
+how many chose spades. In other words, although our data are described using
+four numbers, they only actually correspond to 4 - 1 = 3 degrees of freedom. A
 slightly different way of thinking about it is to notice that there are four
 *probabilities* that we are interested in (again, corresponding to the four
 different categories), but these probabilities must sum to one, which imposes
@@ -374,13 +374,13 @@ critical value is. And it is pretty straightforward. If we want our test to
 have significance level of α = 0.05 (that is, we are willing to tolerate a
 Type I error rate of 5\%), then we have to choose our critical value so that
 there is only a 5\% chance that χ² could get to be that big if the null
-hypothesis is true. This is illustrated in :numref:`fig-chiSqTest`.
+hypothesis is true. This is illustrated in :numref:`fig10-2`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_chiSqTest.*
+.. figure:: ../_images/fig10-2.*
    :alt: Hypothesis testing works for the χ² GOF test
-   :name: fig-chiSqTest
+   :name: fig10-2
 
    Illustration of how the hypothesis testing works for the χ² (chi-square)
    goodness-of-fit test
@@ -443,18 +443,17 @@ Sample Proportion Tests`` → ``N Outcomes``. Then in the options panel that
 appears move the variable you want to analyse (``choice_1`` across into the
 ``Variable`` box. Also, click on the ``Expected counts`` check box so that
 these are shown on the results table. When you have done all this, you should
-see the analysis results in jamovi as in :numref:`fig-chisquared_analysis1`.
-No surprise then that jamovi provides the same expected counts and statistics
-that we calculated by hand above, with a χ² value of 8.44 with *df* = 3 and
-*p* = 0.038. Note that we do not need to look up a critical *p*-value threshold
-value any more, as jamovi gives us the actual *p*-value of the calculated χ²
-for *df* = 3.
+see the analysis results in jamovi as in :numref:`fig10-3`. No surprise then
+that jamovi provides the same expected counts and statistics that we calculated
+by hand above, with a χ² value of 8.44 with *df* = 3 and *p* = 0.038. Note that
+we do not need to look up a critical *p*-value threshold value any more, as
+jamovi gives us the actual *p*-value of the calculated χ² for *df* = 3.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_chisquared_analysis1.*
+.. figure:: ../_images/fig10-3.*
    :alt: χ² One Sample Proportion Test in jamovi
-   :name: fig-chisquared_analysis1
+   :name: fig10-3
 
    χ² One Sample Proportion Test in jamovi, with table showing both observed
    and expected frequencies and proportions
@@ -467,22 +466,23 @@ Specifying a different null hypothesis
 At this point you might be wondering what to do if you want to run a
 goodness-of-fit test but your null hypothesis is *not* that all categories are
 equally likely. For instance, let us suppose that someone had made the
-theoretical prediction that people should choose red cards 60\% of the time, and
-black cards 40\% of the time (I have no idea why you would predict that), but had no
-other preferences. If that were the case, the null hypothesis would be to
-expect 30\% of the choices to be hearts, 30\% to be diamonds, 20\% to be spades
-and 20\% to be clubs. In other words we would expect hearts and diamonds to
-appear 1.5 times more often than spades and clubs (the ratio 30\% : 20\% is the
-same as 1.5 : 1). This seems like a silly theory to me, and it is pretty easy to
-test this explicitly specified null hypothesis with the data in our jamovi
-analysis. In the analysis window (labelled ``Proportion Test (N Outcomes)`` in
-:numref:`fig-chisquared_analysis1` you can expand the options for ``Expected
+theoretical prediction that people should choose red cards 60\% of the time,
+and black cards 40\% of the time (I have no idea why you would predict that),
+but had no other preferences. If that were the case, the null hypothesis would
+be to expect 30\% of the choices to be hearts, 30\% to be diamonds, 20\% to be
+spades and 20\% to be clubs. In other words we would expect hearts and diamonds
+to appear 1.5 times more often than spades and clubs (the ratio 30\% : 20\% is
+the same as 1.5 : 1). This seems like a silly theory to me, and it is pretty
+easy to test this explicitly specified null hypothesis with the data in our
+jamovi analysis. In the analysis window (labelled ``Proportion Test (N
+Outcomes)`` in :numref:`fig10-3` you can expand the options for ``Expected
 Proportions``. When you do this, there are options for entering different ratio
 values for the variable you have selected, in our case this is ``choice_1``.
-Change the ratio to reflect the new null hypothesis, as in
-:numref:`fig-chisquared_analysis2`, and see how the results change.
+Change the ratio to reflect the new null hypothesis, as in :numref:`fig10-4`,
+and see how the results change.
 
-The expected counts are now:
+The expected counts are now (and the χ² statistic is 4.74, *df* = 3,
+*p* = 0.192):
 
 +--------------------+---------------+----+----+----+----+
 |                    |               | ♣  | ♢  | ♡  | ♠  |
@@ -490,20 +490,19 @@ The expected counts are now:
 | expected frequency | *E*\ :sub:`i` | 40 | 60 | 60 | 40 |
 +--------------------+---------------+----+----+----+----+
 
-and the χ² statistic is 4.74, *df* = 3, *p* = 0.192. Now, the results of our
-updated hypotheses and the expected frequencies are different from what they
-were last time. As a consequence our χ² test statistic is different, and our
-*p*-value is different too. Annoyingly, the *p*-value is 0.192, so we can not
-reject the null hypothesis (look back at section
+Now, the results of our updated hypotheses and the expected frequencies are
+different from what they were last time. As a consequence our χ² test statistic
+is different, and our *p*-value is different too. Annoyingly, the *p*-value is
+0.192, so we can not reject the null hypothesis (look back at section
 :doc:`../Ch09/Ch09_HypothesisTesting_05` to remind yourself why). Sadly,
 despite the fact that the null hypothesis corresponds to a very silly theory,
 these data do not provide enough evidence against it.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_chisquared_analysis2.*
+.. figure:: ../_images/fig10-4.*
    :alt: Changing expected proportions in the χ² One Sample Proportion Test
-   :name: fig-chisquared_analysis2
+   :name: fig10-4
 
    Changing the expected proportions in the χ² One Sample Proportion Test in
    jamovi
@@ -538,8 +537,8 @@ said, there is a few things that you should note about this description:
    told the reader something about what the data look like before going on to
    do the test. In general, this is good practice. Always remember that your
    reader does not know your data anywhere near as well as you do. So, unless
-   you describe it to them properly, the statistical tests will not make any sense
-   to them and they will get frustrated and cry.
+   you describe it to them properly, the statistical tests will not make any 
+   sense to them and they will get frustrated and cry.
 
 -  *The description tells you what the null hypothesis being tested is*. To be
    honest, writers do not always do this but it is often a good idea in those
@@ -582,9 +581,9 @@ said, there is a few things that you should note about this description:
 -  *The results are interpreted*. In addition to indicating that the result was
    significant, I provided an interpretation of the result (i.e., that people
    did not choose randomly). This is also a kindness to the reader, because it
-   tells them something about what they should believe about what is going on in
-   your data. If you do not include something like this, it is really hard for
-   your reader to understand what is going on.\ [#]_
+   tells them something about what they should believe about what is going on 
+   in your data. If you do not include something like this, it is really hard 
+   for your reader to understand what is going on.\ [#]_
 
 As with everything else, your overriding concern should be that you *explain*
 things to your reader. Always remember that the point of reporting your results
@@ -630,13 +629,12 @@ then I would have ended up with a test statistic of *G* = 8.65, which is slightl
 different from the χ² = 8.44 value that I got earlier and which produces a
 slightly smaller *p*-value of *p* = 0.034. Suppose that the convention was to
 report the test statistic, then the sampling distribution, and then the
-*p*-value. If that were true, then these two situations would produce
-different stat blocks: my original result would be written χ² = 8.44, χ²(3),
-*p* = 0.038, whereas the new version using the *G*-test would be written as
-*G* = 8.65, χ²(3),*p* = 0.034. However, using the condensed reporting
-standard, the original result is written χ²(3) = 8.44, *p* = 0.038, and the
-new one is written χ²(3) = 8.65,*p* = 0.034, and so it is actually unclear
-which test I actually ran.
+*p*-value. If that were true, then these two situations would produce different
+stat blocks: my original result would be written χ² = 8.44, χ²(3), *p* = 0.038,
+whereas the new version using the *G*-test would be written as *G* = 8.65,
+χ²(3),*p* = 0.034. However, using the condensed reporting standard, the original
+result is written χ²(3) = 8.44, *p* = 0.038, and the new one is written χ²(3) =
+\8.65,*p* = 0.034, and so it is actually unclear which test I actually ran.
 
 So why do not we live in a world in which the contents of the stat block
 uniquely specifies what tests were ran? The deep reason is that life is messy.
@@ -649,13 +647,13 @@ things that you and I use as data analysis tools were not created by an Act of
 the Gods of Statistics. They were invented by lots of different people,
 published as papers in academic journals, implemented, corrected and modified
 by lots of other people, and then explained to students in textbooks by someone
-else. As a consequence, there is a *lot* of test statistics that do not even have
-names, and as a consequence they are just given the same name as the
+else. As a consequence, there is a *lot* of test statistics that do not even
+have names, and as a consequence they are just given the same name as the
 corresponding sampling distribution. As we will see later, any test statistic
-that follows a χ² distribution is commonly called a “χ²-statistic”,
-anything that follows a *t*-distribution is called a “*t*-statistic”, and so
-on. But, as the χ² versus *G* example illustrates, two different things with
-the same sampling distribution are still, well, different.
+that follows a χ² distribution is commonly called a “χ²-statistic”, anything
+that follows a *t*-distribution is called a “*t*-statistic”, and so on. But, as
+the χ² versus *G* example illustrates, two different things with the same
+sampling distribution are still, well, different.
 
 As a consequence, it is sometimes a good idea to be clear about what the actual
 test was that you ran, especially if you are doing something unusual. If you
@@ -673,9 +671,9 @@ to be aware of.
 .. [#]
    If you rewrite the equation for the goodness-of-fit statistic as a sum over
    *k* - 1 independent things you get the “proper” sampling distribution, which
-   is χ²-distribution with *k* - 1 degrees of freedom. It is beyond the scope of
-   an introductory book to show the maths in that much detail. All I wanted to
-   do is give you a sense of why the goodness-of-fit statistic is associated
+   is χ²-distribution with *k* - 1 degrees of freedom. It is beyond the scope 
+   of an introductory book to show the maths in that much detail. All I wanted 
+   to do is give you a sense of why the goodness-of-fit statistic is associated
    with the χ²-distribution.
 
 .. [#]
@@ -685,12 +683,12 @@ to be aware of.
    you too much; when you come across this just remind yourself that “degrees
    of freedom” is actually a bit of a messy concept, and that the nice simple
    story that I am telling you here is not the whole story. For an introductory
-   class it is usually best to stick to the simple story, but I figure it is best
-   to warn you to expect this simple story to fall apart. If I did not give you
-   this warning you might start getting confused when you see *df* = 3.4 or
-   something, (incorrectly) thinking that you had misunderstood something that
-   I have taught you rather than (correctly) realising that there is something
-   that I have not told you.
+   class it is usually best to stick to the simple story, but I figure it is 
+   best to warn you to expect this simple story to fall apart. If I did not 
+   give you this warning you might start getting confused when you see *df* =
+   3.4 or something, (incorrectly) thinking that you had misunderstood 
+   something that I have taught you rather than (correctly) realising that 
+   there is something that I have not told you.
 
 .. [#]
    In practice, the sample size is not always fixed. For example, we might run
@@ -700,8 +698,8 @@ to be aware of.
 
 .. [#]
    Well, sort of. The conventions for how statistics should be reported tend to
-   differ somewhat from discipline to discipline. I have tended to stick with how
-   things are done in psychology, since that is what I do. But the general
+   differ somewhat from discipline to discipline. I have tended to stick with 
+   how things are done in psychology, since that is what I do. But the general
    principle of providing enough information to the reader to allow them to
    check your results is pretty universal, I think.
 

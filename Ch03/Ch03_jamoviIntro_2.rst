@@ -49,21 +49,23 @@ add-ons that do other, usually more advanced, analyses that go beyond the
 capabilities of that come included with jamovi (although these analyses
 already cover the perhaps 95\% of analyses you would run within psychology).
 
-To install add-on modules, just click on the large ``+`` in the top right
-of the jamovi window, select ``jamovi library`` and then browse through
-the various add-on modules that are available. Choose the one(s) you
-want, and then install them (as shown in :numref:`fig-modules`).
-
-It is that easy. The newly installed modules can then be accessed from the
-``Analyses`` ribbon or by clicking on the the large ``+`` and the selecting
-the analyses you need from the menu that opens.\ [#]_ Try it… useful add-on
-modules to install include ``scatr`` (added under ``Descriptives``) and |Rj|_.
+To install add-on modules, just click on the large ``+`` in the top right of
+the jamovi window, select ``jamovi library`` and then browse through the
+various add-on modules that are available. Choose the one(s) you want, and then
+install them, as in :numref:`fig3-6`. It is that easy. The newly installed
+modules can then be accessed from the ``Analyses`` ribbon or by clicking on the
+the large ``+`` and the selecting the analyses you need from the menu that
+opens.\ [#]_ Try it…
+Useful add-on modules to install include the data files for this book,
+``lsj-data`` (they can be found in the jamovi file menu (``☰``; top left-hand
+corner → ``Open`` → ``Data Library``), the |Rj|_ editor, and ``jTransform``
+(added under ``Data``; see :doc:`../Ch06/Ch06_DataHandling_6`).
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_modules.*
+.. figure:: ../_images/fig3-6.*
    :alt: jamovi modules in the jamovi library
-   :name: fig-modules
+   :name: fig3-6
 
    Installing add-on modules in jamovi
    
@@ -74,24 +76,23 @@ modules to install include ``scatr`` (added under ``Descriptives``) and |Rj|_.
 Syntax mode
 ~~~~~~~~~~~
 
-jamovi also provides an syntax mode. In this mode jamovi produces
-equivalent R code for each analysis. To change to syntax mode, select
-the settings menu (``⋮``; top right corner in jamovi) and click the
-``Syntax mode`` checkbox there. You can turn off syntax mode by clicking
-this a second time.
+jamovi also provides an syntax mode. In this mode jamovi produces equivalent
+``R`` code for each analysis. To change to syntax mode, select the settings
+menu (``⋮``; top right corner in jamovi) and click the ``Syntax mode`` checkbox
+there. You can turn off syntax mode by clicking this a second time.
 
-In syntax mode analyses continue to operate as before but now they
-produce R syntax. Like all results objects in jamovi, you can right click
-on these items (including the R syntax) and copy and paste them, for example
-into an R session. To import jamovi-files within an R session, you can use
-the function ``read_omv`` from the R-package ``jmvReadWrite`` (which can be
-installed using ``install.packages("jmvReadWrite")`` in an R-session. The
-package also contains further functions for handling jamovi-files in R (e.g.,
-``write_omv`` for writing jamovi-files, ``convert_omv`` for converting other
-file formats to a jamovi-file, or ``merge_cols_omv`` for adding columns from
-a second data set while matching the two data sets by an index variable). Help
-how to use these functions can be obtained by preceding the function name by
-a ``?`` (e.g., ``?jmvReadWrite::read_omv``).
+In syntax mode analyses continue to operate as before but now they produce
+``R`` syntax. Like all results objects in jamovi, you can right click on these
+items (including the ``R`` syntax) and copy and paste them, for example into an
+``R`` session. To import jamovi-files within an ``R`` session, you can use the
+function ``read_omv`` from the ``R``-package ``jmvReadWrite`` (which can be
+installed using ``install.packages("jmvReadWrite")`` in an ``R``-session. The
+package also contains further functions for handling jamovi-files in ``R`` 
+(e.g., ``write_omv`` for writing jamovi-files, ``convert_omv`` for converting
+other file formats to a jamovi-file, or ``merge_cols_omv`` for adding columns
+from a second data set while matching the two data sets by an index variable).
+Help how to use these functions can be obtained by preceding the function name
+by a ``?`` (e.g., ``?jmvReadWrite::read_omv``).
 
 But more on analyses later. First, let us take a more detailed look at the
 spreadsheet view.

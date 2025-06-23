@@ -3,65 +3,61 @@
 The law of large numbers
 ------------------------
 
-In the previous section I showed you the results of one fictitious IQ
-experiment with a sample size of *N* = 100. The results were
-somewhat encouraging as the true population mean is 100 and the sample
-mean of 98.5 is a pretty reasonable approximation to it. In many
-scientific studies that level of precision is perfectly acceptable, but
-in other situations you need to be a lot more precise. If we want our
-sample statistics to be much closer to the population parameters, what
-can we do about it?
+In the previous section I showed you the results of one fictitious IQ experiment
+with a sample size of *N* = 100. The results were somewhat encouraging as the
+true population mean is 100 and the sample mean of 98.5 is a pretty reasonable
+approximation to it. In many scientific studies that level of precision is
+perfectly acceptable, but in other situations you need to be a lot more precise.
+If we want our sample statistics to be much closer to the population parameters,
+what can we do about it?
 
-The obvious answer is to collect more data. Suppose that we ran a much
-larger experiment, this time measuring the IQs of 10 000 people. We can
-simulate the results of this experiment using jamovi. The |IQsim|_ data
-set is a jamovi data file. In this file I have generated 10 000 random
-numbers sampled from a normal distribution for a population with *M* = 100
-and *SD* = 15. This was done by computing a new variable using the
-``= NORM(100, 15)`` function. In :numref:`fig-IQsim`, a histogram and density
-plot shows that this larger sample is a much better approximation to the true
-population distribution than the smaller one. This is reflected in the sample
-statistics. The mean IQ for the larger sample is 99.68 and the standard
-deviation is 14.90. These values are now very close to the true population.
+The obvious answer is to collect more data. Suppose that we ran a much larger
+experiment, this time measuring the IQs of 10 000 people. We can simulate the
+results of this experiment using jamovi. The |IQsim|_ data set is a jamovi data
+file. In this file I have generated 10 000 random numbers sampled from a normal
+distribution for a population with *M* = 100 and *SD* = 15. This was done by
+computing a new variable using the ``= NORM(100, 15)`` function. In
+:numref:`fig8-5`, a histogram and density plot shows that this larger sample is
+a much better approximation to the true population distribution than the
+smaller one. This is reflected in the sample statistics. The mean IQ for the
+larger sample is 99.68 and the standard deviation is 14.90. These values are
+now very close to the true population.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_IQsim.*
+.. figure:: ../_images/fig8-5.*
    :alt: Random sample drawn from a normal distribution using jamovi
-   :name: fig-IQsim
+   :name: fig8-5
 
    Random sample drawn from a normal distribution using jamovi
    
 .. ----------------------------------------------------------------------------
 
-I feel a bit silly saying this, but the thing I want you to take away from
-this is that large samples generally give you better information. I feel silly
-saying it because it is so obvious that it should not need to be said. In
-fact, it is such an obvious point that when Jacob Bernoulli, one of the
-founders of probability theory, formalised this idea back in 1713 he was kind
-of a jerk about it. Here is how he described the fact that we all share this
-intuition:
+I feel a bit silly saying this, but the thing I want you to take away from this
+is that large samples generally give you better information. I feel silly saying
+it because it is so obvious that it should not need to be said. In fact, it is
+such an obvious point that when Jacob Bernoulli, one of the founders of
+probability theory, formalised this idea back in 1713 he was kind of a jerk
+about it. Here is how he described the fact that we all share this intuition:
 
-   *For even the most stupid of men, by some instinct of nature, by
-   himself and without any instruction (which is a remarkable thing), is
-   convinced that the more observations have been made, the less danger
-   there is of wandering from one’s goal* (:ref:`Stigler, 1986
-   <Stigler_1986>`).
+   *For even the most stupid of men, by some instinct of nature, by himself and 
+   without any instruction (which is a remarkable thing), is convinced that the 
+   more observations have been made, the less danger there is of wandering from 
+   one’s goal* (:ref:`Stigler, 1986 <Stigler_1986>`).
 
 The passage comes across as a bit condescending (not to mention sexist), but
-his main point is correct. It really does feel obvious that more data will
-give you better answers. The question is, why is this so? Not surprisingly,
-this intuition that we all share turns out to be correct, and statisticians
-refer to it as the **law of large numbers**. The law of large numbers is a
-mathematical law that applies to many different sample statistics but the
-simplest way to think about it is as a law about averages. The sample mean
-is the most obvious example of a statistic that relies on averaging (because
-that is what the mean is… an average), so let us look at that. When applied
-to the sample mean what the law of large numbers states is that as the sample
-gets larger, the sample mean tends to get closer to the true population mean.
-Or, to say it a little bit more precisely, as the sample size “approaches”
-infinity (written as *N* → ∞), the sample mean approaches the population mean
-(*X̄* → µ).\ [#]_
+his main point is correct. It really does feel obvious that more data will give
+you better answers. The question is, why is this so? Not surprisingly, this
+intuition that we all share turns out to be correct, and statisticians refer to
+it as the **law of large numbers**. The law of large numbers is a mathematical
+law that applies to many different sample statistics but the simplest way to
+think about it is as a law about averages. The sample mean is the most obvious
+example of a statistic that relies on averaging (because that is what the mean
+is… an average), so let us look at that. When applied to the sample mean what
+the law of large numbers states is that as the sample gets larger, the sample
+mean tends to get closer to the true population mean. Or, to say it a little
+bit more precisely, as the sample size “approaches” infinity (written as *N* →
+∞), the sample mean approaches the population mean (*X̄* → µ).\ [#]_
 
 I do not intend to subject you to a proof that the law of large numbers is
 true, but it is one of the most important tools for statistical theory. The

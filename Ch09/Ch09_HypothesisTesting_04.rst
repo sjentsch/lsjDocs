@@ -48,32 +48,32 @@ of the sampling distribution of our test statistic.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_rejectionRegion1.*
+.. figure:: ../_images/fig9-2.*
    :alt: Critical region associated with a two-sided test
-   :name: fig-rejectionRegion1
+   :name: fig9-2
 
    The critical region associated with the hypothesis test for the ESP study,
    for a hypothesis test with a significance level of α = 0.05. The plot shows
    the sampling distribution of X under the null hypothesis (i.e., same as 
-   :numref:`fig-samplingDist`). The grey bars correspond to those values of X
-   for which we would retain the null hypothesis. The blue (darker shaded) bars
-   show the critical region, those values of X for which we would reject the
-   null. Because the alternative hypothesis is two-sided (i.e., allows both
-   θ < 0.5 and θ > 0.5), the critical region covers both tails of the
-   distribution. To ensure an α level of 0.05, we need to ensure that each of
-   the two regions encompasses 2.5\% of the sampling distribution.
+   :numref:`fig9-1`). The grey bars correspond to those values of X for which 
+   we would retain the null hypothesis. The blue (darker shaded) bars show the 
+   critical region, those values of X for which we would reject the null. 
+   Because the alternative hypothesis is two-sided (i.e., allows both θ < 0.5 
+   and θ > 0.5), the critical region covers both tails of the distribution. To 
+   ensure an α level of 0.05, we need to ensure that each of the two regions 
+   encompasses 2.5\% of the sampling distribution.
    
 .. ----------------------------------------------------------------------------
 
 As it turns out those three things uniquely solve the problem. Our critical
 region consists of the most *extreme values*, known as the **tails** of the
-distribution. This is illustrated in :numref:`fig-rejectionRegion1`. If we
-want α = 0.05 then our critical regions correspond to *X* ≤ 40` and
-*X* ≥ 60.\ [#]_ That is, if the number of people saying “true” is between 41
-and 59, then we should retain the null hypothesis. If the number is between 0
-to 40, or between 60 to 100, then we should reject the null hypothesis. The
-numbers 40 and 60 are often referred to as the **critical values** since they
-define the edges of the critical region.
+distribution. This is illustrated in :numref:`fig9-2`. If we want α = 0.05 then
+our critical regions correspond to *X* ≤ 40` and *X* ≥ 60.\ [#]_ That is, if
+the number of people saying “true” is between 41 and 59, then we should retain
+the null hypothesis. If the number is between 0 to 40, or between 60 to 100,
+then we should reject the null hypothesis. The numbers 40 and 60 are often
+referred to as the **critical values** since they define the edges of the
+critical region.
 
 At this point, our hypothesis test is essentially complete:
 
@@ -88,87 +88,83 @@ At this point, our hypothesis test is essentially complete:
 #. calculate the critical region that produces an appropriate α level (0 - 40
    and 60 - 100).
 
-All that we have to do now is calculate the value of the test statistic
-for the real data (e.g., *X* = 62) and then compare it to the
-critical values to make our decision. Since 62 is greater than the
-critical value of 60 we would reject the null hypothesis. Or, to phrase
-it slightly differently, we say that the test has produced a
-statistically **significant** result.
+All that we have to do now is calculate the value of the test statistic for the
+real data (e.g., *X* = 62) and then compare it to the critical values to make
+our decision. Since 62 is greater than the critical value of 60 we would reject
+the null hypothesis. Or, to phrase it slightly differently, we say that the
+test has produced a statistically **significant** result.
 
 A note on statistical “significance”
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. epigraph::
 
-   | *Like other occult techniques of divination, the statistical method
-     has a private jargon deliberately contrived to obscure its methods
-     from non-practitioners*.
+   | *Like other occult techniques of divination, the statistical method has a 
+     private jargon deliberately contrived to obscure its methods from 
+     non-practitioners*.
      
    -- Attributed to G. O. Ashley\ [#]_
 
 A very brief digression is in order at this point, regarding the word
-“significant”. The concept of statistical significance is actually a
-very simple one, but has a very unfortunate name. If the data allow us
-to reject the null hypothesis, we say that “the result is *statistically
-significant*”, which is often shortened to “the result is significant”.
-This terminology is rather old and dates back to a time when
-“significant” just meant something like “indicated”, rather than its
-modern meaning which is much closer to “important”. As a result, a lot
-of modern readers get very confused when they start learning statistics
-because they think that a “significant result” must be an important one.
-It does not mean that at all. All that “statistically significant” means
-is that the data allowed us to reject a null hypothesis. Whether or not
-the result is actually important in the real world is a very different
-question, and depends on all sorts of other things.
+“significant”. The concept of statistical significance is actually a very
+simple one, but has a very unfortunate name. If the data allow us to reject the
+null hypothesis, we say that “the result is *statistically significant*”, which
+is often shortened to “the result is significant”. This terminology is rather
+old and dates back to a time when “significant” just meant something like
+“indicated”, rather than its modern meaning which is much closer to
+“important”. As a result, a lot of modern readers get very confused when they
+start learning statistics because they think that a “significant result” must
+be an important one. It does not mean that at all. All that “statistically
+significant” means is that the data allowed us to reject a null hypothesis.
+Whether or not the result is actually important in the real world is a very
+different question, and depends on all sorts of other things.
 
 .. _one_vs_twosided_tests:
 
 The difference between one-sided and two-sided tests
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There is one more thing I want to point out about the hypothesis test
-that I have just constructed. If we take a moment to think about the
-statistical hypotheses I have been using,
+There is one more thing I want to point out about the hypothesis test that I
+have just constructed. If we take a moment to think about the statistical
+hypotheses I have been using:
 
 *H*\ :sub:`0`: θ = 0.5
 *H*\ :sub:`1`: θ ≠ 0.5
 
-we notice that the alternative hypothesis covers *both* the possibility
-that θ < 0.5 and the possibility that θ > 0.5.
-This makes sense if I really think that ESP could produce either
-better-than-chance performance *or* worse-than-chance performance (and
-there are some people who think that). In statistical language this is
-an example of a **two-sided test**. It is called this because the
-alternative hypothesis covers the area on both “sides” of the null
-hypothesis, and as a consequence the critical region of the test covers
-both tails of the sampling distribution (2.5\% on either side if
-α = 0.05), as illustrated earlier in :numref:`fig-rejectionRegion1`.
+We notice that the alternative hypothesis covers *both* the possibility that
+θ < 0.5 and the possibility that θ > 0.5. This makes sense if I really think
+that ESP could produce either better-than-chance performance *or*
+worse-than-chance performance (and there are some people who think that). In
+statistical language this is an example of a **two-sided test**. It is called
+this because the alternative hypothesis covers the area on both “sides” of the
+null hypothesis, and as a consequence the critical region of the test covers
+both tails of the sampling distribution (2.5\% on either side if α = 0.05), as
+illustrated earlier in :numref:`fig9-2`.
 
-However, that is not the only possibility. I might only be willing to
-believe in ESP if it produces better than chance performance. If so,
-then my alternative hypothesis would only covers the possibility that
-θ > 0.5, and as a consequence the null hypothesis now becomes:
+However, that is not the only possibility. I might only be willing to believe
+in ESP if it produces better than chance performance. If so, then my
+alternative hypothesis would only covers the possibility that θ > 0.5, and as a
+consequence the null hypothesis now becomes:
 
 *H*\ :sub:`0`: θ ≤ 0.5
 *H*\ :sub:`1`: θ > 0.5 
 
-When this happens, we have what is called a **one-sided test** and the
-critical region only covers one tail of the sampling distribution. This
-is illustrated in :numref:`fig-rejectionRegion2`.
+When this happens, we have what is called a **one-sided test** and the critical
+region only covers one tail of the sampling distribution. This is illustrated
+in :numref:`fig9-3`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_rejectionRegion2.*
+.. figure:: ../_images/fig9-3.*
    :alt: Critical region associated with a one-sided test
-   :name: fig-rejectionRegion2
+   :name: fig9-3
 
    The critical region for a one-sided test. In this case, the alternative
    hypothesis is that θ = 0.5 so we would only reject the null hypothesis for
    large values of X. As a consequence, the critical region only covers the
    upper tail of the sampling distribution, specifically the upper 5\% of the
-   distribution. Contrast this to the two-sided version in
-   :numref:`fig-rejectionRegion1`.
-   
+   distribution. Contrast this to the two-sided version in :numref:`fig9-2`.
+
 .. ----------------------------------------------------------------------------
 
 ------

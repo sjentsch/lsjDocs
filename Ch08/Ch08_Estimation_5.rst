@@ -58,18 +58,18 @@ high school algebra, a sneaky way to rewrite our equation is like this:
 | *X̄* − (1.96 × *SEM*) ≤ µ ≤ *X̄* + (1.96 × *SEM*)
 
 What this is telling is is that the range of values has a 95\% probability of
-containing the population mean µ. We refer to this range as a **95\%
-confidence interval**, denoted *CI*\ :sub:`95`\ . In short, as long as *N* is
-sufficiently large (large enough for us to believe that the sampling
-distribution of the mean is normal), then we can write this as our formula for
-the 95\% confidence interval:
+containing the population mean µ. We refer to this range as a **95\% confidence
+interval**, denoted *CI*\ :sub:`95`\ . In short, as long as *N* is sufficiently
+large (large enough for us to believe that the sampling distribution of the
+mean is normal), then we can write this as our formula for the 95\% confidence
+interval:
 
 .. math:: \mbox{CI}_{95} = \bar{X} \pm \left( 1.96 \times \frac{\sigma}{\sqrt{N}} \right)
 
-Of course, there is nothing special about the number 1.96. It just happens to be
-the multiplier you need to use if you want a 95\% confidence interval. If I had
-wanted a 70\% confidence interval, I would have used 1.04 as the magic number
-rather than 1.96.
+Of course, there is nothing special about the number 1.96. It just happens to
+be the multiplier you need to use if you want a 95\% confidence interval. If I
+had wanted a 70\% confidence interval, I would have used 1.04 as the magic
+number rather than 1.96.
 
 A slight mistake in the formula
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -127,18 +127,18 @@ replication. Specifically, if we replicated the experiment over and over again
 and computed a 95\% confidence interval for each replication, then 95\% of those
 *intervals* would contain the true mean. More generally, 95\% of all confidence
 intervals constructed using this procedure should contain the true population
-mean. This idea is illustrated in :numref:`fig-confIntSmp`, which shows 50
-confidence intervals constructed for a “measure 10 IQ scores” experiment (top
-panel) and another 50 confidence intervals for a “measure 25 IQ scores”
-experiment (bottom panel). A bit fortuitously, across the 100 replications that
-I simulated, it turned out that exactly 95 of them contained the true mean.
+mean. This idea is illustrated in :numref:`fig8-12`, which shows 50 confidence
+intervals constructed for a “measure 10 IQ scores” experiment (top panel) and
+another 50 confidence intervals for a “measure 25 IQ scores” experiment (bottom
+panel). A bit fortuitously, across the 100 replications that I simulated, it
+turned out that exactly 95 of them contained the true mean.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_confIntSmp.*
+.. figure:: ../_images/fig8-12.*
    :alt: Confidence intervals for IQ-samples with *N* = 10 (top) and *N* = 25
          (bottom)
-   :name: fig-confIntSmp
+   :name: fig8-12
 
    95\% confidence intervals. The top panel shows 50 simulated replications of
    an experiment in which we measure the IQs of 10 people. The dot marks the
@@ -161,7 +161,7 @@ that the *confidence interval* (a random variable) contains the true mean, but
 is not allowed to talk about the probability that the *true population mean*
 (not a repeatable event) falls within the confidence interval.
 
-I know that this seems a little pedantic, but it does matter. It matters
+I know that this seems a little pedantic, but it does matter. It matters 
 because the difference in interpretation leads to a difference in the
 mathematics. There is a Bayesian alternative to confidence intervals, known as
 *credible intervals*. In most situations credible intervals are quite similar
@@ -186,8 +186,8 @@ When it comes to plotting confidence intervals for the mean in jamovi, this is
 not (yet) available as part of the ``Descriptives`` options. However, when we
 get onto learning about specific statistical tests, for example in chapter
 :doc:`../Ch13/Ch13_ANOVA`, we will see that we can plot confidence intervals
-as part of the data analysis. That is pretty cool, so we will show you how to do
-that later on.
+as part of the data analysis. That is pretty cool, so we will show you how to
+do that later on.
 
 ------
 

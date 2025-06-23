@@ -16,39 +16,38 @@ to as the frequency or density of the bin and is displayed as a vertical bar.
 The ``afl.margins`` variable contains 33 games in which the winning margin was
 less than 10 points and it is this fact that is represented by the height of
 the leftmost bar that we showed earlier in :doc:`../Ch04/Ch04_Descriptives`,
-and :numref:`fig-aflMargins`. With these earlier graphs we used an advanced
-plotting package in R which, for now, is beyond the capability of jamovi. But
-jamovi gets us close, and drawing this histogram in jamovi is pretty
-straightforward. Open up the ``Plots`` options under ``Exploration`` → 
-``Descriptives`` and click the ``Histogram`` check box, as shown in 
-:numref:`fig-jamovi_histogram`. jamovi defaults to labelling the y-axis as
-``density`` and the x-axis with the variable name. The **bins** are selected
-automatically, and there is no scale, or count, information on the y-axis
-unlike the previous :numref:`fig-aflMargins`. But this does not matter too
-much because after all what we are really interested in is our impression
-of the shape of the distribution: is it normally distributed or is there a
-skew or kurtosis? Our first impressions of these characteristics come from
-drawing a **histogram**.
+and :numref:`fig4-2`. With these earlier graphs we used an advanced plotting
+package in R which, for now, is beyond the capability of jamovi. But jamovi
+gets us close, and drawing this histogram in jamovi is pretty straightforward.
+Open up the ``Plots`` options under ``Exploration`` →  ``Descriptives`` and
+click the ``Histogram`` check box, as shown in :numref:`fig5-2`. jamovi
+defaults to labelling the y-axis as ``density`` and the x-axis with the
+variable name. The **bins** are selected automatically, and there is no scale,
+or count, information on the y-axis unlike the previous :numref:`fig4-2`. But
+this does not matter too much because after all what we are really interested
+in is our impression of the shape of the distribution: is it normally
+distributed or is there a skew or kurtosis? Our first impressions of these
+characteristics come from drawing a **histogram**.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_jamovi_histogram.*
-   :alt: Histogram check box in jamovi
-   :name: fig-jamovi_histogram
+.. figure:: ../_images/fig5-2.*
+   :alt: Histogram check box in jamovi and the resulting output
+   :name: fig5-2
 
-   jamovi screen showing the histogram check box
+   jamovi screen showing the histogram check box and the resulting output
    
 .. ----------------------------------------------------------------------------
 
 One additional feature that jamovi provides is the ability to plot a density
 curve. You can do this by clicking the ``Density`` check box under the
 ``Plots`` options (and unchecking ``Histogram``), and this gives us the plot
-shown in :numref:`fig-histogram2`. A density plot visualises the distribution
-of data over a continuous interval or time period. This chart is a variation of
-a histogram that uses **kernel smoothing** to plot values, allowing for
-smoother distributions by smoothing out the noise. The peaks of a density plot
-help display where values are concentrated over the interval. An advantage
-density plots have over histograms is that they are better at determining the
+shown in :numref:`fig5-3`. A density plot visualises the distribution of data
+over a continuous interval or time period. This chart is a variation of a 
+histogram that uses **kernel smoothing** to plot values, allowing for smoother
+distributions by smoothing out the noise. The peaks of a density plot help
+display where values are concentrated over the interval. An advantage density
+plots have over histograms is that they are better at determining the
 distribution shape because they are not affected by the number of bins used
 (each bar used in a typical histogram). A histogram comprising of only four
 bins would not produce a distinguishable enough shape of distribution as a
@@ -56,9 +55,9 @@ bins would not produce a distinguishable enough shape of distribution as a
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_histogram2.*
+.. figure:: ../_images/fig5-3.*
    :alt: Density plot for the ``afl.margins`` variable
-   :name: fig-histogram2
+   :name: fig5-3
 
    Density plot for the ``afl.margins`` variable plotted in jamovi
    

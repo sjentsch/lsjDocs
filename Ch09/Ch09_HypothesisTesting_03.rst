@@ -43,9 +43,9 @@ with our data.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_samplingDist.*
+.. figure:: ../_images/fig9-1.*
    :alt: Sampling distribution when the null hypothesis is true
-   :name: fig-samplingDist
+   :name: fig9-1
 
    The sampling distribution for our test statistic X when the null hypothesis
    is true. For our ESP scenario this is a binomial distribution. Not
@@ -74,6 +74,6 @@ introduced in that section, we would say that the null hypothesis predicts that
 
 Since the null hypothesis states that *θ* = 0.5 and our experiment has *N* =
 100 people, we have the sampling distribution we need. This sampling
-distribution is plotted in :numref:`fig-samplingDist`. No surprises really, the
-null hypothesis says that *X* = 50 is the most likely outcome, and it says that
-we are almost certain to see somewhere between 40 and 60 correct responses.
+distribution is plotted in :numref:`fig9-1`. No surprises really, the null
+hypothesis says that *X* = 50 is the most likely outcome, and it says that we
+are almost certain to see somewhere between 40 and 60 correct responses.

@@ -20,22 +20,22 @@ Sorting a data set
 ~~~~~~~~~~~~~~~~~~
 
 The function ``Sort`` permits you to sort your data set after one (or several)
-variables. When using the |nightgarden|_ data set, sorting after the variables
-``speaker``, ``utterance``, and ``ID``, the data are first sorted by
-``speaker``. Any ties (i.e., data from the same speaker) are then sorted after
-``utterance`` and then finally after ``ID``. For any of these variables, you
-can determine whether they should be sorted in ascending or descending order.
-Ascending means that smaller numbers or words starting with letters that come
-first in the alphabet appear in the first rows, descending would put higher
-numbers and words starting with letters that come last in the alphabet in the
-first rows.
+variables (:numref:`fig6-13`). When using the |nightgarden|_ data set, sorting
+after the variables ``speaker``, ``utterance``, and ``ID``, the data are first
+sorted by ``speaker``. Any ties (i.e., data from the same speaker) are then
+sorted after ``utterance``, and then finally after ``ID``. For any of these
+variables, you can determine whether they should be sorted in ascending or
+descending order. Ascending means that smaller numbers or words starting with
+letters that come first in the alphabet appear in the first rows, descending
+would put higher numbers and words starting with letters that come last in the
+alphabet in the first rows.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_jTransform_Sort.*
+.. figure:: ../_images/fig6-13.*
    :alt: Option and results panels for the ``Sort``-function from
          ``jTransform`` using the |nightgarden|_ data set
-   :name: fig-jtransform-sort
+   :name: fig6-13
 
    Option and results panels for the ``Sort``-function from ``jTransform`` 
    using the |nightgarden|_ data set
@@ -58,16 +58,16 @@ the book). The dependent variable (``dani.grump``) of this data set is placed
 in the middle of this data set (between the independent variables). We would
 like to arrange the variables in a way that ``dani.grump`` becomes the last
 variable in the data set, using the function ``Change Variable Order``. In the
-analysis panel, we arrange the variables in the desired order, briefly check
-the ``Data Preview``, and then use the ``Create``-button to open the data set
-with the new order of variables in a new jamovi window.
+analysis panel (:numref:`fig6-14`), we arrange the variables in the desired
+order, briefly check the ``Data Preview``, and then use the ``Create``-button
+to open the data set with the new order of variables in a new jamovi window.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_jTransform_Arrange.*
+.. figure:: ../_images/fig6-14.*
    :alt: Option and results panels for the ``Change Variable Order``-function
          from ``jTransform`` using the |parenthood|_ data set
-   :name: fig-jtransform-arrange
+   :name: fig6-14
 
    Option and results panels for the ``Change Variable Order``-function from
    ``jTransform`` using the |parenthood|_ data set
@@ -83,16 +83,15 @@ questionnaire). As a first step of assembling a data set, you could
 copy-and-paste those data into a new data set (i.e., one column per
 participant). However, for analyses, you need those data to be arranged as
 having participants in rows and the different variables in columns. The
-operation that you need here is to "flip" or **transpose** the data set.
-:numref:`fig-jtransform-data2transpose` is an example for how such a data
-set may look like.
+operation that you need here is to “flip” or **transpose** the data set.
+:numref:`fig6-15` provides an example for how such a data set may look like.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_jTransform_Data2Transpose.*
+.. figure:: ../_images/fig6-15.*
    :alt: Data table of a data set that needs to be transposed (participants in
          columns, variables in rows), the |transpose|_ data set 
-   :name: fig-jtransform-data2transpose
+   :name: fig6-15
 
    Data table of a data set that needs to be transposed (participants in
    columns, variables in rows), the |transpose|_ data set
@@ -103,21 +102,21 @@ We will use the |transpose|_ data set for this demonstration. It contains data
 from a (fictional) study with questionnaire responses ``Qst_…`` in rows and
 participants as columns (each of these columns was supposedly copied from the
 log file of that participant). To transpose this data set, we use the function
-``Transpose`` from ``jTransform``. In the analysis panel, we assign the
-variables to ``Variables to be transposed``. In some cases (like in the current
-data set) we have an additional variable that contains the desired names for
-the variables after the transposition. If we have such a variable (containing,
-e.g., the names of the questionnaire items), we assign it to ``Variable Names
-for the Output``. After we have assigned the variables, we briefly check the
-``Data Preview``, and then use the ``Create``-button to open the transposed
-data set in a new jamovi window.
+``Transpose`` from ``jTransform``. In the analysis panel (:numref:`fig6-16`),
+we assign the variables to ``Variables to be transposed``. In some cases (like
+in the current data set) we have an additional variable that contains the
+desired names for the variables after the transposition. If we have such a
+variable (containing, e.g., the names of the questionnaire items), we assign it
+to ``Variable Names for the Output``. After we have assigned the variables, we
+briefly check the ``Data Preview``, and then use the ``Create``-button to open
+the transposed data set in a new jamovi window.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_jTransform_Transpose.*
+.. figure:: ../_images/fig6-16.*
    :alt: Option and results panels for the ``Transpose``-function from
          ``jTransform`` using the |transpose|_ data set
-   :name: fig-jtransform-transpose
+   :name: fig6-16
 
    Option and results panels for the ``Transpose``-function from ``jTransform``
     using the |transpose|_ data set
