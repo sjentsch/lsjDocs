@@ -1,82 +1,94 @@
 .. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_ and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_
 
-Learning the basics, and learning them in jamovi
-------------------------------------------------
+Miscellaneous topics
+--------------------
 
-Okay, that was a long list. And even that listing is massively
-incomplete. There really are a *lot* of big ideas in statistics that I
-have not covered in this book. It can seem pretty depressing to finish an
-almost 500-page textbook only to be told that this is only the
-beginning, especially when you start to suspect that half of the stuff
-you have been taught is wrong. For instance, there are a lot of people in
-the field who would strongly argue against the use of the classical
-ANOVA model, yet I have devoted two whole chapters to it! Standard ANOVA
-can be attacked from a Bayesian perspective, or from a robust statistics
-perspective, or even from a “it is just plain wrong” perspective (people
-very frequently use ANOVA when they should actually be using mixed
-models). So why learn it at all?
+-  **Missing data.** Suppose you're doing a survey, and you're interested in
+   exercise and weight. You send data to four people. Adam says he exercises a
+   lot and is not overweight. Briony says she exercises a lot and is not
+   overweight. Carol says she does not exercise and is overweight. Tim says he
+   does not exercise and refuses to answer the question about his weight.
+   Elaine does not return the survey. You now have a missing data problem.
+   There is one entire survey missing, and one question missing from another
+   one, What do you do about it? Ignoring missing data is not, in general, a
+   safe thing to do. Let's think about Tim's survey here. Firstly, notice that,
+   on the basis of his other responses, he appears to be more similar to Carol
+   (neither of them exercise) than to Adam or Briony. So if you were forced to
+   guess his weight, you'd guess that he is closer to her than to them. Maybe
+   you'd make some correction for the fact that Adam and Tim are males and
+   Briony and Carol are females. The statistical name for this kind of guessing
+   is “imputation”. Doing imputation safely is hard, but it's important,
+   especially when the missing data are missing in a systematic way. Because of
+   the fact that people who are overweight are often pressured to feel poorly
+   about their weight (often thanks to public health campaigns), we actually
+   have reason to suspect that the people who are not responding are more
+   likely to be overweight than the people who do respond. Imputing a weight to
+   Tim means that the number of overweight people in the sample will probably
+   rise from 1 out of 3 (if we ignore Tim), to 2 out of 4 (if we impute Tim's
+   weight). Clearly this matters. But doing it sensibly is more complicated
+   than it sounds. Earlier, I suggested you should treat Tim like Carol, since
+   they gave the same answer to the exercise question. But that's not quite
+   right. There is a systematic difference between them. She answered the
+   question, and Tim didn't. Given the social pressures faced by overweight
+   people, isn't it likely that Tim is *more* overweight than Carol? And of
+   course this is still ignoring the fact that it's not sensible to impute a
+   *single* weight to Tim, as if you actually knew his weight. Instead, what
+   you need to do it is impute a range of plausible guesses (referred to as
+   multiple imputation), in order to capture the fact that you're more
+   uncertain about Tim's weight than you are about Carol's. And let's not get
+   started on the problem posed by the fact that Elaine didn't send in the
+   survey. As you can probably guess, dealing with missing data is an
+   increasingly important topic. In fact, I've been told that a lot of journals
+   in some fields will not accept studies that have missing data unless some
+   kind of sensible multiple imputation scheme is followed.
 
-As I see it, there are two key arguments. Firstly, there is the pure
-pragmatism argument. Rightly or wrongly, ANOVA is widely used. If you
-want to understand the scientific literature, you need to understand
-ANOVA. And secondly, there is the “incremental knowledge” argument. In
-the same way that it was handy to have seen one-way ANOVA before trying
-to learn factorial ANOVA, understanding ANOVA is helpful for
-understanding more advanced tools, because a lot of those tools extend
-on or modify the basic ANOVA setup in some way. For instance, although
-mixed models are way more useful than ANOVA and regression, I have never
-heard of anyone learning how mixed models work without first having
-worked through ANOVA and regression. You have to learn to crawl before
-you can climb a mountain.
+-  **Power analysis.** In chapter :doc:`../Ch09/Ch09_HypothesisTesting` I
+   discussed the concept of power (i.e., how likely are you to be able to
+   detect an effect if it actually exists) and referred to power analysis, a
+   collection of tools that are useful for assessing how much power your study
+   has. Power analysis can be useful for planning a study (e.g., figuring out
+   how large a sample you are likely to need), but it also serves a useful role
+   in analysing data that you already collected. For instance, suppose you get
+   a significant result, and you have an estimate of your effect size. You can
+   use this information to estimate how much power your study actually had.
+   This is kind of useful, especially if your effect size is not large. For
+   instance, suppose you reject the null hypothesis at *p* < 0.05, but you use
+   power analysis to figure out that your estimated power was only 0.08. The
+   significant result means that, if the null hypothesis was in fact true,
+   there was a 5\% chance of getting data like this. But the low power means
+   that, even if the null hypothesis is false and the effect size was really
+   as small as it looks, there was only an 8\% chance of getting data like you
+   did. This suggests that you need to be pretty cautious, because luck seems
+   to have played a big part in your results, one way or the other!
 
-Actually, I want to push this point a bit further. One thing that I have
-done a lot of in this book is talk about fundamentals. I spent a lot of
-time on probability theory. I talked about the theory of estimation and
-hypothesis tests in more detail than I needed to. Why did I do all this?
-Looking back, you might ask whether I really *needed* to spend all that
-time talking about what a probability distribution is, or why there was
-even a section on probability density. If the goal of the book was to
-teach you how to run a *t*-test or an ANOVA, was all that really necessary?
-Was this all just a huge waste of everyone’s time???
-
-The answer, I hope you will agree, is no. The goal of an introductory
-stats is *not* to teach ANOVA. It is not to teach *t*-tests, or regressions,
-or histograms, or *p*-values. The goal is to start you on the path towards
-becoming a skilled data analyst. And in order for you to become a skilled
-data analyst, you need to be able to do more than ANOVA, more than *t*-tests,
-regressions and histograms. You need to be able to *think properly* about
-data. You need to be able to learn the more advanced statistical models
-that I talked about in the last section, and to understand the theory upon
-which they are based. And you need to have access to software that will let
-you use those advanced tools. And this is where, in my opinion at least,
-all that extra time I have spent on the fundamentals pays off. If you
-understand probability theory, you will find it much easier to switch from
-frequentist analyses to Bayesian ones.
-
-In short, I think that the big payoff for learning statistics this way
-is *extensibility*. For a book that only covers the very basics of data
-analysis, this book has a massive overhead in terms of learning
-probability theory and so on. There is a whole lot of other things that
-it pushes you to learn besides the specific analyses that the book
-covers. So if your goal had been to learn how to run an ANOVA in the
-minimum possible time, well, this book was not a good choice. But as I
-say, I do not think that is your goal. *I* think you want to learn how to
-do data analysis. And if that really is your goal, you want to make sure
-that the skills you learn in your introductory stats class are naturally
-and cleanly extensible to the more complicated models that you need in
-real-world data analysis. You want to make sure that you learn to use
-the same tools that real data analysts use, so that you can learn to do
-what they do. And so yeah, okay, you are a beginner right now (or you
-were when you started this book), but that does not mean you should be
-given a dumbed-down story, a story in which I do not tell you about
-probability density, or a story where I do not tell you about the
-nightmare that is factorial ANOVA with unbalanced designs. And it
-does not mean that you should be given baby toys instead of proper data
-analysis tools. Beginners are not dumb, they just lack knowledge. What
-you need is *not* to have the complexities of real-world data analysis
-hidden from from you. What you need are the skills and tools that will
-let you handle those complexities when they inevitably ambush you in the
-real world.
-
-And what I hope is that this book, or the finished book that this will
-one day turn into, is able to help you with that.
+-  **Data analysis using theory-inspired models.** In a few places, I have
+   mentioned response time (RT) data, where you record how long it takes 
+   someone to do something (e.g., make a simple decision). I have mentioned 
+   that RT data are almost invariably non-normal, and positively skewed. 
+   Additionally, there is a thing known as the speed-accuracy trade-off: if you 
+   try to make decisions too quickly (low RT) then you are likely to make 
+   poorer decisions (lower accuracy). So if you measure both the accuracy of a
+   participant’s decisions and their RT, you will probably find that speed and 
+   accuracy are related. There is more to the story than this, of course, 
+   because some people make better decisions than others regardless of how fast 
+   they are going. Moreover, speed depends on both cognitive processes (i.e., 
+   time spent thinking) but also physiological ones (e.g., how fast can you 
+   move your muscles). It is starting to sound like analysing this data will be 
+   a complicated process. And indeed it is, but one of the things that you find 
+   when you dig into the psychological literature is that there already exist
+   mathematical models (called “sequential sampling models”) that describe how 
+   people make simple decisions, and these models take into account a lot of 
+   the factors I mentioned above. You will not find any of these
+   theoretically-inspired models in a standard statistics textbook. Standard 
+   textbooks describe standard tools, tools that could meaningfully be applied 
+   in lots of different disciplines, not just psychology. ANOVA is an example 
+   of a standard tool that is just as applicable to psychology as to 
+   pharmacology. Sequential sampling models are not, they are 
+   psychology-specific, more or less. This does not make them less powerful 
+   tools. In fact, if you are analysing data where people have to make choices 
+   quickly you should really be using sequential sampling models to analyse the 
+   data. Using ANOVA or regression or whatever will not work as well, because 
+   the theoretical assumptions that underpin them are not well-matched to your 
+   data. In contrast, sequential sampling models were explicitly designed to 
+   analyse this specific type of data, and their theoretical assumptions are 
+   *extremely* well-matched to the data.

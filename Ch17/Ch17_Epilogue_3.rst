@@ -1,123 +1,171 @@
 .. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_ and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_
 
-Other ways of doing inference
------------------------------
+Statistical models missing from the book
+----------------------------------------
 
-A different sense in which this book is incomplete is that it focuses pretty
-heavily on a very narrow and old-fashioned view of how inferential statistics
-should be done. In chapter :doc:`../Ch08/Ch08_Estimation` I talked a little
-bit about the idea of unbiased estimators, sampling distributions and so on.
-In chapter :doc:`../Ch09/Ch09_HypothesisTesting` I talked about the theory of
-null hypothesis significance testing and *p*-values. These ideas have been
-around since the early 20th century, and the tools that I have talked about in
-the book rely very heavily on the theoretical ideas from that time. I have felt
-obligated to stick to those topics because the vast majority of data analysis
-in science is also reliant on those ideas. However, the theory of statistics
-is not restricted to those topics and, whilst everyone should know about them
-because of their practical importance, in many respects those ideas do not
-represent best practice for contemporary data analysis. One of the things that
-I am especially happy with is that I have been able to go a little beyond this.
-Chapter :doc:`../Ch16/Ch16_Bayes` now presents the Bayesian perspective in a
-reasonable amount of detail, but the book overall is still pretty heavily
-weighted towards the frequentist orthodoxy. Additionally, there are a number
-of other approaches to inference that are worth mentioning:
+Statistics is a huge field. The core tools that I have described in this book
+(χ²-tests, *t*-tests, regression and ANOVA) are basic tools that are widely
+used in everyday data analysis, and they form the core of most books on
+introductory statistics. However, there are a lot of other tools out there.
+There are so very many data analysis situations that these tools do not cover,
+and it would be great to give you a sense of just how much more there is, for
+example:
 
--  **Bootstrapping.** Throughout the book, whenever I have introduced a
-   hypothesis test, I have had a strong tendency just to make assertions like
-   “the sampling distribution for BLAH is a *t*-distribution” or something like
-   that. In some cases, I have actually attempted to justify this assertion. For
-   example, when talking about χ²-tests in chapter
-   :doc:`../Ch10/Ch10_ChiSquare`, I made reference to the known relationship
-   between normal distributions and χ²-distributions (see chapter
-   :doc:`../Ch07/Ch07_Probability` to explain how we end up assuming that the
-   sampling distribution of the goodness-of-fit statistic is χ². However, it is
-   also the case that a lot of these sampling distributions are, well, wrong.
-   The χ²-test is a good example. It is based on an assumption about the
-   distribution of your data, an assumption which is known to be wrong for
-   small sample sizes! Back in the early 20th century, there was not much you
-   could do about this situation. Statisticians had developed mathematical
-   results that said that “under assumptions BLAH about the data, the
-   sampling distribution is approximately BLAH”, and that was about the best
-   you could do. A lot of times they did not even have that. There are lots of
-   data analysis situations for which no-one has found a mathematical solution
-   for the sampling distributions that you need. And so up until the late
-   20th century, the corresponding tests did not exist or did not work. However,
-   computers have changed all that now. There are lots of fancy tricks, and
-   some not-so-fancy, that you can use to get around it. The simplest of these
-   is bootstrapping, and in it is simplest form it is incredibly simple. What
-   you do is simulate the results of your experiment lots and lots of times,
-   under the twin assumptions that (a) the null hypothesis is true and (b)
-   the unknown population distribution actually looks pretty similar to your
-   raw data. In other words, instead of assuming that the data are (for
-   instance) normally distributed, just assume that the population looks the
-   same as your sample, and then use computers to simulate the sampling
-   distribution for your test statistic if that assumption holds. Despite
-   relying on a somewhat dubious assumption (i.e., the population
-   distribution is the same as the sample!) bootstrapping is quick and easy
-   method that works remarkably well in practice for lots of data analysis
-   problems.
+-  **Nonlinear regression.** When discussing regression in chapter
+   :doc:`../Ch12/Ch12_Regression`, we saw that regression assumes that the
+   relationship between predictors and outcomes is linear. On the other hand,
+   when we talked about the simpler problem of correlation, we saw that there
+   exist tools (e.g., Spearman correlations) that are able to assess non-linear 
+   relationships between variables. There are a number of tools in statistics 
+   that can be used to do non-linear regression. For instance, some non-linear 
+   regression models assume that the relationship between predictors and 
+   outcomes is monotonic (e.g., isotonic regression), while others assume that 
+   it is smooth but not necessarily monotonic (e.g., Lowess regression), while 
+   others assume that the relationship is of a known form that happens to be 
+   nonlinear (e.g., polynomial regression).
 
--  **Cross validation.** One question that pops up in my stats classes
-   every now and then, usually by a student trying to be provocative, is
-   “Why do we care about inferential statistics at all? Why not just
-   describe your sample?” The answer to the question is usually
-   something like this, “Because our true interest as scientists is not
-   the specific sample that we have observed in the past, we want to
-   make predictions about data we might observe in the future”. A lot of
-   the issues in statistical inference arise because of the fact that we
-   always expect the future to be similar to but a bit different from
-   the past. Or, more generally, new data will not be quite the same as old
-   data. What we do, in a lot of situations, is try to derive
-   mathematical rules that help us to draw the inferences that are most
-   likely to be correct for new data, rather than to pick the statements
-   that best describe old data. For instance, given two models A and B,
-   and a data set X you collected today, try to pick the model that will
-   best describe a new data set Y that you are going to collect tomorrow.
-   Sometimes it is convenient to simulate the process, and that is what
-   cross-validation does. What you do is divide your data set into two
-   subsets, X1 and X2. Use the subset X1 to train the model (e.g.,
-   estimate regression coefficients, let us say), but then assess the
-   model performance on the other one X2. This gives you a measure of
-   how well the model *generalises* from an old data set to a new one,
-   and is often a better measure of how good your model is than if you
-   just fit it to the full data set X.
+-  **Logistic regression.** Yet another variation on regression occurs when the
+   outcome variable is binary |nominal|, multinomial |nominal| (several groups)
+   or ordinal |ordinal|, but the predictors are continuous |continuous|. For
+   instance, suppose you are investigating social media, and you want to know 
+   if it is possible to predict whether or not someone is on Twitter as a 
+   function of their income, their age, and a range of other variables. This is
+   basically a regression model, but you can not use regular linear regression
+   because the outcome variable is categorical (e.g., whether you are either on
+   Twitter or you are not). Because the outcome variable is categorical, there 
+   is no way that the residuals could possibly be normally distributed. There 
+   are a number of tools that statisticians can apply to this situation, the 
+   most prominent of which is logistic regression.
 
--  **Robust statistics.** Life is messy, and nothing really works the
-   way it is supposed to. This is just as true for statistics as it is
-   for anything else, and when trying to analyse data we are often stuck
-   with all sorts of problems in which the data are just messier than
-   they are supposed to be. Variables that are supposed to be normally
-   distributed are not *actually* normally distributed, relationships
-   that are supposed to be linear are not *actually* linear, and some of
-   the observations in your data set are almost certainly junk (i.e.,
-   not measuring what they are supposed to). All of this messiness is
-   ignored in most of the statistical theory I developed in this book.
-   However, ignoring a problem does not always solve it. Sometimes, it is
-   actually okay to ignore the mess, because some types of statistical
-   tools are “robust”, i.e., if the data do not satisfy your theoretical
-   assumptions they nevertheless still work pretty well. Other types of
-   statistical tools are not robust, and even minor deviations from the
-   theoretical assumptions cause them to break. Robust statistics is a
-   branch of stats concerned with this question, and they talk about
-   things like the “breakdown point” of a statistic. That is, how messy
-   does your data have to be before the statistic cannot be trusted? I
-   touched on this in places. The mean is *not* a robust estimator of
-   the central tendency of a variable, but the median is. For instance,
-   suppose I told you that the ages of my five best friends are 34, 39,
-   31, 43 and 4003 years. How old do you think they are on average? That
-   is, what is the true population mean here? If you use the sample mean
-   as your estimator of the population mean, you get an answer of 830
-   years. If you use the sample median as the estimator of the
-   population mean, you get an answer of 39 years. Notice that, even
-   though you are “technically” doing the wrong thing in the second case
-   (using the median to estimate the mean!) you are actually getting a
-   better answer. The problem here is that one of the observations is
-   clearly, obviously, a lie. I do not have a friend aged 4003 years.
-   It is probably a typo, I probably meant to type 43. But what if I had
-   typed 53 instead of 43, or 34 instead of 43? Could you be sure if
-   this was a typo or not? Sometimes the errors in the data are subtle,
-   so you can not detect them just by eyeballing the sample, but they are
-   still errors that contaminate your data, and they still affect your
-   conclusions. Robust statistics is concerned with how you can make
-   *safe* inferences even when faced with contamination that you do not
-   know about. It is pretty cool stuff.
+-  **The General Linear Model (GLM).** The GLM is actually a family of models
+   that includes logistic regression, linear regression, (some) nonlinear 
+   regression, ANOVA and many others. The basic idea in the GLM is essentially 
+   the same idea that underpins linear models, but it allows for the idea that 
+   your data might not be normally distributed, and allows for nonlinear 
+   relationships between predictors and outcomes. There are a lot of very handy 
+   analyses that you can run that fall within the GLM, so it is a very useful
+   thing to know about.
+
+-  **Survival analysis.** In chapter :doc:`../Ch02/Ch02_StudyDesign`, I talked
+   about “differential attrition”, the tendency for people to leave the study
+   in a non-random fashion. Back then, I was talking about it as a potential
+   methodological concern, but there are a lot of situations in which
+   differential attrition is actually the thing you are interested in. Suppose,
+   for instance, you are interested in finding out how long people play
+   different kinds of computer games in a single session. Do people tend to
+   play RTS (real time strategy) games for longer stretches than FPS (first
+   person shooter) games? You might design your study like this. People come
+   into the lab, and they can play for as long or as little as they like. Once
+   they are finished, you record the time they spent playing. However, due to
+   ethical restrictions, let us suppose that you cannot allow them to keep
+   playing longer than two hours. A lot of people will stop playing before the
+   wo hour limit, so you know exactly how long they played. But some people
+   will run into the two hour limit, and so you do not know how long they would
+   have kept playing if you would been able to continue the study. As a
+   consequence, your data are systematically *censored*: you are missing all of
+   the very long times. How do you analyse this data sensibly? This is the
+   problem that survival analysis solves. It is specifically designed to handle 
+   this situation, where you are systematically missing one “side” of the data 
+   because the study ended. It is very widely used in health research,  and in 
+   that context it is often literally used to analyse survival. For  instance, 
+   you may be tracking people with a particular type of cancer, some  who have 
+   received treatment A and others who have received treatment B, but  you only 
+   have funding to track them for five years. At the end of the study period 
+   some people are alive, others are not. In this context, survival  analysis 
+   is useful for determining which treatment is more effective, and  telling
+   you about the risk of death that people face over time.
+
+-  **Mixed models.** Repeated measures ANOVA is often used in situations where
+   you have observations clustered within experimental units. A good example of 
+   this is when you track individual people across multiple time points. Let us 
+   say you are tracking happiness over time, for two people. Aaron’s happiness 
+   starts at 10, then drops to 8, and then to 6. Belinda’s happiness starts at 
+   6, then rises to 8 and then to 10. Both of these two people have the same 
+   “overall” level of happiness (the average across the three time points is 
+   8), so a repeated measures ANOVA analysis would treat Aaron and Belinda the
+   same way. But that is clearly wrong. Aaron’s happiness is decreasing,
+   whereas Belinda’s is increasing. If you want to optimally analyse data from 
+   an experiment where people can change over time, then you need a more 
+   powerful tool than repeated measures ANOVA. The tools that people use to 
+   solve this problem are called “mixed” models, because they are designed to 
+   learn about individual experimental units (e.g., happiness of individual 
+   people over time) as well as overall effects (e.g., the effect of money on 
+   happiness over time). Repeated measures ANOVA is perhaps the simplest 
+   example of a mixed model, but there is a lot you can do with mixed models 
+   that you can not do with repeated measures ANOVA.
+
+-  **Multidimensional scaling.** Factor analysis is an example of an
+   “unsupervised learning” model. What this means is that, unlike most of the 
+   “supervised learning” tools I have mentioned, you can not divide up your 
+   variables into predictors and outcomes. Regression is supervised learning 
+   whereas factor analysis is unsupervised learning. It is not the only type of 
+   unsupervised learning model however. For example, in factor analysis one is 
+   concerned with the analysis of correlations between variables. However, 
+   there are many situations where you are actually interested in analysing 
+   similarities or dissimilarities between objects, items or people. There are 
+   a number of tools that you can use in this situation, the best known of 
+   which is multidimensional scaling (MDS). In MDS, the idea is to find a
+   “geometric” representation of your items. Each item is “plotted” as a point 
+   in some space, and the distance between two points is a measure
+   of how dissimilar those items are.
+
+-  **Clustering.** Another example of an unsupervised learning model is
+   clustering (also referred to as classification), in which you want to
+   organise all of your items into meaningful groups, such that similar items 
+   are assigned to the same groups. A lot of clustering is unsupervised, 
+   meaning that you do not know anything about what the groups are, you just 
+   have to guess. There are other “supervised clustering” situations where you 
+   need to predict group memberships on the basis of other variables, and those 
+   group memberships are actually observables. Logistic regression is a good 
+   example of a tool that works this way. However, when you do not actually 
+   know the group memberships, you have to use different tools (e.g., *k*-means 
+   clustering). There are even situations where you want to do something 
+   called “semi-supervised clustering”, in which you know the group memberships
+   for some items but not others. As you can probably guess, clustering is a 
+   pretty big topic, and a pretty useful thing to know about.
+
+-  **Causal models.** One thing that I have not talked about much is how you
+   can use statistical modelling to learn about the causal relationships 
+   between variables. For instance, consider the following three variables 
+   which might be of interest when thinking about how someone died in a firing 
+   squad. We might want to measure whether or not an execution order was given 
+   (variable A), whether or not a marksman fired their gun (variable B), and 
+   whether or not the person got hit with a bullet (variable C). These three 
+   variables are all correlated with one another (e.g., there is a correlation 
+   between guns being fired and people getting hit with bullets), but we
+   actually want to make stronger statements about them than merely talking 
+   about correlations. We want to talk about causation. We want to be able to 
+   say that the execution order (A) causes the marksman to fire (B) which 
+   causes someone to get shot (C). We can express this by a directed arrow 
+   notation: we write it as A → B → C. This “causal chain” is a fundamentally 
+   different explanation for events than one in which the marksman fires first, 
+   which causes the shooting B → C, and then causes the executioner to 
+   “retroactively” issue the execution order, B → A. This “common effect” model 
+   says that A and C are both caused by B. You can see why these are different. 
+   In the first causal model, if we had managed to stop the executioner from 
+   issuing the order (intervening to change A), then no shooting would have 
+   happened. In the second model, the shooting would have happened any way 
+   because the marksman was *not* following the execution order. There is a big
+   literature in statistics on trying to understand the causal relationships 
+   between variables, and a number of different tools exist to help you test 
+   different causal stories about your data. The most widely used of these 
+   tools (in psychology at least) is structural equations modelling (SEM), and 
+   at some point I would like to extend the book to talk about it.
+
+Of course, even this listing is incomplete. I have not mentioned time series
+analysis, item response theory, market basket analysis, classification and
+regression trees, or any of a huge range of other topics. However, the list
+that I have given above is essentially my wish list. Sure, it would double the
+length of the book, but it would mean that the scope has become broad enough to
+cover most things that applied researchers in psychology would need to use.
+
+.. ----------------------------------------------------------------------------
+
+.. |continuous|                        image:: ../_images/variable-continuous.*
+   :width: 16px
+ 
+.. |nominal|                           image:: ../_images/variable-nominal.*
+   :width: 16px
+
+.. |ordinal|                           image:: ../_images/variable-ordinal.*
+   :width: 16px
