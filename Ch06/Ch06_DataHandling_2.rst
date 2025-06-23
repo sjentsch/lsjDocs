@@ -102,7 +102,7 @@ right is larger, then jamovi returns an answer of ``FALSE``.
 
 In contrast, the **less than or equal to** operator ``<=`` will do
 exactly what it says. It returns a value of ``TRUE`` if the number of
-the left hand side is less than or equal to the number on the right-hand
+the left-hand side is less than or equal to the number on the right-hand
 side. At this point I hope it is pretty obvious what the **greater than**
 operator ``>`` and the **greater than or equal to** operator ``>=`` do!
 

@@ -8,77 +8,75 @@ refers to the art of checking that the assumptions of your regression model
 have been met, figuring out how to fix the model if the assumptions are
 violated, and generally to check that nothing “funny” is going on. I refer to
 this as the “art” of model checking with good reason. It is not easy, and
-while there are a lot of fairly standardised tools that you can use to
-diagnose and maybe even cure the problems that ail your model (if there are
-any, that is!), you really do need to exercise a certain amount of judgement
-when doing this.
+while there are a lot of fairly standardised tools that you can use to diagnose
+and maybe even cure the problems that ail your model (if there are any, that
+is!), you really do need to exercise a certain amount of judgement when doing
+this.
 
 In this section I describe several different things you can do to check that
 your regression model is doing what it is supposed to. It does not cover the
-full space of things you could do, but it is still much more detailed than
-what a lot of people are doing in practice. It is easy to get lost in all the
-details of checking this thing or that thing, and it is quite exhausting to
-try to remember what all the different things are. This has the very nasty
-side effect that a lot of people get frustrated when trying to learn *all*
-the tools, so instead they decide not to do *any* model checking. Therefore,
-it is important that you get a sense of what tools are at your disposal, so I
-will try to introduce a bunch of them here. I should note that this section
-draws quite heavily from :ref:`Fox and Weisberg (2011) <Fox_2011>`, the book
-associated with the ``car`` package that is used to conduct regression
-analysis in ``R``. The ``car`` package is notable for providing some excellent
-tools for regression diagnostics, and the book itself talks about them in an
-admirably clear fashion. I do not want to sound too gushy about it, but I do
-think that :ref:`Fox and Weisberg (2011) <Fox_2011>` is well worth reading,
-even if some of the more advanced diagnostic techniques are only available
-in ``R`` (e.g., using the |Rj|_ editor).
+full space of things you could do, but it is still much more detailed than what
+a lot of people are doing in practice. It is easy to get lost in all the
+details of checking this thing or that thing, and it is quite exhausting to try
+to remember what all the different things are. This has the very nasty side
+effect that a lot of people get frustrated when trying to learn *all* the
+tools, so instead they decide not to do *any* model checking. Therefore, it is
+important that you get a sense of what tools are at your disposal, so I will
+try to introduce a bunch of them here. I should note that this section draws
+quite heavily from :ref:`Fox and Weisberg (2011) <Fox_2011>`, the book
+associated with the ``car`` package that is used to conduct regression analysis
+in ``R``. The ``car`` package is notable for providing some excellent tools for
+regression diagnostics, and the book itself talks about them in an admirably
+clear fashion. I do not want to sound too gushy about it, but I do think that
+:ref:`Fox and Weisberg (2011) <Fox_2011>` is well worth reading, even if some
+of the more advanced diagnostic techniques are only available in ``R`` (e.g.,
+using the |Rj|_ editor).
 
 Three kinds of residuals
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-The majority of regression diagnostics revolve around looking at the
-residuals, and by now you have probably formed a sufficiently pessimistic
-theory of statistics to be able to guess that, precisely *because* of
-the fact that we care a lot about the residuals, there are several
-different kinds of residual that we might consider. In particular, the
-following three kinds of residuals are referred to in this section:
-“ordinary residuals”, “standardised residuals”, and “Studentised
-residuals”. There is a fourth kind that you will see referred to in some
-of the Figures, and that is the “Pearson residual”. However, for the
-models that we are talking about in this chapter, the Pearson residual is
-identical to the ordinary residual.
+The majority of regression diagnostics revolve around looking at the residuals,
+and by now you have probably formed a sufficiently pessimistic theory of
+statistics to be able to guess that, precisely *because* of the fact that we
+care a lot about the residuals, there are several different kinds of residual
+that we might consider. In particular, the following three kinds of residuals
+are referred to in this section: “ordinary residuals”, “standardised
+residuals”, and “Studentised residuals”. There is a fourth kind that you will
+see referred to in some of the Figures, and that is the “Pearson residual”.
+However, for the models that we are talking about in this chapter, the Pearson
+residual is identical to the ordinary residual.
 
-The first and simplest kind of residuals that we care about are
-**ordinary residuals**. These are the actual raw residuals that I have
-been talking about throughout this chapter so far. The ordinary residual
-is just the difference between the fitted value *Ŷ*\ :sub:`i` and
-the observed value *Y*\ :sub:`i`. I have been using the notation ε\ :sub:`i`
-to refer to the i-th ordinary residual, and by gum I am going to stick to it.
-With this in mind, we have the very simple equation:
+The first and simplest kind of residuals that we care about are **ordinary
+residuals**. These are the actual raw residuals that I have been talking about
+throughout this chapter so far. The ordinary residual is just the difference
+between the fitted value *Ŷ*\ :sub:`i` and the observed value *Y*\ :sub:`i`. I
+have been using the notation ε\ :sub:`i` to refer to the i-th ordinary
+residual, and by gum I am going to stick to it. With this in mind, we have the
+very simple equation:
 
 | ε\ :sub:`i` = *Y*\ :sub:`i` - *Ŷ*\ :sub:`i`
 
-This is of course what we saw earlier, and unless I specifically refer
-to some other kind of residual, this is the one I am talking about. So
-there is nothing new here. I just wanted to repeat myself. One drawback
-to using ordinary residuals is that they are always on a different scale,
-depending on what the outcome variable is and how good the regression
-model is. That is, unless you have decided to run a regression model
-without an intercept term, the ordinary residuals will have mean 0 but
-the variance is different for every regression. In a lot of contexts,
-especially where you are only interested in the *pattern* of the
-residuals and not their actual values, it is convenient to estimate the
-**standardised residuals**, which are normalised in such a way as to
-have standard deviation 1.
+This is of course what we saw earlier, and unless I specifically refer to some
+other kind of residual, this is the one I am talking about. So there is nothing
+new here. I just wanted to repeat myself. One drawback to using ordinary
+residuals is that they are always on a different scale, depending on what the
+outcome variable is and how good the regression model is. That is, unless you
+have decided to run a regression model without an intercept term, the ordinary
+residuals will have mean 0 but the variance is different for every regression.
+In a lot of contexts, especially where you are only interested in the *pattern*
+of the residuals and not their actual values, it is convenient to estimate the
+**standardised residuals**, which are normalised in such a way as to have
+standard deviation 1.
 
-The way we calculate these is to divide the ordinary residual by an
-estimate of the (population) standard deviation of these residuals. For
-technical reasons, mumble mumble, the formula for this is:
+The way we calculate these is to divide the ordinary residual by an estimate of
+the (population) standard deviation of these residuals. For technical reasons,
+mumble mumble, the formula for this is:
 
 | ε\ :sub:`i`\' = :math:`\frac{\epsilon_i}{\hat{\sigma} \sqrt{1-h_i}}`
 
-where :math:`\hat\sigma` in this context is the estimated population standard
-deviation of the ordinary residuals, and *h*\ :sub:`i` is the “hat value” of
-the *i*-th observation. I have not explained hat values to you yet (but have no
+:math:`\hat\sigma` is the estimated population standard deviation of the
+ordinary residuals, and *h*\ :sub:`i` is the “hat value” of the *i*-th
+observation. I have not explained hat values to you yet (but have no
 fear,\ [#]_ it is coming shortly), so this will not make a lot of sense. For
 now, it is enough to interpret the standardised residuals as if we would
 converted the ordinary residuals to *z*-scores. In fact, that is more or less
@@ -94,25 +92,23 @@ The formula for doing the calculations this time is subtly different:
 .. math:: \epsilon_{i}^* = \frac{\epsilon_i}{\hat{\sigma}_{(-i)} \sqrt{1-h_i}}
 
 Notice that our estimate of the standard deviation here is written
-:math:`\hat{\sigma}_{(-i)}`. What this corresponds to is the estimate of
-the residual standard deviation that you *would have obtained* if you
-just deleted the i\ th observation from the data set. This
-sounds like the sort of thing that would be a nightmare to calculate,
-since it seems to be saying that you have to run *N* new
-regression models (even a modern computer might grumble a bit at that,
-especially if you have got a large data set). Fortunately, some terribly
-clever person has shown that this standard deviation estimate is
+:math:`\hat{\sigma}_{(-i)}`. What this corresponds to is the estimate of the
+residual standard deviation that you *would have obtained* if you just deleted
+the i\ th observation from the data set. This sounds like the sort of thing
+that would be a nightmare to calculate, since it seems to be saying that you
+have to run *N* new regression models (even a modern computer might grumble a
+bit at that, especially if you have got a large data set). Fortunately, some
+terribly clever person has shown that this standard deviation estimate is
 actually given by the following equation:
 
 .. math:: \hat\sigma_{(-i)} = \hat{\sigma} \ \sqrt{\frac{N-K-1 - {\epsilon_{i}^\prime}^2}{N-K-2}}
 
-Before moving on, I should point out that you do not often need to obtain
-these residuals yourself, even though they are at the heart of almost
-all regression diagnostics. Most of the time the various options that
-provide the diagnostics, or assumption checks, will take care of these
-calculations for you. Even so, it is always nice to know how to actually
-get hold of these things yourself in case you ever need to do something
-non-standard.
+Before moving on, I should point out that you do not often need to obtain these
+residuals yourself, even though they are at the heart of almost all regression
+diagnostics. Most of the time the various options that provide the diagnostics,
+or assumption checks, will take care of these calculations for you. Even so, it
+is always nice to know how to actually get hold of these things yourself in
+case you ever need to do something non-standard.
 
 .. _anomalous_data:
 
@@ -271,11 +267,10 @@ Checking for collinearity
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The last kind of regression diagnostic that I am going to discuss in this
-chapter is the use of **variance inflation factors** (*VIF*s), which are
-useful for determining whether or not the predictors in your regression
-model are too highly correlated with each other. There is a variance
-inflation factor associated with each predictor *X*\ :sub:`k` in the
-model.
+chapter is the use of **variance inflation factors** (*VIF*s), which are useful
+for determining whether or not the predictors in your regression model are too
+highly correlated with each other. There is a variance inflation factor
+associated with each predictor *X*\ :sub:`k` in the model.
 
 The formula for the k-th *VIF* is:
 
@@ -287,24 +282,24 @@ a regression using *X*\ :sub:`k` as the outcome variable, and all the other
 a very good measure of the extent to which *X*\ :sub:`k` is correlated with
 all the other variables in the model.
 
-The square root of the *VIF* is pretty interpretable. It tells you how
-much wider the confidence interval for the corresponding coefficient
-*b*\ :sub:`k` is, relative to what you would have expected if the
-predictors are all nice and uncorrelated with one another. 
+The square root of the *VIF* is pretty interpretable. It tells you how much
+wider the confidence interval for the corresponding coefficient *b*\ :sub:`k`
+is, relative to what you would have expected if the predictors are all nice and
+uncorrelated with one another. 
 
-If you have only got two predictors, the *VIF* values are always going to be the
-same, as we can see if we click on the ``Collinearity`` checkbox in the
-``Regression`` → ``Assumption Checks`` options in jamovi. For both ``dani.sleep``
-and ``baby.sleep`` the *VIF* is 1.65. And since the square root of 1.65 is
-1.28, we see that the correlation between our two predictors is not
+If you have only got two predictors, the *VIF* values are always going to be
+the same, as we can see if we click on the ``Collinearity`` checkbox in the
+``Regression`` → ``Assumption Checks`` options in jamovi. For both
+``dani.sleep`` and ``baby.sleep`` the *VIF* is 1.65. And since the square root
+of 1.65 is 1.28, we see that the correlation between our two predictors is not
 causing much of a problem.
 
 To give a sense of how we could end up with a model that has bigger
-collinearity problems, suppose I were to run a much less interesting
-regression model, in which I tried to predict the ``day`` on which the
-data were collected, as a function of all the other variables in the
-data set. To see why this would be a bit of a problem, let us have a look
-at the correlation matrix for all four variables (:numref:`fig12-22`).
+collinearity problems, suppose I were to run a much less interesting regression
+model, in which I tried to predict the ``day`` on which the data were
+collected, as a function of all the other variables in the data set. To see why
+this would be a bit of a problem, let us have a look at the correlation matrix
+for all four variables (:numref:`fig12-22`).
 
 .. ----------------------------------------------------------------------------
 
@@ -341,12 +336,11 @@ analysis might be disproportionately sensitive to a smallish number of
 “unusual” or “anomalous” observations. I discussed this idea previously in
 subsection :ref:`Using box plots to detect outliers
 <box_plots_detect_outliers>` in the context of discussing the outliers that
-get automatically identified by the ``Box plot`` option under
-``Exploration`` → ``Descriptives``, but this time we need to be much more
-precise. In the context of linear regression, there are three conceptually
-distinct ways in which an observation might be called “anomalous”. All
-three are interesting, but they have rather different implications for your
-analysis.
+get automatically identified by the ``Box plot`` option under ``Exploration``
+→ ``Descriptives``, but this time we need to be much more precise. In the
+context of linear regression, there are three conceptually distinct ways in
+which an observation might be called “anomalous”. All three are interesting,
+but they have rather different implications for your analysis.
 
 .. ----------------------------------------------------------------------------
 
@@ -362,18 +356,17 @@ analysis.
    
 .. ----------------------------------------------------------------------------
 
-The first kind of unusual observation is an **outlier**. The definition
-of an outlier (in this context) is an observation that is very different
-from what the regression model predicts. An example is shown in
-:numref:`fig-outlier`. In practice, we operationalise
-this concept by saying that an outlier is an observation that has a very
-large Studentised residual, ε\ :sub:`i`\ :sup:`*`. Outliers are
-interesting: a big outlier *might* correspond to junk data, e.g., the
-variables might have been recorded incorrectly in the data set, or some
-other defect may be detectable. Note that you should not throw an
-observation away just because it is an outlier. But the fact that it is an
-outlier is often a cue to look more closely at that case and try to find
-out why it is so different. Also see the lower left plot of Anscombe's quartet,
+The first kind of unusual observation is an **outlier**. The definition of an
+outlier (in this context) is an observation that is very different from what
+the regression model predicts. An example is shown in :numref:`fig-outlier`. In
+practice, we operationalise this concept by saying that an outlier is an
+observation that has a very large Studentised residual, ε\ :sub:`i`\ :sup:`*`.
+Outliers are interesting: a big outlier *might* correspond to junk data, e.g.,
+the variables might have been recorded incorrectly in the data set, or some
+other defect may be detectable. Note that you should not throw an observation
+away just because it is an outlier. But the fact that it is an outlier is often
+a cue to look more closely at that case and try to find out why it is so
+different. Also see the lower left plot of Anscombe's quartet,
 :numref:`fig-anscombe`.
 
 .. ----------------------------------------------------------------------------
@@ -415,7 +408,7 @@ much less likely to be a cause for concern unless they are also outliers.
    :alt: High influence points and their effect
    :name: fig-influence
 
-   Illustration of high influence points: In this case, the anomalous 
+   Illustration of high influence points: In this case, the anomalous
    observation is highly unusual on the predictor variable (*x*-axis), and
    falls a long way from the regression line. As a consequence, the regression
    line is highly distorted, even though (in this case) the anomalous
@@ -448,10 +441,10 @@ greater than 1 is often considered large (that is what I typically use as a
 quick and dirty rule).
 
 In jamovi, information about Cook’s distance can be calculated by clicking on
-the ``Cook’s Distance`` checkbox in the ``Assumption Checks`` →
-``Data Summary`` options. When you do this, for the multiple regression model
-we have been using as an example in this chapter, you get the results as shown
-in :numref:`fig-reg4`\.
+the ``Cook’s Distance`` checkbox in the ``Assumption Checks`` →  ``Data
+Summary`` options. When you do this, for the multiple regression model we have
+been using as an example in this chapter, you get the results as shown in
+:numref:`fig-reg4`\.
 
 .. ----------------------------------------------------------------------------
 
@@ -469,17 +462,17 @@ figure mentioned above that a Cook’s distance greater than 1 is considered
 large.
 
 An obvious question to ask next is, if you do have large values of Cook’s
-distance what should you do? As always, there is no hard and fast rule. Probably
-the first thing to do is to try running the regression with the outlier with
-the greatest Cook’s distance\ [#]_ excluded and see what happens to the model
-performance and to the regression coefficients. If they really are
-substantially different, it is time to start digging into your data set and your
-notes that you no doubt were scribbling as your ran your study. Try to figure
-out *why* the point is so different. If you start to become convinced that this
-one data point is badly distorting your results then you might consider
-excluding it, but that is less than ideal unless you have a solid explanation
-for why this particular case is qualitatively different from the others and
-therefore deserves to be handled separately.
+distance what should you do? As always, there is no hard and fast rule.
+Probably the first thing to do is to try running the regression with the
+outlier with the greatest Cook’s distance\ [#]_ excluded and see what happens
+to the model performance and to the regression coefficients. If they really are
+substantially different, it is time to start digging into your data set and
+your notes that you no doubt were scribbling as your ran your study. Try to
+figure out *why* the point is so different. If you start to become convinced
+that this one data point is badly distorting your results then you might
+consider excluding it, but that is less than ideal unless you have a solid
+explanation for why this particular case is qualitatively different from the
+others and therefore deserves to be handled separately.
 
 ------
 
@@ -505,9 +498,9 @@ therefore deserves to be handled separately.
 .. [#]
    Again, for the linear algebra fanatics: the “hat matrix” is defined to be
    that matrix **H** that converts the vector of observed values *y* into a
-   vector of fitted values ŷ, such that ŷ = **H**\ *y*. The name comes from
-   the fact that this is the matrix that “puts a hat on *y*”. The hat *value*
-   of the i-th observation is the i-th diagonal element of this matrix (so
+   vector of fitted values ŷ, such that ŷ = **H**\ *y*. The name comes from the 
+   fact that this is the matrix that “puts a hat on *y*”. The hat *value* of 
+   the i-th observation is the i-th diagonal element of this matrix (so
    technically I should be writing it as *h*\ :sub:`ii` rather than
    *h*\ :sub:`i`). Oh, and in case you care, here is how it is calculated:
    **H** = **X**\(**X**'**X**\)\ :sup:`-1` **X**'\. Pretty, is not it?

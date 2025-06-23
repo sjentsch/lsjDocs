@@ -246,7 +246,7 @@ burning question that you are all probably thinking (i.e., what the heck does a
 variance of 324.64 actually mean?) and instead talk a bit more about how to do
 the calculations in jamovi, because this will reveal something very weird.
 Start a new jamovi session by clicking on the main menu button (``☰``; top
-left hand corner) and selecting ``New``. Now type in the first five values
+left-hand corner) and selecting ``New``. Now type in the first five values
 from the |aflsmall_margins|_ data set in column A (56, 31, 56, 8, 32). Change
 the variable type to ``Continuous`` and under ``Descriptives`` click the
 ``Variance`` check box, and you get the same values for variance as the one we

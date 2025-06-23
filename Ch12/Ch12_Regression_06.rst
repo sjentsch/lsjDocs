@@ -37,16 +37,15 @@ simple model that uses only a single predictor we would do the following:
    starting with ``=`` (next to the *f*\ :sub:`x`).
 
 Okay, now that we have got a variable which stores the regression model
-predictions for how grumpy I will be on any given day, let us calculate
-our sum of squared residuals. We would do that using the following
-formula:
+predictions for how grumpy I will be on any given day, let us calculate our sum
+of squared residuals. We would do that using the following formula:
 
-#. Calculate the squared residuals by creating a new column called
-   ``sq_resid`` using the formula ``(dani.grump - Y_pred) ^ 2``. The values
-   in this column are later summed up to obtain *SS*\ :sub:`res`.
+#. Calculate the squared residuals by creating a new column called ``sq_resid``
+   using the formula ``(dani.grump - Y_pred) ^ 2``. The values in this column 
+   are later summed up to obtain *SS*\ :sub:`res`.
 
-#. Calculate the squared deviation from the mean by creating yet another
-   column called ``sq_total`` using the formula
+#. Calculate the squared deviation from the mean by creating yet another column
+   called ``sq_total`` using the formula
    ``(dani.grump - VMEAN(dani.grump)) ^ 2``. The values in this column are
    later summed up to obtain *SS*\ :sub:`tot`.
 
@@ -80,12 +79,12 @@ hand:\ [#]_
 | *R*\² = 1 - (1838.722 / 9998.590)
 | *R*\² = 1 - 0.184
              
-This gives a value for *R*\² of **0.816**. The *R*\² value, sometimes called the
-**coefficient of determination**\ [#]_ has a simple interpretation: it is the
-*proportion* of the variance in the outcome variable that can be accounted for
-by the predictor. So, in this case the fact that we have obtained *R*\² = 0.816
-means that the predictor (``dani.sleep``) explains 81.6\% of the variance in the
-outcome (``dani.grump``).\ [#]_
+This gives a value for *R*\² of **0.816**. The *R*\² value, sometimes called
+the **coefficient of determination**\ [#]_ has a simple interpretation: it is
+the *proportion* of the variance in the outcome variable that can be accounted
+for by the predictor. So, in this case the fact that we have obtained *R*\² =
+\0.816 means that the predictor (``dani.sleep``) explains 81.6\% of the
+variance in the outcome (``dani.grump``).\ [#]_
 
 Naturally, you do not actually need to do all these calculations yourself if
 you want to obtain the *R*\² value for your regression model. As we will see
@@ -110,8 +109,8 @@ model that uses only one predictor variable.
 The adjusted *R*\² (R-squared) value
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-One final thing to point out before moving on. It is quite common for people
-to report a slightly different measure of model performance, known a
+One final thing to point out before moving on. It is quite common for people to
+report a slightly different measure of model performance, known a
 “adjusted *R*\²”. The motivation behind calculating the adjusted *R*\² value
 is the observation that adding more predictors into the model will *always*
 cause the *R*\² value to increase (or at least not decrease).

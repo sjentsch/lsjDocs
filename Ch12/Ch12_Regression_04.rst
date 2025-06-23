@@ -17,9 +17,9 @@ Estimating a linear regression model
       
 .. ----------------------------------------------------------------------------
 
-Let us redraw our pictures but this time I will add some lines to show the
-size of the residual for all observations. When the regression line is good,
-our residuals (the lengths of the solid black lines) all look pretty small, as
+Let us redraw our pictures but this time I will add some lines to show the size
+of the residual for all observations. When the regression line is good, our
+residuals (the lengths of the solid black lines) all look pretty small, as
 shown in :numref:`fig-regression3` (left panel), but when the regression line
 is a bad one the residuals are a lot larger, as you can see from looking at
 :numref:`fig-regression3` (right panel). Hmm. Maybe what we “want” in a
@@ -28,8 +28,8 @@ fact, I think I will go so far as to say that the “best fitting” regression
 line is the one that has the smallest residuals. Or, better yet, since
 statisticians seem to like to take squares of everything why not say that:
 The estimated regression coefficients, :math:`\hat{b}_0` and :math:`\hat{b}_1`,
-are those that minimise the sum of the squared residuals, which we could
-either write as:
+are those that minimise the sum of the squared residuals, which we could either
+write as:
 
 .. math:: \sum_i (Y_i - \hat{Y}_i) ^ 2
 
@@ -81,13 +81,13 @@ Interpreting the estimated model
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The most important thing to be able to understand is how to interpret these
-coefficients. Let us start with :math:`\hat{b}_1`, the slope. If we remember the
-definition of the slope, a regression coefficient of :math:`\hat{b}_1` = -8.94
-means that if I increase *X*\ :sub:`i` by 1, then I am decreasing *Y*\ :sub:`i`
-by 8.94. That is, each additional hour of sleep that I gain will improve my
-mood, reducing my grumpiness by 8.94 grumpiness points. What about the
-intercept? Well, since :math:`\hat{b}_0` corresponds to “the expected value of
-*Y*\ :sub:`i` when *X*\ :sub:`i` equals 0”, it is pretty straightforward. It
+coefficients. Let us start with :math:`\hat{b}_1`, the slope. If we remember
+the definition of the slope, a regression coefficient of :math:`\hat{b}_1` =
+-8.94 means that if I increase *X*\ :sub:`i` by 1, then I am decreasing
+*Y*\ :sub:`i` by 8.94. That is, each additional hour of sleep that I gain will
+improve my mood, reducing my grumpiness by 8.94 grumpiness points. What about
+the intercept? Well, since :math:`\hat{b}_0` corresponds to “the expected value
+of *Y*\ :sub:`i` when *X*\ :sub:`i` equals 0”, it is pretty straightforward. It
 implies that if I get zero hours of sleep (*X*\ :sub:`i` = 0) then my
 grumpiness will go off the scale, to an insane value of (*Y*\ :sub:`i` =
 \125.96). Best to be avoided, I think.

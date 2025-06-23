@@ -15,7 +15,7 @@ two-sample, and they are used in more or less the exact same situations as the
 corresponding *t*-tests. Unlike the *t*-test, the Wilcoxon test does not
 assume normality, which is nice. In fact, they do not make any assumptions
 about what kind of distribution is involved. In statistical jargon, this makes
-them **nonparametric tests**. While avoiding the normality assumption is nice,
+them **non-parametric tests**. While avoiding the normality assumption is nice,
 there is a drawback: the Wilcoxon test is usually less powerful than the
 *t*-test (i.e., higher Type II error rate). I will not discuss the Wilcoxon
 tests in as much detail as the *t*-tests, but I will give you a brief

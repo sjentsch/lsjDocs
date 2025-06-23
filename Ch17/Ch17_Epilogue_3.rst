@@ -11,7 +11,7 @@ There are so very many data analysis situations that these tools do not cover,
 and it would be great to give you a sense of just how much more there is, for
 example:
 
--  **Nonlinear regression.** When discussing regression in chapter
+-  **Non-linear regression.** When discussing regression in chapter
    :doc:`../Ch12/Ch12_Regression`, we saw that regression assumes that the
    relationship between predictors and outcomes is linear. On the other hand,
    when we talked about the simpler problem of correlation, we saw that there
@@ -22,7 +22,7 @@ example:
    outcomes is monotonic (e.g., isotonic regression), while others assume that 
    it is smooth but not necessarily monotonic (e.g., Lowess regression), while 
    others assume that the relationship is of a known form that happens to be 
-   nonlinear (e.g., polynomial regression).
+   non-linear (e.g., polynomial regression).
 
 -  **Logistic regression.** Yet another variation on regression occurs when the
    outcome variable is binary |nominal|, multinomial |nominal| (several groups)
@@ -38,10 +38,10 @@ example:
    most prominent of which is logistic regression.
 
 -  **The General Linear Model (GLM).** The GLM is actually a family of models
-   that includes logistic regression, linear regression, (some) nonlinear 
+   that includes logistic regression, linear regression, (some) non-linear 
    regression, ANOVA and many others. The basic idea in the GLM is essentially 
    the same idea that underpins linear models, but it allows for the idea that 
-   your data might not be normally distributed, and allows for nonlinear 
+   your data might not be normally distributed, and allows for non-linear
    relationships between predictors and outcomes. There are a lot of very handy 
    analyses that you can run that fall within the GLM, so it is a very useful
    thing to know about.

@@ -26,7 +26,7 @@ Whichever file formats you are using, it is a good idea to create a folder or
 folders especially for your jamovi data sets and analyses and to make sure
 you keep these backed up regularly.
 
-To open a file select the main jamovi menu (``☰``; top left hand corner),
+To open a file select the main jamovi menu (``☰``; top left-hand corner),
 select ``Open`` and then choose from the files listed under ``This PC`` if you
 want to open an file stored on your computer or select an example data set by
 choosing ``Data Library``. The example files in this book can be found within
@@ -60,7 +60,7 @@ the variables.
 .. ----------------------------------------------------------------------------
 
 It is easy to open CSV files in jamovi. From the jamovi main menu (``☰``; top
-left hand corner) choose ``Open`` and browse to where you have stored the CSV
+left-hand corner) choose ``Open`` and browse to where you have stored the CSV
 file on your computer. If you are on a Mac, it will look like the usual Finder
 window that you use to choose a file; on Windows it looks like an Explorer
 window. I am assuming that you are familiar with your own computer, so you

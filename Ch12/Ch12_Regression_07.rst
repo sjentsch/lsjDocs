@@ -3,34 +3,32 @@
 Hypothesis tests for regression models
 --------------------------------------
 
-So far we have talked about what a regression model is, how the
-coefficients of a regression model are estimated, and how we quantify
-the performance of the model (the last of these, incidentally, is
-basically our measure of effect size). The next thing we need to talk
-about is hypothesis tests. There are two different (but related) kinds
-of hypothesis tests that we need to talk about: those in which we test
-whether the regression model as a whole is performing significantly
-better than a null model, and those in which we test whether a
+So far we have talked about what a regression model is, how the coefficients of
+a regression model are estimated, and how we quantify the performance of the
+model (the last of these, incidentally, is basically our measure of effect
+size). The next thing we need to talk about is hypothesis tests. There are two
+different (but related) kinds of hypothesis tests that we need to talk about:
+those in which we test whether the regression model as a whole is performing
+significantly better than a null model, and those in which we test whether a
 particular regression coefficient is significantly different from zero.
 
 Testing the model as a whole
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Okay, suppose you have estimated your regression model. The first
-hypothesis test you might try is the null hypothesis that there is *no
-relationship* between the predictors and the outcome, and the
-alternative hypothesis that *the data are distributed in exactly the way
-that the regression model predicts*.
+Okay, suppose you have estimated your regression model. The first hypothesis
+test you might try is the null hypothesis that there is *no relationship*
+between the predictors and the outcome, and the alternative hypothesis that
+*the data are distributed in exactly the way that the regression model
+predicts*.
 
-Formally, our “null model” corresponds to the fairly trivial
-“regression” model in which we include 0 predictors and only include the
-intercept term *b*\ :sub:`0`:
+Formally, our “null model” corresponds to the fairly trivial “regression” model
+in which we include 0 predictors and only include the intercept term
+*b*\ :sub:`0`:
 
 | *H*\ :sub:`0`: *Y*\ :sub:`i` = b\ :sub:`0` + ε\ :sub:`i`
 
-If our regression model has *K* predictors, the “alternative
-model” is described using the usual formula for a multiple regression
-model:
+If our regression model has *K* predictors, the “alternative model” is
+described using the usual formula for a multiple regression model:
 
 | *H*\ :sub:`1`: *Y*\ :sub:`i` = b\ :sub:`0` + math:`\left( \sum_{k = 1} ^ K b_{k} X_{ik} \right)` + ε\ :sub:`i`
 
@@ -42,8 +40,8 @@ at ANOVA in chapter :doc:`../Ch13/Ch13_ANOVA`. But just note that:
 
 | *SS*\ :sub:`mod` = *SS*\ :sub:`tot` - *SS*\ :sub:`res`
 
-And we can convert the sums of squares into mean squares by dividing by
-the degrees of freedom.
+And we can convert the sums of squares into mean squares by dividing by the
+degrees of freedom.
 
 | *MS*\ :sub:`mod` = *SS*\ :sub:`mod` / *df*\ :sub:`mod`
 | *MS*\ :sub:`res` = *SS*\ :sub:`res` / *df*\ :sub:`res` 
@@ -128,10 +126,10 @@ null hypothesis.
 Running the hypothesis tests in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To compute all of the statistics that we have talked about so far, all
-you need to do is make sure the relevant options are checked in jamovi
-and then run the regression. If we do that, as in :numref:`fig-reg2`, we get
-a whole bunch of useful output.
+To compute all of the statistics that we have talked about so far, all you need
+to do is make sure the relevant options are checked in jamovi and then run the
+regression. If we do that, as in :numref:`fig-reg2`, we get a whole bunch of
+useful output.
 
 .. ----------------------------------------------------------------------------
 
@@ -149,45 +147,43 @@ in :numref:`fig-reg2` provides the coefficients of the regression model. Each
 row in this table refers to one of the coefficients in the regression model.
 The first row is the intercept term, and the later ones look at each of the
 predictors. The columns give you all of the relevant information. The first
-column is the actual estimate of *b* (e.g., 125.97 for the intercept, and
--8.95 for the ``dani.sleep`` predictor). The second column is the standard
-error estimate :math:`\hat\sigma_b`. The third and fourth columns provide the
-lower and upper values for the 95\% confidence interval around the *b*
-estimate (more on this later). The fifth column gives you the *t*-statistic,
-and it is worth noticing that in this table :math:`t = \hat{b} / SE(\hat{b})`
-every time. Finally, the last column gives you the actual *p*-value for each
-of these tests.\ [#]_
+column is the actual estimate of *b* (e.g., 125.97 for the intercept, and -8.95
+for the ``dani.sleep`` predictor). The second column is the standard error
+estimate :math:`\hat\sigma_b`. The third and fourth columns provide the lower
+and upper values for the 95\% confidence interval around the *b* estimate (more
+on this later). The fifth column gives you the *t*-statistic, and it is worth
+noticing that in this table :math:`t = \hat{b} / SE(\hat{b})` every time.
+Finally, the last column gives you the actual *p*-value for each of these
+tests.\ [#]_
 
-The only thing that the coefficients table itself does not list is the
-degrees of freedom used in the *t*-test, which is always
-*N* - *K* - 1 and is listed in the table at the top of the output,
-labelled ``Model Fit Measures``. We can see from this table that the model
-performs significantly better than you would expect by chance
-(*F*\(2,97) = 215.24, *p* < 0.001), which is not all that
-surprising: the *R*\² = 0.81 value indicate that the regression
-model accounts for 81\% of the variability in the outcome measure (and
-82\% for the adjusted *R*\²). However, when we look back up at the
-*t*-tests for each of the individual coefficients, we have pretty
-strong evidence that the ``baby.sleep`` variable has no significant
-effect. All the work in this model is being done by the ``dani.sleep``
-variable. Taken together, these results suggest that this regression
-model is actually the wrong model for the data. You would probably be better
-off dropping the ``baby.sleep`` predictor entirely. In other words, the
-simple regression model that we started with is the better model.
+The only thing that the coefficients table itself does not list is the degrees
+of freedom used in the *t*-test, which is always *N* - *K* - 1 and is listed in
+the table at the top of the output, labelled ``Model Fit Measures``. We can see
+from this table that the model performs significantly better than you would
+expect by chance (*F*\(2,97) = 215.24, *p* < 0.001), which is not all that
+surprising: the *R*\² = 0.81 value indicate that the regression model accounts
+for 81\% of the variability in the outcome measure (and 82\% for the adjusted
+*R*\²). However, when we look back up at the *t*-tests for each of the
+individual coefficients, we have pretty strong evidence that the ``baby.sleep``
+variable has no significant effect. All the work in this model is being done by
+the ``dani.sleep`` variable. Taken together, these results suggest that this
+regression model is actually the wrong model for the data. You would probably
+be better off dropping the ``baby.sleep`` predictor entirely. In other words,
+the simple regression model that we started with is the better model.
 
 ------
 
 .. [#]
    For advanced readers only. The vector of residuals is
-   :math:`\epsilon = y - X \hat{b}`. For *K* predictors plus the
-   intercept, the estimated residual variance is
+   :math:`\epsilon = y - X \hat{b}`. For *K* predictors plus the intercept, the 
+   estimated residual variance is
    :math:`\hat\sigma ^ 2 = \epsilon^\prime\epsilon / (N - K - 1)`. The
    estimated covariance matrix of the coefficients is
    :math:`\hat\sigma ^ 2 (\mathbf{X} ^ \prime\mathbf{X}) ^ {-1}`, the main
    diagonal of which is :math:`SE(\hat{b})`, our estimated standard errors.
 
 .. [#]
-   Note that, although jamovi has done multiple tests here, it has not
-   done a Bonferroni correction or anything. These are standard
-   one-sample *t*-tests with a two-sided alternative. If you want
-   to make corrections for multiple tests, you need to do that yourself.
+   Note that, although jamovi has done multiple tests here, it has not done a 
+   Bonferroni correction or anything. These are standard one-sample *t*-tests 
+   with a two-sided alternative. If you want to make corrections for multiple 
+   tests, you need to do that yourself.

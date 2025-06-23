@@ -254,10 +254,10 @@ and let us also calculate R̄, the grand mean rank
 
 Now that we have done this, we can calculate the squared deviations from the
 grand mean rank R̄. When we do this for the individual scores, i.e., if we
-calculate (*R*\ :sub:`ik` – R̄)², what we have is a “nonparametric” measure of
+calculate (*R*\ :sub:`ik` – R̄)², what we have is a “non-parametric” measure of
 how far the *ik*-th observation deviates from the grand mean rank. When we
 calculate the squared deviation of the group means from the grand means, i.e.,
-if we calculate (*R̄*\ :sub:`k` – R̄)², then what we have is a nonparametric
+if we calculate (*R̄*\ :sub:`k` – R̄)², then what we have is a non-parametric
 measure of how much the *group* deviates from the grand mean rank. With
 this in mind, we will follow the same logic that we did with ANOVA and
 define our *ranked* sums of squares measures, much like we did earlier.

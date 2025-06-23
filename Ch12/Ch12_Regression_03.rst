@@ -7,7 +7,7 @@ Stripped to its bare essentials, linear regression models are basically a
 fancier version of the Pearson correlation (section :doc:`Ch12_Regression_01`),
 but they are much more powerful tools. We will return to the |parenthood|_ data
 set that we were using to illustrate how correlations work. Recall that, in
-this data set we were trying to find out why Dani is so very grumpy all the
+this data set we were trying to find out why Danielle is so very grumpy all the
 time and our working hypothesis was that I am not getting enough sleep. We drew
 some scatterplots to help us examine the relationship between the amount of
 sleep I get and my grumpiness the following day, as in
@@ -26,11 +26,11 @@ shown in :numref:`fig-regression1` (b).
    :alt: Best and poor choice of regression line
    :name: fig-regression1
 
-   Panel (a) shows the scatterplot of ``dani.sleep`` and ``dani.grump``
-   from :numref:`fig-scatterplot2` with the best fitting regression line drawn
-   over the top. Not surprisingly, the line goes through the middle of the
-   data. In contrast, panel (b) shows the same data, but with a very poor
-   choice of regression line drawn over the top.
+   Panel (a) shows the scatterplot of ``dani.sleep`` and ``dani.grump`` from 
+   :numref:`fig-scatterplot2` with the best fitting regression line drawn over 
+   the top. Not surprisingly, the line goes through the middle of the data. In 
+   contrast, panel (b) shows the same data, but with a very poor choice of 
+   regression line drawn over the top.
 
 .. ----------------------------------------------------------------------------
 
@@ -45,14 +45,14 @@ a straight line is usually written like this:
 | *y* = *a* + *bx*
 
 The two *variables* are *x* and *y*, and we have two *coefficients*, *a* and
-*b*\.\ [#]_ The coefficient *a* represents the **y-intercept** of the line,
-and coefficient *b* represents the *slope* of the line. The intercept is
-interpreted as “the value of *y* that you get when *x* = 0”. Similarly, a
-slope of *b* means that if you increase the *x*-value by 1 unit, then the
-*y*-value goes up by *b* units, and a negative slope means that the *y*-value
-would go down rather than up. If *Y* is the outcome variable (the DV) and *X*
-is the predictor variable (the IV), then the formula that describes our
-regression is written like this:
+*b*\.\ [#]_ The coefficient *a* represents the **y-intercept** of the line, and
+coefficient *b* represents the *slope* of the line. The intercept is
+interpreted as “the value of *y* that you get when *x* = 0”. Similarly, a slope
+of *b* means that if you increase the *x*-value by 1 unit, then the *y*-value
+goes up by *b* units, and a negative slope means that the *y*-value would go
+down rather than up. If *Y* is the outcome variable (the DV) and *X* is the
+predictor variable (the IV), then the formula that describes our regression is
+written like this:
 
 | *Ŷ*\ :sub:`i` = *b*\ :sub:`0` + *b*\ :sub:`1` *X*\ :sub:`i`
 
@@ -80,22 +80,22 @@ about the good regression line or the bad one, the data do not fall perfectly
 on the line. Or, to say it another way, the data *Y*\ :sub:`i` are not
 identical to the predictions of the regression model *Ŷ*\ :sub:`i`. Since
 statisticians love to attach letters, names and numbers to everything, let us
-refer to the difference between the model prediction and that actual data
-point as a *residual*, and we will refer to it as ε\ :sub:`i`.\ [#]_ Written
-using mathematics, the residuals are defined as:
+refer to the difference between the model prediction and that actual data point
+as a *residual*, and we will refer to it as ε\ :sub:`i`.\ [#]_ Written using
+mathematics, the residuals are defined as:
 
 | ε\ :sub:`i` = *Y*\ :sub:`i` - *Ŷ*\ :sub:`i`
 
-This, in turn, means that we can write down the complete linear
-regression model as:
+This, in turn, means that we can write down the complete linear regression
+model as:
 
 | *Y*\ :sub:`i` = *b*\ :sub:`0` + *b*\ :sub:`1` *X*\ :sub:`i` + ε\ :sub:`i`
 
 ------
 
 .. [#]
-   Also sometimes written as *y* = mx + c where m is the slope
-   coefficient and c is the intercept (constant) coefficient.
+   Also sometimes written as *y* = mx + c where m is the slope coefficient and 
+   c is the intercept (constant) coefficient.
 
 .. [#]
    The ε symbol is the Greek letter epsilon. It is traditional to use

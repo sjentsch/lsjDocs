@@ -295,7 +295,7 @@ this will give you the table shown in :numref:`fig-factorialanova8`.
    
 .. ----------------------------------------------------------------------------
 
-How to encode non binary factors as contrasts
+How to encode non-binary factors as contrasts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 At this point, I have shown you how we can view a 2 × 2 ANOVA into a linear

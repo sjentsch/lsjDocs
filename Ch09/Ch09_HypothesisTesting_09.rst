@@ -123,7 +123,7 @@ wondering why there is a difference between males and females in terms of
 their psychic abilities. However, this is wrong. If you think about it, we
 have not *actually* run a test that explicitly compares males to females. All
 we have done is compare males to chance (binomial test was significant) and
-compared females to chance (binomial test was non significant). If we want to
+compared females to chance (binomial test was not significant). If we want to
 argue that there is a real difference between the males and the females, we
 should probably run a test of the null hypothesis that there is no difference!
 We can do that using a different hypothesis test,\ [#]_ but when we do that it

@@ -3,12 +3,12 @@
 Sorting, rearranging, merging, transposing data
 -----------------------------------------------
 
-In this section I discuss a few useful transformations that are loosely
-related to one another: sorting a data set (after one or more variables),
-rearraning the order of variables in a data set, combining several data
-sets into one (using an index variable), transposing a data set (i.e.,
-make rows into columns, and columns into rows), and reshaping a data set
-(from long to wide format or from wide to long format).
+In this section I discuss a few useful transformations that are loosely related
+to one another: sorting a data set (after one or more variables), rearraning
+the order of variables in a data set, combining several data sets into one
+(using an index variable), transposing a data set (i.e., make rows into
+columns, and columns into rows), and reshaping a data set (from long to wide
+format or from wide to long format).
 
 For all of these transformations, you need to install the jamovi module
 ``jTransform`` (cf. :ref:`Installing modules <modules>`). Once this is done,
@@ -51,17 +51,16 @@ Rearranging the order of variables in a data set
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sometimes, you would like to rearrange the variables in your data set in a
-certain order (e.g., because you added variables as the last columns and
-would like to move the further forward in the data set). For this
-demonstration, we will use the |parenthood|_ data set (used and `described
-<parenthood>` later in the book). The dependent variable (``dani.grump``)
-of this data set is placed in the middle of this data set (between the
-independent variables). We would like to arrange the variables in a way
-that ``dani.grump`` becomes the last variable in the data set, using the
-function ``Change Variable Order``. In the analysis panel, we arrange the
-variables in the desired order, briefly check the ``Data Preview``, and then
-use the ``Create``-button to open the data set with the new order of
-variables in a new jamovi window.
+certain order (e.g., because you added variables as the last columns and would
+like to move the further forward in the data set). For this demonstration, we
+will use the |parenthood|_ data set (used and `described <parenthood>` later in
+the book). The dependent variable (``dani.grump``) of this data set is placed
+in the middle of this data set (between the independent variables). We would
+like to arrange the variables in a way that ``dani.grump`` becomes the last
+variable in the data set, using the function ``Change Variable Order``. In the
+analysis panel, we arrange the variables in the desired order, briefly check
+the ``Data Preview``, and then use the ``Create``-button to open the data set
+with the new order of variables in a new jamovi window.
 
 .. ----------------------------------------------------------------------------
 
@@ -105,13 +104,13 @@ from a (fictional) study with questionnaire responses ``Qst_…`` in rows and
 participants as columns (each of these columns was supposedly copied from the
 log file of that participant). To transpose this data set, we use the function
 ``Transpose`` from ``jTransform``. In the analysis panel, we assign the
-variables to ``Variables to be transposed``. In some cases (like in the
-current data set) we have an additional variable that contains the desired
-names for the variables after the transposition. If we have such a variable
-(containing, e.g., the names of the questionnaire items), we assign it to
-``Variable Names for the Output``. After we have assigned the variables, we
-briefly check the ``Data Preview``, and then use the ``Create``-button to open
-the transposed data set in a new jamovi window.
+variables to ``Variables to be transposed``. In some cases (like in the current
+data set) we have an additional variable that contains the desired names for
+the variables after the transposition. If we have such a variable (containing,
+e.g., the names of the questionnaire items), we assign it to ``Variable Names
+for the Output``. After we have assigned the variables, we briefly check the
+``Data Preview``, and then use the ``Create``-button to open the transposed
+data set in a new jamovi window.
 
 .. ----------------------------------------------------------------------------
 
@@ -135,8 +134,8 @@ that the rows of your data set correspond to observations, and the columns
 correspond to the variables. However, in cases where you observations (rows)
 are, e.g., different time points, you might want to do an analysis where you
 think of the times as being the things of interest (i.e., times as variables,
-certain measures as cases). If so, then it is useful to know how to transpose
-a data set.
+certain measures as cases). If so, then it is useful to know how to transpose a
+data set.
 
 
 .. ----------------------------------------------------------------------------

@@ -203,7 +203,7 @@ Let us expand on that last part a little. One consequence is that there are
 systematic differences between the mean and the median when the histogram is
 asymmetric (skewed; see :doc:`Ch04_Descriptives_3`). This is illustrated in
 :numref:`fig-meanmedian`. Notice that the median (right-hand side) is located
-closer to the “body” of the histogram, whereas the mean left hand side) gets
+closer to the “body” of the histogram, whereas the mean left-hand side) gets
 dragged towards the “tail” (where the extreme values are). To give a concrete
 example, suppose Bob (income 50 000 €), Kate (income 60 000 €) and Jane
 (income 65 000 €) are sitting at a table. The average income at the table is

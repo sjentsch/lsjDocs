@@ -22,11 +22,11 @@ mind, let us look at how to draw scatterplots in jamovi, using the same
 |parenthood|_ data set that I used when introducing correlations.
 
 Suppose my goal is to draw a scatterplot displaying the relationship between
-the amount of sleep that I get (``dani.sleep``) and how grumpy I am the next day
-(``dani.grump``). There are two different ways in which we can use jamovi to get
-the plot that we are after. The first way is to use the ``Plot`` option under
-the ``Regression`` → ``Correlation Matrix`` button, giving us the output shown
-in :numref:`fig-scatterplot1`. Note that jamovi draws a line through the
+the amount of sleep that I get (``dani.sleep``) and how grumpy I am the next
+day (``dani.grump``). There are two different ways in which we can use jamovi
+to get the plot that we are after. The first way is to use the ``Plot`` option
+under the ``Regression`` → ``Correlation Matrix`` button, giving us the output
+shown in :numref:`fig-scatterplot1`. Note that jamovi draws a line through the
 points, we will come onto this a bit later in section :doc:`Ch12_Regression_03`.
 Plotting a scatterplot in this way also allow you to specify ``Densities for
 variables`` and this option adds a density curve showing how the data in each
@@ -42,14 +42,9 @@ variable is distributed.
    
 .. ----------------------------------------------------------------------------
 
-The second way do to it is to use one of the jamovi add-on modules. This
-module is called ``scatr`` and you can install it by clicking on the large
-``+`` icon in the top right of the jamovi screen, opening the jamovi
-library, scrolling down until you find ``scatr`` and clicking ``Install``.
-When you have done this, you will find a new ``Scatterplot`` command
-available under the ``Exploration`` button. This plot is a bit different
-than the first way, see :numref:`fig-scatterplot2`, but the important
-information is the same.
+The second way do to it is to use the ``Exploration`` → ``Scatterplot``
+function. This plot is a bit different than the first way, see
+:numref:`fig-scatterplot2`, but the important information is the same.
 
 .. ----------------------------------------------------------------------------
 
@@ -64,17 +59,17 @@ information is the same.
 More elaborate options
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Often you will want to look at the relationships between several
-variables at once, using a **scatterplot matrix** (in jamovi via the
-``Correlation Matrix`` → ``Plot`` command). Just add another variable, for
-example ``baby.sleep`` to the list of variables to be correlated, and
-jamovi will create a scatterplot matrix for you, just like the one in
-:numref:`fig-scatterplot3`.
+Often you will want to look at the relationships between several variables at
+once, using a **scatterplot matrix** (in jamovi via the ``Correlation Matrix``
+→ ``Plot`` command). Just add another variable, for example ``baby.sleep`` to
+the list of variables to be correlated, and jamovi will create a scatterplot
+matrix for you, just like the one in :numref:`fig-scatterplot3`.
 
 .. ----------------------------------------------------------------------------
 
 .. figure:: ../_images/lsj_scatterplot3.*
-   :alt: Matrix of scatterplots cretaed with the ``Correlation Matrix`` analysis
+   :alt: Matrix of scatterplots cretaed with the ``Correlation Matrix``
+         analysis
    :name: fig-scatterplot3
 
    Matrix of scatterplots cretaed with the ``Correlation Matrix`` analysis

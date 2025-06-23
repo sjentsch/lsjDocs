@@ -85,11 +85,11 @@ And, at this point, we have all achieved something. You have learned what a
 probability distribution is, and I have finally managed to find a way to
 create a graph that focuses entirely on my trousers. Everyone wins! The only
 other thing that I need to point out is that probability theory allows you to
-talk about **non elementary events** as well as elementary ones. The easiest
+talk about **non-elementary events** as well as elementary ones. The easiest
 way to illustrate the concept is with an example. In the trousers example it
 is perfectly legitimate to refer to the probability that I wear jeans. In this
-scenario, the “Dani wears jeans” event is said to have happened as long as the
-elementary event that actually did occur is one of the appropriate ones. In
+scenario, the “Danielle wears jeans” event is said to have happened as long as
+the elementary event that actually did occur is one of the appropriate ones. In
 this case “blue jeans”, “black jeans” or “grey jeans”. In mathematical terms,
 we defined the “jeans” event *E* to correspond to the set of elementary events
 (*X*\ :sub:`1`\ , *X*\ :sub:`2`\ , *X*\ :sub:`3`\ )`. If any of these elementary
