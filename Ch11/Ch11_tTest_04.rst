@@ -49,7 +49,7 @@ deviation estimate, because you are averaging apples and oranges.\ [#]_
 But you can still estimate the standard error of the difference between
 sample means, it just ends up looking different:
 
-.. math:: SE(\bar{X}_1 - \bar{X}_2) = \sqrt{ \frac{{\hat{\sigma}_1}^2}{N_1} + \frac{{\hat{\sigma}_2}^2}{N_2} }
+.. math:: SE(\bar{X}_1 - \bar{X}_2) = \sqrt{ \frac{{\hat{\sigma}_1} ^ 2}{N_1} + \frac{{\hat{\sigma}_2} ^ 2}{N_2} }
 
 The reason why it is calculated this way is beyond the scope of this book.
 What matters for our purposes is that the *t*-statistic that comes out of the
@@ -63,7 +63,7 @@ number of constraints” heuristic that I have been using up to this point.
 The degrees of freedom are, in fact:
 
 .. math:: \mbox{df} = \frac{ ({\hat{\sigma}_1} ^ 2 / N_1 + {\hat{\sigma}_2} ^ 2 / N_2) ^ 2 } \\
-                           { ({\hat{\sigma}_1} ^ 2 / N_1) ^ 2 / (N_1 - 1 ) + ({\hat{\sigma}_2} ^ 2 / N_2) ^ 2 / (N_2 - 1 ) }
+                           { ({\hat{\sigma}_1} ^ 2 / N_1) ^ 2 / (N_1 - 1 ) + ({\hat{\sigma}_2} ^ 2 / N_2) ^ 2 / (N_2 - 1) }
 
 which is all pretty straightforward and obvious, right? Well, perhaps not. It
 does not really matter for our purposes. What matters is that you will see

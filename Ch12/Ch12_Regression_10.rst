@@ -89,7 +89,7 @@ in order to estimate some standardised notion of the residual.
 
 The formula for doing the calculations this time is subtly different:
 
-.. math:: \epsilon_{i}^* = \frac{\epsilon_i}{\hat{\sigma}_{(-i)} \sqrt{1-h_i}}
+.. math:: \epsilon_{i}^* = \frac{\epsilon_i}{\hat{\sigma}_{(-i)} \sqrt{1 - h_i}}
 
 Notice that our estimate of the standard deviation here is written
 :math:`\hat{\sigma}_{(-i)}`. What this corresponds to is the estimate of the
@@ -101,7 +101,7 @@ bit at that, especially if you have got a large data set). Fortunately, some
 terribly clever person has shown that this standard deviation estimate is
 actually given by the following equation:
 
-.. math:: \hat\sigma_{(-i)} = \hat{\sigma} \ \sqrt{\frac{N-K-1 - {\epsilon_{i}^\prime}^2}{N-K-2}}
+.. math:: \hat\sigma_{(-i)} = \hat{\sigma} \ \sqrt{\frac{N - K - 1 - {\epsilon_{i} ^ \prime} ^ 2}{N - K - 2}}
 
 Before moving on, I should point out that you do not often need to obtain these
 residuals yourself, even though they are at the heart of almost all regression
@@ -235,7 +235,7 @@ explain fully earlier: the Box-Cox transform.
 
 The Box-Cox function is a fairly simple one and it is very widely used.
 
-.. math:: f(x,\lambda) = \frac{x^\lambda - 1}{\lambda}
+.. math:: f(x,\lambda) = \frac{x ^ \lambda - 1}{\lambda}
 
 for all values of λ except λ = 0. When λ = 0 we just take the natural logarithm
 (i.e., *ln*\(x)).
@@ -438,7 +438,7 @@ points high influence, and it is why they are the biggest worry.
 
 We operationalise influence in terms of a measure known as **Cook’s distance**.
 
-.. math:: D_i = \frac{{\epsilon_i^*}^2 }{K+1} \times \frac{h_i}{1-h_i}
+.. math:: D_i = \frac{{\epsilon_i^*} ^ 2 }{K + 1} \times \frac{h_i}{1 - h_i}
 
 Notice that this is a multiplication of something that measures the
 outlier-ness of the observation (the bit on the left), and something that

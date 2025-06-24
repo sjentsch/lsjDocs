@@ -133,7 +133,7 @@ social gathering:
 
 In some situations it can be quite helpful to group these into a smaller number
 of categories. For example, we could group the data into three broad
-categories: young (0-20), adult (21-40) and older (41-60). This is a quite
+categories: young (0 - 20), adult (21 - 40) and older (41 - 60). This is a quite
 coarse-grained classification, and the labels that I have attached only make
 sense in the context of this data set (e.g., viewed more generally, a 42 year
 old would not consider themselves as “older”). We can slice this variable up

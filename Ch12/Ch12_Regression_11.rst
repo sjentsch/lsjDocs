@@ -48,7 +48,7 @@ In the context of a linear regression model (and ignoring terms that do not
 depend on the model in any way!), the AIC for a model that has *K* predictor
 variables plus an intercept is:
 
-.. math:: \mbox{AIC} = \displaystyle\frac{\mbox{SS}_{res}}{\hat{\sigma}^2} + 2K
+.. math:: \mbox{AIC} = \displaystyle\frac{\mbox{SS}_{res}}{\hat{\sigma} ^ 2} + 2K
 
 The smaller the AIC value, the better the model performance. If we ignore the
 low level details it is fairly obvious what the AIC does. On the left we have a
@@ -175,7 +175,7 @@ both models. I will denote these as *SS*\ :sub:`res`\ :sup:`(1)` and
 *SS*\ :sub:`res`\ :sup:`(2)` respectively. The superscripting here just
 indicates which model we are talking about. Then our *F*-statistic is:
 
-.. math:: F = \frac{(\mbox{SS}_{res}^{(1)} - \mbox{SS}_{res}^{(1)})/k}{(\mbox{SS}_{res}^{(2)})/(N-p-1)}
+.. math:: F = \frac{(\mbox{SS}_{res} ^ {(1)} - \mbox{SS}_{res} ^ {(1)})/k}{(\mbox{SS}_{res} ^ {(2)})/(N - p - 1)}
 
 *N* is the number of observations, *p* is the number of predictors in the full
 model (not including the intercept), and *k* is the difference in the number of
@@ -190,7 +190,7 @@ The reason why this is helpful is that we can express *SS*\ :sub:`Δ` as a
 measure of the extent to which the two models make different predictions about
 the the outcome variable:
 
-| *SS*\ :sub:`Δ` = :math:`\sum_{i} \left(\hat{y}_i^{(2)} - \hat{y}_i^{(1)} \right)^2`
+| *SS*\ :sub:`Δ` = :math:`\sum_{i} \left(\hat{y}_i ^ {(2)} - \hat{y}_i ^ {(1)} \right) ^ 2`
 
 Here, *ŷ*\ :sub:`i`\ :sup:`(1)` is the fitted value for *y*\ :sub:`i` according
 to model *M*\ :sub:`1` and *ŷ*\ :sub:`i`\ :sup:`(2)` is the fitted value for

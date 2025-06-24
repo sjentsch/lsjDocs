@@ -25,7 +25,7 @@ Mathematically, they are very simple. To calculate the ϕ
 statistic, you just divide your χ² value by the sample size,
 and take the square root:
 
-.. math:: \phi = \sqrt{\frac{\chi^2}{N}}
+.. math:: \phi = \sqrt{\frac{\chi ^ 2}{N}}
 
 The idea here is that the ϕ statistic is supposed to range between 0 (no
 association at all) and 1 (perfect association), but it does not always do this
@@ -37,7 +37,7 @@ simple adjustment to ϕ. If you have got a contingency table with *r* rows and
 *c* columns, then define *k* = min(*r*, *c*) to be the smaller of the two
 values. If so, then **Cramér’s V** statistic is:
 
-.. math:: V = \sqrt{\frac{\chi^2}{N(k-1)}}
+.. math:: V = \sqrt{\frac{\chi ^ 2}{N(k - 1)}}
 
 And you are done. This seems to be a fairly popular measure, presumably because
 it is easy to calculate, and it gives answers that are not completely silly.

@@ -142,6 +142,6 @@ in the possible outcomes.
    
 .. ----------------------------------------------------------------------------
 
-.. |binomial|  replace:: :math:`P(X \ | \ \theta, N) = \displaystyle\frac{N!}{X! (N-X)!} \theta^X (1-\theta)^{N-X}`
+.. |binomial|  replace:: :math:`P(X \ | \ \theta, N) = \displaystyle\frac{N!}{X! (N - X)!} \theta ^ X (1 - \theta) ^ {N - X}`
 
-.. |normal|    replace:: :math:`p(X \ | \ \mu, \sigma) = \displaystyle\frac{1}{\sqrt{2\pi}\sigma} \exp \left( -\frac{(X - \mu)^2}{2\sigma^2} \right)`
+.. |normal|    replace:: :math:`p(X \ | \ \mu, \sigma) = \displaystyle\frac{1}{\sqrt{2 \pi} \sigma} \exp \left( -\frac{(X - \mu) ^ 2}{2 \sigma ^ 2} \right)`

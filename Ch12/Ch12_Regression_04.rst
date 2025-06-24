@@ -96,7 +96,7 @@ grumpiness will go off the scale, to an insane value of (*Y*\ :sub:`i` =
 .. [#]
    However, it *will* help *you* to know that the solution to the estimation
    problem turns out to be
-   :math:`\hat{b} = (\mathbf{X}^\prime\mathbf{X})^{-1} \mathbf{X}^\prime y`,
+   :math:`\hat{b} = (\mathbf{X} ^ \prime\mathbf{X}) ^ {-1} \mathbf{X} ^ \prime y`,
    where :math:`\hat{b}` is a vector containing the estimated regression
    coefficients, **X** is the “design matrix” that contains the predictor
    variables (plus an additional column containing all ones; strictly **X**

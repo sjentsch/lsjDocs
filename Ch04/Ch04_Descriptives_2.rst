@@ -347,7 +347,7 @@ For reasons that will make sense when we return to this topic in chapter
 :doc:`../Ch08/Ch08_Estimation` I will refer to this new quantity as
 :math:`\hat\sigma` (read as: “sigma hat”), and the formula for this is:
 
-.. math:: \hat\sigma = \sqrt{ \frac{1}{N - 1} \sum_{i = 1 } ^ N \left( X_i - \bar{X} \right) ^ 2 }
+.. math:: \hat\sigma = \sqrt{ \frac{1}{N - 1} \sum_{i = 1} ^ N \left( X_i - \bar{X} \right) ^ 2 }
 
 Interpreting standard deviations is slightly more complex. Because the
 standard deviation is derived from the variance, and the variance is a quantity

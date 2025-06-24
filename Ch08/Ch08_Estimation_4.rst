@@ -212,23 +212,23 @@ you recall from :doc:`../Ch04/Ch04_Descriptives_2`, the sample variance is
 defined to be the average of the squared deviations from the sample mean. That
 is:
 
-.. math:: s^2 = \frac{1}{N} \sum_{i = 1} ^ N (X_i - \bar{X}) ^ 2
+.. math:: s ^ 2 = \frac{1}{N} \sum_{i = 1} ^ N (X_i - \bar{X}) ^ 2
 
 The sample variance *s*\² is a biased estimator of the population variance σ².
 But as it turns out, we only need to make a tiny tweak to transform this into
 an unbiased estimator. All we have to do is divide by *N* - 1 rather than by
 *N*. If we do that, we obtain the following formula:
 
-.. math:: \hat\sigma^2 = \frac{1}{N-1} \sum_{i = 1} ^ N (X_i - \bar{X}) ^ 2
+.. math:: \hat\sigma ^ 2 = \frac{1}{N - 1} \sum_{i = 1} ^ N (X_i - \bar{X}) ^ 2
 
 This is an unbiased estimator of the population variance σ². Moreover, this
 finally answers the question we raised in :doc:`../Ch04/Ch04_Descriptives_2`.
 Why did jamovi give us slightly different answers for variance? It is because
-jamovi calculates :math:`\hat\sigma^2` not *s*\², that is why. A similar story
+jamovi calculates :math:`\hat\sigma ^ 2` not *s*\², that is why. A similar story
 applies for the standard deviation. If we divide by *N* - 1 rather than *N*
 our estimate of the population standard deviation becomes:
 
-.. math:: \hat\sigma = \sqrt{\frac{1}{N-1} \sum_{i = 1} ^ N (X_i - \bar{X}) ^ 2}
+.. math:: \hat\sigma = \sqrt{\frac{1}{N - 1} \sum_{i = 1} ^ N (X_i - \bar{X}) ^ 2}
 
 and when we use jamovi’s built-in standard deviation function, what it is doing
 is calculating :math:`\hat\sigma`, not *s*.\ [#]_
@@ -254,29 +254,28 @@ from which it came”. The moment you start thinking that *s* and
 To finish this section off, here is another couple of tables to help keep
 things clear.
 
-+------------------------+----------------------+------------------------+
-| Symbol                 | What is it?          | Do we know what it is? |
-+========================+======================+========================+
-| *s*                    | Sample standard      | Yes, calculated from   |
-|                        | deviation            | the raw data           |
-+------------------------+----------------------+------------------------+
-| σ                      | Population standard  | Almost never known for |
-|                        | deviation            | sure                   |
-+------------------------+----------------------+------------------------+
-| :math:`\hat{\sigma}`   | Estimate of the      | Yes, but not the same  |
-|                        | population standard  | as the sample standard |
-|                        | deviation            | deviation              |
-+------------------------+----------------------+------------------------+
-+------------------------+----------------------+------------------------+
-| *s*\²                  | Sample variance      | Yes, calculated from   |
-|                        |                      | the raw data           |
-+------------------------+----------------------+------------------------+
-| σ²                     | Population variance  | Almost never known for |
-|                        |                      | sure                   |
-+------------------------+----------------------+------------------------+
-| :math:`\hat{\sigma}^2` | Estimate of the      | Yes, but not the same  |
-|                        | population variance  | as the sample variance |
-+------------------------+----------------------+------------------------+
++--------------------------+----------------------+------------------------+
+| Symbol                   | What is it?          | Do we know what it is? |
++==========================+======================+========================+
+| *s*                      | Sample standard      | Yes, calculated from   |
+|                          | deviation            | the raw data           |
++--------------------------+----------------------+------------------------+
+| σ                        | Population standard  | Almost never known for |
+|                          | deviation            | sure                   |
++--------------------------+----------------------+------------------------+
+| :math:`\hat{\sigma}`     | Estimate of the      | Yes, but not the same  |
+|                          | population standard  | as the sample standard |
+|                          | deviation            | deviation              |
++--------------------------+----------------------+------------------------+
+| *s*\²                    | Sample variance      | Yes, calculated from   |
+|                          |                      | the raw data           |
++--------------------------+----------------------+------------------------+
+| σ²                       | Population variance  | Almost never known for |
+|                          |                      | sure                   |
++--------------------------+----------------------+------------------------+
+| :math:`\hat{\sigma} ^ 2` | Estimate of the      | Yes, but not the same  |
+|                          | population variance  | as the sample variance |
++--------------------------+----------------------+------------------------+
 
 ------
 
@@ -312,11 +311,11 @@ things clear.
 
 .. [#]
    Okay, I am hiding something else here. In a bizarre and counter-intuitive
-   twist, since :math:`\hat\sigma^2` is an unbiased estimator of σ², you would
-   assume that taking the square root would be fine and :math:`\hat\sigma`
+   twist, since :math:`\hat\sigma ^ 2` is an unbiased estimator of σ², you 
+   would assume that taking the square root would be fine and :math:`\hat\sigma`
    would be an unbiased estimator of σ. Right? Weirdly, it is not. There is
    actually a subtle, tiny bias in :math:`\hat\sigma`. This is just bizarre:
-   :math:`\hat\sigma^2` is an unbiased estimate of the population variance
+   :math:`\hat\sigma ^ 2` is an unbiased estimate of the population variance
    σ², but when you take the square root, it turns out that :math:`\hat\sigma`
    is a biased estimator of the population standard deviation σ. Weird, weird,
    weird, right? So, why is :math:`\hat\sigma` biased? The technical answer is

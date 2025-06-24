@@ -261,15 +261,15 @@ this in mind, we will follow the same logic that we did with ANOVA and
 define our *ranked* sums of squares measures, much like we did earlier.
 First, we have our “total ranked sums of squares”
 
-.. math:: \mbox{RSS}_{tot} = \sum_k \sum_i ( R_{ik} - \bar{R} )^2
+.. math:: \mbox{RSS}_{tot} = \sum_k \sum_i ( R_{ik} - \bar{R} ) ^ 2
 
 and we can define the “between groups ranked sums of squares” like this:
 
 .. math::
 
    \begin{array}{rcl}
-   \mbox{RSS}_{b} &=& \sum_k \sum_i ( \bar{R}_k  - \bar{R} )^2 \\
-                  &=& \sum_k N_k ( \bar{R}_k  - \bar{R} )^2 
+   \mbox{RSS}_{b} &=& \sum_k \sum_i (\bar{R}_k  - \bar{R}) ^ 2 \\
+                  &=& \sum_k N_k (\bar{R}_k  - \bar{R}) ^ 2 
    \end{array}
 
 So, if the null hypothesis is true and there are no true group
@@ -296,7 +296,7 @@ perspective it is needlessly complicated. I will not show you the
 derivation, but you can use a bit of algebraic jiggery-pokery [#]_ to
 show that the equation for *K* can be rewritten as
 
-.. math:: K = \frac{12}{N(N-1)} \sum_k N_k {\bar{R}_k}^2 - 3(N+1)
+.. math:: K = \frac{12}{N(N - 1)} \sum_k N_k {\bar{R}_k} ^ 2 - 3(N + 1)
 
 It is this last equation that you sometimes see given for *K*. This
 is way easier to calculate than the version I described in the previous
@@ -332,7 +332,7 @@ telling us that two people’s mood increased by 0.3. More to the point, in the
 mathematical notation I introduced above, this is telling us that *f*\ :sub:`3`
 = 2. So, now that we know this, the tie correction factor (TCF) is:
 
-.. math:: \mbox{TCF} = 1 - \frac{\sum_j {f_j}^3 - f_j}{N^3 - N}
+.. math:: \mbox{TCF} = 1 - \frac{\sum_j {f_j} ^ 3 - f_j}{N ^ 3 - N}
 
 The tie-corrected value of the Kruskal-Wallis statistic is obtained by
 dividing the value of *K* by this quantity. It is this tie-corrected version

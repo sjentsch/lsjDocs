@@ -189,7 +189,7 @@ a value for the Shapiro-Wilk normality test statistic of W = 0.94, and
    *X*\ :sub:`2` be the second smallest and so on. Then the value of *W* is 
    given by:
 
-   .. math:: W = \frac{ \left( \sum_{i = 1}^N a_i X_i \right)^2 }{ \sum_{i = 1}^N (X_i - \bar{X})^2}
+   .. math:: W = \frac{ \left( \sum_{i = 1} ^ N a_i X_i \right) ^ 2 }{ \sum_{i = 1} ^ N (X_i - \bar{X}) ^ 2}
 
    *X̄* is the mean of the observations, and the *a*\ :sub:`i` values are 
    something complicated that is a bit beyond the scope of an introductory 

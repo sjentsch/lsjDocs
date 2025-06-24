@@ -207,9 +207,9 @@ are big whenever the null hypothesis makes a bad prediction (clubs and hearts),
 but are small whenever it makes a good one (diamonds and spades). Next, for
 some technical reasons that I will explain in a moment, let us also divide all
 these numbers by the expected frequency *E*\ :sub:`i`\, so we are actually
-calculating :math:`\frac{(E_i-O_i)^2}{E_i}`\. Since *E*\ :sub:`i` = 50 for all
-categories in our example, it is not a very interesting calculation, but let us
-do it anyway:
+calculating :math:`\frac{(E_i - O_i) ^ 2}{E_i}`\. Since *E*\ :sub:`i` = 50 for
+all categories in our example, it is not a very interesting calculation, but
+let us do it anyway:
 
 .. code-block:: R
 

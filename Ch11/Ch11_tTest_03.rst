@@ -151,16 +151,15 @@ Mathematically, we can write this as
 | *w*\ :sub:`2` = *N*\ :sub:`2` - 1
 
 Now that we have assigned weights to each sample we calculate the pooled
-estimate of the variance by taking the weighted average of the two
-variance estimates, :math:`{\hat\sigma_1}^2` and
-:math:`{\hat\sigma_2}^2`
+estimate of the variance by taking the weighted average of the two variance
+estimates, :math:`{\hat\sigma_1} ^ 2` and :math:`{\hat\sigma_2} ^ 2`:
 
-.. math:: \hat\sigma^2_p = \frac{w_1 {\hat\sigma_1}^2 + w_2 {\hat\sigma_2}^2}{w_1 + w_2}
+.. math:: \hat\sigma ^ 2_p = \frac{w_1 {\hat\sigma_1} ^ 2 + w_2 {\hat\sigma_2} ^ 2}{w_1 + w_2}
 
 Finally, we convert the pooled variance estimate to a pooled standard
 deviation estimate, by taking the square root.
 
-.. math:: \hat\sigma_p = \sqrt{\frac{w_1 {\hat\sigma_1}^2 + w_2 {\hat\sigma_2}^2}{w_1 + w_2}}
+.. math:: \hat\sigma_p = \sqrt{\frac{w_1 {\hat\sigma_1} ^ 2 + w_2 {\hat\sigma_2} ^ 2}{w_1 + w_2}}
 
 And if you mentally substitute *w*\ :sub:`1` = *N*\ :sub:`1` - 1 and
 *w*\ :sub:`2` = *N*\ :sub:`2` - 1 into this equation you get a very ugly
@@ -185,7 +184,7 @@ grade differs from the mean grade in their tutorial)? Remember, a variance is
 just the average of a bunch of squared deviations, so let us do that.
 Mathematically, we could write it like this:
 
-.. math:: \frac{\sum_{ik} \left( X_{ik} - \bar{X}_k \right)^2}{N}
+.. math:: \frac{\sum_{ik} \left( X_{ik} - \bar{X}_k \right) ^ 2}{N}
 
 where the notation “Σ\ :sub:`ik`” is a lazy way of saying “calculate a sum by
 looking at all students in all tutorials”, since each “ik” corresponds to one
@@ -200,7 +199,7 @@ means! Does this mean that we have got more bias? Yes, yes it does. And does
 this mean we now need to divide by *N* - 2 instead of *N* - 1, in order to
 calculate our pooled variance estimate? Why, yes
 
-.. math:: \hat\sigma^2_p = \frac{\sum_{ik} \left( X_{ik} - \bar{X}_k \right)^2}{N -2}
+.. math:: \hat\sigma ^ 2_p = \frac{\sum_{ik} \left( X_{ik} - \bar{X}_k \right) ^ 2}{N - 2}
 
 Oh, and if you take the square root of this then you get
 :math:`\hat{\sigma}_p`, the pooled standard deviation estimate. In other

@@ -40,7 +40,7 @@ distribution.
 
 One formula for the skewness of a data set is as follows:
 
-.. math:: \mbox{skewness}(X) = \frac{1}{N \hat{\sigma}^3} \sum_{i = 1} ^ N (X_i - \bar{X}) ^ 3
+.. math:: \mbox{skewness}(X) = \frac{1}{N \hat{\sigma} ^ 3} \sum_{i = 1} ^ N (X_i - \bar{X}) ^ 3
 
 *N* is the number of observations, *X̄* is the sample mean, and
 :math:`\hat{\sigma}` is the standard deviation (the “divide by *N - 1*”
@@ -103,7 +103,7 @@ seen already for the variance and the skewness. Except that where the variance
 involved squared deviations and the skewness involved cubed deviations, the
 kurtosis involves raising the deviations to the fourth power:\ [#]_
 
-.. math:: \mbox{kurtosis}(X) = \frac{1}{N \hat\sigma^4} \sum_{i = 1} ^ N \left( X_i - \bar{X} \right) ^ 4  - 3
+.. math:: \mbox{kurtosis}(X) = \frac{1}{N \hat\sigma ^ 4} \sum_{i = 1} ^ N \left( X_i - \bar{X} \right) ^ 4  - 3
 
 jamovi has a check box for ``Kurtosis`` just below the check box for
 ``Skewness``, and this gives a value for kurtosis of **0.101** with a standard

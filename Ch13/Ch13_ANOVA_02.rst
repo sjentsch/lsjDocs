@@ -155,7 +155,7 @@ First, we can talk about the **within-group sum of squares**, in which
 we look to see how different each individual person is from their own
 group mean:
 
-.. math:: \mbox{SS}_w = \sum_{k = 1}^G \sum_{i = 1} ^ {N_k} \left( Y_{ik} - \bar{Y}_k \right) ^ 2
+.. math:: \mbox{SS}_w = \sum_{k = 1} ^ G \sum_{i = 1} ^ {N_k} \left( Y_{ik} - \bar{Y}_k \right) ^ 2
 
 where |Yb_k| is a group mean. In our example, |Yb_k| would be the average mood
 change experienced by those people given the *k*-th drug. So, instead of
@@ -333,7 +333,7 @@ what it estimates is the error variance *plus* a quantity that depends on the
 true differences among the group means. If we call this quantity *Q*, then we
 can see that the *F*-statistic is basically:\ [#]_
 
-.. math:: F = \frac{\hat{Q} + \hat\sigma^2}{\hat\sigma^2}
+.. math:: F = \frac{\hat{Q} + \hat\sigma ^ 2}{\hat\sigma ^ 2}
 
 where the true value *Q* = 0 if the null hypothesis is true, and *Q* > 0 if the
 alternative hypothesis is true (:ref:`Hays, 1994 <Hays_1994>`, Ch. 10).

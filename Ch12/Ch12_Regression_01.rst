@@ -163,7 +163,7 @@ covariance between two variables *X* and *Y* is a generalisation of the notion
 of the variance amd is a mathematically simple way of describing the
 relationship between two variables that is not terribly informative to humans:
 
-.. math:: \mbox{Cov}(X,Y) = \frac{1}{N-1} \sum_{i = 1} ^ N \left(X_i - \bar{X} \right) \left(Y_i - \bar{Y} \right)
+.. math:: \mbox{Cov}(X,Y) = \frac{1}{N - 1} \sum_{i = 1} ^ N \left(X_i - \bar{X} \right) \left(Y_i - \bar{Y} \right)
 
 Because we are multiplying (i.e., taking the “product” of) a quantity that
 depends on *X* by a quantity that depends on *Y* and then averaging,\ [#]_ you

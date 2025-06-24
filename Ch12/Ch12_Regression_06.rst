@@ -18,13 +18,13 @@ The *R*\² (R-squared) value
 Once again, let us wrap a little bit of mathematics around this. Firstly, we
 have got the sum of the squared residuals:
 
-.. math:: \mbox{SS}_{res} = \sum_i (Y_i - \hat{Y}_i)^2
+.. math:: \mbox{SS}_{res} = \sum_i (Y_i - \hat{Y}_i) ^ 2
 
 which we would hope to be pretty small. Specifically, what we would like is
 for it to be very small in comparison to the total variability in the outcome
 variable:
 
-.. math:: \mbox{SS}_{tot} = \sum_i (Y_i - \bar{Y})^2
+.. math:: \mbox{SS}_{tot} = \sum_i (Y_i - \bar{Y}) ^ 2
 
 While we are here, let us calculate these values ourselves, not by hand though.
 Let us use jamovi instead. Open up the |parenthood|_ data set in so that we can

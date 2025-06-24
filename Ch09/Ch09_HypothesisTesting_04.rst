@@ -147,6 +147,7 @@ alternative hypothesis would only covers the possibility that θ > 0.5, and as a
 consequence the null hypothesis now becomes:
 
 *H*\ :sub:`0`: θ ≤ 0.5
+
 *H*\ :sub:`1`: θ > 0.5 
 
 When this happens, we have what is called a **one-sided test** and the critical

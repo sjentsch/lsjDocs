@@ -112,7 +112,7 @@ effect size in the population. Finally, there is a version based on
 :ref:`Hedges and Olkin (1985) <Hedges_1985>`, who point out there is a small
 bias in the usual (pooled) estimation for Cohen’s *d*. Thus they introduce a
 small correction by multiplying the usual value of *d* by (*N* - 3) /
-(*N* -2.25).
+(*N* - 2.25).
 
 In any case, ignoring all those variations that you could make use of if you
 wanted, let us have a look at the default version in jamovi. In
