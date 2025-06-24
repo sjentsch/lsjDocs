@@ -26,9 +26,9 @@ On the limits of logical reasoning
 
 .. epigraph::
 
-   | *The whole art of war consists in getting at what is on the other
-     side of the hill, or, in other words, in learning what we do not
-     know from what we do.*
+   | *The whole art of war consists in getting at what is on the other side of
+     the hill, or, in other words, in learning what we do not know from what we 
+     do.*
      
    -- Arthur Wellesley, 1st Duke of Wellington
 
@@ -40,14 +40,14 @@ it turned out that Wellesley was right and Croker was wrong. Many years later
 when Wellesley was asked about the game he explained that “the whole art of
 war consists in getting at what is on the other side of the hill”. Indeed, war
 is not special in this respect. All of life is a guessing game of one form or
-another, and getting by on a day-to-day basis requires us to make good
-guesses. So let us play a guessing game of our own.
+another, and getting by on a day-to-day basis requires us to make good guesses.
+So let us play a guessing game of our own.
 
-Suppose you and I are observing the Wellesley-Croker competition and
-after every three hills you and I have to predict who will win the next
-one, Wellesley or Croker. Let us say that ``W`` refers to a Wellesley
-victory and ``C`` refers to a Croker victory. After three hills, our
-data set looks like this:
+Suppose you and I are observing the Wellesley-Croker competition and after
+every three hills you and I have to predict who will win the next one,
+Wellesley or Croker. Let us say that ``W`` refers to a Wellesley victory and
+``C`` refers to a Croker victory. After three hills, our data set looks like
+this:
 
 .. code-block:: text
 
@@ -55,37 +55,34 @@ data set looks like this:
 
 Our conversation goes like this:
 
-   Three in a row does not mean much. I suppose Wellesley might be better
-   at this than Croker, but it might just be luck. Still, I am a bit of a
-   gambler. I will bet on Wellesley. I agree that three in a row is not
-   informative and I see no reason to prefer Wellesley’s guesses over
-   Croker’s. I can not justify betting at this stage. Sorry. No bet for
-   me.
+   Three in a row does not mean much. I suppose Wellesley might be better at 
+   this than Croker, but it might just be luck. Still, I am a bit of a gambler. 
+   I will bet on Wellesley. I agree that three in a row is not informative and 
+   I see no reason to prefer Wellesley’s guesses over Croker’s. I can not
+   justify betting at this stage. Sorry. No bet for me.
 
-Your gamble paid off: three more hills go by and Wellesley wins all
-three. Going into the next round of our game the score is 1-0 in favour
-of you and our data set looks like this:
+Your gamble paid off: three more hills go by and Wellesley wins all three.
+Going into the next round of our game the score is 1 - 0 in favour of you and
+our data set looks like this:
 
 .. code-block:: text
 
    WWW WWW
 
-I have organised the data into blocks of three so that you can see which
-batch corresponds to the observations that we had available at each step
-in our little side game. After seeing this new batch, our conversation
-continues:
+I have organised the data into blocks of three so that you can see which batch
+corresponds to the observations that we had available at each step in our
+little side game. After seeing this new batch, our conversation continues:
 
    Six wins in a row for Duke Wellesley. This is starting to feel a bit
-   suspicious. I am still not certain, but I reckon that he is going to
-   win the next one too. I guess I do not see that. Sure, I agree that
-   Wellesley has won six in a row, but I do not see any logical reason
-   why that means he will win the seventh one. No bet. Do you really think
-   so? Fair enough, but my bet worked out last time and I am okay with my
-   choice.
+   suspicious. I am still not certain, but I reckon that he is going to win the 
+   next one too. I guess I do not see that. Sure, I agree that Wellesley has 
+   won six in a row, but I do not see any logical reason why that means he will 
+   win the seventh one. No bet. Do you really think so? Fair enough, but my bet 
+   worked out last time and I am okay with my choice.
 
-For a second time you were right, and for a second time I was wrong.
-Wellesley wins the next three hills, extending his winning record
-against Croker to 9-0. The data set available to us is now this:
+For a second time you were right, and for a second time I was wrong. Wellesley
+wins the next three hills, extending his winning record against Croker to 9 - 0.
+The data set available to us is now this:
 
 .. code-block:: text
 
@@ -116,10 +113,9 @@ And our conversation goes like this:
    of a good reason to think he will win the 10th hill. No bet. I see your
    point, but I am still willing to chance it. I’m betting on Wellesley.
 
-Wellesley’s winning streak continues for the next three hills. The score
-in the Wellesley-Croker game is now 12-0, and the score in our game is
-now 3-0. As we approach the fourth round of our game, our data set is
-this:
+Wellesley’s winning streak continues for the next three hills. The score in the
+Wellesley-Croker game is now 12 - 0, and the score in our game is now 3 - 0. As
+we approach the fourth round of our game, our data set is this:
 
 .. code-block:: text
 
@@ -160,62 +156,56 @@ And the conversation continues:
 Learning without making assumptions is a myth
 ---------------------------------------------
 
-There are lots of different ways in which we could dissect this
-dialogue, but since this is a statistics book pitched at psychologists
-and not an introduction to the philosophy and psychology of reasoning,
-I will keep it brief. What I have described above is sometimes referred to
-as the riddle of induction. It seems entirely *reasonable* to think that
-a 12-0 winning record by Wellesley is pretty strong evidence that he
-will win the 13th game, but it is not easy to provide a proper logical
-justification for this belief. On the contrary, despite the
-*obviousness* of the answer, it is not actually possible to justify
-betting on Wellesley without relying on some assumption that you do not
-have any logical justification for.
+There are lots of different ways in which we could dissect this dialogue, but
+since this is a statistics book pitched at psychologists and not an introduction
+to the philosophy and psychology of reasoning, I will keep it brief. What I
+have described above is sometimes referred to as the riddle of induction. It
+seems entirely *reasonable* to think that a 12 - 0 winning record by Wellesley
+is pretty strong evidence that he will win the 13th game, but it is not easy to
+provide a proper logical justification for this belief. On the contrary,
+despite the *obviousness* of the answer, it is not actually possible to justify
+betting on Wellesley without relying on some assumption that you do not have
+any logical justification for.
 
-The riddle of induction is most associated with the philosophical work
-of David Hume and more recently Nelson Goodman, but you can find
-examples of the problem popping up in fields as diverse as literature
-(Lewis Carroll) and machine learning (the “no free lunch” theorem).
-There really is something weird about trying to “learn what we do not
-know from what we do know”. The critical point is that assumptions and
-biases are unavoidable if you want to learn anything about the world.
-There is no escape from this, and it is just as true for statistical
-inference as it is for human reasoning. In the dialogue I was taking aim
-at your perfectly sensible inferences as a human being, but the common
-sense reasoning that you relied on is no different to what a
-statistician would have done. Your “common sense” half of the dialog
-relied on an implicit *assumption* that there exists some difference in
-skill between Wellesley and Croker, and what you were doing was trying
-to work out what that difference in skill level would be. My “logical
-analysis” rejects that assumption entirely. All I was willing to accept
-is that there are sequences of wins and losses and that I did not know
-which sequences would be observed. Throughout the dialogue I kept
-insisting that all logically possible data sets were equally plausible
-at the start of the Wellesely-Croker game, and the only way in which I
-ever revised my beliefs was to eliminate those possibilities that were
-factually inconsistent with the observations.
+The riddle of induction is most associated with the philosophical work of David
+Hume and more recently Nelson Goodman, but you can find examples of the problem
+popping up in fields as diverse as literature (Lewis Carroll) and machine
+learning (the “no free lunch” theorem). There really is something weird about
+trying to “learn what we do not know from what we do know”. The critical point
+is that assumptions and biases are unavoidable if you want to learn anything
+about the world. There is no escape from this, and it is just as true for
+statistical inference as it is for human reasoning. In the dialogue I was taking
+aim at your perfectly sensible inferences as a human being, but the common
+sense reasoning that you relied on is no different to what a statistician would
+have done. Your “common sense” half of the dialog relied on an implicit
+*assumption* that there exists some difference in skill between Wellesley and
+Croker, and what you were doing was trying to work out what that difference in
+skill level would be. My “logical analysis” rejects that assumption entirely.
+All I was willing to accept is that there are sequences of wins and losses and
+that I did not know which sequences would be observed. Throughout the dialogue
+I kept insisting that all logically possible data sets were equally plausible
+at the start of the Wellesely-Croker game, and the only way in which I ever
+revised my beliefs was to eliminate those possibilities that were factually
+inconsistent with the observations.
 
-That sounds perfectly sensible on its own terms. In fact, it even sounds
-like the hallmark of good deductive reasoning. Like Sherlock Holmes, my
-approach was to rule out that which is impossible in the hope that what
-would be left is the truth. Yet as we saw, ruling out the impossible
-*never* led me to make a prediction. On its own terms everything I said
-in my half of the dialogue was entirely correct. An inability to make
-any predictions is the logical consequence of making “no assumptions”.
-In the end I lost our game because you did make some assumptions and
-those assumptions turned out to be right. Skill is a real thing, and
-because you believed in the existence of skill you were able to learn
-that Wellesley had more of it than Croker. Had you relied on a less
-sensible assumption to drive your learning you might not have won the
-game.
+That sounds perfectly sensible on its own terms. In fact, it even sounds like
+the hallmark of good deductive reasoning. Like Sherlock Holmes, my approach was
+to rule out that which is impossible in the hope that what would be left is the
+truth. Yet as we saw, ruling out the impossible *never* led me to make a
+prediction. On its own terms everything I said in my half of the dialogue was
+entirely correct. An inability to make any predictions is the logical
+consequence of making “no assumptions”. In the end I lost our game because you
+did make some assumptions and those assumptions turned out to be right. Skill
+is a real thing, and because you believed in the existence of skill you were
+able to learn that Wellesley had more of it than Croker. Had you relied on a
+less sensible assumption to drive your learning you might not have won the game.
 
-Ultimately there are two things you should take away from this. First,
-as I have said, you cannot avoid making assumptions if you want to learn
-anything from your data. But second, once you realise that assumptions
-are necessary it becomes important to make sure you *make the right
-ones!* A data analysis that relies on few assumptions is not necessarily
-better than one that makes many assumptions, it all depends on whether
-those assumptions are good ones for your data. As we go through the rest
-of this book I will often point out the assumptions that underpin a
-particular statistical technique, and how you can check whether those
-assumptions are sensible.
+Ultimately there are two things you should take away from this. First, as I
+have said, you cannot avoid making assumptions if you want to learn anything
+from your data. But second, once you realise that assumptions are necessary it
+becomes important to make sure you *make the right ones!* A data analysis that
+relies on few assumptions is not necessarily better than one that makes many
+assumptions, it all depends on whether those assumptions are good ones for your
+data. As we go through the rest of this book I will often point out the
+assumptions that underpin a particular statistical technique, and how you can
+check whether those assumptions are sensible.
