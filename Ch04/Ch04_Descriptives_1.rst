@@ -300,8 +300,9 @@ played during the period 1987 to 2010.
    
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/fig4-6.png
-   :alt: Frequency table for the ``afl.margins`` variable in |aflsmall_finalists|
+.. figure:: ../_images/fig4-6.*
+   :alt: Frequency table for the ``afl.margins`` variable in 
+         |aflsmall_finalists|
    :name: fig4-6
 
    Screenshot of jamovi showing the frequency table for the ``afl.finalists``

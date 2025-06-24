@@ -5,31 +5,30 @@ Estimating a linear regression model
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_introPicSSE.*
+.. figure:: ../_images/fig12-12.*
    :alt: Residuals associated with the best and with a poor regression line
-   :name: fig-regression3
+   :name: fig12-12
 
    Depiction of the residuals associated with the best fitting regression line
-   (left panel), and the residuals associated with a poor regression line (right
-   panel). The residuals are much smaller for the good regression line. Again,
-   this is no surprise given that the good line is the one that goes right
-   through the middle of the data.
+   (panel a), and the residuals associated with a poor regression line (panel
+   b). The residuals are much smaller for the good regression line. Again, this 
+   is no surprise given that the good line is the one that goes right through 
+   the middle of the data.
       
 .. ----------------------------------------------------------------------------
 
 Let us redraw our pictures but this time I will add some lines to show the size
 of the residual for all observations. When the regression line is good, our
 residuals (the lengths of the solid black lines) all look pretty small, as
-shown in :numref:`fig-regression3` (left panel), but when the regression line
-is a bad one the residuals are a lot larger, as you can see from looking at
-:numref:`fig-regression3` (right panel). Hmm. Maybe what we “want” in a
-regression model is *small* residuals. Yes, that does seem to make sense. In
-fact, I think I will go so far as to say that the “best fitting” regression
-line is the one that has the smallest residuals. Or, better yet, since
-statisticians seem to like to take squares of everything why not say that:
-The estimated regression coefficients, :math:`\hat{b}_0` and :math:`\hat{b}_1`,
-are those that minimise the sum of the squared residuals, which we could either
-write as:
+shown in :numref:`fig12-12` (a), but when the regression line is a bad one the
+residuals are a lot larger, as you can see from looking at :numref:`fig12-12`
+(b). Hmm. Maybe what we “want” in a regression model is *small* residuals. Yes,
+that does seem to make sense. In fact, I think I will go so far as to say that
+the “best fitting” regression line is the one that has the smallest residuals.
+Or, better yet, since statisticians seem to like to take squares of everything
+why not say that: The estimated regression coefficients, :math:`\hat{b}_0` and
+:math:`\hat{b}_1`, are those that minimise the sum of the squared residuals,
+which we could either write as:
 
 .. math:: \sum_i (Y_i - \hat{Y}_i) ^ 2
 
@@ -59,9 +58,9 @@ Linear regression in jamovi
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_reg1.*
+.. figure:: ../_images/fig12-13.*
    :alt: jamovi screenshot showing a simple linear regression analysis
-   :name: fig-reg1
+   :name: fig12-13
 
    jamovi screenshot showing a simple linear regression analysis
    
@@ -71,9 +70,9 @@ To run my linear regression, open up the ``Regression`` → ``Linear Regression`
 analysis in jamovi, using the |parenthood|_ data set. Then specify
 ``dani.grump`` as the ``Dependent Variable`` and ``dani.sleep`` as the variable
 entered in the ``Covariates`` box. This gives the results shown in
-:numref:`fig-reg1`, showing an intercept :math:`\hat{b}_0` = 125.96 and the
+:numref:`fig12-13`, showing an intercept :math:`\hat{b}_0` = 125.96 and the
 slope :math:`\hat{b}_1` = -8.94. In other words, the best-fitting regression
-line that I plotted in :numref:`fig-regression1` has this formula:
+line that I plotted in :numref:`fig12-12` has this formula:
 
 | *Ŷ*\ :sub:`i` = 125.96 + (-8.94 \ *X*\ :sub:`i`)
 

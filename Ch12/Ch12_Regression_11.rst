@@ -198,9 +198,9 @@ to model *M*\ :sub:`1` and *ŷ*\ :sub:`i`\ :sup:`(2)` is the fitted value for
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_reg8.*
+.. figure:: ../_images/fig12-28.*
    :alt: Model comparison in jamovi using the ``Model Builder`` option
-   :name: fig-reg8
+   :name: fig12-28
 
    Model comparison in jamovi using the ``Model Builder`` option
    
@@ -210,7 +210,7 @@ If this is the hypothesis test that we use to compare two regression models to
 one another, how do we do it in jamovi? The answer is to use the ``Model
 Builder`` option and specify the Model 1 predictors ``dani.sleep`` and ``day``
 in ``Block 1`` and then add the additional predictor from Model 2
-(``baby.sleep``) in ``Block 2``, as in :numref:`fig-reg8`. This shows, in the
+(``baby.sleep``) in ``Block 2``, as in :numref:`fig12-28`. This shows, in the
 ``Model Comparisons`` Table, that for the comparisons between Model 1 and
 Model 2, *F*\ (1,96) = 0.00, *p* = 0.954. Since we have *p* > 0.05 we retain
 the null hypothesis (``M1``). This approach to regression, in which we add all
@@ -220,7 +220,7 @@ framework, is often referred to as **hierarchical regression**.
 
 We can also use this ``Model Comparison`` option to display a table that shows
 the AIC and BIC for each model, making it easy to compare and identify which
-model has the lowest value, as in :numref:`fig-reg8`.
+model has the lowest value, as in :numref:`fig12-28`.
 
 ------
 

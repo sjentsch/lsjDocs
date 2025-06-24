@@ -57,17 +57,29 @@ the group A datum is larger, we place a check mark in the table:
 
 We then count up the number of checkmarks. This is our test statistic,
 *U*.\ [#]_ The actual sampling distribution for *U* is somewhat complicated,
-and I will skip the details. For our purposes, it is sufficient to note that the
-interpretation of *U* is qualitatively the same as the interpretation of *t*
-or *z*. That is, if we want a two-sided test then we reject the null hypothesis
-when *U* is very large or very small, but if we have a directional (i.e.,
-one-sided) hypothesis then we only use one or the other.
+and I will skip the details. For our purposes, it is sufficient to note that
+the interpretation of *U* is qualitatively the same as the interpretation of
+*t* or *z*. That is, if we want a two-sided test then we reject the null
+hypothesis when *U* is very large or very small, but if we have a directional
+(i.e., one-sided) hypothesis then we only use one or the other.
 
 In jamovi, if we run an ``Independent Samples T-Test`` with ``scores``
 |continuous| as the dependent variable. and ``group`` as the grouping variable
 |nominal|, and then under the options for ``Tests`` check the option for
 ``Mann-Whitney U``, we will get results showing that *U* = 3 (i.e., the same
-number of check marks as shown above), and a *p*-value = 0.05556.
+number of check marks as shown above), and a *p*-value = 0.05556
+(:numref:`fig11-25`).
+
+.. ----------------------------------------------------------------------------
+
+.. figure:: ../_images/fig11-25.*
+   :alt: jamovi screen showing results for the Mann-Whitney *U*-test
+   :name: fig11-25
+
+   jamovi screen showing results for the Mann-Whitney *U*-test
+   
+.. ----------------------------------------------------------------------------
+
 
 One sample Wilcoxon test
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -101,13 +113,13 @@ For the one-sample version, you specify the ``Wilcoxon rank`` option under
 *W* = 7, *p*-value = 0.0371. As this shows, we have a significant effect.
 Evidently, taking a statistics class does have an effect on your happiness.
 Switching to a paired samples version of the test will not give us a different
-answer, of course; see :numref:`fig-ttest_nonparametric`.\ [#]
+answer, of course; see :numref:`fig11-26`.\ [#]
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_ttest_nonparametric.*
-   :alt: Results for one sample and paired sample Wilcoxon non-parametric tests
-   :name: fig-ttest_nonparametric
+.. figure:: ../_images/fig11-26.*
+   :alt: jamovi screen with the one sample and paired sample Wilcoxon tests
+   :name: fig11-26
 
    jamovi screen showing results for one sample and paired sample Wilcoxon
    non-parametric tests

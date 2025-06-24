@@ -63,12 +63,12 @@ following as the only way to calculate d:
 
 .. math:: d = \frac{\bar{X} - \mu_0}{\hat{\sigma}}
 
-When we look back at the results in :numref:`fig-ttest_one`, the effect size
-value is Cohen’s *d* = 0.50. Overall, then, the psychology students in Dr
-Zeppo’s class are achieving grades (mean = 72.3\%) that are about 0.5 standard
-deviations higher than the level that you would expect (67.5\%) if they were
-performing at the same level as other students. Judged against Cohen’s rough
-guide, this is a moderate effect size.
+When we look back at the results in :numref:`fig11-6`, the effect size value is
+Cohen’s *d* = 0.50. Overall, then, the psychology students in Dr Zeppo’s class
+are achieving grades (mean = 72.3\%) that are about 0.5 standard deviations
+higher than the level that you would expect (67.5\%) if they were performing at
+the same level as other students. Judged against Cohen’s rough guide, this is a
+moderate effect size.
 
 Cohen’s *d* from a Student’s *t*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -116,40 +116,38 @@ small correction by multiplying the usual value of *d* by (*N* - 3) /
 
 In any case, ignoring all those variations that you could make use of if you
 wanted, let us have a look at the default version in jamovi. In
-:numref:`fig-ttest_ind` Cohen’s *d* = 0.74, indicating that the grade scores
+:numref:`fig11-9` Cohen’s *d* = 0.74, indicating that the grade scores
 for students in Anastasia’s class are, on average, 0.74 standard deviations
 higher than the grade scores for students in Bernadette’s class. For a
-Welch-test, the estimated effect size is the same (:numref:`fig-ttest_welch`).
+Welch-test, the estimated effect size is the same (:numref:`fig11-11`).
 
 Cohen’s *d* from a paired-samples test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Finally, what should we do for a paired samples *t*-test? In this
-case, the answer depends on what it is you are trying to do. jamovi
-assumes that you want to measure your effect sizes relative to the
-distribution of difference scores, and the measure of *d* that you
-calculate is:
+Finally, what should we do for a paired samples *t*-test? In this case, the
+answer depends on what it is you are trying to do. jamovi assumes that you want
+to measure your effect sizes relative to the distribution of difference scores,
+and the measure of *d* that you calculate is:
 
 .. math:: d = \frac{\bar{D}}{\hat{\sigma}_D}
 
-where :math:`\hat{\sigma}_D` is the estimate of the standard deviation
-of the differences. In :numref:`fig-ttest_paired3` Cohen’s *d* = 1.45,
-indicating that the time 2 grade scores are, on average, 1.45 standard
-deviations higher than the time 1 grade scores.
+:math:`\hat{\sigma}_D` is the estimate of the standard deviation of the
+differences. In :numref:`fig11-16` Cohen’s *d* = 1.45, indicating that the time
+2 grade scores are, on average, 1.45 standard deviations higher than the time 1
+grade scores.
 
-This is the version of Cohen’s *d* that gets reported by the
-jamovi ``Paired Samples T-Test`` analysis. The only wrinkle is figuring
-out whether this is the measure you want or not. To the extent that you
-care about the practical consequences of your research, you often want
-to measure the effect size relative to the *original* variables, not the
-*difference* scores (e.g., the 1\% improvement in Dr Chico’s class over
-time is pretty small when measured against the amount of between-student
-variation in grades), in which case you use the same versions of Cohen’s
-*d* that you would use for a Student or Welch test. It is not so
-straightforward to do this in jamovi; essentially you have to change the
-structure of the data in the spreadsheet view so I will not go into that
-here,\ [#]_ but the Cohen’s *d* for this perspective is quite different:
-it is 0.22 which is quite small when assessed on the scale of the
+This is the version of Cohen’s *d* that gets reported by the jamovi ``Paired
+Samples T-Test`` analysis. The only wrinkle is figuring out whether this is the
+measure you want or not. To the extent that you care about the practical
+consequences of your research, you often want to measure the effect size
+relative to the *original* variables, not the *difference* scores (e.g., the
+\1\% improvement in Dr Chico’s class over time is pretty small when measured
+against the amount of between-student variation in grades), in which case you
+use the same versions of Cohen’s *d* that you would use for a Student or Welch
+test. It is not so straightforward to do this in jamovi; essentially you have
+to change the structure of the data in the spreadsheet view so I will not go
+into that here,\ [#]_ but the Cohen’s *d* for this perspective is quite
+different: it is 0.22 which is quite small when assessed on the scale of the
 original variables.
 
 ------

@@ -35,7 +35,7 @@ want, then the critical value is the 97.5th quantile of a *t* distribution with
 approach to calculating confidence intervals that we have used throughout.
 
 In jamovi we had already specified the ``95\% Confidence interval`` as shown in
-:numref:`fig-reg2`, although we could easily have chosen another value, say a
+:numref:`fig12-15`, although we could easily have chosen another value, say a
 ``99\% Confidence interval`` if that is what we decided on.
 
 Calculating standardised regression coefficients
@@ -87,13 +87,13 @@ simpler.
 
 To make things even simpler, jamovi has an option that computes the
 β-coefficients for you, using the ``Standardized estimate`` checkbox in the
-``Model Coefficients`` options, see results in :numref:`fig-reg3`.
+``Model Coefficients`` options, see results in :numref:`fig12-16`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_reg3.*
+.. figure:: ../_images/fig12-16.*
    :alt: Standardised coefficients with 95\% confidence intervals
-   :name: fig-reg3
+   :name: fig12-16
 
    Standardised coefficients, with 95\% confidence intervals, for multiple
    linear regression

@@ -13,21 +13,21 @@ because it does crop up in a few different places, not just the *t*-test. But
 right now I will talk about a different form of the *t*-test (:ref:`Welch, 1947
 <Welch_1947>`) that does not rely on this assumption. A graphical illustration
 of what the **Welch t test** assumes about the data is shown in
-:numref:`fig-ttesthyp2`, to provide a contrast with the Student test version
-in :numref:`fig-ttesthyp`. I will admit it is a bit odd to talk about the cure
-before talking about the diagnosis, but as it happens the ``Welch's`` test can
-be specified as one of the ``Independent Samples T-Test`` options in jamovi,
-so this is probably the best place to discuss it.
+:numref:`fig11-10`, to provide a contrast with the Student test version in
+:numref:`fig11-8`. I will admit it is a bit odd to talk about the cure before
+talking about the diagnosis, but as it happens the ``Welch's`` test can be
+specified as one of the ``Independent Samples T-Test`` options in jamovi, so
+this is probably the best place to discuss it.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_welchTestHyp.*
+.. figure:: ../_images/fig11-10.*
    :alt: Illustration: Null and alternative hypotheses for the Welch *t*-test
-   :name: fig-ttesthyp2
+   :name: fig11-10
 
    Graphical illustration of the null and alternative hypotheses assumed by the
    Welch *t*-test. Like the Student *t*-test for Independent Samples
-   (:numref:`fig-ttesthyp`) we assume that both samples are drawn from a
+   (:numref:`fig11-8`) we assume that both samples are drawn from a
    normally-distributed population; but the alternative hypothesis no longer
    requires the two populations to have equal variance.
    
@@ -75,13 +75,13 @@ Doing the Welch test in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you tick the check box for the ``Welch's`` test in the analysis we did
-above, then this is what it gives you :numref:`fig-ttest_welch`:
+above, then this is what it gives you :numref:`fig11-11`:
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_ttest_welch.*
+.. figure:: ../_images/fig11-11.*
    :alt: Results showing the Welch test alongside the default Student’s *t*-test
-   :name: fig-ttest_welch
+   :name: fig11-11
 
    Results showing the Welch test alongside the default Student’s *t*-test in
    jamovi

@@ -44,33 +44,22 @@ We can calculate means and standard deviations, using the ``Exploration`` →
 | **Bernadette’s students** | 69.06 |      5.77 | 18 |
 +---------------------------+-------+-----------+----+
 
-To give you a more detailed sense of what is going on here, I have plotted
-histograms (not in jamovi, but using R) showing the distribution of
-grades for both tutors (:numref:`fig-harpohist`), as
-well as a simpler plot showing the means and corresponding confidence
-intervals for both groups of students (:numref:`fig-ttestci`).
+To give you a more detailed sense of what is going on here, I have plotted box
+and violin plots in jamovi, with mean scores added to the plot with a small
+solid square. These plots show the distribution of grades for both tutors
+(:numref:`fig11-7`).
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_HarpoAnB.*
-   :alt: Histogram with grades in Anastasia’s and Bernadette’s classes
-   :name: fig-harpohist
+.. figure:: ../_images/fig11-7.*
+   :alt: Box and violin plots for the grades in Anastasia’s and Bernadette’s
+         classes
+   :name: fig11-7
 
-   Histograms showing the distribution of grades for students in Anastasia’s
-   (left panel) and in Bernadette’s (right panel) classes. Visually, these
-   suggest that students in Anastasia’s class may be getting slightly better
+   Box and violin plots from jamovi showing the distribution of grades for 
+   students in the classes of Anastasia and Bernadette. Visually, these suggest 
+   that students in the class of Anastasia may be getting slightly better 
    grades on average, though they also seem a bit more variable.
-   
-.. ----------------------------------------------------------------------------
-
-.. figure:: ../_images/lsj_ttestci.*
-   :alt: Mean grades (with error bars) in Anastasia’s and Bernadette’s classes
-   :name: fig-ttestci
-
-   The plots show the mean grade for students in Anastasia’s and Bernadette’s
-   tutorials. Error bars depict 95\% confidence intervals around the mean.
-   Visually, it does look like there is a real difference between the groups,
-   though it is hard to say for sure.
    
 .. ----------------------------------------------------------------------------
 
@@ -98,18 +87,18 @@ Anastasia’s students), and µ\ :sub:`2` will be the true population mean for
 group 2 (e.g., Bernadette’s students),\ [#]_ and as usual we will let
 *X̄*\ :sub:`1` and *X̄*\ :sub:`2` denote the observed sample means for both of
 these groups. Our null hypothesis states that the two population means are
-identical (µ\ :sub:`1` = µ\ :sub:`1`) and the alternative to this is that
-they are not (µ\ :sub:`1` ≠ µ\ :sub:`1`). Written in mathematical-ese, this
-is:
+identical (µ\ :sub:`1` = µ\ :sub:`1`) and the alternative to this is that they
+are not (µ\ :sub:`1` ≠ µ\ :sub:`1`; see :numref:`fig11-8`). Written in
+mathematical-ese, this is:
 
 | *H*\ :sub:`0`: µ\ :sub:`1` = µ\ :sub:`2`
 | *H*\ :sub:`1`: µ\ :sub:`1` ≠ µ\ :sub:`2`
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_studentTestHyp.*
-   :alt: Illustration: Null and alternative hypotheses, indep. samples *t*-test
-   :name: fig-ttesthyp
+.. figure:: ../_images/fig11-8.*
+   :alt: Null and alternative hypotheses, independent samples *t*-test
+   :name: fig11-8
 
    Graphical illustration of the null and alternative hypotheses assumed by the
    Student *t*-test for Independent Samples. The null hypothesis assumes that
@@ -264,13 +253,13 @@ too surprised that all you have to do in jamovi is go to the relevant analysis
 (``Analyses`` → ``T-Tests`` → ``Independent Samples T-Test``) and move the
 ``grade`` variable across to the ``Dependent Variables`` box, and the ``tutor``
 variable across into the ``Grouping Variable`` box, as shown in
-:numref:`fig-ttest_ind`.
+:numref:`fig11-9`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_ttest_ind.*
+.. figure:: ../_images/fig11-9.*
    :alt: Conducting an Independent Samples *t*-test in jamovi
-   :name: fig-ttest_ind
+   :name: fig11-9
 
    Conducting an Independent Samples *t*-test in jamovi, with options for
    recommended outputs checked.
@@ -291,10 +280,10 @@ means. In our example, Anastasia’s students had an average grade of 74.53, and
 Bernadette’s students had an average grade of 69.06, so the difference between
 the two sample means is 5.48. But of course the difference between population
 means might be bigger or smaller than this. The confidence interval reported
-in :numref:`fig-ttest_ind` tells you that if we replicated this study again
-and again, then 95\% of the time the true difference in means would lie
-between 0.20 and 10.76. Look back at :doc:`../Ch08/Ch08_Estimation_5` for a
-reminder about what confidence intervals mean.
+in :numref:`fig11-9` tells you that if we replicated this study again and
+again, then 95\% of the time the true difference in means would lie between
+0.20 and 10.76. Look back at :doc:`../Ch08/Ch08_Estimation_5` for a reminder
+about what confidence intervals mean.
 
 In any case, the difference between the two groups is significant (just
 barely), so we might write up the result using text like this:

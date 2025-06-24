@@ -66,14 +66,14 @@ every hour of sleep I lose makes me a lot grumpier. However, the coefficient
 for ``baby.sleep`` is very small, suggesting that it does not really matter how
 much sleep my son gets. What matters as far as my grumpiness goes is how much
 sleep *I* get. To get a sense of what this multiple regression model looks
-like, :numref:`fig-scatter3d_1` shows a 3D plot that plots all three variables,
-along with the regression model itself.
+like, :numref:`fig12-14` shows a 3D plot that plots all three variables, along
+with the regression model itself.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_scatter3d_1.*
+.. figure:: ../_images/fig12-14.*
    :alt: 3D visualisation of a multiple regression model
-   :name: fig-scatter3d_1
+   :name: fig12-14
 
    3D visualisation of a multiple regression model: There are two predictors in
    the model, ``dani.sleep`` and ``baby.sleep`` and the outcome variable is

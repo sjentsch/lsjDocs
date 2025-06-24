@@ -26,11 +26,23 @@ QQ plots and the Shapiro-Wilk test.
 QQ plots
 ~~~~~~~~
 
+One way to check whether a sample violates the normality assumption is
+to draw a **“QQ plot”** (Quantile-Quantile plot). This allows you to
+visually check whether you are seeing any systematic violations. In a QQ
+plot, each observation is plotted as a single dot. The x co-ordinate is
+the theoretical quantile that the observation should fall in if the data
+were normally distributed (with mean and variance estimated from the
+sample), and on the y co-ordinate is the actual quantile of the data
+within the sample. If the data are normal, the dots should form a
+straight line. For instance, lets see what happens if we generate data
+by sampling from a normal distribution, and then drawing a QQ plot. The
+results are shown in :numref:`fig11-21`.
+
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_qqNormal.*
+.. figure:: ../_images/fig11-20.*
    :alt: Histogram and QQ plot for normally-distributed data
-   :name: fig-qq1
+   :name: fig11-20
 
    Histogram (left panel) and QQ plot (right panel) for the column ``Normal``
    in the |distributions|_ data set, a normally-distributed sample with 200
@@ -40,9 +52,19 @@ QQ plots
    
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_qqSkewedTailed.*
+As you can see, these data form a pretty straight line; which is no surprise
+given that we sampled them from a normal distribution! In contrast, have a look
+at the two data sets shown in :numref:`fig11-21`. The top panels show the
+histogram and a QQ plot for a data set that is highly skewed: the QQ plot
+curves upwards. The lower panels show the same plots for a heavy tailed (i.e.,
+high kurtosis) data set: in this case the QQ plot flattens in the middle and
+curves sharply at either end.
+
+.. ----------------------------------------------------------------------------
+
+.. figure:: ../_images/fig11-21.*
    :alt: Histogram and QQ plot for skewed and tailed data
-   :name: fig-qq2
+   :name: fig11-21
 
    In the top row, a histogram (top-left panel) and QQ plot (top-right panel)
    for 200 observations in the column ``Skewed`` of the |distributions|_ data
@@ -59,67 +81,33 @@ QQ plots
    
 .. ----------------------------------------------------------------------------
 
-One way to check whether a sample violates the normality assumption is
-to draw a **“QQ plot”** (Quantile-Quantile plot). This allows you to
-visually check whether you are seeing any systematic violations. In a QQ
-plot, each observation is plotted as a single dot. The x co-ordinate is
-the theoretical quantile that the observation should fall in if the data
-were normally distributed (with mean and variance estimated from the
-sample), and on the y co-ordinate is the actual quantile of the data
-within the sample. If the data are normal, the dots should form a
-straight line. For instance, lets see what happens if we generate data
-by sampling from a normal distribution, and then drawing a QQ plot. The
-results are shown in :numref:`fig-qq1`. As you can see, these data form
-a pretty straight line; which is no surprise given that we sampled them
-from a normal distribution! In contrast, have a look at the two data sets
-shown in :numref:`fig-qq2`. The top panels show the histogram and a QQ
-plot for a data set that is highly skewed: the QQ plot curves upwards.
-The lower panels show the same plots for a heavy tailed (i.e., high
-kurtosis) data set: in this case the QQ plot flattens in the middle and
-curves sharply at either end.
-
 Shapiro-Wilk tests
 ~~~~~~~~~~~~~~~~~~
 
-QQ plots provide a nice way to informally check the normality of your
-data, but sometimes you will want to do something a bit more formal and
-the **Shapiro-Wilk test** (:ref:`Shapiro & Wilk, 1965 <Shapiro_1965>`)
-is probably what you are looking for.\ [#]_ As you would expect, the null
-hypothesis being tested is that a set of *N* observations is normally
-distributed.
-
-The test statistic that it calculates is conventionally denoted as
-*W*, and it is calculated as follows. First, we sort the
-observations in order of increasing size, and let *X*\ :sub:`1` be the
-smallest value in the sample, *X*\ :sub:`2` be the second smallest and so
-on. Then the value of *W* is given by
-
-.. math:: W = \frac{ \left( \sum_{i = 1}^N a_i X_i \right)^2 }{ \sum_{i = 1}^N (X_i - \bar{X})^2}
-
-where *X̄* is the mean of the observations, and the *a*\ :sub:`i` values are
-an introductory text.
+QQ plots provide a nice way to informally check the normality of your data, but
+sometimes you will want to do something a bit more formal and the **Shapiro-Wilk
+test** (:ref:`Shapiro & Wilk, 1965 <Shapiro_1965>`) is probably what you are
+looking for.\ [#]_ As you would expect, the null hypothesis being tested is
+that a set of *N* observations is normally distributed.\ [#]_
 
 Because it is a little hard to explain the maths behind the *W* statistic, a
-better idea is to give a broad brush description of how it behaves. Unlike most
-… mumble, mumble … something complicated that is a bit beyond the scope of
-of the test statistics that we will encounter in this book, it is actually *small*
-values of *W* that indicate departure from normality. The *W* statistic has a
-maximum value of 1, which occurs when the data look “perfectly normal”. The
-smaller the value of *W* the less normal the data are. However, the sampling
-distribution for *W*, which is not one of the standard ones that I discussed in
-chapter :doc:`../Ch07/Ch07_Probability` and is in fact a complete pain in the
-arse to work with, does depend on the sample size *N*. To give you a feel for
-what these sampling distributions look like, I have plotted three of them in
-:numref:`fig-swdist`. Notice that, as the sample size starts to get large, the
-sampling distribution becomes very tightly clumped up near *W* = 1, and as a
-consequence, for larger samples *W* does not have to be very much smaller than
-1 in order for the test to be significant.
+better idea is to give a general description of how it behaves. *Small* values
+of *W* indicate departure from normality. The *W* statistic has a maximum value
+of 1, which occurs when the data look “perfectly normal”. The smaller the value
+of *W* the less normal the data are. However, the sampling distribution for *W*,
+which is not one of the standard ones that I discussed in chapter
+:doc:`../Ch07/Ch07_Probability`, does depend on the sample size *N*. To give
+you a feel for what these sampling distributions look like, I have plotted
+three of them in :numref:`fig11-sw`. Notice that, as the sample size starts to
+get large, the sampling distribution becomes very tightly clumped up near
+*W* = 1, and as a consequence, for larger samples *W* does not have to be very
+much smaller than 1 in order for the test to be significant.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_shapirowilkdist.*
+.. figure:: ../_images/fig11-sw.*
    :alt: Sampling distribution of the Shapiro-Wilk W statistic
-   :name: fig-swdist
+   :name: fig11-sw
 
    Sampling distribution of the Shapiro-Wilk W statistic, under the null
    hypothesis that the data are normally-distributed, for samples of size 10,
@@ -130,12 +118,30 @@ consequence, for larger samples *W* does not have to be very much smaller than
 To get the Shapiro-Wilk statistic in jamovi *t*-tests, check the option for
 ``Normality`` listed under ``Assumptions``. In the randomly sampled data
 (*N* = 100) we used for the QQ plot, the value for the Shapiro-Wilk normality
-test statistic was W = 0.99 with a *p*-value of 0.69. So, not surprisingly, we
+test statistic was W = 0.99 with a *p*-value of 0.54. So, not surprisingly, we
 have no evidence that these data depart from normality. When reporting the
 results for a Shapiro-Wilk test, you should (as usual) make sure to include the
 test statistic *W* and the *p*-value, though given that the sampling
 distribution depends so heavily on *N* it would probably be a politeness to
 include *N* as well.
+
+.. ----------------------------------------------------------------------------
+
+.. figure:: ../_images/fig11-22.*
+   :alt: jamovi QQ plot for the independent *t*-test in :numref:`fig11-10`
+   :name: fig11-22
+
+   jamovi QQ plot for the independent *t*-test in :numref:`fig11-10`
+
+.. ----------------------------------------------------------------------------
+
+.. figure:: ../_images/fig11-23.*
+   :alt: jamovi QQ plot for the paired *t*-test in :numref:`fig11-16`
+   :name: fig11-23
+
+   jamovi QQ plot for the paired *t*-test in :numref:`fig11-16`
+
+.. ----------------------------------------------------------------------------
 
 Example
 ~~~~~~~
@@ -149,10 +155,10 @@ came from a normal distribution at all. Here is what happens to the QQ plot:
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_qq_2b.*
+.. figure:: ../_images/fig11-24.*
    :alt: jamovi QQ plot for the data (skewed) data in the ``afl.margins``
          variable of the |aflsmall_margins| data set
-   :name: fig-qq_2b
+   :name: fig11-24
 
    jamovi QQ plot for the (skewed) data in the ``afl.margins`` variable of the
    |aflsmall_margins|_ data set
@@ -175,6 +181,19 @@ a value for the Shapiro-Wilk normality test statistic of W = 0.94, and
    Kolomogorov-Smirnov is a general purpose test of distributional equivalence
    that can be adapted to handle other kinds of distribution tests. In jamovi
    the Shapiro-Wilk test is preferred.
+
+.. [#]
+   The test statistic that it calculates is conventionally denoted as *W*, and 
+   it is calculated as follows. First, we sort the observations in order of 
+   increasing size, and let *X*\ :sub:`1` be the smallest value in the sample, 
+   *X*\ :sub:`2` be the second smallest and so on. Then the value of *W* is 
+   given by:
+
+   .. math:: W = \frac{ \left( \sum_{i = 1}^N a_i X_i \right)^2 }{ \sum_{i = 1}^N (X_i - \bar{X})^2}
+
+   *X̄* is the mean of the observations, and the *a*\ :sub:`i` values are 
+   something complicated that is a bit beyond the scope of an introductory 
+   text.
 
 .. ----------------------------------------------------------------------------
 

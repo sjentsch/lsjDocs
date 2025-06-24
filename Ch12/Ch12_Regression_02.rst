@@ -26,7 +26,7 @@ the amount of sleep that I get (``dani.sleep``) and how grumpy I am the next
 day (``dani.grump``). There are two different ways in which we can use jamovi
 to get the plot that we are after. The first way is to use the ``Plot`` option
 under the ``Regression`` → ``Correlation Matrix`` button, giving us the output
-shown in :numref:`fig-scatterplot1`. Note that jamovi draws a line through the
+shown in :numref:`fig12-8`. Note that jamovi draws a line through the
 points, we will come onto this a bit later in section :doc:`Ch12_Regression_03`.
 Plotting a scatterplot in this way also allow you to specify ``Densities for
 variables`` and this option adds a density curve showing how the data in each
@@ -34,9 +34,9 @@ variable is distributed.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_scatterplot1.*
+.. figure:: ../_images/fig12-8.*
    :alt: Scatterplot created with the ``Correlation Matrix`` analysis in jamovi
-   :name: fig-scatterplot1
+   :name: fig12-8
 
    Scatterplot created with the ``Correlation Matrix`` analysis in jamovi
    
@@ -44,13 +44,13 @@ variable is distributed.
 
 The second way do to it is to use the ``Exploration`` → ``Scatterplot``
 function. This plot is a bit different than the first way, see
-:numref:`fig-scatterplot2`, but the important information is the same.
+:numref:`fig12-9`, but the important information is the same.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_scatterplot2.*
+.. figure:: ../_images/fig12-9.*
    :alt: Scatterplot cretaed with the ``scatr`` add-on module in jamovi
-   :name: fig-scatterplot2
+   :name: fig12-9
 
    Scatterplot cretaed with the ``scatr`` add-on module in jamovi
    
@@ -63,14 +63,14 @@ Often you will want to look at the relationships between several variables at
 once, using a **scatterplot matrix** (in jamovi via the ``Correlation Matrix``
 → ``Plot`` command). Just add another variable, for example ``baby.sleep`` to
 the list of variables to be correlated, and jamovi will create a scatterplot
-matrix for you, just like the one in :numref:`fig-scatterplot3`.
+matrix for you, just like the one in :numref:`fig12-10`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_scatterplot3.*
+.. figure:: ../_images/fig12-10.*
    :alt: Matrix of scatterplots cretaed with the ``Correlation Matrix``
          analysis
-   :name: fig-scatterplot3
+   :name: fig12-10
 
    Matrix of scatterplots cretaed with the ``Correlation Matrix`` analysis
    in jamovi.

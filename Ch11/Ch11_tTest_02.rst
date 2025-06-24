@@ -30,14 +30,14 @@ going to have to address.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_oneSampleTTestHyp.*
+.. figure:: ../_images/fig11-4.*
    :alt: Illustration: Null and alternative hypotheses by the one-sample
          *t*-test
-   :name: fig-ttesthyp_onesample
+   :name: fig11-4
 
    Graphical illustration of the null and alternative hypotheses assumed by the
    (two-sided) one-sample *t*-test. Note the similarity to the *z*-test 
-   :numref:`fig-ztesthyp`. The null hypothesis is that the population mean μ is
+   :numref:`fig11-2`. The null hypothesis is that the population mean μ is
    equal to some specified value μ\ :sub:`0`\, and the alternative hypothesis
    is that it is not. Like the *z*-test, we assume that the data are normally
    distributed, but we do not assume that the population standard deviation σ
@@ -71,7 +71,7 @@ estimate has been constructed from *N* observations, then the sampling
 distribution turns into a *t*-distribution with *N* - 1 **degrees of freedom**
 (df). The *t*-distribution is very similar to the normal distribution, but has
 “heavier” tails, as discussed earlier in :doc:`../Ch07/Ch07_Probability_6` and
-illustrated in :numref:`fig-ttestdist`. Notice, though, that as *df* gets
+illustrated in :numref:`fig11-5`. Notice, though, that as *df* gets
 larger, the *t*-distribution starts to look identical to the standard normal
 distribution. This is as it should be: if you have a sample size of *N* =
 70 000 000 then your “estimate” of the standard deviation would be pretty much
@@ -80,9 +80,9 @@ behave exactly the same way as a *z*-test. And that is exactly what happens!
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_tdist_3.*
+.. figure:: ../_images/fig11-5.*
    :alt: *t*-distribution with *df* = 2 and *df* = 10
-   :name: fig-ttestdist
+   :name: fig11-5
 
    The *t*-distribution with 2 degrees of freedom (left panel) and 10 degrees
    of freedom (right panel), with a standard normal distribution (i.e., mean =
@@ -112,15 +112,15 @@ use; all you need to do is specify ``Analyses`` → ``T-Tests`` → ``One Sample
 T-Test``, move the variable you are interested in (``X``) across into the
 ``Variables`` box, and type in the mean value for the null hypothesis
 (``67.5``) in the ``Hypothesis`` → ``Test value`` box. Easy enough (see
-:numref:`fig-ttest_one`, which, amongst other things that we will get to in a
+:numref:`fig11-6`, which, amongst other things that we will get to in a
 moment, gives you a *t*statistic = 2.25, with 19 degrees of freedom and an
 associated *p*-value of 0.036.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_ttest_one.*
+.. figure:: ../_images/fig11-6.*
    :alt: Conducting an One-sample *t*-test in jamovi
-   :name: fig-ttest_one
+   :name: fig11-6
 
    Conducting an One-sample *t*-test in jamovi
    

@@ -47,15 +47,15 @@ this case my research hypothesis relates to the *population* mean µ for the
 psychology student grades, which is unknown. Specifically, I want to know if
 µ = 67.5 or not. Given that this is what I know, can we devise a hypothesis
 test to solve our problem? The data, along with the hypothesised distribution
-from which they are thought to arise, are shown in :numref:`fig-zeppo`. Not
+from which they are thought to arise, are shown in :numref:`fig11-1`. Not
 entirely obvious what the right answer is, is it? For this, we are going to
 need some statistics.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_Zeppo.*
+.. figure:: ../_images/fig11-1.*
    :alt: Theoretical and empirical distribution of student grades
-   :name: fig-zeppo
+   :name: fig11-1
 
    The theoretical distribution (solid line) from which the psychology student
    grades (bars) are supposed to have been generated.
@@ -75,14 +75,13 @@ in mathematical notation, these hypotheses become:
 | *H*\ :sub:`0`: µ = 67.5
 | *H*\ :sub:`1`: µ ≠ 67.5
 
-though to be honest this notation does not add much to our understanding
-of the problem, it is just a compact way of writing down what we are
-trying to learn from the data. The null hypotheses *H*\ :sub:`0` and the
-alternative hypothesis *H*\ :sub:`1` for our test are both illustrated in
-:numref:`fig-ztesthyp`. In addition to providing us
-with these hypotheses, the scenario outlined above provides us with a
-fair amount of background knowledge that might be useful. Specifically,
-there are two special pieces of information that we can add:
+though to be honest this notation does not add much to our understanding of the
+problem, it is just a compact way of writing down what we are trying to learn
+from the data. The null hypotheses *H*\ :sub:`0` and the alternative hypothesis
+*H*\ :sub:`1` for our test are both illustrated in :numref:`fig11-2`. In
+addition to providing us with these hypotheses, the scenario outlined above
+provides us with a fair amount of background knowledge that might be useful.
+Specifically, there are two special pieces of information that we can add:
 
 #. The psychology grades are normally distributed.
 
@@ -98,9 +97,10 @@ For now though, we will keep things simple.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_oneSampleZTestHyp.*
-   :alt: One-sample *z*-test: Illustration of the null and alternative hypotheses
-   :name: fig-ztesthyp
+.. figure:: ../_images/fig11-2.*
+   :alt: One-sample *z*-test: Illustration of the null and alternative
+         hypotheses
+   :name: fig11-2
 
    Graphical illustration of the null and alternative hypotheses assumed by the
    one sample *z*-test (the two sided version, that is). The null and
@@ -182,7 +182,7 @@ the number of standard errors that separate the observed sample mean *X̄* from
 the population mean µ\ :sub:`0` predicted by the null hypothesis. Better yet,
 regardless of what the population parameters for the raw scores actually are,
 the 5\% critical regions for the *z*-test are always the same, as illustrated
-in :numref:`fig-ztest`. And what this meant, way back in the days where people
+in :numref:`fig11-3`. And what this meant, way back in the days where people
 did all their statistics by hand, is that someone could publish a table like
 this:
 
@@ -204,9 +204,9 @@ text book.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_zTestOneTwoTailed.*
+.. figure:: ../_images/fig11-3.*
    :alt: Rejection regions for the two- and one-sided *z*-tests
-   :name: fig-ztest
+   :name: fig11-3
 
    Rejection regions for the two-sided *z*-test (left panel) and the one-sided
    *z*-test (right panel)

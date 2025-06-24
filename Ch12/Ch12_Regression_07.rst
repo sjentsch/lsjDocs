@@ -128,14 +128,14 @@ Running the hypothesis tests in jamovi
 
 To compute all of the statistics that we have talked about so far, all you need
 to do is make sure the relevant options are checked in jamovi and then run the
-regression. If we do that, as in :numref:`fig-reg2`, we get a whole bunch of
+regression. If we do that, as in :numref:`fig12-15`, we get a whole bunch of
 useful output.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_reg2.*
+.. figure:: ../_images/fig12-15.*
    :alt: jamovi screenshot showing a multiple linear regression
-   :name: fig-reg2
+   :name: fig12-15
 
    jamovi screenshot showing a multiple linear regression analysis, with some
    useful options checked.
@@ -143,7 +143,7 @@ useful output.
 .. ----------------------------------------------------------------------------
 
 The ``Model Coefficients`` at the bottom of the jamovi analysis results shown
-in :numref:`fig-reg2` provides the coefficients of the regression model. Each
+in :numref:`fig12-15` provides the coefficients of the regression model. Each
 row in this table refers to one of the coefficients in the regression model.
 The first row is the intercept term, and the later ones look at each of the
 predictors. The columns give you all of the relevant information. The first

@@ -38,21 +38,29 @@ contains four variables ``dani.sleep``, ``baby.sleep``, ``dani.grump`` and
 
 Next, I will take a look at some basic descriptive statistics and, to give a
 graphical depiction of what each of the three interesting variables looks like,
-:numref:`fig-grumpHist` plots histograms. One thing to note: just because
-jamovi can calculate dozens of different statistics does not mean you should
-report all of them. If I were writing this up for a report, I would probably
-pick out those statistics that are of most interest to me (and to my
-readership), and then put them into a nice, simple table like the one in
-:numref:`tab-parenthood`.\ [#]_ Notice that when I put it into a table, I gave
-everything “human readable” names. This is always good practice. Notice also
-that I am not getting enough sleep. This is not good practice, but other
-parents tell me that it is pretty standard.
+:numref:`fig12-1` plots histograms. One thing to note: just because jamovi can
+calculate dozens of different statistics does not mean you should report all of
+them. If I were writing this up for a report, I would probably pick out those
+statistics that are of most interest to me (and to my readership), and then put
+them into a nice, simple table like the one in :numref:`tab-parenthood`.\ [#]_
+Notice that when I put it into a table, I gave everything “human readable”
+names. This is always good practice. Notice also that I am not getting enough
+sleep. This is not good practice, but other parents tell me that it is pretty
+standard.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_grumpHist.*
+.. list-table::
+   :width: 100%
+   :class: borderless
+
+    * - .. image:: ../_images/fig12-1a.*
+      - .. image:: ../_static/fig12-1b.*
+      - .. image:: ../_static/fig12-1c.*
+
+.. figure::
    :alt: Histograms for three variables from the |parenthood|_ data set
-   :name: fig-grumpHist
+   :name: fig12-1
 
    Histograms for the three interesting variables in the |parenthood|_ data set
    
@@ -64,23 +72,30 @@ The strength and direction of a relationship
 We can draw scatterplots to give us a general sense of how closely related two
 variables are. Ideally though, we might want to say a bit more about it than
 that. For instance, let us compare the relationship between ``dani.sleep`` and
-``dani.grump`` (:numref:`fig-grumpCor1`, left) with that between ``baby.sleep``
-and ``dani.grump`` (:numref:`fig-grumpCor1`, right). When looking at these two
-plots side by side, it is clear that the relationship is *qualitatively* the
-same in both cases: more sleep equals less grump! However, it is also pretty
-obvious that the relationship between ``dani.sleep`` and ``dani.grump`` is
-*stronger* than the relationship between ``baby.sleep`` and ``dani.grump``. The
-plot on the left is “neater” than the one on the right. What it feels like is
-that if you want to predict what my mood is, it would help you a little bit to
-know how many hours my son slept, but it would be more helpful to know how many
-hours I slept.
+``dani.grump`` (:numref:`fig12-2`, left) with that between ``baby.sleep`` and
+``dani.grump`` (:numref:`fig12-2`, right). When looking at these two plots side
+by side, it is clear that the relationship is *qualitatively* the same in both
+cases: more sleep equals less grump! However, it is also pretty obvious that
+the relationship between ``dani.sleep`` and ``dani.grump`` is *stronger* than
+the relationship between ``baby.sleep`` and ``dani.grump``. The plot on the
+left is “neater” than the one on the right. What it feels like is that if you
+want to predict what my mood is, it would help you a little bit to know how
+many hours my son slept, but it would be more helpful to know how many hours I
+slept.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_grumpCor1.*
+.. list-table::
+   :width: 100%
+   :class: borderless
+
+    * - .. image:: ../_images/fig12-2a.*
+      - .. image:: ../_static/fig12-2b.*
+
+.. figure::
    :alt: Scatterplots between ``dani.sleep`` and ``baby.sleep`` to 
          ``dani.grump``
-   :name: fig-grumpCor1
+   :name: fig12-2
 
    Scatterplots showing the relationship between ``dani.sleep`` and
    ``dani.grump`` (left panel) and the relationship between ``baby.sleep`` and
@@ -88,19 +103,26 @@ hours I slept.
    
 .. ----------------------------------------------------------------------------
 
-In contrast, let us consider the two scatterplots shown in
-:numref:`fig-grumpCor2`. If we compare the scatterplot of ``baby.sleep`` vs.
-``dani.grump`` (left) to the scatterplot of ``baby.sleep`` vs. ``dani.sleep``
-(right), the overall strength of the relationship is the same, but the
-direction is different. That is, if my son sleeps more, I get *more* sleep
-(positive relationship, right-hand side), but if he sleeps more then I get
-*less* grumpy (negative relationship, left-hand side).
+In contrast, let us consider the two scatterplots shown in :numref:`fig12-3`.
+If we compare the scatterplot of ``baby.sleep`` vs. ``dani.grump`` (left) to
+the scatterplot of ``baby.sleep`` vs. ``dani.sleep`` (right), the overall
+strength of the relationship is the same, but the direction is different. That
+is, if my son sleeps more, I get *more* sleep (positive relationship,
+right-hand side), but if he sleeps more then I get *less* grumpy (negative
+relationship, left-hand side).
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_grumpCor2.*
+.. list-table::
+   :width: 100%
+   :class: borderless
+
+    * - .. image:: ../_images/fig12-3a.*
+      - .. image:: ../_static/fig12-3b.*
+
+.. figure::
    :alt: Scatterplots between baby.sleep to dani.grump and dani.sleep
-   :name: fig-grumpCor2
+   :name: fig12-3
 
    Scatterplots showing the relationship between ``baby.sleep`` and
    ``dani.grump`` (left panel) and the relationship between ``baby.sleep`` and
@@ -113,20 +135,19 @@ The correlation coefficient
 
 We can make these ideas a bit more explicit by introducing the idea of a
 **correlation coefficient** (or, more specifically, Pearson’s correlation
-coefficient), which is traditionally denoted as *r*. The correlation
-coefficient between two variables *X* and *Y* (sometimes denoted
-*r*\ :sub:`XY`), which we will define more precisely in the next section, is a
-measure that varies from -1 to 1. When *r* = -1 it means that we have a perfect
-negative relationship, and when *r* = 1 it means we have a perfect positive
-relationship. When *r* = 0, there is no relationship at all. If you look at
-:numref:`fig-corr`, you can see several plots showing what different
-correlations look like.
+coefficient), which is traditionally denoted as *r*. The correlation coefficient
+between two variables *X* and *Y* (sometimes denoted *r*\ :sub:`XY`), which we
+will define more precisely in the next section, is a measure that varies from
+-1 to 1. When *r* = -1 it means that we have a perfect negative relationship,
+and when *r* = 1 it means we have a perfect positive relationship. When
+*r* = 0, there is no relationship at all. If you look at :numref:`fig12-4`, you
+can see several plots showing what different correlations look like.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_corr.*
+.. figure:: ../_images/fig12-4.*
    :alt: Effect of varying the strength and direction of a correlation
-   :name: fig-corr
+   :name: fig12-4
 
    Illustration of the effect of varying the strength and direction of a
    correlation. In the left-hand column, the correlations are 0.00, 0.33, 0.67
@@ -151,7 +172,7 @@ between *X* and *Y*.
 
 The covariance has the nice property that, if *X* and *Y* are entirely
 unrelated, then the covariance is exactly zero. If the relationship between
-them is positive (in the sense shown in :numref:`fig-corr`) then the covariance
+them is positive (in the sense shown in :numref:`fig12-4`) then the covariance
 is also positive, and if the relationship is negative then the covariance is
 also negative. In other words, the covariance captures the basic qualitative
 idea of correlation. Unfortunately, the raw magnitude of the covariance is not
@@ -185,13 +206,13 @@ Calculating correlations in jamovi
 Calculating correlations in jamovi can be done by clicking on the
 ``Regression`` → ``Correlation Matrix`` button. Transfer all four continuous
 variables |continuous| across into the box on the right to get the output in
-:numref:`fig-correlations`.
+:numref:`fig12-5`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_correlations.*
+.. figure:: ../_images/fig12-5.*
    :alt: jamovi screenshot with correlations in the |parenthood|_ data set
-   :name: fig-correlations
+   :name: fig12-5
 
    jamovi screenshot showing correlations between variables in the
    |parenthood|_ data set
@@ -248,18 +269,6 @@ pretty typical.
    |  0.9 to  1.0 | Very strong | Positive  |
    +--------------+-------------+-----------+
 
-
-.. ----------------------------------------------------------------------------
-
-.. figure:: ../_images/lsj_anscombe.*
-   :alt: Anscombe’s quartet
-   :name: fig-anscombe
-
-   Anscombe’s quartet: All four of these data sets have a Pearson correlation
-   of *r* = 0.816, but they are qualitatively different from one another.
-
-.. ----------------------------------------------------------------------------
-
 However, something that can never be stressed enough is that you should
 *always* look at the scatterplot before attaching any interpretation to the
 data. A correlation might not mean what you think it means. The classic
@@ -273,10 +282,22 @@ since I happen to have saved it as a data set called |anscombe|_.
 
 You would think that these four data sets would look pretty similar to one
 another. They do not. If we draw scatterplots of *X* against *Y* for all four
-variables, as shown in :numref:`fig-anscombe`, we see that all four of these
+variables, as shown in :numref:`fig12-6`, we see that all four of these
 are *spectacularly* different to each other. The lesson here, which so very
 many people seem to forget in real life, is *always graph your raw data*
 (chapter :doc:`../Ch05/Ch05_Graphics`).
+
+.. ----------------------------------------------------------------------------
+
+.. figure:: ../_images/fig12-6.*
+   :alt: Anscombe’s quartet
+   :name: fig12-6
+
+   Anscombe’s quartet: All four of these data sets have a Pearson correlation
+   of *r* = 0.816, but they are qualitatively different from one another.
+
+.. ----------------------------------------------------------------------------
+
 
 Spearman’s rank correlations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -304,27 +325,27 @@ than it takes to get a grade of 55\%. What this means is that, if I have got
 data looking at study effort and grades, there is a pretty good chance that
 Pearson correlations will be misleading.
 
-To illustrate, consider the data plotted in :numref:`fig-ordinalRelationship`,
-showing the relationship between hours worked and grade received for 10
-students taking some class. The curious thing about this (highly fictitious)
-data set is that increasing your effort *always* increases your grade. It might
-be by a lot or it might be by a little, but increasing effort will never
-decrease your grade. If we run a standard Pearson correlation, it shows a
-strong relationship between hours worked and grade received, with a correlation
-coefficient of **0.91**. However, this does not actually capture the
-observation that increasing hours worked *always* increases the grade. There is
-a sense here in which we want to be able to say that the correlation is
-*perfect* but for a somewhat different notion of what a “relationship” is. What
-we are looking for is something that captures the fact that there is a perfect
-**ordinal relationship** here. That is, if student 1 works more hours than
-student 2, then we can guarantee that student 1 will get the better grade. That
-is not what a correlation of *r* = 0.91 says at all.
+To illustrate, consider the data plotted in :numref:`fig12-7`, showing the
+relationship between hours worked and grade received for 10 students taking
+some class. The curious thing about this (highly fictitious) data set is that
+increasing your effort *always* increases your grade. It might be by a lot or
+it might be by a little, but increasing effort will never decrease your grade.
+If we run a standard Pearson correlation, it shows a strong relationship
+between hours worked and grade received, with a correlation coefficient of
+**0.91**. However, this does not actually capture the observation that
+increasing hours worked *always* increases the grade. There is a sense here in
+which we want to be able to say that the correlation is *perfect* but for a
+somewhat different notion of what a “relationship” is. What we are looking for
+is something that captures the fact that there is a perfect **ordinal
+relationship** here. That is, if student 1 works more hours than student 2,
+then we can guarantee that student 1 will get the better grade. That is not
+what a correlation of *r* = 0.91 says at all.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_ordinalRelationship.*
-   :alt: relationship between hours worked and grade received
-   :name: fig-ordinalRelationship
+.. figure:: ../_images/fig12-7.*
+   :alt: Relationship between hours worked and grade received
+   :name: fig12-7
 
    The relationship between hours worked and grade received for a toy data set
    consisting of only 10 students (each circle corresponds to one student). The
@@ -333,10 +354,9 @@ is not what a correlation of *r* = 0.91 says at all.
    However, the interesting thing to note here is that there is actually a
    perfect monotonic relationship between the two variables. In this toy
    example, increasing the hours worked always increases the grade received,
-   as illustrated by the solid line. This is reflected in a Spearman
-   correlation of ρ = 1.00. With such a small data set, however, it is an open
-   question as to which version better describes the actual relationship
-   involved.
+   as illustrated by the solid line. This is reflected in a Spearman correlation 
+   of ρ = 1.00. With such a small data set, however, it is an open question as 
+   to which version better describes the actual relationship involved.
 
 .. ----------------------------------------------------------------------------
 

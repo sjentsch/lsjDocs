@@ -180,14 +180,14 @@ Like many of the statistical tools we have discussed in this book, regression
 models rely on a normality assumption. In this case, we assume that the
 residuals are normally distributed. The first thing we can do is draw a QQ-plot
 via the ``Assumption Checks`` → ``Q-Q plot of residuals`` option. The output is
-shown in :numref:`fig-reg5`, showing the standardised residuals plotted as a
+shown in :numref:`fig12-19`, showing the standardised residuals plotted as a
 function of their theoretical quantiles according to the regression model.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_reg5.*
+.. figure:: ../_images/fig12-19.*
    :alt: Quantiles according to the model against standardised residuals
-   :name: fig-reg5
+   :name: fig12-19
 
    Plot of the theoretical quantiles according to the model, against the
    quantiles of the standardised residuals, produced in jamovi
@@ -198,7 +198,7 @@ Another thing we should check is the relationship between the fitted values and
 the residuals themselves. We can get jamovi to do this using the ``Residuals
 Plots`` option, which provides a scatterplot for each predictor variable, the
 outcome variable, and the fitted values against residuals, see 
-:numref:`fig-reg6`. In these plots we are looking for a fairly uniform
+:numref:`fig12-20`. In these plots we are looking for a fairly uniform
 distribution of “dots”, with no clear bunching or patterning of the “dots”.
 Looking at these plots, there is nothing particularly worrying as the dots are
 fairly evenly spread across the whole plot. There may be a little bit of
@@ -207,9 +207,18 @@ probably not worth worrying about.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_reg6.*
+.. list-table::
+   :width: 100%
+   :class: borderless
+
+    * - .. image:: ../_images/fig12-20a.*
+      - .. image:: ../_static/fig12-20b.*
+    * - .. image:: ../_static/fig12-20c.*
+      - .. image:: ../_static/fig12-20d.*
+
+.. figure::
    :alt: Residuals plots produced in jamovi
-   :name: fig-reg6
+   :name: fig12-20
 
    Residuals plots produced in jamovi
    
@@ -314,14 +323,14 @@ for all four variables (:numref:`fig12-22`).
 We have some fairly large correlations between some of our predictor variables!
 When we run the regression model and look at the *VIF* values, we see that the
 collinearity is causing a lot of uncertainty about the coefficients. First, run
-the regression, as in :numref:`fig-reg7` and you can see from the *VIF* values
+the regression, as in :numref:`fig12-23` and you can see from the *VIF* values
 that, yep, that is some mighty fine collinearity there.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_reg7.*
+.. figure:: ../_images/fig12-23.*
    :alt: Collinearity statistics for multiple regression, produced in jamovi
-   :name: fig-reg7
+   :name: fig12-23
 
    Collinearity statistics for multiple regression, produced in jamovi
    
@@ -334,19 +343,19 @@ Outliers and anomalous data
 One danger that you can run into with linear regression models is that your
 analysis might be disproportionately sensitive to a smallish number of
 “unusual” or “anomalous” observations. I discussed this idea previously in
-subsection :ref:`Using box plots to detect outliers
-<box_plots_detect_outliers>` in the context of discussing the outliers that
-get automatically identified by the ``Box plot`` option under ``Exploration``
-→ ``Descriptives``, but this time we need to be much more precise. In the
-context of linear regression, there are three conceptually distinct ways in
-which an observation might be called “anomalous”. All three are interesting,
-but they have rather different implications for your analysis.
+subsection :ref:`Using box plots to detect outliers <box_plots_detect_outliers>`
+in the context of discussing the outliers that get automatically identified by
+the ``Box plot`` option under ``Exploration`` → ``Descriptives``, but this time
+we need to be much more precise. In the context of linear regression, there are
+three conceptually distinct ways in which an observation might be called
+“anomalous”. All three are interesting, but they have rather different
+implications for your analysis.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_unusual_outlier.*
+.. figure:: ../_images/fig12-24.*
    :alt: Outliers and their effect
-   :name: fig-outlier
+   :name: fig12-24
 
    An illustration of outliers: The solid line shows the regression line with
    the anomalous outlier observation included. The dashed line plots the
@@ -358,7 +367,7 @@ but they have rather different implications for your analysis.
 
 The first kind of unusual observation is an **outlier**. The definition of an
 outlier (in this context) is an observation that is very different from what
-the regression model predicts. An example is shown in :numref:`fig-outlier`. In
+the regression model predicts. An example is shown in :numref:`fig12-24`. In
 practice, we operationalise this concept by saying that an outlier is an
 observation that has a very large Studentised residual, ε\ :sub:`i`\ :sup:`*`.
 Outliers are interesting: a big outlier *might* correspond to junk data, e.g.,
@@ -367,13 +376,13 @@ other defect may be detectable. Note that you should not throw an observation
 away just because it is an outlier. But the fact that it is an outlier is often
 a cue to look more closely at that case and try to find out why it is so
 different. Also see the lower left plot of Anscombe's quartet,
-:numref:`fig-anscombe`.
+:numref:`fig12-6`.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_unusual_leverage.*
+.. figure:: ../_images/fig12-25.*
    :alt: High leverage points and their effect
-   :name: fig-leverage
+   :name: fig12-25
 
    An illustration of high leverage points: The anomalous observation in this
    case is unusual both in terms of the predictor (*x*-axis) and the outcome
@@ -389,7 +398,7 @@ The second way in which an observation can be unusual is if it has high
 other observations. This does not necessarily have to correspond to a large
 residual. If the observation happens to be unusual on all variables in
 precisely the same way, it can actually lie very close to the regression line.
-An example of this is shown in :numref:`fig-leverage`. The leverage of an
+An example of this is shown in :numref:`fig12-25`. The leverage of an
 observation is operationalised in terms of its *hat value*, usually written
 *h*\ :sub:`i`. The formula for the hat value is rather complicated,\ [#]_ but
 it interpretation is not: *h*\ :sub:`i` is a measure of the extent to which the
@@ -404,9 +413,9 @@ much less likely to be a cause for concern unless they are also outliers.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_unusual_influence.*
+.. figure:: ../_images/fig12-26.*
    :alt: High influence points and their effect
-   :name: fig-influence
+   :name: fig12-26
 
    Illustration of high influence points: In this case, the anomalous
    observation is highly unusual on the predictor variable (*x*-axis), and
@@ -421,7 +430,7 @@ This brings us to our third measure of unusualness, the **influence** of an
 observation. A high influence observation is an outlier that has high leverage.
 That is, it is an observation that is very different to all the other ones in
 some respect, and also lies a long way from the regression line. This is
-illustrated in :numref:`fig-influence`. Notice the contrast to the previous two
+illustrated in :numref:`fig12-26`. Notice the contrast to the previous two
 figures. Outliers do not move the regression line much and neither do high
 leverage points. But something that is both an outlier and has high leverage,
 well that has a big effect on the regression line. That is why we call these
@@ -444,13 +453,13 @@ In jamovi, information about Cook’s distance can be calculated by clicking on
 the ``Cook’s Distance`` checkbox in the ``Assumption Checks`` →  ``Data
 Summary`` options. When you do this, for the multiple regression model we have
 been using as an example in this chapter, you get the results as shown in
-:numref:`fig-reg4`\.
+:numref:`fig12-27`\.
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_reg4.*
+.. figure:: ../_images/fig12-27.*
    :alt: jamovi output showing the table for the Cook’s distance statistics
-   :name: fig-reg4
+   :name: fig12-27
 
    jamovi output showing the table for the Cook’s distance statistics
    

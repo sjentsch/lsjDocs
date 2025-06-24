@@ -10,49 +10,48 @@ set that we were using to illustrate how correlations work. Recall that, in
 this data set we were trying to find out why Danielle is so very grumpy all the
 time and our working hypothesis was that I am not getting enough sleep. We drew
 some scatterplots to help us examine the relationship between the amount of
-sleep I get and my grumpiness the following day, as in
-:numref:`fig-scatterplot2`, and as we saw previously this corresponds to a
-correlation of *r* = -0.90, but what we find ourselves secretly imagining is
-something that looks closer to :numref:`fig-regression1` (a). That is, we
-mentally draw a straight line through the middle of the data. In statistics,
-this line that we are drawing is called a **regression line**. Notice that,
-since we are not idiots, the regression line goes through the middle of the
-data. We do not find ourselves imagining anything like the rather silly plot
-shown in :numref:`fig-regression1` (b).
+sleep I get and my grumpiness the following day, as in :numref:`fig12-9`, and
+as we saw previously this corresponds to a correlation of *r* = -0.90, but what
+we find ourselves secretly imagining is something that looks closer to
+:numref:`fig12-11` (a). That is, we mentally draw a straight line through the
+middle of the data. In statistics, this line that we are drawing is called a
+**regression line**. Notice that, since we are not idiots, the regression line
+goes through the middle of the data. We do not find ourselves imagining anything
+like the rather silly plot shown in :numref:`fig12-11` (b).
 
 .. ----------------------------------------------------------------------------
 
-.. figure:: ../_images/lsj_introPicLine.*
+.. figure:: ../_images/fig12-11.*
    :alt: Best and poor choice of regression line
-   :name: fig-regression1
+   :name: fig12-11
 
    Panel (a) shows the scatterplot of ``dani.sleep`` and ``dani.grump`` from 
-   :numref:`fig-scatterplot2` with the best fitting regression line drawn over 
-   the top. Not surprisingly, the line goes through the middle of the data. In 
-   contrast, panel (b) shows the same data, but with a very poor choice of 
-   regression line drawn over the top.
+   :numref:`fig12-9` with the best fitting regression line drawn over the top. 
+   Not surprisingly, the line goes through the middle of the data. In contrast, 
+   panel (b) shows the same data, but with a very poor choice of  regression 
+   line drawn over the top.
 
 .. ----------------------------------------------------------------------------
 
-This is not highly surprising. The line that I have drawn in
-:numref:`fig-regression1` (panel b) does not “fit” the data very well, so it
-does not make a lot of sense to propose it as a way of summarising the data,
-right? This is a very simple observation to make, but it turns out to be very
-powerful when we start trying to wrap just a little bit of maths around it. To
-do so, let us start with a refresher of some high school maths. The formula for
-a straight line is usually written like this:
+This is not highly surprising. The line that I have drawn in :numref:`fig12-11`
+(panel b) does not “fit” the data very well, so it does not make a lot of sense
+to propose it as a way of summarising the data, right? This is a very simple
+observation to make, but it turns out to be very powerful when we start trying
+to wrap just a little bit of maths around it. To do so, let us start with a
+refresher of some high school maths. The formula for a straight line is usually
+written like this:
 
 | *y* = *a* + *bx*
 
 The two *variables* are *x* and *y*, and we have two *coefficients*, *a* and
 *b*\.\ [#]_ The coefficient *a* represents the **y-intercept** of the line, and
-coefficient *b* represents the *slope* of the line. The intercept is
-interpreted as “the value of *y* that you get when *x* = 0”. Similarly, a slope
-of *b* means that if you increase the *x*-value by 1 unit, then the *y*-value
-goes up by *b* units, and a negative slope means that the *y*-value would go
-down rather than up. If *Y* is the outcome variable (the DV) and *X* is the
-predictor variable (the IV), then the formula that describes our regression is
-written like this:
+coefficient *b* represents the *slope* of the line. The intercept is interpreted
+as “the value of *y* that you get when *x* = 0”. Similarly, a slope of *b*
+means that if you increase the *x*-value by 1 unit, then the *y*-value goes up
+by *b* units, and a negative slope means that the *y*-value would go down
+rather than up. If *Y* is the outcome variable (the DV) and *X* is the predictor
+variable (the IV), then the formula that describes our regression is written
+like this:
 
 | *Ŷ*\ :sub:`i` = *b*\ :sub:`0` + *b*\ :sub:`1` *X*\ :sub:`i`
 
