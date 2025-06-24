@@ -127,7 +127,7 @@ likely to vote AGPP after seeing the ads. Which makes a lot of sense when you
 consider the quality of a typical political advertisement.
 
 What is the difference between McNemar and independence?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Let us go all the way back to the beginning of the chapter and look at the
 |cards|_ data set again. If you recall, the actual experimental design that I

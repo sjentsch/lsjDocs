@@ -212,21 +212,21 @@ thing is this, no matter what shape your population distribution is, as *N*
 increases the sampling distribution of the mean starts to look more like a
 normal distribution. To give you a sense of this I ran some simulations. To do
 this, I started with the “ramped” distribution shown in the histogram in
-:numref:`fig8-9`a. As you can see by comparing the triangular shaped histogram
-to the bell curve plotted by the black line, the population distribution does
-not look very much like a normal distribution at all. Next, I simulated the
-results of a large number of experiments. In each experiment I took *N* = 2
-samples from this distribution, and then calculated the sample mean.
-:numref:`fig8-9`b plots the histogram of these sample means (i.e., the sampling
-distribution of the mean for *N* = 2). This time, the histogram produces a
-∩-shaped distribution. It is still not normal, but it is a lot closer to the
-black line than the population distribution in :numref:`fig8-9`a. When I
-increase the sample size to *N* = 4, the sampling distribution of the mean is
-very close to normal (:numref:`fig8-9`c), and by the time we reach a sample
-size of *N* = 8 (:numref:`fig8-9`d) it is almost perfectly normal. In other
-words, as long as your sample size is not tiny, the sampling distribution of
-the mean will be approximately normal no matter what your population
-distribution looks like!
+:numref:`fig8-9` (a). As you can see by comparing the triangular shaped
+histogram to the bell curve plotted by the black line, the population
+distribution does not look very much like a normal distribution at all. Next, I
+simulated the results of a large number of experiments. In each experiment I
+took *N* = 2 samples from this distribution, and then calculated the sample
+mean. :numref:`fig8-9` (b) plots the histogram of these sample means (i.e., the
+sampling distribution of the mean for *N* = 2). This time, the histogram
+produces a ∩-shaped distribution. It is still not normal, but it is a lot
+closer to the black line than the population distribution in :numref:`fig8-9`
+(a). When I increase the sample size to *N* = 4, the sampling distribution of
+the mean is very close to normal (:numref:`fig8-9`, c), and by the time we
+reach a sample size of *N* = 8 (:numref:`fig8-9`, d) it is almost perfectly
+normal. In other words, as long as your sample size is not tiny, the sampling
+distribution of the mean will be approximately normal no matter what your
+population distribution looks like!
 
 .. ----------------------------------------------------------------------------
 

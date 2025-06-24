@@ -495,19 +495,20 @@ hood.
 In any case, it is probably worth taking a moment to check that we can
 calculate *SS*\ :sub:`R` using this formula and verify that we do obtain
 the same answer that jamovi produces in its ANOVA table. The calculations
-are pretty straightforward when done using computed variables in jamovi.
-We download and open the |clinicaltrial|_ data set and define three
-computed variables: (1) ``sq_res_T`` with ``(mood.gain - VMEAN(mood.gain))
-^ 2`` as formula, (2) ``sq_res_A`` with ``(VMEAN(mood.gain) - VMEAN(mood.gain,
-group_by = drug)) ^ 2`` as formula, and (3) ``sq_res_B`` with
-``(VMEAN(mood.gain) - VMEAN(mood.gain, group_by = therapy)) ^ 2`` as formula.
-Once we created those three variables, we calculate the sum of squares using
-``Descriptives`` → ``Descriptive Statistics``, then moving ``sq_res_T``, 
-``sq_res_A`` and ``sq_res_B`` to the ``Variables`` box, and finally selecting
-``Sum`` from the ``Statistics`` drop-down menu. *SS*\ :sub:`T` (``sq_res_T``)
-has a value of **4.845**, *SS*\ :sub:`A` (``sq_res_A``) a value of **3.453**,
-and *SS*\ :sub:`B` (``sq_res_B``) a value of **0.467**. Using these three values,
-we can calculate *SS*\ :sub:`R` using the formula above.
+are pretty straightforward when done :ref:`using computed variables
+<create_computed_vars>` in jamovi. We download and open the |clinicaltrial|_
+data set and define three computed variables: (1) ``sq_res_T`` with
+``(mood.gain - VMEAN(mood.gain)) ^ 2`` as formula, (2) ``sq_res_A`` with
+``(VMEAN(mood.gain) - VMEAN(mood.gain, group_by = drug)) ^ 2`` as formula, and
+(3) ``sq_res_B`` with ``(VMEAN(mood.gain) - VMEAN(mood.gain, group_by =
+therapy)) ^ 2`` as formula. Once we created those three variables, we calculate
+the sum of squares using ``Descriptives`` → ``Descriptive Statistics``, then
+moving ``sq_res_T``,  ``sq_res_A`` and ``sq_res_B`` to the ``Variables`` box,
+and finally selecting ``Sum`` from the ``Statistics`` drop-down menu.
+*SS*\ :sub:`T` (``sq_res_T``) has a value of **4.845**, *SS*\ :sub:`A`
+(``sq_res_A``) a value of **3.453**, and *SS*\ :sub:`B` (``sq_res_B``) a value
+of **0.467**. Using these three values, we can calculate *SS*\ :sub:`R` using
+the formula above.
 
 | *SS*\ :sub:`R` = 4.845 - (3.453 + 0.467)
 | *SS*\ :sub:`R` = 0.924

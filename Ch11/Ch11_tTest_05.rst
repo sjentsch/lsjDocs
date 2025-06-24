@@ -69,10 +69,10 @@ improvement in student performance is pure chance.
    :width: 100%
    :class: borderless
 
-    * - .. image:: ../_images/fig11-13a.*
-      - .. image:: ../_static/fig11-13b.*
+   * - .. image:: ../_images/fig11-13a.*
+     - .. image:: ../_images/fig11-13b.*
 
-.. figure::
+.. figure:: ../_images/blank.*
    :alt: Mean grade and scatter plot for test 1 and test 2 in Dr Chico's class
    :name: fig11-13
 

@@ -28,8 +28,8 @@ worth covering, although nowadays EFA is just as easy to do given the power of
 desktop computers and can be less susceptible to bias than PCA, especially with
 a small number of factors and variables. Much of the procedure is similar to
 EFA, so although there are some conceptual differences, practically the steps
-are the same,\ [#]_ and with large samples and a sufficient number of factors
-and variables, the results from PCA and EFA should be fairly similar.
+are the same, and with large samples and a sufficient number of factors and
+variables, the results from PCA and EFA should be fairly similar.
 
 To run a PCA in jamovi, all you need to do is select ``Factor`` → ``Principal
 Component Analysis`` from the main jamovi button bar to open the PCA analysis

@@ -114,7 +114,7 @@ following answers:
 +=======================================================+========+
 | Temperatures are rising because of human activity (1) |     51 |
 +-------------------------------------------------------+--------+
-| Temperatures are rising but we do not know why (2)     |     20 |
+| Temperatures are rising but we do not know why (2)    |     20 |
 +-------------------------------------------------------+--------+
 | Temperatures are rising but not because of humans (3) |     10 |
 +-------------------------------------------------------+--------+

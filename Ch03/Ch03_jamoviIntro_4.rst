@@ -172,6 +172,15 @@ LibreOffice, and JSON.
 
 --------
 
+.. [#]
+   You can change the default value for missing values in jamovi in the ``⋮``
+   menu (top-right corner), but this only works at the time of importing data 
+   files into jamovi. The default missing value in the data set should not be
+   a valid number associated with any of the variables, e.g., you could use 
+   ``-9999`` as this is unlikely to be a valid value. 
+
+.. ----------------------------------------------------------------------------
+
 .. |booksales|                         replace:: ``booksales.csv``
 .. _booksales:                         ../../_statics/data/booksales.csv
 

@@ -1,7 +1,7 @@
 .. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_ and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_
 
 There is more to research methods than statistics
-------------------------------------------------
+-------------------------------------------------
 
 So far, most of what I have talked about is statistics, and so you would be
 forgiven for thinking that statistics is all I care about. To be

@@ -97,7 +97,7 @@ the jamovi ``Data`` view. Click on the variable name in the top row of the data
 table and then select the desired measurement level under ``Measure Type`` –
 ``continuous`` |continuous|, ``ordinal`` |ordinal| or ``nominal`` |nominal|.
 
-.. _computed_variables:
+.. _computed_variable_def:
 
 Computed Variables
 ~~~~~~~~~~~~~~~~~~
@@ -123,31 +123,8 @@ In order, these are the sum of ``A`` and ``B``, a log (base 10) transform of
 ``len``, the mean of ``A`` and ``B``, and the *z*-score of the variable
 ``dose``. :numref:`fig3-3` shows the jamovi screen for the new variable
 computed as the *z*-score of ``dose`` (from the ``Tooth Growth`` example data
-set).
-
-.. _transformed_variables:
-
-Transformed Variables
-~~~~~~~~~~~~~~~~~~~~~
-
-The transformation that is used when creating this type of variable, relies on
-a “receipe” that is :ref:`created once and can then be applied to multiple
-variables <_create_transformation>`. This section describes in more detail how
-to generate such a “receipe”. Transformed variables are often used to “recode”
-variables (e.g., when inverting items), a typical transformation which
-described in more detail at the end of the subsection :ref:`EFA_in_jamovi` and
-in :numref:`fig15-7`. When transforming or recoding variables in jamovi, a new
-“transformed variable” is created from an original “source variable”. This
-permits you to have access to both the original, untransformed data, and the
-transformed data.
-
-After :ref:`having created a transformation <_create_transformation>`, you can
-apply this transformation using the transform editor. It lets you define the
-name and the description of the transformed variable to be created, which source
-variable should be used and which transformation should be applied (all
-transformations that already were defined are available from a drop-down menu in
-the editor).
-
+set). How to :ref:`create and use computed variables <create_computed_vars>` is
+elaborated later.
 
 .. ----------------------------------------------------------------------------
 
@@ -162,12 +139,34 @@ the editor).
 *V-functions*
 
 Several functions are already available in jamovi and available from the
-drop down box labelled *f*\ :sub:`x`. A number of functions appear in pairs,
-one prefixed with a V and the other not. V functions perform their
-calculation on a variable as a whole, where as non-V functions perform
-their calculation row by row. For example, ``MEAN(A, B)`` will produce the
-mean of ``A`` and ``B`` for each row. Where as ``VMEAN(A)`` gives the mean of
-all the values in ``A``.
+drop-down box labelled *f*\ :sub:`x`. A number of functions appear in pairs,
+one prefixed with a V and the other not. V functions perform their calculation
+on a variable as a whole, where as non-V functions perform their calculation
+row by row. For example, ``MEAN(A, B)`` will produce the mean of ``A`` and
+``B`` for each row. Where as ``VMEAN(A)`` gives the mean of all the values in
+``A``.
+
+.. _transformed_variable_def:
+
+Transformed Variables
+~~~~~~~~~~~~~~~~~~~~~
+
+The :ref:`transformation <create_transformation>` that is used when creating
+this type of variable, relies on a “receipe” that is created once and can then
+be applied to multiple variables. This section describes in more detail how to
+generate such a “receipe”. Transformed variables are often used to “recode”
+variables (e.g., when inverting items), a typical transformation which
+described in more detail at the end of the subsection :ref:`EFA_in_jamovi` and
+in :numref:`fig15-7`. When transforming or recoding variables in jamovi, a new
+“transformed variable” is created from an original “source variable”. This
+permits you to have access to both the original, untransformed data, and the
+transformed data.
+
+After having created a transformation, you can apply this transformation using
+the transform editor. It lets you define the name and the description of the
+transformed variable to be created, which source variable should be used and
+which transformation should be applied (all transformations that already were
+defined are available from a drop-down menu in the editor).
 
 
 ------

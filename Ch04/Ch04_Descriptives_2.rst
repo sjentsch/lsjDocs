@@ -323,7 +323,7 @@ units as the data itself (i.e., points, not points-squared). What should you
 do? The solution to the problem is obvious! Take the square root of the
 variance, known as the **standard deviation**, also called the “root mean
 squared deviation”, or RMSD. This solves our problem fairly neatly. Whilst
-nobody has a clue what “a variance of 324.68 points-squared” really means, it
+no-one has a clue what “a variance of 324.68 points-squared” really means, it
 is much easier to understand “a standard deviation of 18.01 points” since it is
 expressed in the original units. It is traditional to refer to the standard
 deviation of a sample of data as *s*, though  “SD”, “sd” and “std dev.” are

@@ -12,7 +12,7 @@ Epilogue
    Ch17_Epilogue_3
    Ch17_Epilogue_4
    Ch17_Epilogue_5
-
+   Ch17_Epilogue_6
    
 .. epigraph::
    | *“Begin at the beginning”*, the King said, very gravely,

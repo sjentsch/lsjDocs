@@ -24,7 +24,7 @@ The data
    | **Danielle’s son’s hours slept** |  3.25 | 12.07 |  8.05 |   7.95 |     2.07 |  3.21 |
    +----------------------------------+-------+-------+-------+--------+----------+-------+
 
-.. _parenthood:
+.. _parenthood_summary:
 
 Let us turn to a topic close to every parent’s heart: sleep. The data set we
 will use is fictitious, but based on real events. Suppose I am curious to find
@@ -54,11 +54,11 @@ standard.
    :width: 100%
    :class: borderless
 
-    * - .. image:: ../_images/fig12-1a.*
-      - .. image:: ../_static/fig12-1b.*
-      - .. image:: ../_static/fig12-1c.*
+   * - .. image:: ../_images/fig12-1a.*
+     - .. image:: ../_images/fig12-1b.*
+     - .. image:: ../_images/fig12-1c.*
 
-.. figure::
+.. figure:: ../_images/blank.*
    :alt: Histograms for three variables from the |parenthood|_ data set
    :name: fig12-1
 
@@ -89,10 +89,10 @@ slept.
    :width: 100%
    :class: borderless
 
-    * - .. image:: ../_images/fig12-2a.*
-      - .. image:: ../_static/fig12-2b.*
+   * - .. image:: ../_images/fig12-2a.*
+     - .. image:: ../_images/fig12-2b.*
 
-.. figure::
+.. figure:: ../_images/blank.*
    :alt: Scatterplots between ``dani.sleep`` and ``baby.sleep`` to 
          ``dani.grump``
    :name: fig12-2
@@ -117,10 +117,10 @@ relationship, left-hand side).
    :width: 100%
    :class: borderless
 
-    * - .. image:: ../_images/fig12-3a.*
-      - .. image:: ../_static/fig12-3b.*
+   * - .. image:: ../_images/fig12-3a.*
+     - .. image:: ../_images/fig12-3b.*
 
-.. figure::
+.. figure:: ../_images/blank.*
    :alt: Scatterplots between baby.sleep to dani.grump and dani.sleep
    :name: fig12-3
 

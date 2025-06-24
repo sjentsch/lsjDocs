@@ -90,7 +90,7 @@ Specifically, there are two special pieces of information that we can add:
 
 For the moment, we will act as if these are absolutely trustworthy facts.
 In real life, this kind of absolutely trustworthy background knowledge
-does not exist, and so if we want to rely on these facts we will just have
+does not exist, and so if we want to rely on these facts we will just have to
 make the *assumption* that these things are true. However, since these
 assumptions may or may not be warranted, we might need to check them.
 For now though, we will keep things simple.
@@ -265,13 +265,13 @@ Assumptions of the *z*-test
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As I have said before, all statistical tests make assumptions. Some tests make
-reasonable assumptions, while other tests do not. The test I have just described,
-the one sample *z*-test, makes three basic assumptions. These are:
+reasonable assumptions, while other tests do not. The test I have just
+described, the one sample *z*-test, makes three basic assumptions. These are:
 
 -  *Normality*. As usually described, the *z*-test assumes that the true
    population distribution is normal.\ [#]_ This is often a pretty reasonable
-   assumption, and it is also an assumption that we can check if we feel worried
-   about it (see section :doc:`Ch11_tTest_08`).
+   assumption, and it is also an assumption that we can check if we feel 
+   worried about it (see section :doc:`Ch11_tTest_08`).
 
 -  *Independence*. The second assumption of the test is that the
    observations in your data set are not correlated with each other, or

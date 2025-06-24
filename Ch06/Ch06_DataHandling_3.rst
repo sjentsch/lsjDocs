@@ -12,14 +12,16 @@ numeric variable into a different numeric variable (e.g., you may want
 to analyse at the absolute value of the original variable). In this
 section I will describe a few key ways you can do these things in jamovi.
 
-Almost *anything* you do to a variable is a transformation. In jamovi, there
-are two kinds of such **variable transformations**. In one case, you create
-a new variable based upon a (often mathematical) function. This type of
-transformed variable is called a :ref:`Computed Variable
-<computed_variables>`. In the other case, you create a new variable based upon
-some rule set, determining how each value in the original variable shall be
-transformed into a value in the new variable. This type of variable is called a 
-:ref:`Transformed Variable <transformed_variables>`.
+Almost *anything* you do to a variable is a transformation. In jamovi, there are
+two kinds of such **variable transformations**. In one case, you create a new
+variable based upon an (often mathematical) function. This type of transformed
+variable is called a :ref:`Computed Variable <computed_variable_def>`. In the
+other case, you create a new variable based upon some rule set, determining how
+each value in the original variable shall be transformed into a value in the
+new variable. This type of variable is called a :ref:`Transformed Variable
+<transformed_variable_def>`.
+
+.. _create_computed_vars:
 
 Creating a computed variable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -187,9 +189,10 @@ contains a single variable with raw Likert-scale responses for 10 people. To
 create a transformation that you can save and then apply across multiple
 variables (assuming you had more variables like this in your data file), first
 in the spreadsheet editor select (i.e., click) the variable you want to use to
-initially create the transformation. In our example this is ``likert.raw``.
-Next click the ``Transform`` button in the jamovi ``Data`` tab, and you will
-see something like :numref:`fig6-7`.
+initially create the transformation. In our example this is ``likert.raw``. To
+create a :ref:`transformed variable <transformed_variable_def>`, click the
+``Transform`` button in the jamovi ``Data`` tab, and you will see something
+like :numref:`fig6-7`.
 
 .. ----------------------------------------------------------------------------
 

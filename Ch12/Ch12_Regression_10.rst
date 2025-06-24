@@ -133,9 +133,9 @@ then it strongly suggests that you need to make some changes.
    :alt: Predicted values against the observed values of the outcome variable
    :name: fig12-17
 
-    jamovi plot of the predicted values against the observed values of the
-    outcome variable. A straight(-ish) line is what we are hoping to see here.
-    This looks pretty good, suggesting that there is nothing grossly wrong.
+   jamovi plot of the predicted values against the observed values of the
+   outcome variable. A straight(-ish) line is what we are hoping to see here.
+   This looks pretty good, suggesting that there is nothing grossly wrong.
 
 .. ----------------------------------------------------------------------------
 
@@ -211,12 +211,12 @@ probably not worth worrying about.
    :width: 100%
    :class: borderless
 
-    * - .. image:: ../_images/fig12-20a.*
-      - .. image:: ../_static/fig12-20b.*
-    * - .. image:: ../_static/fig12-20c.*
-      - .. image:: ../_static/fig12-20d.*
+   * - .. image:: ../_images/fig12-20a.*
+     - .. image:: ../_images/fig12-20b.*
+   * - .. image:: ../_images/fig12-20c.*
+     - .. image:: ../_images/fig12-20d.*
 
-.. figure::
+.. figure:: ../_images/blank.*
    :alt: Residuals plots produced in jamovi
    :name: fig12-20
 

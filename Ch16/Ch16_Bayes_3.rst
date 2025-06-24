@@ -384,7 +384,7 @@ is not a theory worth having. In essence, my point is this:
 
    | *Good laws have their origins in bad morals.*
    
-   -- `Ambrosius Macrobius\ [#]_
+   -- Ambrosius Macrobius\ [#]_
 
 
 Good rules for statistical testing have to acknowledge human frailty. None of

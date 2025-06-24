@@ -331,7 +331,7 @@ your jamovi session (you can access it as ``data`` in the ``Rj`` editor) and
 afterwards you can open the manipulated data set in a new jamovi session
 using the ``openNew``-function. The second approach is to open your data set
 in an ``R``-session, using the function ``read_omv`` from the ``R``-package
-``jmvReadWrite`` (cf. :ref:`Syntax mode <syntax mode>`). Alternatively, for
+``jmvReadWrite`` (cf. :ref:`Syntax mode <syntax_mode>`). Alternatively, for
 creating a new data set, you would read information from, e.g., log files,
 using the ``R``-function ``read.csv``, extract the information you need from
 those files into one data frame which you then write into a format that can

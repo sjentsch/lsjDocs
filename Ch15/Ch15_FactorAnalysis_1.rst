@@ -414,11 +414,13 @@ jamovi in two steps:
 
 #. Recode ``A1`` into ``A1R`` by reverse scoring the values in the variable
    (i.e., 6 = 1; 5 = 2; 4 = 3; 3 = 4; 2 = 5; 1 = 6) using the jamovi
-   transform variable command (see :numref:`fig15-7`).
+   :ref:`transform variable function <create_transformation>` (see 
+   :numref:`fig15-7`).
 
-#. Compute a new variable, called ``Agreeableness``, by calculating the mean of
-   ``A1R``, ``A2``, ``A3``, ``A4`` and ``A5``. Do this using the jamovi
-   ``Compute`` command to create a new variable (see :numref:`fig15-8`).
+#. :ref:`Compute a new variable <create_computed_vars>`, called
+   ``Agreeableness``, by calculating the mean of ``A1R``, ``A2``, ``A3``, 
+   ``A4`` and ``A5``. Do this using the jamovi ``Compute`` command to create a 
+   new variable (see :numref:`fig15-8`).
 
 .. ----------------------------------------------------------------------------
 

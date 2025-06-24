@@ -33,20 +33,19 @@ this: ``2 + 2 == 4``
 
 What I have done here is use the **equality operator**, ``==``, to force jamovi
 to make a “``TRUE`` or ``FALSE``” judgement.\ [#]_ Okay, let us see what jamovi
-thinks of the Party slogan, so type this into the compute new variable
-``Formula`` box:
+thinks of the Party slogan, so type this into the :ref:`compute new variable
+<create_computed_vars>` ``Formula``-box:
 
 .. code-block:: text
 
    2 + 2 == 5
 
 And what do you get? It should be a whole set of ``FALSE`` values in the
-spreadsheet column for your newly computed variable. It was worth having a
-look at what happens if I try to *force* jamovi to believe that two plus two
-is five by making a statement like ``2 + 2 = 5``. I know that if I do this in
-another program, say ``R``, then it throws up an error message. But wait, if
-you do this in jamovi you get a whole set of ``FALSE`` values. So what is
-going on?
+spreadsheet column for your newly computed variable. It was worth having a look
+at what happens if I try to *force* jamovi to believe that two plus two is five
+by making a statement like ``2 + 2 = 5``. I know that if I do this in another
+program, say ``R``, then it throws up an error message. But wait, if you do
+this in jamovi you get a whole set of ``FALSE`` values. So what is going on?
 Well, it seems that jamovi is being pretty smart and realises that you are
 testing whether it is ``TRUE`` or ``FALSE`` that ``2 + 2 = 5``, regardless of
 whether you use the correct **equality operator**, ``==``, or the equals sign
@@ -268,7 +267,7 @@ in the order that jamovi processes them:
    things just can not be done.
 
 .. [#]
-   You can do this in the Compute new variable screen, though just
+   You can do this in the Compute new variable panel, though just
    calculating ``2 + 2`` for every cell of a new variable is not very
    useful!
 

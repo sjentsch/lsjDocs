@@ -15,7 +15,7 @@ Pragmatic matters
    Ch06_DataHandling_5
    Ch06_DataHandling_6
    Ch06_DataHandling_7
-
+   Ch06_DataHandling_8
 
 .. epigraph::
 

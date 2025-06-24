@@ -53,12 +53,12 @@ Rearranging the order of variables in a data set
 Sometimes, you would like to rearrange the variables in your data set in a
 certain order (e.g., because you added variables as the last columns and would
 like to move the further forward in the data set). For this demonstration, we
-will use the |parenthood|_ data set (used and `described <parenthood>` later in
-the book). The dependent variable (``dani.grump``) of this data set is placed
-in the middle of this data set (between the independent variables). We would
-like to arrange the variables in a way that ``dani.grump`` becomes the last
-variable in the data set, using the function ``Change Variable Order``. In the
-analysis panel (:numref:`fig6-14`), we arrange the variables in the desired
+will use the |parenthood|_ data set (used and `described <parenthood_summary>`
+later in the book). The dependent variable (``dani.grump``) of this data set is
+placed in the middle of this data set (between the independent variables). We
+would like to arrange the variables in a way that ``dani.grump`` becomes the
+last variable in the data set, using the function ``Change Variable Order``. In
+the analysis panel (:numref:`fig6-14`), we arrange the variables in the desired
 order, briefly check the ``Data Preview``, and then use the ``Create``-button
 to open the data set with the new order of variables in a new jamovi window.
 
@@ -119,7 +119,7 @@ the transposed data set in a new jamovi window.
    :name: fig6-16
 
    Option and results panels for the ``Transpose``-function from ``jTransform``
-    using the |transpose|_ data set
+   using the |transpose|_ data set
 
 .. ----------------------------------------------------------------------------
 

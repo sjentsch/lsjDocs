@@ -7,13 +7,13 @@ One very important kind of data handling is being able to extract a particular
 subset of the data. For instance, you might be interested only in analysing the
 data from one experimental condition, or you may want to look closely at the
 data from people over 50 years in age. To achieve this, one could either use
-a filter or create a new computed variable using the ``FILTER()`` function.
-Regardless of the similar names, the two approaches work slightly differently.
-Whereas filters apply to the whole data set (i.e., the same filter expression
-is applied to all analyses), the ``FILTER()`` function permits you to generate
-a new variable that permits you to decide for which analyses you would use
-that variable (e.g., to conduct only some analyses separately for certain
-subgroups).
+a filter or :ref:`create a new computed variable <create_computed_vars>` using
+the ``FILTER()`` function. Regardless of the similar names, the two approaches
+work slightly differently. Whereas filters apply to the whole data set (i.e.,
+the same filter expression is applied to all analyses), the ``FILTER()``
+function permits you to generate a new variable that permits you to decide for
+which analyses you would use that variable (e.g., to conduct only some analyses
+separately for certain subgroups).
 
 Using filters in jamovi
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -72,10 +72,11 @@ without affecting all analyses contained in your jamovi data set. To achieve
 that one needs to split a variable up into several different variables, each
 corresponding to one subgroup. For instance, in our |nightgarden|_ data set,
 I might want to create subsets of the ``utterance`` variable for every
-character. One can achieve this by creating new computed variables that makes
-use of the ``FILTER()`` function with two arguments, the variable that needs
-to be split into groups and a filter expression (like the one that we used
-above) for selecting a particular subgroup:
+character. One can achieve this by :ref:`creating new computed variables
+<create_computed_vars>` that make use of the ``FILTER()`` function. The 
+function has two arguments: the variable that needs to be split into groups and
+a filter expression (like the one that we used above) for selecting a specific
+subgroup:
 
 .. code-block:: text
 

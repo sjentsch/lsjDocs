@@ -113,7 +113,7 @@ For the one-sample version, you specify the ``Wilcoxon rank`` option under
 *W* = 7, *p*-value = 0.0371. As this shows, we have a significant effect.
 Evidently, taking a statistics class does have an effect on your happiness.
 Switching to a paired samples version of the test will not give us a different
-answer, of course; see :numref:`fig11-26`.\ [#]
+answer, of course; see :numref:`fig11-26`.\ [#]_
 
 .. ----------------------------------------------------------------------------
 

@@ -3,7 +3,7 @@
 Measures of central tendency
 ----------------------------
 
-Drawing pictures of the data, as I did in :numref:`fig4.2`, is an excellent way
+Drawing pictures of the data, as I did in :numref:`fig4-2`, is an excellent way
 to convey the “gist” of what the data is trying to tell you. It is often
 extremely useful to try to condense the data into a few simple “summary”
 statistics. In most situations, the first thing that you will want to calculate
