@@ -441,4 +441,4 @@ there is a fair chance you will run into most of these somewhere.
 .. ----------------------------------------------------------------------------
 
 .. |aflsmall_margins|                  replace:: ``aflsmall_margins``
-.. _aflsmall_margins:                  ../../_statics/data/aflsmall_margins.omv
+.. _aflsmall_margins:                  ../../_static/data/aflsmall_margins.omv

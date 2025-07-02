@@ -649,10 +649,10 @@ four possibilities is plotted in :numref:`fig14-4`: (1) only factor A matters
 .. ----------------------------------------------------------------------------
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
-.. _clinicaltrial:                     ../../_statics/data/clinicaltrial.omv
+.. _clinicaltrial:                     ../../_static/data/clinicaltrial.omv
 
 .. |clinicaltrial_factorialanova|      replace:: ``clinicaltrial_factorialanova``
-.. _clinicaltrial_factorialanova:      ../../_statics/data/clinicaltrial_factorialanova.omv
+.. _clinicaltrial_factorialanova:      ../../_static/data/clinicaltrial_factorialanova.omv
 
 .. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px

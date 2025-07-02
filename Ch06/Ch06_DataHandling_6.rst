@@ -140,10 +140,10 @@ data set.
 .. ----------------------------------------------------------------------------
 
 .. |nightgarden|                       replace:: ``nightgarden``
-.. _nightgarden:                       ../../_statics/data/nightgarden.omv
+.. _nightgarden:                       ../../_static/data/nightgarden.omv
 
 .. |parenthood|                        replace:: ``parenthood``
-.. _parenthood:                        ../../_statics/data/parenthood.omv
+.. _parenthood:                        ../../_static/data/parenthood.omv
 
 .. |transpose|                         replace:: ``transpose``
-.. _transpose:                         ../../_statics/data/transpose.omv
+.. _transpose:                         ../../_static/data/transpose.omv

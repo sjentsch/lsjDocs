@@ -198,7 +198,7 @@ a value for the Shapiro-Wilk normality test statistic of W = 0.94, and
 .. ----------------------------------------------------------------------------
 
 .. |distributions|                     replace:: ``distributions``
-.. _distributions:                     ../../_statics/data/distributions.omv
+.. _distributions:                     ../../_static/data/distributions.omv
 
 .. |aflsmall_margins|                  replace:: ``aflsmall_margins``
-.. _aflsmall_margins:                  ../../_statics/data/aflsmall_margins.omv
+.. _aflsmall_margins:                  ../../_static/data/aflsmall_margins.omv

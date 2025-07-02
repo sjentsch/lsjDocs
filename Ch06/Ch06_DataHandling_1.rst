@@ -123,4 +123,4 @@ the time it is a Tombliboo saying it.
 .. ----------------------------------------------------------------------------
 
 .. |nightgarden|                       replace:: ``nightgarden``
-.. _nightgarden:                       ../../_statics/data/nightgarden.omv
+.. _nightgarden:                       ../../_static/data/nightgarden.omv

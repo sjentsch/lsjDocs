@@ -373,4 +373,4 @@ Kruskal-Wallis χ² = 12.076, *df* = 2, *p*-value = 0.00239, as in
 .. ----------------------------------------------------------------------------
    
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
-.. _clinicaltrial:                     ../../_statics/data/clinicaltrial.omv
+.. _clinicaltrial:                     ../../_static/data/clinicaltrial.omv

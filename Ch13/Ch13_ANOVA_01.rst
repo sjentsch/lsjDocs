@@ -43,7 +43,7 @@ difference “real”, or are they just due to chance?
 .. ----------------------------------------------------------------------------
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
-.. _clinicaltrial:                     ../../_statics/data/clinicaltrial.omv
+.. _clinicaltrial:                     ../../_static/data/clinicaltrial.omv
 
 .. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px

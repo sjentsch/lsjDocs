@@ -84,7 +84,7 @@ the null hypothesis with some confidence!
 .. ----------------------------------------------------------------------------
 
 .. |chico|                             replace:: ``chico``
-.. _chico:                             ../../_statics/data/chico.omv
+.. _chico:                             ../../_static/data/chico.omv
 
 .. |harpo|                             replace:: ``harpo``
-.. _harpo:                             ../../_statics/data/harpo.omv
+.. _harpo:                             ../../_static/data/harpo.omv

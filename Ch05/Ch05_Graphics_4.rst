@@ -16,4 +16,4 @@ suited to be edited (e.g., with `Inkscape <https://inkscape.org/>`__).
 .. ----------------------------------------------------------------------------
 
 .. |afl.finalists|                     replace:: ``afl.finalists``
-.. _afl.finalists:                     ../../_statics/data/aflsmall_finalists.omv
+.. _afl.finalists:                     ../../_static/data/aflsmall_finalists.omv

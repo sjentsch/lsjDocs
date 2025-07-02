@@ -1,4 +1,4 @@
-.. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_, and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_, and `Sebastian Jentschke <https://www4.uib.no/en/find-employees/Sebastian.Jentschke>_`
+.. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_, and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_, and `Sebastian Jentschke <https://www4.uib.no/en/find-employees/Sebastian.Jentschke>`_
 
 Mathematical functions and operations
 -------------------------------------

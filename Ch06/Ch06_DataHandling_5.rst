@@ -1,4 +1,4 @@
-.. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_, and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_, and `Sebastian Jentschke <https://www4.uib.no/en/find-employees/Sebastian.Jentschke>_`
+.. sectionauthor:: `Danielle J. Navarro <https://djnavarro.net/>`_, and `David R. Foxcroft <https://www.davidfoxcroft.com/>`_, and `Sebastian Jentschke <https://www4.uib.no/en/find-employees/Sebastian.Jentschke>`_
 
 Extracting a subset of the data
 -------------------------------
@@ -119,4 +119,4 @@ perhaps not the most useful data set for this purpose…
 .. ----------------------------------------------------------------------------
 
 .. |nightgarden|                       replace:: ``nightgarden``
-.. _nightgarden:                       ../../_statics/data/nightgarden.omv
+.. _nightgarden:                       ../../_static/data/nightgarden.omv

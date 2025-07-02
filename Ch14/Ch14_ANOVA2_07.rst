@@ -519,13 +519,13 @@ freedom for the residuals is *df*\ :sub:`2` = 18 - 4 = 14.
 .. ----------------------------------------------------------------------------
 
 .. |rtfm|                              replace:: ``rtfm``
-.. _rtfm:                              ../../_statics/data/rtfm.omv
+.. _rtfm:                              ../../_static/data/rtfm.omv
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
-.. _clinicaltrial:                     ../../_statics/data/clinicaltrial.omv
+.. _clinicaltrial:                     ../../_static/data/clinicaltrial.omv
 
 .. |clinicaltrial2|                    replace:: ``clinicaltrial2``
-.. _clinicaltrial2:                    ../../_statics/data/clinicaltrial2.omv
+.. _clinicaltrial2:                    ../../_static/data/clinicaltrial2.omv
 
 .. |nominal|                           image:: ../_images/variable-nominal.*
    :width: 16px

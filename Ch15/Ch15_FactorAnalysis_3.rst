@@ -308,7 +308,7 @@ of information to include in your write-up:
 .. ----------------------------------------------------------------------------
 
 .. |bfi_sample2|                       replace:: ``bfi_sample2``
-.. _bfi_sample2:                       ../../_statics/data/bfi_sample2.omv
+.. _bfi_sample2:                       ../../_static/data/bfi_sample2.omv
 
 .. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px

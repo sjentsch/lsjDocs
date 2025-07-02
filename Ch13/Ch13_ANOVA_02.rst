@@ -655,8 +655,8 @@ Sigh. So much work for one short sentence.
 .. |f_SS_w|                            replace:: :math:`\displaystyle\sum_{k = 1} ^ G \displaystyle\sum_{i = 1} ^ {N_k} ({Y}_{ik} - \bar{Y}_k) ^ 2`
 
 .. |clinicaltrial|                     replace:: ``clinicaltrial``
-.. _clinicaltrial:                     ../../_statics/data/clinicaltrial.omv
+.. _clinicaltrial:                     ../../_static/data/clinicaltrial.omv
 
 .. |clinicaltrial_anova|               replace:: ``clinicaltrial_anova``
-.. _clinicaltrial_anova:               ../../_statics/data/clinicaltrial_anova.omv
+.. _clinicaltrial_anova:               ../../_static/data/clinicaltrial_anova.omv
 

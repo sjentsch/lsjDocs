@@ -103,4 +103,4 @@ model as:
 .. ----------------------------------------------------------------------------
 
 .. |parenthood|                        replace:: ``parenthood``
-.. _parenthood:                        ../../_statics/data/parenthood.omv
+.. _parenthood:                        ../../_static/data/parenthood.omv

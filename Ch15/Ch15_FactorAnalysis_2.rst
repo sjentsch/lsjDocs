@@ -52,4 +52,4 @@ underlying construct) and variance that is unique to that particular item.
 .. ----------------------------------------------------------------------------
 
 .. |bfi_sample|                        replace:: ``bfi_sample``
-.. _bfi_sample:                        ../../_statics/data/bfi_sample.omv
+.. _bfi_sample:                        ../../_static/data/bfi_sample.omv

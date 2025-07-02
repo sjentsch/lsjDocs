@@ -217,4 +217,4 @@ performance.
    (n - k): (number of subjects - number of groups)
 
 .. |broca|                             replace:: ``broca``
-.. _broca:                             ../../_statics/data/broca.omv
+.. _broca:                             ../../_static/data/broca.omv

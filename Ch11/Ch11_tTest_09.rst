@@ -146,13 +146,13 @@ answer, of course; see :numref:`fig11-26`.\ [#]_
 .. ----------------------------------------------------------------------------
 
 .. |aflsmall_margins|                  replace:: ``aflsmall_margins``
-.. _aflsmall_margins:                  ../../_statics/data/aflsmall_margins.omv
+.. _aflsmall_margins:                  ../../_static/data/aflsmall_margins.omv
 
 .. |awesome|                           replace:: ``awesome``
-.. _awesome:                           ../../_statics/data/awesome.omv
+.. _awesome:                           ../../_static/data/awesome.omv
 
 .. |happiness|                         replace:: ``happiness``
-.. _happiness:                         ../../_statics/data/happiness.omv
+.. _happiness:                         ../../_static/data/happiness.omv
 
 .. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px

@@ -182,7 +182,7 @@ LibreOffice, and JSON.
 .. ----------------------------------------------------------------------------
 
 .. |booksales|                         replace:: ``booksales.csv``
-.. _booksales:                         ../../_statics/data/booksales.csv
+.. _booksales:                         ../../_static/data/booksales.csv
 
 .. |ID|                                image:: ../_images/variable-id.*
    :width: 16px

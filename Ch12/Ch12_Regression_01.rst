@@ -429,10 +429,10 @@ Spearman’s ρ using jamovi simply by clicking the ``Spearman`` check box in th
 .. ----------------------------------------------------------------------------
 
 .. |parenthood|                        replace:: ``parenthood``
-.. _parenthood:                        ../../_statics/data/parenthood.omv
+.. _parenthood:                        ../../_static/data/parenthood.omv
 
 .. |anscombe|                          replace:: ``anscombe``
-.. _anscombe:                          ../../_statics/data/anscombe.omv
+.. _anscombe:                          ../../_static/data/anscombe.omv
 
 .. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px

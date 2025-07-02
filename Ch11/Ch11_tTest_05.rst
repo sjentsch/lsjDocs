@@ -238,7 +238,7 @@ sample test under the hood.
 .. ----------------------------------------------------------------------------
 
 .. |chico|                             replace:: ``chico``
-.. _chico:                             ../../_statics/data/chico.omv
+.. _chico:                             ../../_static/data/chico.omv
 
 .. |continuous|                        image:: ../_images/variable-continuous.*
    :width: 16px

@@ -342,13 +342,13 @@ from ``jmvReadWrite``).
 .. ----------------------------------------------------------------------------
 
 .. |drugs|                             replace:: ``drugs``
-.. _drugs:                             ../../_statics/data/drugs.omv
+.. _drugs:                             ../../_static/data/drugs.omv
 
 .. |drugs_long|                        replace:: ``drugs_long``
-.. _drugs_long:                        ../../_statics/data/drugs_long.omv
+.. _drugs_long:                        ../../_static/data/drugs_long.omv
 
 .. |choice|                            replace:: ``choice``
-.. _choice:                            ../../_statics/data/choice.omv
+.. _choice:                            ../../_static/data/choice.omv
 
 .. |choice_long|                       replace:: ``choice_long``
-.. _choice_long:                       ../../_statics/data/choice_long.omv
+.. _choice_long:                       ../../_static/data/choice_long.omv

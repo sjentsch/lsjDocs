@@ -78,4 +78,4 @@ matrix for you, just like the one in :numref:`fig12-10`.
 .. ----------------------------------------------------------------------------
 
 .. |parenthood|                        replace:: ``parenthood``
-.. _parenthood:                        ../../_statics/data/parenthood.omv
+.. _parenthood:                        ../../_static/data/parenthood.omv

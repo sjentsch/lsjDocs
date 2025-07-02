@@ -316,4 +316,4 @@ the *z*-test, and into the magical kingdom of the *t*-test!
 .. ----------------------------------------------------------------------------
 
 .. |zeppo|                             replace:: ``zeppo``
-.. _zeppo:                             ../../_statics/data/zeppo.omv
+.. _zeppo:                             ../../_static/data/zeppo.omv
